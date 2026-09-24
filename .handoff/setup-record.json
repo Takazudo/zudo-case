@@ -91,5 +91,14 @@
       "zod": "4.6.5"
     }
   },
-  "actualBuildVerified": false
+  "actualBuildVerified": true,
+  "buildVerification": {
+    "date": "2026-09-24",
+    "command": "pnpm build",
+    "guardVerdict": "PASS",
+    "generatedPages": 44,
+    "docRoutes": 41,
+    "searchEntries": 41,
+    "brokenLinkWarnings": 0
+  }
 }
