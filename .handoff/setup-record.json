@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "completedAt": "2026-09-24T11:11:39.304Z",
+  "mode": "official-cli",
+  "cli": {
+    "package": "create-zudo-doc",
+    "requestedVersion": "5.27.0",
+    "resolvedVersion": "5.27.0",
+    "source": {
+      "repository": "https://github.com/zudolab/zudo-doc",
+      "commit": "50cbd5c6c9e5a795d72a74a855e105e4939d4eab",
+      "tarball": "https://registry.npmjs.org/create-zudo-doc/-/create-zudo-doc-5.27.0.tgz",
+      "integrity": "sha512-Ed4gIHP9VFu2QqBS6/Mbt5Uk5TigESynuS2eTw5c6mRyasmv3IMIP1ectftERDtjyNjHu7k6FeG/bh7J7g0XLw=="
+    }
+  },
+  "runtime": {
+    "node": "v24.13.1",
+    "packageManager": {
+      "name": "pnpm",
+      "version": "10.30.3"
+    }
+  },
+  "preset": {
+    "file": "setup.preset.json",
+    "sha256": "4bbc390967de1de53e0efa73c36c6aa5643e2976578487419cc42fc50f1abb5e"
+  },
+  "framework": {
+    "package": "@takazudo/zudo-doc",
+    "declaredVersion": "^5.27.0",
+    "resolvedVersion": "5.27.0",
+    "source": {
+      "repository": "https://github.com/zudolab/zudo-doc",
+      "packagePath": "packages/zudo-doc"
+    }
+  },
+  "preserved": [
+    "src/content/docs",
+    "public",
+    "engineering",
+    "project",
+    "zfb.config.ts",
+    "README.md",
+    "AGENTS.md"
+  ],
+  "generatedDependencies": {
+    "@takazudo/zfb": "2.20.2",
+    "@takazudo/zfb-runtime": "2.20.2",
+    "@takazudo/zfb-md-wasm": "2.20.2",
+    "@takazudo/zudo-doc": "^5.27.0",
+    "zod": "^4.3.6",
+    "preact": "^10.29.1",
+    "preact-render-to-string": "^6.6.6"
+  },
+  "generatedDevDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^22.0.0"
+  },
+  "copiedFiles": [
+    ".npmrc",
+    "pages/docs/[[...slug]].tsx",
+    "pages/index.tsx",
+    "pnpm-workspace.yaml",
+    "public/favicon-16x16.png",
+    "public/favicon-32x32.png",
+    "public/favicon.ico",
+    "public/favicon.svg",
+    "scripts/check-links.js",
+    "src/styles/global.css",
+    "tsconfig.json"
+  ],
+  "dependencyInstall": {
+    "completed": true,
+    "node": "v24.13.1",
+    "packageManager": {
+      "name": "pnpm",
+      "version": "10.30.3"
+    },
+    "lockfile": {
+      "file": "pnpm-lock.yaml",
+      "sha256": "df00b1a1986e32de86448f348c2a207bf1a9accf9342c433cf865f17f22bedc9"
+    },
+    "resolvedPackages": {
+      "@takazudo/zfb": "2.20.2",
+      "@takazudo/zfb-md-wasm": "2.20.2",
+      "@takazudo/zfb-runtime": "2.20.2",
+      "@takazudo/zudo-doc": "5.27.0",
+      "@types/node": "22.20.4",
+      "preact": "10.29.8",
+      "preact-render-to-string": "6.7.0",
+      "typescript": "5.9.3",
+      "zod": "4.6.5"
+    }
+  },
+  "actualBuildVerified": true,
+  "buildVerification": {
+    "date": "2026-09-24",
+    "command": "pnpm build",
+    "guardVerdict": "PASS",
+    "generatedPages": 44,
+    "docRoutes": 41,
+    "searchEntries": 41,
+    "brokenLinkWarnings": 0
+  }
+}
