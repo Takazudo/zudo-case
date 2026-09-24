@@ -22,7 +22,7 @@ pnpm dev
 
 このセットの初期化には公式`create-zudo-doc@5.27.0`を使いました。`scripts/setup.mjs`はscaffoldをまだ取り込んでいない文書のみのスナップショット向けです。この初期化済みチェックアウトでは再実行せず、ロックファイルから依存を復元してください。Git初期化、デプロイ、注文は自動実行しません。
 
-2026-09-24のビルドでは44ページを生成し、41件の文書ルートと検索項目、47件の公開資産を確認しました。同日のChrome 146.0.7680.153で、desktop 1440×900とnarrow 390×844の実表示も確認しました。41ルートと8カテゴリを両幅で開き、narrowでの横はみ出しはなく、検索・テーマ・画像・R8/R6プレビューの主要操作も動作しました。画面ごとの記録、ダウンロード件数、スクリーンショットは[検証記録](project/browser-validation.md)にまとめています。物理的な嵌合・強度・運搬試験はこのブラウザー確認に含みません。`pnpm dev`が表示するURLを開き、「現在地と最初に読むページ」から読んでください。
+2026-09-24の初回ビルドでは44ページを生成し、41件の文書ルートと検索項目、47件の公開資産を確認しました。現在は画像・図15件をzudo-docのAsset Viewerに移し、`/files/`の一覧と各閲覧ページを追加して60ページを生成します。同日のChrome 146.0.7680.153で、desktop 1440×900とnarrow 390×844の実表示も確認しました。41ルートと8カテゴリを両幅で開き、narrowでの横はみ出しはなく、検索・テーマ・画像・R8/R6プレビューの主要操作も動作しました。画面ごとの記録、ダウンロード件数、スクリーンショットは[検証記録](project/browser-validation.md)にまとめています。物理的な嵌合・強度・運搬試験はこのブラウザー確認に含みません。`pnpm dev`が表示するURLを開き、「現在地と最初に読むページ」から読んでください。
 
 ### 初期化履歴と確認範囲
 
@@ -55,7 +55,7 @@ node scripts/setup.mjs --from /absolute/path/to/fresh-official-scaffold
 | 判断履歴 | 5→8mm、ガード薄肉化、蓋のロック不採用、バンド採用 |
 | 引継ぎ | セットアップ、次工程、更新手順 |
 
-**41ページ、8カテゴリ**です。カテゴリ一覧は`project/navigation.json`にあります。既存のプレビューは、サイトを起動しなくても`public/previews/r8-simple-lid.html`をブラウザーで直接開けます。
+**41文書ページ、8カテゴリ**です。カテゴリ一覧は`project/navigation.json`にあります。画像・図は`/files/`の一覧と閲覧ページにも表示されます。既存のプレビューは、サイトを起動しなくても`public/previews/r8-simple-lid.html`をブラウザーで直接開けます。
 
 ## 最初に確認すべき状態
 
@@ -80,9 +80,9 @@ zudo-case-doc/
 ├── setup.preset.json             # 公式初期化CLIへ渡す設定
 ├── src/content/docs/             # 41ページのMDX
 ├── public/
+│   ├── assets/                  # Asset Viewerの画像・図・見積画面
 │   ├── previews/                # R8/R6の単一HTML
-│   ├── images/                  # 既存の表示画像
-│   ├── evidence/                # 見積画面、旧README、計算結果
+│   ├── evidence/                # 旧README、計算結果
 │   └── downloads/
 │       ├── reference/           # 未承認のR6参照データ
 │       └── archive/             # 不採用のR7・ロック比較
@@ -125,7 +125,7 @@ node scripts/check-docs.mjs
 
 ユーザーが測定した寸法、採用方針、元STL/PCB、過去のモデル値、見積画面、助手の概算を分けました。会話由来の採用判断は`project/source-notes/user-decisions.md`、出典台帳は`project/sources.json`です。今回、サプライヤーの価格を取り直してはいません。
 
-`public/`以下はサイト公開時にも配信されます。**noindexはアクセス制限ではありません。** 見積画像・設計データの旧版ZIPなどを対外公開するか、公開前に選別してください。初期設定はルートパス配信です。
+Cloudflare Workers Static Assetsへの公開設定は２つのホストに分けています。`zudo-case.zudolab.dev`は文書、Asset Viewerの画像・図、テキスト/JSON根拠を配信し、`zudo-case-preview.zudolab.dev`は単体HTMLプレビューと参照/旧版ZIPを配信します。`pnpm build`の後に`pnpm prepare:worker-assets`で配信フォルダーを分離し、25MiBを超える２ファイルは小片に分けてプレビューWorkerが元のURLでストリーム配信します。元ファイルのSHA-256は維持します。GitHub Actionsは`main`へのpushで２つのWorkerを順にデプロイし、`CLOUDFLARE_ACCOUNT_ID`と`CLOUDFLARE_API_TOKEN`をデプロイ手順だけに渡します。**noindexはアクセス制限ではありません。** 見積画像と旧版ZIPもそれぞれのホストで閲覧できる設定です。初期設定はルートパス配信です。
 
 第三者ライブラリや元資料の著作権・ライセンス表示は元ファイルの記載に従います。資料整理によって再ライセンスしたものではありません。
 

@@ -19,7 +19,7 @@ pnpm build
 pnpm dev
 ```
 
-`pnpm install --frozen-lockfile`は追跡中のlockfileと依存定義が合わない場合に停止する。`pnpm dev`が表示するURLをブラウザーで開く。2026-09-24の`pnpm build`は成功し、44ページ、41文書ルートと検索項目、47公開資産を生成した。
+`pnpm install --frozen-lockfile`は追跡中のlockfileと依存定義が合わない場合に停止する。`pnpm dev`が表示するURLをブラウザーで開く。2026-09-24の初回`pnpm build`は44ページ、41文書ルートと検索項目、47公開資産を生成した。現在はAsset Viewerの画像・図15件と一覧を加え、合計60ページを生成する。
 
 ## 文書のみのスナップショットを初期化する場合
 
@@ -47,7 +47,7 @@ pnpm create zudo-doc zudo-case-doc-site --lang ja --no-i18n --no-git --no-instal
 
 2026-09-24のChrome 146.0.7680.153でdesktop 1440×900、narrow 390×844を確認した。41文書ルートと8カテゴリが両幅で表示され、narrowでは横はみ出しがなかった。検索・テーマ・画像・R8/R6プレビューの操作も確認済み。経路別の結果、非空ダウンロード、画面記録はリポジトリの`project/browser-validation.md`にまとめる。ビルドやブラウザーの表示確認は、嵌合・強度・運搬などの現物試験を代替しない。
 
-`noindex`は有効にしているが、アクセス制御ではない。`public/downloads/archive/`のソースZIPや見積画像を含め、**public以下は公開すると閲覧できる**。対外公開時は配布範囲を見直す。実装・構造の資料を勝手に秘密情報と断定してはいないが、どこまで公開するかは所有者が決める。
+Cloudflareでは`zudo-case.zudolab.dev`を文書・Asset Viewer・根拠ファイルに、`zudo-case-preview.zudolab.dev`を単体プレビュー・参照/旧版ZIPに使う。`pnpm build`後に`pnpm prepare:worker-assets`を実行して２つの配信フォルダーを作る。GitHub Actionsは`main`へのpushでプレビュー、文書の順にデプロイする。`noindex`は有効にしているが、アクセス制御ではない。旧ソースZIPや見積画像もURLを知る人は閲覧できる。
 
 このセットはルートパス配信を想定。サブパス配信に変える場合は、iframeと画像/ダウンロードのURLも確認する。
 

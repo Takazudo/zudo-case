@@ -36,6 +36,12 @@ for(const p of all){
  const urls=[...body.matchAll(/!?\[[^\]\n]*\]\(([^\s)]+)(?:\s+"[^"]*")?\)/g)].map(m=>m[1]);
  urls.push(...[...body.matchAll(/(?:src|href)=["']([^"']+)["']/g)].map(m=>m[1]));
  for(let u of urls){
+  if(u.startsWith('https://zudo-case-preview.zudolab.dev/')){
+   const resource=new URL(u);
+   localLinks++;
+   assert(await exists(path.join(root,'public',decodeURIComponent(resource.pathname).slice(1))),`${rel}: プレビュー側のリンク先なし ${u}`);
+   continue;
+  }
   if(/^(?:https?:|mailto:|data:|#)/i.test(u))continue;
   u=decodeURIComponent(u.split(/[?#]/)[0]);if(!u)continue;
   let dest=u.startsWith('/')?path.join(root,'public',u.slice(1)):path.resolve(path.dirname(p),u);

@@ -1,0 +1,59 @@
+name: Deploy documentation and previews
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: zudo-case-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.30.3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Verify Cloudflare credentials
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo 'Missing CLOUDFLARE_ACCOUNT_ID'; exit 1; }
+          test -n "$CLOUDFLARE_API_TOKEN" || { echo 'Missing CLOUDFLARE_API_TOKEN'; exit 1; }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check:docs
+      - run: pnpm check:assets
+      - run: pnpm test:setup
+      - run: pnpm check
+      - run: pnpm build
+      - run: pnpm check:images
+      - run: pnpm prepare:worker-assets
+      - run: node --test tests/worker-assets.test.mjs
+      - name: Deploy previews and downloads
+        run: pnpm deploy:preview
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Deploy documentation
+        run: pnpm deploy:docs
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Verify public routes
+        run: |
+          curl --fail --silent --show-error --retry 5 --retry-delay 2 --retry-all-errors https://zudo-case-preview.zudolab.dev/previews/r8-simple-lid.html -o /dev/null
+          curl --fail --silent --show-error --retry 5 --retry-delay 2 --retry-all-errors --head https://zudo-case-preview.zudolab.dev/previews/r6-body.html -o /dev/null
+          curl --fail --silent --show-error --retry 5 --retry-delay 2 --retry-all-errors --head https://zudo-case-preview.zudolab.dev/downloads/archive/r7-m3-lid-source.zip -o /dev/null
+          curl --fail --silent --show-error --retry 5 --retry-delay 2 --retry-all-errors https://zudo-case.zudolab.dev/files/ -o /dev/null

@@ -17,19 +17,24 @@
     "preview": "zfb preview",
     "check": "zfb check",
     "check:links": "node scripts/check-links.js",
-    "check:images": "zudo-doc check images"
+    "check:images": "zudo-doc check images",
+    "prepare:worker-assets": "node scripts/prepare-worker-assets.mjs",
+    "deploy:docs": "wrangler deploy --config wrangler.docs.jsonc",
+    "deploy:preview": "wrangler deploy --config wrangler.preview.jsonc"
   },
   "dependencies": {
     "@takazudo/zfb": "2.20.2",
-    "@takazudo/zfb-runtime": "2.20.2",
     "@takazudo/zfb-md-wasm": "2.20.2",
+    "@takazudo/zfb-runtime": "2.20.2",
     "@takazudo/zudo-doc": "^5.27.0",
-    "zod": "^4.3.6",
     "preact": "^10.29.1",
-    "preact-render-to-string": "^6.6.6"
+    "preact-render-to-string": "^6.6.6",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@takazudo/zudo-doc-history-server": "5.27.0",
+    "@types/node": "^22.0.0",
     "typescript": "^5.9.0",
-    "@types/node": "^22.0.0"
+    "wrangler": "4.138.0"
   }
 }

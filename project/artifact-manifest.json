@@ -107,19 +107,19 @@
       "status": "nominal-body-reference-not-released"
     },
     {
-      "path": "public/evidence/original-zudo-block-bottom.svg",
+      "path": "public/assets/evidence/original-zudo-block-bottom.svg",
       "bytes": 819,
       "sha256": "d7c14bd284da3149ab24d3ca7474a8d94c56784dec60e065fd83ddc6d5a88176",
       "status": "source-evidence"
     },
     {
-      "path": "public/evidence/r2-jlc-quote-incomplete-quantity.png",
+      "path": "public/assets/evidence/r2-jlc-quote-incomplete-quantity.png",
       "bytes": 258748,
       "sha256": "da280ffa4c73503d2707c056f441e5babc37f2438cf0aaa30f427e360b30ea1e",
       "status": "source-evidence"
     },
     {
-      "path": "public/evidence/r3-jlc-quote.png",
+      "path": "public/assets/evidence/r3-jlc-quote.png",
       "bytes": 251695,
       "sha256": "6c3d570ddab12fa4464afdacf6b66b509e138841ab3981897227b4e4c502eb32",
       "status": "source-evidence"
@@ -179,73 +179,73 @@
       "status": "adopted-concept-preview-not-manufacturing"
     },
     {
-      "path": "public/images/r6/3u60-assembled.png",
+      "path": "public/assets/images/r6/3u60-assembled.png",
       "bytes": 336184,
       "sha256": "e90e1152a9736931936ce345a58534dba97c2813c986653c0b174ff2068e2954",
       "status": "nominal-body-reference-not-released"
     },
     {
-      "path": "public/images/r6/3u60-rail.png",
+      "path": "public/assets/images/r6/3u60-rail.png",
       "bytes": 328106,
       "sha256": "57475fbab2bf94a8919cc07f4bcc5ef56f437def21dd422c2cf8bd9f56c0febf",
       "status": "nominal-body-reference-not-released"
     },
     {
-      "path": "public/images/r6/7u-layout.png",
+      "path": "public/assets/images/r6/7u-layout.png",
       "bytes": 129311,
       "sha256": "9c3e1f523814329003ee0e5f36098267986b5fe2c9aefb419936d3abdf877160",
       "status": "nominal-body-reference-not-released"
     },
     {
-      "path": "public/images/r6/7u40-assembled.png",
+      "path": "public/assets/images/r6/7u40-assembled.png",
       "bytes": 387633,
       "sha256": "df0f63ce65265bf6e228a678066d9db3cceab839252b0eb0ffc523ca49d4c27a",
       "status": "nominal-body-reference-not-released"
     },
     {
-      "path": "public/images/r6/7u40-rail.png",
+      "path": "public/assets/images/r6/7u40-rail.png",
       "bytes": 376833,
       "sha256": "6256c8ae0af621b9a11910bf6d0414068c281aa87af942b6315cd4a912a9a758",
       "status": "nominal-body-reference-not-released"
     },
     {
-      "path": "public/images/r6/7u60-assembled.png",
+      "path": "public/assets/images/r6/7u60-assembled.png",
       "bytes": 397553,
       "sha256": "c69093a9e294d139f1704cff06cb68562c5da88f32a16a8e335c3e5aa20d1be9",
       "status": "nominal-body-reference-not-released"
     },
     {
-      "path": "public/images/r6/7u60-rail.png",
+      "path": "public/assets/images/r6/7u60-rail.png",
       "bytes": 398855,
       "sha256": "bfea1625f83634570396da33c7162be243f62e7f59d605eea496c6c8399feb25",
       "status": "nominal-body-reference-not-released"
     },
     {
-      "path": "public/images/r8/7u40-daily.png",
+      "path": "public/assets/images/r8/7u40-daily.png",
       "bytes": 388993,
       "sha256": "5fe2f77fb639170baec6b03780b8b715c29d3c3ed1c048fe4d5a9d6c58283c45",
       "status": "adopted-concept-preview-not-manufacturing"
     },
     {
-      "path": "public/images/r8/7u40-open.png",
+      "path": "public/assets/images/r8/7u40-open.png",
       "bytes": 464945,
       "sha256": "5df189a610b1ebd7a4d0b97e150804e0c83d9346e608ff924f7fb99e298d3c19",
       "status": "adopted-concept-preview-not-manufacturing"
     },
     {
-      "path": "public/images/r8/7u40-travel.png",
+      "path": "public/assets/images/r8/7u40-travel.png",
       "bytes": 394320,
       "sha256": "c28ce8bb586109386c1732c2fa245e30823f400dc20d466550bd59e3ae7fb6f9",
       "status": "adopted-concept-preview-not-manufacturing"
     },
     {
-      "path": "public/images/r8/locator-section.png",
+      "path": "public/assets/images/r8/locator-section.png",
       "bytes": 327033,
       "sha256": "495b73a7cc4f49b6fdcc7fd00bf9537322d69df52043f6f7f0373178342f91bb",
       "status": "adopted-concept-preview-not-manufacturing"
     },
     {
-      "path": "public/images/r8/mobile.png",
+      "path": "public/assets/images/r8/mobile.png",
       "bytes": 218979,
       "sha256": "9c625e71c5e618c5c39cb2d4b45825d6e448e153787ed9a53fff573e60519198",
       "status": "adopted-concept-preview-not-manufacturing"

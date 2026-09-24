@@ -21,7 +21,7 @@ for (const m of models) {
 
 ${m.id==='7u40'?'**主な確認対象。** リュックへ入れて運ぶ用途を重視する40HPの３列ケース。':'３機種に共通する金属平板と独立レールの構造を使う。'} ${m.id==='3u60'?'レール２本の単列。':'3U＋3U＋1Uは同じ平面に並ぶ。上下二段のケースではない。'}
 
-![R6の組立形状](/images/r6/${m.id}-assembled.png)
+![R6の組立形状](/assets/images/r6/${m.id}-assembled.png)
 
 ## 寸法と数量
 
@@ -57,7 +57,7 @@ ${catalog}
 
 合計**${g.partCount}個、${f(g.totalVolumeCm3)}cm³**。1.0mm版は**${f(m.guards.t1p0.totalVolumeCm3)}cm³**。STLは１個ずつ、数量を注文画面へ指定する。
 
-[1.2mm STL一式](/downloads/reference/${m.id}-r6-guards-t1p2-NOT-RELEASED.zip) ／ [1.0mm STL一式](/downloads/reference/${m.id}-r6-guards-t1p0-NOT-RELEASED.zip) ／ [アルミ参考データ](/downloads/reference/${m.id}-r6-aluminum-NOT-RELEASED.zip)
+[1.2mm STL一式](https://zudo-case-preview.zudolab.dev/downloads/reference/${m.id}-r6-guards-t1p2-NOT-RELEASED.zip) ／ [1.0mm STL一式](https://zudo-case-preview.zudolab.dev/downloads/reference/${m.id}-r6-guards-t1p0-NOT-RELEASED.zip) ／ [アルミ参考データ](https://zudo-case-preview.zudolab.dev/downloads/reference/${m.id}-r6-aluminum-NOT-RELEASED.zip)
 
 ## 蓋はR8の表示寸法
 
@@ -125,6 +125,6 @@ ${bom}
 
 手持ちL字金具は追加支払0円でも、製品原価には使用数×実仕入単価を入れる。その他の小物も画面上の形状から品番を推測して買わない。ケース側のM5で使う8mmスペーサーと外側座金はレール費用除外とは別に計上する。
 
-出典：[R6サマリー](/evidence/r6-family-summary.json)、各機種のmodel-summary.json、[R8 README](/evidence/r8-original-readme.md)。
+出典：[R6サマリー](/evidence/r6-family-summary.json)、各機種のmodel-summary.json、<a href="/evidence/r8-original-readme.md">R8 README</a>。
 `);
 console.log('Generated 5 reference pages from project/current-spec.json.');

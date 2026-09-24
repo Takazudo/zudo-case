@@ -1,8 +1,11 @@
 node_modules/
 dist/
+dist-preview/
 .zfb/
 .zfb-build/
 .zudo-doc/
+.worker-build/
+.wrangler/
 .cache/
 .DS_Store
 *.log

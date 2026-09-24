@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "zudo-case-docs",
+  "compatibility_date": "2026-09-24",
+  "workers_dev": false,
+  "preview_urls": true,
+  "routes": [{ "pattern": "zudo-case.zudolab.dev", "custom_domain": true }],
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
