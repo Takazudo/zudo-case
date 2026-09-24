@@ -4,31 +4,30 @@ description: "公式CLIで土台を生成し、このMDX・資産をそのまま
 sidebar_position: 10
 ---
 
-## この配布物の状態
+## 現在のチェックアウト
 
-これは**文書・資産を入れたzudo-doc用引継ぎセット**。公式CLIの依存取得がこの環境では`EAI_AGAIN registry.npmjs.org`で停止したため、生成済みのフレームワークやビルド済みdistを装っては同梱していない。
+このチェックアウトは公式`create-zudo-doc@5.27.0`で初期化済みで、生成されたフレームワーク設定、`package.json`、`pnpm-lock.yaml`を含む。確認に使った環境はNode.js 24.13.1、pnpm 10.30.3。Node.js 22以上を用意する。
 
-文書は`src/content/docs/`、設定は`zfb.config.ts`、画像・プレビュー・ダウンロードは`public/`にある。ローカルで公式scaffolderを実行する補助スクリプトを付けた。
-
-## 初回コマンド
-
-Node.js 22以上とpnpmを用意して、展開先で実行する。
+新しいチェックアウトでは、リポジトリのルートから次を実行する。
 
 ```sh
-cd zudo-case-doc
-node scripts/setup.mjs
-pnpm install
+pnpm install --frozen-lockfile
 pnpm check:docs
+pnpm check:assets
+pnpm test:setup
+pnpm build
 pnpm dev
 ```
 
-setupは一時ディレクトリーへ公式`create-zudo-doc`を非対話・依存未インストールで実行し、必要な土台だけをこのフォルダーへ取り込む。書いたMDX、画像、engineering、設定は上書きしない。既存のscaffoldと衝突するファイルがあれば停止する。
+`pnpm install --frozen-lockfile`は追跡中のlockfileと依存定義が合わない場合に停止する。`pnpm dev`が表示するURLをブラウザーで開く。2026-09-24の`pnpm build`は成功し、44ページ、41文書ルートと検索項目、47公開資産を生成した。
 
-初期化が成功したら、`package.json`の依存情報は公式生成値になり、`pnpm install`でロックファイルを作る。setup時点ではGitの初期化やデプロイ、注文は行わない。
+## 文書のみのスナップショットを初期化する場合
+
+`node scripts/setup.mjs`は、公式scaffoldをまだ取り込んでいない文書のみのスナップショットで使う一回限りの補助スクリプト。この初期化済みチェックアウトでは実行しない。公式scaffolderを一時フォルダーで実行し、MDX、設定、画像、設計資料を保護して土台を取り込む。衝突があれば上書きせず停止する。依存導入はscaffold取り込みの後に別途行う。
 
 ## バージョンを指定する
 
-デフォルトのscaffolder指定は`latest`。再現性を必要とする場合、動作を確認したバージョンを明示する。
+scaffolderの指定版は`5.27.0`。別版を試す場合は動作確認した版を明示する。
 
 ```sh
 ZUDO_DOC_CLI_VERSION=確認したバージョン node scripts/setup.mjs
@@ -44,7 +43,9 @@ pnpm create zudo-doc zudo-case-doc-site --lang ja --no-i18n --no-git --no-instal
 
 生成先のスターター記事を確認してから、このセットの`src/content/docs/`、`public/`、`zfb.config.ts`を移す。`engineering/`、`project/`、`AGENTS.md`は作業資料として同じリポジトリへ入れる。既存サイトへ混ぜる場合はセットアップスクリプトを使わず、記事と設定を意図的に統合する。
 
-## 公開前の注意
+## 表示確認と公開前の注意
+
+2026-09-24のChrome 146.0.7680.153でdesktop 1440×900、narrow 390×844を確認した。41文書ルートと8カテゴリが両幅で表示され、narrowでは横はみ出しがなかった。検索・テーマ・画像・R8/R6プレビューの操作も確認済み。経路別の結果、非空ダウンロード、画面記録はリポジトリの`project/browser-validation.md`にまとめる。ビルドやブラウザーの表示確認は、嵌合・強度・運搬などの現物試験を代替しない。
 
 `noindex`は有効にしているが、アクセス制御ではない。`public/downloads/archive/`のソースZIPや見積画像を含め、**public以下は公開すると閲覧できる**。対外公開時は配布範囲を見直す。実装・構造の資料を勝手に秘密情報と断定してはいないが、どこまで公開するかは所有者が決める。
 
