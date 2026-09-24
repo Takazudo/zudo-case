@@ -1,9 +1,8 @@
 {
   "name": "zudo-case-doc",
-  "version": "0.0.0-handoff",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
-  "description": "ZUDO CASE設計・製作資料。公式zudo-doc初期化前のドキュメント引継ぎセット。",
   "engines": {
     "node": ">=22"
   },
@@ -13,7 +12,24 @@
     "check:assets": "node scripts/verify-assets.mjs",
     "sync:tables": "node scripts/sync-reference-tables.mjs",
     "test:setup": "node --test tests/setup.test.mjs",
-    "dev": "node scripts/needs-setup.mjs",
-    "build": "node scripts/needs-setup.mjs"
+    "dev": "zfb dev",
+    "build": "zfb build",
+    "preview": "zfb preview",
+    "check": "zfb check",
+    "check:links": "node scripts/check-links.js",
+    "check:images": "zudo-doc check images"
+  },
+  "dependencies": {
+    "@takazudo/zfb": "2.20.2",
+    "@takazudo/zfb-runtime": "2.20.2",
+    "@takazudo/zfb-md-wasm": "2.20.2",
+    "@takazudo/zudo-doc": "^5.27.0",
+    "zod": "^4.3.6",
+    "preact": "^10.29.1",
+    "preact-render-to-string": "^6.6.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^22.0.0"
   }
 }

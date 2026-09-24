@@ -1,0 +1,19 @@
+{
+  "name": "zudo-case-doc",
+  "version": "0.0.0-handoff",
+  "private": true,
+  "type": "module",
+  "description": "ZUDO CASE設計・製作資料。公式zudo-doc初期化前のドキュメント引継ぎセット。",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "check:docs": "node scripts/check-docs.mjs",
+    "check:assets": "node scripts/verify-assets.mjs",
+    "sync:tables": "node scripts/sync-reference-tables.mjs",
+    "test:setup": "node --test tests/setup.test.mjs",
+    "dev": "node scripts/needs-setup.mjs",
+    "build": "node scripts/needs-setup.mjs"
+  }
+}
