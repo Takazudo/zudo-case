@@ -1,6 +1,8 @@
 node_modules/
 dist/
 .zfb/
+.zfb-build/
+.zudo-doc/
 .cache/
 .DS_Store
 *.log
