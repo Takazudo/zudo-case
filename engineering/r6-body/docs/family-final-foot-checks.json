@@ -1,0 +1,65 @@
+{
+  "3u60": {
+    "commonPartCount": 147,
+    "feet": 4,
+    "footCenterInsetMm": 20,
+    "footDimensionsMm": [
+      10,
+      10,
+      3
+    ],
+    "floorZmm": -3,
+    "bottomScrewHeadLowestZmm": -1.4,
+    "nominalScrewHeadFloorClearanceMm": 1.6,
+    "minimumFootToBottomBoltCenterDistanceMm": 22.192341021172147,
+    "bottomBoltCount": 8,
+    "bottomNutsAndWashersInside": true,
+    "overallHeightIncludingFeetMm": {
+      "t1p2": 95.2,
+      "t1p0": 95.0
+    },
+    "builderFinalValidationStatus": "passed"
+  },
+  "7u40": {
+    "commonPartCount": 201,
+    "feet": 4,
+    "footCenterInsetMm": 20,
+    "footDimensionsMm": [
+      10,
+      10,
+      3
+    ],
+    "floorZmm": -3,
+    "bottomScrewHeadLowestZmm": -1.4,
+    "nominalScrewHeadFloorClearanceMm": 1.6,
+    "minimumFootToBottomBoltCenterDistanceMm": 22.192341021172147,
+    "bottomBoltCount": 10,
+    "bottomNutsAndWashersInside": true,
+    "overallHeightIncludingFeetMm": {
+      "t1p2": 95.2,
+      "t1p0": 95.0
+    },
+    "builderFinalValidationStatus": "passed"
+  },
+  "7u60": {
+    "commonPartCount": 201,
+    "feet": 4,
+    "footCenterInsetMm": 20,
+    "footDimensionsMm": [
+      10,
+      10,
+      3
+    ],
+    "floorZmm": -3,
+    "bottomScrewHeadLowestZmm": -1.4,
+    "nominalScrewHeadFloorClearanceMm": 1.6,
+    "minimumFootToBottomBoltCenterDistanceMm": 22.192341021172147,
+    "bottomBoltCount": 10,
+    "bottomNutsAndWashersInside": true,
+    "overallHeightIncludingFeetMm": {
+      "t1p2": 95.2,
+      "t1p0": 95.0
+    },
+    "builderFinalValidationStatus": "passed"
+  }
+}

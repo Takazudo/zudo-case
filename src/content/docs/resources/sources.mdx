@@ -1,0 +1,37 @@
+---
+title: "資料台帳と出典"
+description: "ユーザー指定、提供ファイル、外部ページを区別する。"
+sidebar_position: 50
+---
+
+## この文書の一次入力
+
+| ID | 内容 | 位置 |
+|---|---|---|
+| U01–U11 | 会話中のユーザー指定・実測の関連抜粋 | `project/source-notes/user-decisions.md` |
+| R6 | 本体３機種の提供ソースZIP | `engineering/r6-body/` |
+| R7 | M3蓋の旧ソースZIP | [アーカイブ](/downloads/archive/r7-m3-lid-source.zip) |
+| R8 | 採用した載せ蓋の提供ソースZIP | `engineering/r8-preview/` |
+| Q-R3 | 実際のJLC3DP見積画面 | [画像](/evidence/r3-jlc-quote.png) |
+| Q-R2 | 旧見積画面。縦辺の数量不足あり | [画像](/evidence/r2-jlc-quote-incomplete-quantity.png) |
+| SVG | 既存底面パネルの長穴例 | [原SVG](/evidence/original-zudo-block-bottom.svg) |
+
+元README：[R6](/evidence/r6-original-readme.md)、[R7](/evidence/r7-original-readme.md)、[R8](/evidence/r8-original-readme.md)。本文と相違があるときは、版の適用範囲を先に確認する。
+
+## 製品・組立の参照ページ
+
+[元zudo-block](https://takazudomodular.com/products/zb60-intro/) ／ [zudo-rail組立](https://takazudomodular.com/guides/how-to-build-zudo-rail/) ／ [10BOX組立](https://takazudomodular.com/guides/how-to-build-10box/) ／ [ケース構成例](https://panels.takazudomodular.com/case-models/)
+
+これらは会話での参照先。今回の整理で内容の再検証や設計寸法の再抽出はしていない。元STL/PCBの正確なURLとハッシュはR6の`source-data/`へ。
+
+## サイトの構成に用いた公式仕様
+
+[Installation](https://zudo-doc.takazudomodular.com/docs/getting-started/installation/) ／ [CLI](https://zudo-doc.takazudomodular.com/docs/reference/create-zudo-doc/) ／ [Configuration](https://zudo-doc.takazudomodular.com/docs/guides/configuration/) ／ [Writing Docs](https://zudo-doc.takazudomodular.com/docs/getting-started/writing-docs/) ／ [Sidebar](https://zudo-doc.takazudomodular.com/docs/guides/sidebar/)
+
+2026-09-24に取得できた公式検索内容を参照し、MDX、カテゴリindex、相対リンク、設定API、非対話初期化を使う形にした。npmレジストリはDNSエラーのため、ビルドはローカルで行う。
+
+実例として挙げられた[テスト文書](https://zudo-test-wisdom.takazudomodular.com/)、[CSS文書](https://zudo-css-wisdom.takazudomodular.com/)、[LEDランプ文書](https://zudo-led-lamp.takazudomodular.com/)のうち、今回の整理軸は設計・判断・BOM・検証を分ける形を採った。本文の転記は行っていない。
+
+## 根拠を失わない更新
+
+外部URLだけでなく、対象版のファイル名、数量、画面、日付、通貨・税条件も残す。`project/sources.json`は出典台帳、`project/artifact-manifest.json`はローカルコピーのハッシュ台帳。新しい実見積が来ても、古い試算は履歴として残す。

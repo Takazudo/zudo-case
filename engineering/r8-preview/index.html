@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>ZUDO CASE / Simple lid + travel bands</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+ <div class="brand"><span class="logo">Z</span><div><h1>ZUDO CASE <span>/ SIMPLE LID</span></h1><p>10BOX式の載せ蓋 + 持ち運ぶときだけ、外周バンド。</p></div></div>
+ <div class="revision">R8 <span>CONCEPT PREVIEW</span></div>
+</header>
+<main>
+ <section class="viewer" id="viewer">
+  <div id="mainCanvas" class="main-canvas"></div>
+  <div class="top-overlay"><div class="model-label" id="modelLabel">7U / 40HP</div><div class="status"><i id="statusDot"></i><strong id="statusText">載せ蓋</strong><span id="motionText"></span></div></div>
+  <div class="view-buttons"><button data-view="iso" class="selected">全体</button><button data-view="front">手前</button><button data-view="back">奥</button><button data-view="top">上面</button><button data-view="bottom">底面</button><button id="saveImage" title="現在の3D表示をPNGで保存">PNG</button></div>
+  <p class="viewer-caption" id="viewerCaption">位置決めだけ。ネジやロックを操作せず、真上へ外します。</p>
+  <div class="selection" id="selection" hidden></div>
+  <div class="markers" id="markers"></div>
+  <div class="inset" id="inset" hidden>
+    <div class="inset-head"><strong>前後の差し込み / 模式断面</strong><button id="closeDetail" aria-label="拡大窓を閉じる">×</button></div>
+    <div id="detailCanvas" class="detail-canvas"></div>
+    <div class="inset-caption">青い段差が隙間へ入るだけ。爪やねじ込みはありません。</div>
+  </div>
+  <div class="controls-help">ドラッグで回転 · スクロールで拡大 · 右ドラッグで移動<br>部品をクリックすると名称を表示</div>
+  <div class="loading" id="loading"><span class="spinner"></span>3機種のモデルを読み込み中…</div>
+  <div class="error" id="error" hidden><h2>3Dを表示できませんでした</h2><p id="errorText"></p><p>WebGL2対応のブラウザーで開いてください。ZIP版は全ファイルを展開してください。</p></div>
+ </section>
+ <aside>
+  <section class="section">
+   <h2><span>01</span> ケース</h2>
+   <select id="model" aria-label="ケースを選択"><option value="7u40">3U＋3U＋1U / 40HP</option><option value="3u60">3U / 60HP</option><option value="7u60">3U＋3U＋1U / 60HP</option></select>
+   <p class="dimensions" id="dimensions"></p>
+   <div class="spec-chips"><span>8mmスペーサー</span><span>前後 約8mmの余白</span></div>
+  </section>
+  <section class="section">
+   <h2><span>02</span> 使う場面</h2>
+   <button class="option selected" data-preset="daily"><span class="option-icon">01</span><span><strong>日常 / 蓋を載せる</strong><small>前後の段差で位置決め。ロックなし。</small></span></button>
+   <button class="option" data-preset="travel"><span class="option-icon">02</span><span><strong>運搬 / バンド2本</strong><small>外周を巻いて、蓋の抜けを押さえる。</small></span></button>
+   <button class="option" data-preset="open"><span class="option-icon">03</span><span><strong>使用中 / 蓋を外す</strong><small>バンドを外して、真上へ持ち上げる。</small></span></button>
+   <p class="compact-note">蓋をずらす操作や、固定フックはありません。天板の組立ネジは開閉時に触りません。</p>
+  </section>
+  <section class="section">
+   <h2><span>03</span> 蓋を動かす</h2>
+   <div class="play-row"><button id="play" class="primary">▶ 外す動きを再生</button><button id="closeLid">載せる</button></div>
+   <label class="range-label" for="lift">持ち上げ量 <output id="liftValue">0 mm</output></label>
+   <input type="range" id="lift" min="0" max="150" step="1" value="0">
+   <div class="check-row"><label class="check"><input type="checkbox" id="bands">バンド2本を表示</label><label class="check"><input type="checkbox" id="hideLid">蓋なし</label></div>
+   <p class="small" id="bandBehavior">蓋を持ち上げると、バンドは外した表示へ切り替えます。</p>
+   <div class="state-note"><strong id="phaseTitle">日常は載せるだけ</strong><p id="phaseDesc">差し込み部は横ずれを抑えるためのものです。持ち運ぶ際はバンドで保持します。</p></div>
+  </section>
+  <section class="section">
+   <h2><span>04</span> 構造を確認する</h2>
+   <label class="check"><input type="checkbox" id="ghost">外板・天板を透かす</label>
+   <label class="check"><input type="checkbox" id="colors">差し込み部とバンドを色分け</label>
+   <label class="check"><input type="checkbox" id="detailCheck">差し込み断面を拡大表示</label>
+   <label class="check"><input type="checkbox" id="labels">部品のラベル</label>
+   <label class="check"><input type="checkbox" id="clearance">ノブ25mmの仮の確認領域</label>
+   <div class="legend"><span><i class="blue"></i>位置決め用の段差</span><span><i class="orange"></i>別体の運搬バンド</span></div>
+  </section>
+  <section class="section explanation">
+   <h2><span>05</span> 今回の変更</h2>
+   <p>フタ本体はアルミ1枚＋黒PA12枠。前後の段差をレールとの隙間へ下ろす、10BOXと同じ位置決めの考え方です。</p>
+   <div class="callout"><strong>ケースとのロック機構は0個。</strong><br>M3補助固定・ナット受け・回転爪・スライダー・奥側フックを外しました。</div>
+   <dl class="spec-list"><div><dt>蓋の高さ</dt><dd>30mmを維持</dd></div><div><dt>バンド</dt><dd>汎用品 × 2本（模式）</dd></div><div><dt>モデルのバンド幅</dt><dd>20mm</dd></div><div><dt>巻き方向</dt><dd id="bandAxisText"></dd></div></dl>
+   <p class="small" id="bandLength"></p>
+   <details><summary>前提・未確認の点</summary><p>R6/R7の本体・レール・PCB寸法を引き継ぎました。前後板は蓋ロック穴を描かない状態へ戻しています。蓋枠の段差は今回のプレビュー用に作り直しています。</p><p>バンドは外観と配置のイメージです。特定の市販品の形状、締付力、バックル、重なり代、たわみを再現したものではありません。伸縮素材でも面ファスナーでも、現物で長さと保持を確認します。</p><p>パッチケーブルを抜いて閉じる前提です。蓋高さ30mm、モジュールパネル2mm＋ノブ25mmを仮定しており、搭載モジュールでの確認が必要です。</p><p>3DPのはめ合い、樹脂の保持、バンドのずれ止め、締めた際の天板のたわみ、衝撃や輸送時の保持力は未検証です。蓋やバンドを持ち手にする設計ではありません。</p><p>この版はプレビュー専用です。以前の製作用STL・STEP・DXFは更新していません。古いロック付きデータを最終案として発注しないでください。</p></details>
+  </section>
+  <footer>TAKAZUDO MODULAR <span>R8 / SIMPLE LID + TRAVEL BANDS</span><button id="resetAll">表示をリセット</button></footer>
+ </aside>
+</main>
+<script src="three-bundle.js"></script>
+<script src="model-data.js"></script>
+<script src="app.js"></script>
+</body></html>

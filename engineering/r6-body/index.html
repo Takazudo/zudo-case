@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>ZUDO CASE — 3U / 7U 構造プレビュー</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">Z</div>
+      <div class="brand-text"><h1>ZUDO <span>CASE STUDY</span></h1><p class="subtitle" id="modelSubtitle">3U＋3U＋1U / 40HP</p></div>
+    </div>
+    <div class="header-actions"><span class="revision-label"><i class="status-dot" aria-hidden="true"></i> R6 / 8mmスペーサー</span><button id="screenshotButton" type="button">画像を保存</button><button id="helpButton" type="button">操作ガイド</button></div>
+  </header>
+  <main class="workspace">
+    <section class="viewer-panel" aria-label="ケースの3Dプレビュー">
+      <div id="viewport"></div>
+      <div class="view-toolbar" role="group" aria-label="視点">
+        <button type="button" data-view="iso" class="active">斜め</button>
+        <button type="button" data-view="front">正面</button>
+        <button type="button" data-view="side">側面</button>
+        <button type="button" data-view="top">上面</button>
+        <button type="button" data-view="bottom">底面</button>
+        <button type="button" id="fitButton">全体を収める</button>
+      </div>
+      <div class="scene-meta"><span id="modelBadge" class="scene-pill">7U / 40HP</span><span id="variantBadge" class="scene-pill">R6 / 1.2 mm</span><span id="finishBadge" class="scene-pill">黒アルマイト</span></div>
+      <div id="selectedCard" class="inspector hidden" role="region" aria-label="選択した部品">
+        <button id="clearSelection" class="inspector-close" type="button" aria-label="部品の選択を解除">×</button>
+        <p id="selectedCategory" class="inspector-category"></p><h3 id="selectedName"></h3>
+        <p id="selectedDimensions" class="inspector-dimensions"></p><p id="selectedNote" class="inspector-note"></p>
+        <div class="inspector-actions"><button id="focusPartButton" type="button">この部品に寄る</button><button id="downloadPartButton" type="button" hidden>STLを保存</button></div>
+      </div>
+      <div class="viewer-footer"><span class="interaction-hint">ドラッグ：回転　スクロール：拡大　右ドラッグ：移動　クリック：部品</span><span id="sceneStatus" aria-live="polite">モデルを読み込み中</span></div>
+      <div id="loadingState" class="loading-state"><span class="loader" aria-hidden="true"></span><span>ケースを組み立てています</span></div>
+      <div id="webglError" class="error-panel" role="alert" hidden><h2>3D表示を開始できませんでした</h2><p>WebGLを利用できるChrome、Edge、Safariなどで開いてください。</p><pre id="errorDetails"></pre></div>
+    </section>
+    <aside class="controls-panel" aria-label="表示の設定">
+      <section class="panel-section model-section">
+        <h2><span class="section-number">01</span> ケースを選ぶ</h2>
+        <div class="model-options" role="group" aria-label="ケース構成">
+          <button type="button" data-model="7u40" aria-pressed="true"><strong>7U / 40HP</strong><span>3U＋3U＋1U</span></button>
+          <button type="button" data-model="7u60" aria-pressed="false"><strong>7U / 60HP</strong><span>3U＋3U＋1U</span></button>
+          <button type="button" data-model="3u60" aria-pressed="false"><strong>3U / 60HP</strong><span>1列</span></button>
+        </div>
+        <p class="model-size" id="modelSize">—</p>
+        <p class="section-help" id="modelDescription">３列が同じ高さに並ぶ、奥行のあるトレー形状です。</p>
+      </section>
+      <section class="panel-section">
+        <h2><span class="section-number">02</span> ガード仕様</h2>
+        <div class="segmented" role="group" aria-label="ガード仕様を切り替え">
+          <button type="button" data-variant="t1p2" aria-pressed="true"><strong>標準案</strong><span>1.2 mm</span></button>
+          <button type="button" data-variant="t1p0" aria-pressed="false"><strong>薄肉案</strong><span>1.0 mm</span></button>
+        </div>
+        <div class="metrics-row"><div class="metric"><label>PA12体積</label><strong id="volumeValue">— <small>cm³</small></strong></div><div class="metric"><label>板を覆う幅</label><strong id="coverageValue">5 <small>mm</small></strong></div></div>
+        <p class="quote-note" id="quoteNote">更新した寸法での参考体積</p>
+      </section>
+      <section class="panel-section">
+        <h2><span class="section-number">03</span> 組み立てを確認</h2>
+        <div class="preset-grid" role="group" aria-label="構造の表示方法"><button type="button" data-preset="assembled" class="active">組立</button><button type="button" data-preset="exploded">分解</button><button type="button" data-preset="rail">レール脱着</button></div>
+        <div class="control-row"><label for="explodeSlider">全体を分解</label><output id="explodeValue" for="explodeSlider">0%</output></div>
+        <input class="range" id="explodeSlider" type="range" min="0" max="100" step="1" value="0">
+        <div class="control-row"><label for="railLiftSlider">レールユニットを持ち上げる</label><output id="railLiftValue" for="railLiftSlider">0 mm</output></div>
+        <input class="range" id="railLiftSlider" type="range" min="0" max="140" step="1" value="0">
+        <p class="section-help">固定ボルトは内側へ、スペーサー・外ワッシャー・ナットは外側へ分離します。</p>
+      </section>
+      <section class="panel-section">
+        <h2><span class="section-number">04</span> 表示する部品</h2>
+        <div class="layer-list">
+          <label class="layer-toggle"><input type="checkbox" data-category="metal" checked><span class="layer-swatch" data-swatch="metal"></span><span class="layer-name">アルミ外板</span><span class="layer-count" data-count="metal">5</span></label>
+          <label class="layer-toggle"><input type="checkbox" data-category="guards" checked><span class="layer-swatch" data-swatch="guards"></span><span class="layer-name">PA12ガード</span><span class="layer-count" data-count="guards">12</span></label>
+          <label class="layer-toggle"><input type="checkbox" data-category="rails" checked><span class="layer-swatch" data-swatch="rails"></span><span class="layer-name">レール・固定パネル</span><span class="layer-count" data-count="rails">6</span></label>
+          <label class="layer-toggle"><input type="checkbox" data-category="spacers" checked><span class="layer-swatch" data-swatch="spacers"></span><span class="layer-name">スペーサー・ワッシャー</span><span class="layer-count" data-count="spacers">8</span></label>
+          <label class="layer-toggle"><input type="checkbox" data-category="feet" checked><span class="layer-swatch" data-swatch="feet"></span><span class="layer-name">ゴム脚（仮配置）</span><span class="layer-count" data-count="feet">4</span></label>
+          <label class="layer-toggle"><input type="checkbox" data-category="brackets" checked><span class="layer-swatch" data-swatch="brackets"></span><span class="layer-name">L字ブラケット</span><span class="layer-count" data-count="brackets">16</span></label>
+          <label class="layer-toggle"><input type="checkbox" data-category="fasteners" checked><span class="layer-swatch" data-swatch="fasteners"></span><span class="layer-name">ボルト・ナット</span><span class="layer-count" data-count="fasteners">36</span></label>
+        </div>
+        <div class="inline-buttons"><button id="showAllButton" type="button">すべて表示</button><button id="guardsOnlyButton" type="button">ガードのみ</button><button id="insideButton" type="button">内部を見る</button></div>
+      </section>
+      <section class="panel-section">
+        <h2><span class="section-number">05</span> 見え方</h2>
+        <div class="select-row"><label for="finishSelect">配色</label><select id="finishSelect"><option value="black">黒アルマイト＋黒ナイロン</option><option value="parts">部品ごとの識別色</option><option value="silver">外板をシルバーで確認</option></select></div>
+        <div class="control-row"><label for="opacitySlider">アルミ外板の不透明度</label><output id="opacityValue" for="opacitySlider">100%</output></div><input class="range" id="opacitySlider" type="range" min="10" max="100" step="1" value="100">
+        <div class="select-row"><label for="sectionSelect">断面</label><select id="sectionSelect"><option value="none">カットなし</option><option value="front">前半をカット（Y = 0）</option><option value="right">右半分をカット（X = 0）</option></select></div>
+        <div class="check-row"><label><input id="edgesCheck" type="checkbox" checked>輪郭線</label><label><input id="dimensionsCheck" type="checkbox">アルミ外形寸法</label></div>
+      </section>
+      <section class="panel-section">
+        <details id="partsDetails" open><summary>ガード部品とSTL</summary><div class="detail-body"><table class="parts-table"><thead><tr><th>部品</th><th>数量</th><th>STL</th></tr></thead><tbody id="partsTable"></tbody></table><p class="section-help">部品名で選択、STLで選択中のケースの単体データを保存できます。</p></div></details>
+      </section>
+      <section class="panel-section">
+        <details id="specDetails"><summary>寸法・積層・出典</summary><div class="detail-body">
+          <table class="parts-table"><tbody id="specTable"></tbody></table>
+          <h3 class="detail-heading">外箱取付の順序</h3>
+          <ol class="stack-list">
+            <li><strong>M5平頭ネジの頭</strong><span>厚さ1.4mm・padderの窓内</span></li>
+            <li><strong id="stackFixerName">7U fixer</strong><span id="stackFixer">PCB 1.6 mm</span></li>
+            <li><strong>ナイロンスペーサー</strong><span>８mm</span></li>
+            <li><strong>アルミ外板</strong><span>1.5 mm</span></li>
+            <li><strong>ナイロンワッシャー</strong><span>１mm</span></li>
+            <li><strong>ロックナット</strong><span>ケース外側</span></li>
+          </ol>
+          <p class="section-help">padderはfixerの内側で頭を逃がします。頭の座面から外側ワッシャーまでの積層には含めません。</p>
+          <ul class="assumption-list" id="assumptionsList"></ul>
+          <h3 class="detail-heading">一次データ</h3>
+          <p class="source-links"><a href="https://github.com/Takazudo/zudo-rail/blob/main/working/nuts-v2-40hp-single.stl" target="_blank" rel="noopener">40HPレール</a> · <a href="https://github.com/Takazudo/zudo-rail/blob/main/working/nuts-v2-60hp-single.stl" target="_blank" rel="noopener">60HPレール</a> · <a href="https://github.com/Takazudo/zudo-blanks/tree/main/panels/zb-side-frame-7u" target="_blank" rel="noopener">7U fixer</a> · <a href="https://github.com/Takazudo/zudo-blanks/tree/main/panels/zb-side-frame-3u" target="_blank" rel="noopener">3U fixer</a> · <a href="https://github.com/Takazudo/zudo-blanks/tree/main/panels/zb-side-frame-pad-3u" target="_blank" rel="noopener">3U padder</a> · <a href="https://github.com/Takazudo/zudo-blanks/tree/main/panels/zb-side-frame-pad-1u" target="_blank" rel="noopener">1U padder</a></p>
+        </div></details>
+      </section>
+      <section class="panel-section" id="helpSection"><details id="helpDetails"><summary>操作ガイド</summary><div class="detail-body"><p>左ドラッグで回転、ホイールで拡大・縮小、右ドラッグで平行移動。タッチでは１本指で回転、２本指で拡大・移動できます。</p><p>部品をクリックすると寸法と説明が出ます。「この部品に寄る」で細部を確認できます。全体へ戻るときは「全体を収める」を押してください。</p><p>断面表示は部品を切って内部を見せる表示です。切断面の蓋は生成していません。</p><p>３機種とも今回の寸法で再生成したSTLです。表示体積はケース１台分のガード合計で、価格は各モデルのSTLを使って再見積してください。</p></div></details></section>
+      <div class="panel-bottom"><span>TAKAZUDO MODULAR / CASE FAMILY</span><button id="resetButton" type="button">表示をリセット</button></div>
+    </aside>
+  </main>
+</div>
+<script src="vendor/three-bundle.js"></script>
+<script src="mesh-data.js"></script>
+<script src="stl-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

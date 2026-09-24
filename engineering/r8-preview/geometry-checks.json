@@ -1,0 +1,41 @@
+{
+  "3u60": {
+    "bodyMetalPanels": 5,
+    "lidFrames": 4,
+    "lidToBodyLocks": 0,
+    "assemblyTopBolts": 8,
+    "locatorToGuardMm": 0.6999999999999886,
+    "locatorToRailUnitEnvelopeMm": 4.53407,
+    "locatorToHighestBracketMm": 5.700000000000003,
+    "frameBRepValid": true,
+    "frontBackExtraLockHoles": 0,
+    "sourcePreserved": "body/rail/PCB meshes from R6/R7; front/back panels rebuilt with original M5 holes only",
+    "previewNotManufacturing": true
+  },
+  "7u40": {
+    "bodyMetalPanels": 5,
+    "lidFrames": 4,
+    "lidToBodyLocks": 0,
+    "assemblyTopBolts": 8,
+    "locatorToGuardMm": 0.7000000000000028,
+    "locatorToRailUnitEnvelopeMm": 4.422772000000009,
+    "locatorToHighestBracketMm": 5.700000000000003,
+    "frameBRepValid": true,
+    "frontBackExtraLockHoles": 0,
+    "sourcePreserved": "body/rail/PCB meshes from R6/R7; front/back panels rebuilt with original M5 holes only",
+    "previewNotManufacturing": true
+  },
+  "7u60": {
+    "bodyMetalPanels": 5,
+    "lidFrames": 4,
+    "lidToBodyLocks": 0,
+    "assemblyTopBolts": 8,
+    "locatorToGuardMm": 0.6999999999999886,
+    "locatorToRailUnitEnvelopeMm": 4.422772000000009,
+    "locatorToHighestBracketMm": 5.700000000000003,
+    "frameBRepValid": true,
+    "frontBackExtraLockHoles": 0,
+    "sourcePreserved": "body/rail/PCB meshes from R6/R7; front/back panels rebuilt with original M5 holes only",
+    "previewNotManufacturing": true
+  }
+}

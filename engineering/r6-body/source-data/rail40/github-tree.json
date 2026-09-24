@@ -1,0 +1,133 @@
+{
+  "sha": "0f7316ad9000b7906e5769aa89aff2dc18c661c8",
+  "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/trees/0f7316ad9000b7906e5769aa89aff2dc18c661c8",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e43b0f988953ae3a84b00331d0ccf5f7d51cb3cf",
+      "size": 10,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/e43b0f988953ae3a84b00331d0ccf5f7d51cb3cf"
+    },
+    {
+      "path": "working",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c715feba151ec0f3121985e9dd89a8680bfa3cd8",
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/trees/c715feba151ec0f3121985e9dd89a8680bfa3cd8"
+    },
+    {
+      "path": "working/_old",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ac332ec860dc6d632802d5ee2c8bc2b0e6ed1c83",
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/trees/ac332ec860dc6d632802d5ee2c8bc2b0e6ed1c83"
+    },
+    {
+      "path": "working/_old/nuts-v2-40hp-double.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24ecdaaf31e579929e0e4f183db33d4bc71eb2e5",
+      "size": 53884,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/24ecdaaf31e579929e0e4f183db33d4bc71eb2e5"
+    },
+    {
+      "path": "working/_old/nuts-v2-60hp-double.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5c6015ba45aed7297f7bf7c3cc8e2e92730cec5",
+      "size": 53884,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/c5c6015ba45aed7297f7bf7c3cc8e2e92730cec5"
+    },
+    {
+      "path": "working/_old/nylon-v2-40hp-double.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb3a89d54186a4e751228ef2d80cb3a0f8e192fc",
+      "size": 17084,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/fb3a89d54186a4e751228ef2d80cb3a0f8e192fc"
+    },
+    {
+      "path": "working/_old/nylon-v2-60hp-double.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acb3e060cddeff7fa901a23bd89d1b963a484c62",
+      "size": 17084,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/acb3e060cddeff7fa901a23bd89d1b963a484c62"
+    },
+    {
+      "path": "working/bar-30hp.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30fcd5980d05df472fc0b5cab4a8e7665c424cb0",
+      "size": 168884,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/30fcd5980d05df472fc0b5cab4a8e7665c424cb0"
+    },
+    {
+      "path": "working/bar-40hp.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01a7077be85267d557eef6b1ba9b8ee96b6434c3",
+      "size": 224684,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/01a7077be85267d557eef6b1ba9b8ee96b6434c3"
+    },
+    {
+      "path": "working/bar-60hp.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b044213924233761ecbc3bae9db7c9720b377f4",
+      "size": 288684,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/7b044213924233761ecbc3bae9db7c9720b377f4"
+    },
+    {
+      "path": "working/nuts-v2-40hp-double.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc506693f6f949ca0b5e21584d875e642ba9a575",
+      "size": 85584,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/cc506693f6f949ca0b5e21584d875e642ba9a575"
+    },
+    {
+      "path": "working/nuts-v2-40hp-single.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b10e9856af6bf75967936bda7537d12525992ffc",
+      "size": 29684,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/b10e9856af6bf75967936bda7537d12525992ffc"
+    },
+    {
+      "path": "working/nuts-v2-60hp-double.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6248133b93da529eb1856740106475dd19cb329",
+      "size": 84784,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/b6248133b93da529eb1856740106475dd19cb329"
+    },
+    {
+      "path": "working/nuts-v2-60hp-single.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2211e79d32fe3385748f2dd78073551fce44bc63",
+      "size": 29684,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/2211e79d32fe3385748f2dd78073551fce44bc63"
+    },
+    {
+      "path": "working/nylon-v2-40hp-double.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdaf83d7c6196e64b28265ff0fc439198863f21f",
+      "size": 17084,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/cdaf83d7c6196e64b28265ff0fc439198863f21f"
+    },
+    {
+      "path": "working/nylon-v2-60hp-double.stl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57d665920c6db1659b89aaec674ac6ce0502ce52",
+      "size": 17084,
+      "url": "https://api.github.com/repos/Takazudo/zudo-rail/git/blobs/57d665920c6db1659b89aaec674ac6ce0502ce52"
+    }
+  ],
+  "truncated": false
+}

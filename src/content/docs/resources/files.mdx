@@ -1,0 +1,44 @@
+---
+title: "版別ファイルとダウンロード"
+description: "採用方針、参照CAD、不採用アーカイブを区別する。"
+sidebar_position: 30
+---
+
+## 現在使う起点
+
+| データ | 保存場所／リンク | 用途 |
+|---|---|---|
+| R8単一HTML | [プレビュー](/previews/r8-simple-lid.html) | 採用意図の確認 |
+| R8編集ソース | `engineering/r8-preview/` | 載せ蓋の再CAD化の参考 |
+| R6本体CADと元形状 | `engineering/r6-body/` | 本体・レール・ガードの修正起点 |
+| 現在の仕様台帳 | `project/current-spec.json` | 共通値、機種寸法、データ状態 |
+| 承認ファイル | `engineering/release/` | **現状は空** |
+
+## R6・本体ガード
+
+| 機種 | 1.2mm | 1.0mm | 数量 |
+|---|---|---|---|
+| 3U60 | [ZIP](/downloads/reference/3u60-r6-guards-t1p2-NOT-RELEASED.zip) | [ZIP](/downloads/reference/3u60-r6-guards-t1p0-NOT-RELEASED.zip) | 2/4/2/4 |
+| 7U40 | [ZIP](/downloads/reference/7u40-r6-guards-t1p2-NOT-RELEASED.zip) | [ZIP](/downloads/reference/7u40-r6-guards-t1p0-NOT-RELEASED.zip) | 2/2/4/2/2/4 |
+| 7U60 | [ZIP](/downloads/reference/7u60-r6-guards-t1p2-NOT-RELEASED.zip) | [ZIP](/downloads/reference/7u60-r6-guards-t1p0-NOT-RELEASED.zip) | 2/2/4/2/2/4 |
+
+元STLのバイトは変更していない。ZIPに用途警告を加えている。`NOT-RELEASED`は壊れたファイルという意味でなく、製作承認前であることを示す。
+
+## R6・アルミ板の相談用データ
+
+[3U60](/downloads/reference/3u60-r6-aluminum-NOT-RELEASED.zip) ／ [7U40](/downloads/reference/7u40-r6-aluminum-NOT-RELEASED.zip) ／ [7U60](/downloads/reference/7u60-r6-aluminum-NOT-RELEASED.zip)
+
+底１枚、前後２枚、左右２枚分。**丸穴のままで長穴未反映**。そのまま製造開始を指示しない。R8蓋は入っていない。
+
+## 不採用案のアーカイブ
+
+| データ | リンク | 注意 |
+|---|---|---|
+| R7・M3固定蓋の全ソース | [旧仕様ZIP](/downloads/archive/r7-m3-lid-source.zip) | 本体前後のM3追加穴とロック部は不採用 |
+| 回転/スライドロック比較 | [比較ソースZIP](/downloads/archive/rotation-slide-study.zip) | ラフな検討モデル。最終案に混ぜない |
+
+元ZIPは変更せず保持する。その中の「現行」「製作用」等は作成当時の意味であり、このサイトの採用仕様を示さない。
+
+初期R1〜R5の全生成物はこの整理セットへ重複収録していない。主要な変更理由は[履歴](../decisions/history.mdx)に保存している。R6以降の判断・修正に必要な元レールとPCBは収録済み。
+
+`project/artifact-manifest.json`に、同梱ファイルと出典のSHA-256を記録する。資料整理で機械部品を更新したと誤認しないよう、元版番号は維持した。

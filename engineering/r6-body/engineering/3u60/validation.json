@@ -1,0 +1,435 @@
+{
+  "aluminumDXF": [
+    {
+      "file": "engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.dxf",
+      "units": "mm",
+      "holeCount": 8,
+      "auditErrors": 0,
+      "auditFixes": 0,
+      "closedOutline": true
+    },
+    {
+      "file": "engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.dxf",
+      "units": "mm",
+      "holeCount": 6,
+      "auditErrors": 0,
+      "auditFixes": 0,
+      "closedOutline": true
+    },
+    {
+      "file": "engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.dxf",
+      "units": "mm",
+      "holeCount": 8,
+      "auditErrors": 0,
+      "auditFixes": 0,
+      "closedOutline": true
+    }
+  ],
+  "panelCount": 5,
+  "panelHoleCount": 36,
+  "bracketCount": 16,
+  "commonCategoryCounts": {
+    "metal": 5,
+    "brackets": 16,
+    "rails": 6,
+    "spacers": 40,
+    "fasteners": 76,
+    "feet": 4
+  },
+  "commonRoleCounts": {
+    "aluminumPanel": 5,
+    "panelBracket": 16,
+    "rail": 2,
+    "fixer": 2,
+    "padder": 2,
+    "innerSpacer": 4,
+    "outerWasher": 4,
+    "mountBolt": 4,
+    "mountNut": 4,
+    "railEndBolt": 4,
+    "panelJointBolt": 32,
+    "panelJointWasher": 32,
+    "panelJointNut": 32,
+    "foot": 4
+  },
+  "guardSTLs": [
+    {
+      "file": "stl/3u60/t1p2/3u60_r6_t1p2_01_top_u_qty2_mm.stl",
+      "triangleCount": 528,
+      "closedManifold": true,
+      "edgeIncidenceHistogram": {
+        "2": 792
+      },
+      "positiveVolume": true,
+      "meshVolumeCm3": 5.04319763690175,
+      "cadVolumeCm3": 5.04320695797039,
+      "absoluteVolumeErrorCm3": 9.321068639110308e-06,
+      "dimensionsMm": [
+        166.39999389648438,
+        156.39999389648438,
+        6.199999809265137
+      ]
+    },
+    {
+      "file": "stl/3u60/t1p2/3u60_r6_t1p2_02_lower_width_half_qty4_mm.stl",
+      "triangleCount": 232,
+      "closedManifold": true,
+      "edgeIncidenceHistogram": {
+        "2": 348
+      },
+      "positiveVolume": true,
+      "meshVolumeCm3": 2.230699300858502,
+      "cadVolumeCm3": 2.2307024407022924,
+      "absoluteVolumeErrorCm3": 3.1398437899952115e-06,
+      "dimensionsMm": [
+        166.39999389648438,
+        6.1999998092651225,
+        6.199999809265114
+      ]
+    },
+    {
+      "file": "stl/3u60/t1p2/3u60_r6_t1p2_03_lower_depth_full_qty2_mm.stl",
+      "triangleCount": 244,
+      "closedManifold": true,
+      "edgeIncidenceHistogram": {
+        "2": 366
+      },
+      "positiveVolume": true,
+      "meshVolumeCm3": 1.990412926842483,
+      "cadVolumeCm3": 1.990415573684666,
+      "absoluteVolumeErrorCm3": 2.6468421829122237e-06,
+      "dimensionsMm": [
+        6.199999809265137,
+        154.0,
+        6.199999809265137
+      ]
+    },
+    {
+      "file": "stl/3u60/t1p2/3u60_r6_t1p2_04_vertical_corner_qty4_mm.stl",
+      "triangleCount": 232,
+      "closedManifold": true,
+      "edgeIncidenceHistogram": {
+        "2": 348
+      },
+      "positiveVolume": true,
+      "meshVolumeCm3": 1.0858572716171178,
+      "cadVolumeCm3": 1.0858587601976257,
+      "absoluteVolumeErrorCm3": 1.4885805080666613e-06,
+      "dimensionsMm": [
+        6.199999809265137,
+        6.199999809265137,
+        81.0
+      ]
+    },
+    {
+      "file": "stl/3u60/t1p0/3u60_r6_t1p0_01_top_u_qty2_mm.stl",
+      "triangleCount": 528,
+      "closedManifold": true,
+      "edgeIncidenceHistogram": {
+        "2": 792
+      },
+      "positiveVolume": true,
+      "meshVolumeCm3": 4.100136149053297,
+      "cadVolumeCm3": 4.10014242700224,
+      "absoluteVolumeErrorCm3": 6.277948942624789e-06,
+      "dimensionsMm": [
+        166.1999969482422,
+        156.0,
+        6.0
+      ]
+    },
+    {
+      "file": "stl/3u60/t1p0/3u60_r6_t1p0_02_lower_width_half_qty4_mm.stl",
+      "triangleCount": 232,
+      "closedManifold": true,
+      "edgeIncidenceHistogram": {
+        "2": 348
+      },
+      "positiveVolume": true,
+      "meshVolumeCm3": 1.822490216979879,
+      "cadVolumeCm3": 1.8224933079610672,
+      "absoluteVolumeErrorCm3": 3.090981188506703e-06,
+      "dimensionsMm": [
+        166.1999969482422,
+        6.0,
+        6.0
+      ]
+    },
+    {
+      "file": "stl/3u60/t1p0/3u60_r6_t1p0_03_lower_depth_full_qty2_mm.stl",
+      "triangleCount": 244,
+      "closedManifold": true,
+      "edgeIncidenceHistogram": {
+        "2": 366
+      },
+      "positiveVolume": true,
+      "meshVolumeCm3": 1.6290529245727414,
+      "cadVolumeCm3": 1.6290555736846768,
+      "absoluteVolumeErrorCm3": 2.6491119353977412e-06,
+      "dimensionsMm": [
+        6.0,
+        154.0,
+        6.0
+      ]
+    },
+    {
+      "file": "stl/3u60/t1p0/3u60_r6_t1p0_04_vertical_corner_qty4_mm.stl",
+      "triangleCount": 232,
+      "closedManifold": true,
+      "edgeIncidenceHistogram": {
+        "2": 348
+      },
+      "positiveVolume": true,
+      "meshVolumeCm3": 0.888217270072167,
+      "cadVolumeCm3": 0.88821876019763,
+      "absoluteVolumeErrorCm3": 1.4901254629648975e-06,
+      "dimensionsMm": [
+        6.0,
+        6.0,
+        81.0
+      ]
+    }
+  ],
+  "cadInterferenceChecks": {
+    "scope": "metal / measured-thickness bracket geometry / exact PCB / each guard variant; source rail excluded from BREP tests",
+    "results": [
+      {
+        "variant": "t1p2",
+        "partCount": 41,
+        "interferences": []
+      },
+      {
+        "variant": "t1p0",
+        "partCount": 41,
+        "interferences": []
+      }
+    ],
+    "candidatePairsEvaluated": 132,
+    "maxIntersectionVolumeMm3": 0.0
+  },
+  "hardwareChecks": {
+    "scope": "all inner bolt heads and shafts against PCB solids and each other; raw rail thread engagement excluded",
+    "candidatePairsEvaluated": 16,
+    "interferences": []
+  },
+  "clearanceAllowanceStudy": {
+    "bracketPhysicalThicknessMm": 2,
+    "bracketOccupiedThicknessMm": 2.2,
+    "headHeightMm": 1.4,
+    "railHeadDiameterStudyMm": 12,
+    "bracketHeadDiameterStudyMm": 12,
+    "candidatePairsEvaluated": 0,
+    "interferences": [],
+    "railToRailHeadStudyInterferences": [],
+    "railToRailHeadStudyNote": "直径12mmは未測定の追加仮定。7Uの隣接行軸間11.9960175mmで微小重複する。既存組立の実頭径とは区別し、ケース対ブラケットの干渉判定に混同しない。",
+    "conservativeFacingHeadXGapMm": 3.0000000000000004,
+    "conservativeFrontBackPcbGapMm": 4.634070000000003,
+    "basis": "Measured 2mm bracket is represented physically. 2.2mm occupancy adds 0.2mm inward to head seats; end head diameter12 is a conservative study, not measured."
+  },
+  "bottomFastenersAndFeet": {
+    "headSide": "outside",
+    "washerNutSide": "inside",
+    "footCount": 4,
+    "footDiameterMm": 10,
+    "footHeightMm": 3,
+    "footInsetMm": 20,
+    "contactPlaneZMm": -3,
+    "bottomHeadLowestZMm": -1.4,
+    "headToContactPlaneGapMm": 1.6,
+    "interferences": [],
+    "note": "貼付式既製ゴム脚の提案。穴なし。JLCガード数と体積には含めない。"
+  },
+  "sourceRail": {
+    "triangleCount": 592,
+    "duplicatesPreserved": true,
+    "repairApplied": false,
+    "transformDeterminants": {
+      "rail-1": 1.0,
+      "rail-2": 1.0
+    },
+    "excludedFromBrepExport": true
+  },
+  "derived": {
+    "railLengthMm": 305.0,
+    "railFrameWidthMm": 311.4,
+    "railUnitDepthMm": 134.53186,
+    "enclosureInnerWidthMm": 327.4,
+    "enclosureMetalEnvelopeMm": [
+      330.4,
+      154.0,
+      91
+    ],
+    "minimumDepthFor8mmMm": 153.53186,
+    "selectedRoundedDepthMm": 154.0,
+    "frontBackInsideClearanceMm": 8.234070000000003,
+    "fixerTopZMm": 89.5,
+    "fixerBottomZMm": 59.509958,
+    "mountAxesPerSide": [
+      {
+        "sourceUV": [
+          22.265929999999997,
+          21.3105735
+        ],
+        "worldYZ": [
+          -45.0,
+          68.1894265
+        ],
+        "row": 0
+      },
+      {
+        "sourceUV": [
+          112.26593,
+          21.3105735
+        ],
+        "worldYZ": [
+          45.0,
+          68.1894265
+        ],
+        "row": 0
+      }
+    ],
+    "mountingGripMm": 12.1,
+    "bracketCount": 16,
+    "bracketBottomCount": 8,
+    "frontBackBottomBracketXsMm": [
+      -109.99999999999999,
+      109.99999999999999
+    ],
+    "leftRightBottomBracketYsMm": [
+      -36.5,
+      36.5
+    ],
+    "feet": {
+      "headSide": "outside",
+      "washerNutSide": "inside",
+      "footCount": 4,
+      "footDiameterMm": 10,
+      "footHeightMm": 3,
+      "footInsetMm": 20,
+      "contactPlaneZMm": -3,
+      "bottomHeadLowestZMm": -1.4,
+      "headToContactPlaneGapMm": 1.6,
+      "interferences": [],
+      "note": "貼付式既製ゴム脚の提案。穴なし。JLCガード数と体積には含めない。"
+    },
+    "positiveXStackMm": {
+      "railEnd": 152.5,
+      "padderOuter": 154.1,
+      "fixerOuter": 155.7,
+      "innerSpacerOuter": 163.7,
+      "metalOuter": 165.2,
+      "outerWasherOuter": 166.2
+    },
+    "padderPlacementsPerSide": [
+      {
+        "kind": "padder3u",
+        "u": 0.0,
+        "v": 0.0,
+        "row": 0,
+        "label": "3U"
+      }
+    ],
+    "guardVariants": {
+      "t1p2": {
+        "thicknessMm": 1.2,
+        "coverMm": 5,
+        "coverageMm": 5,
+        "radiusMm": 0.4,
+        "partCount": 12,
+        "totalGuardParts": 12,
+        "typeCount": 4,
+        "quantities": [
+          2,
+          4,
+          2,
+          4
+        ],
+        "totalVolumeCm3": 27.33348987,
+        "volumeCm3": 27.33348987,
+        "approxMassG": 27.607,
+        "maxPartLengthMm": 166.4,
+        "outerEnvelopeMm": [
+          332.8,
+          156.4,
+          93.4
+        ],
+        "outerDimensions": [
+          332.8,
+          156.4,
+          93.4
+        ],
+        "feetIncludedEnvelopeMm": [
+          332.8,
+          156.4,
+          95.2
+        ],
+        "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+        "openingMm": [
+          325.4,
+          149.0
+        ],
+        "quoteJpy": null,
+        "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+      },
+      "t1p0": {
+        "thicknessMm": 1.0,
+        "coverMm": 5,
+        "coverageMm": 5,
+        "radiusMm": 0.4,
+        "partCount": 12,
+        "totalGuardParts": 12,
+        "typeCount": 4,
+        "quantities": [
+          2,
+          4,
+          2,
+          4
+        ],
+        "totalVolumeCm3": 22.30124427,
+        "volumeCm3": 22.30124427,
+        "approxMassG": 22.524,
+        "maxPartLengthMm": 166.2,
+        "outerEnvelopeMm": [
+          332.4,
+          156.0,
+          93.0
+        ],
+        "outerDimensions": [
+          332.4,
+          156.0,
+          93.0
+        ],
+        "feetIncludedEnvelopeMm": [
+          332.4,
+          156.0,
+          95.0
+        ],
+        "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+        "openingMm": [
+          325.4,
+          149.0
+        ],
+        "quoteJpy": null,
+        "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+      }
+    },
+    "equations": {
+      "frameWidth": "railLength + 2 * (padderThickness + fixerThickness)",
+      "enclosureInnerWidth": "railFrameWidth + 2 * innerSpacerThickness",
+      "enclosureMetalWidth": "enclosureInnerWidth + 2 * metalThickness",
+      "depth": "ceil(max registered rail-unit half-depth * 2 + 2 * 8mm + 2 * metalThickness)",
+      "mountingGrip": "fixerThickness + innerSpacerThickness + metalThickness + outerWasherThickness; padder not in the clamped stack"
+    }
+  },
+  "status": "passed",
+  "scopeNotes": [
+    "ケース高さ91mm、fixer上端Z89.5mmを維持。奥行は全ユニット包絡から約8mmの余白を加えて整数mmへ切り上げ。",
+    "ブラケット穴中心は内面から10mmの提案位置。実測の穴中心・曲げ形状は未反映。パネルはφ5.5丸穴。",
+    "ブラケット実厚2mm、設計占有厚2.2mm。内側の頭厚1.4mmを含めて干渉確認。",
+    "底板のみ低頭を外側、座金/ナットを内側へ反転。φ10×3mm貼付ゴム脚4個は未選定の提案。JLCガードとは別部品。",
+    "ガードは公称接触すきま0mm、保持方法・嵌合公差・接着層は未設計。",
+    "ワッシャー内外径、外側ナット、ねじ軸長は模式表示。必要ねじ長の指定ではない。",
+    "レール元STLは重複面を保持。モジュール固定用のスライドナットは省略。",
+    "レール端頭φ9は模式表示。φ12追加検証では7U隣接行の頭同士に約0.004mmの径方向包絡重複があり、実頭径の確認事項として別記。"
+  ]
+}

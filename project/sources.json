@@ -1,0 +1,176 @@
+[
+  {
+    "id": "U",
+    "type": "conversation",
+    "location": "project/source-notes/user-decisions.md",
+    "role": "ユーザーの方針・実測値。会話全文ではなく関連抜粋。"
+  },
+  {
+    "id": "R6",
+    "type": "provided_source_archive",
+    "location": "engineering/r6-body/",
+    "original_file": "zb60-case-preview.zip",
+    "file_id": "file_00000000433081fdba18882e7f410ac3",
+    "role": "本体の名目CAD・元STL/PCB・数量・過去検証記録"
+  },
+  {
+    "id": "R7",
+    "type": "provided_source_archive",
+    "location": "public/downloads/archive/r7-m3-lid-source.zip",
+    "original_file": "zudo-case-r7-lid-source.zip",
+    "file_id": "file_000000005de082068f27a412ac6bc4ce",
+    "role": "不採用のM3蓋。改造の参考に限る。"
+  },
+  {
+    "id": "R8",
+    "type": "provided_source_archive",
+    "location": "engineering/r8-preview/",
+    "original_file": "zudo-simple-lid-source.zip",
+    "file_id": "file_00000000ec8c822f976e1a40d4b240be",
+    "role": "採用した載せ蓋＋バンドの表示モデル。製作ファイル未更新。"
+  },
+  {
+    "id": "Q-R3",
+    "type": "user_screenshot",
+    "location": "public/evidence/r3-jlc-quote.png",
+    "role": "R3のJLC3DP表示価格"
+  },
+  {
+    "id": "ZDOC-CLI",
+    "type": "official_documentation",
+    "url": "https://zudo-doc.takazudomodular.com/docs/reference/create-zudo-doc/",
+    "role": "非対話初期化・フラグ・preset。検索取得2026-09-24。"
+  },
+  {
+    "id": "ZDOC-CONFIG",
+    "type": "official_documentation",
+    "url": "https://zudo-doc.takazudomodular.com/docs/guides/configuration/",
+    "role": "zudoDoc設定API。検索取得2026-09-24。"
+  },
+  {
+    "id": "ZDOC-WRITE",
+    "type": "official_documentation",
+    "url": "https://zudo-doc.takazudomodular.com/docs/getting-started/writing-docs/",
+    "role": "MDX frontmatter・相対リンク・no H1。"
+  },
+  {
+    "id": "ZDOC-NAV",
+    "type": "official_documentation",
+    "url": "https://zudo-doc.takazudomodular.com/docs/guides/sidebar/",
+    "role": "index.mdxとsidebar_positionによるカテゴリ構造。"
+  },
+  {
+    "id": "10BOX",
+    "type": "conversation_reference_url",
+    "url": "https://takazudomodular.com/guides/how-to-build-10box/",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "RAIL-GUIDE",
+    "type": "conversation_reference_url",
+    "url": "https://takazudomodular.com/guides/how-to-build-zudo-rail/",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "ORIGINAL",
+    "type": "conversation_reference_url",
+    "url": "https://takazudomodular.com/products/zb60-intro/",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "BRACKET",
+    "type": "conversation_reference_url",
+    "url": "https://www.alibaba.com/x/18paSt?ck=pdp",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "M5",
+    "type": "conversation_reference_url",
+    "url": "https://ja.aliexpress.com/item/1005005590438825.html",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "JLC3DP",
+    "type": "conversation_reference_url",
+    "url": "https://jlc3dp.com/help/article/pa12-hp-nylon",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "JLCCNC",
+    "type": "conversation_reference_url",
+    "url": "https://jlccnc.com/sheet-metal-fabrication",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "B2F",
+    "type": "conversation_reference_url",
+    "url": "https://www.takachi-el.co.jp/products/B2F",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "YOKOYAMA",
+    "type": "conversation_reference_url",
+    "url": "https://www.yokoyama-techno.net/detail/44.html",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "FIXPLUS",
+    "type": "conversation_reference_url",
+    "url": "https://fukaya-nagoya.co.jp/product/fixplus-strap-86cm/",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "VOILE",
+    "type": "conversation_reference_url",
+    "url": "https://www.voile.com/voile-straps-32-inch-nylon-buckle.html",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "JACK",
+    "type": "conversation_reference_url",
+    "url": "https://store.shopping.yahoo.co.jp/handcraft/jack-bur-belt-l1-20-1500.html",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "ALM",
+    "type": "conversation_reference_url",
+    "url": "https://busycircuits.com/products/alm-csstp",
+    "role": "会話で挙げた参照先。今回在庫・価格・仕様を再検証していない。"
+  },
+  {
+    "id": "CAD-22",
+    "type": "pinned_source_reference",
+    "url": "https://raw.githubusercontent.com/Takazudo/zudo-rail/0f7316ad9000b7906e5769aa89aff2dc18c661c8/working/nuts-v2-60hp-single.stl",
+    "role": "R6同梱の出典。今ターンのネット再取得ではない。"
+  },
+  {
+    "id": "CAD-23",
+    "type": "pinned_source_reference",
+    "url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pcb",
+    "role": "R6同梱の出典。今ターンのネット再取得ではない。"
+  },
+  {
+    "id": "CAD-24",
+    "type": "pinned_source_reference",
+    "url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb",
+    "role": "R6同梱の出典。今ターンのネット再取得ではない。"
+  },
+  {
+    "id": "CAD-25",
+    "type": "pinned_source_reference",
+    "url": "https://raw.githubusercontent.com/Takazudo/zudo-rail/0f7316ad9000b7906e5769aa89aff2dc18c661c8/working/nuts-v2-40hp-single.stl",
+    "role": "R6同梱の出典。今ターンのネット再取得ではない。"
+  },
+  {
+    "id": "CAD-26",
+    "type": "pinned_source_reference",
+    "url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pcb",
+    "role": "R6同梱の出典。今ターンのネット再取得ではない。"
+  },
+  {
+    "id": "CAD-27",
+    "type": "pinned_source_reference",
+    "url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-1u/1u-padder.kicad_pcb",
+    "role": "R6同梱の出典。今ターンのネット再取得ではない。"
+  }
+]

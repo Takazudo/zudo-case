@@ -1,0 +1,508 @@
+{
+  "browser": "154.0.8037.57",
+  "checks": [
+    "7u40 source dimensions, all STL variants, detachment, stack and UI",
+    "7u60 source dimensions, all STL variants, detachment, stack and UI",
+    "3u60 source dimensions, all STL variants, detachment, stack and UI",
+    "Exploded, interior, section and fixed side views",
+    "Mobile 360/390px layouts and switching",
+    "Standalone HTML works offline with no external requests or script errors"
+  ],
+  "errors": [],
+  "requests": [
+    "file:///workspace/scratch/7da3eab60949/zb-family-qa/isolated/viewer.html"
+  ],
+  "models": [
+    {
+      "model": "7u40",
+      "meta": {
+        "title": "7U 40HP · 3U + 3U + 1U",
+        "revision": "R6-SOURCE-FAMILY-01",
+        "modelId": "7u40",
+        "hp": 40,
+        "layout": [
+          "3U",
+          "3U",
+          "1U"
+        ],
+        "units": "mm",
+        "upAxis": "Z",
+        "metalEnvelopeMm": [
+          229.4,
+          334,
+          91
+        ],
+        "metalThicknessMm": 1.5,
+        "railLengthMm": 204,
+        "railCount": 6,
+        "railFrameWidthMm": 210.4,
+        "railFrameDepthMm": 314.754456,
+        "railUnitDepthMm": 314.754456,
+        "fixerThicknessMm": 1.6,
+        "padderThicknessMm": 1.6,
+        "fixerCount": 2,
+        "padderCount": 6,
+        "pcbCount": 8,
+        "fixerSourceDimensionsUVmm": [
+          314.754456,
+          60.015381
+        ],
+        "padderPlacementsPerSide": [
+          {
+            "kind": "padder3u",
+            "u": 0,
+            "v": 0,
+            "row": 0,
+            "label": "3U 1"
+          },
+          {
+            "kind": "padder3u",
+            "u": 134.53186,
+            "v": 0,
+            "row": 1,
+            "label": "3U 2"
+          },
+          {
+            "kind": "padder1u",
+            "u": 269.039027,
+            "v": -0.025081,
+            "row": 2,
+            "label": "1U"
+          }
+        ],
+        "spacerThicknessMm": 8,
+        "spacerCount": 10,
+        "outerWasherThicknessMm": 1,
+        "outerWasherCount": 10,
+        "mountingGripMm": 12.1,
+        "mountingBoltLengthMm": 20,
+        "mountingNutHeightMm": 5,
+        "mountingHardwareDimensionsStatus": "schematic / not a fastener procurement specification",
+        "mountHeadHeightMm": 1.4,
+        "mountHeadHeightUserConfirmed": true,
+        "pcbThicknessUserConfirmed": true,
+        "bracketPhysicalThicknessMm": 2,
+        "bracketAllowanceThicknessMm": 2.2,
+        "railFixerTopMm": 89.5,
+        "railMountZMm": 68.1894265,
+        "railMountYmm": [
+          -134.5318715,
+          -67.26594,
+          -0.000008000000008223651,
+          67.26591450000001,
+          134.496536
+        ],
+        "unitMountHoleCount": 10,
+        "panelCount": 5,
+        "panelHoleCount": 46,
+        "panelJointHoleCount": 36,
+        "bracketCount": 18,
+        "bottomBracketCount": 10,
+        "verticalBracketCount": 8,
+        "railUnitLiftMm": 155,
+        "frontBackInsideClearanceMm": 8.122771999999998,
+        "frontBackInnerClearanceMm": 8.122771999999998,
+        "frontBackClearanceMm": 8.122771999999998,
+        "frontBackOpenGapMm": 7.122771999999998,
+        "sideOpeningClearanceMm": 7,
+        "conservativeFacingHeadXGapMm": 3.0000000000000004,
+        "footCount": 4,
+        "footDiameterMm": 10,
+        "footHeightMm": 3,
+        "footInsetMm": 20,
+        "bottomHeadSide": "outside",
+        "bottomHeadContactClearanceMm": 1.6,
+        "nominalValuesFromSource": true,
+        "assumptions": [
+          "ケース高さ91mm、fixer上端Z89.5mmを維持。奥行は全ユニット包絡から約8mmの余白を加えて整数mmへ切り上げ。",
+          "ブラケット穴中心は内面から10mmの提案位置。実測の穴中心・曲げ形状は未反映。パネルはφ5.5丸穴。",
+          "ブラケット実厚2mm、設計占有厚2.2mm。内側の頭厚1.4mmを含めて干渉確認。",
+          "底板のみ低頭を外側、座金/ナットを内側へ反転。φ10×3mm貼付ゴム脚4個は未選定の提案。JLCガードとは別部品。",
+          "ガードは公称接触すきま0mm、保持方法・嵌合公差・接着層は未設計。",
+          "ワッシャー内外径、外側ナット、ねじ軸長は模式表示。必要ねじ長の指定ではない。",
+          "レール元STLは重複面を保持。モジュール固定用のスライドナットは省略。",
+          "レール端頭φ9は模式表示。φ12追加検証では7U隣接行の頭同士に約0.004mmの径方向包絡重複があり、実頭径の確認事項として別記。"
+        ],
+        "hardwareCounts": {
+          "aluminumPanel": 5,
+          "panelBracket": 18,
+          "rail": 6,
+          "fixer": 2,
+          "padder": 6,
+          "innerSpacer": 10,
+          "outerWasher": 10,
+          "mountBolt": 10,
+          "mountNut": 10,
+          "railEndBolt": 12,
+          "panelJointBolt": 36,
+          "panelJointWasher": 36,
+          "panelJointNut": 36,
+          "foot": 4
+        },
+        "status": "R6 source-based family, nominal design; bracket hole positions and guard retention not finalized",
+        "notes": [
+          "実レール長204mm、PCB両1.6mm、内側スペーサー8mm、外側ワッシャー1mm、頭厚1.4mm。",
+          "全ケースは底＋前後＋左右の5枚構成。7Uも内部仕切り板なし。",
+          "ガードは各単体180mm以内の短い部品へ分割。",
+          "ケース高さ91mm、fixer上端Z89.5mmを維持。奥行は全ユニット包絡から約8mmの余白を加えて整数mmへ切り上げ。",
+          "ブラケット穴中心は内面から10mmの提案位置。実測の穴中心・曲げ形状は未反映。パネルはφ5.5丸穴。",
+          "ブラケット実厚2mm、設計占有厚2.2mm。内側の頭厚1.4mmを含めて干渉確認。",
+          "底板のみ低頭を外側、座金/ナットを内側へ反転。φ10×3mm貼付ゴム脚4個は未選定の提案。JLCガードとは別部品。",
+          "ガードは公称接触すきま0mm、保持方法・嵌合公差・接着層は未設計。",
+          "ワッシャー内外径、外側ナット、ねじ軸長は模式表示。必要ねじ長の指定ではない。",
+          "レール元STLは重複面を保持。モジュール固定用のスライドナットは省略。",
+          "レール端頭φ9は模式表示。φ12追加検証では7U隣接行の頭同士に約0.004mmの径方向包絡重複があり、実頭径の確認事項として別記。"
+        ],
+        "sources": [
+          "https://raw.githubusercontent.com/Takazudo/zudo-rail/0f7316ad9000b7906e5769aa89aff2dc18c661c8/working/nuts-v2-40hp-single.stl",
+          "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pcb",
+          "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb",
+          "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-1u/1u-padder.kicad_pcb"
+        ],
+        "sourceCommits": {
+          "rail": "0f7316ad9000b7906e5769aa89aff2dc18c661c8",
+          "pcbs": "b4db88ce5c93709f3f2f0a031f75190081f02443"
+        }
+      },
+      "meshCount": 217,
+      "guardStats": {
+        "volume": 31.0956796,
+        "thickness": 1.2,
+        "coverage": 5,
+        "count": 16,
+        "outer": [
+          231.8,
+          336.4,
+          93.4
+        ],
+        "feetOuter": [
+          231.8,
+          336.4,
+          95.2
+        ]
+      },
+      "railUnitCount": 26
+    },
+    {
+      "model": "7u60",
+      "meta": {
+        "title": "7U 60HP · 3U + 3U + 1U",
+        "revision": "R6-SOURCE-FAMILY-01",
+        "modelId": "7u60",
+        "hp": 60,
+        "layout": [
+          "3U",
+          "3U",
+          "1U"
+        ],
+        "units": "mm",
+        "upAxis": "Z",
+        "metalEnvelopeMm": [
+          330.4,
+          334,
+          91
+        ],
+        "metalThicknessMm": 1.5,
+        "railLengthMm": 305,
+        "railCount": 6,
+        "railFrameWidthMm": 311.4,
+        "railFrameDepthMm": 314.754456,
+        "railUnitDepthMm": 314.754456,
+        "fixerThicknessMm": 1.6,
+        "padderThicknessMm": 1.6,
+        "fixerCount": 2,
+        "padderCount": 6,
+        "pcbCount": 8,
+        "fixerSourceDimensionsUVmm": [
+          314.754456,
+          60.015381
+        ],
+        "padderPlacementsPerSide": [
+          {
+            "kind": "padder3u",
+            "u": 0,
+            "v": 0,
+            "row": 0,
+            "label": "3U 1"
+          },
+          {
+            "kind": "padder3u",
+            "u": 134.53186,
+            "v": 0,
+            "row": 1,
+            "label": "3U 2"
+          },
+          {
+            "kind": "padder1u",
+            "u": 269.039027,
+            "v": -0.025081,
+            "row": 2,
+            "label": "1U"
+          }
+        ],
+        "spacerThicknessMm": 8,
+        "spacerCount": 10,
+        "outerWasherThicknessMm": 1,
+        "outerWasherCount": 10,
+        "mountingGripMm": 12.1,
+        "mountingBoltLengthMm": 20,
+        "mountingNutHeightMm": 5,
+        "mountingHardwareDimensionsStatus": "schematic / not a fastener procurement specification",
+        "mountHeadHeightMm": 1.4,
+        "mountHeadHeightUserConfirmed": true,
+        "pcbThicknessUserConfirmed": true,
+        "bracketPhysicalThicknessMm": 2,
+        "bracketAllowanceThicknessMm": 2.2,
+        "railFixerTopMm": 89.5,
+        "railMountZMm": 68.1894265,
+        "railMountYmm": [
+          -134.5318715,
+          -67.26594,
+          -0.000008000000008223651,
+          67.26591450000001,
+          134.496536
+        ],
+        "unitMountHoleCount": 10,
+        "panelCount": 5,
+        "panelHoleCount": 46,
+        "panelJointHoleCount": 36,
+        "bracketCount": 18,
+        "bottomBracketCount": 10,
+        "verticalBracketCount": 8,
+        "railUnitLiftMm": 155,
+        "frontBackInsideClearanceMm": 8.122771999999998,
+        "frontBackInnerClearanceMm": 8.122771999999998,
+        "frontBackClearanceMm": 8.122771999999998,
+        "frontBackOpenGapMm": 7.122771999999998,
+        "sideOpeningClearanceMm": 7,
+        "conservativeFacingHeadXGapMm": 3.0000000000000004,
+        "footCount": 4,
+        "footDiameterMm": 10,
+        "footHeightMm": 3,
+        "footInsetMm": 20,
+        "bottomHeadSide": "outside",
+        "bottomHeadContactClearanceMm": 1.6,
+        "nominalValuesFromSource": true,
+        "assumptions": [
+          "ケース高さ91mm、fixer上端Z89.5mmを維持。奥行は全ユニット包絡から約8mmの余白を加えて整数mmへ切り上げ。",
+          "ブラケット穴中心は内面から10mmの提案位置。実測の穴中心・曲げ形状は未反映。パネルはφ5.5丸穴。",
+          "ブラケット実厚2mm、設計占有厚2.2mm。内側の頭厚1.4mmを含めて干渉確認。",
+          "底板のみ低頭を外側、座金/ナットを内側へ反転。φ10×3mm貼付ゴム脚4個は未選定の提案。JLCガードとは別部品。",
+          "ガードは公称接触すきま0mm、保持方法・嵌合公差・接着層は未設計。",
+          "ワッシャー内外径、外側ナット、ねじ軸長は模式表示。必要ねじ長の指定ではない。",
+          "レール元STLは重複面を保持。モジュール固定用のスライドナットは省略。",
+          "レール端頭φ9は模式表示。φ12追加検証では7U隣接行の頭同士に約0.004mmの径方向包絡重複があり、実頭径の確認事項として別記。"
+        ],
+        "hardwareCounts": {
+          "aluminumPanel": 5,
+          "panelBracket": 18,
+          "rail": 6,
+          "fixer": 2,
+          "padder": 6,
+          "innerSpacer": 10,
+          "outerWasher": 10,
+          "mountBolt": 10,
+          "mountNut": 10,
+          "railEndBolt": 12,
+          "panelJointBolt": 36,
+          "panelJointWasher": 36,
+          "panelJointNut": 36,
+          "foot": 4
+        },
+        "status": "R6 source-based family, nominal design; bracket hole positions and guard retention not finalized",
+        "notes": [
+          "実レール長305mm、PCB両1.6mm、内側スペーサー8mm、外側ワッシャー1mm、頭厚1.4mm。",
+          "全ケースは底＋前後＋左右の5枚構成。7Uも内部仕切り板なし。",
+          "ガードは各単体180mm以内の短い部品へ分割。",
+          "ケース高さ91mm、fixer上端Z89.5mmを維持。奥行は全ユニット包絡から約8mmの余白を加えて整数mmへ切り上げ。",
+          "ブラケット穴中心は内面から10mmの提案位置。実測の穴中心・曲げ形状は未反映。パネルはφ5.5丸穴。",
+          "ブラケット実厚2mm、設計占有厚2.2mm。内側の頭厚1.4mmを含めて干渉確認。",
+          "底板のみ低頭を外側、座金/ナットを内側へ反転。φ10×3mm貼付ゴム脚4個は未選定の提案。JLCガードとは別部品。",
+          "ガードは公称接触すきま0mm、保持方法・嵌合公差・接着層は未設計。",
+          "ワッシャー内外径、外側ナット、ねじ軸長は模式表示。必要ねじ長の指定ではない。",
+          "レール元STLは重複面を保持。モジュール固定用のスライドナットは省略。",
+          "レール端頭φ9は模式表示。φ12追加検証では7U隣接行の頭同士に約0.004mmの径方向包絡重複があり、実頭径の確認事項として別記。"
+        ],
+        "sources": [
+          "https://raw.githubusercontent.com/Takazudo/zudo-rail/0f7316ad9000b7906e5769aa89aff2dc18c661c8/working/nuts-v2-60hp-single.stl",
+          "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pcb",
+          "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb",
+          "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-1u/1u-padder.kicad_pcb"
+        ],
+        "sourceCommits": {
+          "rail": "0f7316ad9000b7906e5769aa89aff2dc18c661c8",
+          "pcbs": "b4db88ce5c93709f3f2f0a031f75190081f02443"
+        }
+      },
+      "meshCount": 217,
+      "guardStats": {
+        "volume": 35.90556773,
+        "thickness": 1.2,
+        "coverage": 5,
+        "count": 16,
+        "outer": [
+          332.8,
+          336.4,
+          93.4
+        ],
+        "feetOuter": [
+          332.8,
+          336.4,
+          95.2
+        ]
+      },
+      "railUnitCount": 26
+    },
+    {
+      "model": "3u60",
+      "meta": {
+        "title": "3U 60HP",
+        "revision": "R6-SOURCE-FAMILY-01",
+        "modelId": "3u60",
+        "hp": 60,
+        "layout": [
+          "3U"
+        ],
+        "units": "mm",
+        "upAxis": "Z",
+        "metalEnvelopeMm": [
+          330.4,
+          154,
+          91
+        ],
+        "metalThicknessMm": 1.5,
+        "railLengthMm": 305,
+        "railCount": 2,
+        "railFrameWidthMm": 311.4,
+        "railFrameDepthMm": 134.53186,
+        "railUnitDepthMm": 134.53186,
+        "fixerThicknessMm": 1.6,
+        "padderThicknessMm": 1.6,
+        "fixerCount": 2,
+        "padderCount": 2,
+        "pcbCount": 4,
+        "fixerSourceDimensionsUVmm": [
+          134.53186,
+          29.990042
+        ],
+        "padderPlacementsPerSide": [
+          {
+            "kind": "padder3u",
+            "u": 0,
+            "v": 0,
+            "row": 0,
+            "label": "3U"
+          }
+        ],
+        "spacerThicknessMm": 8,
+        "spacerCount": 4,
+        "outerWasherThicknessMm": 1,
+        "outerWasherCount": 4,
+        "mountingGripMm": 12.1,
+        "mountingBoltLengthMm": 20,
+        "mountingNutHeightMm": 5,
+        "mountingHardwareDimensionsStatus": "schematic / not a fastener procurement specification",
+        "mountHeadHeightMm": 1.4,
+        "mountHeadHeightUserConfirmed": true,
+        "pcbThicknessUserConfirmed": true,
+        "bracketPhysicalThicknessMm": 2,
+        "bracketAllowanceThicknessMm": 2.2,
+        "railFixerTopMm": 89.5,
+        "railMountZMm": 68.1894265,
+        "railMountYmm": [
+          -45,
+          45
+        ],
+        "unitMountHoleCount": 4,
+        "panelCount": 5,
+        "panelHoleCount": 36,
+        "panelJointHoleCount": 32,
+        "bracketCount": 16,
+        "bottomBracketCount": 8,
+        "verticalBracketCount": 8,
+        "railUnitLiftMm": 155,
+        "frontBackInsideClearanceMm": 8.234070000000003,
+        "frontBackInnerClearanceMm": 8.234070000000003,
+        "frontBackClearanceMm": 8.234070000000003,
+        "frontBackOpenGapMm": 7.234070000000003,
+        "sideOpeningClearanceMm": 7,
+        "conservativeFacingHeadXGapMm": 3.0000000000000004,
+        "footCount": 4,
+        "footDiameterMm": 10,
+        "footHeightMm": 3,
+        "footInsetMm": 20,
+        "bottomHeadSide": "outside",
+        "bottomHeadContactClearanceMm": 1.6,
+        "nominalValuesFromSource": true,
+        "assumptions": [
+          "ケース高さ91mm、fixer上端Z89.5mmを維持。奥行は全ユニット包絡から約8mmの余白を加えて整数mmへ切り上げ。",
+          "ブラケット穴中心は内面から10mmの提案位置。実測の穴中心・曲げ形状は未反映。パネルはφ5.5丸穴。",
+          "ブラケット実厚2mm、設計占有厚2.2mm。内側の頭厚1.4mmを含めて干渉確認。",
+          "底板のみ低頭を外側、座金/ナットを内側へ反転。φ10×3mm貼付ゴム脚4個は未選定の提案。JLCガードとは別部品。",
+          "ガードは公称接触すきま0mm、保持方法・嵌合公差・接着層は未設計。",
+          "ワッシャー内外径、外側ナット、ねじ軸長は模式表示。必要ねじ長の指定ではない。",
+          "レール元STLは重複面を保持。モジュール固定用のスライドナットは省略。",
+          "レール端頭φ9は模式表示。φ12追加検証では7U隣接行の頭同士に約0.004mmの径方向包絡重複があり、実頭径の確認事項として別記。"
+        ],
+        "hardwareCounts": {
+          "aluminumPanel": 5,
+          "panelBracket": 16,
+          "rail": 2,
+          "fixer": 2,
+          "padder": 2,
+          "innerSpacer": 4,
+          "outerWasher": 4,
+          "mountBolt": 4,
+          "mountNut": 4,
+          "railEndBolt": 4,
+          "panelJointBolt": 32,
+          "panelJointWasher": 32,
+          "panelJointNut": 32,
+          "foot": 4
+        },
+        "status": "R6 source-based family, nominal design; bracket hole positions and guard retention not finalized",
+        "notes": [
+          "実レール長305mm、PCB両1.6mm、内側スペーサー8mm、外側ワッシャー1mm、頭厚1.4mm。",
+          "全ケースは底＋前後＋左右の5枚構成。7Uも内部仕切り板なし。",
+          "ガードは各単体180mm以内の短い部品へ分割。",
+          "ケース高さ91mm、fixer上端Z89.5mmを維持。奥行は全ユニット包絡から約8mmの余白を加えて整数mmへ切り上げ。",
+          "ブラケット穴中心は内面から10mmの提案位置。実測の穴中心・曲げ形状は未反映。パネルはφ5.5丸穴。",
+          "ブラケット実厚2mm、設計占有厚2.2mm。内側の頭厚1.4mmを含めて干渉確認。",
+          "底板のみ低頭を外側、座金/ナットを内側へ反転。φ10×3mm貼付ゴム脚4個は未選定の提案。JLCガードとは別部品。",
+          "ガードは公称接触すきま0mm、保持方法・嵌合公差・接着層は未設計。",
+          "ワッシャー内外径、外側ナット、ねじ軸長は模式表示。必要ねじ長の指定ではない。",
+          "レール元STLは重複面を保持。モジュール固定用のスライドナットは省略。",
+          "レール端頭φ9は模式表示。φ12追加検証では7U隣接行の頭同士に約0.004mmの径方向包絡重複があり、実頭径の確認事項として別記。"
+        ],
+        "sources": [
+          "https://raw.githubusercontent.com/Takazudo/zudo-rail/0f7316ad9000b7906e5769aa89aff2dc18c661c8/working/nuts-v2-60hp-single.stl",
+          "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pcb",
+          "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb"
+        ],
+        "sourceCommits": {
+          "rail": "0f7316ad9000b7906e5769aa89aff2dc18c661c8",
+          "pcbs": "b4db88ce5c93709f3f2f0a031f75190081f02443"
+        }
+      },
+      "meshCount": 159,
+      "guardStats": {
+        "volume": 27.33348987,
+        "thickness": 1.2,
+        "coverage": 5,
+        "count": 12,
+        "outer": [
+          332.8,
+          156.4,
+          93.4
+        ],
+        "feetOuter": [
+          332.8,
+          156.4,
+          95.2
+        ]
+      },
+      "railUnitCount": 10
+    }
+  ],
+  "offline": true
+}

@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-09-24T09:51:25.053957+00:00",
+  "original_source_identity": [
+    {
+      "source": "R6 source",
+      "files_compared": 176,
+      "differences": []
+    },
+    {
+      "source": "R8 source",
+      "files_compared": 20,
+      "differences": []
+    },
+    {
+      "source": "R8 single HTML",
+      "files_compared": 1,
+      "differences": []
+    },
+    {
+      "source": "R6 single HTML",
+      "files_compared": 1,
+      "differences": []
+    },
+    {
+      "source": "R7 original ZIP",
+      "files_compared": 1,
+      "differences": []
+    },
+    {
+      "source": "lock study original ZIP",
+      "files_compared": 1,
+      "differences": []
+    }
+  ],
+  "manifest_files": 241,
+  "archive_font_scan": {
+    "archives": 11,
+    "font_files": []
+  },
+  "note": "Archive contents examined for font files; source byte identity only, no new geometry or load verification."
+}

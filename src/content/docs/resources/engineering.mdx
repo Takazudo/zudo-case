@@ -1,0 +1,34 @@
+---
+title: "CADの再生成とソースデータ"
+description: "本体の生成環境と、プレビュー専用の生成を分ける。"
+sidebar_position: 40
+---
+
+## R6本体
+
+`engineering/r6-body/`は提供されたZIPの内容を保持したフォルダー。`design-parameters.json`、`build_geometry.py`、`source-data/`、`engineering/`、`stl/`がある。
+
+元READMEではCadQuery 2.7とezdxf等を用い、`build_geometry.py`の後に`package_preview.py`を実行する流れを記録している。**今回の文書セットアップではこれらを自動実行しない。** ローカルの依存パッケージと出力先を確認してから、作業用コピーで実行する。
+
+## R8プレビュー
+
+`engineering/r8-preview/`には元のREADME、`prepare_models.py`、`build.py`、`model-data.js`、`app.js`がある。
+
+`prepare_models.py`は参照メッシュから表示形状を用意し、`build.py`は単一HTMLをまとめる。これを実行しても、発注用STL・STEP・DXFが自動的に揃うわけではない。製作用のソリッド・穴・数量・公差を別に設計して保存する必要がある。
+
+## 元データを変えない
+
+| 対象 | 固定コミット |
+|---|---|
+| zudo-rail | `0f7316ad9000b7906e5769aa89aff2dc18c661c8` |
+| zudo-blanks PCB | `b4db88ce5c93709f3f2f0a031f75190081f02443` |
+
+40HP/60HPのレールSTLと、3U/7U fixer・3U/1U padderのKiCadファイルをR6の`source-data/`に保存している。出典のprovenance・commitも同梱。今回ネットから再取得したという意味ではない。
+
+実データを変更する場合は、参照コミットと新しい出力版を一緒に更新する。小数の微差を説明なく丸めたり、40HPを60HPの比例縮小で代用したりしない。
+
+## 文書とCADを混同しない
+
+`project/current-spec.json`はドキュメントの表を揃える台帳で、既存CADジェネレーターの入力そのものではない。更新後はCAD側の設定へ反映し、出力から新しい台帳を読み直す。ドキュメントだけ数値を変えて「反映済み」としない。
+
+現行のCAD移行作業は[次の作業](../handoff/tasks.mdx)へ。

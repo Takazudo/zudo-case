@@ -1,0 +1,53 @@
+---
+title: "ローカルでzudo-docを起動する"
+description: "公式CLIで土台を生成し、このMDX・資産をそのまま使う。"
+sidebar_position: 10
+---
+
+## この配布物の状態
+
+これは**文書・資産を入れたzudo-doc用引継ぎセット**。公式CLIの依存取得がこの環境では`EAI_AGAIN registry.npmjs.org`で停止したため、生成済みのフレームワークやビルド済みdistを装っては同梱していない。
+
+文書は`src/content/docs/`、設定は`zfb.config.ts`、画像・プレビュー・ダウンロードは`public/`にある。ローカルで公式scaffolderを実行する補助スクリプトを付けた。
+
+## 初回コマンド
+
+Node.js 22以上とpnpmを用意して、展開先で実行する。
+
+```sh
+cd zudo-case-doc
+node scripts/setup.mjs
+pnpm install
+pnpm check:docs
+pnpm dev
+```
+
+setupは一時ディレクトリーへ公式`create-zudo-doc`を非対話・依存未インストールで実行し、必要な土台だけをこのフォルダーへ取り込む。書いたMDX、画像、engineering、設定は上書きしない。既存のscaffoldと衝突するファイルがあれば停止する。
+
+初期化が成功したら、`package.json`の依存情報は公式生成値になり、`pnpm install`でロックファイルを作る。setup時点ではGitの初期化やデプロイ、注文は行わない。
+
+## バージョンを指定する
+
+デフォルトのscaffolder指定は`latest`。再現性を必要とする場合、動作を確認したバージョンを明示する。
+
+```sh
+ZUDO_DOC_CLI_VERSION=確認したバージョン node scripts/setup.mjs
+```
+
+実際のコマンド・生成された依存情報は`.handoff/setup-record.json`へ記録する。npmへの接続が必要なのはローカルの初期化とインストール時。3D単体HTML自体は外部通信なしで開ける。
+
+## 手動で初期化する場合
+
+```sh
+pnpm create zudo-doc zudo-case-doc-site --lang ja --no-i18n --no-git --no-install --yes
+```
+
+生成先のスターター記事を確認してから、このセットの`src/content/docs/`、`public/`、`zfb.config.ts`を移す。`engineering/`、`project/`、`AGENTS.md`は作業資料として同じリポジトリへ入れる。既存サイトへ混ぜる場合はセットアップスクリプトを使わず、記事と設定を意図的に統合する。
+
+## 公開前の注意
+
+`noindex`は有効にしているが、アクセス制御ではない。`public/downloads/archive/`のソースZIPや見積画像を含め、**public以下は公開すると閲覧できる**。対外公開時は配布範囲を見直す。実装・構造の資料を勝手に秘密情報と断定してはいないが、どこまで公開するかは所有者が決める。
+
+このセットはルートパス配信を想定。サブパス配信に変える場合は、iframeと画像/ダウンロードのURLも確認する。
+
+公式：[Installation](https://zudo-doc.takazudomodular.com/docs/getting-started/installation/)、[CLI](https://zudo-doc.takazudomodular.com/docs/reference/create-zudo-doc/)、[設定API](https://zudo-doc.takazudomodular.com/docs/guides/configuration/)。

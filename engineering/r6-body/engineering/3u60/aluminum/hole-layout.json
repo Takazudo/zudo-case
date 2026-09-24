@@ -1,0 +1,148 @@
+{
+  "units": "mm",
+  "panels": [
+    {
+      "partType": "bottom",
+      "quantity": 1,
+      "widthMm": 330.4,
+      "heightMm": 154.0,
+      "thicknessMm": 1.5,
+      "holeDiameterMm": 5.5,
+      "holeCentersUV": [
+        [
+          55.2,
+          11.5
+        ],
+        [
+          275.2,
+          11.5
+        ],
+        [
+          55.2,
+          142.5
+        ],
+        [
+          275.2,
+          142.5
+        ],
+        [
+          11.5,
+          40.5
+        ],
+        [
+          11.5,
+          113.5
+        ],
+        [
+          318.9,
+          40.5
+        ],
+        [
+          318.9,
+          113.5
+        ]
+      ],
+      "holeCount": 8,
+      "origin": "lower left, local XY",
+      "files": {
+        "stl": "engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.stl",
+        "step": "engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.step",
+        "dxf": "engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.dxf"
+      }
+    },
+    {
+      "partType": "front_back",
+      "quantity": 2,
+      "widthMm": 327.4,
+      "heightMm": 89.5,
+      "thicknessMm": 1.5,
+      "holeDiameterMm": 5.5,
+      "holeCentersUV": [
+        [
+          53.7,
+          10.0
+        ],
+        [
+          273.7,
+          10.0
+        ],
+        [
+          10.0,
+          35.0
+        ],
+        [
+          317.4,
+          35.0
+        ],
+        [
+          10.0,
+          65.0
+        ],
+        [
+          317.4,
+          65.0
+        ]
+      ],
+      "holeCount": 6,
+      "origin": "lower left, local XY",
+      "files": {
+        "stl": "engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.stl",
+        "step": "engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.step",
+        "dxf": "engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.dxf"
+      }
+    },
+    {
+      "partType": "left_right",
+      "quantity": 2,
+      "widthMm": 154.0,
+      "heightMm": 89.5,
+      "thicknessMm": 1.5,
+      "holeDiameterMm": 5.5,
+      "holeCentersUV": [
+        [
+          40.5,
+          10.0
+        ],
+        [
+          113.5,
+          10.0
+        ],
+        [
+          11.5,
+          35.0
+        ],
+        [
+          142.5,
+          35.0
+        ],
+        [
+          11.5,
+          65.0
+        ],
+        [
+          142.5,
+          65.0
+        ],
+        [
+          32.0,
+          66.6894265
+        ],
+        [
+          122.0,
+          66.6894265
+        ]
+      ],
+      "holeCount": 8,
+      "origin": "lower left, local XY",
+      "files": {
+        "stl": "engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.stl",
+        "step": "engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.step",
+        "dxf": "engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.dxf"
+      }
+    }
+  ],
+  "totalPanels": 5,
+  "totalHoles": 36,
+  "symmetry": "前後同型・左右同型（両面同一仕上げを想定）。7U取付点は元長穴中心を保持し、前後対称化していない。",
+  "warning": "穴配置は20×20×16ブラケットの穴位置を仮定した設計データ。未確認の実物ブラケットを前提とする最終発注図ではない。"
+}

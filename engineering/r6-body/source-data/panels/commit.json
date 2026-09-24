@@ -1,0 +1,30 @@
+{
+  "sha": "b4db88ce5c93709f3f2f0a031f75190081f02443",
+  "html_url": "https://github.com/Takazudo/zudo-blanks/commit/b4db88ce5c93709f3f2f0a031f75190081f02443",
+  "commit": {
+    "author": {
+      "name": "Takeshi Takatsudo",
+      "email": "takazudo@gmail.com",
+      "date": "2026-09-23T17:41:41Z"
+    },
+    "committer": {
+      "name": "Takeshi Takatsudo",
+      "email": "takazudo@gmail.com",
+      "date": "2026-09-23T17:41:41Z"
+    },
+    "message": "Add 1U and 3U side frame pad KiCad projects",
+    "tree": {
+      "sha": "91c7173b610adf12ac9d70accf7d93aedb01fdb6",
+      "url": "https://api.github.com/repos/Takazudo/zudo-blanks/git/trees/91c7173b610adf12ac9d70accf7d93aedb01fdb6"
+    },
+    "url": "https://api.github.com/repos/Takazudo/zudo-blanks/git/commits/b4db88ce5c93709f3f2f0a031f75190081f02443",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  }
+}

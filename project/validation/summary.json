@@ -1,0 +1,22 @@
+{
+  "document_revision": "D1",
+  "snapshot": "2026-09-24",
+  "checks": {
+    "mdx_files": 41,
+    "category_indices": 8,
+    "local_link_targets": 122,
+    "asset_hashes": 241,
+    "setup_mock_tests_passed": 5,
+    "table_regeneration_stable": true,
+    "original_sources_unchanged": true
+  },
+  "not_run": [
+    "Official create-zudo-doc successful initialization (npm EAI_AGAIN)",
+    "Dependency installation",
+    "Official zudo-doc build",
+    "MDX compilation",
+    "Rendered documentation-site browser validation",
+    "New CAD generation / physical fit / structural tests"
+  ],
+  "important": "This is documentation and source handoff only, not a manufacturing release."
+}

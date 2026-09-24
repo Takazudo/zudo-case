@@ -1,0 +1,911 @@
+{
+  "schema": "zb.family.panel.placements.v1",
+  "units": "mm",
+  "layouts": {
+    "3u": {
+      "fixerPanelKey": "fixer3u",
+      "layoutOrderAlongIncreasingU": [
+        3
+      ],
+      "coordinateSystem": {
+        "u": "source Y for fixer7u; source X for all other panels",
+        "v": "source X for fixer7u; source Y for all other panels",
+        "worldY": "u - fixer outer U center",
+        "worldZ": "fixerTopZ - v",
+        "fixerCenterU": 67.26593
+      },
+      "fixerOuterBBoxUV": {
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          134.53186,
+          29.990042
+        ],
+        "dimensions": [
+          134.53186,
+          29.990042
+        ],
+        "center": [
+          67.26593,
+          14.995021
+        ]
+      },
+      "assemblyOuterBBoxUV": {
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          134.53186,
+          30.0
+        ],
+        "dimensions": [
+          134.53186,
+          30.0
+        ],
+        "center": [
+          67.26593,
+          15.0
+        ]
+      },
+      "padderPlacementsPerSide": [
+        {
+          "id": "row1_padder",
+          "panelKey": "padder3u",
+          "row": 1,
+          "translationUV": [
+            0,
+            0
+          ],
+          "sourceToFixerUV": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "sourceToFixerRawXY": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "placedOuterBBoxUV": {
+            "min": [
+              0.0,
+              0.0
+            ],
+            "max": [
+              134.5,
+              30.0
+            ],
+            "dimensions": [
+              134.5,
+              30.0
+            ],
+            "center": [
+              67.25,
+              15.0
+            ]
+          },
+          "railHoleChecks": [
+            {
+              "fixerHoleId": "fixer3u_cutout_3",
+              "padderHoleId": "padder3u_cutout_2",
+              "railAxisUV": [
+                5.997998,
+                15.0303175
+              ],
+              "placedPadderHoleBBoxUV": {
+                "min": [
+                  3.328213,
+                  12.374833
+                ],
+                "max": [
+                  8.979433,
+                  17.973139
+                ]
+              },
+              "padderCenterMinusRailAxisUV": [
+                0.1558250000000001,
+                0.14366849999999864
+              ],
+              "nominalM5RadialMarginsToSquareEdgesMm": [
+                0.16978500000000007,
+                0.4814350000000003,
+                0.15548450000000003,
+                0.4428214999999991
+              ],
+              "minimumNominalM5MarginMm": 0.15548450000000003,
+              "passesNominal5mmShank": true
+            },
+            {
+              "fixerHoleId": "fixer3u_cutout_4",
+              "padderHoleId": "padder3u_cutout_3",
+              "railAxisUV": [
+                128.533836,
+                15.0303175
+              ],
+              "placedPadderHoleBBoxUV": {
+                "min": [
+                  125.820694,
+                  12.374833
+                ],
+                "max": [
+                  131.471909,
+                  17.973139
+                ]
+              },
+              "padderCenterMinusRailAxisUV": [
+                0.11246549999998479,
+                0.14366849999999864
+              ],
+              "nominalM5RadialMarginsToSquareEdgesMm": [
+                0.21314200000000483,
+                0.4380730000000028,
+                0.15548450000000003,
+                0.4428214999999991
+              ],
+              "minimumNominalM5MarginMm": 0.15548450000000003,
+              "passesNominal5mmShank": true
+            }
+          ],
+          "sourceShapeUnchanged": true
+        }
+      ],
+      "padderGapsAlongUMm": [],
+      "selectedRailAxes": [
+        {
+          "id": "row1_rail1",
+          "row": 1,
+          "rowU": 3,
+          "fixerHoleId": "fixer3u_cutout_3",
+          "axisUV": [
+            5.997998,
+            15.0303175
+          ],
+          "axisSourceXY": [
+            5.997998,
+            15.0303175
+          ],
+          "worldYRelativeToFixerCenter": -61.267931999999995,
+          "worldZFormula": "fixerTopZ - 15.030317500",
+          "lipDirectionAlongWorldY": -1
+        },
+        {
+          "id": "row1_rail2",
+          "row": 1,
+          "rowU": 3,
+          "fixerHoleId": "fixer3u_cutout_4",
+          "axisUV": [
+            128.533836,
+            15.0303175
+          ],
+          "axisSourceXY": [
+            128.533836,
+            15.0303175
+          ],
+          "worldYRelativeToFixerCenter": 61.26790600000001,
+          "worldZFormula": "fixerTopZ - 15.030317500",
+          "lipDirectionAlongWorldY": 1
+        }
+      ],
+      "unusedRailHoleIds": [],
+      "selectedCaseMountAxesPerSide": [],
+      "selectedCaseMountCountPerSide": null,
+      "placementBasis": "Outer-boundary registration: source contours retained; M5 shanks fit offset padder square openings. Does not force hole centers to be identical.",
+      "roundHolePitchPerRowMm": [
+        122.53583800000001
+      ]
+    },
+    "3u3u1u": {
+      "fixerPanelKey": "fixer7u",
+      "layoutOrderAlongIncreasingU": [
+        3,
+        3,
+        1
+      ],
+      "coordinateSystem": {
+        "u": "source Y for fixer7u; source X for all other panels",
+        "v": "source X for fixer7u; source Y for all other panels",
+        "worldY": "u - fixer outer U center",
+        "worldZ": "fixerTopZ - v",
+        "fixerCenterU": 157.377228
+      },
+      "fixerOuterBBoxUV": {
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          314.754456,
+          60.015381
+        ],
+        "dimensions": [
+          314.754456,
+          60.015381
+        ],
+        "center": [
+          157.377228,
+          30.0076905
+        ]
+      },
+      "assemblyOuterBBoxUV": {
+        "min": [
+          0.0,
+          0.0
+        ],
+        "max": [
+          314.754456,
+          60.015381
+        ],
+        "dimensions": [
+          314.754456,
+          60.015381
+        ],
+        "center": [
+          157.377228,
+          30.0076905
+        ]
+      },
+      "padderPlacementsPerSide": [
+        {
+          "id": "row1_padder",
+          "panelKey": "padder3u",
+          "row": 1,
+          "translationUV": [
+            0,
+            0
+          ],
+          "sourceToFixerUV": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "sourceToFixerRawXY": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "placedOuterBBoxUV": {
+            "min": [
+              0.0,
+              0.0
+            ],
+            "max": [
+              134.5,
+              30.0
+            ],
+            "dimensions": [
+              134.5,
+              30.0
+            ],
+            "center": [
+              67.25,
+              15.0
+            ]
+          },
+          "railHoleChecks": [
+            {
+              "fixerHoleId": "fixer7u_cutout_15",
+              "padderHoleId": "padder3u_cutout_2",
+              "railAxisUV": [
+                6.0332935,
+                14.9950225
+              ],
+              "placedPadderHoleBBoxUV": {
+                "min": [
+                  3.328213,
+                  12.374833
+                ],
+                "max": [
+                  8.979433,
+                  17.973139
+                ]
+              },
+              "padderCenterMinusRailAxisUV": [
+                0.12052949999999996,
+                0.17896350000000005
+              ],
+              "nominalM5RadialMarginsToSquareEdgesMm": [
+                0.20508050000000022,
+                0.44613950000000013,
+                0.12018949999999862,
+                0.4781165000000005
+              ],
+              "minimumNominalM5MarginMm": 0.12018949999999862,
+              "passesNominal5mmShank": true
+            },
+            {
+              "fixerHoleId": "fixer7u_cutout_23",
+              "padderHoleId": "padder3u_cutout_3",
+              "railAxisUV": [
+                128.533836,
+                14.9950205
+              ],
+              "placedPadderHoleBBoxUV": {
+                "min": [
+                  125.820694,
+                  12.374833
+                ],
+                "max": [
+                  131.471909,
+                  17.973139
+                ]
+              },
+              "padderCenterMinusRailAxisUV": [
+                0.11246549999998479,
+                0.17896549999999856
+              ],
+              "nominalM5RadialMarginsToSquareEdgesMm": [
+                0.21314200000000483,
+                0.4380730000000028,
+                0.12018750000000011,
+                0.478118499999999
+              ],
+              "minimumNominalM5MarginMm": 0.12018750000000011,
+              "passesNominal5mmShank": true
+            }
+          ],
+          "sourceShapeUnchanged": true
+        },
+        {
+          "id": "row2_padder",
+          "panelKey": "padder3u",
+          "row": 2,
+          "translationUV": [
+            134.53186,
+            0
+          ],
+          "sourceToFixerUV": [
+            [
+              1,
+              0,
+              134.53186
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "sourceToFixerRawXY": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              134.53186
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "placedOuterBBoxUV": {
+            "min": [
+              134.53186,
+              0.0
+            ],
+            "max": [
+              269.03186,
+              30.0
+            ],
+            "dimensions": [
+              134.5,
+              30.0
+            ],
+            "center": [
+              201.78186,
+              15.0
+            ]
+          },
+          "railHoleChecks": [
+            {
+              "fixerHoleId": "fixer7u_cutout_18",
+              "padderHoleId": "padder3u_cutout_2",
+              "railAxisUV": [
+                140.5298535,
+                14.9950205
+              ],
+              "placedPadderHoleBBoxUV": {
+                "min": [
+                  137.860073,
+                  12.374833
+                ],
+                "max": [
+                  143.511293,
+                  17.973139
+                ]
+              },
+              "padderCenterMinusRailAxisUV": [
+                0.15582949999998164,
+                0.17896549999999856
+              ],
+              "nominalM5RadialMarginsToSquareEdgesMm": [
+                0.16978050000000167,
+                0.48143949999999336,
+                0.12018750000000011,
+                0.478118499999999
+              ],
+              "minimumNominalM5MarginMm": 0.12018750000000011,
+              "passesNominal5mmShank": true
+            },
+            {
+              "fixerHoleId": "fixer7u_cutout_17",
+              "padderHoleId": "padder3u_cutout_3",
+              "railAxisUV": [
+                263.030426,
+                14.9950205
+              ],
+              "placedPadderHoleBBoxUV": {
+                "min": [
+                  260.352554,
+                  12.374833
+                ],
+                "max": [
+                  266.00376900000003,
+                  17.973139
+                ]
+              },
+              "padderCenterMinusRailAxisUV": [
+                0.14773550000001023,
+                0.17896549999999856
+              ],
+              "nominalM5RadialMarginsToSquareEdgesMm": [
+                0.17787199999997938,
+                0.4733430000000567,
+                0.12018750000000011,
+                0.478118499999999
+              ],
+              "minimumNominalM5MarginMm": 0.12018750000000011,
+              "passesNominal5mmShank": true
+            }
+          ],
+          "sourceShapeUnchanged": true
+        },
+        {
+          "id": "row3_padder",
+          "panelKey": "padder1u",
+          "row": 3,
+          "translationUV": [
+            269.039027,
+            -0.025081
+          ],
+          "sourceToFixerUV": [
+            [
+              1,
+              0,
+              269.039027
+            ],
+            [
+              0,
+              1,
+              -0.025081
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "sourceToFixerRawXY": [
+            [
+              0,
+              1,
+              -0.025081
+            ],
+            [
+              1,
+              0,
+              269.039027
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "placedOuterBBoxUV": {
+            "min": [
+              269.063721,
+              0.0
+            ],
+            "max": [
+              314.74433,
+              29.999839
+            ],
+            "dimensions": [
+              45.680609,
+              29.999839
+            ],
+            "center": [
+              291.9040255,
+              14.9999195
+            ]
+          },
+          "railHoleChecks": [
+            {
+              "fixerHoleId": "fixer7u_cutout_24",
+              "padderHoleId": "padder1u_cutout_3",
+              "railAxisUV": [
+                275.0617065,
+                14.9950205
+              ],
+              "placedPadderHoleBBoxUV": {
+                "min": [
+                  272.24368599999997,
+                  12.171906
+                ],
+                "max": [
+                  277.841318,
+                  17.773066
+                ]
+              },
+              "padderCenterMinusRailAxisUV": [
+                -0.01920450000005758,
+                -0.02253450000000079
+              ],
+              "nominalM5RadialMarginsToSquareEdgesMm": [
+                0.31802050000004556,
+                0.27961149999998725,
+                0.32311450000000086,
+                0.2780454999999993
+              ],
+              "minimumNominalM5MarginMm": 0.2780454999999993,
+              "passesNominal5mmShank": true
+            },
+            {
+              "fixerHoleId": "fixer7u_cutout_16",
+              "padderHoleId": "padder1u_cutout_2",
+              "railAxisUV": [
+                308.7211605,
+                14.9950205
+              ],
+              "placedPadderHoleBBoxUV": {
+                "min": [
+                  305.92119499999995,
+                  12.171906
+                ],
+                "max": [
+                  311.518828,
+                  17.773066
+                ]
+              },
+              "padderCenterMinusRailAxisUV": [
+                -0.0011489999999980682,
+                -0.02253450000000079
+              ],
+              "nominalM5RadialMarginsToSquareEdgesMm": [
+                0.29996550000004163,
+                0.29766749999998865,
+                0.32311450000000086,
+                0.2780454999999993
+              ],
+              "minimumNominalM5MarginMm": 0.2780454999999993,
+              "passesNominal5mmShank": true
+            }
+          ],
+          "sourceShapeUnchanged": true
+        }
+      ],
+      "padderGapsAlongUMm": [
+        0.03185999999999467,
+        0.031860999999992146
+      ],
+      "selectedRailAxes": [
+        {
+          "id": "row1_rail1",
+          "row": 1,
+          "rowU": 3,
+          "fixerHoleId": "fixer7u_cutout_15",
+          "axisUV": [
+            6.0332935,
+            14.9950225
+          ],
+          "axisSourceXY": [
+            14.9950225,
+            6.0332935
+          ],
+          "worldYRelativeToFixerCenter": -151.3439345,
+          "worldZFormula": "fixerTopZ - 14.995022500",
+          "lipDirectionAlongWorldY": -1
+        },
+        {
+          "id": "row1_rail2",
+          "row": 1,
+          "rowU": 3,
+          "fixerHoleId": "fixer7u_cutout_23",
+          "axisUV": [
+            128.533836,
+            14.9950205
+          ],
+          "axisSourceXY": [
+            14.9950205,
+            128.533836
+          ],
+          "worldYRelativeToFixerCenter": -28.843391999999994,
+          "worldZFormula": "fixerTopZ - 14.995020500",
+          "lipDirectionAlongWorldY": 1
+        },
+        {
+          "id": "row2_rail1",
+          "row": 2,
+          "rowU": 3,
+          "fixerHoleId": "fixer7u_cutout_18",
+          "axisUV": [
+            140.5298535,
+            14.9950205
+          ],
+          "axisSourceXY": [
+            14.9950205,
+            140.5298535
+          ],
+          "worldYRelativeToFixerCenter": -16.8473745,
+          "worldZFormula": "fixerTopZ - 14.995020500",
+          "lipDirectionAlongWorldY": -1
+        },
+        {
+          "id": "row2_rail2",
+          "row": 2,
+          "rowU": 3,
+          "fixerHoleId": "fixer7u_cutout_17",
+          "axisUV": [
+            263.030426,
+            14.9950205
+          ],
+          "axisSourceXY": [
+            14.9950205,
+            263.030426
+          ],
+          "worldYRelativeToFixerCenter": 105.65319799999997,
+          "worldZFormula": "fixerTopZ - 14.995020500",
+          "lipDirectionAlongWorldY": 1
+        },
+        {
+          "id": "row3_rail1",
+          "row": 3,
+          "rowU": 1,
+          "fixerHoleId": "fixer7u_cutout_24",
+          "axisUV": [
+            275.0617065,
+            14.9950205
+          ],
+          "axisSourceXY": [
+            14.9950205,
+            275.0617065
+          ],
+          "worldYRelativeToFixerCenter": 117.68447850000001,
+          "worldZFormula": "fixerTopZ - 14.995020500",
+          "lipDirectionAlongWorldY": -1
+        },
+        {
+          "id": "row3_rail2",
+          "row": 3,
+          "rowU": 1,
+          "fixerHoleId": "fixer7u_cutout_16",
+          "axisUV": [
+            308.7211605,
+            14.9950205
+          ],
+          "axisSourceXY": [
+            14.9950205,
+            308.7211605
+          ],
+          "worldYRelativeToFixerCenter": 151.3439325,
+          "worldZFormula": "fixerTopZ - 14.995020500",
+          "lipDirectionAlongWorldY": 1
+        }
+      ],
+      "unusedRailHoleIds": [
+        "fixer7u_cutout_21",
+        "fixer7u_cutout_22",
+        "fixer7u_cutout_20",
+        "fixer7u_cutout_19"
+      ],
+      "selectedCaseMountAxesPerSide": [
+        {
+          "id": "case_mount_1",
+          "row": 1,
+          "fixerSlotId": "fixer7u_cutout_12",
+          "axisUV": [
+            22.8453565,
+            21.3105735
+          ],
+          "worldYRelativeToFixerCenter": -134.5318715,
+          "worldZFormula": "fixerTopZ - 21.310573500",
+          "selectionStatus": "selected case design positions at source slot centers; source allows adjustment",
+          "M5ShankInFixerSlot": {
+            "centerInside": true,
+            "minimumBoundaryDistanceMm": 2.6109064999999987,
+            "radiusMm": 2.5,
+            "minimumCircleEdgeClearanceMm": 0.11090649999999869,
+            "fits": true
+          },
+          "head9mmInPadderWindow": {
+            "centerInside": true,
+            "minimumBoundaryDistanceMm": 4.9030415000000005,
+            "radiusMm": 4.5,
+            "minimumCircleEdgeClearanceMm": 0.4030415000000005,
+            "fits": true
+          }
+        },
+        {
+          "id": "case_mount_2",
+          "row": 1,
+          "fixerSlotId": "fixer7u_cutout_6",
+          "axisUV": [
+            90.111288,
+            21.3105735
+          ],
+          "worldYRelativeToFixerCenter": -67.26594,
+          "worldZFormula": "fixerTopZ - 21.310573500",
+          "selectionStatus": "selected case design positions at source slot centers; source allows adjustment",
+          "M5ShankInFixerSlot": {
+            "centerInside": true,
+            "minimumBoundaryDistanceMm": 2.6109085000000007,
+            "radiusMm": 2.5,
+            "minimumCircleEdgeClearanceMm": 0.11090850000000074,
+            "fits": true
+          },
+          "head9mmInPadderWindow": {
+            "centerInside": true,
+            "minimumBoundaryDistanceMm": 4.9030415000000005,
+            "radiusMm": 4.5,
+            "minimumCircleEdgeClearanceMm": 0.4030415000000005,
+            "fits": true
+          }
+        },
+        {
+          "id": "case_mount_3",
+          "row": 2,
+          "fixerSlotId": "fixer7u_cutout_13",
+          "axisUV": [
+            157.37722,
+            21.3105735
+          ],
+          "worldYRelativeToFixerCenter": -8.000000008223651e-06,
+          "worldZFormula": "fixerTopZ - 21.310573500",
+          "selectionStatus": "selected case design positions at source slot centers; source allows adjustment",
+          "M5ShankInFixerSlot": {
+            "centerInside": true,
+            "minimumBoundaryDistanceMm": 2.6109085000000007,
+            "radiusMm": 2.5,
+            "minimumCircleEdgeClearanceMm": 0.11090850000000074,
+            "fits": true
+          },
+          "head9mmInPadderWindow": {
+            "centerInside": true,
+            "minimumBoundaryDistanceMm": 4.9030415000000005,
+            "radiusMm": 4.5,
+            "minimumCircleEdgeClearanceMm": 0.4030415000000005,
+            "fits": true
+          }
+        },
+        {
+          "id": "case_mount_4",
+          "row": 2,
+          "fixerSlotId": "fixer7u_cutout_8",
+          "axisUV": [
+            224.6431425,
+            21.3105735
+          ],
+          "worldYRelativeToFixerCenter": 67.26591450000001,
+          "worldZFormula": "fixerTopZ - 21.310573500",
+          "selectionStatus": "selected case design positions at source slot centers; source allows adjustment",
+          "M5ShankInFixerSlot": {
+            "centerInside": true,
+            "minimumBoundaryDistanceMm": 2.6109085000000007,
+            "radiusMm": 2.5,
+            "minimumCircleEdgeClearanceMm": 0.11090850000000074,
+            "fits": true
+          },
+          "head9mmInPadderWindow": {
+            "centerInside": true,
+            "minimumBoundaryDistanceMm": 4.9030415000000005,
+            "radiusMm": 4.5,
+            "minimumCircleEdgeClearanceMm": 0.4030415000000005,
+            "fits": true
+          }
+        },
+        {
+          "id": "case_mount_5",
+          "row": 3,
+          "fixerSlotId": "fixer7u_cutout_10",
+          "axisUV": [
+            291.873764,
+            21.3105735
+          ],
+          "worldYRelativeToFixerCenter": 134.496536,
+          "worldZFormula": "fixerTopZ - 21.310573500",
+          "selectionStatus": "selected case design positions at source slot centers; source allows adjustment",
+          "M5ShankInFixerSlot": {
+            "centerInside": true,
+            "minimumBoundaryDistanceMm": 2.6109064999999987,
+            "radiusMm": 2.5,
+            "minimumCircleEdgeClearanceMm": 0.11090649999999869,
+            "fits": true
+          },
+          "head9mmInPadderWindow": {
+            "centerInside": true,
+            "minimumBoundaryDistanceMm": 4.659657499999998,
+            "radiusMm": 4.5,
+            "minimumCircleEdgeClearanceMm": 0.159657499999998,
+            "fits": true
+          }
+        }
+      ],
+      "selectedCaseMountCountPerSide": 5,
+      "placementBasis": "Outer-boundary registration: source contours retained; M5 shanks fit offset padder square openings. Does not force hole centers to be identical.",
+      "roundHolePitchPerRowMm": [
+        122.50054250000001,
+        122.50057249999998,
+        33.65945399999998
+      ]
+    }
+  },
+  "notes": [
+    "7U fixer is one continuous 60.015381 mm deep piece, not two 30 mm panels.",
+    "All PCB thicknesses are user-confirmed 1.6 mm.",
+    "Selected 3U3U1U arrangement uses six of ten available rail holes.",
+    "Padder square holes remain slightly offset from rail axes; nominal 5 mm shank clearance was checked geometrically.",
+    "Frame contour geometry remains unchanged. Layout is a chosen assembly registration, not a manufacturing tolerance claim.",
+    "7U has five selected case-mount points per side: two in each 3U row, one in 1U; source slots permit adjustment. Their nominal 5 mm shanks and 9 mm heads fit fixer slots and padder windows."
+  ]
+}

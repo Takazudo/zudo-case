@@ -1,0 +1,298 @@
+{
+  "3u60": {
+    "metalEnvelopeMm": [
+      330.4,
+      154.0,
+      91
+    ],
+    "commonParts": 147,
+    "rails": 2,
+    "brackets": 16,
+    "mountCount": 4,
+    "panelHoles": 36,
+    "variants": {
+      "t1p2": {
+        "thicknessMm": 1.2,
+        "coverMm": 5,
+        "coverageMm": 5,
+        "radiusMm": 0.4,
+        "partCount": 12,
+        "totalGuardParts": 12,
+        "typeCount": 4,
+        "quantities": [
+          2,
+          4,
+          2,
+          4
+        ],
+        "totalVolumeCm3": 27.33348987,
+        "volumeCm3": 27.33348987,
+        "approxMassG": 27.607,
+        "maxPartLengthMm": 166.4,
+        "outerEnvelopeMm": [
+          332.8,
+          156.4,
+          93.4
+        ],
+        "outerDimensions": [
+          332.8,
+          156.4,
+          93.4
+        ],
+        "feetIncludedEnvelopeMm": [
+          332.8,
+          156.4,
+          95.2
+        ],
+        "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+        "openingMm": [
+          325.4,
+          149.0
+        ],
+        "quoteJpy": null,
+        "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+      },
+      "t1p0": {
+        "thicknessMm": 1.0,
+        "coverMm": 5,
+        "coverageMm": 5,
+        "radiusMm": 0.4,
+        "partCount": 12,
+        "totalGuardParts": 12,
+        "typeCount": 4,
+        "quantities": [
+          2,
+          4,
+          2,
+          4
+        ],
+        "totalVolumeCm3": 22.30124427,
+        "volumeCm3": 22.30124427,
+        "approxMassG": 22.524,
+        "maxPartLengthMm": 166.2,
+        "outerEnvelopeMm": [
+          332.4,
+          156.0,
+          93.0
+        ],
+        "outerDimensions": [
+          332.4,
+          156.0,
+          93.0
+        ],
+        "feetIncludedEnvelopeMm": [
+          332.4,
+          156.0,
+          95.0
+        ],
+        "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+        "openingMm": [
+          325.4,
+          149.0
+        ],
+        "quoteJpy": null,
+        "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+      }
+    }
+  },
+  "7u40": {
+    "metalEnvelopeMm": [
+      229.4,
+      334.0,
+      91
+    ],
+    "commonParts": 201,
+    "rails": 6,
+    "brackets": 18,
+    "mountCount": 10,
+    "panelHoles": 46,
+    "variants": {
+      "t1p2": {
+        "thicknessMm": 1.2,
+        "coverMm": 5,
+        "coverageMm": 5,
+        "radiusMm": 0.4,
+        "partCount": 16,
+        "totalGuardParts": 16,
+        "typeCount": 6,
+        "quantities": [
+          2,
+          2,
+          4,
+          2,
+          2,
+          4
+        ],
+        "totalVolumeCm3": 31.0956796,
+        "volumeCm3": 31.0956796,
+        "approxMassG": 31.407,
+        "maxPartLengthMm": 168.2,
+        "outerEnvelopeMm": [
+          231.8,
+          336.4,
+          93.4
+        ],
+        "outerDimensions": [
+          231.8,
+          336.4,
+          93.4
+        ],
+        "feetIncludedEnvelopeMm": [
+          231.8,
+          336.4,
+          95.2
+        ],
+        "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+        "openingMm": [
+          224.4,
+          329.0
+        ],
+        "quoteJpy": null,
+        "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+      },
+      "t1p0": {
+        "thicknessMm": 1.0,
+        "coverMm": 5,
+        "coverageMm": 5,
+        "radiusMm": 0.4,
+        "partCount": 16,
+        "totalGuardParts": 16,
+        "typeCount": 6,
+        "quantities": [
+          2,
+          2,
+          4,
+          2,
+          2,
+          4
+        ],
+        "totalVolumeCm3": 25.371394,
+        "volumeCm3": 25.371394,
+        "approxMassG": 25.625,
+        "maxPartLengthMm": 168.0,
+        "outerEnvelopeMm": [
+          231.4,
+          336.0,
+          93.0
+        ],
+        "outerDimensions": [
+          231.4,
+          336.0,
+          93.0
+        ],
+        "feetIncludedEnvelopeMm": [
+          231.4,
+          336.0,
+          95.0
+        ],
+        "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+        "openingMm": [
+          224.4,
+          329.0
+        ],
+        "quoteJpy": null,
+        "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+      }
+    }
+  },
+  "7u60": {
+    "metalEnvelopeMm": [
+      330.4,
+      334.0,
+      91
+    ],
+    "commonParts": 201,
+    "rails": 6,
+    "brackets": 18,
+    "mountCount": 10,
+    "panelHoles": 46,
+    "variants": {
+      "t1p2": {
+        "thicknessMm": 1.2,
+        "coverMm": 5,
+        "coverageMm": 5,
+        "radiusMm": 0.4,
+        "partCount": 16,
+        "totalGuardParts": 16,
+        "typeCount": 6,
+        "quantities": [
+          2,
+          2,
+          4,
+          2,
+          2,
+          4
+        ],
+        "totalVolumeCm3": 35.90556773,
+        "volumeCm3": 35.90556773,
+        "approxMassG": 36.265,
+        "maxPartLengthMm": 168.2,
+        "outerEnvelopeMm": [
+          332.8,
+          336.4,
+          93.4
+        ],
+        "outerDimensions": [
+          332.8,
+          336.4,
+          93.4
+        ],
+        "feetIncludedEnvelopeMm": [
+          332.8,
+          336.4,
+          95.2
+        ],
+        "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+        "openingMm": [
+          325.4,
+          329.0
+        ],
+        "quoteJpy": null,
+        "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+      },
+      "t1p0": {
+        "thicknessMm": 1.0,
+        "coverMm": 5,
+        "coverageMm": 5,
+        "radiusMm": 0.4,
+        "partCount": 16,
+        "totalGuardParts": 16,
+        "typeCount": 6,
+        "quantities": [
+          2,
+          2,
+          4,
+          2,
+          2,
+          4
+        ],
+        "totalVolumeCm3": 29.29652214,
+        "volumeCm3": 29.29652214,
+        "approxMassG": 29.589,
+        "maxPartLengthMm": 168.0,
+        "outerEnvelopeMm": [
+          332.4,
+          336.0,
+          93.0
+        ],
+        "outerDimensions": [
+          332.4,
+          336.0,
+          93.0
+        ],
+        "feetIncludedEnvelopeMm": [
+          332.4,
+          336.0,
+          95.0
+        ],
+        "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+        "openingMm": [
+          325.4,
+          329.0
+        ],
+        "quoteJpy": null,
+        "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+      }
+    }
+  }
+}

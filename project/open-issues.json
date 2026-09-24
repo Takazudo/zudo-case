@@ -1,0 +1,112 @@
+[
+  {
+    "id": "G01",
+    "title": "R8の製作CADへの反映",
+    "priority": "blocker",
+    "status": "open",
+    "reason": "R8はプレビューのみ。載せ蓋用のSTL/STEP/DXFを再生成し、R7のM3補助穴・ナットチャンネル・圧縮スペーサーを除く。",
+    "completion_evidence": "R8の形状を反映した新規版と、版番号・単位・数量・SHA-256を記録。",
+    "owner": null,
+    "result": null
+  },
+  {
+    "id": "G02",
+    "title": "本体の長穴の向きと調整量",
+    "priority": "blocker",
+    "status": "open",
+    "reason": "ブラケットのばらつきを締付前の調整で吸収する方針。R6はφ5.5丸穴、穴中心10mm仮値。",
+    "completion_evidence": "手持ち金具の代表実測を残し、基準穴と長穴を図面に反映。組立で無理な引き寄せがない。",
+    "owner": null,
+    "result": null
+  },
+  {
+    "id": "G03",
+    "title": "ガードの嵌合と保持",
+    "priority": "blocker",
+    "status": "open",
+    "reason": "本体ガードは公称すきま0mm。固定爪、接着層等は未確定。",
+    "completion_evidence": "実材料の短い試験片で嵌合・保持を確認し寸法へ反映。",
+    "owner": null,
+    "result": null
+  },
+  {
+    "id": "G04",
+    "title": "蓋の差し込みとバンド締付",
+    "priority": "blocker",
+    "status": "open",
+    "reason": "R8段差2mm/12mm/片側0.7mmは表示用仮値。",
+    "completion_evidence": "開閉、ずれ、外れ、強く締めた時のたわみ、ノブへの接触を現物確認。",
+    "owner": null,
+    "result": null
+  },
+  {
+    "id": "G05",
+    "title": "搭載モジュールの高さ",
+    "priority": "blocker",
+    "status": "open",
+    "reason": "パネル2mm＋ノブ25mmの仮領域しか確認していない。パッチは外す。",
+    "completion_evidence": "使うモジュールの最大高さと蓋下面の余裕を記録。",
+    "owner": null,
+    "result": null
+  },
+  {
+    "id": "G06",
+    "title": "ネジ・座金・ナットの現物",
+    "priority": "blocker",
+    "status": "open",
+    "reason": "頭高さ1.4mmとPCB厚はユーザー確認済み。頭径、ネジ長、ナット厚は模式値を含む。",
+    "completion_evidence": "適合済み部品を流用する場合も品番を固定。必要突出量と隣接ネジ/PCBを確認。",
+    "owner": null,
+    "result": null
+  },
+  {
+    "id": "G07",
+    "title": "アルミ調達と黒仕上げ",
+    "priority": "blocker",
+    "status": "open",
+    "reason": "A5052候補。比較価格のB2FはA1100Pで別材質。表面・端面と長穴加工込み費用が未取得。",
+    "completion_evidence": "材質、t1.5、外形公差、長穴、バリ処理、黒アルマイト、検査、税送料を見積書で固定。",
+    "owner": null,
+    "result": null
+  },
+  {
+    "id": "G08",
+    "title": "底面接地と内装",
+    "priority": "open",
+    "status": "open",
+    "reason": "ゴム脚φ10×3mmは仮。基板/電源/配線の最終配置は対象外。",
+    "completion_evidence": "圧縮後も金属ネジが机に触れないことと、金属内装への基板接触がないことを確認。",
+    "owner": null,
+    "result": null
+  },
+  {
+    "id": "G09",
+    "title": "運搬用バンドの品番と長さ",
+    "priority": "open",
+    "status": "open",
+    "reason": "２本の外周バンドを採用。幅20mmは模式値。",
+    "completion_evidence": "バックル・折返しを含む長さ、引っ掛かり、横滑り、締付の上限を現物で確認。",
+    "owner": null,
+    "result": null
+  },
+  {
+    "id": "G10",
+    "title": "最終見積の記録",
+    "priority": "open",
+    "status": "open",
+    "reason": "R3ガード2,264円以外は過去試算または旧仕様。R8蓋価格はない。",
+    "completion_evidence": "機種別の最新ファイル一式で板/樹脂/小物/バンド/送料/税を再見積。",
+    "owner": null,
+    "result": null
+  },
+  {
+    "id": "G11",
+    "title": "組立・運搬の試験と承認",
+    "priority": "blocker",
+    "status": "open",
+    "reason": "幾何/ブラウザーの記録は実物の強度保証ではない。",
+    "completion_evidence": "荷重条件、開閉回数、搬送条件、破損/緩み判定を決めて結果と承認者を残す。",
+    "owner": null,
+    "result": null
+  }
+]

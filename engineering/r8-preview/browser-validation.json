@@ -1,0 +1,320 @@
+{
+  "desktop": [
+    {
+      "state": {
+        "model": "7u40",
+        "lift": 0,
+        "bands": false,
+        "hideLid": false,
+        "ghost": false,
+        "colors": false,
+        "labels": false,
+        "detail": false,
+        "clearance": false,
+        "view": "iso"
+      },
+      "meshes": 143,
+      "frames": 4,
+      "pose": [
+        0,
+        0,
+        0
+      ],
+      "bandsVisible": false,
+      "bandLoops": 2,
+      "locks": 0,
+      "bodySize": [
+        229.4,
+        334,
+        91
+      ],
+      "detailVisible": false,
+      "sourceRevision": "R8-SIMPLE-LID-PREVIEW"
+    },
+    {
+      "state": {
+        "model": "7u40",
+        "lift": 0,
+        "bands": true,
+        "hideLid": false,
+        "ghost": false,
+        "colors": false,
+        "labels": false,
+        "detail": false,
+        "clearance": false,
+        "view": "iso"
+      },
+      "meshes": 143,
+      "frames": 5,
+      "pose": [
+        0,
+        0,
+        0
+      ],
+      "bandsVisible": true,
+      "bandLoops": 2,
+      "locks": 0,
+      "bodySize": [
+        229.4,
+        334,
+        91
+      ],
+      "detailVisible": false,
+      "sourceRevision": "R8-SIMPLE-LID-PREVIEW"
+    },
+    {
+      "state": {
+        "model": "7u40",
+        "lift": 110,
+        "bands": false,
+        "hideLid": false,
+        "ghost": false,
+        "colors": false,
+        "labels": false,
+        "detail": false,
+        "clearance": false,
+        "view": "iso"
+      },
+      "meshes": 143,
+      "frames": 6,
+      "pose": [
+        0,
+        0,
+        110
+      ],
+      "bandsVisible": false,
+      "bandLoops": 2,
+      "locks": 0,
+      "bodySize": [
+        229.4,
+        334,
+        91
+      ],
+      "detailVisible": false,
+      "sourceRevision": "R8-SIMPLE-LID-PREVIEW"
+    },
+    {
+      "state": {
+        "model": "3u60",
+        "lift": 0,
+        "bands": false,
+        "hideLid": false,
+        "ghost": false,
+        "colors": false,
+        "labels": false,
+        "detail": false,
+        "clearance": false,
+        "view": "iso"
+      },
+      "meshes": 105,
+      "frames": 8,
+      "pose": [
+        0,
+        0,
+        0
+      ],
+      "bandsVisible": false,
+      "bandLoops": 2,
+      "locks": 0,
+      "bodySize": [
+        330.4,
+        154,
+        91
+      ],
+      "detailVisible": false,
+      "sourceRevision": "R8-SIMPLE-LID-PREVIEW"
+    },
+    {
+      "state": {
+        "model": "3u60",
+        "lift": 0,
+        "bands": true,
+        "hideLid": false,
+        "ghost": false,
+        "colors": false,
+        "labels": false,
+        "detail": false,
+        "clearance": false,
+        "view": "iso"
+      },
+      "meshes": 105,
+      "frames": 8,
+      "pose": [
+        0,
+        0,
+        0
+      ],
+      "bandsVisible": true,
+      "bandLoops": 2,
+      "locks": 0,
+      "bodySize": [
+        330.4,
+        154,
+        91
+      ],
+      "detailVisible": false,
+      "sourceRevision": "R8-SIMPLE-LID-PREVIEW"
+    },
+    {
+      "state": {
+        "model": "3u60",
+        "lift": 110,
+        "bands": false,
+        "hideLid": false,
+        "ghost": false,
+        "colors": false,
+        "labels": false,
+        "detail": false,
+        "clearance": false,
+        "view": "iso"
+      },
+      "meshes": 105,
+      "frames": 10,
+      "pose": [
+        0,
+        0,
+        110
+      ],
+      "bandsVisible": false,
+      "bandLoops": 2,
+      "locks": 0,
+      "bodySize": [
+        330.4,
+        154,
+        91
+      ],
+      "detailVisible": false,
+      "sourceRevision": "R8-SIMPLE-LID-PREVIEW"
+    },
+    {
+      "state": {
+        "model": "7u60",
+        "lift": 0,
+        "bands": false,
+        "hideLid": false,
+        "ghost": false,
+        "colors": false,
+        "labels": false,
+        "detail": false,
+        "clearance": false,
+        "view": "iso"
+      },
+      "meshes": 143,
+      "frames": 10,
+      "pose": [
+        0,
+        0,
+        0
+      ],
+      "bandsVisible": false,
+      "bandLoops": 2,
+      "locks": 0,
+      "bodySize": [
+        330.4,
+        334,
+        91
+      ],
+      "detailVisible": false,
+      "sourceRevision": "R8-SIMPLE-LID-PREVIEW"
+    },
+    {
+      "state": {
+        "model": "7u60",
+        "lift": 0,
+        "bands": true,
+        "hideLid": false,
+        "ghost": false,
+        "colors": false,
+        "labels": false,
+        "detail": false,
+        "clearance": false,
+        "view": "iso"
+      },
+      "meshes": 143,
+      "frames": 11,
+      "pose": [
+        0,
+        0,
+        0
+      ],
+      "bandsVisible": true,
+      "bandLoops": 2,
+      "locks": 0,
+      "bodySize": [
+        330.4,
+        334,
+        91
+      ],
+      "detailVisible": false,
+      "sourceRevision": "R8-SIMPLE-LID-PREVIEW"
+    },
+    {
+      "state": {
+        "model": "7u60",
+        "lift": 110,
+        "bands": false,
+        "hideLid": false,
+        "ghost": false,
+        "colors": false,
+        "labels": false,
+        "detail": false,
+        "clearance": false,
+        "view": "iso"
+      },
+      "meshes": 143,
+      "frames": 12,
+      "pose": [
+        0,
+        0,
+        110
+      ],
+      "bandsVisible": false,
+      "bandLoops": 2,
+      "locks": 0,
+      "bodySize": [
+        330.4,
+        334,
+        91
+      ],
+      "detailVisible": false,
+      "sourceRevision": "R8-SIMPLE-LID-PREVIEW"
+    }
+  ],
+  "mobile": [
+    {
+      "state": {
+        "model": "7u40",
+        "lift": 110,
+        "bands": false,
+        "hideLid": false,
+        "ghost": true,
+        "colors": true,
+        "labels": false,
+        "detail": true,
+        "clearance": false,
+        "view": "iso"
+      },
+      "meshes": 143,
+      "frames": 6,
+      "pose": [
+        0,
+        0,
+        110
+      ],
+      "bandsVisible": false,
+      "bandLoops": 2,
+      "locks": 0,
+      "bodySize": [
+        229.4,
+        334,
+        91
+      ],
+      "detailVisible": true,
+      "sourceRevision": "R8-SIMPLE-LID-PREVIEW"
+    }
+  ],
+  "testMethod": "Standalone HTML injected with set_content in an offline browser context; file navigation is blocked by managed browser policy.",
+  "desktopErrors": [],
+  "requests": [],
+  "mobileErrors": []
+}

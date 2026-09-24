@@ -1,0 +1,90 @@
+{
+  "currency": "JPY",
+  "captured_in_conversation_date": "2026-09-24",
+  "notes": "価格は出典の状態を優先。今回、新しい業者価格を取得していない。税の不明な画面表示を税込/税抜へ変換しない。",
+  "records": [
+    {
+      "id": "Q-R3-001",
+      "kind": "user_quote_screenshot",
+      "revision": "R3 t1p2",
+      "scope": "旧3U60 本体ガード12個のみ",
+      "rows": [
+        {
+          "part": "縦辺",
+          "qty": 4,
+          "row_jpy": 661
+        },
+        {
+          "part": "左右下辺",
+          "qty": 2,
+          "row_jpy": 331
+        },
+        {
+          "part": "上端U",
+          "qty": 2,
+          "row_jpy": 611
+        },
+        {
+          "part": "前後下辺半分",
+          "qty": 4,
+          "row_jpy": 661
+        }
+      ],
+      "total_jpy": 2264,
+      "includes_black_dye": true,
+      "tax_status": "画面では不明",
+      "shipping_included": false,
+      "source": "public/evidence/r3-jlc-quote.png",
+      "applies_to_current_release": false
+    },
+    {
+      "id": "Q-AL-OLD",
+      "kind": "prior_assistant_report_unverified",
+      "scope": "旧324×171×91級 切板5枚 穴なし",
+      "rows": [
+        {
+          "supplier": "横山テクノ",
+          "material": "A5052 無処理 t1.5",
+          "one_case_jpy": 3280
+        },
+        {
+          "supplier": "タカチB2F",
+          "material": "A1100P 黒アルマイト t1.5",
+          "one_case_jpy": 8294,
+          "ten_cases_each_jpy": 7007,
+          "fifty_cases_each_jpy": 6589
+        }
+      ],
+      "tax_status": "過去回答は税込と記載",
+      "shipping_included": false,
+      "hole_machining_included": false,
+      "source": "本会話の過去回答。元の業者見積書・保存HTMLは同梱なし。",
+      "applies_to_current_release": false
+    },
+    {
+      "id": "E-R6-BODY",
+      "kind": "prior_assistant_budget_not_quote",
+      "scope": "R6本体。レール・蓋・バンド・送料・梱包・工賃は除外。穴加工込みと表現されたが実額未取得。",
+      "models": {
+        "3u60": [
+          11000,
+          13000
+        ],
+        "7u40": [
+          14000,
+          17000
+        ],
+        "7u60": [
+          17000,
+          21000
+        ]
+      },
+      "tax_status": "前提が混在するため再見積必要",
+      "source": "本会話の過去原価予測",
+      "applies_to_current_release": false
+    }
+  ],
+  "current_total_jpy": null,
+  "current_lid_price_jpy": null,
+  "current_band_price_jpy": null
+}

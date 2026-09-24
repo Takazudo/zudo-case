@@ -1,0 +1,27 @@
+---
+title: "R8・載せ蓋＋外周バンド"
+description: "現在の採用コンセプト。表示モデルであり製作CADではない。"
+sidebar_position: 10
+---
+
+## 操作する
+
+**[R8プレビューを別タブで開く](/previews/r8-simple-lid.html)**。本サイトに同梱した元の単一HTMLで、約4.7MB。7U40から始まり、３機種を切り替えられる。
+
+<iframe src="/previews/r8-simple-lid.html" title="R8 載せ蓋と外周バンドの3Dプレビュー" width="100%" height="720" loading="lazy" style={{ border: "1px solid #6b7280", borderRadius: "8px" }} />
+
+埋め込み枠が狭い場合は別タブで確認する。左ドラッグで回転、スクロールで拡大、右ドラッグで移動。WebGL2とDecompressionStreamに対応するブラウザーが必要。
+
+## 表示の意味
+
+「日常」はバンドなしの載せ蓋。「運搬」は外周バンド２本。「使用中」は蓋を真上へ外す。持ち上げスライダー、天板/外板の透過、差し込み部の色分け、断面の拡大、ノブ25mmの仮領域が使える。
+
+バンドの解除や締付力のシミュレーションはない。バックル、弾性、重なり、天板のたわみは模式化していない。クリックで部品名を確認できるが、その表示形状が発注用CADであるという意味ではない。
+
+:::warning[発注データは別]
+
+R8ソースの`manufacturingFilesUpdated`は`false`。この版には製作用STL・STEP・DXFがない。天板・段差の再CAD化が必要。
+
+:::
+
+編集するソースは`engineering/r8-preview/`。[元README](/evidence/r8-original-readme.md)と[元manifest](/evidence/r8-original-manifest.json)も同梱した。

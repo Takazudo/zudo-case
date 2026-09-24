@@ -1,0 +1,1054 @@
+{
+  "schema_version": 1,
+  "document_snapshot": "2026-09-24",
+  "project": "ZUDO CASE",
+  "status": "pre-order; documentation handoff, no manufacturing release",
+  "preferred_model": "7u40",
+  "units": "mm",
+  "adopted": {
+    "construction": "5 independent flat metal plates + existing L brackets; no interlocking tabs",
+    "finish": "black anodized aluminum",
+    "alloy": "A5052 is the current candidate, supplier not selected",
+    "pcb_thickness_mm": 1.6,
+    "rail_mount_head_height_mm": 1.4,
+    "bracket_envelope_mm": [
+      20,
+      20,
+      16
+    ],
+    "bracket_measured_thickness_mm": 2.0,
+    "side_spacer_mm": 8,
+    "outside_washer_mm": 1,
+    "lid": "10BOX-style locating lift-off lid + 2 removable external straps; no lid-to-body lock",
+    "module_layout": "7U = 3U+3U+1U on one plane, not vertically stacked enclosures",
+    "slot_intent": "Absorb bracket/material positional variation by adjustment then clamping. Long-hole dimensions/directions not yet frozen."
+  },
+  "provisional": {
+    "bracket_allowance_thickness_mm": 2.2,
+    "bracket_hole_center_from_inside_mm": 10,
+    "body_guard_thickness_mm": 1.2,
+    "body_guard_alternative_mm": 1.0,
+    "body_guard_cover_mm": 5,
+    "body_guard_contact_clearance_mm": 0,
+    "lid_rise_mm": 30,
+    "lid_locator_thickness_mm": 2,
+    "lid_locator_engagement_mm": 12,
+    "lid_locator_clearance_to_guard_mm": 0.7,
+    "module_panel_mm": 2,
+    "knob_height_above_panel_mm": 25,
+    "feet_mm": [
+      10,
+      3
+    ],
+    "rail_mount_grip_excluding_head_and_nut_mm": 12.1
+  },
+  "source_commits": {
+    "rail": "0f7316ad9000b7906e5769aa89aff2dc18c661c8",
+    "pcbs": "b4db88ce5c93709f3f2f0a031f75190081f02443"
+  },
+  "models": {
+    "3u60": {
+      "id": "3u60",
+      "label": "3U・60HP",
+      "priority": "parallel",
+      "body_revision": "R6-SOURCE-FAMILY-01",
+      "lid_revision": "R8-SIMPLE-LID-PREVIEW",
+      "manufacturing_release": null,
+      "metal_mm": [
+        330.4,
+        154.0,
+        91
+      ],
+      "metal_thickness_mm": 1.5,
+      "rail_length_mm": 305.0,
+      "rail_frame_width_mm": 311.4,
+      "frame_depth_mm": 134.53186,
+      "front_back_gap_to_metal_mm": 8.234070000000003,
+      "front_back_gap_to_guard_mm": 7.234070000000003,
+      "plates": [
+        {
+          "part": "底板",
+          "size_mm": [
+            330.4,
+            154.0,
+            1.5
+          ],
+          "quantity": 1,
+          "holes_each": 8
+        },
+        {
+          "part": "前後板",
+          "size_mm": [
+            327.4,
+            89.5,
+            1.5
+          ],
+          "quantity": 2,
+          "holes_each": 6
+        },
+        {
+          "part": "左右板",
+          "size_mm": [
+            154.0,
+            89.5,
+            1.5
+          ],
+          "quantity": 2,
+          "holes_each": 8
+        }
+      ],
+      "hardware_counts": {
+        "aluminumPanel": 5,
+        "panelBracket": 16,
+        "rail": 2,
+        "fixer": 2,
+        "padder": 2,
+        "innerSpacer": 4,
+        "outerWasher": 4,
+        "mountBolt": 4,
+        "mountNut": 4,
+        "railEndBolt": 4,
+        "panelJointBolt": 32,
+        "panelJointWasher": 32,
+        "panelJointNut": 32,
+        "foot": 4
+      },
+      "panel_holes": 36,
+      "joint_holes": 32,
+      "guards": {
+        "t1p2": {
+          "thicknessMm": 1.2,
+          "coverMm": 5,
+          "coverageMm": 5,
+          "radiusMm": 0.4,
+          "partCount": 12,
+          "totalGuardParts": 12,
+          "typeCount": 4,
+          "quantities": [
+            2,
+            4,
+            2,
+            4
+          ],
+          "totalVolumeCm3": 27.33348987,
+          "volumeCm3": 27.33348987,
+          "approxMassG": 27.607,
+          "maxPartLengthMm": 166.4,
+          "outerEnvelopeMm": [
+            332.8,
+            156.4,
+            93.4
+          ],
+          "outerDimensions": [
+            332.8,
+            156.4,
+            93.4
+          ],
+          "feetIncludedEnvelopeMm": [
+            332.8,
+            156.4,
+            95.2
+          ],
+          "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+          "openingMm": [
+            325.4,
+            149.0
+          ],
+          "quoteJpy": null,
+          "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。",
+          "catalog": [
+            {
+              "partType": "top_u",
+              "name": "上端U字ガード",
+              "quantity": 2,
+              "dimensions": [
+                166.4,
+                156.4,
+                6.2
+              ],
+              "volumeCm3": 5.04320696,
+              "stlFile": "3u60_r6_t1p2_01_top_u_qty2_mm.stl",
+              "stepFile": "engineering/3u60/guards/3u60_r6_t1p2_01_top_u_qty2_mm.step"
+            },
+            {
+              "partType": "lower_width_half",
+              "name": "前後下辺・半分",
+              "quantity": 4,
+              "dimensions": [
+                166.4,
+                6.2,
+                6.2
+              ],
+              "volumeCm3": 2.23070244,
+              "stlFile": "3u60_r6_t1p2_02_lower_width_half_qty4_mm.stl",
+              "stepFile": "engineering/3u60/guards/3u60_r6_t1p2_02_lower_width_half_qty4_mm.step"
+            },
+            {
+              "partType": "lower_depth_full",
+              "name": "左右下辺ガード",
+              "quantity": 2,
+              "dimensions": [
+                6.2,
+                154.0,
+                6.2
+              ],
+              "volumeCm3": 1.99041557,
+              "stlFile": "3u60_r6_t1p2_03_lower_depth_full_qty2_mm.stl",
+              "stepFile": "engineering/3u60/guards/3u60_r6_t1p2_03_lower_depth_full_qty2_mm.step"
+            },
+            {
+              "partType": "vertical_corner",
+              "name": "縦辺コーナーガード",
+              "quantity": 4,
+              "dimensions": [
+                6.2,
+                6.2,
+                81.0
+              ],
+              "volumeCm3": 1.08585876,
+              "stlFile": "3u60_r6_t1p2_04_vertical_corner_qty4_mm.stl",
+              "stepFile": "engineering/3u60/guards/3u60_r6_t1p2_04_vertical_corner_qty4_mm.step"
+            }
+          ]
+        },
+        "t1p0": {
+          "thicknessMm": 1.0,
+          "coverMm": 5,
+          "coverageMm": 5,
+          "radiusMm": 0.4,
+          "partCount": 12,
+          "totalGuardParts": 12,
+          "typeCount": 4,
+          "quantities": [
+            2,
+            4,
+            2,
+            4
+          ],
+          "totalVolumeCm3": 22.30124427,
+          "volumeCm3": 22.30124427,
+          "approxMassG": 22.524,
+          "maxPartLengthMm": 166.2,
+          "outerEnvelopeMm": [
+            332.4,
+            156.0,
+            93.0
+          ],
+          "outerDimensions": [
+            332.4,
+            156.0,
+            93.0
+          ],
+          "feetIncludedEnvelopeMm": [
+            332.4,
+            156.0,
+            95.0
+          ],
+          "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+          "openingMm": [
+            325.4,
+            149.0
+          ],
+          "quoteJpy": null,
+          "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。",
+          "catalog": [
+            {
+              "partType": "top_u",
+              "name": "上端U字ガード",
+              "quantity": 2,
+              "dimensions": [
+                166.2,
+                156.0,
+                6.0
+              ],
+              "volumeCm3": 4.10014243,
+              "stlFile": "3u60_r6_t1p0_01_top_u_qty2_mm.stl",
+              "stepFile": "engineering/3u60/guards/3u60_r6_t1p0_01_top_u_qty2_mm.step"
+            },
+            {
+              "partType": "lower_width_half",
+              "name": "前後下辺・半分",
+              "quantity": 4,
+              "dimensions": [
+                166.2,
+                6.0,
+                6.0
+              ],
+              "volumeCm3": 1.82249331,
+              "stlFile": "3u60_r6_t1p0_02_lower_width_half_qty4_mm.stl",
+              "stepFile": "engineering/3u60/guards/3u60_r6_t1p0_02_lower_width_half_qty4_mm.step"
+            },
+            {
+              "partType": "lower_depth_full",
+              "name": "左右下辺ガード",
+              "quantity": 2,
+              "dimensions": [
+                6.0,
+                154.0,
+                6.0
+              ],
+              "volumeCm3": 1.62905557,
+              "stlFile": "3u60_r6_t1p0_03_lower_depth_full_qty2_mm.stl",
+              "stepFile": "engineering/3u60/guards/3u60_r6_t1p0_03_lower_depth_full_qty2_mm.step"
+            },
+            {
+              "partType": "vertical_corner",
+              "name": "縦辺コーナーガード",
+              "quantity": 4,
+              "dimensions": [
+                6.0,
+                6.0,
+                81.0
+              ],
+              "volumeCm3": 0.88821876,
+              "stlFile": "3u60_r6_t1p0_04_vertical_corner_qty4_mm.stl",
+              "stepFile": "engineering/3u60/guards/3u60_r6_t1p0_04_vertical_corner_qty4_mm.step"
+            }
+          ]
+        }
+      },
+      "lid_preview": {
+        "lidRiseMm": 30,
+        "locatorThicknessMm": 2.0,
+        "locatorEngagementMm": 12.0,
+        "locatorClearanceToGuardMm": 0.7,
+        "frontGapMm": 7.234070000000003,
+        "lidOuterMm": [
+          332.79999999999995,
+          156.4
+        ],
+        "lidPlateMm": [
+          328.59999999999997,
+          152.2,
+          1.5
+        ],
+        "bodyHeightMm": 91,
+        "closedTopMm": 125.8,
+        "closedHeightIncludingFeetMm": 128.8,
+        "strapWidthMm": 20.0,
+        "strapThicknessMm": 1.4,
+        "strapAxis": "y",
+        "strapStationsMm": [
+          -82.6,
+          82.6
+        ],
+        "strapLoopGeometricEstimateMm": 570.4,
+        "strapNote": "汎用バンドを模式表示。バックル・重なり代・突起や実際の締付による長さ差は含まない。"
+      },
+      "lid_metal_status": "R8表示寸法。製作図未再出力・未承認",
+      "sources": [
+        "engineering/r6-body/engineering/3u60/model-summary.json",
+        "engineering/r6-body/stl/3u60/t1p2/manifest.json",
+        "engineering/r8-preview/preview-parameters.json"
+      ]
+    },
+    "7u40": {
+      "id": "7u40",
+      "label": "3U＋3U＋1U・40HP",
+      "priority": "primary",
+      "body_revision": "R6-SOURCE-FAMILY-01",
+      "lid_revision": "R8-SIMPLE-LID-PREVIEW",
+      "manufacturing_release": null,
+      "metal_mm": [
+        229.4,
+        334.0,
+        91
+      ],
+      "metal_thickness_mm": 1.5,
+      "rail_length_mm": 204.0,
+      "rail_frame_width_mm": 210.4,
+      "frame_depth_mm": 314.754456,
+      "front_back_gap_to_metal_mm": 8.122771999999998,
+      "front_back_gap_to_guard_mm": 7.122771999999998,
+      "plates": [
+        {
+          "part": "底板",
+          "size_mm": [
+            229.4,
+            334.0,
+            1.5
+          ],
+          "quantity": 1,
+          "holes_each": 10
+        },
+        {
+          "part": "前後板",
+          "size_mm": [
+            226.4,
+            89.5,
+            1.5
+          ],
+          "quantity": 2,
+          "holes_each": 6
+        },
+        {
+          "part": "左右板",
+          "size_mm": [
+            334.0,
+            89.5,
+            1.5
+          ],
+          "quantity": 2,
+          "holes_each": 12
+        }
+      ],
+      "hardware_counts": {
+        "aluminumPanel": 5,
+        "panelBracket": 18,
+        "rail": 6,
+        "fixer": 2,
+        "padder": 6,
+        "innerSpacer": 10,
+        "outerWasher": 10,
+        "mountBolt": 10,
+        "mountNut": 10,
+        "railEndBolt": 12,
+        "panelJointBolt": 36,
+        "panelJointWasher": 36,
+        "panelJointNut": 36,
+        "foot": 4
+      },
+      "panel_holes": 46,
+      "joint_holes": 36,
+      "guards": {
+        "t1p2": {
+          "thicknessMm": 1.2,
+          "coverMm": 5,
+          "coverageMm": 5,
+          "radiusMm": 0.4,
+          "partCount": 16,
+          "totalGuardParts": 16,
+          "typeCount": 6,
+          "quantities": [
+            2,
+            2,
+            4,
+            2,
+            2,
+            4
+          ],
+          "totalVolumeCm3": 31.0956796,
+          "volumeCm3": 31.0956796,
+          "approxMassG": 31.407,
+          "maxPartLengthMm": 168.2,
+          "outerEnvelopeMm": [
+            231.8,
+            336.4,
+            93.4
+          ],
+          "outerDimensions": [
+            231.8,
+            336.4,
+            93.4
+          ],
+          "feetIncludedEnvelopeMm": [
+            231.8,
+            336.4,
+            95.2
+          ],
+          "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+          "openingMm": [
+            224.4,
+            329.0
+          ],
+          "quoteJpy": null,
+          "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。",
+          "catalog": [
+            {
+              "partType": "top_corner_a",
+              "name": "上端L字ガード A",
+              "quantity": 2,
+              "dimensions": [
+                115.9,
+                168.2,
+                6.2
+              ],
+              "volumeCm3": 2.93262719,
+              "stlFile": "7u40_r6_t1p2_01_top_corner_a_qty2_mm.stl",
+              "stepFile": "engineering/7u40/guards/7u40_r6_t1p2_01_top_corner_a_qty2_mm.step"
+            },
+            {
+              "partType": "top_corner_b",
+              "name": "上端L字ガード B",
+              "quantity": 2,
+              "dimensions": [
+                115.9,
+                168.2,
+                6.2
+              ],
+              "volumeCm3": 2.9326272,
+              "stlFile": "7u40_r6_t1p2_02_top_corner_b_qty2_mm.stl",
+              "stepFile": "engineering/7u40/guards/7u40_r6_t1p2_02_top_corner_b_qty2_mm.step"
+            },
+            {
+              "partType": "lower_width_half",
+              "name": "前後下辺・半分",
+              "quantity": 4,
+              "dimensions": [
+                115.9,
+                6.2,
+                6.2
+              ],
+              "volumeCm3": 1.55371642,
+              "stlFile": "7u40_r6_t1p2_03_lower_width_half_qty4_mm.stl",
+              "stepFile": "engineering/7u40/guards/7u40_r6_t1p2_03_lower_width_half_qty4_mm.step"
+            },
+            {
+              "partType": "lower_depth_half_a",
+              "name": "左右下辺・半分 A",
+              "quantity": 2,
+              "dimensions": [
+                6.2,
+                167.0,
+                6.2
+              ],
+              "volumeCm3": 2.20171752,
+              "stlFile": "7u40_r6_t1p2_04_lower_depth_half_a_qty2_mm.stl",
+              "stepFile": "engineering/7u40/guards/7u40_r6_t1p2_04_lower_depth_half_a_qty2_mm.step"
+            },
+            {
+              "partType": "lower_depth_half_b",
+              "name": "左右下辺・半分 B",
+              "quantity": 2,
+              "dimensions": [
+                6.2,
+                167.0,
+                6.2
+              ],
+              "volumeCm3": 2.20171752,
+              "stlFile": "7u40_r6_t1p2_05_lower_depth_half_b_qty2_mm.stl",
+              "stepFile": "engineering/7u40/guards/7u40_r6_t1p2_05_lower_depth_half_b_qty2_mm.step"
+            },
+            {
+              "partType": "vertical_corner",
+              "name": "縦辺コーナーガード",
+              "quantity": 4,
+              "dimensions": [
+                6.2,
+                6.2,
+                81.0
+              ],
+              "volumeCm3": 1.08585876,
+              "stlFile": "7u40_r6_t1p2_06_vertical_corner_qty4_mm.stl",
+              "stepFile": "engineering/7u40/guards/7u40_r6_t1p2_06_vertical_corner_qty4_mm.step"
+            }
+          ]
+        },
+        "t1p0": {
+          "thicknessMm": 1.0,
+          "coverMm": 5,
+          "coverageMm": 5,
+          "radiusMm": 0.4,
+          "partCount": 16,
+          "totalGuardParts": 16,
+          "typeCount": 6,
+          "quantities": [
+            2,
+            2,
+            4,
+            2,
+            2,
+            4
+          ],
+          "totalVolumeCm3": 25.371394,
+          "volumeCm3": 25.371394,
+          "approxMassG": 25.625,
+          "maxPartLengthMm": 168.0,
+          "outerEnvelopeMm": [
+            231.4,
+            336.0,
+            93.0
+          ],
+          "outerDimensions": [
+            231.4,
+            336.0,
+            93.0
+          ],
+          "feetIncludedEnvelopeMm": [
+            231.4,
+            336.0,
+            95.0
+          ],
+          "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+          "openingMm": [
+            224.4,
+            329.0
+          ],
+          "quoteJpy": null,
+          "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。",
+          "catalog": [
+            {
+              "partType": "top_corner_a",
+              "name": "上端L字ガード A",
+              "quantity": 2,
+              "dimensions": [
+                115.7,
+                168.0,
+                6.0
+              ],
+              "volumeCm3": 2.38446493,
+              "stlFile": "7u40_r6_t1p0_01_top_corner_a_qty2_mm.stl",
+              "stepFile": "engineering/7u40/guards/7u40_r6_t1p0_01_top_corner_a_qty2_mm.step"
+            },
+            {
+              "partType": "top_corner_b",
+              "name": "上端L字ガード B",
+              "quantity": 2,
+              "dimensions": [
+                115.7,
+                168.0,
+                6.0
+              ],
+              "volumeCm3": 2.38446493,
+              "stlFile": "7u40_r6_t1p0_02_top_corner_b_qty2_mm.stl",
+              "stepFile": "engineering/7u40/guards/7u40_r6_t1p0_02_top_corner_b_qty2_mm.step"
+            },
+            {
+              "partType": "lower_width_half",
+              "name": "前後下辺・半分",
+              "quantity": 4,
+              "dimensions": [
+                115.7,
+                6.0,
+                6.0
+              ],
+              "volumeCm3": 1.26872729,
+              "stlFile": "7u40_r6_t1p0_03_lower_width_half_qty4_mm.stl",
+              "stepFile": "engineering/7u40/guards/7u40_r6_t1p0_03_lower_width_half_qty4_mm.step"
+            },
+            {
+              "partType": "lower_depth_half_a",
+              "name": "左右下辺・半分 A",
+              "quantity": 2,
+              "dimensions": [
+                6.0,
+                167.0,
+                6.0
+              ],
+              "volumeCm3": 1.80143752,
+              "stlFile": "7u40_r6_t1p0_04_lower_depth_half_a_qty2_mm.stl",
+              "stepFile": "engineering/7u40/guards/7u40_r6_t1p0_04_lower_depth_half_a_qty2_mm.step"
+            },
+            {
+              "partType": "lower_depth_half_b",
+              "name": "左右下辺・半分 B",
+              "quantity": 2,
+              "dimensions": [
+                6.0,
+                167.0,
+                6.0
+              ],
+              "volumeCm3": 1.80143752,
+              "stlFile": "7u40_r6_t1p0_05_lower_depth_half_b_qty2_mm.stl",
+              "stepFile": "engineering/7u40/guards/7u40_r6_t1p0_05_lower_depth_half_b_qty2_mm.step"
+            },
+            {
+              "partType": "vertical_corner",
+              "name": "縦辺コーナーガード",
+              "quantity": 4,
+              "dimensions": [
+                6.0,
+                6.0,
+                81.0
+              ],
+              "volumeCm3": 0.88821876,
+              "stlFile": "7u40_r6_t1p0_06_vertical_corner_qty4_mm.stl",
+              "stepFile": "engineering/7u40/guards/7u40_r6_t1p0_06_vertical_corner_qty4_mm.step"
+            }
+          ]
+        }
+      },
+      "lid_preview": {
+        "lidRiseMm": 30,
+        "locatorThicknessMm": 2.0,
+        "locatorEngagementMm": 12.0,
+        "locatorClearanceToGuardMm": 0.7,
+        "frontGapMm": 7.122771999999998,
+        "lidOuterMm": [
+          231.8,
+          336.4
+        ],
+        "lidPlateMm": [
+          227.6,
+          332.2,
+          1.5
+        ],
+        "bodyHeightMm": 91,
+        "closedTopMm": 125.8,
+        "closedHeightIncludingFeetMm": 128.8,
+        "strapWidthMm": 20.0,
+        "strapThicknessMm": 1.4,
+        "strapAxis": "x",
+        "strapStationsMm": [
+          -100.2,
+          100.2
+        ],
+        "strapLoopGeometricEstimateMm": 721.2,
+        "strapNote": "汎用バンドを模式表示。バックル・重なり代・突起や実際の締付による長さ差は含まない。"
+      },
+      "lid_metal_status": "R8表示寸法。製作図未再出力・未承認",
+      "sources": [
+        "engineering/r6-body/engineering/7u40/model-summary.json",
+        "engineering/r6-body/stl/7u40/t1p2/manifest.json",
+        "engineering/r8-preview/preview-parameters.json"
+      ]
+    },
+    "7u60": {
+      "id": "7u60",
+      "label": "3U＋3U＋1U・60HP",
+      "priority": "parallel",
+      "body_revision": "R6-SOURCE-FAMILY-01",
+      "lid_revision": "R8-SIMPLE-LID-PREVIEW",
+      "manufacturing_release": null,
+      "metal_mm": [
+        330.4,
+        334.0,
+        91
+      ],
+      "metal_thickness_mm": 1.5,
+      "rail_length_mm": 305.0,
+      "rail_frame_width_mm": 311.4,
+      "frame_depth_mm": 314.754456,
+      "front_back_gap_to_metal_mm": 8.122771999999998,
+      "front_back_gap_to_guard_mm": 7.122771999999998,
+      "plates": [
+        {
+          "part": "底板",
+          "size_mm": [
+            330.4,
+            334.0,
+            1.5
+          ],
+          "quantity": 1,
+          "holes_each": 10
+        },
+        {
+          "part": "前後板",
+          "size_mm": [
+            327.4,
+            89.5,
+            1.5
+          ],
+          "quantity": 2,
+          "holes_each": 6
+        },
+        {
+          "part": "左右板",
+          "size_mm": [
+            334.0,
+            89.5,
+            1.5
+          ],
+          "quantity": 2,
+          "holes_each": 12
+        }
+      ],
+      "hardware_counts": {
+        "aluminumPanel": 5,
+        "panelBracket": 18,
+        "rail": 6,
+        "fixer": 2,
+        "padder": 6,
+        "innerSpacer": 10,
+        "outerWasher": 10,
+        "mountBolt": 10,
+        "mountNut": 10,
+        "railEndBolt": 12,
+        "panelJointBolt": 36,
+        "panelJointWasher": 36,
+        "panelJointNut": 36,
+        "foot": 4
+      },
+      "panel_holes": 46,
+      "joint_holes": 36,
+      "guards": {
+        "t1p2": {
+          "thicknessMm": 1.2,
+          "coverMm": 5,
+          "coverageMm": 5,
+          "radiusMm": 0.4,
+          "partCount": 16,
+          "totalGuardParts": 16,
+          "typeCount": 6,
+          "quantities": [
+            2,
+            2,
+            4,
+            2,
+            2,
+            4
+          ],
+          "totalVolumeCm3": 35.90556773,
+          "volumeCm3": 35.90556773,
+          "approxMassG": 36.265,
+          "maxPartLengthMm": 168.2,
+          "outerEnvelopeMm": [
+            332.8,
+            336.4,
+            93.4
+          ],
+          "outerDimensions": [
+            332.8,
+            336.4,
+            93.4
+          ],
+          "feetIncludedEnvelopeMm": [
+            332.8,
+            336.4,
+            95.2
+          ],
+          "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+          "openingMm": [
+            325.4,
+            329.0
+          ],
+          "quoteJpy": null,
+          "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。",
+          "catalog": [
+            {
+              "partType": "top_corner_a",
+              "name": "上端L字ガード A",
+              "quantity": 2,
+              "dimensions": [
+                166.4,
+                168.2,
+                6.2
+              ],
+              "volumeCm3": 3.45811321,
+              "stlFile": "7u60_r6_t1p2_01_top_corner_a_qty2_mm.stl",
+              "stepFile": "engineering/7u60/guards/7u60_r6_t1p2_01_top_corner_a_qty2_mm.step"
+            },
+            {
+              "partType": "top_corner_b",
+              "name": "上端L字ガード B",
+              "quantity": 2,
+              "dimensions": [
+                166.4,
+                168.2,
+                6.2
+              ],
+              "volumeCm3": 3.45811321,
+              "stlFile": "7u60_r6_t1p2_02_top_corner_b_qty2_mm.stl",
+              "stepFile": "engineering/7u60/guards/7u60_r6_t1p2_02_top_corner_b_qty2_mm.step"
+            },
+            {
+              "partType": "lower_width_half",
+              "name": "前後下辺・半分",
+              "quantity": 4,
+              "dimensions": [
+                166.4,
+                6.2,
+                6.2
+              ],
+              "volumeCm3": 2.23070244,
+              "stlFile": "7u60_r6_t1p2_03_lower_width_half_qty4_mm.stl",
+              "stepFile": "engineering/7u60/guards/7u60_r6_t1p2_03_lower_width_half_qty4_mm.step"
+            },
+            {
+              "partType": "lower_depth_half_a",
+              "name": "左右下辺・半分 A",
+              "quantity": 2,
+              "dimensions": [
+                6.2,
+                167.0,
+                6.2
+              ],
+              "volumeCm3": 2.20171752,
+              "stlFile": "7u60_r6_t1p2_04_lower_depth_half_a_qty2_mm.stl",
+              "stepFile": "engineering/7u60/guards/7u60_r6_t1p2_04_lower_depth_half_a_qty2_mm.step"
+            },
+            {
+              "partType": "lower_depth_half_b",
+              "name": "左右下辺・半分 B",
+              "quantity": 2,
+              "dimensions": [
+                6.2,
+                167.0,
+                6.2
+              ],
+              "volumeCm3": 2.20171752,
+              "stlFile": "7u60_r6_t1p2_05_lower_depth_half_b_qty2_mm.stl",
+              "stepFile": "engineering/7u60/guards/7u60_r6_t1p2_05_lower_depth_half_b_qty2_mm.step"
+            },
+            {
+              "partType": "vertical_corner",
+              "name": "縦辺コーナーガード",
+              "quantity": 4,
+              "dimensions": [
+                6.2,
+                6.2,
+                81.0
+              ],
+              "volumeCm3": 1.08585876,
+              "stlFile": "7u60_r6_t1p2_06_vertical_corner_qty4_mm.stl",
+              "stepFile": "engineering/7u60/guards/7u60_r6_t1p2_06_vertical_corner_qty4_mm.step"
+            }
+          ]
+        },
+        "t1p0": {
+          "thicknessMm": 1.0,
+          "coverMm": 5,
+          "coverageMm": 5,
+          "radiusMm": 0.4,
+          "partCount": 16,
+          "totalGuardParts": 16,
+          "typeCount": 6,
+          "quantities": [
+            2,
+            2,
+            4,
+            2,
+            2,
+            4
+          ],
+          "totalVolumeCm3": 29.29652214,
+          "volumeCm3": 29.29652214,
+          "approxMassG": 29.589,
+          "maxPartLengthMm": 168.0,
+          "outerEnvelopeMm": [
+            332.4,
+            336.0,
+            93.0
+          ],
+          "outerDimensions": [
+            332.4,
+            336.0,
+            93.0
+          ],
+          "feetIncludedEnvelopeMm": [
+            332.4,
+            336.0,
+            95.0
+          ],
+          "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+          "openingMm": [
+            325.4,
+            329.0
+          ],
+          "quoteJpy": null,
+          "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。",
+          "catalog": [
+            {
+              "partType": "top_corner_a",
+              "name": "上端L字ガード A",
+              "quantity": 2,
+              "dimensions": [
+                166.2,
+                168.0,
+                6.0
+              ],
+              "volumeCm3": 2.81198095,
+              "stlFile": "7u60_r6_t1p0_01_top_corner_a_qty2_mm.stl",
+              "stepFile": "engineering/7u60/guards/7u60_r6_t1p0_01_top_corner_a_qty2_mm.step"
+            },
+            {
+              "partType": "top_corner_b",
+              "name": "上端L字ガード B",
+              "quantity": 2,
+              "dimensions": [
+                166.2,
+                168.0,
+                6.0
+              ],
+              "volumeCm3": 2.81198095,
+              "stlFile": "7u60_r6_t1p0_02_top_corner_b_qty2_mm.stl",
+              "stepFile": "engineering/7u60/guards/7u60_r6_t1p0_02_top_corner_b_qty2_mm.step"
+            },
+            {
+              "partType": "lower_width_half",
+              "name": "前後下辺・半分",
+              "quantity": 4,
+              "dimensions": [
+                166.2,
+                6.0,
+                6.0
+              ],
+              "volumeCm3": 1.82249331,
+              "stlFile": "7u60_r6_t1p0_03_lower_width_half_qty4_mm.stl",
+              "stepFile": "engineering/7u60/guards/7u60_r6_t1p0_03_lower_width_half_qty4_mm.step"
+            },
+            {
+              "partType": "lower_depth_half_a",
+              "name": "左右下辺・半分 A",
+              "quantity": 2,
+              "dimensions": [
+                6.0,
+                167.0,
+                6.0
+              ],
+              "volumeCm3": 1.80143752,
+              "stlFile": "7u60_r6_t1p0_04_lower_depth_half_a_qty2_mm.stl",
+              "stepFile": "engineering/7u60/guards/7u60_r6_t1p0_04_lower_depth_half_a_qty2_mm.step"
+            },
+            {
+              "partType": "lower_depth_half_b",
+              "name": "左右下辺・半分 B",
+              "quantity": 2,
+              "dimensions": [
+                6.0,
+                167.0,
+                6.0
+              ],
+              "volumeCm3": 1.80143752,
+              "stlFile": "7u60_r6_t1p0_05_lower_depth_half_b_qty2_mm.stl",
+              "stepFile": "engineering/7u60/guards/7u60_r6_t1p0_05_lower_depth_half_b_qty2_mm.step"
+            },
+            {
+              "partType": "vertical_corner",
+              "name": "縦辺コーナーガード",
+              "quantity": 4,
+              "dimensions": [
+                6.0,
+                6.0,
+                81.0
+              ],
+              "volumeCm3": 0.88821876,
+              "stlFile": "7u60_r6_t1p0_06_vertical_corner_qty4_mm.stl",
+              "stepFile": "engineering/7u60/guards/7u60_r6_t1p0_06_vertical_corner_qty4_mm.step"
+            }
+          ]
+        }
+      },
+      "lid_preview": {
+        "lidRiseMm": 30,
+        "locatorThicknessMm": 2.0,
+        "locatorEngagementMm": 12.0,
+        "locatorClearanceToGuardMm": 0.7,
+        "frontGapMm": 7.122771999999998,
+        "lidOuterMm": [
+          332.79999999999995,
+          336.4
+        ],
+        "lidPlateMm": [
+          328.59999999999997,
+          332.2,
+          1.5
+        ],
+        "bodyHeightMm": 91,
+        "closedTopMm": 125.8,
+        "closedHeightIncludingFeetMm": 128.8,
+        "strapWidthMm": 20.0,
+        "strapThicknessMm": 1.4,
+        "strapAxis": "x",
+        "strapStationsMm": [
+          -100.2,
+          100.2
+        ],
+        "strapLoopGeometricEstimateMm": 923.2,
+        "strapNote": "汎用バンドを模式表示。バックル・重なり代・突起や実際の締付による長さ差は含まない。"
+      },
+      "lid_metal_status": "R8表示寸法。製作図未再出力・未承認",
+      "sources": [
+        "engineering/r6-body/engineering/7u60/model-summary.json",
+        "engineering/r6-body/stl/7u60/t1p2/manifest.json",
+        "engineering/r8-preview/preview-parameters.json"
+      ]
+    }
+  },
+  "release_gate": {
+    "approved_for_production": false,
+    "approved_stl_files": [],
+    "approved_dxf_files": [],
+    "latest_preview_is_manufacturing_data": false
+  }
+}

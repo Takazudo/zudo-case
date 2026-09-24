@@ -1,0 +1,42 @@
+{
+  "basis": "Provided complete rail mesh transformed with alternate outside lip direction for each row. Uses unscaled source coordinates, not a fitted profile.",
+  "railAxisWorldYmm": [
+    -151.3439345,
+    -28.843391999999994,
+    -16.8473745,
+    105.65319799999997,
+    117.68447850000001,
+    151.3439325
+  ],
+  "railYBoundingIntervalsMm": [
+    [
+      -157.1768202421875,
+      -144.5903486845703
+    ],
+    [
+      -35.59697781542968,
+      -23.010506257812494
+    ],
+    [
+      -22.6802602421875,
+      -10.093788684570313
+    ],
+    [
+      98.89961218457029,
+      111.48608374218747
+    ],
+    [
+      111.85159275781251,
+      124.4380643154297
+    ],
+    [
+      144.5903466845703,
+      157.1768182421875
+    ]
+  ],
+  "outsideLipReachMm": 5.8328857421875,
+  "betweenRowClearancesMm": [
+    0.33024601562499356,
+    0.3655090156250367
+  ]
+}

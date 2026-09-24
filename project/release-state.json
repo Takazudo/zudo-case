@@ -1,0 +1,10 @@
+{
+  "snapshot": "2026-09-24",
+  "current_design": "R8 simple lift-off lid + external straps",
+  "current_body_geometry": "R6 nominal",
+  "current_lid_manufacturing": null,
+  "slot_manufacturing": null,
+  "production_approved": false,
+  "published_release_files": [],
+  "warning": "R8 is preview only. No archive in this bundle is an approved production release."
+}

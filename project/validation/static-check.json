@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-09-24T10:40:13.020Z",
+  "tool": "dependency-free static/document consistency check",
+  "officialZudoDocBuild": "not-run-in-this-check",
+  "mdxCompiler": "not-run-in-this-check",
+  "mdxPages": 41,
+  "categories": 8,
+  "localLinksChecked": 122,
+  "errors": [],
+  "warnings": [],
+  "note": "リンク先の存在・frontmatter・数量/寸法の算術を確認。MDXコンパイル、機構の強度・干渉、発注適合の検証ではありません。"
+}

@@ -1,0 +1,1454 @@
+{
+  "schema_version": 1,
+  "snapshot": "2026-09-24",
+  "scope": "All public/ and engineering/ files at documentation handoff; not manufacturing approval.",
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 34534918,
+      "sha256": "6f9711bd82b16edf0f3d7ae6d3da3b98fd15ea053d3efda145d26d2aaa1403cf",
+      "status": "obsolete-reference-only"
+    },
+    {
+      "path": "public/downloads/archive/rotation-slide-study.zip",
+      "bytes": 4012509,
+      "sha256": "b9b17bc8773f202a194765d246ad84bde4fb176e5e10f11ebf121079d63ad896",
+      "status": "obsolete-reference-only"
+    },
+    {
+      "path": "public/downloads/reference/3u60-r6-aluminum-NOT-RELEASED.zip",
+      "bytes": 213989,
+      "sha256": "1213088b262ab3936943cb73bd045d787781dc4664d2d84803eddb5a133b1922",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/downloads/reference/3u60-r6-guards-t1p0-NOT-RELEASED.zip",
+      "bytes": 17718,
+      "sha256": "f3c5a33149565f907aee1ea689d1d870a60550e2b4a2bf9ca4b3e4c01eb1b5b6",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/downloads/reference/3u60-r6-guards-t1p2-NOT-RELEASED.zip",
+      "bytes": 17781,
+      "sha256": "f2f4ac3ccac169b3a0e8949cccc7b427e1de9c34ea077d5937f88f9a9473bf8f",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/downloads/reference/7u40-r6-aluminum-NOT-RELEASED.zip",
+      "bytes": 263502,
+      "sha256": "ffbe31a04f346859301001d0a6787ee138499ddffe362a5fc7a9c71d304c3d3c",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/downloads/reference/7u40-r6-guards-t1p0-NOT-RELEASED.zip",
+      "bytes": 25927,
+      "sha256": "a766e273d41dafbd088e8e69fce0c31f85cb948ff11e76d13cae300751668bff",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/downloads/reference/7u40-r6-guards-t1p2-NOT-RELEASED.zip",
+      "bytes": 25994,
+      "sha256": "b50eb1140197d742d00b8192d7e9ad1750a4617422b8713ca3eb2e55f1e6d5eb",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/downloads/reference/7u60-r6-aluminum-NOT-RELEASED.zip",
+      "bytes": 263555,
+      "sha256": "24c562163a2f59f23a0761824fbe9fcc90b8f0dbd2746dc3a30b280d87df9d27",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/downloads/reference/7u60-r6-guards-t1p0-NOT-RELEASED.zip",
+      "bytes": 25844,
+      "sha256": "49b5f20fcb66a04dab0916d54d48e7c145713a144d73c2c1891bdb336d9240dc",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/downloads/reference/7u60-r6-guards-t1p2-NOT-RELEASED.zip",
+      "bytes": 25932,
+      "sha256": "f6b513844519702500c129935f7ca978145a89ce1e3684b0aa8dedf291622c55",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/evidence/3u60-t1p0-r6-guard-manifest.json",
+      "bytes": 2754,
+      "sha256": "3d43544f1c645e8238677bec63aa61ce029e44ef9194f10239b06dc5609e5705",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/evidence/3u60-t1p2-r6-guard-manifest.json",
+      "bytes": 2754,
+      "sha256": "9020133e5ef19fc2a232e13f0a0c93649297fc170a5d8d6562f209e87456922c",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/evidence/7u40-t1p0-r6-guard-manifest.json",
+      "bytes": 3533,
+      "sha256": "ddb4a0d36ec6bb98d08f64537f5a4853ec85c8d2d3df1544a0c0b55d86724f5a",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/evidence/7u40-t1p2-r6-guard-manifest.json",
+      "bytes": 3534,
+      "sha256": "38cb9ac9a0128eaa0b24305d742eef81d9b196c72c7cbc89173bbc46f857b1e4",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/evidence/7u60-t1p0-r6-guard-manifest.json",
+      "bytes": 3537,
+      "sha256": "6d171cfb1bb8f2529dca1c46a5d19a976233d4592361841607a82b2dca6a1efb",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/evidence/7u60-t1p2-r6-guard-manifest.json",
+      "bytes": 3537,
+      "sha256": "0d2ee57c54d3c8b4ee7cc978101d7600181dbb406e0be4ee1aa047f6fcac63eb",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/evidence/original-zudo-block-bottom.svg",
+      "bytes": 819,
+      "sha256": "d7c14bd284da3149ab24d3ca7474a8d94c56784dec60e065fd83ddc6d5a88176",
+      "status": "source-evidence"
+    },
+    {
+      "path": "public/evidence/r2-jlc-quote-incomplete-quantity.png",
+      "bytes": 258748,
+      "sha256": "da280ffa4c73503d2707c056f441e5babc37f2438cf0aaa30f427e360b30ea1e",
+      "status": "source-evidence"
+    },
+    {
+      "path": "public/evidence/r3-jlc-quote.png",
+      "bytes": 251695,
+      "sha256": "6c3d570ddab12fa4464afdacf6b66b509e138841ab3981897227b4e4c502eb32",
+      "status": "source-evidence"
+    },
+    {
+      "path": "public/evidence/r6-design-parameters.json",
+      "bytes": 23552,
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/evidence/r6-family-summary.json",
+      "bytes": 6895,
+      "sha256": "d55ba3020beeb90f2d9f6f3624410d7628dfcce61b063dd82d78adc1d9bde886",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/evidence/r6-original-readme.md",
+      "bytes": 12144,
+      "sha256": "485d7631cd1e608fa96704d1b60c7b848050ac8bf27b7fb7611c8454af48530e",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/evidence/r7-original-readme.md",
+      "bytes": 9725,
+      "sha256": "3b0ff99f0ed04fcb68e4a0418be19c4bbbd6fb9e8f972f96695c62d3807e8bbd",
+      "status": "source-evidence"
+    },
+    {
+      "path": "public/evidence/r8-original-browser-validation.json",
+      "bytes": 6199,
+      "sha256": "a43baeae51b3cc8c30c40fff9338de17991fdb1ea6a990c2d5e9db0b8dab3d20",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "public/evidence/r8-original-geometry-checks.json",
+      "bytes": 1421,
+      "sha256": "5e64f006c51d9171391546600a183e0f09150842033af99e2a0fc7ac0ff1e664",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "public/evidence/r8-original-manifest.json",
+      "bytes": 2495,
+      "sha256": "ff2b68b58f4e4d7b0e34f1c3716153c194c18d58863a164c5fce57893d4ca0db",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "public/evidence/r8-original-readme.md",
+      "bytes": 6367,
+      "sha256": "65a11150d69586475f0dc29c81b75fc6c2c15eb8acf9ed315f5080c416a4c0fe",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "public/evidence/r8-preview-parameters.json",
+      "bytes": 2168,
+      "sha256": "d375a667b365fab665763617d61e2ad6d7b8e7c7b2228bed719e1a76ac59b9b6",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "public/images/r6/3u60-assembled.png",
+      "bytes": 336184,
+      "sha256": "e90e1152a9736931936ce345a58534dba97c2813c986653c0b174ff2068e2954",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/images/r6/3u60-rail.png",
+      "bytes": 328106,
+      "sha256": "57475fbab2bf94a8919cc07f4bcc5ef56f437def21dd422c2cf8bd9f56c0febf",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/images/r6/7u-layout.png",
+      "bytes": 129311,
+      "sha256": "9c3e1f523814329003ee0e5f36098267986b5fe2c9aefb419936d3abdf877160",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/images/r6/7u40-assembled.png",
+      "bytes": 387633,
+      "sha256": "df0f63ce65265bf6e228a678066d9db3cceab839252b0eb0ffc523ca49d4c27a",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/images/r6/7u40-rail.png",
+      "bytes": 376833,
+      "sha256": "6256c8ae0af621b9a11910bf6d0414068c281aa87af942b6315cd4a912a9a758",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/images/r6/7u60-assembled.png",
+      "bytes": 397553,
+      "sha256": "c69093a9e294d139f1704cff06cb68562c5da88f32a16a8e335c3e5aa20d1be9",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/images/r6/7u60-rail.png",
+      "bytes": 398855,
+      "sha256": "bfea1625f83634570396da33c7162be243f62e7f59d605eea496c6c8399feb25",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/images/r8/7u40-daily.png",
+      "bytes": 388993,
+      "sha256": "5fe2f77fb639170baec6b03780b8b715c29d3c3ed1c048fe4d5a9d6c58283c45",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "public/images/r8/7u40-open.png",
+      "bytes": 464945,
+      "sha256": "5df189a610b1ebd7a4d0b97e150804e0c83d9346e608ff924f7fb99e298d3c19",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "public/images/r8/7u40-travel.png",
+      "bytes": 394320,
+      "sha256": "c28ce8bb586109386c1732c2fa245e30823f400dc20d466550bd59e3ae7fb6f9",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "public/images/r8/locator-section.png",
+      "bytes": 327033,
+      "sha256": "495b73a7cc4f49b6fdcc7fd00bf9537322d69df52043f6f7f0373178342f91bb",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "public/images/r8/mobile.png",
+      "bytes": 218979,
+      "sha256": "9c625e71c5e618c5c39cb2d4b45825d6e448e153787ed9a53fff573e60519198",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "public/previews/r6-body.html",
+      "bytes": 33075879,
+      "sha256": "49d213fb1744d5dddb1c2beb9cae422183f059427be837d038a2eb88318e68c2",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "public/previews/r8-simple-lid.html",
+      "bytes": 4707201,
+      "sha256": "3737dc1d793be7afc03089eca198bb32e2832afdd006dc51190f8b218e12ef3f",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/README.md",
+      "bytes": 862,
+      "sha256": "c12a4d092c2df19ccb76a6c4fd10504eb69428af621743e62159f857bd0d54da",
+      "status": "supporting-not-released"
+    },
+    {
+      "path": "engineering/r6-body/README.md",
+      "bytes": 12144,
+      "sha256": "485d7631cd1e608fa96704d1b60c7b848050ac8bf27b7fb7611c8454af48530e",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/app.js",
+      "bytes": 29547,
+      "sha256": "138c076370a7c1a58d0116a460fd932224a24e2b6c27d71e28808fde13ba1c05",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/build_geometry.py",
+      "bytes": 50199,
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/design-parameters.json",
+      "bytes": 23552,
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/7u-layout.png",
+      "bytes": 129311,
+      "sha256": "9c3e1f523814329003ee0e5f36098267986b5fe2c9aefb419936d3abdf877160",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/7u-layout.svg",
+      "bytes": 107323,
+      "sha256": "8e6993af8f44bcd5626dc21eb0f0f38de73a8e7aac01fa05cc3fc83ec7893f72",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/browser-validation.json",
+      "bytes": 21501,
+      "sha256": "b020d0aa4091201ee66c7b0d6528fbbbefb427c0d58ad3aa8a7945c702980556",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/expected-7u-rail-gaps.json",
+      "bytes": 857,
+      "sha256": "10a6c2308a18ee5e470fcd66933096f2879176eb58747859dafddd7da09a8d66",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/family-core-independent-checks.json",
+      "bytes": 2297,
+      "sha256": "50f842cf21c7b5f96a9f14a512e74c2b34c28681135ce903389aa9be0a36c8f1",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/family-final-foot-checks.json",
+      "bytes": 1550,
+      "sha256": "8aa8e9150fb780cd2d260c1bdd48934cc073b26e4024893d0523011e4940d9ec",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/family-final-review.md",
+      "bytes": 4205,
+      "sha256": "1621f6f217969f33b8dc9259c261fff507456cc02032e2884340b8558c41adea",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/previews/3u60-assembled.png",
+      "bytes": 336184,
+      "sha256": "e90e1152a9736931936ce345a58534dba97c2813c986653c0b174ff2068e2954",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/previews/3u60-rail.png",
+      "bytes": 328106,
+      "sha256": "57475fbab2bf94a8919cc07f4bcc5ef56f437def21dd422c2cf8bd9f56c0febf",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/previews/7u40-assembled.png",
+      "bytes": 387633,
+      "sha256": "df0f63ce65265bf6e228a678066d9db3cceab839252b0eb0ffc523ca49d4c27a",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/previews/7u40-rail.png",
+      "bytes": 376833,
+      "sha256": "6256c8ae0af621b9a11910bf6d0414068c281aa87af942b6315cd4a912a9a758",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/previews/7u60-assembled.png",
+      "bytes": 397553,
+      "sha256": "c69093a9e294d139f1704cff06cb68562c5da88f32a16a8e335c3e5aa20d1be9",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/docs/previews/7u60-rail.png",
+      "bytes": 398855,
+      "sha256": "bfea1625f83634570396da33c7162be243f62e7f59d605eea496c6c8399feb25",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/3u60_r6_t1p2_enclosure_boards_assembly.step",
+      "bytes": 5478566,
+      "sha256": "80882f43ba3ffe67a39a8e5562c8e4eb66312fa95c55f94be008a0f1f48b1702",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.dxf",
+      "bytes": 16496,
+      "sha256": "8b9070b54c180fc2cab787c604786db1503a26605850f774a59d85843287b540",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.step",
+      "bytes": 44718,
+      "sha256": "f4134fe867f29b7afb96a259b16a98c6c84478d3fe8db00f68132730b470f040",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.stl",
+      "bytes": 338284,
+      "sha256": "b6ed45bfd05baebabf6c5e1039ede1fb7b7c08e83ee14a366532912a4047d769",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.dxf",
+      "bytes": 16289,
+      "sha256": "71f2c56db8cc8cc873f657f35cf371309f47fe88d05e102b366f3b88736cb5f3",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.step",
+      "bytes": 37284,
+      "sha256": "fd4d96f2b8f315ebb53da7b2c52db14c2fd63038afc2f37bab0e3ebc7e57da80",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.stl",
+      "bytes": 253884,
+      "sha256": "6d9027914fc5f3c7748b1204e80fea331007a4c37115f564a43465db2942ac97",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.dxf",
+      "bytes": 16502,
+      "sha256": "84bde947a8938132f7525be5094fc6cb6a2ac7da0f84080656fd298a575dab5b",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.step",
+      "bytes": 44711,
+      "sha256": "8daf5733c0d14291ce0261626c108edc1beef8af8c5bc54d3cff0434bed8f692",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.stl",
+      "bytes": 338284,
+      "sha256": "ae2269c084d359bafe5b02bbdf7c6ea1677bb3a558c64e954d5273ea6f3988bd",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/aluminum/hole-layout.json",
+      "bytes": 3201,
+      "sha256": "dec5b7e7f952955abd436516c2645e65f673ae1a12b072eaaf68a18d97addf02",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/guards/3u60_r6_t1p0_01_top_u_qty2_mm.step",
+      "bytes": 53025,
+      "sha256": "410adad6a2db72ab63472505ebacfa2ef6c05aad83f332a52812d55795812808",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/guards/3u60_r6_t1p0_02_lower_width_half_qty4_mm.step",
+      "bytes": 25688,
+      "sha256": "46fc40ea2654bc3f67681f53f9ecb955b0d884a29f45e1b1639eab29c54b461a",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/guards/3u60_r6_t1p0_03_lower_depth_full_qty2_mm.step",
+      "bytes": 37882,
+      "sha256": "bd7be1b47b9a13287e33d22f65fed6d1d694796c2d388160963dc0b894099fec",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/guards/3u60_r6_t1p0_04_vertical_corner_qty4_mm.step",
+      "bytes": 25554,
+      "sha256": "a22982706ff0eac4b43b03a40ced8195f4e1e0dd6aa1f6248963e0517805e32b",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/guards/3u60_r6_t1p2_01_top_u_qty2_mm.step",
+      "bytes": 53343,
+      "sha256": "f55bb146838c6446f5a4bbd9c5bbc8f9508d8343a2d5ceec8cfac4812aa0a3a0",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/guards/3u60_r6_t1p2_02_lower_width_half_qty4_mm.step",
+      "bytes": 26182,
+      "sha256": "4673f0c30998884aa1e771fc819f87c20a6c618e04d0e5ba6b818798e428edd9",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/guards/3u60_r6_t1p2_03_lower_depth_full_qty2_mm.step",
+      "bytes": 38173,
+      "sha256": "28f5747bf5bbfb0566274ba9e9a30213b260715736d75bd8b41eebb72b9b55d9",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/guards/3u60_r6_t1p2_04_vertical_corner_qty4_mm.step",
+      "bytes": 25610,
+      "sha256": "9516dac8c9ff621cda8d60fe4500e4daf3bd482b3bd4a81e1c290e4edb53bf8a",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/model-summary.json",
+      "bytes": 7566,
+      "sha256": "d0a4163e6c30ae58ca71f00855c29fb08580fc33fddc430d382555b6d97f9664",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/pcbs/3u60_r6_fixer-1_source_outline_mm.step",
+      "bytes": 2030451,
+      "sha256": "2ab8838323b432c8ff22c30482ddb969d1d3136381ca99906b61d20f615e4497",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/pcbs/3u60_r6_fixer-1_source_outline_mm.stl",
+      "bytes": 105184,
+      "sha256": "00a9518aac03bf1c79ea281baad314f79b29e551128791d4efa51a66acdeb262",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/pcbs/3u60_r6_padder-1-row0_source_outline_mm.step",
+      "bytes": 57741,
+      "sha256": "d9587b6f38ababb7146174e7ca054b5da942d76515e9addeb01ec8eb3fef40a8",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/pcbs/3u60_r6_padder-1-row0_source_outline_mm.stl",
+      "bytes": 3684,
+      "sha256": "6346e5583caf945706d3602c6df4a50b85ecb6c55e0e9ef36400987dd79e3961",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/3u60/validation.json",
+      "bytes": 12570,
+      "sha256": "a20f6f083e4c6c59885f1ecae5b42a1d572e4f114ed708313bbb2163f2a4932f",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/7u40_r6_t1p2_enclosure_boards_assembly.step",
+      "bytes": 27716402,
+      "sha256": "978654f6299a62e23ca426cc81a162b9369b15b7b2b7bd7a77a1ebeba43ecba4",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/aluminum/7u40_r6_aluminum_bottom_qty1_mm.dxf",
+      "bytes": 16701,
+      "sha256": "ffb3b6cb01b4e4d15fb4ea7fb85e7565f4265cf88a8dc184f3527c9e64a4c29c",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/aluminum/7u40_r6_aluminum_bottom_qty1_mm.step",
+      "bytes": 52361,
+      "sha256": "b9cad7a1886ea77c98d9d7fa5823e748d563543283fbf6c98d4c1f70381fea88",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/aluminum/7u40_r6_aluminum_bottom_qty1_mm.stl",
+      "bytes": 422684,
+      "sha256": "0407d4a42d095f449e75f2213999b981602db6bbd3fd8a3a6b509a418b2b69c2",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/aluminum/7u40_r6_aluminum_front_back_qty2_mm.dxf",
+      "bytes": 16291,
+      "sha256": "59d7dc016940b67860a1c684bfa2517907204281062d894c0ff18983ce9695b1",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/aluminum/7u40_r6_aluminum_front_back_qty2_mm.step",
+      "bytes": 37286,
+      "sha256": "9d211f2dd3de8e4c2a88df3dc933ba0286fc047b9fa748454cbe4629365baf39",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/aluminum/7u40_r6_aluminum_front_back_qty2_mm.stl",
+      "bytes": 253884,
+      "sha256": "5ebe8b1ca6c5547536e695996ef63cec21be63ce31560d38f384e65135c03858",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/aluminum/7u40_r6_aluminum_left_right_qty2_mm.dxf",
+      "bytes": 16959,
+      "sha256": "066e8d74383114ebea57148bb0d2718a6fa61f2f4c660d93a0781fc286deb2e8",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/aluminum/7u40_r6_aluminum_left_right_qty2_mm.step",
+      "bytes": 60336,
+      "sha256": "ed072ac28ba75b1d53ff1f1fb78c4f5ca196a2a66618d8dd3a77bdc9ea4ea5ab",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/aluminum/7u40_r6_aluminum_left_right_qty2_mm.stl",
+      "bytes": 507084,
+      "sha256": "624b0ba2b9eee1231b52e24ff9d7f967f4fa81dfb368aa1002b96f13cfbf448d",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/aluminum/hole-layout.json",
+      "bytes": 3573,
+      "sha256": "ad555b88e51ab3b79d789871fb2fccc9e5c0926b89d80098cdb95b73d66ceb06",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/guards/7u40_r6_t1p0_01_top_corner_a_qty2_mm.step",
+      "bytes": 39624,
+      "sha256": "9b0b895cbc11ae52c40b5ec37727847a163e53383f9c2f83935cff3f7c8b1a11",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/guards/7u40_r6_t1p0_02_top_corner_b_qty2_mm.step",
+      "bytes": 39648,
+      "sha256": "463f3888cb5fea80ec4e0bde15052638d7705490fe4057123eb86b13fecc41c5",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/guards/7u40_r6_t1p0_03_lower_width_half_qty4_mm.step",
+      "bytes": 25688,
+      "sha256": "511d732daddadbf18b9ef02cf4bbb025d920d6396b0884b9c98d51d8993aa162",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/guards/7u40_r6_t1p0_04_lower_depth_half_a_qty2_mm.step",
+      "bytes": 32186,
+      "sha256": "b579e98bbd886d041afbc985d79c185341385c359d11a00169e2c816c1bf34c8",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/guards/7u40_r6_t1p0_05_lower_depth_half_b_qty2_mm.step",
+      "bytes": 32273,
+      "sha256": "359b864c9b45797c15a972213ace5a60347c8001559082dd3b9ceebf7d61e168",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/guards/7u40_r6_t1p0_06_vertical_corner_qty4_mm.step",
+      "bytes": 25554,
+      "sha256": "e622a7cf02e67ee71fc0eb171e8c09ecf8b00b72c7342965d0f4e14249227b26",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/guards/7u40_r6_t1p2_01_top_corner_a_qty2_mm.step",
+      "bytes": 39613,
+      "sha256": "a1c29a3743b5be3058f154a87cf662c06690c8a13af6c607d386891af716d58b",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/guards/7u40_r6_t1p2_02_top_corner_b_qty2_mm.step",
+      "bytes": 39405,
+      "sha256": "4a51ce61d0a27584cdce4a245f228b225ac1c1f89b4b64a087af90a266cbb3af",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/guards/7u40_r6_t1p2_03_lower_width_half_qty4_mm.step",
+      "bytes": 26184,
+      "sha256": "0311f1fb1e392ab024dda6e323f7cdce82fa9a98b360c8a94a1a56568bf2a5f8",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/guards/7u40_r6_t1p2_04_lower_depth_half_a_qty2_mm.step",
+      "bytes": 32130,
+      "sha256": "7b91178ab056b54b3d9ec149078e774476c1b47f15f3b074a67f9ff4eb32b86b",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/guards/7u40_r6_t1p2_05_lower_depth_half_b_qty2_mm.step",
+      "bytes": 32217,
+      "sha256": "4a32f79b75453393fd428227effef474cd6db10ab5747a6da49202280fae3f16",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/guards/7u40_r6_t1p2_06_vertical_corner_qty4_mm.step",
+      "bytes": 25612,
+      "sha256": "9bad003ff897ab154e9884406bec9efb2d43df0448d16d4067c9aaed36a14711",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/model-summary.json",
+      "bytes": 8159,
+      "sha256": "4a034783486319651fa114b7e4b3be23c00d1c83c10ea290dfec4cb1176be2e4",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/pcbs/7u40_r6_fixer-1_source_outline_mm.step",
+      "bytes": 12701073,
+      "sha256": "565196d164fcbe2127906604252ef4cd6184c66ca2a64a53c19afcb82a3515f9",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/pcbs/7u40_r6_fixer-1_source_outline_mm.stl",
+      "bytes": 632484,
+      "sha256": "ac10e4640d881a045a56da511f12a44a92f9f32251a8c3ba0fa6d738c098d190",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/pcbs/7u40_r6_padder-1-row0_source_outline_mm.step",
+      "bytes": 57743,
+      "sha256": "a9a642c67bab6554e4ef9a4497dc8c962645a3e488481f9934d61159e07d2caa",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/pcbs/7u40_r6_padder-1-row0_source_outline_mm.stl",
+      "bytes": 3684,
+      "sha256": "6346e5583caf945706d3602c6df4a50b85ecb6c55e0e9ef36400987dd79e3961",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/pcbs/7u40_r6_padder-1-row1_source_outline_mm.step",
+      "bytes": 57743,
+      "sha256": "9b3fee50bd72a4e36bff5a69d5b88e589cf66f28a0f40264d847e8c322dfc53a",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/pcbs/7u40_r6_padder-1-row1_source_outline_mm.stl",
+      "bytes": 3684,
+      "sha256": "6346e5583caf945706d3602c6df4a50b85ecb6c55e0e9ef36400987dd79e3961",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/pcbs/7u40_r6_padder-1-row2_source_outline_mm.step",
+      "bytes": 58043,
+      "sha256": "6b1bd90b123e28e9deaab3a7950a070d5b6a56450288c9248cd146992702b2da",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/pcbs/7u40_r6_padder-1-row2_source_outline_mm.stl",
+      "bytes": 3684,
+      "sha256": "aaac63373e9ab5064c040665d2fadb6b857f97edffcc8fa16c48814ed6126599",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/validation.json",
+      "bytes": 15800,
+      "sha256": "378ce3abbd83a5b97994ac62619d300ba6bfb66423b01b54b09c910623d67c46",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/7u60_r6_t1p2_enclosure_boards_assembly.step",
+      "bytes": 27716770,
+      "sha256": "0ee2dfb103c7c891b02b74a938f1ad5665bd27a4171d2c3fa185a33d0701f8f6",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/aluminum/7u60_r6_aluminum_bottom_qty1_mm.dxf",
+      "bytes": 16699,
+      "sha256": "69acfb91d6e0c0acf6862e09d020b7edc15364c5a6a43402ab7a40700325d956",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/aluminum/7u60_r6_aluminum_bottom_qty1_mm.step",
+      "bytes": 52361,
+      "sha256": "b197a9f4dc1947bf8f3a8fa5eeafad125f15fabe6f8e1233b11720eb514babab",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/aluminum/7u60_r6_aluminum_bottom_qty1_mm.stl",
+      "bytes": 422684,
+      "sha256": "5673ae7a7964d939b05c8b11a7a0a69a1125c8aa139264c26b3b48a5808cfe1a",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/aluminum/7u60_r6_aluminum_front_back_qty2_mm.dxf",
+      "bytes": 16289,
+      "sha256": "0fca6cab6efe94190daa4c53089ba3746a366571baab8cc1abee69b4d2c11d48",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/aluminum/7u60_r6_aluminum_front_back_qty2_mm.step",
+      "bytes": 37286,
+      "sha256": "9a05750175f61e35ea8395d28231e96643dcbfeed30dea2f28ba6d68d0f871f5",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/aluminum/7u60_r6_aluminum_front_back_qty2_mm.stl",
+      "bytes": 253884,
+      "sha256": "6d9027914fc5f3c7748b1204e80fea331007a4c37115f564a43465db2942ac97",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/aluminum/7u60_r6_aluminum_left_right_qty2_mm.dxf",
+      "bytes": 16957,
+      "sha256": "609df93668661ad6544c4b209c091dc78d5255344520fcd992cbd28a08417a89",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/aluminum/7u60_r6_aluminum_left_right_qty2_mm.step",
+      "bytes": 60336,
+      "sha256": "9b06d98e752646446016ffebcaf9e70debf24e2d8e2eabf1e467768b99bb2447",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/aluminum/7u60_r6_aluminum_left_right_qty2_mm.stl",
+      "bytes": 507084,
+      "sha256": "624b0ba2b9eee1231b52e24ff9d7f967f4fa81dfb368aa1002b96f13cfbf448d",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/aluminum/hole-layout.json",
+      "bytes": 3573,
+      "sha256": "5f9b3c3bb6ff469ece8b2ec26857f62b47047ef9e6649e03132e71bc00f2651e",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/guards/7u60_r6_t1p0_01_top_corner_a_qty2_mm.step",
+      "bytes": 39629,
+      "sha256": "c3406a402ac888ec608e10e842dd6cd3264801a03580155431833b032619a593",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/guards/7u60_r6_t1p0_02_top_corner_b_qty2_mm.step",
+      "bytes": 39622,
+      "sha256": "e8b9f9f3eff15f9b7f46e0e7fba8bc6420ed47d7c27fbdb18cb6244563ce572b",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/guards/7u60_r6_t1p0_03_lower_width_half_qty4_mm.step",
+      "bytes": 25688,
+      "sha256": "8addd1619c50e44b1d41933e7df8238734b0bf5fe960cf844072f12ff2965c57",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/guards/7u60_r6_t1p0_04_lower_depth_half_a_qty2_mm.step",
+      "bytes": 32177,
+      "sha256": "8b9e10f099e3b525cd853e6b1ad515025f5bb5a81c532403c9ca8820fc1e5bac",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/guards/7u60_r6_t1p0_05_lower_depth_half_b_qty2_mm.step",
+      "bytes": 32264,
+      "sha256": "9a6add08316a0cf1f3dbd2acaf6ce43b038bf0916fe6a566a08367cd27a5ade6",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/guards/7u60_r6_t1p0_06_vertical_corner_qty4_mm.step",
+      "bytes": 25554,
+      "sha256": "d104b7d74517078cec284a2096f9d9fbc8827ac7845a590668b0be530ae14a95",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/guards/7u60_r6_t1p2_01_top_corner_a_qty2_mm.step",
+      "bytes": 39602,
+      "sha256": "1fcca1bb23cbd89f2c65af3f7a08ecef35f06f8c31eb361e4f8bd629007b4a91",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/guards/7u60_r6_t1p2_02_top_corner_b_qty2_mm.step",
+      "bytes": 39399,
+      "sha256": "a97ffb97530fd81d498f2d2575367f2cda3b69bec660e76ac71f880aed476f3a",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/guards/7u60_r6_t1p2_03_lower_width_half_qty4_mm.step",
+      "bytes": 26184,
+      "sha256": "db0d1785107a5acf7a9046e3834fc67d77e41a2edf7b8c24dfdd8f0d79dfb8a5",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/guards/7u60_r6_t1p2_04_lower_depth_half_a_qty2_mm.step",
+      "bytes": 32105,
+      "sha256": "af855e34dae978a346128a2e574a90b41d07384eb027a9801e93f83d611ec116",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/guards/7u60_r6_t1p2_05_lower_depth_half_b_qty2_mm.step",
+      "bytes": 32192,
+      "sha256": "023933b0cbf80373263515212a89499b70ac1bd1957aefe72b294e06b5c18fbb",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/guards/7u60_r6_t1p2_06_vertical_corner_qty4_mm.step",
+      "bytes": 25612,
+      "sha256": "3451adfd53cadfcd3f14cb7b04e5f3e162bb75dd7e2f5d0c449478ddd3b79c94",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/model-summary.json",
+      "bytes": 8165,
+      "sha256": "31af144fbf5157476aabd0122c45a4d2669c5c5a5526181ee898966747c9d785",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/pcbs/7u60_r6_fixer-1_source_outline_mm.step",
+      "bytes": 12701073,
+      "sha256": "65cd4c6389cd0cb0daa3d7af3ac3b792b7cd50ac7c08b5e6c36256336a4af3bf",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/pcbs/7u60_r6_fixer-1_source_outline_mm.stl",
+      "bytes": 632484,
+      "sha256": "ac10e4640d881a045a56da511f12a44a92f9f32251a8c3ba0fa6d738c098d190",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/pcbs/7u60_r6_padder-1-row0_source_outline_mm.step",
+      "bytes": 57743,
+      "sha256": "ffa4204ff17bf1347a394d137b1994089ce9213b6d1f0cad15879341206bdd88",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/pcbs/7u60_r6_padder-1-row0_source_outline_mm.stl",
+      "bytes": 3684,
+      "sha256": "6346e5583caf945706d3602c6df4a50b85ecb6c55e0e9ef36400987dd79e3961",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/pcbs/7u60_r6_padder-1-row1_source_outline_mm.step",
+      "bytes": 57743,
+      "sha256": "c2ae103f56a54103871790bb48fbca03781b18a7dffb55df6cd0bfb5ca55df1f",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/pcbs/7u60_r6_padder-1-row1_source_outline_mm.stl",
+      "bytes": 3684,
+      "sha256": "6346e5583caf945706d3602c6df4a50b85ecb6c55e0e9ef36400987dd79e3961",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/pcbs/7u60_r6_padder-1-row2_source_outline_mm.step",
+      "bytes": 58027,
+      "sha256": "332ad27269a7394f5d020cef2cfcb689bd5bc6837de673b952777bd6cb3edf8d",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/pcbs/7u60_r6_padder-1-row2_source_outline_mm.stl",
+      "bytes": 3684,
+      "sha256": "aaac63373e9ab5064c040665d2fadb6b857f97edffcc8fa16c48814ed6126599",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u60/validation.json",
+      "bytes": 15841,
+      "sha256": "dbe9a9efd9c86408c74d7b39f8c5b7f41e5dc5776d1630efdb980f3728631f06",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/README.md",
+      "bytes": 4221,
+      "sha256": "05e2c107c5ab563d031b60fc41063bdec805c3e3627dd7643bf06e5e18d23d27",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/engineering/family-summary.json",
+      "bytes": 6895,
+      "sha256": "d55ba3020beeb90f2d9f6f3624410d7628dfcce61b063dd82d78adc1d9bde886",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/index.html",
+      "bytes": 12911,
+      "sha256": "d389d1a15dacf7b247cfcdb402d5b13fa52ad41f912d84c5f017af6ba4391e97",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/mesh-data.js",
+      "bytes": 31689876,
+      "sha256": "7e1db76f44b3c5f1c5c2dcfca8c13f01e1cee4c3383f15d4b00cd820fcb5d917",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/package_preview.py",
+      "bytes": 3289,
+      "sha256": "9e469a951b9430d50292eb358ed1f19645174a6d5e62f572501219a38a319ede",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/README.md",
+      "bytes": 860,
+      "sha256": "97ca0366030c71866ed29d1316b420a63d820852a7648c75b66f241413b8f37c",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/commit.json",
+      "bytes": 998,
+      "sha256": "2ba9e91550233485378a650cb6aec5a967cff45de04d576ab67424b38346676d",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/panel-geometry.json",
+      "bytes": 627540,
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/placements.json",
+      "bytes": 24931,
+      "sha256": "fca80fff8c825fb89727c0643dd9d1a6dbeb09b03c060ef2a4c2a1910acba03c",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/sources.json",
+      "bytes": 10121,
+      "sha256": "68be9d20a0f388a88c159516265716f7b884eea8020966ee3ad6bf507407e650",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pcb",
+      "bytes": 16426,
+      "sha256": "00174d7975b0565e0732544de5fdf3ada8b8d3a4a95d720819f104e384f5d2a7",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pcb",
+      "bytes": 88807,
+      "sha256": "a99916e41e412404171cb16a24a252bb543eb56025ffe603ee3f1455a025ee86",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/zb-side-frame-pad-1u/1u-padder.kicad_pcb",
+      "bytes": 3095,
+      "sha256": "dbd1d41152bbaf7350b7f1d83fa88c492acfb3ee164c5f187f5b6c7862b3769e",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb",
+      "bytes": 2976,
+      "sha256": "e7ea7daa33d98180f9f118e42b38d74d56d9a7ea685756a70123c9ffbf300b66",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/github-tree.json",
+      "bytes": 4889,
+      "sha256": "d6e5f9d33c5f0fa88d6ecec8b1db0c472cf270c70159adc58d4719a3c2de4e9e",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/nuts-v2-40hp-single.stl",
+      "bytes": 29684,
+      "sha256": "88a153fe717f582f80656fe10c74df5ec1717f53e6b202fff078532b00b06c5a",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/provenance.json",
+      "bytes": 569,
+      "sha256": "7ce7a866e63406be593e55011dcff6431fc91dec8679a4db82e9f9e99495ef2c",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/rail_dimensions.json",
+      "bytes": 5151,
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/rail_mesh.json",
+      "bytes": 16569,
+      "sha256": "6ddbf622f9bcd8f4d1316d76ce2c55b4cecfb3c166de6f88826fda3bb19c2753",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail60/github-tree.json",
+      "bytes": 4889,
+      "sha256": "d6e5f9d33c5f0fa88d6ecec8b1db0c472cf270c70159adc58d4719a3c2de4e9e",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail60/nuts-v2-60hp-single.stl",
+      "bytes": 29684,
+      "sha256": "584dea8a321824e370d5439104613eebc43a28d4fcd3b44f112b3c32fefc36a2",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail60/provenance.json",
+      "bytes": 459,
+      "sha256": "734835b3b49e48368abe7c6c9523af2e1f752c6b42a8811620ae2bbce8e48d30",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail60/rail_dimensions.json",
+      "bytes": 4734,
+      "sha256": "b518e0d6f3a21ab7e08bb1147c35c078475a3ac0c6106daafd863e7c9acfa337",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail60/rail_mesh.json",
+      "bytes": 16467,
+      "sha256": "eff25355d247f8455eccaf8ffd9e2d659d729a7d7571acb715137c8bc2dbbf2b",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/3u60/t1p0/3u60_r6_t1p0_01_top_u_qty2_mm.stl",
+      "bytes": 26484,
+      "sha256": "041bf48b4a6d87ee95de08a4d7e89ed74c422d381c0a6d7d32da5f802c1be7ef",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/3u60/t1p0/3u60_r6_t1p0_02_lower_width_half_qty4_mm.stl",
+      "bytes": 11684,
+      "sha256": "08c04a3c26b8a28d2a89ad63ad3320e23080f575e2962a5c41f66aed0235acb5",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/3u60/t1p0/3u60_r6_t1p0_03_lower_depth_full_qty2_mm.stl",
+      "bytes": 12284,
+      "sha256": "6bc87c45a4780504d0571339a8404281c92e4803440e887290b20239e86d1e8e",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/3u60/t1p0/3u60_r6_t1p0_04_vertical_corner_qty4_mm.stl",
+      "bytes": 11684,
+      "sha256": "164b58c996193841974a3f2d985d0e05c43edc2d56fd91e8a2567be4dca20dc5",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/3u60/t1p0/manifest.json",
+      "bytes": 2754,
+      "sha256": "3d43544f1c645e8238677bec63aa61ce029e44ef9194f10239b06dc5609e5705",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/3u60/t1p2/3u60_r6_t1p2_01_top_u_qty2_mm.stl",
+      "bytes": 26484,
+      "sha256": "ed8ca25644e69e2c7a2314e0f48627aae08dcf21b6e7f8bfeb1cc395b69afb53",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/3u60/t1p2/3u60_r6_t1p2_02_lower_width_half_qty4_mm.stl",
+      "bytes": 11684,
+      "sha256": "916e0e33bf4bb032dc9c25451d96b9215255caa8ed70369243c145683af3c7ae",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/3u60/t1p2/3u60_r6_t1p2_03_lower_depth_full_qty2_mm.stl",
+      "bytes": 12284,
+      "sha256": "825ee409e8af9382d9cceb9bfa9094c5c2d8bcff193db1f773b30824b35de858",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/3u60/t1p2/3u60_r6_t1p2_04_vertical_corner_qty4_mm.stl",
+      "bytes": 11684,
+      "sha256": "28d7d117f878b57913b9e376939483be0a15a61f91c2cf03da7bb5f9bd531658",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/3u60/t1p2/manifest.json",
+      "bytes": 2754,
+      "sha256": "9020133e5ef19fc2a232e13f0a0c93649297fc170a5d8d6562f209e87456922c",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p0/7u40_r6_t1p0_01_top_corner_a_qty2_mm.stl",
+      "bytes": 19084,
+      "sha256": "883d1ebe92cb21364a5fd0ed07e4ae64fa57ca55869486306d3a878526cec6fc",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p0/7u40_r6_t1p0_02_top_corner_b_qty2_mm.stl",
+      "bytes": 19084,
+      "sha256": "3cdc72b8450e41d15b97b509e0e317e69ea2efeabeca6f2217ccaf8dfb8f1897",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p0/7u40_r6_t1p0_03_lower_width_half_qty4_mm.stl",
+      "bytes": 11684,
+      "sha256": "beefe8cc35512af5118e4c75364ae67aba6f83f1560716d6bc3ea83fbd50217a",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p0/7u40_r6_t1p0_04_lower_depth_half_a_qty2_mm.stl",
+      "bytes": 11984,
+      "sha256": "c2f4d1fcee13947a28249a48e644b9a0fd1ea1d6c0fcb73e58db6c4af7217b7c",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p0/7u40_r6_t1p0_05_lower_depth_half_b_qty2_mm.stl",
+      "bytes": 11984,
+      "sha256": "9ee4dcad6c85428ff77dc4c082ae3c017500998c88ac07a9831db9e52fb6dd87",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p0/7u40_r6_t1p0_06_vertical_corner_qty4_mm.stl",
+      "bytes": 11684,
+      "sha256": "164b58c996193841974a3f2d985d0e05c43edc2d56fd91e8a2567be4dca20dc5",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p0/manifest.json",
+      "bytes": 3533,
+      "sha256": "ddb4a0d36ec6bb98d08f64537f5a4853ec85c8d2d3df1544a0c0b55d86724f5a",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p2/7u40_r6_t1p2_01_top_corner_a_qty2_mm.stl",
+      "bytes": 19084,
+      "sha256": "ffdeb609e7c11a7ae4399d38e45930e786c0a3af867649486ae9d048e1e24a75",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p2/7u40_r6_t1p2_02_top_corner_b_qty2_mm.stl",
+      "bytes": 19084,
+      "sha256": "ae8116eaa81b9a1c1357a60a8dfb949e6c563299ed40b4261a186bad643615a2",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p2/7u40_r6_t1p2_03_lower_width_half_qty4_mm.stl",
+      "bytes": 11684,
+      "sha256": "a4ddf4ed1e99943709572fc469ede9522cbf67dd6acad44e6d3407bba419808c",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p2/7u40_r6_t1p2_04_lower_depth_half_a_qty2_mm.stl",
+      "bytes": 11984,
+      "sha256": "f36c53e9fd7a20d0d1ef84c091e2185506d4acd9bdebe4054a892a5ea68cac6d",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p2/7u40_r6_t1p2_05_lower_depth_half_b_qty2_mm.stl",
+      "bytes": 11984,
+      "sha256": "deec4f40b9af1f83162bf2ad039ac248d4f058f2c1f58501ce0946e5bba5b0a1",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p2/7u40_r6_t1p2_06_vertical_corner_qty4_mm.stl",
+      "bytes": 11684,
+      "sha256": "bf490b6037757f4746bea138920e0af4b57aa13ebb9065436589290f8735e641",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u40/t1p2/manifest.json",
+      "bytes": 3534,
+      "sha256": "38cb9ac9a0128eaa0b24305d742eef81d9b196c72c7cbc89173bbc46f857b1e4",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p0/7u60_r6_t1p0_01_top_corner_a_qty2_mm.stl",
+      "bytes": 19084,
+      "sha256": "374867261b3e1d86fb4f9f43cb7f82e00f96fd2f7f3c9938e3c5492f1682e256",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p0/7u60_r6_t1p0_02_top_corner_b_qty2_mm.stl",
+      "bytes": 19084,
+      "sha256": "3a55a198f17b174b69afe958d6c80a97e43cd1e6ce723dd34322cd54bbc0fb2a",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p0/7u60_r6_t1p0_03_lower_width_half_qty4_mm.stl",
+      "bytes": 11684,
+      "sha256": "08c04a3c26b8a28d2a89ad63ad3320e23080f575e2962a5c41f66aed0235acb5",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p0/7u60_r6_t1p0_04_lower_depth_half_a_qty2_mm.stl",
+      "bytes": 11984,
+      "sha256": "4d9f886fc0adf0867b167e163743243861f522d16d7855d97001a1f70438e03e",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p0/7u60_r6_t1p0_05_lower_depth_half_b_qty2_mm.stl",
+      "bytes": 11984,
+      "sha256": "76d2bdb2c2a3830243c96252418d4f9761499f5903e2768af30c518a9091150e",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p0/7u60_r6_t1p0_06_vertical_corner_qty4_mm.stl",
+      "bytes": 11684,
+      "sha256": "164b58c996193841974a3f2d985d0e05c43edc2d56fd91e8a2567be4dca20dc5",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p0/manifest.json",
+      "bytes": 3537,
+      "sha256": "6d171cfb1bb8f2529dca1c46a5d19a976233d4592361841607a82b2dca6a1efb",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p2/7u60_r6_t1p2_01_top_corner_a_qty2_mm.stl",
+      "bytes": 19084,
+      "sha256": "a8c04a4663d300908a84f589259c025c7d35cc1a566098e8ec72f041287e9e5b",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p2/7u60_r6_t1p2_02_top_corner_b_qty2_mm.stl",
+      "bytes": 19084,
+      "sha256": "c434aa4b4c39b42b29b06948dde485e1bb6047f3ba8c63d2e021c59c1b321d87",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p2/7u60_r6_t1p2_03_lower_width_half_qty4_mm.stl",
+      "bytes": 11684,
+      "sha256": "0578fa33ad51906a328073f2fac8cc0944d839f114839ff2fde753ec8758eeb9",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p2/7u60_r6_t1p2_04_lower_depth_half_a_qty2_mm.stl",
+      "bytes": 11984,
+      "sha256": "b63ece0deb756821887ad582130914a71baa5906dd67ce47212a4caa1dd02cc3",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p2/7u60_r6_t1p2_05_lower_depth_half_b_qty2_mm.stl",
+      "bytes": 11984,
+      "sha256": "9957045bb220dd326e0a6e3ec7407b4e6a4ef568a3d11cd2095face1cbb26d8f",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p2/7u60_r6_t1p2_06_vertical_corner_qty4_mm.stl",
+      "bytes": 11684,
+      "sha256": "9536b3a66cf80fe395e429716ef130a291b2ce9c0c15f298203ecac2508fffaa",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl/7u60/t1p2/manifest.json",
+      "bytes": 3537,
+      "sha256": "0d2ee57c54d3c8b4ee7cc978101d7600181dbb406e0be4ee1aa047f6fcac63eb",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/stl-data.js",
+      "bytes": 623408,
+      "sha256": "7356748c3ced67e2f47f340fe290611709bf97b3ebb895d013151ca8c5e53764",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/styles.css",
+      "bytes": 18001,
+      "sha256": "2da057b598ca1bbff9ee11566e08ca386018635580718289d9dfe1e256be8f54",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/vendor/README.md",
+      "bytes": 1110,
+      "sha256": "24e824df1bb58300fe646693f00aafb9e6ba627d81342f03bb03f248e77b5af1",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/vendor/entry.js",
+      "bytes": 286,
+      "sha256": "d24b534e8613abbaf2ae4ea23e3451b202cf65528a4ab8ad12383e152fbd63d4",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r6-body/vendor/three-bundle.js",
+      "bytes": 701115,
+      "sha256": "d0e6b6a154209a0cda8f94d8a90a3a833cf3997105f89a6d720a0f0d5d4e6ebe",
+      "status": "nominal-body-reference-not-released"
+    },
+    {
+      "path": "engineering/r8-preview/README.md",
+      "bytes": 6367,
+      "sha256": "65a11150d69586475f0dc29c81b75fc6c2c15eb8acf9ed315f5080c416a4c0fe",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/app.js",
+      "bytes": 20147,
+      "sha256": "4c8660672822e842bb6b5ef4b23be86665f09c64b332835caa2b3eacb2b86885",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/browser-validation.json",
+      "bytes": 6199,
+      "sha256": "a43baeae51b3cc8c30c40fff9338de17991fdb1ea6a990c2d5e9db0b8dab3d20",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/build.py",
+      "bytes": 830,
+      "sha256": "a7a6aee5b28f97bea8a0e720ec56ea27beebff4dee7378253eed0ed80c1261aa",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/check_preview.py",
+      "bytes": 4981,
+      "sha256": "a05bf5ba92d5eff3bd3f84e51f43aff31a1518e1b24f255b557c0da8cb897c6c",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/geometry-checks.json",
+      "bytes": 1421,
+      "sha256": "5e64f006c51d9171391546600a183e0f09150842033af99e2a0fc7ac0ff1e664",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/index.html",
+      "bytes": 7503,
+      "sha256": "e3de1c0a7951158537f267b6d06dff12773949433f93c3d1786630723a337626",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/manifest.json",
+      "bytes": 2495,
+      "sha256": "ff2b68b58f4e4d7b0e34f1c3716153c194c18d58863a164c5fce57893d4ca0db",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/model-data.js",
+      "bytes": 3966488,
+      "sha256": "a0d75c31fca123a778c08f125627a8ff032b2bf87d1159c98f483fa5853cd7a1",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/prepare_models.py",
+      "bytes": 7870,
+      "sha256": "511654cd3418942e294024c65b3175a1b286df8af2cf80539d9b4823b9110f4c",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/preview-parameters.json",
+      "bytes": 2168,
+      "sha256": "d375a667b365fab665763617d61e2ad6d7b8e7c7b2228bed719e1a76ac59b9b6",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/previews/7u40-daily.png",
+      "bytes": 388993,
+      "sha256": "5fe2f77fb639170baec6b03780b8b715c29d3c3ed1c048fe4d5a9d6c58283c45",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/previews/7u40-open.png",
+      "bytes": 464945,
+      "sha256": "5df189a610b1ebd7a4d0b97e150804e0c83d9346e608ff924f7fb99e298d3c19",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/previews/7u40-travel.png",
+      "bytes": 394320,
+      "sha256": "c28ce8bb586109386c1732c2fa245e30823f400dc20d466550bd59e3ae7fb6f9",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/previews/locator-section.png",
+      "bytes": 327033,
+      "sha256": "495b73a7cc4f49b6fdcc7fd00bf9537322d69df52043f6f7f0373178342f91bb",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/previews/mobile.png",
+      "bytes": 218979,
+      "sha256": "9c625e71c5e618c5c39cb2d4b45825d6e448e153787ed9a53fff573e60519198",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/reference-models.json.gz",
+      "bytes": 2971095,
+      "sha256": "9b1e02867eaf66a1b6d28c74d7cbfd19a20c33bbc24d5088861c00882dc649b4",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/styles.css",
+      "bytes": 10930,
+      "sha256": "d69b74ee4cf73d269b94b7cb3abbe5bbd0baac3c0dcf4d6ea7f48262361f5757",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/r8-preview/three-bundle.js",
+      "bytes": 701115,
+      "sha256": "d0e6b6a154209a0cda8f94d8a90a3a833cf3997105f89a6d720a0f0d5d4e6ebe",
+      "status": "adopted-concept-preview-not-manufacturing"
+    },
+    {
+      "path": "engineering/release/README.md",
+      "bytes": 491,
+      "sha256": "da12750b6cdd4a9319c19c435333b86277ba6e22bb3bba7949f1b18194b40616",
+      "status": "supporting-not-released"
+    }
+  ]
+}

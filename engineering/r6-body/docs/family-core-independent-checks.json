@@ -1,0 +1,89 @@
+{
+  "3u60": {
+    "railSourceInverseMaxErrorMm": 7.105427357601002e-15,
+    "pcbSourceVertexMaxErrorMm": 2.0097183471152322e-14,
+    "railCount": 2,
+    "railLipOrientationsAlternate": true,
+    "betweenRowRailBBoxGapsMm": [],
+    "frontBackUnitToInnerWallClearanceMm": [
+      8.234070000000003,
+      8.234070000000003
+    ],
+    "jointHolesMatchedOneToOne": 32,
+    "rightMountBoltsChecked": 2,
+    "mountBoltPcbIntersectionMaxMm3": 0.0,
+    "pcbToBottomBracketsVerticalEnvelopeGapMm": 38.0,
+    "guardCatalogs": {
+      "t1p2": {
+        "parts": 12,
+        "types": 4,
+        "maxPartDimensionMm": 166.4
+      },
+      "t1p0": {
+        "parts": 12,
+        "types": 4,
+        "maxPartDimensionMm": 166.2
+      }
+    }
+  },
+  "7u40": {
+    "railSourceInverseMaxErrorMm": 0.0,
+    "pcbSourceVertexMaxErrorMm": 5.684341886080802e-14,
+    "railCount": 6,
+    "railLipOrientationsAlternate": true,
+    "betweenRowRailBBoxGapsMm": [
+      0.33024601562499356,
+      0.36550901562497984
+    ],
+    "frontBackUnitToInnerWallClearanceMm": [
+      8.122771999999998,
+      8.122771999999998
+    ],
+    "jointHolesMatchedOneToOne": 36,
+    "rightMountBoltsChecked": 5,
+    "mountBoltPcbIntersectionMaxMm3": 0.0,
+    "pcbToBottomBracketsVerticalEnvelopeGapMm": 7.984618999999999,
+    "guardCatalogs": {
+      "t1p2": {
+        "parts": 16,
+        "types": 6,
+        "maxPartDimensionMm": 168.2
+      },
+      "t1p0": {
+        "parts": 16,
+        "types": 6,
+        "maxPartDimensionMm": 168.0
+      }
+    }
+  },
+  "7u60": {
+    "railSourceInverseMaxErrorMm": 0.0,
+    "pcbSourceVertexMaxErrorMm": 5.684341886080802e-14,
+    "railCount": 6,
+    "railLipOrientationsAlternate": true,
+    "betweenRowRailBBoxGapsMm": [
+      0.33024601562499356,
+      0.36550901562497984
+    ],
+    "frontBackUnitToInnerWallClearanceMm": [
+      8.122771999999998,
+      8.122771999999998
+    ],
+    "jointHolesMatchedOneToOne": 36,
+    "rightMountBoltsChecked": 5,
+    "mountBoltPcbIntersectionMaxMm3": 0.0,
+    "pcbToBottomBracketsVerticalEnvelopeGapMm": 7.984618999999999,
+    "guardCatalogs": {
+      "t1p2": {
+        "parts": 16,
+        "types": 6,
+        "maxPartDimensionMm": 168.2
+      },
+      "t1p0": {
+        "parts": 16,
+        "types": 6,
+        "maxPartDimensionMm": 168.0
+      }
+    }
+  }
+}

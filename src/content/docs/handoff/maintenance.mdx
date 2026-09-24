@@ -1,0 +1,39 @@
+---
+title: "文書・表・資産の更新"
+description: "MDXの編集と、参照表の同期を分離する。"
+sidebar_position: 30
+---
+
+## 文書を書くルール
+
+各カテゴリに`index.mdx`を置き、すべてのページへ`title`・`description`・`sidebar_position`を指定する。本文は`##`から始める。文書間リンクは拡張子付きの相対`.mdx`リンクにする。
+
+カテゴリ一覧はzudo-docの`CategoryNav`。特別な描画フレームワークを追加せず、MDXと標準の注記・表を中心にした。
+
+## 数字の更新
+
+機種別ページ、比較表、BOMは`project/current-spec.json`から生成する。
+
+```sh
+node scripts/sync-reference-tables.mjs
+node scripts/check-docs.mjs
+```
+
+台帳の数値はR6/R8の出力から読み取った値。CAD変更後に出力と照合して台帳を更新する。図面を変えずに台帳だけ変えて「製作済み」としない。生成対象ファイルの先頭コメントにも編集元を記載する。
+
+## リンク・資産を確認する
+
+```sh
+node scripts/verify-assets.mjs
+node scripts/check-docs.mjs
+```
+
+ハッシュ検査は同梱元が変更されていないかを調べる。実際の設計更新でファイルが変わった場合は、旧版を残し、新版の情報を`project/artifact-manifest.json`と`project/release-state.json`へ追加する。無条件に期待ハッシュを上書きして検査を通さない。
+
+## 過去版の見せ方
+
+現行プレビューのページから、ロック付きの旧版を「最新」としてリンクしない。アーカイブを削除せずに区別する。価格も、対象版と条件を変えずに履歴へ残す。
+
+このサイトの文書更新日と、CADの改訂日と、業者見積日と、実測日は別。日付が分からない過去発言へ推測の日付を付けない。
+
+公式の根拠：[Writing Docs](https://zudo-doc.takazudomodular.com/docs/getting-started/writing-docs/)、[Sidebar](https://zudo-doc.takazudomodular.com/docs/guides/sidebar/)。

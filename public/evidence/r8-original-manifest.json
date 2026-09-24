@@ -1,0 +1,85 @@
+{
+  "revision": "R8-SIMPLE-LID-PREVIEW",
+  "defaultCase": "7u40",
+  "defaultState": "daily",
+  "models": [
+    "3u60",
+    "7u40",
+    "7u60"
+  ],
+  "request": "10BOX-style locating lid plus optional independent external transport bands",
+  "manufacturingFilesUpdated": false,
+  "htmlSha256": "3737dc1d793be7afc03089eca198bb32e2832afdd006dc51190f8b218e12ef3f",
+  "sourceFiles": [
+    {
+      "name": "README.md",
+      "bytes": 6367,
+      "sha256": "65a11150d69586475f0dc29c81b75fc6c2c15eb8acf9ed315f5080c416a4c0fe"
+    },
+    {
+      "name": "THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "name": "app.js",
+      "bytes": 20147,
+      "sha256": "4c8660672822e842bb6b5ef4b23be86665f09c64b332835caa2b3eacb2b86885"
+    },
+    {
+      "name": "browser-validation.json",
+      "bytes": 6199,
+      "sha256": "a43baeae51b3cc8c30c40fff9338de17991fdb1ea6a990c2d5e9db0b8dab3d20"
+    },
+    {
+      "name": "build.py",
+      "bytes": 830,
+      "sha256": "a7a6aee5b28f97bea8a0e720ec56ea27beebff4dee7378253eed0ed80c1261aa"
+    },
+    {
+      "name": "check_preview.py",
+      "bytes": 4981,
+      "sha256": "a05bf5ba92d5eff3bd3f84e51f43aff31a1518e1b24f255b557c0da8cb897c6c"
+    },
+    {
+      "name": "geometry-checks.json",
+      "bytes": 1421,
+      "sha256": "5e64f006c51d9171391546600a183e0f09150842033af99e2a0fc7ac0ff1e664"
+    },
+    {
+      "name": "index.html",
+      "bytes": 7503,
+      "sha256": "e3de1c0a7951158537f267b6d06dff12773949433f93c3d1786630723a337626"
+    },
+    {
+      "name": "model-data.js",
+      "bytes": 3966488,
+      "sha256": "a0d75c31fca123a778c08f125627a8ff032b2bf87d1159c98f483fa5853cd7a1"
+    },
+    {
+      "name": "prepare_models.py",
+      "bytes": 7870,
+      "sha256": "511654cd3418942e294024c65b3175a1b286df8af2cf80539d9b4823b9110f4c"
+    },
+    {
+      "name": "preview-parameters.json",
+      "bytes": 2168,
+      "sha256": "d375a667b365fab665763617d61e2ad6d7b8e7c7b2228bed719e1a76ac59b9b6"
+    },
+    {
+      "name": "reference-models.json.gz",
+      "bytes": 2971095,
+      "sha256": "9b1e02867eaf66a1b6d28c74d7cbfd19a20c33bbc24d5088861c00882dc649b4"
+    },
+    {
+      "name": "styles.css",
+      "bytes": 10930,
+      "sha256": "d69b74ee4cf73d269b94b7cb3abbe5bbd0baac3c0dcf4d6ea7f48262361f5757"
+    },
+    {
+      "name": "three-bundle.js",
+      "bytes": 701115,
+      "sha256": "d0e6b6a154209a0cda8f94d8a90a3a833cf3997105f89a6d720a0f0d5d4e6ebe"
+    }
+  ]
+}

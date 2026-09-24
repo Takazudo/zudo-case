@@ -1,0 +1,45 @@
+---
+title: "調達先と運搬バンドの候補"
+description: "会話で挙げた候補を残す。品番・価格の再確認は注文前に行う。"
+sidebar_position: 50
+---
+
+## アルミ・樹脂・金具
+
+| 対象 | 会話で挙げた調達先 | 扱い |
+|---|---|---|
+| アルミ板の切断・穴・黒アルマイト | [JLCCNC](https://jlccnc.com/sheet-metal-fabrication) | A5052での一括依頼候補。実見積未取得 |
+| 国内の黒アルマイト板 | [タカチB2F](https://www.takachi-el.co.jp/products/B2F) | A1100Pの比較候補。カスタム穴は別 |
+| 切板の比較 | [横山テクノ](https://www.yokoyama-techno.net/detail/44.html) | 素材と切断の参考。完成板原価ではない |
+| PA12黒部品 | [JLC3DP PA12-HP](https://jlc3dp.com/help/article/pa12-hp-nylon) | 本体ガードはSTL投入で比較 |
+| L字金具 | [Alibabaのユーザー購入品](https://www.alibaba.com/x/18paSt?ck=pdp) | 在庫20×20×16mmを使用 |
+| M5低頭 | [AliExpressのユーザー購入品](https://ja.aliexpress.com/item/1005005590438825.html) | 高さ1.4mmをユーザー実測 |
+
+## バンド候補の記録
+
+これらは**過去の調査で挙げた候補**。今回、在庫・価格・製品仕様は再取得していない。最終品番を選んだわけではない。
+
+| 候補 | 過去に記録した条件 | 位置づけ |
+|---|---|---|
+| [FIXPLUS 86cm](https://fukaya-nagoya.co.jp/product/fixplus-strap-86cm/) | 黒、幅23mm、税込2,090円/本と報告 | ゴム系の外観を比較する候補 |
+| [Voilé 32インチ Nylon Buckle](https://www.voile.com/voile-straps-32-inch-nylon-buckle.html) | 使用周長14〜75.3cm、11USD/本と報告 | ポリウレタン＋ナイロンバックルの候補 |
+| [JACK ボア結束ベルト](https://store.shopping.yahoo.co.jp/handcraft/jack-bur-belt-l1-20-1500.html) | 幅20mm×1.5m、10本2,762円と報告 | 面ファスナーの低価格同梱候補 |
+| [ALMの純正ストラップ](https://busycircuits.com/products/alm-csstp) | 700×50mmの面ファスナーベルトと報告 | 蓋＋ストラップ方式の製品例 |
+
+過去価格を現時点の購入可能価格として表示しない。ALMは方式の参考であり、今回のケースへ長さが適合するという指定ではない。
+
+## 長さを確認する
+
+R8モデルの閉じた高さ128.8mmと短辺から得た幾何学的な一周長さは次のとおり。
+
+| モデル | 一周の概算 | R8での巻き方向 |
+|---|---:|---|
+| 3U60 | 570.4mm | 奥行Dを一周 |
+| 7U40 | 721.2mm | 幅Wを一周 |
+| 7U60 | 923.2mm | 幅Wを一周 |
+
+**全長ではなく使用可能な周長で選ぶ。** バックルの折返し、面ファスナーの重なり、頭/ナットの突出、角部、締付の変形は上の値に入っていない。7U60を全長86cm１本で回すことは、この計算の段階でも足りない。
+
+両手を離してもバンドが横へ落ちないか、天板がノブへ沈まないか、バックルがケースへ擦れないかを実物で見る。２本を平行に巻く方針だが、位置決め溝は未採用・未設計。バンドを持ち手には使わない。
+
+根拠：[R8パラメータ](/evidence/r8-preview-parameters.json)、[載せ蓋の設計](../design/lid-bands.mdx)。

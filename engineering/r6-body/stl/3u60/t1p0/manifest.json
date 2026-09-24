@@ -1,0 +1,112 @@
+{
+  "revision": "R6-SOURCE-FAMILY-01",
+  "model": "3u60",
+  "variant": "t1p0",
+  "units": "mm",
+  "stats": {
+    "thicknessMm": 1.0,
+    "coverMm": 5,
+    "coverageMm": 5,
+    "radiusMm": 0.4,
+    "partCount": 12,
+    "totalGuardParts": 12,
+    "typeCount": 4,
+    "quantities": [
+      2,
+      4,
+      2,
+      4
+    ],
+    "totalVolumeCm3": 22.30124427,
+    "volumeCm3": 22.30124427,
+    "approxMassG": 22.524,
+    "maxPartLengthMm": 166.2,
+    "outerEnvelopeMm": [
+      332.4,
+      156.0,
+      93.0
+    ],
+    "outerDimensions": [
+      332.4,
+      156.0,
+      93.0
+    ],
+    "feetIncludedEnvelopeMm": [
+      332.4,
+      156.0,
+      95.0
+    ],
+    "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+    "openingMm": [
+      325.4,
+      149.0
+    ],
+    "quoteJpy": null,
+    "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+  },
+  "catalog": [
+    {
+      "partType": "top_u",
+      "name": "上端U字ガード",
+      "quantity": 2,
+      "dimensions": [
+        166.2,
+        156.0,
+        6.0
+      ],
+      "volumeCm3": 4.10014243,
+      "stlFile": "3u60_r6_t1p0_01_top_u_qty2_mm.stl",
+      "stepFile": "engineering/3u60/guards/3u60_r6_t1p0_01_top_u_qty2_mm.step"
+    },
+    {
+      "partType": "lower_width_half",
+      "name": "前後下辺・半分",
+      "quantity": 4,
+      "dimensions": [
+        166.2,
+        6.0,
+        6.0
+      ],
+      "volumeCm3": 1.82249331,
+      "stlFile": "3u60_r6_t1p0_02_lower_width_half_qty4_mm.stl",
+      "stepFile": "engineering/3u60/guards/3u60_r6_t1p0_02_lower_width_half_qty4_mm.step"
+    },
+    {
+      "partType": "lower_depth_full",
+      "name": "左右下辺ガード",
+      "quantity": 2,
+      "dimensions": [
+        6.0,
+        154.0,
+        6.0
+      ],
+      "volumeCm3": 1.62905557,
+      "stlFile": "3u60_r6_t1p0_03_lower_depth_full_qty2_mm.stl",
+      "stepFile": "engineering/3u60/guards/3u60_r6_t1p0_03_lower_depth_full_qty2_mm.step"
+    },
+    {
+      "partType": "vertical_corner",
+      "name": "縦辺コーナーガード",
+      "quantity": 4,
+      "dimensions": [
+        6.0,
+        6.0,
+        81.0
+      ],
+      "volumeCm3": 0.88821876,
+      "stlFile": "3u60_r6_t1p0_04_vertical_corner_qty4_mm.stl",
+      "stepFile": "engineering/3u60/guards/3u60_r6_t1p0_04_vertical_corner_qty4_mm.step"
+    }
+  ],
+  "enclosureMetalEnvelopeMm": [
+    330.4,
+    154.0,
+    91
+  ],
+  "enclosureMetalThicknessMm": 1.5,
+  "notes": [
+    "各STLは1部品。qtyはケース1台の必要数。",
+    "R6未見積。JLCへ再アップロードして価格を確認する。",
+    "ガードの保持方法、接着層、嵌合公差は未確定。"
+  ]
+}

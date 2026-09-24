@@ -1,0 +1,150 @@
+{
+  "repository": "https://github.com/Takazudo/zudo-blanks",
+  "commit_sha": "b4db88ce5c93709f3f2f0a031f75190081f02443",
+  "files": [
+    {
+      "path": "panels/zb-side-frame-7u/dist/zd-side-frame-7u.zip",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-7u/dist/zd-side-frame-7u.zip",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-7u/dist/zd-side-frame-7u.zip",
+      "sha256": "9be1b35b65770e81f4cb22c816da48f4c05721a584481a6c5f35402f35b7e226",
+      "git_blob_sha": "c839212e4b7eb3ebfc728b42bc7a2fc82be4cd5e",
+      "computed_git_blob_sha": "c839212e4b7eb3ebfc728b42bc7a2fc82be4cd5e",
+      "bytes": 23476
+    },
+    {
+      "path": "panels/zb-side-frame-7u/dist/zd-side-frame-7u/zd-side-frame-7u-Edge_Cuts.gbr",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-7u/dist/zd-side-frame-7u/zd-side-frame-7u-Edge_Cuts.gbr",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-7u/dist/zd-side-frame-7u/zd-side-frame-7u-Edge_Cuts.gbr",
+      "sha256": "22fbe6a15010926872f12959b835abe3a798e9e5c6863be4f29fffbd71712d95",
+      "git_blob_sha": "8489414c45a39636f1797f4ef75e076fb4290872",
+      "computed_git_blob_sha": "8489414c45a39636f1797f4ef75e076fb4290872",
+      "bytes": 78103
+    },
+    {
+      "path": "panels/zb-side-frame-7u/dist/zd-side-frame-7u/zd-side-frame-7u-job.gbrjob",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-7u/dist/zd-side-frame-7u/zd-side-frame-7u-job.gbrjob",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-7u/dist/zd-side-frame-7u/zd-side-frame-7u-job.gbrjob",
+      "sha256": "512eb21015d334f94d5fb9acc3dcaf62cc4d34abb9b76c35f5580abb3ae68937",
+      "git_blob_sha": "0b780d51eab0b7f8642eaf93e2b2d81712d25091",
+      "computed_git_blob_sha": "0b780d51eab0b7f8642eaf93e2b2d81712d25091",
+      "bytes": 1512
+    },
+    {
+      "path": "panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pcb",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pcb",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pcb",
+      "sha256": "a99916e41e412404171cb16a24a252bb543eb56025ffe603ee3f1455a025ee86",
+      "git_blob_sha": "b267d494d9ec8bb34248429d3064aa35c06f5b78",
+      "computed_git_blob_sha": "b267d494d9ec8bb34248429d3064aa35c06f5b78",
+      "bytes": 88807
+    },
+    {
+      "path": "panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pro",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pro",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pro",
+      "sha256": "77fc92fe8b82eb40dfd351cb2a492288050cc493ddf38fab9b6767043699ae4c",
+      "git_blob_sha": "854a8a7f2acdf0fc00157a10c385facb0b208ded",
+      "computed_git_blob_sha": "854a8a7f2acdf0fc00157a10c385facb0b208ded",
+      "bytes": 9044
+    },
+    {
+      "path": "panels/zb-side-frame-7u/zd-side-frame-7u.kicad_sch",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_sch",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_sch",
+      "sha256": "e36a47d12dbba62816c12fc2bade7b663a8e5454dabf920e458965819cdc4820",
+      "git_blob_sha": "f86ab2f23d8ee00ba82326445a69354ceb9a8700",
+      "computed_git_blob_sha": "f86ab2f23d8ee00ba82326445a69354ceb9a8700",
+      "bytes": 230
+    },
+    {
+      "path": "panels/zb-side-frame-pad-1u/1u-padder.kicad_pcb",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-pad-1u/1u-padder.kicad_pcb",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-1u/1u-padder.kicad_pcb",
+      "sha256": "dbd1d41152bbaf7350b7f1d83fa88c492acfb3ee164c5f187f5b6c7862b3769e",
+      "git_blob_sha": "574d4711accfa4d0854c2c5ad125d842aa30bd0b",
+      "computed_git_blob_sha": "574d4711accfa4d0854c2c5ad125d842aa30bd0b",
+      "bytes": 3095
+    },
+    {
+      "path": "panels/zb-side-frame-pad-1u/1u-padder.kicad_pro",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-pad-1u/1u-padder.kicad_pro",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-1u/1u-padder.kicad_pro",
+      "sha256": "01254642f8168efc1f0d369e0c172499cc92cf827ef822092e9298035711f992",
+      "git_blob_sha": "a1472eae8fa5ade626df42705449e97185c22f83",
+      "computed_git_blob_sha": "a1472eae8fa5ade626df42705449e97185c22f83",
+      "bytes": 7976
+    },
+    {
+      "path": "panels/zb-side-frame-3u/dist/zd-side-frame-3u-Edge_Cuts.gbr",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-3u/dist/zd-side-frame-3u-Edge_Cuts.gbr",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-3u/dist/zd-side-frame-3u-Edge_Cuts.gbr",
+      "sha256": "3a8ff9f79a47617e485211fb99d047ceb33bdb28fd67577cea12a2193f2f1687",
+      "git_blob_sha": "fa5db33b1c669559b1e464ed9f7438665fc23b62",
+      "computed_git_blob_sha": "fa5db33b1c669559b1e464ed9f7438665fc23b62",
+      "bytes": 13175
+    },
+    {
+      "path": "panels/zb-side-frame-3u/dist/zd-side-frame-3u-job.gbrjob",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-3u/dist/zd-side-frame-3u-job.gbrjob",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-3u/dist/zd-side-frame-3u-job.gbrjob",
+      "sha256": "1ad24b3491275aabfddf92f23726ed8488205995af53fca2b7d0b1450b03399d",
+      "git_blob_sha": "ab798ecd99d29de2a952a41adb0ea543ef164707",
+      "computed_git_blob_sha": "ab798ecd99d29de2a952a41adb0ea543ef164707",
+      "bytes": 1639
+    },
+    {
+      "path": "panels/zb-side-frame-3u/zd-side-frame-3u-job.gbrjob",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-3u/zd-side-frame-3u-job.gbrjob",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-3u/zd-side-frame-3u-job.gbrjob",
+      "sha256": "ccc45322eb65b1ab56162eac5bbad82476d486ca05fe2849eaa3a06fc02e3383",
+      "git_blob_sha": "71f0e8ff7ad7aa5cec490b6d1043eee6dfcd3b23",
+      "computed_git_blob_sha": "71f0e8ff7ad7aa5cec490b6d1043eee6dfcd3b23",
+      "bytes": 2562
+    },
+    {
+      "path": "panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pcb",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pcb",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pcb",
+      "sha256": "00174d7975b0565e0732544de5fdf3ada8b8d3a4a95d720819f104e384f5d2a7",
+      "git_blob_sha": "d09df0a92b4cf1a0d0d17d55f597961143e092b2",
+      "computed_git_blob_sha": "d09df0a92b4cf1a0d0d17d55f597961143e092b2",
+      "bytes": 16426
+    },
+    {
+      "path": "panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pro",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pro",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pro",
+      "sha256": "a7de090a4f01e2caf7f0ca76bd7279bbf30875acc66d2a96cc644242a78a6467",
+      "git_blob_sha": "d48e2e409ddc742b2e0669313d9bacaeccb5cfb2",
+      "computed_git_blob_sha": "d48e2e409ddc742b2e0669313d9bacaeccb5cfb2",
+      "bytes": 9206
+    },
+    {
+      "path": "panels/zb-side-frame-3u/zd-side-frame-3u.kicad_sch",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_sch",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_sch",
+      "sha256": "d5e1c87a78f724936f8e172636c55d52bef33f6e292048cec28560e95feef91c",
+      "git_blob_sha": "432074b592c38f3e5c8da6df6357f22fa155f056",
+      "computed_git_blob_sha": "432074b592c38f3e5c8da6df6357f22fa155f056",
+      "bytes": 230
+    },
+    {
+      "path": "panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb",
+      "sha256": "e7ea7daa33d98180f9f118e42b38d74d56d9a7ea685756a70123c9ffbf300b66",
+      "git_blob_sha": "6140e916babd58829474dfe0c07db702c8702b2b",
+      "computed_git_blob_sha": "6140e916babd58829474dfe0c07db702c8702b2b",
+      "bytes": 2976
+    },
+    {
+      "path": "panels/zb-side-frame-pad-3u/3u-padder.kicad_pro",
+      "local": "/workspace/scratch/7da3eab60949/zb-family-source/panels/zb-side-frame-pad-3u/3u-padder.kicad_pro",
+      "source_url": "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-3u/3u-padder.kicad_pro",
+      "sha256": "d5872c8f210b0c674c77e761370f82f711d3e7e881046c9ea9cc60d59ae210c7",
+      "git_blob_sha": "02c2353b3bfa2c070b8eaa2762825a62a2af7404",
+      "computed_git_blob_sha": "02c2353b3bfa2c070b8eaa2762825a62a2af7404",
+      "bytes": 7976
+    }
+  ]
+}

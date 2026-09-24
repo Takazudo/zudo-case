@@ -1,0 +1,33 @@
+{
+  "projectName": "zudo-case-doc",
+  "defaultLang": "ja",
+  "colorSchemeMode": "light-dark",
+  "lightScheme": "Default Light",
+  "darkScheme": "Default Dark",
+  "defaultMode": "dark",
+  "respectPrefersColorScheme": true,
+  "themePack": "default",
+  "features": [
+    "search",
+    "sidebarFilter",
+    "sidebarResizer",
+    "sidebarToggle",
+    "tocToggle",
+    "llmsTxt",
+    "imageEnlarge",
+    "noindex"
+  ],
+  "cjkFriendly": true,
+  "minifyHtml": true,
+  "headerRightItems": [
+    {
+      "type": "component",
+      "component": "theme-toggle"
+    },
+    {
+      "type": "component",
+      "component": "search"
+    }
+  ],
+  "packageManager": "pnpm"
+}

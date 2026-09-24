@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "title": "7U 40HP · 3U + 3U + 1U",
+    "revision": "R6-SOURCE-FAMILY-01",
+    "modelId": "7u40",
+    "hp": 40,
+    "layout": [
+      "3U",
+      "3U",
+      "1U"
+    ],
+    "units": "mm",
+    "upAxis": "Z",
+    "metalEnvelopeMm": [
+      229.4,
+      334.0,
+      91
+    ],
+    "metalThicknessMm": 1.5,
+    "railLengthMm": 204.0,
+    "railCount": 6,
+    "railFrameWidthMm": 210.4,
+    "railFrameDepthMm": 314.754456,
+    "railUnitDepthMm": 314.754456,
+    "fixerThicknessMm": 1.6,
+    "padderThicknessMm": 1.6,
+    "fixerCount": 2,
+    "padderCount": 6,
+    "pcbCount": 8,
+    "fixerSourceDimensionsUVmm": [
+      314.754456,
+      60.015381
+    ],
+    "padderPlacementsPerSide": [
+      {
+        "kind": "padder3u",
+        "u": 0.0,
+        "v": 0.0,
+        "row": 0,
+        "label": "3U 1"
+      },
+      {
+        "kind": "padder3u",
+        "u": 134.53186,
+        "v": 0.0,
+        "row": 1,
+        "label": "3U 2"
+      },
+      {
+        "kind": "padder1u",
+        "u": 269.039027,
+        "v": -0.025081,
+        "row": 2,
+        "label": "1U"
+      }
+    ],
+    "spacerThicknessMm": 8,
+    "spacerCount": 10,
+    "outerWasherThicknessMm": 1,
+    "outerWasherCount": 10,
+    "mountingGripMm": 12.1,
+    "mountingBoltLengthMm": 20,
+    "mountingNutHeightMm": 5,
+    "mountingHardwareDimensionsStatus": "schematic / not a fastener procurement specification",
+    "mountHeadHeightMm": 1.4,
+    "mountHeadHeightUserConfirmed": true,
+    "pcbThicknessUserConfirmed": true,
+    "bracketPhysicalThicknessMm": 2,
+    "bracketAllowanceThicknessMm": 2.2,
+    "railFixerTopMm": 89.5,
+    "railMountZMm": 68.1894265,
+    "railMountYmm": [
+      -134.5318715,
+      -67.26594,
+      -8.000000008223651e-06,
+      67.26591450000001,
+      134.496536
+    ],
+    "unitMountHoleCount": 10,
+    "panelCount": 5,
+    "panelHoleCount": 46,
+    "panelJointHoleCount": 36,
+    "bracketCount": 18,
+    "bottomBracketCount": 10,
+    "verticalBracketCount": 8,
+    "railUnitLiftMm": 155,
+    "frontBackInsideClearanceMm": 8.122771999999998,
+    "frontBackInnerClearanceMm": 8.122771999999998,
+    "frontBackClearanceMm": 8.122771999999998,
+    "frontBackOpenGapMm": 7.122771999999998,
+    "sideOpeningClearanceMm": 7,
+    "conservativeFacingHeadXGapMm": 3.0000000000000004,
+    "footCount": 4,
+    "footDiameterMm": 10,
+    "footHeightMm": 3,
+    "footInsetMm": 20,
+    "bottomHeadSide": "outside",
+    "bottomHeadContactClearanceMm": 1.6,
+    "nominalValuesFromSource": true,
+    "assumptions": [
+      "ケース高さ91mm、fixer上端Z89.5mmを維持。奥行は全ユニット包絡から約8mmの余白を加えて整数mmへ切り上げ。",
+      "ブラケット穴中心は内面から10mmの提案位置。実測の穴中心・曲げ形状は未反映。パネルはφ5.5丸穴。",
+      "ブラケット実厚2mm、設計占有厚2.2mm。内側の頭厚1.4mmを含めて干渉確認。",
+      "底板のみ低頭を外側、座金/ナットを内側へ反転。φ10×3mm貼付ゴム脚4個は未選定の提案。JLCガードとは別部品。",
+      "ガードは公称接触すきま0mm、保持方法・嵌合公差・接着層は未設計。",
+      "ワッシャー内外径、外側ナット、ねじ軸長は模式表示。必要ねじ長の指定ではない。",
+      "レール元STLは重複面を保持。モジュール固定用のスライドナットは省略。",
+      "レール端頭φ9は模式表示。φ12追加検証では7U隣接行の頭同士に約0.004mmの径方向包絡重複があり、実頭径の確認事項として別記。"
+    ],
+    "hardwareCounts": {
+      "aluminumPanel": 5,
+      "panelBracket": 18,
+      "rail": 6,
+      "fixer": 2,
+      "padder": 6,
+      "innerSpacer": 10,
+      "outerWasher": 10,
+      "mountBolt": 10,
+      "mountNut": 10,
+      "railEndBolt": 12,
+      "panelJointBolt": 36,
+      "panelJointWasher": 36,
+      "panelJointNut": 36,
+      "foot": 4
+    },
+    "status": "R6 source-based family, nominal design; bracket hole positions and guard retention not finalized",
+    "notes": [
+      "実レール長204mm、PCB両1.6mm、内側スペーサー8mm、外側ワッシャー1mm、頭厚1.4mm。",
+      "全ケースは底＋前後＋左右の5枚構成。7Uも内部仕切り板なし。",
+      "ガードは各単体180mm以内の短い部品へ分割。",
+      "ケース高さ91mm、fixer上端Z89.5mmを維持。奥行は全ユニット包絡から約8mmの余白を加えて整数mmへ切り上げ。",
+      "ブラケット穴中心は内面から10mmの提案位置。実測の穴中心・曲げ形状は未反映。パネルはφ5.5丸穴。",
+      "ブラケット実厚2mm、設計占有厚2.2mm。内側の頭厚1.4mmを含めて干渉確認。",
+      "底板のみ低頭を外側、座金/ナットを内側へ反転。φ10×3mm貼付ゴム脚4個は未選定の提案。JLCガードとは別部品。",
+      "ガードは公称接触すきま0mm、保持方法・嵌合公差・接着層は未設計。",
+      "ワッシャー内外径、外側ナット、ねじ軸長は模式表示。必要ねじ長の指定ではない。",
+      "レール元STLは重複面を保持。モジュール固定用のスライドナットは省略。",
+      "レール端頭φ9は模式表示。φ12追加検証では7U隣接行の頭同士に約0.004mmの径方向包絡重複があり、実頭径の確認事項として別記。"
+    ],
+    "sources": [
+      "https://raw.githubusercontent.com/Takazudo/zudo-rail/0f7316ad9000b7906e5769aa89aff2dc18c661c8/working/nuts-v2-40hp-single.stl",
+      "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pcb",
+      "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb",
+      "https://raw.githubusercontent.com/Takazudo/zudo-blanks/b4db88ce5c93709f3f2f0a031f75190081f02443/panels/zb-side-frame-pad-1u/1u-padder.kicad_pcb"
+    ],
+    "sourceCommits": {
+      "rail": "0f7316ad9000b7906e5769aa89aff2dc18c661c8",
+      "pcbs": "b4db88ce5c93709f3f2f0a031f75190081f02443"
+    }
+  },
+  "stats": {
+    "t1p2": {
+      "thicknessMm": 1.2,
+      "coverMm": 5,
+      "coverageMm": 5,
+      "radiusMm": 0.4,
+      "partCount": 16,
+      "totalGuardParts": 16,
+      "typeCount": 6,
+      "quantities": [
+        2,
+        2,
+        4,
+        2,
+        2,
+        4
+      ],
+      "totalVolumeCm3": 31.0956796,
+      "volumeCm3": 31.0956796,
+      "approxMassG": 31.407,
+      "maxPartLengthMm": 168.2,
+      "outerEnvelopeMm": [
+        231.8,
+        336.4,
+        93.4
+      ],
+      "outerDimensions": [
+        231.8,
+        336.4,
+        93.4
+      ],
+      "feetIncludedEnvelopeMm": [
+        231.8,
+        336.4,
+        95.2
+      ],
+      "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+      "openingMm": [
+        224.4,
+        329.0
+      ],
+      "quoteJpy": null,
+      "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+    },
+    "t1p0": {
+      "thicknessMm": 1.0,
+      "coverMm": 5,
+      "coverageMm": 5,
+      "radiusMm": 0.4,
+      "partCount": 16,
+      "totalGuardParts": 16,
+      "typeCount": 6,
+      "quantities": [
+        2,
+        2,
+        4,
+        2,
+        2,
+        4
+      ],
+      "totalVolumeCm3": 25.371394,
+      "volumeCm3": 25.371394,
+      "approxMassG": 25.625,
+      "maxPartLengthMm": 168.0,
+      "outerEnvelopeMm": [
+        231.4,
+        336.0,
+        93.0
+      ],
+      "outerDimensions": [
+        231.4,
+        336.0,
+        93.0
+      ],
+      "feetIncludedEnvelopeMm": [
+        231.4,
+        336.0,
+        95.0
+      ],
+      "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+      "openingMm": [
+        224.4,
+        329.0
+      ],
+      "quoteJpy": null,
+      "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+    }
+  }
+}

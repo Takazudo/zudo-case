@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: mock scaffold: framework only; preserve MDX/config/assets; use generated versions
+ok 1 - mock scaffold: framework only; preserve MDX/config/assets; use generated versions
+  ---
+  duration_ms: 21.397475
+  type: 'test'
+  ...
+# Subtest: collision is detected before copying
+ok 2 - collision is detected before copying
+  ---
+  duration_ms: 6.900272
+  type: 'test'
+  ...
+# Subtest: already integrated project is not overwritten
+ok 3 - already integrated project is not overwritten
+  ---
+  duration_ms: 7.84182
+  type: 'test'
+  ...
+# Subtest: non-zudo-doc input is rejected
+ok 4 - non-zudo-doc input is rejected
+  ---
+  duration_ms: 12.789092
+  type: 'test'
+  ...
+# Subtest: copy failure rolls back newly copied paths and package
+ok 5 - copy failure rolls back newly copied paths and package
+  ---
+  duration_ms: 7.032141
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 108.183197

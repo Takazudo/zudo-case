@@ -1,0 +1,248 @@
+[
+  {
+    "path": "decisions/decisions.mdx",
+    "title": "採用・不採用の判断",
+    "description": "どの案へ戻してはいけないかを明確にする。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "decisions/history.mdx",
+    "title": "R1〜R8の変更履歴",
+    "description": "名称が似たファイルの取り違えを防ぐための経緯。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "decisions/index.mdx",
+    "title": "判断履歴",
+    "description": "採用・不採用と、変更理由を残す。",
+    "sidebar_position": 70
+  },
+  {
+    "path": "design/brackets-slots.mdx",
+    "title": "ブラケットと公差吸収用の長穴",
+    "description": "穴位置を厳密に合わせるのではなく、組立時に調整して締める。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "design/construction.mdx",
+    "title": "平板５枚と役割分担",
+    "description": "部材の強度、端の保護、取り外しを分ける。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "design/fasteners-feet.mdx",
+    "title": "締結材・底面・接地",
+    "description": "実測値と模式部品を区別して、突出と接触を確認する。",
+    "sidebar_position": 60
+  },
+  {
+    "path": "design/guards.mdx",
+    "title": "薄型PA12ガード",
+    "description": "本体の強度は金具へ任せ、樹脂は端の被覆と意匠に絞る。",
+    "sidebar_position": 40
+  },
+  {
+    "path": "design/index.mdx",
+    "title": "共通設計",
+    "description": "平板、レール、締結、ガード、載せ蓋の役割。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "design/lid-bands.mdx",
+    "title": "10BOX式の載せ蓋と外周バンド",
+    "description": "可動ロックを持たせず、位置決めと運搬時の保持を分ける。",
+    "sidebar_position": 50
+  },
+  {
+    "path": "design/rail-stack.mdx",
+    "title": "実レール・PCB・8mmスペーサー",
+    "description": "幅を決める積層と、締付長の積層を混同しない。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "handoff/index.mdx",
+    "title": "ローカルへの引継ぎ",
+    "description": "zudo-docの初期化、更新手順、次の作業。",
+    "sidebar_position": 80
+  },
+  {
+    "path": "handoff/maintenance.mdx",
+    "title": "文書・表・資産の更新",
+    "description": "MDXの編集と、参照表の同期を分離する。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "handoff/setup.mdx",
+    "title": "ローカルでzudo-docを起動する",
+    "description": "公式CLIで土台を生成し、このMDX・資産をそのまま使う。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "handoff/tasks.mdx",
+    "title": "次に行う作業",
+    "description": "7U40から試作へ進め、共通構造を３機種へ展開する。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "manufacturing/aluminum-order.mdx",
+    "title": "アルミ板の見積・発注条件",
+    "description": "黒アルマイトまで材料込みで比較し、長穴と仕上げを図面へ結び付ける。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "manufacturing/bands-suppliers.mdx",
+    "title": "調達先と運搬バンドの候補",
+    "description": "会話で挙げた候補を残す。品番・価格の再確認は注文前に行う。",
+    "sidebar_position": 50
+  },
+  {
+    "path": "manufacturing/bom.mdx",
+    "title": "ケース側BOM",
+    "description": "レールユニットの費用を除き、本体・蓋・バンドを分けて管理する。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "manufacturing/costs.mdx",
+    "title": "見積・概算・未取得費用",
+    "description": "実額を確認できるのは旧R3ガード。現在の総原価は未確定。",
+    "sidebar_position": 40
+  },
+  {
+    "path": "manufacturing/index.mdx",
+    "title": "製作・見積",
+    "description": "BOM、発注条件、価格根拠を分けて管理する。",
+    "sidebar_position": 40
+  },
+  {
+    "path": "manufacturing/print-order.mdx",
+    "title": "JLC3DP用STLの投入と数量",
+    "description": "本体ガードの旧見積と、最新の３機種・載せ蓋を混同しない。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "models/3u60.mdx",
+    "title": "3U・60HP",
+    "description": "本体はR6の名目CAD、載せ蓋はR8プレビュー。3u60の寸法と数量。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "models/7u40.mdx",
+    "title": "3U＋3U＋1U・40HP",
+    "description": "本体はR6の名目CAD、載せ蓋はR8プレビュー。7u40の寸法と数量。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "models/7u60.mdx",
+    "title": "3U＋3U＋1U・60HP",
+    "description": "本体はR6の名目CAD、載せ蓋はR8プレビュー。7u60の寸法と数量。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "models/comparison.mdx",
+    "title": "３機種の比較",
+    "description": "共通値と、機種によって増える板・金具・ガードを一覧にする。",
+    "sidebar_position": 40
+  },
+  {
+    "path": "models/index.mdx",
+    "title": "３機種の仕様",
+    "description": "共通寸法から生成したモデル別の寸法・数量。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "overview/glossary.mdx",
+    "title": "用語と座標",
+    "description": "7U、fixer、padder、穴、ガードの意味を揃える。",
+    "sidebar_position": 40
+  },
+  {
+    "path": "overview/index.mdx",
+    "title": "はじめに",
+    "description": "現在地と、製作へ進むための読み順。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "overview/scope.mdx",
+    "title": "目的・範囲・根拠の扱い",
+    "description": "価格、安全、外観、分解・運搬の条件を記録する。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "overview/start.mdx",
+    "title": "現在地と最初に読むページ",
+    "description": "３機種の金属ケースを、現物確認・見積・発注へつなぐ。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "overview/status.mdx",
+    "title": "採用仕様とデータ状態",
+    "description": "決めたこと、モデルにあること、未確認のことを分離する。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "resources/body-preview.mdx",
+    "title": "R6・本体とレールのプレビュー",
+    "description": "８mmスペーサーと３機種の名目寸法を確認する。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "resources/current-preview.mdx",
+    "title": "R8・載せ蓋＋外周バンド",
+    "description": "現在の採用コンセプト。表示モデルであり製作CADではない。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "resources/engineering.mdx",
+    "title": "CADの再生成とソースデータ",
+    "description": "本体の生成環境と、プレビュー専用の生成を分ける。",
+    "sidebar_position": 40
+  },
+  {
+    "path": "resources/files.mdx",
+    "title": "版別ファイルとダウンロード",
+    "description": "採用方針、参照CAD、不採用アーカイブを区別する。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "resources/index.mdx",
+    "title": "データとプレビュー",
+    "description": "現行プレビュー、版別のCAD、根拠ファイル。",
+    "sidebar_position": 60
+  },
+  {
+    "path": "resources/sources.mdx",
+    "title": "資料台帳と出典",
+    "description": "ユーザー指定、提供ファイル、外部ページを区別する。",
+    "sidebar_position": 50
+  },
+  {
+    "path": "verification/assemble-test.mdx",
+    "title": "組立・蓋・持ち運びの確認",
+    "description": "実モジュールを入れた完成構成で確認するための計画。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "verification/before-order.mdx",
+    "title": "発注前ゲート",
+    "description": "発注の直前に、仕様・図面・実物の一致を確認する。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "verification/fit-test.mdx",
+    "title": "小さい試験片から確認する",
+    "description": "保持と公差の未確定部分を、全体注文の前に切り分ける。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "verification/index.mdx",
+    "title": "現物確認・承認",
+    "description": "計算やプレビューで確認したことと、現物で確認すべきこと。",
+    "sidebar_position": 50
+  },
+  {
+    "path": "verification/release.mdx",
+    "title": "検証記録と製作承認",
+    "description": "既存の幾何検証、今回の文書検査、将来の実機試験を分ける。",
+    "sidebar_position": 40
+  }
+]

@@ -1,0 +1,140 @@
+{
+  "revision": "R6-SOURCE-FAMILY-01",
+  "model": "7u40",
+  "variant": "t1p0",
+  "units": "mm",
+  "stats": {
+    "thicknessMm": 1.0,
+    "coverMm": 5,
+    "coverageMm": 5,
+    "radiusMm": 0.4,
+    "partCount": 16,
+    "totalGuardParts": 16,
+    "typeCount": 6,
+    "quantities": [
+      2,
+      2,
+      4,
+      2,
+      2,
+      4
+    ],
+    "totalVolumeCm3": 25.371394,
+    "volumeCm3": 25.371394,
+    "approxMassG": 25.625,
+    "maxPartLengthMm": 168.0,
+    "outerEnvelopeMm": [
+      231.4,
+      336.0,
+      93.0
+    ],
+    "outerDimensions": [
+      231.4,
+      336.0,
+      93.0
+    ],
+    "feetIncludedEnvelopeMm": [
+      231.4,
+      336.0,
+      95.0
+    ],
+    "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+    "openingMm": [
+      224.4,
+      329.0
+    ],
+    "quoteJpy": null,
+    "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+  },
+  "catalog": [
+    {
+      "partType": "top_corner_a",
+      "name": "上端L字ガード A",
+      "quantity": 2,
+      "dimensions": [
+        115.7,
+        168.0,
+        6.0
+      ],
+      "volumeCm3": 2.38446493,
+      "stlFile": "7u40_r6_t1p0_01_top_corner_a_qty2_mm.stl",
+      "stepFile": "engineering/7u40/guards/7u40_r6_t1p0_01_top_corner_a_qty2_mm.step"
+    },
+    {
+      "partType": "top_corner_b",
+      "name": "上端L字ガード B",
+      "quantity": 2,
+      "dimensions": [
+        115.7,
+        168.0,
+        6.0
+      ],
+      "volumeCm3": 2.38446493,
+      "stlFile": "7u40_r6_t1p0_02_top_corner_b_qty2_mm.stl",
+      "stepFile": "engineering/7u40/guards/7u40_r6_t1p0_02_top_corner_b_qty2_mm.step"
+    },
+    {
+      "partType": "lower_width_half",
+      "name": "前後下辺・半分",
+      "quantity": 4,
+      "dimensions": [
+        115.7,
+        6.0,
+        6.0
+      ],
+      "volumeCm3": 1.26872729,
+      "stlFile": "7u40_r6_t1p0_03_lower_width_half_qty4_mm.stl",
+      "stepFile": "engineering/7u40/guards/7u40_r6_t1p0_03_lower_width_half_qty4_mm.step"
+    },
+    {
+      "partType": "lower_depth_half_a",
+      "name": "左右下辺・半分 A",
+      "quantity": 2,
+      "dimensions": [
+        6.0,
+        167.0,
+        6.0
+      ],
+      "volumeCm3": 1.80143752,
+      "stlFile": "7u40_r6_t1p0_04_lower_depth_half_a_qty2_mm.stl",
+      "stepFile": "engineering/7u40/guards/7u40_r6_t1p0_04_lower_depth_half_a_qty2_mm.step"
+    },
+    {
+      "partType": "lower_depth_half_b",
+      "name": "左右下辺・半分 B",
+      "quantity": 2,
+      "dimensions": [
+        6.0,
+        167.0,
+        6.0
+      ],
+      "volumeCm3": 1.80143752,
+      "stlFile": "7u40_r6_t1p0_05_lower_depth_half_b_qty2_mm.stl",
+      "stepFile": "engineering/7u40/guards/7u40_r6_t1p0_05_lower_depth_half_b_qty2_mm.step"
+    },
+    {
+      "partType": "vertical_corner",
+      "name": "縦辺コーナーガード",
+      "quantity": 4,
+      "dimensions": [
+        6.0,
+        6.0,
+        81.0
+      ],
+      "volumeCm3": 0.88821876,
+      "stlFile": "7u40_r6_t1p0_06_vertical_corner_qty4_mm.stl",
+      "stepFile": "engineering/7u40/guards/7u40_r6_t1p0_06_vertical_corner_qty4_mm.step"
+    }
+  ],
+  "enclosureMetalEnvelopeMm": [
+    229.4,
+    334.0,
+    91
+  ],
+  "enclosureMetalThicknessMm": 1.5,
+  "notes": [
+    "各STLは1部品。qtyはケース1台の必要数。",
+    "R6未見積。JLCへ再アップロードして価格を確認する。",
+    "ガードの保持方法、接着層、嵌合公差は未確定。"
+  ]
+}

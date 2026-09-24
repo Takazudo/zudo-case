@@ -1,0 +1,1 @@
+npx --yes create-zudo-doc@latest <temporary-dir>/zudo-case-doc --preset /mnt/data/zudo-case-doc/setup.preset.json --no-install --no-git --yes

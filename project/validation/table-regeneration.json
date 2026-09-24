@@ -1,0 +1,11 @@
+{
+  "stable_output": true,
+  "pages": {
+    "src/content/docs/models/3u60.mdx": "5c1ec7530519c374ff1a6df8909213be4ad02f781c729241580143c9283e4b39",
+    "src/content/docs/models/7u40.mdx": "71fca9fb6e35e2262c99bc442347eb8e02ef571aef9171db20c0e13f38d8cdd5",
+    "src/content/docs/models/7u60.mdx": "dfdcf167ede19edf667866b0f2bfb593e1915f0692dc204f7f8aebe2d75c3cad",
+    "src/content/docs/models/comparison.mdx": "51d221c4d76a5f522520220b831e4a289f5535d09a1d17142a7cae96d1ef89db",
+    "src/content/docs/manufacturing/bom.mdx": "886eed4ba079fc4c6cef7f92d0a77e8d5c8733d018108f1e124633c962567395"
+  },
+  "scope": "Regeneration idempotence and frontmatter YAML parse; not zudo-doc build"
+}

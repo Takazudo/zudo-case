@@ -1,0 +1,165 @@
+{
+  "source": {
+    "repository": "Takazudo/zudo-rail",
+    "commit": "0f7316ad9000b7906e5769aa89aff2dc18c661c8",
+    "stl_url": "https://raw.githubusercontent.com/Takazudo/zudo-rail/0f7316ad9000b7906e5769aa89aff2dc18c661c8/working/nuts-v2-60hp-single.stl",
+    "stl_bytes": 29684,
+    "fetched_at_utc": "2026-09-23T17:56:03.478139+00:00",
+    "sha256": "584dea8a321824e370d5439104613eebc43a28d4fcd3b44f112b3c32fefc36a2",
+    "git_blob_sha1": "2211e79d32fe3385748f2dd78073551fce44bc63"
+  },
+  "units": {
+    "assumed": "mm",
+    "basis": "STL is unitless; 305 long axis is consistent with file name 60HP and existing design"
+  },
+  "exact_mesh_measurements": {
+    "bbox_min": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bbox_max": [
+      20.131988525390625,
+      12.586471557617188,
+      305.0
+    ],
+    "extent_xyz": [
+      20.131988525390625,
+      12.586471557617188,
+      305.0
+    ],
+    "long_axis": "source Z",
+    "long_axis_length_mm": 305.0,
+    "triangle_count": 592,
+    "unique_vertices_count": 236,
+    "source_z_planes": [
+      0.0,
+      10.0,
+      295.0,
+      305.0
+    ]
+  },
+  "rail_end_attachment": {
+    "axis_direction_source": [
+      0,
+      0,
+      1
+    ],
+    "source_center_xy_mm": [
+      14.930564880371094,
+      6.7535858154296875
+    ],
+    "center_method": "Midpoint of opposed planar arms at X=11.930343627929688 and 17.9307861328125; Y=5.753509521484375 and 7.753662109375. This is an inferred design center of the open star-shaped recess, not a fitted circle or declared CAD datum.",
+    "circular_diameter_mm": null,
+    "shape": "open star/cross recess, not a circular drilled hole",
+    "opposed_arm_x_span_mm": 6.0004425048828125,
+    "opposed_arm_y_span_mm": 2.000152587890625
+  },
+  "proposed_registration": {
+    "condition": "Fixer centered along case Y, KiCad y increases down, fixer top at chosen world height H; align each rail source recess center with corresponding fixer hole center. Source Y=max lip faces outside the Eurorack row. Confirmed geometry alignment; final physical orientation still should be checked against assembly.",
+    "fixer_source_dimensions_mm": [
+      134.53186,
+      29.990042
+    ],
+    "fixer_source_rail_hole_centers_xy_mm": [
+      [
+        5.997998,
+        15.0303175
+      ],
+      [
+        128.533836,
+        15.0303175
+      ]
+    ],
+    "world_y_rail_centers_mm": [
+      -61.267931999999995,
+      61.26790600000001
+    ],
+    "fixer_rail_axis_z_below_top_mm": 15.0303175,
+    "rail_lip_max_z_below_fixer_top_mm": 0.09975261962890691,
+    "positive_y_rail_matrix_row_major": [
+      [
+        0,
+        0,
+        1,
+        -152.5
+      ],
+      [
+        0,
+        1,
+        0,
+        54.51432018457032
+      ],
+      [
+        -1,
+        0,
+        0,
+        -0.09975261962890691
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "negative_y_rail_matrix_row_major": [
+      [
+        0,
+        0,
+        -1,
+        152.5
+      ],
+      [
+        0,
+        -1,
+        0,
+        -54.51434618457031
+      ],
+      [
+        -1,
+        0,
+        0,
+        -0.09975261962890691
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "matrix_height_note": "Matrices above place fixer top at world Z=0. Add chosen H to matrix [2][3]. Both rotation determinants = +1."
+  },
+  "nominal_width_stack": {
+    "rail_mm": 305,
+    "padder_thickness_mm": 1.6,
+    "fixer_thickness_mm": 1.6,
+    "rail_unit_external_width_mm": 311.4,
+    "inner_washer_each_mm": 5,
+    "enclosure_internal_width_mm": 321.4,
+    "aluminum_each_mm": 1.5,
+    "enclosure_external_width_mm": 324.4,
+    "thickness_status": "PCB 1.6 is KiCad nominal, aluminum 1.5 design selection, washers 5 user-specified; no manufacturing tolerances included"
+  },
+  "mesh_topology_observations": {
+    "unique_geometric_triangle_multiplicities": {
+      "tcs_count": {
+        "1": 532,
+        "2": 30
+      }
+    },
+    "exact_edge_incidence_histogram": {
+      "2": 704,
+      "4": 92
+    },
+    "duplicate_triangle_pairs": 30,
+    "note": "Original file kept unchanged. Duplicate and coincident faces exist; do not use raw signed mesh volume as a certified material volume. Viewer may preserve source triangles, or omit only exact duplicate triangles for rendering."
+  },
+  "unresolved": [
+    "Actual manufactured PCB thickness and tolerance; KiCad says nominal 1.6mm",
+    "Actual screw-head/washer/locknut catalog dimensions not supplied",
+    "Source recess center is inferred from symmetry, no native rail CAD or explicit center datum exists in repository snapshot",
+    "Fixer/padder holes and outlines have small source discrepancies; parent assembly decision must preserve and document them"
+  ]
+}
