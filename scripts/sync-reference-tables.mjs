@@ -8,7 +8,8 @@ const models = Object.values(spec.models);
 const f = (n, d=3) => Number(n.toFixed(d)).toString();
 const dims = a => a.map(n=>f(n)).join(" × ");
 function page(rel,title,desc,pos,body) {
-  const text=`---\ntitle: ${JSON.stringify(title)}\ndescription: ${JSON.stringify(desc)}\nsidebar_position: ${pos}\n---\n\n{/* GENERATED: node scripts/sync-reference-tables.mjs / project/current-spec.json */}\n\n${body.trim()}\n`;
+  const previewImport=body.includes('<PreviewLink ') ? 'import { PreviewLink } from "../../../components/preview-links.jsx";\n\n' : '';
+  const text=`---\ntitle: ${JSON.stringify(title)}\ndescription: ${JSON.stringify(desc)}\nsidebar_position: ${pos}\n---\n\n${previewImport}{/* GENERATED: node scripts/sync-reference-tables.mjs / project/current-spec.json */}\n\n${body.trim()}\n`;
   pages.push({ rel: path.posix.join("src/content/docs", rel), text });
 }
 let i=10;
@@ -57,7 +58,7 @@ ${catalog}
 
 合計**${g.partCount}個、${f(g.totalVolumeCm3)}cm³**。1.0mm版は**${f(m.guards.t1p0.totalVolumeCm3)}cm³**。STLは１個ずつ、数量を注文画面へ指定する。
 
-[1.2mm STL一式](https://zudo-case-preview.zudolab.dev/downloads/reference/${m.id}-r6-guards-t1p2-NOT-RELEASED.zip) ／ [1.0mm STL一式](https://zudo-case-preview.zudolab.dev/downloads/reference/${m.id}-r6-guards-t1p0-NOT-RELEASED.zip) ／ [アルミ参考データ](https://zudo-case-preview.zudolab.dev/downloads/reference/${m.id}-r6-aluminum-NOT-RELEASED.zip)
+<PreviewLink path="/downloads/reference/${m.id}-r6-guards-t1p2-NOT-RELEASED.zip">1.2mm STL一式</PreviewLink> ／ <PreviewLink path="/downloads/reference/${m.id}-r6-guards-t1p0-NOT-RELEASED.zip">1.0mm STL一式</PreviewLink> ／ <PreviewLink path="/downloads/reference/${m.id}-r6-aluminum-NOT-RELEASED.zip">アルミ参考データ</PreviewLink>
 
 ## 蓋はR8の表示寸法
 

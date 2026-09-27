@@ -34,6 +34,7 @@ jobs:
           test -n "$CLOUDFLARE_API_TOKEN" || { echo 'Missing CLOUDFLARE_API_TOKEN'; exit 1; }
       - run: pnpm install --frozen-lockfile
       - run: pnpm check:docs
+      - run: node --test tests/preview-links.test.mjs
       - run: pnpm check:tables
       - run: pnpm test:ledger
       - run: pnpm check:assets
@@ -42,6 +43,7 @@ jobs:
       - name: Test asset preparation and deployed verification fixtures
         run: node --test tests/prepare-worker-assets.test.mjs tests/verify-deployed-assets.test.mjs
       - run: pnpm build
+      - run: pnpm check:built-preview-links
       - run: pnpm check:images
       - run: pnpm prepare:worker-assets
       - run: node --test tests/worker-assets.test.mjs tests/worker-assets-deployment.test.mjs

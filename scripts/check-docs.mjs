@@ -1,5 +1,7 @@
 import { checkPlateGeometry } from './lib/ledger-checks.mjs';
 import { checkProjectState } from './lib/state-checks.mjs';
+import { extractDocumentUrls } from './lib/preview-links-check.mjs';
+import { PRODUCTION_PREVIEW_ORIGIN } from './lib/preview-origin.mjs';
 import { readFile, readdir, mkdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -35,15 +37,9 @@ for(const p of all){
  assert(!fenced,`${rel}: コードフェンス未閉鎖`);assert(admonitions===0,`${rel}: admonition未閉鎖`);
  const body=content.join('\n');
  assert(!/sandbox:\/|\/workspace\/scratch\/|\/mnt\/data\//.test(body),`${rel}: 実行環境固有URLが本文に残る`);
- const urls=[...body.matchAll(/!?\[[^\]\n]*\]\(([^\s)]+)(?:\s+"[^"]*")?\)/g)].map(m=>m[1]);
- urls.push(...[...body.matchAll(/(?:src|href)=["']([^"']+)["']/g)].map(m=>m[1]));
+ const urls=extractDocumentUrls(body);
  for(let u of urls){
-  if(u.startsWith('https://zudo-case-preview.zudolab.dev/')){
-   const resource=new URL(u);
-   localLinks++;
-   assert(await exists(path.join(root,'public',decodeURIComponent(resource.pathname).slice(1))),`${rel}: プレビュー側のリンク先なし ${u}`);
-   continue;
-  }
+  if(u.startsWith(`${PRODUCTION_PREVIEW_ORIGIN}/`)) u=new URL(u).pathname;
   if(/^(?:https?:|mailto:|data:|#)/i.test(u))continue;
   u=decodeURIComponent(u.split(/[?#]/)[0]);if(!u)continue;
   let dest=u.startsWith('/')?path.join(root,'public',u.slice(1)):path.resolve(path.dirname(p),u);
