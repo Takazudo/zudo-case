@@ -1,10 +1,14 @@
 node_modules/
 dist/
 dist-preview/
+dist-preview.staging-*/
+dist-preview.backup-*/
 .zfb/
 .zfb-build/
 .zudo-doc/
 .worker-build/
+.worker-build/*.staging-*
+.worker-build/*.backup-*
 .wrangler/
 .cache/
 .DS_Store
