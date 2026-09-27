@@ -74,7 +74,8 @@
             1.5
           ],
           "quantity": 1,
-          "holes_each": 8
+          "holes_each": 8,
+          "role": "bottom"
         },
         {
           "part": "前後板",
@@ -84,7 +85,8 @@
             1.5
           ],
           "quantity": 2,
-          "holes_each": 6
+          "holes_each": 6,
+          "role": "front_back"
         },
         {
           "part": "左右板",
@@ -94,7 +96,8 @@
             1.5
           ],
           "quantity": 2,
-          "holes_each": 8
+          "holes_each": 8,
+          "role": "left_right"
         }
       ],
       "hardware_counts": {
@@ -369,7 +372,8 @@
             1.5
           ],
           "quantity": 1,
-          "holes_each": 10
+          "holes_each": 10,
+          "role": "bottom"
         },
         {
           "part": "前後板",
@@ -379,7 +383,8 @@
             1.5
           ],
           "quantity": 2,
-          "holes_each": 6
+          "holes_each": 6,
+          "role": "front_back"
         },
         {
           "part": "左右板",
@@ -389,7 +394,8 @@
             1.5
           ],
           "quantity": 2,
-          "holes_each": 12
+          "holes_each": 12,
+          "role": "left_right"
         }
       ],
       "hardware_counts": {
@@ -720,7 +726,8 @@
             1.5
           ],
           "quantity": 1,
-          "holes_each": 10
+          "holes_each": 10,
+          "role": "bottom"
         },
         {
           "part": "前後板",
@@ -730,7 +737,8 @@
             1.5
           ],
           "quantity": 2,
-          "holes_each": 6
+          "holes_each": 6,
+          "role": "front_back"
         },
         {
           "part": "左右板",
@@ -740,7 +748,8 @@
             1.5
           ],
           "quantity": 2,
-          "holes_each": 12
+          "holes_each": 12,
+          "role": "left_right"
         }
       ],
       "hardware_counts": {

@@ -1,3 +1,4 @@
+import { checkPlateGeometry } from './lib/ledger-checks.mjs';
 import { readFile, readdir, mkdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -58,6 +59,7 @@ for(const [parent,items]of groups){
 const catPos=nav.filter(x=>x.path.endsWith('/index.mdx')).map(x=>x.sidebar_position);
 assert(new Set(catPos).size===catPos.length,'カテゴリのsidebar_position重複');
 const s=await json('project/current-spec.json'), release=await json('project/release-state.json');
+errors.push(...checkPlateGeometry(s));
 assert(release.production_approved===false,'この引継ぎ版を製造承認へ変更しないでください');
 assert(release.current_lid_manufacturing===null,'R8製作データは未生成のはずです');
 assert(release.published_release_files.length===0,'承認済みファイルを宣言しています');

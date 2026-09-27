@@ -20,7 +20,8 @@
     "check:images": "zudo-doc check images",
     "prepare:worker-assets": "node scripts/prepare-worker-assets.mjs",
     "deploy:docs": "wrangler deploy --config wrangler.docs.jsonc",
-    "deploy:preview": "wrangler deploy --config wrangler.preview.jsonc"
+    "deploy:preview": "wrangler deploy --config wrangler.preview.jsonc",
+    "test:ledger": "node --test tests/ledger-*.test.mjs"
   },
   "dependencies": {
     "@takazudo/zfb": "2.20.2",
