@@ -22,6 +22,7 @@ export default defineConfig(
     imageEnlarge: true,
     assetViewer: true,
     assetViewerIndex: true,
+    chromeBindingsModule: "./src/chrome-bindings.js",
     dynamicPageTransition: false,
     docHistory: false,
     docMetainfo: false,

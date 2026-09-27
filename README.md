@@ -24,6 +24,18 @@ pnpm dev
 
 2026-09-24の初回ビルドでは44ページを生成し、41件の文書ルートと検索項目、47件の公開資産を確認しました。現在は画像・図15件をzudo-docのAsset Viewerに移し、`/files/`の一覧と各閲覧ページを追加して60ページを生成します。同日のChrome 146.0.7680.153で、desktop 1440×900とnarrow 390×844の実表示も確認しました。41ルートと8カテゴリを両幅で開き、narrowでの横はみ出しはなく、検索・テーマ・画像・R8/R6プレビューの主要操作も動作しました。画面ごとの記録、ダウンロード件数、スクリーンショットは[検証記録](project/browser-validation.md)にまとめています。物理的な嵌合・強度・運搬試験はこのブラウザー確認に含みません。`pnpm dev`が表示するURLを開き、「現在地と最初に読むページ」から読んでください。
 
+### ローカルと本番のプレビュー確認
+
+`pnpm dev`で開いた文書のR8/R6プレビューと参照・旧版ZIPのリンクは、既定では同じチェックアウトの`public/previews/`と`public/downloads/`を参照します。R8ページの埋め込み枠の下にある「表示元: ローカル (public/)」を確認してください。`public/previews/r8-simple-lid.html`を変更すると、開き直したローカル文書からその変更を確認できます。
+
+別のプレビュー配信元を試すときは、起動時にHTTP(S)のoriginだけを指定します。パスは付けません。
+
+```sh
+ZUDO_CASE_PREVIEW_ORIGIN=http://localhost:8787 pnpm dev
+```
+
+この場合は枠下に指定先のホストが表示されます。本番ビルドの既定値は`https://zudo-case-preview.zudolab.dev`で、文書とプレビューの２ホスト配信を維持します。本番ビルド前は上記環境変数を外してください。`pnpm build`後の`pnpm check:built-preview-links`で、生成した文書HTMLに本番ホストのリンクがあり、ローカルURLが混入していないことを確認できます。
+
 ### 初期化履歴と確認範囲
 
 元の文書のみのスナップショットではnpmレジストリの名前解決が`EAI_AGAIN`となり、その時点では初期化・ビルドを確認できませんでした。その後、2026-09-24に公式scaffolderの実行とロックファイルに基づく依存インストールを完了し、上記の実ビルドを確認しています。各画面のブラウザー確認結果・表示幅・残件は検証記録に記載します。
@@ -127,6 +139,14 @@ node scripts/check-docs.mjs
 
 Cloudflare Workers Static Assetsへの公開設定は２つのホストに分けています。`zudo-case.zudolab.dev`は文書、Asset Viewerの画像・図、テキスト/JSON根拠を配信し、`zudo-case-preview.zudolab.dev`は単体HTMLプレビューと参照/旧版ZIPを配信します。`pnpm build`の後に`pnpm prepare:worker-assets`で配信フォルダーを分離し、25MiBを超える２ファイルは小片に分けてプレビューWorkerが元のURLでストリーム配信します。元ファイルのSHA-256は維持します。GitHub Actionsは`main`へのpushで２つのWorkerを順にデプロイし、`CLOUDFLARE_ACCOUNT_ID`と`CLOUDFLARE_API_TOKEN`をデプロイ手順だけに渡します。**noindexはアクセス制限ではありません。** 見積画像と旧版ZIPもそれぞれのホストで閲覧できる設定です。初期設定はルートパス配信です。
 
+### 公開配信の検証範囲
+
+ローカルのモックテスト（`node --test tests/verify-deployed-assets.test.mjs tests/worker-assets.test.mjs`）は、短いサンプル資産でHTTP転送、SHA-256照合、Workerのチャンク欠落・切り詰めを確認します。デプロイ後のGitHub Actionsと`pnpm verify:deployed`は、対象２ファイルを全量GETでストリーム読み込みし、チェックアウト内の元ファイルとバイト数・SHA-256を照合します。HEADリクエストは到達確認だけです。どちらもブラウザー/WebGL表示の証拠ではなく、ブラウザー表示の確認は[検証記録](project/browser-validation.md)を参照してください。
+
 第三者ライブラリや元資料の著作権・ライセンス表示は元ファイルの記載に従います。資料整理によって再ライセンスしたものではありません。
+
+## 再実行と復旧
+
+`pnpm prepare:worker-assets`を同じビルド結果に対して再実行すると、世代番号と分割ファイルの完全性を確認してから「already prepared」と表示し、配信ファイルを変更せず終了します。不完全な分割ファイルや片方だけ残った入力が見つかった場合は停止します。`pnpm build`を再実行して入力を作り直し、改めて`pnpm prepare:worker-assets`を実行してください。準備中の失敗でも元の`dist/previews`と`dist/downloads`は移動せず、成功後にだけ配信用のコピーから除きます。`public/`や`engineering/`の元資料には触れません。
 
 公式資料: [Installation](https://zudo-doc.takazudomodular.com/docs/getting-started/installation/) / [CLI](https://zudo-doc.takazudomodular.com/docs/reference/create-zudo-doc/) / [Configuration](https://zudo-doc.takazudomodular.com/docs/guides/configuration/)

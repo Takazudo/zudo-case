@@ -15,7 +15,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -34,13 +34,19 @@ jobs:
           test -n "$CLOUDFLARE_API_TOKEN" || { echo 'Missing CLOUDFLARE_API_TOKEN'; exit 1; }
       - run: pnpm install --frozen-lockfile
       - run: pnpm check:docs
+      - run: node --test tests/preview-links.test.mjs
+      - run: pnpm check:tables
+      - run: pnpm test:ledger
       - run: pnpm check:assets
       - run: pnpm test:setup
       - run: pnpm check
+      - name: Test asset preparation and deployed verification fixtures
+        run: node --test tests/prepare-worker-assets.test.mjs tests/verify-deployed-assets.test.mjs
       - run: pnpm build
+      - run: pnpm check:built-preview-links
       - run: pnpm check:images
       - run: pnpm prepare:worker-assets
-      - run: node --test tests/worker-assets.test.mjs
+      - run: node --test tests/worker-assets.test.mjs tests/worker-assets-deployment.test.mjs
       - name: Deploy previews and downloads
         run: pnpm deploy:preview
         env:
@@ -51,10 +57,42 @@ jobs:
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      - name: Verify public routes
+      - name: Verify public route reachability (HEAD only)
         run: |
-          # A new Custom Domain can take several minutes to resolve after deploy.
+          # These HEAD requests are reachability probes only; the full GET below verifies bytes.
           curl --fail --location --silent --show-error --retry 60 --retry-delay 5 --retry-all-errors --head https://zudo-case-preview.zudolab.dev/previews/r8-simple-lid.html -o /dev/null
           curl --fail --silent --show-error --retry 60 --retry-delay 5 --retry-all-errors --head https://zudo-case-preview.zudolab.dev/previews/r6-body.html -o /dev/null
           curl --fail --silent --show-error --retry 60 --retry-delay 5 --retry-all-errors --head https://zudo-case-preview.zudolab.dev/downloads/archive/r7-m3-lid-source.zip -o /dev/null
           curl --fail --silent --show-error --retry 60 --retry-delay 5 --retry-all-errors --head https://zudo-case.zudolab.dev/files/ -o /dev/null
+      - name: Verify public asset bodies (full GET and SHA-256)
+        run: |
+          report_file="$(mktemp)"
+          trap 'rm -f "$report_file"' EXIT
+          attempt=1
+          max_attempts=10
+          while [ "$attempt" -le "$max_attempts" ]; do
+            if node scripts/verify-deployed-assets.mjs https://zudo-case-preview.zudolab.dev > "$report_file"; then
+              cat "$report_file"
+              exit 0
+            else
+              verify_status=$?
+            fi
+            cat "$report_file"
+
+            if retryable="$(REPORT_FILE="$report_file" node -e 'const report = JSON.parse(require("node:fs").readFileSync(process.env.REPORT_FILE, "utf8")); const results = report.results ?? []; process.stdout.write(String(results.length === 2 && results.some((result) => result.retryable) && results.every((result) => result.ok || result.retryable)));')"; then
+              :
+            else
+              retryable=false
+            fi
+            if [ "$retryable" != "true" ]; then
+              echo 'The full GET found an integrity or configuration failure; this result is not retried.'
+              exit "$verify_status"
+            fi
+            if [ "$attempt" -eq "$max_attempts" ]; then
+              echo "Transient full-GET failure persisted after $max_attempts attempts."
+              exit "$verify_status"
+            fi
+            echo "Full-GET transport/status failure; retrying attempt $((attempt + 1))/$max_attempts in 30 seconds."
+            sleep 30
+            attempt=$((attempt + 1))
+          done
