@@ -1,4 +1,5 @@
 import { checkPlateGeometry } from './lib/ledger-checks.mjs';
+import { checkProjectState } from './lib/state-checks.mjs';
 import { readFile, readdir, mkdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -60,11 +61,6 @@ const catPos=nav.filter(x=>x.path.endsWith('/index.mdx')).map(x=>x.sidebar_posit
 assert(new Set(catPos).size===catPos.length,'カテゴリのsidebar_position重複');
 const s=await json('project/current-spec.json'), release=await json('project/release-state.json');
 errors.push(...checkPlateGeometry(s));
-assert(release.production_approved===false,'この引継ぎ版を製造承認へ変更しないでください');
-assert(release.current_lid_manufacturing===null,'R8製作データは未生成のはずです');
-assert(release.published_release_files.length===0,'承認済みファイルを宣言しています');
-const releaseEntries=await readdir(path.join(root,'engineering/release'));
-assert(releaseEntries.every(x=>x==='README.md'),'release/に未承認データを置かないでください');
 for(const [key,m]of Object.entries(s.models)){
  const a=s.adopted,t=m.metal_thickness_mm;
  assert(near(m.metal_mm[0],m.rail_length_mm+4*a.pcb_thickness_mm+2*a.side_spacer_mm+2*t),`${key}: 積層幅不一致`);
@@ -76,11 +72,10 @@ for(const [key,m]of Object.entries(s.models)){
   assert(g.catalog.reduce((n,p)=>n+p.quantity,0)===g.partCount,`${key}/${v}: ガード数量不一致`);
   assert(near(g.catalog.reduce((n,p)=>n+p.quantity*p.volumeCm3,0),g.volumeCm3),`${key}/${v}: ガード体積不一致`);
  }
- assert(m.manufacturing_release===null,`${key}: manufacturing releaseが空でない`);
 }
-const q=await json('project/quote-records.json');const actual=q.records.find(x=>x.id==='Q-R3-001');
-assert(actual.rows.reduce((n,x)=>n+x.row_jpy,0)===actual.total_jpy,'R3見積の加算不一致');
-assert(q.current_total_jpy===null,'現在総額は未見積のはずです');
+const q=await json('project/quote-records.json');
+const gates=await json('project/open-issues.json');
+errors.push(...await checkProjectState({root,spec:s,release,quotes:q,gates}));
 nav.sort((a,b)=>a.path.localeCompare(b.path));
 await writeFile(path.join(root,'project/navigation.json'),JSON.stringify(nav,null,2)+'\n');
 const report={checkedAt:new Date().toISOString(),tool:'dependency-free static/document consistency check',
