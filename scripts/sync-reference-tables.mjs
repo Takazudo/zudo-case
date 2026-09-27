@@ -8,8 +8,7 @@ const models = Object.values(spec.models);
 const f = (n, d=3) => Number(n.toFixed(d)).toString();
 const dims = a => a.map(n=>f(n)).join(" × ");
 function page(rel,title,desc,pos,body) {
-  const previewImport=body.includes('<PreviewLink ') ? 'import { PreviewLink } from "../../../components/preview-links.jsx";\n\n' : '';
-  const text=`---\ntitle: ${JSON.stringify(title)}\ndescription: ${JSON.stringify(desc)}\nsidebar_position: ${pos}\n---\n\n${previewImport}{/* GENERATED: node scripts/sync-reference-tables.mjs / project/current-spec.json */}\n\n${body.trim()}\n`;
+  const text=`---\ntitle: ${JSON.stringify(title)}\ndescription: ${JSON.stringify(desc)}\nsidebar_position: ${pos}\n---\n\n{/* GENERATED: node scripts/sync-reference-tables.mjs / project/current-spec.json */}\n\n${body.trim()}\n`;
   pages.push({ rel: path.posix.join("src/content/docs", rel), text });
 }
 let i=10;
