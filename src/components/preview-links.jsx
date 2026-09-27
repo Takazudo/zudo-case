@@ -1,8 +1,8 @@
 import { h } from 'preact';
-import { previewUrl, previewSourceLabel, PRODUCTION_PREVIEW_ORIGIN } from '../../scripts/lib/preview-origin.mjs';
-import { previewOriginOverride } from '../../.cache/preview-origin-override.mjs';
+import { previewUrl, previewSourceLabel } from '../../scripts/lib/preview-origin.mjs';
+import { previewOrigin } from '../../.cache/preview-origin-override.mjs';
 
-const origin = previewOriginOverride || (import.meta.env.DEV ? '' : PRODUCTION_PREVIEW_ORIGIN);
+const origin = previewOrigin;
 
 export function PreviewLink({ path, children }) {
   return h('a', { href: previewUrl(path, origin) }, children);
