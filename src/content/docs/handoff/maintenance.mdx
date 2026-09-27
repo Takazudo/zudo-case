@@ -37,3 +37,11 @@ node scripts/check-docs.mjs
 このサイトの文書更新日と、CADの改訂日と、業者見積日と、実測日は別。日付が分からない過去発言へ推測の日付を付けない。
 
 公式の根拠：[Writing Docs](https://zudo-doc.takazudomodular.com/docs/getting-started/writing-docs/)、[Sidebar](https://zudo-doc.takazudomodular.com/docs/guides/sidebar/)。
+
+## 見積・製作データの状態を進める
+
+現在価格の欄は未見積なら`null`のままにする。`0`は未確認の代用にしない。`project/quote-records.json`へ現在版の見積を追加するときは、`kind`を`supplier_quote`または`user_quote_screenshot`、`applies_to_current_release`を`true`とし、`component`（`total`・`lid`・`band`）、`model`または`models`、`revision`、`quantity`、`currency`、`tax_status`、`shipping_included`、リポジトリ内に実在する`source`を記録する。`rows[].row_jpy`の合計を`total_jpy`と一致させる。対応する`current_*_scope`へ機種・版を記し、同じ範囲の有効な見積の合計だけを`current_*_jpy`へ転記する。部品別価格を全体価格に混ぜない。過去の助手による概算は履歴のまま保持し、現行価格の根拠にはしない。
+
+新しい製作候補は`project/release-state.json`の`candidate_files`にリポジトリ相対`path`とファイルの`sha256`を記録する。候補の登録だけでは製造承認にならない。`engineering/release/`への配置は承認後に限り、`published_release_files`に同じパスとハッシュを記録する。
+
+承認には`approval_record`の承認者・日付・承認ファイル一覧（各パスとSHA-256）・`model_revisions`（機種別の製作版）、G01〜G11すべての`closed`状態、`result.summary`、実在する根拠ファイルの`result.evidence`一覧、`current-spec.json`の`release_gate`および機種別`manufacturing_release`との一致が必要。R8がプレビューだけの間、`latest_preview_is_manufacturing_data`は`false`とする。静的チェックは台帳・ファイル・ハッシュの整合を見るもので、加工適合、強度、現物試験、製造承認そのものを代行しない。
