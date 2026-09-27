@@ -9,6 +9,7 @@
   "scripts": {
     "setup": "node scripts/setup.mjs",
     "check:docs": "node scripts/check-docs.mjs",
+    "check:tables": "node scripts/sync-reference-tables.mjs --check",
     "check:assets": "node scripts/verify-assets.mjs",
     "sync:tables": "node scripts/sync-reference-tables.mjs",
     "test:setup": "node --test tests/setup.test.mjs",
@@ -20,7 +21,8 @@
     "check:images": "zudo-doc check images",
     "prepare:worker-assets": "node scripts/prepare-worker-assets.mjs",
     "deploy:docs": "wrangler deploy --config wrangler.docs.jsonc",
-    "deploy:preview": "wrangler deploy --config wrangler.preview.jsonc"
+    "deploy:preview": "wrangler deploy --config wrangler.preview.jsonc",
+    "test:ledger": "node --test tests/ledger-*.test.mjs"
   },
   "dependencies": {
     "@takazudo/zfb": "2.20.2",
