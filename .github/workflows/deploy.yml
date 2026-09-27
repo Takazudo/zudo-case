@@ -39,6 +39,8 @@ jobs:
       - run: pnpm check:assets
       - run: pnpm test:setup
       - run: pnpm check
+      - name: Test asset preparation and deployed verification fixtures
+        run: node --test tests/prepare-worker-assets.test.mjs tests/verify-deployed-assets.test.mjs
       - run: pnpm build
       - run: pnpm check:images
       - run: pnpm prepare:worker-assets
