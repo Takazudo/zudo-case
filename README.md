@@ -129,4 +129,8 @@ Cloudflare Workers Static Assetsへの公開設定は２つのホストに分け
 
 第三者ライブラリや元資料の著作権・ライセンス表示は元ファイルの記載に従います。資料整理によって再ライセンスしたものではありません。
 
+## 再実行と復旧
+
+`pnpm prepare:worker-assets`を同じビルド結果に対して再実行すると、世代番号と分割ファイルの完全性を確認してから「already prepared」と表示し、配信ファイルを変更せず終了します。不完全な分割ファイルや片方だけ残った入力が見つかった場合は停止します。`pnpm build`を再実行して入力を作り直し、改めて`pnpm prepare:worker-assets`を実行してください。準備中の失敗でも元の`dist/previews`と`dist/downloads`は移動せず、成功後にだけ配信用のコピーから除きます。`public/`や`engineering/`の元資料には触れません。
+
 公式資料: [Installation](https://zudo-doc.takazudomodular.com/docs/getting-started/installation/) / [CLI](https://zudo-doc.takazudomodular.com/docs/reference/create-zudo-doc/) / [Configuration](https://zudo-doc.takazudomodular.com/docs/guides/configuration/)
