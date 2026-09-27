@@ -1,22 +1,22 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
-const root = fileURLToPath(new URL("../", import.meta.url));
-const spec = JSON.parse(await readFile(path.join(root,"project/current-spec.json"),"utf8"));
+import { fileURLToPath, pathToFileURL } from "node:url";
+
+export function renderReferencePages(spec) {
+const pages = [];
 const models = Object.values(spec.models);
 const f = (n, d=3) => Number(n.toFixed(d)).toString();
 const dims = a => a.map(n=>f(n)).join(" × ");
-async function page(rel,title,desc,pos,body) {
-  const p=path.join(root,"src/content/docs",rel); await mkdir(path.dirname(p),{recursive:true});
+function page(rel,title,desc,pos,body) {
   const text=`---\ntitle: ${JSON.stringify(title)}\ndescription: ${JSON.stringify(desc)}\nsidebar_position: ${pos}\n---\n\n{/* GENERATED: node scripts/sync-reference-tables.mjs / project/current-spec.json */}\n\n${body.trim()}\n`;
-  await writeFile(p,text);
+  pages.push({ rel: path.posix.join("src/content/docs", rel), text });
 }
 let i=10;
 for (const m of models) {
  const g=m.guards.t1p2, h=m.hardware_counts, l=m.lid_preview;
  const plates=m.plates.map(p=>`| ${p.part} | ${dims(p.size_mm)} | ${p.quantity} | ${p.holes_each} |`).join("\n");
  const catalog=g.catalog.map(p=>`| ${p.name} | ${p.quantity} | ${dims(p.dimensions)} | ${f(p.volumeCm3)} |`).join("\n");
- await page(`models/${m.id}.mdx`,m.label,`本体はR6の名目CAD、載せ蓋はR8プレビュー。${m.id}の寸法と数量。`,i,`
+ page(`models/${m.id}.mdx`,m.label,`本体はR6の名目CAD、載せ蓋はR8プレビュー。${m.id}の寸法と数量。`,i,`
 ## この機種
 
 ${m.id==='7u40'?'**主な確認対象。** リュックへ入れて運ぶ用途を重視する40HPの３列ケース。':'３機種に共通する金属平板と独立レールの構造を使う。'} ${m.id==='3u60'?'レール２本の単列。':'3U＋3U＋1Uは同じ平面に並ぶ。上下二段のケースではない。'}
@@ -76,7 +76,7 @@ R6の ${m.sources[0]} と [本体サマリー](/evidence/r6-family-summary.json)
  i+=10;
 }
 const cmp=models.map(m=>`| ${m.label} | ${dims(m.metal_mm)} | ${dims(m.guards.t1p2.outerEnvelopeMm)} | ${m.hardware_counts.panelBracket} | ${m.hardware_counts.mountBolt} | ${m.guards.t1p2.partCount} | ${f(m.guards.t1p2.totalVolumeCm3)} |`).join("\n");
-await page("models/comparison.mdx","３機種の比較","共通値と、機種によって増える板・金具・ガードを一覧にする。",40,`
+page("models/comparison.mdx","３機種の比較","共通値と、機種によって増える板・金具・ガードを一覧にする。",40,`
 ## 本体の比較
 
 | 機種 | アルミ外形mm | ガード込みmm | 金具 | ケース固定M5 | ガード個数 | 1.2mm体積cm³ |
@@ -104,7 +104,7 @@ R8の天板サイズは各機種ページに示した。機種間で同じ部品
 const counts = (key)=>models.map(m=>m.hardware_counts[key]);
 const row=(name,nums,note)=>`| ${name} | ${nums.join(' | ')} | ${note} |`;
 const bom=[row('本体アルミ板',counts('aluminumPanel'),'t1.5、黒アルマイト候補'),row('L字ブラケット',counts('panelBracket'),'在庫20×20×16mm、厚2mm'),row('板接合用M5ネジ',counts('panelJointBolt'),'底面は頭を外向き'),row('板接合用ナット',counts('panelJointNut'),'品番・必要ねじ長は別確認'),row('板接合用座金',counts('panelJointWasher'),'モデル上の数量。実部品の厚さと受け面確認'),row('ユニット→ケースM5',counts('mountBolt'),'頭1.4mm、軸長未確定'),row('同ロックナット',counts('mountNut'),'外側'),row('内側8mmスペーサー',counts('innerSpacer'),'内外径は模式値を含む'),row('外側1mmナイロン座金',counts('outerWasher'),'ユニット固定用'),row('ゴム脚',counts('foot'),'φ10×高さ3mmは仮'),row('本体PA12ガード',models.map(m=>m.guards.t1p2.partCount),'1.2mm基本、黒染め候補'),row('蓋アルミ板',[1,1,1],'R8表示寸法、製作図未更新'),row('蓋PA12枠',[4,4,4],'R8の表示分割。発注数量は再CAD後に確定'),row('天板の組立M3',[8,8,8],'R7からの表示上の数量。長さ・ナット座を再確認'),row('外周バンド',[2,2,2],'品番未選定、開閉用のねじロックなし')].join('\n');
-await page('manufacturing/bom.mdx','ケース側BOM','レールユニットの費用を除き、本体・蓋・バンドを分けて管理する。',10,`
+page('manufacturing/bom.mdx','ケース側BOM','レールユニットの費用を除き、本体・蓋・バンドを分けて管理する。',10,`
 ## ケース１台分の部品
 
 以下の表はR6のhardwareCountsとR8の構成から生成。予備率、破損、予備金具は含めていない。**発注承認済みBOMではなく、数量確認の起点**。
@@ -127,4 +127,53 @@ ${bom}
 
 出典：[R6サマリー](/evidence/r6-family-summary.json)、各機種のmodel-summary.json、<a href="/evidence/r8-original-readme.md">R8 README</a>。
 `);
-console.log('Generated 5 reference pages from project/current-spec.json.');
+return pages;
+}
+
+async function main() {
+  const root = fileURLToPath(new URL("../", import.meta.url));
+  const args = process.argv.slice(2);
+  if (args.some(arg => arg !== "--check")) {
+    console.error("Usage: node scripts/sync-reference-tables.mjs [--check]");
+    process.exitCode = 2;
+    return;
+  }
+
+  const spec = JSON.parse(await readFile(path.join(root, "project/current-spec.json"), "utf8"));
+  const pages = renderReferencePages(spec);
+
+  if (args.includes("--check")) {
+    const drifted = [];
+    for (const { rel, text } of pages) {
+      try {
+        const current = await readFile(path.join(root, rel), "utf8");
+        if (current !== text) drifted.push(`${rel} (out of sync)`);
+      } catch (error) {
+        if (error.code !== "ENOENT" && error.code !== "ENOTDIR") throw error;
+        drifted.push(`${rel} (missing)`);
+      }
+    }
+
+    if (drifted.length) {
+      console.error("Generated pages differ from project/current-spec.json:");
+      for (const rel of drifted) console.error(`- ${rel}`);
+      console.error("Run node scripts/sync-reference-tables.mjs to regenerate them.");
+      process.exitCode = 1;
+      return;
+    }
+
+    console.log("OK: generated reference pages match project/current-spec.json.");
+    return;
+  }
+
+  for (const { rel, text } of pages) {
+    const destination = path.join(root, rel);
+    await mkdir(path.dirname(destination), { recursive: true });
+    await writeFile(destination, text);
+  }
+  console.log(`Generated ${pages.length} reference pages from project/current-spec.json.`);
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  await main();
+}

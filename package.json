@@ -9,6 +9,7 @@
   "scripts": {
     "setup": "node scripts/setup.mjs",
     "check:docs": "node scripts/check-docs.mjs",
+    "check:tables": "node scripts/sync-reference-tables.mjs --check",
     "check:assets": "node scripts/verify-assets.mjs",
     "sync:tables": "node scripts/sync-reference-tables.mjs",
     "test:setup": "node --test tests/setup.test.mjs",
