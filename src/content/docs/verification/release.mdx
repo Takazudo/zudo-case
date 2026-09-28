@@ -22,4 +22,6 @@ zudo-doc公式CLIの取得はnpm DNSエラーで停止したため、**公式の
 
 `engineering/release/`は承認ファイルのみを置く場所。現在はREADMEだけで、`project/release-state.json`の承認リストは空。
 
+`candidate_files`の`id`付き蓋候補を現行指定する場合、`current_lid_manufacturing`は候補ID・機種集合・版を照合する。指定は蓋候補の参照であり、`production_approved`を有効にせず、未承認のまま`engineering/release/`への配置を許可しない。承認には引き続き承認記録、機種別版、G01〜G11の完了根拠、公開ファイル一覧の一致が必要。
+
 先に発注する必要がある試作品には「試作・未承認」を明示し、見積用・試作用・量産用のZIPを分ける。数字が揃っただけでは量産承認にしない。
