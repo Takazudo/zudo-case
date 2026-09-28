@@ -55,6 +55,6 @@ R3・1.2mm、本体ガード12個をJLC3DPへ投入したユーザーの画面�
 
 ## 価格台帳
 
-機械可読な台帳は`project/quote-records.json`。値を更新する場合、版、数量、税送料、日時、画面/見積書、ファイルハッシュをセットで記録する。現段階の`current_total_jpy`は`null`。
+機械可読な台帳は`project/quote-records.json`。値を更新する場合、版、数量、税送料、日時、画面/見積書、ファイルハッシュをセットで記録する。現段階の現在額（全体・蓋・バンド）は`null`。相見積を保存しても採用前は現在額を`null`にし、対応する範囲も`null`または省略とする。採用時は`current_*_scope`へ機種・版・数量・`price_basis`（１台あたりの`per_unit`／対象数量合計の`lot_total`）・税送料条件と`quote_ids`を記し、条件が一致する選択見積だけを合算する。条件の換算は行わず、異なる条件は別見積として比較する。複数選択には部品・数量の非重複を説明する`coverage_note`が必要。同じ`rows[].part`ラベルは拒否するが、意味上の非重複までは検査で証明できない。[登録と選択の手順](../handoff/maintenance.mdx)を参照する。
 
 [見積依頼の条件](./aluminum-order.mdx)／[最新STL投入の方法](./print-order.mdx)。
