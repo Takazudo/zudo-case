@@ -38,3 +38,24 @@ test('missing markdown, frame/component, and generated preview targets fail', as
     assert.deepEqual(await missingPreviewTargets('<PreviewFrame path="/previews/r8-simple-lid.html" />', dir), []);
   } finally { await rm(dir, { recursive: true, force: true }); }
 });
+
+test('per-run config preserves definitions and resolves the canonical build output', async () => {
+  const { previewRunConfig } = await import('../scripts/lib/preview-origin.mjs');
+  const dir = await mkdtemp(path.join(os.tmpdir(), 'zudo-preview-config-'));
+  try {
+    for (const [index, outDir] of [undefined, 'custom-output', '/tmp/absolute-output'].entries()) {
+      const caseRoot = path.join(dir, String(index));
+      await mkdir(caseRoot);
+      await writeFile(path.join(caseRoot, 'zfb.config.mjs'), `export default ${JSON.stringify({ outDir, bundle: { define: { KEPT: '42' } } })};\n`);
+      for (const command of ['dev', 'build', 'check', 'preview']) {
+        const file = path.join(caseRoot, `run-${index}-${command}.mjs`);
+        await writeFile(file, previewRunConfig({ root: caseRoot, command, origin: 'https://preview.example.test' }).replace('/zfb.config.ts', '/zfb.config.mjs'));
+        // A data import exercises the emitted config expression without launching zfb.
+        const { default: config } = await import(`${file}?config=${index}`);
+        assert.equal(config.bundle.define.KEPT, '42');
+        assert.equal(JSON.parse(config.bundle.define.__ZUDO_CASE_PREVIEW_ORIGIN__), 'https://preview.example.test');
+        assert.equal(config.outDir, command === 'dev' ? 'dist' : path.resolve(caseRoot, outDir || 'dist'));
+      }
+    }
+  } finally { await rm(dir, { recursive: true, force: true }); }
+});
