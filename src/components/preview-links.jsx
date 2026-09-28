@@ -1,8 +1,8 @@
 import { h } from 'preact';
-import { previewUrl, previewSourceLabel } from '../../scripts/lib/preview-origin.mjs';
-import { previewOrigin } from '../../.cache/preview-origin-override.mjs';
+import { previewUrl, previewSourceLabel, PRODUCTION_PREVIEW_ORIGIN } from '../../scripts/lib/preview-origin.mjs';
 
-const origin = previewOrigin;
+const origin = typeof __ZUDO_CASE_PREVIEW_ORIGIN__ === 'undefined'
+  ? PRODUCTION_PREVIEW_ORIGIN : __ZUDO_CASE_PREVIEW_ORIGIN__;
 
 export function PreviewLink({ path, children }) {
   return h('a', { href: previewUrl(path, origin) }, children);

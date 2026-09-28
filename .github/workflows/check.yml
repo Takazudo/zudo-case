@@ -26,7 +26,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm check:docs
-      - run: node --test tests/preview-links.test.mjs
+      - run: node --test tests/preview-links.test.mjs tests/preview-origin-isolation.test.mjs
       - run: pnpm check:tables
       - run: pnpm check:assets
       - run: pnpm test:setup
