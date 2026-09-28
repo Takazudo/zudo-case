@@ -48,6 +48,6 @@ node scripts/check-docs.mjs
 
 複数見積を合算する場合は、必要な部品・数量を重複なくカバーする説明を空でない`coverage_note`に記す。選択見積間で同じ`rows[].part`ラベルがあると重複計上として拒否する。ただし、ラベルが違う部品や費用の意味上の重複まで検査では証明できないため、説明と根拠を人が確認する。部品別価格を全体価格に混ぜない。
 
-新しい製作候補は`project/release-state.json`の`candidate_files`にリポジトリ相対`path`とファイルの`sha256`を記録する。候補の登録だけでは製造承認にならない。`engineering/release/`への配置は承認後に限り、`published_release_files`に同じパスとハッシュを記録する。
+新しい製作候補は`project/release-state.json`の`candidate_files`にリポジトリ相対`path`とファイルの`sha256`を記録する。従来の`path`・`sha256`だけの項目も有効。候補を版付きで識別するときは、台帳内で一意な空でない`id`と、`component`、`model`または`models`の一方、`revision`を記録する。`model`/`models`は`current-spec.json`の機種キーを使う。`current_lid_manufacturing`は`null`、または`model`/`models`の一方、`revision`、`candidate_ids`（空でなく重複しない候補ID一覧）を持つオブジェクトとする。参照先すべての`component`は`lid`、機種集合と版は現行指定に一致させる。アルミ板とPA12フレームなど複数ファイルで蓋候補を構成するときは、それぞれのIDを一覧にする。参照先のファイル存在とSHA-256も検査する。候補の登録や現行指定だけでは製造承認にならず、`production_approved`、機種別`manufacturing_release`、`release_gate`、G01〜G11を進めない。`engineering/release/`への配置は承認後に限り、`published_release_files`に同じパスとハッシュを記録する。
 
 承認には`approval_record`の承認者・日付・承認ファイル一覧（各パスとSHA-256）・`model_revisions`（機種別の製作版）、G01〜G11すべての`closed`状態、`result.summary`、実在する根拠ファイルの`result.evidence`一覧、`current-spec.json`の`release_gate`および機種別`manufacturing_release`との一致が必要。R8がプレビューだけの間、`latest_preview_is_manufacturing_data`は`false`とする。静的チェックは台帳・ファイル・ハッシュの整合を見るもので、加工適合、強度、現物試験、製造承認そのものを代行しない。
