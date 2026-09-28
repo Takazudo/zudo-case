@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, copyFile, writeFile, readFile, readdir, rm, access } from 'node:fs/promises';
+import { mkdtemp, mkdir, copyFile, writeFile, readFile, readdir, rm, access, realpath } from 'node:fs/promises';
 import { spawn } from 'node:child_process';
 import { once } from 'node:events';
 import { setTimeout as delay } from 'node:timers/promises';
@@ -30,6 +30,8 @@ async function fixture(t) {
   });
   await mkdir(path.join(root, 'scripts/lib'), { recursive: true });
   await mkdir(path.join(root, 'public/previews'), { recursive: true });
+  await mkdir(path.join(root, 'src/content/docs'), { recursive: true });
+  await writeFile(path.join(root, 'src/content/docs/article.mdx'), 'initial article');
   for (const rel of ['scripts/run-site.mjs', 'scripts/lib/preview-origin.mjs'])
     await copyFile(new URL(`../${rel}`, import.meta.url), path.join(root, rel));
   await writeFile(path.join(root, 'zfb.config.ts'), 'export default {};\n');
@@ -79,9 +81,11 @@ if (command === 'dev' || stay === 'stay') {
     const done = once(child, 'close').then(([code, signal]) => ({ code, signal, output }));
     children.push({ child, done });
     const ready = await report(id, 'ready');
+    let rereadCount = 0;
     return { child, done, ready, async reread() {
-      await writeFile(path.join(root, `${id}.request`), 'reread');
-      return report(id, 'reread');
+      const sequence = `reread-${++rereadCount}`;
+      await writeFile(path.join(root, `${id}.request`), sequence);
+      return report(id, sequence);
     } };
   }
   return { root, launch };
@@ -122,4 +126,31 @@ test('override validation fails before a CLI or run directory is created', async
   });
   assert.notEqual((await once(child, 'close'))[0], 0);
   await assert.rejects(access(path.join(root, '.cache')), { code: 'ENOENT' });
+});
+
+
+test('dev mirrors source edits, additions, removals and config into its own run only', async t => {
+  const { root, launch } = await fixture(t);
+  const dev = await launch('dev', 'dev', { override: 'http://localhost:8787' });
+  const check = await launch('check', 'check', { stay: true });
+  const relative = 'src/content/docs/article.mdx';
+  assert.equal(await realpath(path.join(dev.ready.cwd, relative)), path.join(dev.ready.cwd, relative));
+  assert.notEqual(await realpath(path.join(root, relative)), await realpath(path.join(dev.ready.cwd, relative)));
+  await writeFile(path.join(root, relative), 'updated article');
+  await writeFile(path.join(root, 'src/content/docs/added.mdx'), 'new article');
+  await writeFile(path.join(root, 'zfb.config.ts'), 'export default { site: "https://example.test" };\n');
+  await waitFor(async () => {
+    const article = await readFile(path.join(dev.ready.cwd, relative), 'utf8');
+    const config = await readFile(path.join(dev.ready.cwd, 'authored-zfb.config.ts'), 'utf8');
+    return article === 'updated article' && config.includes('example.test') ? true : undefined;
+  }, 'source/config mirror');
+  assert.equal(await readFile(path.join(dev.ready.cwd, 'src/content/docs/added.mdx'), 'utf8'), 'new article');
+  assert.equal(await readFile(path.join(check.ready.cwd, relative), 'utf8'), 'initial article');
+  await rm(path.join(root, relative));
+  await waitFor(async () => {
+    try { await access(path.join(dev.ready.cwd, relative)); return undefined; }
+    catch (error) { if (error.code === 'ENOENT') return true; throw error; }
+  }, 'deleted source mirror');
+  assert.equal((await dev.reread()).origin, 'http://localhost:8787');
+  assert.equal((await check.reread()).origin, PRODUCTION_PREVIEW_ORIGIN);
 });

@@ -21,9 +21,9 @@ export function previewSourceLabel(origin) {
 }
 
 // zfb's embedded V8 config evaluator cannot read Node env; bundle.define reaches SSR and client bundles.
-export function previewRunConfig({ root, command, origin }) {
+export function previewRunConfig({ root, configRoot, command, origin }) {
   const buildOutput = command !== 'dev';
-  return `import config from ${JSON.stringify(`${root}/zfb.config.ts`)};
+  return `import config from ${JSON.stringify(configRoot ? `${configRoot}/authored-zfb.config.ts` : `${root}/zfb.config.ts`)};
 export default {
   ...config,
   outDir: ${buildOutput ? `(config.outDir?.startsWith('/') ? config.outDir : ${JSON.stringify(`${root}/`)} + (config.outDir || 'dist'))` : "'dist'"},
