@@ -19,3 +19,18 @@ export function previewUrl(path, origin) {
 export function previewSourceLabel(origin) {
   return origin ? new URL(origin).host : 'ローカル (public/)';
 }
+
+// zfb's embedded V8 config evaluator cannot read Node env; bundle.define reaches SSR and client bundles.
+export function previewRunConfig({ root, configRoot, command, origin }) {
+  const buildOutput = command !== 'dev';
+  return `import config from ${JSON.stringify(configRoot ? `${configRoot}/authored-zfb.config.ts` : `${root}/zfb.config.ts`)};
+export default {
+  ...config,
+  outDir: ${buildOutput ? `(config.outDir?.startsWith('/') ? config.outDir : ${JSON.stringify(`${root}/`)} + (config.outDir || 'dist'))` : "'dist'"},
+  bundle: {
+    ...config.bundle,
+    define: { ...config.bundle?.define, __ZUDO_CASE_PREVIEW_ORIGIN__: ${JSON.stringify(JSON.stringify(origin))} },
+  },
+};
+`;
+}

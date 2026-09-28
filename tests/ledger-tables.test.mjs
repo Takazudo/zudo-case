@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
-import { copyFile, mkdir, mkdtemp, readFile, rm, stat, utimes, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, mkdtemp, readFile, rm, stat, symlink, utimes, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
@@ -47,6 +47,21 @@ test("synced generated pages pass --check", async t => {
   const result = runCli(root, "--check");
   assert.equal(result.status, 0, result.stderr);
   assert.match(result.stdout, /OK: generated reference pages match project\/current-spec\.json/);
+});
+
+test("CLI through a symlinked directory runs and detects drift", async t => {
+  const { root, pages } = await makeFixture(t);
+  const alias = `${root}-alias`;
+  await symlink(root, alias, "dir");
+  t.after(() => rm(alias));
+  const valid = runCli(alias, "--check");
+  assert.equal(valid.status, 0, valid.stderr);
+  assert.match(valid.stdout, /OK: generated reference pages match/);
+  const page = path.join(root, pages[0].rel);
+  await writeFile(page, `${await readFile(page, "utf8")}\n<!-- drift -->\n`);
+  const invalid = runCli(alias, "--check");
+  assert.equal(invalid.status, 1, invalid.stderr);
+  assert.ok(invalid.stderr.includes(pages[0].rel));
 });
 
 test("a ledger-only change fails --check and names affected pages", async t => {
