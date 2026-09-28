@@ -1,7 +1,10 @@
 /**
  * 台帳の状態契約。未見積の価格は null とし、0 で代用しない。現行価格には、
  * 実在する根拠ファイル、対象機種・版・数量・通貨・税送料条件、行合計を持つ
- * 実見積だけを使う。助手の旧概算は現行価格の根拠にならない。
+ * 実見積だけを使う。金額基準・税送料条件まで一致する quote_ids の明示選択だけを
+ * 合算し、複数選択には coverage_note と部品名の重複検査を要求する。未選択の
+ * 相見積は null のまま保存できる。換算や意味上の非重複は検証しない。
+ * 助手の旧概算は現行価格の根拠にならない。
  * 製作候補は path と SHA-256 で登録できるが、承認とは別状態。
  * 承認には承認者・日付・承認ファイルのハッシュ、G01〜G11 の完了根拠、
  * release-state・release_gate・機種別台帳の一致が必要。
@@ -15,7 +18,12 @@ import path from 'node:path';
 const isObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 const money = value => Number.isSafeInteger(value) && value >= 0;
 const modelsOf = value => value?.model ? [value.model] : Array.isArray(value?.models) ? value.models : [];
-const scopeKey = value => JSON.stringify({ models: [...modelsOf(value)].sort(), revision: value?.revision });
+const modelKey = value => JSON.stringify([...modelsOf(value)].sort());
+const nonempty = value => typeof value === 'string' && value.trim().length > 0;
+const priceBasis = value => ['per_unit', 'lot_total'].includes(value);
+const validModels = (value, spec) => !(Object.hasOwn(value, 'model') && Object.hasOwn(value, 'models')) &&
+  modelsOf(value).length > 0 && modelsOf(value).every(x => typeof x === 'string' && Object.hasOwn(spec.models, x)) &&
+  new Set(modelsOf(value)).size === modelsOf(value).length;
 const isHash = value => typeof value === 'string' && /^[a-f0-9]{64}$/i.test(value);
 const releasePath = 'engineering/release';
 
@@ -41,6 +49,11 @@ export async function checkProjectState({ root, spec, release, quotes, gates }) 
     ['current_band_price_jpy', 'current_band_price_scope', 'band'],
   ];
   const qualifying = { total: [], lid: [], band: [] };
+  const idCounts = new Map();
+  for (const record of quotes.records ?? []) {
+    if (nonempty(record.id)) idCounts.set(record.id, (idCounts.get(record.id) ?? 0) + 1);
+  }
+  for (const [id, count] of idCounts) if (count > 1) fail(`見積 ${id}: idが重複`);
   for (const record of quotes.records ?? []) {
     if (Array.isArray(record.rows) && money(record.total_jpy) && record.rows.every(row => money(row.row_jpy)) &&
       record.rows.reduce((sum, row) => sum + row.row_jpy, 0) !== record.total_jpy) fail(`見積 ${record.id ?? '(IDなし)'}: 行合計とtotal_jpyが不一致`);
@@ -52,10 +65,11 @@ export async function checkProjectState({ root, spec, release, quotes, gates }) 
     if (!Object.hasOwn(qualifying, record.component)) { fail(`${label}: componentが不正`); continue; }
     let valid = true;
     const requireField = (condition, field) => { if (!condition) { fail(`${label}: ${field}が必要`); valid = false; } };
-    const models = modelsOf(record);
-    requireField(models.length > 0 && models.every(x => typeof x === 'string' && Object.hasOwn(spec.models, x)) && new Set(models).size === models.length, 'model/models');
+    requireField(nonempty(record.id) && idCounts.get(record.id) === 1, '一意のid');
+    requireField(validModels(record, spec), 'model/models（どちらか一方）');
     requireField(typeof record.revision === 'string' && record.revision.trim().length > 0, 'revision');
     requireField(Number.isSafeInteger(record.quantity) && record.quantity > 0, 'quantity');
+    requireField(priceBasis(record.price_basis), 'price_basis（per_unit/lot_total）');
     requireField(record.currency === quotes.currency && typeof record.currency === 'string', 'currency');
     requireField(typeof record.tax_status === 'string' && record.tax_status.trim().length > 0, 'tax_status');
     requireField(typeof record.shipping_included === 'boolean', 'shipping_included');
@@ -67,17 +81,47 @@ export async function checkProjectState({ root, spec, release, quotes, gates }) 
   for (const [amountField, scopeField, component] of fields) {
     const amount = quotes[amountField], scope = quotes[scopeField];
     if (amount === null) {
-      if (qualifying[component].length) fail(`${amountField}: 有効な現行見積があるため合計を記録してください`);
       if (scope != null) fail(`${scopeField}: 価格がnullなら範囲もnullにしてください`);
       continue;
     }
     if (!money(amount) || amount === 0) fail(`${amountField}: 正の円額が必要（未見積はnull）`);
-    if (!isObject(scope) || !modelsOf(scope).length || typeof scope.revision !== 'string' || !scope.revision.trim()) {
-      fail(`${amountField}: ${scopeField}に機種と版が必要`); continue;
+    if (!isObject(scope)) { fail(`${amountField}: ${scopeField}に見積範囲が必要`); continue; }
+    let validScope = true;
+    const requireScope = (condition, field) => {
+      if (!condition) { fail(`${amountField}: ${scopeField}の${field}が必要`); validScope = false; }
+    };
+    requireScope(validModels(scope, spec), 'model/models（どちらか一方）');
+    requireScope(nonempty(scope.revision), 'revision');
+    requireScope(Number.isSafeInteger(scope.quantity) && scope.quantity > 0, 'quantity');
+    requireScope(priceBasis(scope.price_basis), 'price_basis（per_unit/lot_total）');
+    requireScope(nonempty(scope.tax_status), 'tax_status');
+    requireScope(typeof scope.shipping_included === 'boolean', 'shipping_included');
+    requireScope(Array.isArray(scope.quote_ids) && scope.quote_ids.length > 0 &&
+      scope.quote_ids.every(nonempty) && new Set(scope.quote_ids).size === scope.quote_ids.length, 'quote_ids（一意のID一覧）');
+    if (Array.isArray(scope.quote_ids) && scope.quote_ids.length > 1) requireScope(nonempty(scope.coverage_note), 'coverage_note');
+    if (!validScope) continue;
+    const selected = [];
+    for (const id of scope.quote_ids) {
+      const record = qualifying[component].find(record => record.id === id);
+      if (!record) { fail(`${amountField}: quote_idsの${id}は同じcomponentの有効な現行見積ではありません`); continue; }
+      selected.push(record);
+      if (modelKey(record) !== modelKey(scope)) fail(`${amountField}: 見積 ${id}のmodel/modelsが範囲と不一致`);
+      for (const field of ['revision', 'quantity', 'price_basis', 'tax_status', 'shipping_included']) {
+        if (record[field] !== scope[field]) fail(`${amountField}: 見積 ${id}の${field}が範囲と不一致`);
+      }
     }
-    const matching = qualifying[component].filter(record => scopeKey(record) === scopeKey(scope));
-    if (!matching.length || matching.length !== qualifying[component].length || matching.reduce((sum, record) => sum + record.total_jpy, 0) !== amount) {
-      fail(`${amountField}: 同じ機種・版の有効な見積行合計と一致しません`);
+    if (selected.length > 1) {
+      const parts = new Set();
+      for (const record of selected) {
+        const recordParts = new Set(record.rows.map(row => row.part));
+        for (const part of recordParts) {
+          if (parts.has(part)) fail(`${amountField}: 選択見積のrows[].partが重複（${part}）`);
+          parts.add(part);
+        }
+      }
+    }
+    if (selected.length !== scope.quote_ids.length || selected.reduce((sum, record) => sum + record.total_jpy, 0) !== amount) {
+      fail(`${amountField}: quote_idsで選択した見積のtotal_jpy合計と不一致`);
     }
   }
 

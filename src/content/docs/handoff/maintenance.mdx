@@ -40,7 +40,13 @@ node scripts/check-docs.mjs
 
 ## 見積・製作データの状態を進める
 
-現在価格の欄は未見積なら`null`のままにする。`0`は未確認の代用にしない。`project/quote-records.json`へ現在版の見積を追加するときは、`kind`を`supplier_quote`または`user_quote_screenshot`、`applies_to_current_release`を`true`とし、`component`（`total`・`lid`・`band`）、`model`または`models`、`revision`、`quantity`、`currency`、`tax_status`、`shipping_included`、リポジトリ内に実在する`source`を記録する。`rows[].row_jpy`の合計を`total_jpy`と一致させる。対応する`current_*_scope`へ機種・版を記し、同じ範囲の有効な見積の合計だけを`current_*_jpy`へ転記する。部品別価格を全体価格に混ぜない。過去の助手による概算は履歴のまま保持し、現行価格の根拠にはしない。
+現在価格の欄（`current_total_jpy`・`current_lid_price_jpy`・`current_band_price_jpy`）は未見積・採用前なら`null`のままにする。対応する`current_*_scope`も`null`または省略とする。相見積を複数保存しても、採用するまで現在額を埋める必要はない。`0`は未確認の代用にしない。
+
+`project/quote-records.json`へ現在版の見積を追加するときは、台帳全体で一意の空でない`id`、`kind`（`supplier_quote`または`user_quote_screenshot`）、`applies_to_current_release: true`、`component`（`total`・`lid`・`band`）、`model`または`models`の一方だけ、`revision`、正の整数の`quantity`、`price_basis`、`currency`、空でない`tax_status`、真偽値の`shipping_included`、リポジトリ内に実在する`source`を記録する。`price_basis`は`total_jpy`が１台あたりなら`per_unit`、対象数量分の合計なら`lot_total`。`rows[].row_jpy`の合計を`total_jpy`と一致させる。過去の助手による概算は履歴のまま保持し、現行価格の根拠にはしない。
+
+現在額を採用するときは、対応する`current_*_scope`に機種・版・`quantity`・`price_basis`・`tax_status`・`shipping_included`と、採用した見積IDだけの`quote_ids`（重複のない空でない配列）を記す。選択した見積は同じ`component`で、機種の集合とすべての条件が範囲に一致する必要がある。その`total_jpy`の合計だけを現在額へ転記する。未選択の相見積は加算しない。数量、単価／ロット総額、税、送料条件の換算は扱わない。異なる条件を比較するときは別の見積として保存し、条件が一致するものを選ぶ。
+
+複数見積を合算する場合は、必要な部品・数量を重複なくカバーする説明を空でない`coverage_note`に記す。選択見積間で同じ`rows[].part`ラベルがあると重複計上として拒否する。ただし、ラベルが違う部品や費用の意味上の重複まで検査では証明できないため、説明と根拠を人が確認する。部品別価格を全体価格に混ぜない。
 
 新しい製作候補は`project/release-state.json`の`candidate_files`にリポジトリ相対`path`とファイルの`sha256`を記録する。候補の登録だけでは製造承認にならない。`engineering/release/`への配置は承認後に限り、`published_release_files`に同じパスとハッシュを記録する。
 

@@ -20,13 +20,14 @@ const fixture = async () => {
 };
 const check = f => checkProjectState(f);
 const quote = async f => {
-  await mkdir(path.join(f.root, 'evidence'));
+  await mkdir(path.join(f.root, 'evidence'), { recursive: true });
   await writeFile(path.join(f.root, 'evidence/quote.txt'), 'supplier quote fixture');
   f.quotes.records.push({ id: 'Q-CURRENT', kind: 'supplier_quote', applies_to_current_release: true,
-    component: 'total', model: '7u40', revision: 'R9', quantity: 1, currency: 'JPY',
+    component: 'total', model: '7u40', revision: 'R9', quantity: 1, price_basis: 'lot_total', currency: 'JPY',
     tax_status: '税込', shipping_included: true, source: 'evidence/quote.txt',
     rows: [{ part: '一式', row_jpy: 12345 }], total_jpy: 12345 });
-  f.quotes.current_total_scope = { model: '7u40', revision: 'R9' };
+  f.quotes.current_total_scope = { model: '7u40', revision: 'R9', quantity: 1, price_basis: 'lot_total',
+    tax_status: '税込', shipping_included: true, quote_ids: ['Q-CURRENT'] };
   f.quotes.current_total_jpy = 12345;
 };
 const file = async (f, relative = 'engineering/candidate/test.step') => {
@@ -54,6 +55,129 @@ test('quote scope mismatch fails', async () => {
   const f = await fixture(); await quote(f); f.quotes.current_total_scope.revision = 'R10';
   assert.match((await check(f)).join('\n'), /current_total_jpy/);
 });
+const secondQuote = f => {
+  const record = { ...structuredClone(f.quotes.records.at(-1)), id: 'Q-SECOND',
+    rows: [{ part: '別部品', row_jpy: 8000 }], total_jpy: 8000 };
+  f.quotes.records.push(record);
+  return record;
+};
+const selectBoth = f => {
+  f.quotes.current_total_scope.quote_ids.push('Q-SECOND');
+  f.quotes.current_total_scope.coverage_note = '各1台分の本体と蓋を別見積として採用。重複なし。';
+  f.quotes.current_total_jpy += 8000;
+};
+
+test('selected disjoint quotes with matching conditions and coverage note pass', async () => {
+  const f = await fixture(); await quote(f); secondQuote(f); selectBoth(f);
+  assert.deepEqual(await check(f), []);
+});
+for (const [field, value] of [['quantity', 10], ['tax_status', '税別'],
+  ['price_basis', 'per_unit'], ['shipping_included', false]]) {
+  test(`selected quote ${field} mismatch fails`, async () => {
+    const f = await fixture(); await quote(f);
+    f.quotes.records.at(-1).total_jpy = 10000;
+    f.quotes.records.at(-1).rows[0].row_jpy = 10000;
+    f.quotes.current_total_jpy = 10000;
+    const other = secondQuote(f); other[field] = value;
+    if (field === 'quantity') {
+      other.total_jpy = other.rows[0].row_jpy = 80000;
+    }
+    selectBoth(f);
+    f.quotes.current_total_jpy = 10000 + other.total_jpy;
+    assert.match((await check(f)).join('\n'), new RegExp(`${field}.*不一致`));
+  });
+}
+test('unselected competing quote is excluded from total', async () => {
+  const f = await fixture(); await quote(f); secondQuote(f);
+  assert.deepEqual(await check(f), []);
+  f.quotes.current_total_jpy += 8000;
+  assert.match((await check(f)).join('\n'), /total_jpy合計と不一致/);
+});
+for (const [name, ids] of [['unknown', ['missing']], ['duplicate', ['Q-CURRENT', 'Q-CURRENT']],
+  ['historical', ['Q-R3-001']], ['estimate', ['E-R6-BODY']]]) {
+  test(`${name} selected quote_ids fails`, async () => {
+    const f = await fixture(); await quote(f); f.quotes.current_total_scope.quote_ids = ids;
+    f.quotes.current_total_scope.coverage_note = 'fixture';
+    assert.match((await check(f)).join('\n'), /quote_ids/);
+  });
+}
+for (const [name, mutate, pattern] of [
+  ['wrong component', r => r.component = 'lid', /同じcomponent/],
+  ['invalid current record', r => r.source = 'missing.txt', /有効な現行見積/],
+  ['wrong model set', r => r.model = '7u60', /model\/modelsが範囲と不一致/],
+]) {
+  test(`selection rejects ${name}`, async () => {
+    const f = await fixture(); await quote(f); mutate(f.quotes.records.at(-1));
+    assert.match((await check(f)).join('\n'), pattern);
+  });
+}
+test('duplicate record id including historical record fails', async () => {
+  const f = await fixture(); await quote(f); f.quotes.records.at(-1).id = 'Q-R3-001';
+  assert.match((await check(f)).join('\n'), /idが重複/);
+});
+test('null total permits valid unselected quotes and absent or null scope', async () => {
+  const f = await fixture(); await quote(f); secondQuote(f);
+  f.quotes.current_total_jpy = null;
+  delete f.quotes.current_total_scope;
+  assert.deepEqual(await check(f), []);
+  f.quotes.current_total_scope = null;
+  assert.deepEqual(await check(f), []);
+  f.quotes.current_total_scope = { model: '7u40' };
+  assert.match((await check(f)).join('\n'), /価格がnullなら範囲もnull/);
+});
+for (const [name, change, pattern] of [
+  ['coverage note', f => delete f.quotes.current_total_scope.coverage_note, /coverage_note/],
+  ['duplicate part', f => f.quotes.records.at(-1).rows[0].part = '一式', /rows\[\]\.partが重複/],
+]) {
+  test(`multi-quote selection without ${name} fails`, async () => {
+    const f = await fixture(); await quote(f); secondQuote(f); selectBoth(f); change(f);
+    assert.match((await check(f)).join('\n'), pattern);
+  });
+}
+for (const target of ['record', 'scope']) {
+  test(`both model and models in ${target} fail`, async () => {
+    const f = await fixture(); await quote(f);
+    (target === 'record' ? f.quotes.records.at(-1) : f.quotes.current_total_scope).models = ['7u40'];
+    assert.match((await check(f)).join('\n'), /model\/models/);
+  });
+}
+test('model sets match regardless of order or singular representation', async () => {
+  const f = await fixture(); await quote(f);
+  const record = f.quotes.records.at(-1), scope = f.quotes.current_total_scope;
+  delete record.model; record.models = ['7u40'];
+  assert.deepEqual(await check(f), []);
+  delete scope.model; scope.models = ['7u60', '7u40']; record.models = ['7u40', '7u60'];
+  assert.deepEqual(await check(f), []);
+});
+for (const [field, invalid] of [['id', ' '], ['price_basis', 'unit'], ['quantity', 0],
+  ['tax_status', ' '], ['shipping_included', 'yes']]) {
+  test(`current record requires valid ${field}`, async () => {
+    const f = await fixture(); await quote(f); f.quotes.records.at(-1)[field] = invalid;
+    assert.match((await check(f)).join('\n'), new RegExp(field));
+  });
+}
+for (const [field, invalid] of [['quantity', 1.5], ['price_basis', 'unit'], ['tax_status', ' '],
+  ['shipping_included', 'yes'], ['quote_ids', []], ['quote_ids', [' ']], ['quote_ids', [123]]]) {
+  test(`non-null scope requires valid ${field}`, async () => {
+    const f = await fixture(); await quote(f); f.quotes.current_total_scope[field] = invalid;
+    assert.match((await check(f)).join('\n'), new RegExp(field));
+  });
+}
+for (const [component, prefix] of [['lid', 'current_lid_price'], ['band', 'current_band_price']]) {
+  test(`${component} uses explicit selection and condition matching`, async () => {
+    const f = await fixture(); await quote(f); const record = f.quotes.records.at(-1);
+    record.component = component;
+    f.quotes[`${prefix}_jpy`] = f.quotes.current_total_jpy;
+    f.quotes[`${prefix}_scope`] = f.quotes.current_total_scope;
+    f.quotes.current_total_jpy = null; delete f.quotes.current_total_scope;
+    assert.deepEqual(await check(f), []);
+    f.quotes[`${prefix}_scope`].quantity = 10;
+    assert.match((await check(f)).join('\n'), new RegExp(`${prefix}_jpy.*quantity.*不一致`));
+    f.quotes[`${prefix}_jpy`] = null; delete f.quotes[`${prefix}_scope`];
+    assert.deepEqual(await check(f), []);
+  });
+}
+
 test('unapproved candidate passes with verified hash', async () => {
   const f = await fixture(); f.release.candidate_files = [await file(f)];
   assert.deepEqual(await check(f), []);
