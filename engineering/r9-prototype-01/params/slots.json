@@ -1,0 +1,16 @@
+{
+  "slot_direction": {
+    "value": null,
+    "unit": "axis",
+    "status": "unvalidated",
+    "source": "G02",
+    "note": "Manufacturing choice pending."
+  },
+  "slot_travel": {
+    "value": null,
+    "unit": "mm",
+    "status": "unvalidated",
+    "source": "G02",
+    "note": "Manufacturing choice pending."
+  }
+}

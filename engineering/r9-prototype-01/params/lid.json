@@ -1,0 +1,72 @@
+{
+  "top_edge_guard_opening_x": {
+    "value": 224.4,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "params/guards.json:top_edge_guard_opening_x",
+    "note": "Shared frozen interface; use guards value."
+  },
+  "top_edge_guard_opening_y": {
+    "value": 329.0,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "params/guards.json:top_edge_guard_opening_y",
+    "note": "Shared frozen interface; use guards value."
+  },
+  "top_edge_guard_exterior_x": {
+    "value": 231.8,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "params/guards.json:top_edge_guard_exterior_x",
+    "note": "Shared frozen interface; use guards value."
+  },
+  "top_edge_guard_exterior_y": {
+    "value": 336.4,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "params/guards.json:top_edge_guard_exterior_y",
+    "note": "Shared frozen interface; use guards value."
+  },
+  "top_edge_seated_guard_z": {
+    "value": 93.4,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "params/guards.json:top_edge_seated_guard_z",
+    "note": "Shared frozen interface; use guards value."
+  },
+  "top_edge_adhesive_allowance": {
+    "value": null,
+    "unit": "mm",
+    "status": "unvalidated",
+    "source": "params/guards.json:top_edge_adhesive_allowance",
+    "note": "Shared frozen interface; use guards value."
+  },
+  "top_edge_lid_locator_clearance": {
+    "value": 0.7,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/preview-parameters.json:7u40.locatorClearanceToGuardMm",
+    "note": "Nominal preview only."
+  },
+  "lid_rise": {
+    "value": 30,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/preview-parameters.json:7u40.lidRiseMm",
+    "note": "Knob envelope not measured for every module."
+  },
+  "locator_engagement": {
+    "value": 12,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/preview-parameters.json:7u40.locatorEngagementMm",
+    "note": "Preview only."
+  },
+  "locator_thickness": {
+    "value": 2,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/preview-parameters.json:7u40.locatorThicknessMm",
+    "note": "Preview only."
+  }
+}

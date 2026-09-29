@@ -1,0 +1,65 @@
+{
+  "top_edge_guard_opening_x": {
+    "value": 224.4,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/engineering/7u40/model-summary.json",
+    "note": "R6 t1.2 nominal; verify against R9 geometry."
+  },
+  "top_edge_guard_opening_y": {
+    "value": 329.0,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/engineering/7u40/model-summary.json",
+    "note": "R6 t1.2 nominal; verify against R9 geometry."
+  },
+  "top_edge_guard_exterior_x": {
+    "value": 231.8,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/engineering/7u40/model-summary.json",
+    "note": "R6 t1.2 nominal."
+  },
+  "top_edge_guard_exterior_y": {
+    "value": 336.4,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/engineering/7u40/model-summary.json",
+    "note": "R6 t1.2 nominal."
+  },
+  "top_edge_seated_guard_z": {
+    "value": 93.4,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/engineering/7u40/model-summary.json",
+    "note": "R6 nominal guard top."
+  },
+  "top_edge_adhesive_allowance": {
+    "value": null,
+    "unit": "mm",
+    "status": "unvalidated",
+    "source": "G03",
+    "note": "Adhesive and retention not selected."
+  },
+  "cover": {
+    "value": 5,
+    "unit": "mm",
+    "status": "adopted",
+    "source": "project/source-notes/user-decisions.md",
+    "note": "Non-structural PA12 guard."
+  },
+  "main_thickness": {
+    "value": 1.2,
+    "unit": "mm",
+    "status": "adopted",
+    "source": "project/source-notes/user-decisions.md",
+    "note": "1.0 mm comparison remains optional."
+  },
+  "comparison_thickness": {
+    "value": 1.0,
+    "unit": "mm",
+    "status": "candidate",
+    "source": "project/source-notes/user-decisions.md",
+    "note": "Comparison."
+  }
+}
