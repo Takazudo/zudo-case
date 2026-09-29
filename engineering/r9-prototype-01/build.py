@@ -43,6 +43,13 @@ def export_part(ctx: BuildContext, part: Part) -> list[dict]:
         path = ctx.out / part.category / f"{stem}.{kind}"
         if kind == "step":
             export_step(part.solid, path)
+            if part.category == "coupons":
+                # OCC writes insignificant trailing spaces in DATA records.
+                # Keep the committed coupon STEP exports diff-clean, matching
+                # the guard and lid candidate exporters.
+                path.write_bytes(b"\n".join(
+                    line.rstrip(b" \t") for line in path.read_bytes().split(b"\n")
+                ))
         elif kind == "stl":
             export_stl(part.solid, path)
         elif kind == "dxf":
@@ -115,6 +122,9 @@ def main() -> None:
             if path.is_file():
                 result["outputs"].append({"path": str(path.relative_to(ROOT)),
                                           "sha256": sha256_file(path), "bytes": path.stat().st_size})
+    if "coupons" in selected:
+        coupon_manifest = importlib.import_module("r9.coupons").finalize(ctx)
+        result["outputs"].append(coupon_manifest)
     (out / "build-log.json").write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n")
     print(f"R9 7u40: {len(result['parts'])} parts; {len(result['outputs'])} files; modules: {', '.join(selected)}")
 
