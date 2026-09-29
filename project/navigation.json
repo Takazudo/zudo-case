@@ -7,7 +7,7 @@
   },
   {
     "path": "decisions/history.mdx",
-    "title": "R1〜R8の変更履歴",
+    "title": "R1〜R9の変更履歴",
     "description": "名称が似たファイルの取り違えを防ぐための経緯。",
     "sidebar_position": 20
   },
@@ -52,6 +52,12 @@
     "title": "10BOX式の載せ蓋と外周バンド",
     "description": "可動ロックを持たせず、位置決めと運搬時の保持を分ける。",
     "sidebar_position": 50
+  },
+  {
+    "path": "design/r9-prototype-01.mdx",
+    "title": "7U40 R9 製作候補",
+    "description": "R9-PROTOTYPE-01の形状、出力と未検証事項を同じ版で確認する。",
+    "sidebar_position": 70
   },
   {
     "path": "design/rail-stack.mdx",
@@ -118,6 +124,12 @@
     "title": "JLC3DP用STLの投入と数量",
     "description": "本体ガードの旧見積と、最新の３機種・載せ蓋を混同しない。",
     "sidebar_position": 30
+  },
+  {
+    "path": "manufacturing/r9-rfq-draft.mdx",
+    "title": "R9アルミ参考見積の未送信文案",
+    "description": "7U40の６枚セットを数量別に比較するための未送信RFQ。",
+    "sidebar_position": 25
   },
   {
     "path": "models/3u60.mdx",
@@ -187,8 +199,8 @@
   },
   {
     "path": "resources/current-preview.mdx",
-    "title": "R8・載せ蓋＋外周バンド",
-    "description": "現在の採用コンセプト。表示モデルであり製作CADではない。",
+    "title": "R8・載せ蓋コンセプトの旧プレビュー",
+    "description": "R9の起点となった表示モデル。R8版の製作CADではない。",
     "sidebar_position": 10
   },
   {
@@ -228,6 +240,12 @@
     "sidebar_position": 10
   },
   {
+    "path": "verification/coupon-record.mdx",
+    "title": "試験片の空欄記録票",
+    "description": "C1・C2・C3の実物結果を版と一緒に残す未記入書式。",
+    "sidebar_position": 45
+  },
+  {
     "path": "verification/fit-test.mdx",
     "title": "小さい試験片から確認する",
     "description": "保持と公差の未確定部分を、全体注文の前に切り分ける。",
@@ -238,6 +256,12 @@
     "title": "現物確認・承認",
     "description": "計算やプレビューで確認したことと、現物で確認すべきこと。",
     "sidebar_position": 50
+  },
+  {
+    "path": "verification/measurements.mdx",
+    "title": "現物寸法の空欄記録票",
+    "description": "金具、締結材、ノブ、バンド、板材を必要な範囲で記録する。",
+    "sidebar_position": 55
   },
   {
     "path": "verification/release.mdx",
