@@ -352,6 +352,25 @@
       "body_revision": "R6-SOURCE-FAMILY-01",
       "lid_revision": "R8-SIMPLE-LID-PREVIEW",
       "manufacturing_release": null,
+      "candidate_revision": "R9-PROTOTYPE-01",
+      "candidate_status": "candidate-not-approved",
+      "candidate_body_summary": {
+        "independent_plate_count": 5,
+        "bracket_slot_count": 36,
+        "bracket_slot_size_mm": [
+          5.5,
+          7.5
+        ],
+        "bracket_slot_candidate_travel_each_direction_mm": 1.0,
+        "rail_round_hole_count": 10,
+        "status": "candidate; slot travel, hardware fit, and manufacture remain unconfirmed"
+      },
+      "candidate_lid_summary": {
+        "aluminum_plate_count": 1,
+        "pa12_frame_piece_count": 4,
+        "style": "straight lift-off locating lid; no lid/body locks; transport straps are separate",
+        "status": "candidate-not-approved; physical fit and knob/cable envelope remain unconfirmed"
+      },
       "metal_mm": [
         229.4,
         334.0,
