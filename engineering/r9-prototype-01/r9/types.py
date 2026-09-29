@@ -17,7 +17,7 @@ class Part:
     export_kinds: tuple[ExportKind, ...]
     dxf_outline: tuple[tuple[float, float], ...] | None = None
     dxf_holes: tuple[tuple[float, float, float], ...] = ()
-    dxf_slots: tuple[tuple[float, float, float, float], ...] = ()
+    dxf_slots: tuple[tuple[float, float, float, float, float], ...] = ()
 
 
 @dataclass(frozen=True)

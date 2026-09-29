@@ -4,6 +4,7 @@ from __future__ import annotations
 from collections import Counter
 from hashlib import sha256
 from pathlib import Path
+import math
 from tempfile import NamedTemporaryFile
 import re
 import struct
@@ -53,8 +54,9 @@ def export_step(shape: cq.Shape, path: Path) -> None:
 def export_dxf(path: Path, outline, holes=(), slots=()) -> None:
     """2-D plate drawing: closed outline, circular holes, and obround slots, R2010/mm.
 
-    Each slot is (center_x, center_y, overall_length, width), horizontal in
-    local XY. Geometry modules may rotate their local flat pattern first.
+    Each slot is (center_x, center_y, overall_length, width, angle_degrees).
+    Angle 0 is horizontal; positive angles rotate counterclockwise in XY.
+    Every slot is exactly two LINE and two ARC entities on SLOTS.
     """
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -69,16 +71,28 @@ def export_dxf(path: Path, outline, holes=(), slots=()) -> None:
         msp.add_lwpolyline(outline, close=True, dxfattribs={"layer": "OUTLINE"})
         for x, y, radius in holes:
             msp.add_circle((x, y), radius, dxfattribs={"layer": "HOLES"})
-        for x, y, length, width in slots:
-            if width <= 0 or length <= width:
-                raise ValueError("slot length must exceed its positive width")
+        for x, y, length, width, angle in slots:
+            if width <= 0 or length <= width or not all(math.isfinite(v) for v in (x, y, length, width, angle)):
+                raise ValueError("slot dimensions and angle must be finite; length must exceed positive width")
             straight = (length - width) / 2
             radius = width / 2
-            vertices = [(x - straight, y - radius, 0),
-                        (x + straight, y - radius, 1),
-                        (x + straight, y + radius, 0),
-                        (x - straight, y + radius, 1)]
-            msp.add_lwpolyline(vertices, format="xyb", close=True, dxfattribs={"layer": "SLOTS"})
+            theta = math.radians(angle)
+            ux, uy = math.cos(theta), math.sin(theta)
+            vx, vy = -uy, ux
+
+            def point(along: float, across: float) -> tuple[float, float]:
+                return (x + along * ux + across * vx,
+                        y + along * uy + across * vy)
+
+            left, right = point(-straight, 0), point(straight, 0)
+            left_bottom, right_bottom = point(-straight, -radius), point(straight, -radius)
+            right_top, left_top = point(straight, radius), point(-straight, radius)
+            msp.add_line(left_bottom, right_bottom, dxfattribs={"layer": "SLOTS"})
+            msp.add_arc(right, radius, start_angle=(angle - 90) % 360,
+                        end_angle=(angle + 90) % 360, dxfattribs={"layer": "SLOTS"})
+            msp.add_line(right_top, left_top, dxfattribs={"layer": "SLOTS"})
+            msp.add_arc(left, radius, start_angle=(angle + 90) % 360,
+                        end_angle=(angle + 270) % 360, dxfattribs={"layer": "SLOTS"})
         doc.saveas(path)
     finally:
         ezdxf.options.write_fixed_meta_data_for_testing = previous

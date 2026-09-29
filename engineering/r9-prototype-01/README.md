@@ -6,7 +6,7 @@ Python 3.12 and uv are required. From this directory:
 
 ```sh
 uv sync --locked && uv run python build.py
-uv run python build.py --only body
+uv run python build.py --only body,slots
 uv run python tests/smoke.py
 ```
 

@@ -55,15 +55,28 @@ def export_part(ctx: BuildContext, part: Part) -> list[dict]:
     return outputs
 
 
+def parse_modules(value: str | None) -> tuple[str, ...]:
+    if value is None:
+        return MODULES
+    names = tuple(value.split(","))
+    if any(name not in MODULES for name in names):
+        raise argparse.ArgumentTypeError(
+            f"--only expects comma-separated modules from: {', '.join(MODULES)}"
+        )
+    if len(set(names)) != len(names):
+        raise argparse.ArgumentTypeError("--only contains duplicate modules")
+    return names
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--only", choices=MODULES)
+    parser.add_argument("--only", type=parse_modules, metavar="MODULE[,MODULE...]")
     args = parser.parse_args()
     out = ROOT / "out"
     for directory in OUT_DIRS:
         (out / directory).mkdir(parents=True, exist_ok=True)
     ctx = BuildContext(ROOT, out, load_params())
-    selected = (args.only,) if args.only else MODULES
+    selected = args.only if args.only is not None else MODULES
     result = {"revision": ctx.revision, "model": ctx.model, "modules": list(selected),
               "geometryStatus": "stubs until later R9 issues", "parts": [], "outputs": []}
     seen_ids = set()
