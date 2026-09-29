@@ -1,0 +1,157 @@
+{
+  "schema": "zudo-case-r9-assembly-checks-v1",
+  "revision": "R9-PROTOTYPE-01",
+  "model": "7u40",
+  "units": "mm",
+  "status": "unapproved_prototype",
+  "intersectionThresholdMm3": 0.001,
+  "staticInterference": {
+    "scope": "partial nominal screen",
+    "testedSolidPairClasses": [
+      "lid PA12 frame versus main t1p2 top guards"
+    ],
+    "testedEnvelopePairClasses": [
+      "locator blades versus rail",
+      "locator blades versus brackets",
+      "locator blades versus PCB",
+      "locator blades versus other hardware"
+    ],
+    "untestedPairClasses": [
+      "body plate versus bracket/guard/rail/PCB/hardware",
+      "lid plate versus actual modules and straps",
+      "bottom/vertical guards versus body and hardware",
+      "internal hardware versus rail/PCB/brackets"
+    ],
+    "contacts": [],
+    "envelopeChecks": {
+      "rail": {
+        "instanceCount": 6,
+        "minimumClearanceLowerBoundMm": 4.62318,
+        "overlapCandidates": [],
+        "clearAtNominalPosition": true
+      },
+      "bracket": {
+        "instanceCount": 18,
+        "minimumClearanceLowerBoundMm": 5.7,
+        "overlapCandidates": [],
+        "clearAtNominalPosition": true
+      },
+      "pcb": {
+        "instanceCount": 8,
+        "minimumClearanceLowerBoundMm": 4.422772,
+        "overlapCandidates": [],
+        "clearAtNominalPosition": true
+      },
+      "otherHardware": {
+        "instanceCount": 164,
+        "minimumClearanceLowerBoundMm": 6.074767,
+        "overlapCandidates": [],
+        "clearAtNominalPosition": true
+      }
+    },
+    "testedSolidPairsPass": true,
+    "complete": false,
+    "passes": false
+  },
+  "clearancesMm": {
+    "locatorToGuardNominalX": 0.7,
+    "lidPlateUndersideToProvisionalKnobTop": 4.2,
+    "frameSeatToActualTopGuard": 0.5,
+    "frameSeatToFrozenGuardTop": -0.7,
+    "locatorToRailEnvelope": 4.62318,
+    "locatorToHighestBracket": 5.7,
+    "method": "AABB separation lower bounds for locator blades versus placed R9 component envelopes; not exact solid distances"
+  },
+  "liftPath": {
+    "axis": "+Z",
+    "startMm": 0,
+    "endMm": 150,
+    "stepMm": 1,
+    "scope": "PA12 lid frame versus main top guards; locator AABBs versus placed component AABBs",
+    "firstContact": null,
+    "envelopeFirstOverlapCandidate": null,
+    "testedSolidPathPass": true,
+    "envelopeScreenPass": true,
+    "complete": false,
+    "passes": false
+  },
+  "access": {
+    "m3PlateFrameBoreCount": 8,
+    "m3DriverValidated": false,
+    "m5S2NominalToolFailures": [],
+    "m5PhysicalValidated": false
+  },
+  "straps": {
+    "status": "schematic only",
+    "widthMm": 20,
+    "stations": [
+      {
+        "stationXmm": -69.54,
+        "widthMm": 20.0,
+        "contactSurfaces": [
+          "front PA12 quarter-frame edge",
+          "rear PA12 quarter-frame edge",
+          "aluminum lid plate between frame corners"
+        ],
+        "continuousPA12Support": false
+      },
+      {
+        "stationXmm": 69.54,
+        "widthMm": 20.0,
+        "contactSurfaces": [
+          "front PA12 quarter-frame edge",
+          "rear PA12 quarter-frame edge",
+          "aluminum lid plate between frame corners"
+        ],
+        "continuousPA12Support": false
+      }
+    ],
+    "plateOnlyContactExcluded": false
+  },
+  "slotsVsRealGuards": {
+    "s2GuardBandFailures": [],
+    "actualTopGuardBottomZMm": 86.0,
+    "bearingCoverageFailures": [
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER"
+    ]
+  },
+  "bodyManifestComponentCount": 15,
+  "flags": [
+    "R8 frame seat 92.7 mm is below frozen guard top 93.4 mm; actual guard solid top differs from frozen interface. Resolve seat datum and fit.",
+    "26 wall slots fail bearing coverage with provisional 10 mm washer; OD >= 11.5 mm is a candidate, not selected.",
+    "Two schematic straps contact PA12 at front/rear edges, but span the aluminum plate between corner frames; plate-only contact and deflection remain unresolved."
+  ],
+  "not_validated": [
+    "Body plate and internal part solid-pair collision coverage: body plate STEP patterns are local and most repeated hardware has only instance AABBs; intentional fastener contacts need pair-specific exclusions.",
+    "Lift path exact solids against body, PCB, rail, brackets, hardware and actual module knobs; locator AABBs against available component AABBs are a conservative 1 mm lift-step screen, not exact solids.",
+    "M3 driver cone/tool access: eight plate/frame bores are modeled, but driver and screw heads are not specified.",
+    "M5 physical tool access and washer fit; S2 exterior envelope is nominal only.",
+    "Adhesive retention, physical fit, strap load strength, module knob/cable envelope and transport testing."
+  ],
+  "productionApproved": false
+}

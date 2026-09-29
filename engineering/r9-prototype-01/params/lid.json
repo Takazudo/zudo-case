@@ -252,10 +252,10 @@
     "note": "Read-only R7 source member; obsolete body lock geometry excluded."
   },
   "locator_x_overhang_from_opening": {
-    "value": 0.5,
+    "value": -0.7,
     "unit": "mm",
     "status": "provisional",
-    "source": "engineering/r8-preview/prepare_models.py:7u40",
-    "note": "R8 broad blade half-width 112.7 mm versus frozen nominal guard opening half-width 112.2 mm; it lies in the front/rear gap, not the side opening. Verify guard fit physically."
+    "source": "R9 issue #87 integration checkpoint; measured intersection against S3 top-guard CAD",
+    "note": "Integration fit correction: blade outer edge 0.7 mm inside the frozen opening half-width; avoids nominal 6.2 mm³ overlap at each top guard corner. Provisional until physical fit review."
   }
 }

@@ -78,7 +78,7 @@ def main() -> None:
     ctx = BuildContext(ROOT, out, load_params())
     selected = args.only if args.only is not None else MODULES
     result = {"revision": ctx.revision, "model": ctx.model, "modules": list(selected),
-              "geometryStatus": "stubs until later R9 issues", "parts": [], "outputs": []}
+              "geometryStatus": "unapproved prototype candidate", "parts": [], "outputs": []}
     seen_ids = set()
     for name in selected:
         parts = importlib.import_module(f"r9.{name}").build(ctx)
@@ -91,6 +91,30 @@ def main() -> None:
             result["parts"].append({"id": part.id, "category": part.category,
                                     "material": part.material, "qty": part.qty})
             result["outputs"].extend(export_part(ctx, part))
+    # Guard/lid exporters write their own nested candidate files. Include the
+    # manifest-listed delivered bytes in the shared ledger without exporting
+    # them again to the category root.
+    for name, manifests in (("guards", ("pa12/guards/t1p2/manifest.json", "pa12/guards/t1p0/manifest.json")),
+                            ("lid", ("pa12/lid/manifest.json",))):
+        if name not in selected:
+            continue
+        for manifest_name in manifests:
+            manifest_path = out / manifest_name
+            manifest = json.loads(manifest_path.read_text())
+            files = (manifest.get("deliverables", []) if name == "lid" else
+                     [file for part in manifest["parts"] for file in part["files"]])
+            for file in files:
+                path = ROOT / file["path"]
+                if sha256_file(path) != file["sha256"] or path.stat().st_size != file["bytes"]:
+                    raise ValueError(f"module manifest digest mismatch: {path}")
+                result["outputs"].append({"path": file["path"], "sha256": file["sha256"], "bytes": file["bytes"]})
+            result["outputs"].append({"path": str(manifest_path.relative_to(ROOT)),
+                                      "sha256": sha256_file(manifest_path), "bytes": manifest_path.stat().st_size})
+    if "checks" in selected:
+        for path in sorted((out / "assembly").iterdir()):
+            if path.is_file():
+                result["outputs"].append({"path": str(path.relative_to(ROOT)),
+                                          "sha256": sha256_file(path), "bytes": path.stat().st_size})
     (out / "build-log.json").write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n")
     print(f"R9 7u40: {len(result['parts'])} parts; {len(result['outputs'])} files; modules: {', '.join(selected)}")
 
