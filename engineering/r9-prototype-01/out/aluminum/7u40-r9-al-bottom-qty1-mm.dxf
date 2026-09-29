@@ -549,7 +549,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-40
+5E
   9
 $SURFTAB1
  70
@@ -1773,7 +1773,7 @@ ACAD
   0
 APPID
   5
-3D
+5B
 330
 3
 100
@@ -1787,7 +1787,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-3E
+5C
 330
 3
 100
@@ -2127,7 +2127,7 @@ AcDbPolyline
  20
 334.0
   0
-CIRCLE
+LINE
   5
 33
 330
@@ -2135,19 +2135,23 @@ CIRCLE
 100
 AcDbEntity
   8
-HOLES
+SLOTS
 100
-AcDbCircle
+AcDbLine
  10
-55.2
+57.95
  20
-322.5
+321.5
  30
 0.0
- 40
-2.75
+ 11
+57.95
+ 21
+323.5
+ 31
+0.0
   0
-CIRCLE
+ARC
   5
 34
 330
@@ -2155,19 +2159,25 @@ CIRCLE
 100
 AcDbEntity
   8
-HOLES
+SLOTS
 100
 AcDbCircle
  10
-174.2
+55.2
  20
-322.5
+323.5
  30
 0.0
  40
 2.75
+100
+AcDbArc
+ 50
+0.0
+ 51
+180.0
   0
-CIRCLE
+LINE
   5
 35
 330
@@ -2175,19 +2185,23 @@ CIRCLE
 100
 AcDbEntity
   8
-HOLES
+SLOTS
 100
-AcDbCircle
+AcDbLine
  10
-55.2
+52.45
  20
-11.5
+323.5
  30
 0.0
- 40
-2.75
+ 11
+52.45
+ 21
+321.5
+ 31
+0.0
   0
-CIRCLE
+ARC
   5
 36
 330
@@ -2195,19 +2209,25 @@ CIRCLE
 100
 AcDbEntity
   8
-HOLES
+SLOTS
 100
 AcDbCircle
  10
-174.2
+55.2
  20
-11.5
+321.5
  30
 0.0
  40
 2.75
+100
+AcDbArc
+ 50
+180.0
+ 51
+0.0
   0
-CIRCLE
+LINE
   5
 37
 330
@@ -2215,19 +2235,23 @@ CIRCLE
 100
 AcDbEntity
   8
-HOLES
+SLOTS
 100
-AcDbCircle
+AcDbLine
  10
-11.5
+176.95
  20
-167.0
+321.5
  30
 0.0
- 40
-2.75
+ 11
+176.95
+ 21
+323.5
+ 31
+0.0
   0
-CIRCLE
+ARC
   5
 38
 330
@@ -2235,19 +2259,25 @@ CIRCLE
 100
 AcDbEntity
   8
-HOLES
+SLOTS
 100
 AcDbCircle
  10
-11.5
+174.2
  20
-40.5
+323.5
  30
 0.0
  40
 2.75
+100
+AcDbArc
+ 50
+0.0
+ 51
+180.0
   0
-CIRCLE
+LINE
   5
 39
 330
@@ -2255,19 +2285,23 @@ CIRCLE
 100
 AcDbEntity
   8
-HOLES
+SLOTS
 100
-AcDbCircle
+AcDbLine
  10
-11.5
+171.45
  20
-293.5
+323.5
  30
 0.0
- 40
-2.75
+ 11
+171.45
+ 21
+321.5
+ 31
+0.0
   0
-CIRCLE
+ARC
   5
 3A
 330
@@ -2275,19 +2309,25 @@ CIRCLE
 100
 AcDbEntity
   8
-HOLES
+SLOTS
 100
 AcDbCircle
  10
-217.9
+174.2
  20
-167.0
+321.5
  30
 0.0
  40
 2.75
+100
+AcDbArc
+ 50
+180.0
+ 51
+0.0
   0
-CIRCLE
+LINE
   5
 3B
 330
@@ -2295,19 +2335,23 @@ CIRCLE
 100
 AcDbEntity
   8
-HOLES
+SLOTS
 100
-AcDbCircle
+AcDbLine
  10
-217.9
+57.95
  20
-40.5
+10.5
  30
 0.0
- 40
-2.75
+ 11
+57.95
+ 21
+12.5
+ 31
+0.0
   0
-CIRCLE
+ARC
   5
 3C
 330
@@ -2315,17 +2359,773 @@ CIRCLE
 100
 AcDbEntity
   8
-HOLES
+SLOTS
 100
 AcDbCircle
  10
-217.9
+55.2
+ 20
+12.5
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+0.0
+ 51
+180.0
+  0
+LINE
+  5
+3D
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+52.45
+ 20
+12.5
+ 30
+0.0
+ 11
+52.45
+ 21
+10.5
+ 31
+0.0
+  0
+ARC
+  5
+3E
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+55.2
+ 20
+10.5
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+180.0
+ 51
+0.0
+  0
+LINE
+  5
+3F
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+176.95
+ 20
+10.5
+ 30
+0.0
+ 11
+176.95
+ 21
+12.5
+ 31
+0.0
+  0
+ARC
+  5
+40
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+174.2
+ 20
+12.5
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+0.0
+ 51
+180.0
+  0
+LINE
+  5
+41
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+171.45
+ 20
+12.5
+ 30
+0.0
+ 11
+171.45
+ 21
+10.5
+ 31
+0.0
+  0
+ARC
+  5
+42
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+174.2
+ 20
+10.5
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+180.0
+ 51
+0.0
+  0
+LINE
+  5
+43
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+10.5
+ 20
+164.25
+ 30
+0.0
+ 11
+12.5
+ 21
+164.25
+ 31
+0.0
+  0
+ARC
+  5
+44
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+12.5
+ 20
+167.0
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+LINE
+  5
+45
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+12.5
+ 20
+169.75
+ 30
+0.0
+ 11
+10.5
+ 21
+169.75
+ 31
+0.0
+  0
+ARC
+  5
+46
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+10.5
+ 20
+167.0
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
+  0
+LINE
+  5
+47
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+10.5
+ 20
+37.75
+ 30
+0.0
+ 11
+12.5
+ 21
+37.75
+ 31
+0.0
+  0
+ARC
+  5
+48
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+12.5
+ 20
+40.5
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+LINE
+  5
+49
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+12.5
+ 20
+43.25
+ 30
+0.0
+ 11
+10.5
+ 21
+43.25
+ 31
+0.0
+  0
+ARC
+  5
+4A
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+10.5
+ 20
+40.5
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
+  0
+LINE
+  5
+4B
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+10.5
+ 20
+290.75
+ 30
+0.0
+ 11
+12.5
+ 21
+290.75
+ 31
+0.0
+  0
+ARC
+  5
+4C
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+12.5
  20
 293.5
  30
 0.0
  40
 2.75
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+LINE
+  5
+4D
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+12.5
+ 20
+296.25
+ 30
+0.0
+ 11
+10.5
+ 21
+296.25
+ 31
+0.0
+  0
+ARC
+  5
+4E
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+10.5
+ 20
+293.5
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
+  0
+LINE
+  5
+4F
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+216.9
+ 20
+164.25
+ 30
+0.0
+ 11
+218.9
+ 21
+164.25
+ 31
+0.0
+  0
+ARC
+  5
+50
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+218.9
+ 20
+167.0
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+LINE
+  5
+51
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+218.9
+ 20
+169.75
+ 30
+0.0
+ 11
+216.9
+ 21
+169.75
+ 31
+0.0
+  0
+ARC
+  5
+52
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+216.9
+ 20
+167.0
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
+  0
+LINE
+  5
+53
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+216.9
+ 20
+37.75
+ 30
+0.0
+ 11
+218.9
+ 21
+37.75
+ 31
+0.0
+  0
+ARC
+  5
+54
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+218.9
+ 20
+40.5
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+LINE
+  5
+55
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+218.9
+ 20
+43.25
+ 30
+0.0
+ 11
+216.9
+ 21
+43.25
+ 31
+0.0
+  0
+ARC
+  5
+56
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+216.9
+ 20
+40.5
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
+  0
+LINE
+  5
+57
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+216.9
+ 20
+290.75
+ 30
+0.0
+ 11
+218.9
+ 21
+290.75
+ 31
+0.0
+  0
+ARC
+  5
+58
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+218.9
+ 20
+293.5
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+270.0
+ 51
+90.0
+  0
+LINE
+  5
+59
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbLine
+ 10
+218.9
+ 20
+296.25
+ 30
+0.0
+ 11
+216.9
+ 21
+296.25
+ 31
+0.0
+  0
+ARC
+  5
+5A
+330
+17
+100
+AcDbEntity
+  8
+SLOTS
+100
+AcDbCircle
+ 10
+216.9
+ 20
+293.5
+ 30
+0.0
+ 40
+2.75
+100
+AcDbArc
+ 50
+90.0
+ 51
+270.0
   0
 ENDSEC
   0
@@ -3317,7 +4117,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-3F
+5D
   0
 DICTIONARYVAR
   5
@@ -3333,7 +4133,7 @@ DictionaryVariables
   0
 DICTIONARYVAR
   5
-3F
+5D
 330
 2D
 100

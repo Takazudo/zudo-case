@@ -1,0 +1,1711 @@
+{
+  "schema": "zudo-case-r9-hole-table-v1",
+  "revision": "R9-PROTOTYPE-01",
+  "model": "7u40",
+  "units": "mm",
+  "status": "unapproved_prototype",
+  "holes": [
+    {
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXN",
+      "plate": "7U40-R9-AL-BOTTOM",
+      "plate_instance": "BOTTOM",
+      "face": "outside",
+      "joint": "7U40-R9-JNT-BOTTOM-BACK-XXN",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+      "role": "datum",
+      "profile": "slot",
+      "center_uv": [
+        55.2,
+        322.5
+      ],
+      "center_xyz": [
+        -59.5,
+        155.5,
+        0.0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 45.561629,
+      "bearing_part": "head",
+      "bearing_status": "provisional",
+      "bearing_od": 12.0,
+      "coverage_ok": true,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXP",
+      "plate": "7U40-R9-AL-BOTTOM",
+      "plate_instance": "BOTTOM",
+      "face": "outside",
+      "joint": "7U40-R9-JNT-BOTTOM-BACK-XXP",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+      "role": "datum",
+      "profile": "slot",
+      "center_uv": [
+        174.2,
+        322.5
+      ],
+      "center_xyz": [
+        59.5,
+        155.5,
+        0.0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 45.561629,
+      "bearing_part": "head",
+      "bearing_status": "provisional",
+      "bearing_od": 12.0,
+      "coverage_ok": true,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+      "plate": "7U40-R9-AL-BOTTOM",
+      "plate_instance": "BOTTOM",
+      "face": "outside",
+      "joint": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+      "role": "datum",
+      "profile": "slot",
+      "center_uv": [
+        55.2,
+        11.5
+      ],
+      "center_xyz": [
+        -59.5,
+        -155.5,
+        0.0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 45.561629,
+      "bearing_part": "head",
+      "bearing_status": "provisional",
+      "bearing_od": 12.0,
+      "coverage_ok": true,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXP",
+      "plate": "7U40-R9-AL-BOTTOM",
+      "plate_instance": "BOTTOM",
+      "face": "outside",
+      "joint": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+      "role": "datum",
+      "profile": "slot",
+      "center_uv": [
+        174.2,
+        11.5
+      ],
+      "center_xyz": [
+        59.5,
+        -155.5,
+        0.0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 45.561629,
+      "bearing_part": "head",
+      "bearing_status": "provisional",
+      "bearing_od": 12.0,
+      "coverage_ok": true,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-CENTER",
+      "plate": "7U40-R9-AL-BOTTOM",
+      "plate_instance": "BOTTOM",
+      "face": "outside",
+      "joint": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+      "role": "datum",
+      "profile": "slot",
+      "center_uv": [
+        11.5,
+        167.0
+      ],
+      "center_xyz": [
+        -103.2,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 121.0,
+      "bearing_part": "head",
+      "bearing_status": "provisional",
+      "bearing_od": 12.0,
+      "coverage_ok": true,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-FRONT",
+      "plate": "7U40-R9-AL-BOTTOM",
+      "plate_instance": "BOTTOM",
+      "face": "outside",
+      "joint": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+      "role": "datum",
+      "profile": "slot",
+      "center_uv": [
+        11.5,
+        40.5
+      ],
+      "center_xyz": [
+        -103.2,
+        -126.5,
+        0.0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 45.561629,
+      "bearing_part": "head",
+      "bearing_status": "provisional",
+      "bearing_od": 12.0,
+      "coverage_ok": true,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-REAR",
+      "plate": "7U40-R9-AL-BOTTOM",
+      "plate_instance": "BOTTOM",
+      "face": "outside",
+      "joint": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+      "role": "datum",
+      "profile": "slot",
+      "center_uv": [
+        11.5,
+        293.5
+      ],
+      "center_xyz": [
+        -103.2,
+        126.5,
+        0.0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 45.561629,
+      "bearing_part": "head",
+      "bearing_status": "provisional",
+      "bearing_od": 12.0,
+      "coverage_ok": true,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-CENTER",
+      "plate": "7U40-R9-AL-BOTTOM",
+      "plate_instance": "BOTTOM",
+      "face": "outside",
+      "joint": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+      "role": "datum",
+      "profile": "slot",
+      "center_uv": [
+        217.9,
+        167.0
+      ],
+      "center_xyz": [
+        103.2,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 121.0,
+      "bearing_part": "head",
+      "bearing_status": "provisional",
+      "bearing_od": 12.0,
+      "coverage_ok": true,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-FRONT",
+      "plate": "7U40-R9-AL-BOTTOM",
+      "plate_instance": "BOTTOM",
+      "face": "outside",
+      "joint": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+      "role": "datum",
+      "profile": "slot",
+      "center_uv": [
+        217.9,
+        40.5
+      ],
+      "center_xyz": [
+        103.2,
+        -126.5,
+        0.0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 45.561629,
+      "bearing_part": "head",
+      "bearing_status": "provisional",
+      "bearing_od": 12.0,
+      "coverage_ok": true,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-REAR",
+      "plate": "7U40-R9-AL-BOTTOM",
+      "plate_instance": "BOTTOM",
+      "face": "outside",
+      "joint": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+      "role": "datum",
+      "profile": "slot",
+      "center_uv": [
+        217.9,
+        293.5
+      ],
+      "center_xyz": [
+        103.2,
+        126.5,
+        0.0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 45.561629,
+      "bearing_part": "head",
+      "bearing_status": "provisional",
+      "bearing_od": 12.0,
+      "coverage_ok": true,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN",
+      "plate": "7U40-R9-AL-FRONT-BACK",
+      "plate_instance": "BACK",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-BOTTOM-BACK-XXN",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        53.7,
+        10.0
+      ],
+      "center_xyz": [
+        -59.5,
+        167.0,
+        11.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 43.482548,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP",
+      "plate": "7U40-R9-AL-FRONT-BACK",
+      "plate_instance": "BACK",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-BOTTOM-BACK-XXP",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        172.7,
+        10.0
+      ],
+      "center_xyz": [
+        59.5,
+        167.0,
+        11.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 43.482548,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+      "plate": "7U40-R9-AL-FRONT-BACK",
+      "plate_instance": "BACK",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        10.0,
+        35.0
+      ],
+      "center_xyz": [
+        -103.2,
+        167.0,
+        36.5
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 24.5,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+      "plate": "7U40-R9-AL-FRONT-BACK",
+      "plate_instance": "BACK",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        10.0,
+        65.0
+      ],
+      "center_xyz": [
+        -103.2,
+        167.0,
+        66.5
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 24.5,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+      "plate": "7U40-R9-AL-FRONT-BACK",
+      "plate_instance": "BACK",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        216.4,
+        35.0
+      ],
+      "center_xyz": [
+        103.2,
+        167.0,
+        36.5
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 24.5,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER",
+      "plate": "7U40-R9-AL-FRONT-BACK",
+      "plate_instance": "BACK",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        216.4,
+        65.0
+      ],
+      "center_xyz": [
+        103.2,
+        167.0,
+        66.5
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 24.5,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+      "plate": "7U40-R9-AL-FRONT-BACK",
+      "plate_instance": "FRONT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        53.7,
+        10.0
+      ],
+      "center_xyz": [
+        -59.5,
+        -167.0,
+        11.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 43.482548,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP",
+      "plate": "7U40-R9-AL-FRONT-BACK",
+      "plate_instance": "FRONT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        172.7,
+        10.0
+      ],
+      "center_xyz": [
+        59.5,
+        -167.0,
+        11.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 43.482548,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+      "plate": "7U40-R9-AL-FRONT-BACK",
+      "plate_instance": "FRONT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        10.0,
+        35.0
+      ],
+      "center_xyz": [
+        -103.2,
+        -167.0,
+        36.5
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 24.5,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+      "plate": "7U40-R9-AL-FRONT-BACK",
+      "plate_instance": "FRONT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        10.0,
+        65.0
+      ],
+      "center_xyz": [
+        -103.2,
+        -167.0,
+        66.5
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 24.5,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+      "plate": "7U40-R9-AL-FRONT-BACK",
+      "plate_instance": "FRONT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        216.4,
+        35.0
+      ],
+      "center_xyz": [
+        103.2,
+        -167.0,
+        36.5
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 24.5,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER",
+      "plate": "7U40-R9-AL-FRONT-BACK",
+      "plate_instance": "FRONT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        216.4,
+        65.0
+      ],
+      "center_xyz": [
+        103.2,
+        -167.0,
+        66.5
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 24.5,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "LEFT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        167.0,
+        10.0
+      ],
+      "center_xyz": [
+        -114.7,
+        0.0,
+        11.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 50.189427,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "LEFT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        40.5,
+        10.0
+      ],
+      "center_xyz": [
+        -114.7,
+        -126.5,
+        11.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 31.378178,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "LEFT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        293.5,
+        10.0
+      ],
+      "center_xyz": [
+        -114.7,
+        126.5,
+        11.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 31.378178,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "LEFT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        322.5,
+        35.0
+      ],
+      "center_xyz": [
+        -114.7,
+        155.5,
+        36.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 24.5,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "LEFT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        322.5,
+        65.0
+      ],
+      "center_xyz": [
+        -114.7,
+        155.5,
+        66.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 14.574679,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "LEFT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        11.5,
+        35.0
+      ],
+      "center_xyz": [
+        -114.7,
+        -155.5,
+        36.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 24.5,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "LEFT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        11.5,
+        65.0
+      ],
+      "center_xyz": [
+        -114.7,
+        -155.5,
+        66.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 14.539469,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "RIGHT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        167.0,
+        10.0
+      ],
+      "center_xyz": [
+        114.7,
+        0.0,
+        11.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 50.189427,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "RIGHT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        40.5,
+        10.0
+      ],
+      "center_xyz": [
+        114.7,
+        -126.5,
+        11.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 31.378178,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "RIGHT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
+      "bracket": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        293.5,
+        10.0
+      ],
+      "center_xyz": [
+        114.7,
+        126.5,
+        11.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 90,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 6.25,
+      "ligament_min": 31.378178,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "RIGHT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        322.5,
+        35.0
+      ],
+      "center_xyz": [
+        114.7,
+        155.5,
+        36.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 24.5,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "RIGHT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        322.5,
+        65.0
+      ],
+      "center_xyz": [
+        114.7,
+        155.5,
+        66.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 14.574679,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "RIGHT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        11.5,
+        35.0
+      ],
+      "center_xyz": [
+        114.7,
+        -155.5,
+        36.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 24.5,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "RIGHT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
+      "bracket": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+      "role": "adjust",
+      "profile": "slot",
+      "center_uv": [
+        11.5,
+        65.0
+      ],
+      "center_xyz": [
+        114.7,
+        -155.5,
+        66.5
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "axis_meaning": "slot long axis",
+      "angle_local_deg": 0,
+      "width": 5.5,
+      "length": 7.5,
+      "travel": 1.0,
+      "edge_margin": 7.75,
+      "ligament_min": 14.539469,
+      "bearing_part": "outer washer",
+      "bearing_status": "provisional",
+      "bearing_od": 10.0,
+      "coverage_ok": false,
+      "tool_access_ok": true,
+      "guard_contact_ok": true
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-01",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "LEFT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-RAIL-FIX-LEFT-01",
+      "bracket": null,
+      "role": "rail-fix",
+      "profile": "round",
+      "center_uv": [
+        32.468128500000006,
+        66.6894265
+      ],
+      "center_xyz": [
+        -114.7,
+        -134.5318715,
+        68.1894265
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "axis_meaning": "round bore normal",
+      "angle_local_deg": null,
+      "width": 5.5,
+      "length": 5.5,
+      "travel": 0,
+      "edge_margin": 20.060574,
+      "ligament_min": 14.539469,
+      "bearing_part": null,
+      "bearing_status": null,
+      "bearing_od": null,
+      "coverage_ok": null,
+      "tool_access_ok": null,
+      "guard_contact_ok": null
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-02",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "LEFT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-RAIL-FIX-LEFT-02",
+      "bracket": null,
+      "role": "rail-fix",
+      "profile": "round",
+      "center_uv": [
+        99.73406,
+        66.6894265
+      ],
+      "center_xyz": [
+        -114.7,
+        -67.26594,
+        68.1894265
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "axis_meaning": "round bore normal",
+      "angle_local_deg": null,
+      "width": 5.5,
+      "length": 5.5,
+      "travel": 0,
+      "edge_margin": 20.060574,
+      "ligament_min": 61.765931,
+      "bearing_part": null,
+      "bearing_status": null,
+      "bearing_od": null,
+      "coverage_ok": null,
+      "tool_access_ok": null,
+      "guard_contact_ok": null
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-03",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "LEFT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-RAIL-FIX-LEFT-03",
+      "bracket": null,
+      "role": "rail-fix",
+      "profile": "round",
+      "center_uv": [
+        166.999992,
+        66.6894265
+      ],
+      "center_xyz": [
+        -114.7,
+        -8.000000008223651e-06,
+        68.1894265
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "axis_meaning": "round bore normal",
+      "angle_local_deg": null,
+      "width": 5.5,
+      "length": 5.5,
+      "travel": 0,
+      "edge_margin": 20.060574,
+      "ligament_min": 50.189427,
+      "bearing_part": null,
+      "bearing_status": null,
+      "bearing_od": null,
+      "coverage_ok": null,
+      "tool_access_ok": null,
+      "guard_contact_ok": null
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-04",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "LEFT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-RAIL-FIX-LEFT-04",
+      "bracket": null,
+      "role": "rail-fix",
+      "profile": "round",
+      "center_uv": [
+        234.2659145,
+        66.6894265
+      ],
+      "center_xyz": [
+        -114.7,
+        67.26591450000001,
+        68.1894265
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "axis_meaning": "round bore normal",
+      "angle_local_deg": null,
+      "width": 5.5,
+      "length": 5.5,
+      "travel": 0,
+      "edge_margin": 20.060574,
+      "ligament_min": 61.730621,
+      "bearing_part": null,
+      "bearing_status": null,
+      "bearing_od": null,
+      "coverage_ok": null,
+      "tool_access_ok": null,
+      "guard_contact_ok": null
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-05",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "LEFT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-RAIL-FIX-LEFT-05",
+      "bracket": null,
+      "role": "rail-fix",
+      "profile": "round",
+      "center_uv": [
+        301.496536,
+        66.6894265
+      ],
+      "center_xyz": [
+        -114.7,
+        134.496536,
+        68.1894265
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "axis_meaning": "round bore normal",
+      "angle_local_deg": null,
+      "width": 5.5,
+      "length": 5.5,
+      "travel": 0,
+      "edge_margin": 20.060574,
+      "ligament_min": 14.574679,
+      "bearing_part": null,
+      "bearing_status": null,
+      "bearing_od": null,
+      "coverage_ok": null,
+      "tool_access_ok": null,
+      "guard_contact_ok": null
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-01",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "RIGHT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-RAIL-FIX-RIGHT-01",
+      "bracket": null,
+      "role": "rail-fix",
+      "profile": "round",
+      "center_uv": [
+        32.468128500000006,
+        66.6894265
+      ],
+      "center_xyz": [
+        114.7,
+        -134.5318715,
+        68.1894265
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "round bore normal",
+      "angle_local_deg": null,
+      "width": 5.5,
+      "length": 5.5,
+      "travel": 0,
+      "edge_margin": 20.060574,
+      "ligament_min": 14.539469,
+      "bearing_part": null,
+      "bearing_status": null,
+      "bearing_od": null,
+      "coverage_ok": null,
+      "tool_access_ok": null,
+      "guard_contact_ok": null
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-02",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "RIGHT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-RAIL-FIX-RIGHT-02",
+      "bracket": null,
+      "role": "rail-fix",
+      "profile": "round",
+      "center_uv": [
+        99.73406,
+        66.6894265
+      ],
+      "center_xyz": [
+        114.7,
+        -67.26594,
+        68.1894265
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "round bore normal",
+      "angle_local_deg": null,
+      "width": 5.5,
+      "length": 5.5,
+      "travel": 0,
+      "edge_margin": 20.060574,
+      "ligament_min": 61.765931,
+      "bearing_part": null,
+      "bearing_status": null,
+      "bearing_od": null,
+      "coverage_ok": null,
+      "tool_access_ok": null,
+      "guard_contact_ok": null
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-03",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "RIGHT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-RAIL-FIX-RIGHT-03",
+      "bracket": null,
+      "role": "rail-fix",
+      "profile": "round",
+      "center_uv": [
+        166.999992,
+        66.6894265
+      ],
+      "center_xyz": [
+        114.7,
+        -8.000000008223651e-06,
+        68.1894265
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "round bore normal",
+      "angle_local_deg": null,
+      "width": 5.5,
+      "length": 5.5,
+      "travel": 0,
+      "edge_margin": 20.060574,
+      "ligament_min": 50.189427,
+      "bearing_part": null,
+      "bearing_status": null,
+      "bearing_od": null,
+      "coverage_ok": null,
+      "tool_access_ok": null,
+      "guard_contact_ok": null
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-04",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "RIGHT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-RAIL-FIX-RIGHT-04",
+      "bracket": null,
+      "role": "rail-fix",
+      "profile": "round",
+      "center_uv": [
+        234.2659145,
+        66.6894265
+      ],
+      "center_xyz": [
+        114.7,
+        67.26591450000001,
+        68.1894265
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "round bore normal",
+      "angle_local_deg": null,
+      "width": 5.5,
+      "length": 5.5,
+      "travel": 0,
+      "edge_margin": 20.060574,
+      "ligament_min": 61.730621,
+      "bearing_part": null,
+      "bearing_status": null,
+      "bearing_od": null,
+      "coverage_ok": null,
+      "tool_access_ok": null,
+      "guard_contact_ok": null
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-05",
+      "plate": "7U40-R9-AL-LEFT-RIGHT",
+      "plate_instance": "RIGHT",
+      "face": "inside",
+      "joint": "7U40-R9-JNT-RAIL-FIX-RIGHT-05",
+      "bracket": null,
+      "role": "rail-fix",
+      "profile": "round",
+      "center_uv": [
+        301.496536,
+        66.6894265
+      ],
+      "center_xyz": [
+        114.7,
+        134.496536,
+        68.1894265
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "axis_meaning": "round bore normal",
+      "angle_local_deg": null,
+      "width": 5.5,
+      "length": 5.5,
+      "travel": 0,
+      "edge_margin": 20.060574,
+      "ligament_min": 14.574679,
+      "bearing_part": null,
+      "bearing_status": null,
+      "bearing_od": null,
+      "coverage_ok": null,
+      "tool_access_ok": null,
+      "guard_contact_ok": null
+    }
+  ]
+}

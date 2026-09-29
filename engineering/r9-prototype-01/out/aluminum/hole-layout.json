@@ -20,8 +20,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
       "plateId": "7U40-R9-AL-BOTTOM",
       "plateInstance": "BOTTOM",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Z",
@@ -41,8 +44,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
       "plateId": "7U40-R9-AL-BOTTOM",
       "plateInstance": "BOTTOM",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Z",
@@ -62,8 +68,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
       "plateId": "7U40-R9-AL-BOTTOM",
       "plateInstance": "BOTTOM",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Z",
@@ -83,8 +92,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
       "plateId": "7U40-R9-AL-BOTTOM",
       "plateInstance": "BOTTOM",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Z",
@@ -104,8 +116,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
       "plateId": "7U40-R9-AL-BOTTOM",
       "plateInstance": "BOTTOM",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Z",
@@ -125,8 +140,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
       "plateId": "7U40-R9-AL-BOTTOM",
       "plateInstance": "BOTTOM",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Z",
@@ -146,8 +164,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
       "plateId": "7U40-R9-AL-BOTTOM",
       "plateInstance": "BOTTOM",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Z",
@@ -167,8 +188,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
       "plateId": "7U40-R9-AL-BOTTOM",
       "plateInstance": "BOTTOM",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Z",
@@ -188,8 +212,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
       "plateId": "7U40-R9-AL-BOTTOM",
       "plateInstance": "BOTTOM",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Z",
@@ -209,8 +236,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
       "plateId": "7U40-R9-AL-BOTTOM",
       "plateInstance": "BOTTOM",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Y",
@@ -230,8 +260,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
       "plateId": "7U40-R9-AL-FRONT-BACK",
       "plateInstance": "BACK",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Y",
@@ -251,8 +284,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
       "plateId": "7U40-R9-AL-FRONT-BACK",
       "plateInstance": "BACK",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Y",
@@ -272,8 +308,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
       "plateId": "7U40-R9-AL-FRONT-BACK",
       "plateInstance": "BACK",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Y",
@@ -293,8 +332,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
       "plateId": "7U40-R9-AL-FRONT-BACK",
       "plateInstance": "BACK",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Y",
@@ -314,8 +356,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
       "plateId": "7U40-R9-AL-FRONT-BACK",
       "plateInstance": "BACK",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Y",
@@ -335,8 +380,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
       "plateId": "7U40-R9-AL-FRONT-BACK",
       "plateInstance": "BACK",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Y",
@@ -356,8 +404,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
       "plateId": "7U40-R9-AL-FRONT-BACK",
       "plateInstance": "FRONT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Y",
@@ -377,8 +428,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
       "plateId": "7U40-R9-AL-FRONT-BACK",
       "plateInstance": "FRONT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Y",
@@ -398,8 +452,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
       "plateId": "7U40-R9-AL-FRONT-BACK",
       "plateInstance": "FRONT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Y",
@@ -419,8 +476,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
       "plateId": "7U40-R9-AL-FRONT-BACK",
       "plateInstance": "FRONT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Y",
@@ -440,8 +500,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
       "plateId": "7U40-R9-AL-FRONT-BACK",
       "plateInstance": "FRONT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "Y",
@@ -461,8 +524,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
       "plateId": "7U40-R9-AL-FRONT-BACK",
       "plateInstance": "FRONT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -482,8 +548,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "LEFT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -503,8 +572,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "LEFT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -524,8 +596,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "LEFT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -545,8 +620,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "LEFT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -566,8 +644,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "LEFT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -587,8 +668,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "LEFT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -608,8 +692,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "LEFT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -629,8 +716,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "RIGHT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -650,8 +740,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "RIGHT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -671,8 +764,11 @@
       "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "RIGHT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 90,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -692,8 +788,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "RIGHT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -713,8 +812,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "RIGHT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -734,8 +836,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "RIGHT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -755,8 +860,11 @@
       "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
       "plateId": "7U40-R9-AL-LEFT-RIGHT",
       "plateInstance": "RIGHT",
-      "profile": "round",
-      "role": "bracket"
+      "profile": "slot",
+      "role": "bracket",
+      "slotAngleLocalDeg": 0,
+      "slotLengthMm": 7.5,
+      "slotWidthMm": 5.5
     },
     {
       "axis": "X",
@@ -994,8 +1102,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
           "plateId": "7U40-R9-AL-BOTTOM",
           "plateInstance": "BOTTOM",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Z",
@@ -1015,8 +1126,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
           "plateId": "7U40-R9-AL-BOTTOM",
           "plateInstance": "BOTTOM",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Z",
@@ -1036,8 +1150,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
           "plateId": "7U40-R9-AL-BOTTOM",
           "plateInstance": "BOTTOM",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Z",
@@ -1057,8 +1174,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
           "plateId": "7U40-R9-AL-BOTTOM",
           "plateInstance": "BOTTOM",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Z",
@@ -1078,8 +1198,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
           "plateId": "7U40-R9-AL-BOTTOM",
           "plateInstance": "BOTTOM",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Z",
@@ -1099,8 +1222,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
           "plateId": "7U40-R9-AL-BOTTOM",
           "plateInstance": "BOTTOM",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Z",
@@ -1120,8 +1246,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
           "plateId": "7U40-R9-AL-BOTTOM",
           "plateInstance": "BOTTOM",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Z",
@@ -1141,8 +1270,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
           "plateId": "7U40-R9-AL-BOTTOM",
           "plateInstance": "BOTTOM",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Z",
@@ -1162,8 +1294,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
           "plateId": "7U40-R9-AL-BOTTOM",
           "plateInstance": "BOTTOM",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Z",
@@ -1183,8 +1318,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
           "plateId": "7U40-R9-AL-BOTTOM",
           "plateInstance": "BOTTOM",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         }
       ],
       "instances": [
@@ -1249,8 +1387,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
           "plateId": "7U40-R9-AL-FRONT-BACK",
           "plateInstance": "BACK",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Y",
@@ -1270,8 +1411,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
           "plateId": "7U40-R9-AL-FRONT-BACK",
           "plateInstance": "BACK",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Y",
@@ -1291,8 +1435,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
           "plateId": "7U40-R9-AL-FRONT-BACK",
           "plateInstance": "BACK",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Y",
@@ -1312,8 +1459,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
           "plateId": "7U40-R9-AL-FRONT-BACK",
           "plateInstance": "BACK",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Y",
@@ -1333,8 +1483,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
           "plateId": "7U40-R9-AL-FRONT-BACK",
           "plateInstance": "BACK",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Y",
@@ -1354,8 +1507,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
           "plateId": "7U40-R9-AL-FRONT-BACK",
           "plateInstance": "BACK",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Y",
@@ -1375,8 +1531,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
           "plateId": "7U40-R9-AL-FRONT-BACK",
           "plateInstance": "FRONT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Y",
@@ -1396,8 +1555,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
           "plateId": "7U40-R9-AL-FRONT-BACK",
           "plateInstance": "FRONT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Y",
@@ -1417,8 +1579,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
           "plateId": "7U40-R9-AL-FRONT-BACK",
           "plateInstance": "FRONT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Y",
@@ -1438,8 +1603,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
           "plateId": "7U40-R9-AL-FRONT-BACK",
           "plateInstance": "FRONT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Y",
@@ -1459,8 +1627,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
           "plateId": "7U40-R9-AL-FRONT-BACK",
           "plateInstance": "FRONT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "Y",
@@ -1480,8 +1651,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
           "plateId": "7U40-R9-AL-FRONT-BACK",
           "plateInstance": "FRONT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         }
       ],
       "instances": [
@@ -1575,8 +1749,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "LEFT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1596,8 +1773,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "LEFT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1617,8 +1797,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "LEFT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1638,8 +1821,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "LEFT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1659,8 +1845,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "LEFT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1680,8 +1869,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "LEFT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1701,8 +1893,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "LEFT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1722,8 +1917,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "RIGHT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1743,8 +1941,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "RIGHT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1764,8 +1965,11 @@
           "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "RIGHT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 90,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1785,8 +1989,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "RIGHT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1806,8 +2013,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "RIGHT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1827,8 +2037,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "RIGHT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -1848,8 +2061,11 @@
           "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
           "plateId": "7U40-R9-AL-LEFT-RIGHT",
           "plateInstance": "RIGHT",
-          "profile": "round",
-          "role": "bracket"
+          "profile": "slot",
+          "role": "bracket",
+          "slotAngleLocalDeg": 0,
+          "slotLengthMm": 7.5,
+          "slotWidthMm": 5.5
         },
         {
           "axis": "X",
@@ -2132,6 +2348,7 @@
       ]
     }
   ],
+  "profileNote": "Bracket profiles are provisional slots; holeDiameterMm is the slot width and the rail-fix round diameter.",
   "reference": {
     "path": "engineering/r6-body/engineering/7u40/aluminum/hole-layout.json",
     "regressionToleranceMm": 1e-06,

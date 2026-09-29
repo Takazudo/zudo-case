@@ -1,0 +1,59 @@
+{
+  "schema": "zudo-case-r9-slot-checks-v1",
+  "status": "unapproved_prototype",
+  "criteria": {
+    "edgeMarginMinMm": 3.0,
+    "ligamentMinMm": 3.0,
+    "bearingOverlapMm": 1.0,
+    "bearingFormula": "OD >= L + 2*abs(e) + 2*overlap",
+    "bearingRequiredOdMm": 11.5,
+    "guardContactBandMm": 5.0,
+    "toolEnvelopeDiameterMm": 8.0,
+    "toolEnvelopeLengthMm": 12.0
+  },
+  "counts": {
+    "slots": 36,
+    "roundRailFix": 10
+  },
+  "failures": {
+    "edge": [],
+    "ligament": [],
+    "bearingCoverage": [
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+      "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER",
+      "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER"
+    ],
+    "toolAccess": [],
+    "guardContact": []
+  },
+  "bearingProposal": "Provisional 10 mm outer washer fails; candidate OD >= 11.5 mm, subject to fit and supplier confirmation.",
+  "limitations": [
+    "No intentional adjustment along bend lines; along-edge position follows CAD hole spacing.",
+    "Datums: bottom lower face and wall exterior faces. \u4eee\u7de0\u3081 \u2192 \u5916\u5f62/\u76f4\u89d2\u3092\u6574\u3048\u308b \u2192 \u672c\u7de0\u3081.",
+    "An exterior normal driver cylinder was checked against bracket boxes and source PCB/rail bounding envelopes. Driver size and physical access remain provisional.",
+    "Rail-fix holes remain round \u03c65.5: independent rail frame is located by its fixer PCB."
+  ]
+}

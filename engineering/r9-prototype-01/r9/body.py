@@ -1,8 +1,8 @@
 """R9 7U40 body geometry ported from the frozen R6 reference.
 
 `plate_specs(ctx)` exposes the stable hole records and local plate patterns.
-Later tolerance work can pass a custom `hole_cutter` to `make_plate_solid`;
-the normal `build(ctx)` path deliberately keeps all 46 holes round at 5.5 mm.
+`build(ctx)` cuts the adopted candidate slots in 36 bracket locations, while
+keeping the 10 fixer-located rail holes round at 5.5 mm.
 """
 from __future__ import annotations
 
@@ -525,8 +525,8 @@ def _geometry_records(ctx: BuildContext) -> tuple[dict, dict, list[dict], list[H
 def plate_specs(ctx: BuildContext) -> tuple[PlateSpec, ...]:
     """Return plate outlines, assembly transforms, and stable round-hole records.
 
-    The slot worker can use `make_plate_solid(spec, hole_cutter=...)` to cut
-    slot profiles from the same local plate pattern without changing these IDs.
+    The slot module uses these records to cut candidate slot profiles without
+    changing IDs or R6 reference centers.
     """
     return _geometry_records(ctx)[-1]
 
@@ -988,8 +988,18 @@ def _hardware_parts(design: dict, brackets: list[dict], holes: list[HoleRecord],
     return parts, components
 
 
-def _hole_layout_json(sources: dict, design: dict, holes: list[HoleRecord],
+def _hole_layout_json(ctx: BuildContext, sources: dict, design: dict, holes: list[HoleRecord],
                       specs: tuple[PlateSpec, ...]) -> dict:
+    from . import slots
+
+    def exported_hole(hole: HoleRecord) -> dict:
+        record = hole.as_json()
+        if hole.role == "bracket":
+            record.update(profile="slot", slotWidthMm=ctx.value("slots", "slot_width"),
+                          slotLengthMm=ctx.value("slots", "slot_length"),
+                          slotAngleLocalDeg=slots.angle(hole))
+        return record
+
     plate_records = []
     for spec in specs:
         plate_records.append({
@@ -1000,7 +1010,7 @@ def _hole_layout_json(sources: dict, design: dict, holes: list[HoleRecord],
             "holeCountEach": len(spec.pattern_holes),
             "holeCountTotal": len(spec.holes),
             "instances": [instance.as_json() for instance in spec.instances],
-            "holes": [hole.as_json() for hole in spec.holes],
+            "holes": [exported_hole(hole) for hole in spec.holes],
         })
     role_counts = {
         "bracket": sum(hole.role == "bracket" for hole in holes),
@@ -1013,6 +1023,7 @@ def _hole_layout_json(sources: dict, design: dict, holes: list[HoleRecord],
         "units": "mm",
         "status": "unapproved_prototype",
         "holeDiameterMm": design["hole_diameter"],
+        "profileNote": "Bracket profiles are provisional slots; holeDiameterMm is the slot width and the rail-fix round diameter.",
         "plateCount": sum(spec.quantity for spec in specs),
         "totalHoleCount": len(holes),
         "roleCounts": role_counts,
@@ -1022,7 +1033,7 @@ def _hole_layout_json(sources: dict, design: dict, holes: list[HoleRecord],
             "sha256": sources["hashes"]["r6_hole_layout"],
             "regressionToleranceMm": 1e-6,
         },
-        "holes": [hole.as_json() for hole in holes],
+        "holes": [exported_hole(hole) for hole in holes],
         "plates": plate_records,
     }
 
@@ -1081,7 +1092,7 @@ def _body_manifest(sources: dict, ctx: BuildContext, design: dict, brackets: lis
                 "rail-fix": sum(hole.role == "rail-fix" for hole in holes),
             },
             "metadataPath": "out/aluminum/hole-layout.json",
-            "slotConversionHook": "r9.body.plate_specs(ctx) and r9.body.make_plate_solid(spec, hole_cutter=...). build(ctx) leaves all holes round.",
+            "slotConversion": "36 bracket locations use the provisional 5.5 x 7.5 mm slot profiles from params/slots.json; 10 independent rail-fix locations remain round phi 5.5.",
         },
         "brackets": {
             "count": len(brackets),
@@ -1120,18 +1131,21 @@ def _body_manifest(sources: dict, ctx: BuildContext, design: dict, brackets: lis
 
 def build(ctx: BuildContext) -> list[Part]:
     sources, design, bracket_definitions, holes, specs = _geometry_records(ctx)
+    from . import slots
+
     plate_parts = []
     for spec in specs:
+        dxf_holes, dxf_slots = slots.profiles(spec, ctx)
         part = Part(
             id=spec.id,
-            solid=make_plate_solid(spec),
+            solid=make_plate_solid(spec, hole_cutter=lambda hole, thickness: slots.cutter(hole, thickness, ctx)),
             category="aluminum",
             material="A5052 t1.5 mm candidate; black anodizing candidate",
             qty=spec.quantity,
             export_kinds=("step", "stl", "dxf"),
             dxf_outline=spec.outline_local_mm,
-            dxf_holes=tuple((hole.center_local_mm[0], hole.center_local_mm[1], hole.diameter_mm / 2)
-                            for hole in spec.pattern_holes),
+            dxf_holes=dxf_holes,
+            dxf_slots=dxf_slots,
         )
         plate_parts.append(part)
 
@@ -1158,7 +1172,7 @@ def build(ctx: BuildContext) -> list[Part]:
     all_components = [*plate_components, *components]
 
     out = ctx.out
-    hole_layout = _hole_layout_json(sources, design, holes, specs)
+    hole_layout = _hole_layout_json(ctx, sources, design, holes, specs)
     _write_json(out / "aluminum" / "hole-layout.json", hole_layout)
     _write_json(out / "hardware-envelopes" / "body-manifest.json",
                 _body_manifest(sources, ctx, design, bracket_definitions, holes, specs, parts, all_components))
