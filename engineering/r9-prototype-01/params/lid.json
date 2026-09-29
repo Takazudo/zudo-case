@@ -46,27 +46,216 @@
     "unit": "mm",
     "status": "provisional",
     "source": "engineering/r8-preview/preview-parameters.json:7u40.locatorClearanceToGuardMm",
-    "note": "Nominal preview only."
+    "note": "R8 0.7 mm nominal blade clearance retained; not a verified fit."
   },
   "lid_rise": {
     "value": 30,
     "unit": "mm",
     "status": "provisional",
     "source": "engineering/r8-preview/preview-parameters.json:7u40.lidRiseMm",
-    "note": "Knob envelope not measured for every module."
+    "note": "R8 30 mm nominal rise retained; actual knob/cable fit requires physical review."
   },
   "locator_engagement": {
     "value": 12,
     "unit": "mm",
     "status": "provisional",
     "source": "engineering/r8-preview/preview-parameters.json:7u40.locatorEngagementMm",
-    "note": "Preview only."
+    "note": "R8 12 mm nominal insertion retained; blade bottom and seat Z are independent references."
   },
   "locator_thickness": {
     "value": 2,
     "unit": "mm",
     "status": "provisional",
     "source": "engineering/r8-preview/preview-parameters.json:7u40.locatorThicknessMm",
-    "note": "Preview only."
+    "note": "R8 2 mm blade retained."
+  },
+  "frame_wall": {
+    "value": 1.5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/prepare_models.py:7u40",
+    "note": "R7/R8 wall retained."
+  },
+  "frame_seat_z": {
+    "value": 92.7,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/prepare_models.py:7u40",
+    "note": "R8 seat retained; frozen guard seated top is 93.4 mm, so this nominal overlap needs physical fit review."
+  },
+  "plate_bottom_z": {
+    "value": 122.2,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/prepare_models.py:7u40",
+    "note": "R8 plate bottom retained."
+  },
+  "plate_top_z": {
+    "value": 123.7,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/prepare_models.py:7u40",
+    "note": "R8 plate top retained."
+  },
+  "lip_top_z": {
+    "value": 124.0,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/prepare_models.py:7u40",
+    "note": "R8 cut-edge cover lip retained."
+  },
+  "locator_bottom_z": {
+    "value": 80.2,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/prepare_models.py:7u40",
+    "note": "R8 blade bottom retained."
+  },
+  "locator_lead_radius": {
+    "value": 0.4,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/prepare_models.py:7u40",
+    "note": "R8 blade bottom fillet retained."
+  },
+  "blade_bridge_height": {
+    "value": 2.5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/prepare_models.py:7u40",
+    "note": "R8 blade bridge retained."
+  },
+  "plate_thickness": {
+    "value": 1.5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "R7/R8 nominal aluminum plate."
+  },
+  "plate_edge_gap": {
+    "value": 0.6,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "R7 inset behind PA12 rim."
+  },
+  "plate_corner_radius": {
+    "value": 3.0,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "Added nominal corner radius to remove sharp plate corners."
+  },
+  "frame_seam": {
+    "value": 0.4,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "R7 split seam retained."
+  },
+  "ledge_depth": {
+    "value": 8.0,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "R7 plate support ledge retained."
+  },
+  "ledge_thickness": {
+    "value": 1.5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "R7 ledge retained."
+  },
+  "boss_depth": {
+    "value": 4.4,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "R7 assembly M3 boss retained."
+  },
+  "front_screw_fraction": {
+    "value": 0.3,
+    "unit": "ratio",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "R7 front assembly screw station retained."
+  },
+  "side_screw_fraction": {
+    "value": 0.5,
+    "unit": "ratio",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "R7 side assembly screw station retained."
+  },
+  "screw_inset": {
+    "value": 6.0,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "R7 plate/frame screw inset retained."
+  },
+  "assembly_bore_diameter": {
+    "value": 3.4,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "R7 M3 assembly bore; never a lid/body lock."
+  },
+  "assembly_hole_diameter": {
+    "value": 3.4,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "Round plate/frame M3 assembly hole; R7 5.4 mm slot deferred to assembly fit review."
+  },
+  "nut_pocket_af": {
+    "value": 5.9,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "R7 M3 nut seat retained."
+  },
+  "nut_roof_thickness": {
+    "value": 1.5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "R7 nut pocket roof retained."
+  },
+  "module_panel_thickness": {
+    "value": 2,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "Provisional R7 panel assumption, not a universal module limit."
+  },
+  "knob_envelope_height": {
+    "value": 25,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "Provisional R7 knob assumption; confirm actual modules."
+  },
+  "r7_build_lids_sha256": {
+    "value": "d3148327de71097143dc333ac66d8e185685c518ed93518b5219ca1b252db66a",
+    "unit": "sha256",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/build_lids.py",
+    "note": "Read-only R7 source member; obsolete body lock geometry excluded."
+  },
+  "r7_lid_parameters_sha256": {
+    "value": "e3abe09500fbb7cf2daf5f62fa66bf99c14b6c2540ff3004a30c8f140fc52ba4",
+    "unit": "sha256",
+    "status": "provisional",
+    "source": "public/downloads/archive/r7-m3-lid-source.zip:zudo-case-family-preview/lid-parameters.json",
+    "note": "Read-only R7 source member; obsolete body lock geometry excluded."
+  },
+  "locator_x_overhang_from_opening": {
+    "value": 0.5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r8-preview/prepare_models.py:7u40",
+    "note": "R8 broad blade half-width 112.7 mm versus frozen nominal guard opening half-width 112.2 mm; it lies in the front/rear gap, not the side opening. Verify guard fit physically."
   }
 }
