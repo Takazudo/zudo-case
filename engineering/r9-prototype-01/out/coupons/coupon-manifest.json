@@ -363,6 +363,989 @@
     },
     {
       "baselineParameters": {
+        "bodyMetalThicknessMm": 1.5,
+        "couponBoxAssemblyMm": {
+          "max": [
+            50.0,
+            -140.0,
+            126.0
+          ],
+          "min": [
+            20.0,
+            -170.0,
+            60.0
+          ]
+        },
+        "frontWallToRailEnvelopeGapMm": 8.32318,
+        "guardAdhesiveLayerMm": 0.15,
+        "guardFitClearancePerSideMm": 0.15,
+        "guardThicknessMm": 1.2,
+        "lidFrameSeatZMm": 92.7,
+        "lidLocatorBottomZMm": 80.2,
+        "lidLocatorClearanceMm": 0.7,
+        "lidPlateThicknessMm": 1.5
+      },
+      "changedParameter": null,
+      "details": {
+        "components": [
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.0,
+                1.5,
+                31.0
+              ],
+              "maxMm": [
+                50.0,
+                -165.5,
+                91.0
+              ],
+              "minMm": [
+                20.0,
+                -167.0,
+                60.0
+              ]
+            },
+            "dxfTransform": {
+              "basisU": [
+                1,
+                0,
+                0
+              ],
+              "basisV": [
+                0,
+                0,
+                1
+              ],
+              "originAssemblyMm": [
+                20.0,
+                -167.0,
+                60.0
+              ],
+              "thicknessAxis": [
+                0,
+                1,
+                0
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.step",
+              "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.stl",
+              "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.dxf"
+            ],
+            "material": "A5052 aluminum t1.5 candidate",
+            "partId": "7U40-R9-CPN-C2-01-BODY-WALL",
+            "sourcePartId": "7U40-R9-AL-FRONT-BACK"
+          },
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.0,
+                12.586472,
+                20.131989
+              ],
+              "maxMm": [
+                50.0,
+                -144.590349,
+                89.435542
+              ],
+              "minMm": [
+                20.0,
+                -157.17682,
+                69.303554
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.step",
+              "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.stl"
+            ],
+            "material": "Existing 40HP rail source bounding envelope; alloy unconfirmed",
+            "partId": "7U40-R9-CPN-C2-01-RAIL-ENVELOPE",
+            "sourcePartId": "7U40-R9-HW-RAIL-UNIT-ENVELOPE",
+            "sourceRepresentation": "source rail mesh bounding box; rail profile is not represented"
+          },
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.000241,
+                3.700121,
+                6.200121
+              ],
+              "maxMm": [
+                50.000121,
+                -164.5,
+                92.200121
+              ],
+              "minMm": [
+                19.999879,
+                -168.200121,
+                86.0
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.step",
+              "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.stl"
+            ],
+            "material": "PA12-HP black dyed candidate",
+            "partId": "7U40-R9-CPN-C2-01-GUARD",
+            "sourcePartId": "7U40-R9-PA12-GUARD-T1P2-TOP-A",
+            "sourcePlacement": "mirror of candidate TOP-A across assembly YZ plane"
+          },
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.000241,
+                11.0,
+                43.800121
+              ],
+              "maxMm": [
+                50.000121,
+                -157.2,
+                124.0
+              ],
+              "minMm": [
+                19.999879,
+                -168.2,
+                80.199879
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.step",
+              "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.stl"
+            ],
+            "material": "black PA12-HP",
+            "partId": "7U40-R9-CPN-C2-01-LID-FRAME",
+            "sourcePartId": "7U40-R9-PA12-LID-FRAME-FR"
+          },
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.0,
+                26.1,
+                1.501057
+              ],
+              "maxMm": [
+                50.0,
+                -140.0,
+                123.700528
+              ],
+              "minMm": [
+                20.0,
+                -166.1,
+                122.199472
+              ]
+            },
+            "dxfTransform": {
+              "basisU": [
+                1,
+                0,
+                0
+              ],
+              "basisV": [
+                0,
+                1,
+                0
+              ],
+              "originAssemblyMm": [
+                20.0,
+                -166.1,
+                122.199472
+              ],
+              "thicknessAxis": [
+                0,
+                0,
+                1
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.step",
+              "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.stl",
+              "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.dxf"
+            ],
+            "material": "A5052 black anodized candidate",
+            "partId": "7U40-R9-CPN-C2-01-LID-PLATE",
+            "sourcePartId": "7U40-R9-LID-PLATE"
+          }
+        ],
+        "coordinateSystem": "R9 7U40 assembly coordinates; coupon pieces are not recentered",
+        "couponBoxAssemblyMm": {
+          "max": [
+            50.0,
+            -140.0,
+            126.0
+          ],
+          "min": [
+            20.0,
+            -170.0,
+            60.0
+          ]
+        },
+        "cutMethod": "intersection of candidate module solids with one local axis-aligned box",
+        "frontWallInnerFaceYmm": -165.5,
+        "frontWallToRailEnvelopeGapMm": 8.32318,
+        "locatorClearanceMm": 0.7,
+        "railEnvelopeFrontFaceYmm": -157.17682,
+        "railGapNote": "Candidate gap uses the R9 source-rail bounding envelope; the non-manifold rail STL profile is not part of this BREP coupon.",
+        "verticalRemovalPathCheck": {
+          "candidateBrepIntersectionFound": false,
+          "motion": "straight vertical lift in +Z",
+          "physicalLiftOffResult": null,
+          "sampleCount": 15,
+          "sampleStepMm": 1,
+          "sampledRiseMm": [
+            0,
+            14
+          ],
+          "separatedByZBoundsAfterLastSample": true
+        }
+      },
+      "fileHashes": [
+        {
+          "bytes": 16926,
+          "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.step",
+          "sha256": "509e72d0e3990ad39072e6d3e02a6789be105fc3766e13680005f35511886c4c"
+        },
+        {
+          "bytes": 684,
+          "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.stl",
+          "sha256": "9329a39b49b1dcc30d4044269ed2829e21459bc2ccd03824b03832f79ff3a7c7"
+        },
+        {
+          "bytes": 15810,
+          "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.dxf",
+          "sha256": "acb1517d5967f14bcc8cffdd80a526ac298486cc20957b12afef2aa32ed3585f"
+        },
+        {
+          "bytes": 18044,
+          "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.step",
+          "sha256": "6e4f0f33ce9a94193d43d529859c7c01add2869bc6cc6d06f2586e44968504df"
+        },
+        {
+          "bytes": 684,
+          "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.stl",
+          "sha256": "b77858cd64274669fb10369f5e38ab5a0c4bbb89d0824a6ad70debf923fa641b"
+        },
+        {
+          "bytes": 36918,
+          "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.step",
+          "sha256": "44ac4e054155710c65867b71fed2f567819020394214281116ba740342981017"
+        },
+        {
+          "bytes": 7884,
+          "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.stl",
+          "sha256": "e552d0cbe34d6b4f4928840a64f97d834726bf856925bad320de38db6fdf7fda"
+        },
+        {
+          "bytes": 103860,
+          "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.step",
+          "sha256": "3d8fde1016d0cc0e0d6a831b6732cd948288324ff40922ee607e054ecd7ba084"
+        },
+        {
+          "bytes": 42884,
+          "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.stl",
+          "sha256": "01f09250c047a259fd6ea465b1a86f666e1f322278466a8a73d22b786a40c43d"
+        },
+        {
+          "bytes": 20485,
+          "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.step",
+          "sha256": "672460e77ee0c38f980970e00b6032285ded1634a358fe5db704d99f3f8d86a6"
+        },
+        {
+          "bytes": 26084,
+          "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.stl",
+          "sha256": "49e29da18a915bdc1793e61ebd43d695545aeb873c02015d9b3b0fb8a4b48d8f"
+        },
+        {
+          "bytes": 15936,
+          "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.dxf",
+          "sha256": "fd9c87553ef2595bc1b0e57465dd630918af662cbaa20148b56a829a92886d19"
+        }
+      ],
+      "files": [
+        "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.step",
+        "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.stl",
+        "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.dxf",
+        "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.step",
+        "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.stl",
+        "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.step",
+        "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.stl",
+        "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.step",
+        "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.stl",
+        "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.step",
+        "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.stl",
+        "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.dxf"
+      ],
+      "id": "C2-01",
+      "intendedMaterial": "PA12-HP and A5052 t1.5 candidate section; rail envelope is reference-only",
+      "purpose": "Local front body/guard/lid section for locator clearance and plate support trials.",
+      "quantity": 1,
+      "results": {
+        "locatorFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "retention": null
+      }
+    },
+    {
+      "baselineParameters": {
+        "bodyMetalThicknessMm": 1.5,
+        "couponBoxAssemblyMm": {
+          "max": [
+            50.0,
+            -140.0,
+            126.0
+          ],
+          "min": [
+            20.0,
+            -170.0,
+            60.0
+          ]
+        },
+        "frontWallToRailEnvelopeGapMm": 8.32318,
+        "guardAdhesiveLayerMm": 0.15,
+        "guardFitClearancePerSideMm": 0.15,
+        "guardThicknessMm": 1.2,
+        "lidFrameSeatZMm": 92.7,
+        "lidLocatorBottomZMm": 80.2,
+        "lidLocatorClearanceMm": 0.7,
+        "lidPlateThicknessMm": 1.5
+      },
+      "changedParameter": {
+        "baselineValue": 0.7,
+        "couponValue": 0.5,
+        "name": "top_edge_lid_locator_clearance"
+      },
+      "details": {
+        "components": [
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.0,
+                1.5,
+                31.0
+              ],
+              "maxMm": [
+                50.0,
+                -165.5,
+                91.0
+              ],
+              "minMm": [
+                20.0,
+                -167.0,
+                60.0
+              ]
+            },
+            "dxfTransform": {
+              "basisU": [
+                1,
+                0,
+                0
+              ],
+              "basisV": [
+                0,
+                0,
+                1
+              ],
+              "originAssemblyMm": [
+                20.0,
+                -167.0,
+                60.0
+              ],
+              "thicknessAxis": [
+                0,
+                1,
+                0
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.step",
+              "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.stl",
+              "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.dxf"
+            ],
+            "material": "A5052 aluminum t1.5 candidate",
+            "partId": "7U40-R9-CPN-C2-02-BODY-WALL",
+            "sourcePartId": "7U40-R9-AL-FRONT-BACK"
+          },
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.0,
+                12.586472,
+                20.131989
+              ],
+              "maxMm": [
+                50.0,
+                -144.590349,
+                89.435542
+              ],
+              "minMm": [
+                20.0,
+                -157.17682,
+                69.303554
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-rail-envelope-qty1-mm.step",
+              "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-rail-envelope-qty1-mm.stl"
+            ],
+            "material": "Existing 40HP rail source bounding envelope; alloy unconfirmed",
+            "partId": "7U40-R9-CPN-C2-02-RAIL-ENVELOPE",
+            "sourcePartId": "7U40-R9-HW-RAIL-UNIT-ENVELOPE",
+            "sourceRepresentation": "source rail mesh bounding box; rail profile is not represented"
+          },
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.000241,
+                3.700121,
+                6.200121
+              ],
+              "maxMm": [
+                50.000121,
+                -164.5,
+                92.200121
+              ],
+              "minMm": [
+                19.999879,
+                -168.200121,
+                86.0
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-guard-qty1-mm.step",
+              "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-guard-qty1-mm.stl"
+            ],
+            "material": "PA12-HP black dyed candidate",
+            "partId": "7U40-R9-CPN-C2-02-GUARD",
+            "sourcePartId": "7U40-R9-PA12-GUARD-T1P2-TOP-A",
+            "sourcePlacement": "mirror of candidate TOP-A across assembly YZ plane"
+          },
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.000241,
+                11.0,
+                43.800121
+              ],
+              "maxMm": [
+                50.000121,
+                -157.2,
+                124.0
+              ],
+              "minMm": [
+                19.999879,
+                -168.2,
+                80.199879
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-frame-qty1-mm.step",
+              "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-frame-qty1-mm.stl"
+            ],
+            "material": "black PA12-HP",
+            "partId": "7U40-R9-CPN-C2-02-LID-FRAME",
+            "sourcePartId": "7U40-R9-PA12-LID-FRAME-FR"
+          },
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.0,
+                26.1,
+                1.501057
+              ],
+              "maxMm": [
+                50.0,
+                -140.0,
+                123.700528
+              ],
+              "minMm": [
+                20.0,
+                -166.1,
+                122.199472
+              ]
+            },
+            "dxfTransform": {
+              "basisU": [
+                1,
+                0,
+                0
+              ],
+              "basisV": [
+                0,
+                1,
+                0
+              ],
+              "originAssemblyMm": [
+                20.0,
+                -166.1,
+                122.199472
+              ],
+              "thicknessAxis": [
+                0,
+                0,
+                1
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.step",
+              "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.stl",
+              "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.dxf"
+            ],
+            "material": "A5052 black anodized candidate",
+            "partId": "7U40-R9-CPN-C2-02-LID-PLATE",
+            "sourcePartId": "7U40-R9-LID-PLATE"
+          }
+        ],
+        "coordinateSystem": "R9 7U40 assembly coordinates; coupon pieces are not recentered",
+        "couponBoxAssemblyMm": {
+          "max": [
+            50.0,
+            -140.0,
+            126.0
+          ],
+          "min": [
+            20.0,
+            -170.0,
+            60.0
+          ]
+        },
+        "cutMethod": "intersection of candidate module solids with one local axis-aligned box",
+        "frontWallInnerFaceYmm": -165.5,
+        "frontWallToRailEnvelopeGapMm": 8.32318,
+        "locatorClearanceMm": 0.5,
+        "railEnvelopeFrontFaceYmm": -157.17682,
+        "railGapNote": "Candidate gap uses the R9 source-rail bounding envelope; the non-manifold rail STL profile is not part of this BREP coupon.",
+        "verticalRemovalPathCheck": {
+          "candidateBrepIntersectionFound": false,
+          "motion": "straight vertical lift in +Z",
+          "physicalLiftOffResult": null,
+          "sampleCount": 15,
+          "sampleStepMm": 1,
+          "sampledRiseMm": [
+            0,
+            14
+          ],
+          "separatedByZBoundsAfterLastSample": true
+        }
+      },
+      "fileHashes": [
+        {
+          "bytes": 16926,
+          "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.step",
+          "sha256": "509e72d0e3990ad39072e6d3e02a6789be105fc3766e13680005f35511886c4c"
+        },
+        {
+          "bytes": 684,
+          "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.stl",
+          "sha256": "9329a39b49b1dcc30d4044269ed2829e21459bc2ccd03824b03832f79ff3a7c7"
+        },
+        {
+          "bytes": 15810,
+          "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.dxf",
+          "sha256": "acb1517d5967f14bcc8cffdd80a526ac298486cc20957b12afef2aa32ed3585f"
+        },
+        {
+          "bytes": 18044,
+          "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-rail-envelope-qty1-mm.step",
+          "sha256": "6e4f0f33ce9a94193d43d529859c7c01add2869bc6cc6d06f2586e44968504df"
+        },
+        {
+          "bytes": 684,
+          "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-rail-envelope-qty1-mm.stl",
+          "sha256": "b77858cd64274669fb10369f5e38ab5a0c4bbb89d0824a6ad70debf923fa641b"
+        },
+        {
+          "bytes": 36918,
+          "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-guard-qty1-mm.step",
+          "sha256": "44ac4e054155710c65867b71fed2f567819020394214281116ba740342981017"
+        },
+        {
+          "bytes": 7884,
+          "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-guard-qty1-mm.stl",
+          "sha256": "e552d0cbe34d6b4f4928840a64f97d834726bf856925bad320de38db6fdf7fda"
+        },
+        {
+          "bytes": 103829,
+          "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-frame-qty1-mm.step",
+          "sha256": "2391575f832cc59048e08a6ef7cb3b110554ab700c345b74278737762fc82d9d"
+        },
+        {
+          "bytes": 42884,
+          "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-frame-qty1-mm.stl",
+          "sha256": "dac7cc5c01e2192e9bcd701e4c15b8e0f3d1a548c6cf34db9b354fb3e5920465"
+        },
+        {
+          "bytes": 20485,
+          "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.step",
+          "sha256": "672460e77ee0c38f980970e00b6032285ded1634a358fe5db704d99f3f8d86a6"
+        },
+        {
+          "bytes": 26084,
+          "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.stl",
+          "sha256": "49e29da18a915bdc1793e61ebd43d695545aeb873c02015d9b3b0fb8a4b48d8f"
+        },
+        {
+          "bytes": 15936,
+          "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.dxf",
+          "sha256": "fd9c87553ef2595bc1b0e57465dd630918af662cbaa20148b56a829a92886d19"
+        }
+      ],
+      "files": [
+        "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.step",
+        "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.stl",
+        "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.dxf",
+        "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-rail-envelope-qty1-mm.step",
+        "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-rail-envelope-qty1-mm.stl",
+        "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-guard-qty1-mm.step",
+        "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-guard-qty1-mm.stl",
+        "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-frame-qty1-mm.step",
+        "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-frame-qty1-mm.stl",
+        "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.step",
+        "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.stl",
+        "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.dxf"
+      ],
+      "id": "C2-02",
+      "intendedMaterial": "PA12-HP and A5052 t1.5 candidate section; rail envelope is reference-only",
+      "purpose": "Local front body/guard/lid section for locator clearance and plate support trials.",
+      "quantity": 1,
+      "results": {
+        "locatorFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "retention": null
+      }
+    },
+    {
+      "baselineParameters": {
+        "bodyMetalThicknessMm": 1.5,
+        "couponBoxAssemblyMm": {
+          "max": [
+            50.0,
+            -140.0,
+            126.0
+          ],
+          "min": [
+            20.0,
+            -170.0,
+            60.0
+          ]
+        },
+        "frontWallToRailEnvelopeGapMm": 8.32318,
+        "guardAdhesiveLayerMm": 0.15,
+        "guardFitClearancePerSideMm": 0.15,
+        "guardThicknessMm": 1.2,
+        "lidFrameSeatZMm": 92.7,
+        "lidLocatorBottomZMm": 80.2,
+        "lidLocatorClearanceMm": 0.7,
+        "lidPlateThicknessMm": 1.5
+      },
+      "changedParameter": {
+        "baselineValue": 0.7,
+        "couponValue": 0.9,
+        "name": "top_edge_lid_locator_clearance"
+      },
+      "details": {
+        "components": [
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.0,
+                1.5,
+                31.0
+              ],
+              "maxMm": [
+                50.0,
+                -165.5,
+                91.0
+              ],
+              "minMm": [
+                20.0,
+                -167.0,
+                60.0
+              ]
+            },
+            "dxfTransform": {
+              "basisU": [
+                1,
+                0,
+                0
+              ],
+              "basisV": [
+                0,
+                0,
+                1
+              ],
+              "originAssemblyMm": [
+                20.0,
+                -167.0,
+                60.0
+              ],
+              "thicknessAxis": [
+                0,
+                1,
+                0
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.step",
+              "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.stl",
+              "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.dxf"
+            ],
+            "material": "A5052 aluminum t1.5 candidate",
+            "partId": "7U40-R9-CPN-C2-03-BODY-WALL",
+            "sourcePartId": "7U40-R9-AL-FRONT-BACK"
+          },
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.0,
+                12.586472,
+                20.131989
+              ],
+              "maxMm": [
+                50.0,
+                -144.590349,
+                89.435542
+              ],
+              "minMm": [
+                20.0,
+                -157.17682,
+                69.303554
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-rail-envelope-qty1-mm.step",
+              "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-rail-envelope-qty1-mm.stl"
+            ],
+            "material": "Existing 40HP rail source bounding envelope; alloy unconfirmed",
+            "partId": "7U40-R9-CPN-C2-03-RAIL-ENVELOPE",
+            "sourcePartId": "7U40-R9-HW-RAIL-UNIT-ENVELOPE",
+            "sourceRepresentation": "source rail mesh bounding box; rail profile is not represented"
+          },
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.000241,
+                3.700121,
+                6.200121
+              ],
+              "maxMm": [
+                50.000121,
+                -164.5,
+                92.200121
+              ],
+              "minMm": [
+                19.999879,
+                -168.200121,
+                86.0
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-guard-qty1-mm.step",
+              "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-guard-qty1-mm.stl"
+            ],
+            "material": "PA12-HP black dyed candidate",
+            "partId": "7U40-R9-CPN-C2-03-GUARD",
+            "sourcePartId": "7U40-R9-PA12-GUARD-T1P2-TOP-A",
+            "sourcePlacement": "mirror of candidate TOP-A across assembly YZ plane"
+          },
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.000241,
+                11.0,
+                43.800121
+              ],
+              "maxMm": [
+                50.000121,
+                -157.2,
+                124.0
+              ],
+              "minMm": [
+                19.999879,
+                -168.2,
+                80.199879
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-frame-qty1-mm.step",
+              "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-frame-qty1-mm.stl"
+            ],
+            "material": "black PA12-HP",
+            "partId": "7U40-R9-CPN-C2-03-LID-FRAME",
+            "sourcePartId": "7U40-R9-PA12-LID-FRAME-FR"
+          },
+          {
+            "boundsAssemblyMm": {
+              "dimensionsMm": [
+                30.0,
+                26.1,
+                1.501057
+              ],
+              "maxMm": [
+                50.0,
+                -140.0,
+                123.700528
+              ],
+              "minMm": [
+                20.0,
+                -166.1,
+                122.199472
+              ]
+            },
+            "dxfTransform": {
+              "basisU": [
+                1,
+                0,
+                0
+              ],
+              "basisV": [
+                0,
+                1,
+                0
+              ],
+              "originAssemblyMm": [
+                20.0,
+                -166.1,
+                122.199472
+              ],
+              "thicknessAxis": [
+                0,
+                0,
+                1
+              ]
+            },
+            "files": [
+              "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.step",
+              "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.stl",
+              "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.dxf"
+            ],
+            "material": "A5052 black anodized candidate",
+            "partId": "7U40-R9-CPN-C2-03-LID-PLATE",
+            "sourcePartId": "7U40-R9-LID-PLATE"
+          }
+        ],
+        "coordinateSystem": "R9 7U40 assembly coordinates; coupon pieces are not recentered",
+        "couponBoxAssemblyMm": {
+          "max": [
+            50.0,
+            -140.0,
+            126.0
+          ],
+          "min": [
+            20.0,
+            -170.0,
+            60.0
+          ]
+        },
+        "cutMethod": "intersection of candidate module solids with one local axis-aligned box",
+        "frontWallInnerFaceYmm": -165.5,
+        "frontWallToRailEnvelopeGapMm": 8.32318,
+        "locatorClearanceMm": 0.9,
+        "railEnvelopeFrontFaceYmm": -157.17682,
+        "railGapNote": "Candidate gap uses the R9 source-rail bounding envelope; the non-manifold rail STL profile is not part of this BREP coupon.",
+        "verticalRemovalPathCheck": {
+          "candidateBrepIntersectionFound": false,
+          "motion": "straight vertical lift in +Z",
+          "physicalLiftOffResult": null,
+          "sampleCount": 15,
+          "sampleStepMm": 1,
+          "sampledRiseMm": [
+            0,
+            14
+          ],
+          "separatedByZBoundsAfterLastSample": true
+        }
+      },
+      "fileHashes": [
+        {
+          "bytes": 16926,
+          "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.step",
+          "sha256": "509e72d0e3990ad39072e6d3e02a6789be105fc3766e13680005f35511886c4c"
+        },
+        {
+          "bytes": 684,
+          "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.stl",
+          "sha256": "9329a39b49b1dcc30d4044269ed2829e21459bc2ccd03824b03832f79ff3a7c7"
+        },
+        {
+          "bytes": 15810,
+          "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.dxf",
+          "sha256": "acb1517d5967f14bcc8cffdd80a526ac298486cc20957b12afef2aa32ed3585f"
+        },
+        {
+          "bytes": 18044,
+          "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-rail-envelope-qty1-mm.step",
+          "sha256": "6e4f0f33ce9a94193d43d529859c7c01add2869bc6cc6d06f2586e44968504df"
+        },
+        {
+          "bytes": 684,
+          "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-rail-envelope-qty1-mm.stl",
+          "sha256": "b77858cd64274669fb10369f5e38ab5a0c4bbb89d0824a6ad70debf923fa641b"
+        },
+        {
+          "bytes": 36918,
+          "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-guard-qty1-mm.step",
+          "sha256": "44ac4e054155710c65867b71fed2f567819020394214281116ba740342981017"
+        },
+        {
+          "bytes": 7884,
+          "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-guard-qty1-mm.stl",
+          "sha256": "e552d0cbe34d6b4f4928840a64f97d834726bf856925bad320de38db6fdf7fda"
+        },
+        {
+          "bytes": 103850,
+          "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-frame-qty1-mm.step",
+          "sha256": "977e43fa3bbc9fc95793c979ae0a0eaf62d95a9921f04dccf3e455d60076cb14"
+        },
+        {
+          "bytes": 42884,
+          "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-frame-qty1-mm.stl",
+          "sha256": "f9cbea7407e21ffcfcb8157f964790d177ebfbf1926971460fe9695a0112db16"
+        },
+        {
+          "bytes": 20485,
+          "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.step",
+          "sha256": "672460e77ee0c38f980970e00b6032285ded1634a358fe5db704d99f3f8d86a6"
+        },
+        {
+          "bytes": 26084,
+          "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.stl",
+          "sha256": "49e29da18a915bdc1793e61ebd43d695545aeb873c02015d9b3b0fb8a4b48d8f"
+        },
+        {
+          "bytes": 15936,
+          "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.dxf",
+          "sha256": "fd9c87553ef2595bc1b0e57465dd630918af662cbaa20148b56a829a92886d19"
+        }
+      ],
+      "files": [
+        "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.step",
+        "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.stl",
+        "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.dxf",
+        "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-rail-envelope-qty1-mm.step",
+        "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-rail-envelope-qty1-mm.stl",
+        "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-guard-qty1-mm.step",
+        "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-guard-qty1-mm.stl",
+        "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-frame-qty1-mm.step",
+        "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-frame-qty1-mm.stl",
+        "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.step",
+        "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.stl",
+        "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.dxf"
+      ],
+      "id": "C2-03",
+      "intendedMaterial": "PA12-HP and A5052 t1.5 candidate section; rail envelope is reference-only",
+      "purpose": "Local front body/guard/lid section for locator clearance and plate support trials.",
+      "quantity": 1,
+      "results": {
+        "locatorFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "retention": null
+      }
+    },
+    {
+      "baselineParameters": {
         "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
         "plateThicknessMm": 1.5,
         "slotLengthMm": 7.5,
@@ -659,14 +1642,19 @@
       "sha256": "4edbbb96cbff952e96597bbd0097a89e689f807708e033b7403436a565e2e0f6"
     },
     {
-      "bytes": 2983,
+      "bytes": 3672,
       "path": "engineering/r9-prototype-01/params/coupons.json",
-      "sha256": "838a09e4bda3a567844d7ccac9faa62c1252be100cd3bb4683dd9e5bf3c22645"
+      "sha256": "9829bfd697b5c1916bb70216af7298edd7b25b2c8edb29b85e672c2796b3e5f7"
     },
     {
       "bytes": 2970,
       "path": "engineering/r9-prototype-01/params/guards.json",
       "sha256": "e5884eb74db58c83eed8b83e24db15a82fdfc7b2bc52bafb89c177c28e7afac1"
+    },
+    {
+      "bytes": 9258,
+      "path": "engineering/r9-prototype-01/params/lid.json",
+      "sha256": "d366a297c82f8d847d432e15e18180aaffe1af5202dc88c9a2aa7ac922d6849b"
     },
     {
       "bytes": 1310,
