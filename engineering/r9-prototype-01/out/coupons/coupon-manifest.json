@@ -1,0 +1,683 @@
+{
+  "coupons": [
+    {
+      "baselineParameters": {
+        "adhesiveLayerMm": 0.15,
+        "aluminumThicknessMm": 1.5,
+        "fitClearancePerSideMm": 0.15,
+        "guardThicknessMm": 1.2,
+        "segmentLengthMm": 40.0
+      },
+      "changedParameter": null,
+      "fileHashes": [
+        {
+          "bytes": 278127,
+          "path": "out/coupons/7u40-r9-cpn-c1-01-qty1-mm.step",
+          "sha256": "a9142b4e7c87ebda71b722973de74bf4857e85d3322ee069b1f3fcb302d76435"
+        },
+        {
+          "bytes": 230384,
+          "path": "out/coupons/7u40-r9-cpn-c1-01-qty1-mm.stl",
+          "sha256": "a18618e471d78609b5e4e38b278dfe1f9190694db6754cc058e17996d908af5d"
+        }
+      ],
+      "files": [
+        "out/coupons/7u40-r9-cpn-c1-01-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c1-01-qty1-mm.stl"
+      ],
+      "id": "C1-01",
+      "intendedMaterial": "PA12-HP black dyed candidate",
+      "purpose": "Baseline 40 mm body-guard section to trial over the matching 1.5 mm aluminum edge.",
+      "quantity": 1,
+      "results": {
+        "fastenerFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "retention": null
+      }
+    },
+    {
+      "baselineParameters": {
+        "adhesiveLayerMm": 0.15,
+        "aluminumThicknessMm": 1.5,
+        "fitClearancePerSideMm": 0.15,
+        "guardThicknessMm": 1.2,
+        "segmentLengthMm": 40.0
+      },
+      "changedParameter": {
+        "baselineValue": 0.15,
+        "couponValue": 0.1,
+        "name": "fitClearancePerSideMm"
+      },
+      "fileHashes": [
+        {
+          "bytes": 323260,
+          "path": "out/coupons/7u40-r9-cpn-c1-02-qty1-mm.step",
+          "sha256": "2c7c3fcc9241a1d6e76ca8645ec2c5d3d16190d8e873cda8307bb4de1d0a8917"
+        },
+        {
+          "bytes": 305284,
+          "path": "out/coupons/7u40-r9-cpn-c1-02-qty1-mm.stl",
+          "sha256": "712357a0ef88b378b9476544822bdb56222ac1bcafcfdbad4587b3528c7338ed"
+        }
+      ],
+      "files": [
+        "out/coupons/7u40-r9-cpn-c1-02-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c1-02-qty1-mm.stl"
+      ],
+      "id": "C1-02",
+      "intendedMaterial": "PA12-HP black dyed candidate",
+      "purpose": "Compare one guard-section parameter: fitClearancePerSideMm.",
+      "quantity": 1,
+      "results": {
+        "fastenerFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "retention": null
+      }
+    },
+    {
+      "baselineParameters": {
+        "adhesiveLayerMm": 0.15,
+        "aluminumThicknessMm": 1.5,
+        "fitClearancePerSideMm": 0.15,
+        "guardThicknessMm": 1.2,
+        "segmentLengthMm": 40.0
+      },
+      "changedParameter": {
+        "baselineValue": 0.15,
+        "couponValue": 0.25,
+        "name": "fitClearancePerSideMm"
+      },
+      "fileHashes": [
+        {
+          "bytes": 356023,
+          "path": "out/coupons/7u40-r9-cpn-c1-03-qty1-mm.step",
+          "sha256": "6dd8da5c9e40df22226925a3bc6e2ebaf4337edea5ebb41eb5f8deb20a0c62ec"
+        },
+        {
+          "bytes": 386984,
+          "path": "out/coupons/7u40-r9-cpn-c1-03-qty1-mm.stl",
+          "sha256": "10a9fb51c9f7b6007a80ca25c971b0232a9caa91144135d7c24d86092fe7d50a"
+        }
+      ],
+      "files": [
+        "out/coupons/7u40-r9-cpn-c1-03-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c1-03-qty1-mm.stl"
+      ],
+      "id": "C1-03",
+      "intendedMaterial": "PA12-HP black dyed candidate",
+      "purpose": "Compare one guard-section parameter: fitClearancePerSideMm.",
+      "quantity": 1,
+      "results": {
+        "fastenerFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "retention": null
+      }
+    },
+    {
+      "baselineParameters": {
+        "adhesiveLayerMm": 0.15,
+        "aluminumThicknessMm": 1.5,
+        "fitClearancePerSideMm": 0.15,
+        "guardThicknessMm": 1.2,
+        "segmentLengthMm": 40.0
+      },
+      "changedParameter": {
+        "baselineValue": 0.15,
+        "couponValue": 0.0,
+        "name": "adhesiveLayerMm"
+      },
+      "fileHashes": [
+        {
+          "bytes": 299244,
+          "path": "out/coupons/7u40-r9-cpn-c1-04-qty1-mm.step",
+          "sha256": "250b4220084e1e490fd0839c181cd9948fa090a9dbe95e21afd09e99e745a6fa"
+        },
+        {
+          "bytes": 221384,
+          "path": "out/coupons/7u40-r9-cpn-c1-04-qty1-mm.stl",
+          "sha256": "2eeb2fd644c389e8670bf105ff55a64f8a3107e39b1faf943e95fd3b5495b2ee"
+        }
+      ],
+      "files": [
+        "out/coupons/7u40-r9-cpn-c1-04-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c1-04-qty1-mm.stl"
+      ],
+      "id": "C1-04",
+      "intendedMaterial": "PA12-HP black dyed candidate",
+      "purpose": "Compare one guard-section parameter: adhesiveLayerMm.",
+      "quantity": 1,
+      "results": {
+        "fastenerFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "retention": null
+      }
+    },
+    {
+      "baselineParameters": {
+        "adhesiveLayerMm": 0.15,
+        "aluminumThicknessMm": 1.5,
+        "fitClearancePerSideMm": 0.15,
+        "guardThicknessMm": 1.2,
+        "segmentLengthMm": 40.0
+      },
+      "changedParameter": {
+        "baselineValue": 1.2,
+        "couponValue": 1.0,
+        "name": "guardThicknessMm"
+      },
+      "fileHashes": [
+        {
+          "bytes": 358899,
+          "path": "out/coupons/7u40-r9-cpn-c1-05-qty1-mm.step",
+          "sha256": "0e6434e389c3b8d39cd1499eca5ce979b4c5d8e151efcfc103a39a49aab44ff1"
+        },
+        {
+          "bytes": 303084,
+          "path": "out/coupons/7u40-r9-cpn-c1-05-qty1-mm.stl",
+          "sha256": "2608ee694d945692b0c0a18b68e0e21bc9e16cbdc939c45b0ecfa3a547a5d2a0"
+        }
+      ],
+      "files": [
+        "out/coupons/7u40-r9-cpn-c1-05-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c1-05-qty1-mm.stl"
+      ],
+      "id": "C1-05",
+      "intendedMaterial": "PA12-HP black dyed candidate",
+      "purpose": "Compare one guard-section parameter: guardThicknessMm.",
+      "quantity": 1,
+      "results": {
+        "fastenerFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "retention": null
+      }
+    },
+    {
+      "baselineParameters": {
+        "adhesiveLayerMm": 0.15,
+        "aluminumThicknessMm": 1.5,
+        "fitClearancePerSideMm": 0.15,
+        "guardThicknessMm": 1.2,
+        "segmentLengthMm": 40.0,
+        "splitEndReliefMm": 0.5
+      },
+      "changedParameter": null,
+      "details": {
+        "centerGapMm": 0.5,
+        "pieceLengthMm": 19.75,
+        "piecePlacementMm": [
+          0.0,
+          20.25
+        ],
+        "piecesPerCoupon": 2
+      },
+      "fileHashes": [
+        {
+          "bytes": 364511,
+          "path": "out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.step",
+          "sha256": "0f804e12a6459a8f180f7931ab9ba10dce1df6709d67edf4e6c2979e2855edb1"
+        },
+        {
+          "bytes": 359884,
+          "path": "out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.stl",
+          "sha256": "262d3514385c4aeed57e3cd070e74ca680096510169b6a29c212c53b74e22511"
+        },
+        {
+          "bytes": 364511,
+          "path": "out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.step",
+          "sha256": "0f804e12a6459a8f180f7931ab9ba10dce1df6709d67edf4e6c2979e2855edb1"
+        },
+        {
+          "bytes": 359884,
+          "path": "out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.stl",
+          "sha256": "262d3514385c4aeed57e3cd070e74ca680096510169b6a29c212c53b74e22511"
+        }
+      ],
+      "files": [
+        "out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.stl",
+        "out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.stl"
+      ],
+      "id": "C1-06",
+      "intendedMaterial": "PA12-HP black dyed candidate",
+      "purpose": "Short two-piece pair for checking the centered guard split relief on an aluminum edge.",
+      "quantity": 2,
+      "results": {
+        "fastenerFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "retention": null
+      }
+    },
+    {
+      "baselineParameters": {
+        "adhesiveLayerMm": 0.15,
+        "aluminumThicknessMm": 1.5,
+        "fitClearancePerSideMm": 0.15,
+        "guardThicknessMm": 1.2,
+        "segmentLengthMm": 40.0,
+        "splitEndReliefMm": 0.5
+      },
+      "changedParameter": {
+        "baselineValue": 0.5,
+        "couponValue": 0.0,
+        "name": "splitEndReliefMm"
+      },
+      "details": {
+        "centerGapMm": 0.0,
+        "pieceLengthMm": 20.0,
+        "piecePlacementMm": [
+          0.0,
+          20.0
+        ],
+        "piecesPerCoupon": 2
+      },
+      "fileHashes": [
+        {
+          "bytes": 283070,
+          "path": "out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.step",
+          "sha256": "ccfc899dced7e4766624a10998e2151f24e3cef1fb387de50033b5b789ef6636"
+        },
+        {
+          "bytes": 224384,
+          "path": "out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.stl",
+          "sha256": "b1e420b4eca7002724fb47e17e9ded3db6757b4fbc5705edd0f47fb92dd1e863"
+        },
+        {
+          "bytes": 283070,
+          "path": "out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.step",
+          "sha256": "ccfc899dced7e4766624a10998e2151f24e3cef1fb387de50033b5b789ef6636"
+        },
+        {
+          "bytes": 224384,
+          "path": "out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.stl",
+          "sha256": "b1e420b4eca7002724fb47e17e9ded3db6757b4fbc5705edd0f47fb92dd1e863"
+        }
+      ],
+      "files": [
+        "out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.stl",
+        "out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.stl"
+      ],
+      "id": "C1-07",
+      "intendedMaterial": "PA12-HP black dyed candidate",
+      "purpose": "Short two-piece pair for checking the centered guard split relief on an aluminum edge.",
+      "quantity": 2,
+      "results": {
+        "fastenerFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "retention": null
+      }
+    },
+    {
+      "baselineParameters": {
+        "aluminumThicknessMm": 1.5,
+        "edgeHeightMm": 20.0,
+        "lengthMm": 40.0
+      },
+      "changedParameter": null,
+      "details": {
+        "reusedFor": [
+          "C1-01",
+          "C1-02",
+          "C1-03",
+          "C1-04",
+          "C1-05",
+          "C1-06",
+          "C1-07"
+        ]
+      },
+      "fileHashes": [
+        {
+          "bytes": 15400,
+          "path": "out/coupons/7u40-r9-cpn-c1-al-edge-qty1-mm.step",
+          "sha256": "005a24e3686a0fb486d75e92ca1b471719d66795a5085345456a597bd7e549cc"
+        },
+        {
+          "bytes": 15782,
+          "path": "out/coupons/7u40-r9-cpn-c1-al-edge-qty1-mm.dxf",
+          "sha256": "cfbfb94964fd001e00b3fff272d9bd80482b918533a98401b2fba4e222236d0f"
+        }
+      ],
+      "files": [
+        "out/coupons/7u40-r9-cpn-c1-al-edge-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c1-al-edge-qty1-mm.dxf"
+      ],
+      "id": "C1-AL-EDGE",
+      "intendedMaterial": "A5052 aluminum t1.5 candidate",
+      "purpose": "Reusable small plate-edge fixture for the C1 PA12 guard coupons.",
+      "quantity": 1,
+      "results": {
+        "fastenerFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "retention": null
+      }
+    },
+    {
+      "baselineParameters": {
+        "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+        "plateThicknessMm": 1.5,
+        "slotLengthMm": 7.5,
+        "slotWidthMm": 5.5
+      },
+      "changedParameter": null,
+      "details": {
+        "pairedPlateCount": 2,
+        "physicalScrewAndWasherSelection": "provisional",
+        "plates": [
+          {
+            "couponHoleCenterMm": [
+              16.0,
+              11.5
+            ],
+            "holeDiameterMm": 5.5,
+            "plateFace": "BOTTOM",
+            "slotAngleDeg": 90,
+            "sourceBracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+            "sourceEdgeOffsetMm": 11.5,
+            "sourceHoleId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+            "sourceJointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN"
+          },
+          {
+            "couponHoleCenterMm": [
+              16.0,
+              10.0
+            ],
+            "holeDiameterMm": 5.5,
+            "plateFace": "WALL",
+            "slotAngleDeg": 90,
+            "sourceBracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+            "sourceEdgeOffsetMm": 10.0,
+            "sourceHoleId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+            "sourceJointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN"
+          }
+        ],
+        "profile": "slot",
+        "sourceJointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+        "trialHoleDiameterMm": null,
+        "trialSlotLengthMm": 7.5
+      },
+      "fileHashes": [
+        {
+          "bytes": 32291,
+          "path": "out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.step",
+          "sha256": "a250dda6531aa5cc21d360ec6b758aa3dc46964bc39812a40333e5c1c33ec87b"
+        },
+        {
+          "bytes": 16266,
+          "path": "out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.dxf",
+          "sha256": "57cbf74b25e8756cb80e06be475a035616f02879238623301bf70ecc76e47e7c"
+        },
+        {
+          "bytes": 32209,
+          "path": "out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.step",
+          "sha256": "0ffece8d4bc2e1daf2febb845320893912507e999da6593e88850d7cdc491a8c"
+        },
+        {
+          "bytes": 16263,
+          "path": "out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.dxf",
+          "sha256": "2414b343bbf33c0ab93b31c7c24c627ff81fb99a0ca613a0e95fd9cd1a18b2e5"
+        }
+      ],
+      "files": [
+        "out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.dxf",
+        "out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.dxf"
+      ],
+      "id": "C3-01",
+      "intendedMaterial": "A5052 aluminum t1.5 candidate",
+      "purpose": "Two-face edge coupons for trialing a real L bracket, fasteners, washer coverage, adjustment and clamping.",
+      "quantity": 1,
+      "results": {
+        "bracketFit": null,
+        "fastenerFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "washerCoverage": null
+      }
+    },
+    {
+      "baselineParameters": {
+        "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+        "plateThicknessMm": 1.5,
+        "slotLengthMm": 7.5,
+        "slotWidthMm": 5.5
+      },
+      "changedParameter": {
+        "baselineValue": 7.5,
+        "couponValue": 8.5,
+        "name": "slotLengthMm"
+      },
+      "details": {
+        "pairedPlateCount": 2,
+        "physicalScrewAndWasherSelection": "provisional",
+        "plates": [
+          {
+            "couponHoleCenterMm": [
+              16.0,
+              11.5
+            ],
+            "holeDiameterMm": 5.5,
+            "plateFace": "BOTTOM",
+            "slotAngleDeg": 90,
+            "sourceBracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+            "sourceEdgeOffsetMm": 11.5,
+            "sourceHoleId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+            "sourceJointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN"
+          },
+          {
+            "couponHoleCenterMm": [
+              16.0,
+              10.0
+            ],
+            "holeDiameterMm": 5.5,
+            "plateFace": "WALL",
+            "slotAngleDeg": 90,
+            "sourceBracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+            "sourceEdgeOffsetMm": 10.0,
+            "sourceHoleId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+            "sourceJointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN"
+          }
+        ],
+        "profile": "slot",
+        "sourceJointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+        "trialHoleDiameterMm": null,
+        "trialSlotLengthMm": 8.5
+      },
+      "fileHashes": [
+        {
+          "bytes": 32221,
+          "path": "out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.step",
+          "sha256": "c97070bc259cb2465cda8b15d997d58f156941d90787d0e0256b964e0b3b66cf"
+        },
+        {
+          "bytes": 16266,
+          "path": "out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.dxf",
+          "sha256": "8441f6e8bdce564262a3500d16380fd7f863af98247ee13b9204ce0f63a40ee8"
+        },
+        {
+          "bytes": 32269,
+          "path": "out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.step",
+          "sha256": "b29008e9ce4d86e4b6951c28bda0872dcaa88b1aeb57d5d668b17f89057ba9c2"
+        },
+        {
+          "bytes": 16263,
+          "path": "out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.dxf",
+          "sha256": "1b57082da9d56b0a0b9854f2781e444b12f2f6546c591dc346cc57be9c030c50"
+        }
+      ],
+      "files": [
+        "out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.dxf",
+        "out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.dxf"
+      ],
+      "id": "C3-02",
+      "intendedMaterial": "A5052 aluminum t1.5 candidate",
+      "purpose": "Two-face edge coupons for trialing a real L bracket, fasteners, washer coverage, adjustment and clamping.",
+      "quantity": 1,
+      "results": {
+        "bracketFit": null,
+        "fastenerFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "washerCoverage": null
+      }
+    },
+    {
+      "baselineParameters": {
+        "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+        "plateThicknessMm": 1.5,
+        "slotLengthMm": 7.5,
+        "slotWidthMm": 5.5
+      },
+      "changedParameter": {
+        "baselineValue": "slot",
+        "couponValue": "round phi 5.5 mm",
+        "name": "profile"
+      },
+      "details": {
+        "pairedPlateCount": 2,
+        "physicalScrewAndWasherSelection": "provisional",
+        "plates": [
+          {
+            "couponHoleCenterMm": [
+              16.0,
+              11.5
+            ],
+            "holeDiameterMm": 5.5,
+            "plateFace": "BOTTOM",
+            "slotAngleDeg": null,
+            "sourceBracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+            "sourceEdgeOffsetMm": 11.5,
+            "sourceHoleId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+            "sourceJointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN"
+          },
+          {
+            "couponHoleCenterMm": [
+              16.0,
+              10.0
+            ],
+            "holeDiameterMm": 5.5,
+            "plateFace": "WALL",
+            "slotAngleDeg": null,
+            "sourceBracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+            "sourceEdgeOffsetMm": 10.0,
+            "sourceHoleId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+            "sourceJointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN"
+          }
+        ],
+        "profile": "round",
+        "sourceJointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+        "trialHoleDiameterMm": 5.5,
+        "trialSlotLengthMm": null
+      },
+      "fileHashes": [
+        {
+          "bytes": 18982,
+          "path": "out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.step",
+          "sha256": "d06644a1f9a86008dbd536c6cdf7647df5a55ca0afb125afdbccca6fe9ae2560"
+        },
+        {
+          "bytes": 15882,
+          "path": "out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.dxf",
+          "sha256": "46728be4508067b2c542116c46bc643f7c346a8f31644f630a2c197e60445ec7"
+        },
+        {
+          "bytes": 18974,
+          "path": "out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.step",
+          "sha256": "ae5b4e875a21afa56bc93a6753cbeb0a77f510f9fb7972cffb23d4a2fe9583b4"
+        },
+        {
+          "bytes": 15882,
+          "path": "out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.dxf",
+          "sha256": "77b3fd15298e7cf4cb056c4818b11fd78a6c3de112bfef68059b9666889f362c"
+        }
+      ],
+      "files": [
+        "out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.dxf",
+        "out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.step",
+        "out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.dxf"
+      ],
+      "id": "C3-03",
+      "intendedMaterial": "A5052 aluminum t1.5 candidate",
+      "purpose": "Two-face edge coupons for trialing a real L bracket, fasteners, washer coverage, adjustment and clamping.",
+      "quantity": 1,
+      "results": {
+        "bracketFit": null,
+        "fastenerFit": null,
+        "notes": null,
+        "physicalFit": null,
+        "washerCoverage": null
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "bytes": 50199,
+      "path": "engineering/r6-body/build_geometry.py",
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d"
+    },
+    {
+      "bytes": 23552,
+      "path": "engineering/r6-body/design-parameters.json",
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b"
+    },
+    {
+      "bytes": 3573,
+      "path": "engineering/r6-body/engineering/7u40/aluminum/hole-layout.json",
+      "sha256": "ad555b88e51ab3b79d789871fb2fccc9e5c0926b89d80098cdb95b73d66ceb06"
+    },
+    {
+      "bytes": 627540,
+      "path": "engineering/r6-body/source-data/panels/panel-geometry.json",
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c"
+    },
+    {
+      "bytes": 29684,
+      "path": "engineering/r6-body/source-data/rail40/nuts-v2-40hp-single.stl",
+      "sha256": "88a153fe717f582f80656fe10c74df5ec1717f53e6b202fff078532b00b06c5a"
+    },
+    {
+      "bytes": 5151,
+      "path": "engineering/r6-body/source-data/rail40/rail_dimensions.json",
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210"
+    },
+    {
+      "bytes": 7745,
+      "path": "engineering/r9-prototype-01/params/body.json",
+      "sha256": "4edbbb96cbff952e96597bbd0097a89e689f807708e033b7403436a565e2e0f6"
+    },
+    {
+      "bytes": 2983,
+      "path": "engineering/r9-prototype-01/params/coupons.json",
+      "sha256": "838a09e4bda3a567844d7ccac9faa62c1252be100cd3bb4683dd9e5bf3c22645"
+    },
+    {
+      "bytes": 2970,
+      "path": "engineering/r9-prototype-01/params/guards.json",
+      "sha256": "e5884eb74db58c83eed8b83e24db15a82fdfc7b2bc52bafb89c177c28e7afac1"
+    },
+    {
+      "bytes": 1310,
+      "path": "engineering/r9-prototype-01/params/slots.json",
+      "sha256": "23fe334aa6bb96e90a6493c1d6eef66c1f7cbce67382d2fee196b60f5310e8bd"
+    }
+  ],
+  "manufacturingApproval": false,
+  "model": "7u40",
+  "revision": "R9-PROTOTYPE-01",
+  "schema": "zudo-case-r9-coupons-v1",
+  "status": "unapproved_prototype",
+  "units": "mm"
+}
