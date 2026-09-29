@@ -1,0 +1,3725 @@
+{
+  "browserEvidence": {
+    "available": true,
+    "checkFile": "engineering/r9-prototype-01/out/preview/browser-check.json",
+    "scope": "offline browser preview interactions and viewport only; not CAD validation, physical fit, strength, or transport testing",
+    "screenshots": [
+      {
+        "bytes": 261973,
+        "path": "engineering/r9-prototype-01/preview/shots/r9-prototype-01-daily.png",
+        "sha256": "a50a25351109c945ee6d62e39ba300203485b5ca7755e0b1d49509d00f362085"
+      },
+      {
+        "bytes": 248260,
+        "path": "engineering/r9-prototype-01/preview/shots/r9-prototype-01-open-mobile.png",
+        "sha256": "792467c9a825b022c1af8107e9e01f1ac697a86a5f77202dd2a0a80f92be14f1"
+      },
+      {
+        "bytes": 269307,
+        "path": "engineering/r9-prototype-01/preview/shots/r9-prototype-01-travel.png",
+        "sha256": "44242d56d3af416b057a922476c3723f9f521c8e766de0ee467ca3e91d9aaa8d"
+      }
+    ],
+    "status": "passed"
+  },
+  "buildModules": [
+    "body",
+    "slots",
+    "guards",
+    "lid",
+    "coupons",
+    "preview_data",
+    "checks"
+  ],
+  "generatedBy": "engineering/r9-prototype-01/r9/package.py",
+  "inputs": [
+    {
+      "bytes": 50199,
+      "kind": "r6_source_data",
+      "path": "engineering/r6-body/build_geometry.py",
+      "purpose": "R6 7u40 geometry source ported by this module",
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d"
+    },
+    {
+      "bytes": 23552,
+      "kind": "r6_source_data",
+      "path": "engineering/r6-body/design-parameters.json",
+      "purpose": "R6 7u40 source parameter values",
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b"
+    },
+    {
+      "bytes": 3573,
+      "kind": "r6_source_data",
+      "path": "engineering/r6-body/engineering/7u40/aluminum/hole-layout.json",
+      "purpose": "1e-6 mm plate outline and hole-center regression reference",
+      "sha256": "ad555b88e51ab3b79d789871fb2fccc9e5c0926b89d80098cdb95b73d66ceb06"
+    },
+    {
+      "bytes": 627540,
+      "kind": "r6_source_data",
+      "path": "engineering/r6-body/source-data/panels/panel-geometry.json",
+      "purpose": "PCB outline and cutout polygons; basis for exact 1.6 mm PCB solids",
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c"
+    },
+    {
+      "bytes": 29684,
+      "kind": "r6_source_data",
+      "path": "engineering/r6-body/source-data/rail40/nuts-v2-40hp-single.stl",
+      "purpose": "Original 40HP source rail; hash recorded, never rescaled or converted to BREP",
+      "sha256": "88a153fe717f582f80656fe10c74df5ec1717f53e6b202fff078532b00b06c5a"
+    },
+    {
+      "bytes": 5151,
+      "kind": "r6_source_data",
+      "path": "engineering/r6-body/source-data/rail40/rail_dimensions.json",
+      "purpose": "40HP source mesh bounding box and rail registration",
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210"
+    },
+    {
+      "bytes": 4901,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/CONTRACTS.md",
+      "sha256": "b4555a85df738324e8f6b3e85c45ea9f8cbee40e8569d4f672396fab85ff80e0"
+    },
+    {
+      "bytes": 5008,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/VALIDATION.md",
+      "sha256": "4636d750f1c69290930acad073f94884ad6b9773b54800e58b67c1883bd1690a"
+    },
+    {
+      "bytes": 9590,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/build.py",
+      "sha256": "ebd7ae3d44c11b96979803022d3312f60cbc5a3cef7d04eaf1a37b51a59d008c"
+    },
+    {
+      "bytes": 7745,
+      "kind": "parameter",
+      "path": "engineering/r9-prototype-01/params/body.json",
+      "sha256": "4edbbb96cbff952e96597bbd0097a89e689f807708e033b7403436a565e2e0f6"
+    },
+    {
+      "bytes": 3672,
+      "kind": "parameter",
+      "path": "engineering/r9-prototype-01/params/coupons.json",
+      "sha256": "9829bfd697b5c1916bb70216af7298edd7b25b2c8edb29b85e672c2796b3e5f7"
+    },
+    {
+      "bytes": 2970,
+      "kind": "parameter",
+      "path": "engineering/r9-prototype-01/params/guards.json",
+      "sha256": "e5884eb74db58c83eed8b83e24db15a82fdfc7b2bc52bafb89c177c28e7afac1"
+    },
+    {
+      "bytes": 9258,
+      "kind": "parameter",
+      "path": "engineering/r9-prototype-01/params/lid.json",
+      "sha256": "d366a297c82f8d847d432e15e18180aaffe1af5202dc88c9a2aa7ac922d6849b"
+    },
+    {
+      "bytes": 1310,
+      "kind": "parameter",
+      "path": "engineering/r9-prototype-01/params/slots.json",
+      "sha256": "23fe334aa6bb96e90a6493c1d6eef66c1f7cbce67382d2fee196b60f5310e8bd"
+    },
+    {
+      "bytes": 1081,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/preview/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "bytes": 17948,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/preview/app.js",
+      "sha256": "99e746c7c7a4840a2b1d3796bc5f090f0eabb42803ad2519b3998d6477313851"
+    },
+    {
+      "bytes": 3069,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/preview/build.py",
+      "sha256": "472ac3a0150f7e6a9642eb7c9acba12328304d349e0381a76ed3819fc395f1f4"
+    },
+    {
+      "bytes": 6233,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/preview/index.html",
+      "sha256": "1a6a93f6f0e689ea05dc8e93f07b76acf8d23f0c022ca647c0e9ee055a91d528"
+    },
+    {
+      "bytes": 9125,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/preview/styles.css",
+      "sha256": "44140de754d82e651ce4306d32792cbb40cd63f4aec5652e52122128df1f8049"
+    },
+    {
+      "bytes": 701097,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/preview/three-bundle.js",
+      "sha256": "125141ea584858dbe766bb6a8d105afaf1fad389b8b30b4cd27b5607c0da4682"
+    },
+    {
+      "bytes": 252,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/pyproject.toml",
+      "sha256": "174770d463eb7abed3f35b992a7c0c4795f1180903bbf28ddd83cd1cb9645291"
+    },
+    {
+      "bytes": 74,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/r9/__init__.py",
+      "sha256": "5c6a2696a34ee2a3f126415e09d48cb3794a5bb683da9ece5bdad07fd9433b45"
+    },
+    {
+      "bytes": 53550,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/r9/body.py",
+      "sha256": "b01583f8a56988677456f68addcf0e3d2d82cc27bb16207baa09b3c355bddce4"
+    },
+    {
+      "bytes": 16091,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/r9/checks.py",
+      "sha256": "581aeba37d32c43fa18da97c2398e94691e4ed467604fdddda5671f49105c83d"
+    },
+    {
+      "bytes": 9341,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/r9/common.py",
+      "sha256": "5e481855254671a36fb0944ddc55dd82a9d14f900d23e7a884148ca6fc2a6a26"
+    },
+    {
+      "bytes": 33984,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/r9/coupons.py",
+      "sha256": "7f3cca81709311b0192fe74fef83a2e99f3fe84246a03edc22edb1fcacc715e1"
+    },
+    {
+      "bytes": 9243,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/r9/guards.py",
+      "sha256": "7891af27536fb5ead6d6ea06ae5c107b26854361da2b067e01547b9030398fd0"
+    },
+    {
+      "bytes": 6476,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/r9/lid.py",
+      "sha256": "3dc716987ff80ed686d962b8180e46564ef57af8d9f9bf075a3ac4ccfd843f67"
+    },
+    {
+      "bytes": 47953,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/r9/package.py",
+      "sha256": "287099a104f126972399e1c7ce895442b328d55db4f54484555033318b7adfdd"
+    },
+    {
+      "bytes": 38199,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/r9/preview_data.py",
+      "sha256": "32c1552d633f36aef8d12bf70cef6fe22c8d7233e3fb6a79f403079387d11711"
+    },
+    {
+      "bytes": 10898,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/r9/slots.py",
+      "sha256": "201b9e8d7cf0075c35eaaf0fe88599426460505a7cabc7de70301b06cc1efefe"
+    },
+    {
+      "bytes": 809,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/r9/types.py",
+      "sha256": "7efa51147c60c23512f1bf88ab1b1e53306f0c97eee547c367594ef268eb1c6f"
+    },
+    {
+      "bytes": 54033,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/r9/validation.py",
+      "sha256": "ed559719596c8dadf458eaf5d2f7c3217278b4ed40213d5b70e82260413c444c"
+    },
+    {
+      "bytes": 91548,
+      "kind": "generator_source",
+      "path": "engineering/r9-prototype-01/uv.lock",
+      "sha256": "3bd3803775af001e1c73c6da3db238bc3a99f2b7b33baab11cf8e323a80fff85"
+    },
+    {
+      "bytes": 32415,
+      "kind": "document_registry_reference",
+      "path": "project/current-spec.json",
+      "sha256": "0d251cbd9b290a5158e213591a88e87a0e813b1aad57c81d728bb2a6ca526b0a"
+    },
+    {
+      "bytes": 4388,
+      "kind": "open_issue_status_reference",
+      "path": "project/open-issues.json",
+      "sha256": "d517e1311a26f9a8894ad4772051c70d5de09c9192fa371a083597432fbc274f"
+    },
+    {
+      "bytes": 3196,
+      "kind": "user_decisions_reference",
+      "path": "project/source-notes/user-decisions.md",
+      "sha256": "0e1692d770600bc7d9da3e4995584e776bca04d831cac2d5db47950742d1f54b"
+    },
+    {
+      "bytes": 34534918,
+      "kind": "r7_archive",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip",
+      "sha256": "6f9711bd82b16edf0f3d7ae6d3da3b98fd15ea053d3efda145d26d2aaa1403cf"
+    }
+  ],
+  "manifestPolicy": {
+    "browserEvidence": "Browser records cover the offline preview only and are not CAD or physical test results.",
+    "hashBasis": "SHA-256 and byte counts are calculated from delivered/current file bytes.",
+    "selfHash": "outputs-manifest.json is deliberately excluded from outputs to avoid a self-reference."
+  },
+  "model": "7u40",
+  "outputs": [
+    {
+      "bytes": 4063,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/DIFF-FROM-R6-R8.md",
+      "sha256": "9605b90585e85fbe22dc9859cec634f9cd1051fc83110b54b74b2ea51fcedd3c"
+    },
+    {
+      "bytes": 1310,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/SIZE-INVENTORY.json",
+      "sha256": "c1e94ff32db5db063feff308e3273f9112c618382a168ce41f55a1061d58aaa6"
+    },
+    {
+      "bytes": 20704,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-al-bottom-qty1-mm.dxf",
+      "sha256": "026b11f039d0ccc2262f4ae7ca5e654ebc6b8aa213d91d6383dcdb5fc53ef9b0"
+    },
+    {
+      "bytes": 185308,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-al-bottom-qty1-mm.step",
+      "sha256": "40d90fc8d1ab7a51abf6fa05e6601c077ab106cef085ce67635bc89671e467e5"
+    },
+    {
+      "bytes": 258684,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-al-bottom-qty1-mm.stl",
+      "sha256": "604e7d337f7b11b7f7af1a58d93d0f8b5f1b9106ac5ff3e2b7b16647ed2aaea5"
+    },
+    {
+      "bytes": 18702,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-al-front-back-qty2-mm.dxf",
+      "sha256": "02780cf37e7a63150e467adceb42f85e82d299e1501043b6d587be5f683cded8"
+    },
+    {
+      "bytes": 119106,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-al-front-back-qty2-mm.step",
+      "sha256": "884a2bb5f878cb08ab0d5d53bbe8547b6a25670fc3b1383bac737d1f800f5e9f"
+    },
+    {
+      "bytes": 155484,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-al-front-back-qty2-mm.stl",
+      "sha256": "e285842bd6a4e3256c9128d9dee1bfb03bd3a0b3fb39cf704d971075010801ab"
+    },
+    {
+      "bytes": 19762,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-al-left-right-qty2-mm.dxf",
+      "sha256": "419865c0e020a8cc1973d682bdafb11555d377cbd05afeb753595ef2835b2c87"
+    },
+    {
+      "bytes": 159840,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-al-left-right-qty2-mm.step",
+      "sha256": "4f0e94f8def7b147875be8eb479659d24b94761475e010a923f9ebbf142a7314"
+    },
+    {
+      "bytes": 308284,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-al-left-right-qty2-mm.stl",
+      "sha256": "cb434dece222c296b3b0dab1369ff74292ce6118edebf0a3bc573fdd818c277d"
+    },
+    {
+      "bytes": 16942,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-lid-plate-qty1-mm.dxf",
+      "sha256": "84d98670db7aa33bea3ce2b8f8f23ec56f9efe8763e0083e6c9960a7604239ad"
+    },
+    {
+      "bytes": 62197,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-lid-plate-qty1-mm.step",
+      "sha256": "326965e90750194263f5f8de18d57aee9eb50957d9a6755e9a20108ea0ca3701"
+    },
+    {
+      "bytes": 229484,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-lid-plate-qty1-mm.stl",
+      "sha256": "9de754459171c8e5ccb08ddd6a0f4b5edb4e65173c5aeb2bb6c4e7d5e115f6a3"
+    },
+    {
+      "bytes": 63632,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/hole-layout.json",
+      "sha256": "702cd4e5a60495561cdcff597dd077ba92e7560ec0c0e4fe11215e9328f35beb"
+    },
+    {
+      "bytes": 41968,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/hole-table.json",
+      "sha256": "89cded8a5fe252bcf9b0f0427326b2264b5cde18087a433d3600254ce4aad7bf"
+    },
+    {
+      "bytes": 3122,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/aluminum/slot-checks.json",
+      "sha256": "27d7dd35cf6e20f62baae28c118657229af4893b3858f26bdeea19283ff5ae18"
+    },
+    {
+      "bytes": 1203753,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/assembly/7u40-r9-reference-assembly-NOT-APPROVED.step",
+      "sha256": "636248d02de3bc046824ce5305a09c07443ddda2e31a3590027c49e1fdec0462"
+    },
+    {
+      "bytes": 6549,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/assembly/assembly-checks.json",
+      "sha256": "c9ee9c179fcb38ac68ba5cca693b3ec21eda724ddeb892c11313c44ab0d23f90"
+    },
+    {
+      "bytes": 505,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/assembly/assembly.json",
+      "sha256": "8ee51b8354ea6ec35a7df123d7f4b8291241fc25d4b5bdcef0ae9e701c92324b"
+    },
+    {
+      "bytes": 17788,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/bom.csv",
+      "sha256": "ff278c370b091fb6115050f49ea18ed2bc58c8680daad4d264688a32ee0caf68"
+    },
+    {
+      "bytes": 33887,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/bom.json",
+      "sha256": "e0b1ea33992a4a002009628a08697421c065ca385741dd88118068d0ed9aa9e0"
+    },
+    {
+      "bytes": 37774,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/build-log.json",
+      "sha256": "0d382f0c14e97a34704b31e692f0b3d8af8ce393fdc6c182384aa3351fad3dc5"
+    },
+    {
+      "bytes": 278127,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-01-qty1-mm.step",
+      "sha256": "a9142b4e7c87ebda71b722973de74bf4857e85d3322ee069b1f3fcb302d76435"
+    },
+    {
+      "bytes": 230384,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-01-qty1-mm.stl",
+      "sha256": "a18618e471d78609b5e4e38b278dfe1f9190694db6754cc058e17996d908af5d"
+    },
+    {
+      "bytes": 323260,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-02-qty1-mm.step",
+      "sha256": "2c7c3fcc9241a1d6e76ca8645ec2c5d3d16190d8e873cda8307bb4de1d0a8917"
+    },
+    {
+      "bytes": 305284,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-02-qty1-mm.stl",
+      "sha256": "712357a0ef88b378b9476544822bdb56222ac1bcafcfdbad4587b3528c7338ed"
+    },
+    {
+      "bytes": 356023,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-03-qty1-mm.step",
+      "sha256": "6dd8da5c9e40df22226925a3bc6e2ebaf4337edea5ebb41eb5f8deb20a0c62ec"
+    },
+    {
+      "bytes": 386984,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-03-qty1-mm.stl",
+      "sha256": "10a9fb51c9f7b6007a80ca25c971b0232a9caa91144135d7c24d86092fe7d50a"
+    },
+    {
+      "bytes": 299244,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-04-qty1-mm.step",
+      "sha256": "250b4220084e1e490fd0839c181cd9948fa090a9dbe95e21afd09e99e745a6fa"
+    },
+    {
+      "bytes": 221384,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-04-qty1-mm.stl",
+      "sha256": "2eeb2fd644c389e8670bf105ff55a64f8a3107e39b1faf943e95fd3b5495b2ee"
+    },
+    {
+      "bytes": 358899,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-05-qty1-mm.step",
+      "sha256": "0e6434e389c3b8d39cd1499eca5ce979b4c5d8e151efcfc103a39a49aab44ff1"
+    },
+    {
+      "bytes": 303084,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-05-qty1-mm.stl",
+      "sha256": "2608ee694d945692b0c0a18b68e0e21bc9e16cbdc939c45b0ecfa3a547a5d2a0"
+    },
+    {
+      "bytes": 364511,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.step",
+      "sha256": "0f804e12a6459a8f180f7931ab9ba10dce1df6709d67edf4e6c2979e2855edb1"
+    },
+    {
+      "bytes": 359884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.stl",
+      "sha256": "262d3514385c4aeed57e3cd070e74ca680096510169b6a29c212c53b74e22511"
+    },
+    {
+      "bytes": 364511,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.step",
+      "sha256": "0f804e12a6459a8f180f7931ab9ba10dce1df6709d67edf4e6c2979e2855edb1"
+    },
+    {
+      "bytes": 359884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.stl",
+      "sha256": "262d3514385c4aeed57e3cd070e74ca680096510169b6a29c212c53b74e22511"
+    },
+    {
+      "bytes": 283070,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.step",
+      "sha256": "ccfc899dced7e4766624a10998e2151f24e3cef1fb387de50033b5b789ef6636"
+    },
+    {
+      "bytes": 224384,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.stl",
+      "sha256": "b1e420b4eca7002724fb47e17e9ded3db6757b4fbc5705edd0f47fb92dd1e863"
+    },
+    {
+      "bytes": 283070,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.step",
+      "sha256": "ccfc899dced7e4766624a10998e2151f24e3cef1fb387de50033b5b789ef6636"
+    },
+    {
+      "bytes": 224384,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.stl",
+      "sha256": "b1e420b4eca7002724fb47e17e9ded3db6757b4fbc5705edd0f47fb92dd1e863"
+    },
+    {
+      "bytes": 15782,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-al-edge-qty1-mm.dxf",
+      "sha256": "cfbfb94964fd001e00b3fff272d9bd80482b918533a98401b2fba4e222236d0f"
+    },
+    {
+      "bytes": 15400,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-al-edge-qty1-mm.step",
+      "sha256": "005a24e3686a0fb486d75e92ca1b471719d66795a5085345456a597bd7e549cc"
+    },
+    {
+      "bytes": 16266,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.dxf",
+      "sha256": "57cbf74b25e8756cb80e06be475a035616f02879238623301bf70ecc76e47e7c"
+    },
+    {
+      "bytes": 32291,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.step",
+      "sha256": "a250dda6531aa5cc21d360ec6b758aa3dc46964bc39812a40333e5c1c33ec87b"
+    },
+    {
+      "bytes": 16263,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.dxf",
+      "sha256": "2414b343bbf33c0ab93b31c7c24c627ff81fb99a0ca613a0e95fd9cd1a18b2e5"
+    },
+    {
+      "bytes": 32209,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.step",
+      "sha256": "0ffece8d4bc2e1daf2febb845320893912507e999da6593e88850d7cdc491a8c"
+    },
+    {
+      "bytes": 16266,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.dxf",
+      "sha256": "8441f6e8bdce564262a3500d16380fd7f863af98247ee13b9204ce0f63a40ee8"
+    },
+    {
+      "bytes": 32221,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.step",
+      "sha256": "c97070bc259cb2465cda8b15d997d58f156941d90787d0e0256b964e0b3b66cf"
+    },
+    {
+      "bytes": 16263,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.dxf",
+      "sha256": "1b57082da9d56b0a0b9854f2781e444b12f2f6546c591dc346cc57be9c030c50"
+    },
+    {
+      "bytes": 32269,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.step",
+      "sha256": "b29008e9ce4d86e4b6951c28bda0872dcaa88b1aeb57d5d668b17f89057ba9c2"
+    },
+    {
+      "bytes": 15882,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.dxf",
+      "sha256": "46728be4508067b2c542116c46bc643f7c346a8f31644f630a2c197e60445ec7"
+    },
+    {
+      "bytes": 18982,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.step",
+      "sha256": "d06644a1f9a86008dbd536c6cdf7647df5a55ca0afb125afdbccca6fe9ae2560"
+    },
+    {
+      "bytes": 15882,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.dxf",
+      "sha256": "77b3fd15298e7cf4cb056c4818b11fd78a6c3de112bfef68059b9666889f362c"
+    },
+    {
+      "bytes": 18974,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.step",
+      "sha256": "ae5b4e875a21afa56bc93a6753cbeb0a77f510f9fb7972cffb23d4a2fe9583b4"
+    },
+    {
+      "bytes": 15810,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.dxf",
+      "sha256": "acb1517d5967f14bcc8cffdd80a526ac298486cc20957b12afef2aa32ed3585f"
+    },
+    {
+      "bytes": 16926,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.step",
+      "sha256": "509e72d0e3990ad39072e6d3e02a6789be105fc3766e13680005f35511886c4c"
+    },
+    {
+      "bytes": 684,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.stl",
+      "sha256": "9329a39b49b1dcc30d4044269ed2829e21459bc2ccd03824b03832f79ff3a7c7"
+    },
+    {
+      "bytes": 36918,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.step",
+      "sha256": "44ac4e054155710c65867b71fed2f567819020394214281116ba740342981017"
+    },
+    {
+      "bytes": 7884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.stl",
+      "sha256": "e552d0cbe34d6b4f4928840a64f97d834726bf856925bad320de38db6fdf7fda"
+    },
+    {
+      "bytes": 103860,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.step",
+      "sha256": "3d8fde1016d0cc0e0d6a831b6732cd948288324ff40922ee607e054ecd7ba084"
+    },
+    {
+      "bytes": 42884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.stl",
+      "sha256": "01f09250c047a259fd6ea465b1a86f666e1f322278466a8a73d22b786a40c43d"
+    },
+    {
+      "bytes": 15936,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.dxf",
+      "sha256": "fd9c87553ef2595bc1b0e57465dd630918af662cbaa20148b56a829a92886d19"
+    },
+    {
+      "bytes": 20485,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.step",
+      "sha256": "672460e77ee0c38f980970e00b6032285ded1634a358fe5db704d99f3f8d86a6"
+    },
+    {
+      "bytes": 26084,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.stl",
+      "sha256": "49e29da18a915bdc1793e61ebd43d695545aeb873c02015d9b3b0fb8a4b48d8f"
+    },
+    {
+      "bytes": 18044,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.step",
+      "sha256": "6e4f0f33ce9a94193d43d529859c7c01add2869bc6cc6d06f2586e44968504df"
+    },
+    {
+      "bytes": 684,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.stl",
+      "sha256": "b77858cd64274669fb10369f5e38ab5a0c4bbb89d0824a6ad70debf923fa641b"
+    },
+    {
+      "bytes": 15810,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.dxf",
+      "sha256": "acb1517d5967f14bcc8cffdd80a526ac298486cc20957b12afef2aa32ed3585f"
+    },
+    {
+      "bytes": 16926,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.step",
+      "sha256": "509e72d0e3990ad39072e6d3e02a6789be105fc3766e13680005f35511886c4c"
+    },
+    {
+      "bytes": 684,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.stl",
+      "sha256": "9329a39b49b1dcc30d4044269ed2829e21459bc2ccd03824b03832f79ff3a7c7"
+    },
+    {
+      "bytes": 36918,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-guard-qty1-mm.step",
+      "sha256": "44ac4e054155710c65867b71fed2f567819020394214281116ba740342981017"
+    },
+    {
+      "bytes": 7884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-guard-qty1-mm.stl",
+      "sha256": "e552d0cbe34d6b4f4928840a64f97d834726bf856925bad320de38db6fdf7fda"
+    },
+    {
+      "bytes": 103829,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-frame-qty1-mm.step",
+      "sha256": "2391575f832cc59048e08a6ef7cb3b110554ab700c345b74278737762fc82d9d"
+    },
+    {
+      "bytes": 42884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-frame-qty1-mm.stl",
+      "sha256": "dac7cc5c01e2192e9bcd701e4c15b8e0f3d1a548c6cf34db9b354fb3e5920465"
+    },
+    {
+      "bytes": 15936,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.dxf",
+      "sha256": "fd9c87553ef2595bc1b0e57465dd630918af662cbaa20148b56a829a92886d19"
+    },
+    {
+      "bytes": 20485,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.step",
+      "sha256": "672460e77ee0c38f980970e00b6032285ded1634a358fe5db704d99f3f8d86a6"
+    },
+    {
+      "bytes": 26084,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.stl",
+      "sha256": "49e29da18a915bdc1793e61ebd43d695545aeb873c02015d9b3b0fb8a4b48d8f"
+    },
+    {
+      "bytes": 18044,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-rail-envelope-qty1-mm.step",
+      "sha256": "6e4f0f33ce9a94193d43d529859c7c01add2869bc6cc6d06f2586e44968504df"
+    },
+    {
+      "bytes": 684,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-rail-envelope-qty1-mm.stl",
+      "sha256": "b77858cd64274669fb10369f5e38ab5a0c4bbb89d0824a6ad70debf923fa641b"
+    },
+    {
+      "bytes": 15810,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.dxf",
+      "sha256": "acb1517d5967f14bcc8cffdd80a526ac298486cc20957b12afef2aa32ed3585f"
+    },
+    {
+      "bytes": 16926,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.step",
+      "sha256": "509e72d0e3990ad39072e6d3e02a6789be105fc3766e13680005f35511886c4c"
+    },
+    {
+      "bytes": 684,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.stl",
+      "sha256": "9329a39b49b1dcc30d4044269ed2829e21459bc2ccd03824b03832f79ff3a7c7"
+    },
+    {
+      "bytes": 36918,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-guard-qty1-mm.step",
+      "sha256": "44ac4e054155710c65867b71fed2f567819020394214281116ba740342981017"
+    },
+    {
+      "bytes": 7884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-guard-qty1-mm.stl",
+      "sha256": "e552d0cbe34d6b4f4928840a64f97d834726bf856925bad320de38db6fdf7fda"
+    },
+    {
+      "bytes": 103850,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-frame-qty1-mm.step",
+      "sha256": "977e43fa3bbc9fc95793c979ae0a0eaf62d95a9921f04dccf3e455d60076cb14"
+    },
+    {
+      "bytes": 42884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-frame-qty1-mm.stl",
+      "sha256": "f9cbea7407e21ffcfcb8157f964790d177ebfbf1926971460fe9695a0112db16"
+    },
+    {
+      "bytes": 15936,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.dxf",
+      "sha256": "fd9c87553ef2595bc1b0e57465dd630918af662cbaa20148b56a829a92886d19"
+    },
+    {
+      "bytes": 20485,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.step",
+      "sha256": "672460e77ee0c38f980970e00b6032285ded1634a358fe5db704d99f3f8d86a6"
+    },
+    {
+      "bytes": 26084,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.stl",
+      "sha256": "49e29da18a915bdc1793e61ebd43d695545aeb873c02015d9b3b0fb8a4b48d8f"
+    },
+    {
+      "bytes": 18044,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-rail-envelope-qty1-mm.step",
+      "sha256": "6e4f0f33ce9a94193d43d529859c7c01add2869bc6cc6d06f2586e44968504df"
+    },
+    {
+      "bytes": 684,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-rail-envelope-qty1-mm.stl",
+      "sha256": "b77858cd64274669fb10369f5e38ab5a0c4bbb89d0824a6ad70debf923fa641b"
+    },
+    {
+      "bytes": 55644,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/coupons/coupon-manifest.json",
+      "sha256": "204ca7c9aeb8b29cab172d4697c467c8f0a9bfa0287320e6969e141eb0f69407"
+    },
+    {
+      "bytes": 9712,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-case-mount-bolt-qty10-mm.step",
+      "sha256": "021b0fe34dcc77e6fb6550a7e9fff805b73b570c0cdc60169dec222785a3e95a"
+    },
+    {
+      "bytes": 50284,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-case-mount-bolt-qty10-mm.stl",
+      "sha256": "e4f5c29667794033544b2da51e2cddcf46a5294a3aec649d6be9068c0b10286b"
+    },
+    {
+      "bytes": 5613,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-foot-qty4-mm.step",
+      "sha256": "f3fd4456cded630e7365cc84017f3c741de131e1f9da4fcf13d4da55276afb3a"
+    },
+    {
+      "bytes": 25084,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-foot-qty4-mm.stl",
+      "sha256": "846ea2ae840234be3aa782253e537de299452bb4bbcbb0d31bafb36bad5b7e8d"
+    },
+    {
+      "bytes": 9470,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-inner-spacer-qty10-mm.step",
+      "sha256": "129ef55d4ee49e1e34f785b89ba6b9f3990debf825088e4e3786b14fb784c29d"
+    },
+    {
+      "bytes": 50484,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-inner-spacer-qty10-mm.stl",
+      "sha256": "88ce77abc905c640b4527ddf3e4e2def584aabd6fb1f4abc01873e4168343002"
+    },
+    {
+      "bytes": 27289,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-m5-nut-qty46-mm.step",
+      "sha256": "5d77dcf9652a9816e4c9a6caac3fddcdccfee51d867ef8e63e4d212482e02aaf"
+    },
+    {
+      "bytes": 26484,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-m5-nut-qty46-mm.stl",
+      "sha256": "a726619f0770bab8e7ac4f7cfc15ad978f44866e68a688aa7713db05ba333c9b"
+    },
+    {
+      "bytes": 29761,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-panel-bracket-qty18-mm.step",
+      "sha256": "d620fd66f9eb9fcc1a9ead241cc767ce232bd5e636ffebf0c73d5ccf98af7c29"
+    },
+    {
+      "bytes": 51884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-panel-bracket-qty18-mm.stl",
+      "sha256": "a50b2d76be2d5ef244703b6557ee714ef78fb1fd592030bf27ad7f6796d5b5d2"
+    },
+    {
+      "bytes": 9481,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-panel-joint-bolt-qty36-mm.step",
+      "sha256": "1da1d75528cd8d78efbbb35d881df610ea5c79a13cc205301d6e1b122bcb22c5"
+    },
+    {
+      "bytes": 50284,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-panel-joint-bolt-qty36-mm.stl",
+      "sha256": "10abaa065279be776d6ad8030e50c52ac7117e41d2ec5a54547a1e2b0978250c"
+    },
+    {
+      "bytes": 9709,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-rail-end-bolt-qty12-mm.step",
+      "sha256": "958efd560f11ebe52ebae81a27369d2ca81c740c1c1c008ea2b19960ae6580c7"
+    },
+    {
+      "bytes": 50284,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-rail-end-bolt-qty12-mm.stl",
+      "sha256": "fb7dc99f6c7a18d4d42a894d2632e16f236ac6c9e9598801d756c033acd082b2"
+    },
+    {
+      "bytes": 16174,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-rail-unit-envelope-qty6-mm.step",
+      "sha256": "c11af9f310108c37e19dc8b9837b2d9cc8c084c09845704fcf921c1f2c7c8472"
+    },
+    {
+      "bytes": 684,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-rail-unit-envelope-qty6-mm.stl",
+      "sha256": "ccfb6c8b6c0842e071bda2310e87793735108ffc7caeb9fa8d68adc5e31930cc"
+    },
+    {
+      "bytes": 9470,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-washer-1mm-qty46-mm.step",
+      "sha256": "2ecfc1cedfbae9494a2c64e065c91e1a35ac2d21d35bf3cd10d6f7384fd9762d"
+    },
+    {
+      "bytes": 50484,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-hw-washer-1mm-qty46-mm.stl",
+      "sha256": "bbe28d7dca64b792ce53c0ff70c90169ba49708bf3e55c24a838e0071e9a5842"
+    },
+    {
+      "bytes": 12774700,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-pcb-fixer-qty2-mm.step",
+      "sha256": "47e2f56e39c9491c69468307753528635a47dde0ff48fcc90b688ee5a279cff9"
+    },
+    {
+      "bytes": 632484,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-pcb-fixer-qty2-mm.stl",
+      "sha256": "6f2d95e15c4c226fe25ad16398038950f4f56cadc26c09e3ae90337c95df8762"
+    },
+    {
+      "bytes": 58504,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-pcb-padder-1u-qty2-mm.step",
+      "sha256": "9430ae5b0bdfb5801babaa1eb5959556131c290ee795f463f4fa9ec7a7d52e81"
+    },
+    {
+      "bytes": 3684,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-pcb-padder-1u-qty2-mm.stl",
+      "sha256": "35fce045ac91ff5681a0864dc2ccb1631e1f9b694530d8379fdf2fe98fd473f0"
+    },
+    {
+      "bytes": 58350,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-pcb-padder-3u-qty4-mm.step",
+      "sha256": "4e10fda3521a8b70ff447d5c3b89d8cb91ca5a68ecc427c4495f004f62ac38b9"
+    },
+    {
+      "bytes": 3684,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/7u40-r9-pcb-padder-3u-qty4-mm.stl",
+      "sha256": "81d170af342a909a07495f5006ff2be12acca0bd1f58d6bb665824b96589a310"
+    },
+    {
+      "bytes": 164174,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/hardware-envelopes/body-manifest.json",
+      "sha256": "c11b7f85e116fa7db471a755cf71dd9162213a8e4adcbe8dc1bbf2b0e7d0effa"
+    },
+    {
+      "bytes": 37221,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-a-qty2-mm.step",
+      "sha256": "61ccf8d2690be3e8a41642a2d1589613cf251e52f76968f7aad035ddd2a0d08d"
+    },
+    {
+      "bytes": 7884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-a-qty2-mm.stl",
+      "sha256": "4da76c13d9feb94e5a27fec7a138897b35a58f0fd44dcec36f529e5a24b657f5"
+    },
+    {
+      "bytes": 37183,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-b-qty2-mm.step",
+      "sha256": "0ff34228786066b22c6e05cbaa65cfd67d693fb9c0bc4bdea0b68b5c9e5241f6"
+    },
+    {
+      "bytes": 7884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-b-qty2-mm.stl",
+      "sha256": "98f7ac9f7c24a826e235ab6c2736a307d0af201bc31268d6d086432df0f3cd94"
+    },
+    {
+      "bytes": 93370,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-width-half-qty4-mm.step",
+      "sha256": "fee208e8a659152248adac4e040ade0cf7e0b19fd3a46126d20b87c7f2870499"
+    },
+    {
+      "bytes": 27584,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-width-half-qty4-mm.stl",
+      "sha256": "041f10f27c13bcb1854cf303adbdb8b1766aeb4e86b82dd70fb3649dac6b440a"
+    },
+    {
+      "bytes": 93427,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-a-qty2-mm.step",
+      "sha256": "87b776310cda0918c1739b6154f2bb3448cd16585e790a77dcedd4a120755d33"
+    },
+    {
+      "bytes": 26584,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-a-qty2-mm.stl",
+      "sha256": "57cd383f3b1649d3e3914bae830dd8c7c7587eb3a6dda5c0999d55c74a23935e"
+    },
+    {
+      "bytes": 94685,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-b-qty2-mm.step",
+      "sha256": "80c60c4661de4423e6cd72d6cd226d6573de1cf7018a74eb332ef7918a9f59b9"
+    },
+    {
+      "bytes": 26584,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-b-qty2-mm.stl",
+      "sha256": "e8acf354e8f9d087023763944e8e543d242b5991976989f733f2bfd0950756c8"
+    },
+    {
+      "bytes": 25923,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-vertical-corner-qty4-mm.step",
+      "sha256": "a2499461ab602001623e871394d84607301a00f53b07722066faf3ca25e7d4b2"
+    },
+    {
+      "bytes": 7484,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-vertical-corner-qty4-mm.stl",
+      "sha256": "eaf9c0fe736424cb231fb181ed96c6ae6e898927e1b4d04288aa27010e9bacea"
+    },
+    {
+      "bytes": 7027,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p0/manifest.json",
+      "sha256": "fc1777e2dab55773be20f71d343f623fb7cd172559c0817bf75bb32f42eb3079"
+    },
+    {
+      "bytes": 37255,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-a-qty2-mm.step",
+      "sha256": "fa7dbafaf88e88516e43b582704f0ab769ca184fdd38f073f942f7ee4afd9f9a"
+    },
+    {
+      "bytes": 7884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-a-qty2-mm.stl",
+      "sha256": "937928bbee3ef44532c6b4197e3b12bdecd8970cb1c431153e26c6a0f7c47f9a"
+    },
+    {
+      "bytes": 37243,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-b-qty2-mm.step",
+      "sha256": "369cfbc439e5a716a9410c7a4fa6b570fd527f15f8177f4a98175c84095953bf"
+    },
+    {
+      "bytes": 7884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-b-qty2-mm.stl",
+      "sha256": "091ee57a3a11ac120c2acb83a35de5e17cbf10e5d621558702bf6a4f0640a081"
+    },
+    {
+      "bytes": 93561,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-width-half-qty4-mm.step",
+      "sha256": "81922950911943eeeae9f353665f32c2c6ee729a365c6c22a1ebe3e17c2d1c13"
+    },
+    {
+      "bytes": 27584,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-width-half-qty4-mm.stl",
+      "sha256": "4bc4ed1a72218042d54e60f2e6f8831d730ebff76f1d6f0df031fbcc882fe94d"
+    },
+    {
+      "bytes": 93650,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-a-qty2-mm.step",
+      "sha256": "c37203985a9006b0fcfb1c552a6f770da326bc513d3c03c927efd9f35624f84c"
+    },
+    {
+      "bytes": 26584,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-a-qty2-mm.stl",
+      "sha256": "4aaaac22a744a2a6ea110fd60310bc83ccbf9f2dec267f267c703bf94eb43361"
+    },
+    {
+      "bytes": 94934,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-b-qty2-mm.step",
+      "sha256": "120c3b1a1fd0d8949603cdcf675cdf8dd19438fbea890d041d83e20aab14268a"
+    },
+    {
+      "bytes": 26584,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-b-qty2-mm.stl",
+      "sha256": "9b3f8c21d733640cbcc43b85ef6ef1b890efd4bbecbd5d9c120a11fedc85be8b"
+    },
+    {
+      "bytes": 25954,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-vertical-corner-qty4-mm.step",
+      "sha256": "13c2931b81947f37224cb36c4963dc8943c6c045dad975f4a4f45f33c36ccf36"
+    },
+    {
+      "bytes": 7484,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-vertical-corner-qty4-mm.stl",
+      "sha256": "03e1a94495a49b2ddc35d8ee60ad6c01f02dc5438b0c298dab59eb85fb1d546b"
+    },
+    {
+      "bytes": 7306,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/guards/t1p2/manifest.json",
+      "sha256": "8d09d8763dc15f912d3d2c895fd2fd59f3f304dd6afd7b6fbec6f40d729d0b86"
+    },
+    {
+      "bytes": 172742,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/lid/7u40-r9-pa12-lid-frame-bl-qty1-mm.step",
+      "sha256": "9b189582561f1a20e3383a4a8715a80264d0b908ba03bfbb89f26d57a91e99c3"
+    },
+    {
+      "bytes": 76884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/lid/7u40-r9-pa12-lid-frame-bl-qty1-mm.stl",
+      "sha256": "e815715ae484672b63059676d7ddc8bd7324be9d1266e406bc1c4da76e543f9c"
+    },
+    {
+      "bytes": 175338,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/lid/7u40-r9-pa12-lid-frame-br-qty1-mm.step",
+      "sha256": "1b2bc79a3da8669ddc142c9af4f39cd7272210432b97a1a0fc9cb23da1e79fc5"
+    },
+    {
+      "bytes": 76884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/lid/7u40-r9-pa12-lid-frame-br-qty1-mm.stl",
+      "sha256": "11cb74d6cbc7e3bac3c948535e8b25bbccc6a5f1253447fab25aaf924a7e78f3"
+    },
+    {
+      "bytes": 173564,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.step",
+      "sha256": "f6f8d4511a79a8a70e94d3ea7d63b68d27d2c640e19374e7e964d71c861afa0d"
+    },
+    {
+      "bytes": 76884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.stl",
+      "sha256": "456a37abd488e35718fea060becd6473bd6dc543681f800dafbbe81efa3fad85"
+    },
+    {
+      "bytes": 175005,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.step",
+      "sha256": "1cbe289bca5d2afb2890f999de807a93a77a13e448140f8d8eea07ee80615c87"
+    },
+    {
+      "bytes": 76884,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.stl",
+      "sha256": "e8a4e257fa476e438b4eb0a246b7311dd6d86a86e0de9e1034159926dfbf772e"
+    },
+    {
+      "bytes": 2583,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/pa12/lid/manifest.json",
+      "sha256": "47df857076c92d21fc232edb28b355a60763c8800eaed409785ebe03c582b9e2"
+    },
+    {
+      "bytes": 871,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/browser-check.json",
+      "sha256": "7cca4bb1fef6242db2a39b81907d061605c39c9ea2da8a0e68b268ee388db952"
+    },
+    {
+      "bytes": 58504,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/file-table.json",
+      "sha256": "1b9ecacf1e5f41671a0dc7153736e34a0eac85139c1b963c1889188170ede164"
+    },
+    {
+      "bytes": 5412,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/mesh-checks.json",
+      "sha256": "11d20d00b3b3f6d899cad5cc076caa460f1b10e8f5d0ce7d14671b77f28e6567"
+    },
+    {
+      "bytes": 859368,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/model-data.js",
+      "sha256": "e9e5e55f1e1e5ec44295c277f34c5c7fff68c6f98aef7fe8019579805e741791"
+    },
+    {
+      "bytes": 6432,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/guards-adhesiveLayer.png",
+      "sha256": "0742889453a84294df5717592a7a25d7e0d79c95eafb8910c844d640ee9230fe"
+    },
+    {
+      "bytes": 6287,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/guards-comparison_thickness.png",
+      "sha256": "221efccebe8483d2d4d840d66f7939c19621ab0775b16dc5afd50f86aa58301a"
+    },
+    {
+      "bytes": 6265,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/guards-edgeRounding.png",
+      "sha256": "89528f81572dba84a4e0c46f0f0818402fd96fa4dbf95aca48fae459aa1fb7e9"
+    },
+    {
+      "bytes": 6447,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/guards-fitClearancePerSide.png",
+      "sha256": "77c45f49160fbc0ad5f6b436a2c45e9a9f68d8f77c5b6edf4d4c9b300f7245de"
+    },
+    {
+      "bytes": 6218,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/guards-innerOverhang.png",
+      "sha256": "abc9e906862d0dbcefea86b187675b0c1e15c3025751b10e2f894f0edacfb059"
+    },
+    {
+      "bytes": 6440,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/guards-splitEndRelief.png",
+      "sha256": "2658355b919fe01884879c119655dfeeff588415c81ca1d0fbf0264f3f699250"
+    },
+    {
+      "bytes": 6373,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/guards-top_edge_adhesive_allowance.png",
+      "sha256": "4bb2b99429dba0c3285e1caa49f769554feeb3fd43a5621c07efd7138a1b1de7"
+    },
+    {
+      "bytes": 6379,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/guards-top_edge_guard_exterior_x.png",
+      "sha256": "625ef4c5df37f574f140ef5715f3fb9b53958376e5113fbca37640b70a14facf"
+    },
+    {
+      "bytes": 6356,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/guards-top_edge_guard_exterior_y.png",
+      "sha256": "a59bc46aa34c70b5a8ac658f0d545f14ae926964415bc5b4c5cb86c039feb19f"
+    },
+    {
+      "bytes": 6395,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/guards-top_edge_guard_opening_x.png",
+      "sha256": "e0ed658cde3c22bcf651bb5c5053dfd4d64ee17d681d0a1f27ab95cef8a6924a"
+    },
+    {
+      "bytes": 6383,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/guards-top_edge_guard_opening_y.png",
+      "sha256": "80696f3ccc8d0b2f9e2af3ac2f100a47b910b6558861092ed97297033d0c9f54"
+    },
+    {
+      "bytes": 6326,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/guards-top_edge_seated_guard_z.png",
+      "sha256": "47390f24cdd7ff315191340bbd30b46f529ab7828fbeb0179eac650a7381c7b1"
+    },
+    {
+      "bytes": 24167,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/index.json",
+      "sha256": "ff047ffe6b6aafafc5b8e7a365bab9cc82ddaacdcc7302fc1db4bda7e68bfaed"
+    },
+    {
+      "bytes": 6417,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-assembly_bore_diameter.png",
+      "sha256": "1c2c6deaa9b2c3af2b4855f6c342346965a40c41a41506a508833cc132102f7c"
+    },
+    {
+      "bytes": 6399,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-assembly_hole_diameter.png",
+      "sha256": "8d06d0c4533bd107588c0ce0690db40a1371ed9734cd24c6f0417088ecfab2d8"
+    },
+    {
+      "bytes": 6376,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-blade_bridge_height.png",
+      "sha256": "d409159deb19847c7eac25fdcb899aa6972e90bbde9f8479e7cf294174726e9e"
+    },
+    {
+      "bytes": 6281,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-boss_depth.png",
+      "sha256": "3bbb21591ef428437930fac5a047d261551b2383e06a2aa9c3be521746425572"
+    },
+    {
+      "bytes": 6306,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-frame_seam.png",
+      "sha256": "99ffd8c4cab4c7955008ee62add5a80ae8d4876b1803a1c58b98eda45c13dbe6"
+    },
+    {
+      "bytes": 6329,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-frame_seat_z.png",
+      "sha256": "d1c7892d8beeb5a95ca2519de25dbcc6d870a6861376360b5e4ca98237a66c5a"
+    },
+    {
+      "bytes": 6296,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-frame_wall.png",
+      "sha256": "19c45e0641b2384fabe28f7b5d3ce3a49b625ae6f03072f88632387ba6bbfcae"
+    },
+    {
+      "bytes": 6436,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-front_screw_fraction.png",
+      "sha256": "585395e185629936b1e2bf220045f89c83084451e135f1adf283fabc5b1c7e04"
+    },
+    {
+      "bytes": 6377,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-knob_envelope_height.png",
+      "sha256": "3ba0c30fb0810c008dcbd491badbc088357bcc46699ea7a849b3a10aa9fa05a3"
+    },
+    {
+      "bytes": 6290,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-ledge_depth.png",
+      "sha256": "14306f5a2d727537ae5017905bf8a5913901c6985b7a2aeb2b6cecc275f1ce4e"
+    },
+    {
+      "bytes": 6347,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-ledge_thickness.png",
+      "sha256": "5bb022dbf5f134e29288570a450ebfe844ead050881fca7fb89bfb14db54ed53"
+    },
+    {
+      "bytes": 6237,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-lid_rise.png",
+      "sha256": "731cb1b76d851e65dc184fbee91c9d45d491e3f3dd7c87cf8a40e9a3a77dca97"
+    },
+    {
+      "bytes": 6325,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-lip_top_z.png",
+      "sha256": "6dc4560222fe27e1290633abab403a5674d9fb23e837782578b264f8f0cc4d14"
+    },
+    {
+      "bytes": 6349,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-locator_bottom_z.png",
+      "sha256": "13511284b0e765b45dded1142ff8214497296f8ea2666247d23398d44810ef8a"
+    },
+    {
+      "bytes": 6370,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-locator_engagement.png",
+      "sha256": "fbeef8a87025ca6ca1e656df0f482c372083e55583bd2edd1c93c2749f3b8aad"
+    },
+    {
+      "bytes": 6358,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-locator_lead_radius.png",
+      "sha256": "de2c862be28cd12af37597541693bae76d891477fc3c53dffa6e15a50b31ee68"
+    },
+    {
+      "bytes": 6349,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-locator_thickness.png",
+      "sha256": "ddfd6264f3604378a27f90554e8aa329a5cdb15c8cce7015c66817668511389b"
+    },
+    {
+      "bytes": 6504,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-locator_x_overhang_from_opening.png",
+      "sha256": "21c152cdca371bfdbdcd677882abf64713d12f103351eacd2b59213dbb11185a"
+    },
+    {
+      "bytes": 6379,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-module_panel_thickness.png",
+      "sha256": "07e886d2904e01ea9b3d6b79a4b91b98c42be2af68aa88cf7979167ffed46a77"
+    },
+    {
+      "bytes": 6310,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-nut_pocket_af.png",
+      "sha256": "301558019f175c84d34c4be99ab959af0b289acdfa316a217291ef9437a37802"
+    },
+    {
+      "bytes": 6377,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-nut_roof_thickness.png",
+      "sha256": "b3f7321b98cf94f1aae109bd5d9005d21e3e34b3a9e3e885d7f9c0ab52fba764"
+    },
+    {
+      "bytes": 6340,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-plate_bottom_z.png",
+      "sha256": "a5e34da18b6fabdb7bb903ee2ee7e0aefe615dcbcbf612801cce4a66bcddee7a"
+    },
+    {
+      "bytes": 6393,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-plate_corner_radius.png",
+      "sha256": "fbae009d7039086b8c94d0a62a2ed80dff8c8bf7821188e4b91fc732e2abad8f"
+    },
+    {
+      "bytes": 6325,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-plate_edge_gap.png",
+      "sha256": "29492f137b17f72cb1031a6c75d54025d6425b0d95925af67081997a35a6f30b"
+    },
+    {
+      "bytes": 6345,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-plate_thickness.png",
+      "sha256": "23dfc1da4af0b2af87833126f259e7475abb6733d76ff9780a2e65f2b5463de5"
+    },
+    {
+      "bytes": 6335,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-plate_top_z.png",
+      "sha256": "2dbdbeb91314b1cf9663e88b641aea4686a414c460abd48813af97739361e78c"
+    },
+    {
+      "bytes": 6315,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-screw_inset.png",
+      "sha256": "73d15058ef3ce9e52d5e800ad8f67c5dbb7d796d42cda31ab642c91c59131a95"
+    },
+    {
+      "bytes": 6409,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-side_screw_fraction.png",
+      "sha256": "4bf3a3a25e0f295bd47626c278d0031c2af2e39a23b2fc9fdd6e03bfb9b3ef0f"
+    },
+    {
+      "bytes": 6432,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-top_edge_adhesive_allowance.png",
+      "sha256": "4986f9e1a08f6708cee433027b7db3815a63361f018aa1157daf8eab47cadab0"
+    },
+    {
+      "bytes": 6466,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-top_edge_guard_exterior_x.png",
+      "sha256": "c6c6626cbc8d8f8c7e4679d003248e123bcddde79448526e2f6f1282454b8aa6"
+    },
+    {
+      "bytes": 6446,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-top_edge_guard_exterior_y.png",
+      "sha256": "4dd7e63ed3fbea0312c71ac1ad86c83d69c90e3575c9866448e2359323af34d1"
+    },
+    {
+      "bytes": 6488,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-top_edge_guard_opening_x.png",
+      "sha256": "ea7fea475685f93cef8db9fab4890b38fe3c84f7d9da4c5197c89ac53e116fb1"
+    },
+    {
+      "bytes": 6477,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-top_edge_guard_opening_y.png",
+      "sha256": "897de8fd8b1182beae82ac949b46cac328852653056db47326b47b9b7be6088e"
+    },
+    {
+      "bytes": 6452,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-top_edge_lid_locator_clearance.png",
+      "sha256": "3dadc603e6f03a4992ce54910d88b76576c3364e521d6e243a5e653389a03d2e"
+    },
+    {
+      "bytes": 6409,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/lid-top_edge_seated_guard_z.png",
+      "sha256": "59ca334e25fdc32a5c875aa6cedf066753a1409a5a3eda2425ad6d9641f83241"
+    },
+    {
+      "bytes": 6122,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/slots-bearing_overlap.png",
+      "sha256": "04a07aa65363443d01963ecc5fce136f6a236554938a64f1bd5d1044e3116076"
+    },
+    {
+      "bytes": 6239,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/slots-driver_envelope_diameter.png",
+      "sha256": "398333cd96c9bc9d203424c36266b5df88ab569f69bb603b21c7ddf06f4a31d6"
+    },
+    {
+      "bytes": 6239,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/slots-driver_envelope_length.png",
+      "sha256": "fdd13b4bc1f70895b06ac497bf2327863eff32431bfbaf3acbe0a330ab64e9a8"
+    },
+    {
+      "bytes": 6135,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/slots-edge_margin_min.png",
+      "sha256": "aa27514cb5ce8183edcfcb55bf76c474793a364b7d5e3c0eb88bedea8d824247"
+    },
+    {
+      "bytes": 6093,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/slots-ligament_min.png",
+      "sha256": "9e4ce870f354b4c4c315bdbd469ab2c8e6f8ddfaea84807b7bf3e110385fab6e"
+    },
+    {
+      "bytes": 5911,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/slots-slot_length.png",
+      "sha256": "dd05b940f27e7baff574e3fa42869b8c8e548480e16a5ff08b66a934fa4356ed"
+    },
+    {
+      "bytes": 5983,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/slots-slot_travel.png",
+      "sha256": "952a38671036ee867abaf5a6582f4db8833d192b115a0f00e94d7196a8628e78"
+    },
+    {
+      "bytes": 5875,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/preview/sections/slots-slot_width.png",
+      "sha256": "10801275b90658f4af03f22e4c39fd5f48d66e063945cdcb8da2c64221ed0753"
+    },
+    {
+      "bytes": 175792,
+      "kind": "generated_out_file",
+      "path": "engineering/r9-prototype-01/out/validation.json",
+      "sha256": "24a38f10930c29ca8a09f5627865b64b4785a6282828f66084e0ba4f27011412"
+    },
+    {
+      "bytes": 654702,
+      "kind": "candidate_package_zip",
+      "path": "public/downloads/candidate/7u40-r9-prototype-01-aluminum-NOT-APPROVED.zip",
+      "sha256": "face18055d544bcbb8388b5bb69687dd9fe6214002a3189391fa6ba89906e82d"
+    },
+    {
+      "bytes": 6823293,
+      "kind": "candidate_package_zip",
+      "path": "public/downloads/candidate/7u40-r9-prototype-01-coupons-NOT-APPROVED.zip",
+      "sha256": "c435791842a85b589b0f88232ed8f1dfd9ddd4582204f0ae8ea1ca735e590437"
+    },
+    {
+      "bytes": 2001282,
+      "kind": "candidate_package_zip",
+      "path": "public/downloads/candidate/7u40-r9-prototype-01-pa12-NOT-APPROVED.zip",
+      "sha256": "a6b856be060f263abeefe5c82643cda867d53452abd84737da88109f145b1d7d"
+    },
+    {
+      "bytes": 2124247,
+      "kind": "single_file_preview_html",
+      "path": "public/previews/r9-prototype-01.html",
+      "sha256": "a532fc9e0a82292b8848a75dea5ba60a4fcfa7a00d7b16448376f07adb498819"
+    }
+  ],
+  "productionApproved": false,
+  "r6SourceFiles": [
+    {
+      "bytes": 50199,
+      "kind": "r6_source_data",
+      "path": "engineering/r6-body/build_geometry.py",
+      "purpose": "R6 7u40 geometry source ported by this module",
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d"
+    },
+    {
+      "bytes": 23552,
+      "kind": "r6_source_data",
+      "path": "engineering/r6-body/design-parameters.json",
+      "purpose": "R6 7u40 source parameter values",
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b"
+    },
+    {
+      "bytes": 3573,
+      "kind": "r6_source_data",
+      "path": "engineering/r6-body/engineering/7u40/aluminum/hole-layout.json",
+      "purpose": "1e-6 mm plate outline and hole-center regression reference",
+      "sha256": "ad555b88e51ab3b79d789871fb2fccc9e5c0926b89d80098cdb95b73d66ceb06"
+    },
+    {
+      "bytes": 627540,
+      "kind": "r6_source_data",
+      "path": "engineering/r6-body/source-data/panels/panel-geometry.json",
+      "purpose": "PCB outline and cutout polygons; basis for exact 1.6 mm PCB solids",
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c"
+    },
+    {
+      "bytes": 29684,
+      "kind": "r6_source_data",
+      "path": "engineering/r6-body/source-data/rail40/nuts-v2-40hp-single.stl",
+      "purpose": "Original 40HP source rail; hash recorded, never rescaled or converted to BREP",
+      "sha256": "88a153fe717f582f80656fe10c74df5ec1717f53e6b202fff078532b00b06c5a"
+    },
+    {
+      "bytes": 5151,
+      "kind": "r6_source_data",
+      "path": "engineering/r6-body/source-data/rail40/rail_dimensions.json",
+      "purpose": "40HP source mesh bounding box and rail registration",
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210"
+    }
+  ],
+  "r7ZipMembers": [
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 9725,
+      "member": "zudo-case-family-preview/README.md",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/README.md",
+      "sha256": "3b0ff99f0ed04fcb68e4a0418be19c4bbbd6fb9e8f972f96695c62d3807e8bbd"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 35351,
+      "member": "zudo-case-family-preview/app.js",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/app.js",
+      "sha256": "842e181924feffa83b7e1b64e3f0902704910f05e4f37ed52438b6be02adfead"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 50199,
+      "member": "zudo-case-family-preview/build_geometry.py",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/build_geometry.py",
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 28237,
+      "member": "zudo-case-family-preview/build_lids.py",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/build_lids.py",
+      "sha256": "d3148327de71097143dc333ac66d8e185685c518ed93518b5219ca1b252db66a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 155413,
+      "member": "zudo-case-family-preview/cad-data.js",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/cad-data.js",
+      "sha256": "343d1bc64af60e25e5c188f9132f7255db66fa57e0f51b88ba2ecf80ff0b748e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 23552,
+      "member": "zudo-case-family-preview/design-parameters.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/design-parameters.json",
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 129311,
+      "member": "zudo-case-family-preview/docs/7u-layout.png",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/7u-layout.png",
+      "sha256": "9c3e1f523814329003ee0e5f36098267986b5fe2c9aefb419936d3abdf877160"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 107323,
+      "member": "zudo-case-family-preview/docs/7u-layout.svg",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/7u-layout.svg",
+      "sha256": "8e6993af8f44bcd5626dc21eb0f0f38de73a8e7aac01fa05cc3fc83ec7893f72"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 12144,
+      "member": "zudo-case-family-preview/docs/R6-README.md",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/R6-README.md",
+      "sha256": "485d7631cd1e608fa96704d1b60c7b848050ac8bf27b7fb7611c8454af48530e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 21501,
+      "member": "zudo-case-family-preview/docs/browser-validation.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/browser-validation.json",
+      "sha256": "b020d0aa4091201ee66c7b0d6528fbbbefb427c0d58ad3aa8a7945c702980556"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 857,
+      "member": "zudo-case-family-preview/docs/expected-7u-rail-gaps.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/expected-7u-rail-gaps.json",
+      "sha256": "10a6c2308a18ee5e470fcd66933096f2879176eb58747859dafddd7da09a8d66"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 2297,
+      "member": "zudo-case-family-preview/docs/family-core-independent-checks.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/family-core-independent-checks.json",
+      "sha256": "50f842cf21c7b5f96a9f14a512e74c2b34c28681135ce903389aa9be0a36c8f1"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 1550,
+      "member": "zudo-case-family-preview/docs/family-final-foot-checks.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/family-final-foot-checks.json",
+      "sha256": "8aa8e9150fb780cd2d260c1bdd48934cc073b26e4024893d0523011e4940d9ec"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 4205,
+      "member": "zudo-case-family-preview/docs/family-final-review.md",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/family-final-review.md",
+      "sha256": "1621f6f217969f33b8dc9259c261fff507456cc02032e2884340b8558c41adea"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 336184,
+      "member": "zudo-case-family-preview/docs/previews/3u60-assembled.png",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/previews/3u60-assembled.png",
+      "sha256": "e90e1152a9736931936ce345a58534dba97c2813c986653c0b174ff2068e2954"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 328106,
+      "member": "zudo-case-family-preview/docs/previews/3u60-rail.png",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/previews/3u60-rail.png",
+      "sha256": "57475fbab2bf94a8919cc07f4bcc5ef56f437def21dd422c2cf8bd9f56c0febf"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 387633,
+      "member": "zudo-case-family-preview/docs/previews/7u40-assembled.png",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/previews/7u40-assembled.png",
+      "sha256": "df0f63ce65265bf6e228a678066d9db3cceab839252b0eb0ffc523ca49d4c27a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 376833,
+      "member": "zudo-case-family-preview/docs/previews/7u40-rail.png",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/previews/7u40-rail.png",
+      "sha256": "6256c8ae0af621b9a11910bf6d0414068c281aa87af942b6315cd4a912a9a758"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 397553,
+      "member": "zudo-case-family-preview/docs/previews/7u60-assembled.png",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/previews/7u60-assembled.png",
+      "sha256": "c69093a9e294d139f1704cff06cb68562c5da88f32a16a8e335c3e5aa20d1be9"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 398855,
+      "member": "zudo-case-family-preview/docs/previews/7u60-rail.png",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/previews/7u60-rail.png",
+      "sha256": "bfea1625f83634570396da33c7162be243f62e7f59d605eea496c6c8399feb25"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 1899,
+      "member": "zudo-case-family-preview/docs/r7-browser-validation.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/r7-browser-validation.json",
+      "sha256": "103b26dc84474f443e3f2505a36df96ffc78ef631c3c940510efc3cbd44122a4"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 723,
+      "member": "zudo-case-family-preview/docs/r7-final-download-validation.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/r7-final-download-validation.json",
+      "sha256": "fb365628a6c4bb54cfe509a12a6e27a0d1069eb5c94ff2c59037a1478b6994e5"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 4126,
+      "member": "zudo-case-family-preview/docs/r7-release-validation.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/r7-release-validation.json",
+      "sha256": "5f0725453783d4d466f3596998f65b77393c363ad5138ec3acaac16d4cf9eb0e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 224287,
+      "member": "zudo-case-family-preview/docs/r7-screenshots/r7-7u40-lid-closed.png",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/r7-screenshots/r7-7u40-lid-closed.png",
+      "sha256": "06757759810f7961514b343d951962b529941896bcef033deecf225e778a1f0d"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 261487,
+      "member": "zudo-case-family-preview/docs/r7-screenshots/r7-7u40-lid-lifted.png",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/r7-screenshots/r7-7u40-lid-lifted.png",
+      "sha256": "9e7f1b164751b48cf005e58c0ff17d53897af1a1b308e7289587ae5a4f733238"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 235259,
+      "member": "zudo-case-family-preview/docs/r7-screenshots/r7-lid-lock-section.png",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/r7-screenshots/r7-lid-lock-section.png",
+      "sha256": "f1b2409640cddd1d71f8e28541e9db007520c117d4795aae51872e2dda05fff8"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 43579,
+      "member": "zudo-case-family-preview/docs/r7-screenshots/r7-lid-underside.png",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/docs/r7-screenshots/r7-lid-underside.png",
+      "sha256": "574ff9b9e13fd75c2ecccafd90b4af61a83feaa4fff6ccb740ff371ef46d7d6f"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 5478566,
+      "member": "zudo-case-family-preview/engineering/3u60/3u60_r6_t1p2_enclosure_boards_assembly.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/3u60_r6_t1p2_enclosure_boards_assembly.step",
+      "sha256": "80882f43ba3ffe67a39a8e5562c8e4eb66312fa95c55f94be008a0f1f48b1702"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16496,
+      "member": "zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.dxf",
+      "sha256": "8b9070b54c180fc2cab787c604786db1503a26605850f774a59d85843287b540"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 44718,
+      "member": "zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.step",
+      "sha256": "f4134fe867f29b7afb96a259b16a98c6c84478d3fe8db00f68132730b470f040"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 338284,
+      "member": "zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_bottom_qty1_mm.stl",
+      "sha256": "b6ed45bfd05baebabf6c5e1039ede1fb7b7c08e83ee14a366532912a4047d769"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16289,
+      "member": "zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.dxf",
+      "sha256": "71f2c56db8cc8cc873f657f35cf371309f47fe88d05e102b366f3b88736cb5f3"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 37284,
+      "member": "zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.step",
+      "sha256": "fd4d96f2b8f315ebb53da7b2c52db14c2fd63038afc2f37bab0e3ebc7e57da80"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 253884,
+      "member": "zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_front_back_qty2_mm.stl",
+      "sha256": "6d9027914fc5f3c7748b1204e80fea331007a4c37115f564a43465db2942ac97"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16502,
+      "member": "zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.dxf",
+      "sha256": "84bde947a8938132f7525be5094fc6cb6a2ac7da0f84080656fd298a575dab5b"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 44711,
+      "member": "zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.step",
+      "sha256": "8daf5733c0d14291ce0261626c108edc1beef8af8c5bc54d3cff0434bed8f692"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 338284,
+      "member": "zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/aluminum/3u60_r6_aluminum_left_right_qty2_mm.stl",
+      "sha256": "ae2269c084d359bafe5b02bbdf7c6ea1677bb3a558c64e954d5273ea6f3988bd"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3201,
+      "member": "zudo-case-family-preview/engineering/3u60/aluminum/hole-layout.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/aluminum/hole-layout.json",
+      "sha256": "dec5b7e7f952955abd436516c2645e65f673ae1a12b072eaaf68a18d97addf02"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 53025,
+      "member": "zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p0_01_top_u_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p0_01_top_u_qty2_mm.step",
+      "sha256": "410adad6a2db72ab63472505ebacfa2ef6c05aad83f332a52812d55795812808"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 25688,
+      "member": "zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p0_02_lower_width_half_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p0_02_lower_width_half_qty4_mm.step",
+      "sha256": "46fc40ea2654bc3f67681f53f9ecb955b0d884a29f45e1b1639eab29c54b461a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 37882,
+      "member": "zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p0_03_lower_depth_full_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p0_03_lower_depth_full_qty2_mm.step",
+      "sha256": "bd7be1b47b9a13287e33d22f65fed6d1d694796c2d388160963dc0b894099fec"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 25554,
+      "member": "zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p0_04_vertical_corner_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p0_04_vertical_corner_qty4_mm.step",
+      "sha256": "a22982706ff0eac4b43b03a40ced8195f4e1e0dd6aa1f6248963e0517805e32b"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 53343,
+      "member": "zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p2_01_top_u_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p2_01_top_u_qty2_mm.step",
+      "sha256": "f55bb146838c6446f5a4bbd9c5bbc8f9508d8343a2d5ceec8cfac4812aa0a3a0"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 26182,
+      "member": "zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p2_02_lower_width_half_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p2_02_lower_width_half_qty4_mm.step",
+      "sha256": "4673f0c30998884aa1e771fc819f87c20a6c618e04d0e5ba6b818798e428edd9"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 38173,
+      "member": "zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p2_03_lower_depth_full_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p2_03_lower_depth_full_qty2_mm.step",
+      "sha256": "28f5747bf5bbfb0566274ba9e9a30213b260715736d75bd8b41eebb72b9b55d9"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 25610,
+      "member": "zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p2_04_vertical_corner_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/guards/3u60_r6_t1p2_04_vertical_corner_qty4_mm.step",
+      "sha256": "9516dac8c9ff621cda8d60fe4500e4daf3bd482b3bd4a81e1c290e4edb53bf8a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 17657,
+      "member": "zudo-case-family-preview/engineering/3u60/lid-r7/3u60_r7_aluminum_front_back_lid_slots_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/lid-r7/3u60_r7_aluminum_front_back_lid_slots_qty2_mm.dxf",
+      "sha256": "ab884a3babed0fff2562d31e9143d760ab8b7264075c9cce5d19de07a45c7608"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 67197,
+      "member": "zudo-case-family-preview/engineering/3u60/lid-r7/3u60_r7_aluminum_front_back_lid_slots_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/lid-r7/3u60_r7_aluminum_front_back_lid_slots_qty2_mm.step",
+      "sha256": "b64f04014d528e2c2d67e0f20b11bee0e56ac0b7d5d1c648b21996871acb363c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 255884,
+      "member": "zudo-case-family-preview/engineering/3u60/lid-r7/3u60_r7_aluminum_front_back_lid_slots_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/lid-r7/3u60_r7_aluminum_front_back_lid_slots_qty2_mm.stl",
+      "sha256": "37845e44e28fc5e12cc8a94b64d70f613f07faba237c7f8abc6848010a745361"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 1758,
+      "member": "zudo-case-family-preview/engineering/3u60/lid-r7/lid-hole-layout.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/lid-r7/lid-hole-layout.json",
+      "sha256": "3826b4820b9c5952ba973e6ee2a158d3def9d22635716b6cf1d3eb39ba1df490"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 2897,
+      "member": "zudo-case-family-preview/engineering/3u60/lid-r7/lid-spec.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/lid-r7/lid-spec.json",
+      "sha256": "240445512b4486fa62b38b99ff58f9fa0de0bf01a3b1e76228cf938151feed17"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 2025,
+      "member": "zudo-case-family-preview/engineering/3u60/lid-r7/validation.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/lid-r7/validation.json",
+      "sha256": "a32989035a6f659c05857f1f4cf92eb85d3b71b4962fbf9fc81a7b9fb5f2e1d8"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 21258,
+      "member": "zudo-case-family-preview/engineering/3u60/lid-r7/zudo_3u60_r7_lid_aluminum_qty1_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/lid-r7/zudo_3u60_r7_lid_aluminum_qty1_mm.dxf",
+      "sha256": "1d92a3bc9cdba44a910836d89b5dfa1bdbb0204479403273916cd2de6d268b0e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 130807,
+      "member": "zudo-case-family-preview/engineering/3u60/lid-r7/zudo_3u60_r7_lid_aluminum_qty1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/lid-r7/zudo_3u60_r7_lid_aluminum_qty1_mm.step",
+      "sha256": "d7544502d2bffc696c950dbedc11cd03239dc9ee0fafb8f622a971eb7dc0fc47"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 258284,
+      "member": "zudo-case-family-preview/engineering/3u60/lid-r7/zudo_3u60_r7_lid_aluminum_qty1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/lid-r7/zudo_3u60_r7_lid_aluminum_qty1_mm.stl",
+      "sha256": "dcf0cfdad79f11742c2fd4970de20192140d48a902b4cb91949e8c7deb8e4cf9"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 1190274,
+      "member": "zudo-case-family-preview/engineering/3u60/lid-r7/zudo_3u60_r7_lid_assembly.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/lid-r7/zudo_3u60_r7_lid_assembly.step",
+      "sha256": "e7176c18979decc9900d189ccd6aa348516a43e6017fff7a15921c5d6dd36bb1"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 214700,
+      "member": "zudo-case-family-preview/engineering/3u60/lid-r7/zudo_3u60_r7_lid_frame_A_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/lid-r7/zudo_3u60_r7_lid_frame_A_qty2_mm.step",
+      "sha256": "6ec8405020b5a072e87295ffa29ac91d8ad8df9aaacf4a8d209dc8edde553f70"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 218273,
+      "member": "zudo-case-family-preview/engineering/3u60/lid-r7/zudo_3u60_r7_lid_frame_B_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/lid-r7/zudo_3u60_r7_lid_frame_B_qty2_mm.step",
+      "sha256": "c8b1af695690fd84edb7c1943d0165be41ea2bc073e99adb458484217661ebe7"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 7566,
+      "member": "zudo-case-family-preview/engineering/3u60/model-summary.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/model-summary.json",
+      "sha256": "d0a4163e6c30ae58ca71f00855c29fb08580fc33fddc430d382555b6d97f9664"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 2030451,
+      "member": "zudo-case-family-preview/engineering/3u60/pcbs/3u60_r6_fixer-1_source_outline_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/pcbs/3u60_r6_fixer-1_source_outline_mm.step",
+      "sha256": "2ab8838323b432c8ff22c30482ddb969d1d3136381ca99906b61d20f615e4497"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 105184,
+      "member": "zudo-case-family-preview/engineering/3u60/pcbs/3u60_r6_fixer-1_source_outline_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/pcbs/3u60_r6_fixer-1_source_outline_mm.stl",
+      "sha256": "00a9518aac03bf1c79ea281baad314f79b29e551128791d4efa51a66acdeb262"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 57741,
+      "member": "zudo-case-family-preview/engineering/3u60/pcbs/3u60_r6_padder-1-row0_source_outline_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/pcbs/3u60_r6_padder-1-row0_source_outline_mm.step",
+      "sha256": "d9587b6f38ababb7146174e7ca054b5da942d76515e9addeb01ec8eb3fef40a8"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3684,
+      "member": "zudo-case-family-preview/engineering/3u60/pcbs/3u60_r6_padder-1-row0_source_outline_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/pcbs/3u60_r6_padder-1-row0_source_outline_mm.stl",
+      "sha256": "6346e5583caf945706d3602c6df4a50b85ecb6c55e0e9ef36400987dd79e3961"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 12570,
+      "member": "zudo-case-family-preview/engineering/3u60/validation.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/3u60/validation.json",
+      "sha256": "a20f6f083e4c6c59885f1ecae5b42a1d572e4f114ed708313bbb2163f2a4932f"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 27716402,
+      "member": "zudo-case-family-preview/engineering/7u40/7u40_r6_t1p2_enclosure_boards_assembly.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/7u40_r6_t1p2_enclosure_boards_assembly.step",
+      "sha256": "978654f6299a62e23ca426cc81a162b9369b15b7b2b7bd7a77a1ebeba43ecba4"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16701,
+      "member": "zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_bottom_qty1_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_bottom_qty1_mm.dxf",
+      "sha256": "ffb3b6cb01b4e4d15fb4ea7fb85e7565f4265cf88a8dc184f3527c9e64a4c29c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 52361,
+      "member": "zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_bottom_qty1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_bottom_qty1_mm.step",
+      "sha256": "b9cad7a1886ea77c98d9d7fa5823e748d563543283fbf6c98d4c1f70381fea88"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 422684,
+      "member": "zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_bottom_qty1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_bottom_qty1_mm.stl",
+      "sha256": "0407d4a42d095f449e75f2213999b981602db6bbd3fd8a3a6b509a418b2b69c2"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16291,
+      "member": "zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_front_back_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_front_back_qty2_mm.dxf",
+      "sha256": "59d7dc016940b67860a1c684bfa2517907204281062d894c0ff18983ce9695b1"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 37286,
+      "member": "zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_front_back_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_front_back_qty2_mm.step",
+      "sha256": "9d211f2dd3de8e4c2a88df3dc933ba0286fc047b9fa748454cbe4629365baf39"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 253884,
+      "member": "zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_front_back_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_front_back_qty2_mm.stl",
+      "sha256": "5ebe8b1ca6c5547536e695996ef63cec21be63ce31560d38f384e65135c03858"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16959,
+      "member": "zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_left_right_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_left_right_qty2_mm.dxf",
+      "sha256": "066e8d74383114ebea57148bb0d2718a6fa61f2f4c660d93a0781fc286deb2e8"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 60336,
+      "member": "zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_left_right_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_left_right_qty2_mm.step",
+      "sha256": "ed072ac28ba75b1d53ff1f1fb78c4f5ca196a2a66618d8dd3a77bdc9ea4ea5ab"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 507084,
+      "member": "zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_left_right_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/aluminum/7u40_r6_aluminum_left_right_qty2_mm.stl",
+      "sha256": "624b0ba2b9eee1231b52e24ff9d7f967f4fa81dfb368aa1002b96f13cfbf448d"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3573,
+      "member": "zudo-case-family-preview/engineering/7u40/aluminum/hole-layout.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/aluminum/hole-layout.json",
+      "sha256": "ad555b88e51ab3b79d789871fb2fccc9e5c0926b89d80098cdb95b73d66ceb06"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 39624,
+      "member": "zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p0_01_top_corner_a_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p0_01_top_corner_a_qty2_mm.step",
+      "sha256": "9b0b895cbc11ae52c40b5ec37727847a163e53383f9c2f83935cff3f7c8b1a11"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 39648,
+      "member": "zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p0_02_top_corner_b_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p0_02_top_corner_b_qty2_mm.step",
+      "sha256": "463f3888cb5fea80ec4e0bde15052638d7705490fe4057123eb86b13fecc41c5"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 25688,
+      "member": "zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p0_03_lower_width_half_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p0_03_lower_width_half_qty4_mm.step",
+      "sha256": "511d732daddadbf18b9ef02cf4bbb025d920d6396b0884b9c98d51d8993aa162"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 32186,
+      "member": "zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p0_04_lower_depth_half_a_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p0_04_lower_depth_half_a_qty2_mm.step",
+      "sha256": "b579e98bbd886d041afbc985d79c185341385c359d11a00169e2c816c1bf34c8"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 32273,
+      "member": "zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p0_05_lower_depth_half_b_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p0_05_lower_depth_half_b_qty2_mm.step",
+      "sha256": "359b864c9b45797c15a972213ace5a60347c8001559082dd3b9ceebf7d61e168"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 25554,
+      "member": "zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p0_06_vertical_corner_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p0_06_vertical_corner_qty4_mm.step",
+      "sha256": "e622a7cf02e67ee71fc0eb171e8c09ecf8b00b72c7342965d0f4e14249227b26"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 39613,
+      "member": "zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p2_01_top_corner_a_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p2_01_top_corner_a_qty2_mm.step",
+      "sha256": "a1c29a3743b5be3058f154a87cf662c06690c8a13af6c607d386891af716d58b"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 39405,
+      "member": "zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p2_02_top_corner_b_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p2_02_top_corner_b_qty2_mm.step",
+      "sha256": "4a51ce61d0a27584cdce4a245f228b225ac1c1f89b4b64a087af90a266cbb3af"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 26184,
+      "member": "zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p2_03_lower_width_half_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p2_03_lower_width_half_qty4_mm.step",
+      "sha256": "0311f1fb1e392ab024dda6e323f7cdce82fa9a98b360c8a94a1a56568bf2a5f8"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 32130,
+      "member": "zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p2_04_lower_depth_half_a_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p2_04_lower_depth_half_a_qty2_mm.step",
+      "sha256": "7b91178ab056b54b3d9ec149078e774476c1b47f15f3b074a67f9ff4eb32b86b"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 32217,
+      "member": "zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p2_05_lower_depth_half_b_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p2_05_lower_depth_half_b_qty2_mm.step",
+      "sha256": "4a32f79b75453393fd428227effef474cd6db10ab5747a6da49202280fae3f16"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 25612,
+      "member": "zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p2_06_vertical_corner_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/guards/7u40_r6_t1p2_06_vertical_corner_qty4_mm.step",
+      "sha256": "9bad003ff897ab154e9884406bec9efb2d43df0448d16d4067c9aaed36a14711"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 17661,
+      "member": "zudo-case-family-preview/engineering/7u40/lid-r7/7u40_r7_aluminum_front_back_lid_slots_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/lid-r7/7u40_r7_aluminum_front_back_lid_slots_qty2_mm.dxf",
+      "sha256": "197321a5586025f0c92474a124e57071f9b22133e425c41da66b1f4ef39313b3"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 67199,
+      "member": "zudo-case-family-preview/engineering/7u40/lid-r7/7u40_r7_aluminum_front_back_lid_slots_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/lid-r7/7u40_r7_aluminum_front_back_lid_slots_qty2_mm.step",
+      "sha256": "2c203f3aedc6911055d71443485d68aebd50f0abfc3d9143f9b6d4a65378e45c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 255884,
+      "member": "zudo-case-family-preview/engineering/7u40/lid-r7/7u40_r7_aluminum_front_back_lid_slots_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/lid-r7/7u40_r7_aluminum_front_back_lid_slots_qty2_mm.stl",
+      "sha256": "8ff0fecba9b18aae993d3f1ecdc7dce5c08cd3497ed4fd2ed09e4288558f64ba"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 1715,
+      "member": "zudo-case-family-preview/engineering/7u40/lid-r7/lid-hole-layout.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/lid-r7/lid-hole-layout.json",
+      "sha256": "59dfb19df1e75593062f617757c835170c2541213938b9d1724ac09c88a76f09"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 2793,
+      "member": "zudo-case-family-preview/engineering/7u40/lid-r7/lid-spec.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/lid-r7/lid-spec.json",
+      "sha256": "4d1980e1d20d302031eb1ef4fd2a55374d18f4ee719c398d8c6ac05dcd69f1a8"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 2015,
+      "member": "zudo-case-family-preview/engineering/7u40/lid-r7/validation.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/lid-r7/validation.json",
+      "sha256": "3c3ef6e42ad8be6aad9cf9e992c52fad1e51de4eed94375f60a5df37d2625c3a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 21056,
+      "member": "zudo-case-family-preview/engineering/7u40/lid-r7/zudo_7u40_r7_lid_aluminum_qty1_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/lid-r7/zudo_7u40_r7_lid_aluminum_qty1_mm.dxf",
+      "sha256": "5e32aeddfc4caeb60b93f3250cf972e1368f5480cde8e04187fddec46bda3224"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 130802,
+      "member": "zudo-case-family-preview/engineering/7u40/lid-r7/zudo_7u40_r7_lid_aluminum_qty1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/lid-r7/zudo_7u40_r7_lid_aluminum_qty1_mm.step",
+      "sha256": "7dda109d75bfc25beffecaf707877bec6c2cc5d3dabccf3ad73a77baa94e077c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 258284,
+      "member": "zudo-case-family-preview/engineering/7u40/lid-r7/zudo_7u40_r7_lid_aluminum_qty1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/lid-r7/zudo_7u40_r7_lid_aluminum_qty1_mm.stl",
+      "sha256": "74f9b3a6ef4d30b8500f3845398ee10cb6476a7dbf00cdfd17b2ef73dd5b6430"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 1191424,
+      "member": "zudo-case-family-preview/engineering/7u40/lid-r7/zudo_7u40_r7_lid_assembly.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/lid-r7/zudo_7u40_r7_lid_assembly.step",
+      "sha256": "8f61ac22858506880d127eab09cd136d4f95ee16438ede77a26499c5aae1d7fa"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 214029,
+      "member": "zudo-case-family-preview/engineering/7u40/lid-r7/zudo_7u40_r7_lid_frame_A_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/lid-r7/zudo_7u40_r7_lid_frame_A_qty2_mm.step",
+      "sha256": "8954f8051413e6ca0d814704c50099cf7b183505534449fda736141e32be3bd3"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 218262,
+      "member": "zudo-case-family-preview/engineering/7u40/lid-r7/zudo_7u40_r7_lid_frame_B_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/lid-r7/zudo_7u40_r7_lid_frame_B_qty2_mm.step",
+      "sha256": "66dde38d3462d7e4c33bf85343a16d312644561277da5f81dea809010b8fb7ca"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 8159,
+      "member": "zudo-case-family-preview/engineering/7u40/model-summary.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/model-summary.json",
+      "sha256": "4a034783486319651fa114b7e4b3be23c00d1c83c10ea290dfec4cb1176be2e4"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 12701073,
+      "member": "zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_fixer-1_source_outline_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_fixer-1_source_outline_mm.step",
+      "sha256": "565196d164fcbe2127906604252ef4cd6184c66ca2a64a53c19afcb82a3515f9"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 632484,
+      "member": "zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_fixer-1_source_outline_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_fixer-1_source_outline_mm.stl",
+      "sha256": "ac10e4640d881a045a56da511f12a44a92f9f32251a8c3ba0fa6d738c098d190"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 57743,
+      "member": "zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_padder-1-row0_source_outline_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_padder-1-row0_source_outline_mm.step",
+      "sha256": "a9a642c67bab6554e4ef9a4497dc8c962645a3e488481f9934d61159e07d2caa"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3684,
+      "member": "zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_padder-1-row0_source_outline_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_padder-1-row0_source_outline_mm.stl",
+      "sha256": "6346e5583caf945706d3602c6df4a50b85ecb6c55e0e9ef36400987dd79e3961"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 57743,
+      "member": "zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_padder-1-row1_source_outline_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_padder-1-row1_source_outline_mm.step",
+      "sha256": "9b3fee50bd72a4e36bff5a69d5b88e589cf66f28a0f40264d847e8c322dfc53a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3684,
+      "member": "zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_padder-1-row1_source_outline_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_padder-1-row1_source_outline_mm.stl",
+      "sha256": "6346e5583caf945706d3602c6df4a50b85ecb6c55e0e9ef36400987dd79e3961"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 58043,
+      "member": "zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_padder-1-row2_source_outline_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_padder-1-row2_source_outline_mm.step",
+      "sha256": "6b1bd90b123e28e9deaab3a7950a070d5b6a56450288c9248cd146992702b2da"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3684,
+      "member": "zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_padder-1-row2_source_outline_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/pcbs/7u40_r6_padder-1-row2_source_outline_mm.stl",
+      "sha256": "aaac63373e9ab5064c040665d2fadb6b857f97edffcc8fa16c48814ed6126599"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 15800,
+      "member": "zudo-case-family-preview/engineering/7u40/validation.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u40/validation.json",
+      "sha256": "378ce3abbd83a5b97994ac62619d300ba6bfb66423b01b54b09c910623d67c46"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 27716770,
+      "member": "zudo-case-family-preview/engineering/7u60/7u60_r6_t1p2_enclosure_boards_assembly.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/7u60_r6_t1p2_enclosure_boards_assembly.step",
+      "sha256": "0ee2dfb103c7c891b02b74a938f1ad5665bd27a4171d2c3fa185a33d0701f8f6"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16699,
+      "member": "zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_bottom_qty1_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_bottom_qty1_mm.dxf",
+      "sha256": "69acfb91d6e0c0acf6862e09d020b7edc15364c5a6a43402ab7a40700325d956"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 52361,
+      "member": "zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_bottom_qty1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_bottom_qty1_mm.step",
+      "sha256": "b197a9f4dc1947bf8f3a8fa5eeafad125f15fabe6f8e1233b11720eb514babab"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 422684,
+      "member": "zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_bottom_qty1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_bottom_qty1_mm.stl",
+      "sha256": "5673ae7a7964d939b05c8b11a7a0a69a1125c8aa139264c26b3b48a5808cfe1a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16289,
+      "member": "zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_front_back_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_front_back_qty2_mm.dxf",
+      "sha256": "0fca6cab6efe94190daa4c53089ba3746a366571baab8cc1abee69b4d2c11d48"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 37286,
+      "member": "zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_front_back_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_front_back_qty2_mm.step",
+      "sha256": "9a05750175f61e35ea8395d28231e96643dcbfeed30dea2f28ba6d68d0f871f5"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 253884,
+      "member": "zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_front_back_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_front_back_qty2_mm.stl",
+      "sha256": "6d9027914fc5f3c7748b1204e80fea331007a4c37115f564a43465db2942ac97"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16957,
+      "member": "zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_left_right_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_left_right_qty2_mm.dxf",
+      "sha256": "609df93668661ad6544c4b209c091dc78d5255344520fcd992cbd28a08417a89"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 60336,
+      "member": "zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_left_right_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_left_right_qty2_mm.step",
+      "sha256": "9b06d98e752646446016ffebcaf9e70debf24e2d8e2eabf1e467768b99bb2447"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 507084,
+      "member": "zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_left_right_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/aluminum/7u60_r6_aluminum_left_right_qty2_mm.stl",
+      "sha256": "624b0ba2b9eee1231b52e24ff9d7f967f4fa81dfb368aa1002b96f13cfbf448d"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3573,
+      "member": "zudo-case-family-preview/engineering/7u60/aluminum/hole-layout.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/aluminum/hole-layout.json",
+      "sha256": "5f9b3c3bb6ff469ece8b2ec26857f62b47047ef9e6649e03132e71bc00f2651e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 39629,
+      "member": "zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p0_01_top_corner_a_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p0_01_top_corner_a_qty2_mm.step",
+      "sha256": "c3406a402ac888ec608e10e842dd6cd3264801a03580155431833b032619a593"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 39622,
+      "member": "zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p0_02_top_corner_b_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p0_02_top_corner_b_qty2_mm.step",
+      "sha256": "e8b9f9f3eff15f9b7f46e0e7fba8bc6420ed47d7c27fbdb18cb6244563ce572b"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 25688,
+      "member": "zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p0_03_lower_width_half_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p0_03_lower_width_half_qty4_mm.step",
+      "sha256": "8addd1619c50e44b1d41933e7df8238734b0bf5fe960cf844072f12ff2965c57"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 32177,
+      "member": "zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p0_04_lower_depth_half_a_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p0_04_lower_depth_half_a_qty2_mm.step",
+      "sha256": "8b9e10f099e3b525cd853e6b1ad515025f5bb5a81c532403c9ca8820fc1e5bac"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 32264,
+      "member": "zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p0_05_lower_depth_half_b_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p0_05_lower_depth_half_b_qty2_mm.step",
+      "sha256": "9a6add08316a0cf1f3dbd2acaf6ce43b038bf0916fe6a566a08367cd27a5ade6"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 25554,
+      "member": "zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p0_06_vertical_corner_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p0_06_vertical_corner_qty4_mm.step",
+      "sha256": "d104b7d74517078cec284a2096f9d9fbc8827ac7845a590668b0be530ae14a95"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 39602,
+      "member": "zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p2_01_top_corner_a_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p2_01_top_corner_a_qty2_mm.step",
+      "sha256": "1fcca1bb23cbd89f2c65af3f7a08ecef35f06f8c31eb361e4f8bd629007b4a91"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 39399,
+      "member": "zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p2_02_top_corner_b_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p2_02_top_corner_b_qty2_mm.step",
+      "sha256": "a97ffb97530fd81d498f2d2575367f2cda3b69bec660e76ac71f880aed476f3a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 26184,
+      "member": "zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p2_03_lower_width_half_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p2_03_lower_width_half_qty4_mm.step",
+      "sha256": "db0d1785107a5acf7a9046e3834fc67d77e41a2edf7b8c24dfdd8f0d79dfb8a5"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 32105,
+      "member": "zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p2_04_lower_depth_half_a_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p2_04_lower_depth_half_a_qty2_mm.step",
+      "sha256": "af855e34dae978a346128a2e574a90b41d07384eb027a9801e93f83d611ec116"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 32192,
+      "member": "zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p2_05_lower_depth_half_b_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p2_05_lower_depth_half_b_qty2_mm.step",
+      "sha256": "023933b0cbf80373263515212a89499b70ac1bd1957aefe72b294e06b5c18fbb"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 25612,
+      "member": "zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p2_06_vertical_corner_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/guards/7u60_r6_t1p2_06_vertical_corner_qty4_mm.step",
+      "sha256": "3451adfd53cadfcd3f14cb7b04e5f3e162bb75dd7e2f5d0c449478ddd3b79c94"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 17657,
+      "member": "zudo-case-family-preview/engineering/7u60/lid-r7/7u60_r7_aluminum_front_back_lid_slots_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/lid-r7/7u60_r7_aluminum_front_back_lid_slots_qty2_mm.dxf",
+      "sha256": "f5b1d3119e175c9ee29b6df7e28f0f174b0324e0d927ea3f13333febbf74dde2"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 67199,
+      "member": "zudo-case-family-preview/engineering/7u60/lid-r7/7u60_r7_aluminum_front_back_lid_slots_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/lid-r7/7u60_r7_aluminum_front_back_lid_slots_qty2_mm.step",
+      "sha256": "b1eea2c651f378fbce45a4bbf5560ed4be1a6f903ce7b772b16ad7482a1e6ece"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 255884,
+      "member": "zudo-case-family-preview/engineering/7u60/lid-r7/7u60_r7_aluminum_front_back_lid_slots_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/lid-r7/7u60_r7_aluminum_front_back_lid_slots_qty2_mm.stl",
+      "sha256": "37845e44e28fc5e12cc8a94b64d70f613f07faba237c7f8abc6848010a745361"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 1719,
+      "member": "zudo-case-family-preview/engineering/7u60/lid-r7/lid-hole-layout.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/lid-r7/lid-hole-layout.json",
+      "sha256": "f06851544e7e862826af95e437e06430b4652c506224033494e5e5504f583eff"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 2915,
+      "member": "zudo-case-family-preview/engineering/7u60/lid-r7/lid-spec.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/lid-r7/lid-spec.json",
+      "sha256": "199c9dc3c380c5dc1123cd8a6b4493b2c6d8ce4aad3d5f3fa7ae9aac1b1534f1"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 2013,
+      "member": "zudo-case-family-preview/engineering/7u60/lid-r7/validation.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/lid-r7/validation.json",
+      "sha256": "b6c263dc80449af0678b17550b605556ab590cbcb162a1f93daf9c861f71b38a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 21026,
+      "member": "zudo-case-family-preview/engineering/7u60/lid-r7/zudo_7u60_r7_lid_aluminum_qty1_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/lid-r7/zudo_7u60_r7_lid_aluminum_qty1_mm.dxf",
+      "sha256": "df36d0ca93ba32ebacc1006dcaaeaff28fc9eb697efe0df784615dbb9ee35c02"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 130826,
+      "member": "zudo-case-family-preview/engineering/7u60/lid-r7/zudo_7u60_r7_lid_aluminum_qty1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/lid-r7/zudo_7u60_r7_lid_aluminum_qty1_mm.step",
+      "sha256": "67350e5522f01e82ab46719c3a14aa4c34752909e5e941f0d5482aab5a2fd132"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 258284,
+      "member": "zudo-case-family-preview/engineering/7u60/lid-r7/zudo_7u60_r7_lid_aluminum_qty1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/lid-r7/zudo_7u60_r7_lid_aluminum_qty1_mm.stl",
+      "sha256": "97c41d60549757d65626da76a63dfafe8f9ca11cb57d8b6e227f55d5921e9332"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 1191676,
+      "member": "zudo-case-family-preview/engineering/7u60/lid-r7/zudo_7u60_r7_lid_assembly.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/lid-r7/zudo_7u60_r7_lid_assembly.step",
+      "sha256": "b3a4438e6a752e8d16ea9089cd6681cd4a15b7448cda055afab0ee5e8bd90921"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 214727,
+      "member": "zudo-case-family-preview/engineering/7u60/lid-r7/zudo_7u60_r7_lid_frame_A_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/lid-r7/zudo_7u60_r7_lid_frame_A_qty2_mm.step",
+      "sha256": "401c6a7905d591f85d258f30c400c62fda991786ae0bb68fc4e01a27512234ae"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 218299,
+      "member": "zudo-case-family-preview/engineering/7u60/lid-r7/zudo_7u60_r7_lid_frame_B_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/lid-r7/zudo_7u60_r7_lid_frame_B_qty2_mm.step",
+      "sha256": "de56cf809b42db7699567cd6b6e4fa6e3119fffce06745c1c1823ff400b29901"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 8165,
+      "member": "zudo-case-family-preview/engineering/7u60/model-summary.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/model-summary.json",
+      "sha256": "31af144fbf5157476aabd0122c45a4d2669c5c5a5526181ee898966747c9d785"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 12701073,
+      "member": "zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_fixer-1_source_outline_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_fixer-1_source_outline_mm.step",
+      "sha256": "65cd4c6389cd0cb0daa3d7af3ac3b792b7cd50ac7c08b5e6c36256336a4af3bf"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 632484,
+      "member": "zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_fixer-1_source_outline_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_fixer-1_source_outline_mm.stl",
+      "sha256": "ac10e4640d881a045a56da511f12a44a92f9f32251a8c3ba0fa6d738c098d190"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 57743,
+      "member": "zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_padder-1-row0_source_outline_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_padder-1-row0_source_outline_mm.step",
+      "sha256": "ffa4204ff17bf1347a394d137b1994089ce9213b6d1f0cad15879341206bdd88"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3684,
+      "member": "zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_padder-1-row0_source_outline_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_padder-1-row0_source_outline_mm.stl",
+      "sha256": "6346e5583caf945706d3602c6df4a50b85ecb6c55e0e9ef36400987dd79e3961"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 57743,
+      "member": "zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_padder-1-row1_source_outline_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_padder-1-row1_source_outline_mm.step",
+      "sha256": "c2ae103f56a54103871790bb48fbca03781b18a7dffb55df6cd0bfb5ca55df1f"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3684,
+      "member": "zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_padder-1-row1_source_outline_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_padder-1-row1_source_outline_mm.stl",
+      "sha256": "6346e5583caf945706d3602c6df4a50b85ecb6c55e0e9ef36400987dd79e3961"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 58027,
+      "member": "zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_padder-1-row2_source_outline_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_padder-1-row2_source_outline_mm.step",
+      "sha256": "332ad27269a7394f5d020cef2cfcb689bd5bc6837de673b952777bd6cb3edf8d"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3684,
+      "member": "zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_padder-1-row2_source_outline_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/pcbs/7u60_r6_padder-1-row2_source_outline_mm.stl",
+      "sha256": "aaac63373e9ab5064c040665d2fadb6b857f97edffcc8fa16c48814ed6126599"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 15841,
+      "member": "zudo-case-family-preview/engineering/7u60/validation.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/7u60/validation.json",
+      "sha256": "dbe9a9efd9c86408c74d7b39f8c5b7f41e5dc5776d1630efdb980f3728631f06"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 4221,
+      "member": "zudo-case-family-preview/engineering/README.md",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/README.md",
+      "sha256": "05e2c107c5ab563d031b60fc41063bdec805c3e3627dd7643bf06e5e18d23d27"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 6895,
+      "member": "zudo-case-family-preview/engineering/family-summary.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/family-summary.json",
+      "sha256": "d55ba3020beeb90f2d9f6f3624410d7628dfcce61b063dd82d78adc1d9bde886"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 9301,
+      "member": "zudo-case-family-preview/engineering/lid-family-summary.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/engineering/lid-family-summary.json",
+      "sha256": "8c40b5ccf31a2600cf62c7d0119dcc1ee9a269d02af163fe620904206ebe3393"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16574,
+      "member": "zudo-case-family-preview/index.html",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/index.html",
+      "sha256": "bea2f4977ff97c15e57c1d1b99efc2e4eb792be2990117b467127c8467b173cf"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 1146,
+      "member": "zudo-case-family-preview/lid-parameters.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-parameters.json",
+      "sha256": "e3abe09500fbb7cf2daf5f62fa66bf99c14b6c2540ff3004a30c8f140fc52ba4"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 534,
+      "member": "zudo-case-family-preview/lid-stl/3u60/README.txt",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/3u60/README.txt",
+      "sha256": "09b0848ed0b62d94e68e230e948660716b66b30aaef76e163a72605f6e543f7d"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 767,
+      "member": "zudo-case-family-preview/lid-stl/3u60/manifest.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/3u60/manifest.json",
+      "sha256": "790011a97819cd64c2cf9264f41eba719614a8585f224e0a05ebb6049476dfb8"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 29231,
+      "member": "zudo-case-family-preview/lid-stl/3u60/zudo_3u60_r7_lid_compression_pad_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/3u60/zudo_3u60_r7_lid_compression_pad_qty4_mm.step",
+      "sha256": "ba4237b9eb6d0944fd1a637d60646d9a323c7c6a6ab1ca82c3e969b17f92e5a4"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 32884,
+      "member": "zudo-case-family-preview/lid-stl/3u60/zudo_3u60_r7_lid_compression_pad_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/3u60/zudo_3u60_r7_lid_compression_pad_qty4_mm.stl",
+      "sha256": "460e565b3db1d3732804207e9807082354e1994e9e27b81dca024ccf40d0e5cc"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 214700,
+      "member": "zudo-case-family-preview/lid-stl/3u60/zudo_3u60_r7_lid_frame_A_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/3u60/zudo_3u60_r7_lid_frame_A_qty2_mm.step",
+      "sha256": "cab492a10925d4e618103b36daa0a507edbeedbb010f54122b4e6bc2b1ee399e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 166084,
+      "member": "zudo-case-family-preview/lid-stl/3u60/zudo_3u60_r7_lid_frame_A_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/3u60/zudo_3u60_r7_lid_frame_A_qty2_mm.stl",
+      "sha256": "153f57c2af570077bac0baa0750be7ad4cea86c186f245a188b3225a47a6aeeb"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 218273,
+      "member": "zudo-case-family-preview/lid-stl/3u60/zudo_3u60_r7_lid_frame_B_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/3u60/zudo_3u60_r7_lid_frame_B_qty2_mm.step",
+      "sha256": "b56e8533cfe2d3f6e44451e8808bad71b465d0e94ba7f43fe5c557dd3c5edfb1"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 166084,
+      "member": "zudo-case-family-preview/lid-stl/3u60/zudo_3u60_r7_lid_frame_B_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/3u60/zudo_3u60_r7_lid_frame_B_qty2_mm.stl",
+      "sha256": "bb4c2dbb013b7bcbca3b5f0c98c7e86b402a53841ec0a911ee3723dc25469843"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 534,
+      "member": "zudo-case-family-preview/lid-stl/7u40/README.txt",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u40/README.txt",
+      "sha256": "4b9b09b2c41c99ee167d046cdc4767daae620e3ebdcc77ea66077eb779bc1959"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 769,
+      "member": "zudo-case-family-preview/lid-stl/7u40/manifest.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u40/manifest.json",
+      "sha256": "2fd5b41970ac68c4874c72ca7e0ca34eb43d7b37363fc8bde9ab7ef27bcb6daa"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 29233,
+      "member": "zudo-case-family-preview/lid-stl/7u40/zudo_7u40_r7_lid_compression_pad_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u40/zudo_7u40_r7_lid_compression_pad_qty4_mm.step",
+      "sha256": "2c3e399b54220f9603ea243eab0d94c89262d862a3a9fb3c3fdaa62906d46346"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 32884,
+      "member": "zudo-case-family-preview/lid-stl/7u40/zudo_7u40_r7_lid_compression_pad_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u40/zudo_7u40_r7_lid_compression_pad_qty4_mm.stl",
+      "sha256": "1f5bebadf1349303f097251fb7a993212a5d93a240dd260766096335ce537c8c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 214027,
+      "member": "zudo-case-family-preview/lid-stl/7u40/zudo_7u40_r7_lid_frame_A_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u40/zudo_7u40_r7_lid_frame_A_qty2_mm.step",
+      "sha256": "577ed363decd753d2030d3642d1a176cc5c766903795729d102ce0ebd7ef0588"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 166084,
+      "member": "zudo-case-family-preview/lid-stl/7u40/zudo_7u40_r7_lid_frame_A_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u40/zudo_7u40_r7_lid_frame_A_qty2_mm.stl",
+      "sha256": "d31580f1b5b6db75612f15844934f03a984dc8032a41cd68a363a2d7d4d06ba3"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 218262,
+      "member": "zudo-case-family-preview/lid-stl/7u40/zudo_7u40_r7_lid_frame_B_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u40/zudo_7u40_r7_lid_frame_B_qty2_mm.step",
+      "sha256": "c7406fcfeef272dbec5909a116685296746d02976d25485274d1275f55e7c49f"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 166084,
+      "member": "zudo-case-family-preview/lid-stl/7u40/zudo_7u40_r7_lid_frame_B_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u40/zudo_7u40_r7_lid_frame_B_qty2_mm.stl",
+      "sha256": "95a09e532295c40960716fa1740dbb4d9a94f3f973f02cab28416992c38b5c9c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 534,
+      "member": "zudo-case-family-preview/lid-stl/7u60/README.txt",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u60/README.txt",
+      "sha256": "f425a2b32a5661d285047d608898430b55f4183699be5941d760e2d399f5d519"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 769,
+      "member": "zudo-case-family-preview/lid-stl/7u60/manifest.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u60/manifest.json",
+      "sha256": "f6938712189a36971ecccfa226593d648c9da2f29208c8516d6ce7a7fe3bbb00"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 29233,
+      "member": "zudo-case-family-preview/lid-stl/7u60/zudo_7u60_r7_lid_compression_pad_qty4_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u60/zudo_7u60_r7_lid_compression_pad_qty4_mm.step",
+      "sha256": "2139e968633278df0809be093308a9036aba22dcbe5a0ec50f1adf0127c46e15"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 32884,
+      "member": "zudo-case-family-preview/lid-stl/7u60/zudo_7u60_r7_lid_compression_pad_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u60/zudo_7u60_r7_lid_compression_pad_qty4_mm.stl",
+      "sha256": "1f5bebadf1349303f097251fb7a993212a5d93a240dd260766096335ce537c8c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 214727,
+      "member": "zudo-case-family-preview/lid-stl/7u60/zudo_7u60_r7_lid_frame_A_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u60/zudo_7u60_r7_lid_frame_A_qty2_mm.step",
+      "sha256": "275d7afa27df1d9fe95d908a1a2bf44c5c2e153a344e191b64ea467ca57ccb7f"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 166084,
+      "member": "zudo-case-family-preview/lid-stl/7u60/zudo_7u60_r7_lid_frame_A_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u60/zudo_7u60_r7_lid_frame_A_qty2_mm.stl",
+      "sha256": "d91a260702571fec0014b0d76cc32b7cbfc4bf764b41459b32480479f5a12990"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 218299,
+      "member": "zudo-case-family-preview/lid-stl/7u60/zudo_7u60_r7_lid_frame_B_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u60/zudo_7u60_r7_lid_frame_B_qty2_mm.step",
+      "sha256": "c98b44cab4d9bd5fdfcc91baee0d767e38f65deb9e93a89e44258ef0a0620b00"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 166084,
+      "member": "zudo-case-family-preview/lid-stl/7u60/zudo_7u60_r7_lid_frame_B_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/7u60/zudo_7u60_r7_lid_frame_B_qty2_mm.stl",
+      "sha256": "963b8dec77df7861e5a8462b9418b255d0caeb9c8783156b284cd15c1a344a8e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 805,
+      "member": "zudo-case-family-preview/lid-stl/fit-coupon/manifest.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/fit-coupon/manifest.json",
+      "sha256": "21f902dbe6cf6f01b5c72ac557cdb47b9454169d82d2cefd3d36487fa823035c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 37285,
+      "member": "zudo-case-family-preview/lid-stl/fit-coupon/zudo_r7_latch_nut_chute_fit_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/fit-coupon/zudo_r7_latch_nut_chute_fit_mm.step",
+      "sha256": "e9354506968c787bf2320aa6178a678a67914085d69f8c04462dc6614f35d8b8"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 65084,
+      "member": "zudo-case-family-preview/lid-stl/fit-coupon/zudo_r7_latch_nut_chute_fit_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/fit-coupon/zudo_r7_latch_nut_chute_fit_mm.stl",
+      "sha256": "48f74b0fee52005915cb78d8dbaa098b5d792f8cccb46aa55fedcaca70701926"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 96828,
+      "member": "zudo-case-family-preview/lid-stl/fit-coupon/zudo_r7_top_nut_fit_5p7_5p9_6p1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/fit-coupon/zudo_r7_top_nut_fit_5p7_5p9_6p1_mm.step",
+      "sha256": "36f5769852e34bd8d4ef336709c0dca04ff44cbd51140585122882681eb15cbe"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 99684,
+      "member": "zudo-case-family-preview/lid-stl/fit-coupon/zudo_r7_top_nut_fit_5p7_5p9_6p1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/lid-stl/fit-coupon/zudo_r7_top_nut_fit_5p7_5p9_6p1_mm.stl",
+      "sha256": "7ed737c1f7c50f177a51dbe05ce115d500e2ddc65b84b4a5608aadfeef80af02"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 729,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/README.md",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/README.md",
+      "sha256": "43320fe590e16ea555b954734849c16cc77873fe4aab493c3f04237c18cd2dd4"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16496,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_bottom_qty1_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_bottom_qty1_mm.dxf",
+      "sha256": "8b9070b54c180fc2cab787c604786db1503a26605850f774a59d85843287b540"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 44718,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_bottom_qty1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_bottom_qty1_mm.step",
+      "sha256": "f4134fe867f29b7afb96a259b16a98c6c84478d3fe8db00f68132730b470f040"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 338284,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_bottom_qty1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_bottom_qty1_mm.stl",
+      "sha256": "b6ed45bfd05baebabf6c5e1039ede1fb7b7c08e83ee14a366532912a4047d769"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 17657,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_front_back_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_front_back_qty2_mm.dxf",
+      "sha256": "ab884a3babed0fff2562d31e9143d760ab8b7264075c9cce5d19de07a45c7608"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 67197,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_front_back_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_front_back_qty2_mm.step",
+      "sha256": "b64f04014d528e2c2d67e0f20b11bee0e56ac0b7d5d1c648b21996871acb363c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 255884,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_front_back_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_front_back_qty2_mm.stl",
+      "sha256": "37845e44e28fc5e12cc8a94b64d70f613f07faba237c7f8abc6848010a745361"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16502,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_left_right_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_left_right_qty2_mm.dxf",
+      "sha256": "84bde947a8938132f7525be5094fc6cb6a2ac7da0f84080656fd298a575dab5b"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 44711,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_left_right_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_left_right_qty2_mm.step",
+      "sha256": "8daf5733c0d14291ce0261626c108edc1beef8af8c5bc54d3cff0434bed8f692"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 338284,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_left_right_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_aluminum_left_right_qty2_mm.stl",
+      "sha256": "ae2269c084d359bafe5b02bbdf7c6ea1677bb3a558c64e954d5273ea6f3988bd"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 21258,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_lid_aluminum_qty1_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_lid_aluminum_qty1_mm.dxf",
+      "sha256": "1d92a3bc9cdba44a910836d89b5dfa1bdbb0204479403273916cd2de6d268b0e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 130807,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_lid_aluminum_qty1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_lid_aluminum_qty1_mm.step",
+      "sha256": "d7544502d2bffc696c950dbedc11cd03239dc9ee0fafb8f622a971eb7dc0fc47"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 258284,
+      "member": "zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_lid_aluminum_qty1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/3u60/aluminum/zudo_3u60_r7_lid_aluminum_qty1_mm.stl",
+      "sha256": "dcf0cfdad79f11742c2fd4970de20192140d48a902b4cb91949e8c7deb8e4cf9"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 729,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/README.md",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/README.md",
+      "sha256": "65688433edc0108d6117b65f2f8b41af45ff3a841ab135adc96112ac1041b82a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16701,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_bottom_qty1_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_bottom_qty1_mm.dxf",
+      "sha256": "ffb3b6cb01b4e4d15fb4ea7fb85e7565f4265cf88a8dc184f3527c9e64a4c29c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 52361,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_bottom_qty1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_bottom_qty1_mm.step",
+      "sha256": "b9cad7a1886ea77c98d9d7fa5823e748d563543283fbf6c98d4c1f70381fea88"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 422684,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_bottom_qty1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_bottom_qty1_mm.stl",
+      "sha256": "0407d4a42d095f449e75f2213999b981602db6bbd3fd8a3a6b509a418b2b69c2"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 17661,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_front_back_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_front_back_qty2_mm.dxf",
+      "sha256": "197321a5586025f0c92474a124e57071f9b22133e425c41da66b1f4ef39313b3"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 67199,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_front_back_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_front_back_qty2_mm.step",
+      "sha256": "2c203f3aedc6911055d71443485d68aebd50f0abfc3d9143f9b6d4a65378e45c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 255884,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_front_back_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_front_back_qty2_mm.stl",
+      "sha256": "8ff0fecba9b18aae993d3f1ecdc7dce5c08cd3497ed4fd2ed09e4288558f64ba"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16959,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_left_right_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_left_right_qty2_mm.dxf",
+      "sha256": "066e8d74383114ebea57148bb0d2718a6fa61f2f4c660d93a0781fc286deb2e8"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 60336,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_left_right_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_left_right_qty2_mm.step",
+      "sha256": "ed072ac28ba75b1d53ff1f1fb78c4f5ca196a2a66618d8dd3a77bdc9ea4ea5ab"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 507084,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_left_right_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_aluminum_left_right_qty2_mm.stl",
+      "sha256": "624b0ba2b9eee1231b52e24ff9d7f967f4fa81dfb368aa1002b96f13cfbf448d"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 21056,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_lid_aluminum_qty1_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_lid_aluminum_qty1_mm.dxf",
+      "sha256": "5e32aeddfc4caeb60b93f3250cf972e1368f5480cde8e04187fddec46bda3224"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 130802,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_lid_aluminum_qty1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_lid_aluminum_qty1_mm.step",
+      "sha256": "7dda109d75bfc25beffecaf707877bec6c2cc5d3dabccf3ad73a77baa94e077c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 258284,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_lid_aluminum_qty1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u40/aluminum/zudo_7u40_r7_lid_aluminum_qty1_mm.stl",
+      "sha256": "74f9b3a6ef4d30b8500f3845398ee10cb6476a7dbf00cdfd17b2ef73dd5b6430"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 729,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/README.md",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/README.md",
+      "sha256": "c783ab157d595d3270922de970d24a2e9c5622cd57d4e12f6b6e093bc70165e1"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16699,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_bottom_qty1_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_bottom_qty1_mm.dxf",
+      "sha256": "69acfb91d6e0c0acf6862e09d020b7edc15364c5a6a43402ab7a40700325d956"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 52361,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_bottom_qty1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_bottom_qty1_mm.step",
+      "sha256": "b197a9f4dc1947bf8f3a8fa5eeafad125f15fabe6f8e1233b11720eb514babab"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 422684,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_bottom_qty1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_bottom_qty1_mm.stl",
+      "sha256": "5673ae7a7964d939b05c8b11a7a0a69a1125c8aa139264c26b3b48a5808cfe1a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 17657,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_front_back_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_front_back_qty2_mm.dxf",
+      "sha256": "f5b1d3119e175c9ee29b6df7e28f0f174b0324e0d927ea3f13333febbf74dde2"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 67199,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_front_back_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_front_back_qty2_mm.step",
+      "sha256": "b1eea2c651f378fbce45a4bbf5560ed4be1a6f903ce7b772b16ad7482a1e6ece"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 255884,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_front_back_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_front_back_qty2_mm.stl",
+      "sha256": "37845e44e28fc5e12cc8a94b64d70f613f07faba237c7f8abc6848010a745361"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16957,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_left_right_qty2_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_left_right_qty2_mm.dxf",
+      "sha256": "609df93668661ad6544c4b209c091dc78d5255344520fcd992cbd28a08417a89"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 60336,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_left_right_qty2_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_left_right_qty2_mm.step",
+      "sha256": "9b06d98e752646446016ffebcaf9e70debf24e2d8e2eabf1e467768b99bb2447"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 507084,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_left_right_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_aluminum_left_right_qty2_mm.stl",
+      "sha256": "624b0ba2b9eee1231b52e24ff9d7f967f4fa81dfb368aa1002b96f13cfbf448d"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 21026,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_lid_aluminum_qty1_mm.dxf",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_lid_aluminum_qty1_mm.dxf",
+      "sha256": "df36d0ca93ba32ebacc1006dcaaeaff28fc9eb697efe0df784615dbb9ee35c02"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 130826,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_lid_aluminum_qty1_mm.step",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_lid_aluminum_qty1_mm.step",
+      "sha256": "67350e5522f01e82ab46719c3a14aa4c34752909e5e941f0d5482aab5a2fd132"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 258284,
+      "member": "zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_lid_aluminum_qty1_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/manufacturing-r7/7u60/aluminum/zudo_7u60_r7_lid_aluminum_qty1_mm.stl",
+      "sha256": "97c41d60549757d65626da76a63dfafe8f9ca11cb57d8b6e227f55d5921e9332"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 38030951,
+      "member": "zudo-case-family-preview/mesh-data.js",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/mesh-data.js",
+      "sha256": "59230a4a95bfa9044f4fa394ff105aad77e1e1b240010e0b845978771bdbf74b"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 5817,
+      "member": "zudo-case-family-preview/package_lids.py",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/package_lids.py",
+      "sha256": "7e271e470c96fb8e986cfc2d91717caabd9b04a8f8671450df820bb7f23c67bb"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3289,
+      "member": "zudo-case-family-preview/package_preview.py",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/package_preview.py",
+      "sha256": "9e469a951b9430d50292eb358ed1f19645174a6d5e62f572501219a38a319ede"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 58,
+      "member": "zudo-case-family-preview/requirements-lids.txt",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/requirements-lids.txt",
+      "sha256": "0cb68320019c367ccf55b9ec1d80819f80d60ee04588445d1bc6734b4d362bbb"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 860,
+      "member": "zudo-case-family-preview/source-data/README.md",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/README.md",
+      "sha256": "97ca0366030c71866ed29d1316b420a63d820852a7648c75b66f241413b8f37c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 998,
+      "member": "zudo-case-family-preview/source-data/panels/commit.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/panels/commit.json",
+      "sha256": "2ba9e91550233485378a650cb6aec5a967cff45de04d576ab67424b38346676d"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 627540,
+      "member": "zudo-case-family-preview/source-data/panels/panel-geometry.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/panels/panel-geometry.json",
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 24931,
+      "member": "zudo-case-family-preview/source-data/panels/placements.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/panels/placements.json",
+      "sha256": "fca80fff8c825fb89727c0643dd9d1a6dbeb09b03c060ef2a4c2a1910acba03c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 10121,
+      "member": "zudo-case-family-preview/source-data/panels/sources.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/panels/sources.json",
+      "sha256": "68be9d20a0f388a88c159516265716f7b884eea8020966ee3ad6bf507407e650"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16426,
+      "member": "zudo-case-family-preview/source-data/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pcb",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pcb",
+      "sha256": "00174d7975b0565e0732544de5fdf3ada8b8d3a4a95d720819f104e384f5d2a7"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 88807,
+      "member": "zudo-case-family-preview/source-data/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pcb",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pcb",
+      "sha256": "a99916e41e412404171cb16a24a252bb543eb56025ffe603ee3f1455a025ee86"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3095,
+      "member": "zudo-case-family-preview/source-data/panels/zb-side-frame-pad-1u/1u-padder.kicad_pcb",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/panels/zb-side-frame-pad-1u/1u-padder.kicad_pcb",
+      "sha256": "dbd1d41152bbaf7350b7f1d83fa88c492acfb3ee164c5f187f5b6c7862b3769e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 2976,
+      "member": "zudo-case-family-preview/source-data/panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb",
+      "sha256": "e7ea7daa33d98180f9f118e42b38d74d56d9a7ea685756a70123c9ffbf300b66"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 29547,
+      "member": "zudo-case-family-preview/source-data/r6-app.js",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/r6-app.js",
+      "sha256": "138c076370a7c1a58d0116a460fd932224a24e2b6c27d71e28808fde13ba1c05"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 12911,
+      "member": "zudo-case-family-preview/source-data/r6-index.html",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/r6-index.html",
+      "sha256": "d389d1a15dacf7b247cfcdb402d5b13fa52ad41f912d84c5f017af6ba4391e97"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 31689876,
+      "member": "zudo-case-family-preview/source-data/r6-mesh-data.js",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/r6-mesh-data.js",
+      "sha256": "7e1db76f44b3c5f1c5c2dcfca8c13f01e1cee4c3383f15d4b00cd820fcb5d917"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3289,
+      "member": "zudo-case-family-preview/source-data/r6-package_preview.py",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/r6-package_preview.py",
+      "sha256": "9e469a951b9430d50292eb358ed1f19645174a6d5e62f572501219a38a319ede"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 18001,
+      "member": "zudo-case-family-preview/source-data/r6-styles.css",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/r6-styles.css",
+      "sha256": "2da057b598ca1bbff9ee11566e08ca386018635580718289d9dfe1e256be8f54"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 4889,
+      "member": "zudo-case-family-preview/source-data/rail40/github-tree.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/rail40/github-tree.json",
+      "sha256": "d6e5f9d33c5f0fa88d6ecec8b1db0c472cf270c70159adc58d4719a3c2de4e9e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 29684,
+      "member": "zudo-case-family-preview/source-data/rail40/nuts-v2-40hp-single.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/rail40/nuts-v2-40hp-single.stl",
+      "sha256": "88a153fe717f582f80656fe10c74df5ec1717f53e6b202fff078532b00b06c5a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 569,
+      "member": "zudo-case-family-preview/source-data/rail40/provenance.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/rail40/provenance.json",
+      "sha256": "7ce7a866e63406be593e55011dcff6431fc91dec8679a4db82e9f9e99495ef2c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 5151,
+      "member": "zudo-case-family-preview/source-data/rail40/rail_dimensions.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/rail40/rail_dimensions.json",
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16569,
+      "member": "zudo-case-family-preview/source-data/rail40/rail_mesh.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/rail40/rail_mesh.json",
+      "sha256": "6ddbf622f9bcd8f4d1316d76ce2c55b4cecfb3c166de6f88826fda3bb19c2753"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 4889,
+      "member": "zudo-case-family-preview/source-data/rail60/github-tree.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/rail60/github-tree.json",
+      "sha256": "d6e5f9d33c5f0fa88d6ecec8b1db0c472cf270c70159adc58d4719a3c2de4e9e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 29684,
+      "member": "zudo-case-family-preview/source-data/rail60/nuts-v2-60hp-single.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/rail60/nuts-v2-60hp-single.stl",
+      "sha256": "584dea8a321824e370d5439104613eebc43a28d4fcd3b44f112b3c32fefc36a2"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 459,
+      "member": "zudo-case-family-preview/source-data/rail60/provenance.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/rail60/provenance.json",
+      "sha256": "734835b3b49e48368abe7c6c9523af2e1f752c6b42a8811620ae2bbce8e48d30"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 4734,
+      "member": "zudo-case-family-preview/source-data/rail60/rail_dimensions.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/rail60/rail_dimensions.json",
+      "sha256": "b518e0d6f3a21ab7e08bb1147c35c078475a3ac0c6106daafd863e7c9acfa337"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 16467,
+      "member": "zudo-case-family-preview/source-data/rail60/rail_mesh.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/source-data/rail60/rail_mesh.json",
+      "sha256": "eff25355d247f8455eccaf8ffd9e2d659d729a7d7571acb715137c8bc2dbbf2b"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 2083985,
+      "member": "zudo-case-family-preview/stl-data.js",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl-data.js",
+      "sha256": "01c2ddb2d96ca72e1b8965b445a8c01fe6191119284604ee886bdb2dfb1463b5"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 26484,
+      "member": "zudo-case-family-preview/stl/3u60/t1p0/3u60_r6_t1p0_01_top_u_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/3u60/t1p0/3u60_r6_t1p0_01_top_u_qty2_mm.stl",
+      "sha256": "041bf48b4a6d87ee95de08a4d7e89ed74c422d381c0a6d7d32da5f802c1be7ef"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11684,
+      "member": "zudo-case-family-preview/stl/3u60/t1p0/3u60_r6_t1p0_02_lower_width_half_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/3u60/t1p0/3u60_r6_t1p0_02_lower_width_half_qty4_mm.stl",
+      "sha256": "08c04a3c26b8a28d2a89ad63ad3320e23080f575e2962a5c41f66aed0235acb5"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 12284,
+      "member": "zudo-case-family-preview/stl/3u60/t1p0/3u60_r6_t1p0_03_lower_depth_full_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/3u60/t1p0/3u60_r6_t1p0_03_lower_depth_full_qty2_mm.stl",
+      "sha256": "6bc87c45a4780504d0571339a8404281c92e4803440e887290b20239e86d1e8e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11684,
+      "member": "zudo-case-family-preview/stl/3u60/t1p0/3u60_r6_t1p0_04_vertical_corner_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/3u60/t1p0/3u60_r6_t1p0_04_vertical_corner_qty4_mm.stl",
+      "sha256": "164b58c996193841974a3f2d985d0e05c43edc2d56fd91e8a2567be4dca20dc5"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 2754,
+      "member": "zudo-case-family-preview/stl/3u60/t1p0/manifest.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/3u60/t1p0/manifest.json",
+      "sha256": "3d43544f1c645e8238677bec63aa61ce029e44ef9194f10239b06dc5609e5705"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 26484,
+      "member": "zudo-case-family-preview/stl/3u60/t1p2/3u60_r6_t1p2_01_top_u_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/3u60/t1p2/3u60_r6_t1p2_01_top_u_qty2_mm.stl",
+      "sha256": "ed8ca25644e69e2c7a2314e0f48627aae08dcf21b6e7f8bfeb1cc395b69afb53"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11684,
+      "member": "zudo-case-family-preview/stl/3u60/t1p2/3u60_r6_t1p2_02_lower_width_half_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/3u60/t1p2/3u60_r6_t1p2_02_lower_width_half_qty4_mm.stl",
+      "sha256": "916e0e33bf4bb032dc9c25451d96b9215255caa8ed70369243c145683af3c7ae"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 12284,
+      "member": "zudo-case-family-preview/stl/3u60/t1p2/3u60_r6_t1p2_03_lower_depth_full_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/3u60/t1p2/3u60_r6_t1p2_03_lower_depth_full_qty2_mm.stl",
+      "sha256": "825ee409e8af9382d9cceb9bfa9094c5c2d8bcff193db1f773b30824b35de858"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11684,
+      "member": "zudo-case-family-preview/stl/3u60/t1p2/3u60_r6_t1p2_04_vertical_corner_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/3u60/t1p2/3u60_r6_t1p2_04_vertical_corner_qty4_mm.stl",
+      "sha256": "28d7d117f878b57913b9e376939483be0a15a61f91c2cf03da7bb5f9bd531658"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 2754,
+      "member": "zudo-case-family-preview/stl/3u60/t1p2/manifest.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/3u60/t1p2/manifest.json",
+      "sha256": "9020133e5ef19fc2a232e13f0a0c93649297fc170a5d8d6562f209e87456922c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 19084,
+      "member": "zudo-case-family-preview/stl/7u40/t1p0/7u40_r6_t1p0_01_top_corner_a_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p0/7u40_r6_t1p0_01_top_corner_a_qty2_mm.stl",
+      "sha256": "883d1ebe92cb21364a5fd0ed07e4ae64fa57ca55869486306d3a878526cec6fc"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 19084,
+      "member": "zudo-case-family-preview/stl/7u40/t1p0/7u40_r6_t1p0_02_top_corner_b_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p0/7u40_r6_t1p0_02_top_corner_b_qty2_mm.stl",
+      "sha256": "3cdc72b8450e41d15b97b509e0e317e69ea2efeabeca6f2217ccaf8dfb8f1897"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11684,
+      "member": "zudo-case-family-preview/stl/7u40/t1p0/7u40_r6_t1p0_03_lower_width_half_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p0/7u40_r6_t1p0_03_lower_width_half_qty4_mm.stl",
+      "sha256": "beefe8cc35512af5118e4c75364ae67aba6f83f1560716d6bc3ea83fbd50217a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11984,
+      "member": "zudo-case-family-preview/stl/7u40/t1p0/7u40_r6_t1p0_04_lower_depth_half_a_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p0/7u40_r6_t1p0_04_lower_depth_half_a_qty2_mm.stl",
+      "sha256": "c2f4d1fcee13947a28249a48e644b9a0fd1ea1d6c0fcb73e58db6c4af7217b7c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11984,
+      "member": "zudo-case-family-preview/stl/7u40/t1p0/7u40_r6_t1p0_05_lower_depth_half_b_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p0/7u40_r6_t1p0_05_lower_depth_half_b_qty2_mm.stl",
+      "sha256": "9ee4dcad6c85428ff77dc4c082ae3c017500998c88ac07a9831db9e52fb6dd87"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11684,
+      "member": "zudo-case-family-preview/stl/7u40/t1p0/7u40_r6_t1p0_06_vertical_corner_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p0/7u40_r6_t1p0_06_vertical_corner_qty4_mm.stl",
+      "sha256": "164b58c996193841974a3f2d985d0e05c43edc2d56fd91e8a2567be4dca20dc5"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3533,
+      "member": "zudo-case-family-preview/stl/7u40/t1p0/manifest.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p0/manifest.json",
+      "sha256": "ddb4a0d36ec6bb98d08f64537f5a4853ec85c8d2d3df1544a0c0b55d86724f5a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 19084,
+      "member": "zudo-case-family-preview/stl/7u40/t1p2/7u40_r6_t1p2_01_top_corner_a_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p2/7u40_r6_t1p2_01_top_corner_a_qty2_mm.stl",
+      "sha256": "ffdeb609e7c11a7ae4399d38e45930e786c0a3af867649486ae9d048e1e24a75"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 19084,
+      "member": "zudo-case-family-preview/stl/7u40/t1p2/7u40_r6_t1p2_02_top_corner_b_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p2/7u40_r6_t1p2_02_top_corner_b_qty2_mm.stl",
+      "sha256": "ae8116eaa81b9a1c1357a60a8dfb949e6c563299ed40b4261a186bad643615a2"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11684,
+      "member": "zudo-case-family-preview/stl/7u40/t1p2/7u40_r6_t1p2_03_lower_width_half_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p2/7u40_r6_t1p2_03_lower_width_half_qty4_mm.stl",
+      "sha256": "a4ddf4ed1e99943709572fc469ede9522cbf67dd6acad44e6d3407bba419808c"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11984,
+      "member": "zudo-case-family-preview/stl/7u40/t1p2/7u40_r6_t1p2_04_lower_depth_half_a_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p2/7u40_r6_t1p2_04_lower_depth_half_a_qty2_mm.stl",
+      "sha256": "f36c53e9fd7a20d0d1ef84c091e2185506d4acd9bdebe4054a892a5ea68cac6d"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11984,
+      "member": "zudo-case-family-preview/stl/7u40/t1p2/7u40_r6_t1p2_05_lower_depth_half_b_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p2/7u40_r6_t1p2_05_lower_depth_half_b_qty2_mm.stl",
+      "sha256": "deec4f40b9af1f83162bf2ad039ac248d4f058f2c1f58501ce0946e5bba5b0a1"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11684,
+      "member": "zudo-case-family-preview/stl/7u40/t1p2/7u40_r6_t1p2_06_vertical_corner_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p2/7u40_r6_t1p2_06_vertical_corner_qty4_mm.stl",
+      "sha256": "bf490b6037757f4746bea138920e0af4b57aa13ebb9065436589290f8735e641"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3534,
+      "member": "zudo-case-family-preview/stl/7u40/t1p2/manifest.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u40/t1p2/manifest.json",
+      "sha256": "38cb9ac9a0128eaa0b24305d742eef81d9b196c72c7cbc89173bbc46f857b1e4"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 19084,
+      "member": "zudo-case-family-preview/stl/7u60/t1p0/7u60_r6_t1p0_01_top_corner_a_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p0/7u60_r6_t1p0_01_top_corner_a_qty2_mm.stl",
+      "sha256": "374867261b3e1d86fb4f9f43cb7f82e00f96fd2f7f3c9938e3c5492f1682e256"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 19084,
+      "member": "zudo-case-family-preview/stl/7u60/t1p0/7u60_r6_t1p0_02_top_corner_b_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p0/7u60_r6_t1p0_02_top_corner_b_qty2_mm.stl",
+      "sha256": "3a55a198f17b174b69afe958d6c80a97e43cd1e6ce723dd34322cd54bbc0fb2a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11684,
+      "member": "zudo-case-family-preview/stl/7u60/t1p0/7u60_r6_t1p0_03_lower_width_half_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p0/7u60_r6_t1p0_03_lower_width_half_qty4_mm.stl",
+      "sha256": "08c04a3c26b8a28d2a89ad63ad3320e23080f575e2962a5c41f66aed0235acb5"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11984,
+      "member": "zudo-case-family-preview/stl/7u60/t1p0/7u60_r6_t1p0_04_lower_depth_half_a_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p0/7u60_r6_t1p0_04_lower_depth_half_a_qty2_mm.stl",
+      "sha256": "4d9f886fc0adf0867b167e163743243861f522d16d7855d97001a1f70438e03e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11984,
+      "member": "zudo-case-family-preview/stl/7u60/t1p0/7u60_r6_t1p0_05_lower_depth_half_b_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p0/7u60_r6_t1p0_05_lower_depth_half_b_qty2_mm.stl",
+      "sha256": "76d2bdb2c2a3830243c96252418d4f9761499f5903e2768af30c518a9091150e"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11684,
+      "member": "zudo-case-family-preview/stl/7u60/t1p0/7u60_r6_t1p0_06_vertical_corner_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p0/7u60_r6_t1p0_06_vertical_corner_qty4_mm.stl",
+      "sha256": "164b58c996193841974a3f2d985d0e05c43edc2d56fd91e8a2567be4dca20dc5"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3537,
+      "member": "zudo-case-family-preview/stl/7u60/t1p0/manifest.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p0/manifest.json",
+      "sha256": "6d171cfb1bb8f2529dca1c46a5d19a976233d4592361841607a82b2dca6a1efb"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 19084,
+      "member": "zudo-case-family-preview/stl/7u60/t1p2/7u60_r6_t1p2_01_top_corner_a_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p2/7u60_r6_t1p2_01_top_corner_a_qty2_mm.stl",
+      "sha256": "a8c04a4663d300908a84f589259c025c7d35cc1a566098e8ec72f041287e9e5b"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 19084,
+      "member": "zudo-case-family-preview/stl/7u60/t1p2/7u60_r6_t1p2_02_top_corner_b_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p2/7u60_r6_t1p2_02_top_corner_b_qty2_mm.stl",
+      "sha256": "c434aa4b4c39b42b29b06948dde485e1bb6047f3ba8c63d2e021c59c1b321d87"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11684,
+      "member": "zudo-case-family-preview/stl/7u60/t1p2/7u60_r6_t1p2_03_lower_width_half_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p2/7u60_r6_t1p2_03_lower_width_half_qty4_mm.stl",
+      "sha256": "0578fa33ad51906a328073f2fac8cc0944d839f114839ff2fde753ec8758eeb9"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11984,
+      "member": "zudo-case-family-preview/stl/7u60/t1p2/7u60_r6_t1p2_04_lower_depth_half_a_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p2/7u60_r6_t1p2_04_lower_depth_half_a_qty2_mm.stl",
+      "sha256": "b63ece0deb756821887ad582130914a71baa5906dd67ce47212a4caa1dd02cc3"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11984,
+      "member": "zudo-case-family-preview/stl/7u60/t1p2/7u60_r6_t1p2_05_lower_depth_half_b_qty2_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p2/7u60_r6_t1p2_05_lower_depth_half_b_qty2_mm.stl",
+      "sha256": "9957045bb220dd326e0a6e3ec7407b4e6a4ef568a3d11cd2095face1cbb26d8f"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 11684,
+      "member": "zudo-case-family-preview/stl/7u60/t1p2/7u60_r6_t1p2_06_vertical_corner_qty4_mm.stl",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p2/7u60_r6_t1p2_06_vertical_corner_qty4_mm.stl",
+      "sha256": "9536b3a66cf80fe395e429716ef130a291b2ce9c0c15f298203ecac2508fffaa"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 3537,
+      "member": "zudo-case-family-preview/stl/7u60/t1p2/manifest.json",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/stl/7u60/t1p2/manifest.json",
+      "sha256": "0d2ee57c54d3c8b4ee7cc978101d7600181dbb406e0be4ee1aa047f6fcac63eb"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 18820,
+      "member": "zudo-case-family-preview/styles.css",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/styles.css",
+      "sha256": "74e6164ab7d48804263828b07ff5c2de27e3bbd0d86e91b106e0453bfd4fca3a"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 1110,
+      "member": "zudo-case-family-preview/vendor/README.md",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/vendor/README.md",
+      "sha256": "24e824df1bb58300fe646693f00aafb9e6ba627d81342f03bb03f248e77b5af1"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 1081,
+      "member": "zudo-case-family-preview/vendor/THREE-LICENSE.txt",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/vendor/THREE-LICENSE.txt",
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 286,
+      "member": "zudo-case-family-preview/vendor/entry.js",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/vendor/entry.js",
+      "sha256": "d24b534e8613abbaf2ae4ea23e3451b202cf65528a4ab8ad12383e152fbd63d4"
+    },
+    {
+      "archive": "public/downloads/archive/r7-m3-lid-source.zip",
+      "bytes": 701115,
+      "member": "zudo-case-family-preview/vendor/three-bundle.js",
+      "path": "public/downloads/archive/r7-m3-lid-source.zip::zudo-case-family-preview/vendor/three-bundle.js",
+      "sha256": "d0e6b6a154209a0cda8f94d8a90a3a833cf3997105f89a6d720a0f0d5d4e6ebe"
+    }
+  ],
+  "revision": "R9-PROTOTYPE-01",
+  "schema": "zudo-case-r9-output-manifest-v1",
+  "status": "unapproved_prototype",
+  "units": "mm"
+}
