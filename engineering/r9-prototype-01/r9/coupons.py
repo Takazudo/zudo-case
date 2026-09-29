@@ -1,15 +1,17 @@
-"""C1 guard-fit and C3 bracket-slot coupons for the R9 7U40 candidate."""
+"""C1 guard-fit, C2 lid-stack, and C3 bracket-slot coupons for R9 7U40."""
 from __future__ import annotations
 
 from copy import deepcopy
 from dataclasses import replace
 import json
 import math
+from pathlib import Path
+import tempfile
 
 import cadquery as cq
 
-from . import body, guards, slots
-from .common import sha256_file
+from . import body, guards, lid, slots
+from .common import export_dxf, export_step, export_stl, inspect_binary_stl, sha256_file
 from .types import BuildContext, Part
 
 
@@ -84,7 +86,7 @@ def _manifest_record(ctx: BuildContext, coupon_id: str, parts: list[Part], *, qu
 def _input_records(ctx: BuildContext, sources: dict) -> list[dict]:
     repo_root = ctx.root.resolve().parents[1]
     paths = [ctx.root / "params" / f"{name}.json"
-             for name in ("body", "guards", "slots", "coupons")]
+             for name in ("body", "guards", "slots", "lid", "coupons")]
     paths.extend(sources["paths"].values())
     records = []
     for path in sorted(paths, key=lambda item: item.as_posix()):
@@ -344,12 +346,297 @@ def _build_c3(ctx: BuildContext) -> tuple[list[Part], list[dict], dict]:
     return all_parts, records, sources
 
 
+def _c2_bounds(shape: cq.Shape) -> dict:
+    bounds = shape.BoundingBox()
+    return {
+        "minMm": [round(v, 6) for v in (bounds.xmin, bounds.ymin, bounds.zmin)],
+        "maxMm": [round(v, 6) for v in (bounds.xmax, bounds.ymax, bounds.zmax)],
+        "dimensionsMm": [round(v, 6) for v in (bounds.xlen, bounds.ylen, bounds.zlen)],
+    }
+
+
+def _c2_clip(shape: cq.Shape, box: cq.Shape, name: str) -> cq.Shape:
+    clipped = shape.intersect(box).clean()
+    if not clipped.isValid() or not clipped.Solids() or clipped.Volume() <= 1e-7:
+        raise ValueError(f"C2 local box did not produce a valid solid: {name}")
+    return clipped
+
+
+def _c2_local_feature(center_x: float, center_y: float, half_x: float, half_y: float,
+                      clip_bounds: tuple[float, float, float, float],
+                      name: str) -> tuple[float, float] | None:
+    """Return a fully retained local DXF feature; reject a crop through one."""
+    feature = (center_x-half_x, center_x+half_x, center_y-half_y, center_y+half_y)
+    clip = clip_bounds
+    if (feature[1] < clip[0]-1e-7 or feature[0] > clip[1]+1e-7 or
+            feature[3] < clip[2]-1e-7 or feature[2] > clip[3]+1e-7):
+        return None
+    if (feature[0] < clip[0]-1e-7 or feature[1] > clip[1]+1e-7 or
+            feature[2] < clip[2]-1e-7 or feature[3] > clip[3]+1e-7):
+        raise ValueError(f"C2 clip intersects only part of a DXF feature: {name}")
+    return center_x-clip[0], center_y-clip[2]
+
+
+def _c2_body_wall_dxf(source: Part, clipped: cq.Shape) -> tuple[tuple, tuple, tuple]:
+    """Map the vertical front wall's flat X/Z profile to local DXF XY."""
+    source_box = source.solid.BoundingBox()
+    clip_box = clipped.BoundingBox()
+    outline = ((0.0, 0.0), (clip_box.xlen, 0.0),
+               (clip_box.xlen, clip_box.zlen), (0.0, clip_box.zlen))
+    holes = []
+    for index, (x, z, radius) in enumerate(source.dxf_holes):
+        assembly_x, assembly_z = source_box.xmin + x, source_box.zmin + z
+        center = _c2_local_feature(assembly_x, assembly_z, radius, radius,
+                                   (clip_box.xmin, clip_box.xmax, clip_box.zmin, clip_box.zmax),
+                                   f"front-wall hole {index}")
+        if center:
+            holes.append((*center, radius))
+    dxf_slots = []
+    for index, (x, z, length, width, angle) in enumerate(source.dxf_slots):
+        assembly_x, assembly_z = source_box.xmin + x, source_box.zmin + z
+        radians = math.radians(angle)
+        half_x = (length*abs(math.cos(radians)) + width*abs(math.sin(radians))) / 2
+        half_z = (length*abs(math.sin(radians)) + width*abs(math.cos(radians))) / 2
+        center = _c2_local_feature(assembly_x, assembly_z, half_x, half_z,
+                                   (clip_box.xmin, clip_box.xmax, clip_box.zmin, clip_box.zmax),
+                                   f"front-wall slot {index}")
+        if center:
+            dxf_slots.append((*center, length, width, angle))
+    return outline, tuple(holes), tuple(dxf_slots)
+
+
+def _c2_lid_plate_dxf(source: Part, clipped: cq.Shape) -> tuple[tuple, tuple, tuple]:
+    """Map the horizontal plate coupon to DXF XY and retain any full holes."""
+    source_box = source.solid.BoundingBox()
+    clip_box = clipped.BoundingBox()
+    outline = ((0.0, 0.0), (clip_box.xlen, 0.0),
+               (clip_box.xlen, clip_box.ylen), (0.0, clip_box.ylen))
+    holes = []
+    for index, (x, y, radius) in enumerate(source.dxf_holes):
+        assembly_x, assembly_y = source_box.xmin + x, source_box.ymin + y
+        center = _c2_local_feature(assembly_x, assembly_y, radius, radius,
+                                   (clip_box.xmin, clip_box.xmax, clip_box.ymin, clip_box.ymax),
+                                   f"lid-plate hole {index}")
+        if center:
+            holes.append((*center, radius))
+    return outline, tuple(holes), ()
+
+
+def _c2_export(ctx: BuildContext, coupon_id: str, part: Part) -> list[str]:
+    destination = ctx.out / "coupons" / "c2" / coupon_id.lower()
+    destination.mkdir(parents=True, exist_ok=True)
+    stem = f"{part.id.lower()}-qty{part.qty}-mm"
+    paths = []
+    kinds = ("step", "stl", *(('dxf',) if part.dxf_outline is not None else ()))
+    for kind in kinds:
+        target = destination / f"{stem}.{kind}"
+        if kind == "step":
+            export_step(part.solid, target)
+            target.write_bytes(b"\n".join(
+                line.rstrip(b" \t") for line in target.read_bytes().split(b"\n")
+            ))
+        elif kind == "stl":
+            export_stl(part.solid, target)
+            inspect_binary_stl(target, part.solid)
+        else:
+            export_dxf(target, part.dxf_outline, part.dxf_holes, part.dxf_slots)
+        if target.stat().st_size >= 25 * 1024 * 1024:
+            raise ValueError(f"C2 output exceeds the 25 MiB file limit: {target}")
+        paths.append(target.relative_to(ctx.root).as_posix())
+    return paths
+
+
+def _c2_intersection_volume(a: cq.Shape, b: cq.Shape) -> float:
+    a_box, b_box = a.BoundingBox(), b.BoundingBox()
+    if any(xmax < ymin-1e-7 or ymax < xmin-1e-7 for xmin, xmax, ymin, ymax in (
+            (a_box.xmin, a_box.xmax, b_box.xmin, b_box.xmax),
+            (a_box.ymin, a_box.ymax, b_box.ymin, b_box.ymax),
+            (a_box.zmin, a_box.zmax, b_box.zmin, b_box.zmax))):
+        return 0.0
+    return a.intersect(b).Volume()
+
+
+def _c2_lift_off_check(lid_parts: list[cq.Shape], stationary_parts: list[tuple[str, cq.Shape]]) -> dict:
+    """Sample a vertical lift, then stop when Z bounds prove later separation."""
+    lid_min_z = min(part.BoundingBox().zmin for part in lid_parts)
+    fixed_max_z = max(shape.BoundingBox().zmax for _, shape in stationary_parts)
+    last_rise = max(1, math.ceil(fixed_max_z-lid_min_z) + 1)
+    rise_values = list(range(last_rise+1))
+    collision = None
+    for rise in rise_values:
+        for part_index, part in enumerate(lid_parts):
+            moved = part.translate((0, 0, rise))
+            for fixed_id, fixed in stationary_parts:
+                volume = _c2_intersection_volume(moved, fixed)
+                if volume > 1e-6:
+                    collision = {"riseMm": rise, "movingPartIndex": part_index,
+                                 "fixedPartId": fixed_id, "intersectionVolumeMm3": round(volume, 6)}
+                    break
+            if collision:
+                break
+        if collision:
+            break
+    if collision:
+        raise ValueError(f"C2 vertical lift path intersects candidate geometry: {collision}")
+    return {
+        "motion": "straight vertical lift in +Z",
+        "sampleStepMm": 1,
+        "sampledRiseMm": [0, last_rise],
+        "sampleCount": len(rise_values),
+        "candidateBrepIntersectionFound": False,
+        "separatedByZBoundsAfterLastSample": True,
+        "physicalLiftOffResult": None,
+    }
+
+
+def _build_c2(ctx: BuildContext) -> tuple[list[Part], list[dict]]:
+    """Clip candidate body, guard and lift-off-lid solids into one front section."""
+    box_min = [float(value) for value in _coupon_value(ctx, "c2_coupon_box_min")]
+    box_max = [float(value) for value in _coupon_value(ctx, "c2_coupon_box_max")]
+    if any(box_max[index] <= box_min[index] for index in range(3)):
+        raise ValueError("C2 local coupon box must have positive dimensions")
+    clip_box = cq.Solid.makeBox(*(box_max[index]-box_min[index] for index in range(3)),
+                                cq.Vector(*box_min))
+    baseline_clearance = float(ctx.value("lid", "top_edge_lid_locator_clearance"))
+    clearance_variants = [float(value) for value in _coupon_value(ctx, "c2_lid_locator_clearance_variants")]
+    if (len(clearance_variants) != 2 or any(value <= 0 for value in clearance_variants) or
+            len({round(value, 9) for value in [baseline_clearance, *clearance_variants]}) != 3):
+        raise ValueError("C2 requires three distinct positive locator clearances including the lid baseline")
+
+    # Module builders are the source of truth for the solids. Redirect their
+    # intermediate exports into a temporary directory so this coupon hook only
+    # delivers C2 files and the combined coupon manifest.
+    with tempfile.TemporaryDirectory(prefix=".r9-c2-source-", dir=ctx.root) as temporary:
+        source_ctx = replace(ctx, out=Path(temporary) / "out")
+        body_parts = {part.id: part for part in body.build(source_ctx)}
+        guard_parts = {part.id: part for part in guards.build(source_ctx)}
+        wall_source = body_parts["7U40-R9-AL-FRONT-BACK"]
+        rail_source = body_parts["7U40-R9-HW-RAIL-UNIT-ENVELOPE"]
+        guard_source = guard_parts["7U40-R9-PA12-GUARD-T1P2-TOP-A"]
+        # TOP-A is the candidate front-left quadrant; its mirrored partner is
+        # the same emitted geometry placed at the front-right coupon station.
+        guard_solid = guard_source.solid.mirror("YZ")
+        wall_solid = _c2_clip(wall_source.solid, clip_box, wall_source.id)
+        rail_solid = _c2_clip(rail_source.solid, clip_box, rail_source.id)
+        guard_cropped = _c2_clip(guard_solid, clip_box, guard_source.id)
+
+        wall_dxf = _c2_body_wall_dxf(wall_source, wall_solid)
+        stationary = [(wall_source.id, wall_solid), (guard_source.id, guard_cropped),
+                      (rail_source.id, rail_solid)]
+        wall_box, rail_box = wall_source.solid.BoundingBox(), rail_source.solid.BoundingBox()
+        front_gap = rail_box.ymin-wall_box.ymax
+        if front_gap <= 0:
+            raise ValueError("C2 candidate front wall and rail envelope overlap")
+
+        parts: list[Part] = []
+        records: list[dict] = []
+        clearances = [("C2-01", baseline_clearance, None)]
+        clearances.extend((f"C2-{index:02d}", value, {
+            "name": "top_edge_lid_locator_clearance",
+            "baselineValue": baseline_clearance,
+            "couponValue": value,
+        }) for index, value in enumerate(clearance_variants, start=2))
+
+        for coupon_id, clearance, changed in clearances:
+            variant_params = deepcopy(ctx.params)
+            variant_params["lid"]["top_edge_lid_locator_clearance"]["value"] = clearance
+            lid_ctx = replace(source_ctx, params=variant_params)
+            lid_parts = {part.id: part for part in lid.build(lid_ctx)}
+            frame_source = lid_parts["7U40-R9-PA12-LID-FRAME-FR"]
+            plate_source = lid_parts["7U40-R9-LID-PLATE"]
+            frame_solid = _c2_clip(frame_source.solid, clip_box, frame_source.id)
+            plate_solid = _c2_clip(plate_source.solid, clip_box, plate_source.id)
+            plate_dxf = _c2_lid_plate_dxf(plate_source, plate_solid)
+
+            components = [
+                ("BODY-WALL", wall_source.id, wall_solid,
+                 "A5052 aluminum t1.5 candidate", wall_dxf),
+                ("RAIL-ENVELOPE", rail_source.id, rail_solid,
+                 rail_source.material, None),
+                ("GUARD", guard_source.id, guard_cropped,
+                 guard_source.material, None),
+                ("LID-FRAME", frame_source.id, frame_solid,
+                 frame_source.material, None),
+                ("LID-PLATE", plate_source.id, plate_solid,
+                 plate_source.material, plate_dxf),
+            ]
+            coupon_parts = []
+            component_details = []
+            for role, source_id, solid, material, dxf in components:
+                part_id = f"7U40-R9-CPN-{coupon_id}-{role}"
+                part = Part(part_id, solid, "coupons", material, 1, (),
+                            dxf_outline=dxf[0] if dxf else None,
+                            dxf_holes=dxf[1] if dxf else (),
+                            dxf_slots=dxf[2] if dxf else ())
+                files = _c2_export(ctx, coupon_id, part)
+                parts.append(part)
+                coupon_parts.append(part)
+                detail = {"partId": part_id, "sourcePartId": source_id,
+                          "material": material, "boundsAssemblyMm": _c2_bounds(solid),
+                          "files": files}
+                if role == "GUARD":
+                    detail["sourcePlacement"] = "mirror of candidate TOP-A across assembly YZ plane"
+                if role == "RAIL-ENVELOPE":
+                    detail["sourceRepresentation"] = "source rail mesh bounding box; rail profile is not represented"
+                if role in ("BODY-WALL", "LID-PLATE"):
+                    detail["dxfTransform"] = {
+                        "originAssemblyMm": [round(solid.BoundingBox().xmin, 6),
+                                             round(solid.BoundingBox().ymin, 6),
+                                             round(solid.BoundingBox().zmin, 6)],
+                        "basisU": [1, 0, 0],
+                        "basisV": [0, 0, 1] if role == "BODY-WALL" else [0, 1, 0],
+                        "thicknessAxis": [0, 1, 0] if role == "BODY-WALL" else [0, 0, 1],
+                    }
+                component_details.append(detail)
+
+            lift_off = _c2_lift_off_check(
+                [frame_solid, plate_solid], stationary,
+            )
+            baseline = {
+                "bodyMetalThicknessMm": float(ctx.value("body", "metal_thickness")),
+                "guardThicknessMm": float(ctx.value("guards", "main_thickness")),
+                "guardFitClearancePerSideMm": float(ctx.value("guards", "fitClearancePerSide")),
+                "guardAdhesiveLayerMm": float(ctx.value("guards", "adhesiveLayer")),
+                "lidLocatorClearanceMm": baseline_clearance,
+                "lidFrameSeatZMm": float(ctx.value("lid", "frame_seat_z")),
+                "lidLocatorBottomZMm": float(ctx.value("lid", "locator_bottom_z")),
+                "lidPlateThicknessMm": float(ctx.value("lid", "plate_thickness")),
+                "frontWallToRailEnvelopeGapMm": round(front_gap, 6),
+                "couponBoxAssemblyMm": {"min": box_min, "max": box_max},
+            }
+            file_paths = [path for component in component_details for path in component["files"]]
+            record = _manifest_record(
+                ctx, coupon_id, coupon_parts, quantity=1, baseline=baseline,
+                changed=changed,
+                material="PA12-HP and A5052 t1.5 candidate section; rail envelope is reference-only",
+                purpose="Local front body/guard/lid section for locator clearance and plate support trials.",
+                results={"physicalFit": None, "locatorFit": None,
+                         "retention": None, "notes": None},
+                details={
+                    "coordinateSystem": "R9 7U40 assembly coordinates; coupon pieces are not recentered",
+                    "cutMethod": "intersection of candidate module solids with one local axis-aligned box",
+                    "couponBoxAssemblyMm": {"min": box_min, "max": box_max},
+                    "locatorClearanceMm": clearance,
+                    "frontWallInnerFaceYmm": round(wall_box.ymax, 6),
+                    "railEnvelopeFrontFaceYmm": round(rail_box.ymin, 6),
+                    "frontWallToRailEnvelopeGapMm": round(front_gap, 6),
+                    "railGapNote": "Candidate gap uses the R9 source-rail bounding envelope; the non-manifold rail STL profile is not part of this BREP coupon.",
+                    "verticalRemovalPathCheck": lift_off,
+                    "components": component_details,
+                },
+            )
+            record["files"] = file_paths
+            records.append(record)
+    return parts, records
+
+
 def build(ctx: BuildContext) -> list[Part]:
-    """Build C1 and C3; C2 can add a separate builder and parameter prefix."""
+    """Build the C1, C2 and C3 candidate coupon families."""
     c1_parts, c1_records = _build_c1(ctx)
+    c2_parts, c2_records = _build_c2(ctx)
     c3_parts, c3_records, sources = _build_c3(ctx)
-    parts = [*c1_parts, *c3_parts]
-    records = [*c1_records, *c3_records]
+    parts = [*c1_parts, *c2_parts, *c3_parts]
+    records = [*c1_records, *c2_records, *c3_records]
     ids = [part.id for part in parts]
     if len(ids) != len(set(ids)):
         raise ValueError("duplicate coupon part ID")
