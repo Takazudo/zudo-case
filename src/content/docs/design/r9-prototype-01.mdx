@@ -1,0 +1,46 @@
+---
+title: "7U40 R9 製作候補"
+description: "R9-PROTOTYPE-01の形状、出力と未検証事項を同じ版で確認する。"
+sidebar_position: 70
+---
+
+**R9-PROTOTYPE-01は7U40だけの製作候補・未承認。** 有償試作、量産、発注の指示ではない。
+
+<PreviewLink path="/previews/r9-prototype-01.html">R9の3Dプレビュー</PreviewLink>。形状の概観には使えるが、嵌合・荷重の現物結果ではない。CADと数量は`engineering/r9-prototype-01/out/`、検査範囲は`out/validation.json`、版とファイルの正本は`out/preview/file-table.json`にある。
+
+## 版とファイル
+
+この表は生成済み`out/preview/file-table.json`をバイト同一で`./r9-file-table.json`へ写し、そこから読み込んで表示する。再生成時はJSONの文書側コピーと断面画像の公開コピーも更新する。各行は１台分の部品パターン。元ファイルのSHA-256はJSONで、ZIPの収録物はZIP内`package-manifest.json`で照合する。表の元形式すべてがZIPへ収録されるわけではない（アルミZIPはDXF/STEP）。表示専用の`hardware-envelopes`は除外した。
+
+import fileTable from './r9-file-table.json';
+
+<table>
+<thead><tr><th>版・部品ID</th><th>名称・数量</th><th>形式と元ファイル</th><th>候補ZIP</th></tr></thead>
+<tbody>{fileTable.parts.filter((part) => part.category !== 'hardware-envelopes').map((part) => <tr key={part.partId}><td>{fileTable.revision}<br />{part.partId}</td><td>{part.name} × {part.quantity}</td><td>{part.formats.map((item) => <div key={item.path}>{item.format.toUpperCase()}: <code>{item.path}</code></div>)}</td><td>{part.packageZip}</td></tr>)}</tbody>
+</table>
+
+<PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-aluminum-NOT-APPROVED.zip">アルミ候補ZIP</PreviewLink> ／ <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-pa12-NOT-APPROVED.zip">PA12候補ZIP</PreviewLink> ／ <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-coupons-NOT-APPROVED.zip">試験片ZIP</PreviewLink>。いずれも未承認。
+
+## R6・R8からの変更
+
+| 対象 | 旧版 | R9候補と理由 |
+|---|---|---|
+| 本体接合 | R6は全46穴が丸穴 | 金具接合36穴を曲げ線に直交する5.5×7.5mm長穴へ。±1.0mmの試験出発値。レール固定10穴は丸穴φ5.5 |
+| 本体ガード | R6の金属との公称すきま0、保持未定 | 片側嵌合すきま0.15mmと接着層0.15mmを別パラメータ化。接着性は未確認 |
+| 蓋 | R8は表示用メッシュ | 直上へ外すPA12枠とアルミ天板を編集可能なCADへ。蓋と本体のロックなし |
+| 試験片 | 現行断面の小片なし | 本体ガードC1、蓋と上端C2、金具と長穴C3を同じ形状関数から出力 |
+
+![長穴の調整範囲](/images/r9/slots-slot_travel.png)
+![座金と長穴の受け面](/images/r9/slots-bearing_overlap.png)
+![ガードの片側すきま](/images/r9/guards-fitClearancePerSide.png)
+![ガードの接着層](/images/r9/guards-adhesiveLayer.png)
+![蓋の差し込み代](/images/r9/lid-locator_engagement.png)
+![蓋と上端のすきま](/images/r9/lid-top_edge_lid_locator_clearance.png)
+
+断面図は生成値の説明で、現物嵌合結果ではない。蓋上昇30mm、パネル2mm＋ノブ25mm、差し込み12mm、片側すきま0.7mmは仮値。パッチケーブルを抜く条件と実モジュールの高さを[測定記録](../verification/measurements.mdx)で確認する。
+
+## 再生成と判定の境界
+
+R9のPython環境で`cd engineering/r9-prototype-01 && uv sync --locked && uv run python build.py`。プレビュー、断面、候補ZIPの再生成後、`out/outputs-manifest.json`のハッシュと`out/validation.json`を確認する。
+
+現行の機械検査は`passed_with_flags`。外径10mmの仮座金は壁側26長穴で受け面条件を満たさない。外径11.5mm以上は検討候補で、部品選定ではない。蓋枠の一部干渉・引抜経路の名目検査を通しているが、全組立の干渉、実金具、接着保持、アルマイト後の嵌合、バンド荷重、天板たわみ、落下・疲労は未検証。[小片手順](../verification/fit-test.mdx)から確認する。
