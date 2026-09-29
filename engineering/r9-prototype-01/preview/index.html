@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="R9-PROTOTYPE-01 未承認 7U40 preview built from generated R9 geometry.">
+<title>R9-PROTOTYPE-01 · 未承認 / ZUDO CASE</title>
+<style>/*__R9_STYLES__*/</style>
+</head>
+<body>
+<header class="header">
+  <div class="brand"><span class="logo">Z</span><div><h1>ZUDO CASE <span>/ R9 7U40</span></h1><p>生成CADから作成した表示専用プレビュー</p></div></div>
+  <div class="revision"><strong>R9-PROTOTYPE-01</strong><span>製作候補 · 未承認</span></div>
+</header>
+<main class="layout">
+  <section class="viewer" id="viewer" aria-label="R9-PROTOTYPE-01 3D preview">
+    <div id="mainCanvas" class="main-canvas"></div>
+    <div class="top-overlay"><div class="model-label">7U40 · 3U＋3U＋1U / 40HP</div><div class="status"><i id="statusDot"></i><strong id="statusText">日常</strong><span id="motionText">蓋 +0 mm</span></div></div>
+    <div class="view-buttons"><button data-view="iso" class="selected">全体</button><button data-view="front">手前</button><button data-view="top">上面</button><button data-view="bottom">底面</button></div>
+    <div class="viewer-caption">R9-PROTOTYPE-01 · 未承認 · mm · R9生成形状＋元R6 40HPレール</div>
+    <div class="selection" id="selection" hidden></div>
+    <div class="controls-help">ドラッグで回転 · スクロールで拡大 · 部品をクリックして寸法を表示</div>
+    <div class="loading" id="loading"><span class="spinner"></span>R9形状を読み込み中…</div>
+    <div class="error" id="error" hidden><h2>3Dを表示できませんでした</h2><p id="errorText"></p><p>WebGL2とgzip展開に対応したブラウザーで開いてください。</p></div>
+  </section>
+  <aside class="panel">
+    <section class="section warning"><strong>未承認 · 製作・発注用データではありません</strong><p>プレビューは嵌合、強度、運搬性能を確認しません。R6の40HPレールは表示用の原形状です。</p></section>
+    <section class="section">
+      <h2><span>01</span> 状態</h2>
+      <div class="state-buttons">
+        <button data-state="daily" class="selected" aria-pressed="true"><strong>日常</strong><small>蓋を載せる</small></button>
+        <button data-state="travel" aria-pressed="false"><strong>運搬</strong><small>バンド2本</small></button>
+        <button data-state="open" aria-pressed="false"><strong>開放</strong><small>蓋を持ち上げる</small></button>
+      </div>
+      <label class="range-label" for="lift">蓋の上昇量 <output id="liftValue">0 mm</output></label>
+      <input type="range" id="lift" min="0" max="150" step="1" value="0">
+      <p class="small" id="stateNote">載せ蓋です。ケースとの固定ロックはありません。</p>
+    </section>
+    <section class="section">
+      <h2><span>02</span> 形状表示</h2>
+      <label class="check"><input type="range" id="transparency" min="0" max="85" step="5" value="0"><span>外板・天板の透過</span><output id="transparencyValue">0%</output></label>
+      <label class="check"><input type="checkbox" id="showKnobs"><span>ノブ領域を表示</span></label>
+      <label class="check"><input type="checkbox" id="showThinGuards"><span>ガードt1.0候補を比較表示</span></label>
+      <div class="legend"><span><i class="metal"></i>アルミ</span><span><i class="blue"></i>PA12ガード</span><span><i class="orange"></i>仮定領域・バンド</span></div>
+      <p class="small" id="knobNote">ノブ領域はパネル厚2 mm＋ノブ高さ25 mmの仮定です。全モジュールの適合確認ではありません。</p>
+    </section>
+    <section class="section">
+      <h2><span>03</span> 部品情報</h2>
+      <div class="selection-card" id="partInfo" aria-live="polite"><strong>部品をクリックしてください</strong></div>
+      <details><summary>表示部品一覧</summary><div id="partList" class="part-list"></div></details>
+    </section>
+    <section class="section">
+      <h2><span>04</span> 実形状の断面</h2>
+      <label class="field-label" for="sectionSelect">パラメーターと断面</label>
+      <select id="sectionSelect" aria-label="パラメーター断面を選択"></select>
+      <img id="sectionImage" class="section-image" alt="生成CAD形状から作成した断面図">
+      <p id="sectionNote" class="small"></p>
+      <p class="small">断面線はR9生成STEPの実形状を切断して描画しています。静的図は嵌合検証ではありません。</p>
+    </section>
+    <section class="section">
+      <h2><span>05</span> 版とファイル</h2>
+      <p class="small">ファイル対応表は生成アーティファクトから作成しました。ZIP名は後続パッケージ用の予約名です。</p>
+      <details><summary>R9-PROTOTYPE-01 / 未承認 ファイル一覧</summary><div class="table-scroll"><table id="fileTable"><thead><tr><th>Part ID</th><th>形式・ファイル名</th><th>予定ZIP</th></tr></thead><tbody></tbody></table></div></details>
+    </section>
+    <section class="section note">
+      <h2><span>06</span> 前提と未確認</h2>
+      <p>長穴寸法、ガードのすきま・接着層、蓋の位置決め部、ねじ包絡、ノブ高さは試作候補または仮定を含みます。正確な材料、公差、製品、保持力は現物で確認してください。</p>
+      <p>運搬バンドは汎用形状の模式です。品番、バックル、締付力、蓋のたわみ、振動・落下・輸送性能は確認していません。</p>
+      <p>本ページは単一HTML内にスクリプト、形状、断面画像を含みます。ネット接続を使いません。すべての項目は未承認の表示用情報です。</p>
+    </section>
+    <footer>R9-PROTOTYPE-01 · 未承認 · 表示専用 <button id="resetAll">表示をリセット</button></footer>
+  </aside>
+</main>
+<!--__R9_THREE__*/
+<!--__R9_MODEL_DATA__*/
+<!--__R9_FILE_TABLE__*/
+<!--__R9_SECTION_DATA__*/
+<!--__R9_APP__*/
+</body>
+</html>
