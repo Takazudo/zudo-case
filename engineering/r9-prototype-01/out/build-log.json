@@ -1,0 +1,580 @@
+{
+  "revision": "R9-PROTOTYPE-01",
+  "model": "7u40",
+  "modules": [
+    "body",
+    "slots",
+    "guards",
+    "lid",
+    "coupons",
+    "preview_data",
+    "checks"
+  ],
+  "geometryStatus": "unapproved prototype candidate",
+  "parts": [
+    {
+      "id": "7U40-R9-AL-BOTTOM",
+      "category": "aluminum",
+      "material": "A5052 t1.5 mm candidate; black anodizing candidate",
+      "qty": 1
+    },
+    {
+      "id": "7U40-R9-AL-FRONT-BACK",
+      "category": "aluminum",
+      "material": "A5052 t1.5 mm candidate; black anodizing candidate",
+      "qty": 2
+    },
+    {
+      "id": "7U40-R9-AL-LEFT-RIGHT",
+      "category": "aluminum",
+      "material": "A5052 t1.5 mm candidate; black anodizing candidate",
+      "qty": 2
+    },
+    {
+      "id": "7U40-R9-HW-PANEL-BRACKET",
+      "category": "hardware-envelopes",
+      "material": "Existing metal L bracket; material unconfirmed; physical t2 mm",
+      "qty": 18
+    },
+    {
+      "id": "7U40-R9-HW-RAIL-UNIT-ENVELOPE",
+      "category": "hardware-envelopes",
+      "material": "Existing 40HP rail source bounding envelope; alloy unconfirmed",
+      "qty": 6
+    },
+    {
+      "id": "7U40-R9-PCB-FIXER",
+      "category": "hardware-envelopes",
+      "material": "Existing fixer PCB; user-confirmed t1.6 mm",
+      "qty": 2
+    },
+    {
+      "id": "7U40-R9-PCB-PADDER-3U",
+      "category": "hardware-envelopes",
+      "material": "Existing 3U padder PCB; user-confirmed t1.6 mm",
+      "qty": 4
+    },
+    {
+      "id": "7U40-R9-PCB-PADDER-1U",
+      "category": "hardware-envelopes",
+      "material": "Existing 1U padder PCB; user-confirmed t1.6 mm",
+      "qty": 2
+    },
+    {
+      "id": "7U40-R9-HW-INNER-SPACER",
+      "category": "hardware-envelopes",
+      "material": "Spacer envelope; material unconfirmed; t8 mm confirmed, R6 OD/ID provisional",
+      "qty": 10
+    },
+    {
+      "id": "7U40-R9-HW-WASHER-1MM",
+      "category": "hardware-envelopes",
+      "material": "Washer envelope; material unconfirmed; t1 mm confirmed, R6 OD/ID provisional",
+      "qty": 46
+    },
+    {
+      "id": "7U40-R9-HW-CASE-MOUNT-BOLT",
+      "category": "hardware-envelopes",
+      "material": "M5 mount bolt envelope; head height confirmed, length and diameter provisional",
+      "qty": 10
+    },
+    {
+      "id": "7U40-R9-HW-RAIL-END-BOLT",
+      "category": "hardware-envelopes",
+      "material": "M5 rail-end bolt envelope; length provisional",
+      "qty": 12
+    },
+    {
+      "id": "7U40-R9-HW-PANEL-JOINT-BOLT",
+      "category": "hardware-envelopes",
+      "material": "M5 panel joint bolt envelope; head height confirmed, head diameter and length provisional",
+      "qty": 36
+    },
+    {
+      "id": "7U40-R9-HW-M5-NUT",
+      "category": "hardware-envelopes",
+      "material": "M5 lock nut display envelope; nut dimensions provisional",
+      "qty": 46
+    },
+    {
+      "id": "7U40-R9-HW-FOOT",
+      "category": "hardware-envelopes",
+      "material": "Black rubber foot envelope; provisional size and location; product not selected",
+      "qty": 4
+    },
+    {
+      "id": "7U40-R9-PA12-GUARD-T1P2-TOP-A",
+      "category": "pa12",
+      "material": "PA12-HP black dyed candidate",
+      "qty": 2
+    },
+    {
+      "id": "7U40-R9-PA12-GUARD-T1P2-TOP-B",
+      "category": "pa12",
+      "material": "PA12-HP black dyed candidate",
+      "qty": 2
+    },
+    {
+      "id": "7U40-R9-PA12-GUARD-T1P2-LOWER-WIDTH-HALF",
+      "category": "pa12",
+      "material": "PA12-HP black dyed candidate",
+      "qty": 4
+    },
+    {
+      "id": "7U40-R9-PA12-GUARD-T1P2-LOWER-DEPTH-A",
+      "category": "pa12",
+      "material": "PA12-HP black dyed candidate",
+      "qty": 2
+    },
+    {
+      "id": "7U40-R9-PA12-GUARD-T1P2-LOWER-DEPTH-B",
+      "category": "pa12",
+      "material": "PA12-HP black dyed candidate",
+      "qty": 2
+    },
+    {
+      "id": "7U40-R9-PA12-GUARD-T1P2-VERTICAL-CORNER",
+      "category": "pa12",
+      "material": "PA12-HP black dyed candidate",
+      "qty": 4
+    },
+    {
+      "id": "7U40-R9-PA12-GUARD-T1P0-TOP-A",
+      "category": "pa12",
+      "material": "PA12-HP black dyed candidate",
+      "qty": 2
+    },
+    {
+      "id": "7U40-R9-PA12-GUARD-T1P0-TOP-B",
+      "category": "pa12",
+      "material": "PA12-HP black dyed candidate",
+      "qty": 2
+    },
+    {
+      "id": "7U40-R9-PA12-GUARD-T1P0-LOWER-WIDTH-HALF",
+      "category": "pa12",
+      "material": "PA12-HP black dyed candidate",
+      "qty": 4
+    },
+    {
+      "id": "7U40-R9-PA12-GUARD-T1P0-LOWER-DEPTH-A",
+      "category": "pa12",
+      "material": "PA12-HP black dyed candidate",
+      "qty": 2
+    },
+    {
+      "id": "7U40-R9-PA12-GUARD-T1P0-LOWER-DEPTH-B",
+      "category": "pa12",
+      "material": "PA12-HP black dyed candidate",
+      "qty": 2
+    },
+    {
+      "id": "7U40-R9-PA12-GUARD-T1P0-VERTICAL-CORNER",
+      "category": "pa12",
+      "material": "PA12-HP black dyed candidate",
+      "qty": 4
+    },
+    {
+      "id": "7U40-R9-LID-PLATE",
+      "category": "aluminum",
+      "material": "A5052 black anodized candidate",
+      "qty": 1
+    },
+    {
+      "id": "7U40-R9-PA12-LID-FRAME-FR",
+      "category": "pa12",
+      "material": "black PA12-HP",
+      "qty": 1
+    },
+    {
+      "id": "7U40-R9-PA12-LID-FRAME-FL",
+      "category": "pa12",
+      "material": "black PA12-HP",
+      "qty": 1
+    },
+    {
+      "id": "7U40-R9-PA12-LID-FRAME-BL",
+      "category": "pa12",
+      "material": "black PA12-HP",
+      "qty": 1
+    },
+    {
+      "id": "7U40-R9-PA12-LID-FRAME-BR",
+      "category": "pa12",
+      "material": "black PA12-HP",
+      "qty": 1
+    }
+  ],
+  "outputs": [
+    {
+      "path": "out/aluminum/7u40-r9-al-bottom-qty1-mm.step",
+      "sha256": "40d90fc8d1ab7a51abf6fa05e6601c077ab106cef085ce67635bc89671e467e5",
+      "bytes": 185308
+    },
+    {
+      "path": "out/aluminum/7u40-r9-al-bottom-qty1-mm.stl",
+      "sha256": "604e7d337f7b11b7f7af1a58d93d0f8b5f1b9106ac5ff3e2b7b16647ed2aaea5",
+      "bytes": 258684
+    },
+    {
+      "path": "out/aluminum/7u40-r9-al-bottom-qty1-mm.dxf",
+      "sha256": "026b11f039d0ccc2262f4ae7ca5e654ebc6b8aa213d91d6383dcdb5fc53ef9b0",
+      "bytes": 20704
+    },
+    {
+      "path": "out/aluminum/7u40-r9-al-front-back-qty2-mm.step",
+      "sha256": "884a2bb5f878cb08ab0d5d53bbe8547b6a25670fc3b1383bac737d1f800f5e9f",
+      "bytes": 119106
+    },
+    {
+      "path": "out/aluminum/7u40-r9-al-front-back-qty2-mm.stl",
+      "sha256": "e285842bd6a4e3256c9128d9dee1bfb03bd3a0b3fb39cf704d971075010801ab",
+      "bytes": 155484
+    },
+    {
+      "path": "out/aluminum/7u40-r9-al-front-back-qty2-mm.dxf",
+      "sha256": "02780cf37e7a63150e467adceb42f85e82d299e1501043b6d587be5f683cded8",
+      "bytes": 18702
+    },
+    {
+      "path": "out/aluminum/7u40-r9-al-left-right-qty2-mm.step",
+      "sha256": "4f0e94f8def7b147875be8eb479659d24b94761475e010a923f9ebbf142a7314",
+      "bytes": 159840
+    },
+    {
+      "path": "out/aluminum/7u40-r9-al-left-right-qty2-mm.stl",
+      "sha256": "cb434dece222c296b3b0dab1369ff74292ce6118edebf0a3bc573fdd818c277d",
+      "bytes": 308284
+    },
+    {
+      "path": "out/aluminum/7u40-r9-al-left-right-qty2-mm.dxf",
+      "sha256": "419865c0e020a8cc1973d682bdafb11555d377cbd05afeb753595ef2835b2c87",
+      "bytes": 19762
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-panel-bracket-qty18-mm.step",
+      "sha256": "d620fd66f9eb9fcc1a9ead241cc767ce232bd5e636ffebf0c73d5ccf98af7c29",
+      "bytes": 29761
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-panel-bracket-qty18-mm.stl",
+      "sha256": "a50b2d76be2d5ef244703b6557ee714ef78fb1fd592030bf27ad7f6796d5b5d2",
+      "bytes": 51884
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-rail-unit-envelope-qty6-mm.step",
+      "sha256": "c11af9f310108c37e19dc8b9837b2d9cc8c084c09845704fcf921c1f2c7c8472",
+      "bytes": 16174
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-rail-unit-envelope-qty6-mm.stl",
+      "sha256": "ccfb6c8b6c0842e071bda2310e87793735108ffc7caeb9fa8d68adc5e31930cc",
+      "bytes": 684
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-pcb-fixer-qty2-mm.step",
+      "sha256": "47e2f56e39c9491c69468307753528635a47dde0ff48fcc90b688ee5a279cff9",
+      "bytes": 12774700
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-pcb-fixer-qty2-mm.stl",
+      "sha256": "6f2d95e15c4c226fe25ad16398038950f4f56cadc26c09e3ae90337c95df8762",
+      "bytes": 632484
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-pcb-padder-3u-qty4-mm.step",
+      "sha256": "4e10fda3521a8b70ff447d5c3b89d8cb91ca5a68ecc427c4495f004f62ac38b9",
+      "bytes": 58350
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-pcb-padder-3u-qty4-mm.stl",
+      "sha256": "81d170af342a909a07495f5006ff2be12acca0bd1f58d6bb665824b96589a310",
+      "bytes": 3684
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-pcb-padder-1u-qty2-mm.step",
+      "sha256": "9430ae5b0bdfb5801babaa1eb5959556131c290ee795f463f4fa9ec7a7d52e81",
+      "bytes": 58504
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-pcb-padder-1u-qty2-mm.stl",
+      "sha256": "35fce045ac91ff5681a0864dc2ccb1631e1f9b694530d8379fdf2fe98fd473f0",
+      "bytes": 3684
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-inner-spacer-qty10-mm.step",
+      "sha256": "129ef55d4ee49e1e34f785b89ba6b9f3990debf825088e4e3786b14fb784c29d",
+      "bytes": 9470
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-inner-spacer-qty10-mm.stl",
+      "sha256": "88ce77abc905c640b4527ddf3e4e2def584aabd6fb1f4abc01873e4168343002",
+      "bytes": 50484
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-washer-1mm-qty46-mm.step",
+      "sha256": "2ecfc1cedfbae9494a2c64e065c91e1a35ac2d21d35bf3cd10d6f7384fd9762d",
+      "bytes": 9470
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-washer-1mm-qty46-mm.stl",
+      "sha256": "bbe28d7dca64b792ce53c0ff70c90169ba49708bf3e55c24a838e0071e9a5842",
+      "bytes": 50484
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-case-mount-bolt-qty10-mm.step",
+      "sha256": "021b0fe34dcc77e6fb6550a7e9fff805b73b570c0cdc60169dec222785a3e95a",
+      "bytes": 9712
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-case-mount-bolt-qty10-mm.stl",
+      "sha256": "e4f5c29667794033544b2da51e2cddcf46a5294a3aec649d6be9068c0b10286b",
+      "bytes": 50284
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-rail-end-bolt-qty12-mm.step",
+      "sha256": "958efd560f11ebe52ebae81a27369d2ca81c740c1c1c008ea2b19960ae6580c7",
+      "bytes": 9709
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-rail-end-bolt-qty12-mm.stl",
+      "sha256": "fb7dc99f6c7a18d4d42a894d2632e16f236ac6c9e9598801d756c033acd082b2",
+      "bytes": 50284
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-panel-joint-bolt-qty36-mm.step",
+      "sha256": "1da1d75528cd8d78efbbb35d881df610ea5c79a13cc205301d6e1b122bcb22c5",
+      "bytes": 9481
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-panel-joint-bolt-qty36-mm.stl",
+      "sha256": "10abaa065279be776d6ad8030e50c52ac7117e41d2ec5a54547a1e2b0978250c",
+      "bytes": 50284
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-m5-nut-qty46-mm.step",
+      "sha256": "5d77dcf9652a9816e4c9a6caac3fddcdccfee51d867ef8e63e4d212482e02aaf",
+      "bytes": 27289
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-m5-nut-qty46-mm.stl",
+      "sha256": "a726619f0770bab8e7ac4f7cfc15ad978f44866e68a688aa7713db05ba333c9b",
+      "bytes": 26484
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-foot-qty4-mm.step",
+      "sha256": "f3fd4456cded630e7365cc84017f3c741de131e1f9da4fcf13d4da55276afb3a",
+      "bytes": 5613
+    },
+    {
+      "path": "out/hardware-envelopes/7u40-r9-hw-foot-qty4-mm.stl",
+      "sha256": "846ea2ae840234be3aa782253e537de299452bb4bbcbb0d31bafb36bad5b7e8d",
+      "bytes": 25084
+    },
+    {
+      "path": "out/aluminum/7u40-r9-lid-plate-qty1-mm.step",
+      "sha256": "326965e90750194263f5f8de18d57aee9eb50957d9a6755e9a20108ea0ca3701",
+      "bytes": 62197
+    },
+    {
+      "path": "out/aluminum/7u40-r9-lid-plate-qty1-mm.dxf",
+      "sha256": "84d98670db7aa33bea3ce2b8f8f23ec56f9efe8763e0083e6c9960a7604239ad",
+      "bytes": 16942
+    },
+    {
+      "path": "out/aluminum/7u40-r9-lid-plate-qty1-mm.stl",
+      "sha256": "9de754459171c8e5ccb08ddd6a0f4b5edb4e65173c5aeb2bb6c4e7d5e115f6a3",
+      "bytes": 229484
+    },
+    {
+      "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-a-qty2-mm.step",
+      "sha256": "c37203985a9006b0fcfb1c552a6f770da326bc513d3c03c927efd9f35624f84c",
+      "bytes": 93650
+    },
+    {
+      "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-a-qty2-mm.stl",
+      "sha256": "4aaaac22a744a2a6ea110fd60310bc83ccbf9f2dec267f267c703bf94eb43361",
+      "bytes": 26584
+    },
+    {
+      "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-b-qty2-mm.step",
+      "sha256": "120c3b1a1fd0d8949603cdcf675cdf8dd19438fbea890d041d83e20aab14268a",
+      "bytes": 94934
+    },
+    {
+      "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-b-qty2-mm.stl",
+      "sha256": "9b3f8c21d733640cbcc43b85ef6ef1b890efd4bbecbd5d9c120a11fedc85be8b",
+      "bytes": 26584
+    },
+    {
+      "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-width-half-qty4-mm.step",
+      "sha256": "81922950911943eeeae9f353665f32c2c6ee729a365c6c22a1ebe3e17c2d1c13",
+      "bytes": 93561
+    },
+    {
+      "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-width-half-qty4-mm.stl",
+      "sha256": "4bc4ed1a72218042d54e60f2e6f8831d730ebff76f1d6f0df031fbcc882fe94d",
+      "bytes": 27584
+    },
+    {
+      "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-a-qty2-mm.step",
+      "sha256": "fa7dbafaf88e88516e43b582704f0ab769ca184fdd38f073f942f7ee4afd9f9a",
+      "bytes": 37255
+    },
+    {
+      "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-a-qty2-mm.stl",
+      "sha256": "937928bbee3ef44532c6b4197e3b12bdecd8970cb1c431153e26c6a0f7c47f9a",
+      "bytes": 7884
+    },
+    {
+      "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-b-qty2-mm.step",
+      "sha256": "369cfbc439e5a716a9410c7a4fa6b570fd527f15f8177f4a98175c84095953bf",
+      "bytes": 37243
+    },
+    {
+      "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-b-qty2-mm.stl",
+      "sha256": "091ee57a3a11ac120c2acb83a35de5e17cbf10e5d621558702bf6a4f0640a081",
+      "bytes": 7884
+    },
+    {
+      "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-vertical-corner-qty4-mm.step",
+      "sha256": "13c2931b81947f37224cb36c4963dc8943c6c045dad975f4a4f45f33c36ccf36",
+      "bytes": 25954
+    },
+    {
+      "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-vertical-corner-qty4-mm.stl",
+      "sha256": "03e1a94495a49b2ddc35d8ee60ad6c01f02dc5438b0c298dab59eb85fb1d546b",
+      "bytes": 7484
+    },
+    {
+      "path": "out/pa12/guards/t1p2/manifest.json",
+      "sha256": "9a73cbbdf7e3f6321fe418b9434fdd3c88a6290372a1664dd30cea6efc78e111",
+      "bytes": 6718
+    },
+    {
+      "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-a-qty2-mm.step",
+      "sha256": "87b776310cda0918c1739b6154f2bb3448cd16585e790a77dcedd4a120755d33",
+      "bytes": 93427
+    },
+    {
+      "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-a-qty2-mm.stl",
+      "sha256": "57cd383f3b1649d3e3914bae830dd8c7c7587eb3a6dda5c0999d55c74a23935e",
+      "bytes": 26584
+    },
+    {
+      "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-b-qty2-mm.step",
+      "sha256": "80c60c4661de4423e6cd72d6cd226d6573de1cf7018a74eb332ef7918a9f59b9",
+      "bytes": 94685
+    },
+    {
+      "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-b-qty2-mm.stl",
+      "sha256": "e8acf354e8f9d087023763944e8e543d242b5991976989f733f2bfd0950756c8",
+      "bytes": 26584
+    },
+    {
+      "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-width-half-qty4-mm.step",
+      "sha256": "fee208e8a659152248adac4e040ade0cf7e0b19fd3a46126d20b87c7f2870499",
+      "bytes": 93370
+    },
+    {
+      "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-width-half-qty4-mm.stl",
+      "sha256": "041f10f27c13bcb1854cf303adbdb8b1766aeb4e86b82dd70fb3649dac6b440a",
+      "bytes": 27584
+    },
+    {
+      "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-a-qty2-mm.step",
+      "sha256": "61ccf8d2690be3e8a41642a2d1589613cf251e52f76968f7aad035ddd2a0d08d",
+      "bytes": 37221
+    },
+    {
+      "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-a-qty2-mm.stl",
+      "sha256": "4da76c13d9feb94e5a27fec7a138897b35a58f0fd44dcec36f529e5a24b657f5",
+      "bytes": 7884
+    },
+    {
+      "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-b-qty2-mm.step",
+      "sha256": "0ff34228786066b22c6e05cbaa65cfd67d693fb9c0bc4bdea0b68b5c9e5241f6",
+      "bytes": 37183
+    },
+    {
+      "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-b-qty2-mm.stl",
+      "sha256": "98f7ac9f7c24a826e235ab6c2736a307d0af201bc31268d6d086432df0f3cd94",
+      "bytes": 7884
+    },
+    {
+      "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-vertical-corner-qty4-mm.step",
+      "sha256": "a2499461ab602001623e871394d84607301a00f53b07722066faf3ca25e7d4b2",
+      "bytes": 25923
+    },
+    {
+      "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-vertical-corner-qty4-mm.stl",
+      "sha256": "eaf9c0fe736424cb231fb181ed96c6ae6e898927e1b4d04288aa27010e9bacea",
+      "bytes": 7484
+    },
+    {
+      "path": "out/pa12/guards/t1p0/manifest.json",
+      "sha256": "336d16296cc2f4f472ef1fe92ea195ddc0829be15bbbc774879e48b41db8de05",
+      "bytes": 6439
+    },
+    {
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.step",
+      "sha256": "1cbe289bca5d2afb2890f999de807a93a77a13e448140f8d8eea07ee80615c87",
+      "bytes": 175005
+    },
+    {
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.stl",
+      "sha256": "e8a4e257fa476e438b4eb0a246b7311dd6d86a86e0de9e1034159926dfbf772e",
+      "bytes": 76884
+    },
+    {
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.step",
+      "sha256": "f6f8d4511a79a8a70e94d3ea7d63b68d27d2c640e19374e7e964d71c861afa0d",
+      "bytes": 173564
+    },
+    {
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.stl",
+      "sha256": "456a37abd488e35718fea060becd6473bd6dc543681f800dafbbe81efa3fad85",
+      "bytes": 76884
+    },
+    {
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-bl-qty1-mm.step",
+      "sha256": "9b189582561f1a20e3383a4a8715a80264d0b908ba03bfbb89f26d57a91e99c3",
+      "bytes": 172742
+    },
+    {
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-bl-qty1-mm.stl",
+      "sha256": "e815715ae484672b63059676d7ddc8bd7324be9d1266e406bc1c4da76e543f9c",
+      "bytes": 76884
+    },
+    {
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-br-qty1-mm.step",
+      "sha256": "1b2bc79a3da8669ddc142c9af4f39cd7272210432b97a1a0fc9cb23da1e79fc5",
+      "bytes": 175338
+    },
+    {
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-br-qty1-mm.stl",
+      "sha256": "11cb74d6cbc7e3bac3c948535e8b25bbccc6a5f1253447fab25aaf924a7e78f3",
+      "bytes": 76884
+    },
+    {
+      "path": "out/pa12/lid/manifest.json",
+      "sha256": "47df857076c92d21fc232edb28b355a60763c8800eaed409785ebe03c582b9e2",
+      "bytes": 2583
+    },
+    {
+      "path": "out/assembly/7u40-r9-reference-assembly-NOT-APPROVED.step",
+      "sha256": "636248d02de3bc046824ce5305a09c07443ddda2e31a3590027c49e1fdec0462",
+      "bytes": 1203753
+    },
+    {
+      "path": "out/assembly/assembly-checks.json",
+      "sha256": "2890742db2797b49cea5b1965d6ab32604049e56620c129e74b3daa78c50bb3a",
+      "bytes": 4766
+    },
+    {
+      "path": "out/assembly/assembly.json",
+      "sha256": "8ee51b8354ea6ec35a7df123d7f4b8291241fc25d4b5bdcef0ae9e701c92324b",
+      "bytes": 505
+    }
+  ]
+}

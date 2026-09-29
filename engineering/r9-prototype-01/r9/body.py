@@ -1092,7 +1092,7 @@ def _body_manifest(sources: dict, ctx: BuildContext, design: dict, brackets: lis
                 "rail-fix": sum(hole.role == "rail-fix" for hole in holes),
             },
             "metadataPath": "out/aluminum/hole-layout.json",
-            "slotConversion": "36 bracket locations use the provisional 5.5 x 7.5 mm slot profiles from params/slots.json; 10 independent rail-fix locations remain round phi 5.5.",
+            "slotConversion": f"36 bracket locations use provisional {ctx.value('slots', 'slot_width')} x {ctx.value('slots', 'slot_length')} mm slots from params/slots.json; 10 independent rail-fix locations remain round phi {design['hole_diameter']}.",
         },
         "brackets": {
             "count": len(brackets),

@@ -18,49 +18,49 @@
     {
       "partId": "7U40-R9-PA12-LID-FRAME-FR",
       "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.step",
-      "sha256": "c508c43c0343f7d56d9ab0f0bf492eec6bbd9bd4dacbf4a85f2a8779cb500b44",
+      "sha256": "1cbe289bca5d2afb2890f999de807a93a77a13e448140f8d8eea07ee80615c87",
       "bytes": 175005
     },
     {
       "partId": "7U40-R9-PA12-LID-FRAME-FR",
       "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.stl",
-      "sha256": "8da409cf4e0e1bb7844f2a9edd6556ee1525fef4f87c9784ca9b4978517fdbe7",
+      "sha256": "e8a4e257fa476e438b4eb0a246b7311dd6d86a86e0de9e1034159926dfbf772e",
       "bytes": 76884
     },
     {
       "partId": "7U40-R9-PA12-LID-FRAME-FL",
       "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.step",
-      "sha256": "5c0dfac8d7bac2a74812e37bf7cfba23a2204aca7f89982422373c722204b1f2",
+      "sha256": "f6f8d4511a79a8a70e94d3ea7d63b68d27d2c640e19374e7e964d71c861afa0d",
       "bytes": 173564
     },
     {
       "partId": "7U40-R9-PA12-LID-FRAME-FL",
       "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.stl",
-      "sha256": "1391a965d3dd945c00956db7dbd6fcc9c6f48e46702a2f266cab268dd2612125",
+      "sha256": "456a37abd488e35718fea060becd6473bd6dc543681f800dafbbe81efa3fad85",
       "bytes": 76884
     },
     {
       "partId": "7U40-R9-PA12-LID-FRAME-BL",
       "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-bl-qty1-mm.step",
-      "sha256": "80973d84c720f7606aa9aacc7081d453a0244cfc0607abd0ecbd4203f54850cf",
+      "sha256": "9b189582561f1a20e3383a4a8715a80264d0b908ba03bfbb89f26d57a91e99c3",
       "bytes": 172742
     },
     {
       "partId": "7U40-R9-PA12-LID-FRAME-BL",
       "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-bl-qty1-mm.stl",
-      "sha256": "441713cea2b2439e6a7a44190c8eb6edc1b91ba1cf933c8b3031bb587465a138",
+      "sha256": "e815715ae484672b63059676d7ddc8bd7324be9d1266e406bc1c4da76e543f9c",
       "bytes": 76884
     },
     {
       "partId": "7U40-R9-PA12-LID-FRAME-BR",
       "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-br-qty1-mm.step",
-      "sha256": "6f3edaa2949fc558bb39bb976a35849dd38ef53090b7e1ebb0a8a0aa130b3381",
+      "sha256": "1b2bc79a3da8669ddc142c9af4f39cd7272210432b97a1a0fc9cb23da1e79fc5",
       "bytes": 175338
     },
     {
       "partId": "7U40-R9-PA12-LID-FRAME-BR",
       "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-br-qty1-mm.stl",
-      "sha256": "c34dc60520babcaa682804f53139d3758d8a9d2767c89f0ecee7766ca9d36756",
+      "sha256": "11cb74d6cbc7e3bac3c948535e8b25bbccc6a5f1253447fab25aaf924a7e78f3",
       "bytes": 76884
     }
   ],

@@ -5813,7 +5813,7 @@
       "bracket": 36,
       "rail-fix": 10
     },
-    "slotConversionHook": "r9.body.plate_specs(ctx) and r9.body.make_plate_solid(spec, hole_cutter=...). build(ctx) leaves all holes round."
+    "slotConversion": "36 bracket locations use provisional 5.5 x 7.5 mm slots from params/slots.json; 10 independent rail-fix locations remain round phi 5.5."
   },
   "limitations": [
     "Nominal prototype geometry only; not an approved manufacturing release.",
