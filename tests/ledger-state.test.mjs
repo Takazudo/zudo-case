@@ -16,7 +16,10 @@ const fixture = async () => {
   const root = await mkdtemp(path.join(os.tmpdir(), 'zudo-state-'));
   await mkdir(path.join(root, 'engineering/release'), { recursive: true });
   await writeFile(path.join(root, 'engineering/release/README.md'), 'fixture');
-  return { root, ...structuredClone(baseline) };
+  const state = structuredClone(baseline);
+  state.release.candidate_files = [];
+  state.release.current_lid_manufacturing = null;
+  return { root, ...state };
 };
 const check = f => checkProjectState(f);
 const quote = async f => {
