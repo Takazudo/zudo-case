@@ -1,0 +1,9 @@
+{
+  "fit_clearance_range": {
+    "value": null,
+    "unit": "mm[]",
+    "status": "unvalidated",
+    "source": "G03",
+    "note": "Choose after small fit pieces."
+  }
+}
