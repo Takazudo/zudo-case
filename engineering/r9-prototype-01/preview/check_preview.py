@@ -9,6 +9,7 @@ from urllib.parse import urlsplit
 
 PREVIEW = Path(__file__).resolve().parent
 R9_ROOT = PREVIEW.parent
+REPO_ROOT = PREVIEW.parents[2]
 HTML = PREVIEW.parents[2] / "public" / "previews" / "r9-prototype-01.html"
 SHOTS = PREVIEW / "shots"
 REPORT = R9_ROOT / "out" / "preview" / "browser-check.json"
@@ -69,14 +70,14 @@ def main() -> int:
             page.wait_for_function("document.getElementById('statusText').textContent.includes('日常')")
             daily_path = args.shots / "r9-prototype-01-daily.png"
             page.screenshot(path=str(daily_path), full_page=True)
-            report["screenshots"].append(str(daily_path))
+            report["screenshots"].append(_report_path(daily_path))
             report["checks"]["dailyState"] = True
 
             page.locator('[data-state="travel"]').click()
             page.wait_for_function("document.getElementById('statusText').textContent.includes('運搬')")
             travel_path = args.shots / "r9-prototype-01-travel.png"
             page.screenshot(path=str(travel_path), full_page=True)
-            report["screenshots"].append(str(travel_path))
+            report["screenshots"].append(_report_path(travel_path))
             report["checks"]["travelState"] = True
 
             page.locator('[data-state="open"]').click()
@@ -113,7 +114,7 @@ def main() -> int:
             )
             mobile_path = args.shots / "r9-prototype-01-open-mobile.png"
             page.screenshot(path=str(mobile_path), full_page=True)
-            report["screenshots"].append(str(mobile_path))
+            report["screenshots"].append(_report_path(mobile_path))
 
             report["networkRequests"] = request_urls
             report["consoleErrors"] = console_errors
@@ -140,6 +141,11 @@ def main() -> int:
 def _write_report(path: Path, report: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def _report_path(path: Path) -> str:
+    resolved = path.resolve()
+    return str(resolved.relative_to(REPO_ROOT)) if resolved.is_relative_to(REPO_ROOT) else str(resolved)
 
 
 if __name__ == "__main__":
