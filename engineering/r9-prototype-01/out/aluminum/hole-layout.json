@@ -1,0 +1,2149 @@
+{
+  "coordinateNote": "centerLocalMm uses each flat pattern's lower-left XY origin; centerAssemblyMm uses the R9 assembly coordinates.",
+  "holeDiameterMm": 5.5,
+  "holes": [
+    {
+      "axis": "Z",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+      "centerAssemblyMm": [
+        -59.5,
+        155.5,
+        0.0
+      ],
+      "centerLocalMm": [
+        55.2,
+        322.5
+      ],
+      "diameterMm": 5.5,
+      "face": "outside",
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXN",
+      "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
+      "plateId": "7U40-R9-AL-BOTTOM",
+      "plateInstance": "BOTTOM",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Z",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+      "centerAssemblyMm": [
+        59.5,
+        155.5,
+        0.0
+      ],
+      "centerLocalMm": [
+        174.2,
+        322.5
+      ],
+      "diameterMm": 5.5,
+      "face": "outside",
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXP",
+      "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
+      "plateId": "7U40-R9-AL-BOTTOM",
+      "plateInstance": "BOTTOM",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Z",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+      "centerAssemblyMm": [
+        -59.5,
+        -155.5,
+        0.0
+      ],
+      "centerLocalMm": [
+        55.2,
+        11.5
+      ],
+      "diameterMm": 5.5,
+      "face": "outside",
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+      "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+      "plateId": "7U40-R9-AL-BOTTOM",
+      "plateInstance": "BOTTOM",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Z",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+      "centerAssemblyMm": [
+        59.5,
+        -155.5,
+        0.0
+      ],
+      "centerLocalMm": [
+        174.2,
+        11.5
+      ],
+      "diameterMm": 5.5,
+      "face": "outside",
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXP",
+      "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
+      "plateId": "7U40-R9-AL-BOTTOM",
+      "plateInstance": "BOTTOM",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Z",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+      "centerAssemblyMm": [
+        -103.2,
+        0.0,
+        0.0
+      ],
+      "centerLocalMm": [
+        11.5,
+        167.0
+      ],
+      "diameterMm": 5.5,
+      "face": "outside",
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-CENTER",
+      "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
+      "plateId": "7U40-R9-AL-BOTTOM",
+      "plateInstance": "BOTTOM",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Z",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+      "centerAssemblyMm": [
+        -103.2,
+        -126.5,
+        0.0
+      ],
+      "centerLocalMm": [
+        11.5,
+        40.5
+      ],
+      "diameterMm": 5.5,
+      "face": "outside",
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-FRONT",
+      "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
+      "plateId": "7U40-R9-AL-BOTTOM",
+      "plateInstance": "BOTTOM",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Z",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+      "centerAssemblyMm": [
+        -103.2,
+        126.5,
+        0.0
+      ],
+      "centerLocalMm": [
+        11.5,
+        293.5
+      ],
+      "diameterMm": 5.5,
+      "face": "outside",
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-REAR",
+      "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
+      "plateId": "7U40-R9-AL-BOTTOM",
+      "plateInstance": "BOTTOM",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Z",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+      "centerAssemblyMm": [
+        103.2,
+        0.0,
+        0.0
+      ],
+      "centerLocalMm": [
+        217.9,
+        167.0
+      ],
+      "diameterMm": 5.5,
+      "face": "outside",
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-CENTER",
+      "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
+      "plateId": "7U40-R9-AL-BOTTOM",
+      "plateInstance": "BOTTOM",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Z",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+      "centerAssemblyMm": [
+        103.2,
+        -126.5,
+        0.0
+      ],
+      "centerLocalMm": [
+        217.9,
+        40.5
+      ],
+      "diameterMm": 5.5,
+      "face": "outside",
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-FRONT",
+      "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
+      "plateId": "7U40-R9-AL-BOTTOM",
+      "plateInstance": "BOTTOM",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Z",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+      "centerAssemblyMm": [
+        103.2,
+        126.5,
+        0.0
+      ],
+      "centerLocalMm": [
+        217.9,
+        293.5
+      ],
+      "diameterMm": 5.5,
+      "face": "outside",
+      "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-REAR",
+      "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
+      "plateId": "7U40-R9-AL-BOTTOM",
+      "plateInstance": "BOTTOM",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Y",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+      "centerAssemblyMm": [
+        -59.5,
+        167.0,
+        11.5
+      ],
+      "centerLocalMm": [
+        53.7,
+        10.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN",
+      "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "plateInstance": "BACK",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Y",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+      "centerAssemblyMm": [
+        59.5,
+        167.0,
+        11.5
+      ],
+      "centerLocalMm": [
+        172.7,
+        10.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP",
+      "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "plateInstance": "BACK",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Y",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+      "centerAssemblyMm": [
+        -103.2,
+        167.0,
+        36.5
+      ],
+      "centerLocalMm": [
+        10.0,
+        35.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+      "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "plateInstance": "BACK",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Y",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+      "centerAssemblyMm": [
+        -103.2,
+        167.0,
+        66.5
+      ],
+      "centerLocalMm": [
+        10.0,
+        65.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+      "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "plateInstance": "BACK",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Y",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+      "centerAssemblyMm": [
+        103.2,
+        167.0,
+        36.5
+      ],
+      "centerLocalMm": [
+        216.4,
+        35.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+      "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "plateInstance": "BACK",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Y",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+      "centerAssemblyMm": [
+        103.2,
+        167.0,
+        66.5
+      ],
+      "centerLocalMm": [
+        216.4,
+        65.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER",
+      "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "plateInstance": "BACK",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Y",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+      "centerAssemblyMm": [
+        -59.5,
+        -167.0,
+        11.5
+      ],
+      "centerLocalMm": [
+        53.7,
+        10.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+      "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "plateInstance": "FRONT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Y",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+      "centerAssemblyMm": [
+        59.5,
+        -167.0,
+        11.5
+      ],
+      "centerLocalMm": [
+        172.7,
+        10.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP",
+      "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "plateInstance": "FRONT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Y",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+      "centerAssemblyMm": [
+        -103.2,
+        -167.0,
+        36.5
+      ],
+      "centerLocalMm": [
+        10.0,
+        35.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+      "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "plateInstance": "FRONT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Y",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+      "centerAssemblyMm": [
+        -103.2,
+        -167.0,
+        66.5
+      ],
+      "centerLocalMm": [
+        10.0,
+        65.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+      "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "plateInstance": "FRONT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Y",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+      "centerAssemblyMm": [
+        103.2,
+        -167.0,
+        36.5
+      ],
+      "centerLocalMm": [
+        216.4,
+        35.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+      "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "plateInstance": "FRONT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "Y",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+      "centerAssemblyMm": [
+        103.2,
+        -167.0,
+        66.5
+      ],
+      "centerLocalMm": [
+        216.4,
+        65.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER",
+      "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "plateInstance": "FRONT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+      "centerAssemblyMm": [
+        -114.7,
+        0.0,
+        11.5
+      ],
+      "centerLocalMm": [
+        167.0,
+        10.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER",
+      "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "LEFT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+      "centerAssemblyMm": [
+        -114.7,
+        -126.5,
+        11.5
+      ],
+      "centerLocalMm": [
+        40.5,
+        10.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT",
+      "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "LEFT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+      "centerAssemblyMm": [
+        -114.7,
+        126.5,
+        11.5
+      ],
+      "centerLocalMm": [
+        293.5,
+        10.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR",
+      "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "LEFT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+      "centerAssemblyMm": [
+        -114.7,
+        155.5,
+        36.5
+      ],
+      "centerLocalMm": [
+        322.5,
+        35.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER",
+      "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "LEFT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+      "centerAssemblyMm": [
+        -114.7,
+        155.5,
+        66.5
+      ],
+      "centerLocalMm": [
+        322.5,
+        65.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER",
+      "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "LEFT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+      "centerAssemblyMm": [
+        -114.7,
+        -155.5,
+        36.5
+      ],
+      "centerLocalMm": [
+        11.5,
+        35.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER",
+      "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "LEFT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+      "centerAssemblyMm": [
+        -114.7,
+        -155.5,
+        66.5
+      ],
+      "centerLocalMm": [
+        11.5,
+        65.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER",
+      "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "LEFT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+      "centerAssemblyMm": [
+        114.7,
+        0.0,
+        11.5
+      ],
+      "centerLocalMm": [
+        167.0,
+        10.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER",
+      "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "RIGHT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+      "centerAssemblyMm": [
+        114.7,
+        -126.5,
+        11.5
+      ],
+      "centerLocalMm": [
+        40.5,
+        10.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT",
+      "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "RIGHT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+      "centerAssemblyMm": [
+        114.7,
+        126.5,
+        11.5
+      ],
+      "centerLocalMm": [
+        293.5,
+        10.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR",
+      "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "RIGHT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+      "centerAssemblyMm": [
+        114.7,
+        155.5,
+        36.5
+      ],
+      "centerLocalMm": [
+        322.5,
+        35.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER",
+      "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "RIGHT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+      "centerAssemblyMm": [
+        114.7,
+        155.5,
+        66.5
+      ],
+      "centerLocalMm": [
+        322.5,
+        65.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER",
+      "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "RIGHT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+      "centerAssemblyMm": [
+        114.7,
+        -155.5,
+        36.5
+      ],
+      "centerLocalMm": [
+        11.5,
+        35.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER",
+      "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "RIGHT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+      "centerAssemblyMm": [
+        114.7,
+        -155.5,
+        66.5
+      ],
+      "centerLocalMm": [
+        11.5,
+        65.0
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER",
+      "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "RIGHT",
+      "profile": "round",
+      "role": "bracket"
+    },
+    {
+      "axis": "X",
+      "bracketId": null,
+      "centerAssemblyMm": [
+        -114.7,
+        -134.5318715,
+        68.1894265
+      ],
+      "centerLocalMm": [
+        32.468128500000006,
+        66.6894265
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-01",
+      "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-01",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "LEFT",
+      "profile": "round",
+      "role": "rail-fix"
+    },
+    {
+      "axis": "X",
+      "bracketId": null,
+      "centerAssemblyMm": [
+        -114.7,
+        -67.26594,
+        68.1894265
+      ],
+      "centerLocalMm": [
+        99.73406,
+        66.6894265
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-02",
+      "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-02",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "LEFT",
+      "profile": "round",
+      "role": "rail-fix"
+    },
+    {
+      "axis": "X",
+      "bracketId": null,
+      "centerAssemblyMm": [
+        -114.7,
+        -8.000000008223651e-06,
+        68.1894265
+      ],
+      "centerLocalMm": [
+        166.999992,
+        66.6894265
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-03",
+      "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-03",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "LEFT",
+      "profile": "round",
+      "role": "rail-fix"
+    },
+    {
+      "axis": "X",
+      "bracketId": null,
+      "centerAssemblyMm": [
+        -114.7,
+        67.26591450000001,
+        68.1894265
+      ],
+      "centerLocalMm": [
+        234.2659145,
+        66.6894265
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-04",
+      "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-04",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "LEFT",
+      "profile": "round",
+      "role": "rail-fix"
+    },
+    {
+      "axis": "X",
+      "bracketId": null,
+      "centerAssemblyMm": [
+        -114.7,
+        134.496536,
+        68.1894265
+      ],
+      "centerLocalMm": [
+        301.496536,
+        66.6894265
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-05",
+      "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-05",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "LEFT",
+      "profile": "round",
+      "role": "rail-fix"
+    },
+    {
+      "axis": "X",
+      "bracketId": null,
+      "centerAssemblyMm": [
+        114.7,
+        -134.5318715,
+        68.1894265
+      ],
+      "centerLocalMm": [
+        32.468128500000006,
+        66.6894265
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-01",
+      "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-01",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "RIGHT",
+      "profile": "round",
+      "role": "rail-fix"
+    },
+    {
+      "axis": "X",
+      "bracketId": null,
+      "centerAssemblyMm": [
+        114.7,
+        -67.26594,
+        68.1894265
+      ],
+      "centerLocalMm": [
+        99.73406,
+        66.6894265
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-02",
+      "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-02",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "RIGHT",
+      "profile": "round",
+      "role": "rail-fix"
+    },
+    {
+      "axis": "X",
+      "bracketId": null,
+      "centerAssemblyMm": [
+        114.7,
+        -8.000000008223651e-06,
+        68.1894265
+      ],
+      "centerLocalMm": [
+        166.999992,
+        66.6894265
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-03",
+      "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-03",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "RIGHT",
+      "profile": "round",
+      "role": "rail-fix"
+    },
+    {
+      "axis": "X",
+      "bracketId": null,
+      "centerAssemblyMm": [
+        114.7,
+        67.26591450000001,
+        68.1894265
+      ],
+      "centerLocalMm": [
+        234.2659145,
+        66.6894265
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-04",
+      "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-04",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "RIGHT",
+      "profile": "round",
+      "role": "rail-fix"
+    },
+    {
+      "axis": "X",
+      "bracketId": null,
+      "centerAssemblyMm": [
+        114.7,
+        134.496536,
+        68.1894265
+      ],
+      "centerLocalMm": [
+        301.496536,
+        66.6894265
+      ],
+      "diameterMm": 5.5,
+      "face": "inside",
+      "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-05",
+      "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-05",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "plateInstance": "RIGHT",
+      "profile": "round",
+      "role": "rail-fix"
+    }
+  ],
+  "model": "7u40",
+  "plateCount": 5,
+  "plates": [
+    {
+      "holeCountEach": 10,
+      "holeCountTotal": 10,
+      "holes": [
+        {
+          "axis": "Z",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+          "centerAssemblyMm": [
+            -59.5,
+            155.5,
+            0.0
+          ],
+          "centerLocalMm": [
+            55.2,
+            322.5
+          ],
+          "diameterMm": 5.5,
+          "face": "outside",
+          "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
+          "plateId": "7U40-R9-AL-BOTTOM",
+          "plateInstance": "BOTTOM",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Z",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+          "centerAssemblyMm": [
+            59.5,
+            155.5,
+            0.0
+          ],
+          "centerLocalMm": [
+            174.2,
+            322.5
+          ],
+          "diameterMm": 5.5,
+          "face": "outside",
+          "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
+          "plateId": "7U40-R9-AL-BOTTOM",
+          "plateInstance": "BOTTOM",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Z",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "centerAssemblyMm": [
+            -59.5,
+            -155.5,
+            0.0
+          ],
+          "centerLocalMm": [
+            55.2,
+            11.5
+          ],
+          "diameterMm": 5.5,
+          "face": "outside",
+          "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+          "plateId": "7U40-R9-AL-BOTTOM",
+          "plateInstance": "BOTTOM",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Z",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "centerAssemblyMm": [
+            59.5,
+            -155.5,
+            0.0
+          ],
+          "centerLocalMm": [
+            174.2,
+            11.5
+          ],
+          "diameterMm": 5.5,
+          "face": "outside",
+          "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
+          "plateId": "7U40-R9-AL-BOTTOM",
+          "plateInstance": "BOTTOM",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Z",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+          "centerAssemblyMm": [
+            -103.2,
+            0.0,
+            0.0
+          ],
+          "centerLocalMm": [
+            11.5,
+            167.0
+          ],
+          "diameterMm": 5.5,
+          "face": "outside",
+          "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
+          "plateId": "7U40-R9-AL-BOTTOM",
+          "plateInstance": "BOTTOM",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Z",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+          "centerAssemblyMm": [
+            -103.2,
+            -126.5,
+            0.0
+          ],
+          "centerLocalMm": [
+            11.5,
+            40.5
+          ],
+          "diameterMm": 5.5,
+          "face": "outside",
+          "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
+          "plateId": "7U40-R9-AL-BOTTOM",
+          "plateInstance": "BOTTOM",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Z",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+          "centerAssemblyMm": [
+            -103.2,
+            126.5,
+            0.0
+          ],
+          "centerLocalMm": [
+            11.5,
+            293.5
+          ],
+          "diameterMm": 5.5,
+          "face": "outside",
+          "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
+          "plateId": "7U40-R9-AL-BOTTOM",
+          "plateInstance": "BOTTOM",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Z",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+          "centerAssemblyMm": [
+            103.2,
+            0.0,
+            0.0
+          ],
+          "centerLocalMm": [
+            217.9,
+            167.0
+          ],
+          "diameterMm": 5.5,
+          "face": "outside",
+          "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
+          "plateId": "7U40-R9-AL-BOTTOM",
+          "plateInstance": "BOTTOM",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Z",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+          "centerAssemblyMm": [
+            103.2,
+            -126.5,
+            0.0
+          ],
+          "centerLocalMm": [
+            217.9,
+            40.5
+          ],
+          "diameterMm": 5.5,
+          "face": "outside",
+          "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
+          "plateId": "7U40-R9-AL-BOTTOM",
+          "plateInstance": "BOTTOM",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Z",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+          "centerAssemblyMm": [
+            103.2,
+            126.5,
+            0.0
+          ],
+          "centerLocalMm": [
+            217.9,
+            293.5
+          ],
+          "diameterMm": 5.5,
+          "face": "outside",
+          "id": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
+          "plateId": "7U40-R9-AL-BOTTOM",
+          "plateInstance": "BOTTOM",
+          "profile": "round",
+          "role": "bracket"
+        }
+      ],
+      "instances": [
+        {
+          "id": "BOTTOM",
+          "localToAssembly": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -114.7
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -167.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "partType": "bottom",
+      "plateId": "7U40-R9-AL-BOTTOM",
+      "quantity": 1,
+      "sizeMm": [
+        229.4,
+        334.0,
+        1.5
+      ]
+    },
+    {
+      "holeCountEach": 6,
+      "holeCountTotal": 12,
+      "holes": [
+        {
+          "axis": "Y",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+          "centerAssemblyMm": [
+            -59.5,
+            167.0,
+            11.5
+          ],
+          "centerLocalMm": [
+            53.7,
+            10.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
+          "plateId": "7U40-R9-AL-FRONT-BACK",
+          "plateInstance": "BACK",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Y",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+          "centerAssemblyMm": [
+            59.5,
+            167.0,
+            11.5
+          ],
+          "centerLocalMm": [
+            172.7,
+            10.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
+          "plateId": "7U40-R9-AL-FRONT-BACK",
+          "plateInstance": "BACK",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Y",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+          "centerAssemblyMm": [
+            -103.2,
+            167.0,
+            36.5
+          ],
+          "centerLocalMm": [
+            10.0,
+            35.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
+          "plateId": "7U40-R9-AL-FRONT-BACK",
+          "plateInstance": "BACK",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Y",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+          "centerAssemblyMm": [
+            -103.2,
+            167.0,
+            66.5
+          ],
+          "centerLocalMm": [
+            10.0,
+            65.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
+          "plateId": "7U40-R9-AL-FRONT-BACK",
+          "plateInstance": "BACK",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Y",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+          "centerAssemblyMm": [
+            103.2,
+            167.0,
+            36.5
+          ],
+          "centerLocalMm": [
+            216.4,
+            35.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
+          "plateId": "7U40-R9-AL-FRONT-BACK",
+          "plateInstance": "BACK",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Y",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+          "centerAssemblyMm": [
+            103.2,
+            167.0,
+            66.5
+          ],
+          "centerLocalMm": [
+            216.4,
+            65.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
+          "plateId": "7U40-R9-AL-FRONT-BACK",
+          "plateInstance": "BACK",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Y",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "centerAssemblyMm": [
+            -59.5,
+            -167.0,
+            11.5
+          ],
+          "centerLocalMm": [
+            53.7,
+            10.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+          "plateId": "7U40-R9-AL-FRONT-BACK",
+          "plateInstance": "FRONT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Y",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "centerAssemblyMm": [
+            59.5,
+            -167.0,
+            11.5
+          ],
+          "centerLocalMm": [
+            172.7,
+            10.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
+          "plateId": "7U40-R9-AL-FRONT-BACK",
+          "plateInstance": "FRONT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Y",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "centerAssemblyMm": [
+            -103.2,
+            -167.0,
+            36.5
+          ],
+          "centerLocalMm": [
+            10.0,
+            35.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
+          "plateId": "7U40-R9-AL-FRONT-BACK",
+          "plateInstance": "FRONT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Y",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "centerAssemblyMm": [
+            -103.2,
+            -167.0,
+            66.5
+          ],
+          "centerLocalMm": [
+            10.0,
+            65.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
+          "plateId": "7U40-R9-AL-FRONT-BACK",
+          "plateInstance": "FRONT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Y",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+          "centerAssemblyMm": [
+            103.2,
+            -167.0,
+            36.5
+          ],
+          "centerLocalMm": [
+            216.4,
+            35.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
+          "plateId": "7U40-R9-AL-FRONT-BACK",
+          "plateInstance": "FRONT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "Y",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+          "centerAssemblyMm": [
+            103.2,
+            -167.0,
+            66.5
+          ],
+          "centerLocalMm": [
+            216.4,
+            65.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
+          "plateId": "7U40-R9-AL-FRONT-BACK",
+          "plateInstance": "FRONT",
+          "profile": "round",
+          "role": "bracket"
+        }
+      ],
+      "instances": [
+        {
+          "id": "FRONT",
+          "localToAssembly": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -113.2
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              -165.5
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "id": "BACK",
+          "localToAssembly": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -113.2
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              167.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "partType": "front_back",
+      "plateId": "7U40-R9-AL-FRONT-BACK",
+      "quantity": 2,
+      "sizeMm": [
+        226.4,
+        89.5,
+        1.5
+      ]
+    },
+    {
+      "holeCountEach": 12,
+      "holeCountTotal": 24,
+      "holes": [
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+          "centerAssemblyMm": [
+            -114.7,
+            0.0,
+            11.5
+          ],
+          "centerLocalMm": [
+            167.0,
+            10.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "LEFT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+          "centerAssemblyMm": [
+            -114.7,
+            -126.5,
+            11.5
+          ],
+          "centerLocalMm": [
+            40.5,
+            10.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "LEFT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+          "centerAssemblyMm": [
+            -114.7,
+            126.5,
+            11.5
+          ],
+          "centerLocalMm": [
+            293.5,
+            10.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "LEFT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+          "centerAssemblyMm": [
+            -114.7,
+            155.5,
+            36.5
+          ],
+          "centerLocalMm": [
+            322.5,
+            35.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "LEFT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+          "centerAssemblyMm": [
+            -114.7,
+            155.5,
+            66.5
+          ],
+          "centerLocalMm": [
+            322.5,
+            65.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "LEFT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "centerAssemblyMm": [
+            -114.7,
+            -155.5,
+            36.5
+          ],
+          "centerLocalMm": [
+            11.5,
+            35.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "LEFT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "centerAssemblyMm": [
+            -114.7,
+            -155.5,
+            66.5
+          ],
+          "centerLocalMm": [
+            11.5,
+            65.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "LEFT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+          "centerAssemblyMm": [
+            114.7,
+            0.0,
+            11.5
+          ],
+          "centerLocalMm": [
+            167.0,
+            10.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "RIGHT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+          "centerAssemblyMm": [
+            114.7,
+            -126.5,
+            11.5
+          ],
+          "centerLocalMm": [
+            40.5,
+            10.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "RIGHT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+          "centerAssemblyMm": [
+            114.7,
+            126.5,
+            11.5
+          ],
+          "centerLocalMm": [
+            293.5,
+            10.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "RIGHT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+          "centerAssemblyMm": [
+            114.7,
+            155.5,
+            36.5
+          ],
+          "centerLocalMm": [
+            322.5,
+            35.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "RIGHT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+          "centerAssemblyMm": [
+            114.7,
+            155.5,
+            66.5
+          ],
+          "centerLocalMm": [
+            322.5,
+            65.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "RIGHT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+          "centerAssemblyMm": [
+            114.7,
+            -155.5,
+            36.5
+          ],
+          "centerLocalMm": [
+            11.5,
+            35.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "RIGHT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+          "centerAssemblyMm": [
+            114.7,
+            -155.5,
+            66.5
+          ],
+          "centerLocalMm": [
+            11.5,
+            65.0
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "RIGHT",
+          "profile": "round",
+          "role": "bracket"
+        },
+        {
+          "axis": "X",
+          "bracketId": null,
+          "centerAssemblyMm": [
+            -114.7,
+            -134.5318715,
+            68.1894265
+          ],
+          "centerLocalMm": [
+            32.468128500000006,
+            66.6894265
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-01",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-01",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "LEFT",
+          "profile": "round",
+          "role": "rail-fix"
+        },
+        {
+          "axis": "X",
+          "bracketId": null,
+          "centerAssemblyMm": [
+            -114.7,
+            -67.26594,
+            68.1894265
+          ],
+          "centerLocalMm": [
+            99.73406,
+            66.6894265
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-02",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-02",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "LEFT",
+          "profile": "round",
+          "role": "rail-fix"
+        },
+        {
+          "axis": "X",
+          "bracketId": null,
+          "centerAssemblyMm": [
+            -114.7,
+            -8.000000008223651e-06,
+            68.1894265
+          ],
+          "centerLocalMm": [
+            166.999992,
+            66.6894265
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-03",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-03",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "LEFT",
+          "profile": "round",
+          "role": "rail-fix"
+        },
+        {
+          "axis": "X",
+          "bracketId": null,
+          "centerAssemblyMm": [
+            -114.7,
+            67.26591450000001,
+            68.1894265
+          ],
+          "centerLocalMm": [
+            234.2659145,
+            66.6894265
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-04",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-04",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "LEFT",
+          "profile": "round",
+          "role": "rail-fix"
+        },
+        {
+          "axis": "X",
+          "bracketId": null,
+          "centerAssemblyMm": [
+            -114.7,
+            134.496536,
+            68.1894265
+          ],
+          "centerLocalMm": [
+            301.496536,
+            66.6894265
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-05",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-05",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "LEFT",
+          "profile": "round",
+          "role": "rail-fix"
+        },
+        {
+          "axis": "X",
+          "bracketId": null,
+          "centerAssemblyMm": [
+            114.7,
+            -134.5318715,
+            68.1894265
+          ],
+          "centerLocalMm": [
+            32.468128500000006,
+            66.6894265
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-01",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-01",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "RIGHT",
+          "profile": "round",
+          "role": "rail-fix"
+        },
+        {
+          "axis": "X",
+          "bracketId": null,
+          "centerAssemblyMm": [
+            114.7,
+            -67.26594,
+            68.1894265
+          ],
+          "centerLocalMm": [
+            99.73406,
+            66.6894265
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-02",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-02",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "RIGHT",
+          "profile": "round",
+          "role": "rail-fix"
+        },
+        {
+          "axis": "X",
+          "bracketId": null,
+          "centerAssemblyMm": [
+            114.7,
+            -8.000000008223651e-06,
+            68.1894265
+          ],
+          "centerLocalMm": [
+            166.999992,
+            66.6894265
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-03",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-03",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "RIGHT",
+          "profile": "round",
+          "role": "rail-fix"
+        },
+        {
+          "axis": "X",
+          "bracketId": null,
+          "centerAssemblyMm": [
+            114.7,
+            67.26591450000001,
+            68.1894265
+          ],
+          "centerLocalMm": [
+            234.2659145,
+            66.6894265
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-04",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-04",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "RIGHT",
+          "profile": "round",
+          "role": "rail-fix"
+        },
+        {
+          "axis": "X",
+          "bracketId": null,
+          "centerAssemblyMm": [
+            114.7,
+            134.496536,
+            68.1894265
+          ],
+          "centerLocalMm": [
+            301.496536,
+            66.6894265
+          ],
+          "diameterMm": 5.5,
+          "face": "inside",
+          "id": "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-05",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-05",
+          "plateId": "7U40-R9-AL-LEFT-RIGHT",
+          "plateInstance": "RIGHT",
+          "profile": "round",
+          "role": "rail-fix"
+        }
+      ],
+      "instances": [
+        {
+          "id": "LEFT",
+          "localToAssembly": [
+            [
+              0.0,
+              0.0,
+              -1.0,
+              -113.2
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              -167.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "id": "RIGHT",
+          "localToAssembly": [
+            [
+              0.0,
+              0.0,
+              1.0,
+              113.2
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              -167.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "partType": "left_right",
+      "plateId": "7U40-R9-AL-LEFT-RIGHT",
+      "quantity": 2,
+      "sizeMm": [
+        334.0,
+        89.5,
+        1.5
+      ]
+    }
+  ],
+  "reference": {
+    "path": "engineering/r6-body/engineering/7u40/aluminum/hole-layout.json",
+    "regressionToleranceMm": 1e-06,
+    "sha256": "ad555b88e51ab3b79d789871fb2fccc9e5c0926b89d80098cdb95b73d66ceb06"
+  },
+  "revision": "R9-PROTOTYPE-01",
+  "roleCounts": {
+    "bracket": 36,
+    "rail-fix": 10
+  },
+  "schema": "zudo-case-r9-body-hole-layout-v1",
+  "status": "unapproved_prototype",
+  "totalHoleCount": 46,
+  "units": "mm"
+}

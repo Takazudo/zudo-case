@@ -170,5 +170,113 @@
     "status": "adopted",
     "source": "project/source-notes/user-decisions.md",
     "note": "Approximate target."
+  },
+  "bracket_hole_inset": {
+    "value": 10,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "R6 nominal inset from the outside panel edge; physical bracket hole centers remain unchecked."
+  },
+  "vertical_bracket_center_heights": {
+    "value": [
+      36.5,
+      66.5
+    ],
+    "unit": "mm[]",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "R6 nominal lower and upper vertical bracket centers."
+  },
+  "metal_clearance_hole_diameter": {
+    "value": 5.5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Round M5 clearance hole for this body prototype; not the later slot solution."
+  },
+  "mount_bolt_length": {
+    "value": 20,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Display envelope only; not a screw-length recommendation."
+  },
+  "mount_head_diameter": {
+    "value": 9,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "M5 head envelope diameter is unmeasured."
+  },
+  "nylon_outer_diameter": {
+    "value": 10,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Shared spacer and washer display envelope OD."
+  },
+  "nylon_inner_diameter": {
+    "value": 5.5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Shared spacer and washer display envelope ID."
+  },
+  "nut_height": {
+    "value": 5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Display envelope only; nut dimensions are not measured."
+  },
+  "nut_across_flats": {
+    "value": 8,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Display envelope only; nut dimensions are not measured."
+  },
+  "rail_end_bolt_length": {
+    "value": 40,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "R6 display assumption from an old assembly guide; current fit is unchecked."
+  },
+  "rail_end_head_diameter": {
+    "value": 9,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "M5 rail-end bolt head envelope diameter is unmeasured."
+  },
+  "bracket_head_diameter": {
+    "value": 12,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Panel joint bolt head envelope diameter is unmeasured."
+  },
+  "foot_diameter": {
+    "value": 10,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Display envelope only; the foot product is unselected."
+  },
+  "foot_height": {
+    "value": 3,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Display envelope only; the foot product is unselected."
+  },
+  "foot_inset": {
+    "value": 20,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "R6 nominal foot center inset; attachment method and product remain unselected."
   }
 }
