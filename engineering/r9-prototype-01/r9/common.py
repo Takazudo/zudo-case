@@ -1,7 +1,7 @@
 """Deterministic prototype exports and mesh validation, all dimensions in mm."""
 from __future__ import annotations
 
-from collections import Counter
+from collections import Counter, OrderedDict
 from hashlib import sha256
 from pathlib import Path
 import math
@@ -93,6 +93,11 @@ def export_dxf(path: Path, outline, holes=(), slots=()) -> None:
             msp.add_line(right_top, left_top, dxfattribs={"layer": "SLOTS"})
             msp.add_arc(left, radius, start_angle=(angle + 90) % 360,
                         end_angle=(angle + 270) % 360, dxfattribs={"layer": "SLOTS"})
+        # ezdxf discovers some required classes from a set of in-use DXF types.
+        # Register them here and sort the class table before saveas() so hash
+        # randomization cannot reorder the otherwise identical CLASS records.
+        doc.classes.add_required_classes(doc.dxfversion)
+        doc.classes.classes = OrderedDict(sorted(doc.classes.classes.items()))
         doc.saveas(path)
     finally:
         ezdxf.options.write_fixed_meta_data_for_testing = previous
