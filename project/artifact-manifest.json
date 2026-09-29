@@ -1451,6 +1451,42 @@
       "status": "supporting-not-released"
     },
     {
+      "path": "public/images/r9/guards-adhesiveLayer.png",
+      "bytes": 6432,
+      "sha256": "0742889453a84294df5717592a7a25d7e0d79c95eafb8910c844d640ee9230fe",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/images/r9/guards-fitClearancePerSide.png",
+      "bytes": 6447,
+      "sha256": "77c45f49160fbc0ad5f6b436a2c45e9a9f68d8f77c5b6edf4d4c9b300f7245de",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/images/r9/lid-locator_engagement.png",
+      "bytes": 6370,
+      "sha256": "fbeef8a87025ca6ca1e656df0f482c372083e55583bd2edd1c93c2749f3b8aad",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/images/r9/lid-top_edge_lid_locator_clearance.png",
+      "bytes": 6452,
+      "sha256": "3dadc603e6f03a4992ce54910d88b76576c3364e521d6e243a5e653389a03d2e",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/images/r9/slots-bearing_overlap.png",
+      "bytes": 6122,
+      "sha256": "04a07aa65363443d01963ecc5fce136f6a236554938a64f1bd5d1044e3116076",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/images/r9/slots-slot_travel.png",
+      "bytes": 5983,
+      "sha256": "952a38671036ee867abaf5a6582f4db8833d192b115a0f00e94d7196a8628e78",
+      "status": "candidate-not-approved"
+    },
+    {
       "path": "engineering/r9-prototype-01/out/DIFF-FROM-R6-R8.md",
       "bytes": 4063,
       "sha256": "9605b90585e85fbe22dc9859cec634f9cd1051fc83110b54b74b2ea51fcedd3c",
