@@ -270,3 +270,10 @@ def build(ctx: BuildContext) -> list[Part]:
         'excluded': ['body plates', 'PCB detail', 'rail', 'brackets', 'hardware'],
     }, indent=2) + '\n')
     return []
+
+
+def validate(ctx: BuildContext, generated_outputs: list[dict]) -> dict:
+    """Aggregate generated-file, hole-table, module-check, and parameter checks."""
+    from .validation import validate_outputs
+
+    return validate_outputs(ctx, generated_outputs)

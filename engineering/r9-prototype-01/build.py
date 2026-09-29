@@ -15,10 +15,11 @@ OUT_DIRS = ("aluminum", "pa12", "hardware-envelopes", "coupons", "assembly", "pr
 VALID_STATUSES = {"user_confirmed", "adopted", "provisional", "candidate", "unvalidated"}
 
 
-def load_params() -> dict[str, dict]:
+def load_params(params_dir: Path | None = None) -> dict[str, dict]:
+    params_dir = params_dir or ROOT / "params"
     result = {}
     for namespace in ("body", "slots", "guards", "lid", "coupons"):
-        data = json.loads((ROOT / "params" / f"{namespace}.json").read_text())
+        data = json.loads((params_dir / f"{namespace}.json").read_text())
         for key, item in data.items():
             if set(item) != {"value", "unit", "status", "source", "note"} or item["status"] not in VALID_STATUSES:
                 raise ValueError(f"invalid parameter {namespace}.{key}")
@@ -78,7 +79,11 @@ def parse_modules(value: str | None) -> tuple[str, ...]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--only", type=parse_modules, metavar="MODULE[,MODULE...]")
+    parser.add_argument("--validate", action="store_true",
+                        help="run the full build, then aggregate CAD and parameter-change checks")
     args = parser.parse_args()
+    if args.validate and args.only is not None:
+        parser.error("--validate requires the complete build; omit --only")
     out = ROOT / "out"
     for directory in OUT_DIRS:
         (out / directory).mkdir(parents=True, exist_ok=True)
@@ -124,9 +129,52 @@ def main() -> None:
                                           "sha256": sha256_file(path), "bytes": path.stat().st_size})
     if "coupons" in selected:
         coupon_manifest = importlib.import_module("r9.coupons").finalize(ctx)
+        manifest_path = ROOT / coupon_manifest["path"]
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        # C2 files are emitted into nested per-coupon folders by coupons.py,
+        # outside the generic Part exporter. Add every manifest-listed byte
+        # to the shared ledger, checking the manifest digest before recording.
+        recorded = {entry["path"]: entry for entry in result["outputs"]}
+        for coupon in manifest["coupons"]:
+            for file in coupon.get("fileHashes", []):
+                path = ROOT / file["path"]
+                actual = {"path": file["path"], "sha256": sha256_file(path),
+                          "bytes": path.stat().st_size}
+                if actual["sha256"] != file["sha256"] or actual["bytes"] != file["bytes"]:
+                    raise ValueError(f"coupon manifest digest mismatch: {path}")
+                previous = recorded.get(actual["path"])
+                if previous is not None and previous != actual:
+                    raise ValueError(f"conflicting coupon ledger entry: {path}")
+                if previous is None:
+                    result["outputs"].append(actual)
+                    recorded[actual["path"]] = actual
         result["outputs"].append(coupon_manifest)
+
+    validation_report = None
+    if args.validate:
+        # Refresh the checked-in single-file preview after preview_data has
+        # updated its file table, so nested C2 outputs are represented there.
+        preview_html = importlib.import_module("preview.build").build()
+        print(f"Preview HTML updated: {preview_html.relative_to(ROOT.parents[1])}")
+        validation_report = importlib.import_module("r9.checks").validate(ctx, result["outputs"])
+        validation_path = out / "validation.json"
+        validation_output = {"path": str(validation_path.relative_to(ROOT)),
+                             "sha256": sha256_file(validation_path),
+                             "bytes": validation_path.stat().st_size}
+        result["outputs"].append(validation_output)
+        markdown_path = ROOT / "VALIDATION.md"
+        result["outputs"].append({"path": str(markdown_path.relative_to(ROOT)),
+                                  "sha256": sha256_file(markdown_path),
+                                  "bytes": markdown_path.stat().st_size})
+        summary = validation_report["summary"]
+        print(f"Validation: {summary['passed']} pass; {summary['flagged']} flag; "
+              f"{summary['failed']} fail")
+
+    result["outputs"].sort(key=lambda entry: entry["path"])
     (out / "build-log.json").write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n")
     print(f"R9 7u40: {len(result['parts'])} parts; {len(result['outputs'])} files; modules: {', '.join(selected)}")
+    if validation_report is not None and validation_report["summary"]["failed"]:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

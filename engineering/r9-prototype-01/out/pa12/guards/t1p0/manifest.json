@@ -37,6 +37,10 @@
           167.75,
           6.0
         ],
+        "edgeIncidenceHistogram": {
+          "2": 795
+        },
+        "positiveVolume": true,
         "triangleCount": 530,
         "volumeMm3": 2766.71321382685
       },
@@ -74,6 +78,10 @@
           167.75,
           6.0
         ],
+        "edgeIncidenceHistogram": {
+          "2": 795
+        },
+        "positiveVolume": true,
         "triangleCount": 530,
         "volumeMm3": 2766.713213826976
       },
@@ -111,6 +119,10 @@
           6.0,
           6.0
         ],
+        "edgeIncidenceHistogram": {
+          "2": 825
+        },
+        "positiveVolume": true,
         "triangleCount": 550,
         "volumeMm3": 1175.8030692999316
       },
@@ -148,6 +160,10 @@
           161.75,
           6.0
         ],
+        "edgeIncidenceHistogram": {
+          "2": 234
+        },
+        "positiveVolume": true,
         "triangleCount": 156,
         "volumeMm3": 1590.9119454510158
       },
@@ -185,6 +201,10 @@
           161.75,
           6.0
         ],
+        "edgeIncidenceHistogram": {
+          "2": 234
+        },
+        "positiveVolume": true,
         "triangleCount": 156,
         "volumeMm3": 1590.9119454510226
       },
@@ -222,6 +242,10 @@
           6.0,
           81.0
         ],
+        "edgeIncidenceHistogram": {
+          "2": 222
+        },
+        "positiveVolume": true,
         "triangleCount": 148,
         "volumeMm3": 637.9221247867293
       },

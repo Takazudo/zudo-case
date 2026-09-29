@@ -9,8 +9,8 @@
   "railInstanceCount": 6,
   "railSourceLengthMm": 204,
   "parameterSectionCount": 55,
-  "modelJsonBytes": 4921234,
-  "gzipBytes": 644305,
+  "modelJsonBytes": 4921740,
+  "gzipBytes": 644502,
   "noR8Meshes": true,
   "sourceHashes": {
     "engineering/r6-body/source-data/rail40/nuts-v2-40hp-single.stl": "88a153fe717f582f80656fe10c74df5ec1717f53e6b202fff078532b00b06c5a",

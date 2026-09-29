@@ -103,7 +103,16 @@ def export_dxf(path: Path, outline, holes=(), slots=()) -> None:
         ezdxf.options.write_fixed_meta_data_for_testing = previous
 
 
-def export_stl(shape: cq.Shape, path: Path, tolerance=0.01, angular_tolerance=0.1) -> None:
+STL_TESSELLATION_TOLERANCE_MM = 0.01
+STL_ANGULAR_TOLERANCE_RAD = 0.1
+STL_VOLUME_RELATIVE_TOLERANCE = 0.0005
+STL_VOLUME_ABSOLUTE_TOLERANCE_MM3 = 0.1
+STL_BBOX_TOLERANCE_MM = 0.0001
+
+
+def export_stl(shape: cq.Shape, path: Path,
+               tolerance=STL_TESSELLATION_TOLERANCE_MM,
+               angular_tolerance=STL_ANGULAR_TOLERANCE_RAD) -> None:
     """Binary STL with fixed header and lexicographically ordered triangles."""
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -141,7 +150,8 @@ def write_zip(path: Path, entries: dict[str, Path | bytes]) -> None:
             archive.writestr(info, source if isinstance(source, bytes) else Path(source).read_bytes())
 
 
-def inspect_binary_stl(path: Path, cad_shape: cq.Shape | None = None) -> dict:
+def inspect_binary_stl(path: Path, cad_shape: cq.Shape | None = None, *,
+                       allow_non_watertight: bool = False) -> dict:
     """Check closed oriented edge incidence, positive volume and bounding box."""
     raw = Path(path).read_bytes()
     if len(raw) < 84:
@@ -158,17 +168,22 @@ def inspect_binary_stl(path: Path, cad_shape: cq.Shape | None = None) -> dict:
     volume = float(np.einsum("ij,ij->i", triangles[:, 0], np.cross(triangles[:, 1], triangles[:, 2])).sum() / 6)
     bbox_min = triangles.reshape(-1, 3).min(axis=0)
     bbox_max = triangles.reshape(-1, 3).max(axis=0)
-    if histogram != {2: len(edges)} or volume <= 0:
+    closed_manifold = histogram == {2: len(edges)}
+    if (not closed_manifold or volume <= 0) and not allow_non_watertight:
         raise ValueError(f"non-watertight or inverted STL: {histogram}, volume={volume}")
     if cad_shape is not None:
         box = Bnd_Box()
         BRepBndLib.AddOptimal_s(cad_shape.wrapped, box, False, False)
         bb = cq.BoundBox(box)
         expected = np.array([bb.xlen, bb.ylen, bb.zlen])
-        if abs(volume - cad_shape.Volume()) > max(0.1, cad_shape.Volume() * 0.0005):
+        volume_tolerance = max(STL_VOLUME_ABSOLUTE_TOLERANCE_MM3,
+                               cad_shape.Volume() * STL_VOLUME_RELATIVE_TOLERANCE)
+        if abs(volume - cad_shape.Volume()) > volume_tolerance:
             raise ValueError("STL/CAD volume mismatch")
-        if np.max(abs((bbox_max - bbox_min) - expected)) > 0.0001:
+        if np.max(abs((bbox_max - bbox_min) - expected)) > STL_BBOX_TOLERANCE_MM:
             raise ValueError("STL/CAD bbox mismatch")
-    return {"triangleCount": count, "closedManifold": True, "volumeMm3": volume,
+    return {"triangleCount": count, "closedManifold": closed_manifold,
+            "edgeIncidenceHistogram": {str(key): value for key, value in sorted(histogram.items())},
+            "positiveVolume": volume > 0, "volumeMm3": volume,
             "bboxMinMm": bbox_min.tolist(), "bboxMaxMm": bbox_max.tolist(),
             "dimensionsMm": (bbox_max - bbox_min).tolist()}
