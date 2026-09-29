@@ -10,6 +10,7 @@
     "setup": "node scripts/setup.mjs",
     "check:docs": "node scripts/check-docs.mjs",
     "check:r9": "node scripts/lib/r9-manifest-check.mjs",
+    "check:r9-confirm": "node scripts/check-r9-confirm.mjs",
     "check:r9-ledger": "node scripts/sync-r9-ledger.mjs --check",
     "test:r9": "node --test tests/r9-manifest-check.test.mjs",
     "check:built-preview-links": "node scripts/check-built-preview-links.mjs",
