@@ -21,7 +21,7 @@
       "path": "engineering/r9-prototype-01/out/DIFF-FROM-R6-R8.md"
     },
     {
-      "bytes": 193232,
+      "bytes": 193223,
       "path": "engineering/r9-prototype-01/out/outputs-manifest.json"
     },
     {
@@ -37,7 +37,7 @@
       "path": "public/downloads/candidate/7u40-r9-prototype-01-pa12-NOT-APPROVED.zip"
     },
     {
-      "bytes": 6823293,
+      "bytes": 3104982,
       "path": "public/downloads/candidate/7u40-r9-prototype-01-coupons-NOT-APPROVED.zip"
     }
   ],
@@ -45,5 +45,5 @@
   "revision": "R9-PROTOTYPE-01",
   "schema": "zudo-case-r9-size-inventory-v1",
   "scope": "new files committed for issue #92, including this inventory and outputs-manifest.json",
-  "totalBytes": 9786681
+  "totalBytes": 6068361
 }

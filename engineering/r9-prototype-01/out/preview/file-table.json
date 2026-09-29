@@ -105,14 +105,14 @@
         {
           "format": "step",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-01-qty1-mm.step",
-          "bytes": 278127,
-          "sha256": "a9142b4e7c87ebda71b722973de74bf4857e85d3322ee069b1f3fcb302d76435"
+          "bytes": 189881,
+          "sha256": "7a42ee6653823d306a2ad525cee2423f0a9d7dc9fe9cc33d7517cf3891ca7b8b"
         },
         {
           "format": "stl",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-01-qty1-mm.stl",
-          "bytes": 230384,
-          "sha256": "a18618e471d78609b5e4e38b278dfe1f9190694db6754cc058e17996d908af5d"
+          "bytes": 16684,
+          "sha256": "db1d9ebf5fbb1ee735cc48c5c58a02e97a3cabee78293443e9b11e2daec61dc3"
         }
       ],
       "packageZip": "7u40-r9-prototype-01-coupons-NOT-APPROVED.zip",
@@ -128,14 +128,14 @@
         {
           "format": "step",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-02-qty1-mm.step",
-          "bytes": 323260,
-          "sha256": "2c7c3fcc9241a1d6e76ca8645ec2c5d3d16190d8e873cda8307bb4de1d0a8917"
+          "bytes": 189949,
+          "sha256": "27bab0c0054052f706542e704f4b10ee2b33b0cc704cfe7ce29a05cc1ce3dd90"
         },
         {
           "format": "stl",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-02-qty1-mm.stl",
-          "bytes": 305284,
-          "sha256": "712357a0ef88b378b9476544822bdb56222ac1bcafcfdbad4587b3528c7338ed"
+          "bytes": 16684,
+          "sha256": "cbfdb1cad857bb464516ea2301a0cea703efeac37ef4c379ca4fe106a57f83f0"
         }
       ],
       "packageZip": "7u40-r9-prototype-01-coupons-NOT-APPROVED.zip",
@@ -151,14 +151,14 @@
         {
           "format": "step",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-03-qty1-mm.step",
-          "bytes": 356023,
-          "sha256": "6dd8da5c9e40df22226925a3bc6e2ebaf4337edea5ebb41eb5f8deb20a0c62ec"
+          "bytes": 189919,
+          "sha256": "d614ee24462403d9770a48ca61a10bf8c17d834f17d0b98b30a146d3f2341995"
         },
         {
           "format": "stl",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-03-qty1-mm.stl",
-          "bytes": 386984,
-          "sha256": "10a9fb51c9f7b6007a80ca25c971b0232a9caa91144135d7c24d86092fe7d50a"
+          "bytes": 16684,
+          "sha256": "ffd0272a22725f823382c615e05ffcf59225acf136020e17cc9f2e0599a9f955"
         }
       ],
       "packageZip": "7u40-r9-prototype-01-coupons-NOT-APPROVED.zip",
@@ -174,14 +174,14 @@
         {
           "format": "step",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-04-qty1-mm.step",
-          "bytes": 299244,
-          "sha256": "250b4220084e1e490fd0839c181cd9948fa090a9dbe95e21afd09e99e745a6fa"
+          "bytes": 183016,
+          "sha256": "3ef4ade7ef1c02c113a3f8cbafb2f1b707e8f4c21ea94ee77f87a1581ba20118"
         },
         {
           "format": "stl",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-04-qty1-mm.stl",
-          "bytes": 221384,
-          "sha256": "2eeb2fd644c389e8670bf105ff55a64f8a3107e39b1faf943e95fd3b5495b2ee"
+          "bytes": 16284,
+          "sha256": "adaf9893a2a5033fa6d6fbb0816616765a0d49ca304891bca5e89f13280e5a2a"
         }
       ],
       "packageZip": "7u40-r9-prototype-01-coupons-NOT-APPROVED.zip",
@@ -197,14 +197,14 @@
         {
           "format": "step",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-05-qty1-mm.step",
-          "bytes": 358899,
-          "sha256": "0e6434e389c3b8d39cd1499eca5ce979b4c5d8e151efcfc103a39a49aab44ff1"
+          "bytes": 189751,
+          "sha256": "e01e5634b040baf009c4c58a833433fddcf7225353b2b9ef6100403636c5ca8b"
         },
         {
           "format": "stl",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-05-qty1-mm.stl",
-          "bytes": 303084,
-          "sha256": "2608ee694d945692b0c0a18b68e0e21bc9e16cbdc939c45b0ecfa3a547a5d2a0"
+          "bytes": 16684,
+          "sha256": "352bd2ac716e8c0aec50a3cd691b9f3e99b74fbc85119a8fef71d922bc4f001e"
         }
       ],
       "packageZip": "7u40-r9-prototype-01-coupons-NOT-APPROVED.zip",
@@ -220,14 +220,14 @@
         {
           "format": "step",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.step",
-          "bytes": 364511,
-          "sha256": "0f804e12a6459a8f180f7931ab9ba10dce1df6709d67edf4e6c2979e2855edb1"
+          "bytes": 190592,
+          "sha256": "462a0a91a7543645af491fe02956f5ec052962ba0fd66c2974f553c7c58b895b"
         },
         {
           "format": "stl",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.stl",
-          "bytes": 359884,
-          "sha256": "262d3514385c4aeed57e3cd070e74ca680096510169b6a29c212c53b74e22511"
+          "bytes": 16684,
+          "sha256": "2acbf806746993fc5a090b6305a30260ea442f41a1438e8a97933467c93b13cd"
         }
       ],
       "packageZip": "7u40-r9-prototype-01-coupons-NOT-APPROVED.zip",
@@ -243,14 +243,14 @@
         {
           "format": "step",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.step",
-          "bytes": 364511,
-          "sha256": "0f804e12a6459a8f180f7931ab9ba10dce1df6709d67edf4e6c2979e2855edb1"
+          "bytes": 190592,
+          "sha256": "462a0a91a7543645af491fe02956f5ec052962ba0fd66c2974f553c7c58b895b"
         },
         {
           "format": "stl",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.stl",
-          "bytes": 359884,
-          "sha256": "262d3514385c4aeed57e3cd070e74ca680096510169b6a29c212c53b74e22511"
+          "bytes": 16684,
+          "sha256": "2acbf806746993fc5a090b6305a30260ea442f41a1438e8a97933467c93b13cd"
         }
       ],
       "packageZip": "7u40-r9-prototype-01-coupons-NOT-APPROVED.zip",
@@ -266,14 +266,14 @@
         {
           "format": "step",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.step",
-          "bytes": 283070,
-          "sha256": "ccfc899dced7e4766624a10998e2151f24e3cef1fb387de50033b5b789ef6636"
+          "bytes": 168511,
+          "sha256": "3dd1175f3309692a9879ee2910d9dfa01b281e75331e748e8063cf38be301205"
         },
         {
           "format": "stl",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.stl",
-          "bytes": 224384,
-          "sha256": "b1e420b4eca7002724fb47e17e9ded3db6757b4fbc5705edd0f47fb92dd1e863"
+          "bytes": 15484,
+          "sha256": "8be3412b3c7a990e3420c3f9340894714db6aab3139ad03c083d0743a9dd60bb"
         }
       ],
       "packageZip": "7u40-r9-prototype-01-coupons-NOT-APPROVED.zip",
@@ -289,14 +289,14 @@
         {
           "format": "step",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.step",
-          "bytes": 283070,
-          "sha256": "ccfc899dced7e4766624a10998e2151f24e3cef1fb387de50033b5b789ef6636"
+          "bytes": 168511,
+          "sha256": "3dd1175f3309692a9879ee2910d9dfa01b281e75331e748e8063cf38be301205"
         },
         {
           "format": "stl",
           "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.stl",
-          "bytes": 224384,
-          "sha256": "b1e420b4eca7002724fb47e17e9ded3db6757b4fbc5705edd0f47fb92dd1e863"
+          "bytes": 15484,
+          "sha256": "8be3412b3c7a990e3420c3f9340894714db6aab3139ad03c083d0743a9dd60bb"
         }
       ],
       "packageZip": "7u40-r9-prototype-01-coupons-NOT-APPROVED.zip",

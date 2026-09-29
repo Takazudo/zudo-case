@@ -160,25 +160,25 @@
       "details": {
         "bbox": {
           "dimensionsMm": [
-            4.0500001,
-            40.0000002,
-            6.2000001000000005
+            4.05,
+            40.0,
+            6.2
           ],
           "maxMm": [
-            1.5500001,
-            40.0000001,
+            1.55,
+            40.0,
             1.2000000000000002
           ],
           "minMm": [
             -2.5,
-            -1e-07,
-            -5.0000001
+            0.0,
+            -5.0
           ]
         },
         "isValid": true,
         "singleSolidRequired": true,
         "solidCount": 1,
-        "volumeMm3": 471.8106838548169
+        "volumeMm3": 473.7369482457436
       },
       "id": "step:out/coupons/7u40-r9-cpn-c1-01-qty1-mm.step",
       "status": "pass",
@@ -188,25 +188,25 @@
       "details": {
         "bbox": {
           "dimensionsMm": [
-            4.0500001,
-            40.0000002,
-            6.2000001000000005
+            4.05,
+            40.0,
+            6.2
           ],
           "maxMm": [
-            1.5500001,
-            40.0000001,
+            1.55,
+            40.0,
             1.2000000000000002
           ],
           "minMm": [
             -2.5,
-            -1e-07,
-            -5.0000001
+            0.0,
+            -5.0
           ]
         },
         "isValid": true,
         "singleSolidRequired": true,
         "solidCount": 1,
-        "volumeMm3": 497.1224380441167
+        "volumeMm3": 499.14022824574363
       },
       "id": "step:out/coupons/7u40-r9-cpn-c1-02-qty1-mm.step",
       "status": "pass",
@@ -216,25 +216,25 @@
       "details": {
         "bbox": {
           "dimensionsMm": [
-            4.0500001,
-            40.0000002,
-            6.2000001000000005
+            4.05,
+            40.0,
+            6.2
           ],
           "maxMm": [
-            1.5500001,
-            40.0000001,
+            1.55,
+            40.0,
             1.2000000000000002
           ],
           "minMm": [
             -2.5,
-            -1e-07,
-            -5.0000001
+            0.0,
+            -5.0
           ]
         },
         "isValid": true,
         "singleSolidRequired": true,
         "solidCount": 1,
-        "volumeMm3": 420.3189682999829
+        "volumeMm3": 422.3402282457437
       },
       "id": "step:out/coupons/7u40-r9-cpn-c1-03-qty1-mm.step",
       "status": "pass",
@@ -244,25 +244,25 @@
       "details": {
         "bbox": {
           "dimensionsMm": [
-            4.0500001,
-            40.0000002,
-            6.2000001000000005
+            4.05,
+            40.0,
+            6.2
           ],
           "maxMm": [
-            1.5500001,
-            40.0000001,
+            1.55,
+            40.0,
             1.2000000000000002
           ],
           "minMm": [
             -2.5,
-            -1e-07,
-            -5.0000001
+            0.0,
+            -5.0
           ]
         },
         "isValid": true,
         "singleSolidRequired": true,
         "solidCount": 1,
-        "volumeMm3": 546.2983081314148
+        "volumeMm3": 548.2047082457439
       },
       "id": "step:out/coupons/7u40-r9-cpn-c1-04-qty1-mm.step",
       "status": "pass",
@@ -272,25 +272,25 @@
       "details": {
         "bbox": {
           "dimensionsMm": [
-            3.8500001,
-            40.0000002,
-            6.0000001
+            3.8500000000000005,
+            40.0,
+            6.0
           ],
           "maxMm": [
-            1.3500001000000001,
-            40.0000001,
+            1.3500000000000003,
+            40.0,
             1.0
           ],
           "minMm": [
             -2.5,
-            -1e-07,
-            -5.0000001
+            0.0,
+            -5.0
           ]
         },
         "isValid": true,
         "singleSolidRequired": true,
         "solidCount": 1,
-        "volumeMm3": 394.3299589496435
+        "volumeMm3": 396.34022824574384
       },
       "id": "step:out/coupons/7u40-r9-cpn-c1-05-qty1-mm.step",
       "status": "pass",
@@ -300,25 +300,25 @@
       "details": {
         "bbox": {
           "dimensionsMm": [
-            4.0500001,
-            19.750000200000002,
-            6.2000001000000005
+            4.05,
+            19.75,
+            6.2
           ],
           "maxMm": [
-            1.5500001,
-            19.7500001,
+            1.55,
+            19.75,
             1.2000000000000002
           ],
           "minMm": [
             -2.5,
-            -1e-07,
-            -5.0000001
+            0.0,
+            -5.0
           ]
         },
         "isValid": true,
         "singleSolidRequired": true,
         "solidCount": 1,
-        "volumeMm3": 233.49330986688344
+        "volumeMm3": 235.55079819633593
       },
       "id": "step:out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.step",
       "status": "pass",
@@ -328,25 +328,25 @@
       "details": {
         "bbox": {
           "dimensionsMm": [
-            4.0500001,
-            19.750000200000002,
-            6.2000001000000005
+            4.05,
+            19.75,
+            6.2
           ],
           "maxMm": [
-            1.5500001,
-            19.7500001,
+            1.55,
+            19.75,
             1.2000000000000002
           ],
           "minMm": [
             -2.5,
-            -1e-07,
-            -5.0000001
+            0.0,
+            -5.0
           ]
         },
         "isValid": true,
         "singleSolidRequired": true,
         "solidCount": 1,
-        "volumeMm3": 233.49330986688344
+        "volumeMm3": 235.55079819633593
       },
       "id": "step:out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.step",
       "status": "pass",
@@ -356,25 +356,25 @@
       "details": {
         "bbox": {
           "dimensionsMm": [
-            4.0500001,
-            20.000000200000002,
-            6.2000001000000005
+            4.05,
+            20.0,
+            6.2
           ],
           "maxMm": [
-            1.5500001,
-            20.0000001,
+            1.55,
+            20.0,
             1.2000000000000002
           ],
           "minMm": [
             -2.5,
-            -1e-07,
-            -5.0000001
+            0.0,
+            -5.0
           ]
         },
         "isValid": true,
         "singleSolidRequired": true,
         "solidCount": 1,
-        "volumeMm3": 236.330944615383
+        "volumeMm3": 238.1559141228719
       },
       "id": "step:out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.step",
       "status": "pass",
@@ -384,25 +384,25 @@
       "details": {
         "bbox": {
           "dimensionsMm": [
-            4.0500001,
-            20.000000200000002,
-            6.2000001000000005
+            4.05,
+            20.0,
+            6.2
           ],
           "maxMm": [
-            1.5500001,
-            20.0000001,
+            1.55,
+            20.0,
             1.2000000000000002
           ],
           "minMm": [
             -2.5,
-            -1e-07,
-            -5.0000001
+            0.0,
+            -5.0
           ]
         },
         "isValid": true,
         "singleSolidRequired": true,
         "solidCount": 1,
-        "volumeMm3": 236.330944615383
+        "volumeMm3": 238.1559141228719
       },
       "id": "step:out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.step",
       "status": "pass",
@@ -2295,11 +2295,11 @@
       "details": {
         "artifactRole": "unapproved R9 candidate geometry",
         "bboxDeltaPerAxisMm": [
-          1.4768371592310814e-07,
-          1.0000000116860974e-07,
-          1.0000000028043132e-07
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
         ],
-        "bboxMaxDeltaMm": 1.4768371592310814e-07,
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
         "bboxMaxMm": [
           1.5499999523162842,
           40.0,
@@ -2318,7 +2318,7 @@
           6.200000047683716
         ],
         "edgeIncidenceHistogram": {
-          "2": 6909
+          "2": 498
         },
         "exportTessellationToleranceMm": 0.01,
         "pairedStep": "coupons/7u40-r9-cpn-c1-01-qty1-mm.step",
@@ -2326,22 +2326,22 @@
         "positiveVolume": true,
         "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
         "stepBboxMaxMm": [
-          1.5500001,
-          40.0000001,
+          1.55,
+          40.0,
           1.2000000000000002
         ],
         "stepBboxMinMm": [
           -2.5,
-          -1e-07,
-          -5.0000001
+          0.0,
+          -5.0
         ],
-        "stepVolumeMm3": 471.8106838548169,
+        "stepVolumeMm3": 473.7369482457436,
         "strictBboxToleranceMm": 0.0001,
-        "triangleCount": 4606,
-        "volumeDeltaMm3": 0.0027464484289225766,
+        "triangleCount": 332,
+        "volumeDeltaMm3": 0.0019956536520453483,
         "volumeMatchesStep": true,
-        "volumeMm3": 471.80793740638796,
-        "volumeToleranceMm3": 0.23590534192740845
+        "volumeMm3": 473.73495259209153,
+        "volumeToleranceMm3": 0.2368684741228718
       },
       "id": "stl:out/coupons/7u40-r9-cpn-c1-01-qty1-mm.stl",
       "status": "pass",
@@ -2351,11 +2351,11 @@
       "details": {
         "artifactRole": "unapproved R9 candidate geometry",
         "bboxDeltaPerAxisMm": [
-          1.4768371592310814e-07,
-          1.0000000116860974e-07,
-          1.0000000028043132e-07
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
         ],
-        "bboxMaxDeltaMm": 1.4768371592310814e-07,
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
         "bboxMaxMm": [
           1.5499999523162842,
           40.0,
@@ -2374,7 +2374,7 @@
           6.200000047683716
         ],
         "edgeIncidenceHistogram": {
-          "2": 9156
+          "2": 498
         },
         "exportTessellationToleranceMm": 0.01,
         "pairedStep": "coupons/7u40-r9-cpn-c1-02-qty1-mm.step",
@@ -2382,22 +2382,22 @@
         "positiveVolume": true,
         "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
         "stepBboxMaxMm": [
-          1.5500001,
-          40.0000001,
+          1.55,
+          40.0,
           1.2000000000000002
         ],
         "stepBboxMinMm": [
           -2.5,
-          -1e-07,
-          -5.0000001
+          0.0,
+          -5.0
         ],
-        "stepVolumeMm3": 497.1224380441167,
+        "stepVolumeMm3": 499.14022824574363,
         "strictBboxToleranceMm": 0.0001,
-        "triangleCount": 6104,
-        "volumeDeltaMm3": 0.0034032524499707506,
+        "triangleCount": 332,
+        "volumeDeltaMm3": 0.002002585328909845,
         "volumeMatchesStep": true,
-        "volumeMm3": 497.1190347916667,
-        "volumeToleranceMm3": 0.24856121902205836
+        "volumeMm3": 499.1382256604147,
+        "volumeToleranceMm3": 0.2495701141228718
       },
       "id": "stl:out/coupons/7u40-r9-cpn-c1-02-qty1-mm.stl",
       "status": "pass",
@@ -2407,11 +2407,11 @@
       "details": {
         "artifactRole": "unapproved R9 candidate geometry",
         "bboxDeltaPerAxisMm": [
-          1.4768371592310814e-07,
-          1.0000000116860974e-07,
-          1.0000000028043132e-07
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
         ],
-        "bboxMaxDeltaMm": 1.4768371592310814e-07,
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
         "bboxMaxMm": [
           1.5499999523162842,
           40.0,
@@ -2430,7 +2430,7 @@
           6.200000047683716
         ],
         "edgeIncidenceHistogram": {
-          "2": 11607
+          "2": 498
         },
         "exportTessellationToleranceMm": 0.01,
         "pairedStep": "coupons/7u40-r9-cpn-c1-03-qty1-mm.step",
@@ -2438,22 +2438,22 @@
         "positiveVolume": true,
         "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
         "stepBboxMaxMm": [
-          1.5500001,
-          40.0000001,
+          1.55,
+          40.0,
           1.2000000000000002
         ],
         "stepBboxMinMm": [
           -2.5,
-          -1e-07,
-          -5.0000001
+          0.0,
+          -5.0
         ],
-        "stepVolumeMm3": 420.3189682999829,
+        "stepVolumeMm3": 422.3402282457437,
         "strictBboxToleranceMm": 0.0001,
-        "triangleCount": 7738,
-        "volumeDeltaMm3": 0.003055145860173525,
+        "triangleCount": 332,
+        "volumeDeltaMm3": 0.0019989775790349995,
         "volumeMatchesStep": true,
-        "volumeMm3": 420.3159131541227,
-        "volumeToleranceMm3": 0.21015948414999144
+        "volumeMm3": 422.33822926816464,
+        "volumeToleranceMm3": 0.21117011412287184
       },
       "id": "stl:out/coupons/7u40-r9-cpn-c1-03-qty1-mm.stl",
       "status": "pass",
@@ -2463,11 +2463,11 @@
       "details": {
         "artifactRole": "unapproved R9 candidate geometry",
         "bboxDeltaPerAxisMm": [
-          1.4768371592310814e-07,
-          1.0000000116860974e-07,
-          1.0000000028043132e-07
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
         ],
-        "bboxMaxDeltaMm": 1.4768371592310814e-07,
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
         "bboxMaxMm": [
           1.5499999523162842,
           40.0,
@@ -2486,7 +2486,7 @@
           6.200000047683716
         ],
         "edgeIncidenceHistogram": {
-          "2": 6639
+          "2": 486
         },
         "exportTessellationToleranceMm": 0.01,
         "pairedStep": "coupons/7u40-r9-cpn-c1-04-qty1-mm.step",
@@ -2494,22 +2494,22 @@
         "positiveVolume": true,
         "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
         "stepBboxMaxMm": [
-          1.5500001,
-          40.0000001,
+          1.55,
+          40.0,
           1.2000000000000002
         ],
         "stepBboxMinMm": [
           -2.5,
-          -1e-07,
-          -5.0000001
+          0.0,
+          -5.0
         ],
-        "stepVolumeMm3": 546.2983081314148,
+        "stepVolumeMm3": 548.2047082457439,
         "strictBboxToleranceMm": 0.0001,
-        "triangleCount": 4426,
-        "volumeDeltaMm3": 0.002850124895189765,
+        "triangleCount": 324,
+        "volumeDeltaMm3": 0.001999127296585357,
         "volumeMatchesStep": true,
-        "volumeMm3": 546.2954580065197,
-        "volumeToleranceMm3": 0.27314915406570744
+        "volumeMm3": 548.2027091184473,
+        "volumeToleranceMm3": 0.2741023541228719
       },
       "id": "stl:out/coupons/7u40-r9-cpn-c1-04-qty1-mm.stl",
       "status": "pass",
@@ -2519,11 +2519,11 @@
       "details": {
         "artifactRole": "unapproved R9 candidate geometry",
         "bboxDeltaPerAxisMm": [
-          7.615814223704831e-08,
-          1.0000000116860974e-07,
-          1.0000000028043132e-07
+          2.3841857599293803e-08,
+          0.0,
+          0.0
         ],
-        "bboxMaxDeltaMm": 1.0000000116860974e-07,
+        "bboxMaxDeltaMm": 2.3841857599293803e-08,
         "bboxMaxMm": [
           1.350000023841858,
           40.0,
@@ -2542,7 +2542,7 @@
           6.0
         ],
         "edgeIncidenceHistogram": {
-          "2": 9090
+          "2": 498
         },
         "exportTessellationToleranceMm": 0.01,
         "pairedStep": "coupons/7u40-r9-cpn-c1-05-qty1-mm.step",
@@ -2550,22 +2550,22 @@
         "positiveVolume": true,
         "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
         "stepBboxMaxMm": [
-          1.3500001000000001,
-          40.0000001,
+          1.3500000000000003,
+          40.0,
           1.0
         ],
         "stepBboxMinMm": [
           -2.5,
-          -1e-07,
-          -5.0000001
+          0.0,
+          -5.0
         ],
-        "stepVolumeMm3": 394.3299589496435,
+        "stepVolumeMm3": 396.34022824574384,
         "strictBboxToleranceMm": 0.0001,
-        "triangleCount": 6060,
-        "volumeDeltaMm3": 0.0031497762348067226,
+        "triangleCount": 332,
+        "volumeDeltaMm3": 0.002012490132244693,
         "volumeMatchesStep": true,
-        "volumeMm3": 394.3268091734087,
-        "volumeToleranceMm3": 0.19716497947482176
+        "volumeMm3": 396.3382157556116,
+        "volumeToleranceMm3": 0.19817011412287192
       },
       "id": "stl:out/coupons/7u40-r9-cpn-c1-05-qty1-mm.stl",
       "status": "pass",
@@ -2575,11 +2575,11 @@
       "details": {
         "artifactRole": "unapproved R9 candidate geometry",
         "bboxDeltaPerAxisMm": [
-          1.4768371592310814e-07,
-          1.0000000116860974e-07,
-          1.0000000028043132e-07
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
         ],
-        "bboxMaxDeltaMm": 1.4768371592310814e-07,
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
         "bboxMaxMm": [
           1.5499999523162842,
           19.75,
@@ -2598,7 +2598,7 @@
           6.200000047683716
         ],
         "edgeIncidenceHistogram": {
-          "2": 10794
+          "2": 498
         },
         "exportTessellationToleranceMm": 0.01,
         "pairedStep": "coupons/7u40-r9-cpn-c1-06-a-qty1-mm.step",
@@ -2606,22 +2606,22 @@
         "positiveVolume": true,
         "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
         "stepBboxMaxMm": [
-          1.5500001,
-          19.7500001,
+          1.55,
+          19.75,
           1.2000000000000002
         ],
         "stepBboxMinMm": [
           -2.5,
-          -1e-07,
-          -5.0000001
+          0.0,
+          -5.0
         ],
-        "stepVolumeMm3": 233.49330986688344,
+        "stepVolumeMm3": 235.55079819633593,
         "strictBboxToleranceMm": 0.0001,
-        "triangleCount": 7196,
-        "volumeDeltaMm3": 0.0025074750774365384,
+        "triangleCount": 332,
+        "volumeDeltaMm3": 0.0009853540333608635,
         "volumeMatchesStep": true,
-        "volumeMm3": 233.490802391806,
-        "volumeToleranceMm3": 0.11674665493344172
+        "volumeMm3": 235.54981284230257,
+        "volumeToleranceMm3": 0.11777539909816796
       },
       "id": "stl:out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.stl",
       "status": "pass",
@@ -2631,11 +2631,11 @@
       "details": {
         "artifactRole": "unapproved R9 candidate geometry",
         "bboxDeltaPerAxisMm": [
-          1.4768371592310814e-07,
-          1.0000000116860974e-07,
-          1.0000000028043132e-07
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
         ],
-        "bboxMaxDeltaMm": 1.4768371592310814e-07,
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
         "bboxMaxMm": [
           1.5499999523162842,
           19.75,
@@ -2654,7 +2654,7 @@
           6.200000047683716
         ],
         "edgeIncidenceHistogram": {
-          "2": 10794
+          "2": 498
         },
         "exportTessellationToleranceMm": 0.01,
         "pairedStep": "coupons/7u40-r9-cpn-c1-06-b-qty1-mm.step",
@@ -2662,22 +2662,22 @@
         "positiveVolume": true,
         "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
         "stepBboxMaxMm": [
-          1.5500001,
-          19.7500001,
+          1.55,
+          19.75,
           1.2000000000000002
         ],
         "stepBboxMinMm": [
           -2.5,
-          -1e-07,
-          -5.0000001
+          0.0,
+          -5.0
         ],
-        "stepVolumeMm3": 233.49330986688344,
+        "stepVolumeMm3": 235.55079819633593,
         "strictBboxToleranceMm": 0.0001,
-        "triangleCount": 7196,
-        "volumeDeltaMm3": 0.0025074750774365384,
+        "triangleCount": 332,
+        "volumeDeltaMm3": 0.0009853540333608635,
         "volumeMatchesStep": true,
-        "volumeMm3": 233.490802391806,
-        "volumeToleranceMm3": 0.11674665493344172
+        "volumeMm3": 235.54981284230257,
+        "volumeToleranceMm3": 0.11777539909816796
       },
       "id": "stl:out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.stl",
       "status": "pass",
@@ -2687,11 +2687,11 @@
       "details": {
         "artifactRole": "unapproved R9 candidate geometry",
         "bboxDeltaPerAxisMm": [
-          1.4768371592310814e-07,
-          1.0000000116860974e-07,
-          1.0000000028043132e-07
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
         ],
-        "bboxMaxDeltaMm": 1.4768371592310814e-07,
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
         "bboxMaxMm": [
           1.5499999523162842,
           20.0,
@@ -2710,7 +2710,7 @@
           6.200000047683716
         ],
         "edgeIncidenceHistogram": {
-          "2": 6729
+          "2": 462
         },
         "exportTessellationToleranceMm": 0.01,
         "pairedStep": "coupons/7u40-r9-cpn-c1-07-a-qty1-mm.step",
@@ -2718,22 +2718,22 @@
         "positiveVolume": true,
         "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
         "stepBboxMaxMm": [
-          1.5500001,
-          20.0000001,
+          1.55,
+          20.0,
           1.2000000000000002
         ],
         "stepBboxMinMm": [
           -2.5,
-          -1e-07,
-          -5.0000001
+          0.0,
+          -5.0
         ],
-        "stepVolumeMm3": 236.330944615383,
+        "stepVolumeMm3": 238.1559141228719,
         "strictBboxToleranceMm": 0.0001,
-        "triangleCount": 4486,
-        "volumeDeltaMm3": 0.0017976534114438891,
+        "triangleCount": 308,
+        "volumeDeltaMm3": 0.0009980355330299062,
         "volumeMatchesStep": true,
-        "volumeMm3": 236.32914696197156,
-        "volumeToleranceMm3": 0.1181654723076915
+        "volumeMm3": 238.15491608733888,
+        "volumeToleranceMm3": 0.11907795706143595
       },
       "id": "stl:out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.stl",
       "status": "pass",
@@ -2743,11 +2743,11 @@
       "details": {
         "artifactRole": "unapproved R9 candidate geometry",
         "bboxDeltaPerAxisMm": [
-          1.4768371592310814e-07,
-          1.0000000116860974e-07,
-          1.0000000028043132e-07
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
         ],
-        "bboxMaxDeltaMm": 1.4768371592310814e-07,
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
         "bboxMaxMm": [
           1.5499999523162842,
           20.0,
@@ -2766,7 +2766,7 @@
           6.200000047683716
         ],
         "edgeIncidenceHistogram": {
-          "2": 6729
+          "2": 462
         },
         "exportTessellationToleranceMm": 0.01,
         "pairedStep": "coupons/7u40-r9-cpn-c1-07-b-qty1-mm.step",
@@ -2774,22 +2774,22 @@
         "positiveVolume": true,
         "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
         "stepBboxMaxMm": [
-          1.5500001,
-          20.0000001,
+          1.55,
+          20.0,
           1.2000000000000002
         ],
         "stepBboxMinMm": [
           -2.5,
-          -1e-07,
-          -5.0000001
+          0.0,
+          -5.0
         ],
-        "stepVolumeMm3": 236.330944615383,
+        "stepVolumeMm3": 238.1559141228719,
         "strictBboxToleranceMm": 0.0001,
-        "triangleCount": 4486,
-        "volumeDeltaMm3": 0.0017976534114438891,
+        "triangleCount": 308,
+        "volumeDeltaMm3": 0.0009980355330299062,
         "volumeMatchesStep": true,
-        "volumeMm3": 236.32914696197156,
-        "volumeToleranceMm3": 0.1181654723076915
+        "volumeMm3": 238.15491608733888,
+        "volumeToleranceMm3": 0.11907795706143595
       },
       "id": "stl:out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.stl",
       "status": "pass",
@@ -5759,11 +5759,11 @@
       }
     ],
     "flaggedR9StlCount": 7,
-    "positiveVolumeMm3": 533444.077878,
+    "positiveVolumeMm3": 533461.734617,
     "referenceStlCount": 9,
     "sourceDerivedDisplayStlCount": 6,
     "strictBboxToleranceMm": 0.0001,
-    "totalTriangles": 106178
+    "totalTriangles": 56812
   },
   "model": "7u40",
   "not_validated": [
