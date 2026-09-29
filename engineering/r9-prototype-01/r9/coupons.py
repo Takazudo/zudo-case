@@ -34,13 +34,39 @@ def _guard_values(ctx: BuildContext, *, thickness: float | None = None,
 
 
 def _marked_guard_segment(params: dict, length: float, coupon_id: str) -> cq.Shape:
-    """Use the production guard section with raised, inspectable PA12 text."""
+    """Use the production guard section with raised, font-independent ID marks."""
     from_section = guards.guard_section({**params, "length": length, "orientation": "top"})
-    text = (cq.Workplane("YZ", origin=(params["t"], length / 2, -params["cover"] / 2))
-            .text(coupon_id, float(params["labelSize"]), float(params["labelRise"]),
-                  combine=False, font="Arial", kind="regular")
-            .val())
-    marked = from_section.fuse(text).clean()
+    # CadQuery's text() selects an installed system font, whose outlines differ
+    # between the local machine and CI. These 3x5 glyphs are ordinary solids
+    # built from the same numeric dimensions on every host.
+    glyphs = {
+        "C": ("111", "100", "100", "100", "111"),
+        "1": ("010", "110", "010", "010", "111"),
+        "0": ("111", "101", "101", "101", "111"),
+        "2": ("111", "001", "111", "100", "111"),
+        "3": ("111", "001", "111", "001", "111"),
+        "4": ("101", "101", "111", "001", "001"),
+        "5": ("111", "100", "111", "001", "111"),
+        "6": ("111", "100", "111", "101", "111"),
+        "7": ("111", "001", "001", "001", "001"),
+        "-": ("000", "000", "111", "000", "000"),
+    }
+    pixel = float(params["labelSize"]) / 5
+    rise = float(params["labelRise"])
+    width = (4 * len(coupon_id) - 1) * pixel
+    start_y = (length - width) / 2
+    start_z = -(float(params["cover"]) + 5 * pixel) / 2
+    marks = []
+    for index, char in enumerate(coupon_id):
+        for row, bits in enumerate(glyphs[char]):
+            for col, bit in enumerate(bits):
+                if bit == "1":
+                    marks.append(cq.Solid.makeBox(
+                        rise, pixel, pixel,
+                        cq.Vector(float(params["t"]),
+                                  start_y + (4 * index + col) * pixel,
+                                  start_z + (4 - row) * pixel)))
+    marked = from_section.fuse(*marks).clean()
     if not marked.isValid() or len(marked.Solids()) != 1:
         raise ValueError(f"invalid marked guard coupon: {coupon_id}")
     return marked

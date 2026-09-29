@@ -59,5 +59,14 @@ jobs:
       - name: Regenerate candidate packages and output manifest
         run: uv run python -m r9.package
         working-directory: engineering/r9-prototype-01
+      - name: Save regenerated files for cross-platform comparison
+        uses: actions/upload-artifact@v4
+        with:
+          name: r9-regenerated-candidate
+          path: |
+            engineering/r9-prototype-01/out
+            public/downloads/candidate
+            public/previews/r9-prototype-01.html
+          retention-days: 1
       - name: Check generated outputs are current
         run: git diff --exit-code -- engineering/r9-prototype-01/out public/downloads/candidate public/previews/r9-prototype-01.html
