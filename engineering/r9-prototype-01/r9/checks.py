@@ -36,6 +36,45 @@ def _volume(a: cq.Shape, b: cq.Shape) -> float:
     return a.intersect(b).Volume()
 
 
+def _interval_box_distance(a, b) -> float:
+    """Conservative lower bound: Euclidean distance between two AABBs."""
+    return sum(max(0.0, y[0]-x[1], x[0]-y[1])**2 for x, y in zip(a, b))**0.5
+
+
+def _interval_box_overlap_volume(a, b) -> float:
+    return max(0.0, min(a[0][1], b[0][1])-max(a[0][0], b[0][0])) * \
+           max(0.0, min(a[1][1], b[1][1])-max(a[1][0], b[1][0])) * \
+           max(0.0, min(a[2][1], b[2][1])-max(a[2][0], b[2][0]))
+
+
+def _locator_boxes(ctx: BuildContext):
+    """R9 lid's four provisional locating blades, from make_quarter()."""
+    half_open_x = float(ctx.value('guards', 'top_edge_guard_opening_x')) / 2
+    half_open_y = float(ctx.value('guards', 'top_edge_guard_opening_y')) / 2
+    outer_x = half_open_x + float(ctx.value('lid', 'locator_x_overhang_from_opening'))
+    inner_x = float(ctx.value('lid', 'frame_seam')) / 2
+    front_y = -half_open_y + float(ctx.value('lid', 'top_edge_lid_locator_clearance'))
+    thick = float(ctx.value('lid', 'locator_thickness'))
+    z0 = float(ctx.value('lid', 'locator_bottom_z'))
+    z1 = float(ctx.value('lid', 'frame_seat_z')) + float(ctx.value('lid', 'blade_bridge_height'))
+    front = ((inner_x, outer_x), (front_y, front_y+thick), (z0, z1))
+    return [(f'{x}{y}', ((-front[0][1], -front[0][0]) if x == 'L' else front[0],
+                           (-front[1][1], -front[1][0]) if y == 'B' else front[1], front[2]))
+            for x in ('L', 'R') for y in ('F', 'B')]
+
+
+def _instances(manifest, marker):
+    result = []
+    for component in manifest['components']:
+        if marker not in component['id']:
+            continue
+        for item in component['instances']:
+            if 'bboxMinMm' in item and 'bboxMaxMm' in item:
+                box = tuple((item['bboxMinMm'][axis], item['bboxMaxMm'][axis]) for axis in range(3))
+                result.append((item['id'], box))
+    return result
+
+
 def _file(ctx: BuildContext, category: str, part_id: str, qty: int = 1) -> Path:
     return ctx.out / category / f'{part_id.lower()}-qty{qty}-mm.step'
 
@@ -73,6 +112,31 @@ def build(ctx: BuildContext) -> list[Part]:
     frozen_top = float(ctx.value('guards', 'top_edge_seated_guard_z'))
     actual_top = max(s.BoundingBox().zmax for s in top_guards.values())
     locator_x_gap = -float(ctx.value('lid', 'locator_x_overhang_from_opening'))
+    locators = _locator_boxes(ctx)
+    rail_boxes = _instances(body_manifest, 'RAIL-UNIT-ENVELOPE')
+    bracket_boxes = _instances(body_manifest, 'PANEL-BRACKET')
+    pcb_boxes = _instances(body_manifest, '-PCB-')
+    hardware_boxes = [(pid, box) for component in body_manifest['components']
+                      if component['category'] == 'hardware-envelopes'
+                      and all(x not in component['id'] for x in ('RAIL-UNIT-ENVELOPE', 'PANEL-BRACKET', '-PCB-'))
+                      for pid, box in _instances({'components': [component]}, component['id'])]
+    if len(rail_boxes) != 6 or len(bracket_boxes) != 18 or len(pcb_boxes) != 8:
+        raise ValueError('expected R9 body envelope instances absent')
+    highest_z = max(box[2][1] for _, box in bracket_boxes)
+    highest_brackets = [(pid, box) for pid, box in bracket_boxes if abs(box[2][1]-highest_z) < 1e-6]
+    def lower_bound(instances):
+        return min(_interval_box_distance(a, b) for _, a in locators for _, b in instances)
+    envelope_checks = {}
+    for name, instances in (('rail', rail_boxes), ('bracket', bracket_boxes),
+                            ('pcb', pcb_boxes), ('otherHardware', hardware_boxes)):
+        candidates = [{'locator': lid_id, 'instance': part_id,
+                       'overlapBoxMm3': round(_interval_box_overlap_volume(a, b), 6)}
+                      for lid_id, a in locators for part_id, b in instances
+                      if _interval_box_overlap_volume(a, b) > TOLERANCE_MM3]
+        envelope_checks[name] = {'instanceCount': len(instances),
+                                 'minimumClearanceLowerBoundMm': round(lower_bound(instances), 6),
+                                 'overlapCandidates': candidates,
+                                 'clearAtNominalPosition': not candidates}
     lift_first = None
     # 1 mm increments, including the seated state. Stop at first physical
     # overlap; a positive clearance throughout remains a nominal CAD result.
@@ -89,6 +153,25 @@ def build(ctx: BuildContext) -> list[Part]:
                 break
         if lift_first:
             break
+    envelope_lift_first = None
+    for rise in range(151):
+        for lid_id, original in locators:
+            blade = (original[0], original[1], (original[2][0]+rise, original[2][1]+rise))
+            for name, instances in (('rail', rail_boxes), ('bracket', bracket_boxes),
+                                    ('pcb', pcb_boxes), ('otherHardware', hardware_boxes)):
+                for part_id, component_box in instances:
+                    overlap = _interval_box_overlap_volume(blade, component_box)
+                    if overlap > TOLERANCE_MM3:
+                        envelope_lift_first = {'riseMm': rise, 'locator': lid_id,
+                                               'class': name, 'instance': part_id,
+                                               'overlapBoxMm3': round(overlap, 6)}
+                        break
+                if envelope_lift_first:
+                    break
+            if envelope_lift_first:
+                break
+        if envelope_lift_first:
+            break
     plate = lid['7U40-R9-LID-PLATE']
     knob_top = (float(ctx.value('body', 'case_height')) +
                 float(ctx.value('lid', 'module_panel_thickness')) +
@@ -103,6 +186,11 @@ def build(ctx: BuildContext) -> list[Part]:
         flags.append('Lid frame intersects top guards at nominal seated position; resolve geometry before fit coupon.')
     if lift_first:
         flags.append('Nominal lid lift path intersects top guards; see firstContact.')
+    if envelope_lift_first:
+        flags.append('Locator lift AABB sweep overlaps body component envelope; exact solid contact unresolved.')
+    for name, check in envelope_checks.items():
+        if check['overlapCandidates']:
+            flags.append(f'Locator versus {name} envelope AABBs overlap; exact solid placement/contact unresolved.')
     if seat_z < frozen_top:
         flags.append('R8 frame seat 92.7 mm is below frozen guard top 93.4 mm; actual guard solid top differs from frozen interface. Resolve seat datum and fit.')
     if bearing:
@@ -123,8 +211,8 @@ def build(ctx: BuildContext) -> list[Part]:
              'continuousPA12Support': False} for x in (-strap_x, strap_x)]
     flags.append('Two schematic straps contact PA12 at front/rear edges, but span the aluminum plate between corner frames; plate-only contact and deflection remain unresolved.')
     not_validated = [
-        'Full solid-pair collision coverage for transformed body plates, brackets, PCB, rail and hardware instances; local plate STEP patterns are not assembly transforms.',
-        'Lift path against body, PCB, rail and knob solids; only actual top-guard solids checked.',
+        'Body plate and internal part solid-pair collision coverage: body plate STEP patterns are local and most repeated hardware has only instance AABBs; intentional fastener contacts need pair-specific exclusions.',
+        'Lift path exact solids against body, PCB, rail, brackets, hardware and actual module knobs; locator AABBs against available component AABBs are a conservative 1 mm lift-step screen, not exact solids.',
         'M3 driver cone/tool access: eight plate/frame bores are modeled, but driver and screw heads are not specified.',
         'M5 physical tool access and washer fit; S2 exterior envelope is nominal only.',
         'Adhesive retention, physical fit, strap load strength, module knob/cable envelope and transport testing.',
@@ -133,16 +221,26 @@ def build(ctx: BuildContext) -> list[Part]:
         'schema': 'zudo-case-r9-assembly-checks-v1', 'revision': ctx.revision,
         'model': ctx.model, 'units': 'mm', 'status': 'unapproved_prototype',
         'intersectionThresholdMm3': TOLERANCE_MM3,
-        'staticInterference': {'scope': 'lid PA12 frame versus main t1p2 top guards',
-                               'contacts': contacts, 'passes': not contacts},
+        'staticInterference': {'scope': 'partial nominal screen',
+                               'testedSolidPairClasses': ['lid PA12 frame versus main t1p2 top guards'],
+                               'testedEnvelopePairClasses': ['locator blades versus rail', 'locator blades versus brackets', 'locator blades versus PCB', 'locator blades versus other hardware'],
+                               'untestedPairClasses': ['body plate versus bracket/guard/rail/PCB/hardware', 'lid plate versus actual modules and straps', 'bottom/vertical guards versus body and hardware', 'internal hardware versus rail/PCB/brackets'],
+                               'contacts': contacts, 'envelopeChecks': envelope_checks,
+                               'testedSolidPairsPass': not contacts, 'complete': False,
+                               'passes': False},
         'clearancesMm': {'locatorToGuardNominalX': round(locator_x_gap, 6),
                          'lidPlateUndersideToProvisionalKnobTop': round(knob_gap, 6),
                          'frameSeatToActualTopGuard': round(seat_z - actual_top, 6),
                          'frameSeatToFrozenGuardTop': round(seat_z - frozen_top, 6),
-                         'locatorToRailEnvelope': None, 'locatorToHighestBracket': None},
+                         'locatorToRailEnvelope': round(lower_bound(rail_boxes), 6),
+                         'locatorToHighestBracket': round(lower_bound(highest_brackets), 6),
+                         'method': 'AABB separation lower bounds for locator blades versus placed R9 component envelopes; not exact solid distances'},
         'liftPath': {'axis': '+Z', 'startMm': 0, 'endMm': 150, 'stepMm': 1,
-                     'scope': 'PA12 lid frame versus main top guards',
-                     'firstContact': lift_first, 'passes': lift_first is None},
+                     'scope': 'PA12 lid frame versus main top guards; locator AABBs versus placed component AABBs',
+                     'firstContact': lift_first, 'envelopeFirstOverlapCandidate': envelope_lift_first,
+                     'testedSolidPathPass': lift_first is None,
+                     'envelopeScreenPass': envelope_lift_first is None,
+                     'complete': False, 'passes': False},
         'access': {'m3PlateFrameBoreCount': m3_bore_count,
                    'm3DriverValidated': False, 'm5S2NominalToolFailures': tool,
                    'm5PhysicalValidated': False},

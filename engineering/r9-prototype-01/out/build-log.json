@@ -568,8 +568,8 @@
     },
     {
       "path": "out/assembly/assembly-checks.json",
-      "sha256": "2890742db2797b49cea5b1965d6ab32604049e56620c129e74b3daa78c50bb3a",
-      "bytes": 4766
+      "sha256": "c9ee9c179fcb38ac68ba5cca693b3ec21eda724ddeb892c11313c44ab0d23f90",
+      "bytes": 6549
     },
     {
       "path": "out/assembly/assembly.json",
