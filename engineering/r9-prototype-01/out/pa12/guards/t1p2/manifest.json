@@ -1,0 +1,235 @@
+{
+  "candidateAdhesiveLayerMm": 0.15,
+  "candidateFitClearancePerSideMm": 0.15,
+  "exportStatus": "prototype candidate; not approved for manufacture",
+  "frozenTopEdgeAdhesiveAllowance": null,
+  "model": "7u40",
+  "parts": [
+    {
+      "cadVolumeMm3": 3313.937179936792,
+      "files": [
+        {
+          "bytes": 93650,
+          "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-a-qty2-mm.step",
+          "sha256": "c37203985a9006b0fcfb1c552a6f770da326bc513d3c03c927efd9f35624f84c"
+        },
+        {
+          "bytes": 26584,
+          "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-a-qty2-mm.stl",
+          "sha256": "4aaaac22a744a2a6ea110fd60310bc83ccbf9f2dec267f267c703bf94eb43361"
+        }
+      ],
+      "id": "7U40-R9-PA12-GUARD-T1P2-TOP-A",
+      "mesh": {
+        "bboxMaxMm": [
+          -0.25,
+          -0.25,
+          92.19999694824219
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          -168.1999969482422,
+          86.0
+        ],
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.6500015258789,
+          167.9499969482422,
+          6.1999969482421875
+        ],
+        "triangleCount": 530,
+        "volumeMm3": 3313.9188239899036
+      },
+      "quantity": 2
+    },
+    {
+      "cadVolumeMm3": 3313.937179936814,
+      "files": [
+        {
+          "bytes": 94934,
+          "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-b-qty2-mm.step",
+          "sha256": "120c3b1a1fd0d8949603cdcf675cdf8dd19438fbea890d041d83e20aab14268a"
+        },
+        {
+          "bytes": 26584,
+          "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-b-qty2-mm.stl",
+          "sha256": "9b3f8c21d733640cbcc43b85ef6ef1b890efd4bbecbd5d9c120a11fedc85be8b"
+        }
+      ],
+      "id": "7U40-R9-PA12-GUARD-T1P2-TOP-B",
+      "mesh": {
+        "bboxMaxMm": [
+          -0.25,
+          168.1999969482422,
+          92.19999694824219
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          0.25,
+          86.0
+        ],
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.6500015258789,
+          167.9499969482422,
+          6.1999969482421875
+        ],
+        "triangleCount": 530,
+        "volumeMm3": 3313.918823989598
+      },
+      "quantity": 2
+    },
+    {
+      "cadVolumeMm3": 1409.2235754672135,
+      "files": [
+        {
+          "bytes": 93561,
+          "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-width-half-qty4-mm.step",
+          "sha256": "81922950911943eeeae9f353665f32c2c6ee729a365c6c22a1ebe3e17c2d1c13"
+        },
+        {
+          "bytes": 27584,
+          "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-width-half-qty4-mm.stl",
+          "sha256": "4bc4ed1a72218042d54e60f2e6f8831d730ebff76f1d6f0df031fbcc882fe94d"
+        }
+      ],
+      "id": "7U40-R9-PA12-GUARD-T1P2-LOWER-WIDTH-HALF",
+      "mesh": {
+        "bboxMaxMm": [
+          -0.25,
+          -162.0,
+          5.0
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          -168.1999969482422,
+          -1.2000000476837158
+        ],
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.6500015258789,
+          6.1999969482421875,
+          6.200000047683716
+        ],
+        "triangleCount": 550,
+        "volumeMm3": 1409.2122100233137
+      },
+      "quantity": 4
+    },
+    {
+      "cadVolumeMm3": 1904.7136044687086,
+      "files": [
+        {
+          "bytes": 37255,
+          "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-a-qty2-mm.step",
+          "sha256": "fa7dbafaf88e88516e43b582704f0ab769ca184fdd38f073f942f7ee4afd9f9a"
+        },
+        {
+          "bytes": 7884,
+          "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-a-qty2-mm.stl",
+          "sha256": "937928bbee3ef44532c6b4197e3b12bdecd8970cb1c431153e26c6a0f7c47f9a"
+        }
+      ],
+      "id": "7U40-R9-PA12-GUARD-T1P2-LOWER-DEPTH-A",
+      "mesh": {
+        "bboxMaxMm": [
+          -112.19999694824219,
+          -0.25,
+          5.0
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          -162.0,
+          -1.2000000476837158
+        ],
+        "closedManifold": true,
+        "dimensionsMm": [
+          3.7000045776367188,
+          161.75,
+          6.200000047683716
+        ],
+        "triangleCount": 156,
+        "volumeMm3": 1904.7112586560909
+      },
+      "quantity": 2
+    },
+    {
+      "cadVolumeMm3": 1904.7136044687595,
+      "files": [
+        {
+          "bytes": 37243,
+          "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-b-qty2-mm.step",
+          "sha256": "369cfbc439e5a716a9410c7a4fa6b570fd527f15f8177f4a98175c84095953bf"
+        },
+        {
+          "bytes": 7884,
+          "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-b-qty2-mm.stl",
+          "sha256": "091ee57a3a11ac120c2acb83a35de5e17cbf10e5d621558702bf6a4f0640a081"
+        }
+      ],
+      "id": "7U40-R9-PA12-GUARD-T1P2-LOWER-DEPTH-B",
+      "mesh": {
+        "bboxMaxMm": [
+          -112.19999694824219,
+          162.0,
+          5.0
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          0.25,
+          -1.2000000476837158
+        ],
+        "closedManifold": true,
+        "dimensionsMm": [
+          3.7000045776367188,
+          161.75,
+          6.200000047683716
+        ],
+        "triangleCount": 156,
+        "volumeMm3": 1904.7112586560932
+      },
+      "quantity": 2
+    },
+    {
+      "cadVolumeMm3": 835.5687601976224,
+      "files": [
+        {
+          "bytes": 25954,
+          "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-vertical-corner-qty4-mm.step",
+          "sha256": "13c2931b81947f37224cb36c4963dc8943c6c045dad975f4a4f45f33c36ccf36"
+        },
+        {
+          "bytes": 7484,
+          "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-vertical-corner-qty4-mm.stl",
+          "sha256": "03e1a94495a49b2ddc35d8ee60ad6c01f02dc5438b0c298dab59eb85fb1d546b"
+        }
+      ],
+      "id": "7U40-R9-PA12-GUARD-T1P2-VERTICAL-CORNER",
+      "mesh": {
+        "bboxMaxMm": [
+          -109.69999694824219,
+          -162.0,
+          86.0
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          -168.1999969482422,
+          5.0
+        ],
+        "closedManifold": true,
+        "dimensionsMm": [
+          6.200004577636719,
+          6.1999969482421875,
+          81.0
+        ],
+        "triangleCount": 148,
+        "volumeMm3": 835.5628440328874
+      },
+      "quantity": 4
+    }
+  ],
+  "retention": "candidate adhesive/tape layer inside slip-fit channel; adhesion and pull-off strength unvalidated",
+  "revision": "R9-PROTOTYPE-01",
+  "units": "mm",
+  "variant": "t1p2"
+}
