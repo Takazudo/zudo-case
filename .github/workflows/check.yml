@@ -27,6 +27,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm check:docs
       - run: pnpm check:r9
+      - run: pnpm check:r9-doc-table
       - run: pnpm test:r9
       - run: node --test tests/preview-links.test.mjs tests/preview-origin-isolation.test.mjs
       - run: pnpm check:tables
