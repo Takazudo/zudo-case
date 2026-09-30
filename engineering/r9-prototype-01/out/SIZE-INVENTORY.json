@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "bytes": 47953,
+      "path": "engineering/r9-prototype-01/r9/package.py"
+    },
+    {
+      "bytes": 9171,
+      "path": "engineering/r9-prototype-01/tests/test_package.py"
+    },
+    {
+      "bytes": 33887,
+      "path": "engineering/r9-prototype-01/out/bom.json"
+    },
+    {
+      "bytes": 17788,
+      "path": "engineering/r9-prototype-01/out/bom.csv"
+    },
+    {
+      "bytes": 4063,
+      "path": "engineering/r9-prototype-01/out/DIFF-FROM-R6-R8.md"
+    },
+    {
+      "bytes": 193223,
+      "path": "engineering/r9-prototype-01/out/outputs-manifest.json"
+    },
+    {
+      "bytes": 1310,
+      "path": "engineering/r9-prototype-01/out/SIZE-INVENTORY.json"
+    },
+    {
+      "bytes": 654702,
+      "path": "public/downloads/candidate/7u40-r9-prototype-01-aluminum-NOT-APPROVED.zip"
+    },
+    {
+      "bytes": 2001282,
+      "path": "public/downloads/candidate/7u40-r9-prototype-01-pa12-NOT-APPROVED.zip"
+    },
+    {
+      "bytes": 3104982,
+      "path": "public/downloads/candidate/7u40-r9-prototype-01-coupons-NOT-APPROVED.zip"
+    }
+  ],
+  "limitBytes": 41943040,
+  "revision": "R9-PROTOTYPE-01",
+  "schema": "zudo-case-r9-size-inventory-v1",
+  "scope": "new files committed for issue #92, including this inventory and outputs-manifest.json",
+  "totalBytes": 6068361
+}

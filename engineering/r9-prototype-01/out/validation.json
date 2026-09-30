@@ -1,0 +1,5805 @@
+{
+  "artifactCounts": {
+    "c2CouponFiles": 36,
+    "dxf": 17,
+    "step": 64,
+    "stl": 56
+  },
+  "checks": [
+    {
+      "details": {
+        "duplicateOrMismatchCount": 0,
+        "mismatches": [],
+        "outputCount": 143
+      },
+      "id": "build-output-ledger",
+      "status": "pass",
+      "summary": "Every generated build-log artifact exists, is below 25 MiB, and matches its recorded digest."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            229.4,
+            334.0,
+            1.5
+          ],
+          "maxMm": [
+            114.7,
+            167.0,
+            1.5
+          ],
+          "minMm": [
+            -114.7,
+            -167.0,
+            0.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 114408.02558335838
+      },
+      "id": "step:out/aluminum/7u40-r9-al-bottom-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            226.4,
+            1.5,
+            89.5
+          ],
+          "maxMm": [
+            113.2,
+            -165.5,
+            91.0
+          ],
+          "minMm": [
+            -113.2,
+            -167.0,
+            1.5
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 30081.375350015038
+      },
+      "id": "step:out/aluminum/7u40-r9-al-front-back-qty2-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            1.500000000000071,
+            334.0,
+            89.5
+          ],
+          "maxMm": [
+            114.7,
+            167.0,
+            91.0
+          ],
+          "minMm": [
+            113.19999999999993,
+            -167.00000000000003,
+            1.4999999999999998
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 44296.35070003005
+      },
+      "id": "step:out/aluminum/7u40-r9-al-left-right-qty2-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            227.6,
+            332.2,
+            1.5
+          ],
+          "maxMm": [
+            113.8,
+            166.1,
+            123.7
+          ],
+          "minMm": [
+            -113.8,
+            -166.1,
+            122.2
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 113292.54106759709
+      },
+      "id": "step:out/aluminum/7u40-r9-lid-plate-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            231.8000000000001,
+            336.40000000000003,
+            43.80000000000001
+          ],
+          "maxMm": [
+            115.90000000000005,
+            168.20000000000002,
+            124.0
+          ],
+          "minMm": [
+            -115.90000000000005,
+            -168.20000000000002,
+            80.19999999999999
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": false,
+        "solidCount": 9,
+        "volumeMm3": 209573.1799197186
+      },
+      "id": "step:out/assembly/7u40-r9-reference-assembly-NOT-APPROVED.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            4.05,
+            40.0,
+            6.2
+          ],
+          "maxMm": [
+            1.55,
+            40.0,
+            1.2000000000000002
+          ],
+          "minMm": [
+            -2.5,
+            0.0,
+            -5.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 473.7369482457436
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c1-01-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            4.05,
+            40.0,
+            6.2
+          ],
+          "maxMm": [
+            1.55,
+            40.0,
+            1.2000000000000002
+          ],
+          "minMm": [
+            -2.5,
+            0.0,
+            -5.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 499.14022824574363
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c1-02-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            4.05,
+            40.0,
+            6.2
+          ],
+          "maxMm": [
+            1.55,
+            40.0,
+            1.2000000000000002
+          ],
+          "minMm": [
+            -2.5,
+            0.0,
+            -5.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 422.3402282457437
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c1-03-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            4.05,
+            40.0,
+            6.2
+          ],
+          "maxMm": [
+            1.55,
+            40.0,
+            1.2000000000000002
+          ],
+          "minMm": [
+            -2.5,
+            0.0,
+            -5.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 548.2047082457439
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c1-04-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            3.8500000000000005,
+            40.0,
+            6.0
+          ],
+          "maxMm": [
+            1.3500000000000003,
+            40.0,
+            1.0
+          ],
+          "minMm": [
+            -2.5,
+            0.0,
+            -5.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 396.34022824574384
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c1-05-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            4.05,
+            19.75,
+            6.2
+          ],
+          "maxMm": [
+            1.55,
+            19.75,
+            1.2000000000000002
+          ],
+          "minMm": [
+            -2.5,
+            0.0,
+            -5.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 235.55079819633593
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            4.05,
+            19.75,
+            6.2
+          ],
+          "maxMm": [
+            1.55,
+            19.75,
+            1.2000000000000002
+          ],
+          "minMm": [
+            -2.5,
+            0.0,
+            -5.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 235.55079819633593
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            4.05,
+            20.0,
+            6.2
+          ],
+          "maxMm": [
+            1.55,
+            20.0,
+            1.2000000000000002
+          ],
+          "minMm": [
+            -2.5,
+            0.0,
+            -5.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 238.1559141228719
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            4.05,
+            20.0,
+            6.2
+          ],
+          "maxMm": [
+            1.55,
+            20.0,
+            1.2000000000000002
+          ],
+          "minMm": [
+            -2.5,
+            0.0,
+            -5.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 238.1559141228719
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            1.5,
+            40.0,
+            20.0
+          ],
+          "maxMm": [
+            0.0,
+            40.0,
+            0.0
+          ],
+          "minMm": [
+            -1.5,
+            0.0,
+            -20.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1199.9999999999998
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c1-al-edge-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            32.0,
+            20.0,
+            1.5
+          ],
+          "maxMm": [
+            32.0,
+            20.0,
+            1.5
+          ],
+          "minMm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 907.8625583358394
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            32.0,
+            20.0,
+            1.5
+          ],
+          "maxMm": [
+            32.0,
+            20.0,
+            1.5
+          ],
+          "minMm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 907.8625583358394
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            32.0,
+            20.0,
+            1.5
+          ],
+          "maxMm": [
+            32.0,
+            20.0,
+            1.5
+          ],
+          "minMm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 899.6125583358394
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            32.0,
+            20.0,
+            1.5
+          ],
+          "maxMm": [
+            32.0,
+            20.0,
+            1.5
+          ],
+          "minMm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 899.6125583358394
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            32.0,
+            20.0,
+            1.5
+          ],
+          "maxMm": [
+            32.0,
+            20.0,
+            1.5
+          ],
+          "minMm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 924.3625583358396
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            32.0,
+            20.0,
+            1.5
+          ],
+          "maxMm": [
+            32.0,
+            20.0,
+            1.5
+          ],
+          "minMm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 924.3625583358396
+      },
+      "id": "step:out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.000000000000014,
+            1.5,
+            31.0
+          ],
+          "maxMm": [
+            50.0,
+            -165.5,
+            91.0
+          ],
+          "minMm": [
+            19.999999999999986,
+            -167.0,
+            60.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1395.0
+      },
+      "id": "step:out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.0,
+            3.700000000000017,
+            6.200000000000003
+          ],
+          "maxMm": [
+            50.0,
+            -164.5,
+            92.2
+          ],
+          "minMm": [
+            20.0,
+            -168.20000000000002,
+            86.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 353.26991118430556
+      },
+      "id": "step:out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.0,
+            11.0,
+            43.80000000000001
+          ],
+          "maxMm": [
+            50.0,
+            -157.2,
+            124.0
+          ],
+          "minMm": [
+            20.0,
+            -168.2,
+            80.19999999999999
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 3164.096619728701
+      },
+      "id": "step:out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.000000000000014,
+            26.099999999999994,
+            1.5
+          ],
+          "maxMm": [
+            50.000000000000014,
+            -140.0,
+            123.7
+          ],
+          "minMm": [
+            20.0,
+            -166.1,
+            122.2
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1160.8811958466877
+      },
+      "id": "step:out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.0,
+            12.58647155760002,
+            20.13198852539101
+          ],
+          "maxMm": [
+            50.0,
+            -144.5903486845,
+            89.435542380371
+          ],
+          "minMm": [
+            20.0,
+            -157.1768202421,
+            69.30355385498
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 7601.721029182916
+      },
+      "id": "step:out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.000000000000014,
+            1.5,
+            31.0
+          ],
+          "maxMm": [
+            50.0,
+            -165.5,
+            91.0
+          ],
+          "minMm": [
+            19.999999999999986,
+            -167.0,
+            60.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1395.0
+      },
+      "id": "step:out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.0,
+            3.700000000000017,
+            6.200000000000003
+          ],
+          "maxMm": [
+            50.0,
+            -164.5,
+            92.2
+          ],
+          "minMm": [
+            20.0,
+            -168.20000000000002,
+            86.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 353.26991118430556
+      },
+      "id": "step:out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-guard-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.0,
+            11.0,
+            43.80000000000001
+          ],
+          "maxMm": [
+            50.0,
+            -157.2,
+            124.0
+          ],
+          "minMm": [
+            20.0,
+            -168.2,
+            80.19999999999999
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 3149.0966197286943
+      },
+      "id": "step:out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-frame-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.000000000000014,
+            26.099999999999994,
+            1.5
+          ],
+          "maxMm": [
+            50.000000000000014,
+            -140.0,
+            123.7
+          ],
+          "minMm": [
+            20.0,
+            -166.1,
+            122.2
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1160.8811958466877
+      },
+      "id": "step:out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.0,
+            12.58647155760002,
+            20.13198852539101
+          ],
+          "maxMm": [
+            50.0,
+            -144.5903486845,
+            89.435542380371
+          ],
+          "minMm": [
+            20.0,
+            -157.1768202421,
+            69.30355385498
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 7601.721029182916
+      },
+      "id": "step:out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-rail-envelope-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.000000000000014,
+            1.5,
+            31.0
+          ],
+          "maxMm": [
+            50.0,
+            -165.5,
+            91.0
+          ],
+          "minMm": [
+            19.999999999999986,
+            -167.0,
+            60.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1395.0
+      },
+      "id": "step:out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.0,
+            3.700000000000017,
+            6.200000000000003
+          ],
+          "maxMm": [
+            50.0,
+            -164.5,
+            92.2
+          ],
+          "minMm": [
+            20.0,
+            -168.20000000000002,
+            86.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 353.26991118430556
+      },
+      "id": "step:out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-guard-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.0,
+            11.0,
+            43.80000000000001
+          ],
+          "maxMm": [
+            50.0,
+            -157.2,
+            124.0
+          ],
+          "minMm": [
+            20.0,
+            -168.2,
+            80.19999999999999
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 3179.096619728694
+      },
+      "id": "step:out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-frame-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.000000000000014,
+            26.099999999999994,
+            1.5
+          ],
+          "maxMm": [
+            50.000000000000014,
+            -140.0,
+            123.7
+          ],
+          "minMm": [
+            20.0,
+            -166.1,
+            122.2
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1160.8811958466877
+      },
+      "id": "step:out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            30.0,
+            12.58647155760002,
+            20.13198852539101
+          ],
+          "maxMm": [
+            50.0,
+            -144.5903486845,
+            89.435542380371
+          ],
+          "minMm": [
+            20.0,
+            -157.1768202421,
+            69.30355385498
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 7601.721029182916
+      },
+      "id": "step:out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-rail-envelope-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            21.39999999999999,
+            9.0,
+            9.0
+          ],
+          "maxMm": [
+            -102.2,
+            -130.0318715,
+            72.6894265
+          ],
+          "minMm": [
+            -123.6,
+            -139.0318715,
+            63.689426499999996
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 481.7632334279888
+      },
+      "id": "step:out/hardware-envelopes/7u40-r9-hw-case-mount-bolt-qty10-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            3.0
+          ],
+          "maxMm": [
+            -89.7,
+            -142.0,
+            0.0
+          ],
+          "minMm": [
+            -99.7,
+            -152.0,
+            -3.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 235.61944901923442
+      },
+      "id": "step:out/hardware-envelopes/7u40-r9-hw-foot-qty4-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            8.0,
+            10.0,
+            10.0
+          ],
+          "maxMm": [
+            -105.2,
+            -129.5318715,
+            73.1894265
+          ],
+          "minMm": [
+            -113.2,
+            -139.5318715,
+            63.189426499999996
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 438.2521751757855
+      },
+      "id": "step:out/hardware-envelopes/7u40-r9-hw-inner-spacer-qty10-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            5.0,
+            9.237604307100014,
+            8.00000000003493
+          ],
+          "maxMm": [
+            -115.7,
+            -129.9130693464,
+            72.18942650001746
+          ],
+          "minMm": [
+            -120.7,
+            -139.1506736535,
+            64.18942649998253
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 178.95335878691148
+      },
+      "id": "step:out/hardware-envelopes/7u40-r9-hw-m5-nut-qty46-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            16.0,
+            20.0,
+            20.0
+          ],
+          "maxMm": [
+            -51.5,
+            -145.5,
+            21.5
+          ],
+          "minMm": [
+            -67.5,
+            -165.5,
+            1.5
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1120.9668222289029
+      },
+      "id": "step:out/hardware-envelopes/7u40-r9-hw-panel-bracket-qty18-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            12.0,
+            12.0,
+            11.9
+          ],
+          "maxMm": [
+            -53.5,
+            161.5,
+            10.5
+          ],
+          "minMm": [
+            -65.5,
+            149.5,
+            -1.4
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 364.5032876327516
+      },
+      "id": "step:out/hardware-envelopes/7u40-r9-hw-panel-joint-bolt-qty36-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            41.39999999999999,
+            9.0,
+            9.0
+          ],
+          "maxMm": [
+            -65.2,
+            -146.8439345,
+            79.0049775
+          ],
+          "minMm": [
+            -106.6,
+            -155.8439345,
+            70.0049775
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 874.4623151267066
+      },
+      "id": "step:out/hardware-envelopes/7u40-r9-hw-rail-end-bolt-qty12-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            204.0,
+            12.58647155760002,
+            20.13198852539101
+          ],
+          "maxMm": [
+            102.0,
+            -144.5903486845,
+            89.435542380371
+          ],
+          "minMm": [
+            -102.0,
+            -157.1768202421,
+            69.30355385498
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 51691.702998443834
+      },
+      "id": "step:out/hardware-envelopes/7u40-r9-hw-rail-unit-envelope-qty6-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "maxMm": [
+            -114.7,
+            -129.5318715,
+            73.1894265
+          ],
+          "minMm": [
+            -115.7,
+            -139.5318715,
+            63.189426499999996
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 54.78152189697319
+      },
+      "id": "step:out/hardware-envelopes/7u40-r9-hw-washer-1mm-qty46-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            1.6000000000000085,
+            314.7544560000098,
+            60.015381000000005
+          ],
+          "maxMm": [
+            -103.6,
+            157.3772280000098,
+            89.5
+          ],
+          "minMm": [
+            -105.2,
+            -157.377228,
+            29.484619
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 21613.349272772804
+      },
+      "id": "step:out/hardware-envelopes/7u40-r9-pcb-fixer-qty2-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            1.5999999999999943,
+            45.68060899999999,
+            29.999839
+          ],
+          "maxMm": [
+            -102.0,
+            157.367102,
+            89.5
+          ],
+          "minMm": [
+            -103.6,
+            111.686493,
+            59.500161
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1329.5404820987214
+      },
+      "id": "step:out/hardware-envelopes/7u40-r9-pcb-padder-1u-qty2-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            1.5999999999999943,
+            134.5,
+            30.0
+          ],
+          "maxMm": [
+            -102.0,
+            -22.877228,
+            89.5
+          ],
+          "minMm": [
+            -103.6,
+            -157.377228,
+            59.5
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 2452.068378604627
+      },
+      "id": "step:out/hardware-envelopes/7u40-r9-pcb-padder-3u-qty4-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            3.500000000000057,
+            161.75,
+            6.0
+          ],
+          "maxMm": [
+            -112.19999999999999,
+            -0.24999999999999994,
+            5.0
+          ],
+          "minMm": [
+            -115.70000000000005,
+            -162.0,
+            -1.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1590.9186044687228
+      },
+      "id": "step:out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-a-qty2-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            3.5000000000000284,
+            161.75,
+            6.0
+          ],
+          "maxMm": [
+            -112.19999999999999,
+            162.0,
+            5.0
+          ],
+          "minMm": [
+            -115.70000000000002,
+            0.25,
+            -1.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1590.9186044687349
+      },
+      "id": "step:out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-b-qty2-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            115.45000000000005,
+            6.0,
+            6.0
+          ],
+          "maxMm": [
+            -0.24999999999999994,
+            -162.0,
+            5.0
+          ],
+          "minMm": [
+            -115.70000000000005,
+            -168.0,
+            -1.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1175.8125754563919
+      },
+      "id": "step:out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-width-half-qty4-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            115.45000000000005,
+            167.75,
+            6.0
+          ],
+          "maxMm": [
+            -0.24999999999999994,
+            -0.24999999999999994,
+            92.0
+          ],
+          "minMm": [
+            -115.70000000000005,
+            -168.0,
+            86.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 2766.731179936923
+      },
+      "id": "step:out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-a-qty2-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            115.45000000000002,
+            167.75000000000003,
+            6.0
+          ],
+          "maxMm": [
+            -0.24999999999999994,
+            168.00000000000003,
+            92.0
+          ],
+          "minMm": [
+            -115.70000000000002,
+            0.25,
+            86.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 2766.731179936952
+      },
+      "id": "step:out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-b-qty2-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            6.0,
+            6.0,
+            81.0
+          ],
+          "maxMm": [
+            -109.7,
+            -162.0,
+            86.0
+          ],
+          "minMm": [
+            -115.7,
+            -168.0,
+            5.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 637.9287601976287
+      },
+      "id": "step:out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-vertical-corner-qty4-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            3.7000000000000597,
+            161.75,
+            6.2
+          ],
+          "maxMm": [
+            -112.19999999999999,
+            -0.24999999999999994,
+            5.0
+          ],
+          "minMm": [
+            -115.90000000000005,
+            -162.0,
+            -1.2000000000000002
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1904.7136044687218
+      },
+      "id": "step:out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-a-qty2-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            3.7000000000000313,
+            161.75,
+            6.2
+          ],
+          "maxMm": [
+            -112.19999999999999,
+            162.0,
+            5.0
+          ],
+          "minMm": [
+            -115.90000000000002,
+            0.25,
+            -1.2000000000000002
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1904.713604468734
+      },
+      "id": "step:out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-b-qty2-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            115.65000000000005,
+            6.200000000000017,
+            6.2
+          ],
+          "maxMm": [
+            -0.24999999999999994,
+            -162.0,
+            5.0
+          ],
+          "minMm": [
+            -115.90000000000005,
+            -168.20000000000002,
+            -1.2000000000000002
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 1409.2235754672363
+      },
+      "id": "step:out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-width-half-qty4-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            115.65000000000005,
+            167.95000000000002,
+            6.2000000000000455
+          ],
+          "maxMm": [
+            -0.24999999999999994,
+            -0.24999999999999994,
+            92.20000000000005
+          ],
+          "minMm": [
+            -115.90000000000005,
+            -168.20000000000002,
+            86.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 3313.937179936925
+      },
+      "id": "step:out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-a-qty2-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            115.65000000000002,
+            167.95000000000002,
+            6.2000000000000455
+          ],
+          "maxMm": [
+            -0.24999999999999994,
+            168.20000000000002,
+            92.20000000000005
+          ],
+          "minMm": [
+            -115.90000000000002,
+            0.25,
+            86.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 3313.9371799369655
+      },
+      "id": "step:out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-b-qty2-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            6.200000000000003,
+            6.200000000000017,
+            81.0
+          ],
+          "maxMm": [
+            -109.7,
+            -162.0,
+            86.0
+          ],
+          "minMm": [
+            -115.9,
+            -168.20000000000002,
+            5.0
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 835.5687601976265
+      },
+      "id": "step:out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-vertical-corner-qty4-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            115.7,
+            168.0,
+            43.80000000000001
+          ],
+          "maxMm": [
+            -0.19999999999999948,
+            168.2,
+            124.0
+          ],
+          "minMm": [
+            -115.9,
+            0.19999999999998863,
+            80.19999999999999
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 20756.22253302073
+      },
+      "id": "step:out/pa12/lid/7u40-r9-pa12-lid-frame-bl-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            115.70000000000002,
+            168.0,
+            43.80000000000001
+          ],
+          "maxMm": [
+            115.90000000000002,
+            168.2,
+            124.0
+          ],
+          "minMm": [
+            0.19999999999999904,
+            0.19999999999998863,
+            80.19999999999999
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 20756.222533011758
+      },
+      "id": "step:out/pa12/lid/7u40-r9-pa12-lid-frame-br-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            115.7,
+            168.0,
+            43.80000000000001
+          ],
+          "maxMm": [
+            -0.19999999999999996,
+            -0.19999999999998863,
+            124.0
+          ],
+          "minMm": [
+            -115.9,
+            -168.2,
+            80.19999999999999
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 20756.222533010205
+      },
+      "id": "step:out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "bbox": {
+          "dimensionsMm": [
+            115.7,
+            168.0,
+            43.80000000000001
+          ],
+          "maxMm": [
+            115.9,
+            -0.19999999999998863,
+            124.0
+          ],
+          "minMm": [
+            0.19999999999999996,
+            -168.2,
+            80.19999999999999
+          ]
+        },
+        "isValid": true,
+        "singleSolidRequired": true,
+        "solidCount": 1,
+        "volumeMm3": 20756.222533022265
+      },
+      "id": "step:out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.step",
+      "status": "pass",
+      "summary": "STEP reimports as valid CAD; component files contain one solid, assembly references may contain multiple."
+    },
+    {
+      "details": {
+        "entityCount": 41,
+        "entityTypes": {
+          "ARC": 20,
+          "LINE": 20,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/aluminum/7u40-r9-al-bottom-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 25,
+        "entityTypes": {
+          "ARC": 12,
+          "LINE": 12,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/aluminum/7u40-r9-al-front-back-qty2-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 34,
+        "entityTypes": {
+          "ARC": 14,
+          "CIRCLE": 5,
+          "LINE": 14,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/aluminum/7u40-r9-al-left-right-qty2-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 9,
+        "entityTypes": {
+          "CIRCLE": 8,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/aluminum/7u40-r9-lid-plate-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 1,
+        "entityTypes": {
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/7u40-r9-cpn-c1-al-edge-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 5,
+        "entityTypes": {
+          "ARC": 2,
+          "LINE": 2,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 5,
+        "entityTypes": {
+          "ARC": 2,
+          "LINE": 2,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 5,
+        "entityTypes": {
+          "ARC": 2,
+          "LINE": 2,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 5,
+        "entityTypes": {
+          "ARC": 2,
+          "LINE": 2,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 2,
+        "entityTypes": {
+          "CIRCLE": 1,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 2,
+        "entityTypes": {
+          "CIRCLE": 1,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 1,
+        "entityTypes": {
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 2,
+        "entityTypes": {
+          "CIRCLE": 1,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 1,
+        "entityTypes": {
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 2,
+        "entityTypes": {
+          "CIRCLE": 1,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 1,
+        "entityTypes": {
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "entityCount": 2,
+        "entityTypes": {
+          "CIRCLE": 1,
+          "LWPOLYLINE": 1
+        },
+        "errorCount": 0,
+        "fixCount": 0,
+        "units": 4
+      },
+      "id": "dxf:out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.dxf",
+      "status": "pass",
+      "summary": "DXF reimports in millimetres and passes ezdxf audit."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          0.0,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 3.051757815342171e-06,
+        "bboxMaxMm": [
+          114.69999694824219,
+          167.0,
+          1.5
+        ],
+        "bboxMinMm": [
+          -114.69999694824219,
+          -167.0,
+          0.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          229.39999389648438,
+          334.0,
+          1.5
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 7758
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "aluminum/7u40-r9-al-bottom-qty1-mm.step",
+        "path": "out/aluminum/7u40-r9-al-bottom-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          114.7,
+          167.0,
+          1.5
+        ],
+        "stepBboxMinMm": [
+          -114.7,
+          -167.0,
+          0.0
+        ],
+        "stepVolumeMm3": 114408.02558335838,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 5172,
+        "volumeDeltaMm3": 0.1446592591528315,
+        "volumeMatchesStep": true,
+        "volumeMm3": 114408.17024261753,
+        "volumeToleranceMm3": 57.20401279167919
+      },
+      "id": "stl:out/aluminum/7u40-r9-al-bottom-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          0.0,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 3.051757815342171e-06,
+        "bboxMaxMm": [
+          113.19999694824219,
+          -165.5,
+          91.0
+        ],
+        "bboxMinMm": [
+          -113.19999694824219,
+          -167.0,
+          1.5
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          226.39999389648438,
+          1.5,
+          89.5
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 4662
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "aluminum/7u40-r9-al-front-back-qty2-mm.step",
+        "path": "out/aluminum/7u40-r9-al-front-back-qty2-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          113.2,
+          -165.5,
+          91.0
+        ],
+        "stepBboxMinMm": [
+          -113.2,
+          -167.0,
+          1.5
+        ],
+        "stepVolumeMm3": 30081.375350015038,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 3108,
+        "volumeDeltaMm3": 0.08780059968921705,
+        "volumeMatchesStep": true,
+        "volumeMm3": 30081.463150614727,
+        "volumeToleranceMm3": 15.040687675007518
+      },
+      "id": "stl:out/aluminum/7u40-r9-al-front-back-qty2-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          2.842170943040401e-14,
+          2.220446049250313e-16
+        ],
+        "bboxMaxDeltaMm": 3.051757815342171e-06,
+        "bboxMaxMm": [
+          114.69999694824219,
+          167.0,
+          91.0
+        ],
+        "bboxMinMm": [
+          113.19999694824219,
+          -167.0,
+          1.5
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          1.5,
+          334.0,
+          89.5
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 9246
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "aluminum/7u40-r9-al-left-right-qty2-mm.step",
+        "path": "out/aluminum/7u40-r9-al-left-right-qty2-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          114.7,
+          167.0,
+          91.0
+        ],
+        "stepBboxMinMm": [
+          113.19999999999993,
+          -167.00000000000003,
+          1.4999999999999998
+        ],
+        "stepVolumeMm3": 44296.35070003005,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 6164,
+        "volumeDeltaMm3": 0.1773172566172434,
+        "volumeMatchesStep": true,
+        "volumeMm3": 44296.52801728667,
+        "volumeToleranceMm3": 22.148175350015027
+      },
+      "id": "stl:out/aluminum/7u40-r9-al-left-right-qty2-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          6.103515630684342e-06,
+          3.051757815342171e-06
+        ],
+        "bboxMaxDeltaMm": 6.103515630684342e-06,
+        "bboxMaxMm": [
+          113.80000305175781,
+          166.10000610351562,
+          123.69999694824219
+        ],
+        "bboxMinMm": [
+          -113.80000305175781,
+          -166.10000610351562,
+          122.19999694824219
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          227.60000610351562,
+          332.20001220703125,
+          1.5
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 6882
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "aluminum/7u40-r9-lid-plate-qty1-mm.step",
+        "path": "out/aluminum/7u40-r9-lid-plate-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          113.8,
+          166.1,
+          123.7
+        ],
+        "stepBboxMinMm": [
+          -113.8,
+          -166.1,
+          122.2
+        ],
+        "stepVolumeMm3": 113292.54106759709,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 4588,
+        "volumeDeltaMm3": 0.03517723940603901,
+        "volumeMatchesStep": true,
+        "volumeMm3": 113292.5762448365,
+        "volumeToleranceMm3": 56.64627053379855
+      },
+      "id": "stl:out/aluminum/7u40-r9-lid-plate-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
+        ],
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
+        "bboxMaxMm": [
+          1.5499999523162842,
+          40.0,
+          1.2000000476837158
+        ],
+        "bboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          4.049999952316284,
+          40.0,
+          6.200000047683716
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 498
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/7u40-r9-cpn-c1-01-qty1-mm.step",
+        "path": "out/coupons/7u40-r9-cpn-c1-01-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          1.55,
+          40.0,
+          1.2000000000000002
+        ],
+        "stepBboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "stepVolumeMm3": 473.7369482457436,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 332,
+        "volumeDeltaMm3": 0.0019956536520453483,
+        "volumeMatchesStep": true,
+        "volumeMm3": 473.73495259209153,
+        "volumeToleranceMm3": 0.2368684741228718
+      },
+      "id": "stl:out/coupons/7u40-r9-cpn-c1-01-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
+        ],
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
+        "bboxMaxMm": [
+          1.5499999523162842,
+          40.0,
+          1.2000000476837158
+        ],
+        "bboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          4.049999952316284,
+          40.0,
+          6.200000047683716
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 498
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/7u40-r9-cpn-c1-02-qty1-mm.step",
+        "path": "out/coupons/7u40-r9-cpn-c1-02-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          1.55,
+          40.0,
+          1.2000000000000002
+        ],
+        "stepBboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "stepVolumeMm3": 499.14022824574363,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 332,
+        "volumeDeltaMm3": 0.002002585328909845,
+        "volumeMatchesStep": true,
+        "volumeMm3": 499.1382256604147,
+        "volumeToleranceMm3": 0.2495701141228718
+      },
+      "id": "stl:out/coupons/7u40-r9-cpn-c1-02-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
+        ],
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
+        "bboxMaxMm": [
+          1.5499999523162842,
+          40.0,
+          1.2000000476837158
+        ],
+        "bboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          4.049999952316284,
+          40.0,
+          6.200000047683716
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 498
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/7u40-r9-cpn-c1-03-qty1-mm.step",
+        "path": "out/coupons/7u40-r9-cpn-c1-03-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          1.55,
+          40.0,
+          1.2000000000000002
+        ],
+        "stepBboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "stepVolumeMm3": 422.3402282457437,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 332,
+        "volumeDeltaMm3": 0.0019989775790349995,
+        "volumeMatchesStep": true,
+        "volumeMm3": 422.33822926816464,
+        "volumeToleranceMm3": 0.21117011412287184
+      },
+      "id": "stl:out/coupons/7u40-r9-cpn-c1-03-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
+        ],
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
+        "bboxMaxMm": [
+          1.5499999523162842,
+          40.0,
+          1.2000000476837158
+        ],
+        "bboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          4.049999952316284,
+          40.0,
+          6.200000047683716
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 486
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/7u40-r9-cpn-c1-04-qty1-mm.step",
+        "path": "out/coupons/7u40-r9-cpn-c1-04-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          1.55,
+          40.0,
+          1.2000000000000002
+        ],
+        "stepBboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "stepVolumeMm3": 548.2047082457439,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 324,
+        "volumeDeltaMm3": 0.001999127296585357,
+        "volumeMatchesStep": true,
+        "volumeMm3": 548.2027091184473,
+        "volumeToleranceMm3": 0.2741023541228719
+      },
+      "id": "stl:out/coupons/7u40-r9-cpn-c1-04-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          2.3841857599293803e-08,
+          0.0,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 2.3841857599293803e-08,
+        "bboxMaxMm": [
+          1.350000023841858,
+          40.0,
+          1.0
+        ],
+        "bboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          3.850000023841858,
+          40.0,
+          6.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 498
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/7u40-r9-cpn-c1-05-qty1-mm.step",
+        "path": "out/coupons/7u40-r9-cpn-c1-05-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          1.3500000000000003,
+          40.0,
+          1.0
+        ],
+        "stepBboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "stepVolumeMm3": 396.34022824574384,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 332,
+        "volumeDeltaMm3": 0.002012490132244693,
+        "volumeMatchesStep": true,
+        "volumeMm3": 396.3382157556116,
+        "volumeToleranceMm3": 0.19817011412287192
+      },
+      "id": "stl:out/coupons/7u40-r9-cpn-c1-05-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
+        ],
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
+        "bboxMaxMm": [
+          1.5499999523162842,
+          19.75,
+          1.2000000476837158
+        ],
+        "bboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          4.049999952316284,
+          19.75,
+          6.200000047683716
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 498
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/7u40-r9-cpn-c1-06-a-qty1-mm.step",
+        "path": "out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          1.55,
+          19.75,
+          1.2000000000000002
+        ],
+        "stepBboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "stepVolumeMm3": 235.55079819633593,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 332,
+        "volumeDeltaMm3": 0.0009853540333608635,
+        "volumeMatchesStep": true,
+        "volumeMm3": 235.54981284230257,
+        "volumeToleranceMm3": 0.11777539909816796
+      },
+      "id": "stl:out/coupons/7u40-r9-cpn-c1-06-a-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
+        ],
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
+        "bboxMaxMm": [
+          1.5499999523162842,
+          19.75,
+          1.2000000476837158
+        ],
+        "bboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          4.049999952316284,
+          19.75,
+          6.200000047683716
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 498
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/7u40-r9-cpn-c1-06-b-qty1-mm.step",
+        "path": "out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          1.55,
+          19.75,
+          1.2000000000000002
+        ],
+        "stepBboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "stepVolumeMm3": 235.55079819633593,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 332,
+        "volumeDeltaMm3": 0.0009853540333608635,
+        "volumeMatchesStep": true,
+        "volumeMm3": 235.54981284230257,
+        "volumeToleranceMm3": 0.11777539909816796
+      },
+      "id": "stl:out/coupons/7u40-r9-cpn-c1-06-b-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
+        ],
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
+        "bboxMaxMm": [
+          1.5499999523162842,
+          20.0,
+          1.2000000476837158
+        ],
+        "bboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          4.049999952316284,
+          20.0,
+          6.200000047683716
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 462
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/7u40-r9-cpn-c1-07-a-qty1-mm.step",
+        "path": "out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          1.55,
+          20.0,
+          1.2000000000000002
+        ],
+        "stepBboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "stepVolumeMm3": 238.1559141228719,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 308,
+        "volumeDeltaMm3": 0.0009980355330299062,
+        "volumeMatchesStep": true,
+        "volumeMm3": 238.15491608733888,
+        "volumeToleranceMm3": 0.11907795706143595
+      },
+      "id": "stl:out/coupons/7u40-r9-cpn-c1-07-a-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          4.768371586472142e-08,
+          0.0,
+          4.7683715642676816e-08
+        ],
+        "bboxMaxDeltaMm": 4.768371586472142e-08,
+        "bboxMaxMm": [
+          1.5499999523162842,
+          20.0,
+          1.2000000476837158
+        ],
+        "bboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          4.049999952316284,
+          20.0,
+          6.200000047683716
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 462
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/7u40-r9-cpn-c1-07-b-qty1-mm.step",
+        "path": "out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          1.55,
+          20.0,
+          1.2000000000000002
+        ],
+        "stepBboxMinMm": [
+          -2.5,
+          0.0,
+          -5.0
+        ],
+        "stepVolumeMm3": 238.1559141228719,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 308,
+        "volumeDeltaMm3": 0.0009980355330299062,
+        "volumeMatchesStep": true,
+        "volumeMm3": 238.15491608733888,
+        "volumeToleranceMm3": 0.11907795706143595
+      },
+      "id": "stl:out/coupons/7u40-r9-cpn-c1-07-b-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.4210854715202004e-14,
+          0.0,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 1.4210854715202004e-14,
+        "bboxMaxMm": [
+          50.0,
+          -165.5,
+          91.0
+        ],
+        "bboxMinMm": [
+          20.0,
+          -167.0,
+          60.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          1.5,
+          31.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 18
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.step",
+        "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          50.0,
+          -165.5,
+          91.0
+        ],
+        "stepBboxMinMm": [
+          19.999999999999986,
+          -167.0,
+          60.0
+        ],
+        "stepVolumeMm3": 1395.0,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 12,
+        "volumeDeltaMm3": 0.0,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1395.0,
+        "volumeToleranceMm3": 0.6975
+      },
+      "id": "stl:out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          0.0,
+          3.0517578295530257e-06,
+          3.051757815342171e-06
+        ],
+        "bboxMaxDeltaMm": 3.0517578295530257e-06,
+        "bboxMaxMm": [
+          50.0,
+          -164.5,
+          92.19999694824219
+        ],
+        "bboxMinMm": [
+          20.0,
+          -168.1999969482422,
+          86.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          3.6999969482421875,
+          6.1999969482421875
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 234
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.step",
+        "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          50.0,
+          -164.5,
+          92.2
+        ],
+        "stepBboxMinMm": [
+          20.0,
+          -168.20000000000002,
+          86.0
+        ],
+        "stepVolumeMm3": 353.26991118430556,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 156,
+        "volumeDeltaMm3": 0.0035173876483440836,
+        "volumeMatchesStep": true,
+        "volumeMm3": 353.2663937966572,
+        "volumeToleranceMm3": 0.17663495559215278
+      },
+      "id": "stl:out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          0.0,
+          3.0517578011313162e-06,
+          3.0517578011313162e-06
+        ],
+        "bboxMaxDeltaMm": 3.0517578011313162e-06,
+        "bboxMaxMm": [
+          50.0,
+          -157.1999969482422,
+          124.0
+        ],
+        "bboxMinMm": [
+          20.0,
+          -168.1999969482422,
+          80.19999694824219
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          11.0,
+          43.80000305175781
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 1284
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.step",
+        "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          50.0,
+          -157.2,
+          124.0
+        ],
+        "stepBboxMinMm": [
+          20.0,
+          -168.2,
+          80.19999999999999
+        ],
+        "stepVolumeMm3": 3164.096619728701,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 856,
+        "volumeDeltaMm3": 0.0017091675590563682,
+        "volumeMatchesStep": true,
+        "volumeMm3": 3164.09832889626,
+        "volumeToleranceMm3": 1.5820483098643505
+      },
+      "id": "stl:out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.4210854715202004e-14,
+          6.103515630684342e-06,
+          3.051757815342171e-06
+        ],
+        "bboxMaxDeltaMm": 6.103515630684342e-06,
+        "bboxMaxMm": [
+          50.0,
+          -140.0,
+          123.69999694824219
+        ],
+        "bboxMinMm": [
+          20.0,
+          -166.10000610351562,
+          122.19999694824219
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          26.100006103515625,
+          1.5
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 780
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.step",
+        "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          50.000000000000014,
+          -140.0,
+          123.7
+        ],
+        "stepBboxMinMm": [
+          20.0,
+          -166.1,
+          122.2
+        ],
+        "stepVolumeMm3": 1160.8811958466877,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 520,
+        "volumeDeltaMm3": 0.005916657090892841,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1160.8871125037786,
+        "volumeToleranceMm3": 0.5804405979233438
+      },
+      "id": "stl:out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "source-derived display geometry",
+        "bboxDeltaPerAxisMm": [
+          0.0,
+          1.3944609236204997e-06,
+          3.1347655351510184e-06
+        ],
+        "bboxMaxDeltaMm": 3.1347655351510184e-06,
+        "bboxMaxMm": [
+          50.0,
+          -144.59034729003906,
+          89.43553924560547
+        ],
+        "bboxMinMm": [
+          20.0,
+          -157.17681884765625,
+          69.30355072021484
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          12.586471557617188,
+          20.131988525390625
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 18
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.step",
+        "path": "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "C2 includes an axis-aligned rail source bounding envelope for section context; it is not the source rail profile or a manufactured coupon.",
+        "stepBboxMaxMm": [
+          50.0,
+          -144.5903486845,
+          89.435542380371
+        ],
+        "stepBboxMinMm": [
+          20.0,
+          -157.1768202421,
+          69.30355385498
+        ],
+        "stepVolumeMm3": 7601.721029182916,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 12,
+        "volumeDeltaMm3": 1.022453943733126e-08,
+        "volumeMatchesStep": true,
+        "volumeMm3": 7601.721029193141,
+        "volumeToleranceMm3": 3.800860514591458
+      },
+      "id": "stl:out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.4210854715202004e-14,
+          0.0,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 1.4210854715202004e-14,
+        "bboxMaxMm": [
+          50.0,
+          -165.5,
+          91.0
+        ],
+        "bboxMinMm": [
+          20.0,
+          -167.0,
+          60.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          1.5,
+          31.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 18
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.step",
+        "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          50.0,
+          -165.5,
+          91.0
+        ],
+        "stepBboxMinMm": [
+          19.999999999999986,
+          -167.0,
+          60.0
+        ],
+        "stepVolumeMm3": 1395.0,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 12,
+        "volumeDeltaMm3": 0.0,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1395.0,
+        "volumeToleranceMm3": 0.6975
+      },
+      "id": "stl:out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-body-wall-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          0.0,
+          3.0517578295530257e-06,
+          3.051757815342171e-06
+        ],
+        "bboxMaxDeltaMm": 3.0517578295530257e-06,
+        "bboxMaxMm": [
+          50.0,
+          -164.5,
+          92.19999694824219
+        ],
+        "bboxMinMm": [
+          20.0,
+          -168.1999969482422,
+          86.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          3.6999969482421875,
+          6.1999969482421875
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 234
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-02/7u40-r9-cpn-c2-02-guard-qty1-mm.step",
+        "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-guard-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          50.0,
+          -164.5,
+          92.2
+        ],
+        "stepBboxMinMm": [
+          20.0,
+          -168.20000000000002,
+          86.0
+        ],
+        "stepVolumeMm3": 353.26991118430556,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 156,
+        "volumeDeltaMm3": 0.0035173876483440836,
+        "volumeMatchesStep": true,
+        "volumeMm3": 353.2663937966572,
+        "volumeToleranceMm3": 0.17663495559215278
+      },
+      "id": "stl:out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-guard-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          0.0,
+          3.0517578011313162e-06,
+          3.0517578011313162e-06
+        ],
+        "bboxMaxDeltaMm": 3.0517578011313162e-06,
+        "bboxMaxMm": [
+          50.0,
+          -157.1999969482422,
+          124.0
+        ],
+        "bboxMinMm": [
+          20.0,
+          -168.1999969482422,
+          80.19999694824219
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          11.0,
+          43.80000305175781
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 1284
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-frame-qty1-mm.step",
+        "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-frame-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          50.0,
+          -157.2,
+          124.0
+        ],
+        "stepBboxMinMm": [
+          20.0,
+          -168.2,
+          80.19999999999999
+        ],
+        "stepVolumeMm3": 3149.0966197286943,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 856,
+        "volumeDeltaMm3": 0.0019359748857823433,
+        "volumeMatchesStep": true,
+        "volumeMm3": 3149.09855570358,
+        "volumeToleranceMm3": 1.5745483098643471
+      },
+      "id": "stl:out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-frame-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.4210854715202004e-14,
+          6.103515630684342e-06,
+          3.051757815342171e-06
+        ],
+        "bboxMaxDeltaMm": 6.103515630684342e-06,
+        "bboxMaxMm": [
+          50.0,
+          -140.0,
+          123.69999694824219
+        ],
+        "bboxMinMm": [
+          20.0,
+          -166.10000610351562,
+          122.19999694824219
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          26.100006103515625,
+          1.5
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 780
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.step",
+        "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          50.000000000000014,
+          -140.0,
+          123.7
+        ],
+        "stepBboxMinMm": [
+          20.0,
+          -166.1,
+          122.2
+        ],
+        "stepVolumeMm3": 1160.8811958466877,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 520,
+        "volumeDeltaMm3": 0.005916657090892841,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1160.8871125037786,
+        "volumeToleranceMm3": 0.5804405979233438
+      },
+      "id": "stl:out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-lid-plate-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "source-derived display geometry",
+        "bboxDeltaPerAxisMm": [
+          0.0,
+          1.3944609236204997e-06,
+          3.1347655351510184e-06
+        ],
+        "bboxMaxDeltaMm": 3.1347655351510184e-06,
+        "bboxMaxMm": [
+          50.0,
+          -144.59034729003906,
+          89.43553924560547
+        ],
+        "bboxMinMm": [
+          20.0,
+          -157.17681884765625,
+          69.30355072021484
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          12.586471557617188,
+          20.131988525390625
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 18
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-02/7u40-r9-cpn-c2-02-rail-envelope-qty1-mm.step",
+        "path": "out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-rail-envelope-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "C2 includes an axis-aligned rail source bounding envelope for section context; it is not the source rail profile or a manufactured coupon.",
+        "stepBboxMaxMm": [
+          50.0,
+          -144.5903486845,
+          89.435542380371
+        ],
+        "stepBboxMinMm": [
+          20.0,
+          -157.1768202421,
+          69.30355385498
+        ],
+        "stepVolumeMm3": 7601.721029182916,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 12,
+        "volumeDeltaMm3": 1.022453943733126e-08,
+        "volumeMatchesStep": true,
+        "volumeMm3": 7601.721029193141,
+        "volumeToleranceMm3": 3.800860514591458
+      },
+      "id": "stl:out/coupons/c2/c2-02/7u40-r9-cpn-c2-02-rail-envelope-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.4210854715202004e-14,
+          0.0,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 1.4210854715202004e-14,
+        "bboxMaxMm": [
+          50.0,
+          -165.5,
+          91.0
+        ],
+        "bboxMinMm": [
+          20.0,
+          -167.0,
+          60.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          1.5,
+          31.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 18
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.step",
+        "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          50.0,
+          -165.5,
+          91.0
+        ],
+        "stepBboxMinMm": [
+          19.999999999999986,
+          -167.0,
+          60.0
+        ],
+        "stepVolumeMm3": 1395.0,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 12,
+        "volumeDeltaMm3": 0.0,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1395.0,
+        "volumeToleranceMm3": 0.6975
+      },
+      "id": "stl:out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-body-wall-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          0.0,
+          3.0517578295530257e-06,
+          3.051757815342171e-06
+        ],
+        "bboxMaxDeltaMm": 3.0517578295530257e-06,
+        "bboxMaxMm": [
+          50.0,
+          -164.5,
+          92.19999694824219
+        ],
+        "bboxMinMm": [
+          20.0,
+          -168.1999969482422,
+          86.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          3.6999969482421875,
+          6.1999969482421875
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 234
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-03/7u40-r9-cpn-c2-03-guard-qty1-mm.step",
+        "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-guard-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          50.0,
+          -164.5,
+          92.2
+        ],
+        "stepBboxMinMm": [
+          20.0,
+          -168.20000000000002,
+          86.0
+        ],
+        "stepVolumeMm3": 353.26991118430556,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 156,
+        "volumeDeltaMm3": 0.0035173876483440836,
+        "volumeMatchesStep": true,
+        "volumeMm3": 353.2663937966572,
+        "volumeToleranceMm3": 0.17663495559215278
+      },
+      "id": "stl:out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-guard-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          0.0,
+          3.0517578011313162e-06,
+          3.0517578011313162e-06
+        ],
+        "bboxMaxDeltaMm": 3.0517578011313162e-06,
+        "bboxMaxMm": [
+          50.0,
+          -157.1999969482422,
+          124.0
+        ],
+        "bboxMinMm": [
+          20.0,
+          -168.1999969482422,
+          80.19999694824219
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          11.0,
+          43.80000305175781
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 1284
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-frame-qty1-mm.step",
+        "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-frame-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          50.0,
+          -157.2,
+          124.0
+        ],
+        "stepBboxMinMm": [
+          20.0,
+          -168.2,
+          80.19999999999999
+        ],
+        "stepVolumeMm3": 3179.096619728694,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 856,
+        "volumeDeltaMm3": 0.0015187237413556431,
+        "volumeMatchesStep": true,
+        "volumeMm3": 3179.0981384524353,
+        "volumeToleranceMm3": 1.589548309864347
+      },
+      "id": "stl:out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-frame-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.4210854715202004e-14,
+          6.103515630684342e-06,
+          3.051757815342171e-06
+        ],
+        "bboxMaxDeltaMm": 6.103515630684342e-06,
+        "bboxMaxMm": [
+          50.0,
+          -140.0,
+          123.69999694824219
+        ],
+        "bboxMinMm": [
+          20.0,
+          -166.10000610351562,
+          122.19999694824219
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          26.100006103515625,
+          1.5
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 780
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.step",
+        "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          50.000000000000014,
+          -140.0,
+          123.7
+        ],
+        "stepBboxMinMm": [
+          20.0,
+          -166.1,
+          122.2
+        ],
+        "stepVolumeMm3": 1160.8811958466877,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 520,
+        "volumeDeltaMm3": 0.005916657090892841,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1160.8871125037786,
+        "volumeToleranceMm3": 0.5804405979233438
+      },
+      "id": "stl:out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-lid-plate-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "source-derived display geometry",
+        "bboxDeltaPerAxisMm": [
+          0.0,
+          1.3944609236204997e-06,
+          3.1347655351510184e-06
+        ],
+        "bboxMaxDeltaMm": 3.1347655351510184e-06,
+        "bboxMaxMm": [
+          50.0,
+          -144.59034729003906,
+          89.43553924560547
+        ],
+        "bboxMinMm": [
+          20.0,
+          -157.17681884765625,
+          69.30355072021484
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          30.0,
+          12.586471557617188,
+          20.131988525390625
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 18
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "coupons/c2/c2-03/7u40-r9-cpn-c2-03-rail-envelope-qty1-mm.step",
+        "path": "out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-rail-envelope-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "C2 includes an axis-aligned rail source bounding envelope for section context; it is not the source rail profile or a manufactured coupon.",
+        "stepBboxMaxMm": [
+          50.0,
+          -144.5903486845,
+          89.435542380371
+        ],
+        "stepBboxMinMm": [
+          20.0,
+          -157.1768202421,
+          69.30355385498
+        ],
+        "stepVolumeMm3": 7601.721029182916,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 12,
+        "volumeDeltaMm3": 1.022453943733126e-08,
+        "volumeMatchesStep": true,
+        "volumeMm3": 7601.721029193141,
+        "volumeToleranceMm3": 3.800860514591458
+      },
+      "id": "stl:out/coupons/c2/c2-03/7u40-r9-cpn-c2-03-rail-envelope-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "provisional reference envelope",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          0.0013996982421815574,
+          3.7368164100826107e-06
+        ],
+        "bboxMaxDeltaMm": 0.0013996982421815574,
+        "bboxMaxMm": [
+          -102.19999694824219,
+          -130.03326416015625,
+          72.6894302368164
+        ],
+        "bboxMinMm": [
+          -123.5999984741211,
+          -139.0304718017578,
+          63.68942642211914
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          21.400001525878906,
+          8.997207641601562,
+          9.000003814697266
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 1506
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "hardware-envelopes/7u40-r9-hw-case-mount-bolt-qty10-mm.step",
+        "path": "out/hardware-envelopes/7u40-r9-hw-case-mount-bolt-qty10-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates.",
+        "stepBboxMaxMm": [
+          -102.2,
+          -130.0318715,
+          72.6894265
+        ],
+        "stepBboxMinMm": [
+          -123.6,
+          -139.0318715,
+          63.689426499999996
+        ],
+        "stepVolumeMm3": 481.7632334279888,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 1004,
+        "volumeDeltaMm3": 0.19939326806257895,
+        "volumeMatchesStep": true,
+        "volumeMm3": 481.5638401599262,
+        "volumeToleranceMm3": 0.24088161671399438
+      },
+      "id": "stl:out/hardware-envelopes/7u40-r9-hw-case-mount-bolt-qty10-mm.stl",
+      "status": "flag",
+      "summary": "Reference/display STL has a recorded mesh limitation; its STEP BREP remains the geometry source of truth."
+    },
+    {
+      "details": {
+        "artifactRole": "provisional reference envelope",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          0.001556396484375,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 0.001556396484375,
+        "bboxMaxMm": [
+          -89.69999694824219,
+          -142.00155639648438,
+          0.0
+        ],
+        "bboxMinMm": [
+          -99.69999694824219,
+          -151.99844360351562,
+          -3.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          10.0,
+          9.99688720703125,
+          3.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 750
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "hardware-envelopes/7u40-r9-hw-foot-qty4-mm.step",
+        "path": "out/hardware-envelopes/7u40-r9-hw-foot-qty4-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates.",
+        "stepBboxMaxMm": [
+          -89.7,
+          -142.0,
+          0.0
+        ],
+        "stepBboxMinMm": [
+          -99.7,
+          -152.0,
+          -3.0
+        ],
+        "stepVolumeMm3": 235.61944901923442,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 500,
+        "volumeDeltaMm3": 0.09760762812828716,
+        "volumeMatchesStep": true,
+        "volumeMm3": 235.52184139110614,
+        "volumeToleranceMm3": 0.11780972450961721
+      },
+      "id": "stl:out/hardware-envelopes/7u40-r9-hw-foot-qty4-mm.stl",
+      "status": "flag",
+      "summary": "Reference/display STL has a recorded mesh limitation; its STEP BREP remains the geometry source of truth."
+    },
+    {
+      "details": {
+        "artifactRole": "provisional reference envelope",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          0.0015605068359434426,
+          3.7368164100826107e-06
+        ],
+        "bboxMaxDeltaMm": 0.0015605068359434426,
+        "bboxMaxMm": [
+          -105.19999694824219,
+          -129.53343200683594,
+          73.1894302368164
+        ],
+        "bboxMinMm": [
+          -113.19999694824219,
+          -139.5303192138672,
+          63.18942642211914
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          8.0,
+          9.99688720703125,
+          10.000003814697266
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 1512
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "hardware-envelopes/7u40-r9-hw-inner-spacer-qty10-mm.step",
+        "path": "out/hardware-envelopes/7u40-r9-hw-inner-spacer-qty10-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates.",
+        "stepBboxMaxMm": [
+          -105.2,
+          -129.5318715,
+          73.1894265
+        ],
+        "stepBboxMinMm": [
+          -113.2,
+          -139.5318715,
+          63.189426499999996
+        ],
+        "stepVolumeMm3": 438.2521751757855,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 1008,
+        "volumeDeltaMm3": 0.18179241426588533,
+        "volumeMatchesStep": true,
+        "volumeMm3": 438.0703827615196,
+        "volumeToleranceMm3": 0.21912608758789276
+      },
+      "id": "stl:out/hardware-envelopes/7u40-r9-hw-inner-spacer-qty10-mm.stl",
+      "status": "flag",
+      "summary": "Reference/display STL has a recorded mesh limitation; its STEP BREP remains the geometry source of truth."
+    },
+    {
+      "details": {
+        "artifactRole": "provisional reference envelope",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          6.888492180223693e-06,
+          3.7368338752230557e-06
+        ],
+        "bboxMaxDeltaMm": 6.888492180223693e-06,
+        "bboxMaxMm": [
+          -115.69999694824219,
+          -129.91307067871094,
+          72.1894302368164
+        ],
+        "bboxMinMm": [
+          -120.69999694824219,
+          -139.1506805419922,
+          64.1894302368164
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          5.0,
+          9.23760986328125,
+          8.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 792
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "hardware-envelopes/7u40-r9-hw-m5-nut-qty46-mm.step",
+        "path": "out/hardware-envelopes/7u40-r9-hw-m5-nut-qty46-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates.",
+        "stepBboxMaxMm": [
+          -115.7,
+          -129.9130693464,
+          72.18942650001746
+        ],
+        "stepBboxMinMm": [
+          -120.7,
+          -139.1506736535,
+          64.18942649998253
+        ],
+        "stepVolumeMm3": 178.95335878691148,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 528,
+        "volumeDeltaMm3": 0.04081921701390456,
+        "volumeMatchesStep": true,
+        "volumeMm3": 178.99417800392538,
+        "volumeToleranceMm3": 0.1
+      },
+      "id": "stl:out/hardware-envelopes/7u40-r9-hw-m5-nut-qty46-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "provisional reference envelope",
+        "bboxDeltaPerAxisMm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 0.0,
+        "bboxMaxMm": [
+          -51.5,
+          -145.5,
+          21.5
+        ],
+        "bboxMinMm": [
+          -67.5,
+          -165.5,
+          1.5
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          16.0,
+          20.0,
+          20.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 1554
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "hardware-envelopes/7u40-r9-hw-panel-bracket-qty18-mm.step",
+        "path": "out/hardware-envelopes/7u40-r9-hw-panel-bracket-qty18-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates.",
+        "stepBboxMaxMm": [
+          -51.5,
+          -145.5,
+          21.5
+        ],
+        "stepBboxMinMm": [
+          -67.5,
+          -165.5,
+          1.5
+        ],
+        "stepVolumeMm3": 1120.9668222289029,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 1036,
+        "volumeDeltaMm3": 0.03939064820792737,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1121.0062128771108,
+        "volumeToleranceMm3": 0.5604834111144514
+      },
+      "id": "stl:out/hardware-envelopes/7u40-r9-hw-panel-bracket-qty18-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "provisional reference envelope",
+        "bboxDeltaPerAxisMm": [
+          0.0,
+          0.001861572265625,
+          2.3841857821338408e-08
+        ],
+        "bboxMaxDeltaMm": 0.001861572265625,
+        "bboxMaxMm": [
+          -53.5,
+          161.49813842773438,
+          10.5
+        ],
+        "bboxMinMm": [
+          -65.5,
+          149.50186157226562,
+          -1.399999976158142
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          12.0,
+          11.99627685546875,
+          11.899999976158142
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 1506
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "hardware-envelopes/7u40-r9-hw-panel-joint-bolt-qty36-mm.step",
+        "path": "out/hardware-envelopes/7u40-r9-hw-panel-joint-bolt-qty36-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates.",
+        "stepBboxMaxMm": [
+          -53.5,
+          161.5,
+          10.5
+        ],
+        "stepBboxMinMm": [
+          -65.5,
+          149.5,
+          -1.4
+        ],
+        "stepVolumeMm3": 364.5032876327516,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 1004,
+        "volumeDeltaMm3": 0.15117477816943392,
+        "volumeMatchesStep": true,
+        "volumeMm3": 364.3521128545822,
+        "volumeToleranceMm3": 0.18225164381637582
+      },
+      "id": "stl:out/hardware-envelopes/7u40-r9-hw-panel-joint-bolt-qty36-mm.stl",
+      "status": "flag",
+      "summary": "Reference/display STL has a recorded mesh limitation; its STEP BREP remains the geometry source of truth."
+    },
+    {
+      "details": {
+        "artifactRole": "provisional reference envelope",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          0.0014052031249889296,
+          3.1347656204161467e-06
+        ],
+        "bboxMaxDeltaMm": 0.0014052031249889296,
+        "bboxMaxMm": [
+          -65.19999694824219,
+          -146.8453369140625,
+          79.00497436523438
+        ],
+        "bboxMinMm": [
+          -106.5999984741211,
+          -155.842529296875,
+          70.00497436523438
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          41.400001525878906,
+          8.9971923828125,
+          9.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 1506
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "hardware-envelopes/7u40-r9-hw-rail-end-bolt-qty12-mm.step",
+        "path": "out/hardware-envelopes/7u40-r9-hw-rail-end-bolt-qty12-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates.",
+        "stepBboxMaxMm": [
+          -65.2,
+          -146.8439345,
+          79.0049775
+        ],
+        "stepBboxMinMm": [
+          -106.6,
+          -155.8439345,
+          70.0049775
+        ],
+        "stepVolumeMm3": 874.4623151267066,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 1004,
+        "volumeDeltaMm3": 0.3621947386973261,
+        "volumeMatchesStep": true,
+        "volumeMm3": 874.1001203880093,
+        "volumeToleranceMm3": 0.4372311575633533
+      },
+      "id": "stl:out/hardware-envelopes/7u40-r9-hw-rail-end-bolt-qty12-mm.stl",
+      "status": "flag",
+      "summary": "Reference/display STL has a recorded mesh limitation; its STEP BREP remains the geometry source of truth."
+    },
+    {
+      "details": {
+        "artifactRole": "provisional reference envelope",
+        "bboxDeltaPerAxisMm": [
+          0.0,
+          1.3944609236204997e-06,
+          3.1347655351510184e-06
+        ],
+        "bboxMaxDeltaMm": 3.1347655351510184e-06,
+        "bboxMaxMm": [
+          102.0,
+          -144.59034729003906,
+          89.43553924560547
+        ],
+        "bboxMinMm": [
+          -102.0,
+          -157.17681884765625,
+          69.30355072021484
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          204.0,
+          12.586471557617188,
+          20.131988525390625
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 18
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "hardware-envelopes/7u40-r9-hw-rail-unit-envelope-qty6-mm.step",
+        "path": "out/hardware-envelopes/7u40-r9-hw-rail-unit-envelope-qty6-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates.",
+        "stepBboxMaxMm": [
+          102.0,
+          -144.5903486845,
+          89.435542380371
+        ],
+        "stepBboxMinMm": [
+          -102.0,
+          -157.1768202421,
+          69.30355385498
+        ],
+        "stepVolumeMm3": 51691.702998443834,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 12,
+        "volumeDeltaMm3": 6.952177500352263e-08,
+        "volumeMatchesStep": true,
+        "volumeMm3": 51691.702998513356,
+        "volumeToleranceMm3": 25.84585149922192
+      },
+      "id": "stl:out/hardware-envelopes/7u40-r9-hw-rail-unit-envelope-qty6-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "provisional reference envelope",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          0.0015605068359434426,
+          3.7368164100826107e-06
+        ],
+        "bboxMaxDeltaMm": 0.0015605068359434426,
+        "bboxMaxMm": [
+          -114.69999694824219,
+          -129.53343200683594,
+          73.1894302368164
+        ],
+        "bboxMinMm": [
+          -115.69999694824219,
+          -139.5303192138672,
+          63.18942642211914
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          1.0,
+          9.99688720703125,
+          10.000003814697266
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 1512
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "hardware-envelopes/7u40-r9-hw-washer-1mm-qty46-mm.step",
+        "path": "out/hardware-envelopes/7u40-r9-hw-washer-1mm-qty46-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates.",
+        "stepBboxMaxMm": [
+          -114.7,
+          -129.5318715,
+          73.1894265
+        ],
+        "stepBboxMinMm": [
+          -115.7,
+          -139.5318715,
+          63.189426499999996
+        ],
+        "stepVolumeMm3": 54.78152189697319,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 1008,
+        "volumeDeltaMm3": 0.0227240517790932,
+        "volumeMatchesStep": true,
+        "volumeMm3": 54.758797845194096,
+        "volumeToleranceMm3": 0.1
+      },
+      "id": "stl:out/hardware-envelopes/7u40-r9-hw-washer-1mm-qty46-mm.stl",
+      "status": "flag",
+      "summary": "Reference/display STL has a recorded mesh limitation; its STEP BREP remains the geometry source of truth."
+    },
+    {
+      "details": {
+        "artifactRole": "source-derived display geometry",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          2.1680668282897386e-07,
+          1.4062500142131285e-07
+        ],
+        "bboxMaxDeltaMm": 3.051757815342171e-06,
+        "bboxMaxMm": [
+          -103.5999984741211,
+          157.37722778320312,
+          89.5
+        ],
+        "bboxMinMm": [
+          -105.19999694824219,
+          -157.37722778320312,
+          29.484619140625
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": false,
+        "dimensionsMm": [
+          1.5999984741210938,
+          314.75445556640625,
+          60.015380859375
+        ],
+        "edgeIncidenceHistogram": {
+          "1": 20,
+          "2": 18950,
+          "6": 4
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "hardware-envelopes/7u40-r9-pcb-fixer-qty2-mm.step",
+        "path": "out/hardware-envelopes/7u40-r9-pcb-fixer-qty2-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "PCB outline polygons are preserved from the saved R6 panel geometry and extruded for assembly display; this is not a PCB manufacturing export.",
+        "stepBboxMaxMm": [
+          -103.6,
+          157.3772280000098,
+          89.5
+        ],
+        "stepBboxMinMm": [
+          -105.2,
+          -157.377228,
+          29.484619
+        ],
+        "stepVolumeMm3": 21613.349272772804,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 12648,
+        "volumeDeltaMm3": 0.020721215871162713,
+        "volumeMatchesStep": true,
+        "volumeMm3": 21613.328551556933,
+        "volumeToleranceMm3": 10.806674636386402
+      },
+      "id": "stl:out/hardware-envelopes/7u40-r9-pcb-fixer-qty2-mm.stl",
+      "status": "flag",
+      "summary": "Reference/display STL has a recorded mesh limitation; its STEP BREP remains the geometry source of truth."
+    },
+    {
+      "details": {
+        "artifactRole": "source-derived display geometry",
+        "bboxDeltaPerAxisMm": [
+          1.5258789005656581e-06,
+          6.052734363493073e-06,
+          7.827148422734354e-07
+        ],
+        "bboxMaxDeltaMm": 6.052734363493073e-06,
+        "bboxMaxMm": [
+          -102.0,
+          157.36709594726562,
+          89.5
+        ],
+        "bboxMinMm": [
+          -103.5999984741211,
+          111.68649291992188,
+          59.500160217285156
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          1.5999984741210938,
+          45.68060302734375,
+          29.999839782714844
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 108
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "hardware-envelopes/7u40-r9-pcb-padder-1u-qty2-mm.step",
+        "path": "out/hardware-envelopes/7u40-r9-pcb-padder-1u-qty2-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "PCB outline polygons are preserved from the saved R6 panel geometry and extruded for assembly display; this is not a PCB manufacturing export.",
+        "stepBboxMaxMm": [
+          -102.0,
+          157.367102,
+          89.5
+        ],
+        "stepBboxMinMm": [
+          -103.6,
+          111.686493,
+          59.500161
+        ],
+        "stepVolumeMm3": 1329.5404820987214,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 72,
+        "volumeDeltaMm3": 0.0017389698753049743,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1329.5387431288461,
+        "volumeToleranceMm3": 0.6647702410493608
+      },
+      "id": "stl:out/hardware-envelopes/7u40-r9-pcb-padder-1u-qty2-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "source-derived display geometry",
+        "bboxDeltaPerAxisMm": [
+          1.5258789005656581e-06,
+          2.1679687733922037e-07,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 1.5258789005656581e-06,
+        "bboxMaxMm": [
+          -102.0,
+          -22.877227783203125,
+          89.5
+        ],
+        "bboxMinMm": [
+          -103.5999984741211,
+          -157.37722778320312,
+          59.5
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          1.5999984741210938,
+          134.5,
+          30.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 108
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "hardware-envelopes/7u40-r9-pcb-padder-3u-qty4-mm.step",
+        "path": "out/hardware-envelopes/7u40-r9-pcb-padder-3u-qty4-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "PCB outline polygons are preserved from the saved R6 panel geometry and extruded for assembly display; this is not a PCB manufacturing export.",
+        "stepBboxMaxMm": [
+          -102.0,
+          -22.877228,
+          89.5
+        ],
+        "stepBboxMinMm": [
+          -103.6,
+          -157.377228,
+          59.5
+        ],
+        "stepVolumeMm3": 2452.068378604627,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 72,
+        "volumeDeltaMm3": 0.0023529538957518525,
+        "volumeMatchesStep": true,
+        "volumeMm3": 2452.0660256507313,
+        "volumeToleranceMm3": 1.2260341893023134
+      },
+      "id": "stl:out/hardware-envelopes/7u40-r9-pcb-padder-3u-qty4-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.051757857974735e-06,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 3.051757857974735e-06,
+        "bboxMaxMm": [
+          -112.19999694824219,
+          -0.25,
+          5.0
+        ],
+        "bboxMinMm": [
+          -115.69999694824219,
+          -162.0,
+          -1.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          3.5,
+          161.75,
+          6.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 234
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-a-qty2-mm.step",
+        "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-a-qty2-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -112.19999999999999,
+          -0.24999999999999994,
+          5.0
+        ],
+        "stepBboxMinMm": [
+          -115.70000000000005,
+          -162.0,
+          -1.0
+        ],
+        "stepVolumeMm3": 1590.9186044687228,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 156,
+        "volumeDeltaMm3": 0.006659017707079329,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1590.9119454510158,
+        "volumeToleranceMm3": 0.7954593022343615
+      },
+      "id": "stl:out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-a-qty2-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.0517578295530257e-06,
+          0.0,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 3.0517578295530257e-06,
+        "bboxMaxMm": [
+          -112.19999694824219,
+          162.0,
+          5.0
+        ],
+        "bboxMinMm": [
+          -115.69999694824219,
+          0.25,
+          -1.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          3.5,
+          161.75,
+          6.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 234
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-b-qty2-mm.step",
+        "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-b-qty2-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -112.19999999999999,
+          162.0,
+          5.0
+        ],
+        "stepBboxMinMm": [
+          -115.70000000000002,
+          0.25,
+          -1.0
+        ],
+        "stepVolumeMm3": 1590.9186044687349,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 156,
+        "volumeDeltaMm3": 0.006659017712308923,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1590.9119454510226,
+        "volumeToleranceMm3": 0.7954593022343674
+      },
+      "id": "stl:out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-depth-b-qty2-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.051757857974735e-06,
+          0.0,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 3.051757857974735e-06,
+        "bboxMaxMm": [
+          -0.25,
+          -162.0,
+          5.0
+        ],
+        "bboxMinMm": [
+          -115.69999694824219,
+          -168.0,
+          -1.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.44999694824219,
+          6.0,
+          6.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 825
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-width-half-qty4-mm.step",
+        "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-width-half-qty4-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -0.24999999999999994,
+          -162.0,
+          5.0
+        ],
+        "stepBboxMinMm": [
+          -115.70000000000005,
+          -168.0,
+          -1.0
+        ],
+        "stepVolumeMm3": 1175.8125754563919,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 550,
+        "volumeDeltaMm3": 0.009506156460247439,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1175.8030692999316,
+        "volumeToleranceMm3": 0.587906287728196
+      },
+      "id": "stl:out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-lower-width-half-qty4-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.051757857974735e-06,
+          5.551115123125783e-17,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 3.051757857974735e-06,
+        "bboxMaxMm": [
+          -0.25,
+          -0.25,
+          92.0
+        ],
+        "bboxMinMm": [
+          -115.69999694824219,
+          -168.0,
+          86.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.44999694824219,
+          167.75,
+          6.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 795
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-a-qty2-mm.step",
+        "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-a-qty2-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -0.24999999999999994,
+          -0.24999999999999994,
+          92.0
+        ],
+        "stepBboxMinMm": [
+          -115.70000000000005,
+          -168.0,
+          86.0
+        ],
+        "stepVolumeMm3": 2766.731179936923,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 530,
+        "volumeDeltaMm3": 0.017966110073302843,
+        "volumeMatchesStep": true,
+        "volumeMm3": 2766.71321382685,
+        "volumeToleranceMm3": 1.3833655899684616
+      },
+      "id": "stl:out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-a-qty2-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.0517578295530257e-06,
+          2.842170943040401e-14,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 3.0517578295530257e-06,
+        "bboxMaxMm": [
+          -0.25,
+          168.0,
+          92.0
+        ],
+        "bboxMinMm": [
+          -115.69999694824219,
+          0.25,
+          86.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.44999694824219,
+          167.75,
+          6.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 795
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-b-qty2-mm.step",
+        "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-b-qty2-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -0.24999999999999994,
+          168.00000000000003,
+          92.0
+        ],
+        "stepBboxMinMm": [
+          -115.70000000000002,
+          0.25,
+          86.0
+        ],
+        "stepVolumeMm3": 2766.731179936952,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 530,
+        "volumeDeltaMm3": 0.01796610997598691,
+        "volumeMatchesStep": true,
+        "volumeMm3": 2766.713213826976,
+        "volumeToleranceMm3": 1.3833655899684758
+      },
+      "id": "stl:out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-top-b-qty2-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          0.0,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 3.051757815342171e-06,
+        "bboxMaxMm": [
+          -109.69999694824219,
+          -162.0,
+          86.0
+        ],
+        "bboxMinMm": [
+          -115.69999694824219,
+          -168.0,
+          5.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          6.0,
+          6.0,
+          81.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 222
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-vertical-corner-qty4-mm.step",
+        "path": "out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-vertical-corner-qty4-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -109.7,
+          -162.0,
+          86.0
+        ],
+        "stepBboxMinMm": [
+          -115.7,
+          -168.0,
+          5.0
+        ],
+        "stepVolumeMm3": 637.9287601976287,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 148,
+        "volumeDeltaMm3": 0.006635410899320959,
+        "volumeMatchesStep": true,
+        "volumeMm3": 637.9221247867293,
+        "volumeToleranceMm3": 0.31896438009881434
+      },
+      "id": "stl:out/pa12/guards/t1p0/7u40-r9-pa12-guard-t1p0-vertical-corner-qty4-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.0517578011313162e-06,
+          5.551115123125783e-17,
+          4.7683715642676816e-08
+        ],
+        "bboxMaxDeltaMm": 3.0517578011313162e-06,
+        "bboxMaxMm": [
+          -112.19999694824219,
+          -0.25,
+          5.0
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          -162.0,
+          -1.2000000476837158
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          3.7000045776367188,
+          161.75,
+          6.200000047683716
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 234
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-a-qty2-mm.step",
+        "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-a-qty2-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -112.19999999999999,
+          -0.24999999999999994,
+          5.0
+        ],
+        "stepBboxMinMm": [
+          -115.90000000000005,
+          -162.0,
+          -1.2000000000000002
+        ],
+        "stepVolumeMm3": 1904.7136044687218,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 156,
+        "volumeDeltaMm3": 0.0023458126308923966,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1904.7112586560909,
+        "volumeToleranceMm3": 0.9523568022343609
+      },
+      "id": "stl:out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-a-qty2-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.0517578011313162e-06,
+          0.0,
+          4.7683715642676816e-08
+        ],
+        "bboxMaxDeltaMm": 3.0517578011313162e-06,
+        "bboxMaxMm": [
+          -112.19999694824219,
+          162.0,
+          5.0
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          0.25,
+          -1.2000000476837158
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          3.7000045776367188,
+          161.75,
+          6.200000047683716
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 234
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-b-qty2-mm.step",
+        "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-b-qty2-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -112.19999999999999,
+          162.0,
+          5.0
+        ],
+        "stepBboxMinMm": [
+          -115.90000000000002,
+          0.25,
+          -1.2000000000000002
+        ],
+        "stepVolumeMm3": 1904.713604468734,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 156,
+        "volumeDeltaMm3": 0.0023458126408968383,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1904.7112586560932,
+        "volumeToleranceMm3": 0.952356802234367
+      },
+      "id": "stl:out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-depth-b-qty2-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.525878857933094e-06,
+          3.0517578295530257e-06,
+          4.7683715642676816e-08
+        ],
+        "bboxMaxDeltaMm": 3.0517578295530257e-06,
+        "bboxMaxMm": [
+          -0.25,
+          -162.0,
+          5.0
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          -168.1999969482422,
+          -1.2000000476837158
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.6500015258789,
+          6.1999969482421875,
+          6.200000047683716
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 825
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-width-half-qty4-mm.step",
+        "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-width-half-qty4-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -0.24999999999999994,
+          -162.0,
+          5.0
+        ],
+        "stepBboxMinMm": [
+          -115.90000000000005,
+          -168.20000000000002,
+          -1.2000000000000002
+        ],
+        "stepVolumeMm3": 1409.2235754672363,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 550,
+        "volumeDeltaMm3": 0.01136544392261385,
+        "volumeMatchesStep": true,
+        "volumeMm3": 1409.2122100233137,
+        "volumeToleranceMm3": 0.7046117877336182
+      },
+      "id": "stl:out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-lower-width-half-qty4-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.525878857933094e-06,
+          3.0517578295530257e-06,
+          3.051757857974735e-06
+        ],
+        "bboxMaxDeltaMm": 3.051757857974735e-06,
+        "bboxMaxMm": [
+          -0.25,
+          -0.25,
+          92.19999694824219
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          -168.1999969482422,
+          86.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.6500015258789,
+          167.9499969482422,
+          6.1999969482421875
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 795
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-a-qty2-mm.step",
+        "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-a-qty2-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -0.24999999999999994,
+          -0.24999999999999994,
+          92.20000000000005
+        ],
+        "stepBboxMinMm": [
+          -115.90000000000005,
+          -168.20000000000002,
+          86.0
+        ],
+        "stepVolumeMm3": 3313.937179936925,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 530,
+        "volumeDeltaMm3": 0.01835594702151866,
+        "volumeMatchesStep": true,
+        "volumeMm3": 3313.9188239899036,
+        "volumeToleranceMm3": 1.6569685899684625
+      },
+      "id": "stl:out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-a-qty2-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.5258788863548034e-06,
+          3.0517578295530257e-06,
+          3.051757857974735e-06
+        ],
+        "bboxMaxDeltaMm": 3.051757857974735e-06,
+        "bboxMaxMm": [
+          -0.25,
+          168.1999969482422,
+          92.19999694824219
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          0.25,
+          86.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.6500015258789,
+          167.9499969482422,
+          6.1999969482421875
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 795
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-b-qty2-mm.step",
+        "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-b-qty2-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -0.24999999999999994,
+          168.20000000000002,
+          92.20000000000005
+        ],
+        "stepBboxMinMm": [
+          -115.90000000000002,
+          0.25,
+          86.0
+        ],
+        "stepVolumeMm3": 3313.9371799369655,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 530,
+        "volumeDeltaMm3": 0.018355947367581393,
+        "volumeMatchesStep": true,
+        "volumeMm3": 3313.918823989598,
+        "volumeToleranceMm3": 1.6569685899684827
+      },
+      "id": "stl:out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-top-b-qty2-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          3.051757815342171e-06,
+          3.0517578295530257e-06,
+          0.0
+        ],
+        "bboxMaxDeltaMm": 3.0517578295530257e-06,
+        "bboxMaxMm": [
+          -109.69999694824219,
+          -162.0,
+          86.0
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          -168.1999969482422,
+          5.0
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          6.200004577636719,
+          6.1999969482421875,
+          81.0
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 222
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-vertical-corner-qty4-mm.step",
+        "path": "out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-vertical-corner-qty4-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -109.7,
+          -162.0,
+          86.0
+        ],
+        "stepBboxMinMm": [
+          -115.9,
+          -168.20000000000002,
+          5.0
+        ],
+        "stepVolumeMm3": 835.5687601976265,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 148,
+        "volumeDeltaMm3": 0.005916164739119267,
+        "volumeMatchesStep": true,
+        "volumeMm3": 835.5628440328874,
+        "volumeToleranceMm3": 0.41778438009881325
+      },
+      "id": "stl:out/pa12/guards/t1p2/7u40-r9-pa12-guard-t1p2-vertical-corner-qty4-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.5258789005656581e-06,
+          3.0517578011313162e-06,
+          3.0517578011313162e-06
+        ],
+        "bboxMaxDeltaMm": 3.0517578011313162e-06,
+        "bboxMaxMm": [
+          -0.20000000298023224,
+          168.1999969482422,
+          124.0
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          0.20000000298023224,
+          80.19999694824219
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.70000152289867,
+          167.99999694526196,
+          43.80000305175781
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 2304
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/lid/7u40-r9-pa12-lid-frame-bl-qty1-mm.step",
+        "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-bl-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -0.19999999999999948,
+          168.2,
+          124.0
+        ],
+        "stepBboxMinMm": [
+          -115.9,
+          0.19999999999998863,
+          80.19999999999999
+        ],
+        "stepVolumeMm3": 20756.22253302073,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 1536,
+        "volumeDeltaMm3": 0.0029681387313758023,
+        "volumeMatchesStep": true,
+        "volumeMm3": 20756.22550115946,
+        "volumeToleranceMm3": 10.378111266510365
+      },
+      "id": "stl:out/pa12/lid/7u40-r9-pa12-lid-frame-bl-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.5258788863548034e-06,
+          3.0517578011313162e-06,
+          3.0517578011313162e-06
+        ],
+        "bboxMaxDeltaMm": 3.0517578011313162e-06,
+        "bboxMaxMm": [
+          115.9000015258789,
+          168.1999969482422,
+          124.0
+        ],
+        "bboxMinMm": [
+          0.20000000298023224,
+          0.20000000298023224,
+          80.19999694824219
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.70000152289867,
+          167.99999694526196,
+          43.80000305175781
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 2304
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/lid/7u40-r9-pa12-lid-frame-br-qty1-mm.step",
+        "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-br-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          115.90000000000002,
+          168.2,
+          124.0
+        ],
+        "stepBboxMinMm": [
+          0.19999999999999904,
+          0.19999999999998863,
+          80.19999999999999
+        ],
+        "stepVolumeMm3": 20756.222533011758,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 1536,
+        "volumeDeltaMm3": 0.0029681483028980438,
+        "volumeMatchesStep": true,
+        "volumeMm3": 20756.22550116006,
+        "volumeToleranceMm3": 10.37811126650588
+      },
+      "id": "stl:out/pa12/lid/7u40-r9-pa12-lid-frame-br-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.5258789005656581e-06,
+          3.0517578011313162e-06,
+          3.0517578011313162e-06
+        ],
+        "bboxMaxDeltaMm": 3.0517578011313162e-06,
+        "bboxMaxMm": [
+          -0.20000000298023224,
+          -0.20000000298023224,
+          124.0
+        ],
+        "bboxMinMm": [
+          -115.9000015258789,
+          -168.1999969482422,
+          80.19999694824219
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.70000152289867,
+          167.99999694526196,
+          43.80000305175781
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 2304
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.step",
+        "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          -0.19999999999999996,
+          -0.19999999999998863,
+          124.0
+        ],
+        "stepBboxMinMm": [
+          -115.9,
+          -168.2,
+          80.19999999999999
+        ],
+        "stepVolumeMm3": 20756.222533010205,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 1536,
+        "volumeDeltaMm3": 0.002968149088701466,
+        "volumeMatchesStep": true,
+        "volumeMm3": 20756.225501159293,
+        "volumeToleranceMm3": 10.378111266505103
+      },
+      "id": "stl:out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "artifactRole": "unapproved R9 candidate geometry",
+        "bboxDeltaPerAxisMm": [
+          1.5258789005656581e-06,
+          3.0517578011313162e-06,
+          3.0517578011313162e-06
+        ],
+        "bboxMaxDeltaMm": 3.0517578011313162e-06,
+        "bboxMaxMm": [
+          115.9000015258789,
+          -0.20000000298023224,
+          124.0
+        ],
+        "bboxMinMm": [
+          0.20000000298023224,
+          -168.1999969482422,
+          80.19999694824219
+        ],
+        "bboxWithinTessellationTolerance": true,
+        "closedManifold": true,
+        "dimensionsMm": [
+          115.70000152289867,
+          167.99999694526196,
+          43.80000305175781
+        ],
+        "edgeIncidenceHistogram": {
+          "2": 2304
+        },
+        "exportTessellationToleranceMm": 0.01,
+        "pairedStep": "pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.step",
+        "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.stl",
+        "positiveVolume": true,
+        "roleReason": "Generated case, guard, lid, or coupon geometry; the file remains an unapproved candidate.",
+        "stepBboxMaxMm": [
+          115.9,
+          -0.19999999999998863,
+          124.0
+        ],
+        "stepBboxMinMm": [
+          0.19999999999999996,
+          -168.2,
+          80.19999999999999
+        ],
+        "stepVolumeMm3": 20756.222533022265,
+        "strictBboxToleranceMm": 0.0001,
+        "triangleCount": 1536,
+        "volumeDeltaMm3": 0.002968137625430245,
+        "volumeMatchesStep": true,
+        "volumeMm3": 20756.22550115989,
+        "volumeToleranceMm3": 10.378111266511132
+      },
+      "id": "stl:out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.stl",
+      "status": "pass",
+      "summary": "STL is watertight, has positive volume, and matches its reimported STEP volume/bbox."
+    },
+    {
+      "details": {
+        "classifications": {
+          "provisional reference envelope": "Provisional or unselected hardware and occupancy shapes in out/hardware-envelopes.",
+          "source-derived display geometry": "R6 panel-geometry polygons extruded as PCB display envelopes, plus the C2 axis-aligned source-rail envelope.",
+          "unapproved R9 candidate geometry": "Body plates, guards, lid, and physical coupon geometry; these require watertight STL meshes."
+        },
+        "stlCount": 56
+      },
+      "id": "hardware-envelope-stl-scope",
+      "status": "flag",
+      "summary": "Hardware-envelope and source-derived PCB STLs are assembly/display references, not manufacturing candidates; each is still listed and checked against its STEP geometry."
+    },
+    {
+      "details": {
+        "path": "engineering/r6-body/source-data/rail40/nuts-v2-40hp-single.stl",
+        "reason": "It is an incoming reference mesh used in the preview and is excluded from R9 output mesh validation."
+      },
+      "id": "source-rail-stl-exclusion",
+      "status": "flag",
+      "summary": "The 40HP rail mesh is saved R6 source geometry, not an R9-made STL; source identity is checked separately."
+    },
+    {
+      "details": {
+        "expectedBodyPlateCount": 5,
+        "expectedProfileCounts": {
+          "round": 10,
+          "slot": 36
+        },
+        "holeRows": 46,
+        "physicalBodyPlateCount": 5,
+        "profileCounts": {
+          "round": 10,
+          "slot": 36
+        }
+      },
+      "id": "body-hole-table-counts",
+      "status": "pass",
+      "summary": "Compare physical hole rows and plate instances against the R9 body contract."
+    },
+    {
+      "details": {
+        "mismatchCount": 0,
+        "patterns": [
+          {
+            "actualFeatures": 10,
+            "expectedFeatures": 10,
+            "mismatches": [],
+            "partId": "7U40-R9-AL-BOTTOM",
+            "primaryInstance": "BOTTOM",
+            "quantity": 1
+          },
+          {
+            "actualFeatures": 6,
+            "expectedFeatures": 6,
+            "mismatches": [],
+            "partId": "7U40-R9-AL-FRONT-BACK",
+            "primaryInstance": "FRONT",
+            "quantity": 2
+          },
+          {
+            "actualFeatures": 12,
+            "expectedFeatures": 12,
+            "mismatches": [],
+            "partId": "7U40-R9-AL-LEFT-RIGHT",
+            "primaryInstance": "RIGHT",
+            "quantity": 2
+          }
+        ],
+        "physicalWeightedRoundCount": 10,
+        "physicalWeightedSlotCount": 36
+      },
+      "id": "body-dxf-vs-hole-table",
+      "status": "pass",
+      "summary": "Reimported body DXF centers, slot profiles, and round holes match the primary patterns in hole-table.json."
+    },
+    {
+      "details": {
+        "expectedPrimaryPatternFeatures": 28,
+        "matchedPrimaryPatternFeatures": 28,
+        "mismatchCount": 0,
+        "mismatches": [],
+        "physicalTableRows": 46
+      },
+      "id": "body-step-vs-hole-table-positions",
+      "status": "pass",
+      "summary": "Reimported STEP plate voids and profile boundaries match every primary hole-table center."
+    },
+    {
+      "details": {
+        "physicalPlateCount": 5,
+        "plates": [
+          {
+            "actualMm": [
+              1.5,
+              229.4,
+              334.0
+            ],
+            "expectedMm": [
+              1.5,
+              229.4,
+              334.0
+            ],
+            "matches": true,
+            "partId": "7U40-R9-AL-BOTTOM",
+            "quantity": 1
+          },
+          {
+            "actualMm": [
+              1.5,
+              89.5,
+              226.4
+            ],
+            "expectedMm": [
+              1.5,
+              89.5,
+              226.4
+            ],
+            "matches": true,
+            "partId": "7U40-R9-AL-FRONT-BACK",
+            "quantity": 2
+          },
+          {
+            "actualMm": [
+              1.500000000000071,
+              89.5,
+              334.0
+            ],
+            "expectedMm": [
+              1.5,
+              89.5,
+              334.0
+            ],
+            "matches": true,
+            "partId": "7U40-R9-AL-LEFT-RIGHT",
+            "quantity": 2
+          }
+        ],
+        "sourceManifestPlateCount": 5
+      },
+      "id": "body-plate-dimensions-and-count",
+      "status": "pass",
+      "summary": "The five physical body plates reimport with their parameter-derived flat-pattern dimensions."
+    },
+    {
+      "details": {
+        "actualMm": [
+          1.5,
+          227.6,
+          332.2
+        ],
+        "expectedMm": [
+          1.5,
+          227.60000000000002,
+          332.2
+        ],
+        "includedInLidManifest": true,
+        "physicalPlateCount": 1
+      },
+      "id": "lid-plate-dimensions-and-count",
+      "status": "pass",
+      "summary": "The sixth plate is the current candidate lid plate, checked against its frame and edge-gap parameters."
+    },
+    {
+      "details": {
+        "counts": {
+          "roundRailFix": 10,
+          "slots": 36
+        },
+        "expected": {
+          "roundRailFix": 10,
+          "slots": 36
+        }
+      },
+      "id": "s2-slot-profile-counts",
+      "status": "pass",
+      "summary": "Aggregate S2 slot/round-hole count check."
+    },
+    {
+      "details": {
+        "failureCount": 0,
+        "failures": []
+      },
+      "id": "s2-slot-edge",
+      "status": "pass",
+      "summary": "S2 edge checks must have no modeled failure rows."
+    },
+    {
+      "details": {
+        "failureCount": 0,
+        "failures": []
+      },
+      "id": "s2-slot-ligament",
+      "status": "pass",
+      "summary": "S2 ligament checks must have no modeled failure rows."
+    },
+    {
+      "details": {
+        "failureCount": 0,
+        "failures": []
+      },
+      "id": "s2-slot-toolAccess",
+      "status": "pass",
+      "summary": "S2 toolAccess checks must have no modeled failure rows."
+    },
+    {
+      "details": {
+        "failureCount": 0,
+        "failures": []
+      },
+      "id": "s2-slot-guardContact",
+      "status": "pass",
+      "summary": "S2 guardContact checks must have no modeled failure rows."
+    },
+    {
+      "details": {
+        "failureCount": 26,
+        "requiredWasherOdCandidateMm": 11.5,
+        "selectedWasherOdMm": 10.0
+      },
+      "id": "s2-slot-bearing-coverage",
+      "status": "flag",
+      "summary": "The provisional 10 mm washer does not meet nominal bearing overlap at current wall slots; larger OD remains a candidate."
+    },
+    {
+      "details": {
+        "contacts": [],
+        "testedSolidPairClasses": [
+          "lid PA12 frame versus main t1p2 top guards"
+        ]
+      },
+      "id": "s4b-tested-static-interference",
+      "status": "pass",
+      "summary": "Tested lid-frame/top-guard BREP pair has no nominal interference above threshold."
+    },
+    {
+      "details": {
+        "untestedPairClasses": [
+          "body plate versus bracket/guard/rail/PCB/hardware",
+          "lid plate versus actual modules and straps",
+          "bottom/vertical guards versus body and hardware",
+          "internal hardware versus rail/PCB/brackets"
+        ]
+      },
+      "id": "s4b-static-interference-coverage",
+      "status": "flag",
+      "summary": "Assembly collision coverage is partial; untested pair classes remain."
+    },
+    {
+      "details": {
+        "endMm": 150,
+        "envelopeFirstOverlapCandidate": null,
+        "firstContact": null,
+        "stepMm": 1
+      },
+      "id": "s4b-lift-path-nominal-screen",
+      "status": "pass",
+      "summary": "The sampled nominal PA12 frame/top-guard lift path and locator envelope screen are clear."
+    },
+    {
+      "details": {
+        "scope": "PA12 lid frame versus main top guards; locator AABBs versus placed component AABBs"
+      },
+      "id": "s4b-lift-path-coverage",
+      "status": "flag",
+      "summary": "Lift-path checks cover limited BREP and envelope classes, not all actual assembly solids."
+    },
+    {
+      "details": {
+        "failureCount": 0,
+        "failures": []
+      },
+      "id": "s4b-slot-guard-contact",
+      "status": "pass",
+      "summary": "S2 bracket slot profiles are outside the nominal guard contact band."
+    },
+    {
+      "details": {
+        "failureCount": 0,
+        "failures": []
+      },
+      "id": "s4b-m5-nominal-tool-envelope",
+      "status": "pass",
+      "summary": "S2 modeled M5 exterior tool envelopes have no nominal conflicts."
+    },
+    {
+      "details": {
+        "m3DriverValidated": false,
+        "m5PhysicalValidated": false
+      },
+      "id": "s4b-physical-fastener-access",
+      "status": "flag",
+      "summary": "M3/M5 driver access and physical washer fit are not validated."
+    },
+    {
+      "details": {
+        "plateOnlyContactExcluded": false,
+        "stations": [
+          {
+            "contactSurfaces": [
+              "front PA12 quarter-frame edge",
+              "rear PA12 quarter-frame edge",
+              "aluminum lid plate between frame corners"
+            ],
+            "continuousPA12Support": false,
+            "stationXmm": -69.54,
+            "widthMm": 20.0
+          },
+          {
+            "contactSurfaces": [
+              "front PA12 quarter-frame edge",
+              "rear PA12 quarter-frame edge",
+              "aluminum lid plate between frame corners"
+            ],
+            "continuousPA12Support": false,
+            "stationXmm": 69.54,
+            "widthMm": 20.0
+          }
+        ],
+        "strapStatus": "schematic only"
+      },
+      "id": "s4b-band-contact-and-deflection",
+      "status": "flag",
+      "summary": "Straps are schematic; plate-only contact and deflection remain unresolved."
+    },
+    {
+      "details": {
+        "gzipBytes": 644502,
+        "modelJsonBytes": 4921740,
+        "noR8Meshes": true,
+        "partCount": 239,
+        "railInstanceCount": 6,
+        "railSourceLengthMm": 204,
+        "uniquePartIds": 33
+      },
+      "id": "preview-mesh-checks",
+      "status": "pass",
+      "summary": "Aggregate offline preview mesh ordering, source rail, and size checks."
+    },
+    {
+      "details": {
+        "c2FileCount": 36,
+        "missingPaths": [],
+        "tablePartCount": 63
+      },
+      "id": "preview-c2-file-table",
+      "status": "pass",
+      "summary": "The preview file table lists all C2 nested coupon files and their paths."
+    },
+    {
+      "details": {
+        "c2PathsEmbedded": true,
+        "htmlExists": true,
+        "missingPaths": []
+      },
+      "id": "preview-public-html-c2-catalog",
+      "status": "pass",
+      "summary": "The single-file preview contains the generated C2 catalog paths if it has been refreshed."
+    },
+    {
+      "details": {
+        "bodyCadFiles": [
+          "7u40-r9-al-bottom-qty1-mm.step",
+          "7u40-r9-al-front-back-qty2-mm.step",
+          "7u40-r9-al-left-right-qty2-mm.step"
+        ],
+        "bodyCadHashesUnchanged": true,
+        "parameterValue": 0.17
+      },
+      "id": "parameter-guards-fitClearancePerSide-body-invariant",
+      "status": "pass",
+      "summary": "A guard/lid-only parameter change leaves the independent aluminum body plate CAD unchanged."
+    },
+    {
+      "details": {
+        "actual": 0.17,
+        "expected": 0.17
+      },
+      "id": "parameter-guards-fitClearancePerSide-preview-parameter",
+      "status": "pass",
+      "summary": "The isolated preview data carries the perturbed parameter value."
+    },
+    {
+      "details": {
+        "couponBytesChanged": true,
+        "couponFiles": [
+          "out/coupons/7u40-r9-cpn-c1-01-qty1-mm.step",
+          "out/coupons/7u40-r9-cpn-c1-01-qty1-mm.stl"
+        ],
+        "couponId": "C1-01",
+        "expectedParameterValue": 0.17,
+        "recordedCouponValue": 0.17
+      },
+      "id": "parameter-guards-fitClearancePerSide-coupon",
+      "status": "pass",
+      "summary": "The dependent coupon is regenerated, its bytes change, and its recorded baseline matches the new parameter."
+    },
+    {
+      "details": {
+        "baselineMeshSha256": "517fa62332f01909713868f5191ec4d620154358e905783b155d5e706d8cd15e",
+        "changedMeshSha256": "2c1be7aeabd19f375183ccadd85ec3ddb8529b7db60c0467f853bb7f52264893",
+        "partId": "7U40-R9-PA12-GUARD-T1P2-TOP-A",
+        "previewMeshChanged": true
+      },
+      "id": "parameter-guards-fitClearancePerSide-preview-geometry",
+      "status": "pass",
+      "summary": "The preview mesh for the dependent guard/lid part changes after regeneration."
+    },
+    {
+      "details": {
+        "bodyCadFiles": [
+          "7u40-r9-al-bottom-qty1-mm.step",
+          "7u40-r9-al-front-back-qty2-mm.step",
+          "7u40-r9-al-left-right-qty2-mm.step"
+        ],
+        "bodyCadHashesUnchanged": true,
+        "parameterValue": 0.75
+      },
+      "id": "parameter-lid-top_edge_lid_locator_clearance-body-invariant",
+      "status": "pass",
+      "summary": "A guard/lid-only parameter change leaves the independent aluminum body plate CAD unchanged."
+    },
+    {
+      "details": {
+        "actual": 0.75,
+        "expected": 0.75
+      },
+      "id": "parameter-lid-top_edge_lid_locator_clearance-preview-parameter",
+      "status": "pass",
+      "summary": "The isolated preview data carries the perturbed parameter value."
+    },
+    {
+      "details": {
+        "couponBytesChanged": true,
+        "couponFiles": [
+          "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.dxf",
+          "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.step",
+          "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-body-wall-qty1-mm.stl",
+          "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.step",
+          "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-guard-qty1-mm.stl",
+          "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.step",
+          "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-frame-qty1-mm.stl",
+          "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.dxf",
+          "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.step",
+          "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-lid-plate-qty1-mm.stl",
+          "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.step",
+          "out/coupons/c2/c2-01/7u40-r9-cpn-c2-01-rail-envelope-qty1-mm.stl"
+        ],
+        "couponId": "C2-01",
+        "expectedParameterValue": 0.75,
+        "recordedCouponValue": 0.75
+      },
+      "id": "parameter-lid-top_edge_lid_locator_clearance-coupon",
+      "status": "pass",
+      "summary": "The dependent coupon is regenerated, its bytes change, and its recorded baseline matches the new parameter."
+    },
+    {
+      "details": {
+        "baselineMeshSha256": "103ddf60fb6ac69f9327f4bad529ac1a26e2c1fb98bc9a2f7e3c71275917a311",
+        "changedMeshSha256": "0062c765869246251661753b3c0d1a96b87cbda6f6346b83961a53186285f9e3",
+        "partId": "7U40-R9-PA12-LID-FRAME-FR",
+        "previewMeshChanged": true
+      },
+      "id": "parameter-lid-top_edge_lid_locator_clearance-preview-geometry",
+      "status": "pass",
+      "summary": "The preview mesh for the dependent guard/lid part changes after regeneration."
+    }
+  ],
+  "holeCounts": {
+    "round": 10,
+    "slots": 36,
+    "total": 46
+  },
+  "meshSummary": {
+    "bboxTessellationToleranceMm": 0.01,
+    "candidateStlCount": 41,
+    "checkedR9StlCount": 56,
+    "failedFiles": [],
+    "failedR9StlCount": 0,
+    "flaggedFiles": [
+      {
+        "artifactRole": "provisional reference envelope",
+        "bboxMaxDeltaMm": 0.0013996982421815574,
+        "closedManifold": true,
+        "edgeIncidenceHistogram": {
+          "2": 1506
+        },
+        "path": "out/hardware-envelopes/7u40-r9-hw-case-mount-bolt-qty10-mm.stl",
+        "reason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates."
+      },
+      {
+        "artifactRole": "provisional reference envelope",
+        "bboxMaxDeltaMm": 0.001556396484375,
+        "closedManifold": true,
+        "edgeIncidenceHistogram": {
+          "2": 750
+        },
+        "path": "out/hardware-envelopes/7u40-r9-hw-foot-qty4-mm.stl",
+        "reason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates."
+      },
+      {
+        "artifactRole": "provisional reference envelope",
+        "bboxMaxDeltaMm": 0.0015605068359434426,
+        "closedManifold": true,
+        "edgeIncidenceHistogram": {
+          "2": 1512
+        },
+        "path": "out/hardware-envelopes/7u40-r9-hw-inner-spacer-qty10-mm.stl",
+        "reason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates."
+      },
+      {
+        "artifactRole": "provisional reference envelope",
+        "bboxMaxDeltaMm": 0.001861572265625,
+        "closedManifold": true,
+        "edgeIncidenceHistogram": {
+          "2": 1506
+        },
+        "path": "out/hardware-envelopes/7u40-r9-hw-panel-joint-bolt-qty36-mm.stl",
+        "reason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates."
+      },
+      {
+        "artifactRole": "provisional reference envelope",
+        "bboxMaxDeltaMm": 0.0014052031249889296,
+        "closedManifold": true,
+        "edgeIncidenceHistogram": {
+          "2": 1506
+        },
+        "path": "out/hardware-envelopes/7u40-r9-hw-rail-end-bolt-qty12-mm.stl",
+        "reason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates."
+      },
+      {
+        "artifactRole": "provisional reference envelope",
+        "bboxMaxDeltaMm": 0.0015605068359434426,
+        "closedManifold": true,
+        "edgeIncidenceHistogram": {
+          "2": 1512
+        },
+        "path": "out/hardware-envelopes/7u40-r9-hw-washer-1mm-qty46-mm.stl",
+        "reason": "Hardware, bracket, rail, spacer, washer, bolt, nut, and foot solids are assembly envelopes with provisional or unselected details; they are not manufacturing candidates."
+      },
+      {
+        "artifactRole": "source-derived display geometry",
+        "bboxMaxDeltaMm": 3.051757815342171e-06,
+        "closedManifold": false,
+        "edgeIncidenceHistogram": {
+          "1": 20,
+          "2": 18950,
+          "6": 4
+        },
+        "path": "out/hardware-envelopes/7u40-r9-pcb-fixer-qty2-mm.stl",
+        "reason": "PCB outline polygons are preserved from the saved R6 panel geometry and extruded for assembly display; this is not a PCB manufacturing export."
+      }
+    ],
+    "flaggedR9StlCount": 7,
+    "positiveVolumeMm3": 533461.734617,
+    "referenceStlCount": 9,
+    "sourceDerivedDisplayStlCount": 6,
+    "strictBboxToleranceMm": 0.0001,
+    "totalTriangles": 56812
+  },
+  "model": "7u40",
+  "not_validated": [
+    "FEA, load capacity, or strength under service loads.",
+    "Fit with real materials and manufacturing tolerances.",
+    "Guard adhesion, retention, and pull-off strength.",
+    "The effect of anodizing thickness on fit.",
+    "Drop resistance and fatigue life.",
+    "Band tension, strap load strength, and lid deflection during transport.",
+    "Actual module knob heights and cable clearance (G05).",
+    "Actual hardware, fastener, washer, and driver fit (G06).",
+    "Physical assembly and transport trial (G11).",
+    "Body plate and internal part solid-pair collision coverage: body plate STEP patterns are local and most repeated hardware has only instance AABBs; intentional fastener contacts need pair-specific exclusions.",
+    "Lift path exact solids against body, PCB, rail, brackets, hardware and actual module knobs; locator AABBs against available component AABBs are a conservative 1 mm lift-step screen, not exact solids.",
+    "M3 driver cone/tool access: eight plate/frame bores are modeled, but driver and screw heads are not specified.",
+    "M5 physical tool access and washer fit; S2 exterior envelope is nominal only.",
+    "Adhesive retention, physical fit, strap load strength, module knob/cable envelope and transport testing."
+  ],
+  "parameterChangeChecks": {
+    "bodyCadInvariantIsExpected": true,
+    "method": "isolated temporary copy of parameter JSON; body/slots/guards/lid/coupons and preview regenerated",
+    "scenarioCount": 2
+  },
+  "plateCounts": {
+    "body": 5,
+    "lid": 1
+  },
+  "productionApproved": false,
+  "revision": "R9-PROTOTYPE-01",
+  "schema": "zudo-case-r9-validation-v1",
+  "status": "passed_with_flags",
+  "summary": {
+    "checkCount": 170,
+    "failed": 0,
+    "flagged": 14,
+    "passed": 156
+  },
+  "units": "mm"
+}

@@ -1,0 +1,128 @@
+{
+  "fit_clearance_range": {
+    "value": null,
+    "unit": "mm[]",
+    "status": "unvalidated",
+    "source": "G03",
+    "note": "Choose after small fit pieces."
+  },
+  "c1_segment_length": {
+    "value": 40,
+    "unit": "mm",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Length of the PA12 edge-guard fit coupon."
+  },
+  "c1_edge_height": {
+    "value": 20,
+    "unit": "mm",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Small aluminum edge-strip height; fixture geometry only."
+  },
+  "c1_split_pair_length": {
+    "value": 40,
+    "unit": "mm",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Total length of the two-piece split-end coupon."
+  },
+  "c1_mark_size": {
+    "value": 2.2,
+    "unit": "mm",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Raised PA12 coupon ID text height; verify legibility on a physical print."
+  },
+  "c1_mark_rise": {
+    "value": 0.35,
+    "unit": "mm",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Raised PA12 coupon ID height; physical readability remains untested."
+  },
+  "c1_fit_clearance_variants": {
+    "value": [0.1, 0.25],
+    "unit": "mm[]",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Change fit clearance only from the guard candidate baseline."
+  },
+  "c1_adhesive_layer_variants": {
+    "value": [0],
+    "unit": "mm[]",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Change adhesive layer only from the guard candidate baseline."
+  },
+  "c1_thickness_variants": {
+    "value": [1],
+    "unit": "mm[]",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Compare the 1.0 mm guard against the adopted 1.2 mm candidate."
+  },
+  "c3_plate_width": {
+    "value": 32,
+    "unit": "mm",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Coupon span across the bracket; centered at the source hole."
+  },
+  "c3_plate_reach": {
+    "value": 20,
+    "unit": "mm",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Coupon reach inward from the actual joint edge."
+  },
+  "c3_joint_id": {
+    "value": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+    "unit": "id",
+    "status": "candidate",
+    "source": "R9 body bracket records",
+    "note": "Use the candidate's real front-bottom bracket hole records on both faces."
+  },
+  "c3_slot_length_variants": {
+    "value": [8.5],
+    "unit": "mm[]",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Compare a longer slot while preserving the candidate slot width."
+  },
+  "c3_round_reference_diameter": {
+    "value": 5.5,
+    "unit": "mm",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Fixed round-hole reference diameter for the C3 comparison."
+  },
+  "c3_include_round_reference": {
+    "value": true,
+    "unit": "boolean",
+    "status": "candidate",
+    "source": "issue #88",
+    "note": "Include a phi 5.5 mm round-hole control at the same two-face centers."
+  },
+  "c2_coupon_box_min": {
+    "value": [20, -170, 60],
+    "unit": "mm[]",
+    "status": "candidate",
+    "source": "issue #89",
+    "note": "Lower XYZ corner of the front-local assembly section, in R9 coordinates."
+  },
+  "c2_coupon_box_max": {
+    "value": [50, -140, 126],
+    "unit": "mm[]",
+    "status": "candidate",
+    "source": "issue #89",
+    "note": "Upper XYZ corner of the front-local assembly section, in R9 coordinates."
+  },
+  "c2_lid_locator_clearance_variants": {
+    "value": [0.5, 0.9],
+    "unit": "mm[]",
+    "status": "candidate",
+    "source": "issue #89",
+    "note": "C2-01 uses the lid baseline; C2-02/03 vary only locator clearance to make three samples."
+  }
+}

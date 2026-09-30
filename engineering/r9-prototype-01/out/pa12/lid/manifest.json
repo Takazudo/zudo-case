@@ -1,0 +1,71 @@
+{
+  "revision": "R9-PROTOTYPE-01",
+  "model": "7u40",
+  "module": "lid",
+  "status": "prototype-only; not approved for manufacture",
+  "sourceMemberHashes": {
+    "r7_build_lids_sha256": "d3148327de71097143dc333ac66d8e185685c518ed93518b5219ca1b252db66a",
+    "r7_lid_parameters_sha256": "e3abe09500fbb7cf2daf5f62fa66bf99c14b6c2540ff3004a30c8f140fc52ba4"
+  },
+  "parts": [
+    "7U40-R9-LID-PLATE",
+    "7U40-R9-PA12-LID-FRAME-FR",
+    "7U40-R9-PA12-LID-FRAME-FL",
+    "7U40-R9-PA12-LID-FRAME-BL",
+    "7U40-R9-PA12-LID-FRAME-BR"
+  ],
+  "deliverables": [
+    {
+      "partId": "7U40-R9-PA12-LID-FRAME-FR",
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.step",
+      "sha256": "1cbe289bca5d2afb2890f999de807a93a77a13e448140f8d8eea07ee80615c87",
+      "bytes": 175005
+    },
+    {
+      "partId": "7U40-R9-PA12-LID-FRAME-FR",
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.stl",
+      "sha256": "e8a4e257fa476e438b4eb0a246b7311dd6d86a86e0de9e1034159926dfbf772e",
+      "bytes": 76884
+    },
+    {
+      "partId": "7U40-R9-PA12-LID-FRAME-FL",
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.step",
+      "sha256": "f6f8d4511a79a8a70e94d3ea7d63b68d27d2c640e19374e7e964d71c861afa0d",
+      "bytes": 173564
+    },
+    {
+      "partId": "7U40-R9-PA12-LID-FRAME-FL",
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.stl",
+      "sha256": "456a37abd488e35718fea060becd6473bd6dc543681f800dafbbe81efa3fad85",
+      "bytes": 76884
+    },
+    {
+      "partId": "7U40-R9-PA12-LID-FRAME-BL",
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-bl-qty1-mm.step",
+      "sha256": "9b189582561f1a20e3383a4a8715a80264d0b908ba03bfbb89f26d57a91e99c3",
+      "bytes": 172742
+    },
+    {
+      "partId": "7U40-R9-PA12-LID-FRAME-BL",
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-bl-qty1-mm.stl",
+      "sha256": "e815715ae484672b63059676d7ddc8bd7324be9d1266e406bc1c4da76e543f9c",
+      "bytes": 76884
+    },
+    {
+      "partId": "7U40-R9-PA12-LID-FRAME-BR",
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-br-qty1-mm.step",
+      "sha256": "1b2bc79a3da8669ddc142c9af4f39cd7272210432b97a1a0fc9cb23da1e79fc5",
+      "bytes": 175338
+    },
+    {
+      "partId": "7U40-R9-PA12-LID-FRAME-BR",
+      "path": "out/pa12/lid/7u40-r9-pa12-lid-frame-br-qty1-mm.stl",
+      "sha256": "11cb74d6cbc7e3bac3c948535e8b25bbccc6a5f1253447fab25aaf924a7e78f3",
+      "bytes": 76884
+    }
+  ],
+  "fitOpenIssues": [
+    "R8 seat 92.7 mm versus guard interface seated top 93.4 mm",
+    "adhesive allowance unset; no physical fit or knob envelope confirmation"
+  ]
+}

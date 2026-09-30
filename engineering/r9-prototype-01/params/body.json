@@ -1,0 +1,282 @@
+{
+  "rail_length": {
+    "value": 204,
+    "unit": "mm",
+    "status": "user_confirmed",
+    "source": "AGENTS.md; 40HP source STL",
+    "note": "Source STL length; do not rescale."
+  },
+  "rail_hole_u": {
+    "value": [
+      6.0332935,
+      128.533836,
+      140.5298535,
+      263.030426,
+      275.0617065,
+      308.7211605
+    ],
+    "unit": "mm[]",
+    "status": "provisional",
+    "source": "engineering/r6-body/build_geometry.py:57-59",
+    "note": "R6 registration centers copied for R9."
+  },
+  "padder_u": {
+    "value": [
+      0,
+      134.53186,
+      269.039027
+    ],
+    "unit": "mm[]",
+    "status": "provisional",
+    "source": "engineering/r6-body/build_geometry.py:60",
+    "note": "Three row origins."
+  },
+  "padder_v": {
+    "value": [
+      0,
+      0,
+      -0.025081
+    ],
+    "unit": "mm[]",
+    "status": "provisional",
+    "source": "engineering/r6-body/build_geometry.py:60",
+    "note": "Source 1U origin correction."
+  },
+  "mount_u": {
+    "value": [
+      22.8453565,
+      90.111288,
+      157.37722,
+      224.6431425,
+      291.873764
+    ],
+    "unit": "mm[]",
+    "status": "provisional",
+    "source": "engineering/r6-body/build_geometry.py:61",
+    "note": "Five mount centers per side."
+  },
+  "mount_v": {
+    "value": 21.3105735,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/build_geometry.py:61,76",
+    "note": "R6 source registration."
+  },
+  "bracket_bottom_x_offset": {
+    "value": 53.7,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/build_geometry.py:79",
+    "note": "From inside half-width."
+  },
+  "bracket_bottom_y_offset": {
+    "value": 40.5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/build_geometry.py:80",
+    "note": "From outside half-depth."
+  },
+  "rail_lip_cx": {
+    "value": 14.930564880371094,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/build_geometry.py:68",
+    "note": "Source STL registration."
+  },
+  "rail_lip_cy": {
+    "value": 6.7535858154296875,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/build_geometry.py:68",
+    "note": "Source STL registration."
+  },
+  "fixer_thickness": {
+    "value": 1.6,
+    "unit": "mm",
+    "status": "user_confirmed",
+    "source": "project/source-notes/user-decisions.md",
+    "note": ""
+  },
+  "padder_thickness": {
+    "value": 1.6,
+    "unit": "mm",
+    "status": "user_confirmed",
+    "source": "project/source-notes/user-decisions.md",
+    "note": ""
+  },
+  "mount_head_height": {
+    "value": 1.4,
+    "unit": "mm",
+    "status": "user_confirmed",
+    "source": "project/source-notes/user-decisions.md",
+    "note": "Head below padder."
+  },
+  "inner_spacer": {
+    "value": 8,
+    "unit": "mm",
+    "status": "user_confirmed",
+    "source": "project/source-notes/user-decisions.md",
+    "note": ""
+  },
+  "outer_washer": {
+    "value": 1,
+    "unit": "mm",
+    "status": "user_confirmed",
+    "source": "project/source-notes/user-decisions.md",
+    "note": ""
+  },
+  "metal_thickness": {
+    "value": 1.5,
+    "unit": "mm",
+    "status": "candidate",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "A5052 black anodized candidate."
+  },
+  "case_height": {
+    "value": 91,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "R6 nominal."
+  },
+  "bracket_outer": {
+    "value": [
+      20,
+      20,
+      16
+    ],
+    "unit": "mm[]",
+    "status": "user_confirmed",
+    "source": "project/source-notes/user-decisions.md",
+    "note": "Existing bracket."
+  },
+  "bracket_thickness": {
+    "value": 2,
+    "unit": "mm",
+    "status": "user_confirmed",
+    "source": "project/source-notes/user-decisions.md",
+    "note": "Measured; 2.2 mm is separate modeling allowance."
+  },
+  "bracket_allowance_thickness": {
+    "value": 2.2,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Modeling allowance; not measured."
+  },
+  "front_back_clearance": {
+    "value": 8,
+    "unit": "mm",
+    "status": "adopted",
+    "source": "project/source-notes/user-decisions.md",
+    "note": "Approximate target."
+  },
+  "bracket_hole_inset": {
+    "value": 10,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "R6 nominal inset from the outside panel edge; physical bracket hole centers remain unchecked."
+  },
+  "vertical_bracket_center_heights": {
+    "value": [
+      36.5,
+      66.5
+    ],
+    "unit": "mm[]",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "R6 nominal lower and upper vertical bracket centers."
+  },
+  "metal_clearance_hole_diameter": {
+    "value": 5.5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Round M5 clearance hole for this body prototype; not the later slot solution."
+  },
+  "mount_bolt_length": {
+    "value": 20,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Display envelope only; not a screw-length recommendation."
+  },
+  "mount_head_diameter": {
+    "value": 9,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "M5 head envelope diameter is unmeasured."
+  },
+  "nylon_outer_diameter": {
+    "value": 10,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Shared spacer and washer display envelope OD."
+  },
+  "nylon_inner_diameter": {
+    "value": 5.5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Shared spacer and washer display envelope ID."
+  },
+  "nut_height": {
+    "value": 5,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Display envelope only; nut dimensions are not measured."
+  },
+  "nut_across_flats": {
+    "value": 8,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Display envelope only; nut dimensions are not measured."
+  },
+  "rail_end_bolt_length": {
+    "value": 40,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "R6 display assumption from an old assembly guide; current fit is unchecked."
+  },
+  "rail_end_head_diameter": {
+    "value": 9,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "M5 rail-end bolt head envelope diameter is unmeasured."
+  },
+  "bracket_head_diameter": {
+    "value": 12,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Panel joint bolt head envelope diameter is unmeasured."
+  },
+  "foot_diameter": {
+    "value": 10,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Display envelope only; the foot product is unselected."
+  },
+  "foot_height": {
+    "value": 3,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "Display envelope only; the foot product is unselected."
+  },
+  "foot_inset": {
+    "value": 20,
+    "unit": "mm",
+    "status": "provisional",
+    "source": "engineering/r6-body/design-parameters.json",
+    "note": "R6 nominal foot center inset; attachment method and product remain unselected."
+  }
+}

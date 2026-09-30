@@ -16,7 +16,23 @@ for (const m of models) {
  const g=m.guards.t1p2, h=m.hardware_counts, l=m.lid_preview;
  const plates=m.plates.map(p=>`| ${p.part} | ${dims(p.size_mm)} | ${p.quantity} | ${p.holes_each} |`).join("\n");
  const catalog=g.catalog.map(p=>`| ${p.name} | ${p.quantity} | ${dims(p.dimensions)} | ${f(p.volumeCm3)} |`).join("\n");
- page(`models/${m.id}.mdx`,m.label,`本体はR6の名目CAD、載せ蓋はR8プレビュー。${m.id}の寸法と数量。`,i,`
+ const candidate=m.candidate_revision ? `## ${m.candidate_revision}の製作候補（未承認）
+
+7u40用の候補データです。R6の本体形状を起点に、独立したアルミ板${m.candidate_body_summary.independent_plate_count}枚、ブラケット用の${m.candidate_body_summary.bracket_slot_count}か所の長穴候補（幅×全長 ${dims(m.candidate_body_summary.bracket_slot_size_mm)}mm、移動量候補 ±${f(m.candidate_body_summary.bracket_slot_candidate_travel_each_direction_mm)}mm）、レール固定用の丸穴${m.candidate_body_summary.rail_round_hole_count}か所を出力しています。長穴の方向・移動量、金具と座金の適合は製造判断・現物確認が残ります。
+
+蓋はアルミ板${m.candidate_lid_summary.aluminum_plate_count}枚とPA12枠${m.candidate_lid_summary.pa12_frame_piece_count}部品の直線持ち上げ式です。蓋と本体のロックはなく、運搬時の外周バンドは別部品です。嵌合、ノブ・ケーブルの空間、枠の保持は未確認です。製造承認や価格確定を示すデータではありません。
+
+<PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-aluminum-NOT-APPROVED.zip">R9アルミ候補ZIP</PreviewLink> ／ <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-pa12-NOT-APPROVED.zip">R9 PA12候補ZIP</PreviewLink> ／ <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-coupons-NOT-APPROVED.zip">R9クーポン候補ZIP</PreviewLink> ／ <PreviewLink path="/previews/r9-prototype-01.html">R9プレビュー</PreviewLink>
+
+` : "";
+ const candidateSection=candidate ? `\n\n${candidate.trim()}\n\n` : "\n\n";
+ const holeNote=m.candidate_revision
+   ? `R6は丸穴。R9候補は長穴${m.candidate_body_summary.bracket_slot_count}＋丸穴${m.candidate_body_summary.rail_round_hole_count}`
+   : "R6の丸穴。長穴未反映";
+ const description=m.candidate_revision
+   ? `${m.id}のR6/R8基準と、未承認の${m.candidate_revision}候補を示す。`
+   : `本体はR6の名目CAD、載せ蓋はR8プレビュー。${m.id}の寸法と数量。`;
+ page(`models/${m.id}.mdx`,m.label,description,i,`
 ## この機種
 
 ${m.id==='7u40'?'**主な確認対象。** リュックへ入れて運ぶ用途を重視する40HPの３列ケース。':'３機種に共通する金属平板と独立レールの構造を使う。'} ${m.id==='3u60'?'レール２本の単列。':'3U＋3U＋1Uは同じ平面に並ぶ。上下二段のケースではない。'}
@@ -39,9 +55,7 @@ ${m.id==='7u40'?'**主な確認対象。** リュックへ入れて運ぶ用途�
 | ブラケット | ${h.panelBracket} |
 | レールと外箱のM5締結 | ${h.mountBolt}点 |
 | 内側8mmスペーサー／外側1mm座金 | 各${h.innerSpacer}個 |
-| 板の穴合計 | ${m.panel_holes}（R6の丸穴。長穴未反映） |
-
-## アルミ本体５枚
+| 板の穴合計 | ${m.panel_holes}（${holeNote}） |${candidateSection}## ${m.candidate_revision ? "R6基準のアルミ本体５枚" : "アルミ本体５枚"}
 
 | 部品 | サイズmm | 枚数 | 穴数/枚 |
 |---|---|---:|---:|
@@ -49,7 +63,7 @@ ${plates}
 
 材質候補A5052、t1.5、黒アルマイト。外形・板厚は現在の名目値。長穴、穴中心、公差、表面の許容状態を確定してから製作承認する。
 
-## ガード1.2mmの内訳
+## ${m.candidate_revision ? "R6ガード1.2mmの参考内訳" : "ガード1.2mmの内訳"}
 
 | 部品 | 数量 | 単体の外接寸法mm | 単体体積cm³ |
 |---|---:|---|---:|
@@ -67,7 +81,9 @@ ${catalog}
 
 バンド一周の幾何概算：**${f(l.strapLoopGeometricEstimateMm)}mm**。バックルと重なり代は含めていない。
 
-**この載せ蓋の製作用CADは未更新。** R7のロック用枠・前後M3穴を発注しない。[R8プレビュー](../resources/current-preview.mdx)と[発注前ゲート](../verification/before-order.mdx)を確認する。
+${m.candidate_revision
+  ? `R8の寸法は表示用の基準です。7u40では${m.candidate_revision}の蓋板・PA12枠候補を別途出力していますが、嵌合と仕様は未確定です。R7のロック用枠・前後M3穴は採用しません。[R8プレビュー](../resources/current-preview.mdx)と[発注前ゲート](../verification/before-order.mdx)を確認する。`
+  : "**この載せ蓋の製作用CADは未更新。** R7のロック用枠・前後M3穴を発注しない。[R8プレビュー](../resources/current-preview.mdx)と[発注前ゲート](../verification/before-order.mdx)を確認する。"}
 
 ## 根拠
 
@@ -75,13 +91,15 @@ R6の ${m.sources[0]} と [本体サマリー](/evidence/r6-family-summary.json)
  `);
  i+=10;
 }
-const cmp=models.map(m=>`| ${m.label} | ${dims(m.metal_mm)} | ${dims(m.guards.t1p2.outerEnvelopeMm)} | ${m.hardware_counts.panelBracket} | ${m.hardware_counts.mountBolt} | ${m.guards.t1p2.partCount} | ${f(m.guards.t1p2.totalVolumeCm3)} |`).join("\n");
+const cmp=models.map(m=>`| ${m.label} | ${dims(m.metal_mm)} | ${dims(m.guards.t1p2.outerEnvelopeMm)} | ${m.hardware_counts.panelBracket} | ${m.hardware_counts.mountBolt} | ${m.guards.t1p2.partCount} | ${f(m.guards.t1p2.totalVolumeCm3)} | ${m.candidate_revision ? `${m.candidate_revision}・未承認` : "—"} |`).join("\n");
 page("models/comparison.mdx","３機種の比較","共通値と、機種によって増える板・金具・ガードを一覧にする。",40,`
 ## 本体の比較
 
-| 機種 | アルミ外形mm | ガード込みmm | 金具 | ケース固定M5 | ガード個数 | 1.2mm体積cm³ |
-|---|---|---|---:|---:|---:|---:|
+| 機種 | アルミ外形mm | ガード込みmm | 金具 | ケース固定M5 | ガード個数 | 1.2mm体積cm³ | R9候補 |
+|---|---|---|---:|---:|---:|---:|---|
 ${cmp}
+
+7u40には本体板、長穴、ガード、蓋のR9候補データがあります。現物の嵌合・保持・運搬確認と製造判断が残り、未承認です。3u60と7u60の数値はR6/R8基準です。
 
 単位mm。ガード込みは脚・外側ナット・蓋・バンドを除く。３機種ともアルミの高さは91mm、レールの側面離隔は8mm、前後の全ユニットからの余白は約8mm。
 
@@ -103,11 +121,12 @@ R8の天板サイズは各機種ページに示した。機種間で同じ部品
 `);
 const counts = (key)=>models.map(m=>m.hardware_counts[key]);
 const row=(name,nums,note)=>`| ${name} | ${nums.join(' | ')} | ${note} |`;
-const bom=[row('本体アルミ板',counts('aluminumPanel'),'t1.5、黒アルマイト候補'),row('L字ブラケット',counts('panelBracket'),'在庫20×20×16mm、厚2mm'),row('板接合用M5ネジ',counts('panelJointBolt'),'底面は頭を外向き'),row('板接合用ナット',counts('panelJointNut'),'品番・必要ねじ長は別確認'),row('板接合用座金',counts('panelJointWasher'),'モデル上の数量。実部品の厚さと受け面確認'),row('ユニット→ケースM5',counts('mountBolt'),'頭1.4mm、軸長未確定'),row('同ロックナット',counts('mountNut'),'外側'),row('内側8mmスペーサー',counts('innerSpacer'),'内外径は模式値を含む'),row('外側1mmナイロン座金',counts('outerWasher'),'ユニット固定用'),row('ゴム脚',counts('foot'),'φ10×高さ3mmは仮'),row('本体PA12ガード',models.map(m=>m.guards.t1p2.partCount),'1.2mm基本、黒染め候補'),row('蓋アルミ板',[1,1,1],'R8表示寸法、製作図未更新'),row('蓋PA12枠',[4,4,4],'R8の表示分割。発注数量は再CAD後に確定'),row('天板の組立M3',[8,8,8],'R7からの表示上の数量。長さ・ナット座を再確認'),row('外周バンド',[2,2,2],'品番未選定、開閉用のねじロックなし')].join('\n');
+const modelNote=fn=>models.map(m=>`${m.id}: ${fn(m)}`).join('；');
+const bom=[row('本体アルミ板',counts('aluminumPanel'),modelNote(m=>m.candidate_revision?'R9候補・未承認':'t1.5、黒アルマイト候補')),row('L字ブラケット',counts('panelBracket'),'在庫20×20×16mm、厚2mm'),row('板接合用M5ネジ',counts('panelJointBolt'),'底面は頭を外向き'),row('板接合用ナット',counts('panelJointNut'),'品番・必要ねじ長は別確認'),row('板接合用座金',counts('panelJointWasher'),'モデル上の数量。実部品の厚さと受け面確認'),row('ユニット→ケースM5',counts('mountBolt'),'頭1.4mm、軸長未確定'),row('同ロックナット',counts('mountNut'),'外側'),row('内側8mmスペーサー',counts('innerSpacer'),'内外径は模式値を含む'),row('外側1mmナイロン座金',counts('outerWasher'),'ユニット固定用'),row('ゴム脚',counts('foot'),'φ10×高さ3mmは仮'),row('本体PA12ガード',models.map(m=>m.guards.t1p2.partCount),modelNote(m=>m.candidate_revision?'R9の1.2mm候補あり。保持・黒染め未確認':'1.2mm基本、黒染め候補')),row('蓋アルミ板',[1,1,1],modelNote(m=>m.candidate_revision?'R9で出力、嵌合未検証・未承認':'R8表示寸法、製作図未更新')),row('蓋PA12枠',[4,4,4],modelNote(m=>m.candidate_revision?'R9で4部品を出力、保持未確認・未承認':'R8の表示分割。発注数量は再CAD後に確定')),row('天板の組立M3',[8,8,8],'R7からの表示上の数量。長さ・ナット座を再確認'),row('外周バンド',[2,2,2],'品番未選定、開閉用のねじロックなし')].join('\n');
 page('manufacturing/bom.mdx','ケース側BOM','レールユニットの費用を除き、本体・蓋・バンドを分けて管理する。',10,`
 ## ケース１台分の部品
 
-以下の表はR6のhardwareCountsとR8の構成から生成。予備率、破損、予備金具は含めていない。**発注承認済みBOMではなく、数量確認の起点**。
+以下の表はR6のhardwareCountsとR8の構成を基準に生成し、7u40のR9候補を注記したもの。予備率、破損、予備金具は含めていない。**発注承認済みBOMではなく、数量確認の起点**。
 
 | 部品 | 3U60 | 7U40 | 7U60 | 仕様／状態 |
 |---|---:|---:|---:|---|

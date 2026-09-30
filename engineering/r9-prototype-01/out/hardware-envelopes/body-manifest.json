@@ -1,0 +1,6158 @@
+{
+  "brackets": {
+    "allowanceUsage": "separate clearance allowance only; bracket CAD geometry uses measured 2 mm thickness",
+    "count": 18,
+    "modelingAllowanceMm": 2.2,
+    "physicalThicknessMm": 2.0
+  },
+  "components": [
+    {
+      "category": "aluminum",
+      "exportKinds": [
+        "step",
+        "stl",
+        "dxf"
+      ],
+      "id": "7U40-R9-AL-BOTTOM",
+      "instances": [
+        {
+          "holeCount": 10,
+          "holeIds": [
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXN",
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXP",
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXP",
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-CENTER",
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-FRONT",
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-REAR",
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-CENTER",
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-FRONT",
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-REAR"
+          ],
+          "id": "BOTTOM",
+          "localToAssembly": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -114.7
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              -167.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "material": "A5052 t1.5 mm candidate; black anodizing candidate",
+      "quantity": 1
+    },
+    {
+      "category": "aluminum",
+      "exportKinds": [
+        "step",
+        "stl",
+        "dxf"
+      ],
+      "id": "7U40-R9-AL-FRONT-BACK",
+      "instances": [
+        {
+          "holeCount": 6,
+          "holeIds": [
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER"
+          ],
+          "id": "FRONT",
+          "localToAssembly": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -113.2
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              -165.5
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "holeCount": 6,
+          "holeIds": [
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER"
+          ],
+          "id": "BACK",
+          "localToAssembly": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              -113.2
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              167.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "material": "A5052 t1.5 mm candidate; black anodizing candidate",
+      "quantity": 2
+    },
+    {
+      "category": "aluminum",
+      "exportKinds": [
+        "step",
+        "stl",
+        "dxf"
+      ],
+      "id": "7U40-R9-AL-LEFT-RIGHT",
+      "instances": [
+        {
+          "holeCount": 12,
+          "holeIds": [
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-01",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-02",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-03",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-04",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-LEFT-RAIL-FIX-LEFT-05"
+          ],
+          "id": "LEFT",
+          "localToAssembly": [
+            [
+              0.0,
+              0.0,
+              -1.0,
+              -113.2
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              -167.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "holeCount": 12,
+          "holeIds": [
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-01",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-02",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-03",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-04",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-RAIL-FIX-RIGHT-RAIL-FIX-RIGHT-05"
+          ],
+          "id": "RIGHT",
+          "localToAssembly": [
+            [
+              0.0,
+              0.0,
+              1.0,
+              113.2
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              -167.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              1.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      ],
+      "material": "A5052 t1.5 mm candidate; black anodizing candidate",
+      "quantity": 2
+    },
+    {
+      "category": "hardware-envelopes",
+      "exportKinds": [
+        "step",
+        "stl"
+      ],
+      "id": "7U40-R9-HW-PANEL-BRACKET",
+      "instances": [
+        {
+          "bboxMaxMm": [
+            -51.5,
+            -145.5,
+            21.5
+          ],
+          "bboxMinMm": [
+            -67.5,
+            -165.5,
+            1.5
+          ],
+          "boxSegmentsMm": [
+            [
+              -67.5,
+              -51.5,
+              -165.5,
+              -145.5,
+              1.5,
+              3.5
+            ],
+            [
+              -67.5,
+              -51.5,
+              -165.5,
+              -163.5,
+              1.5,
+              21.5
+            ]
+          ],
+          "dimensionsMm": [
+            16.0,
+            20.0,
+            20.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN"
+          ],
+          "id": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN"
+        },
+        {
+          "bboxMaxMm": [
+            67.5,
+            -145.5,
+            21.5
+          ],
+          "bboxMinMm": [
+            51.5,
+            -165.5,
+            1.5
+          ],
+          "boxSegmentsMm": [
+            [
+              51.5,
+              67.5,
+              -165.5,
+              -145.5,
+              1.5,
+              3.5
+            ],
+            [
+              51.5,
+              67.5,
+              -165.5,
+              -163.5,
+              1.5,
+              21.5
+            ]
+          ],
+          "dimensionsMm": [
+            16.0,
+            20.0,
+            20.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXP",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP"
+          ],
+          "id": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP"
+        },
+        {
+          "bboxMaxMm": [
+            -51.5,
+            165.5,
+            21.5
+          ],
+          "bboxMinMm": [
+            -67.5,
+            145.5,
+            1.5
+          ],
+          "boxSegmentsMm": [
+            [
+              -67.5,
+              -51.5,
+              145.5,
+              165.5,
+              1.5,
+              3.5
+            ],
+            [
+              -67.5,
+              -51.5,
+              163.5,
+              165.5,
+              1.5,
+              21.5
+            ]
+          ],
+          "dimensionsMm": [
+            16.0,
+            20.0,
+            20.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXN",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN"
+          ],
+          "id": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN"
+        },
+        {
+          "bboxMaxMm": [
+            67.5,
+            165.5,
+            21.5
+          ],
+          "bboxMinMm": [
+            51.5,
+            145.5,
+            1.5
+          ],
+          "boxSegmentsMm": [
+            [
+              51.5,
+              67.5,
+              145.5,
+              165.5,
+              1.5,
+              3.5
+            ],
+            [
+              51.5,
+              67.5,
+              163.5,
+              165.5,
+              1.5,
+              21.5
+            ]
+          ],
+          "dimensionsMm": [
+            16.0,
+            20.0,
+            20.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXP",
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP"
+          ],
+          "id": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP"
+        },
+        {
+          "bboxMaxMm": [
+            -93.2,
+            -118.5,
+            21.5
+          ],
+          "bboxMinMm": [
+            -113.2,
+            -134.5,
+            1.5
+          ],
+          "boxSegmentsMm": [
+            [
+              -113.2,
+              -93.2,
+              -134.5,
+              -118.5,
+              1.5,
+              3.5
+            ],
+            [
+              -113.2,
+              -111.2,
+              -134.5,
+              -118.5,
+              1.5,
+              21.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            16.0,
+            20.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-FRONT",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT"
+          ],
+          "id": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT"
+        },
+        {
+          "bboxMaxMm": [
+            -93.2,
+            8.0,
+            21.5
+          ],
+          "bboxMinMm": [
+            -113.2,
+            -8.0,
+            1.5
+          ],
+          "boxSegmentsMm": [
+            [
+              -113.2,
+              -93.2,
+              -8.0,
+              8.0,
+              1.5,
+              3.5
+            ],
+            [
+              -113.2,
+              -111.2,
+              -8.0,
+              8.0,
+              1.5,
+              21.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            16.0,
+            20.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-CENTER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER"
+          ],
+          "id": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER"
+        },
+        {
+          "bboxMaxMm": [
+            -93.2,
+            134.5,
+            21.5
+          ],
+          "bboxMinMm": [
+            -113.2,
+            118.5,
+            1.5
+          ],
+          "boxSegmentsMm": [
+            [
+              -113.2,
+              -93.2,
+              118.5,
+              134.5,
+              1.5,
+              3.5
+            ],
+            [
+              -113.2,
+              -111.2,
+              118.5,
+              134.5,
+              1.5,
+              21.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            16.0,
+            20.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-REAR",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR"
+          ],
+          "id": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR"
+        },
+        {
+          "bboxMaxMm": [
+            113.2,
+            -118.5,
+            21.5
+          ],
+          "bboxMinMm": [
+            93.2,
+            -134.5,
+            1.5
+          ],
+          "boxSegmentsMm": [
+            [
+              93.2,
+              113.2,
+              -134.5,
+              -118.5,
+              1.5,
+              3.5
+            ],
+            [
+              111.2,
+              113.2,
+              -134.5,
+              -118.5,
+              1.5,
+              21.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            16.0,
+            20.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-FRONT",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT"
+          ],
+          "id": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT"
+        },
+        {
+          "bboxMaxMm": [
+            113.2,
+            8.0,
+            21.5
+          ],
+          "bboxMinMm": [
+            93.2,
+            -8.0,
+            1.5
+          ],
+          "boxSegmentsMm": [
+            [
+              93.2,
+              113.2,
+              -8.0,
+              8.0,
+              1.5,
+              3.5
+            ],
+            [
+              111.2,
+              113.2,
+              -8.0,
+              8.0,
+              1.5,
+              21.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            16.0,
+            20.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-CENTER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER"
+          ],
+          "id": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER"
+        },
+        {
+          "bboxMaxMm": [
+            113.2,
+            134.5,
+            21.5
+          ],
+          "bboxMinMm": [
+            93.2,
+            118.5,
+            1.5
+          ],
+          "boxSegmentsMm": [
+            [
+              93.2,
+              113.2,
+              118.5,
+              134.5,
+              1.5,
+              3.5
+            ],
+            [
+              111.2,
+              113.2,
+              118.5,
+              134.5,
+              1.5,
+              21.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            16.0,
+            20.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-REAR",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR"
+          ],
+          "id": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR"
+        },
+        {
+          "bboxMaxMm": [
+            -93.2,
+            -145.5,
+            44.5
+          ],
+          "bboxMinMm": [
+            -113.2,
+            -165.5,
+            28.5
+          ],
+          "boxSegmentsMm": [
+            [
+              -113.2,
+              -93.2,
+              -165.5,
+              -163.5,
+              28.5,
+              44.5
+            ],
+            [
+              -113.2,
+              -111.2,
+              -165.5,
+              -145.5,
+              28.5,
+              44.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            20.0,
+            16.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER"
+          ],
+          "id": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER"
+        },
+        {
+          "bboxMaxMm": [
+            -93.2,
+            -145.5,
+            74.5
+          ],
+          "bboxMinMm": [
+            -113.2,
+            -165.5,
+            58.5
+          ],
+          "boxSegmentsMm": [
+            [
+              -113.2,
+              -93.2,
+              -165.5,
+              -163.5,
+              58.5,
+              74.5
+            ],
+            [
+              -113.2,
+              -111.2,
+              -165.5,
+              -145.5,
+              58.5,
+              74.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            20.0,
+            16.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER"
+          ],
+          "id": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER"
+        },
+        {
+          "bboxMaxMm": [
+            -93.2,
+            165.5,
+            44.5
+          ],
+          "bboxMinMm": [
+            -113.2,
+            145.5,
+            28.5
+          ],
+          "boxSegmentsMm": [
+            [
+              -113.2,
+              -93.2,
+              163.5,
+              165.5,
+              28.5,
+              44.5
+            ],
+            [
+              -113.2,
+              -111.2,
+              145.5,
+              165.5,
+              28.5,
+              44.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            20.0,
+            16.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER"
+          ],
+          "id": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER"
+        },
+        {
+          "bboxMaxMm": [
+            -93.2,
+            165.5,
+            74.5
+          ],
+          "bboxMinMm": [
+            -113.2,
+            145.5,
+            58.5
+          ],
+          "boxSegmentsMm": [
+            [
+              -113.2,
+              -93.2,
+              163.5,
+              165.5,
+              58.5,
+              74.5
+            ],
+            [
+              -113.2,
+              -111.2,
+              145.5,
+              165.5,
+              58.5,
+              74.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            20.0,
+            16.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER"
+          ],
+          "id": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER"
+        },
+        {
+          "bboxMaxMm": [
+            113.2,
+            -145.5,
+            44.5
+          ],
+          "bboxMinMm": [
+            93.2,
+            -165.5,
+            28.5
+          ],
+          "boxSegmentsMm": [
+            [
+              93.2,
+              113.2,
+              -165.5,
+              -163.5,
+              28.5,
+              44.5
+            ],
+            [
+              111.2,
+              113.2,
+              -165.5,
+              -145.5,
+              28.5,
+              44.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            20.0,
+            16.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER"
+          ],
+          "id": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER"
+        },
+        {
+          "bboxMaxMm": [
+            113.2,
+            -145.5,
+            74.5
+          ],
+          "bboxMinMm": [
+            93.2,
+            -165.5,
+            58.5
+          ],
+          "boxSegmentsMm": [
+            [
+              93.2,
+              113.2,
+              -165.5,
+              -163.5,
+              58.5,
+              74.5
+            ],
+            [
+              111.2,
+              113.2,
+              -165.5,
+              -145.5,
+              58.5,
+              74.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            20.0,
+            16.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER"
+          ],
+          "id": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER"
+        },
+        {
+          "bboxMaxMm": [
+            113.2,
+            165.5,
+            44.5
+          ],
+          "bboxMinMm": [
+            93.2,
+            145.5,
+            28.5
+          ],
+          "boxSegmentsMm": [
+            [
+              93.2,
+              113.2,
+              163.5,
+              165.5,
+              28.5,
+              44.5
+            ],
+            [
+              111.2,
+              113.2,
+              145.5,
+              165.5,
+              28.5,
+              44.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            20.0,
+            16.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER"
+          ],
+          "id": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER"
+        },
+        {
+          "bboxMaxMm": [
+            113.2,
+            165.5,
+            74.5
+          ],
+          "bboxMinMm": [
+            93.2,
+            145.5,
+            58.5
+          ],
+          "boxSegmentsMm": [
+            [
+              93.2,
+              113.2,
+              163.5,
+              165.5,
+              58.5,
+              74.5
+            ],
+            [
+              111.2,
+              113.2,
+              145.5,
+              165.5,
+              58.5,
+              74.5
+            ]
+          ],
+          "dimensionsMm": [
+            20.0,
+            20.0,
+            16.0
+          ],
+          "holeIds": [
+            "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER",
+            "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER"
+          ],
+          "id": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER"
+        }
+      ],
+      "material": "Existing metal L bracket; material unconfirmed; physical t2 mm",
+      "quantity": 18
+    },
+    {
+      "category": "hardware-envelopes",
+      "exportKinds": [
+        "step",
+        "stl"
+      ],
+      "id": "7U40-R9-HW-RAIL-UNIT-ENVELOPE",
+      "instances": [
+        {
+          "axisCenterYZMm": [
+            -151.3439345,
+            74.5049775
+          ],
+          "bboxMaxMm": [
+            102.0,
+            -144.5903486845703,
+            89.43554238037109
+          ],
+          "bboxMinMm": [
+            -102.0,
+            -157.1768202421875,
+            69.30355385498046
+          ],
+          "envelopeDimensionsMm": [
+            204.0,
+            12.586471557617188,
+            20.131988525390625
+          ],
+          "id": "RAIL-01",
+          "railIndex": 0,
+          "row": 0,
+          "sourceBoundsMm": {
+            "max": [
+              20.131988525390625,
+              12.586471557617188,
+              204.0
+            ],
+            "min": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "sourceBoundsUsage": "bbox only; original non-manifold mesh is not converted to BREP",
+          "sourceTransform": [
+            [
+              0,
+              0,
+              -1,
+              102.0
+            ],
+            [
+              0,
+              -1,
+              0,
+              -144.5903486845703
+            ],
+            [
+              -1,
+              0,
+              0,
+              89.43554238037109
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "axisCenterYZMm": [
+            -28.843391999999994,
+            74.5049795
+          ],
+          "bboxMaxMm": [
+            102.0,
+            -23.010506257812494,
+            89.4355443803711
+          ],
+          "bboxMinMm": [
+            -102.0,
+            -35.59697781542968,
+            69.30355585498047
+          ],
+          "envelopeDimensionsMm": [
+            204.0,
+            12.586471557617188,
+            20.131988525390625
+          ],
+          "id": "RAIL-02",
+          "railIndex": 1,
+          "row": 0,
+          "sourceBoundsMm": {
+            "max": [
+              20.131988525390625,
+              12.586471557617188,
+              204.0
+            ],
+            "min": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "sourceBoundsUsage": "bbox only; original non-manifold mesh is not converted to BREP",
+          "sourceTransform": [
+            [
+              0,
+              0,
+              1,
+              -102.0
+            ],
+            [
+              0,
+              1,
+              0,
+              -35.59697781542968
+            ],
+            [
+              -1,
+              0,
+              0,
+              89.4355443803711
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "axisCenterYZMm": [
+            -16.8473745,
+            74.5049795
+          ],
+          "bboxMaxMm": [
+            102.0,
+            -10.093788684570313,
+            89.4355443803711
+          ],
+          "bboxMinMm": [
+            -102.0,
+            -22.6802602421875,
+            69.30355585498047
+          ],
+          "envelopeDimensionsMm": [
+            204.0,
+            12.586471557617188,
+            20.131988525390625
+          ],
+          "id": "RAIL-03",
+          "railIndex": 2,
+          "row": 1,
+          "sourceBoundsMm": {
+            "max": [
+              20.131988525390625,
+              12.586471557617188,
+              204.0
+            ],
+            "min": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "sourceBoundsUsage": "bbox only; original non-manifold mesh is not converted to BREP",
+          "sourceTransform": [
+            [
+              0,
+              0,
+              -1,
+              102.0
+            ],
+            [
+              0,
+              -1,
+              0,
+              -10.093788684570313
+            ],
+            [
+              -1,
+              0,
+              0,
+              89.4355443803711
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "axisCenterYZMm": [
+            105.65319800000003,
+            74.5049795
+          ],
+          "bboxMaxMm": [
+            102.0,
+            111.48608374218753,
+            89.4355443803711
+          ],
+          "bboxMinMm": [
+            -102.0,
+            98.89961218457034,
+            69.30355585498047
+          ],
+          "envelopeDimensionsMm": [
+            204.0,
+            12.586471557617188,
+            20.131988525390625
+          ],
+          "id": "RAIL-04",
+          "railIndex": 3,
+          "row": 1,
+          "sourceBoundsMm": {
+            "max": [
+              20.131988525390625,
+              12.586471557617188,
+              204.0
+            ],
+            "min": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "sourceBoundsUsage": "bbox only; original non-manifold mesh is not converted to BREP",
+          "sourceTransform": [
+            [
+              0,
+              0,
+              1,
+              -102.0
+            ],
+            [
+              0,
+              1,
+              0,
+              98.89961218457034
+            ],
+            [
+              -1,
+              0,
+              0,
+              89.4355443803711
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "axisCenterYZMm": [
+            117.68447850000001,
+            74.5049795
+          ],
+          "bboxMaxMm": [
+            102.0,
+            124.4380643154297,
+            89.4355443803711
+          ],
+          "bboxMinMm": [
+            -102.0,
+            111.85159275781251,
+            69.30355585498047
+          ],
+          "envelopeDimensionsMm": [
+            204.0,
+            12.586471557617188,
+            20.131988525390625
+          ],
+          "id": "RAIL-05",
+          "railIndex": 4,
+          "row": 2,
+          "sourceBoundsMm": {
+            "max": [
+              20.131988525390625,
+              12.586471557617188,
+              204.0
+            ],
+            "min": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "sourceBoundsUsage": "bbox only; original non-manifold mesh is not converted to BREP",
+          "sourceTransform": [
+            [
+              0,
+              0,
+              -1,
+              102.0
+            ],
+            [
+              0,
+              -1,
+              0,
+              124.4380643154297
+            ],
+            [
+              -1,
+              0,
+              0,
+              89.4355443803711
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "axisCenterYZMm": [
+            151.3439325,
+            74.5049795
+          ],
+          "bboxMaxMm": [
+            102.0,
+            157.1768182421875,
+            89.4355443803711
+          ],
+          "bboxMinMm": [
+            -102.0,
+            144.5903466845703,
+            69.30355585498047
+          ],
+          "envelopeDimensionsMm": [
+            204.0,
+            12.586471557617188,
+            20.131988525390625
+          ],
+          "id": "RAIL-06",
+          "railIndex": 5,
+          "row": 2,
+          "sourceBoundsMm": {
+            "max": [
+              20.131988525390625,
+              12.586471557617188,
+              204.0
+            ],
+            "min": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "sourceBoundsUsage": "bbox only; original non-manifold mesh is not converted to BREP",
+          "sourceTransform": [
+            [
+              0,
+              0,
+              1,
+              -102.0
+            ],
+            [
+              0,
+              1,
+              0,
+              144.5903466845703
+            ],
+            [
+              -1,
+              0,
+              0,
+              89.4355443803711
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "material": "Existing 40HP rail source bounding envelope; alloy unconfirmed",
+      "quantity": 6
+    },
+    {
+      "category": "hardware-envelopes",
+      "exportKinds": [
+        "step",
+        "stl"
+      ],
+      "id": "7U40-R9-PCB-FIXER",
+      "instances": [
+        {
+          "bboxMaxMm": [
+            -103.6,
+            157.377228,
+            89.5
+          ],
+          "bboxMinMm": [
+            -105.19999999999999,
+            -157.377228,
+            29.484619000000002
+          ],
+          "dimensionsMm": [
+            1.5999999999999943,
+            314.754456,
+            60.015381
+          ],
+          "id": "FIXER-LEFT",
+          "kind": "fixer7u",
+          "placementUVmm": [
+            0.0,
+            0.0
+          ],
+          "row": null,
+          "side": "LEFT"
+        },
+        {
+          "bboxMaxMm": [
+            105.19999999999999,
+            157.377228,
+            89.5
+          ],
+          "bboxMinMm": [
+            103.6,
+            -157.377228,
+            29.484619000000002
+          ],
+          "dimensionsMm": [
+            1.5999999999999943,
+            314.754456,
+            60.015381
+          ],
+          "id": "FIXER-RIGHT",
+          "kind": "fixer7u",
+          "placementUVmm": [
+            0.0,
+            0.0
+          ],
+          "row": null,
+          "side": "RIGHT"
+        }
+      ],
+      "material": "Existing fixer PCB; user-confirmed t1.6 mm",
+      "quantity": 2
+    },
+    {
+      "category": "hardware-envelopes",
+      "exportKinds": [
+        "step",
+        "stl"
+      ],
+      "id": "7U40-R9-PCB-PADDER-3U",
+      "instances": [
+        {
+          "bboxMaxMm": [
+            -102.0,
+            -22.877228000000002,
+            89.5
+          ],
+          "bboxMinMm": [
+            -103.6,
+            -157.377228,
+            59.5
+          ],
+          "dimensionsMm": [
+            1.5999999999999943,
+            134.5,
+            30.0
+          ],
+          "id": "PADDER-LEFT-ROW-1",
+          "kind": "padder3u",
+          "placementUVmm": [
+            0.0,
+            0.0
+          ],
+          "row": 0,
+          "side": "LEFT"
+        },
+        {
+          "bboxMaxMm": [
+            -102.0,
+            111.65463199999999,
+            89.5
+          ],
+          "bboxMinMm": [
+            -103.6,
+            -22.845368000000008,
+            59.5
+          ],
+          "dimensionsMm": [
+            1.5999999999999943,
+            134.5,
+            30.0
+          ],
+          "id": "PADDER-LEFT-ROW-2",
+          "kind": "padder3u",
+          "placementUVmm": [
+            134.53186,
+            0.0
+          ],
+          "row": 1,
+          "side": "LEFT"
+        },
+        {
+          "bboxMaxMm": [
+            103.6,
+            -22.877228000000002,
+            89.5
+          ],
+          "bboxMinMm": [
+            102.0,
+            -157.377228,
+            59.5
+          ],
+          "dimensionsMm": [
+            1.5999999999999943,
+            134.5,
+            30.0
+          ],
+          "id": "PADDER-RIGHT-ROW-1",
+          "kind": "padder3u",
+          "placementUVmm": [
+            0.0,
+            0.0
+          ],
+          "row": 0,
+          "side": "RIGHT"
+        },
+        {
+          "bboxMaxMm": [
+            103.6,
+            111.65463199999999,
+            89.5
+          ],
+          "bboxMinMm": [
+            102.0,
+            -22.845368000000008,
+            59.5
+          ],
+          "dimensionsMm": [
+            1.5999999999999943,
+            134.5,
+            30.0
+          ],
+          "id": "PADDER-RIGHT-ROW-2",
+          "kind": "padder3u",
+          "placementUVmm": [
+            134.53186,
+            0.0
+          ],
+          "row": 1,
+          "side": "RIGHT"
+        }
+      ],
+      "material": "Existing 3U padder PCB; user-confirmed t1.6 mm",
+      "quantity": 4
+    },
+    {
+      "category": "hardware-envelopes",
+      "exportKinds": [
+        "step",
+        "stl"
+      ],
+      "id": "7U40-R9-PCB-PADDER-1U",
+      "instances": [
+        {
+          "bboxMaxMm": [
+            -102.0,
+            157.367102,
+            89.5
+          ],
+          "bboxMinMm": [
+            -103.6,
+            111.68649299999998,
+            59.500161
+          ],
+          "dimensionsMm": [
+            1.5999999999999943,
+            45.680609000000004,
+            29.999839
+          ],
+          "id": "PADDER-LEFT-ROW-3",
+          "kind": "padder1u",
+          "placementUVmm": [
+            269.039027,
+            -0.025081
+          ],
+          "row": 2,
+          "side": "LEFT"
+        },
+        {
+          "bboxMaxMm": [
+            103.6,
+            157.367102,
+            89.5
+          ],
+          "bboxMinMm": [
+            102.0,
+            111.68649299999998,
+            59.500161
+          ],
+          "dimensionsMm": [
+            1.5999999999999943,
+            45.680609000000004,
+            29.999839
+          ],
+          "id": "PADDER-RIGHT-ROW-3",
+          "kind": "padder1u",
+          "placementUVmm": [
+            269.039027,
+            -0.025081
+          ],
+          "row": 2,
+          "side": "RIGHT"
+        }
+      ],
+      "material": "Existing 1U padder PCB; user-confirmed t1.6 mm",
+      "quantity": 2
+    },
+    {
+      "category": "hardware-envelopes",
+      "exportKinds": [
+        "step",
+        "stl"
+      ],
+      "id": "7U40-R9-HW-INNER-SPACER",
+      "instances": [
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -105.2,
+            -129.5318715,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            -113.2,
+            -139.5318715,
+            63.189426499999996
+          ],
+          "centerMm": [
+            -134.5318715,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            8.0,
+            10.0,
+            10.0
+          ],
+          "id": "INNER-SPACER-LEFT-01",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-01",
+          "role": "innerSpacer",
+          "thicknessMm": 8.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -105.2,
+            -62.26594,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            -113.2,
+            -72.26594,
+            63.189426499999996
+          ],
+          "centerMm": [
+            -67.26594,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            8.0,
+            10.0,
+            10.0
+          ],
+          "id": "INNER-SPACER-LEFT-02",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-02",
+          "role": "innerSpacer",
+          "thicknessMm": 8.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -105.2,
+            4.999991999999992,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            -113.2,
+            -5.000008000000008,
+            63.189426499999996
+          ],
+          "centerMm": [
+            -8.000000008223651e-06,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            8.0,
+            10.0,
+            10.0
+          ],
+          "id": "INNER-SPACER-LEFT-03",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-03",
+          "role": "innerSpacer",
+          "thicknessMm": 8.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -105.2,
+            72.26591450000001,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            -113.2,
+            62.26591450000001,
+            63.189426499999996
+          ],
+          "centerMm": [
+            67.26591450000001,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            8.0,
+            10.0,
+            10.0
+          ],
+          "id": "INNER-SPACER-LEFT-04",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-04",
+          "role": "innerSpacer",
+          "thicknessMm": 8.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -105.2,
+            139.496536,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            -113.2,
+            129.496536,
+            63.189426499999996
+          ],
+          "centerMm": [
+            134.496536,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            8.0,
+            10.0,
+            10.0
+          ],
+          "id": "INNER-SPACER-LEFT-05",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-05",
+          "role": "innerSpacer",
+          "thicknessMm": 8.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            113.2,
+            -129.5318715,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            105.2,
+            -139.5318715,
+            63.189426499999996
+          ],
+          "centerMm": [
+            -134.5318715,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            8.0,
+            10.0,
+            10.0
+          ],
+          "id": "INNER-SPACER-RIGHT-01",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-01",
+          "role": "innerSpacer",
+          "thicknessMm": 8.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            113.2,
+            -62.26594,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            105.2,
+            -72.26594,
+            63.189426499999996
+          ],
+          "centerMm": [
+            -67.26594,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            8.0,
+            10.0,
+            10.0
+          ],
+          "id": "INNER-SPACER-RIGHT-02",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-02",
+          "role": "innerSpacer",
+          "thicknessMm": 8.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            113.2,
+            4.999991999999992,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            105.2,
+            -5.000008000000008,
+            63.189426499999996
+          ],
+          "centerMm": [
+            -8.000000008223651e-06,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            8.0,
+            10.0,
+            10.0
+          ],
+          "id": "INNER-SPACER-RIGHT-03",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-03",
+          "role": "innerSpacer",
+          "thicknessMm": 8.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            113.2,
+            72.26591450000001,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            105.2,
+            62.26591450000001,
+            63.189426499999996
+          ],
+          "centerMm": [
+            67.26591450000001,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            8.0,
+            10.0,
+            10.0
+          ],
+          "id": "INNER-SPACER-RIGHT-04",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-04",
+          "role": "innerSpacer",
+          "thicknessMm": 8.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            113.2,
+            139.496536,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            105.2,
+            129.496536,
+            63.189426499999996
+          ],
+          "centerMm": [
+            134.496536,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            8.0,
+            10.0,
+            10.0
+          ],
+          "id": "INNER-SPACER-RIGHT-05",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-05",
+          "role": "innerSpacer",
+          "thicknessMm": 8.0
+        }
+      ],
+      "material": "Spacer envelope; material unconfirmed; t8 mm confirmed, R6 OD/ID provisional",
+      "quantity": 10
+    },
+    {
+      "category": "hardware-envelopes",
+      "exportKinds": [
+        "step",
+        "stl"
+      ],
+      "id": "7U40-R9-HW-WASHER-1MM",
+      "instances": [
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -114.7,
+            -129.5318715,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            -115.7,
+            -139.5318715,
+            63.189426499999996
+          ],
+          "centerMm": [
+            -134.5318715,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "id": "OUTER-WASHER-LEFT-01",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-01",
+          "role": "outerWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -114.7,
+            -62.26594,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            -115.7,
+            -72.26594,
+            63.189426499999996
+          ],
+          "centerMm": [
+            -67.26594,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "id": "OUTER-WASHER-LEFT-02",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-02",
+          "role": "outerWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -114.7,
+            4.999991999999992,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            -115.7,
+            -5.000008000000008,
+            63.189426499999996
+          ],
+          "centerMm": [
+            -8.000000008223651e-06,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "id": "OUTER-WASHER-LEFT-03",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-03",
+          "role": "outerWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -114.7,
+            72.26591450000001,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            -115.7,
+            62.26591450000001,
+            63.189426499999996
+          ],
+          "centerMm": [
+            67.26591450000001,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "id": "OUTER-WASHER-LEFT-04",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-04",
+          "role": "outerWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -114.7,
+            139.496536,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            -115.7,
+            129.496536,
+            63.189426499999996
+          ],
+          "centerMm": [
+            134.496536,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "id": "OUTER-WASHER-LEFT-05",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-05",
+          "role": "outerWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            115.7,
+            -129.5318715,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            114.7,
+            -139.5318715,
+            63.189426499999996
+          ],
+          "centerMm": [
+            -134.5318715,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "id": "OUTER-WASHER-RIGHT-01",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-01",
+          "role": "outerWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            115.7,
+            -62.26594,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            114.7,
+            -72.26594,
+            63.189426499999996
+          ],
+          "centerMm": [
+            -67.26594,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "id": "OUTER-WASHER-RIGHT-02",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-02",
+          "role": "outerWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            115.7,
+            4.999991999999992,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            114.7,
+            -5.000008000000008,
+            63.189426499999996
+          ],
+          "centerMm": [
+            -8.000000008223651e-06,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "id": "OUTER-WASHER-RIGHT-03",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-03",
+          "role": "outerWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            115.7,
+            72.26591450000001,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            114.7,
+            62.26591450000001,
+            63.189426499999996
+          ],
+          "centerMm": [
+            67.26591450000001,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "id": "OUTER-WASHER-RIGHT-04",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-04",
+          "role": "outerWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            115.7,
+            139.496536,
+            73.1894265
+          ],
+          "bboxMinMm": [
+            114.7,
+            129.496536,
+            63.189426499999996
+          ],
+          "centerMm": [
+            134.496536,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "id": "OUTER-WASHER-RIGHT-05",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-05",
+          "role": "outerWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -54.5,
+            160.5,
+            4.5
+          ],
+          "bboxMinMm": [
+            -64.5,
+            150.5,
+            3.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            1.0
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXN",
+          "id": "PANEL-WASHER-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            64.5,
+            160.5,
+            4.5
+          ],
+          "bboxMinMm": [
+            54.5,
+            150.5,
+            3.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            1.0
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXP",
+          "id": "PANEL-WASHER-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -54.5,
+            -150.5,
+            4.5
+          ],
+          "bboxMinMm": [
+            -64.5,
+            -160.5,
+            3.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            1.0
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+          "id": "PANEL-WASHER-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            64.5,
+            -150.5,
+            4.5
+          ],
+          "bboxMinMm": [
+            54.5,
+            -160.5,
+            3.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            1.0
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXP",
+          "id": "PANEL-WASHER-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -98.2,
+            5.0,
+            4.5
+          ],
+          "bboxMinMm": [
+            -108.2,
+            -5.0,
+            3.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            1.0
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-CENTER",
+          "id": "PANEL-WASHER-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -98.2,
+            -121.5,
+            4.5
+          ],
+          "bboxMinMm": [
+            -108.2,
+            -131.5,
+            3.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            1.0
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-FRONT",
+          "id": "PANEL-WASHER-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -98.2,
+            131.5,
+            4.5
+          ],
+          "bboxMinMm": [
+            -108.2,
+            121.5,
+            3.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            1.0
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-REAR",
+          "id": "PANEL-WASHER-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            108.2,
+            5.0,
+            4.5
+          ],
+          "bboxMinMm": [
+            98.2,
+            -5.0,
+            3.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            1.0
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-CENTER",
+          "id": "PANEL-WASHER-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            108.2,
+            -121.5,
+            4.5
+          ],
+          "bboxMinMm": [
+            98.2,
+            -131.5,
+            3.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            1.0
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-FRONT",
+          "id": "PANEL-WASHER-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            108.2,
+            131.5,
+            4.5
+          ],
+          "bboxMinMm": [
+            98.2,
+            121.5,
+            3.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            1.0
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-REAR",
+          "id": "PANEL-WASHER-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -54.5,
+            168.0,
+            16.5
+          ],
+          "bboxMinMm": [
+            -64.5,
+            167.0,
+            6.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+          "dimensionsMm": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN",
+          "id": "PANEL-WASHER-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            64.5,
+            168.0,
+            16.5
+          ],
+          "bboxMinMm": [
+            54.5,
+            167.0,
+            6.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+          "dimensionsMm": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP",
+          "id": "PANEL-WASHER-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -98.2,
+            168.0,
+            41.5
+          ],
+          "bboxMinMm": [
+            -108.2,
+            167.0,
+            31.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+          "dimensionsMm": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+          "id": "PANEL-WASHER-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -98.2,
+            168.0,
+            71.5
+          ],
+          "bboxMinMm": [
+            -108.2,
+            167.0,
+            61.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+          "dimensionsMm": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+          "id": "PANEL-WASHER-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            108.2,
+            168.0,
+            41.5
+          ],
+          "bboxMinMm": [
+            98.2,
+            167.0,
+            31.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+          "dimensionsMm": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+          "id": "PANEL-WASHER-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            108.2,
+            168.0,
+            71.5
+          ],
+          "bboxMinMm": [
+            98.2,
+            167.0,
+            61.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+          "dimensionsMm": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER",
+          "id": "PANEL-WASHER-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -54.5,
+            -167.0,
+            16.5
+          ],
+          "bboxMinMm": [
+            -64.5,
+            -168.0,
+            6.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "dimensionsMm": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+          "id": "PANEL-WASHER-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            64.5,
+            -167.0,
+            16.5
+          ],
+          "bboxMinMm": [
+            54.5,
+            -168.0,
+            6.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "dimensionsMm": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP",
+          "id": "PANEL-WASHER-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -98.2,
+            -167.0,
+            41.5
+          ],
+          "bboxMinMm": [
+            -108.2,
+            -168.0,
+            31.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "dimensionsMm": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+          "id": "PANEL-WASHER-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -98.2,
+            -167.0,
+            71.5
+          ],
+          "bboxMinMm": [
+            -108.2,
+            -168.0,
+            61.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "dimensionsMm": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+          "id": "PANEL-WASHER-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            108.2,
+            -167.0,
+            41.5
+          ],
+          "bboxMinMm": [
+            98.2,
+            -168.0,
+            31.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+          "dimensionsMm": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+          "id": "PANEL-WASHER-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            108.2,
+            -167.0,
+            71.5
+          ],
+          "bboxMinMm": [
+            98.2,
+            -168.0,
+            61.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+          "dimensionsMm": [
+            10.0,
+            1.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER",
+          "id": "PANEL-WASHER-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -114.7,
+            5.0,
+            16.5
+          ],
+          "bboxMinMm": [
+            -115.7,
+            -5.0,
+            6.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -114.7,
+            -121.5,
+            16.5
+          ],
+          "bboxMinMm": [
+            -115.7,
+            -131.5,
+            6.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -114.7,
+            131.5,
+            16.5
+          ],
+          "bboxMinMm": [
+            -115.7,
+            121.5,
+            6.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -114.7,
+            160.5,
+            41.5
+          ],
+          "bboxMinMm": [
+            -115.7,
+            150.5,
+            31.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -114.7,
+            160.5,
+            71.5
+          ],
+          "bboxMinMm": [
+            -115.7,
+            150.5,
+            61.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -114.7,
+            -150.5,
+            41.5
+          ],
+          "bboxMinMm": [
+            -115.7,
+            -160.5,
+            31.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -114.7,
+            -150.5,
+            71.5
+          ],
+          "bboxMinMm": [
+            -115.7,
+            -160.5,
+            61.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            115.7,
+            5.0,
+            16.5
+          ],
+          "bboxMinMm": [
+            114.7,
+            -5.0,
+            6.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            115.7,
+            -121.5,
+            16.5
+          ],
+          "bboxMinMm": [
+            114.7,
+            -131.5,
+            6.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            115.7,
+            131.5,
+            16.5
+          ],
+          "bboxMinMm": [
+            114.7,
+            121.5,
+            6.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            115.7,
+            160.5,
+            41.5
+          ],
+          "bboxMinMm": [
+            114.7,
+            150.5,
+            31.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            115.7,
+            160.5,
+            71.5
+          ],
+          "bboxMinMm": [
+            114.7,
+            150.5,
+            61.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            115.7,
+            -150.5,
+            41.5
+          ],
+          "bboxMinMm": [
+            114.7,
+            -160.5,
+            31.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            115.7,
+            -150.5,
+            71.5
+          ],
+          "bboxMinMm": [
+            114.7,
+            -160.5,
+            61.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+          "dimensionsMm": [
+            1.0,
+            10.0,
+            10.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER",
+          "id": "PANEL-WASHER-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
+          "role": "panelJointWasher",
+          "thicknessMm": 1.0
+        }
+      ],
+      "material": "Washer envelope; material unconfirmed; t1 mm confirmed, R6 OD/ID provisional",
+      "quantity": 46
+    },
+    {
+      "category": "hardware-envelopes",
+      "exportKinds": [
+        "step",
+        "stl"
+      ],
+      "id": "7U40-R9-HW-CASE-MOUNT-BOLT",
+      "instances": [
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -102.19999999999999,
+            -130.0318715,
+            72.6894265
+          ],
+          "bboxMinMm": [
+            -123.6,
+            -139.0318715,
+            63.689426499999996
+          ],
+          "centerMm": [
+            -134.5318715,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            21.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "MOUNT-BOLT-LEFT-01",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-01",
+          "role": "mountBolt",
+          "shaftLengthMm": 20.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -102.19999999999999,
+            -62.76594,
+            72.6894265
+          ],
+          "bboxMinMm": [
+            -123.6,
+            -71.76594,
+            63.689426499999996
+          ],
+          "centerMm": [
+            -67.26594,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            21.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "MOUNT-BOLT-LEFT-02",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-02",
+          "role": "mountBolt",
+          "shaftLengthMm": 20.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -102.19999999999999,
+            4.499991999999992,
+            72.6894265
+          ],
+          "bboxMinMm": [
+            -123.6,
+            -4.500008000000008,
+            63.689426499999996
+          ],
+          "centerMm": [
+            -8.000000008223651e-06,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            21.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "MOUNT-BOLT-LEFT-03",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-03",
+          "role": "mountBolt",
+          "shaftLengthMm": 20.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -102.19999999999999,
+            71.76591450000001,
+            72.6894265
+          ],
+          "bboxMinMm": [
+            -123.6,
+            62.76591450000001,
+            63.689426499999996
+          ],
+          "centerMm": [
+            67.26591450000001,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            21.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "MOUNT-BOLT-LEFT-04",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-04",
+          "role": "mountBolt",
+          "shaftLengthMm": 20.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -102.19999999999999,
+            138.996536,
+            72.6894265
+          ],
+          "bboxMinMm": [
+            -123.6,
+            129.996536,
+            63.689426499999996
+          ],
+          "centerMm": [
+            134.496536,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            21.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "MOUNT-BOLT-LEFT-05",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-05",
+          "role": "mountBolt",
+          "shaftLengthMm": 20.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            123.6,
+            -130.0318715,
+            72.6894265
+          ],
+          "bboxMinMm": [
+            102.19999999999999,
+            -139.0318715,
+            63.689426499999996
+          ],
+          "centerMm": [
+            -134.5318715,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            21.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "MOUNT-BOLT-RIGHT-01",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-01",
+          "role": "mountBolt",
+          "shaftLengthMm": 20.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            123.6,
+            -62.76594,
+            72.6894265
+          ],
+          "bboxMinMm": [
+            102.19999999999999,
+            -71.76594,
+            63.689426499999996
+          ],
+          "centerMm": [
+            -67.26594,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            21.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "MOUNT-BOLT-RIGHT-02",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-02",
+          "role": "mountBolt",
+          "shaftLengthMm": 20.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            123.6,
+            4.499991999999992,
+            72.6894265
+          ],
+          "bboxMinMm": [
+            102.19999999999999,
+            -4.500008000000008,
+            63.689426499999996
+          ],
+          "centerMm": [
+            -8.000000008223651e-06,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            21.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "MOUNT-BOLT-RIGHT-03",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-03",
+          "role": "mountBolt",
+          "shaftLengthMm": 20.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            123.6,
+            71.76591450000001,
+            72.6894265
+          ],
+          "bboxMinMm": [
+            102.19999999999999,
+            62.76591450000001,
+            63.689426499999996
+          ],
+          "centerMm": [
+            67.26591450000001,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            21.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "MOUNT-BOLT-RIGHT-04",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-04",
+          "role": "mountBolt",
+          "shaftLengthMm": 20.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            123.6,
+            138.996536,
+            72.6894265
+          ],
+          "bboxMinMm": [
+            102.19999999999999,
+            129.996536,
+            63.689426499999996
+          ],
+          "centerMm": [
+            134.496536,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            21.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "MOUNT-BOLT-RIGHT-05",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-05",
+          "role": "mountBolt",
+          "shaftLengthMm": 20.0
+        }
+      ],
+      "material": "M5 mount bolt envelope; head height confirmed, length and diameter provisional",
+      "quantity": 10
+    },
+    {
+      "category": "hardware-envelopes",
+      "exportKinds": [
+        "step",
+        "stl"
+      ],
+      "id": "7U40-R9-HW-RAIL-END-BOLT",
+      "instances": [
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -65.2,
+            -146.8439345,
+            79.0049775
+          ],
+          "bboxMinMm": [
+            -106.60000000000001,
+            -155.8439345,
+            70.0049775
+          ],
+          "centerMm": [
+            -151.3439345,
+            74.5049775
+          ],
+          "dimensionsMm": [
+            41.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "RAIL-END-BOLT-LEFT-01",
+          "railIndex": 0,
+          "role": "railEndBolt",
+          "shaftLengthMm": 40.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -65.2,
+            -24.343391999999994,
+            79.0049795
+          ],
+          "bboxMinMm": [
+            -106.60000000000001,
+            -33.343391999999994,
+            70.0049795
+          ],
+          "centerMm": [
+            -28.843391999999994,
+            74.5049795
+          ],
+          "dimensionsMm": [
+            41.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "RAIL-END-BOLT-LEFT-02",
+          "railIndex": 1,
+          "role": "railEndBolt",
+          "shaftLengthMm": 40.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -65.2,
+            -12.3473745,
+            79.0049795
+          ],
+          "bboxMinMm": [
+            -106.60000000000001,
+            -21.3473745,
+            70.0049795
+          ],
+          "centerMm": [
+            -16.8473745,
+            74.5049795
+          ],
+          "dimensionsMm": [
+            41.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "RAIL-END-BOLT-LEFT-03",
+          "railIndex": 2,
+          "role": "railEndBolt",
+          "shaftLengthMm": 40.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -65.2,
+            110.15319800000003,
+            79.0049795
+          ],
+          "bboxMinMm": [
+            -106.60000000000001,
+            101.15319800000003,
+            70.0049795
+          ],
+          "centerMm": [
+            105.65319800000003,
+            74.5049795
+          ],
+          "dimensionsMm": [
+            41.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "RAIL-END-BOLT-LEFT-04",
+          "railIndex": 3,
+          "role": "railEndBolt",
+          "shaftLengthMm": 40.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -65.2,
+            122.18447850000001,
+            79.0049795
+          ],
+          "bboxMinMm": [
+            -106.60000000000001,
+            113.18447850000001,
+            70.0049795
+          ],
+          "centerMm": [
+            117.68447850000001,
+            74.5049795
+          ],
+          "dimensionsMm": [
+            41.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "RAIL-END-BOLT-LEFT-05",
+          "railIndex": 4,
+          "role": "railEndBolt",
+          "shaftLengthMm": 40.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -65.2,
+            155.8439325,
+            79.0049795
+          ],
+          "bboxMinMm": [
+            -106.60000000000001,
+            146.8439325,
+            70.0049795
+          ],
+          "centerMm": [
+            151.3439325,
+            74.5049795
+          ],
+          "dimensionsMm": [
+            41.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "RAIL-END-BOLT-LEFT-06",
+          "railIndex": 5,
+          "role": "railEndBolt",
+          "shaftLengthMm": 40.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            106.60000000000001,
+            -146.8439345,
+            79.0049775
+          ],
+          "bboxMinMm": [
+            65.2,
+            -155.8439345,
+            70.0049775
+          ],
+          "centerMm": [
+            -151.3439345,
+            74.5049775
+          ],
+          "dimensionsMm": [
+            41.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "RAIL-END-BOLT-RIGHT-01",
+          "railIndex": 0,
+          "role": "railEndBolt",
+          "shaftLengthMm": 40.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            106.60000000000001,
+            -24.343391999999994,
+            79.0049795
+          ],
+          "bboxMinMm": [
+            65.2,
+            -33.343391999999994,
+            70.0049795
+          ],
+          "centerMm": [
+            -28.843391999999994,
+            74.5049795
+          ],
+          "dimensionsMm": [
+            41.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "RAIL-END-BOLT-RIGHT-02",
+          "railIndex": 1,
+          "role": "railEndBolt",
+          "shaftLengthMm": 40.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            106.60000000000001,
+            -12.3473745,
+            79.0049795
+          ],
+          "bboxMinMm": [
+            65.2,
+            -21.3473745,
+            70.0049795
+          ],
+          "centerMm": [
+            -16.8473745,
+            74.5049795
+          ],
+          "dimensionsMm": [
+            41.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "RAIL-END-BOLT-RIGHT-03",
+          "railIndex": 2,
+          "role": "railEndBolt",
+          "shaftLengthMm": 40.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            106.60000000000001,
+            110.15319800000003,
+            79.0049795
+          ],
+          "bboxMinMm": [
+            65.2,
+            101.15319800000003,
+            70.0049795
+          ],
+          "centerMm": [
+            105.65319800000003,
+            74.5049795
+          ],
+          "dimensionsMm": [
+            41.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "RAIL-END-BOLT-RIGHT-04",
+          "railIndex": 3,
+          "role": "railEndBolt",
+          "shaftLengthMm": 40.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            106.60000000000001,
+            122.18447850000001,
+            79.0049795
+          ],
+          "bboxMinMm": [
+            65.2,
+            113.18447850000001,
+            70.0049795
+          ],
+          "centerMm": [
+            117.68447850000001,
+            74.5049795
+          ],
+          "dimensionsMm": [
+            41.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "RAIL-END-BOLT-RIGHT-05",
+          "railIndex": 4,
+          "role": "railEndBolt",
+          "shaftLengthMm": 40.0
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            106.60000000000001,
+            155.8439325,
+            79.0049795
+          ],
+          "bboxMinMm": [
+            65.2,
+            146.8439325,
+            70.0049795
+          ],
+          "centerMm": [
+            151.3439325,
+            74.5049795
+          ],
+          "dimensionsMm": [
+            41.400000000000006,
+            9.0,
+            9.0
+          ],
+          "headDiameterMm": 9.0,
+          "headHeightMm": 1.4,
+          "id": "RAIL-END-BOLT-RIGHT-06",
+          "railIndex": 5,
+          "role": "railEndBolt",
+          "shaftLengthMm": 40.0
+        }
+      ],
+      "material": "M5 rail-end bolt envelope; length provisional",
+      "quantity": 12
+    },
+    {
+      "category": "hardware-envelopes",
+      "exportKinds": [
+        "step",
+        "stl"
+      ],
+      "id": "7U40-R9-HW-PANEL-JOINT-BOLT",
+      "instances": [
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -53.5,
+            161.5,
+            10.5
+          ],
+          "bboxMinMm": [
+            -65.5,
+            149.5,
+            -1.4
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+          "dimensionsMm": [
+            12.0,
+            12.0,
+            11.9
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXN",
+          "id": "PANEL-BOLT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            65.5,
+            161.5,
+            10.5
+          ],
+          "bboxMinMm": [
+            53.5,
+            149.5,
+            -1.4
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+          "dimensionsMm": [
+            12.0,
+            12.0,
+            11.9
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXP",
+          "id": "PANEL-BOLT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -53.5,
+            -149.5,
+            10.5
+          ],
+          "bboxMinMm": [
+            -65.5,
+            -161.5,
+            -1.4
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "dimensionsMm": [
+            12.0,
+            12.0,
+            11.9
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+          "id": "PANEL-BOLT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            65.5,
+            -149.5,
+            10.5
+          ],
+          "bboxMinMm": [
+            53.5,
+            -161.5,
+            -1.4
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "dimensionsMm": [
+            12.0,
+            12.0,
+            11.9
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXP",
+          "id": "PANEL-BOLT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -97.2,
+            6.0,
+            10.5
+          ],
+          "bboxMinMm": [
+            -109.2,
+            -6.0,
+            -1.4
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+          "dimensionsMm": [
+            12.0,
+            12.0,
+            11.9
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-CENTER",
+          "id": "PANEL-BOLT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -97.2,
+            -120.5,
+            10.5
+          ],
+          "bboxMinMm": [
+            -109.2,
+            -132.5,
+            -1.4
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+          "dimensionsMm": [
+            12.0,
+            12.0,
+            11.9
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-FRONT",
+          "id": "PANEL-BOLT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -97.2,
+            132.5,
+            10.5
+          ],
+          "bboxMinMm": [
+            -109.2,
+            120.5,
+            -1.4
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+          "dimensionsMm": [
+            12.0,
+            12.0,
+            11.9
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-REAR",
+          "id": "PANEL-BOLT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            109.2,
+            6.0,
+            10.5
+          ],
+          "bboxMinMm": [
+            97.2,
+            -6.0,
+            -1.4
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+          "dimensionsMm": [
+            12.0,
+            12.0,
+            11.9
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-CENTER",
+          "id": "PANEL-BOLT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            109.2,
+            -120.5,
+            10.5
+          ],
+          "bboxMinMm": [
+            97.2,
+            -132.5,
+            -1.4
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+          "dimensionsMm": [
+            12.0,
+            12.0,
+            11.9
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-FRONT",
+          "id": "PANEL-BOLT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            109.2,
+            132.5,
+            10.5
+          ],
+          "bboxMinMm": [
+            97.2,
+            120.5,
+            -1.4
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+          "dimensionsMm": [
+            12.0,
+            12.0,
+            11.9
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-REAR",
+          "id": "PANEL-BOLT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -53.5,
+            174.0,
+            17.5
+          ],
+          "bboxMinMm": [
+            -65.5,
+            162.1,
+            5.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+          "dimensionsMm": [
+            12.0,
+            11.900000000000006,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN",
+          "id": "PANEL-BOLT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            65.5,
+            174.0,
+            17.5
+          ],
+          "bboxMinMm": [
+            53.5,
+            162.1,
+            5.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+          "dimensionsMm": [
+            12.0,
+            11.900000000000006,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP",
+          "id": "PANEL-BOLT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -97.2,
+            174.0,
+            42.5
+          ],
+          "bboxMinMm": [
+            -109.2,
+            162.1,
+            30.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+          "dimensionsMm": [
+            12.0,
+            11.900000000000006,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+          "id": "PANEL-BOLT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -97.2,
+            174.0,
+            72.5
+          ],
+          "bboxMinMm": [
+            -109.2,
+            162.1,
+            60.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+          "dimensionsMm": [
+            12.0,
+            11.900000000000006,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+          "id": "PANEL-BOLT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            109.2,
+            174.0,
+            42.5
+          ],
+          "bboxMinMm": [
+            97.2,
+            162.1,
+            30.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+          "dimensionsMm": [
+            12.0,
+            11.900000000000006,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+          "id": "PANEL-BOLT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            109.2,
+            174.0,
+            72.5
+          ],
+          "bboxMinMm": [
+            97.2,
+            162.1,
+            60.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+          "dimensionsMm": [
+            12.0,
+            11.900000000000006,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER",
+          "id": "PANEL-BOLT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -53.5,
+            -162.1,
+            17.5
+          ],
+          "bboxMinMm": [
+            -65.5,
+            -174.0,
+            5.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "dimensionsMm": [
+            12.0,
+            11.900000000000006,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+          "id": "PANEL-BOLT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            65.5,
+            -162.1,
+            17.5
+          ],
+          "bboxMinMm": [
+            53.5,
+            -174.0,
+            5.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "dimensionsMm": [
+            12.0,
+            11.900000000000006,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP",
+          "id": "PANEL-BOLT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -97.2,
+            -162.1,
+            42.5
+          ],
+          "bboxMinMm": [
+            -109.2,
+            -174.0,
+            30.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "dimensionsMm": [
+            12.0,
+            11.900000000000006,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+          "id": "PANEL-BOLT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -97.2,
+            -162.1,
+            72.5
+          ],
+          "bboxMinMm": [
+            -109.2,
+            -174.0,
+            60.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "dimensionsMm": [
+            12.0,
+            11.900000000000006,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+          "id": "PANEL-BOLT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            109.2,
+            -162.1,
+            42.5
+          ],
+          "bboxMinMm": [
+            97.2,
+            -174.0,
+            30.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+          "dimensionsMm": [
+            12.0,
+            11.900000000000006,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+          "id": "PANEL-BOLT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            109.2,
+            -162.1,
+            72.5
+          ],
+          "bboxMinMm": [
+            97.2,
+            -174.0,
+            60.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+          "dimensionsMm": [
+            12.0,
+            11.900000000000006,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER",
+          "id": "PANEL-BOLT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -109.8,
+            6.0,
+            17.5
+          ],
+          "bboxMinMm": [
+            -121.7,
+            -6.0,
+            5.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -109.8,
+            -120.5,
+            17.5
+          ],
+          "bboxMinMm": [
+            -121.7,
+            -132.5,
+            5.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -109.8,
+            132.5,
+            17.5
+          ],
+          "bboxMinMm": [
+            -121.7,
+            120.5,
+            5.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -109.8,
+            161.5,
+            42.5
+          ],
+          "bboxMinMm": [
+            -121.7,
+            149.5,
+            30.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -109.8,
+            161.5,
+            72.5
+          ],
+          "bboxMinMm": [
+            -121.7,
+            149.5,
+            60.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -109.8,
+            -149.5,
+            42.5
+          ],
+          "bboxMinMm": [
+            -121.7,
+            -161.5,
+            30.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -109.8,
+            -149.5,
+            72.5
+          ],
+          "bboxMinMm": [
+            -121.7,
+            -161.5,
+            60.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            121.7,
+            6.0,
+            17.5
+          ],
+          "bboxMinMm": [
+            109.8,
+            -6.0,
+            5.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            121.7,
+            -120.5,
+            17.5
+          ],
+          "bboxMinMm": [
+            109.8,
+            -132.5,
+            5.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            121.7,
+            132.5,
+            17.5
+          ],
+          "bboxMinMm": [
+            109.8,
+            120.5,
+            5.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            121.7,
+            161.5,
+            42.5
+          ],
+          "bboxMinMm": [
+            109.8,
+            149.5,
+            30.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            121.7,
+            161.5,
+            72.5
+          ],
+          "bboxMinMm": [
+            109.8,
+            149.5,
+            60.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            121.7,
+            -149.5,
+            42.5
+          ],
+          "bboxMinMm": [
+            109.8,
+            -161.5,
+            30.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
+          "role": "panelJointBolt"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            121.7,
+            -149.5,
+            72.5
+          ],
+          "bboxMinMm": [
+            109.8,
+            -161.5,
+            60.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+          "dimensionsMm": [
+            11.900000000000006,
+            12.0,
+            12.0
+          ],
+          "headDiameterMm": 12.0,
+          "headHeightMm": 1.4,
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER",
+          "id": "PANEL-BOLT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
+          "role": "panelJointBolt"
+        }
+      ],
+      "material": "M5 panel joint bolt envelope; head height confirmed, head diameter and length provisional",
+      "quantity": 36
+    },
+    {
+      "category": "hardware-envelopes",
+      "exportKinds": [
+        "step",
+        "stl"
+      ],
+      "id": "7U40-R9-HW-M5-NUT",
+      "instances": [
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -115.69999999999999,
+            -129.91306934648298,
+            72.1894265
+          ],
+          "bboxMinMm": [
+            -120.7,
+            -139.150673653517,
+            64.1894265
+          ],
+          "centerMm": [
+            -134.5318715,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            5.000000000000014,
+            9.237604307034019,
+            8.0
+          ],
+          "id": "M5-NUT-MOUNT-LEFT-01",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-01",
+          "role": "mountNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -115.69999999999999,
+            -62.64713784648299,
+            72.1894265
+          ],
+          "bboxMinMm": [
+            -120.7,
+            -71.88474215351701,
+            64.1894265
+          ],
+          "centerMm": [
+            -67.26594,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            5.000000000000014,
+            9.237604307034019,
+            8.0
+          ],
+          "id": "M5-NUT-MOUNT-LEFT-02",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-02",
+          "role": "mountNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -115.7,
+            4.6187941535169985,
+            72.1894265
+          ],
+          "bboxMinMm": [
+            -120.70000000000005,
+            -4.618810153517015,
+            64.1894265
+          ],
+          "centerMm": [
+            -8.000000008223651e-06,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            5.000000000000043,
+            9.237604307034013,
+            8.0
+          ],
+          "id": "M5-NUT-MOUNT-LEFT-03",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-03",
+          "role": "mountNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -115.69999999999999,
+            71.88471665351702,
+            72.1894265
+          ],
+          "bboxMinMm": [
+            -120.7,
+            62.647112346483,
+            64.1894265
+          ],
+          "centerMm": [
+            67.26591450000001,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            5.000000000000014,
+            9.237604307034019,
+            8.0
+          ],
+          "id": "M5-NUT-MOUNT-LEFT-04",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-04",
+          "role": "mountNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -115.69999999999999,
+            139.115338153517,
+            72.1894265
+          ],
+          "bboxMinMm": [
+            -120.7,
+            129.87773384648298,
+            64.1894265
+          ],
+          "centerMm": [
+            134.496536,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            5.000000000000014,
+            9.237604307034019,
+            8.0
+          ],
+          "id": "M5-NUT-MOUNT-LEFT-05",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-LEFT-05",
+          "role": "mountNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            120.7,
+            -129.91306934648298,
+            72.1894265
+          ],
+          "bboxMinMm": [
+            115.7,
+            -139.150673653517,
+            64.1894265
+          ],
+          "centerMm": [
+            -134.5318715,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            5.0,
+            9.237604307034019,
+            8.0
+          ],
+          "id": "M5-NUT-MOUNT-RIGHT-01",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-01",
+          "role": "mountNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            120.7,
+            -62.64713784648299,
+            72.1894265
+          ],
+          "bboxMinMm": [
+            115.69999999999999,
+            -71.88474215351701,
+            64.1894265
+          ],
+          "centerMm": [
+            -67.26594,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            5.000000000000014,
+            9.237604307034019,
+            8.0
+          ],
+          "id": "M5-NUT-MOUNT-RIGHT-02",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-02",
+          "role": "mountNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            120.70000000000003,
+            4.6187941535169985,
+            72.1894265
+          ],
+          "bboxMinMm": [
+            115.7,
+            -4.618810153517015,
+            64.1894265
+          ],
+          "centerMm": [
+            -8.000000008223651e-06,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            5.000000000000028,
+            9.237604307034013,
+            8.0
+          ],
+          "id": "M5-NUT-MOUNT-RIGHT-03",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-03",
+          "role": "mountNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            120.7,
+            71.88471665351702,
+            72.1894265
+          ],
+          "bboxMinMm": [
+            115.69999999999999,
+            62.647112346483,
+            64.1894265
+          ],
+          "centerMm": [
+            67.26591450000001,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            5.000000000000014,
+            9.237604307034019,
+            8.0
+          ],
+          "id": "M5-NUT-MOUNT-RIGHT-04",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-04",
+          "role": "mountNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            120.7,
+            139.115338153517,
+            72.1894265
+          ],
+          "bboxMinMm": [
+            115.7,
+            129.87773384648298,
+            64.1894265
+          ],
+          "centerMm": [
+            134.496536,
+            68.1894265
+          ],
+          "dimensionsMm": [
+            5.0,
+            9.237604307034019,
+            8.0
+          ],
+          "id": "M5-NUT-MOUNT-RIGHT-05",
+          "jointId": "7U40-R9-JNT-RAIL-FIX-RIGHT-05",
+          "role": "mountNut"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -54.88119784648299,
+            159.5,
+            9.5
+          ],
+          "bboxMinMm": [
+            -64.11880215351701,
+            151.5,
+            4.499999999999999
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+          "dimensionsMm": [
+            9.237604307034019,
+            8.0,
+            5.000000000000001
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXN",
+          "id": "PANEL-NUT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            64.11880215351701,
+            159.5,
+            9.5
+          ],
+          "bboxMinMm": [
+            54.88119784648299,
+            151.5,
+            4.499999999999999
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+          "dimensionsMm": [
+            9.237604307034019,
+            8.0,
+            5.000000000000001
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXP",
+          "id": "PANEL-NUT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-BACK-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -54.88119784648299,
+            -151.5,
+            9.5
+          ],
+          "bboxMinMm": [
+            -64.11880215351701,
+            -159.5,
+            4.499999999999999
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "dimensionsMm": [
+            9.237604307034019,
+            8.0,
+            5.000000000000001
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+          "id": "PANEL-NUT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            64.11880215351701,
+            -151.5,
+            9.5
+          ],
+          "bboxMinMm": [
+            54.88119784648299,
+            -159.5,
+            4.499999999999999
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "dimensionsMm": [
+            9.237604307034019,
+            8.0,
+            5.000000000000001
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXP",
+          "id": "PANEL-NUT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-FRONT-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -98.581197846483,
+            4.000000000000001,
+            9.5
+          ],
+          "bboxMinMm": [
+            -107.81880215351701,
+            -4.0,
+            4.499999999999999
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+          "dimensionsMm": [
+            9.237604307034019,
+            8.0,
+            5.000000000000001
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-CENTER",
+          "id": "PANEL-NUT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -98.581197846483,
+            -122.5,
+            9.5
+          ],
+          "bboxMinMm": [
+            -107.81880215351701,
+            -130.5,
+            4.499999999999999
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+          "dimensionsMm": [
+            9.237604307034019,
+            8.0,
+            5.000000000000001
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-FRONT",
+          "id": "PANEL-NUT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -98.581197846483,
+            130.5,
+            9.5
+          ],
+          "bboxMinMm": [
+            -107.81880215351701,
+            122.5,
+            4.499999999999999
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+          "dimensionsMm": [
+            9.237604307034019,
+            8.0,
+            5.000000000000001
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-REAR",
+          "id": "PANEL-NUT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-LEFT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            107.81880215351701,
+            4.000000000000001,
+            9.5
+          ],
+          "bboxMinMm": [
+            98.581197846483,
+            -4.0,
+            4.499999999999999
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+          "dimensionsMm": [
+            9.237604307034019,
+            8.0,
+            5.000000000000001
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-CENTER",
+          "id": "PANEL-NUT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            107.81880215351701,
+            -122.5,
+            9.5
+          ],
+          "bboxMinMm": [
+            98.581197846483,
+            -130.5,
+            4.499999999999999
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+          "dimensionsMm": [
+            9.237604307034019,
+            8.0,
+            5.000000000000001
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-FRONT",
+          "id": "PANEL-NUT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            107.81880215351701,
+            130.5,
+            9.5
+          ],
+          "bboxMinMm": [
+            98.581197846483,
+            122.5,
+            4.499999999999999
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+          "dimensionsMm": [
+            9.237604307034019,
+            8.0,
+            5.000000000000001
+          ],
+          "holeId": "7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-REAR",
+          "id": "PANEL-NUT-7U40-R9-AL-BOTTOM-HOLE-BRACKET-BOTTOM-BOTTOM-RIGHT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -54.88119784648299,
+            172.0,
+            15.5
+          ],
+          "bboxMinMm": [
+            -64.11880215351701,
+            167.99999999999997,
+            7.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+          "dimensionsMm": [
+            9.237604307034019,
+            4.000000000000028,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN",
+          "id": "PANEL-NUT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXN",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            64.11880215351701,
+            172.0,
+            15.5
+          ],
+          "bboxMinMm": [
+            54.88119784648299,
+            167.99999999999997,
+            7.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+          "dimensionsMm": [
+            9.237604307034019,
+            4.000000000000028,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP",
+          "id": "PANEL-NUT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-BOTTOM-BACK-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-BACK-XXP",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -98.581197846483,
+            172.0,
+            40.5
+          ],
+          "bboxMinMm": [
+            -107.81880215351701,
+            167.99999999999997,
+            32.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+          "dimensionsMm": [
+            9.237604307034019,
+            4.000000000000028,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+          "id": "PANEL-NUT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -98.581197846483,
+            172.0,
+            70.5
+          ],
+          "bboxMinMm": [
+            -107.81880215351701,
+            167.99999999999997,
+            62.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+          "dimensionsMm": [
+            9.237604307034019,
+            4.000000000000028,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+          "id": "PANEL-NUT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-LEFT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            107.81880215351701,
+            172.0,
+            40.5
+          ],
+          "bboxMinMm": [
+            98.581197846483,
+            167.99999999999997,
+            32.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+          "dimensionsMm": [
+            9.237604307034019,
+            4.000000000000028,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+          "id": "PANEL-NUT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            107.81880215351701,
+            172.0,
+            70.5
+          ],
+          "bboxMinMm": [
+            98.581197846483,
+            167.99999999999997,
+            62.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+          "dimensionsMm": [
+            9.237604307034019,
+            4.000000000000028,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER",
+          "id": "PANEL-NUT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-BACK-VERTICAL-RIGHT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -54.88119784648299,
+            -167.99999999999997,
+            15.5
+          ],
+          "bboxMinMm": [
+            -64.11880215351701,
+            -172.0,
+            7.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "dimensionsMm": [
+            9.237604307034019,
+            4.000000000000028,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+          "id": "PANEL-NUT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXN",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXN",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            64.11880215351701,
+            -167.99999999999997,
+            15.5
+          ],
+          "bboxMinMm": [
+            54.88119784648299,
+            -172.0,
+            7.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "dimensionsMm": [
+            9.237604307034019,
+            4.000000000000028,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP",
+          "id": "PANEL-NUT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-BOTTOM-FRONT-XXP",
+          "jointId": "7U40-R9-JNT-BOTTOM-FRONT-XXP",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -98.581197846483,
+            -167.99999999999997,
+            40.5
+          ],
+          "bboxMinMm": [
+            -107.81880215351701,
+            -172.0,
+            32.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "dimensionsMm": [
+            9.237604307034019,
+            4.000000000000028,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+          "id": "PANEL-NUT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            -98.581197846483,
+            -167.99999999999997,
+            70.5
+          ],
+          "bboxMinMm": [
+            -107.81880215351701,
+            -172.0,
+            62.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "dimensionsMm": [
+            9.237604307034019,
+            4.000000000000028,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+          "id": "PANEL-NUT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-LEFT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            107.81880215351701,
+            -167.99999999999997,
+            40.5
+          ],
+          "bboxMinMm": [
+            98.581197846483,
+            -172.0,
+            32.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+          "dimensionsMm": [
+            9.237604307034019,
+            4.000000000000028,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+          "id": "PANEL-NUT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "Y",
+          "bboxMaxMm": [
+            107.81880215351701,
+            -167.99999999999997,
+            70.5
+          ],
+          "bboxMinMm": [
+            98.581197846483,
+            -172.0,
+            62.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+          "dimensionsMm": [
+            9.237604307034019,
+            4.000000000000028,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER",
+          "id": "PANEL-NUT-7U40-R9-AL-FRONT-BACK-HOLE-BRACKET-FRONT-VERTICAL-RIGHT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -115.7,
+            4.618802153517007,
+            15.5
+          ],
+          "bboxMinMm": [
+            -119.70000000000002,
+            -4.618802153517007,
+            7.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+          "dimensionsMm": [
+            4.000000000000014,
+            9.237604307034013,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-CENTER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -115.7,
+            -121.88119784648299,
+            15.5
+          ],
+          "bboxMinMm": [
+            -119.70000000000005,
+            -131.118802153517,
+            7.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+          "dimensionsMm": [
+            4.000000000000043,
+            9.237604307034019,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-FRONT",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -115.7,
+            131.118802153517,
+            15.5
+          ],
+          "bboxMinMm": [
+            -119.7,
+            121.88119784648299,
+            7.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+          "dimensionsMm": [
+            4.0,
+            9.237604307034019,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-BOTTOM-LEFT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-LEFT-REAR",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -115.7,
+            160.118802153517,
+            40.5
+          ],
+          "bboxMinMm": [
+            -119.7,
+            150.881197846483,
+            32.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+          "dimensionsMm": [
+            4.0,
+            9.237604307034019,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-LOWER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -115.7,
+            160.118802153517,
+            70.5
+          ],
+          "bboxMinMm": [
+            -119.7,
+            150.881197846483,
+            62.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+          "dimensionsMm": [
+            4.0,
+            9.237604307034019,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-BACK-UPPER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -115.7,
+            -150.881197846483,
+            40.5
+          ],
+          "bboxMinMm": [
+            -119.7,
+            -160.118802153517,
+            32.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "dimensionsMm": [
+            4.0,
+            9.237604307034019,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-LOWER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            -115.7,
+            -150.881197846483,
+            70.5
+          ],
+          "bboxMinMm": [
+            -119.7,
+            -160.118802153517,
+            62.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "dimensionsMm": [
+            4.0,
+            9.237604307034019,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-LEFT-VERTICAL-LEFT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-LEFT-FRONT-UPPER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            119.70000000000003,
+            4.618802153517007,
+            15.5
+          ],
+          "bboxMinMm": [
+            115.7,
+            -4.618802153517007,
+            7.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+          "dimensionsMm": [
+            4.000000000000028,
+            9.237604307034013,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-CENTER",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-CENTER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            119.70000000000003,
+            -121.88119784648299,
+            15.5
+          ],
+          "bboxMinMm": [
+            115.7,
+            -131.118802153517,
+            7.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+          "dimensionsMm": [
+            4.000000000000028,
+            9.237604307034019,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-FRONT",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-FRONT",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            119.7,
+            131.118802153517,
+            15.5
+          ],
+          "bboxMinMm": [
+            115.69999999999999,
+            121.88119784648299,
+            7.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+          "dimensionsMm": [
+            4.000000000000014,
+            9.237604307034019,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-BOTTOM-RIGHT-REAR",
+          "jointId": "7U40-R9-JNT-BOTTOM-RIGHT-REAR",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            119.7,
+            160.118802153517,
+            40.5
+          ],
+          "bboxMinMm": [
+            115.7,
+            150.881197846483,
+            32.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-LOWER",
+          "dimensionsMm": [
+            4.0,
+            9.237604307034019,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-LOWER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            119.7,
+            160.118802153517,
+            70.5
+          ],
+          "bboxMinMm": [
+            115.7,
+            150.881197846483,
+            62.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-BACK-UPPER",
+          "dimensionsMm": [
+            4.0,
+            9.237604307034019,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-BACK-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-BACK-UPPER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            119.7,
+            -150.881197846483,
+            40.5
+          ],
+          "bboxMinMm": [
+            115.7,
+            -160.118802153517,
+            32.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+          "dimensionsMm": [
+            4.0,
+            9.237604307034019,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-LOWER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-LOWER",
+          "role": "panelJointNut"
+        },
+        {
+          "axis": "X",
+          "bboxMaxMm": [
+            119.7,
+            -150.881197846483,
+            70.5
+          ],
+          "bboxMinMm": [
+            115.7,
+            -160.118802153517,
+            62.5
+          ],
+          "bracketId": "7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+          "dimensionsMm": [
+            4.0,
+            9.237604307034019,
+            8.0
+          ],
+          "holeId": "7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER",
+          "id": "PANEL-NUT-7U40-R9-AL-LEFT-RIGHT-HOLE-BRACKET-RIGHT-VERTICAL-RIGHT-FRONT-UPPER",
+          "jointId": "7U40-R9-JNT-VERTICAL-RIGHT-FRONT-UPPER",
+          "role": "panelJointNut"
+        }
+      ],
+      "material": "M5 lock nut display envelope; nut dimensions provisional",
+      "quantity": 46
+    },
+    {
+      "category": "hardware-envelopes",
+      "exportKinds": [
+        "step",
+        "stl"
+      ],
+      "id": "7U40-R9-HW-FOOT",
+      "instances": [
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -89.7,
+            -142.0,
+            0.0
+          ],
+          "bboxMinMm": [
+            -99.7,
+            -152.0,
+            -3.0
+          ],
+          "centerMm": [
+            -94.7,
+            -147.0
+          ],
+          "diameterMm": 10.0,
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            3.0
+          ],
+          "heightMm": 3.0,
+          "id": "FOOT-LEFT-FRONT",
+          "role": "foot"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            -89.7,
+            152.0,
+            0.0
+          ],
+          "bboxMinMm": [
+            -99.7,
+            142.0,
+            -3.0
+          ],
+          "centerMm": [
+            -94.7,
+            147.0
+          ],
+          "diameterMm": 10.0,
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            3.0
+          ],
+          "heightMm": 3.0,
+          "id": "FOOT-LEFT-REAR",
+          "role": "foot"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            99.7,
+            -142.0,
+            0.0
+          ],
+          "bboxMinMm": [
+            89.7,
+            -152.0,
+            -3.0
+          ],
+          "centerMm": [
+            94.7,
+            -147.0
+          ],
+          "diameterMm": 10.0,
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            3.0
+          ],
+          "heightMm": 3.0,
+          "id": "FOOT-RIGHT-FRONT",
+          "role": "foot"
+        },
+        {
+          "axis": "Z",
+          "bboxMaxMm": [
+            99.7,
+            152.0,
+            0.0
+          ],
+          "bboxMinMm": [
+            89.7,
+            142.0,
+            -3.0
+          ],
+          "centerMm": [
+            94.7,
+            147.0
+          ],
+          "diameterMm": 10.0,
+          "dimensionsMm": [
+            10.0,
+            10.0,
+            3.0
+          ],
+          "heightMm": 3.0,
+          "id": "FOOT-RIGHT-REAR",
+          "role": "foot"
+        }
+      ],
+      "material": "Black rubber foot envelope; provisional size and location; product not selected",
+      "quantity": 4
+    }
+  ],
+  "dimensions": {
+    "aluminumEnvelopeMm": [
+      229.4,
+      334.0,
+      91.0
+    ],
+    "frameDepthMm": 314.754456,
+    "frameWidthMm": 210.4,
+    "plateCount": 5,
+    "plateThicknessMm": 1.5
+  },
+  "holes": {
+    "count": 46,
+    "diameterMm": 5.5,
+    "metadataPath": "out/aluminum/hole-layout.json",
+    "roles": {
+      "bracket": 36,
+      "rail-fix": 10
+    },
+    "slotConversion": "36 bracket locations use provisional 5.5 x 7.5 mm slots from params/slots.json; 10 independent rail-fix locations remain round phi 5.5."
+  },
+  "limitations": [
+    "Nominal prototype geometry only; not an approved manufacturing release.",
+    "Bracket hole locations are the R6 proposed 10 mm inset and have not been checked against each physical bracket.",
+    "Hardware sizes not confirmed by the user remain provisional envelope assumptions.",
+    "This build does not validate fit, strength, drop, fatigue, or transport performance."
+  ],
+  "model": "7u40",
+  "parameters": {
+    "bracket_allowance_thickness": {
+      "note": "Modeling allowance; not measured.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 2.2
+    },
+    "bracket_bottom_x_offset": {
+      "note": "From inside half-width.",
+      "source": "engineering/r6-body/build_geometry.py:79",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 53.7
+    },
+    "bracket_bottom_y_offset": {
+      "note": "From outside half-depth.",
+      "source": "engineering/r6-body/build_geometry.py:80",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 40.5
+    },
+    "bracket_head_diameter": {
+      "note": "Panel joint bolt head envelope diameter is unmeasured.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 12
+    },
+    "bracket_hole_inset": {
+      "note": "R6 nominal inset from the outside panel edge; physical bracket hole centers remain unchecked.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 10
+    },
+    "bracket_outer": {
+      "note": "Existing bracket.",
+      "source": "project/source-notes/user-decisions.md",
+      "status": "user_confirmed",
+      "unit": "mm[]",
+      "value": [
+        20,
+        20,
+        16
+      ]
+    },
+    "bracket_thickness": {
+      "note": "Measured; 2.2 mm is separate modeling allowance.",
+      "source": "project/source-notes/user-decisions.md",
+      "status": "user_confirmed",
+      "unit": "mm",
+      "value": 2
+    },
+    "case_height": {
+      "note": "R6 nominal.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 91
+    },
+    "fixer_thickness": {
+      "note": "",
+      "source": "project/source-notes/user-decisions.md",
+      "status": "user_confirmed",
+      "unit": "mm",
+      "value": 1.6
+    },
+    "foot_diameter": {
+      "note": "Display envelope only; the foot product is unselected.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 10
+    },
+    "foot_height": {
+      "note": "Display envelope only; the foot product is unselected.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 3
+    },
+    "foot_inset": {
+      "note": "R6 nominal foot center inset; attachment method and product remain unselected.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 20
+    },
+    "front_back_clearance": {
+      "note": "Approximate target.",
+      "source": "project/source-notes/user-decisions.md",
+      "status": "adopted",
+      "unit": "mm",
+      "value": 8
+    },
+    "inner_spacer": {
+      "note": "",
+      "source": "project/source-notes/user-decisions.md",
+      "status": "user_confirmed",
+      "unit": "mm",
+      "value": 8
+    },
+    "metal_clearance_hole_diameter": {
+      "note": "Round M5 clearance hole for this body prototype; not the later slot solution.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 5.5
+    },
+    "metal_thickness": {
+      "note": "A5052 black anodized candidate.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "candidate",
+      "unit": "mm",
+      "value": 1.5
+    },
+    "mount_bolt_length": {
+      "note": "Display envelope only; not a screw-length recommendation.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 20
+    },
+    "mount_head_diameter": {
+      "note": "M5 head envelope diameter is unmeasured.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 9
+    },
+    "mount_head_height": {
+      "note": "Head below padder.",
+      "source": "project/source-notes/user-decisions.md",
+      "status": "user_confirmed",
+      "unit": "mm",
+      "value": 1.4
+    },
+    "mount_u": {
+      "note": "Five mount centers per side.",
+      "source": "engineering/r6-body/build_geometry.py:61",
+      "status": "provisional",
+      "unit": "mm[]",
+      "value": [
+        22.8453565,
+        90.111288,
+        157.37722,
+        224.6431425,
+        291.873764
+      ]
+    },
+    "mount_v": {
+      "note": "R6 source registration.",
+      "source": "engineering/r6-body/build_geometry.py:61,76",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 21.3105735
+    },
+    "nut_across_flats": {
+      "note": "Display envelope only; nut dimensions are not measured.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 8
+    },
+    "nut_height": {
+      "note": "Display envelope only; nut dimensions are not measured.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 5
+    },
+    "nylon_inner_diameter": {
+      "note": "Shared spacer and washer display envelope ID.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 5.5
+    },
+    "nylon_outer_diameter": {
+      "note": "Shared spacer and washer display envelope OD.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 10
+    },
+    "outer_washer": {
+      "note": "",
+      "source": "project/source-notes/user-decisions.md",
+      "status": "user_confirmed",
+      "unit": "mm",
+      "value": 1
+    },
+    "padder_thickness": {
+      "note": "",
+      "source": "project/source-notes/user-decisions.md",
+      "status": "user_confirmed",
+      "unit": "mm",
+      "value": 1.6
+    },
+    "padder_u": {
+      "note": "Three row origins.",
+      "source": "engineering/r6-body/build_geometry.py:60",
+      "status": "provisional",
+      "unit": "mm[]",
+      "value": [
+        0,
+        134.53186,
+        269.039027
+      ]
+    },
+    "padder_v": {
+      "note": "Source 1U origin correction.",
+      "source": "engineering/r6-body/build_geometry.py:60",
+      "status": "provisional",
+      "unit": "mm[]",
+      "value": [
+        0,
+        0,
+        -0.025081
+      ]
+    },
+    "rail_end_bolt_length": {
+      "note": "R6 display assumption from an old assembly guide; current fit is unchecked.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 40
+    },
+    "rail_end_head_diameter": {
+      "note": "M5 rail-end bolt head envelope diameter is unmeasured.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 9
+    },
+    "rail_hole_u": {
+      "note": "R6 registration centers copied for R9.",
+      "source": "engineering/r6-body/build_geometry.py:57-59",
+      "status": "provisional",
+      "unit": "mm[]",
+      "value": [
+        6.0332935,
+        128.533836,
+        140.5298535,
+        263.030426,
+        275.0617065,
+        308.7211605
+      ]
+    },
+    "rail_length": {
+      "note": "Source STL length; do not rescale.",
+      "source": "AGENTS.md; 40HP source STL",
+      "status": "user_confirmed",
+      "unit": "mm",
+      "value": 204
+    },
+    "rail_lip_cx": {
+      "note": "Source STL registration.",
+      "source": "engineering/r6-body/build_geometry.py:68",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 14.930564880371094
+    },
+    "rail_lip_cy": {
+      "note": "Source STL registration.",
+      "source": "engineering/r6-body/build_geometry.py:68",
+      "status": "provisional",
+      "unit": "mm",
+      "value": 6.7535858154296875
+    },
+    "vertical_bracket_center_heights": {
+      "note": "R6 nominal lower and upper vertical bracket centers.",
+      "source": "engineering/r6-body/design-parameters.json",
+      "status": "provisional",
+      "unit": "mm[]",
+      "value": [
+        36.5,
+        66.5
+      ]
+    }
+  },
+  "pcbs": {
+    "coordinateHandling": "fixer7u raw axes are swapped as in R6; source polygons are retained",
+    "fixerAndPadderThicknessMm": 1.6,
+    "sourcePath": "engineering/r6-body/source-data/panels/panel-geometry.json",
+    "sourceSha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c"
+  },
+  "productionApproved": false,
+  "rails": {
+    "count": 6,
+    "envelopeBasis": "axis-aligned boxes from rail_dimensions.json exact source mesh bbox and R6 rigid registration",
+    "rawMeshUsedForBrep": false,
+    "rescaled": false,
+    "sourceMeshSha256": "88a153fe717f582f80656fe10c74df5ec1717f53e6b202fff078532b00b06c5a",
+    "sourceRailLengthMm": 204.0
+  },
+  "revision": "R9-PROTOTYPE-01",
+  "schema": "zudo-case-r9-body-manifest-v1",
+  "sourceFiles": [
+    {
+      "path": "engineering/r6-body/build_geometry.py",
+      "purpose": "R6 7u40 geometry source ported by this module",
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d"
+    },
+    {
+      "path": "engineering/r6-body/design-parameters.json",
+      "purpose": "R6 7u40 source parameter values",
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/panel-geometry.json",
+      "purpose": "PCB outline and cutout polygons; basis for exact 1.6 mm PCB solids",
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/rail_dimensions.json",
+      "purpose": "40HP source mesh bounding box and rail registration",
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/nuts-v2-40hp-single.stl",
+      "purpose": "Original 40HP source rail; hash recorded, never rescaled or converted to BREP",
+      "sha256": "88a153fe717f582f80656fe10c74df5ec1717f53e6b202fff078532b00b06c5a"
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/aluminum/hole-layout.json",
+      "purpose": "1e-6 mm plate outline and hole-center regression reference",
+      "sha256": "ad555b88e51ab3b79d789871fb2fccc9e5c0926b89d80098cdb95b73d66ceb06"
+    }
+  ],
+  "status": "unapproved_prototype",
+  "units": "mm"
+}

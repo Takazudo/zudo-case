@@ -1,0 +1,23 @@
+{
+  "revision": "R9-PROTOTYPE-01",
+  "model": "7u40",
+  "units": "mm",
+  "status": "partial reference only; unapproved",
+  "file": {
+    "path": "out/assembly/7u40-r9-reference-assembly-NOT-APPROVED.step",
+    "sha256": "636248d02de3bc046824ce5305a09c07443ddda2e31a3590027c49e1fdec0462",
+    "bytes": 1203753
+  },
+  "included": [
+    "lid plate",
+    "four PA12 lid corners",
+    "main top guards"
+  ],
+  "excluded": [
+    "body plates",
+    "PCB detail",
+    "rail",
+    "brackets",
+    "hardware"
+  ]
+}

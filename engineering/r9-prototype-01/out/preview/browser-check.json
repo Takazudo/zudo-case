@@ -1,0 +1,32 @@
+{
+  "revision": "R9-PROTOTYPE-01",
+  "model": "7u40",
+  "status": "passed",
+  "checks": {
+    "htmlExists": true,
+    "revision": "R9-PROTOTYPE-01",
+    "dailyState": true,
+    "travelState": true,
+    "liftRange": true,
+    "provisionalKnobEnvelope": true,
+    "thinGuardComparison": true,
+    "partInfoClick": true,
+    "partInfoHasDimensions": true,
+    "mobileViewport": {
+      "width": 390,
+      "document": 390,
+      "body": 390
+    },
+    "mobileNoHorizontalScroll": true,
+    "noNetworkRequests": true,
+    "noConsoleErrors": true
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "networkRequests": [],
+  "screenshots": [
+    "engineering/r9-prototype-01/preview/shots/r9-prototype-01-daily.png",
+    "engineering/r9-prototype-01/preview/shots/r9-prototype-01-travel.png",
+    "engineering/r9-prototype-01/preview/shots/r9-prototype-01-open-mobile.png"
+  ]
+}

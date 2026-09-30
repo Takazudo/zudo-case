@@ -34,6 +34,8 @@ jobs:
           test -n "$CLOUDFLARE_API_TOKEN" || { echo 'Missing CLOUDFLARE_API_TOKEN'; exit 1; }
       - run: pnpm install --frozen-lockfile
       - run: pnpm check:docs
+      - run: pnpm check:r9
+      - run: pnpm check:r9-doc-table
       - run: node --test tests/preview-links.test.mjs
       - run: pnpm check:tables
       - run: pnpm test:ledger

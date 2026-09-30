@@ -1,0 +1,10 @@
+{
+  "slot_width": {"value": 5.5, "unit": "mm", "status": "candidate", "source": "issue #84", "note": "Test starting candidate, not supplier tolerance."},
+  "slot_length": {"value": 7.5, "unit": "mm", "status": "candidate", "source": "issue #84", "note": "Overall end-to-end length; test starting candidate."},
+  "slot_travel": {"value": 1.0, "unit": "mm", "status": "candidate", "source": "issue #84", "note": "Symmetric travel ±1.0 mm, perpendicular to each joint bend line."},
+  "edge_margin_min": {"value": 3.0, "unit": "mm", "status": "candidate", "source": "issue #84", "note": "Minimum slot boundary to plate edge."},
+  "ligament_min": {"value": 3.0, "unit": "mm", "status": "candidate", "source": "issue #84", "note": "Minimum material between hole boundaries."},
+  "bearing_overlap": {"value": 1.0, "unit": "mm", "status": "candidate", "source": "issue #84", "note": "Coverage required at extreme eccentricity."},
+  "driver_envelope_diameter": {"value": 8.0, "unit": "mm", "status": "provisional", "source": "issue #84 tool-access model", "note": "Nominal driver cylindrical envelope, not a selected tool."},
+  "driver_envelope_length": {"value": 12.0, "unit": "mm", "status": "provisional", "source": "issue #84 tool-access model", "note": "Exterior normal approach depth; physical test pending."}
+}

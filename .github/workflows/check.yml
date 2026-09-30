@@ -26,6 +26,9 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm check:docs
+      - run: pnpm check:r9
+      - run: pnpm check:r9-doc-table
+      - run: pnpm test:r9
       - run: node --test tests/preview-links.test.mjs tests/preview-origin-isolation.test.mjs
       - run: pnpm check:tables
       - run: pnpm check:assets
@@ -38,3 +41,23 @@ jobs:
       - run: pnpm check:built-preview-links
       - run: pnpm prepare:worker-assets
       - run: node --test tests/worker-assets.test.mjs tests/worker-assets-deployment.test.mjs
+
+  cad-regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: astral-sh/setup-uv@557e51de59eb14aaaba2ed9621916900a91d50c6 # v6.6.1
+        with:
+          version: 0.10.2
+      - name: Install locked CAD dependencies
+        run: uv sync --locked
+        working-directory: engineering/r9-prototype-01
+      - name: Regenerate and validate R9 CAD outputs
+        run: uv run python build.py --validate
+        working-directory: engineering/r9-prototype-01
+      - name: Regenerate candidate packages and output manifest
+        run: uv run python -m r9.package
+        working-directory: engineering/r9-prototype-01
+      - name: Check generated outputs are current
+        run: git diff --exit-code -- engineering/r9-prototype-01/out public/downloads/candidate public/previews/r9-prototype-01.html
