@@ -139,8 +139,14 @@ function mergeArtifactEntries(manifest, generatedEntries) {
   const owned = entry => entry.path.startsWith(`${OUT_DIR}/`) ||
     entry.path.startsWith("public/downloads/candidate/7u40-r9-prototype-01-") ||
     entry.path === "public/previews/r9-prototype-01.html";
-  const otherEntries = manifest.files.filter(entry => !owned(entry));
-  return { ...manifest, files: [...otherEntries, ...generatedEntries] };
+  const remaining = new Map(generatedEntries.map(entry => [entry.path, entry]));
+  const files = manifest.files.flatMap(entry => {
+    if (!owned(entry)) return [entry];
+    const replacement = remaining.get(entry.path);
+    remaining.delete(entry.path);
+    return replacement ? [replacement] : [];
+  });
+  return { ...manifest, files: [...files, ...remaining.values()] };
 }
 
 function updateReleaseState(release, candidates) {
@@ -148,6 +154,10 @@ function updateReleaseState(release, candidates) {
   const lidIds = candidates.filter(entry => entry.component === "lid").map(entry => entry.id);
   if (lidIds.length === 0) throw new Error("R9 manifest contains no lid candidates");
 
+  // Preserve the active successor designation while checking the historical R9 ledger.
+  if (release.candidate_revision && release.candidate_revision !== REVISION) {
+    return { ...release, candidate_files: [...candidates, ...(release.candidate_files ?? []).filter(entry => !owned(entry))] };
+  }
   return {
     ...release,
     current_body_geometry: "R6 nominal for 3u60/7u60; R9-PROTOTYPE-01 unapproved candidate for 7u40",

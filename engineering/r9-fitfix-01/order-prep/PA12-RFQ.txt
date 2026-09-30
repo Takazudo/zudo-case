@@ -1,0 +1,31 @@
+UNSENT DRAFT — QUOTATION / DFM REVIEW ONLY — NOT A PURCHASE ORDER
+
+Please quote one exploratory fit-test set, R9-FITFIX-01, in MJF PA12-HP,
+with black dyeing. Do not substitute PA12-CF, resin, another nylon, paint,
+or dimensional post-processing without identifying the change for review.
+
+Attachment: fit-coupons-pa12-NOT-APPROVED.zip
+13 unique STL files, 15 physical pieces. Each STL describes ONE piece.
+Use order-tables/coupons-pa12.csv inside the ZIP: C1-06 and C1-07 each have
+quantity 2; all other listed items quantity 1. Units: mm. Do not rescale.
+
+These are intentional fit-comparison coupons. Principal flat walls are
+1.2 mm, except C1-05 at 1.0 mm. Small raised identification marks have
+0.4 mm strokes and 0.3 mm relief. Please confirm both the thin walls and
+identification details can be produced, and flag fragile/missing details.
+Please preserve the mating channel, roof bearing face, and dimensional
+comparisons; do not automatically thicken, smooth, fill or repair them.
+If marks cannot be made, propose an alternative identification method first.
+
+Please confirm black dye availability, finish process and dimensional effect,
+as-delivered dimensional tolerance, orientation consistency between comparison
+samples, and whether individual part inspection is possible. The published
+±0.3 mm tolerance is larger than some intended comparison increments; no
+special tolerance is assumed in this request. Flag any need for a revised model.
+
+Please itemize printing, dyeing, minimum line charges, packing, tax, shipping,
+currency, lead time and quote validity. Shipping destination will be supplied
+by the purchaser before a landed-cost quote or order can be approved.
+Keep part IDs associated with separate bags, including the unmarked C2 guard.
+
+Quote and manufacturability review only. Manufacturing requires a separate order.

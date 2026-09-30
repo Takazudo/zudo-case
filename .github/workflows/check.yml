@@ -27,6 +27,9 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm check:docs
       - run: pnpm check:r9
+      - run: pnpm check:fitfix
+      - run: pnpm check:fit-test-order
+      - run: pnpm check:r9-ledger
       - run: pnpm check:r9-doc-table
       - run: pnpm test:r9
       - run: node --test tests/preview-links.test.mjs tests/preview-origin-isolation.test.mjs
@@ -61,3 +64,11 @@ jobs:
         working-directory: engineering/r9-prototype-01
       - name: Check generated outputs are current
         run: git diff --exit-code -- engineering/r9-prototype-01/out public/downloads/candidate public/previews/r9-prototype-01.html
+      - name: Fitfix regression tests
+        run: uv run --locked --project ../r9-prototype-01 python tests/test_geometry.py
+        working-directory: engineering/r9-fitfix-01
+      - name: Regenerate fitfix in disposable output and compare body DXFs
+        working-directory: engineering/r9-fitfix-01
+        run: |
+          uv run --locked --project ../r9-prototype-01 python build.py --out "$RUNNER_TEMP/fitfix"
+          uv run --locked --project ../r9-prototype-01 python tools/compare_r9_patterns.py --fixed "$RUNNER_TEMP/fitfix/aluminum/body"

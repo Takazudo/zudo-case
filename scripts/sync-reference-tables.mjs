@@ -22,7 +22,9 @@ for (const m of models) {
 
 蓋はアルミ板${m.candidate_lid_summary.aluminum_plate_count}枚とPA12枠${m.candidate_lid_summary.pa12_frame_piece_count}部品の直線持ち上げ式です。蓋と本体のロックはなく、運搬時の外周バンドは別部品です。嵌合、ノブ・ケーブルの空間、枠の保持は未確認です。製造承認や価格確定を示すデータではありません。
 
-<PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-aluminum-NOT-APPROVED.zip">R9アルミ候補ZIP</PreviewLink> ／ <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-pa12-NOT-APPROVED.zip">R9 PA12候補ZIP</PreviewLink> ／ <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-coupons-NOT-APPROVED.zip">R9クーポン候補ZIP</PreviewLink> ／ <PreviewLink path="/previews/r9-prototype-01.html">R9プレビュー</PreviewLink>
+${m.candidate_links ? m.candidate_links.map(x=>`<PreviewLink path="${x.path}">${x.label}</PreviewLink>`).join(' ／ ') : `<PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-aluminum-NOT-APPROVED.zip">R9アルミ候補ZIP</PreviewLink> ／ <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-pa12-NOT-APPROVED.zip">R9 PA12候補ZIP</PreviewLink> ／ <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-coupons-NOT-APPROVED.zip">R9クーポン候補ZIP</PreviewLink> ／ <PreviewLink path="/previews/r9-prototype-01.html">R9プレビュー</PreviewLink>`}
+
+${m.candidate_interface ? `基本案のガード外形は${dims(m.candidate_interface.t1p2.guard_exterior_mm)}mm、実肉厚1.2mm、ガード上端・蓋座面Z=${f(m.candidate_interface.t1p2.lid_seat_z_mm)}mm。天板は${dims(m.candidate_interface.t1p2.lid_plate_mm)}mm。ガード${m.candidate_guard_summary.t1p2.count}個で体積${f(m.candidate_guard_summary.t1p2.volume_cm3)}cm³（1.0mm案は${f(m.candidate_guard_summary.t1p0.volume_cm3)}cm³）。比較1.0mm案も専用の蓋を使います。[修正候補の詳細](../design/r9-fitfix-01.mdx)とBOMを確認してください。以下のR6/R8表と画像は履歴です。` : ''}
 
 ` : "";
  const candidateSection=candidate ? `\n\n${candidate.trim()}\n\n` : "\n\n";
@@ -39,7 +41,7 @@ ${m.id==='7u40'?'**主な確認対象。** リュックへ入れて運ぶ用途�
 
 ![R6の組立形状](/assets/images/r6/${m.id}-assembled.png)
 
-## 寸法と数量
+## ${m.candidate_revision ? "R6基準の寸法と数量（履歴）" : "寸法と数量"}
 
 | 項目 | 値 |
 |---|---|
@@ -91,15 +93,15 @@ R6の ${m.sources[0]} と [本体サマリー](/evidence/r6-family-summary.json)
  `);
  i+=10;
 }
-const cmp=models.map(m=>`| ${m.label} | ${dims(m.metal_mm)} | ${dims(m.guards.t1p2.outerEnvelopeMm)} | ${m.hardware_counts.panelBracket} | ${m.hardware_counts.mountBolt} | ${m.guards.t1p2.partCount} | ${f(m.guards.t1p2.totalVolumeCm3)} | ${m.candidate_revision ? `${m.candidate_revision}・未承認` : "—"} |`).join("\n");
+const cmp=models.map(m=>`| ${m.label} | ${dims(m.metal_mm)} | ${dims(m.candidate_interface ? [...m.candidate_interface.t1p2.guard_exterior_mm,m.candidate_interface.t1p2.guard_envelope_height_mm] : m.guards.t1p2.outerEnvelopeMm)} | ${m.hardware_counts.panelBracket} | ${m.hardware_counts.mountBolt} | ${m.guards.t1p2.partCount} | ${f(m.candidate_guard_summary?.t1p2.volume_cm3 ?? m.guards.t1p2.totalVolumeCm3)} | ${m.candidate_revision ? `${m.candidate_revision}・未承認` : "—"} |`).join("\n");
 page("models/comparison.mdx","３機種の比較","共通値と、機種によって増える板・金具・ガードを一覧にする。",40,`
-## 本体の比較
+## 本体比較（7U40は現行候補）
 
 | 機種 | アルミ外形mm | ガード込みmm | 金具 | ケース固定M5 | ガード個数 | 1.2mm体積cm³ | R9候補 |
 |---|---|---|---:|---:|---:|---:|---|
 ${cmp}
 
-7u40には本体板、長穴、ガード、蓋のR9候補データがあります。現物の嵌合・保持・運搬確認と製造判断が残り、未承認です。3u60と7u60の数値はR6/R8基準です。
+7u40の現行候補は[R9-FITFIX-01](../design/r9-fitfix-01.mdx)です。上表の7U40ガード寸法・体積は同候補の生成値です。現物の嵌合・保持・運搬確認と製造判断が残り、未承認です。3u60と7u60の数値はR6/R8基準です。
 
 単位mm。ガード込みは脚・外側ナット・蓋・バンドを除く。３機種ともアルミの高さは91mm、レールの側面離隔は8mm、前後の全ユニットからの余白は約8mm。
 
@@ -131,6 +133,8 @@ page('manufacturing/bom.mdx','ケース側BOM','レールユニットの費用�
 | 部品 | 3U60 | 7U40 | 7U60 | 仕様／状態 |
 |---|---:|---:|---:|---|
 ${bom}
+
+7U40の現行候補の材質別ZIP・試験片の数量は[R9-FITFIX-01](../design/r9-fitfix-01.mdx)を参照。1.2mm/1.0mmの蓋は専用で、C2の再利用部材（order_quantity=0）は重複発注しません。
 
 ## レール費用の除外
 

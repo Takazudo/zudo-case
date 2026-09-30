@@ -1,0 +1,37 @@
+UNSENT DRAFT — QUOTATION / DFM REVIEW ONLY — NOT A PURCHASE ORDER
+
+Please quote small flat test coupons: A5052 aluminum, nominal stock thickness
+1.5 mm, deburred, black anodized after cutting/hole machining. No bends.
+The goal is to test the same finished sheet edges and surfaces intended for a
+later enclosure. Do not substitute alloy, thickness or finish without review.
+
+BASE: fit-coupons-metal-NOT-APPROVED.zip, R9-FITFIX-01.
+Seven distinct physical plates, quantity 1 each. Every STEP/DXF pair describes
+the SAME plate, not two order items. Follow the included order table.
+
+SEPARATE OPTION: c3-hardware-coupons-R9-PROTOTYPE-01-DRAFT.zip.
+Six additional plates, each quantity 1 (bottom and wall for C3-01/02/03).
+These retain their original R9-PROTOTYPE-01 revision and hashes. C3-01 tests
+5.5 x 7.5 mm slots, C3-02 tests 5.5 x 8.5 mm slots, C3-03 has 5.5 mm round
+holes as a comparison control only. Do not replace the slotted designs.
+Please show the optional six-part cost separately and a combined shipping quote.
+
+Units: mm. Some 3D STEP models retain assembly coordinates; use each part's
+actual geometry/flat DXF, not distance from the global origin, for dimensions.
+The smallest base plates are 10.5 x 20 mm and 12 x 20 mm, both 1.5 mm thick.
+Please confirm these sizes can be cut, held, deburred and anodized. If a carrier,
+tabs, or larger blanks are required, send a proposal for review before modifying.
+No connecting tabs or burrs may remain on mating/test edges.
+
+Please report stock thickness tolerance, finished thickness, edge/hole tolerance,
+flatness, coating thickness, racking marks and their locations. Keep coating/rack
+marks away from the mating edges where practical; identify unavoidable changes.
+Do not apply unspecified large edge radii/chamfers to the test edges.
+
+Please itemize material, cutting, holes, deburring, anodizing, setup/minimum charges,
+inspection, packing, currency, tax, shipping, lead time and quote validity.
+A cheaper unfinished alternative may be quoted SEPARATELY; it would support
+initial geometric tests only and would not validate the finished-surface fit or bond.
+Shipping destination will be supplied by the purchaser before landed-cost approval.
+
+Quote/DFM review only. Manufacturing requires a separate order.

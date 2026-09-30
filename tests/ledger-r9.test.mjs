@@ -27,11 +27,11 @@ test("R9 ledger registers every CAD output, candidate package, and preview from 
   assert.equal(new Set(candidates.map(entry => entry.id)).size, candidates.length);
 
   const release = await readJson("project/release-state.json");
-  assert.deepEqual(release.candidate_files, candidates);
+  assert.deepEqual(release.candidate_files.filter(x=>x.revision === "R9-PROTOTYPE-01"), candidates);
   assert.deepEqual(release.current_lid_manufacturing, {
     model: "7u40",
-    revision: "R9-PROTOTYPE-01",
-    candidate_ids: candidates.filter(entry => entry.component === "lid").map(entry => entry.id),
+    revision: "R9-FITFIX-01",
+    candidate_ids: release.candidate_files.filter(entry => entry.revision === "R9-FITFIX-01" && entry.component === "lid").map(entry => entry.id),
   });
   assert.equal(release.slot_manufacturing, null);
   assert.equal(release.production_approved, false);
@@ -46,7 +46,7 @@ test("the saved R9 candidate state passes ledger checks without approving produc
     readJson("project/open-issues.json"),
   ]);
 
-  assert.equal(spec.models["7u40"].candidate_revision, "R9-PROTOTYPE-01");
+  assert.equal(spec.models["7u40"].candidate_revision, "R9-FITFIX-01");
   assert.ok(spec.models["7u40"].candidate_body_summary);
   assert.ok(spec.models["7u40"].candidate_lid_summary);
   for (const model of ["3u60", "7u60"]) assert.equal(spec.models[model].candidate_revision, undefined);

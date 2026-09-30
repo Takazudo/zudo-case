@@ -1,29 +1,40 @@
 {
   "snapshot": "2026-09-24",
   "current_design": "R8 simple lift-off lid + external straps",
-  "current_body_geometry": "R6 nominal for 3u60/7u60; R9-PROTOTYPE-01 unapproved candidate for 7u40",
+  "current_body_geometry": "R6 nominal for 3u60/7u60; R9-FITFIX-01 unapproved candidate for 7u40",
   "current_lid_manufacturing": {
     "model": "7u40",
-    "revision": "R9-PROTOTYPE-01",
+    "revision": "R9-FITFIX-01",
     "candidate_ids": [
-      "R9-7U40-OUT-ALUMINUM-7U40-R9-LID-PLATE-QTY1-MM-DXF",
-      "R9-7U40-OUT-ALUMINUM-7U40-R9-LID-PLATE-QTY1-MM-STEP",
-      "R9-7U40-OUT-ALUMINUM-7U40-R9-LID-PLATE-QTY1-MM-STL",
-      "R9-7U40-OUT-PA12-LID-7U40-R9-PA12-LID-FRAME-BL-QTY1-MM-STEP",
-      "R9-7U40-OUT-PA12-LID-7U40-R9-PA12-LID-FRAME-BL-QTY1-MM-STL",
-      "R9-7U40-OUT-PA12-LID-7U40-R9-PA12-LID-FRAME-BR-QTY1-MM-STEP",
-      "R9-7U40-OUT-PA12-LID-7U40-R9-PA12-LID-FRAME-BR-QTY1-MM-STL",
-      "R9-7U40-OUT-PA12-LID-7U40-R9-PA12-LID-FRAME-FL-QTY1-MM-STEP",
-      "R9-7U40-OUT-PA12-LID-7U40-R9-PA12-LID-FRAME-FL-QTY1-MM-STL",
-      "R9-7U40-OUT-PA12-LID-7U40-R9-PA12-LID-FRAME-FR-QTY1-MM-STEP",
-      "R9-7U40-OUT-PA12-LID-7U40-R9-PA12-LID-FRAME-FR-QTY1-MM-STL"
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-T1P0-7U40-R9F-LID-PLATE-QTY1-MM-DXF",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-T1P0-7U40-R9F-LID-PLATE-QTY1-MM-STEP",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-T1P0-7U40-R9F-LID-PLATE-QTY1-MM-STL",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-T1P2-7U40-R9F-LID-PLATE-QTY1-MM-DXF",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-T1P2-7U40-R9F-LID-PLATE-QTY1-MM-STEP",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-T1P2-7U40-R9F-LID-PLATE-QTY1-MM-STL",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-BL-QTY1-MM-STEP",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-BL-QTY1-MM-STL",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-BR-QTY1-MM-STEP",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-BR-QTY1-MM-STL",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-FL-QTY1-MM-STEP",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-FL-QTY1-MM-STL",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-FR-QTY1-MM-STEP",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-FR-QTY1-MM-STL",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-BL-QTY1-MM-STEP",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-BL-QTY1-MM-STL",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-BR-QTY1-MM-STEP",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-BR-QTY1-MM-STL",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-FL-QTY1-MM-STEP",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-FL-QTY1-MM-STL",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-FR-QTY1-MM-STEP",
+      "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-FR-QTY1-MM-STL"
     ]
   },
   "slot_manufacturing": null,
   "production_approved": false,
   "published_release_files": [],
-  "warning": "R9-PROTOTYPE-01 contains unapproved candidate outputs for 7u40. No file in engineering/release is an approved production release.",
-  "candidate_revision": "R9-PROTOTYPE-01",
+  "warning": "R9-FITFIX-01 is an unapproved 7u40 candidate. R9-PROTOTYPE-01 is retained as history. No approved manufacturing release.",
+  "candidate_revision": "R9-FITFIX-01",
   "candidate_files": [
     {
       "id": "R9-7U40-OUT-ALUMINUM-7U40-R9-AL-BOTTOM-QTY1-MM-DXF",
@@ -1152,6 +1163,1006 @@
       "revision": "R9-PROTOTYPE-01",
       "path": "public/previews/r9-prototype-01.html",
       "sha256": "f2ea506f47fca41caf21da56032b5ccbddade76784a5adecf177d35ed22217e9"
+    },
+    {
+      "id": "R9F-PUBLIC-DOWNLOADS-CANDIDATE-R9-FITFIX-01-7U40-T1P0-ALUMINUM-NOT-APPROVED-ZIP",
+      "component": "package",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "public/downloads/candidate/r9-fitfix-01-7u40-t1p0-aluminum-NOT-APPROVED.zip",
+      "sha256": "2d398fd3ffa86580280abf13f6cd42d7a78251613df4c56e75e7e0c684387ae7"
+    },
+    {
+      "id": "R9F-PUBLIC-DOWNLOADS-CANDIDATE-R9-FITFIX-01-7U40-T1P0-PA12-NOT-APPROVED-ZIP",
+      "component": "package",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "public/downloads/candidate/r9-fitfix-01-7u40-t1p0-pa12-NOT-APPROVED.zip",
+      "sha256": "9db0d645a9ba8379dcb8cddbd32e118c5e26bded70ff2b35b945a2c93e3f4006"
+    },
+    {
+      "id": "R9F-PUBLIC-DOWNLOADS-CANDIDATE-R9-FITFIX-01-7U40-T1P2-ALUMINUM-NOT-APPROVED-ZIP",
+      "component": "package",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "public/downloads/candidate/r9-fitfix-01-7u40-t1p2-aluminum-NOT-APPROVED.zip",
+      "sha256": "f6a3fe08b17dcdc26ae97bdf27b3a9c450c7b6d0bdd362238bb1f96f5f657546"
+    },
+    {
+      "id": "R9F-PUBLIC-DOWNLOADS-CANDIDATE-R9-FITFIX-01-7U40-T1P2-PA12-NOT-APPROVED-ZIP",
+      "component": "package",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "public/downloads/candidate/r9-fitfix-01-7u40-t1p2-pa12-NOT-APPROVED.zip",
+      "sha256": "a49c5db6671ed7c697bd55a108f734380745a653cc5693be2743b0878a2654b7"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-BODY-7U40-R9F-BODY-BOTTOM-QTY1-MM-DXF",
+      "component": "body-plate",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/body/7u40-r9f-body-bottom-qty1-mm.dxf",
+      "sha256": "df4c5af0c3e9185f5207591c5371559b704c064ee13d70b6828b3ee7248124f8"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-BODY-7U40-R9F-BODY-BOTTOM-QTY1-MM-STEP",
+      "component": "body-plate",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/body/7u40-r9f-body-bottom-qty1-mm.step",
+      "sha256": "533af80ff2033719621d6b1c6d8755557da9c613db014c19b9ace2cef9c9f48e"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-BODY-7U40-R9F-BODY-BOTTOM-QTY1-MM-STL",
+      "component": "body-plate",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/body/7u40-r9f-body-bottom-qty1-mm.stl",
+      "sha256": "de3dd0f824d6338ab4c187d817cb4d2f3c5fc7e1ea7b9481530ef9975b063f2c"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-BODY-7U40-R9F-BODY-FRONT-BACK-QTY2-MM-DXF",
+      "component": "body-plate",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/body/7u40-r9f-body-front_back-qty2-mm.dxf",
+      "sha256": "49dbb39e98a977716380d3e896fbc067e466249d58d2ef094dd33d25c8829fed"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-BODY-7U40-R9F-BODY-FRONT-BACK-QTY2-MM-STEP",
+      "component": "body-plate",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/body/7u40-r9f-body-front_back-qty2-mm.step",
+      "sha256": "332542867ac9e6e0a6d76308e558003f293b96d73ccebb54eac6580f926b5ca3"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-BODY-7U40-R9F-BODY-FRONT-BACK-QTY2-MM-STL",
+      "component": "body-plate",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/body/7u40-r9f-body-front_back-qty2-mm.stl",
+      "sha256": "90ed1ec3a0e4a7c26c9f182d6e4f191c21cc2f5ddbe83f77b4edc2facd5b1fb7"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-BODY-7U40-R9F-BODY-LEFT-RIGHT-QTY2-MM-DXF",
+      "component": "body-plate",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/body/7u40-r9f-body-left_right-qty2-mm.dxf",
+      "sha256": "5839c67b5822c2216790978ea54f8d046ef3232d0198efa6962d6fa3bfa0ea01"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-BODY-7U40-R9F-BODY-LEFT-RIGHT-QTY2-MM-STEP",
+      "component": "body-plate",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/body/7u40-r9f-body-left_right-qty2-mm.step",
+      "sha256": "68727ccb2eab69152675cdc520efb5f6e783e1572648b83fa60cf3a72fa70846"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-BODY-7U40-R9F-BODY-LEFT-RIGHT-QTY2-MM-STL",
+      "component": "body-plate",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/body/7u40-r9f-body-left_right-qty2-mm.stl",
+      "sha256": "cb20fdcaa5c269a9581f4b38469f8fe3d6869428bb13972ab8d39fc90c3ab21d"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-T1P0-7U40-R9F-LID-PLATE-QTY1-MM-DXF",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.dxf",
+      "sha256": "44c491a30900cba319942ab5d12dd3a66f9eed7624ea331241808be03fa6a811"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-T1P0-7U40-R9F-LID-PLATE-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.step",
+      "sha256": "25f0ca899bccc3bf3b7ba807e0402075de143a1fbe05d320eba5211d33c9f774"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-T1P0-7U40-R9F-LID-PLATE-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.stl",
+      "sha256": "e8d811013729ada949982a51fb840c16e14776db23ec3c28662155e1af49e8f9"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-T1P2-7U40-R9F-LID-PLATE-QTY1-MM-DXF",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/t1p2/7u40-r9f-lid-plate-qty1-mm.dxf",
+      "sha256": "8eb93e80aaeb39e8521d213b6fa16b4cdce668897a4db0db0fa559bbb790a839"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-T1P2-7U40-R9F-LID-PLATE-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/t1p2/7u40-r9f-lid-plate-qty1-mm.step",
+      "sha256": "148b21442d35cb65a14b2d3039166bb16cf4fb0af2a81863caff1e04d621b2e1"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-ALUMINUM-T1P2-7U40-R9F-LID-PLATE-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/aluminum/t1p2/7u40-r9f-lid-plate-qty1-mm.stl",
+      "sha256": "ad300d85285d8453432ad67739d6d4edecdfd5dfd7b465f0917c0f8db583c46d"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-01-7U40-R9F-C1-01-GUARD-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-01/7u40-r9f-c1-01-guard-qty1-mm.step",
+      "sha256": "e5c083afb1b8468e1d476c7c1281d8b9992590c329225ba0d57a7488615059b6"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-01-7U40-R9F-C1-01-GUARD-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-01/7u40-r9f-c1-01-guard-qty1-mm.stl",
+      "sha256": "0dd4208735c9f6de9708025e7dc77c00e8137b92e7188cc6faa2868d2f32aae7"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-02-7U40-R9F-C1-02-GUARD-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-02/7u40-r9f-c1-02-guard-qty1-mm.step",
+      "sha256": "256e554fa23a66174e2ac5f81d7d25b5028e02d83bb74a1525ef22356562ff4a"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-02-7U40-R9F-C1-02-GUARD-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-02/7u40-r9f-c1-02-guard-qty1-mm.stl",
+      "sha256": "b9d193ea63688800e9250e748e0946c38535a5cdf1a98bb470c476c6ab0a13e2"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-03-7U40-R9F-C1-03-GUARD-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-03/7u40-r9f-c1-03-guard-qty1-mm.step",
+      "sha256": "abbd00e21385234ae2df92e59a58747dcc1b33fb95648480c7265ad178786456"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-03-7U40-R9F-C1-03-GUARD-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-03/7u40-r9f-c1-03-guard-qty1-mm.stl",
+      "sha256": "0441a1dfee72787d90f2ca1e5f68e4265f9729d5a8b2e805353bc9b6683e4065"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-04-7U40-R9F-C1-04-GUARD-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-04/7u40-r9f-c1-04-guard-qty1-mm.step",
+      "sha256": "eda0362e4a4fd8fa5fb50a286b77730fc69507f8ca8f794eee07d352a02d550b"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-04-7U40-R9F-C1-04-GUARD-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-04/7u40-r9f-c1-04-guard-qty1-mm.stl",
+      "sha256": "8fa19b393853068dfa27a3c67c37fdeddcc79f1fc2159486c4e4672c0062990f"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-05-7U40-R9F-C1-05-GUARD-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-05/7u40-r9f-c1-05-guard-qty1-mm.step",
+      "sha256": "92654872b4b805829adcf9cf2ce3c37fd7499894c2cd3c2a62731a51010bc0fa"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-05-7U40-R9F-C1-05-GUARD-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-05/7u40-r9f-c1-05-guard-qty1-mm.stl",
+      "sha256": "6c896f5b903153973b69680f3aaf3a8ba998aa9740c394b0669538208bb10e82"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-06-7U40-R9F-C1-06-GUARD-QTY2-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-06/7u40-r9f-c1-06-guard-qty2-mm.step",
+      "sha256": "d6b49b52d7939430bb64e6d49f58b5115a2d97a38f57fe506c2584e6c959314c"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-06-7U40-R9F-C1-06-GUARD-QTY2-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-06/7u40-r9f-c1-06-guard-qty2-mm.stl",
+      "sha256": "f045d2566fe2dbb97de6c715dffac8ccc1eea8c6483ad65f93b331dc2710dc66"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-07-7U40-R9F-C1-07-GUARD-QTY2-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-07/7u40-r9f-c1-07-guard-qty2-mm.step",
+      "sha256": "cbf28624abf47c5e5da84464d2c7dbf5cba543dd0b122fbaf22ba794bca66c23"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-07-7U40-R9F-C1-07-GUARD-QTY2-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-07/7u40-r9f-c1-07-guard-qty2-mm.stl",
+      "sha256": "cb2b95b87b23c4c27ab13b28ca64fbdef6b5c9eb87d7f09621a51ec94efca5f2"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-METAL-7U40-R9F-C1-METAL-EDGE-QTY1-MM-DXF",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.dxf",
+      "sha256": "cfbfb94964fd001e00b3fff272d9bd80482b918533a98401b2fba4e222236d0f"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-METAL-7U40-R9F-C1-METAL-EDGE-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.step",
+      "sha256": "96b1e980d4f64edcd41362a5fe5d0dc9ccfffe678fb1ac384a5ba276c703f6bd"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C1-METAL-7U40-R9F-C1-METAL-EDGE-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.stl",
+      "sha256": "253641ca51e6747977062e2a7a76b27211ea26c79ebb50fff092c91f21298d34"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-01-7U40-R9F-C2-01-FRAME-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-frame-qty1-mm.step",
+      "sha256": "68dab86cbb35c9967930f236aeb480a8809f90d8b4a7153e0b3f6efe823a6d3f"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-01-7U40-R9F-C2-01-FRAME-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-frame-qty1-mm.stl",
+      "sha256": "bea3aac6e208bc980ece26428ab09d34cf7d1fdca8009879283b9f74e648f3a7"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-01-7U40-R9F-C2-01-GUARD-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-guard-qty1-mm.step",
+      "sha256": "95f3152f4f01d4cc744da00d7b4daf18e5df42650346d0b0160d8a0a54af5aba"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-01-7U40-R9F-C2-01-GUARD-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-guard-qty1-mm.stl",
+      "sha256": "bc601c3adf11f21da28ed424675cb682dd2cc3b1118e9cdb0ed92288daf9e3db"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-01-7U40-R9F-C2-01-PLATE-QTY1-MM-DXF",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.dxf",
+      "sha256": "4c95e5953b9490163a318d2d9822a44b5c1d20a6054d1960a947d666f5e7e18d"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-01-7U40-R9F-C2-01-PLATE-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.step",
+      "sha256": "5778e3c786f5349c3dd88b88ed63da8f09b7e1a06ec066fd96aa89d0744f3112"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-01-7U40-R9F-C2-01-PLATE-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.stl",
+      "sha256": "da6cf4a7ee8ab636f8af53ba6bcda5a37192707441da651ea076da464f386b54"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-01-7U40-R9F-C2-01-WALL-QTY1-MM-DXF",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.dxf",
+      "sha256": "acb1517d5967f14bcc8cffdd80a526ac298486cc20957b12afef2aa32ed3585f"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-01-7U40-R9F-C2-01-WALL-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.step",
+      "sha256": "b665109c5993d0165690b2d08df6430db651ab729a63480bf77e264f5f8cc870"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-01-7U40-R9F-C2-01-WALL-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.stl",
+      "sha256": "bc3cadc2e5a4654bc09c98c8830e0b88e61c23457d7ec5060a61664bf79c6583"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-02-7U40-R9F-C2-02-FRAME-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-02/7u40-r9f-c2-02-frame-qty1-mm.step",
+      "sha256": "b6c686a1597320358a7821e01f1feb0f431b495d2d55ed23510f0d1abb0c621a"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-02-7U40-R9F-C2-02-FRAME-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-02/7u40-r9f-c2-02-frame-qty1-mm.stl",
+      "sha256": "bf15627f3e8842e53894f4d1fa97a10229abee1d7897f4dffa68fcf6de4424a4"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-02-7U40-R9F-C2-02-GUARD-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-02/7u40-r9f-c2-02-guard-qty1-mm.step",
+      "sha256": "95f3152f4f01d4cc744da00d7b4daf18e5df42650346d0b0160d8a0a54af5aba"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-02-7U40-R9F-C2-02-GUARD-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-02/7u40-r9f-c2-02-guard-qty1-mm.stl",
+      "sha256": "bc601c3adf11f21da28ed424675cb682dd2cc3b1118e9cdb0ed92288daf9e3db"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-02-7U40-R9F-C2-02-PLATE-QTY1-MM-DXF",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-02/7u40-r9f-c2-02-plate-qty1-mm.dxf",
+      "sha256": "4c95e5953b9490163a318d2d9822a44b5c1d20a6054d1960a947d666f5e7e18d"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-02-7U40-R9F-C2-02-PLATE-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-02/7u40-r9f-c2-02-plate-qty1-mm.step",
+      "sha256": "5778e3c786f5349c3dd88b88ed63da8f09b7e1a06ec066fd96aa89d0744f3112"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-02-7U40-R9F-C2-02-PLATE-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-02/7u40-r9f-c2-02-plate-qty1-mm.stl",
+      "sha256": "da6cf4a7ee8ab636f8af53ba6bcda5a37192707441da651ea076da464f386b54"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-02-7U40-R9F-C2-02-WALL-QTY1-MM-DXF",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-02/7u40-r9f-c2-02-wall-qty1-mm.dxf",
+      "sha256": "acb1517d5967f14bcc8cffdd80a526ac298486cc20957b12afef2aa32ed3585f"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-02-7U40-R9F-C2-02-WALL-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-02/7u40-r9f-c2-02-wall-qty1-mm.step",
+      "sha256": "b665109c5993d0165690b2d08df6430db651ab729a63480bf77e264f5f8cc870"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-02-7U40-R9F-C2-02-WALL-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-02/7u40-r9f-c2-02-wall-qty1-mm.stl",
+      "sha256": "bc3cadc2e5a4654bc09c98c8830e0b88e61c23457d7ec5060a61664bf79c6583"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-03-7U40-R9F-C2-03-FRAME-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-03/7u40-r9f-c2-03-frame-qty1-mm.step",
+      "sha256": "a6d1c96c152a8813236dcef088ef5096bf7dd5fdedfd82f1fc1136e6bfd56966"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-03-7U40-R9F-C2-03-FRAME-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-03/7u40-r9f-c2-03-frame-qty1-mm.stl",
+      "sha256": "d4413f0eb5b49fec34b54af5293fa52a7af98a52109983d0c72c86948be4bb13"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-03-7U40-R9F-C2-03-GUARD-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-03/7u40-r9f-c2-03-guard-qty1-mm.step",
+      "sha256": "95f3152f4f01d4cc744da00d7b4daf18e5df42650346d0b0160d8a0a54af5aba"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-03-7U40-R9F-C2-03-GUARD-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-03/7u40-r9f-c2-03-guard-qty1-mm.stl",
+      "sha256": "bc601c3adf11f21da28ed424675cb682dd2cc3b1118e9cdb0ed92288daf9e3db"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-03-7U40-R9F-C2-03-PLATE-QTY1-MM-DXF",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-03/7u40-r9f-c2-03-plate-qty1-mm.dxf",
+      "sha256": "4c95e5953b9490163a318d2d9822a44b5c1d20a6054d1960a947d666f5e7e18d"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-03-7U40-R9F-C2-03-PLATE-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-03/7u40-r9f-c2-03-plate-qty1-mm.step",
+      "sha256": "5778e3c786f5349c3dd88b88ed63da8f09b7e1a06ec066fd96aa89d0744f3112"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-03-7U40-R9F-C2-03-PLATE-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-03/7u40-r9f-c2-03-plate-qty1-mm.stl",
+      "sha256": "da6cf4a7ee8ab636f8af53ba6bcda5a37192707441da651ea076da464f386b54"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-03-7U40-R9F-C2-03-WALL-QTY1-MM-DXF",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-03/7u40-r9f-c2-03-wall-qty1-mm.dxf",
+      "sha256": "acb1517d5967f14bcc8cffdd80a526ac298486cc20957b12afef2aa32ed3585f"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-03-7U40-R9F-C2-03-WALL-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-03/7u40-r9f-c2-03-wall-qty1-mm.step",
+      "sha256": "b665109c5993d0165690b2d08df6430db651ab729a63480bf77e264f5f8cc870"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C2-03-7U40-R9F-C2-03-WALL-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-03/7u40-r9f-c2-03-wall-qty1-mm.stl",
+      "sha256": "bc3cadc2e5a4654bc09c98c8830e0b88e61c23457d7ec5060a61664bf79c6583"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C4-01-7U40-R9F-C4-01-FLOOR-QTY1-MM-DXF",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.dxf",
+      "sha256": "5644862d7ac3390fb53ca2c554673c5b384ad6183fd46dae2691f3d40ff16fc1"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C4-01-7U40-R9F-C4-01-FLOOR-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.step",
+      "sha256": "6c21614c25f571960ea7834a39b6d96fafa96971cd1363f32650ff22c83f0981"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C4-01-7U40-R9F-C4-01-FLOOR-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.stl",
+      "sha256": "db7cfe77049539fa1bd40ef74d3424577fecd7c90b1cf8cc8618a84884b39b56"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C4-01-7U40-R9F-C4-01-LOWER-GUARD-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-lower-guard-qty1-mm.step",
+      "sha256": "63e38510fd6d78d2231e64659f5a755e5bba2a5ac728ef04d1b34f14557678cc"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C4-01-7U40-R9F-C4-01-LOWER-GUARD-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-lower-guard-qty1-mm.stl",
+      "sha256": "4c0c9e664c7347ee7e3f157e6feca2269e4f8de99ec4c729a9147c91bd62861f"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C4-01-7U40-R9F-C4-01-WALL-QTY1-MM-DXF",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.dxf",
+      "sha256": "daf29923d8d416231db5fcf2bf0c04d8722789c2f87e392bd1f739d11344f383"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C4-01-7U40-R9F-C4-01-WALL-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.step",
+      "sha256": "5f93a830222b02953328c15e22c7db98a3c71337c657c33bea06c94d3ac51306"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C4-01-7U40-R9F-C4-01-WALL-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.stl",
+      "sha256": "39ed891e457b35b0e153315f5b12ab257b782039afef6b5b3c799c8a53e02e3b"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C5-01-7U40-R9F-C5-01-FRONT-QTY1-MM-DXF",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.dxf",
+      "sha256": "2dabc397a3dd415361c5ec18d3f26767e958e7ed0668cd56277b6671a7722ff7"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C5-01-7U40-R9F-C5-01-FRONT-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.step",
+      "sha256": "a900b059cbae0aa43cd33e189459bd6e6f02c06733c54e54c13a3f9741430095"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C5-01-7U40-R9F-C5-01-FRONT-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.stl",
+      "sha256": "a5449ea295d5fe1ad9ebfd306bb8cff83b602e9a5078a81e280fb3d3d68c6751"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C5-01-7U40-R9F-C5-01-LEFT-QTY1-MM-DXF",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.dxf",
+      "sha256": "dd30b8aca768f5bc5bd90ccde4eb8aedf822f5fb1e0732c48da638e89f8c08b0"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C5-01-7U40-R9F-C5-01-LEFT-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.step",
+      "sha256": "265773012208add9d31cee046cd805c6b14e64d78142b31689cac01af60c0806"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C5-01-7U40-R9F-C5-01-LEFT-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.stl",
+      "sha256": "e08f89b5f3994fad632ef5dcf02eb84e54019d085084a3ff841a8be60c4b2f29"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C5-01-7U40-R9F-C5-01-UPPER-GUARD-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-upper-guard-qty1-mm.step",
+      "sha256": "c43f7ed12230dd70e577408d86bd8bc196297c869a311f78c720355c2003a4af"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-COUPONS-C5-01-7U40-R9F-C5-01-UPPER-GUARD-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-upper-guard-qty1-mm.stl",
+      "sha256": "208be69e650e26432335d3a2b1a0f5ce6894f82cb4a058334bfe400df20434a4"
+    },
+    {
+      "id": "R9F-PUBLIC-DOWNLOADS-CANDIDATE-R9-FITFIX-01-FIT-COUPONS-METAL-NOT-APPROVED-ZIP",
+      "component": "package",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "public/downloads/candidate/r9-fitfix-01-fit-coupons-metal-NOT-APPROVED.zip",
+      "sha256": "b88af8af668425256b2ada3ffd700a66797f0d6738ba380dd17479308178f510"
+    },
+    {
+      "id": "R9F-PUBLIC-DOWNLOADS-CANDIDATE-R9-FITFIX-01-FIT-COUPONS-PA12-NOT-APPROVED-ZIP",
+      "component": "package",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "public/downloads/candidate/r9-fitfix-01-fit-coupons-pa12-NOT-APPROVED.zip",
+      "sha256": "0951e9269362ad8542bc9cd5f4c2918e9035a4844f55a4f5f388cf65c451fdb2"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-GUARDS-7U40-R9F-T1P0-LOWER-DEPTH-A-QTY2-MM-STEP",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-a-qty2-mm.step",
+      "sha256": "63e3ae54f508b797b7ff30fc2d6c43da489ba26f12f520d44ebf32fc978d9061"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-GUARDS-7U40-R9F-T1P0-LOWER-DEPTH-A-QTY2-MM-STL",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-a-qty2-mm.stl",
+      "sha256": "2024440776751917e8a692680b4d25d657300cdbd77b524590da6b9bf07d6218"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-GUARDS-7U40-R9F-T1P0-LOWER-DEPTH-B-QTY2-MM-STEP",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-b-qty2-mm.step",
+      "sha256": "02a32ea718536464abf0d8c7e8a876aced72352619c34c1f57ffc2fcddafe009"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-GUARDS-7U40-R9F-T1P0-LOWER-DEPTH-B-QTY2-MM-STL",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-b-qty2-mm.stl",
+      "sha256": "49df03354f019e265c524378fbf30a3b540debccc347cc1a46f481d84235df22"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-GUARDS-7U40-R9F-T1P0-LOWER-WIDTH-HALF-QTY4-MM-STEP",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/guards/7u40-r9f-t1p0-lower-width-half-qty4-mm.step",
+      "sha256": "4364d456bac19414475e04c9d5638df4f6fa21b945731b408bb8cd454359edac"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-GUARDS-7U40-R9F-T1P0-LOWER-WIDTH-HALF-QTY4-MM-STL",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/guards/7u40-r9f-t1p0-lower-width-half-qty4-mm.stl",
+      "sha256": "ba5e929d0c40d7d95ff62900c98f9821a93cbac80c9e0747ffa9c5463621aa1c"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-GUARDS-7U40-R9F-T1P0-TOP-A-QTY2-MM-STEP",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/guards/7u40-r9f-t1p0-top-a-qty2-mm.step",
+      "sha256": "f1d37cc93994409fc48dee27b2fe2aaa262b6fc957834877deb99855c01810b2"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-GUARDS-7U40-R9F-T1P0-TOP-A-QTY2-MM-STL",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/guards/7u40-r9f-t1p0-top-a-qty2-mm.stl",
+      "sha256": "a32e16a97eeae899a9bbee5596ec5f62665b29dc02f14550d95167ca0e7a4a18"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-GUARDS-7U40-R9F-T1P0-TOP-B-QTY2-MM-STEP",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/guards/7u40-r9f-t1p0-top-b-qty2-mm.step",
+      "sha256": "d17a072cc01cbc5fca8f12b2f048b00d3f4c23094a4d6d6cbe3086d8e6c57707"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-GUARDS-7U40-R9F-T1P0-TOP-B-QTY2-MM-STL",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/guards/7u40-r9f-t1p0-top-b-qty2-mm.stl",
+      "sha256": "092093e323877e35e51a698a1636f9895a9e0388bd9e884bdf283212b6d980b7"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-GUARDS-7U40-R9F-T1P0-VERTICAL-CORNER-QTY4-MM-STEP",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/guards/7u40-r9f-t1p0-vertical-corner-qty4-mm.step",
+      "sha256": "27df885ec3a6961d4285e2cce1ea1a3e7f217125907b1fdc20ce5a4f8ca3d81a"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-GUARDS-7U40-R9F-T1P0-VERTICAL-CORNER-QTY4-MM-STL",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/guards/7u40-r9f-t1p0-vertical-corner-qty4-mm.stl",
+      "sha256": "f0a6784ab02146ee4889be2278e8a0d60836d1a816fd676e39b88b9a3f7675d3"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-BL-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-bl-qty1-mm.step",
+      "sha256": "cdb06b0308e9ff517dd60a44b37e97a73f56ee9d99bd92985ada8b865b300c6d"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-BL-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-bl-qty1-mm.stl",
+      "sha256": "797b145505e50a9526e7cee980f78b6f893ec940e796a104449f371bc1808c4f"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-BR-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-br-qty1-mm.step",
+      "sha256": "07b1a6cb3adb7f23d49fa248a1a9e12696dad086a7047732ec3cae56af446f90"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-BR-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-br-qty1-mm.stl",
+      "sha256": "113f2ec361f0bf1cf3e17d6b1f60aa2ea8042320ee0ee23ccf5473ebf54cb317"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-FL-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-fl-qty1-mm.step",
+      "sha256": "ed5b720c9d0e2e75087ff6827bc2477c735c5d0deb0665a582ee5420f68820f4"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-FL-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-fl-qty1-mm.stl",
+      "sha256": "f6aa9a92362b6febdaf7efffb532bc0a939abe65b23d6352906fab3ab382a48b"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-FR-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-fr-qty1-mm.step",
+      "sha256": "f434edc51e5ca50fade61ddb105e341b9fd8597d8665463b0d7c56573d709a47"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P0-LID-7U40-R9F-LID-FRAME-FR-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-fr-qty1-mm.stl",
+      "sha256": "3b5a370fc2f966d030f7ed14a1186d7b89f833495bbe277a4c0c3ebfd5df6ba2"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-GUARDS-7U40-R9F-T1P2-LOWER-DEPTH-A-QTY2-MM-STEP",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/guards/7u40-r9f-t1p2-lower-depth-a-qty2-mm.step",
+      "sha256": "e81e55985562be16e7c5cc2f79b854781ad36c2383e433d351c4e1388221973d"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-GUARDS-7U40-R9F-T1P2-LOWER-DEPTH-A-QTY2-MM-STL",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/guards/7u40-r9f-t1p2-lower-depth-a-qty2-mm.stl",
+      "sha256": "e50cf726979fe394abf50c46e9ba01fbc5a4b8d1aeb16f93178e0247ac816b5e"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-GUARDS-7U40-R9F-T1P2-LOWER-DEPTH-B-QTY2-MM-STEP",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/guards/7u40-r9f-t1p2-lower-depth-b-qty2-mm.step",
+      "sha256": "89fb2637bede51681346662b49cfdb7f9296404dc071aead88c613aa14436954"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-GUARDS-7U40-R9F-T1P2-LOWER-DEPTH-B-QTY2-MM-STL",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/guards/7u40-r9f-t1p2-lower-depth-b-qty2-mm.stl",
+      "sha256": "8ef52037ddc510501c3e5890b265aed04aa998699dfe4e05b92cd1c8363cd622"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-GUARDS-7U40-R9F-T1P2-LOWER-WIDTH-HALF-QTY4-MM-STEP",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/guards/7u40-r9f-t1p2-lower-width-half-qty4-mm.step",
+      "sha256": "9ea58a8605d4a809fd3a3e1e2bbef1bd4c6973d08f911c042e8397c26e7ac11d"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-GUARDS-7U40-R9F-T1P2-LOWER-WIDTH-HALF-QTY4-MM-STL",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/guards/7u40-r9f-t1p2-lower-width-half-qty4-mm.stl",
+      "sha256": "9bab761e625f206059a20513e41a3fe4f0991376835c9a1b8b00311ecac013a3"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-GUARDS-7U40-R9F-T1P2-TOP-A-QTY2-MM-STEP",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/guards/7u40-r9f-t1p2-top-a-qty2-mm.step",
+      "sha256": "18b420272f9c348fd6cdd2dd249a54247005284ddad42e918d59a8d98153ef7e"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-GUARDS-7U40-R9F-T1P2-TOP-A-QTY2-MM-STL",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/guards/7u40-r9f-t1p2-top-a-qty2-mm.stl",
+      "sha256": "b5a10d75fbfb4e03f7f4933505f9598b08124cdd7308ea76d2e5c709f732cea0"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-GUARDS-7U40-R9F-T1P2-TOP-B-QTY2-MM-STEP",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/guards/7u40-r9f-t1p2-top-b-qty2-mm.step",
+      "sha256": "5d7d8531ef474595fe27d5bf9cd198d1dc87c2d32057152596518f39a33be1ec"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-GUARDS-7U40-R9F-T1P2-TOP-B-QTY2-MM-STL",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/guards/7u40-r9f-t1p2-top-b-qty2-mm.stl",
+      "sha256": "48c47c200d26aefb71cc6bb307a4bea7f7b49d91ac14d781db49bf34448c9154"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-GUARDS-7U40-R9F-T1P2-VERTICAL-CORNER-QTY4-MM-STEP",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/guards/7u40-r9f-t1p2-vertical-corner-qty4-mm.step",
+      "sha256": "2426421dd621ed95cd03e736b7ac971391c16431984443553f5eab492add8c13"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-GUARDS-7U40-R9F-T1P2-VERTICAL-CORNER-QTY4-MM-STL",
+      "component": "guard",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/guards/7u40-r9f-t1p2-vertical-corner-qty4-mm.stl",
+      "sha256": "0f72dfdc45cdf9481af17da39baaf27d600a48510888846bcc391d1c657b207c"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-BL-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-bl-qty1-mm.step",
+      "sha256": "73563937640b4b5984d7dbbc4c1eb2f266edbb0311faa55a532e2f9b1a5b3664"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-BL-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-bl-qty1-mm.stl",
+      "sha256": "f5999ef2a89518a400e5df5a5e2ca2a3f3c4e13ba8f787d022820a2d619779c4"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-BR-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-br-qty1-mm.step",
+      "sha256": "a7d119ba1581a101811e4ac777cabd79395706d021027ed21b8484699bf8a7cd"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-BR-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-br-qty1-mm.stl",
+      "sha256": "32e0437543f82917cfb17d906d27cf0b62b5503bf115907a808f227a95390f62"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-FL-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-fl-qty1-mm.step",
+      "sha256": "f479fd0678e4172a591903ba8922c15c7b2b0d008ee9bf82da73d03aae1bdfe8"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-FL-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-fl-qty1-mm.stl",
+      "sha256": "006e963c1e8b2176da851ad4b5407a691e57323f72484de478b5c12c3d9b90b8"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-FR-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-fr-qty1-mm.step",
+      "sha256": "e68f51e7c36f3586d9d1f576869649ff3502f211d7807815a622af5bed3d86b0"
+    },
+    {
+      "id": "R9F-ENGINEERING-R9-FITFIX-01-OUT-PA12-T1P2-LID-7U40-R9F-LID-FRAME-FR-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-fr-qty1-mm.stl",
+      "sha256": "80e787685356f5373c94c55aa8459026014917e6d78552f32366f26ec434ec74"
+    },
+    {
+      "id": "R9F-PUBLIC-PREVIEWS-R9-FITFIX-01-HTML",
+      "component": "preview",
+      "model": "7u40",
+      "revision": "R9-FITFIX-01",
+      "path": "public/previews/r9-fitfix-01.html",
+      "sha256": "6d8f6e3fba36c4f234176291d5f54b4a56c52eb4abbff051d7a42b63cd67dc3d"
     }
   ]
 }

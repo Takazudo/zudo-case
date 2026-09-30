@@ -1,0 +1,50 @@
+---
+title: "7U40 R9-FITFIX-01 修正候補"
+description: "金属への侵入、ガード実肉厚、蓋座面を修正した未承認候補。"
+sidebar_position: 80
+---
+
+7U40の現行候補は **R9-FITFIX-01（未承認）**。下辺ガードをL字にし、上端の内側返しを矩形リングの内周へ限定した。横方向の嵌合・接着空間と実肉厚を分離し、金属上端に直接着座する屋根から蓋座面を導く。旧[R9-PROTOTYPE-01](./r9-prototype-01.mdx)は修正前の履歴として保存する。
+
+<PreviewLink path="/previews/r9-fitfix-01.html">修正候補を別タブで開く</PreviewLink>
+
+<PreviewFrame path="/previews/r9-fitfix-01.html" title="R9-FITFIX-01 7U40・ガード・蓋・試験片" />
+
+プレビューは同じ生成CADの三角形を内蔵する。1.2/1.0mm、蓋の開閉、C1/C2/C4/C5を切り替えられる。バンドは模式表示、断面は表示用。WebGLが使えない環境ではCanvas簡易描画へ切り替わる。
+
+## 寸法と支持面
+
+| 項目 | 基本1.2mm | 比較1.0mm |
+|---|---:|---:|
+| ガード外形W×D | 232.4×337.0mm | 232.0×336.6mm |
+| ガード上端・蓋座面Z | 92.2mm | 92.0mm |
+| ガード全高（脚を除く） | 93.4mm | 93.0mm |
+| 天板下面Z | 122.2mm | 122.0mm |
+| 蓋天板 | 228.2×332.8×1.5mm | 227.8×332.4×1.5mm |
+
+本体アルミは229.4×334×91mm。Z=0は底板下面。全高と上端座標は別の値である。1.2/1.0mm案ではガードだけでなく蓋枠・天板も専用品を使う。
+
+側面の0.30mmはfit0.15＋adhesive0.15の空間配分候補。0.15mmテープの選定や保持性能を確認した意味ではない。屋根下面Z=91は金属上端へ直接当たり、下辺の水平フランジは底板下面へ直接当たる。上下の接着層を追加するなら座面高さを再設計する。
+
+[小型試験片の見積準備セット](../manufacturing/fit-test-order.mdx)に、数量確定案・未送信文案・実物試験手順をまとめた。
+
+## 材質別データと数量
+
+- <PreviewLink path="/downloads/candidate/r9-fitfix-01-7u40-t1p2-pa12-NOT-APPROVED.zip">基本1.2mm・ガードと蓋枠PA12</PreviewLink>
+- <PreviewLink path="/downloads/candidate/r9-fitfix-01-7u40-t1p0-pa12-NOT-APPROVED.zip">比較1.0mm・ガードと蓋枠PA12</PreviewLink>
+- <PreviewLink path="/downloads/candidate/r9-fitfix-01-7u40-t1p2-aluminum-NOT-APPROVED.zip">基本1.2mm用・本体５枚＋蓋天板アルミ</PreviewLink>
+- <PreviewLink path="/downloads/candidate/r9-fitfix-01-7u40-t1p0-aluminum-NOT-APPROVED.zip">比較1.0mm用・本体５枚＋蓋天板アルミ</PreviewLink>
+- <PreviewLink path="/downloads/candidate/r9-fitfix-01-fit-coupons-pa12-NOT-APPROVED.zip">C1/C2/C4/C5・PA12試験片</PreviewLink>
+- <PreviewLink path="/downloads/candidate/r9-fitfix-01-fit-coupons-metal-NOT-APPROVED.zip">試験片・アルミSTEP/DXF</PreviewLink>
+
+本体ガードは各案16個、蓋枠4個。各ZIPのorder-tablesと `engineering/r9-fitfix-01/out/BOM.csv` のorder_quantityを使う。C1-06/07は各２個で対を作る。C2-02/03の壁・ガード・天板はC2-01から再利用し、数量0の部材を重複発注しない。本体３種類・蓋天板２案のSTEP/DXFは同フォルダーのaluminum内にある。
+
+現在価格は未見積。旧R3の2,264円は本候補の価格ではない。
+
+## 検証と残件
+
+固定環境の再生成、回帰テスト、本体３パターンの旧R9 DXF照合、生成資産と公開コピーのSHA-256照合は `engineering/r9-fitfix-01/verification/` のローカル記録を参照する。生成時の公称検査は `out/validation.json`、Python/CadQueryの実行版は `out/environment.json` に記録する。
+
+幾何検査はガード16個×穴を無視したアルミ５枚の侵入、主要平坦壁の厚さ、分割済みガードへの支持面積、0〜15mmの19位置での蓋着脱を対象とする。サンプル間の連続掃引や現物試験ではない。保存レールはSTL表示と保守的な外接箱、金具・PCBは保存元の公称形状を使う。
+
+次はC1/C2/C4/C5で嵌合と接着保持を確認する。[空欄記録票](../verification/coupon-record.mdx)にファイルSHA-256、実板厚、表面処理、接着品番、観察を記入する。C3の座金受け面、ねじ・工具アクセス、実ノブ高さ、長い部品の反り、バンド締付と運搬は別途残る。G01〜G11の現物ゲートと製造承認は未完了。

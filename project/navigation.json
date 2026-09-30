@@ -54,6 +54,12 @@
     "sidebar_position": 50
   },
   {
+    "path": "design/r9-fitfix-01.mdx",
+    "title": "7U40 R9-FITFIX-01 修正候補",
+    "description": "金属への侵入、ガード実肉厚、蓋座面を修正した未承認候補。",
+    "sidebar_position": 80
+  },
+  {
     "path": "design/r9-prototype-01.mdx",
     "title": "7U40 R9 製作候補",
     "description": "R9-PROTOTYPE-01の形状、出力と未検証事項を同じ版で確認する。",
@@ -114,6 +120,12 @@
     "sidebar_position": 40
   },
   {
+    "path": "manufacturing/fit-test-order.mdx",
+    "title": "小型試験片の見積・発注準備",
+    "description": "R9-FITFIX-01の材質別数量、未送信文案、乾式試験の進め方。",
+    "sidebar_position": 27
+  },
+  {
     "path": "manufacturing/index.mdx",
     "title": "製作・見積",
     "description": "BOM、発注条件、価格根拠を分けて管理する。",
@@ -140,7 +152,7 @@
   {
     "path": "models/7u40.mdx",
     "title": "3U＋3U＋1U・40HP",
-    "description": "7u40のR6/R8基準と、未承認のR9-PROTOTYPE-01候補を示す。",
+    "description": "7u40のR6/R8基準と、未承認のR9-FITFIX-01候補を示す。",
     "sidebar_position": 20
   },
   {

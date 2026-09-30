@@ -6,6 +6,10 @@
 
 このD1は**資料整理の版**です。ケースCADの新しい版や、製造承認ではありません。
 
+## 現行7U40候補
+
+[R9-FITFIX-01](src/content/docs/design/r9-fitfix-01.mdx)を追加。ガードと蓋座面の修正候補で、固定環境の生成・検査記録は `engineering/r9-fitfix-01/verification/`。旧R9は履歴として保存し、現物嵌合・接着・運搬と製造承認は未完了。
+
 ## まず起動する
 
 Node.js 22以上とpnpmを用意してください。このスナップショットは公式scaffolderで初期化済みで、`package.json`と`pnpm-lock.yaml`を含みます。新しいチェックアウトでは、依存をロックファイルどおりに入れてから使います。動作確認した環境はNode.js 24.13.1、pnpm 10.30.3です。
