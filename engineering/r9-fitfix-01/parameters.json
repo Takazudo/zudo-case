@@ -1,0 +1,56 @@
+{
+  "revision": "R9-FITFIX-01",
+  "base_commit": "7f04c5bda0672ecf2cded79b6e1b48ad141e64b5",
+  "model": "7u40",
+  "units": "mm",
+  "production_approved": false,
+  "body": {
+    "width": 229.4,
+    "depth": 334.0,
+    "height": 91.0,
+    "metal": 1.5
+  },
+  "guard": {
+    "wall": 1.2,
+    "comparison_wall": 1.0,
+    "cover": 5.0,
+    "fit_per_face": 0.15,
+    "adhesive_per_face": 0.15,
+    "end_gap": 0.5,
+    "vertical_end_gap": 0.25,
+    "outer_radius": 0.4
+  },
+  "lid": {
+    "rise_to_plate_underside": 30.0,
+    "frame_wall": 1.5,
+    "frame_seam": 0.4,
+    "plate_thickness": 1.5,
+    "plate_edge_gap": 0.6,
+    "plate_corner_radius": 3.0,
+    "top_lip": 0.3,
+    "ledge_depth": 8.0,
+    "ledge_thickness": 1.5,
+    "boss_depth": 4.4,
+    "nut_af": 5.9,
+    "nut_roof": 1.5,
+    "screw_inset": 6.0,
+    "front_screw_fraction": 0.3,
+    "side_screw_fraction": 0.5,
+    "assembly_hole": 3.4,
+    "locator_clearance": 0.7,
+    "locator_wall": 2.0,
+    "locator_engagement": 12.0,
+    "bridge_height": 2.5,
+    "lead_radius": 0.4,
+    "module_panel": 2.0,
+    "knob_height": 25.0
+  },
+  "notes": {
+    "dimension_status": "Body values preserve the adopted 7U40 nominal design; all fit/adhesive/slot/lid/knob values remain prototype choices.",
+    "wall_semantics": "wall is retained flat material thickness, not the offset from metal. Same thickness on outer skirt, roof and inner return.",
+    "fit_semantics": "fit_per_face + adhesive_per_face is nominal empty space on VERTICAL bonding faces only. Roof underside and bottom flange top are hard metal-contact datums (zero vertical gap). The 0.15 adhesive allocation is not a chosen tape thickness: the final adhesive/tape+filler must bridge the full actual gap; dry-fit is the present trial. Do not claim side retention tested.",
+    "lid_seat": "No gasket is assumed. Top guard rests directly on metal Z=91 at its roof underside. Lid bearing underside equals the actual top of that guard. No floating vertical fit gap.",
+    "cut_edges": "Factory cut metal edges still require deburring. Small split gaps are not a safety certification.",
+    "support": "Body plate dimensions, 8mm rail spacers, lift-off concept, and transport straps are unchanged. No lid-to-body lock."
+  }
+}

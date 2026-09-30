@@ -1,0 +1,995 @@
+[
+  {
+    "part": "body-bottom",
+    "variant": "shared",
+    "material": "A5052 t1.5 black anodized candidate",
+    "group": "body-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      229.4,
+      334.0,
+      1.5
+    ],
+    "volume_mm3": 114408.02558335834,
+    "stl": "aluminum/body/7u40-r9f-body-bottom-qty1-mm.stl",
+    "step": "aluminum/body/7u40-r9f-body-bottom-qty1-mm.step",
+    "dxf": "aluminum/body/7u40-r9f-body-bottom-qty1-mm.dxf"
+  },
+  {
+    "part": "body-front_back",
+    "variant": "shared",
+    "material": "A5052 t1.5 black anodized candidate",
+    "group": "body-metal",
+    "per_set_quantity": 2,
+    "order_quantity": 2,
+    "dimensions_mm": [
+      226.4,
+      89.5,
+      1.5
+    ],
+    "volume_mm3": 30081.375350015045,
+    "stl": "aluminum/body/7u40-r9f-body-front_back-qty2-mm.stl",
+    "step": "aluminum/body/7u40-r9f-body-front_back-qty2-mm.step",
+    "dxf": "aluminum/body/7u40-r9f-body-front_back-qty2-mm.dxf"
+  },
+  {
+    "part": "body-left_right",
+    "variant": "shared",
+    "material": "A5052 t1.5 black anodized candidate",
+    "group": "body-metal",
+    "per_set_quantity": 2,
+    "order_quantity": 2,
+    "dimensions_mm": [
+      334.0,
+      89.5,
+      1.5
+    ],
+    "volume_mm3": 44296.35070003007,
+    "stl": "aluminum/body/7u40-r9f-body-left_right-qty2-mm.stl",
+    "step": "aluminum/body/7u40-r9f-body-left_right-qty2-mm.step",
+    "dxf": "aluminum/body/7u40-r9f-body-left_right-qty2-mm.dxf"
+  },
+  {
+    "part": "t1p2-top-a",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "guard",
+    "per_set_quantity": 2,
+    "order_quantity": 2,
+    "dimensions_mm": [
+      115.95000000000002,
+      168.25,
+      6.2000000000000455
+    ],
+    "volume_mm3": 4857.027761172996,
+    "stl": "pa12/t1p2/guards/7u40-r9f-t1p2-top-a-qty2-mm.stl",
+    "step": "pa12/t1p2/guards/7u40-r9f-t1p2-top-a-qty2-mm.step"
+  },
+  {
+    "part": "t1p2-top-b",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "guard",
+    "per_set_quantity": 2,
+    "order_quantity": 2,
+    "dimensions_mm": [
+      115.95000000000002,
+      168.25000000000003,
+      6.2000000000000455
+    ],
+    "volume_mm3": 4857.027761443578,
+    "stl": "pa12/t1p2/guards/7u40-r9f-t1p2-top-b-qty2-mm.stl",
+    "step": "pa12/t1p2/guards/7u40-r9f-t1p2-top-b-qty2-mm.step"
+  },
+  {
+    "part": "t1p2-lower-width-half",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "guard",
+    "per_set_quantity": 4,
+    "order_quantity": 4,
+    "dimensions_mm": [
+      115.95000000000002,
+      6.25,
+      6.2000000000000455
+    ],
+    "volume_mm3": 1591.4352408157733,
+    "stl": "pa12/t1p2/guards/7u40-r9f-t1p2-lower-width-half-qty4-mm.stl",
+    "step": "pa12/t1p2/guards/7u40-r9f-t1p2-lower-width-half-qty4-mm.step"
+  },
+  {
+    "part": "t1p2-lower-depth-a",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "guard",
+    "per_set_quantity": 2,
+    "order_quantity": 2,
+    "dimensions_mm": [
+      6.500000000000028,
+      161.5,
+      6.200000000000022
+    ],
+    "volume_mm3": 2223.1546885422013,
+    "stl": "pa12/t1p2/guards/7u40-r9f-t1p2-lower-depth-a-qty2-mm.stl",
+    "step": "pa12/t1p2/guards/7u40-r9f-t1p2-lower-depth-a-qty2-mm.step"
+  },
+  {
+    "part": "t1p2-lower-depth-b",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "guard",
+    "per_set_quantity": 2,
+    "order_quantity": 2,
+    "dimensions_mm": [
+      6.500000000000028,
+      161.5,
+      6.200000000000022
+    ],
+    "volume_mm3": 2223.1546885422013,
+    "stl": "pa12/t1p2/guards/7u40-r9f-t1p2-lower-depth-b-qty2-mm.stl",
+    "step": "pa12/t1p2/guards/7u40-r9f-t1p2-lower-depth-b-qty2-mm.step"
+  },
+  {
+    "part": "t1p2-vertical-corner",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "guard",
+    "per_set_quantity": 4,
+    "order_quantity": 4,
+    "dimensions_mm": [
+      6.5,
+      6.5,
+      80.5
+    ],
+    "volume_mm3": 1137.1159283445545,
+    "stl": "pa12/t1p2/guards/7u40-r9f-t1p2-vertical-corner-qty4-mm.stl",
+    "step": "pa12/t1p2/guards/7u40-r9f-t1p2-vertical-corner-qty4-mm.step"
+  },
+  {
+    "part": "lid-frame-fr",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      116.0,
+      168.3,
+      43.8
+    ],
+    "volume_mm3": 21094.55187062771,
+    "stl": "pa12/t1p2/lid/7u40-r9f-lid-frame-fr-qty1-mm.stl",
+    "step": "pa12/t1p2/lid/7u40-r9f-lid-frame-fr-qty1-mm.step"
+  },
+  {
+    "part": "lid-frame-fl",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      116.0,
+      168.3,
+      43.8
+    ],
+    "volume_mm3": 21094.55187062771,
+    "stl": "pa12/t1p2/lid/7u40-r9f-lid-frame-fl-qty1-mm.stl",
+    "step": "pa12/t1p2/lid/7u40-r9f-lid-frame-fl-qty1-mm.step"
+  },
+  {
+    "part": "lid-frame-bl",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      116.00000000000003,
+      168.30000000000004,
+      43.8
+    ],
+    "volume_mm3": 21094.551870627693,
+    "stl": "pa12/t1p2/lid/7u40-r9f-lid-frame-bl-qty1-mm.stl",
+    "step": "pa12/t1p2/lid/7u40-r9f-lid-frame-bl-qty1-mm.step"
+  },
+  {
+    "part": "lid-frame-br",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      116.0,
+      168.3,
+      43.8
+    ],
+    "volume_mm3": 21094.55187062771,
+    "stl": "pa12/t1p2/lid/7u40-r9f-lid-frame-br-qty1-mm.stl",
+    "step": "pa12/t1p2/lid/7u40-r9f-lid-frame-br-qty1-mm.step"
+  },
+  {
+    "part": "lid-plate",
+    "variant": "t1p2",
+    "material": "A5052 t1.5 black anodized candidate",
+    "group": "lid-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      228.20000000000002,
+      332.8,
+      1.5
+    ],
+    "volume_mm3": 113796.90106759699,
+    "stl": "aluminum/t1p2/7u40-r9f-lid-plate-qty1-mm.stl",
+    "step": "aluminum/t1p2/7u40-r9f-lid-plate-qty1-mm.step",
+    "dxf": "aluminum/t1p2/7u40-r9f-lid-plate-qty1-mm.dxf"
+  },
+  {
+    "part": "t1p0-top-a",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "guard",
+    "per_set_quantity": 2,
+    "order_quantity": 2,
+    "dimensions_mm": [
+      115.75,
+      168.05,
+      6.0
+    ],
+    "volume_mm3": 3934.031495689728,
+    "stl": "pa12/t1p0/guards/7u40-r9f-t1p0-top-a-qty2-mm.stl",
+    "step": "pa12/t1p0/guards/7u40-r9f-t1p0-top-a-qty2-mm.step"
+  },
+  {
+    "part": "t1p0-top-b",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "guard",
+    "per_set_quantity": 2,
+    "order_quantity": 2,
+    "dimensions_mm": [
+      115.75,
+      168.05000000000004,
+      6.0
+    ],
+    "volume_mm3": 3934.031495959509,
+    "stl": "pa12/t1p0/guards/7u40-r9f-t1p0-top-b-qty2-mm.stl",
+    "step": "pa12/t1p0/guards/7u40-r9f-t1p0-top-b-qty2-mm.step"
+  },
+  {
+    "part": "t1p0-lower-width-half",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "guard",
+    "per_set_quantity": 4,
+    "order_quantity": 4,
+    "dimensions_mm": [
+      115.75,
+      6.050000000000011,
+      6.0
+    ],
+    "volume_mm3": 1300.1114767316772,
+    "stl": "pa12/t1p0/guards/7u40-r9f-t1p0-lower-width-half-qty4-mm.stl",
+    "step": "pa12/t1p0/guards/7u40-r9f-t1p0-lower-width-half-qty4-mm.step"
+  },
+  {
+    "part": "t1p0-lower-depth-a",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "guard",
+    "per_set_quantity": 2,
+    "order_quantity": 2,
+    "dimensions_mm": [
+      6.300000000000011,
+      161.5,
+      6.0
+    ],
+    "volume_mm3": 1819.40468854219,
+    "stl": "pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-a-qty2-mm.stl",
+    "step": "pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-a-qty2-mm.step"
+  },
+  {
+    "part": "t1p0-lower-depth-b",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "guard",
+    "per_set_quantity": 2,
+    "order_quantity": 2,
+    "dimensions_mm": [
+      6.300000000000011,
+      161.5,
+      6.0
+    ],
+    "volume_mm3": 1819.40468854219,
+    "stl": "pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-b-qty2-mm.stl",
+    "step": "pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-b-qty2-mm.step"
+  },
+  {
+    "part": "t1p0-vertical-corner",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "guard",
+    "per_set_quantity": 4,
+    "order_quantity": 4,
+    "dimensions_mm": [
+      6.299999999999997,
+      6.300000000000011,
+      80.5
+    ],
+    "volume_mm3": 931.0359283445591,
+    "stl": "pa12/t1p0/guards/7u40-r9f-t1p0-vertical-corner-qty4-mm.stl",
+    "step": "pa12/t1p0/guards/7u40-r9f-t1p0-vertical-corner-qty4-mm.step"
+  },
+  {
+    "part": "lid-frame-fr",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      115.8,
+      168.10000000000002,
+      43.8
+    ],
+    "volume_mm3": 20968.20813611207,
+    "stl": "pa12/t1p0/lid/7u40-r9f-lid-frame-fr-qty1-mm.stl",
+    "step": "pa12/t1p0/lid/7u40-r9f-lid-frame-fr-qty1-mm.step"
+  },
+  {
+    "part": "lid-frame-fl",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      115.8,
+      168.10000000000002,
+      43.8
+    ],
+    "volume_mm3": 20968.20813611207,
+    "stl": "pa12/t1p0/lid/7u40-r9f-lid-frame-fl-qty1-mm.stl",
+    "step": "pa12/t1p0/lid/7u40-r9f-lid-frame-fl-qty1-mm.step"
+  },
+  {
+    "part": "lid-frame-bl",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      115.80000000000003,
+      168.10000000000002,
+      43.8
+    ],
+    "volume_mm3": 20968.208136112084,
+    "stl": "pa12/t1p0/lid/7u40-r9f-lid-frame-bl-qty1-mm.stl",
+    "step": "pa12/t1p0/lid/7u40-r9f-lid-frame-bl-qty1-mm.step"
+  },
+  {
+    "part": "lid-frame-br",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      115.8,
+      168.10000000000002,
+      43.8
+    ],
+    "volume_mm3": 20968.20813611207,
+    "stl": "pa12/t1p0/lid/7u40-r9f-lid-frame-br-qty1-mm.stl",
+    "step": "pa12/t1p0/lid/7u40-r9f-lid-frame-br-qty1-mm.step"
+  },
+  {
+    "part": "lid-plate",
+    "variant": "t1p0",
+    "material": "A5052 t1.5 black anodized candidate",
+    "group": "lid-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      227.8,
+      332.40000000000003,
+      1.5
+    ],
+    "volume_mm3": 113460.54106759699,
+    "stl": "aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.stl",
+    "step": "aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.step",
+    "dxf": "aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.dxf"
+  },
+  {
+    "part": "c1-01-guard",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      4.8,
+      40.0,
+      6.2
+    ],
+    "volume_mm3": 696.5465482457441,
+    "stl": "coupons/c1-01/7u40-r9f-c1-01-guard-qty1-mm.stl",
+    "step": "coupons/c1-01/7u40-r9f-c1-01-guard-qty1-mm.step"
+  },
+  {
+    "part": "c1-02-guard",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      4.7,
+      40.0,
+      6.2
+    ],
+    "volume_mm3": 691.8905482457435,
+    "stl": "coupons/c1-02/7u40-r9f-c1-02-guard-qty1-mm.stl",
+    "step": "coupons/c1-02/7u40-r9f-c1-02-guard-qty1-mm.step"
+  },
+  {
+    "part": "c1-03-guard",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      5.0,
+      40.0,
+      6.2
+    ],
+    "volume_mm3": 706.2905482457437,
+    "stl": "coupons/c1-03/7u40-r9f-c1-03-guard-qty1-mm.stl",
+    "step": "coupons/c1-03/7u40-r9f-c1-03-guard-qty1-mm.step"
+  },
+  {
+    "part": "c1-04-guard",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      4.5,
+      40.0,
+      6.2
+    ],
+    "volume_mm3": 682.1945482457435,
+    "stl": "coupons/c1-04/7u40-r9f-c1-04-guard-qty1-mm.stl",
+    "step": "coupons/c1-04/7u40-r9f-c1-04-guard-qty1-mm.step"
+  },
+  {
+    "part": "c1-05-guard",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      4.4,
+      40.0,
+      6.0
+    ],
+    "volume_mm3": 564.6905482457436,
+    "stl": "coupons/c1-05/7u40-r9f-c1-05-guard-qty1-mm.stl",
+    "step": "coupons/c1-05/7u40-r9f-c1-05-guard-qty1-mm.step"
+  },
+  {
+    "part": "c1-06-guard",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 2,
+    "order_quantity": 2,
+    "dimensions_mm": [
+      4.8,
+      19.75,
+      6.2
+    ],
+    "volume_mm3": 345.083858196336,
+    "stl": "coupons/c1-06/7u40-r9f-c1-06-guard-qty2-mm.stl",
+    "step": "coupons/c1-06/7u40-r9f-c1-06-guard-qty2-mm.step"
+  },
+  {
+    "part": "c1-07-guard",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 2,
+    "order_quantity": 2,
+    "dimensions_mm": [
+      4.8,
+      20.0,
+      6.2
+    ],
+    "volume_mm3": 349.1852741228718,
+    "stl": "coupons/c1-07/7u40-r9f-c1-07-guard-qty2-mm.stl",
+    "step": "coupons/c1-07/7u40-r9f-c1-07-guard-qty2-mm.step"
+  },
+  {
+    "part": "c1-metal-edge",
+    "variant": "coupon",
+    "material": "A5052 t1.5 candidate",
+    "group": "coupon-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      1.5,
+      40.0,
+      20.0
+    ],
+    "volume_mm3": 1199.9999999999998,
+    "stl": "coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.stl",
+    "step": "coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.step",
+    "dxf_transform": {
+      "origin_assembly_mm": [
+        -1.5,
+        0.0,
+        -20.0
+      ],
+      "axes": [
+        1,
+        2
+      ],
+      "thickness_axis": 0,
+      "holes": []
+    },
+    "dxf": "coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.dxf"
+  },
+  {
+    "part": "c2-01-wall",
+    "variant": "coupon",
+    "material": "A5052 t1.5 candidate",
+    "group": "coupon-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.000000000000014,
+      1.5,
+      31.0
+    ],
+    "volume_mm3": 1395.0,
+    "stl": "coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.stl",
+    "step": "coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.step",
+    "dxf_transform": {
+      "origin_assembly_mm": [
+        19.999999999999986,
+        -167.0,
+        60.0
+      ],
+      "axes": [
+        0,
+        2
+      ],
+      "thickness_axis": 1,
+      "holes": []
+    },
+    "dxf": "coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.dxf"
+  },
+  {
+    "part": "c2-01-guard",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.0,
+      4.5,
+      6.2000000000000455
+    ],
+    "volume_mm3": 520.9699111843069,
+    "stl": "coupons/c2-01/7u40-r9f-c2-01-guard-qty1-mm.stl",
+    "step": "coupons/c2-01/7u40-r9f-c2-01-guard-qty1-mm.step"
+  },
+  {
+    "part": "c2-01-frame",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.0,
+      11.300000000000011,
+      43.8
+    ],
+    "volume_mm3": 3218.6606197286665,
+    "stl": "coupons/c2-01/7u40-r9f-c2-01-frame-qty1-mm.stl",
+    "step": "coupons/c2-01/7u40-r9f-c2-01-frame-qty1-mm.step"
+  },
+  {
+    "part": "c2-01-plate",
+    "variant": "coupon",
+    "material": "A5052 t1.5 candidate",
+    "group": "coupon-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.000000000000014,
+      26.400000000000006,
+      1.5
+    ],
+    "volume_mm3": 1174.3811958466883,
+    "stl": "coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.stl",
+    "step": "coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.step",
+    "dxf_transform": {
+      "origin_assembly_mm": [
+        20.0,
+        -166.4,
+        122.2
+      ],
+      "axes": [
+        0,
+        1
+      ],
+      "thickness_axis": 2,
+      "holes": [
+        [
+          14.86,
+          3.9,
+          3.4
+        ]
+      ]
+    },
+    "dxf": "coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.dxf"
+  },
+  {
+    "part": "c2-02-wall",
+    "variant": "coupon",
+    "material": "A5052 t1.5 candidate",
+    "group": "coupon-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 0,
+    "dimensions_mm": [
+      30.000000000000014,
+      1.5,
+      31.0
+    ],
+    "volume_mm3": 1395.0,
+    "stl": "coupons/c2-02/7u40-r9f-c2-02-wall-qty1-mm.stl",
+    "step": "coupons/c2-02/7u40-r9f-c2-02-wall-qty1-mm.step",
+    "dxf_transform": {
+      "origin_assembly_mm": [
+        19.999999999999986,
+        -167.0,
+        60.0
+      ],
+      "axes": [
+        0,
+        2
+      ],
+      "thickness_axis": 1,
+      "holes": []
+    },
+    "dxf": "coupons/c2-02/7u40-r9f-c2-02-wall-qty1-mm.dxf"
+  },
+  {
+    "part": "c2-02-guard",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 0,
+    "dimensions_mm": [
+      30.0,
+      4.5,
+      6.2000000000000455
+    ],
+    "volume_mm3": 520.9699111843069,
+    "stl": "coupons/c2-02/7u40-r9f-c2-02-guard-qty1-mm.stl",
+    "step": "coupons/c2-02/7u40-r9f-c2-02-guard-qty1-mm.step"
+  },
+  {
+    "part": "c2-02-frame",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.0,
+      11.300000000000011,
+      43.8
+    ],
+    "volume_mm3": 3203.804619728664,
+    "stl": "coupons/c2-02/7u40-r9f-c2-02-frame-qty1-mm.stl",
+    "step": "coupons/c2-02/7u40-r9f-c2-02-frame-qty1-mm.step"
+  },
+  {
+    "part": "c2-02-plate",
+    "variant": "coupon",
+    "material": "A5052 t1.5 candidate",
+    "group": "coupon-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 0,
+    "dimensions_mm": [
+      30.000000000000014,
+      26.400000000000006,
+      1.5
+    ],
+    "volume_mm3": 1174.3811958466883,
+    "stl": "coupons/c2-02/7u40-r9f-c2-02-plate-qty1-mm.stl",
+    "step": "coupons/c2-02/7u40-r9f-c2-02-plate-qty1-mm.step",
+    "dxf_transform": {
+      "origin_assembly_mm": [
+        20.0,
+        -166.4,
+        122.2
+      ],
+      "axes": [
+        0,
+        1
+      ],
+      "thickness_axis": 2,
+      "holes": [
+        [
+          14.86,
+          3.9,
+          3.4
+        ]
+      ]
+    },
+    "dxf": "coupons/c2-02/7u40-r9f-c2-02-plate-qty1-mm.dxf"
+  },
+  {
+    "part": "c2-03-wall",
+    "variant": "coupon",
+    "material": "A5052 t1.5 candidate",
+    "group": "coupon-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 0,
+    "dimensions_mm": [
+      30.000000000000014,
+      1.5,
+      31.0
+    ],
+    "volume_mm3": 1395.0,
+    "stl": "coupons/c2-03/7u40-r9f-c2-03-wall-qty1-mm.stl",
+    "step": "coupons/c2-03/7u40-r9f-c2-03-wall-qty1-mm.step",
+    "dxf_transform": {
+      "origin_assembly_mm": [
+        19.999999999999986,
+        -167.0,
+        60.0
+      ],
+      "axes": [
+        0,
+        2
+      ],
+      "thickness_axis": 1,
+      "holes": []
+    },
+    "dxf": "coupons/c2-03/7u40-r9f-c2-03-wall-qty1-mm.dxf"
+  },
+  {
+    "part": "c2-03-guard",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 0,
+    "dimensions_mm": [
+      30.0,
+      4.5,
+      6.2000000000000455
+    ],
+    "volume_mm3": 520.9699111843069,
+    "stl": "coupons/c2-03/7u40-r9f-c2-03-guard-qty1-mm.stl",
+    "step": "coupons/c2-03/7u40-r9f-c2-03-guard-qty1-mm.step"
+  },
+  {
+    "part": "c2-03-frame",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.0,
+      11.300000000000011,
+      43.8
+    ],
+    "volume_mm3": 3233.804619728665,
+    "stl": "coupons/c2-03/7u40-r9f-c2-03-frame-qty1-mm.stl",
+    "step": "coupons/c2-03/7u40-r9f-c2-03-frame-qty1-mm.step"
+  },
+  {
+    "part": "c2-03-plate",
+    "variant": "coupon",
+    "material": "A5052 t1.5 candidate",
+    "group": "coupon-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 0,
+    "dimensions_mm": [
+      30.000000000000014,
+      26.400000000000006,
+      1.5
+    ],
+    "volume_mm3": 1174.3811958466883,
+    "stl": "coupons/c2-03/7u40-r9f-c2-03-plate-qty1-mm.stl",
+    "step": "coupons/c2-03/7u40-r9f-c2-03-plate-qty1-mm.step",
+    "dxf_transform": {
+      "origin_assembly_mm": [
+        20.0,
+        -166.4,
+        122.2
+      ],
+      "axes": [
+        0,
+        1
+      ],
+      "thickness_axis": 2,
+      "holes": [
+        [
+          14.86,
+          3.9,
+          3.4
+        ]
+      ]
+    },
+    "dxf": "coupons/c2-03/7u40-r9f-c2-03-plate-qty1-mm.dxf"
+  },
+  {
+    "part": "c4-01-floor",
+    "variant": "coupon",
+    "material": "A5052 t1.5 candidate",
+    "group": "coupon-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.000000000000014,
+      20.0,
+      1.5
+    ],
+    "volume_mm3": 900.0,
+    "stl": "coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.stl",
+    "step": "coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.step",
+    "dxf_transform": {
+      "origin_assembly_mm": [
+        19.999999999999986,
+        -167.0,
+        0.0
+      ],
+      "axes": [
+        0,
+        1
+      ],
+      "thickness_axis": 2,
+      "holes": []
+    },
+    "dxf": "coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.dxf"
+  },
+  {
+    "part": "c4-01-wall",
+    "variant": "coupon",
+    "material": "A5052 t1.5 candidate",
+    "group": "coupon-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.000000000000014,
+      1.5,
+      18.5
+    ],
+    "volume_mm3": 832.5,
+    "stl": "coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.stl",
+    "step": "coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.step",
+    "dxf_transform": {
+      "origin_assembly_mm": [
+        19.999999999999986,
+        -167.0,
+        1.5
+      ],
+      "axes": [
+        0,
+        2
+      ],
+      "thickness_axis": 1,
+      "holes": []
+    },
+    "dxf": "coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.dxf"
+  },
+  {
+    "part": "c4-01-lower-guard",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.0,
+      6.550000000000011,
+      6.2000000000000455
+    ],
+    "volume_mm3": 405.93791118430977,
+    "stl": "coupons/c4-01/7u40-r9f-c4-01-lower-guard-qty1-mm.stl",
+    "step": "coupons/c4-01/7u40-r9f-c4-01-lower-guard-qty1-mm.step"
+  },
+  {
+    "part": "c5-01-front",
+    "variant": "coupon",
+    "material": "A5052 t1.5 candidate",
+    "group": "coupon-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      10.5,
+      1.5,
+      20.0
+    ],
+    "volume_mm3": 315.0,
+    "stl": "coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.stl",
+    "step": "coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.step",
+    "dxf_transform": {
+      "origin_assembly_mm": [
+        -113.2,
+        -167.0,
+        71.0
+      ],
+      "axes": [
+        0,
+        2
+      ],
+      "thickness_axis": 1,
+      "holes": []
+    },
+    "dxf": "coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.dxf"
+  },
+  {
+    "part": "c5-01-left",
+    "variant": "coupon",
+    "material": "A5052 t1.5 candidate",
+    "group": "coupon-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      1.5,
+      12.0,
+      20.0
+    ],
+    "volume_mm3": 359.99999999999994,
+    "stl": "coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.stl",
+    "step": "coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.step",
+    "dxf_transform": {
+      "origin_assembly_mm": [
+        -114.7,
+        -167.0,
+        71.0
+      ],
+      "axes": [
+        1,
+        2
+      ],
+      "thickness_axis": 0,
+      "holes": []
+    },
+    "dxf": "coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.dxf"
+  },
+  {
+    "part": "c5-01-upper-guard",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      13.799999999999997,
+      13.5,
+      6.2000000000000455
+    ],
+    "volume_mm3": 392.64305577192147,
+    "stl": "coupons/c5-01/7u40-r9f-c5-01-upper-guard-qty1-mm.stl",
+    "step": "coupons/c5-01/7u40-r9f-c5-01-upper-guard-qty1-mm.step"
+  }
+]

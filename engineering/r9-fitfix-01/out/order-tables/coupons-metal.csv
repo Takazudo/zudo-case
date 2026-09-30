@@ -1,0 +1,8 @@
+﻿part,material,order_quantity,stl,step,dxf
+c1-metal-edge,A5052 t1.5 candidate,1,coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.stl,coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.step,coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.dxf
+c2-01-wall,A5052 t1.5 candidate,1,coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.stl,coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.step,coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.dxf
+c2-01-plate,A5052 t1.5 candidate,1,coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.stl,coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.step,coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.dxf
+c4-01-floor,A5052 t1.5 candidate,1,coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.stl,coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.step,coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.dxf
+c4-01-wall,A5052 t1.5 candidate,1,coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.stl,coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.step,coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.dxf
+c5-01-front,A5052 t1.5 candidate,1,coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.stl,coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.step,coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.dxf
+c5-01-left,A5052 t1.5 candidate,1,coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.stl,coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.step,coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.dxf

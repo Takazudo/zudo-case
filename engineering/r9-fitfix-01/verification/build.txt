@@ -1,0 +1,22 @@
+7u40: Aluminum 5 panels / 3 types / 46 holes exported
+7u40: Brackets 18, vertical centers [36.5, 66.5]
+7u40: 6 rails, 8 PCB layers, 10 mounting stacks
+Build t1p2
+Validation t1p2 True []
+Build t1p0
+Validation t1p0 True []
+Coupon C1-01 True
+Coupon C1-02 True
+Coupon C1-03 True
+Coupon C1-04 True
+Coupon C1-05 True
+Coupon C1-06 True
+Coupon C1-07 True
+Coupon C1-METAL True
+Coupon C2-01 True
+Coupon C2-02 True
+Coupon C2-03 True
+Coupon C4-01 True
+Coupon C5-01 True
+DONE 154 files; 51 mesh readbacks; passed= True seconds= 58.97
+heavy-guard: verdict=PASS exit=0 secs=64 min_mem_mb=9179 reason=-

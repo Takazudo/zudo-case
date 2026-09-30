@@ -1,0 +1,33 @@
+{
+  "id": "C1-03",
+  "variables": {
+    "wall": 1.2,
+    "cover": 5.0,
+    "fit_per_face": 0.25,
+    "adhesive_per_face": 0.15,
+    "end_gap": 0.5,
+    "vertical_end_gap": 0.25,
+    "outer_radius": 0.4
+  },
+  "purpose": "fit=.25 only",
+  "physical_results": null,
+  "reusable_fixture": "c1-metal-edge",
+  "parts": [
+    {
+      "part": "c1-03-guard",
+      "variant": "coupon",
+      "material": "PA12-HP black candidate",
+      "group": "coupon",
+      "per_set_quantity": 1,
+      "order_quantity": 1,
+      "dimensions_mm": [
+        5.0,
+        40.0,
+        6.2
+      ],
+      "volume_mm3": 706.2905482457437,
+      "stl": "coupons/c1-03/7u40-r9f-c1-03-guard-qty1-mm.stl",
+      "step": "coupons/c1-03/7u40-r9f-c1-03-guard-qty1-mm.step"
+    }
+  ]
+}

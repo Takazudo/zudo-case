@@ -1,0 +1,22 @@
+{
+  "widths": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "renderer": "webgl"
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "renderer": "webgl"
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "width 1440: variants/open/travel/C1/C2/C4/C5",
+    "width 1440: integrated doc iframe",
+    "width 390: variants/open/travel/C1/C2/C4/C5",
+    "width 390: integrated doc iframe"
+  ],
+  "passed": true
+}

@@ -1,0 +1,83 @@
+{
+  "id": "C5-01",
+  "purpose": "NEW: two meeting vertical plates and upper U-return corner, same case solids",
+  "physical_results": null,
+  "parts": [
+    {
+      "part": "c5-01-front",
+      "variant": "coupon",
+      "material": "A5052 t1.5 candidate",
+      "group": "coupon-metal",
+      "per_set_quantity": 1,
+      "order_quantity": 1,
+      "dimensions_mm": [
+        10.5,
+        1.5,
+        20.0
+      ],
+      "volume_mm3": 315.0,
+      "stl": "coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.stl",
+      "step": "coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.step",
+      "dxf_transform": {
+        "origin_assembly_mm": [
+          -113.2,
+          -167.0,
+          71.0
+        ],
+        "axes": [
+          0,
+          2
+        ],
+        "thickness_axis": 1,
+        "holes": []
+      },
+      "dxf": "coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.dxf"
+    },
+    {
+      "part": "c5-01-left",
+      "variant": "coupon",
+      "material": "A5052 t1.5 candidate",
+      "group": "coupon-metal",
+      "per_set_quantity": 1,
+      "order_quantity": 1,
+      "dimensions_mm": [
+        1.5,
+        12.0,
+        20.0
+      ],
+      "volume_mm3": 359.99999999999994,
+      "stl": "coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.stl",
+      "step": "coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.step",
+      "dxf_transform": {
+        "origin_assembly_mm": [
+          -114.7,
+          -167.0,
+          71.0
+        ],
+        "axes": [
+          1,
+          2
+        ],
+        "thickness_axis": 0,
+        "holes": []
+      },
+      "dxf": "coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.dxf"
+    },
+    {
+      "part": "c5-01-upper-guard",
+      "variant": "coupon",
+      "material": "PA12-HP black candidate",
+      "group": "coupon",
+      "per_set_quantity": 1,
+      "order_quantity": 1,
+      "dimensions_mm": [
+        13.799999999999997,
+        13.5,
+        6.2000000000000455
+      ],
+      "volume_mm3": 392.64305577192147,
+      "stl": "coupons/c5-01/7u40-r9f-c5-01-upper-guard-qty1-mm.stl",
+      "step": "coupons/c5-01/7u40-r9f-c5-01-upper-guard-qty1-mm.step"
+    }
+  ]
+}

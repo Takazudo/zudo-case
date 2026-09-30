@@ -1,0 +1,10 @@
+{
+  "python": "3.12.12 (main, Feb  4 2026, 01:57:59) [Clang 21.1.4 ]",
+  "cadquery": "2.7.0",
+  "ezdxf": "1.4.4",
+  "numpy": "2.5.3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "repository_python_cq_range_compatible": true,
+  "lockfile_execution_verified": null,
+  "seconds": 58.97
+}

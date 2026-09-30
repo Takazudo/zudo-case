@@ -1,0 +1,419 @@
+{
+  "provenance": "R6 hole centers with the R9 slot rule; compare to on-disk R9 DXF before integration",
+  "holes": [
+    {
+      "panel": "metal-bottom",
+      "uv_mm": [
+        55.2,
+        11.5
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-bottom",
+      "uv_mm": [
+        174.2,
+        11.5
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-bottom",
+      "uv_mm": [
+        55.2,
+        322.5
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-bottom",
+      "uv_mm": [
+        174.2,
+        322.5
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-bottom",
+      "uv_mm": [
+        11.5,
+        40.5
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-bottom",
+      "uv_mm": [
+        11.5,
+        167.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-bottom",
+      "uv_mm": [
+        11.5,
+        293.5
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-bottom",
+      "uv_mm": [
+        217.9,
+        40.5
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-bottom",
+      "uv_mm": [
+        217.9,
+        167.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-bottom",
+      "uv_mm": [
+        217.9,
+        293.5
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-front",
+      "uv_mm": [
+        53.7,
+        10.0
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-front",
+      "uv_mm": [
+        172.7,
+        10.0
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-front",
+      "uv_mm": [
+        10.0,
+        35.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-front",
+      "uv_mm": [
+        216.4,
+        35.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-front",
+      "uv_mm": [
+        10.0,
+        65.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-front",
+      "uv_mm": [
+        216.4,
+        65.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-back",
+      "uv_mm": [
+        53.7,
+        10.0
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-back",
+      "uv_mm": [
+        172.7,
+        10.0
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-back",
+      "uv_mm": [
+        10.0,
+        35.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-back",
+      "uv_mm": [
+        216.4,
+        35.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-back",
+      "uv_mm": [
+        10.0,
+        65.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-back",
+      "uv_mm": [
+        216.4,
+        65.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-left",
+      "uv_mm": [
+        40.5,
+        10.0
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-left",
+      "uv_mm": [
+        167.0,
+        10.0
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-left",
+      "uv_mm": [
+        293.5,
+        10.0
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-left",
+      "uv_mm": [
+        11.5,
+        35.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-left",
+      "uv_mm": [
+        322.5,
+        35.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-left",
+      "uv_mm": [
+        11.5,
+        65.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-left",
+      "uv_mm": [
+        322.5,
+        65.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-left",
+      "uv_mm": [
+        32.468128500000006,
+        66.6894265
+      ],
+      "profile": "round",
+      "angle_deg": null
+    },
+    {
+      "panel": "metal-left",
+      "uv_mm": [
+        99.73406,
+        66.6894265
+      ],
+      "profile": "round",
+      "angle_deg": null
+    },
+    {
+      "panel": "metal-left",
+      "uv_mm": [
+        166.999992,
+        66.6894265
+      ],
+      "profile": "round",
+      "angle_deg": null
+    },
+    {
+      "panel": "metal-left",
+      "uv_mm": [
+        234.2659145,
+        66.6894265
+      ],
+      "profile": "round",
+      "angle_deg": null
+    },
+    {
+      "panel": "metal-left",
+      "uv_mm": [
+        301.496536,
+        66.6894265
+      ],
+      "profile": "round",
+      "angle_deg": null
+    },
+    {
+      "panel": "metal-right",
+      "uv_mm": [
+        40.5,
+        10.0
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-right",
+      "uv_mm": [
+        167.0,
+        10.0
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-right",
+      "uv_mm": [
+        293.5,
+        10.0
+      ],
+      "profile": "slot",
+      "angle_deg": 90
+    },
+    {
+      "panel": "metal-right",
+      "uv_mm": [
+        11.5,
+        35.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-right",
+      "uv_mm": [
+        322.5,
+        35.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-right",
+      "uv_mm": [
+        11.5,
+        65.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-right",
+      "uv_mm": [
+        322.5,
+        65.0
+      ],
+      "profile": "slot",
+      "angle_deg": 0
+    },
+    {
+      "panel": "metal-right",
+      "uv_mm": [
+        32.468128500000006,
+        66.6894265
+      ],
+      "profile": "round",
+      "angle_deg": null
+    },
+    {
+      "panel": "metal-right",
+      "uv_mm": [
+        99.73406,
+        66.6894265
+      ],
+      "profile": "round",
+      "angle_deg": null
+    },
+    {
+      "panel": "metal-right",
+      "uv_mm": [
+        166.999992,
+        66.6894265
+      ],
+      "profile": "round",
+      "angle_deg": null
+    },
+    {
+      "panel": "metal-right",
+      "uv_mm": [
+        234.2659145,
+        66.6894265
+      ],
+      "profile": "round",
+      "angle_deg": null
+    },
+    {
+      "panel": "metal-right",
+      "uv_mm": [
+        301.496536,
+        66.6894265
+      ],
+      "profile": "round",
+      "angle_deg": null
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+UNAPPROVED PROTOTYPE — mm — each STL is one part; use the quantity table.
+Aluminum STEP/DXF are separate from PA12. Hardware/rails are references only.
+This is an unapproved fit-fix candidate; see environment.json for the generating toolchain.

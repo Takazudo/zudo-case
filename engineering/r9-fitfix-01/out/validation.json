@@ -1,0 +1,1176 @@
+{
+  "scope": "nominal CAD and file readback; no physical fit/loads/adhesion test",
+  "reference_hardware_scope": "Pinned R6 nominal placements, which R9 retained; slotted plates reconstructed from the pinned R6 centers and R9 rule. Not execution of the entire R9 pipeline.",
+  "reference_hardware_included": true,
+  "variants": {
+    "t1p2": {
+      "guard_vs_all_5_solid_plate_envelopes": {
+        "pair_count": 80,
+        "collisions": [],
+        "passed": true
+      },
+      "guard_vs_guard": {
+        "pair_count": 120,
+        "collisions": [],
+        "passed": true
+      },
+      "lid_vs_guards_and_plates": {
+        "pair_count": 105,
+        "collisions": [],
+        "passed": true
+      },
+      "lid_vs_lid": {
+        "pair_count": 10,
+        "collisions": [],
+        "passed": true
+      },
+      "guard_vs_reference_hardware": {
+        "pair_count": 3040,
+        "collisions": [],
+        "passed": true
+      },
+      "lid_vs_reference_hardware": {
+        "pair_count": 950,
+        "collisions": [],
+        "passed": true
+      },
+      "flat_wall_measurements_mm": {
+        "outer_wall": 1.2,
+        "inner_return": 1.1999999999999997,
+        "roof": 1.2,
+        "bottom_flange": 1.2,
+        "bottom_outer_wall": 1.2
+      },
+      "seating": {
+        "lid_to_guard_contact_area_mm2": [
+          {
+            "part": "lid-frame-fr",
+            "area_mm2": 642.7799999999952
+          },
+          {
+            "part": "lid-frame-fl",
+            "area_mm2": 642.7799999999952
+          },
+          {
+            "part": "lid-frame-bl",
+            "area_mm2": 642.7800000000025
+          },
+          {
+            "part": "lid-frame-br",
+            "area_mm2": 642.7799999999988
+          }
+        ],
+        "guard_to_metal_support_area_mm2": 1678.1999999999998,
+        "lid_seat_z_mm": 92.2,
+        "actual_guard_top_z_mm": 92.2,
+        "vertical_gap_mm": 0.0
+      },
+      "lift_path": {
+        "sampled_positions_mm": [
+          0,
+          0.25,
+          0.5,
+          0.75,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "pair_count": 20615,
+        "collisions": [],
+        "after_15mm_z_disjoint": true,
+        "continuous_sweep_verified": false,
+        "rail_representation": "source STL world AABB (conservative envelope), not exact solid"
+      },
+      "passed": true,
+      "failed_checks": []
+    },
+    "t1p0": {
+      "guard_vs_all_5_solid_plate_envelopes": {
+        "pair_count": 80,
+        "collisions": [],
+        "passed": true
+      },
+      "guard_vs_guard": {
+        "pair_count": 120,
+        "collisions": [],
+        "passed": true
+      },
+      "lid_vs_guards_and_plates": {
+        "pair_count": 105,
+        "collisions": [],
+        "passed": true
+      },
+      "lid_vs_lid": {
+        "pair_count": 10,
+        "collisions": [],
+        "passed": true
+      },
+      "guard_vs_reference_hardware": {
+        "pair_count": 3040,
+        "collisions": [],
+        "passed": true
+      },
+      "lid_vs_reference_hardware": {
+        "pair_count": 950,
+        "collisions": [],
+        "passed": true
+      },
+      "flat_wall_measurements_mm": {
+        "outer_wall": 1.0,
+        "inner_return": 0.9999999999999997,
+        "roof": 1.0,
+        "bottom_flange": 0.9999999999999998,
+        "bottom_outer_wall": 1.0
+      },
+      "seating": {
+        "lid_to_guard_contact_area_mm2": [
+          {
+            "part": "lid-frame-fr",
+            "area_mm2": 598.5599999999977
+          },
+          {
+            "part": "lid-frame-fl",
+            "area_mm2": 598.5599999999977
+          },
+          {
+            "part": "lid-frame-bl",
+            "area_mm2": 598.560000000005
+          },
+          {
+            "part": "lid-frame-br",
+            "area_mm2": 598.5600000000013
+          }
+        ],
+        "guard_to_metal_support_area_mm2": 1678.1999999999998,
+        "lid_seat_z_mm": 92.0,
+        "actual_guard_top_z_mm": 92.0,
+        "vertical_gap_mm": 0.0
+      },
+      "lift_path": {
+        "sampled_positions_mm": [
+          0,
+          0.25,
+          0.5,
+          0.75,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "pair_count": 20615,
+        "collisions": [],
+        "after_15mm_z_disjoint": true,
+        "continuous_sweep_verified": false,
+        "rail_representation": "source STL world AABB (conservative envelope), not exact solid"
+      },
+      "passed": true,
+      "failed_checks": []
+    }
+  },
+  "coupons": {
+    "C1-01": {
+      "pair_count": 0,
+      "collisions": [],
+      "passed": true
+    },
+    "C1-02": {
+      "pair_count": 0,
+      "collisions": [],
+      "passed": true
+    },
+    "C1-03": {
+      "pair_count": 0,
+      "collisions": [],
+      "passed": true
+    },
+    "C1-04": {
+      "pair_count": 0,
+      "collisions": [],
+      "passed": true
+    },
+    "C1-05": {
+      "pair_count": 0,
+      "collisions": [],
+      "passed": true
+    },
+    "C1-06": {
+      "pair_count": 0,
+      "collisions": [],
+      "passed": true
+    },
+    "C1-07": {
+      "pair_count": 0,
+      "collisions": [],
+      "passed": true
+    },
+    "C1-METAL": {
+      "pair_count": 0,
+      "collisions": [],
+      "passed": true
+    },
+    "C2-01": {
+      "pair_count": 6,
+      "collisions": [],
+      "passed": true
+    },
+    "C2-02": {
+      "pair_count": 6,
+      "collisions": [],
+      "passed": true
+    },
+    "C2-03": {
+      "pair_count": 6,
+      "collisions": [],
+      "passed": true
+    },
+    "C4-01": {
+      "pair_count": 3,
+      "collisions": [],
+      "passed": true
+    },
+    "C5-01": {
+      "pair_count": 3,
+      "collisions": [],
+      "passed": true
+    }
+  },
+  "physical_results": null,
+  "production_approved": false,
+  "parameter_mutations": [
+    {
+      "wall_mm": 1.0,
+      "fit_mm": 0.1,
+      "adhesive_mm": 0,
+      "measurements": {
+        "outer_wall": 1.0,
+        "inner_return": 0.9999999999999998,
+        "roof": 1.0000000000000002,
+        "bottom_flange": 0.9999999999999998,
+        "bottom_outer_wall": 1.0
+      },
+      "lid_seat_z_mm": 92.0,
+      "passed": true
+    },
+    {
+      "wall_mm": 1.0,
+      "fit_mm": 0.15,
+      "adhesive_mm": 0.15,
+      "measurements": {
+        "outer_wall": 1.0,
+        "inner_return": 0.9999999999999997,
+        "roof": 1.0,
+        "bottom_flange": 0.9999999999999998,
+        "bottom_outer_wall": 1.0
+      },
+      "lid_seat_z_mm": 92.0,
+      "passed": true
+    },
+    {
+      "wall_mm": 1.0,
+      "fit_mm": 0.25,
+      "adhesive_mm": 0.15,
+      "measurements": {
+        "outer_wall": 0.9999999999999997,
+        "inner_return": 1.0,
+        "roof": 1.0000000000000002,
+        "bottom_flange": 1.0,
+        "bottom_outer_wall": 0.9999999999999997
+      },
+      "lid_seat_z_mm": 92.0,
+      "passed": true
+    },
+    {
+      "wall_mm": 1.0,
+      "fit_mm": 0.35,
+      "adhesive_mm": 0.25,
+      "measurements": {
+        "outer_wall": 0.9999999999999998,
+        "inner_return": 0.9999999999999998,
+        "roof": 1.0000000000000002,
+        "bottom_flange": 0.9999999999999998,
+        "bottom_outer_wall": 0.9999999999999998
+      },
+      "lid_seat_z_mm": 92.0,
+      "passed": true
+    },
+    {
+      "wall_mm": 1.2,
+      "fit_mm": 0.1,
+      "adhesive_mm": 0,
+      "measurements": {
+        "outer_wall": 1.1999999999999997,
+        "inner_return": 1.1999999999999997,
+        "roof": 1.2,
+        "bottom_flange": 1.1999999999999997,
+        "bottom_outer_wall": 1.1999999999999997
+      },
+      "lid_seat_z_mm": 92.2,
+      "passed": true
+    },
+    {
+      "wall_mm": 1.2,
+      "fit_mm": 0.15,
+      "adhesive_mm": 0.15,
+      "measurements": {
+        "outer_wall": 1.2,
+        "inner_return": 1.1999999999999997,
+        "roof": 1.2,
+        "bottom_flange": 1.2,
+        "bottom_outer_wall": 1.2
+      },
+      "lid_seat_z_mm": 92.2,
+      "passed": true
+    },
+    {
+      "wall_mm": 1.2,
+      "fit_mm": 0.25,
+      "adhesive_mm": 0.15,
+      "measurements": {
+        "outer_wall": 1.1999999999999997,
+        "inner_return": 1.1999999999999997,
+        "roof": 1.2,
+        "bottom_flange": 1.2,
+        "bottom_outer_wall": 1.2
+      },
+      "lid_seat_z_mm": 92.2,
+      "passed": true
+    },
+    {
+      "wall_mm": 1.2,
+      "fit_mm": 0.35,
+      "adhesive_mm": 0.25,
+      "measurements": {
+        "outer_wall": 1.1999999999999997,
+        "inner_return": 1.1999999999999997,
+        "roof": 1.2,
+        "bottom_flange": 1.1999999999999997,
+        "bottom_outer_wall": 1.1999999999999997
+      },
+      "lid_seat_z_mm": 92.2,
+      "passed": true
+    },
+    {
+      "body": {
+        "width": 229.4,
+        "depth": 334.0,
+        "height": 91.0,
+        "metal": 2.0
+      },
+      "interface": {
+        "guard_opening_mm": [
+          222.4,
+          327.0
+        ],
+        "guard_exterior_mm": [
+          232.4,
+          337.0
+        ],
+        "guard_bottom_z_mm": -1.2,
+        "guard_top_z_mm": 92.2,
+        "guard_envelope_height_mm": 93.4,
+        "lid_seat_z_mm": 92.2,
+        "plate_bottom_z_mm": 122.2,
+        "plate_top_z_mm": 123.7,
+        "lip_top_z_mm": 124.0,
+        "locator_bottom_z_mm": 80.2,
+        "flat_wall_mm": 1.2,
+        "metal_offset_mm": 0.3,
+        "lid_plate_mm": [
+          228.20000000000002,
+          332.8,
+          1.5
+        ],
+        "lid_locator_xy_clearance_mm": 0.7,
+        "lid_engagement_mm": 12.0,
+        "plate_under_clearance_to_assumed_knob_mm": 4.200000000000003
+      },
+      "passed": true
+    },
+    {
+      "body": {
+        "width": 229.4,
+        "depth": 334.0,
+        "height": 96.0,
+        "metal": 1.5
+      },
+      "interface": {
+        "guard_opening_mm": [
+          223.4,
+          328.0
+        ],
+        "guard_exterior_mm": [
+          232.4,
+          337.0
+        ],
+        "guard_bottom_z_mm": -1.2,
+        "guard_top_z_mm": 97.2,
+        "guard_envelope_height_mm": 98.4,
+        "lid_seat_z_mm": 97.2,
+        "plate_bottom_z_mm": 127.2,
+        "plate_top_z_mm": 128.7,
+        "lip_top_z_mm": 129.0,
+        "locator_bottom_z_mm": 85.2,
+        "flat_wall_mm": 1.2,
+        "metal_offset_mm": 0.3,
+        "lid_plate_mm": [
+          228.20000000000002,
+          332.8,
+          1.5
+        ],
+        "lid_locator_xy_clearance_mm": 0.7,
+        "lid_engagement_mm": 12.0,
+        "plate_under_clearance_to_assumed_knob_mm": 4.200000000000003
+      },
+      "passed": true
+    }
+  ],
+  "mesh_step_checks": [
+    {
+      "path": "aluminum/body/7u40-r9f-body-bottom-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 2568,
+      "triangles": 5172,
+      "bbox_error_mm": 6.103515630684342e-06,
+      "volume_error_mm3": 0.14460467352182604,
+      "cad_volume_mm3": 114408.02558335834,
+      "edge_incidence_histogram": {
+        "2": 7758
+      }
+    },
+    {
+      "path": "aluminum/body/7u40-r9f-body-front_back-qty2-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 1544,
+      "triangles": 3108,
+      "bbox_error_mm": 6.103515630684342e-06,
+      "volume_error_mm3": 0.08781707913294667,
+      "cad_volume_mm3": 30081.375350015045,
+      "edge_incidence_histogram": {
+        "2": 4662
+      }
+    },
+    {
+      "path": "aluminum/body/7u40-r9f-body-left_right-qty2-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 3060,
+      "triangles": 6164,
+      "bbox_error_mm": 0.0,
+      "volume_error_mm3": 0.17721777119731996,
+      "cad_volume_mm3": 44296.35070003007,
+      "edge_incidence_histogram": {
+        "2": 9246
+      }
+    },
+    {
+      "path": "pa12/t1p2/guards/7u40-r9f-t1p2-top-a-qty2-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 133,
+      "triangles": 262,
+      "bbox_error_mm": 3.051757857974735e-06,
+      "volume_error_mm3": 0.01505317282044416,
+      "cad_volume_mm3": 4857.027761172996,
+      "edge_incidence_histogram": {
+        "2": 393
+      }
+    },
+    {
+      "path": "pa12/t1p2/guards/7u40-r9f-t1p2-top-b-qty2-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 133,
+      "triangles": 262,
+      "bbox_error_mm": 3.051757857974735e-06,
+      "volume_error_mm3": 0.015053443407850864,
+      "cad_volume_mm3": 4857.027761443578,
+      "edge_incidence_histogram": {
+        "2": 393
+      }
+    },
+    {
+      "path": "pa12/t1p2/guards/7u40-r9f-t1p2-lower-width-half-qty4-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 123,
+      "triangles": 242,
+      "bbox_error_mm": 3.0517578295530257e-06,
+      "volume_error_mm3": 0.005904069324287775,
+      "cad_volume_mm3": 1591.4352408157733,
+      "edge_incidence_histogram": {
+        "2": 363
+      }
+    },
+    {
+      "path": "pa12/t1p2/guards/7u40-r9f-t1p2-lower-depth-a-qty2-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 76,
+      "triangles": 148,
+      "bbox_error_mm": 3.0517578295530257e-06,
+      "volume_error_mm3": 0.010367833815053018,
+      "cad_volume_mm3": 2223.1546885422013,
+      "edge_incidence_histogram": {
+        "2": 222
+      }
+    },
+    {
+      "path": "pa12/t1p2/guards/7u40-r9f-t1p2-lower-depth-b-qty2-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 76,
+      "triangles": 148,
+      "bbox_error_mm": 3.0517578295530257e-06,
+      "volume_error_mm3": 0.010367833816872007,
+      "cad_volume_mm3": 2223.1546885422013,
+      "edge_incidence_histogram": {
+        "2": 222
+      }
+    },
+    {
+      "path": "pa12/t1p2/guards/7u40-r9f-t1p2-vertical-corner-qty4-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 76,
+      "triangles": 148,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.006594451328510331,
+      "cad_volume_mm3": 1137.1159283445545,
+      "edge_incidence_histogram": {
+        "2": 222
+      }
+    },
+    {
+      "path": "pa12/t1p2/lid/7u40-r9f-lid-frame-fr-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 766,
+      "triangles": 1536,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.0037851476117793936,
+      "cad_volume_mm3": 21094.55187062771,
+      "edge_incidence_histogram": {
+        "2": 2304
+      }
+    },
+    {
+      "path": "pa12/t1p2/lid/7u40-r9f-lid-frame-fl-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 766,
+      "triangles": 1536,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.0037851472152397037,
+      "cad_volume_mm3": 21094.55187062771,
+      "edge_incidence_histogram": {
+        "2": 2304
+      }
+    },
+    {
+      "path": "pa12/t1p2/lid/7u40-r9f-lid-frame-bl-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 766,
+      "triangles": 1536,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.0037851472770853434,
+      "cad_volume_mm3": 21094.551870627693,
+      "edge_incidence_histogram": {
+        "2": 2304
+      }
+    },
+    {
+      "path": "pa12/t1p2/lid/7u40-r9f-lid-frame-br-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 766,
+      "triangles": 1536,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.003785147659073118,
+      "cad_volume_mm3": 21094.55187062771,
+      "edge_incidence_histogram": {
+        "2": 2304
+      }
+    },
+    {
+      "path": "aluminum/t1p2/7u40-r9f-lid-plate-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 2280,
+      "triangles": 4588,
+      "bbox_error_mm": 6.103515630684342e-06,
+      "volume_error_mm3": 0.022435496270190924,
+      "cad_volume_mm3": 113796.90106759699,
+      "edge_incidence_histogram": {
+        "2": 6882
+      }
+    },
+    {
+      "path": "pa12/t1p0/guards/7u40-r9f-t1p0-top-a-qty2-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 133,
+      "triangles": 262,
+      "bbox_error_mm": 3.0517578011313162e-06,
+      "volume_error_mm3": 0.009195505707793927,
+      "cad_volume_mm3": 3934.031495689728,
+      "edge_incidence_histogram": {
+        "2": 393
+      }
+    },
+    {
+      "path": "pa12/t1p0/guards/7u40-r9f-t1p0-top-b-qty2-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 133,
+      "triangles": 262,
+      "bbox_error_mm": 3.051757772709607e-06,
+      "volume_error_mm3": 0.009195775466650957,
+      "cad_volume_mm3": 3934.031495959509,
+      "edge_incidence_histogram": {
+        "2": 393
+      }
+    },
+    {
+      "path": "pa12/t1p0/guards/7u40-r9f-t1p0-lower-width-half-qty4-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 123,
+      "triangles": 242,
+      "bbox_error_mm": 3.0517578011313162e-06,
+      "volume_error_mm3": 0.003847924836236416,
+      "cad_volume_mm3": 1300.1114767316772,
+      "edge_incidence_histogram": {
+        "2": 363
+      }
+    },
+    {
+      "path": "pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-a-qty2-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 76,
+      "triangles": 148,
+      "bbox_error_mm": 3.0517578011313162e-06,
+      "volume_error_mm3": 0.00766528573535652,
+      "cad_volume_mm3": 1819.40468854219,
+      "edge_incidence_histogram": {
+        "2": 222
+      }
+    },
+    {
+      "path": "pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-b-qty2-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 76,
+      "triangles": 148,
+      "bbox_error_mm": 3.0517578011313162e-06,
+      "volume_error_mm3": 0.007665285738994498,
+      "cad_volume_mm3": 1819.40468854219,
+      "edge_incidence_histogram": {
+        "2": 222
+      }
+    },
+    {
+      "path": "pa12/t1p0/guards/7u40-r9f-t1p0-vertical-corner-qty4-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 76,
+      "triangles": 148,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.0037027595500376265,
+      "cad_volume_mm3": 931.0359283445591,
+      "edge_incidence_histogram": {
+        "2": 222
+      }
+    },
+    {
+      "path": "pa12/t1p0/lid/7u40-r9f-lid-frame-fr-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 766,
+      "triangles": 1536,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.0074419178381504025,
+      "cad_volume_mm3": 20968.20813611207,
+      "edge_incidence_histogram": {
+        "2": 2304
+      }
+    },
+    {
+      "path": "pa12/t1p0/lid/7u40-r9f-lid-frame-fl-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 766,
+      "triangles": 1536,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.007441917252435815,
+      "cad_volume_mm3": 20968.20813611207,
+      "edge_incidence_histogram": {
+        "2": 2304
+      }
+    },
+    {
+      "path": "pa12/t1p0/lid/7u40-r9f-lid-frame-bl-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 766,
+      "triangles": 1536,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.007441917354299221,
+      "cad_volume_mm3": 20968.208136112084,
+      "edge_incidence_histogram": {
+        "2": 2304
+      }
+    },
+    {
+      "path": "pa12/t1p0/lid/7u40-r9f-lid-frame-br-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 766,
+      "triangles": 1536,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.007441917656251462,
+      "cad_volume_mm3": 20968.20813611207,
+      "edge_incidence_histogram": {
+        "2": 2304
+      }
+    },
+    {
+      "path": "aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 2280,
+      "triangles": 4588,
+      "bbox_error_mm": 3.0517578295530257e-06,
+      "volume_error_mm3": 0.027562612667679787,
+      "cad_volume_mm3": 113460.54106759699,
+      "edge_incidence_histogram": {
+        "2": 6882
+      }
+    },
+    {
+      "path": "coupons/c1-01/7u40-r9f-c1-01-guard-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 168,
+      "triangles": 332,
+      "bbox_error_mm": 4.768371586472142e-08,
+      "volume_error_mm3": 0.0020036591157577277,
+      "cad_volume_mm3": 696.5465482457441,
+      "edge_incidence_histogram": {
+        "2": 498
+      }
+    },
+    {
+      "path": "coupons/c1-02/7u40-r9f-c1-02-guard-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 168,
+      "triangles": 332,
+      "bbox_error_mm": 4.7683715642676816e-08,
+      "volume_error_mm3": 0.0019882442411471857,
+      "cad_volume_mm3": 691.8905482457435,
+      "edge_incidence_histogram": {
+        "2": 498
+      }
+    },
+    {
+      "path": "coupons/c1-03/7u40-r9f-c1-03-guard-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 168,
+      "triangles": 332,
+      "bbox_error_mm": 9.536743128535363e-08,
+      "volume_error_mm3": 0.0020252005574548093,
+      "cad_volume_mm3": 706.2905482457437,
+      "edge_incidence_histogram": {
+        "2": 498
+      }
+    },
+    {
+      "path": "coupons/c1-04/7u40-r9f-c1-04-guard-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 164,
+      "triangles": 324,
+      "bbox_error_mm": 9.536743128535363e-08,
+      "volume_error_mm3": 0.00202607317305592,
+      "cad_volume_mm3": 682.1945482457435,
+      "edge_incidence_histogram": {
+        "2": 486
+      }
+    },
+    {
+      "path": "coupons/c1-05/7u40-r9f-c1-05-guard-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 168,
+      "triangles": 332,
+      "bbox_error_mm": 4.7683715642676816e-08,
+      "volume_error_mm3": 0.0020329696874341607,
+      "cad_volume_mm3": 564.6905482457436,
+      "edge_incidence_histogram": {
+        "2": 498
+      }
+    },
+    {
+      "path": "coupons/c1-06/7u40-r9f-c1-06-guard-qty2-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 168,
+      "triangles": 332,
+      "bbox_error_mm": 4.768371586472142e-08,
+      "volume_error_mm3": 0.000989449590406366,
+      "cad_volume_mm3": 345.083858196336,
+      "edge_incidence_histogram": {
+        "2": 498
+      }
+    },
+    {
+      "path": "coupons/c1-07/7u40-r9f-c1-07-guard-qty2-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 156,
+      "triangles": 308,
+      "bbox_error_mm": 4.768371586472142e-08,
+      "volume_error_mm3": 0.001001618318753117,
+      "cad_volume_mm3": 349.1852741228718,
+      "edge_incidence_histogram": {
+        "2": 462
+      }
+    },
+    {
+      "path": "coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 8,
+      "triangles": 12,
+      "bbox_error_mm": 0.0,
+      "volume_error_mm3": 2.2737367544323206e-13,
+      "cad_volume_mm3": 1199.9999999999998,
+      "edge_incidence_histogram": {
+        "2": 18
+      }
+    },
+    {
+      "path": "coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 8,
+      "triangles": 12,
+      "bbox_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 0.0,
+      "cad_volume_mm3": 1395.0,
+      "edge_incidence_histogram": {
+        "2": 18
+      }
+    },
+    {
+      "path": "coupons/c2-01/7u40-r9f-c2-01-guard-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 80,
+      "triangles": 156,
+      "bbox_error_mm": 3.051757857974735e-06,
+      "volume_error_mm3": 0.0028146149410304133,
+      "cad_volume_mm3": 520.9699111843069,
+      "edge_incidence_histogram": {
+        "2": 234
+      }
+    },
+    {
+      "path": "coupons/c2-01/7u40-r9f-c2-01-frame-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 516,
+      "triangles": 1032,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.0019324310133015388,
+      "cad_volume_mm3": 3218.6606197286665,
+      "edge_incidence_histogram": {
+        "2": 1548
+      }
+    },
+    {
+      "path": "coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 260,
+      "triangles": 520,
+      "bbox_error_mm": 6.103515630684342e-06,
+      "volume_error_mm3": 0.005341229595842378,
+      "cad_volume_mm3": 1174.3811958466883,
+      "edge_incidence_histogram": {
+        "2": 780
+      }
+    },
+    {
+      "path": "coupons/c2-02/7u40-r9f-c2-02-wall-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 8,
+      "triangles": 12,
+      "bbox_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 0.0,
+      "cad_volume_mm3": 1395.0,
+      "edge_incidence_histogram": {
+        "2": 18
+      }
+    },
+    {
+      "path": "coupons/c2-02/7u40-r9f-c2-02-guard-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 80,
+      "triangles": 156,
+      "bbox_error_mm": 3.051757857974735e-06,
+      "volume_error_mm3": 0.0028146149410304133,
+      "cad_volume_mm3": 520.9699111843069,
+      "edge_incidence_histogram": {
+        "2": 234
+      }
+    },
+    {
+      "path": "coupons/c2-02/7u40-r9f-c2-02-frame-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 516,
+      "triangles": 1032,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.0021588263202829694,
+      "cad_volume_mm3": 3203.804619728664,
+      "edge_incidence_histogram": {
+        "2": 1548
+      }
+    },
+    {
+      "path": "coupons/c2-02/7u40-r9f-c2-02-plate-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 260,
+      "triangles": 520,
+      "bbox_error_mm": 6.103515630684342e-06,
+      "volume_error_mm3": 0.005341229595842378,
+      "cad_volume_mm3": 1174.3811958466883,
+      "edge_incidence_histogram": {
+        "2": 780
+      }
+    },
+    {
+      "path": "coupons/c2-03/7u40-r9f-c2-03-wall-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 8,
+      "triangles": 12,
+      "bbox_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 0.0,
+      "cad_volume_mm3": 1395.0,
+      "edge_incidence_histogram": {
+        "2": 18
+      }
+    },
+    {
+      "path": "coupons/c2-03/7u40-r9f-c2-03-guard-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 80,
+      "triangles": 156,
+      "bbox_error_mm": 3.051757857974735e-06,
+      "volume_error_mm3": 0.0028146149410304133,
+      "cad_volume_mm3": 520.9699111843069,
+      "edge_incidence_histogram": {
+        "2": 234
+      }
+    },
+    {
+      "path": "coupons/c2-03/7u40-r9f-c2-03-frame-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 516,
+      "triangles": 1032,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.0017415751822227321,
+      "cad_volume_mm3": 3233.804619728665,
+      "edge_incidence_histogram": {
+        "2": 1548
+      }
+    },
+    {
+      "path": "coupons/c2-03/7u40-r9f-c2-03-plate-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 260,
+      "triangles": 520,
+      "bbox_error_mm": 6.103515630684342e-06,
+      "volume_error_mm3": 0.005341229595842378,
+      "cad_volume_mm3": 1174.3811958466883,
+      "edge_incidence_histogram": {
+        "2": 780
+      }
+    },
+    {
+      "path": "coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 8,
+      "triangles": 12,
+      "bbox_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 0.0,
+      "cad_volume_mm3": 900.0,
+      "edge_incidence_histogram": {
+        "2": 18
+      }
+    },
+    {
+      "path": "coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 8,
+      "triangles": 12,
+      "bbox_error_mm": 1.4210854715202004e-14,
+      "volume_error_mm3": 0.0,
+      "cad_volume_mm3": 832.5,
+      "edge_incidence_histogram": {
+        "2": 18
+      }
+    },
+    {
+      "path": "coupons/c4-01/7u40-r9f-c4-01-lower-guard-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 160,
+      "triangles": 316,
+      "bbox_error_mm": 3.0517578011313162e-06,
+      "volume_error_mm3": 0.0019524769296026534,
+      "cad_volume_mm3": 405.93791118430977,
+      "edge_incidence_histogram": {
+        "2": 474
+      }
+    },
+    {
+      "path": "coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 8,
+      "triangles": 12,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 0.0,
+      "cad_volume_mm3": 315.0,
+      "edge_incidence_histogram": {
+        "2": 18
+      }
+    },
+    {
+      "path": "coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 8,
+      "triangles": 12,
+      "bbox_error_mm": 3.051757815342171e-06,
+      "volume_error_mm3": 5.684341886080802e-14,
+      "cad_volume_mm3": 359.99999999999994,
+      "edge_incidence_histogram": {
+        "2": 18
+      }
+    },
+    {
+      "path": "coupons/c5-01/7u40-r9f-c5-01-upper-guard-qty1-mm.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 221,
+      "triangles": 438,
+      "bbox_error_mm": 3.051757857974735e-06,
+      "volume_error_mm3": 0.001437402874955751,
+      "cad_volume_mm3": 392.64305577192147,
+      "edge_incidence_histogram": {
+        "2": 657
+      }
+    }
+  ],
+  "passed": true,
+  "unverified": [
+    "Original R9 CI (separate verification)",
+    "Continuous motion between sampled lift positions",
+    "Actual module knobs, head/nut/driver dimensions and washer selection",
+    "Adhesive fills the final measured lateral gap and retains guards",
+    "Manufacturing tolerances/warpage, long-part shrinkage, anodized finish",
+    "Physical strap tension, lid deflection, drop/fatigue/transport",
+    "Local documentation/ledger/preview integration into main"
+  ]
+}

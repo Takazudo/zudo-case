@@ -1,0 +1,28 @@
+{
+  "guard_opening_mm": [
+    223.8,
+    328.4
+  ],
+  "guard_exterior_mm": [
+    232.0,
+    336.6
+  ],
+  "guard_bottom_z_mm": -1.0,
+  "guard_top_z_mm": 92.0,
+  "guard_envelope_height_mm": 93.0,
+  "lid_seat_z_mm": 92.0,
+  "plate_bottom_z_mm": 122.0,
+  "plate_top_z_mm": 123.5,
+  "lip_top_z_mm": 123.8,
+  "locator_bottom_z_mm": 80.0,
+  "flat_wall_mm": 1.0,
+  "metal_offset_mm": 0.3,
+  "lid_plate_mm": [
+    227.8,
+    332.40000000000003,
+    1.5
+  ],
+  "lid_locator_xy_clearance_mm": 0.7,
+  "lid_engagement_mm": 12.0,
+  "plate_under_clearance_to_assumed_knob_mm": 4.0
+}

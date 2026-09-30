@@ -1,0 +1,37 @@
+{
+  "id": "C1-METAL",
+  "purpose": "One reusable 40x20mm real metal edge",
+  "physical_results": null,
+  "parts": [
+    {
+      "part": "c1-metal-edge",
+      "variant": "coupon",
+      "material": "A5052 t1.5 candidate",
+      "group": "coupon-metal",
+      "per_set_quantity": 1,
+      "order_quantity": 1,
+      "dimensions_mm": [
+        1.5,
+        40.0,
+        20.0
+      ],
+      "volume_mm3": 1199.9999999999998,
+      "stl": "coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.stl",
+      "step": "coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.step",
+      "dxf_transform": {
+        "origin_assembly_mm": [
+          -1.5,
+          0.0,
+          -20.0
+        ],
+        "axes": [
+          1,
+          2
+        ],
+        "thickness_axis": 0,
+        "holes": []
+      },
+      "dxf": "coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.dxf"
+    }
+  ]
+}

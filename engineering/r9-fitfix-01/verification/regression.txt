@@ -1,0 +1,16 @@
+test_all_guard_instances_against_all_five_plates (__main__.GeometryTests.test_all_guard_instances_against_all_five_plates) ... ok
+test_c1_07_label_is_manifold (__main__.GeometryTests.test_c1_07_label_is_manifold) ... ok
+test_exports_repeat_within_same_toolchain (__main__.GeometryTests.test_exports_repeat_within_same_toolchain) ... ok
+test_lid_has_actual_contact_support (__main__.GeometryTests.test_lid_has_actual_contact_support) ... ok
+test_negative_guard_parameters_rejected (__main__.GeometryTests.test_negative_guard_parameters_rejected) ... ok
+test_new_coupon_pairs_do_not_interpenetrate (__main__.GeometryTests.test_new_coupon_pairs_do_not_interpenetrate) ... ok
+test_new_lower_l_section_clears_floor_and_wall (__main__.GeometryTests.test_new_lower_l_section_clears_floor_and_wall) ... ok
+test_old_lower_return_negative_control (__main__.GeometryTests.test_old_lower_return_negative_control) ... ok
+test_parameter_changes_follow_seating_and_plate (__main__.GeometryTests.test_parameter_changes_follow_seating_and_plate) ... ok
+test_seat_is_absolute_z_not_total_height (__main__.GeometryTests.test_seat_is_absolute_z_not_total_height) ... ok
+test_wall_thickness_is_not_consumed_by_fit_or_adhesive (__main__.GeometryTests.test_wall_thickness_is_not_consumed_by_fit_or_adhesive) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 4.956s
+
+OK

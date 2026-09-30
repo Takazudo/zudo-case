@@ -1,0 +1,83 @@
+{
+  "id": "C4-01",
+  "purpose": "NEW: bottom-floor + vertical wall + lower L cover, same case solids",
+  "physical_results": null,
+  "parts": [
+    {
+      "part": "c4-01-floor",
+      "variant": "coupon",
+      "material": "A5052 t1.5 candidate",
+      "group": "coupon-metal",
+      "per_set_quantity": 1,
+      "order_quantity": 1,
+      "dimensions_mm": [
+        30.000000000000014,
+        20.0,
+        1.5
+      ],
+      "volume_mm3": 900.0,
+      "stl": "coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.stl",
+      "step": "coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.step",
+      "dxf_transform": {
+        "origin_assembly_mm": [
+          19.999999999999986,
+          -167.0,
+          0.0
+        ],
+        "axes": [
+          0,
+          1
+        ],
+        "thickness_axis": 2,
+        "holes": []
+      },
+      "dxf": "coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.dxf"
+    },
+    {
+      "part": "c4-01-wall",
+      "variant": "coupon",
+      "material": "A5052 t1.5 candidate",
+      "group": "coupon-metal",
+      "per_set_quantity": 1,
+      "order_quantity": 1,
+      "dimensions_mm": [
+        30.000000000000014,
+        1.5,
+        18.5
+      ],
+      "volume_mm3": 832.5,
+      "stl": "coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.stl",
+      "step": "coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.step",
+      "dxf_transform": {
+        "origin_assembly_mm": [
+          19.999999999999986,
+          -167.0,
+          1.5
+        ],
+        "axes": [
+          0,
+          2
+        ],
+        "thickness_axis": 1,
+        "holes": []
+      },
+      "dxf": "coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.dxf"
+    },
+    {
+      "part": "c4-01-lower-guard",
+      "variant": "coupon",
+      "material": "PA12-HP black candidate",
+      "group": "coupon",
+      "per_set_quantity": 1,
+      "order_quantity": 1,
+      "dimensions_mm": [
+        30.0,
+        6.550000000000011,
+        6.2000000000000455
+      ],
+      "volume_mm3": 405.93791118430977,
+      "stl": "coupons/c4-01/7u40-r9f-c4-01-lower-guard-qty1-mm.stl",
+      "step": "coupons/c4-01/7u40-r9f-c4-01-lower-guard-qty1-mm.step"
+    }
+  ]
+}

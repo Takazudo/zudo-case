@@ -1,0 +1,39 @@
+{
+  "scope": "body drawing geometry only",
+  "patterns": [
+    {
+      "upstream": {
+        "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-al-bottom-qty1-mm.dxf",
+        "sha256": "026b11f039d0ccc2262f4ae7ca5e654ebc6b8aa213d91d6383dcdb5fc53ef9b0"
+      },
+      "fixed": {
+        "path": "engineering/r9-fitfix-01/out/aluminum/body/7u40-r9f-body-bottom-qty1-mm.dxf",
+        "sha256": "df4c5af0c3e9185f5207591c5371559b704c064ee13d70b6828b3ee7248124f8"
+      },
+      "matched": true
+    },
+    {
+      "upstream": {
+        "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-al-front-back-qty2-mm.dxf",
+        "sha256": "02780cf37e7a63150e467adceb42f85e82d299e1501043b6d587be5f683cded8"
+      },
+      "fixed": {
+        "path": "engineering/r9-fitfix-01/out/aluminum/body/7u40-r9f-body-front_back-qty2-mm.dxf",
+        "sha256": "49dbb39e98a977716380d3e896fbc067e466249d58d2ef094dd33d25c8829fed"
+      },
+      "matched": true
+    },
+    {
+      "upstream": {
+        "path": "engineering/r9-prototype-01/out/aluminum/7u40-r9-al-left-right-qty2-mm.dxf",
+        "sha256": "419865c0e020a8cc1973d682bdafb11555d377cbd05afeb753595ef2835b2c87"
+      },
+      "fixed": {
+        "path": "engineering/r9-fitfix-01/out/aluminum/body/7u40-r9f-body-left_right-qty2-mm.dxf",
+        "sha256": "5839c67b5822c2216790978ea54f8d046ef3232d0198efa6962d6fa3bfa0ea01"
+      },
+      "matched": true
+    }
+  ],
+  "passed": true
+}

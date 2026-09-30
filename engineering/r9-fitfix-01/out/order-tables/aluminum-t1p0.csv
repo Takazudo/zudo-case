@@ -1,0 +1,5 @@
+﻿part,material,order_quantity,stl,step,dxf
+body-bottom,A5052 t1.5 black anodized candidate,1,aluminum/body/7u40-r9f-body-bottom-qty1-mm.stl,aluminum/body/7u40-r9f-body-bottom-qty1-mm.step,aluminum/body/7u40-r9f-body-bottom-qty1-mm.dxf
+body-front_back,A5052 t1.5 black anodized candidate,2,aluminum/body/7u40-r9f-body-front_back-qty2-mm.stl,aluminum/body/7u40-r9f-body-front_back-qty2-mm.step,aluminum/body/7u40-r9f-body-front_back-qty2-mm.dxf
+body-left_right,A5052 t1.5 black anodized candidate,2,aluminum/body/7u40-r9f-body-left_right-qty2-mm.stl,aluminum/body/7u40-r9f-body-left_right-qty2-mm.step,aluminum/body/7u40-r9f-body-left_right-qty2-mm.dxf
+lid-plate,A5052 t1.5 black anodized candidate,1,aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.stl,aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.step,aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.dxf

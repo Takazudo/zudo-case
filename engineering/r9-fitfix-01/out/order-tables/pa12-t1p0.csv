@@ -1,0 +1,11 @@
+﻿part,material,order_quantity,stl,step,dxf
+t1p0-top-a,PA12-HP black candidate,2,pa12/t1p0/guards/7u40-r9f-t1p0-top-a-qty2-mm.stl,pa12/t1p0/guards/7u40-r9f-t1p0-top-a-qty2-mm.step,
+t1p0-top-b,PA12-HP black candidate,2,pa12/t1p0/guards/7u40-r9f-t1p0-top-b-qty2-mm.stl,pa12/t1p0/guards/7u40-r9f-t1p0-top-b-qty2-mm.step,
+t1p0-lower-width-half,PA12-HP black candidate,4,pa12/t1p0/guards/7u40-r9f-t1p0-lower-width-half-qty4-mm.stl,pa12/t1p0/guards/7u40-r9f-t1p0-lower-width-half-qty4-mm.step,
+t1p0-lower-depth-a,PA12-HP black candidate,2,pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-a-qty2-mm.stl,pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-a-qty2-mm.step,
+t1p0-lower-depth-b,PA12-HP black candidate,2,pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-b-qty2-mm.stl,pa12/t1p0/guards/7u40-r9f-t1p0-lower-depth-b-qty2-mm.step,
+t1p0-vertical-corner,PA12-HP black candidate,4,pa12/t1p0/guards/7u40-r9f-t1p0-vertical-corner-qty4-mm.stl,pa12/t1p0/guards/7u40-r9f-t1p0-vertical-corner-qty4-mm.step,
+lid-frame-fr,PA12-HP black candidate,1,pa12/t1p0/lid/7u40-r9f-lid-frame-fr-qty1-mm.stl,pa12/t1p0/lid/7u40-r9f-lid-frame-fr-qty1-mm.step,
+lid-frame-fl,PA12-HP black candidate,1,pa12/t1p0/lid/7u40-r9f-lid-frame-fl-qty1-mm.stl,pa12/t1p0/lid/7u40-r9f-lid-frame-fl-qty1-mm.step,
+lid-frame-bl,PA12-HP black candidate,1,pa12/t1p0/lid/7u40-r9f-lid-frame-bl-qty1-mm.stl,pa12/t1p0/lid/7u40-r9f-lid-frame-bl-qty1-mm.step,
+lid-frame-br,PA12-HP black candidate,1,pa12/t1p0/lid/7u40-r9f-lid-frame-br-qty1-mm.stl,pa12/t1p0/lid/7u40-r9f-lid-frame-br-qty1-mm.step,
