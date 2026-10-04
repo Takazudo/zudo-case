@@ -1,0 +1,43 @@
+{
+  "revision": "HOME-PRINT-SPACER-01",
+  "units": "mm",
+  "status": "home-print fit trial; physical fit and clamping unverified",
+  "height_mm": 8.0,
+  "outer_diameter_mm": 10.0,
+  "bore_diameter_mm": 5.5,
+  "segments": 128,
+  "quantity": {
+    "3u60": 4,
+    "7u40": 10,
+    "7u60": 10
+  },
+  "input": {
+    "path": "../r6-body/design-parameters.json",
+    "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b"
+  },
+  "output": {
+    "path": "frame-spacer-h8-od10-id5p5-mm.stl",
+    "sha256": "88ed41ad6895cbbc1f34e83c690c9e1fab94c054f959bc3d48aef30840b6cd17"
+  },
+  "verification": {
+    "triangles": 1024,
+    "closed_manifold": true,
+    "consistent_winding": true,
+    "bounds_mm": [
+      [
+        -5.0,
+        5.0
+      ],
+      [
+        -5.0,
+        5.0
+      ],
+      [
+        0.0,
+        8.0
+      ]
+    ],
+    "volume_mm3": 438.0761889466918,
+    "bore_vertex_diameter_mm": 5.499999808528314
+  }
+}
