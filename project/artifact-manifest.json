@@ -1494,8 +1494,8 @@
     },
     {
       "path": "engineering/r9-prototype-01/out/SIZE-INVENTORY.json",
-      "bytes": 1310,
-      "sha256": "9081f9f07e4b603e2328b5a1640308027e6efead4df7b29c5ce9db2c9cb0ea2a",
+      "bytes": 1311,
+      "sha256": "3f5f67c5b9456b08f7227e4ac2e6c8c04cfbaa41fd09db1368f43f29ffaf83b8",
       "status": "candidate-not-approved"
     },
     {
@@ -2191,7 +2191,7 @@
     {
       "path": "engineering/r9-prototype-01/out/outputs-manifest.json",
       "bytes": 193223,
-      "sha256": "2135df59d73e3f8678aeec7e3d53704755006a401e67a66becae552ed7a8fa07",
+      "sha256": "29961bc0b63b2dd1a4dd4a82b437d190b99ad67023b2c2b054723d276887b1d6",
       "status": "candidate-not-approved"
     },
     {

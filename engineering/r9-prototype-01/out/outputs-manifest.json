@@ -208,10 +208,10 @@
       "sha256": "3dc716987ff80ed686d962b8180e46564ef57af8d9f9bf075a3ac4ccfd843f67"
     },
     {
-      "bytes": 47953,
+      "bytes": 48136,
       "kind": "generator_source",
       "path": "engineering/r9-prototype-01/r9/package.py",
-      "sha256": "287099a104f126972399e1c7ce895442b328d55db4f54484555033318b7adfdd"
+      "sha256": "5c35dac77c10d8fc4ae22848fdba89a775bdb80c84376f151d748b697c107a98"
     },
     {
       "bytes": 38199,
@@ -244,10 +244,10 @@
       "sha256": "3bd3803775af001e1c73c6da3db238bc3a99f2b7b33baab11cf8e323a80fff85"
     },
     {
-      "bytes": 33212,
+      "bytes": 36055,
       "kind": "document_registry_reference",
       "path": "project/current-spec.json",
-      "sha256": "1b331d259a2e21338130c55b3841885ba700b0adaced1a8156d4dc74b5e87c3f"
+      "sha256": "c0501e6ae3f41b414466ae7852b7d330c4f6fe4d8ddfd8b16d118acb64cced8b"
     },
     {
       "bytes": 4388,
@@ -282,10 +282,10 @@
       "sha256": "9605b90585e85fbe22dc9859cec634f9cd1051fc83110b54b74b2ea51fcedd3c"
     },
     {
-      "bytes": 1310,
+      "bytes": 1311,
       "kind": "generated_out_file",
       "path": "engineering/r9-prototype-01/out/SIZE-INVENTORY.json",
-      "sha256": "9081f9f07e4b603e2328b5a1640308027e6efead4df7b29c5ce9db2c9cb0ea2a"
+      "sha256": "3f5f67c5b9456b08f7227e4ac2e6c8c04cfbaa41fd09db1368f43f29ffaf83b8"
     },
     {
       "bytes": 20704,
