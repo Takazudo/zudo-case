@@ -10,6 +10,10 @@
 
 [R9-FITFIX-01](src/content/docs/design/r9-fitfix-01.mdx)を追加。ガードと蓋座面の修正候補で、固定環境の生成・検査記録は `engineering/r9-fitfix-01/verification/`。旧R9は履歴として保存し、現物嵌合・接着・運搬と製造承認は未完了。
 
+## 家庭印刷用8mmスペーサー
+
+フレームとケース側板の間に入れる[8mmスペーサーのSTL・編集用ソース・印刷手順](engineering/home-print-spacer-01/README.md)を追加。外径10mm／穴径5.5mmはR6由来の仮寸法です。まず1個で現物確認し、3U60は4個、7U40/7U60は各10個を印刷します。
+
 ## まず起動する
 
 Node.js 22以上とpnpmを用意してください。このスナップショットは公式scaffolderで初期化済みで、`package.json`と`pnpm-lock.yaml`を含みます。新しいチェックアウトでは、依存をロックファイルどおりに入れてから使います。動作確認した環境はNode.js 24.13.1、pnpm 10.30.3です。
