@@ -1,11 +1,11 @@
 {
   "files": [
     {
-      "bytes": 47953,
+      "bytes": 48136,
       "path": "engineering/r9-prototype-01/r9/package.py"
     },
     {
-      "bytes": 9171,
+      "bytes": 10608,
       "path": "engineering/r9-prototype-01/tests/test_package.py"
     },
     {
@@ -25,7 +25,7 @@
       "path": "engineering/r9-prototype-01/out/outputs-manifest.json"
     },
     {
-      "bytes": 1310,
+      "bytes": 1311,
       "path": "engineering/r9-prototype-01/out/SIZE-INVENTORY.json"
     },
     {
@@ -45,5 +45,5 @@
   "revision": "R9-PROTOTYPE-01",
   "schema": "zudo-case-r9-size-inventory-v1",
   "scope": "new files committed for issue #92, including this inventory and outputs-manifest.json",
-  "totalBytes": 6068361
+  "totalBytes": 6069982
 }

@@ -1,12 +1,15 @@
 """Focused package scope, cost discipline, hash, size, and repeatability checks."""
 from __future__ import annotations
 
+import copy
 import csv
 import hashlib
 import io
 import json
 from pathlib import Path
 import unittest
+from unittest.mock import patch
+import r9.package as package
 import zipfile
 
 from r9.package import (
@@ -168,6 +171,28 @@ class CandidatePackageTests(unittest.TestCase):
                 self.assertEqual(size, OUTPUT_MANIFEST.stat().st_size)
             else:
                 self.assertEqual(size, (REPO_ROOT / path).stat().st_size)
+
+    def test_equivalent_registry_number_types_preserve_package_bytes(self):
+        original_load = package._load_json
+        spec_path = REPO_ROOT / "project" / "current-spec.json"
+        original = original_load(spec_path)
+        baseline_plates = package._json_bytes(package._plate_entries()[1])
+        baseline_bom = package._json_bytes(package._bom_rows()[0])
+        baseline_csv = package._bom_csv(package._bom_rows()[0])
+        for number_type in (int, float):
+            modified = copy.deepcopy(original)
+            model = modified["models"]["7u40"]
+            for plate in model["plates"]:
+                plate["size_mm"] = [number_type(v) if float(v).is_integer() else v
+                                     for v in plate["size_mm"]]
+            model["lid_preview"]["strapWidthMm"] = number_type(model["lid_preview"]["strapWidthMm"])
+            def load(path):
+                return modified if path == spec_path else original_load(path)
+            with self.subTest(number_type=number_type), patch.object(package, "_load_json", side_effect=load):
+                self.assertEqual(package._json_bytes(package._plate_entries()[1]), baseline_plates)
+                bom = package._bom_rows()[0]
+                self.assertEqual(package._json_bytes(bom), baseline_bom)
+                self.assertEqual(package._bom_csv(bom), baseline_csv)
 
     def test_rebuilding_packages_produces_identical_bytes_and_manifest(self):
         build()

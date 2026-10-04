@@ -159,6 +159,8 @@ def _plate_entries() -> tuple[dict[str, bytes], list[dict]]:
         "7U40-R9-AL-FRONT-BACK": ("前後板", "front_back"),
         "7U40-R9-AL-LEFT-RIGHT": ("左右板", "left_right"),
     }
+    # Normalize millimeter values so equivalent integer/float registry spellings
+    # produce identical package bytes.
     current = {str(plate["role"]): plate for plate in model["plates"]}
     components = {component["id"]: component for component in body_manifest["components"]}
     entries: dict[str, bytes] = {}
@@ -175,7 +177,7 @@ def _plate_entries() -> tuple[dict[str, bytes], list[dict]]:
             "partId": part_id,
             "name": label,
             "quantity": quantity,
-            "dimensionsMm": plate["size_mm"],
+            "dimensionsMm": [float(value) for value in plate["size_mm"]],
             "material": "A5052 t1.5 mm; black anodizing (candidate)",
             "status": "candidate; not approved for manufacture",
             "holeCountPerPlate": plate["holes_each"],
@@ -352,7 +354,7 @@ def _bom_rows() -> tuple[dict, list[dict]]:
         items.append({
             "id": part_id, "section": "aluminum", "name": name,
             "quantity": component["quantity"], "unit": "piece",
-            "dimensionsMm": plate["size_mm"],
+            "dimensionsMm": [float(value) for value in plate["size_mm"]],
             "material": "A5052 t1.5 mm; black anodizing (candidate)",
             "status": "candidate; not approved for manufacture",
             "unitPriceJpy": None, "lineTotalJpy": None,
@@ -521,7 +523,7 @@ def _bom_rows() -> tuple[dict, list[dict]]:
         {
             "id": "external-transport-strap", "section": "hardware", "name": "着脱式外周バンド",
             "quantity": 2, "unit": "piece", "dimensionsMm": None,
-            "widthMm": body_spec["lid_preview"]["strapWidthMm"],
+            "widthMm": float(body_spec["lid_preview"]["strapWidthMm"]),
             "modeledThicknessMm": body_spec["lid_preview"]["strapThicknessMm"],
             "estimatedLoopLengthMm": body_spec["lid_preview"]["strapLoopGeometricEstimateMm"],
             "material": "Generic external strap; material and product unselected",
