@@ -1,0 +1,19 @@
+family,part_role,per_tray,two_trays,scope
+A,rail,2,4,Source frame arrangement only; not complete enclosure BOM
+A,fixer,2,4,Source frame arrangement only; not complete enclosure BOM
+A,padder,2,4,Source frame arrangement only; not complete enclosure BOM
+A,spacer,4,8,Source frame arrangement only; not complete enclosure BOM
+A,mount,4,8,Source frame arrangement only; not complete enclosure BOM
+A,railEnd,4,8,Source frame arrangement only; not complete enclosure BOM
+B,rail,4,8,Source frame arrangement only; not complete enclosure BOM
+B,fixer,4,8,Source frame arrangement only; not complete enclosure BOM
+B,padder,4,8,Source frame arrangement only; not complete enclosure BOM
+B,spacer,8,16,Source frame arrangement only; not complete enclosure BOM
+B,mount,8,16,Source frame arrangement only; not complete enclosure BOM
+B,railEnd,8,16,Source frame arrangement only; not complete enclosure BOM
+C,rail,6,12,Source frame arrangement only; not complete enclosure BOM
+C,fixer,2,4,Source frame arrangement only; not complete enclosure BOM
+C,padder,6,12,Source frame arrangement only; not complete enclosure BOM
+C,spacer,10,20,Source frame arrangement only; not complete enclosure BOM
+C,mount,10,20,Source frame arrangement only; not complete enclosure BOM
+C,railEnd,12,24,Source frame arrangement only; not complete enclosure BOM

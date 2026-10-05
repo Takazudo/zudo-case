@@ -1,0 +1,4 @@
+family,per_tray_U,total_U,HP,metal_W_mm,metal_D_mm,metal_H_mm,complete_W_mm,complete_D_mm,complete_H_mm,lid_mm,manufacturingApproved
+tw-3u60,3,6,60,330.4,154,200,346.4,176,208,48,false
+tw-6u60,6,12,60,330.4,290,200,346.4,312,208,48,false
+tw-7u40,7,14,40,229.4,334,233.5,245.4,356,241.5,70,false

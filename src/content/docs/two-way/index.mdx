@@ -1,0 +1,27 @@
+---
+title: "2WAY / 実験設計"
+description: "元フレームを使う2トレーのケース構成とTW-01の検討範囲。"
+sidebar_position: 90
+---
+
+import { TwoWayTable } from '../../../components/two-way-table.jsx';
+
+2つのモジュール入りトレーを対向させて収納し、演奏時は手で分離するケースの実験設計です。蓋側は独立した45°スタンドで支えます。**緩衝材付きトランクでの運搬を目標とする寸法検討で、製造・耐荷重・実機適合は未承認です。**
+
+現行の単トレー製作候補 [R9-FITFIX-01](../design/r9-fitfix-01.mdx) とは別の系列です。F5は採用原資料、TW-01はリポジトリで保守する作業版です。
+
+![TW-01 Bの演奏姿勢 / WebGL](/assets/two-way/tw-01-B-play-webgl.png)
+
+TW-01の実表示（2026-10-05、Chromium 133 / WebGL・ANGLE SwiftShader）。物理検証の写真ではありません。
+
+## A / B / C の比較
+
+単位はmm。標準72 mm前面間隔でリゾルバーから生成します。列のHPは各列の幅です。Bの合計12U、Cの合計14Uは2トレーの合計であり、1枚の巨大フレームではありません。
+
+<TwoWayTable />
+
+金属外形に対し、完成包絡はストラップガイド・バックル保護・金具・脚を含みます。必要なトランク内寸には、さらに緩衝材・仕切り・別袋を加えます。実際の電源や追加ケーブルの収納は未算入です。
+
+[作業ビューアー](./preview.mdx)でA/B/Cを切り替え、[元フレームの積層](./rail-frame.mdx)、[構造と開梱](./design.mdx)、[検証と残件](./verification.mdx)を確認してください。
+
+<CategoryNav category="two-way" />

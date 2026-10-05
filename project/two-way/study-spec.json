@@ -1,0 +1,101 @@
+{
+  "schema": "zudo-case-two-way-study/1",
+  "revision": "TW-01",
+  "units": "mm",
+  "upAxis": "Z",
+  "manufacturingApproved": false,
+  "families": [
+    {
+      "id": "tw-3u60",
+      "alias": "compact",
+      "letter": "A",
+      "layout": 3,
+      "hp": 60,
+      "baseDepth": 80,
+      "lidDepth": 48
+    },
+    {
+      "id": "tw-6u60",
+      "alias": "performance",
+      "letter": "B",
+      "layout": 6,
+      "hp": 60,
+      "baseDepth": 80,
+      "lidDepth": 48
+    },
+    {
+      "id": "tw-7u40",
+      "alias": "twin40",
+      "letter": "C",
+      "layout": 7,
+      "hp": 40,
+      "baseDepth": 91.5,
+      "lidDepth": 70
+    }
+  ],
+  "defaults": {
+    "preset": "performance",
+    "kit": "tilted",
+    "profile": "straight",
+    "gap": 72,
+    "baseDepth": 80,
+    "lidDepth": 48,
+    "thickness": 1.5,
+    "ply": 8,
+    "plugBase": 28,
+    "plugLid": 28,
+    "bend": 4,
+    "knobBase": 25,
+    "knobLid": 25,
+    "margin": 8,
+    "elbow": false,
+    "pose": "frame",
+    "patch": true,
+    "cross": true,
+    "envelopes": false,
+    "cutaway": false,
+    "modules": true,
+    "structure": false,
+    "labels": true,
+    "finish": "graphite",
+    "view": "iso",
+    "highlight": false,
+    "deskGap": 70,
+    "lead": 600,
+    "collar": "loose",
+    "straps": true,
+    "overlap": 6,
+    "seatClearance": 0.6,
+    "jointLift": 0,
+    "hingeAngle": 90,
+    "foam": 20,
+    "trunkW": 420,
+    "trunkD": 420,
+    "trunkH": 330,
+    "frameExplode": 0
+  },
+  "stack": {
+    "padder": 1.6,
+    "fixer": 1.6,
+    "sideSpacer": 8,
+    "outerWasher": 1,
+    "headHeight": 1.4
+  },
+  "sourceCommit": "6a13d80d816b0247ab9eee761c29c1fb786b76cc",
+  "sources": {
+    "engineering/r6-body/source-data/panels/panel-geometry.json": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c",
+    "engineering/r6-body/source-data/panels/placements.json": "fca80fff8c825fb89727c0643dd9d1a6dbeb09b03c060ef2a4c2a1910acba03c",
+    "engineering/r6-body/source-data/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pcb": "00174d7975b0565e0732544de5fdf3ada8b8d3a4a95d720819f104e384f5d2a7",
+    "engineering/r6-body/source-data/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pcb": "a99916e41e412404171cb16a24a252bb543eb56025ffe603ee3f1455a025ee86",
+    "engineering/r6-body/source-data/panels/zb-side-frame-pad-1u/1u-padder.kicad_pcb": "dbd1d41152bbaf7350b7f1d83fa88c492acfb3ee164c5f187f5b6c7862b3769e",
+    "engineering/r6-body/source-data/panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb": "e7ea7daa33d98180f9f118e42b38d74d56d9a7ea685756a70123c9ffbf300b66",
+    "engineering/r6-body/source-data/rail40/rail_mesh.json": "6ddbf622f9bcd8f4d1316d76ce2c55b4cecfb3c166de6f88826fda3bb19c2753",
+    "engineering/r6-body/source-data/rail60/rail_mesh.json": "eff25355d247f8455eccaf8ffd9e2d659d729a7d7571acb715137c8bc2dbbf2b"
+  },
+  "assumptions": {
+    "straightGap": 72,
+    "elbowGap": 58,
+    "bFrameGap": 1,
+    "trunkRequired": true
+  }
+}

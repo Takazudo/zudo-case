@@ -1,0 +1,235 @@
+{
+  "status": "passed",
+  "browser": "133.0.6943.0",
+  "backend": "webgl",
+  "checks": 56,
+  "results": [
+    {
+      "name": "backend",
+      "status": "passed"
+    },
+    {
+      "name": "family compact",
+      "status": "passed"
+    },
+    {
+      "name": "compact/play",
+      "status": "passed"
+    },
+    {
+      "name": "compact/closed",
+      "status": "passed"
+    },
+    {
+      "name": "compact/frame",
+      "status": "passed"
+    },
+    {
+      "name": "compact/joint",
+      "status": "passed"
+    },
+    {
+      "name": "compact/trunk",
+      "status": "passed"
+    },
+    {
+      "name": "compact/packing",
+      "status": "passed"
+    },
+    {
+      "name": "compact/parts",
+      "status": "passed"
+    },
+    {
+      "name": "compact/hinge",
+      "status": "passed"
+    },
+    {
+      "name": "family performance",
+      "status": "passed"
+    },
+    {
+      "name": "performance/play",
+      "status": "passed"
+    },
+    {
+      "name": "performance/closed",
+      "status": "passed"
+    },
+    {
+      "name": "performance/frame",
+      "status": "passed"
+    },
+    {
+      "name": "performance/joint",
+      "status": "passed"
+    },
+    {
+      "name": "performance/trunk",
+      "status": "passed"
+    },
+    {
+      "name": "performance/packing",
+      "status": "passed"
+    },
+    {
+      "name": "performance/parts",
+      "status": "passed"
+    },
+    {
+      "name": "performance/hinge",
+      "status": "passed"
+    },
+    {
+      "name": "family twin40",
+      "status": "passed"
+    },
+    {
+      "name": "twin40/play",
+      "status": "passed"
+    },
+    {
+      "name": "twin40/closed",
+      "status": "passed"
+    },
+    {
+      "name": "twin40/frame",
+      "status": "passed"
+    },
+    {
+      "name": "twin40/joint",
+      "status": "passed"
+    },
+    {
+      "name": "twin40/trunk",
+      "status": "passed"
+    },
+    {
+      "name": "twin40/packing",
+      "status": "passed"
+    },
+    {
+      "name": "twin40/parts",
+      "status": "passed"
+    },
+    {
+      "name": "twin40/hinge",
+      "status": "passed"
+    },
+    {
+      "name": "C invalid48 preserved with diagnostics",
+      "status": "passed"
+    },
+    {
+      "name": "viewport 320",
+      "status": "passed"
+    },
+    {
+      "name": "viewport 390",
+      "status": "passed"
+    },
+    {
+      "name": "viewport 768",
+      "status": "passed"
+    },
+    {
+      "name": "viewport 1200",
+      "status": "passed"
+    },
+    {
+      "name": "viewport 1600",
+      "status": "passed"
+    },
+    {
+      "name": "keyboard orbit",
+      "status": "passed"
+    },
+    {
+      "name": "Escape restores focus",
+      "status": "passed"
+    },
+    {
+      "name": "constrained height exits expansion",
+      "status": "passed"
+    },
+    {
+      "name": "visibility modules",
+      "status": "passed"
+    },
+    {
+      "name": "visibility patch",
+      "status": "passed"
+    },
+    {
+      "name": "visibility cross",
+      "status": "passed"
+    },
+    {
+      "name": "visibility structure",
+      "status": "passed"
+    },
+    {
+      "name": "visibility cutaway",
+      "status": "passed"
+    },
+    {
+      "name": "visibility envelopes",
+      "status": "passed"
+    },
+    {
+      "name": "visibility highlight",
+      "status": "passed"
+    },
+    {
+      "name": "visibility labels",
+      "status": "passed"
+    },
+    {
+      "name": "frame layers",
+      "status": "passed"
+    },
+    {
+      "name": "unseated joint",
+      "status": "passed"
+    },
+    {
+      "name": "malformed atomic",
+      "status": "passed"
+    },
+    {
+      "name": "unknown-schema atomic",
+      "status": "passed"
+    },
+    {
+      "name": "invalid-type atomic",
+      "status": "passed"
+    },
+    {
+      "name": "F5 restored after family change; derived untrusted",
+      "status": "passed"
+    },
+    {
+      "name": "pose preserves physical inputs",
+      "status": "passed"
+    },
+    {
+      "name": "PNG download",
+      "status": "passed"
+    },
+    {
+      "name": "versioned export",
+      "status": "passed"
+    },
+    {
+      "name": "standalone needs no remote assets",
+      "status": "passed"
+    },
+    {
+      "name": "no page errors",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "revision": "TW-01",
+  "htmlSha256": "e9aa37b328ed6d3fe3cafc7a4e5949ef44f3c38cec5465292d47336ad143a6db"
+}

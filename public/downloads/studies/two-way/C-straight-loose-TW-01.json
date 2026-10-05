@@ -1,0 +1,269 @@
+{
+  "schema": "zudo-case-two-way/1",
+  "revision": "TW-01",
+  "familyId": "tw-7u40",
+  "units": "mm",
+  "upAxis": "Z",
+  "datums": {
+    "rearDepth": "module front plane to exterior back plate",
+    "gap": "opposed module front planes",
+    "trunk": "inside usable dimensions"
+  },
+  "state": {
+    "preset": "twin40",
+    "kit": "tilted",
+    "profile": "straight",
+    "gap": 72,
+    "baseDepth": 91.5,
+    "lidDepth": 70,
+    "thickness": 1.5,
+    "ply": 8,
+    "plugBase": 28,
+    "plugLid": 28,
+    "bend": 4,
+    "knobBase": 25,
+    "knobLid": 25,
+    "margin": 8,
+    "elbow": false,
+    "pose": "closed",
+    "patch": true,
+    "cross": true,
+    "envelopes": false,
+    "cutaway": false,
+    "modules": true,
+    "structure": false,
+    "labels": true,
+    "finish": "graphite",
+    "view": "iso",
+    "highlight": false,
+    "deskGap": 70,
+    "lead": 600,
+    "collar": "loose",
+    "straps": true,
+    "overlap": 6,
+    "seatClearance": 0.6,
+    "jointLift": 0,
+    "hingeAngle": 90,
+    "foam": 20,
+    "trunkW": 420,
+    "trunkD": 420,
+    "trunkH": 330,
+    "frameExplode": 0
+  },
+  "derived": {
+    "W": 229.4,
+    "D": 334,
+    "G": 72,
+    "t": 1.5,
+    "hp": 40,
+    "rail": 204,
+    "frameD": 314.754456,
+    "rows": [
+      {
+        "u": 3,
+        "y": -90.09366324999999,
+        "h": 128.5,
+        "screwY": [
+          -151.3439345,
+          -28.843391999999994
+        ]
+      },
+      {
+        "u": 3,
+        "y": 44.40291174999999,
+        "h": 128.5,
+        "screwY": [
+          -16.8473745,
+          105.65319799999997
+        ]
+      },
+      {
+        "u": 1,
+        "y": 134.5142055,
+        "h": 39.65,
+        "screwY": [
+          117.68447850000001,
+          151.3439325
+        ]
+      }
+    ],
+    "frame": {
+      "units": [
+        {
+          "kind": "7u",
+          "offset": 0
+        }
+      ],
+      "depth": 314.754456,
+      "rearReach": 61.95092538037109,
+      "width": 210.4,
+      "caseDepth": 334,
+      "rows": [
+        {
+          "u": 3,
+          "y": -90.09366324999999,
+          "h": 128.5,
+          "screwY": [
+            -151.3439345,
+            -28.843391999999994
+          ]
+        },
+        {
+          "u": 3,
+          "y": 44.40291174999999,
+          "h": 128.5,
+          "screwY": [
+            -16.8473745,
+            105.65319799999997
+          ]
+        },
+        {
+          "u": 1,
+          "y": 134.5142055,
+          "h": 39.65,
+          "screwY": [
+            117.68447850000001,
+            151.3439325
+          ]
+        }
+      ],
+      "counts": {
+        "rail": 6,
+        "fixer": 2,
+        "padder": 6,
+        "spacer": 10,
+        "mount": 10,
+        "railEnd": 12
+      },
+      "sourceCommit": "6a13d80d816b0247ab9eee761c29c1fb786b76cc",
+      "railGeometry": "exact-source-mesh",
+      "pcbGeometry": "canonical saved source contours and datums; display triangulation",
+      "pcbManufacturingApproved": false,
+      "description": "Original 7U fixer / 3U + 3U + 1U padders",
+      "minimumLidDepthWith3mmFloorMargin": 66.45092538037109
+    },
+    "rim": 2,
+    "gasket": 0.5,
+    "collarH": 67,
+    "qBase": 32,
+    "qLid": 32,
+    "free": 8,
+    "required": 72,
+    "excess": 0,
+    "totalU": 14,
+    "metalStack": 233.5,
+    "closedW": 245.4,
+    "closedD": 356,
+    "closedH": 241.5,
+    "pocket": 0,
+    "wrapStack": 16,
+    "standStack": 20,
+    "bundleLayer": 3,
+    "floor": -95.5,
+    "usableBase": 78,
+    "usableLid": 56.5,
+    "overBusLid": 44.5,
+    "standSpan": 267.2,
+    "run": 188.93893193304547,
+    "barH": 20,
+    "heel": 50,
+    "standWidth": 201.4,
+    "standDepth": 208.93893193304547,
+    "standHeight": 248.93893193304547,
+    "packedSideW": 208.93893193304547,
+    "packedSideH": 248.93893193304547,
+    "packedStartY": -113,
+    "packedTop": 135.93893193304547,
+    "standPackFits": true,
+    "accessoryWithinFootprint": true,
+    "strapClosedLoop": 1168.2,
+    "strapPlayLoop": 0,
+    "strapMinimumBeforeOverlap": 1168.2,
+    "protrudingLinkages": 0,
+    "poseIsKinematic": false,
+    "lidPlaneZ": 72,
+    "deskDepth": 643.0020920410531,
+    "deskWidth": 235.4,
+    "playFrontClearance": 15.298024803935062,
+    "playShellClearance": 17.705898012650188,
+    "playCheckScope": "Static rectangular shell and front-envelope sections only. No cable, hardware or opening-sweep approval.",
+    "frameRearClearLid": 6.549074619628911,
+    "frameRearClearBase": 28.04907461962891,
+    "seatInner": 5,
+    "frameSideClearance": 2.4000000000000004,
+    "frameEndClearance": 2.522771999999998,
+    "collarOuter": 3.3,
+    "innerLip": 7.1,
+    "seatWidth": 3.5,
+    "overlap": 6,
+    "seatClearance": 0.6,
+    "coreFloor": -95.5,
+    "standSleeve": 20,
+    "separator": 13,
+    "trunkRequired": [
+      285.4,
+      396,
+      314.5
+    ],
+    "trunkSpare": [
+      134.60000000000002,
+      24,
+      15.5
+    ],
+    "trunkFits": true,
+    "collarPacket": {
+      "length": 342,
+      "width": 87,
+      "thickness": 53.599999999999994,
+      "foldProven": false
+    },
+    "rimClearance": 5.556336750000009,
+    "overStiffenerLid": 50.5,
+    "hingeHeight": 15,
+    "hingeLeaf": 35,
+    "hingeOpen": 76,
+    "hingePitch": 15,
+    "hingeBarrelAssumed": 6,
+    "hingeCount": 0,
+    "strapWidth": 25,
+    "frontGapOccupiedByStorage": false,
+    "caseToCaseHinge": false,
+    "hingeRatingKnown": false,
+    "loadRated": false,
+    "strapRouteLengthScope": "Geometric route before buckle, overlap, tails and adjustment. Not an order length.",
+    "effectiveLocatorEngagement": 6,
+    "diagnostics": [
+      {
+        "code": "physical",
+        "kind": "physical-unverified",
+        "message": "実機嵌合・工具アクセス・ストラップ保持・強度・運搬・電気・温度は未検証です。",
+        "value": null
+      },
+      {
+        "code": "cables",
+        "kind": "physical-unverified",
+        "message": "ケーブル曲線は模式表示です。実長と開閉時の経路は未検証です。",
+        "value": null
+      }
+    ],
+    "manufacturingApproved": false,
+    "units": "mm",
+    "upAxis": "Z",
+    "revision": "TW-01"
+  },
+  "manufacturingApproved": false,
+  "purchasedHardwareFitVerified": false,
+  "loadRated": false,
+  "displayOnly": true,
+  "caseToCaseHinge": false,
+  "poseIsKinematic": false,
+  "cableBudget": {
+    "lengths": [
+      52.24446192330185,
+      41.60928156239572
+    ],
+    "max": 52.24446192330185,
+    "spare": 547.7555380766981,
+    "scope": "Display route only. Real lead lengths, bundle volume and unpacking sweep are not solved."
+  }
+}

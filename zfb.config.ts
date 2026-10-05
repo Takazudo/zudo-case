@@ -28,6 +28,7 @@ export default defineConfig(
     docMetainfo: false,
     headerNav: [
       { label: "概要", path: "/docs/overview", categoryMatch: "overview" },
+      { label: "2WAY", path: "/docs/two-way", categoryMatch: "two-way" },
       { label: "機種", path: "/docs/models", categoryMatch: "models" },
       { label: "設計", path: "/docs/design", categoryMatch: "design" },
       { label: "製作", path: "/docs/manufacturing", categoryMatch: "manufacturing" },

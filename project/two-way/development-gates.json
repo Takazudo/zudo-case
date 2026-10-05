@@ -1,0 +1,60 @@
+{
+  "revision": "TW-01",
+  "manufacturingApproved": false,
+  "gates": [
+    {
+      "id": "TW-01",
+      "topic": "実モジュール・配線包絡",
+      "status": "needs-measurement",
+      "result": null
+    },
+    {
+      "id": "TW-02",
+      "topic": "トレーとカラー接合試験片",
+      "status": "needs-measurement",
+      "result": null
+    },
+    {
+      "id": "TW-03",
+      "topic": "カラー蝶番干渉",
+      "status": "needs-measurement",
+      "result": null
+    },
+    {
+      "id": "TW-04",
+      "topic": "ストラップとガイド",
+      "status": "needs-measurement",
+      "result": null
+    },
+    {
+      "id": "TW-05",
+      "topic": "スタンド接合と安定性",
+      "status": "needs-measurement",
+      "result": null
+    },
+    {
+      "id": "TW-06",
+      "topic": "拘束したダミー荷重の運搬",
+      "status": "needs-measurement",
+      "result": null
+    },
+    {
+      "id": "TW-07",
+      "topic": "工具アクセスと公差",
+      "status": "needs-measurement",
+      "result": null
+    },
+    {
+      "id": "TW-08",
+      "topic": "質量・見積",
+      "status": "needs-measurement",
+      "result": null
+    },
+    {
+      "id": "TW-09",
+      "topic": "電気・温度",
+      "status": "needs-measurement",
+      "result": null
+    }
+  ]
+}

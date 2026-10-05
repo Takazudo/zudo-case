@@ -1,0 +1,32 @@
+[
+  {
+    "command": "npx --yes pnpm@10.30.3 check",
+    "exit": 0,
+    "log": "../final-check-0.log"
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 build",
+    "exit": 0,
+    "log": "../final-check-1.log"
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 check:built-preview-links",
+    "exit": 0,
+    "log": "../final-check-2.log"
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 prepare:worker-assets",
+    "exit": 0,
+    "log": "../final-check-3.log"
+  },
+  {
+    "command": "node --test tests/worker-assets.test.mjs tests/worker-assets-deployment.test.mjs",
+    "exit": 0,
+    "log": "../final-check-4.log"
+  },
+  {
+    "command": "node engineering/two-way/tw-01/build.cjs --check",
+    "exit": 0,
+    "log": "../final-check-5.log"
+  }
+]

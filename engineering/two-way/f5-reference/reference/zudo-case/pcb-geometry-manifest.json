@@ -1,0 +1,202 @@
+{
+  "fixer3u": {
+    "name": "3U fixer",
+    "sourceBlobSHA": "d09df0a92b4cf1a0d0d17d55f597961143e092b2",
+    "sourcePath": "engineering/r6-body/source-data/panels/zb-side-frame-3u/zd-side-frame-3u.kicad_pcb",
+    "sourceCommit": "6a13d80d816b0247ab9eee761c29c1fb786b76cc",
+    "outer": [
+      [
+        134.53186,
+        14.995021
+      ],
+      [
+        134.53186,
+        29.990042
+      ],
+      [
+        0,
+        29.990042
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        12.560537,
+        0
+      ],
+      [
+        134.53186,
+        0
+      ]
+    ],
+    "thickness": 1.6,
+    "cutoutCount": 4,
+    "surfaceAreaMm2": 2887.716757632277,
+    "exteriorFidelity": "source vertices",
+    "cutoutFidelity": "bounds-based visual curve approximation",
+    "manufacturingApproved": false
+  },
+  "fixer7u": {
+    "name": "7U fixer",
+    "sourceBlobSHA": "b267d494d9ec8bb34248429d3064aa35c06f5b78",
+    "sourcePath": "engineering/r6-body/source-data/panels/zb-side-frame-7u/zd-side-frame-7u.kicad_pcb",
+    "sourceCommit": "6a13d80d816b0247ab9eee761c29c1fb786b76cc",
+    "outer": [
+      [
+        30.060665,
+        60.015381
+      ],
+      [
+        40.257282,
+        60.015381
+      ],
+      [
+        42.6212,
+        60.015381
+      ],
+      [
+        75.786667,
+        60.015381
+      ],
+      [
+        117.067093,
+        60.015381
+      ],
+      [
+        157.394867,
+        60.015381
+      ],
+      [
+        197.722656,
+        60.015381
+      ],
+      [
+        239.003082,
+        60.015381
+      ],
+      [
+        239.073685,
+        59.980083
+      ],
+      [
+        272.203888,
+        59.980083
+      ],
+      [
+        274.567779,
+        59.980083
+      ],
+      [
+        284.764404,
+        59.980083
+      ],
+      [
+        314.754456,
+        29.990042
+      ],
+      [
+        314.754456,
+        0
+      ],
+      [
+        308.721161,
+        0
+      ],
+      [
+        269.063721,
+        0
+      ],
+      [
+        180.222595,
+        0
+      ],
+      [
+        134.53186,
+        0
+      ],
+      [
+        45.690731,
+        0
+      ],
+      [
+        6.033293,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        29.990042
+      ]
+    ],
+    "thickness": 1.6,
+    "cutoutCount": 24,
+    "surfaceAreaMm2": 13508.882875316447,
+    "exteriorFidelity": "source vertices",
+    "cutoutFidelity": "bounds-based visual curve approximation",
+    "manufacturingApproved": false
+  },
+  "padder3u": {
+    "name": "3U padder",
+    "sourceBlobSHA": "6140e916babd58829474dfe0c07db702c8702b2b",
+    "sourcePath": "engineering/r6-body/source-data/panels/zb-side-frame-pad-3u/3u-padder.kicad_pcb",
+    "sourceCommit": "6a13d80d816b0247ab9eee761c29c1fb786b76cc",
+    "outer": [
+      [
+        0,
+        0
+      ],
+      [
+        134.5,
+        0
+      ],
+      [
+        134.5,
+        30
+      ],
+      [
+        0,
+        30
+      ]
+    ],
+    "thickness": 1.6,
+    "cutoutCount": 3,
+    "surfaceAreaMm2": 1532.5427366278977,
+    "exteriorFidelity": "source vertices",
+    "cutoutFidelity": "source polygon vertices",
+    "manufacturingApproved": false
+  },
+  "padder1u": {
+    "name": "1U padder",
+    "sourceBlobSHA": "574d4711accfa4d0854c2c5ad125d842aa30bd0b",
+    "sourcePath": "engineering/r6-body/source-data/panels/zb-side-frame-pad-1u/1u-padder.kicad_pcb",
+    "sourceCommit": "6a13d80d816b0247ab9eee761c29c1fb786b76cc",
+    "outer": [
+      [
+        0.024694,
+        0.025081
+      ],
+      [
+        45.705303,
+        0.025081
+      ],
+      [
+        45.705303,
+        30.02492
+      ],
+      [
+        0.024694,
+        30.02492
+      ]
+    ],
+    "thickness": 1.6,
+    "cutoutCount": 3,
+    "surfaceAreaMm2": 830.9628013117044,
+    "exteriorFidelity": "source vertices",
+    "cutoutFidelity": "source polygon vertices",
+    "manufacturingApproved": false
+  }
+}

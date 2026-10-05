@@ -106,7 +106,7 @@ async function stage(previewStage, manifestStage, generationStage, id) {
   }
   await writeFile(
     join(previewStage, "index.html"),
-    '<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>ZUDO CASE previews</title></head><body><h1>ZUDO CASE previews</h1><p><a href="https://zudo-case.zudolab.dev/docs/resources/">文書とデータの説明</a></p><ul><li><a href="/previews/r8-simple-lid.html">R8載せ蓋プレビュー</a></li><li><a href="/previews/r6-body.html">R6本体プレビュー</a></li></ul><p>表示用・参照用の資料です。製作承認データではありません。</p></body></html>\n',
+    '<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>ZUDO CASE previews</title></head><body><h1>ZUDO CASE previews</h1><p><a href="https://zudo-case.zudolab.dev/docs/resources/">文書とデータの説明</a></p><ul><li><a href="/previews/r8-simple-lid.html">R8載せ蓋プレビュー</a></li><li><a href="/previews/r6-body.html">R6本体プレビュー</a></li><li><a href="/previews/two-way/tw-01.html">TW-01 2WAY実験設計</a></li></ul><p>表示用・参照用の資料です。製作承認データではありません。</p></body></html>\n',
   );
   await writeFile(join(previewStage, "robots.txt"), "User-agent: *\nDisallow: /\n");
   const manifest = {};

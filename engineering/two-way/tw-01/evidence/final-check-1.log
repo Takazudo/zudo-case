@@ -1,0 +1,13 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+npm warn Unknown project config "trust-policy-exclude". This will stop working in the next major version of npm.
+
+> zudo-case-doc@0.0.1 build /workspace/scratch/e860202a822a/zudo-case
+> node scripts/run-site.mjs build
+
+⚠ outdir (/workspace/scratch/e860202a822a/zudo-case/dist) is outside the project root (/workspace/scratch/e860202a822a/zudo-case/.cache/site-runs/run-dRoYJD) — its contents will be wiped. Pass a subdirectory of the project root (e.g. `dist/`) to avoid this.
+info package route `/docs/[[...slug]]` (from plugin `@takazudo/zudo-doc/plugins/routes`) is shadowed by a user pages/ route (user wins); skipping
+info package route `/404` → pages/404.tsx
+info package route `/robots.txt` → pages/robots.txt.tsx
+info package route `/files/[[...path]]` → pages/files/[[...path]].tsx
+zfb info: [plugin:search-index] Generated search index with 53 entries
+✓ 73 pages built in 9.27s

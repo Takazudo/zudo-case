@@ -162,3 +162,17 @@ Cloudflare Workers Static Assetsへの公開設定は２つのホストに分け
 `pnpm prepare:worker-assets`を同じビルド結果に対して再実行すると、世代番号と分割ファイルの完全性を確認してから「already prepared」と表示し、配信ファイルを変更せず終了します。不完全な分割ファイルや片方だけ残った入力が見つかった場合は停止します。`pnpm build`を再実行して入力を作り直し、改めて`pnpm prepare:worker-assets`を実行してください。準備中の失敗でも元の`dist/previews`と`dist/downloads`は移動せず、成功後にだけ配信用のコピーから除きます。`public/`や`engineering/`の元資料には触れません。
 
 公式資料: [Installation](https://zudo-doc.takazudomodular.com/docs/getting-started/installation/) / [CLI](https://zudo-doc.takazudomodular.com/docs/reference/create-zudo-doc/) / [Configuration](https://zudo-doc.takazudomodular.com/docs/guides/configuration/)
+
+## 2WAY experimental family
+
+The independent two-tray study is scoped by `engineering/two-way/AGENTS.md` and `project/two-way/`. F5 is immutable reference; TW-01 is the maintained workbench. It is separate from R9, not a manufacturing release. Its 72/58 mm patch-gap assumptions do not replace the single-tray lid specification.
+
+TW-01の通常生成はオフラインで、既存CADの再生成を必要としません。
+
+```sh
+pnpm build:two-way
+pnpm check:two-way
+pnpm test:two-way
+```
+
+[2WAY文書](src/content/docs/two-way/index.mdx)と[ソース・ブラウザー検証手順](engineering/two-way/tw-01/README.md)を参照してください。元F5受入結果とTW-01の描画方式別結果は分けて記録します。

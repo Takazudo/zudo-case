@@ -1,0 +1,8 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+npm warn Unknown project config "trust-policy-exclude". This will stop working in the next major version of npm.
+
+> zudo-case-doc@0.0.1 check /workspace/scratch/e860202a822a/zudo-case
+> node scripts/run-site.mjs check
+
+info running /workspace/scratch/e860202a822a/zudo-case/.cache/site-runs/run-rjQHT0/node_modules/.bin/tsc --noEmit
+✓ checked 1 collection and tsc — no errors

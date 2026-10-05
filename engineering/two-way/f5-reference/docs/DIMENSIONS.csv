@@ -1,0 +1,4 @@
+family,capacity_per_tray,source_frame_arrangement,metal_W_mm,metal_D_mm,base_rear_mm,lid_rear_mm,source_frame_rear_reach_mm,frame_to_lid_back_clearance_mm,closed_W_including_guards_mm,closed_D_including_guards_mm,closed_H_including_feet_mm
+A,3U / 60HP,Original 3U fixer + 3U padder,330.4,154,80,48,31.90024738037109,14.599752619628909,346.4,176,208
+B,6U / 60HP,Two unchanged 3U frames / 1 mm assembly gap,330.4,290,80,48,31.90024738037109,14.599752619628909,346.4,312,208
+C,7U / 40HP,Original 7U fixer / 3U + 3U + 1U padders,229.4,334,91.5,70,61.95092538037109,6.549074619628911,245.4,356,241.5

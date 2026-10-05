@@ -1,0 +1,56 @@
+---
+title: "検証記録と次の現物開発"
+description: "ソフトウェア確認の範囲、未測定の物理条件、試験片から進める手順。"
+sidebar_position: 50
+---
+
+## 確認の区分
+
+| 区分 | 確認すること | 確認できないこと |
+|---|---|---|
+| 数値・ソース | 元頂点・輪郭・配置・積層、両トレー、Bの1 mm、Cの蓋、包絡と診断 | 実機の工具アクセス・強度 |
+| 再生成 | 2回の出力の一致、入力・出力ハッシュ、設定の安全な変換 | 製作公差・材料品質 |
+| Software 3D | 強制フォールバック、視点、モバイル、キーボード、PNG、設定 | WebGLの動作 |
+| WebGL | 使用可能なコンテキストで同じ姿勢・機能を確認 | 未試験の描画環境、物理適合 |
+| サイト・Worker準備 | 文書、既存資産、ローカル/override/本番のURL、実ファイル配置 | デプロイ成功・実運搬 |
+
+実行コマンドと結果は `engineering/two-way/tw-01/evidence/` に版・対象・描画方式と分けて記録します。F5の過去件数をTW-01の合格件数として転記しません。未実行・利用不可の環境は合格ではありません。
+
+## ソフトウェア確認コマンド
+
+```sh
+pnpm build:two-way
+pnpm check:two-way
+pnpm test:two-way
+pnpm test:two-way:browser -- --backend software
+pnpm test:two-way:browser -- --backend webgl
+pnpm check:docs
+pnpm check:tables
+pnpm check:assets
+pnpm check
+pnpm build
+pnpm check:built-preview-links
+pnpm prepare:worker-assets
+```
+
+ブラウザーテストは開発用PlaywrightとChromiumが必要です。詳細はソースのREADME。描画結果を物理試験の合格と扱わないでください。
+
+## 現物は小さい試験片から
+
+[現物開発 #112](https://github.com/Takazudo/zudo-case/issues/112) で、実モジュール・プラグの測定、トレーとカラーの角の試験片、蝶番干渉、実ストラップ、スタンドの接合と安定性、拘束したダミー荷重の取り扱いを順に進めます。
+
+質量・価格・荷重定格・電気/熱・運搬結果は不明のままです。`project/two-way/development-gates.json` のTW項目は未測定です。既存R9の [#102](https://github.com/Takazudo/zudo-case/issues/102) やサイト基盤の [#105](https://github.com/Takazudo/zudo-case/issues/105) とは別管理です。
+
+## 記録ひな形
+
+| 記録項目 | 記入欄 |
+|---|---|
+| 試験日・担当・対象版 | 未記録 |
+| 構成・部材・寸法・公差 | 未測定 |
+| 実ストラップ・接合・固定方法 | 未選定 |
+| ダミー質量・支持・落下防止 | 未定義 |
+| 姿勢・操作・繰返し回数 | 未実施 |
+| 写真・変位・損傷・結果 | 未実施 |
+| 合否基準・次の変更 | 未定義 |
+
+このソフトウェア作業にはマージ、デプロイ、サプライヤー連絡、発注、製造承認を含みません。

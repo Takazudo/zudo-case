@@ -240,6 +240,42 @@
     "sidebar_position": 50
   },
   {
+    "path": "two-way/design.mdx",
+    "title": "構造・保持・開梱",
+    "description": "低い固定トレー、取り外すカラー、捕捉ストラップ、別体スタンドの役割。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "two-way/index.mdx",
+    "title": "2WAY / 実験設計",
+    "description": "元フレームを使う2トレーのケース構成とTW-01の検討範囲。",
+    "sidebar_position": 90
+  },
+  {
+    "path": "two-way/preview.mdx",
+    "title": "TW-01 ワークベンチ",
+    "description": "オフラインでも使える日本語の2WAY寸法・姿勢検討ビューアー。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "two-way/rail-frame.mdx",
+    "title": "元レール・PCBフレーム",
+    "description": "元形状、配置基準、8mm積層、Cの70mm蓋と表示用三角形の範囲。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "two-way/resources.mdx",
+    "title": "TW-01 ダウンロード",
+    "description": "単体HTML、編集ソース、設定、閲覧メッシュと生成根拠。",
+    "sidebar_position": 40
+  },
+  {
+    "path": "two-way/verification.mdx",
+    "title": "検証記録と次の現物開発",
+    "description": "ソフトウェア確認の範囲、未測定の物理条件、試験片から進める手順。",
+    "sidebar_position": 50
+  },
+  {
     "path": "verification/assemble-test.mdx",
     "title": "組立・蓋・持ち運びの確認",
     "description": "実モジュールを入れた完成構成で確認するための計画。",
