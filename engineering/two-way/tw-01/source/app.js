@@ -12,7 +12,7 @@ function go(pose){patch({pose,view:['packing','parts'].includes(pose)?'top':'iso
 function sync(){
  const d=M.dimensions(state),p=M.presets[state.preset];
  for(const [attr,key] of [['family','preset'],['pose','pose'],['view','view']])$$('[data-'+attr+']').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset[attr]===state[key])));
- for(const [k,v] of Object.entries(state)){const el=$(k);if(el){if(el.type==='checkbox')el.checked=v;else el.value=v;}const out=$(k+'Out');if(out)out.textContent=fmt(v)+(k==='hingeAngle'?'°':' mm');}
+ for(const [k,v] of Object.entries(state)){const el=$(k);if(el){if(el.type==='checkbox')el.checked=v;else {if(el.type==='range'){const step=el.dataset.nominalStep||(el.dataset.nominalStep=el.step);const ticks=(v-Number(el.min))/Number(step);el.step=Math.abs(ticks-Math.round(ticks))<1e-8?step:'any';}el.value=v;}}const out=$(k+'Out');if(out)out.textContent=fmt(v)+(k==='hingeAngle'?'°':' mm');}
  $('frameInspection').hidden=state.pose!=='frame';$('jointInspection').hidden=state.pose!=='joint';
  $('familyDetail').textContent=`各トレー：${p.layout===7?'3U＋3U＋1U':p.layout+'U'}・各列 ${p.hp}HP。2トレー合計 ${d.totalU}U。`;
  $('stageCode').textContent=`${p.letter} / ${p.familyId} / TW-01`;$('stageTitle').textContent=titles[state.pose];$('stageNote').textContent=notes[state.pose];

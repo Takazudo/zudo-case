@@ -13,7 +13,7 @@ async function main(){
  // Force actual fallback independently of whether this browser has a working GPU.
  if(backend==='software')await ctx.addInitScript(()=>{const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(type,...args){return /webgl/.test(type)?null:original.call(this,type,...args);};});
  const page=await ctx.newPage();page.on('pageerror',e=>errors.push(e.message));
- const remote=[];page.on('request',r=>{if(/^https?:/.test(r.url())&&!url.startsWith('http'))remote.push(r.url());});
+ const remote=[];page.on('request',r=>{if(/^https?:/.test(r.url())&&(!url.startsWith('http')||new URL(r.url()).origin!==new URL(url).origin))remote.push(r.url());});
  try{
   await page.goto(url);await page.waitForFunction(()=>window.FoldApp?.ready,{},{timeout:60000});
   const actual=await page.evaluate(()=>FoldApp.viewer.mode);
@@ -70,13 +70,22 @@ async function main(){
   await page.locator('#fileInput').setInputFiles({name:'F5.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(fixture))});
   await page.waitForFunction(()=>FoldApp.state.preset==='twin40'&&!FoldApp.pending);
   const imported=await page.evaluate(()=>FoldApp.config());check('F5 restored after family change; derived untrusted',()=>{assert.equal(imported.state.profile,'elbow');assert.equal(imported.state.collar,'hinged');assert.equal(imported.manufacturingApproved,false);assert.equal(imported.state.assetUrl,undefined);});
+  const fractional={...fixture,state:{...fixture.state,thickness:1.75,ply:7,gap:72.3,hingeAngle:93}};
+  await page.locator('#fileInput').setInputFiles({name:'F5-fractional.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(fractional))});
+  await page.waitForFunction(()=>FoldApp.state.thickness===1.75&&!FoldApp.pending);
+  check('F5 continuous thickness inputs remain visible',()=>{});
+  assert.equal(await page.locator('#thickness').inputValue(),'1.75');assert.equal(await page.locator('#ply').inputValue(),'7');
+  check('fractional imported sliders match model values',()=>{});assert.equal(await page.locator('#gap').inputValue(),'72.3');assert.equal(await page.locator('#hingeAngle').inputValue(),'93');
+  assert.equal(await page.locator('#thickness').evaluate(e=>e.validity.valid),true);assert.equal(await page.locator('#ply').evaluate(e=>e.validity.valid),true);
+  await page.locator('#thickness').fill('1.8');await page.locator('#thickness').dispatchEvent('change');await settled();
+  check('continuous thickness edit and export agree',()=>{});assert.equal(await page.evaluate(()=>FoldApp.config().state.thickness),1.8);
   const dimensions=await page.evaluate(()=>({gap:FoldApp.state.gap,lidDepth:FoldApp.state.lidDepth}));
   await page.locator('[data-pose="play"]').click();await settled();check('pose preserves physical inputs',()=>{});assert.deepEqual(await page.evaluate(()=>({gap:FoldApp.state.gap,lidDepth:FoldApp.state.lidDepth})),dimensions);
   const png=page.waitForEvent('download');await page.locator('#png').click();const pngFile=await png;await pngFile.saveAs(path.join(evidence,'export-'+backend+'.png'));check('PNG download',()=>assert.ok(fs.statSync(path.join(evidence,'export-'+backend+'.png')).size>1000));
   const download=page.waitForEvent('download');await page.locator('#saveConfig').click();const file=await download;await file.saveAs(path.join(evidence,'export-config.json'));const saved=JSON.parse(fs.readFileSync(path.join(evidence,'export-config.json')));check('versioned export',()=>assert.equal(saved.schema,'zudo-case-two-way/1'));
   await page.locator('#fileInput').setInputFiles(path.join(evidence,'export-config.json'));await settled();
-  check('standalone needs no remote assets',()=>assert.deepEqual(remote,[]));check('no page errors',()=>assert.deepEqual(errors,[]));
-  return {status:'passed',browser:browser.version(),backend:actual,checks:results.length,results,errors};
+  check('workbench needs no external assets',()=>assert.deepEqual(remote,[]));check('no page errors',()=>assert.deepEqual(errors,[]));
+  return {status:'passed',transport:url.startsWith('file:')?'file':'local-http',browser:browser.version(),backend:actual,checks:results.length,results,errors};
  }finally{await browser.close();}
 }
 main().then(report=>{fs.writeFileSync(path.join(evidence,'results.json'),JSON.stringify({...report,revision:'TW-01',htmlSha256:crypto.createHash('sha256').update(fs.readFileSync(html)).digest('hex')},null,2)+'\n');console.log(JSON.stringify(report));}).catch(e=>{const report={status:results.some(x=>x.status==='blocked')?'blocked':'failed',backend,error:e.message,results,errors,revision:'TW-01'};fs.writeFileSync(path.join(evidence,'results.json'),JSON.stringify(report,null,2)+'\n');console.error(e);process.exitCode=1;});

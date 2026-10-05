@@ -41,7 +41,8 @@ Cの48mm蓋も入力可能で、背板干渉を警告する。元PCBは切り縮
 
 F5 `zudo-case-study/5` の全state項目を保持し、TW-01 `zudo-case-two-way/1` へ変換する。
 新schemaはfamilyId、mm/Z-upを要求する。derived、承認フラグ、外部URLは信用せず再計算。
-F4、欠落・不正項目、未知familyは失敗し、UIの前状態を保持する。非対応のF5 state項目はない。
+F4、欠落・不正項目、未知familyは失敗し、UIの前状態を保持する。
+有効な連続値の厚み・スタンド板厚・slider値も丸めず表示する。非対応のF5 state項目はない。
 
 ## ブラウザー（任意の開発環境）
 

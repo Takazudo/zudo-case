@@ -49,3 +49,20 @@ Playwright 1.58.2、Chromium 133.0.6943.0（`@sparticuz/chromium@133.0.0`）、N
 ## 残る確認
 
 PRで現在headのCIを確認し、変更差分と日本語UIをレビューする。実GPU・他OSブラウザーでの描画、実測寸法、パッチクリアランス、カラー位置決め、ストラップ保持、トランク収納／荷重は #112 の物理開発で別途検証する。72 / 58 mm の前方ギャップは仮定値。ソフトウェアの合格は製造承認ではない。
+
+
+## 継続レビュー — 2026-10-05
+
+対象head `a5f36ab3245c978ae8638bb3fa05eac1e8e1705d` の run [37290162498](https://github.com/Takazudo/zudo-case/actions/runs/37290162498) は両ジョブ成功。実ログを読んだ。PR合成merge `339025ca9f62769ed532b20c48411236640c4899` は同headとbase `6a13d80d816b0247ab9eee761c29c1fb786b76cc` の組み合わせ。
+
+- check: 142 pass / 0 fail / 0 skip、29成果物一致、73 pages build、39 production preview URLs / 53 docs、Worker 9 pass。
+- cad-regenerate: R9検査156 pass / 14 flag / 0 fail（flagは物理承認ではない）、候補パッケージ生成、repeatability 6 pass、tracked outputsの差分なし。
+- 後続fitfix: geometry 11 pass、使い捨て出力154 files / 51 mesh readbacks、t1p2 / t1p0および各coupon検査成功、body DXFの3種のdrawing patternが全て一致。
+
+#107–#111の仕様・差分・日本語文書・変換器・ビルド・設定/UIをレビューした。独立した読み取り専用レビューで、連続範囲のF5入力をUIが正しく示さない不具合を確認。厚み1.75 mm / スタンド板7 mmが空のselect、gap72.3 mm / hinge93°がstepで丸めたslider表示になっていた。入力値・geometryは保持されていた。数値入力と非整列値のstep=anyでUIを修正し、整列値では元stepへ戻す。モデル・原本・レール/PCB・寸法JSON・GLBは変更しない。
+
+最終HTMLをChromium 151.0.7922.173でlocal HTTP経由によりsoftwareとWebGL別々に検査し、各59 pass。新しい3チェックは連続厚みのimport表示、fractional slider表示、編集/export一致。レポートは `review-browser-software.json` / `review-browser-webgl.json` に新HTML SHAとtransportを記録。WebGLはANGLE/SwiftShader指定で物理GPU検証ではない。旧56件file://証拠は旧HTMLの記録として保持する。
+
+この環境ではsystem Chromiumのfile://はERR_BLOCKED_BY_ADMINISTRATOR、npm Chromium133は起動後SIGSEGV。新HTMLのfile://再実行は**blocked**。local HTTPの成功をstandalone再確認とは表示しない。portable ZIPの24契約テスト/0 skipと再生成一致、TW142件、生成drift検査は再実行する。CIは修正後headで別途PRに結果を記録し、必須未確認がある間はDraftを維持する。
+
+legacy R6/R8/R9/fitfix、current-spec、release-state、G01–G11、quoteのdiffは空。#112、#102、#105は別件。マージ・デプロイ・製造承認・連絡・発注・課題クローズは未実施。
