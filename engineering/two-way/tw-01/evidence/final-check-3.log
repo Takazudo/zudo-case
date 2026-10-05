@@ -4,4 +4,4 @@ npm warn Unknown project config "trust-policy-exclude". This will stop working i
 > zudo-case-doc@0.0.1 prepare:worker-assets /workspace/scratch/e860202a822a/zudo-case
 > node scripts/prepare-worker-assets.mjs
 
-Prepared 2 oversized assets for Workers (generation 1791191840792-b2b40638-1896-4ce9-96ab-6e5e03c3a823).
+Prepared 2 oversized assets for Workers (generation 1791192411338-59fb7b0b-b383-42f3-aaf4-5f4f7eb41afa).

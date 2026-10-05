@@ -6,7 +6,9 @@ test('two clean generations agree, manifest covers payloads, GLBs reload correct
  try{
   const a=path.join(tmp,'a'),b=path.join(tmp,'b');for(const out of [a,b])cp.execFileSync(process.execPath,[path.join(root,'build.cjs'),'--out',out]);
   const portable=path.join(tmp,'portable');cp.execFileSync('python3',['-m','zipfile','-e',path.join(a,'public/downloads/studies/two-way/source-TW-01.zip'),portable]);
-  cp.execFileSync(process.execPath,['--test',path.join(portable,'engineering/two-way/tw-01/tests/contracts.test.cjs')]);
+  const childEnv={...process.env};delete childEnv.NODE_TEST_CONTEXT;
+  const contractOutput=cp.execFileSync(process.execPath,['--test','--test-reporter=tap',path.join(portable,'engineering/two-way/tw-01/tests/contracts.test.cjs')],{env:childEnv,encoding:'utf8'});
+  assert.match(contractOutput,/# tests 24\b/);assert.match(contractOutput,/# pass 24\b/);assert.match(contractOutput,/# skipped 0\b/);
   cp.execFileSync(process.execPath,[path.join(portable,'engineering/two-way/tw-01/build.cjs'),'--out',path.join(tmp,'portable-build')]);
   assert.deepEqual(inventory(a),inventory(path.join(tmp,'portable-build')));
   assert.deepEqual(inventory(a),inventory(b));assert.deepEqual(inventory(root),before);

@@ -20,7 +20,7 @@ Playwright 1.58.2、Chromium 133.0.6943.0（`@sparticuz/chromium@133.0.0`）、N
 
 - `node --test engineering/two-way/tw-01/tests/*.test.cjs`: **142 / 142 pass**、0 skip。`tw-01-tests.tap`。原本117件を TW ソースへ適用する数値回帰に加え、canonical source・全15設定・安全なimport・成果物検査を含む。
 - `node engineering/two-way/tw-01/build.cjs --check`: 29生成物に差分なし。独立した2回の生成が全バイト一致。
-- ソースZIPを空ディレクトリーへ展開し、原本receiptを含む契約テストとビルドを実行。出力がリポジトリからの生成物と全バイト一致。
+- ソースZIPを空ディレクトリーへ展開し、親Nodeテスト環境を分離し、原本receiptを含む24契約テストの実行（0 skip）とビルドを確認。出力がリポジトリからの生成物と全バイト一致。
 - 6 GLB をバイナリから再読込し、メートル/Y-up変換後の頂点境界をresolverの期待値と照合。manifestのSHA-256とサイズを全成果物で照合。最大ファイルも25 MiB未満。
 - `scripts/prepare-frame-data.py` の再変換が保存結果と一致。既存R6ソースは変更していない。
 
