@@ -66,3 +66,28 @@ PRで現在headのCIを確認し、変更差分と日本語UIをレビューす�
 この環境ではsystem Chromiumのfile://はERR_BLOCKED_BY_ADMINISTRATOR、npm Chromium133は起動後SIGSEGV。新HTMLのfile://再実行は**blocked**。local HTTPの成功をstandalone再確認とは表示しない。portable ZIPの24契約テスト/0 skipと再生成一致、TW142件、生成drift検査は再実行する。CIは修正後headで別途PRに結果を記録し、必須未確認がある間はDraftを維持する。
 
 legacy R6/R8/R9/fitfix、current-spec、release-state、G01–G11、quoteのdiffは空。#112、#102、#105は別件。マージ・デプロイ・製造承認・連絡・発注・課題クローズは未実施。
+
+## マージ判定基準の改訂 — 2026-10-05
+
+ユーザーの追加指示により、今回のソフトウェア統合では `file://` の実行を一律のマージ条件から外す。管理ポリシーでページ読込自体が禁止されることと、HTMLの不具合を区別する。以下を今回の必要条件とする。この節は上記の「file再検査が終わるまでDraft」と以前のマージ禁止記述に優先する。
+
+1. マージ対象のHTMLが検査レポートと同じSHA-256であること。
+2. 単体配布の静的確認: JS/CSS/形状/画像をHTML内に持ち、外部script/stylesheet/画像、実行時fetch/XHR、module import、service worker、origin依存の読込がないこと。設定は選択したFileから読み、書出しはBlob/data URLを使う。localStorage拒否はcatchされ、起動・描画の必須条件にならないこと。
+3. 同じHTMLのlocal HTTPでsoftware/WebGLを別々に検査し、各59チェック（fractional import表示・編集/exportを含む）、ページ例外なし、外部資産要求なしを確認すること。
+4. TW数値/設定/生成差分・既存サイト/CAD回帰を含む現在PR headのCIが成功し、最終実ログを確認すること。変更後は新headで再確認する。
+
+`file://` は許可された環境で行う追加の互換性検査として残す。最新HTMLの直接ファイル実行は依然 **blocked / 未確認**。HTTP合格をfile合格へ言い換えず、管理ポリシーを変更・回避しない。Playwright 1.58.2は再実行時の固定環境として維持し、既存レポートを新規実行とは表示しない。実GPU・他OS・ブラウザー固有の保存/ダウンロード制限も未確認。
+
+### 今回の照合結果
+
+対象実装head `8b8341e49f327c0cdfc4da3a44400b59f25c5594` のHTML Git blob `607c8954d2ac3b694adc541181d86ad86120e515` を取得し、1,379,050 bytes、SHA-256 `19a51c26c1549f4bde4a04d214a1edb62666d14f8675a73b0d19f805d72e6230` と照合した。静的検査で8個のinline classic scriptと1個のdata PNGを確認。外部script/link/iframe/object/base、CSS url/@import、fetch/XHR/WebSocket/dynamic import/service worker/location依存なし。localStorageの読み書きはともにtry/catch内。設定は `File.text()`、JSONはBlob URL、PNGはcanvas data URLを使用する。
+
+`review-browser-software.json` と `review-browser-webgl.json` は同じSHAで各59 pass、errors空、transport `local-http`、Chromium151.0.7922.173。WebGLはANGLE/SwiftShaderで実GPU検証ではない。今回、既存レポートの照合と静的検査を実施した。新しいbrowser runや最新HTMLのfile screenshotsは作成していない。旧56件file記録と旧画像の対象版は変えない。実装の新たな具体的不具合は見つからず、HTML・モデル・設定・geometry・生成物を変更しない。
+
+実装headのCI run37307366481は両ジョブsuccess、実ログ確認済み。今回の文書/CI変更は別の新headとして再検査し、最終結果・merge SHA・post-merge結果はPR #113に記録する。
+
+### マージとデプロイの分離
+
+既存deploy workflowはmain pushで自動公開するため、pushのhead commit messageに `[skip deploy]` がある場合だけdeploy jobをskipする条件を追加する。今回のmerge messageにこの印を付ける。通常pushと手動deployの動作は維持する。`check.yml` はmain pushでも既存のcheck/CAD両ジョブを実行し、マージ後を検査する。CIをskipする印は使用しない。
+
+#112現物開発、#102 R9現物、#105基盤移行は別件。F5とlegacy台帳は不変。マージのみ許可され、デプロイ・製造承認・連絡・発注・課題クローズ・resource cleanupは行わない。
