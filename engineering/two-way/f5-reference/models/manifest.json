@@ -1,0 +1,51 @@
+{
+  "revision": "F5",
+  "manufacturingApproved": false,
+  "units": "metres",
+  "upAxis": "Y",
+  "scope": "A/B/C source-frame inspection and playing configurations. Source rails retained without scale; PCB outer contours/placement from source, rounded cutouts approximated for display. Independent placements; no manufacturing or strength approval. JSON in mm/Z-up, GLB in m/Y-up. Text labels omitted.",
+  "models": [
+    {
+      "id": "A-frame",
+      "file": "A-frame-F5.glb",
+      "triangles": 4312,
+      "bytes": 415424,
+      "roundtripBoundsMatch": true
+    },
+    {
+      "id": "A-play",
+      "file": "A-play-F5.glb",
+      "triangles": 28136,
+      "bytes": 2547520,
+      "roundtripBoundsMatch": true
+    },
+    {
+      "id": "B-frame",
+      "file": "B-frame-F5.glb",
+      "triangles": 8624,
+      "bytes": 829380,
+      "roundtripBoundsMatch": true
+    },
+    {
+      "id": "B-play",
+      "file": "B-play-F5.glb",
+      "triangles": 52056,
+      "bytes": 4700320,
+      "roundtripBoundsMatch": true
+    },
+    {
+      "id": "C-frame",
+      "file": "C-frame-F5.glb",
+      "triangles": 15000,
+      "bytes": 1441476,
+      "roundtripBoundsMatch": true
+    },
+    {
+      "id": "C-play",
+      "file": "C-play-F5.glb",
+      "triangles": 69112,
+      "bytes": 6235372,
+      "roundtripBoundsMatch": true
+    }
+  ]
+}

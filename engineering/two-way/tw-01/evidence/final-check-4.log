@@ -1,0 +1,17 @@
+✔ deployment outputs have separate audiences and stay under the asset size limit (42.763993ms)
+✔ large /previews/r6-body.html streams the original bytes (108.764676ms)
+✔ large /downloads/archive/r7-m3-lid-source.zip streams the original bytes (106.290545ms)
+✔ small fixture asset streams every chunk and preserves its manifest metadata (7.462723ms)
+✔ missing first chunk rejects the asset body (1.019429ms)
+✔ missing later chunk rejects the asset body (0.86159ms)
+✔ short chunk rejects the body when its final byte count differs from the manifest (0.725004ms)
+✔ same-length altered chunk streams and differs from the manifest SHA-256 (0.588398ms)
+✔ HEAD returns manifest metadata without fetching any chunks (0.33763ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 341.714181

@@ -1,0 +1,36 @@
+---
+title: "TW-01 ダウンロード"
+description: "単体HTML、編集ソース、設定、閲覧メッシュと生成根拠。"
+sidebar_position: 40
+---
+
+import { PreviewLink, PreviewSource } from '../../../components/preview-links.jsx';
+
+すべて **TW-01 / 閲覧・実験用 / 製造未承認** です。既存R9の製作候補や承認済みCADではありません。F5の原本は `engineering/two-way/f5-reference/` に不変の参照ソースとして保持します。
+
+<PreviewSource />
+
+## 編集・検討用
+
+- <PreviewLink path="/previews/two-way/tw-01.html">単体HTML</PreviewLink>：保存してネットワークなしで使用。mm / Z-up。正規元形状からのTW-01表示。
+- <PreviewLink path="/downloads/studies/two-way/source-TW-01.zip">編集ソース一式</PreviewLink>：mm / Z-up。同じリポジトリ相対構成のソース、宣言入力、正規データ、固定環境、テスト。元F5そのものではない作業版。
+- <PreviewLink path="/downloads/studies/two-way/dimensions-TW-01.json">寸法・フレーム数量JSON</PreviewLink> / <PreviewLink path="/downloads/studies/two-way/dimensions-TW-01.csv">寸法CSV</PreviewLink>：同じリゾルバーから生成、mm。フレーム数量はケース全BOMではありません。
+- <PreviewLink path="/downloads/studies/two-way/manifest-TW-01.json">アーティファクトマニフェスト</PreviewLink>：入力・出力SHA-256、サイズ、版、役割、精度区分、単位、未承認状態。
+
+## 設定・閲覧用モデル
+
+以下の設定はmm / Z-up、GLBはmetres / Y-up。GLBは元レールと正規PCB輪郭から生成した表示三角形で、金具は仮の包絡です。穴加工・部品公差・荷重定格は定義せず、STEP/STL/DXF製造リリースを含みません。
+
+| 構成 | 設定JSON | 元フレーム GLB | 演奏 GLB |
+|---|---|---|---|
+| A | <PreviewLink path="/downloads/studies/two-way/A-frame-TW-01.json">A設定</PreviewLink> | <PreviewLink path="/downloads/studies/two-way/A-frame-TW-01.glb">Aフレーム</PreviewLink> | <PreviewLink path="/downloads/studies/two-way/A-play-TW-01.glb">A演奏</PreviewLink> |
+| B | <PreviewLink path="/downloads/studies/two-way/B-frame-TW-01.json">B設定</PreviewLink> | <PreviewLink path="/downloads/studies/two-way/B-frame-TW-01.glb">Bフレーム</PreviewLink> | <PreviewLink path="/downloads/studies/two-way/B-play-TW-01.glb">B演奏</PreviewLink> |
+| C | <PreviewLink path="/downloads/studies/two-way/C-frame-TW-01.json">C設定</PreviewLink> | <PreviewLink path="/downloads/studies/two-way/C-frame-TW-01.glb">Cフレーム</PreviewLink> | <PreviewLink path="/downloads/studies/two-way/C-play-TW-01.glb">C演奏</PreviewLink> |
+
+各構成にストレート/L型 × 独立/蝶番の4設定も生成します。全15設定のパスとハッシュはマニフェストにあります。設定を読み込んでも製造承認にはなりません。
+
+## 再生成
+
+ソース一式のルートで `node engineering/two-way/tw-01/build.cjs --out ./generated` を実行します。Node.js 24とPython標準ライブラリだけでHTML・JSON・GLB・ZIPを再生成します。正規PCB輪郭を再三角形化する場合だけ、同梱の `uv.lock` に固定した環境を使います。
+
+ソース・設定の更新後は、[検証ページ](./verification.mdx)のソフトウェア確認を行います。再生成一致は、物理的な適合を意味しません。

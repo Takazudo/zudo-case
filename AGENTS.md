@@ -54,3 +54,7 @@ The initial environment could not resolve npm. `scripts/setup.mjs` generates an 
 ## Next engineering work
 
 Use G01–G11 in `project/open-issues.json`: update R8 manufacturing geometry; implement slot tolerances; finalize guard retention and lid fit; confirm actual knob envelope and hardware; price black-anodized aluminum; choose/test straps; test assembly/transport. Start with small fit pieces and 7u40, then apply proven common changes to other models. Preserve undecided items explicitly.
+
+## 2WAY experimental family
+
+The independent two-tray study is scoped by `engineering/two-way/AGENTS.md` and `project/two-way/`. F5 is immutable reference; TW-01 is the maintained workbench. It is separate from R9, not a manufacturing release. Its 72/58 mm patch-gap assumptions do not replace the single-tray lid specification.

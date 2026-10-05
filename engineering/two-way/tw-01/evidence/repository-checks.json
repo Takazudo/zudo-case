@@ -1,0 +1,54 @@
+[
+  {
+    "command": "npx --yes pnpm@10.30.3 check:docs",
+    "exitCode": 0
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 check:tables",
+    "exitCode": 0
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 check:assets",
+    "exitCode": 0
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 check:r9",
+    "exitCode": 0
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 check:r9-doc-table",
+    "exitCode": 0
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 check:r9-ledger",
+    "exitCode": 0
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 check:fitfix",
+    "exitCode": 0
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 check:fit-test-order",
+    "exitCode": 0
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 test:r9",
+    "exitCode": 0
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 test:setup",
+    "exitCode": 0
+  },
+  {
+    "command": "npx --yes pnpm@10.30.3 test:ledger",
+    "exitCode": 0
+  },
+  {
+    "command": "node --test tests/preview-links.test.mjs tests/preview-origin-isolation.test.mjs",
+    "exitCode": 0
+  },
+  {
+    "command": "node --test tests/prepare-worker-assets.test.mjs tests/verify-deployed-assets.test.mjs",
+    "exitCode": 0
+  }
+]

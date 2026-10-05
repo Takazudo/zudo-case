@@ -1,0 +1,7 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+npm warn Unknown project config "trust-policy-exclude". This will stop working in the next major version of npm.
+
+> zudo-case-doc@0.0.1 prepare:worker-assets /workspace/scratch/e860202a822a/zudo-case
+> node scripts/prepare-worker-assets.mjs
+
+Prepared 2 oversized assets for Workers (generation 1791192411338-59fb7b0b-b383-42f3-aaf4-5f4f7eb41afa).

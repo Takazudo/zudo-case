@@ -33,7 +33,11 @@
     "test:ledger": "node --test tests/ledger-*.test.mjs",
     "check:fitfix": "node scripts/sync-fitfix.mjs --check",
     "sync:fitfix": "node scripts/sync-fitfix.mjs",
-    "check:fit-test-order": "python3 scripts/prepare-fit-test-order.py --check"
+    "check:fit-test-order": "python3 scripts/prepare-fit-test-order.py --check",
+    "build:two-way": "node engineering/two-way/tw-01/build.cjs",
+    "check:two-way": "node engineering/two-way/tw-01/build.cjs --check",
+    "test:two-way": "node --test engineering/two-way/tw-01/tests/*.test.cjs",
+    "test:two-way:browser": "node engineering/two-way/tw-01/tests/browser.cjs"
   },
   "dependencies": {
     "@takazudo/zfb": "2.20.2",

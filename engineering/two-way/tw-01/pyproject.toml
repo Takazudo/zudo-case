@@ -1,0 +1,5 @@
+[project]
+name = "zudo-case-two-way-tools"
+version = "0.1.0"
+requires-python = ">=3.11,<3.13"
+dependencies = ["shapely==2.1.2", "numpy==2.2.6", "trimesh==4.9.0"]

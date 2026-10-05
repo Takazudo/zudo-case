@@ -1,0 +1,239 @@
+{
+  "schema": "zudo-case-two-way/1",
+  "revision": "TW-01",
+  "familyId": "tw-3u60",
+  "units": "mm",
+  "upAxis": "Z",
+  "datums": {
+    "rearDepth": "module front plane to exterior back plate",
+    "gap": "opposed module front planes",
+    "trunk": "inside usable dimensions"
+  },
+  "state": {
+    "preset": "compact",
+    "kit": "tilted",
+    "profile": "elbow",
+    "gap": 58,
+    "baseDepth": 80,
+    "lidDepth": 48,
+    "thickness": 1.5,
+    "ply": 8,
+    "plugBase": 12,
+    "plugLid": 12,
+    "bend": 5,
+    "knobBase": 25,
+    "knobLid": 25,
+    "margin": 8,
+    "elbow": true,
+    "pose": "closed",
+    "patch": true,
+    "cross": true,
+    "envelopes": false,
+    "cutaway": false,
+    "modules": true,
+    "structure": false,
+    "labels": true,
+    "finish": "graphite",
+    "view": "iso",
+    "highlight": false,
+    "deskGap": 70,
+    "lead": 600,
+    "collar": "hinged",
+    "straps": true,
+    "overlap": 6,
+    "seatClearance": 0.6,
+    "jointLift": 0,
+    "hingeAngle": 90,
+    "foam": 20,
+    "trunkW": 420,
+    "trunkD": 420,
+    "trunkH": 330,
+    "frameExplode": 0
+  },
+  "derived": {
+    "W": 330.4,
+    "D": 154,
+    "G": 58,
+    "t": 1.5,
+    "hp": 60,
+    "rail": 305,
+    "frameD": 134.53186,
+    "rows": [
+      {
+        "u": 3,
+        "y": -0.000012999999995599865,
+        "h": 128.5,
+        "screwY": [
+          -61.267931999999995,
+          61.26790600000001
+        ]
+      }
+    ],
+    "frame": {
+      "units": [
+        {
+          "kind": "3u",
+          "offset": 0
+        }
+      ],
+      "depth": 134.53186,
+      "rearReach": 31.90024738037109,
+      "width": 311.4,
+      "caseDepth": 154,
+      "rows": [
+        {
+          "u": 3,
+          "y": -0.000012999999995599865,
+          "h": 128.5,
+          "screwY": [
+            -61.267931999999995,
+            61.26790600000001
+          ]
+        }
+      ],
+      "counts": {
+        "rail": 2,
+        "fixer": 2,
+        "padder": 2,
+        "spacer": 4,
+        "mount": 4,
+        "railEnd": 4
+      },
+      "sourceCommit": "6a13d80d816b0247ab9eee761c29c1fb786b76cc",
+      "railGeometry": "exact-source-mesh",
+      "pcbGeometry": "canonical saved source contours and datums; display triangulation",
+      "pcbManufacturingApproved": false,
+      "description": "Original 3U fixer + 3U padder",
+      "minimumLidDepthWith3mmFloorMargin": 36.40024738037109
+    },
+    "rim": 2,
+    "gasket": 0.5,
+    "collarH": 53,
+    "qBase": 25,
+    "qLid": 25,
+    "free": 8,
+    "required": 58,
+    "excess": 0,
+    "totalU": 6,
+    "metalStack": 186,
+    "closedW": 346.4,
+    "closedD": 176,
+    "closedH": 194,
+    "pocket": 0,
+    "wrapStack": 16,
+    "standStack": 20,
+    "bundleLayer": 3,
+    "floor": -84,
+    "usableBase": 66.5,
+    "usableLid": 34.5,
+    "overBusLid": 22.5,
+    "standSpan": 123.2,
+    "run": 87.11555544218265,
+    "barH": 10.01,
+    "heel": 14.86444455781735,
+    "standWidth": 302.4,
+    "standDepth": 107.11555544218265,
+    "standHeight": 111.98,
+    "packedSideW": 107.11555544218265,
+    "packedSideH": 111.98,
+    "packedStartY": -42.980000000000004,
+    "packedTop": 69,
+    "standPackFits": true,
+    "accessoryWithinFootprint": true,
+    "strapClosedLoop": 713.2,
+    "strapPlayLoop": 0,
+    "strapMinimumBeforeOverlap": 713.2,
+    "protrudingLinkages": 0,
+    "poseIsKinematic": false,
+    "lidPlaneZ": 58,
+    "deskDepth": 335.72287142747456,
+    "deskWidth": 336.4,
+    "playFrontClearance": 35.621447958925536,
+    "playShellClearance": 32.08400076889279,
+    "playCheckScope": "Static rectangular shell and front-envelope sections only. No cable, hardware or opening-sweep approval.",
+    "frameRearClearLid": 14.599752619628909,
+    "frameRearClearBase": 46.59975261962891,
+    "seatInner": 5,
+    "frameSideClearance": 2.4000000000000004,
+    "frameEndClearance": 2.634070000000003,
+    "collarOuter": 3.3,
+    "innerLip": 7.1,
+    "seatWidth": 3.5,
+    "overlap": 6,
+    "seatClearance": 0.6,
+    "coreFloor": -84,
+    "standSleeve": 20,
+    "separator": 13,
+    "trunkRequired": [
+      386.4,
+      216,
+      267
+    ],
+    "trunkSpare": [
+      33.60000000000002,
+      204,
+      63
+    ],
+    "trunkFits": true,
+    "collarPacket": {
+      "length": 338.4,
+      "width": 73,
+      "thickness": 53.599999999999994,
+      "foldProven": false
+    },
+    "rimClearance": 5.649987000000005,
+    "overStiffenerLid": 28.5,
+    "hingeHeight": 15,
+    "hingeLeaf": 35,
+    "hingeOpen": 76,
+    "hingePitch": 15,
+    "hingeBarrelAssumed": 6,
+    "hingeCount": 2,
+    "strapWidth": 25,
+    "frontGapOccupiedByStorage": false,
+    "caseToCaseHinge": false,
+    "hingeRatingKnown": false,
+    "loadRated": false,
+    "strapRouteLengthScope": "Geometric route before buckle, overlap, tails and adjustment. Not an order length.",
+    "effectiveLocatorEngagement": 6,
+    "diagnostics": [
+      {
+        "code": "hinge-fold",
+        "kind": "physical-unverified",
+        "message": "カラー蝶番の折り畳み干渉・穴・耐荷重は未検証です。",
+        "value": null
+      },
+      {
+        "code": "physical",
+        "kind": "physical-unverified",
+        "message": "実機嵌合・工具アクセス・ストラップ保持・強度・運搬・電気・温度は未検証です。",
+        "value": null
+      },
+      {
+        "code": "cables",
+        "kind": "physical-unverified",
+        "message": "ケーブル曲線は模式表示です。実長と開閉時の経路は未検証です。",
+        "value": null
+      }
+    ],
+    "manufacturingApproved": false,
+    "units": "mm",
+    "upAxis": "Z",
+    "revision": "TW-01"
+  },
+  "manufacturingApproved": false,
+  "purchasedHardwareFitVerified": false,
+  "loadRated": false,
+  "displayOnly": true,
+  "caseToCaseHinge": false,
+  "poseIsKinematic": false,
+  "cableBudget": {
+    "lengths": [
+      83.5251294531991,
+      73.3321552180904
+    ],
+    "max": 83.5251294531991,
+    "spare": 516.474870546801,
+    "scope": "Display route only. Real lead lengths, bundle volume and unpacking sweep are not solved."
+  }
+}
