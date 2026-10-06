@@ -3738,14 +3738,14 @@
     },
     {
       "path": "engineering/r9-fitfix-01/out/preview.html",
-      "bytes": 2927155,
-      "sha256": "6d8f6e3fba36c4f234176291d5f54b4a56c52eb4abbff051d7a42b63cd67dc3d",
+      "bytes": 2927327,
+      "sha256": "f7a4ae7ac82928312bf4e9fc273dc721577e2b0f272d4d9c2a783b4b6953a24a",
       "status": "candidate-not-approved"
     },
     {
       "path": "public/previews/r9-fitfix-01.html",
-      "bytes": 2927155,
-      "sha256": "6d8f6e3fba36c4f234176291d5f54b4a56c52eb4abbff051d7a42b63cd67dc3d",
+      "bytes": 2927327,
+      "sha256": "f7a4ae7ac82928312bf4e9fc273dc721577e2b0f272d4d9c2a783b4b6953a24a",
       "status": "candidate-not-approved"
     },
     {
@@ -3763,7 +3763,7 @@
     {
       "path": "engineering/r9-fitfix-01/out/outputs-manifest.json",
       "bytes": 29185,
-      "sha256": "a8bdccef281521f1927b14609df7b71223c22b5f837afe1578e7ddea578f9a1b",
+      "sha256": "0ccd87d1ba90d055e9813649f484cf2d63bb7842310fb899c77f1fe749a3d6eb",
       "status": "candidate-not-approved"
     },
     {

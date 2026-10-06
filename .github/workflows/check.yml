@@ -33,6 +33,7 @@ jobs:
       - run: pnpm check:r9
       - run: pnpm check:fitfix
       - run: pnpm check:fit-test-order
+      - run: node --test tests/order-map.test.mjs
       - run: pnpm check:r9-ledger
       - run: pnpm check:r9-doc-table
       - run: pnpm test:r9

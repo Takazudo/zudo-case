@@ -25,7 +25,7 @@
     },
     {
       "path": "fitfix/preview.py",
-      "sha256": "67cf54313cc35d175e5b32f5656195eab83f1a2ce556c8c5cd4958cbca0e0b2f"
+      "sha256": "f6bb0dc41d10877786adaba2fb06b8b57f9f626b9697063a15bd410f74414dd6"
     },
     {
       "path": "fitfix/reference.py",
@@ -806,8 +806,8 @@
     },
     {
       "path": "preview.html",
-      "sha256": "6d8f6e3fba36c4f234176291d5f54b4a56c52eb4abbff051d7a42b63cd67dc3d",
-      "bytes": 2927155
+      "sha256": "f7a4ae7ac82928312bf4e9fc273dc721577e2b0f272d4d9c2a783b4b6953a24a",
+      "bytes": 2927327
     },
     {
       "path": "scene.json",

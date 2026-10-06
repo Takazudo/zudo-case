@@ -1,0 +1,25 @@
+{
+  "sourceCommit": "541eca7f8ebc2e6da4375108b0d66773a0868b00",
+  "order": "W2026100405546498",
+  "designs": 13,
+  "pieces": 15,
+  "sources": [
+    {
+      "path": "engineering/r9-fitfix-01/order-prep/order-plan.json",
+      "sha256": "abe2a40e4bd85d784761eb1e899dec435fe2c454de98b1ca0dcd11ffb5b9bf98"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/coupons.py",
+      "sha256": "ef02b1a4dcf7bb5d78aa83f2159b0dcbbb752557c1fd8c06ed5eedf021d40eea"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/geometry.py",
+      "sha256": "e25a1f72dc356cffb2989ae9c444e929309bd6d50020c5c81e4f82431eaedb9c"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/scene.json",
+      "sha256": "884ead72c7661be55705b958a7c54b78afec3d4006fddf158d311c6901ca4354"
+    }
+  ],
+  "note": "No CAD regeneration or model changes. Existing mesh coordinates are preserved; explanatory display offsets only."
+}
