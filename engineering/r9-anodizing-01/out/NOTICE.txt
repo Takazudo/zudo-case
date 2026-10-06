@@ -1,0 +1,5 @@
+R9-ANODIZING-01: 13 aluminum plates, quantity 1 each.
+STEP and DXF are paired descriptions of the SAME 13 items. Units mm, A5052 t1.5 black anodized.
+One dedicated diameter 4 mm hanging hole per plate. Original functional holes/slots remain.
+Reference STL files are not the aluminum manufacturing inputs. PA12 order unchanged.
+No manufacturing approval or supplier upload is implied. See manifest.json and review diagrams.

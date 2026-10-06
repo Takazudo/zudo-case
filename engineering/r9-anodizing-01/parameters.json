@@ -1,0 +1,61 @@
+{
+  "revision": "R9-ANODIZING-01",
+  "original_order_commit": "541eca7f8ebc2e6da4375108b0d66773a0868b00",
+  "implementation_base": "9bd8e65071cb32535db5c68f41c7cca19af3e9dd",
+  "diameter_mm": 4.0,
+  "minimum_edge_ligament_mm": 1.0,
+  "centers_uv_mm": {
+    "c1-metal-edge": [
+      5,
+      5
+    ],
+    "c2-01-wall": [
+      5,
+      5
+    ],
+    "c2-01-plate": [
+      5,
+      21.4
+    ],
+    "c4-01-floor": [
+      5,
+      15
+    ],
+    "c4-01-wall": [
+      5,
+      13.5
+    ],
+    "c5-01-front": [
+      7,
+      7
+    ],
+    "c5-01-left": [
+      8.5,
+      7
+    ],
+    "c3-01-bottom": [
+      4,
+      16
+    ],
+    "c3-01-wall": [
+      4,
+      16
+    ],
+    "c3-02-bottom": [
+      4,
+      16
+    ],
+    "c3-02-wall": [
+      4,
+      16
+    ],
+    "c3-03-bottom": [
+      4,
+      16
+    ],
+    "c3-03-wall": [
+      4,
+      16
+    ]
+  }
+}

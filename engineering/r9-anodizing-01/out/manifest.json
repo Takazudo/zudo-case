@@ -1,0 +1,2777 @@
+{
+  "revision": "R9-ANODIZING-01",
+  "original_order_commit": "541eca7f8ebc2e6da4375108b0d66773a0868b00",
+  "implementation_base": "9bd8e65071cb32535db5c68f41c7cca19af3e9dd",
+  "units": "mm",
+  "material": "A5052",
+  "finish": "black anodized",
+  "production_approved": false,
+  "order_uploaded": false,
+  "parts": [
+    {
+      "id": "c1-metal-edge",
+      "quantity": 1,
+      "dimensions_mm": [
+        40.0,
+        20.0,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        5,
+        5
+      ],
+      "hole_center_exported_step_mm": [
+        -0.75,
+        5.0,
+        -15.0
+      ],
+      "hole_center_case_mm": [
+        -0.75,
+        5.0,
+        -15.0
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        1,
+        2
+      ],
+      "thickness_axis_in_exported_step": 0,
+      "origin_exported_step_mm": [
+        -1.5,
+        0.0,
+        -20.0
+      ],
+      "keepouts": [
+        {
+          "id": "all-c1-guard-contact",
+          "rectangle_uv_mm": [
+            0,
+            15.0,
+            40.0,
+            20.0
+          ],
+          "basis": "shared 5 mm cover; all seven C1 comparisons and split positions"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 3.0,
+        "protected_clearances": [
+          {
+            "id": "all-c1-guard-contact",
+            "clearance_mm": 8.0
+          }
+        ],
+        "removed_volume_mm3": 18.84955592153876,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 260,
+          "triangles": 520,
+          "bbox_error_mm": 4.440892098500626e-16,
+          "volume_error_mm3": 0.007811078002760041,
+          "cad_volume_mm3": 1181.1504440784613,
+          "edge_incidence_histogram": {
+            "2": 780
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.step",
+          "sha256": "96b1e980d4f64edcd41362a5fe5d0dc9ccfffe678fb1ac384a5ba276c703f6bd",
+          "bytes": 15394
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.dxf",
+          "sha256": "cfbfb94964fd001e00b3fff272d9bd80482b918533a98401b2fba4e222236d0f",
+          "bytes": 15782
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.stl",
+          "sha256": "253641ca51e6747977062e2a7a76b27211ea26c79ebb50fff092c91f21298d34",
+          "bytes": 684
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c1-metal-edge-qty1-mm.step",
+          "sha256": "d698dc851845b4c9f2a9c38e095ca8ad0ba80456c41490d6706c1c82b6169a44",
+          "bytes": 19188
+        },
+        {
+          "path": "dxf/7u40-r9a-c1-metal-edge-qty1-mm.dxf",
+          "sha256": "e4ac30352a72d07caa57a75bb9dac38337f8d072ef8dc54f50f6dc5b40483637",
+          "bytes": 16015
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c1-metal-edge-qty1-mm.stl",
+          "sha256": "13028d73073528d879d8b755ec06f3af2a4008a670bcf21af637ace74fd36dfa",
+          "bytes": 26084
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.step",
+          "new": "step/7u40-r9a-c1-metal-edge-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c1-metal-edge-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.stl",
+          "new": "reference-stl/7u40-r9a-c1-metal-edge-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    },
+    {
+      "id": "c2-01-wall",
+      "quantity": 1,
+      "dimensions_mm": [
+        30.000000000000014,
+        31.0,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        5,
+        5
+      ],
+      "hole_center_exported_step_mm": [
+        24.999999999999986,
+        -166.25,
+        65.0
+      ],
+      "hole_center_case_mm": [
+        24.999999999999986,
+        -166.25,
+        65.0
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        0,
+        2
+      ],
+      "thickness_axis_in_exported_step": 1,
+      "origin_exported_step_mm": [
+        19.999999999999986,
+        -167.0,
+        60.0
+      ],
+      "keepouts": [
+        {
+          "id": "c2-01-guard",
+          "rectangle_uv_mm": [
+            1.4210854715202004e-14,
+            26.0,
+            30.000000000000014,
+            32.200000000000045
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "c2-01-frame",
+          "rectangle_uv_mm": [
+            1.4210854715202004e-14,
+            20.200000000000003,
+            30.000000000000014,
+            64.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "c2-01-plate",
+          "rectangle_uv_mm": [
+            1.4210854715202004e-14,
+            62.2,
+            30.00000000000003,
+            63.7
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "c2-02-frame",
+          "rectangle_uv_mm": [
+            1.4210854715202004e-14,
+            20.200000000000003,
+            30.000000000000014,
+            64.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "c2-03-frame",
+          "rectangle_uv_mm": [
+            1.4210854715202004e-14,
+            20.200000000000003,
+            30.000000000000014,
+            64.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "rectangle_uv_mm": [
+            -87.49999999999999,
+            -58.5,
+            -71.49999999999999,
+            -38.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "rectangle_uv_mm": [
+            31.500000000000014,
+            -58.5,
+            47.500000000000014,
+            -38.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "rectangle_uv_mm": [
+            -133.2,
+            -31.5,
+            -113.19999999999999,
+            -15.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "rectangle_uv_mm": [
+            -133.2,
+            -1.5,
+            -113.19999999999999,
+            14.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+          "rectangle_uv_mm": [
+            73.20000000000002,
+            -31.5,
+            93.20000000000002,
+            -15.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+          "rectangle_uv_mm": [
+            73.20000000000002,
+            -1.5,
+            93.20000000000002,
+            14.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 3.0,
+        "protected_clearances": [
+          {
+            "id": "c2-01-guard",
+            "clearance_mm": 19.0
+          },
+          {
+            "id": "c2-01-frame",
+            "clearance_mm": 13.200000000000003
+          },
+          {
+            "id": "c2-01-plate",
+            "clearance_mm": 55.2
+          },
+          {
+            "id": "c2-02-frame",
+            "clearance_mm": 13.200000000000003
+          },
+          {
+            "id": "c2-03-frame",
+            "clearance_mm": 13.200000000000003
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+            "clearance_mm": 86.00284086323576
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+            "clearance_mm": 48.93623464686019
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+            "clearance_mm": 117.9645364263956
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+            "clearance_mm": 116.19999999999999
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+            "clearance_mm": 69.2143946123254
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+            "clearance_mm": 66.20000000000002
+          }
+        ],
+        "removed_volume_mm3": 18.849555921538748,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 260,
+          "triangles": 520,
+          "bbox_error_mm": 1.4210854715202004e-14,
+          "volume_error_mm3": 0.007810185587459273,
+          "cad_volume_mm3": 1376.1504440784613,
+          "edge_incidence_histogram": {
+            "2": 780
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.step",
+          "sha256": "b665109c5993d0165690b2d08df6430db651ab729a63480bf77e264f5f8cc870",
+          "bytes": 16761
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.dxf",
+          "sha256": "acb1517d5967f14bcc8cffdd80a526ac298486cc20957b12afef2aa32ed3585f",
+          "bytes": 15810
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.stl",
+          "sha256": "bc3cadc2e5a4654bc09c98c8830e0b88e61c23457d7ec5060a61664bf79c6583",
+          "bytes": 684
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c2-01-wall-qty1-mm.step",
+          "sha256": "3c788e43745acdb9e8b879b18b912884de9bd5adb62e59406ead7f0cca37bc94",
+          "bytes": 21575
+        },
+        {
+          "path": "dxf/7u40-r9a-c2-01-wall-qty1-mm.dxf",
+          "sha256": "b3ff99bfa50367538b72c23a1e32da0c96c71d42bef570c4c15da76a4d8fa743",
+          "bytes": 16043
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c2-01-wall-qty1-mm.stl",
+          "sha256": "16516dc6df822c5e483c200857db85c12f0dc21954970fd69819ce2fbf263d5f",
+          "bytes": 26084
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.step",
+          "new": "step/7u40-r9a-c2-01-wall-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c2-01-wall-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.stl",
+          "new": "reference-stl/7u40-r9a-c2-01-wall-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    },
+    {
+      "id": "c2-01-plate",
+      "quantity": 1,
+      "dimensions_mm": [
+        30.000000000000014,
+        26.400000000000006,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        5,
+        21.4
+      ],
+      "hole_center_exported_step_mm": [
+        25.0,
+        -145.0,
+        122.95
+      ],
+      "hole_center_case_mm": [
+        25.0,
+        -145.0,
+        122.95
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        0,
+        1
+      ],
+      "thickness_axis_in_exported_step": 2,
+      "origin_exported_step_mm": [
+        20.0,
+        -166.4,
+        122.2
+      ],
+      "keepouts": [
+        {
+          "id": "c2-01-wall",
+          "rectangle_uv_mm": [
+            -1.4210854715202004e-14,
+            -0.5999999999999943,
+            30.0,
+            0.9000000000000057
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "c2-01-guard",
+          "rectangle_uv_mm": [
+            0.0,
+            -2.0999999999999943,
+            30.0,
+            2.4000000000000057
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "c2-01-frame",
+          "rectangle_uv_mm": [
+            0.0,
+            -2.4000000000000057,
+            30.0,
+            8.900000000000006
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "c2-02-frame",
+          "rectangle_uv_mm": [
+            0.0,
+            -2.4000000000000057,
+            30.0,
+            8.900000000000006
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "c2-03-frame",
+          "rectangle_uv_mm": [
+            0.0,
+            -2.4000000000000057,
+            30.0,
+            8.900000000000006
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 3.0,
+        "protected_clearances": [
+          {
+            "id": "c2-01-wall",
+            "clearance_mm": 18.499999999999993
+          },
+          {
+            "id": "c2-01-guard",
+            "clearance_mm": 16.999999999999993
+          },
+          {
+            "id": "c2-01-frame",
+            "clearance_mm": 10.499999999999993
+          },
+          {
+            "id": "c2-02-frame",
+            "clearance_mm": 10.499999999999993
+          },
+          {
+            "id": "c2-03-frame",
+            "clearance_mm": 10.499999999999993
+          }
+        ],
+        "removed_volume_mm3": 18.849555921538766,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 512,
+          "triangles": 1028,
+          "bbox_error_mm": 6.103515630684342e-06,
+          "volume_error_mm3": 0.013161162469032206,
+          "cad_volume_mm3": 1155.5316399251496,
+          "edge_incidence_histogram": {
+            "2": 1542
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.step",
+          "sha256": "5778e3c786f5349c3dd88b88ed63da8f09b7e1a06ec066fd96aa89d0744f3112",
+          "bytes": 20469
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.dxf",
+          "sha256": "4c95e5953b9490163a318d2d9822a44b5c1d20a6054d1960a947d666f5e7e18d",
+          "bytes": 15937
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.stl",
+          "sha256": "da6cf4a7ee8ab636f8af53ba6bcda5a37192707441da651ea076da464f386b54",
+          "bytes": 26084
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c2-01-plate-qty1-mm.step",
+          "sha256": "91dbb02a22ff56b7c5e78174b03d9d3326337167d3091a12b80e46960b7349c2",
+          "bytes": 24112
+        },
+        {
+          "path": "dxf/7u40-r9a-c2-01-plate-qty1-mm.dxf",
+          "sha256": "747f6231c01309346361c483811752ea3cf45d392441f1cf39e86e0e99ba44b1",
+          "bytes": 16171
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c2-01-plate-qty1-mm.stl",
+          "sha256": "32ca16a17564af81d21f4dd8073912367531430c412e9347518f546b42f03c02",
+          "bytes": 51484
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.step",
+          "new": "step/7u40-r9a-c2-01-plate-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c2-01-plate-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.stl",
+          "new": "reference-stl/7u40-r9a-c2-01-plate-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    },
+    {
+      "id": "c4-01-floor",
+      "quantity": 1,
+      "dimensions_mm": [
+        30.000000000000014,
+        20.0,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        5,
+        15
+      ],
+      "hole_center_exported_step_mm": [
+        24.999999999999986,
+        -152.0,
+        0.75
+      ],
+      "hole_center_case_mm": [
+        24.999999999999986,
+        -152.0,
+        0.75
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        0,
+        1
+      ],
+      "thickness_axis_in_exported_step": 2,
+      "origin_exported_step_mm": [
+        19.999999999999986,
+        -167.0,
+        0.0
+      ],
+      "keepouts": [
+        {
+          "id": "c4-01-wall",
+          "rectangle_uv_mm": [
+            0.0,
+            0.0,
+            30.000000000000014,
+            1.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "c4-01-lower-guard",
+          "rectangle_uv_mm": [
+            1.4210854715202004e-14,
+            -1.8000000000000114,
+            30.000000000000014,
+            4.75
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "rectangle_uv_mm": [
+            -87.49999999999999,
+            1.5,
+            -71.49999999999999,
+            21.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "rectangle_uv_mm": [
+            31.500000000000014,
+            1.5,
+            47.500000000000014,
+            21.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+          "rectangle_uv_mm": [
+            -87.49999999999999,
+            312.5,
+            -71.49999999999999,
+            332.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+          "rectangle_uv_mm": [
+            31.500000000000014,
+            312.5,
+            47.500000000000014,
+            332.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+          "rectangle_uv_mm": [
+            -133.2,
+            32.5,
+            -113.19999999999999,
+            48.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+          "rectangle_uv_mm": [
+            -133.2,
+            159.0,
+            -113.19999999999999,
+            175.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+          "rectangle_uv_mm": [
+            -133.2,
+            285.5,
+            -113.19999999999999,
+            301.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+          "rectangle_uv_mm": [
+            73.20000000000002,
+            32.5,
+            93.20000000000002,
+            48.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+          "rectangle_uv_mm": [
+            73.20000000000002,
+            159.0,
+            93.20000000000002,
+            175.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+          "rectangle_uv_mm": [
+            73.20000000000002,
+            285.5,
+            93.20000000000002,
+            301.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 3.0,
+        "protected_clearances": [
+          {
+            "id": "c4-01-wall",
+            "clearance_mm": 11.5
+          },
+          {
+            "id": "c4-01-lower-guard",
+            "clearance_mm": 8.25
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+            "clearance_mm": 74.49999999999999
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+            "clearance_mm": 24.500000000000014
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-BACK-XXN",
+            "clearance_mm": 305.17828699307506
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-BACK-XXP",
+            "clearance_mm": 296.6779201748934
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+            "clearance_mm": 117.48845132480376
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+            "clearance_mm": 184.2987922666167
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+            "clearance_mm": 293.1973746495724
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-RIGHT-FRONT",
+            "clearance_mm": 68.40944538909537
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-RIGHT-CENTER",
+            "clearance_mm": 157.33373779586043
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-RIGHT-REAR",
+            "clearance_mm": 276.96503365117286
+          }
+        ],
+        "removed_volume_mm3": 18.84955592153877,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 260,
+          "triangles": 520,
+          "bbox_error_mm": 1.4210854715202004e-14,
+          "volume_error_mm3": 0.007819932916163452,
+          "cad_volume_mm3": 881.1504440784613,
+          "edge_incidence_histogram": {
+            "2": 780
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.step",
+          "sha256": "6c21614c25f571960ea7834a39b6d96fafa96971cd1363f32650ff22c83f0981",
+          "bytes": 16698
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.dxf",
+          "sha256": "5644862d7ac3390fb53ca2c554673c5b384ad6183fd46dae2691f3d40ff16fc1",
+          "bytes": 15810
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.stl",
+          "sha256": "db7cfe77049539fa1bd40ef74d3424577fecd7c90b1cf8cc8618a84884b39b56",
+          "bytes": 684
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c4-01-floor-qty1-mm.step",
+          "sha256": "dab7bec7fa297a65b2b48593fb748caebf93cf379e5432e25c2e87ca0da713d2",
+          "bytes": 20324
+        },
+        {
+          "path": "dxf/7u40-r9a-c4-01-floor-qty1-mm.dxf",
+          "sha256": "5ebcfaf99a034fe580223ed823b1791faff303ca1872b363521031cfac1e0318",
+          "bytes": 16044
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c4-01-floor-qty1-mm.stl",
+          "sha256": "fd891b99565310900cdb6529fbeb552e96c6dcd4c3b48b5c717a8a5a610500db",
+          "bytes": 26084
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.step",
+          "new": "step/7u40-r9a-c4-01-floor-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c4-01-floor-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.stl",
+          "new": "reference-stl/7u40-r9a-c4-01-floor-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    },
+    {
+      "id": "c4-01-wall",
+      "quantity": 1,
+      "dimensions_mm": [
+        30.000000000000014,
+        18.5,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        5,
+        13.5
+      ],
+      "hole_center_exported_step_mm": [
+        24.999999999999986,
+        -166.25,
+        15.0
+      ],
+      "hole_center_case_mm": [
+        24.999999999999986,
+        -166.25,
+        15.0
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        0,
+        2
+      ],
+      "thickness_axis_in_exported_step": 1,
+      "origin_exported_step_mm": [
+        19.999999999999986,
+        -167.0,
+        1.5
+      ],
+      "keepouts": [
+        {
+          "id": "c4-01-floor",
+          "rectangle_uv_mm": [
+            0.0,
+            -1.5,
+            30.000000000000014,
+            0.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "c4-01-lower-guard",
+          "rectangle_uv_mm": [
+            1.4210854715202004e-14,
+            -2.7000000000000455,
+            30.000000000000014,
+            3.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "rectangle_uv_mm": [
+            -87.49999999999999,
+            0.0,
+            -71.49999999999999,
+            20.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "rectangle_uv_mm": [
+            31.500000000000014,
+            0.0,
+            47.500000000000014,
+            20.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "rectangle_uv_mm": [
+            -133.2,
+            27.0,
+            -113.19999999999999,
+            43.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "rectangle_uv_mm": [
+            -133.2,
+            57.0,
+            -113.19999999999999,
+            73.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+          "rectangle_uv_mm": [
+            73.20000000000002,
+            27.0,
+            93.20000000000002,
+            43.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+          "rectangle_uv_mm": [
+            73.20000000000002,
+            57.0,
+            93.20000000000002,
+            73.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 3.0,
+        "protected_clearances": [
+          {
+            "id": "c4-01-floor",
+            "clearance_mm": 11.5
+          },
+          {
+            "id": "c4-01-lower-guard",
+            "clearance_mm": 8.0
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+            "clearance_mm": 74.49999999999999
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+            "clearance_mm": 24.500000000000014
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+            "clearance_mm": 116.96844119345263
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+            "clearance_mm": 123.95034735958451
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+            "clearance_mm": 67.52330544500889
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+            "clearance_mm": 78.89184136858304
+          }
+        ],
+        "removed_volume_mm3": 18.84955592153876,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 260,
+          "triangles": 520,
+          "bbox_error_mm": 1.4210854715202004e-14,
+          "volume_error_mm3": 0.0078118270870390916,
+          "cad_volume_mm3": 813.6504440784613,
+          "edge_incidence_histogram": {
+            "2": 780
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.step",
+          "sha256": "5f93a830222b02953328c15e22c7db98a3c71337c657c33bea06c94d3ac51306",
+          "bytes": 16747
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.dxf",
+          "sha256": "daf29923d8d416231db5fcf2bf0c04d8722789c2f87e392bd1f739d11344f383",
+          "bytes": 15810
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.stl",
+          "sha256": "39ed891e457b35b0e153315f5b12ab257b782039afef6b5b3c799c8a53e02e3b",
+          "bytes": 684
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c4-01-wall-qty1-mm.step",
+          "sha256": "d2182dabfd9084ccdf1295d6a9f8fc2df1700407dd319314145c7b188f6b0202",
+          "bytes": 21561
+        },
+        {
+          "path": "dxf/7u40-r9a-c4-01-wall-qty1-mm.dxf",
+          "sha256": "1e478d9d3795806a071a43a6b65ebf3f2df110026da453dfbc61f1e803a9339b",
+          "bytes": 16044
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c4-01-wall-qty1-mm.stl",
+          "sha256": "e87e84e43c8ca0a9c2585a0877831334d56355d74c0d1c451573c856dd86eedd",
+          "bytes": 26084
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.step",
+          "new": "step/7u40-r9a-c4-01-wall-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c4-01-wall-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.stl",
+          "new": "reference-stl/7u40-r9a-c4-01-wall-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    },
+    {
+      "id": "c5-01-front",
+      "quantity": 1,
+      "dimensions_mm": [
+        10.5,
+        20.0,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        7,
+        7
+      ],
+      "hole_center_exported_step_mm": [
+        -106.2,
+        -166.25,
+        78.0
+      ],
+      "hole_center_case_mm": [
+        -106.2,
+        -166.25,
+        78.0
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        0,
+        2
+      ],
+      "thickness_axis_in_exported_step": 1,
+      "origin_exported_step_mm": [
+        -113.2,
+        -167.0,
+        71.0
+      ],
+      "keepouts": [
+        {
+          "id": "c5-01-left",
+          "rectangle_uv_mm": [
+            -1.5,
+            0.0,
+            0.0,
+            20.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "c5-01-upper-guard",
+          "rectangle_uv_mm": [
+            -3.299999999999997,
+            15.0,
+            10.5,
+            21.200000000000045
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "full-case-vertical-corner-guard",
+          "rectangle_uv_mm": [
+            -3.0,
+            -65.75,
+            3.5,
+            14.75
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+          "rectangle_uv_mm": [
+            45.7,
+            -69.5,
+            61.7,
+            -49.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+          "rectangle_uv_mm": [
+            164.7,
+            -69.5,
+            180.7,
+            -49.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "rectangle_uv_mm": [
+            0.0,
+            -42.5,
+            20.0,
+            -26.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "rectangle_uv_mm": [
+            0.0,
+            -12.5,
+            20.0,
+            3.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+          "rectangle_uv_mm": [
+            206.4,
+            -42.5,
+            226.4,
+            -26.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+          "rectangle_uv_mm": [
+            206.4,
+            -12.5,
+            226.4,
+            3.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 1.5,
+        "protected_clearances": [
+          {
+            "id": "c5-01-left",
+            "clearance_mm": 5.0
+          },
+          {
+            "id": "c5-01-upper-guard",
+            "clearance_mm": 6.0
+          },
+          {
+            "id": "full-case-vertical-corner-guard",
+            "clearance_mm": 1.5
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXN",
+            "clearance_mm": 66.48313661040943
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-FRONT-XXP",
+            "clearance_mm": 165.51579030049675
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+            "clearance_mm": 31.5
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+            "clearance_mm": 1.5
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-LOWER",
+            "clearance_mm": 200.19448558256974
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-RIGHT-FRONT-UPPER",
+            "clearance_mm": 197.43071478586242
+          }
+        ],
+        "removed_volume_mm3": 18.84955592153873,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 260,
+          "triangles": 520,
+          "bbox_error_mm": 3.051757815342171e-06,
+          "volume_error_mm3": 0.007804963797582332,
+          "cad_volume_mm3": 296.15044407846125,
+          "edge_incidence_histogram": {
+            "2": 780
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.step",
+          "sha256": "a900b059cbae0aa43cd33e189459bd6e6f02c06733c54e54c13a3f9741430095",
+          "bytes": 16477
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.dxf",
+          "sha256": "2dabc397a3dd415361c5ec18d3f26767e958e7ed0668cd56277b6671a7722ff7",
+          "bytes": 15782
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.stl",
+          "sha256": "a5449ea295d5fe1ad9ebfd306bb8cff83b602e9a5078a81e280fb3d3d68c6751",
+          "bytes": 684
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c5-01-front-qty1-mm.step",
+          "sha256": "c597ef206ec1220b78d24e0a497411f5155acbf26c662e66e0833b8522311987",
+          "bytes": 21266
+        },
+        {
+          "path": "dxf/7u40-r9a-c5-01-front-qty1-mm.dxf",
+          "sha256": "260ab849133a6273cb72d93aade6ee13f721216ce651a03d776d3d4977697629",
+          "bytes": 16015
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c5-01-front-qty1-mm.stl",
+          "sha256": "eadf53ab49b9a75795e411fb4242a00d6ded0b6ae4e43bf34ee0d27152204226",
+          "bytes": 26084
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.step",
+          "new": "step/7u40-r9a-c5-01-front-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c5-01-front-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.stl",
+          "new": "reference-stl/7u40-r9a-c5-01-front-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    },
+    {
+      "id": "c5-01-left",
+      "quantity": 1,
+      "dimensions_mm": [
+        12.0,
+        20.0,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        8.5,
+        7
+      ],
+      "hole_center_exported_step_mm": [
+        -113.95,
+        -158.5,
+        78.0
+      ],
+      "hole_center_case_mm": [
+        -113.95,
+        -158.5,
+        78.0
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        1,
+        2
+      ],
+      "thickness_axis_in_exported_step": 0,
+      "origin_exported_step_mm": [
+        -114.7,
+        -167.0,
+        71.0
+      ],
+      "keepouts": [
+        {
+          "id": "c5-01-front",
+          "rectangle_uv_mm": [
+            0.0,
+            0.0,
+            1.5,
+            20.0
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "c5-01-upper-guard",
+          "rectangle_uv_mm": [
+            -1.5,
+            15.0,
+            12.0,
+            21.200000000000045
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "full-case-vertical-corner-guard",
+          "rectangle_uv_mm": [
+            -1.5,
+            -65.75,
+            5.0,
+            14.75
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+          "rectangle_uv_mm": [
+            32.5,
+            -69.5,
+            48.5,
+            -49.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+          "rectangle_uv_mm": [
+            159.0,
+            -69.5,
+            175.0,
+            -49.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+          "rectangle_uv_mm": [
+            285.5,
+            -69.5,
+            301.5,
+            -49.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+          "rectangle_uv_mm": [
+            1.5,
+            -42.5,
+            21.5,
+            -26.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+          "rectangle_uv_mm": [
+            1.5,
+            -12.5,
+            21.5,
+            3.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+          "rectangle_uv_mm": [
+            312.5,
+            -42.5,
+            332.5,
+            -26.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        },
+        {
+          "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+          "rectangle_uv_mm": [
+            312.5,
+            -12.5,
+            332.5,
+            3.5
+          ],
+          "basis": "conservative projection of regenerated neighboring BREP bounds"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 1.5,
+        "protected_clearances": [
+          {
+            "id": "c5-01-front",
+            "clearance_mm": 5.0
+          },
+          {
+            "id": "c5-01-upper-guard",
+            "clearance_mm": 6.0
+          },
+          {
+            "id": "full-case-vertical-corner-guard",
+            "clearance_mm": 1.5
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-LEFT-FRONT",
+            "clearance_mm": 59.38607333915405
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-LEFT-CENTER",
+            "clearance_mm": 158.75602632560933
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-BOTTOM-LEFT-REAR",
+            "clearance_mm": 280.7034665510842
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-LOWER",
+            "clearance_mm": 31.5
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-FRONT-UPPER",
+            "clearance_mm": 1.5
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-LOWER",
+            "clearance_mm": 303.8402360710572
+          },
+          {
+            "id": "case-7U40-R9-HW-BRACKET-VERTICAL-LEFT-BACK-UPPER",
+            "clearance_mm": 302.0201473586907
+          }
+        ],
+        "removed_volume_mm3": 18.84955592153876,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 260,
+          "triangles": 520,
+          "bbox_error_mm": 3.051757815342171e-06,
+          "volume_error_mm3": 0.007802479351425973,
+          "cad_volume_mm3": 341.1504440784612,
+          "edge_incidence_histogram": {
+            "2": 780
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.step",
+          "sha256": "265773012208add9d31cee046cd805c6b14e64d78142b31689cac01af60c0806",
+          "bytes": 16443
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.dxf",
+          "sha256": "dd30b8aca768f5bc5bd90ccde4eb8aedf822f5fb1e0732c48da638e89f8c08b0",
+          "bytes": 15782
+        },
+        {
+          "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.stl",
+          "sha256": "e08f89b5f3994fad632ef5dcf02eb84e54019d085084a3ff841a8be60c4b2f29",
+          "bytes": 684
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c5-01-left-qty1-mm.step",
+          "sha256": "bf96db8eb716fc75e3804daa804a79c50b736c7b4f63b19fb37371f3f5e88f52",
+          "bytes": 20277
+        },
+        {
+          "path": "dxf/7u40-r9a-c5-01-left-qty1-mm.dxf",
+          "sha256": "37b969cc6c0a620b08f1509efd0bbb9cd14a84816b10f785cc27843ca106f586",
+          "bytes": 16015
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c5-01-left-qty1-mm.stl",
+          "sha256": "213add1876136067120c5fcda0aad6471e4627f6f4785b38d29526a5b9284202",
+          "bytes": 26084
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.step",
+          "new": "step/7u40-r9a-c5-01-left-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c5-01-left-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.stl",
+          "new": "reference-stl/7u40-r9a-c5-01-left-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    },
+    {
+      "id": "c3-01-bottom",
+      "quantity": 1,
+      "dimensions_mm": [
+        32.0,
+        20.0,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        4,
+        16
+      ],
+      "hole_center_exported_step_mm": [
+        4.0,
+        16.0,
+        0.75
+      ],
+      "hole_center_case_mm": [
+        -71.5,
+        -151.0,
+        0.75
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        0,
+        1
+      ],
+      "thickness_axis_in_exported_step": 2,
+      "origin_exported_step_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keepouts": [
+        {
+          "id": "bracket-and-swept-washer",
+          "rectangle_uv_mm": [
+            8.0,
+            0,
+            24.0,
+            20.0
+          ],
+          "basis": "full-depth 16 mm bracket band; also encloses OD13.5 washer/head swept +/-1.5 mm in V"
+        },
+        {
+          "id": "joint-and-guard-edge",
+          "rectangle_uv_mm": [
+            0,
+            0,
+            32.0,
+            5
+          ],
+          "basis": "conservative 5 mm lower-edge guard/contact band"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 2.0,
+        "protected_clearances": [
+          {
+            "id": "bracket-and-swept-washer",
+            "clearance_mm": 2.0
+          },
+          {
+            "id": "joint-and-guard-edge",
+            "clearance_mm": 9.0
+          }
+        ],
+        "removed_volume_mm3": 18.84955592153876,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 516,
+          "triangles": 1036,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 0.022579084877406785,
+          "cad_volume_mm3": 889.0130024143022,
+          "edge_incidence_histogram": {
+            "2": 1554
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.step",
+          "sha256": "a250dda6531aa5cc21d360ec6b758aa3dc46964bc39812a40333e5c1c33ec87b",
+          "bytes": 32291
+        },
+        {
+          "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.dxf",
+          "sha256": "57cbf74b25e8756cb80e06be475a035616f02879238623301bf70ecc76e47e7c",
+          "bytes": 16266
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c3-01-bottom-qty1-mm.step",
+          "sha256": "262e8bc056d5d6118b12103cabc3a9df0928541affaafe2c70d25a1e953cc9fe",
+          "bytes": 35890
+        },
+        {
+          "path": "dxf/7u40-r9a-c3-01-bottom-qty1-mm.dxf",
+          "sha256": "30f93531e1a11538c49c7b11d192d43b64d72929e9ec3c036fc4a7a53ca61d1c",
+          "bytes": 16500
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c3-01-bottom-qty1-mm.stl",
+          "sha256": "9cf0e599dfc0f304527c7fbadccadf9e150244a3ff9af84d62e0b34c8b4b143f",
+          "bytes": 51884
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.step",
+          "new": "step/7u40-r9a-c3-01-bottom-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c3-01-bottom-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": null,
+          "new": "reference-stl/7u40-r9a-c3-01-bottom-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    },
+    {
+      "id": "c3-01-wall",
+      "quantity": 1,
+      "dimensions_mm": [
+        32.0,
+        20.0,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        4,
+        16
+      ],
+      "hole_center_exported_step_mm": [
+        4.0,
+        16.0,
+        0.75
+      ],
+      "hole_center_case_mm": [
+        -71.5,
+        -166.25,
+        17.5
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        0,
+        1
+      ],
+      "thickness_axis_in_exported_step": 2,
+      "origin_exported_step_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keepouts": [
+        {
+          "id": "bracket-and-swept-washer",
+          "rectangle_uv_mm": [
+            8.0,
+            0,
+            24.0,
+            20.0
+          ],
+          "basis": "full-depth 16 mm bracket band; also encloses OD13.5 washer/head swept +/-1.5 mm in V"
+        },
+        {
+          "id": "joint-and-guard-edge",
+          "rectangle_uv_mm": [
+            0,
+            0,
+            32.0,
+            5
+          ],
+          "basis": "conservative 5 mm lower-edge guard/contact band"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 2.0,
+        "protected_clearances": [
+          {
+            "id": "bracket-and-swept-washer",
+            "clearance_mm": 2.0
+          },
+          {
+            "id": "joint-and-guard-edge",
+            "clearance_mm": 9.0
+          }
+        ],
+        "removed_volume_mm3": 18.84955592153876,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 516,
+          "triangles": 1036,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 0.022579007418244146,
+          "cad_volume_mm3": 889.0130024143022,
+          "edge_incidence_histogram": {
+            "2": 1554
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.step",
+          "sha256": "0ffece8d4bc2e1daf2febb845320893912507e999da6593e88850d7cdc491a8c",
+          "bytes": 32209
+        },
+        {
+          "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.dxf",
+          "sha256": "2414b343bbf33c0ab93b31c7c24c627ff81fb99a0ca613a0e95fd9cd1a18b2e5",
+          "bytes": 16263
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c3-01-wall-qty1-mm.step",
+          "sha256": "a49b2f2deee5434d157f9e0b33f3ccdecb457cd5d27d7a06633f3e595c42b34e",
+          "bytes": 35808
+        },
+        {
+          "path": "dxf/7u40-r9a-c3-01-wall-qty1-mm.dxf",
+          "sha256": "c6ae85f5c7663b9e505a7b9c8452b57effe8d8a004b5ff4f0a8f8cd0fe517a26",
+          "bytes": 16497
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c3-01-wall-qty1-mm.stl",
+          "sha256": "68cc64c943ca45072e1250ffd1f8e6b4183912c2931e221c8eb03681fbbba315",
+          "bytes": 51884
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.step",
+          "new": "step/7u40-r9a-c3-01-wall-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c3-01-wall-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": null,
+          "new": "reference-stl/7u40-r9a-c3-01-wall-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    },
+    {
+      "id": "c3-02-bottom",
+      "quantity": 1,
+      "dimensions_mm": [
+        32.0,
+        20.0,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        4,
+        16
+      ],
+      "hole_center_exported_step_mm": [
+        4.0,
+        16.0,
+        0.75
+      ],
+      "hole_center_case_mm": [
+        -71.5,
+        -151.0,
+        0.75
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        0,
+        1
+      ],
+      "thickness_axis_in_exported_step": 2,
+      "origin_exported_step_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keepouts": [
+        {
+          "id": "bracket-and-swept-washer",
+          "rectangle_uv_mm": [
+            8.0,
+            0,
+            24.0,
+            20.0
+          ],
+          "basis": "full-depth 16 mm bracket band; also encloses OD13.5 washer/head swept +/-1.5 mm in V"
+        },
+        {
+          "id": "joint-and-guard-edge",
+          "rectangle_uv_mm": [
+            0,
+            0,
+            32.0,
+            5
+          ],
+          "basis": "conservative 5 mm lower-edge guard/contact band"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 2.0,
+        "protected_clearances": [
+          {
+            "id": "bracket-and-swept-washer",
+            "clearance_mm": 2.0
+          },
+          {
+            "id": "joint-and-guard-edge",
+            "clearance_mm": 9.0
+          }
+        ],
+        "removed_volume_mm3": 18.84955592153876,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 516,
+          "triangles": 1036,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 0.022578760945293652,
+          "cad_volume_mm3": 880.7630024143022,
+          "edge_incidence_histogram": {
+            "2": 1554
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.step",
+          "sha256": "c97070bc259cb2465cda8b15d997d58f156941d90787d0e0256b964e0b3b66cf",
+          "bytes": 32221
+        },
+        {
+          "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.dxf",
+          "sha256": "8441f6e8bdce564262a3500d16380fd7f863af98247ee13b9204ce0f63a40ee8",
+          "bytes": 16266
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c3-02-bottom-qty1-mm.step",
+          "sha256": "f354873313963b19894cd2658c339572d3f69eab1df13f73c2ef93012d093742",
+          "bytes": 35820
+        },
+        {
+          "path": "dxf/7u40-r9a-c3-02-bottom-qty1-mm.dxf",
+          "sha256": "ddca863dbb12a432c3053f04f1d7519c17754256afc03e60f0c9049c8c58a1d3",
+          "bytes": 16500
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c3-02-bottom-qty1-mm.stl",
+          "sha256": "72164d3464cdcabe93f0eff97cc7342d1966409621ef31227f160c737e2681d0",
+          "bytes": 51884
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.step",
+          "new": "step/7u40-r9a-c3-02-bottom-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c3-02-bottom-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": null,
+          "new": "reference-stl/7u40-r9a-c3-02-bottom-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    },
+    {
+      "id": "c3-02-wall",
+      "quantity": 1,
+      "dimensions_mm": [
+        32.0,
+        20.0,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        4,
+        16
+      ],
+      "hole_center_exported_step_mm": [
+        4.0,
+        16.0,
+        0.75
+      ],
+      "hole_center_case_mm": [
+        -71.5,
+        -166.25,
+        17.5
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        0,
+        1
+      ],
+      "thickness_axis_in_exported_step": 2,
+      "origin_exported_step_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keepouts": [
+        {
+          "id": "bracket-and-swept-washer",
+          "rectangle_uv_mm": [
+            8.0,
+            0,
+            24.0,
+            20.0
+          ],
+          "basis": "full-depth 16 mm bracket band; also encloses OD13.5 washer/head swept +/-1.5 mm in V"
+        },
+        {
+          "id": "joint-and-guard-edge",
+          "rectangle_uv_mm": [
+            0,
+            0,
+            32.0,
+            5
+          ],
+          "basis": "conservative 5 mm lower-edge guard/contact band"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 2.0,
+        "protected_clearances": [
+          {
+            "id": "bracket-and-swept-washer",
+            "clearance_mm": 2.0
+          },
+          {
+            "id": "joint-and-guard-edge",
+            "clearance_mm": 9.0
+          }
+        ],
+        "removed_volume_mm3": 18.84955592153876,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 516,
+          "triangles": 1036,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 0.022578998006565598,
+          "cad_volume_mm3": 880.7630024143022,
+          "edge_incidence_histogram": {
+            "2": 1554
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.step",
+          "sha256": "b29008e9ce4d86e4b6951c28bda0872dcaa88b1aeb57d5d668b17f89057ba9c2",
+          "bytes": 32269
+        },
+        {
+          "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.dxf",
+          "sha256": "1b57082da9d56b0a0b9854f2781e444b12f2f6546c591dc346cc57be9c030c50",
+          "bytes": 16263
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c3-02-wall-qty1-mm.step",
+          "sha256": "3c5f86f514060724895ac0fc65cc03bfffb8bf66546680a13280e44393defe0a",
+          "bytes": 35868
+        },
+        {
+          "path": "dxf/7u40-r9a-c3-02-wall-qty1-mm.dxf",
+          "sha256": "604ceb19a1f57c5c449a6f4a1c40fa9249ed187e8c6ee5ca6c340ee1c8a290b2",
+          "bytes": 16497
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c3-02-wall-qty1-mm.stl",
+          "sha256": "47fafae640b1f6ad2d1acc6aea1460754365902d5e8b2bf37a1547206c5d7268",
+          "bytes": 51884
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.step",
+          "new": "step/7u40-r9a-c3-02-wall-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c3-02-wall-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": null,
+          "new": "reference-stl/7u40-r9a-c3-02-wall-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    },
+    {
+      "id": "c3-03-bottom",
+      "quantity": 1,
+      "dimensions_mm": [
+        32.0,
+        20.0,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        4,
+        16
+      ],
+      "hole_center_exported_step_mm": [
+        4.0,
+        16.0,
+        0.75
+      ],
+      "hole_center_case_mm": [
+        -71.5,
+        -151.0,
+        0.75
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        0,
+        1
+      ],
+      "thickness_axis_in_exported_step": 2,
+      "origin_exported_step_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keepouts": [
+        {
+          "id": "bracket-and-swept-washer",
+          "rectangle_uv_mm": [
+            8.0,
+            0,
+            24.0,
+            20.0
+          ],
+          "basis": "full-depth 16 mm bracket band; also encloses OD13.5 washer/head swept +/-1.5 mm in V"
+        },
+        {
+          "id": "joint-and-guard-edge",
+          "rectangle_uv_mm": [
+            0,
+            0,
+            32.0,
+            5
+          ],
+          "basis": "conservative 5 mm lower-edge guard/contact band"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 2.0,
+        "protected_clearances": [
+          {
+            "id": "bracket-and-swept-washer",
+            "clearance_mm": 2.0
+          },
+          {
+            "id": "joint-and-guard-edge",
+            "clearance_mm": 9.0
+          }
+        ],
+        "removed_volume_mm3": 18.84955592153876,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 512,
+          "triangles": 1028,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 0.022578336406809285,
+          "cad_volume_mm3": 905.5130024143022,
+          "edge_incidence_histogram": {
+            "2": 1542
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.step",
+          "sha256": "d06644a1f9a86008dbd536c6cdf7647df5a55ca0afb125afdbccca6fe9ae2560",
+          "bytes": 18982
+        },
+        {
+          "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.dxf",
+          "sha256": "46728be4508067b2c542116c46bc643f7c346a8f31644f630a2c197e60445ec7",
+          "bytes": 15882
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c3-03-bottom-qty1-mm.step",
+          "sha256": "1b4b8ca83a7aad0f2a90cc5e8ea8136af72108417ce068cd9c862802c03d5b2f",
+          "bytes": 22579
+        },
+        {
+          "path": "dxf/7u40-r9a-c3-03-bottom-qty1-mm.dxf",
+          "sha256": "801920b7f40e23bfd1530745935a9065e3ed18810f060bba439f6a347e6b4899",
+          "bytes": 16116
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c3-03-bottom-qty1-mm.stl",
+          "sha256": "94b68d33ac191b2ffc543183832e91a27d5abd5ee026d70d68f8278dc8f0d488",
+          "bytes": 51484
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.step",
+          "new": "step/7u40-r9a-c3-03-bottom-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c3-03-bottom-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": null,
+          "new": "reference-stl/7u40-r9a-c3-03-bottom-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    },
+    {
+      "id": "c3-03-wall",
+      "quantity": 1,
+      "dimensions_mm": [
+        32.0,
+        20.0,
+        1.5
+      ],
+      "hole_center_uv_mm": [
+        4,
+        16
+      ],
+      "hole_center_exported_step_mm": [
+        4.0,
+        16.0,
+        0.75
+      ],
+      "hole_center_case_mm": [
+        -71.5,
+        -166.25,
+        17.5
+      ],
+      "diameter_mm": 4.0,
+      "flat_axes_in_exported_step": [
+        0,
+        1
+      ],
+      "thickness_axis_in_exported_step": 2,
+      "origin_exported_step_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "keepouts": [
+        {
+          "id": "bracket-and-swept-washer",
+          "rectangle_uv_mm": [
+            8.0,
+            0,
+            24.0,
+            20.0
+          ],
+          "basis": "full-depth 16 mm bracket band; also encloses OD13.5 washer/head swept +/-1.5 mm in V"
+        },
+        {
+          "id": "joint-and-guard-edge",
+          "rectangle_uv_mm": [
+            0,
+            0,
+            32.0,
+            5
+          ],
+          "basis": "conservative 5 mm lower-edge guard/contact band"
+        }
+      ],
+      "checks": {
+        "edge_ligament_mm": 2.0,
+        "protected_clearances": [
+          {
+            "id": "bracket-and-swept-washer",
+            "clearance_mm": 2.0
+          },
+          {
+            "id": "joint-and-guard-edge",
+            "clearance_mm": 9.0
+          }
+        ],
+        "removed_volume_mm3": 18.84955592153876,
+        "expected_removed_volume_mm3": 18.84955592153876,
+        "functional_geometry_unchanged": true,
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 512,
+          "triangles": 1028,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 0.022578760945293652,
+          "cad_volume_mm3": 905.5130024143022,
+          "edge_incidence_histogram": {
+            "2": 1542
+          }
+        },
+        "step_dxf_symmetric_difference_mm3": 0.0
+      },
+      "old_files": [
+        {
+          "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.step",
+          "sha256": "ae5b4e875a21afa56bc93a6753cbeb0a77f510f9fb7972cffb23d4a2fe9583b4",
+          "bytes": 18974
+        },
+        {
+          "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.dxf",
+          "sha256": "77b3fd15298e7cf4cb056c4818b11fd78a6c3de112bfef68059b9666889f362c",
+          "bytes": 15882
+        }
+      ],
+      "new_files": [
+        {
+          "path": "step/7u40-r9a-c3-03-wall-qty1-mm.step",
+          "sha256": "d5b16fe2d1e08a154f414a6662bb52d621bce3f74df4a6788b74322bdf17829f",
+          "bytes": 22571
+        },
+        {
+          "path": "dxf/7u40-r9a-c3-03-wall-qty1-mm.dxf",
+          "sha256": "4617510d5555425bff0490e03102ab18a9acc1ec2bcb7085692167750ee58212",
+          "bytes": 16116
+        },
+        {
+          "path": "reference-stl/7u40-r9a-c3-03-wall-qty1-mm.stl",
+          "sha256": "bac8989008394b1e31209f134ce5e48074af4adcb4999cb56fa94e037ff301a6",
+          "bytes": 51484
+        }
+      ],
+      "mapping": [
+        {
+          "old": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.step",
+          "new": "step/7u40-r9a-c3-03-wall-qty1-mm.step",
+          "format": "step"
+        },
+        {
+          "old": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.dxf",
+          "new": "dxf/7u40-r9a-c3-03-wall-qty1-mm.dxf",
+          "format": "dxf"
+        },
+        {
+          "old": null,
+          "new": "reference-stl/7u40-r9a-c3-03-wall-qty1-mm.stl",
+          "format": "stl"
+        }
+      ]
+    }
+  ],
+  "original_order_package_members": [
+    {
+      "file": "fit-coupons-pa12-NOT-APPROVED.zip",
+      "bytes": 64056,
+      "sha256": "0951e9269362ad8542bc9cd5f4c2918e9035a4844f55a4f5f388cf65c451fdb2"
+    },
+    {
+      "file": "fit-coupons-metal-NOT-APPROVED.zip",
+      "bytes": 55942,
+      "sha256": "b88af8af668425256b2ada3ffd700a66797f0d6738ba380dd17479308178f510"
+    },
+    {
+      "file": "c3-hardware-coupons-R9-PROTOTYPE-01-DRAFT.zip",
+      "bytes": 61567,
+      "sha256": "509c84a7d6602b52844c084d862929e5bd251941afea68a3055d903aa434d847"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "engineering/r6-body/build_geometry.py",
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d",
+      "bytes": 50199
+    },
+    {
+      "path": "engineering/r6-body/design-parameters.json",
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b",
+      "bytes": 23552
+    },
+    {
+      "path": "engineering/r6-body/engineering/7u40/aluminum/hole-layout.json",
+      "sha256": "ad555b88e51ab3b79d789871fb2fccc9e5c0926b89d80098cdb95b73d66ceb06",
+      "bytes": 3573
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/panel-geometry.json",
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c",
+      "bytes": 627540
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/nuts-v2-40hp-single.stl",
+      "sha256": "88a153fe717f582f80656fe10c74df5ec1717f53e6b202fff078532b00b06c5a",
+      "bytes": 29684
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/rail_dimensions.json",
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210",
+      "bytes": 5151
+    },
+    {
+      "path": "engineering/r9-anodizing-01/build.py",
+      "sha256": "93c14866610d0e6426aaa35a3a61c909038e0f8edccc917d9ac7a19347ec5beb",
+      "bytes": 21099
+    },
+    {
+      "path": "engineering/r9-anodizing-01/parameters.json",
+      "sha256": "a0c742824cb2b8a0580af09909a560abd1b2ff90609dadd8a744ed09e52ca367",
+      "bytes": 857
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/__init__.py",
+      "sha256": "cfe1436ef6cfdda4dfecddb3a51b7514faa1c36d01953fc3d652c2d22f5c7a40",
+      "bytes": 74
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/coupons.py",
+      "sha256": "ef02b1a4dcf7bb5d78aa83f2159b0dcbbb752557c1fd8c06ed5eedf021d40eea",
+      "bytes": 5913
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/geometry.py",
+      "sha256": "e25a1f72dc356cffb2989ae9c444e929309bd6d50020c5c81e4f82431eaedb9c",
+      "bytes": 13217
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/io.py",
+      "sha256": "cbaf617c38b4725476b838f777b10f14554615c64a1041fd3d0c7cfb223fb6ff",
+      "bytes": 6240
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/preview.py",
+      "sha256": "f6bb0dc41d10877786adaba2fb06b8b57f9f626b9697063a15bd410f74414dd6",
+      "bytes": 15926
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/reference.py",
+      "sha256": "7016e9eb14347bd0beb0cd161ce72d1f63d880ce944d6f4ca2363f07d99d3427",
+      "bytes": 5039
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/validation.py",
+      "sha256": "f03d965f0be2e153a4bcb66958490846aee63322b47eeba8c23d790f0b8526bd",
+      "bytes": 6172
+    },
+    {
+      "path": "engineering/r9-fitfix-01/order-prep/ALUMINUM-RFQ.txt",
+      "sha256": "a2bad567d3c39f72bf7feb99df4cdf0323ca87e8f9f6542b55ae056c02a2e4fd",
+      "bytes": 2275
+    },
+    {
+      "path": "engineering/r9-fitfix-01/order-prep/PA12-RFQ.txt",
+      "sha256": "cd79440db9d08404be7d19d124b5854a3ba979119f89f027cdeaeba59235b220",
+      "bytes": 1848
+    },
+    {
+      "path": "engineering/r9-fitfix-01/order-prep/TEST-PLAN.md",
+      "sha256": "8aaa5cbf454788d4a612c66d3c7961b2707ce79e99a1fc19acd97789d9506b72",
+      "bytes": 4678
+    },
+    {
+      "path": "engineering/r9-fitfix-01/order-prep/order-plan.json",
+      "sha256": "abe2a40e4bd85d784761eb1e899dec435fe2c454de98b1ca0dcd11ffb5b9bf98",
+      "bytes": 14262
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/fit-coupons-metal-NOT-APPROVED.zip",
+      "sha256": "b88af8af668425256b2ada3ffd700a66797f0d6738ba380dd17479308178f510",
+      "bytes": 55942
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/fit-coupons-pa12-NOT-APPROVED.zip",
+      "sha256": "0951e9269362ad8542bc9cd5f4c2918e9035a4844f55a4f5f388cf65c451fdb2",
+      "bytes": 64056
+    },
+    {
+      "path": "engineering/r9-fitfix-01/parameters.json",
+      "sha256": "79c2baf0c9222b12a2e2f402371e54d744b2216791311800ecb3076141482691",
+      "bytes": 2235
+    },
+    {
+      "path": "engineering/r9-prototype-01/params/body.json",
+      "sha256": "4edbbb96cbff952e96597bbd0097a89e689f807708e033b7403436a565e2e0f6",
+      "bytes": 7745
+    },
+    {
+      "path": "engineering/r9-prototype-01/params/coupons.json",
+      "sha256": "9829bfd697b5c1916bb70216af7298edd7b25b2c8edb29b85e672c2796b3e5f7",
+      "bytes": 3672
+    },
+    {
+      "path": "engineering/r9-prototype-01/params/guards.json",
+      "sha256": "e5884eb74db58c83eed8b83e24db15a82fdfc7b2bc52bafb89c177c28e7afac1",
+      "bytes": 2970
+    },
+    {
+      "path": "engineering/r9-prototype-01/params/lid.json",
+      "sha256": "d366a297c82f8d847d432e15e18180aaffe1af5202dc88c9a2aa7ac922d6849b",
+      "bytes": 9258
+    },
+    {
+      "path": "engineering/r9-prototype-01/params/slots.json",
+      "sha256": "23fe334aa6bb96e90a6493c1d6eef66c1f7cbce67382d2fee196b60f5310e8bd",
+      "bytes": 1310
+    },
+    {
+      "path": "engineering/r9-prototype-01/pyproject.toml",
+      "sha256": "174770d463eb7abed3f35b992a7c0c4795f1180903bbf28ddd83cd1cb9645291",
+      "bytes": 252
+    },
+    {
+      "path": "engineering/r9-prototype-01/r9/__init__.py",
+      "sha256": "5c6a2696a34ee2a3f126415e09d48cb3794a5bb683da9ece5bdad07fd9433b45",
+      "bytes": 74
+    },
+    {
+      "path": "engineering/r9-prototype-01/r9/body.py",
+      "sha256": "b01583f8a56988677456f68addcf0e3d2d82cc27bb16207baa09b3c355bddce4",
+      "bytes": 53550
+    },
+    {
+      "path": "engineering/r9-prototype-01/r9/checks.py",
+      "sha256": "581aeba37d32c43fa18da97c2398e94691e4ed467604fdddda5671f49105c83d",
+      "bytes": 16091
+    },
+    {
+      "path": "engineering/r9-prototype-01/r9/common.py",
+      "sha256": "5e481855254671a36fb0944ddc55dd82a9d14f900d23e7a884148ca6fc2a6a26",
+      "bytes": 9341
+    },
+    {
+      "path": "engineering/r9-prototype-01/r9/coupons.py",
+      "sha256": "298cf79f578aac2612b4b852aa94e5f825a61874b25e200df7b01db49ede86e7",
+      "bytes": 35161
+    },
+    {
+      "path": "engineering/r9-prototype-01/r9/guards.py",
+      "sha256": "7891af27536fb5ead6d6ea06ae5c107b26854361da2b067e01547b9030398fd0",
+      "bytes": 9243
+    },
+    {
+      "path": "engineering/r9-prototype-01/r9/lid.py",
+      "sha256": "3dc716987ff80ed686d962b8180e46564ef57af8d9f9bf075a3ac4ccfd843f67",
+      "bytes": 6476
+    },
+    {
+      "path": "engineering/r9-prototype-01/r9/package.py",
+      "sha256": "5c35dac77c10d8fc4ae22848fdba89a775bdb80c84376f151d748b697c107a98",
+      "bytes": 48136
+    },
+    {
+      "path": "engineering/r9-prototype-01/r9/preview_data.py",
+      "sha256": "32c1552d633f36aef8d12bf70cef6fe22c8d7233e3fb6a79f403079387d11711",
+      "bytes": 38199
+    },
+    {
+      "path": "engineering/r9-prototype-01/r9/slots.py",
+      "sha256": "201b9e8d7cf0075c35eaaf0fe88599426460505a7cabc7de70301b06cc1efefe",
+      "bytes": 10898
+    },
+    {
+      "path": "engineering/r9-prototype-01/r9/types.py",
+      "sha256": "7efa51147c60c23512f1bf88ab1b1e53306f0c97eee547c367594ef268eb1c6f",
+      "bytes": 809
+    },
+    {
+      "path": "engineering/r9-prototype-01/r9/validation.py",
+      "sha256": "ed559719596c8dadf458eaf5d2f7c3217278b4ed40213d5b70e82260413c444c",
+      "bytes": 54033
+    },
+    {
+      "path": "engineering/r9-prototype-01/uv.lock",
+      "sha256": "3bd3803775af001e1c73c6da3db238bc3a99f2b7b33baab11cf8e323a80fff85",
+      "bytes": 91548
+    },
+    {
+      "path": "public/downloads/candidate/fit-test-order-pack-DRAFT.zip",
+      "sha256": "6d9b4e21cc915d75525734cfbafb84cfea9bf37a921c4b0d35757d2519e5591f",
+      "bytes": 159266
+    }
+  ],
+  "original_inputs_verified_against_pinned_commit": [
+    {
+      "path": "engineering/r9-fitfix-01/order-prep/order-plan.json",
+      "sha256": "abe2a40e4bd85d784761eb1e899dec435fe2c454de98b1ca0dcd11ffb5b9bf98",
+      "bytes": 14262
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.dxf",
+      "sha256": "cfbfb94964fd001e00b3fff272d9bd80482b918533a98401b2fba4e222236d0f",
+      "bytes": 15782
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.step",
+      "sha256": "96b1e980d4f64edcd41362a5fe5d0dc9ccfffe678fb1ac384a5ba276c703f6bd",
+      "bytes": 15394
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.stl",
+      "sha256": "253641ca51e6747977062e2a7a76b27211ea26c79ebb50fff092c91f21298d34",
+      "bytes": 684
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.dxf",
+      "sha256": "4c95e5953b9490163a318d2d9822a44b5c1d20a6054d1960a947d666f5e7e18d",
+      "bytes": 15937
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.step",
+      "sha256": "5778e3c786f5349c3dd88b88ed63da8f09b7e1a06ec066fd96aa89d0744f3112",
+      "bytes": 20469
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.stl",
+      "sha256": "da6cf4a7ee8ab636f8af53ba6bcda5a37192707441da651ea076da464f386b54",
+      "bytes": 26084
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.dxf",
+      "sha256": "acb1517d5967f14bcc8cffdd80a526ac298486cc20957b12afef2aa32ed3585f",
+      "bytes": 15810
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.step",
+      "sha256": "b665109c5993d0165690b2d08df6430db651ab729a63480bf77e264f5f8cc870",
+      "bytes": 16761
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.stl",
+      "sha256": "bc3cadc2e5a4654bc09c98c8830e0b88e61c23457d7ec5060a61664bf79c6583",
+      "bytes": 684
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.dxf",
+      "sha256": "5644862d7ac3390fb53ca2c554673c5b384ad6183fd46dae2691f3d40ff16fc1",
+      "bytes": 15810
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.step",
+      "sha256": "6c21614c25f571960ea7834a39b6d96fafa96971cd1363f32650ff22c83f0981",
+      "bytes": 16698
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.stl",
+      "sha256": "db7cfe77049539fa1bd40ef74d3424577fecd7c90b1cf8cc8618a84884b39b56",
+      "bytes": 684
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.dxf",
+      "sha256": "daf29923d8d416231db5fcf2bf0c04d8722789c2f87e392bd1f739d11344f383",
+      "bytes": 15810
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.step",
+      "sha256": "5f93a830222b02953328c15e22c7db98a3c71337c657c33bea06c94d3ac51306",
+      "bytes": 16747
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.stl",
+      "sha256": "39ed891e457b35b0e153315f5b12ab257b782039afef6b5b3c799c8a53e02e3b",
+      "bytes": 684
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.dxf",
+      "sha256": "2dabc397a3dd415361c5ec18d3f26767e958e7ed0668cd56277b6671a7722ff7",
+      "bytes": 15782
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.step",
+      "sha256": "a900b059cbae0aa43cd33e189459bd6e6f02c06733c54e54c13a3f9741430095",
+      "bytes": 16477
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.stl",
+      "sha256": "a5449ea295d5fe1ad9ebfd306bb8cff83b602e9a5078a81e280fb3d3d68c6751",
+      "bytes": 684
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.dxf",
+      "sha256": "dd30b8aca768f5bc5bd90ccde4eb8aedf822f5fb1e0732c48da638e89f8c08b0",
+      "bytes": 15782
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.step",
+      "sha256": "265773012208add9d31cee046cd805c6b14e64d78142b31689cac01af60c0806",
+      "bytes": 16443
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.stl",
+      "sha256": "e08f89b5f3994fad632ef5dcf02eb84e54019d085084a3ff841a8be60c4b2f29",
+      "bytes": 684
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/fit-coupons-metal-NOT-APPROVED.zip",
+      "sha256": "b88af8af668425256b2ada3ffd700a66797f0d6738ba380dd17479308178f510",
+      "bytes": 55942
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/fit-coupons-pa12-NOT-APPROVED.zip",
+      "sha256": "0951e9269362ad8542bc9cd5f4c2918e9035a4844f55a4f5f388cf65c451fdb2",
+      "bytes": 64056
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.dxf",
+      "sha256": "57cbf74b25e8756cb80e06be475a035616f02879238623301bf70ecc76e47e7c",
+      "bytes": 16266
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.step",
+      "sha256": "a250dda6531aa5cc21d360ec6b758aa3dc46964bc39812a40333e5c1c33ec87b",
+      "bytes": 32291
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.dxf",
+      "sha256": "2414b343bbf33c0ab93b31c7c24c627ff81fb99a0ca613a0e95fd9cd1a18b2e5",
+      "bytes": 16263
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.step",
+      "sha256": "0ffece8d4bc2e1daf2febb845320893912507e999da6593e88850d7cdc491a8c",
+      "bytes": 32209
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.dxf",
+      "sha256": "8441f6e8bdce564262a3500d16380fd7f863af98247ee13b9204ce0f63a40ee8",
+      "bytes": 16266
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.step",
+      "sha256": "c97070bc259cb2465cda8b15d997d58f156941d90787d0e0256b964e0b3b66cf",
+      "bytes": 32221
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.dxf",
+      "sha256": "1b57082da9d56b0a0b9854f2781e444b12f2f6546c591dc346cc57be9c030c50",
+      "bytes": 16263
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.step",
+      "sha256": "b29008e9ce4d86e4b6951c28bda0872dcaa88b1aeb57d5d668b17f89057ba9c2",
+      "bytes": 32269
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.dxf",
+      "sha256": "46728be4508067b2c542116c46bc643f7c346a8f31644f630a2c197e60445ec7",
+      "bytes": 15882
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.step",
+      "sha256": "d06644a1f9a86008dbd536c6cdf7647df5a55ca0afb125afdbccca6fe9ae2560",
+      "bytes": 18982
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.dxf",
+      "sha256": "77b3fd15298e7cf4cb056c4818b11fd78a6c3de112bfef68059b9666889f362c",
+      "bytes": 15882
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.step",
+      "sha256": "ae5b4e875a21afa56bc93a6753cbeb0a77f510f9fb7972cffb23d4a2fe9583b4",
+      "bytes": 18974
+    },
+    {
+      "path": "public/downloads/candidate/fit-test-order-pack-DRAFT.zip",
+      "sha256": "6d9b4e21cc915d75525734cfbafb84cfea9bf37a921c4b0d35757d2519e5591f",
+      "bytes": 159266
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "cadquery": "2.7.0",
+    "ezdxf": "1.4.4"
+  },
+  "limitations": [
+    "Nominal CAD verification, no physical manufacturing/strength/fit guarantee.",
+    "Hardware is the repository provisional envelope; actual washer and tool selection remains unverified.",
+    "No supplier upload, order modification or manufacturing approval."
+  ]
+}
