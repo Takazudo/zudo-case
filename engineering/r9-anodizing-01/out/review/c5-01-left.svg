@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="460" viewBox="0 0 800 460">
+<rect width="800" height="460" fill="white"/>
+<g font-family="sans-serif" fill="#162b3c">
+<text x="25" y="30" font-size="22">c5-01-left | 12 x 20 x 1.5 mm</text>
+<text x="25" y="58">Original / BEFORE</text><text x="420" y="58">R9-ANODIZING-01 / AFTER</text>
+<rect x="35.0" y="85.0" width="17.25" height="230.0" fill="#eab663" opacity=".30"/>
+<rect x="35.0" y="85.0" width="138.0" height="57.5" fill="#eab663" opacity=".30"/>
+<rect x="35.0" y="145.375" width="57.5" height="169.625" fill="#eab663" opacity=".30"/>
+<rect x="52.25" y="274.75" width="120.75" height="40.25" fill="#eab663" opacity=".30"/>
+<polygon points="35.0,315.0 173.0,315.0 173.0,85.0 35.0,85.0" fill="none" stroke="#162b3c" stroke-width="2"/>
+<text x="35" y="335.0" font-size="12">(0,0) lower-left; U right, V up</text>
+<rect x="430.0" y="85.0" width="17.25" height="230.0" fill="#eab663" opacity=".30"/>
+<rect x="430.0" y="85.0" width="138.0" height="57.5" fill="#eab663" opacity=".30"/>
+<rect x="430.0" y="145.375" width="57.5" height="169.625" fill="#eab663" opacity=".30"/>
+<rect x="447.25" y="274.75" width="120.75" height="40.25" fill="#eab663" opacity=".30"/>
+<polygon points="430.0,315.0 568.0,315.0 568.0,85.0 430.0,85.0" fill="none" stroke="#162b3c" stroke-width="2"/><circle cx="527.75" cy="234.5" r="23.0" fill="none" stroke="#c62828" stroke-width="2"/>
+<text x="430" y="335.0" font-size="12">(0,0) lower-left; U right, V up</text>
+<text x="25" y="355">New hole: diameter 4; center U=8.5, V=7 mm</text>
+<text x="25" y="380">Nearest plate-edge ligament: 1.50 mm (hole edge to plate edge)</text>
+<text x="25" y="405">Amber: protected neighbor/contact projections; red: dedicated hanging hole.</text>
+<text x="25" y="430">Actual delivered DXF geometry; see manifest for export and case coordinates / clearances.</text></g></svg>
