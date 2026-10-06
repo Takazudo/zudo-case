@@ -49,7 +49,10 @@ export function makeData() {
 }
 export function build() {
  const data=makeData();
- const payload=gzipSync(JSON.stringify(data),{mtime:0}).toString('base64');
+ const compressed=gzipSync(JSON.stringify(data),{mtime:0});
+ // Gzip OS metadata must not make the checked-in page differ on Windows/Linux.
+ compressed[9]=255;
+ const payload=compressed.toString('base64');
  const app=read('engineering/order-map/app.js').toString().replace('__DATA__',payload);
  const vendor=read(base+'vendor/three-bundle.js').toString().replaceAll('</script','<\\/script');
  const html=read('engineering/order-map/order-map.html').toString().replace('__VENDOR__',()=>vendor).replace('__APP__',()=>app);
