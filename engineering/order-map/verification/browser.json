@@ -1,0 +1,15 @@
+{
+  "origin": "http://127.0.0.1:8765",
+  "widths": [
+    1440,
+    390
+  ],
+  "errors": [],
+  "checks": [
+    "1440: all 13 IDs, family and case-marker selection, hash links, assembled/separated, visibility, no overflow",
+    "1440: normal preview loads, entry exists, coupon/case/variant/lid controls work",
+    "390: all 13 IDs, family and case-marker selection, hash links, assembled/separated, visibility, no overflow",
+    "390: normal preview loads, entry exists, coupon/case/variant/lid controls work"
+  ],
+  "passed": true
+}
