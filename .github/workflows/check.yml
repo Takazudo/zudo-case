@@ -85,3 +85,5 @@ jobs:
       - name: Verify anodizing replacement geometry, exports and mutation guards
         run: uv run --locked --project ../r9-prototype-01 python test_revision.py
         working-directory: engineering/r9-anodizing-01
+      - name: Verify original/revised preview mesh cache
+        run: uv run --locked --project engineering/r9-prototype-01 python engineering/order-map/aluminum_meshes.py --check

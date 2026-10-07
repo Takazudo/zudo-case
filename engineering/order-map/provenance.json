@@ -21,5 +21,113 @@
       "sha256": "884ead72c7661be55705b958a7c54b78afec3d4006fddf158d311c6901ca4354"
     }
   ],
-  "note": "No CAD regeneration or model changes. Existing mesh coordinates are preserved; explanatory display offsets only."
+  "aluminumRevision": "R9-ANODIZING-01",
+  "aluminumParts": 13,
+  "aluminumSources": [
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c1-metal/7u40-r9f-c1-metal-edge-qty1-mm.stl",
+      "sha256": "253641ca51e6747977062e2a7a76b27211ea26c79ebb50fff092c91f21298d34"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c1-metal-edge-qty1-mm.stl",
+      "sha256": "13028d73073528d879d8b755ec06f3af2a4008a670bcf21af637ace74fd36dfa"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.stl",
+      "sha256": "bc3cadc2e5a4654bc09c98c8830e0b88e61c23457d7ec5060a61664bf79c6583"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c2-01-wall-qty1-mm.stl",
+      "sha256": "16516dc6df822c5e483c200857db85c12f0dc21954970fd69819ce2fbf263d5f"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.stl",
+      "sha256": "da6cf4a7ee8ab636f8af53ba6bcda5a37192707441da651ea076da464f386b54"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c2-01-plate-qty1-mm.stl",
+      "sha256": "32ca16a17564af81d21f4dd8073912367531430c412e9347518f546b42f03c02"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-floor-qty1-mm.stl",
+      "sha256": "db7cfe77049539fa1bd40ef74d3424577fecd7c90b1cf8cc8618a84884b39b56"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c4-01-floor-qty1-mm.stl",
+      "sha256": "fd891b99565310900cdb6529fbeb552e96c6dcd4c3b48b5c717a8a5a610500db"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c4-01/7u40-r9f-c4-01-wall-qty1-mm.stl",
+      "sha256": "39ed891e457b35b0e153315f5b12ab257b782039afef6b5b3c799c8a53e02e3b"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c4-01-wall-qty1-mm.stl",
+      "sha256": "e87e84e43c8ca0a9c2585a0877831334d56355d74c0d1c451573c856dd86eedd"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-front-qty1-mm.stl",
+      "sha256": "a5449ea295d5fe1ad9ebfd306bb8cff83b602e9a5078a81e280fb3d3d68c6751"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c5-01-front-qty1-mm.stl",
+      "sha256": "eadf53ab49b9a75795e411fb4242a00d6ded0b6ae4e43bf34ee0d27152204226"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/out/coupons/c5-01/7u40-r9f-c5-01-left-qty1-mm.stl",
+      "sha256": "e08f89b5f3994fad632ef5dcf02eb84e54019d085084a3ff841a8be60c4b2f29"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c5-01-left-qty1-mm.stl",
+      "sha256": "213add1876136067120c5fcda0aad6471e4627f6f4785b38d29526a5b9284202"
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-bottom-qty1-mm.step",
+      "sha256": "a250dda6531aa5cc21d360ec6b758aa3dc46964bc39812a40333e5c1c33ec87b"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c3-01-bottom-qty1-mm.stl",
+      "sha256": "9cf0e599dfc0f304527c7fbadccadf9e150244a3ff9af84d62e0b34c8b4b143f"
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-01-wall-qty1-mm.step",
+      "sha256": "0ffece8d4bc2e1daf2febb845320893912507e999da6593e88850d7cdc491a8c"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c3-01-wall-qty1-mm.stl",
+      "sha256": "68cc64c943ca45072e1250ffd1f8e6b4183912c2931e221c8eb03681fbbba315"
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-bottom-qty1-mm.step",
+      "sha256": "c97070bc259cb2465cda8b15d997d58f156941d90787d0e0256b964e0b3b66cf"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c3-02-bottom-qty1-mm.stl",
+      "sha256": "72164d3464cdcabe93f0eff97cc7342d1966409621ef31227f160c737e2681d0"
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-02-wall-qty1-mm.step",
+      "sha256": "b29008e9ce4d86e4b6951c28bda0872dcaa88b1aeb57d5d668b17f89057ba9c2"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c3-02-wall-qty1-mm.stl",
+      "sha256": "47fafae640b1f6ad2d1acc6aea1460754365902d5e8b2bf37a1547206c5d7268"
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-bottom-qty1-mm.step",
+      "sha256": "d06644a1f9a86008dbd536c6cdf7647df5a55ca0afb125afdbccca6fe9ae2560"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c3-03-bottom-qty1-mm.stl",
+      "sha256": "94b68d33ac191b2ffc543183832e91a27d5abd5ee026d70d68f8278dc8f0d488"
+    },
+    {
+      "path": "engineering/r9-prototype-01/out/coupons/7u40-r9-cpn-c3-03-wall-qty1-mm.step",
+      "sha256": "ae5b4e875a21afa56bc93a6753cbeb0a77f510f9fb7972cffb23d4a2fe9583b4"
+    },
+    {
+      "path": "engineering/r9-anodizing-01/out/reference-stl/7u40-r9a-c3-03-wall-qty1-mm.stl",
+      "sha256": "bac8989008394b1e31209f134ce5e48074af4adcb4999cb56fa94e037ff301a6"
+    }
+  ],
+  "note": "Reviewed coupon meshes only. Original PA12 and whole-case mesh coordinates preserved; no hanging holes added to full-case geometry."
 }
