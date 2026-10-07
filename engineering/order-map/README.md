@@ -32,3 +32,5 @@ uv run --locked --project engineering/r9-prototype-01 python engineering/order-m
 ```
 
 Browser checks raycast the displayed mesh through the manifest hole center in all 13 plates, checking an open revised hole, solid original sheet, and nearby retained material. They also exercise both view widths, both revisions, direct links, refresh, hash changes and the original engineering preview. `CHROME_PATH` optionally selects an installed Chromium executable. Use the machine's heavy/browser guards when required.
+
+Final issue-118 verification: `verification/anodizing-browser.json` records the passing 1440/390 run, with C5 screenshots at both widths. A prior mobile selection timeout did not reproduce in a focused all-13 run or the complete final suite (295 seconds, no page errors); no selector workaround or weakened assertion was needed. The browser script now logs each aluminum selection, records failure messages, and accepts `BROWSER_WIDTHS=390` for focused diagnosis. Bound external runs with `timeout 360` (or the platform equivalent).

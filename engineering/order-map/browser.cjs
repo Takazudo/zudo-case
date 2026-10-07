@@ -6,7 +6,8 @@ const output=process.env.SCREENSHOT_DIR || path.join(__dirname,'verification');f
  const browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{channel:'chrome'}),args:['--enable-unsafe-swiftshader']});
  const report={origin,widths:[],errors:[],checks:[]};
  try {
-  for(const width of [1440,390]) {
+  for(const width of (process.env.BROWSER_WIDTHS || '1440,390').split(',').map(Number)) {
+   console.log('Starting viewport',width,new Date().toISOString());
    const page=await browser.newPage({viewport:{width,height:1000}});page.on('pageerror',e=>report.errors.push(e.message));
    await page.goto(origin+'/previews/r9-order-map.html#part=c2-02-frame');
    await page.waitForFunction(()=>window.orderMapReady===true);
@@ -30,6 +31,7 @@ const output=process.env.SCREENSHOT_DIR || path.join(__dirname,'verification');f
    for(const [family,count] of Object.entries({C1:1,C2:2,C3:6,C4:2,C5:2})) assert.ok((await page.locator(`.family[data-family=${family}] span`).innerText()).includes(count+' aluminum plate'));
    const metalIds=await page.locator('#part option').evaluateAll(xs=>xs.map(x=>x.value));assert.equal(metalIds.length,13);
    for(const id of metalIds) {
+    console.log('Aluminum',width,id,new Date().toISOString());
     await page.locator('#part').selectOption(id);
     assert.equal(await page.evaluate(()=>window.orderMapProbe()),0,id+' revised hole must be open');
     assert.ok(await page.evaluate(()=>window.orderMapProbe(3))>0,id+' retained sheet must be solid');
@@ -60,5 +62,5 @@ const output=process.env.SCREENSHOT_DIR || path.join(__dirname,'verification');f
    report.checks.push(`${width}: normal preview loads, entry exists, coupon/case/variant/lid controls work`);await page.close();
   }
   assert.deepEqual(report.errors,[]);report.passed=true;
- } finally { await browser.close();fs.writeFileSync(path.join(output,'browser.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report)); }
+ } catch(error) { report.failure=error.message; throw error; } finally { await browser.close();fs.writeFileSync(path.join(output,'browser.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report)); }
 })().catch(e=>{console.error(e);process.exitCode=1});

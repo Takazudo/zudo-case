@@ -1,0 +1,17 @@
+{
+  "origin": "http://127.0.0.1:8766",
+  "widths": [
+    1440,
+    390
+  ],
+  "errors": [],
+  "checks": [
+    "1440: all 13 IDs, family and case-marker selection, hash links, assembled/separated, visibility, no overflow",
+    "1440: all 13 aluminum actual-mesh hole/material raycasts in both revisions, mode switching, direct links/reload/hash change, no overflow",
+    "1440: normal preview loads, entry exists, coupon/case/variant/lid controls work",
+    "390: all 13 IDs, family and case-marker selection, hash links, assembled/separated, visibility, no overflow",
+    "390: all 13 aluminum actual-mesh hole/material raycasts in both revisions, mode switching, direct links/reload/hash change, no overflow",
+    "390: normal preview loads, entry exists, coupon/case/variant/lid controls work"
+  ],
+  "passed": true
+}
