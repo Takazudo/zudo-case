@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import { createHash } from 'node:crypto';
-import { gzipSync } from 'node:zlib';
+import { gzipSync, gunzipSync } from 'node:zlib';
 import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('../../', import.meta.url));
 const read = p => fs.readFileSync(root + p);
@@ -38,6 +38,12 @@ export const families = {
  consistency: 'C5 is a separate family; its build orientation need not match C1/C2/C4. The camera angle is illustrative only.',
  neighbors: 'Mating references: front and left aluminum wall coupons. They are separate metal fixtures, not additional PA12 pieces.' }
 };
+families.C3 = { function: 'Bracket slot comparison', title: 'Bottom and wall fastener coupons', point: [-71.5,-167,12], caseParts: ['metal-bottom'],
+ where: 'Representative front floor/wall fastening region. The whole case is unchanged context; hanging holes exist only in the shortened test plates.',
+ fits: 'Three pairs compare functional slot geometry. Each flat plate has one separate anodizing hanging hole in the revised version.',
+ priority: 'Functional slots and bearing areas are unchanged. The dedicated Ø4 mm hole is not a screw or mounting hole.',
+ mapping: 'C3 detail uses flat manufacturing coordinates, not case assembly coordinates.',
+ consistency: 'View direction is illustrative; no manufacturing orientation is specified.', neighbors: 'Six aluminum plates; no PA12 designs in C3.' };
 export function makeData() {
  const plan = json(base + 'order-prep/order-plan.json').pa12;
  if (plan.unique_parts !== 13 || plan.quantity !== 15 || plan.parts.length !== 13 || plan.parts.reduce((n,p)=>n+p.order_quantity,0)!==15) throw Error('Unexpected PA12 order');
@@ -45,7 +51,15 @@ export function makeData() {
  const descriptions = ['Baseline channel; principal flat wall 1.2 mm.', 'Channel comparison: side allowance 0.25 mm.', 'Channel comparison: side allowance 0.40 mm.', 'Channel comparison: side allowance 0.15 mm.', 'Thin-wall comparison: principal flat wall 1.0 mm.', 'Joint pair: 19.75 mm each; nominal total split gap 0.5 mm.', 'Joint pair: 20 mm each; nominal zero split gap. Do not force the fit.'];
  const parts = plan.parts.map(p => ({ ...p, label: p.part.toUpperCase().replace('-LOWER-GUARD',' lower guard').replace('-UPPER-GUARD',' upper guard').replace('-GUARD',' guard').replace('-FRAME',' frame'), description: p.part.startsWith('c1') ? descriptions[Number(p.part.slice(3,5))-1] : p.part.endsWith('frame') ? families.C2.priority : p.part==='c2-01-guard' ? 'One unmarked common guard, reused across C2 frame trials.' : families[p.part.slice(0,2).toUpperCase()].priority }));
  for (const p of parts) { const key=p.part.slice(0,5).toUpperCase(); if (!source.coupons[key]?.meshes.some(m=>m.id===p.part)) throw Error('Missing mesh '+p.part); }
- return { sourceCommit, parts, families, caseMeshes: [...source.reference.filter(m=>m.group==='metal'), ...source.variants.t1p2.meshes], coupons: source.coupons };
+ const anodizing = json('engineering/r9-anodizing-01/out/manifest.json');
+ const aluminumMeshes = JSON.parse(gunzipSync(read('engineering/order-map/aluminum-meshes.json.gz')));
+ for (const pair of Object.values(aluminumMeshes)) for (const mesh of Object.values(pair)) {
+   if(hash(read(mesh.source))!==mesh.sha256) throw Error('Aluminum source drift: '+mesh.source);
+ }
+ const aluminum = anodizing.parts.map(p=>({...p,part:p.id,label:p.id.toUpperCase(),order_quantity:1,
+   description:'A5052 · 1.5 mm · black anodize · dedicated Ø4 mm hanging hole in revised geometry.',
+   meshes:aluminumMeshes[p.id]}));
+ return { sourceCommit, parts, aluminum, revision: anodizing.revision, families, caseMeshes: [...source.reference.filter(m=>m.group==='metal'), ...source.variants.t1p2.meshes], coupons: source.coupons };
 }
 export function build() {
  const data=makeData();
@@ -57,7 +71,7 @@ export function build() {
  const vendor=read(base+'vendor/three-bundle.js').toString().replaceAll('</script','<\\/script');
  const html=read('engineering/order-map/order-map.html').toString().replace('__VENDOR__',()=>vendor).replace('__APP__',()=>app);
  const paths=['order-prep/order-plan.json','fitfix/coupons.py','fitfix/geometry.py','out/scene.json'];
- const provenance={sourceCommit,order:'W2026100405546498',designs:13,pieces:15,sources:paths.map(path=>({path:base+path,sha256:hash(read(base+path))})),note:'No CAD regeneration or model changes. Existing mesh coordinates are preserved; explanatory display offsets only.'};
+ const provenance={sourceCommit,order:'W2026100405546498',designs:13,pieces:15,sources:paths.map(path=>({path:base+path,sha256:hash(read(base+path))})),aluminumRevision:data.revision, aluminumParts:data.aluminum.length, aluminumSources:data.aluminum.flatMap(p=>Object.values(p.meshes).map(m=>({path:m.source,sha256:m.sha256}))), note:'Reviewed coupon meshes only. Original PA12 and whole-case mesh coordinates preserved; no hanging holes added to full-case geometry.'};
  return new Map([['public/previews/r9-order-map.html',html],['engineering/order-map/provenance.json',JSON.stringify(provenance,null,2)+'\n']]);
 }
 if (process.argv[1]===fileURLToPath(import.meta.url)) {

@@ -15,3 +15,22 @@ For browser checks, serve `public/` over HTTP, provide Playwright via `PLAYWRIGH
 The link in the normal preview is maintained in `engineering/r9-fitfix-01/fitfix/preview.py`. Its saved HTML and the existing fitfix manifests were updated without modifying their embedded mesh payload. `node scripts/sync-fitfix.mjs --check` verifies those established manifests.
 
 No manufacturing orientation, new tolerance, production release or model revision is implied by this view.
+
+## Anodizing revision review (issue 118)
+
+The material selector separates the **13 aluminum plates** from the unchanged **13 PA12 designs / 15 pieces**. `#part=c5-01-left&revision=revised` opens an individual revised plate; `revision=original` opens its original geometry. Existing PA12 `#part=c2-01-frame` links remain valid. The default aluminum geometry is R9-ANODIZING-01; the same selection controls metal mating references in the PA12 detail view. C2 comparison frames reuse the one ordered C2-01 metal pair.
+
+The aluminum detail is one actual manufacturing plate, with no explanatory assembly offsets. C3 STEP/STL exports are flat XY even for wall coupons; they are deliberately not placed at their case marker. The left panel is unchanged full-case context. No hanging holes are applied to full-size case plates.
+
+`aluminum_meshes.py` reads the original/revised STL vertices without changing them. Original C3 has no STL, so its original STEP is tessellated with the locked CAD toolchain. Each mesh records the source SHA-256 and path. Rebuild and verify with:
+
+```sh
+uv run --locked --project engineering/r9-prototype-01 python engineering/order-map/aluminum_meshes.py
+node engineering/order-map/build.mjs
+node --test tests/order-map.test.mjs
+uv run --locked --project engineering/r9-prototype-01 python engineering/order-map/aluminum_meshes.py --check
+```
+
+Browser checks raycast the displayed mesh through the manifest hole center in all 13 plates, checking an open revised hole, solid original sheet, and nearby retained material. They also exercise both view widths, both revisions, direct links, refresh, hash changes and the original engineering preview. `CHROME_PATH` optionally selects an installed Chromium executable. Use the machine's heavy/browser guards when required.
+
+Final issue-118 verification: `verification/anodizing-browser.json` records the passing 1440/390 run, with C5 screenshots at both widths. A prior mobile selection timeout did not reproduce in a focused all-13 run or the complete final suite (295 seconds, no page errors); no selector workaround or weakened assertion was needed. The browser script now logs each aluminum selection, records failure messages, and accepts `BROWSER_WIDTHS=390` for focused diagnosis. Bound external runs with `timeout 360` (or the platform equivalent).
