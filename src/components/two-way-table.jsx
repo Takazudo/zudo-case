@@ -1,9 +1,9 @@
-import { h } from 'preact';
+import { h } from '@takazudo/zfb/zudo-react';
 import rows from './two-way-data.js';
 const size = values => values.map(v => Number(v.toFixed(2))).join(' × ');
 export function TwoWayTable() {
   const columns = ['構成', '各トレー / 合計', '金属外形 W × D × H', '完成包絡 W × D × H', '本体 / 蓋の深さ'];
-  return h('div', { style: { overflowX: 'auto' } }, h('table', null,
+  return h('div', { style: { 'overflow-x': 'auto' } }, h('table', null,
     h('thead', null, h('tr', null, columns.map(x => h('th', { key:x }, x)))),
     h('tbody', null, rows.map(r => h('tr', { key:r.id },
       h('td', null, `${r.letter} / ${r.id}`),

@@ -16,7 +16,7 @@
 
 ## まず起動する
 
-Node.js 22以上とpnpmを用意してください。このスナップショットは公式scaffolderで初期化済みで、`package.json`と`pnpm-lock.yaml`を含みます。新しいチェックアウトでは、依存をロックファイルどおりに入れてから使います。動作確認した環境はNode.js 24.13.1、pnpm 10.30.3です。
+Node.js 22以上とpnpm 10.30.3を用意してください。このスナップショットは公式scaffolderで初期化済みで、`package.json`と`pnpm-lock.yaml`を含みます。新しいチェックアウトでは、依存をロックファイルどおりに入れてから使います。動作確認した環境はNode.js 24.13.1、pnpm 10.30.3です。
 
 ```sh
 # リポジトリのルートで実行
@@ -42,11 +42,15 @@ pnpm dev
 ZUDO_CASE_PREVIEW_ORIGIN=http://localhost:8787 pnpm dev
 ```
 
-`dev`・`check`・`build` は同じチェックアウトで併用できます。起動ごとに `.cache/site-runs/run-*` の独立した設定と内部キャッシュを使うため、別コマンドを実行しても稼働中のdevの表示元は変わりません。異なるoverrideを指定したdevも、`pnpm dev --port 3001` のように別ポートで起動できます。記事・コード・設定は実行ごとのコピーを使い、devでは元の編集・追加・削除を約250ms間隔で反映します。`public/` は元のチェックアウトを直接参照します。build/checkは起動時のコピーを使います。
+`dev`・`check`・`build` は同じチェックアウトで併用できます。起動ごとに `.cache/site-runs/run-*` の独立した設定と内部キャッシュを使うため、別コマンドを実行しても稼働中のdevの表示元は変わりません。異なるoverrideを指定したdevも、`pnpm dev --port 3001` のように別ポートで起動できます。記事・コード・設定は実行ごとのコピーを使い、devでは元の編集・追加・削除を約250ms間隔で反映します。`public/previews/` と `public/downloads/` は元のチェックアウトを直接参照します。`public/assets/` は zfb 4.5.0 のdev配信制限（zudo-front-builder#4233）を回避するため、実行ごとの内部資産領域へ同期します。設定を編集すると、同じ表示元とポートでネイティブdevプロセスを再起動します。build/checkは起動時のコード・設定コピーを使います。
 
-内部キャッシュは終了時に削除します。強制終了などで残った実行フォルダーは、対応するプロセスが停止していることを確認してから削除してください。公開ビルドは従来どおりチェックアウトの `dist/` に出力し、`pnpm preview` もその出力を配信します。同じ出力先への複数buildの同時実行は避けてください。
+内部キャッシュは終了時に削除します。強制終了などで残った実行フォルダーは、対応するプロセスが停止していることを確認してから削除してください。公開ビルドは従来どおりチェックアウトの `dist/` に出力し、`pnpm preview` もその出力を配信します。buildは `.cache/site-build.lock` で直列化し、同時の２件目をエラーで停止します。強制終了でロックが残った場合は、所有プロセスが停止済みと確認してから削除してください。
 
 この場合は枠下に指定先のホストが表示されます。本番ビルドの既定値は`https://zudo-case-preview.zudolab.dev`で、文書とプレビューの２ホスト配信を維持します。本番ビルド前は上記環境変数を外してください。`pnpm build`後の`pnpm check:built-preview-links`で、生成した文書HTMLに本番ホストのリンクがあり、ローカルURLが混入していないことを確認できます。
+
+### 依存・scaffoldの保守
+
+現在のホストは zfb 4.5.0 / zudo-doc 6.2.0、TypeScript 5.9を使います。コピーした公式scaffoldの版・変更箇所・同期手順は `ZUDO_DEPS_PINS.md`、実行結果は `project/maintenance-120.md` を参照してください。`pnpm check:wind` と `pnpm check:preview-isolation` は非デプロイ検証です。後者はインストール済みの実CLIで別ポート・並行build/check・編集・設定再読込を検証します。新CLIのscratch/defineは使えますが、build/checkの入力スナップショットを維持するためmirrorを残しています。
 
 ### 初期化履歴と確認範囲
 
@@ -64,7 +68,7 @@ node scripts/setup.mjs --dry-run
 node scripts/setup.mjs --from /absolute/path/to/fresh-official-scaffold
 ```
 
-既に運用中のサイトへ統合する場合は、setupを実行せず、記事・資産・設定を個別にマージしてください。補助スクリプトはファイル衝突があると上書きせず停止します。CLIの版は`ZUDO_DOC_CLI_VERSION`環境変数で指定でき、デフォルトは`5.27.0`です。生成結果は`.handoff/`に記録します。
+既に運用中のサイトへ統合する場合は、setupを実行せず、記事・資産・設定を個別にマージしてください。補助スクリプトはファイル衝突があると上書きせず停止します。CLIの版は`ZUDO_DOC_CLI_VERSION`環境変数で指定でき、デフォルトは`6.2.0`です。生成結果は`.handoff/`に記録します。
 
 ## 入っているもの
 
