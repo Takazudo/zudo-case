@@ -14,7 +14,7 @@ sidebar_position: 70
 
 この表は生成済み`out/preview/file-table.json`から`node scripts/sync-r9-doc-table.mjs`で生成する。再生成時は表と断面画像の公開コピーも更新する。各行は１台分の部品パターン。元ファイルのSHA-256はJSONで、ZIPの収録物はZIP内`package-manifest.json`で照合する。表の元形式すべてがZIPへ収録されるわけではない（アルミZIPはDXF/STEP）。表示専用の`hardware-envelopes`は除外した。
 
-<table data-r9-file-table="generated">
+{<div class="overflow-x-auto"><table class="w-full border-collapse text-small" data-r9-file-table="generated">
 <thead><tr><th>版・部品ID</th><th>名称・数量</th><th>形式と元ファイル</th><th>候補ZIP</th></tr></thead>
 <tbody>
 <tr><td>R9-PROTOTYPE-01<br />7U40-R9-AL-BOTTOM</td><td>底板 × 1</td><td><div>DXF: <code>engineering/r9-prototype-01/out/aluminum/7u40-r9-al-bottom-qty1-mm.dxf</code></div><div>STEP: <code>engineering/r9-prototype-01/out/aluminum/7u40-r9-al-bottom-qty1-mm.step</code></div><div>STL: <code>engineering/r9-prototype-01/out/aluminum/7u40-r9-al-bottom-qty1-mm.stl</code></div></td><td>7u40-r9-prototype-01-aluminum-NOT-APPROVED.zip</td></tr>
@@ -69,7 +69,7 @@ sidebar_position: 70
 <tr><td>R9-PROTOTYPE-01<br />7U40-R9-PA12-LID-FRAME-FL</td><td>PA12蓋枠 / FL × 1</td><td><div>STEP: <code>engineering/r9-prototype-01/out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.step</code></div><div>STL: <code>engineering/r9-prototype-01/out/pa12/lid/7u40-r9-pa12-lid-frame-fl-qty1-mm.stl</code></div></td><td>7u40-r9-prototype-01-pa12-NOT-APPROVED.zip</td></tr>
 <tr><td>R9-PROTOTYPE-01<br />7U40-R9-PA12-LID-FRAME-FR</td><td>PA12蓋枠 / FR × 1</td><td><div>STEP: <code>engineering/r9-prototype-01/out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.step</code></div><div>STL: <code>engineering/r9-prototype-01/out/pa12/lid/7u40-r9-pa12-lid-frame-fr-qty1-mm.stl</code></div></td><td>7u40-r9-prototype-01-pa12-NOT-APPROVED.zip</td></tr>
 </tbody>
-</table>
+</table></div>}
 
 <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-aluminum-NOT-APPROVED.zip">アルミ候補ZIP</PreviewLink> ／ <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-pa12-NOT-APPROVED.zip">PA12候補ZIP</PreviewLink> ／ <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-coupons-NOT-APPROVED.zip">試験片ZIP</PreviewLink>。いずれも未承認。
 

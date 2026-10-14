@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "initializer": {
+    "package": "create-zudo-doc",
+    "version": "6.2.0",
+    "commit": "6542b8300f4a554247563a3bac53e415a63ded51",
+    "tarball": "https://registry.npmjs.org/create-zudo-doc/-/create-zudo-doc-6.2.0.tgz",
+    "integrity": "sha512-s1BjmRWAq3xNZeGIi23SPORbVFCAT6WQIYDJbrCEhItsd3Bi2VorIUa3ctGat/F2XXmliHfPu7w9K8fIxsvT5w=="
+  },
+  "previous": {
+    "version": "5.27.0",
+    "commit": "50cbd5c6c9e5a795d72a74a855e105e4939d4eab",
+    "receipt": ".handoff/setup-record.json",
+    "verified": "npm gitHead, fetched commit and v5.27.0 tag; all copied files match regenerated old official output"
+  },
+  "command": "npx --yes create-zudo-doc@6.2.0 <disposable-directory> --preset <checkout>/setup.preset.json --no-install --no-git --yes",
+  "files": [
+    {
+      "path": ".npmrc",
+      "sha256": "ca4d7a13a3f0d62cc370e3e70f99a5a35f42b05fc922cb513c036ae0f18b2f9d",
+      "changedFromOld": false
+    },
+    {
+      "path": "pages/docs/[[...slug]].tsx",
+      "sha256": "34ddfd89f8e6b915b432f586509c47bb321bd9987ac6b2fe675e1339c2b141e1",
+      "changedFromOld": true
+    },
+    {
+      "path": "pages/index.tsx",
+      "sha256": "d4abf8a5823a212f066c1caf58a0d9247004da3abc6ef6ae9ee8282c71bb39c2",
+      "changedFromOld": false
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "sha256": "22ad89799dd348e3c87e9e6ee6e8a004d76a11410cbd0f3745c0460434ff3d41",
+      "changedFromOld": true
+    },
+    {
+      "path": "public/favicon-16x16.png",
+      "sha256": "34951457a35bfa39ff867d057dd86d285a29a3e7aa3736450583fc65e6640107",
+      "changedFromOld": false
+    },
+    {
+      "path": "public/favicon-32x32.png",
+      "sha256": "54e72e42acffd05f95ebda6089cb0085a8f475de9cfd25089a2a70a9d4155a3d",
+      "changedFromOld": false
+    },
+    {
+      "path": "public/favicon.ico",
+      "sha256": "2d32951acc699902d255971823fb69d9021e47c3ca7b08fea8d4811e3b224c17",
+      "changedFromOld": false
+    },
+    {
+      "path": "public/favicon.svg",
+      "sha256": "f8719195755bc771db093d5f6c2e0892def2d75501746347dda03ca2a97e764a",
+      "changedFromOld": false
+    },
+    {
+      "path": "scripts/check-links.js",
+      "sha256": "b44a7e17357470b95af514c49480f39d77a470a1889c71fe155a6f3c21e52176",
+      "changedFromOld": false
+    },
+    {
+      "path": "src/styles/global.css",
+      "sha256": "6642c2175abc0cab75ee3424bc582ea5f40ba84384756d5fcb33ca478784db4f",
+      "changedFromOld": true
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "3cac289a423f376f4c9c9f815edd6a99543ceb16e8b8c7c36250d5adab46692b",
+      "changedFromOld": true
+    }
+  ]
+}

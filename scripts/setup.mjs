@@ -6,7 +6,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { spawnSync } from "node:child_process";
 
 const defaultRoot = fileURLToPath(new URL("../", import.meta.url));
-const defaultCliVersion = "5.27.0";
+const defaultCliVersion = "6.2.0";
 const exists = async (p) => { try { await access(p); return true; } catch { return false; } };
 const json = async (p) => JSON.parse(await readFile(p, "utf8"));
 const sha256 = async (p) => createHash("sha256").update(await readFile(p)).digest("hex");
@@ -226,7 +226,7 @@ function packageManagerVersion(command) {
 async function main() {
   const args = process.argv.slice(2);
   if (args.includes("--help")) {
-    console.log("node scripts/setup.mjs [--dry-run] [--from /path/to/fresh-official-scaffold]\nnode scripts/setup.mjs --record-install\n環境変数: ZUDO_DOC_CLI_VERSION（既定 5.27.0）。作成済みの記事・設定を保持します。");
+    console.log("node scripts/setup.mjs [--dry-run] [--from /path/to/fresh-official-scaffold]\nnode scripts/setup.mjs --record-install\n環境変数: ZUDO_DOC_CLI_VERSION（既定 6.2.0）。作成済みの記事・設定を保持します。");
     return;
   }
   const root = defaultRoot;

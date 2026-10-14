@@ -5,8 +5,9 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const source = path.join(root, 'engineering/r9-prototype-01/out/preview/file-table.json');
 const target = path.join(root, 'src/content/docs/design/r9-prototype-01.mdx');
-const opening = '<table data-r9-file-table="generated">';
-const closing = '</table>';
+// JSX expression avoids paragraph injection in https://github.com/Takazudo/zudo-front-builder/issues/4232.
+const opening = '{<div class="overflow-x-auto"><table class="w-full border-collapse text-small" data-r9-file-table="generated">';
+const closing = '</table></div>}';
 
 function escapeHtml(value) {
   return String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;')

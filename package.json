@@ -37,21 +37,22 @@
     "build:two-way": "node engineering/two-way/tw-01/build.cjs",
     "check:two-way": "node engineering/two-way/tw-01/build.cjs --check",
     "test:two-way": "node --test engineering/two-way/tw-01/tests/*.test.cjs",
-    "test:two-way:browser": "node engineering/two-way/tw-01/tests/browser.cjs"
+    "test:two-way:browser": "node engineering/two-way/tw-01/tests/browser.cjs",
+    "check:preview-isolation": "node --test tests/real-cli/preview-isolation.test.mjs",
+    "check:wind": "zfb wind audit --fail-on error"
   },
   "dependencies": {
-    "@takazudo/zfb": "2.20.2",
-    "@takazudo/zfb-md-wasm": "2.20.2",
-    "@takazudo/zfb-runtime": "2.20.2",
-    "@takazudo/zudo-doc": "^5.27.0",
-    "preact": "^10.29.1",
-    "preact-render-to-string": "^6.6.6",
+    "@takazudo/zfb": "4.5.0",
+    "@takazudo/zfb-md-wasm": "4.5.0",
+    "@takazudo/zfb-runtime": "4.5.0",
+    "@takazudo/zudo-doc": "^6.2.0",
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@takazudo/zudo-doc-history-server": "5.27.0",
+    "@takazudo/zudo-doc-history-server": "6.2.0",
     "@types/node": "^22.0.0",
     "typescript": "^5.9.0",
     "wrangler": "4.138.0"
-  }
+  },
+  "packageManager": "pnpm@10.30.3"
 }

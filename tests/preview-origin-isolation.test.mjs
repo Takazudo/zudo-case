@@ -154,3 +154,17 @@ test('dev mirrors source edits, additions, removals and config into its own run 
   assert.equal((await dev.reread()).origin, 'http://localhost:8787');
   assert.equal((await check.reread()).origin, PRODUCTION_PREVIEW_ORIGIN);
 });
+
+test('a second build cannot corrupt an output owned by the first build', async t => {
+  const { root, launch } = await fixture(t);
+  const first = await launch('build', 'first', { stay: true });
+  const child = spawn(process.execPath, [path.join(root, 'scripts/run-site.mjs'), 'build'], { stdio: ['ignore', 'pipe', 'pipe'] });
+  let output = '';
+  child.stderr.on('data', chunk => { output += chunk; });
+  assert.notEqual((await once(child, 'close'))[0], 0);
+  assert.match(output, /Another build owns/);
+  assert.equal((await first.reread()).origin, PRODUCTION_PREVIEW_ORIGIN);
+  first.child.kill('SIGTERM');
+  await first.done;
+  await assert.rejects(access(path.join(root, '.cache/site-build.lock')), { code: 'ENOENT' });
+});
