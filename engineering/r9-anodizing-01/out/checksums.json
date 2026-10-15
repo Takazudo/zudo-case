@@ -72,18 +72,18 @@
     },
     {
       "path": "manifest.json",
-      "sha256": "723e2d0c8bb9f1231dc340ffa3fce55b1913ccc54432d20d8411c0ed285cfd17",
+      "sha256": "0ca9fbca55b5383fd1274d13c7f157c4771236d0cb5ab153b8112fe259e3023a",
       "bytes": 85646
     },
     {
       "path": "r9-anodizing-01-aluminum-13-NOT-APPROVED.zip",
-      "sha256": "b750f40b540ab70f57d173cb342e18b3e2a9d693b5aac00dd31dc702f5014e0a",
-      "bytes": 141499
+      "sha256": "b0ea3fac20143b92c69bf205accbb7d2b90164b61d1b8bb5eece68d8a2853c55",
+      "bytes": 141500
     },
     {
       "path": "r9-anodizing-01-review.zip",
-      "sha256": "aaa9bd2feff6ad94e7b1f99b67475d46cd08ef968c2250a9d45491065080f0f9",
-      "bytes": 125071
+      "sha256": "27e0feeb0733b5e6ab9ca57c94304a312df4fb472e46792505779de524c487d8",
+      "bytes": 125072
     },
     {
       "path": "reference-stl/7u40-r9a-c1-metal-edge-qty1-mm.stl",

@@ -45,3 +45,17 @@ test('published HTML reproduces from retained scene and current presentation sou
   assert.ok(expected.equals(readFileSync(new URL('../public/previews/r9-fitfix-01.html',import.meta.url))));
  }finally{rmSync(dir,{recursive:true,force:true})}
 });
+
+test('anodizing consumer provenance and embedded manifests match current sources',async()=>{
+ const {execFileSync}=await import('node:child_process');const {fileURLToPath}=await import('node:url');
+ execFileSync('python3',['-c',`import json,hashlib,zipfile,sys
+from pathlib import Path
+repo=Path(sys.argv[1]);out=repo/'engineering/r9-anodizing-01/out'
+def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+manifest=json.loads((out/'manifest.json').read_text())
+for row in manifest['inputs']+manifest['original_inputs_verified_against_pinned_commit']:assert digest(repo/row['path'])==row['sha256'],row['path']
+for row in json.loads((out/'checksums.json').read_text())['files']:assert digest(out/row['path'])==row['sha256'],row['path']
+for archive in out.glob('*.zip'):
+ with zipfile.ZipFile(archive) as z:assert z.read('manifest.json')==(out/'manifest.json').read_bytes()
+`,fileURLToPath(new URL('../',import.meta.url))]);
+});

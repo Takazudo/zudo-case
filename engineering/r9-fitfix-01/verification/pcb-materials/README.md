@@ -8,7 +8,7 @@ R9-FITFIX-01の現行プレビューだけを修正。写真 `IMG_2152.jpeg`、`
 - PCBだけ表示用バッファを三角形単位に展開して色を割り当てる。頂点位置・三角形・配置・穴・厚さを変えない。部品ごとに単一materialを使い、三角形ごとのdraw callを増やさない。
 - 「部品を色分け」を解除してもPCBの面別材質を保つ。WebGLとCanvas簡易描画の両方に反映する。
 
-更新対象は `fitfix/preview.py`、`out/preview.html`、`public/previews/r9-fitfix-01.html` と関連チェック・台帳。`out/scene.json`、STL/STEP/DXF/ZIP、R6/R8/旧R9、2WAY、注文マップは変更しない。製造承認・実物の嵌合検査ではない。
+更新対象は `fitfix/preview.py`、`out/preview.html`、`public/previews/r9-fitfix-01.html` と関連チェック・台帳。`out/scene.json`、STL/STEP/DXF、元発注ZIP、R6/R8/旧R9、2WAY、注文マップは変更しない。アルマイト候補の参照台帳がpreview.pyを入力として記録するため、そのハッシュと候補ZIP2本のmanifest.jsonだけ更新する。その他の全ZIPメンバーが変更前と同一であることを [照合記録](./consumer-provenance.json) に残した。製造承認・実物の嵌合検査ではない。
 
 ## 再現
 
@@ -20,7 +20,7 @@ node scripts/sync-fitfix.mjs --check
 node scripts/verify-assets.mjs
 ```
 
-refreshは保持されたsceneとすべての非preview出力の既存SHA256を先に照合する。CAD生成を実行せず、プレビューとそのハッシュ記録だけ更新する。9つのテストで左右8枚の実メッシュ面色、元三角形の不変性、現行ソースからのHTML再現を検査する。
+refreshは保持されたsceneとすべての非preview出力の既存SHA256を先に照合する。CAD生成を実行せず、プレビューとそのハッシュ記録、およびアルマイト候補の参照台帳だけ更新する。10のテストで左右8枚の実メッシュ面色、元三角形の不変性、現行ソースからのHTML再現と下流候補パッケージの参照台帳整合を検査する。
 
 ブラウザ確認は `public/` をHTTP配信し、Playwrightを利用できる環境で、環境のheavy guardを通して実行する。
 

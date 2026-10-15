@@ -1,0 +1,17 @@
+{
+  "comparison_commit": "12e66d724a0043e7304591b8dd94b4bb124894d0",
+  "archives": {
+    "r9-anodizing-01-review.zip": {
+      "changed_members": [
+        "manifest.json"
+      ],
+      "unchanged_members": 26
+    },
+    "r9-anodizing-01-aluminum-13-NOT-APPROVED.zip": {
+      "changed_members": [
+        "manifest.json"
+      ],
+      "unchanged_members": 28
+    }
+  }
+}
