@@ -1,0 +1,17 @@
+{
+  "scope": "R9-FITFIX preview materials only; no physical/manufacturing validation",
+  "results": [
+    {
+      "renderer": "webgl",
+      "pcbParts": 8,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "renderer": "canvas-fallback",
+      "pcbParts": 8,
+      "passed": true,
+      "errors": []
+    }
+  ]
+}
