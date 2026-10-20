@@ -1,0 +1,25 @@
+{
+  "source": "User-provided photographs downloaded from connected Library; original private files are not republished",
+  "photos": [
+    {
+      "filename": "IMG_2152.jpeg",
+      "sha256": "f5ec2f034ec0a699253a86e00a4579248fcc95482488b03b34b3f1dd5816aa27",
+      "inspected": true
+    },
+    {
+      "filename": "IMG_2151.jpeg",
+      "sha256": "f4e9d880738e029e8c0c12fdc56b15ac85f8a8058710b5c087248030ae794f68",
+      "inspected": true
+    },
+    {
+      "filename": "IMG_2153.jpeg",
+      "sha256": "fc4a2f7c75a695616b9460feacaa70e60938cd00d166bee8a8bc207ce686aba8",
+      "inspected": true
+    },
+    {
+      "filename": "IMG_2125.jpeg",
+      "sha256": "49ffe074893d226d0e07c53db3f8feacf3f499e757d5a6a2d708ba6605ba6048",
+      "inspected": true
+    }
+  ]
+}

@@ -31,6 +31,7 @@ jobs:
       - run: pnpm check:two-way
       - run: pnpm check:docs
       - run: pnpm check:r9
+      - run: node --test tests/fitfix-pcb-materials.test.mjs
       - run: pnpm check:fitfix
       - run: pnpm check:fit-test-order
       - run: node --test tests/order-map.test.mjs
