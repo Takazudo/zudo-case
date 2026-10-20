@@ -1,0 +1,3 @@
+UNAPPROVED PROTOTYPE R9-LID-M5-01 - mm - each STL/STEP is one part; use the order table.
+Only the lid frames and lid plates change. Body plates and guards stay R9-FITFIX-01.
+M5 screw length/head and nut are assumptions; see DIMENSIONS.md. Not a manufacturing approval.

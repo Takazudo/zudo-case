@@ -1,0 +1,5 @@
+﻿part,material,order_quantity,stl,step,dxf
+lid-frame-fr,PA12-HP black candidate,1,pa12/t1p0/lid/7u40-r9m5-lid-frame-fr-qty1-mm.stl,pa12/t1p0/lid/7u40-r9m5-lid-frame-fr-qty1-mm.step,
+lid-frame-fl,PA12-HP black candidate,1,pa12/t1p0/lid/7u40-r9m5-lid-frame-fl-qty1-mm.stl,pa12/t1p0/lid/7u40-r9m5-lid-frame-fl-qty1-mm.step,
+lid-frame-bl,PA12-HP black candidate,1,pa12/t1p0/lid/7u40-r9m5-lid-frame-bl-qty1-mm.stl,pa12/t1p0/lid/7u40-r9m5-lid-frame-bl-qty1-mm.step,
+lid-frame-br,PA12-HP black candidate,1,pa12/t1p0/lid/7u40-r9m5-lid-frame-br-qty1-mm.stl,pa12/t1p0/lid/7u40-r9m5-lid-frame-br-qty1-mm.step,

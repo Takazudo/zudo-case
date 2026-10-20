@@ -1,0 +1,536 @@
+[
+  {
+    "part": "lid-frame-fr",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      116.0,
+      168.3,
+      43.8
+    ],
+    "volume_mm3": 21715.1891,
+    "stl": "pa12/t1p2/lid/7u40-r9m5-lid-frame-fr-qty1-mm.stl",
+    "step": "pa12/t1p2/lid/7u40-r9m5-lid-frame-fr-qty1-mm.step",
+    "status": "candidate-not-approved"
+  },
+  {
+    "part": "lid-frame-fl",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      116.0,
+      168.3,
+      43.8
+    ],
+    "volume_mm3": 21715.1891,
+    "stl": "pa12/t1p2/lid/7u40-r9m5-lid-frame-fl-qty1-mm.stl",
+    "step": "pa12/t1p2/lid/7u40-r9m5-lid-frame-fl-qty1-mm.step",
+    "status": "candidate-not-approved"
+  },
+  {
+    "part": "lid-frame-bl",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      116.0,
+      168.3,
+      43.8
+    ],
+    "volume_mm3": 21715.1891,
+    "stl": "pa12/t1p2/lid/7u40-r9m5-lid-frame-bl-qty1-mm.stl",
+    "step": "pa12/t1p2/lid/7u40-r9m5-lid-frame-bl-qty1-mm.step",
+    "status": "candidate-not-approved"
+  },
+  {
+    "part": "lid-frame-br",
+    "variant": "t1p2",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      116.0,
+      168.3,
+      43.8
+    ],
+    "volume_mm3": 21715.1891,
+    "stl": "pa12/t1p2/lid/7u40-r9m5-lid-frame-br-qty1-mm.stl",
+    "step": "pa12/t1p2/lid/7u40-r9m5-lid-frame-br-qty1-mm.step",
+    "status": "candidate-not-approved"
+  },
+  {
+    "part": "lid-plate",
+    "variant": "t1p2",
+    "material": "A5052 t1.5 black anodized candidate",
+    "group": "lid-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      228.2,
+      332.8,
+      1.5
+    ],
+    "volume_mm3": 113620.752,
+    "stl": "aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.stl",
+    "step": "aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.step",
+    "status": "candidate-not-approved",
+    "dxf": "aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.dxf",
+    "dxf_readback": {
+      "outline_mm": [
+        228.2,
+        332.8
+      ],
+      "holes": [
+        [
+          5.5,
+          82.15,
+          5.5
+        ],
+        [
+          5.5,
+          250.65,
+          5.5
+        ],
+        [
+          79.24,
+          5.5,
+          5.5
+        ],
+        [
+          79.24,
+          327.3,
+          5.5
+        ],
+        [
+          148.96,
+          5.5,
+          5.5
+        ],
+        [
+          148.96,
+          327.3,
+          5.5
+        ],
+        [
+          222.7,
+          82.15,
+          5.5
+        ],
+        [
+          222.7,
+          250.65,
+          5.5
+        ]
+      ],
+      "diameters_by_layer": {
+        "M5_HOLES": [
+          5.5,
+          5.5,
+          5.5,
+          5.5,
+          5.5,
+          5.5,
+          5.5,
+          5.5
+        ],
+        "HANG_HOLE_D4": []
+      },
+      "matches_step": true
+    }
+  },
+  {
+    "part": "lid-frame-fr",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      115.8,
+      168.1,
+      43.8
+    ],
+    "volume_mm3": 21588.8454,
+    "stl": "pa12/t1p0/lid/7u40-r9m5-lid-frame-fr-qty1-mm.stl",
+    "step": "pa12/t1p0/lid/7u40-r9m5-lid-frame-fr-qty1-mm.step",
+    "status": "candidate-not-approved"
+  },
+  {
+    "part": "lid-frame-fl",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      115.8,
+      168.1,
+      43.8
+    ],
+    "volume_mm3": 21588.8454,
+    "stl": "pa12/t1p0/lid/7u40-r9m5-lid-frame-fl-qty1-mm.stl",
+    "step": "pa12/t1p0/lid/7u40-r9m5-lid-frame-fl-qty1-mm.step",
+    "status": "candidate-not-approved"
+  },
+  {
+    "part": "lid-frame-bl",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      115.8,
+      168.1,
+      43.8
+    ],
+    "volume_mm3": 21588.8454,
+    "stl": "pa12/t1p0/lid/7u40-r9m5-lid-frame-bl-qty1-mm.stl",
+    "step": "pa12/t1p0/lid/7u40-r9m5-lid-frame-bl-qty1-mm.step",
+    "status": "candidate-not-approved"
+  },
+  {
+    "part": "lid-frame-br",
+    "variant": "t1p0",
+    "material": "PA12-HP black candidate",
+    "group": "lid",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      115.8,
+      168.1,
+      43.8
+    ],
+    "volume_mm3": 21588.8454,
+    "stl": "pa12/t1p0/lid/7u40-r9m5-lid-frame-br-qty1-mm.stl",
+    "step": "pa12/t1p0/lid/7u40-r9m5-lid-frame-br-qty1-mm.step",
+    "status": "candidate-not-approved"
+  },
+  {
+    "part": "lid-plate",
+    "variant": "t1p0",
+    "material": "A5052 t1.5 black anodized candidate",
+    "group": "lid-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      227.8,
+      332.4,
+      1.5
+    ],
+    "volume_mm3": 113284.392,
+    "stl": "aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.stl",
+    "step": "aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.step",
+    "status": "candidate-not-approved",
+    "dxf": "aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.dxf",
+    "dxf_readback": {
+      "outline_mm": [
+        227.8,
+        332.4
+      ],
+      "holes": [
+        [
+          5.5,
+          82.05,
+          5.5
+        ],
+        [
+          5.5,
+          250.35,
+          5.5
+        ],
+        [
+          79.1,
+          5.5,
+          5.5
+        ],
+        [
+          79.1,
+          326.9,
+          5.5
+        ],
+        [
+          148.7,
+          5.5,
+          5.5
+        ],
+        [
+          148.7,
+          326.9,
+          5.5
+        ],
+        [
+          222.3,
+          82.05,
+          5.5
+        ],
+        [
+          222.3,
+          250.35,
+          5.5
+        ]
+      ],
+      "diameters_by_layer": {
+        "M5_HOLES": [
+          5.5,
+          5.5,
+          5.5,
+          5.5,
+          5.5,
+          5.5,
+          5.5,
+          5.5
+        ],
+        "HANG_HOLE_D4": []
+      },
+      "matches_step": true
+    }
+  },
+  {
+    "part": "c2-m5-01-frame",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.0,
+      13.7,
+      43.8
+    ],
+    "volume_mm3": 3529.1232,
+    "stl": "coupons/c2-m5/7u40-r9m5-c2-m5-01-frame-qty1-mm.stl",
+    "step": "coupons/c2-m5/7u40-r9m5-c2-m5-01-frame-qty1-mm.step",
+    "status": "candidate-not-approved"
+  },
+  {
+    "part": "c2-m5-plate",
+    "variant": "coupon",
+    "material": "A5052 t1.5 black anodized candidate",
+    "group": "coupon-metal",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.0,
+      26.4,
+      1.5
+    ],
+    "volume_mm3": 1133.513,
+    "stl": "coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.stl",
+    "step": "coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.step",
+    "status": "candidate-not-approved",
+    "dxf": "coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.dxf",
+    "dxf_readback": {
+      "outline_mm": [
+        30.0,
+        26.4
+      ],
+      "holes": [
+        [
+          5.0,
+          21.4,
+          4.0
+        ],
+        [
+          14.86,
+          5.5,
+          5.5
+        ]
+      ],
+      "diameters_by_layer": {
+        "M5_HOLES": [
+          5.5
+        ],
+        "HANG_HOLE_D4": [
+          4.0
+        ]
+      },
+      "matches_step": true
+    },
+    "dxf_origin_assembly_mm": [
+      20.0,
+      -166.4,
+      122.2
+    ]
+  },
+  {
+    "part": "c2-m5-02-frame",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.0,
+      13.7,
+      43.8
+    ],
+    "volume_mm3": 3514.2672,
+    "stl": "coupons/c2-m5/7u40-r9m5-c2-m5-02-frame-qty1-mm.stl",
+    "step": "coupons/c2-m5/7u40-r9m5-c2-m5-02-frame-qty1-mm.step",
+    "status": "candidate-not-approved"
+  },
+  {
+    "part": "c2-m5-03-frame",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      30.0,
+      13.7,
+      43.8
+    ],
+    "volume_mm3": 3544.2672,
+    "stl": "coupons/c2-m5/7u40-r9m5-c2-m5-03-frame-qty1-mm.stl",
+    "step": "coupons/c2-m5/7u40-r9m5-c2-m5-03-frame-qty1-mm.step",
+    "status": "candidate-not-approved"
+  },
+  {
+    "part": "n1-m5-nut-ladder",
+    "variant": "coupon",
+    "material": "PA12-HP black candidate",
+    "group": "coupon",
+    "per_set_quantity": 1,
+    "order_quantity": 1,
+    "dimensions_mm": [
+      48.3,
+      14.2,
+      7.0
+    ],
+    "volume_mm3": 3559.499,
+    "stl": "coupons/n1/7u40-r9m5-n1-m5-nut-ladder-qty1-mm.stl",
+    "step": "coupons/n1/7u40-r9m5-n1-m5-nut-ladder-qty1-mm.step",
+    "status": "candidate-not-approved"
+  },
+  {
+    "part": "m5-screw",
+    "variant": "t1p2",
+    "material": "M5 screw (ZB40 family). Length candidate below",
+    "group": "hardware",
+    "per_set_quantity": 8,
+    "order_quantity": 8,
+    "dimensions_mm": null,
+    "volume_mm3": null,
+    "stl": "",
+    "step": "",
+    "status": "assumption-not-identified",
+    "note": "Recommended 10 mm without washer; see dimensions.json screw_lengths_passing_all_sites"
+  },
+  {
+    "part": "m5-nylon-lock-nut",
+    "variant": "t1p2",
+    "material": "M5 nylon insert lock nut, s 7.68-8.0, h 4.7-5.0 (table)",
+    "group": "hardware",
+    "per_set_quantity": 8,
+    "order_quantity": 8,
+    "dimensions_mm": null,
+    "volume_mm3": null,
+    "stl": "",
+    "step": "",
+    "status": "catalogue-table-not-measured"
+  },
+  {
+    "part": "m5-screw",
+    "variant": "t1p0",
+    "material": "M5 screw (ZB40 family). Length candidate below",
+    "group": "hardware",
+    "per_set_quantity": 8,
+    "order_quantity": 8,
+    "dimensions_mm": null,
+    "volume_mm3": null,
+    "stl": "",
+    "step": "",
+    "status": "assumption-not-identified",
+    "note": "Recommended 10 mm without washer; see dimensions.json screw_lengths_passing_all_sites"
+  },
+  {
+    "part": "m5-nylon-lock-nut",
+    "variant": "t1p0",
+    "material": "M5 nylon insert lock nut, s 7.68-8.0, h 4.7-5.0 (table)",
+    "group": "hardware",
+    "per_set_quantity": 8,
+    "order_quantity": 8,
+    "dimensions_mm": null,
+    "volume_mm3": null,
+    "stl": "",
+    "step": "",
+    "status": "catalogue-table-not-measured"
+  },
+  {
+    "part": "m5-screw+nut (C2-M5 + N1 trials)",
+    "variant": "coupon",
+    "material": "M5 screw + M5 nylon lock nut",
+    "group": "hardware",
+    "per_set_quantity": 4,
+    "order_quantity": 4,
+    "dimensions_mm": null,
+    "volume_mm3": null,
+    "stl": "",
+    "step": "",
+    "status": "assumption-not-identified",
+    "note": "1 set for the shared C2-M5 plate, 3 nuts for N1"
+  },
+  {
+    "part": "R9-FITFIX-01 7u40-t1p2-pa12-NOT-APPROVED.zip",
+    "variant": "t1p2",
+    "material": "unchanged body plates + guards (reuse). Its lid frames/plate are superseded by this revision",
+    "group": "unchanged-reference",
+    "per_set_quantity": null,
+    "order_quantity": 0,
+    "dimensions_mm": null,
+    "volume_mm3": null,
+    "stl": "",
+    "step": "engineering/r9-fitfix-01/out/7u40-t1p2-pa12-NOT-APPROVED.zip",
+    "status": "sha256 a49c5db6671ed7c697bd55a108f734380745a653cc5693be2743b0878a2654b7"
+  },
+  {
+    "part": "R9-FITFIX-01 7u40-t1p2-aluminum-NOT-APPROVED.zip",
+    "variant": "t1p2",
+    "material": "unchanged body plates + guards (reuse). Its lid frames/plate are superseded by this revision",
+    "group": "unchanged-reference",
+    "per_set_quantity": null,
+    "order_quantity": 0,
+    "dimensions_mm": null,
+    "volume_mm3": null,
+    "stl": "",
+    "step": "engineering/r9-fitfix-01/out/7u40-t1p2-aluminum-NOT-APPROVED.zip",
+    "status": "sha256 f6a3fe08b17dcdc26ae97bdf27b3a9c450c7b6d0bdd362238bb1f96f5f657546"
+  },
+  {
+    "part": "R9-FITFIX-01 7u40-t1p0-pa12-NOT-APPROVED.zip",
+    "variant": "t1p0",
+    "material": "unchanged body plates + guards (reuse). Its lid frames/plate are superseded by this revision",
+    "group": "unchanged-reference",
+    "per_set_quantity": null,
+    "order_quantity": 0,
+    "dimensions_mm": null,
+    "volume_mm3": null,
+    "stl": "",
+    "step": "engineering/r9-fitfix-01/out/7u40-t1p0-pa12-NOT-APPROVED.zip",
+    "status": "sha256 9db0d645a9ba8379dcb8cddbd32e118c5e26bded70ff2b35b945a2c93e3f4006"
+  },
+  {
+    "part": "R9-FITFIX-01 7u40-t1p0-aluminum-NOT-APPROVED.zip",
+    "variant": "t1p0",
+    "material": "unchanged body plates + guards (reuse). Its lid frames/plate are superseded by this revision",
+    "group": "unchanged-reference",
+    "per_set_quantity": null,
+    "order_quantity": 0,
+    "dimensions_mm": null,
+    "volume_mm3": null,
+    "stl": "",
+    "step": "engineering/r9-fitfix-01/out/7u40-t1p0-aluminum-NOT-APPROVED.zip",
+    "status": "sha256 2d398fd3ffa86580280abf13f6cd42d7a78251613df4c56e75e7e0c684387ae7"
+  }
+]

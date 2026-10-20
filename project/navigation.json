@@ -60,6 +60,12 @@
     "sidebar_position": 80
   },
   {
+    "path": "design/r9-lid-m5-01.mdx",
+    "title": "7U40 R9-LID-M5-01 フタのM5化候補",
+    "description": "アルミ天板とPA12フタ枠の組立をM5ネジ＋ナイロンロックナットへ変えた未承認候補。",
+    "sidebar_position": 90
+  },
+  {
     "path": "design/r9-prototype-01.mdx",
     "title": "7U40 R9 製作候補",
     "description": "R9-PROTOTYPE-01の形状、出力と未検証事項を同じ版で確認する。",

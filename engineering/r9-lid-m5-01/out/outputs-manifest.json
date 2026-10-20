@@ -1,0 +1,396 @@
+{
+  "revision": "R9-LID-M5-01",
+  "base_revision": "R9-FITFIX-01",
+  "implementation_base_commit": "6c8d980c1e12e4d7ceb78e056463a197526a8164",
+  "production_approved": false,
+  "inputs": [
+    {
+      "path": "../r9-anodizing-01/parameters.json",
+      "sha256": "a0c742824cb2b8a0580af09909a560abd1b2ff90609dadd8a744ed09e52ca367"
+    },
+    {
+      "path": "../r9-fitfix-01/fitfix/__init__.py",
+      "sha256": "cfe1436ef6cfdda4dfecddb3a51b7514faa1c36d01953fc3d652c2d22f5c7a40"
+    },
+    {
+      "path": "../r9-fitfix-01/fitfix/coupons.py",
+      "sha256": "ef02b1a4dcf7bb5d78aa83f2159b0dcbbb752557c1fd8c06ed5eedf021d40eea"
+    },
+    {
+      "path": "../r9-fitfix-01/fitfix/geometry.py",
+      "sha256": "e25a1f72dc356cffb2989ae9c444e929309bd6d50020c5c81e4f82431eaedb9c"
+    },
+    {
+      "path": "../r9-fitfix-01/fitfix/io.py",
+      "sha256": "cbaf617c38b4725476b838f777b10f14554615c64a1041fd3d0c7cfb223fb6ff"
+    },
+    {
+      "path": "../r9-fitfix-01/fitfix/preview.py",
+      "sha256": "37418ee17ab1a35baac7d94c8422a4c0d22c95c6ca6d2531a60a1fbe9ec56bc2"
+    },
+    {
+      "path": "../r9-fitfix-01/fitfix/reference.py",
+      "sha256": "7016e9eb14347bd0beb0cd161ce72d1f63d880ce944d6f4ca2363f07d99d3427"
+    },
+    {
+      "path": "../r9-fitfix-01/fitfix/validation.py",
+      "sha256": "f03d965f0be2e153a4bcb66958490846aee63322b47eeba8c23d790f0b8526bd"
+    },
+    {
+      "path": "../r9-fitfix-01/out/scene.json",
+      "sha256": "884ead72c7661be55705b958a7c54b78afec3d4006fddf158d311c6901ca4354"
+    },
+    {
+      "path": "../r9-fitfix-01/parameters.json",
+      "sha256": "79c2baf0c9222b12a2e2f402371e54d744b2216791311800ecb3076141482691"
+    },
+    {
+      "path": "../r9-fitfix-01/vendor/three-bundle.js",
+      "sha256": "d0e6b6a154209a0cda8f94d8a90a3a833cf3997105f89a6d720a0f0d5d4e6ebe"
+    },
+    {
+      "path": "build.py",
+      "sha256": "9a9e7d6bddce11a67432e2333b2f30993783b2571c0e759340c1be12fe606ac4"
+    },
+    {
+      "path": "lidm5/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "lidm5/checks.py",
+      "sha256": "855929d0a4a8df45115b1197158f51288271849db5573d800ecbf410806fc917"
+    },
+    {
+      "path": "lidm5/coupons.py",
+      "sha256": "3d7a5eed6ebc1c161577ad149334ff8986f4cd0099d5a2640bcfe4ede9dfa9b8"
+    },
+    {
+      "path": "lidm5/geometry.py",
+      "sha256": "430852dc4e6ff1826bd04df16617111b92e5720d858cd13c35bde098325e431c"
+    },
+    {
+      "path": "lidm5/preview.py",
+      "sha256": "493d816176f51f042143e88cfda874eaf436da0e0780a36236971552a6084402"
+    },
+    {
+      "path": "parameters.json",
+      "sha256": "1de6c448ffe534b26dee6918508af53d0512398668677be7f8d1b07aa79a043b"
+    },
+    {
+      "path": "../r9-prototype-01/uv.lock",
+      "sha256": "3bd3803775af001e1c73c6da3db238bc3a99f2b7b33baab11cf8e323a80fff85"
+    }
+  ],
+  "files": [
+    {
+      "path": "7u40-t1p0-lid-m5-aluminum-NOT-APPROVED.zip",
+      "sha256": "d5a00ece68a1a868fb1dfd4869b275001babe41758d03ce0657e2383a59159ac",
+      "bytes": 18216
+    },
+    {
+      "path": "7u40-t1p0-lid-m5-pa12-NOT-APPROVED.zip",
+      "sha256": "8ee27daafa40d1b2cb8f72e7558e0f562c1afb6133b35e9c8c9a08a4ce3f726b",
+      "bytes": 70542
+    },
+    {
+      "path": "7u40-t1p2-lid-m5-aluminum-NOT-APPROVED.zip",
+      "sha256": "ddfd45ab4c0164a69b207afa4e70811094f880f5090f162199a7bd8c9a8eee01",
+      "bytes": 18211
+    },
+    {
+      "path": "7u40-t1p2-lid-m5-pa12-NOT-APPROVED.zip",
+      "sha256": "7e2886ad71bb49f4449c70bd7f15cfd1ba06a6e8715ffbd717fcfdc4e31577ec",
+      "bytes": 70568
+    },
+    {
+      "path": "BOM.csv",
+      "sha256": "f00e1821e1c865b0a2d3fe7811c59d9a03d5ce12d7a27afca51ee8fb6abc6bff",
+      "bytes": 5137
+    },
+    {
+      "path": "BOM.json",
+      "sha256": "c10ad803745983cb11f34e5b557ac639ec2e30e96397d947885ef2a733b2968f",
+      "bytes": 13172
+    },
+    {
+      "path": "DIMENSIONS.md",
+      "sha256": "e78e87dd146ed6455c2a752b8fc71007ba3d959b58f6089dac95a82a532c5290",
+      "bytes": 2989
+    },
+    {
+      "path": "NOT-APPROVED.txt",
+      "sha256": "bb07be0516fb256ab98c70d03f89f666904108a3c6b05ef2410a14b657cb718c",
+      "bytes": 269
+    },
+    {
+      "path": "aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.dxf",
+      "sha256": "94b4e80f7fc2e072724cac0f2bb28c3eacd68314858f753d063497ed4c2e5f8c",
+      "bytes": 16948
+    },
+    {
+      "path": "aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.step",
+      "sha256": "93e08a76fdfda9e0df706d185109bed2a180e72a7779162961a96b50e83d5d5e",
+      "bytes": 62092
+    },
+    {
+      "path": "aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.stl",
+      "sha256": "335019269d9f0da77f3daf47e5878d6ff01879140175ff46f324b6f1e079d90d",
+      "bytes": 229484
+    },
+    {
+      "path": "aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.dxf",
+      "sha256": "4d093b5daf313825a32e4670e8bd9d286c582228bcd4f1aa17333446ce7b01b6",
+      "bytes": 16902
+    },
+    {
+      "path": "aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.step",
+      "sha256": "a81879b98ee705aa7c39dfb020eb04850239bcb404698a049caf0679fa4b126e",
+      "bytes": 62177
+    },
+    {
+      "path": "aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.stl",
+      "sha256": "d93048a8070b7489b81a9d8fa7fc8efc48ffcd713ac672628ea3b9d3f0ee85d3",
+      "bytes": 229484
+    },
+    {
+      "path": "assembly/t1p0-lid-m5-with-assumed-fasteners-REFERENCE.step",
+      "sha256": "74e65139f3f03392989837dfb8305d439a95e561f18a997f24d6c8a040e172df",
+      "bytes": 1083514
+    },
+    {
+      "path": "assembly/t1p2-lid-m5-with-assumed-fasteners-REFERENCE.step",
+      "sha256": "d53b4c928a78f9b35111a69d183fa75d5757e96d3eb599de2a98ed3a7511a9c3",
+      "bytes": 1084145
+    },
+    {
+      "path": "coupons/c2-m5/7u40-r9m5-c2-m5-01-frame-qty1-mm.step",
+      "sha256": "e2a7abd7a3aab21797b362c5b735ac67dbb7ebb795a62aec5765fa66686d594a",
+      "bytes": 273035
+    },
+    {
+      "path": "coupons/c2-m5/7u40-r9m5-c2-m5-01-frame-qty1-mm.stl",
+      "sha256": "d93e5b15e527b4e419ce9fc00a096ba7a76cf1d4ccbfdbdf9657a780c01a3763",
+      "bytes": 52484
+    },
+    {
+      "path": "coupons/c2-m5/7u40-r9m5-c2-m5-02-frame-qty1-mm.step",
+      "sha256": "2e71afc8c9c1f2520803902b98ef654a2246bf7666404e125fdd990d4b518ed4",
+      "bytes": 273190
+    },
+    {
+      "path": "coupons/c2-m5/7u40-r9m5-c2-m5-02-frame-qty1-mm.stl",
+      "sha256": "5388d35396a2edb15302eb766a1efd508e9f5f56e0744939b587eeb549734f6e",
+      "bytes": 52484
+    },
+    {
+      "path": "coupons/c2-m5/7u40-r9m5-c2-m5-03-frame-qty1-mm.step",
+      "sha256": "aedd509591c9bf40dc1b377c04c0b1f2ca2f291fec2d66fd6516d5724cbf50d4",
+      "bytes": 273187
+    },
+    {
+      "path": "coupons/c2-m5/7u40-r9m5-c2-m5-03-frame-qty1-mm.stl",
+      "sha256": "5d034f435c1acffd71459e9a2c2af95296203f9363621bebc33b8c844b37beb1",
+      "bytes": 52484
+    },
+    {
+      "path": "coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.dxf",
+      "sha256": "4707d0f173002ddb2e47b7aa817e33cccc3b059ad352793a7918e032fc7c41e3",
+      "bytes": 16070
+    },
+    {
+      "path": "coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.step",
+      "sha256": "5a00cf94ee9016b141891a778004dee05bfe30a866b13b290c50c2aaf4952794",
+      "bytes": 24114
+    },
+    {
+      "path": "coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.stl",
+      "sha256": "ad55453a969a9d587b947d4eb97458a080bd8a9c2b1993fdc830ddbc1a8fce17",
+      "bytes": 51484
+    },
+    {
+      "path": "coupons/c2-m5/c2-m5-01-manifest.json",
+      "sha256": "13f8e82653232ae8b18c5214a0621bd077b1cd483abb3fb7c783e8fb9bdb1f55",
+      "bytes": 3072
+    },
+    {
+      "path": "coupons/c2-m5/c2-m5-02-manifest.json",
+      "sha256": "099dfc1635e071b7f984436ac641abd56db94be13a1254ffc4c97a3cc5127c50",
+      "bytes": 1971
+    },
+    {
+      "path": "coupons/c2-m5/c2-m5-03-manifest.json",
+      "sha256": "c7e6398989232a9db2010e0008709caad32f50162bdd69c11c84cf9322a83b60",
+      "bytes": 1971
+    },
+    {
+      "path": "coupons/n1/7u40-r9m5-n1-m5-nut-ladder-qty1-mm.step",
+      "sha256": "1146170aafa570bd548216f8de7726eec84de5a7252bf8e1757bc099faa098d0",
+      "bytes": 434393
+    },
+    {
+      "path": "coupons/n1/7u40-r9m5-n1-m5-nut-ladder-qty1-mm.stl",
+      "sha256": "6cf7481e473186ebfb09ba2ecfd9025ad29c7f6be57326c669bf639fd5dc6539",
+      "bytes": 99284
+    },
+    {
+      "path": "coupons/n1/manifest.json",
+      "sha256": "fa25d9e514d09b8b86a56a969ce2244a3078f263775842f7a5dc6087668eeaee",
+      "bytes": 421
+    },
+    {
+      "path": "dimensions.json",
+      "sha256": "da2bb8cc11a2ca76a603294c864e05c9e8e74c24b7604ce0e313298e26f3c6ce",
+      "bytes": 9586
+    },
+    {
+      "path": "interface-t1p0.json",
+      "sha256": "540b85bb05314525b9fc49e85a83462970f6d20cc6b108ddfc34f50a914401b0",
+      "bytes": 568
+    },
+    {
+      "path": "interface-t1p2.json",
+      "sha256": "1acaf2972c4fb807a5a9019c0532fd5d18f1f537390d2a16ebf8d770dbcc969e",
+      "bytes": 582
+    },
+    {
+      "path": "m5-coupons-metal-NOT-APPROVED.zip",
+      "sha256": "a8ba2f7878c6188a0bef147eb041e94f85513361137cefc1cf4652397a21742a",
+      "bytes": 11269
+    },
+    {
+      "path": "m5-coupons-pa12-NOT-APPROVED.zip",
+      "sha256": "1a07c8f8ca5caf53e61d81be6ba2dfb01b5851e2b2f0e14cbc22c0d153673fcf",
+      "bytes": 49219
+    },
+    {
+      "path": "old-to-new.csv",
+      "sha256": "403efe412ccd220597683e42c9e54f75eb6761ddecaefaa8b5161875057c8fd9",
+      "bytes": 12778
+    },
+    {
+      "path": "old-to-new.json",
+      "sha256": "8043168c20494e997b5228246622c245fb67d0fbdd09a8a1c72ec4e18a9f592a",
+      "bytes": 17652
+    },
+    {
+      "path": "order-tables/lid-m5-aluminum-t1p0.csv",
+      "sha256": "f42aa90fd89ba8d609b34f4f3615b4413e2324f050771270edb3352aefc32e7f",
+      "bytes": 234
+    },
+    {
+      "path": "order-tables/lid-m5-aluminum-t1p2.csv",
+      "sha256": "54a3155d7eef5431367e46db8e0414ee67771eb5a255a73b6d2432ecb305ef17",
+      "bytes": 234
+    },
+    {
+      "path": "order-tables/lid-m5-pa12-t1p0.csv",
+      "sha256": "84118754c1eccd7e68ac2b091e1a52342711b27a36ca7e03d4ecc60db56c66a6",
+      "bytes": 606
+    },
+    {
+      "path": "order-tables/lid-m5-pa12-t1p2.csv",
+      "sha256": "6fdf752284efe98513cb95f7a744bfa9bbfecfb3e8f71920b6f91a6bad4e6682",
+      "bytes": 606
+    },
+    {
+      "path": "order-tables/m5-coupons-metal.csv",
+      "sha256": "19842b1dddfd988639615abdb634ada8ca9cca0baeb6d58b456665ef0cb350e9",
+      "bytes": 242
+    },
+    {
+      "path": "order-tables/m5-coupons-pa12.csv",
+      "sha256": "137d9d8621666c7c12d75939f83714adf8ab53fe0b672b1f19b1be21b2d7331e",
+      "bytes": 630
+    },
+    {
+      "path": "pa12/t1p0/lid/7u40-r9m5-lid-frame-bl-qty1-mm.step",
+      "sha256": "19fdd403a4fb3523137010ce2444747ab0945cd44b6ae4be9a3b384d1e748177",
+      "bytes": 172299
+    },
+    {
+      "path": "pa12/t1p0/lid/7u40-r9m5-lid-frame-bl-qty1-mm.stl",
+      "sha256": "4dbe1789349957663db914a0b79077b50995ebca3ea2750bdc13ab9e538beebf",
+      "bytes": 76884
+    },
+    {
+      "path": "pa12/t1p0/lid/7u40-r9m5-lid-frame-br-qty1-mm.step",
+      "sha256": "500d116422f98609ebf85a494e8f0c6a8b72310969a2b2a878a53ef005bb1d4c",
+      "bytes": 172599
+    },
+    {
+      "path": "pa12/t1p0/lid/7u40-r9m5-lid-frame-br-qty1-mm.stl",
+      "sha256": "5b0b4c4814d005f3fb46f90b0b74c0e28930948d86e601f7f61f4992051dd523",
+      "bytes": 76884
+    },
+    {
+      "path": "pa12/t1p0/lid/7u40-r9m5-lid-frame-fl-qty1-mm.step",
+      "sha256": "02d69bde871afc6e307c4150ec9fea0ea5ae9d6931a38b54df02b35be1700ec2",
+      "bytes": 173066
+    },
+    {
+      "path": "pa12/t1p0/lid/7u40-r9m5-lid-frame-fl-qty1-mm.stl",
+      "sha256": "d66edf0e43904c22dc3d63279ec058426a2d2bbf21bcca9fc6a31f58978aa5e5",
+      "bytes": 76884
+    },
+    {
+      "path": "pa12/t1p0/lid/7u40-r9m5-lid-frame-fr-qty1-mm.step",
+      "sha256": "9562993c65c65ec7a914c0df583815eeccf7e2f12b0142d8a22f1127a372ad9c",
+      "bytes": 173290
+    },
+    {
+      "path": "pa12/t1p0/lid/7u40-r9m5-lid-frame-fr-qty1-mm.stl",
+      "sha256": "62ae5be0d83b68312af540f8d2536eec6c37580364219b361a5d537f174f0ba9",
+      "bytes": 76884
+    },
+    {
+      "path": "pa12/t1p2/lid/7u40-r9m5-lid-frame-bl-qty1-mm.step",
+      "sha256": "8baee325e087f7dea4173669fe972462def84a72bbd9fe0054a5d86196737a67",
+      "bytes": 172399
+    },
+    {
+      "path": "pa12/t1p2/lid/7u40-r9m5-lid-frame-bl-qty1-mm.stl",
+      "sha256": "4cfe4162104b5066abe9d1c8833a097b5d4e0040bee9c7949428203726e73d91",
+      "bytes": 76884
+    },
+    {
+      "path": "pa12/t1p2/lid/7u40-r9m5-lid-frame-br-qty1-mm.step",
+      "sha256": "a3a6ce933b6d3dc0e9e49ab5bc8146569c2d5a052228b230b704e3c53424d8e5",
+      "bytes": 172701
+    },
+    {
+      "path": "pa12/t1p2/lid/7u40-r9m5-lid-frame-br-qty1-mm.stl",
+      "sha256": "63a8bd018fc8db1d0ef4b8ab4e4f2b79d0d788be98a0129b52c931928f509275",
+      "bytes": 76884
+    },
+    {
+      "path": "pa12/t1p2/lid/7u40-r9m5-lid-frame-fl-qty1-mm.step",
+      "sha256": "aaba03ddaf57a5da860eef17e81318230d6e900e9e9cdb8c7480493c7b29a5cc",
+      "bytes": 173169
+    },
+    {
+      "path": "pa12/t1p2/lid/7u40-r9m5-lid-frame-fl-qty1-mm.stl",
+      "sha256": "0ad55f8ada6eba9d12eac6bf221df8a71f4b63dd43da1c3e56bde7a085917312",
+      "bytes": 76884
+    },
+    {
+      "path": "pa12/t1p2/lid/7u40-r9m5-lid-frame-fr-qty1-mm.step",
+      "sha256": "13fb73b741e12ccb9ab242e9bc990ae5ba3973a1115adf4999ec1231f7fbe7ca",
+      "bytes": 173416
+    },
+    {
+      "path": "pa12/t1p2/lid/7u40-r9m5-lid-frame-fr-qty1-mm.stl",
+      "sha256": "1bec12b84c4e5a5bb9814a02eb31d8be36d16d4f778704656578c8f838ef4b0c",
+      "bytes": 76884
+    },
+    {
+      "path": "preview.html",
+      "sha256": "9651bf4201ae7a377ea0c1d584eb7cfa07ae55451d5f22c35f9aa0d80a5dd18f",
+      "bytes": 3137470
+    },
+    {
+      "path": "validation.json",
+      "sha256": "7e2f8400294f6ecf6ca07501aa1a645398adb835432703c02365bce5dc4f3ea0",
+      "bytes": 128886
+    }
+  ]
+}

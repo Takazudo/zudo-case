@@ -1,0 +1,326 @@
+[
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-fr",
+    "variant": "t1p2",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-fr-qty1-mm.stl",
+    "old_sha256": "80e787685356f5373c94c55aa8459026014917e6d78552f32366f26ec434ec74",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-fr-qty1-mm.stl",
+    "new_sha256": "1bec12b84c4e5a5bb9814a02eb31d8be36d16d4f778704656578c8f838ef4b0c"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-fr",
+    "variant": "t1p2",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-fr-qty1-mm.step",
+    "old_sha256": "e68f51e7c36f3586d9d1f576869649ff3502f211d7807815a622af5bed3d86b0",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-fr-qty1-mm.step",
+    "new_sha256": "13fb73b741e12ccb9ab242e9bc990ae5ba3973a1115adf4999ec1231f7fbe7ca"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-fl",
+    "variant": "t1p2",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-fl-qty1-mm.stl",
+    "old_sha256": "006e963c1e8b2176da851ad4b5407a691e57323f72484de478b5c12c3d9b90b8",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-fl-qty1-mm.stl",
+    "new_sha256": "0ad55f8ada6eba9d12eac6bf221df8a71f4b63dd43da1c3e56bde7a085917312"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-fl",
+    "variant": "t1p2",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-fl-qty1-mm.step",
+    "old_sha256": "f479fd0678e4172a591903ba8922c15c7b2b0d008ee9bf82da73d03aae1bdfe8",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-fl-qty1-mm.step",
+    "new_sha256": "aaba03ddaf57a5da860eef17e81318230d6e900e9e9cdb8c7480493c7b29a5cc"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-bl",
+    "variant": "t1p2",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-bl-qty1-mm.stl",
+    "old_sha256": "f5999ef2a89518a400e5df5a5e2ca2a3f3c4e13ba8f787d022820a2d619779c4",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-bl-qty1-mm.stl",
+    "new_sha256": "4cfe4162104b5066abe9d1c8833a097b5d4e0040bee9c7949428203726e73d91"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-bl",
+    "variant": "t1p2",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-bl-qty1-mm.step",
+    "old_sha256": "73563937640b4b5984d7dbbc4c1eb2f266edbb0311faa55a532e2f9b1a5b3664",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-bl-qty1-mm.step",
+    "new_sha256": "8baee325e087f7dea4173669fe972462def84a72bbd9fe0054a5d86196737a67"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-br",
+    "variant": "t1p2",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-br-qty1-mm.stl",
+    "old_sha256": "32e0437543f82917cfb17d906d27cf0b62b5503bf115907a808f227a95390f62",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-br-qty1-mm.stl",
+    "new_sha256": "63a8bd018fc8db1d0ef4b8ab4e4f2b79d0d788be98a0129b52c931928f509275"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-br",
+    "variant": "t1p2",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p2/lid/7u40-r9f-lid-frame-br-qty1-mm.step",
+    "old_sha256": "a7d119ba1581a101811e4ac777cabd79395706d021027ed21b8484699bf8a7cd",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-br-qty1-mm.step",
+    "new_sha256": "a3a6ce933b6d3dc0e9e49ab5bc8146569c2d5a052228b230b704e3c53424d8e5"
+  },
+  {
+    "change": "replaced: 8x M3 3.4 holes -> 8x M5 5.5 holes at new positions",
+    "part": "lid-plate",
+    "variant": "t1p2",
+    "old_path": "engineering/r9-fitfix-01/out/aluminum/t1p2/7u40-r9f-lid-plate-qty1-mm.step",
+    "old_sha256": "148b21442d35cb65a14b2d3039166bb16cf4fb0af2a81863caff1e04d621b2e1",
+    "new_path": "engineering/r9-lid-m5-01/out/aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.step",
+    "new_sha256": "a81879b98ee705aa7c39dfb020eb04850239bcb404698a049caf0679fa4b126e"
+  },
+  {
+    "change": "replaced: 8x M3 3.4 holes -> 8x M5 5.5 holes at new positions",
+    "part": "lid-plate",
+    "variant": "t1p2",
+    "old_path": "engineering/r9-fitfix-01/out/aluminum/t1p2/7u40-r9f-lid-plate-qty1-mm.dxf",
+    "old_sha256": "8eb93e80aaeb39e8521d213b6fa16b4cdce668897a4db0db0fa559bbb790a839",
+    "new_path": "engineering/r9-lid-m5-01/out/aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.dxf",
+    "new_sha256": "4d093b5daf313825a32e4670e8bd9d286c582228bcd4f1aa17333446ce7b01b6"
+  },
+  {
+    "change": "retired: plate STL is not an aluminum order file; new STEP/DXF/STL generated",
+    "part": "lid-plate",
+    "variant": "t1p2",
+    "old_path": "engineering/r9-fitfix-01/out/aluminum/t1p2/7u40-r9f-lid-plate-qty1-mm.stl",
+    "old_sha256": "ad300d85285d8453432ad67739d6d4edecdfd5dfd7b465f0917c0f8db583c46d",
+    "new_path": "engineering/r9-lid-m5-01/out/aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.stl",
+    "new_sha256": "d93048a8070b7489b81a9d8fa7fc8efc48ffcd713ac672628ea3b9d3f0ee85d3"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-fr",
+    "variant": "t1p0",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-fr-qty1-mm.stl",
+    "old_sha256": "3b5a370fc2f966d030f7ed14a1186d7b89f833495bbe277a4c0c3ebfd5df6ba2",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-fr-qty1-mm.stl",
+    "new_sha256": "62ae5be0d83b68312af540f8d2536eec6c37580364219b361a5d537f174f0ba9"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-fr",
+    "variant": "t1p0",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-fr-qty1-mm.step",
+    "old_sha256": "f434edc51e5ca50fade61ddb105e341b9fd8597d8665463b0d7c56573d709a47",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-fr-qty1-mm.step",
+    "new_sha256": "9562993c65c65ec7a914c0df583815eeccf7e2f12b0142d8a22f1127a372ad9c"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-fl",
+    "variant": "t1p0",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-fl-qty1-mm.stl",
+    "old_sha256": "f6aa9a92362b6febdaf7efffb532bc0a939abe65b23d6352906fab3ab382a48b",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-fl-qty1-mm.stl",
+    "new_sha256": "d66edf0e43904c22dc3d63279ec058426a2d2bbf21bcca9fc6a31f58978aa5e5"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-fl",
+    "variant": "t1p0",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-fl-qty1-mm.step",
+    "old_sha256": "ed5b720c9d0e2e75087ff6827bc2477c735c5d0deb0665a582ee5420f68820f4",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-fl-qty1-mm.step",
+    "new_sha256": "02d69bde871afc6e307c4150ec9fea0ea5ae9d6931a38b54df02b35be1700ec2"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-bl",
+    "variant": "t1p0",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-bl-qty1-mm.stl",
+    "old_sha256": "797b145505e50a9526e7cee980f78b6f893ec940e796a104449f371bc1808c4f",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-bl-qty1-mm.stl",
+    "new_sha256": "4dbe1789349957663db914a0b79077b50995ebca3ea2750bdc13ab9e538beebf"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-bl",
+    "variant": "t1p0",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-bl-qty1-mm.step",
+    "old_sha256": "cdb06b0308e9ff517dd60a44b37e97a73f56ee9d99bd92985ada8b865b300c6d",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-bl-qty1-mm.step",
+    "new_sha256": "19fdd403a4fb3523137010ce2444747ab0945cd44b6ae4be9a3b384d1e748177"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-br",
+    "variant": "t1p0",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-br-qty1-mm.stl",
+    "old_sha256": "113f2ec361f0bf1cf3e17d6b1f60aa2ea8042320ee0ee23ccf5473ebf54cb317",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-br-qty1-mm.stl",
+    "new_sha256": "5b0b4c4814d005f3fb46f90b0b74c0e28930948d86e601f7f61f4992051dd523"
+  },
+  {
+    "change": "replaced: M3 bore/nut pocket/boss -> M5",
+    "part": "lid-frame-br",
+    "variant": "t1p0",
+    "old_path": "engineering/r9-fitfix-01/out/pa12/t1p0/lid/7u40-r9f-lid-frame-br-qty1-mm.step",
+    "old_sha256": "07b1a6cb3adb7f23d49fa248a1a9e12696dad086a7047732ec3cae56af446f90",
+    "new_path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-br-qty1-mm.step",
+    "new_sha256": "500d116422f98609ebf85a494e8f0c6a8b72310969a2b2a878a53ef005bb1d4c"
+  },
+  {
+    "change": "replaced: 8x M3 3.4 holes -> 8x M5 5.5 holes at new positions",
+    "part": "lid-plate",
+    "variant": "t1p0",
+    "old_path": "engineering/r9-fitfix-01/out/aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.step",
+    "old_sha256": "25f0ca899bccc3bf3b7ba807e0402075de143a1fbe05d320eba5211d33c9f774",
+    "new_path": "engineering/r9-lid-m5-01/out/aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.step",
+    "new_sha256": "93e08a76fdfda9e0df706d185109bed2a180e72a7779162961a96b50e83d5d5e"
+  },
+  {
+    "change": "replaced: 8x M3 3.4 holes -> 8x M5 5.5 holes at new positions",
+    "part": "lid-plate",
+    "variant": "t1p0",
+    "old_path": "engineering/r9-fitfix-01/out/aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.dxf",
+    "old_sha256": "44c491a30900cba319942ab5d12dd3a66f9eed7624ea331241808be03fa6a811",
+    "new_path": "engineering/r9-lid-m5-01/out/aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.dxf",
+    "new_sha256": "94b4e80f7fc2e072724cac0f2bb28c3eacd68314858f753d063497ed4c2e5f8c"
+  },
+  {
+    "change": "retired: plate STL is not an aluminum order file; new STEP/DXF/STL generated",
+    "part": "lid-plate",
+    "variant": "t1p0",
+    "old_path": "engineering/r9-fitfix-01/out/aluminum/t1p0/7u40-r9f-lid-plate-qty1-mm.stl",
+    "old_sha256": "e8d811013729ada949982a51fb840c16e14776db23ec3c28662155e1af49e8f9",
+    "new_path": "engineering/r9-lid-m5-01/out/aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.stl",
+    "new_sha256": "335019269d9f0da77f3daf47e5878d6ff01879140175ff46f324b6f1e079d90d"
+  },
+  {
+    "change": "replaced: C2 frame with M5 boss",
+    "part": "c2-m5-01-frame",
+    "variant": "coupon",
+    "old_path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-frame-qty1-mm.stl",
+    "old_sha256": "bea3aac6e208bc980ece26428ab09d34cf7d1fdca8009879283b9f74e648f3a7",
+    "new_path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-01-frame-qty1-mm.stl",
+    "new_sha256": "d93e5b15e527b4e419ce9fc00a096ba7a76cf1d4ccbfdbdf9657a780c01a3763"
+  },
+  {
+    "change": "replaced: C2 frame with M5 boss",
+    "part": "c2-m5-01-frame",
+    "variant": "coupon",
+    "old_path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-frame-qty1-mm.step",
+    "old_sha256": "68dab86cbb35c9967930f236aeb480a8809f90d8b4a7153e0b3f6efe823a6d3f",
+    "new_path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-01-frame-qty1-mm.step",
+    "new_sha256": "e2a7abd7a3aab21797b362c5b735ac67dbb7ebb795a62aec5765fa66686d594a"
+  },
+  {
+    "change": "replaced: C2 frame with M5 boss",
+    "part": "c2-m5-02-frame",
+    "variant": "coupon",
+    "old_path": "engineering/r9-fitfix-01/out/coupons/c2-02/7u40-r9f-c2-02-frame-qty1-mm.stl",
+    "old_sha256": "bf15627f3e8842e53894f4d1fa97a10229abee1d7897f4dffa68fcf6de4424a4",
+    "new_path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-02-frame-qty1-mm.stl",
+    "new_sha256": "5388d35396a2edb15302eb766a1efd508e9f5f56e0744939b587eeb549734f6e"
+  },
+  {
+    "change": "replaced: C2 frame with M5 boss",
+    "part": "c2-m5-02-frame",
+    "variant": "coupon",
+    "old_path": "engineering/r9-fitfix-01/out/coupons/c2-02/7u40-r9f-c2-02-frame-qty1-mm.step",
+    "old_sha256": "b6c686a1597320358a7821e01f1feb0f431b495d2d55ed23510f0d1abb0c621a",
+    "new_path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-02-frame-qty1-mm.step",
+    "new_sha256": "2e71afc8c9c1f2520803902b98ef654a2246bf7666404e125fdd990d4b518ed4"
+  },
+  {
+    "change": "replaced: C2 frame with M5 boss",
+    "part": "c2-m5-03-frame",
+    "variant": "coupon",
+    "old_path": "engineering/r9-fitfix-01/out/coupons/c2-03/7u40-r9f-c2-03-frame-qty1-mm.stl",
+    "old_sha256": "d4413f0eb5b49fec34b54af5293fa52a7af98a52109983d0c72c86948be4bb13",
+    "new_path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-03-frame-qty1-mm.stl",
+    "new_sha256": "5d034f435c1acffd71459e9a2c2af95296203f9363621bebc33b8c844b37beb1"
+  },
+  {
+    "change": "replaced: C2 frame with M5 boss",
+    "part": "c2-m5-03-frame",
+    "variant": "coupon",
+    "old_path": "engineering/r9-fitfix-01/out/coupons/c2-03/7u40-r9f-c2-03-frame-qty1-mm.step",
+    "old_sha256": "a6d1c96c152a8813236dcef088ef5096bf7dd5fdedfd82f1fc1136e6bfd56966",
+    "new_path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-03-frame-qty1-mm.step",
+    "new_sha256": "aedd509591c9bf40dc1b377c04c0b1f2ca2f291fec2d66fd6516d5724cbf50d4"
+  },
+  {
+    "change": "replaced: C2 plate M3 3.4 -> M5 5.5 at the new axis; R9-ANODIZING-01 hang hole d4 kept at the same UV",
+    "part": "c2-m5-plate",
+    "variant": "coupon",
+    "old_path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.step",
+    "old_sha256": "5778e3c786f5349c3dd88b88ed63da8f09b7e1a06ec066fd96aa89d0744f3112",
+    "new_path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.step",
+    "new_sha256": "5a00cf94ee9016b141891a778004dee05bfe30a866b13b290c50c2aaf4952794"
+  },
+  {
+    "change": "replaced: C2 plate M3 3.4 -> M5 5.5 at the new axis; R9-ANODIZING-01 hang hole d4 kept at the same UV",
+    "part": "c2-m5-plate",
+    "variant": "coupon",
+    "old_path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-plate-qty1-mm.dxf",
+    "old_sha256": "4c95e5953b9490163a318d2d9822a44b5c1d20a6054d1960a947d666f5e7e18d",
+    "new_path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.dxf",
+    "new_sha256": "4707d0f173002ddb2e47b7aa817e33cccc3b059ad352793a7918e032fc7c41e3"
+  },
+  {
+    "change": "replaced: C2 plate M3 3.4 -> M5 5.5 at the new axis; R9-ANODIZING-01 hang hole d4 kept at the same UV",
+    "part": "c2-m5-plate",
+    "variant": "coupon",
+    "old_path": "engineering/r9-anodizing-01/out/step/7u40-r9a-c2-01-plate-qty1-mm.step",
+    "old_sha256": "91dbb02a22ff56b7c5e78174b03d9d3326337167d3091a12b80e46960b7349c2",
+    "new_path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.step",
+    "new_sha256": "5a00cf94ee9016b141891a778004dee05bfe30a866b13b290c50c2aaf4952794"
+  },
+  {
+    "change": "replaced: C2 plate M3 3.4 -> M5 5.5 at the new axis; R9-ANODIZING-01 hang hole d4 kept at the same UV",
+    "part": "c2-m5-plate",
+    "variant": "coupon",
+    "old_path": "engineering/r9-anodizing-01/out/dxf/7u40-r9a-c2-01-plate-qty1-mm.dxf",
+    "old_sha256": "747f6231c01309346361c483811752ea3cf45d392441f1cf39e86e0e99ba44b1",
+    "new_path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.dxf",
+    "new_sha256": "4707d0f173002ddb2e47b7aa817e33cccc3b059ad352793a7918e032fc7c41e3"
+  },
+  {
+    "change": "unchanged: reuse the ordered C2 piece",
+    "part": "c2-01-wall",
+    "variant": "coupon",
+    "old_path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.step",
+    "old_sha256": "b665109c5993d0165690b2d08df6430db651ab729a63480bf77e264f5f8cc870",
+    "new_path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.step",
+    "new_sha256": "b665109c5993d0165690b2d08df6430db651ab729a63480bf77e264f5f8cc870"
+  },
+  {
+    "change": "unchanged: reuse the ordered C2 piece",
+    "part": "c2-01-wall",
+    "variant": "coupon",
+    "old_path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.stl",
+    "old_sha256": "bc3cadc2e5a4654bc09c98c8830e0b88e61c23457d7ec5060a61664bf79c6583",
+    "new_path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-wall-qty1-mm.stl",
+    "new_sha256": "bc3cadc2e5a4654bc09c98c8830e0b88e61c23457d7ec5060a61664bf79c6583"
+  },
+  {
+    "change": "unchanged: reuse the ordered C2 piece",
+    "part": "c2-01-guard",
+    "variant": "coupon",
+    "old_path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-guard-qty1-mm.step",
+    "old_sha256": "95f3152f4f01d4cc744da00d7b4daf18e5df42650346d0b0160d8a0a54af5aba",
+    "new_path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-guard-qty1-mm.step",
+    "new_sha256": "95f3152f4f01d4cc744da00d7b4daf18e5df42650346d0b0160d8a0a54af5aba"
+  },
+  {
+    "change": "unchanged: reuse the ordered C2 piece",
+    "part": "c2-01-guard",
+    "variant": "coupon",
+    "old_path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-guard-qty1-mm.stl",
+    "old_sha256": "bc601c3adf11f21da28ed424675cb682dd2cc3b1118e9cdb0ed92288daf9e3db",
+    "new_path": "engineering/r9-fitfix-01/out/coupons/c2-01/7u40-r9f-c2-01-guard-qty1-mm.stl",
+    "new_sha256": "bc601c3adf11f21da28ed424675cb682dd2cc3b1118e9cdb0ed92288daf9e3db"
+  }
+]

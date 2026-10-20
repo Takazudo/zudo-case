@@ -815,6 +815,88 @@
           "count": 16,
           "volume_cm3": 31.93833435777218
         }
+      },
+      "lid_m5_candidate": {
+        "revision": "R9-LID-M5-01",
+        "base_revision": "R9-FITFIX-01",
+        "issue": 123,
+        "status": "unapproved candidate; physical nut/fit test pending",
+        "scope": "lid plate-to-PA12-frame assembly fastener only; body plates and guards unchanged",
+        "m5_adopted_mm": {
+          "through_hole": 5.5,
+          "pocket_af": 8.4,
+          "pocket_effective_depth": 5.5,
+          "nut_roof": 1.5,
+          "nut_wall_min": 1.6,
+          "boss_half_length": 7,
+          "plate_edge_to_axis": 5.5,
+          "pocket_overcut": 0.2,
+          "af_ladder": [
+            8.3,
+            8.4,
+            8.5
+          ]
+        },
+        "measured_min_mm": {
+          "nut_wall": 1.6,
+          "effective_depth": 5.5,
+          "plate_edge_ligament": 2.75
+        },
+        "screw_length_candidates_mm": [
+          {
+            "length": 10,
+            "washer": false
+          },
+          {
+            "length": 12,
+            "washer": false
+          },
+          {
+            "length": 12,
+            "washer": true
+          },
+          {
+            "length": 14,
+            "washer": false
+          },
+          {
+            "length": 14,
+            "washer": true
+          }
+        ],
+        "links": [
+          {
+            "path": "/downloads/candidate/r9-lid-m5-01-7u40-t1p0-lid-m5-aluminum-NOT-APPROVED.zip",
+            "label": "M5天板アルミ（1.0mm案）"
+          },
+          {
+            "path": "/downloads/candidate/r9-lid-m5-01-7u40-t1p0-lid-m5-pa12-NOT-APPROVED.zip",
+            "label": "M5フタ枠4個PA12（1.0mm案）"
+          },
+          {
+            "path": "/downloads/candidate/r9-lid-m5-01-7u40-t1p2-lid-m5-aluminum-NOT-APPROVED.zip",
+            "label": "M5天板アルミ（1.2mm案）"
+          },
+          {
+            "path": "/downloads/candidate/r9-lid-m5-01-7u40-t1p2-lid-m5-pa12-NOT-APPROVED.zip",
+            "label": "M5フタ枠4個PA12（1.2mm案）"
+          },
+          {
+            "path": "/downloads/candidate/r9-lid-m5-01-m5-coupons-metal-NOT-APPROVED.zip",
+            "label": "C2-M5天板アルミ"
+          },
+          {
+            "path": "/downloads/candidate/r9-lid-m5-01-m5-coupons-pa12-NOT-APPROVED.zip",
+            "label": "C2-M5枠3種＋N1ラダーPA12"
+          },
+          {
+            "path": "/previews/r9-lid-m5-01.html",
+            "label": "R9-LID-M5-01プレビュー"
+          }
+        ],
+        "bom_path": "engineering/r9-lid-m5-01/out/BOM.json",
+        "dimensions_path": "engineering/r9-lid-m5-01/out/DIMENSIONS.md",
+        "old_to_new_path": "engineering/r9-lid-m5-01/out/old-to-new.csv"
       }
     },
     "7u60": {

@@ -1,0 +1,28 @@
+{
+  "id": "N1",
+  "ladder": [
+    8.3,
+    8.4,
+    8.5
+  ],
+  "centers": [
+    {
+      "x": 8.0,
+      "y": 0.0,
+      "af": 8.3
+    },
+    {
+      "x": 24.0,
+      "y": 0.0,
+      "af": 8.4
+    },
+    {
+      "x": 40.0,
+      "y": 0.0,
+      "af": 8.5
+    }
+  ],
+  "roof_contact_z": 7.0,
+  "purpose": "Physical across-flats ladder 8.3/8.4/8.5; only the AF differs from the lid definition",
+  "physical_results": null
+}
