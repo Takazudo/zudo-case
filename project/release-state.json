@@ -1165,6 +1165,326 @@
       "sha256": "f2ea506f47fca41caf21da56032b5ccbddade76784a5adecf177d35ed22217e9"
     },
     {
+      "id": "R9M5-PUBLIC-DOWNLOADS-CANDIDATE-R9-LID-M5-01-7U40-T1P0-LID-M5-ALUMINUM-NOT-APPROVED-ZIP",
+      "component": "package",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "public/downloads/candidate/r9-lid-m5-01-7u40-t1p0-lid-m5-aluminum-NOT-APPROVED.zip",
+      "sha256": "d5a00ece68a1a868fb1dfd4869b275001babe41758d03ce0657e2383a59159ac"
+    },
+    {
+      "id": "R9M5-PUBLIC-DOWNLOADS-CANDIDATE-R9-LID-M5-01-7U40-T1P0-LID-M5-PA12-NOT-APPROVED-ZIP",
+      "component": "package",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "public/downloads/candidate/r9-lid-m5-01-7u40-t1p0-lid-m5-pa12-NOT-APPROVED.zip",
+      "sha256": "8ee27daafa40d1b2cb8f72e7558e0f562c1afb6133b35e9c8c9a08a4ce3f726b"
+    },
+    {
+      "id": "R9M5-PUBLIC-DOWNLOADS-CANDIDATE-R9-LID-M5-01-7U40-T1P2-LID-M5-ALUMINUM-NOT-APPROVED-ZIP",
+      "component": "package",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "public/downloads/candidate/r9-lid-m5-01-7u40-t1p2-lid-m5-aluminum-NOT-APPROVED.zip",
+      "sha256": "ddfd45ab4c0164a69b207afa4e70811094f880f5090f162199a7bd8c9a8eee01"
+    },
+    {
+      "id": "R9M5-PUBLIC-DOWNLOADS-CANDIDATE-R9-LID-M5-01-7U40-T1P2-LID-M5-PA12-NOT-APPROVED-ZIP",
+      "component": "package",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "public/downloads/candidate/r9-lid-m5-01-7u40-t1p2-lid-m5-pa12-NOT-APPROVED.zip",
+      "sha256": "7e2886ad71bb49f4449c70bd7f15cfd1ba06a6e8715ffbd717fcfdc4e31577ec"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-ALUMINUM-T1P0-7U40-R9M5-LID-PLATE-QTY1-MM-DXF",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.dxf",
+      "sha256": "94b4e80f7fc2e072724cac0f2bb28c3eacd68314858f753d063497ed4c2e5f8c"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-ALUMINUM-T1P0-7U40-R9M5-LID-PLATE-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.step",
+      "sha256": "93e08a76fdfda9e0df706d185109bed2a180e72a7779162961a96b50e83d5d5e"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-ALUMINUM-T1P0-7U40-R9M5-LID-PLATE-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.stl",
+      "sha256": "335019269d9f0da77f3daf47e5878d6ff01879140175ff46f324b6f1e079d90d"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-ALUMINUM-T1P2-7U40-R9M5-LID-PLATE-QTY1-MM-DXF",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.dxf",
+      "sha256": "4d093b5daf313825a32e4670e8bd9d286c582228bcd4f1aa17333446ce7b01b6"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-ALUMINUM-T1P2-7U40-R9M5-LID-PLATE-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.step",
+      "sha256": "a81879b98ee705aa7c39dfb020eb04850239bcb404698a049caf0679fa4b126e"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-ALUMINUM-T1P2-7U40-R9M5-LID-PLATE-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.stl",
+      "sha256": "d93048a8070b7489b81a9d8fa7fc8efc48ffcd713ac672628ea3b9d3f0ee85d3"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-COUPONS-C2-M5-7U40-R9M5-C2-M5-01-FRAME-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-01-frame-qty1-mm.step",
+      "sha256": "e2a7abd7a3aab21797b362c5b735ac67dbb7ebb795a62aec5765fa66686d594a"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-COUPONS-C2-M5-7U40-R9M5-C2-M5-01-FRAME-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-01-frame-qty1-mm.stl",
+      "sha256": "d93e5b15e527b4e419ce9fc00a096ba7a76cf1d4ccbfdbdf9657a780c01a3763"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-COUPONS-C2-M5-7U40-R9M5-C2-M5-02-FRAME-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-02-frame-qty1-mm.step",
+      "sha256": "2e71afc8c9c1f2520803902b98ef654a2246bf7666404e125fdd990d4b518ed4"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-COUPONS-C2-M5-7U40-R9M5-C2-M5-02-FRAME-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-02-frame-qty1-mm.stl",
+      "sha256": "5388d35396a2edb15302eb766a1efd508e9f5f56e0744939b587eeb549734f6e"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-COUPONS-C2-M5-7U40-R9M5-C2-M5-03-FRAME-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-03-frame-qty1-mm.step",
+      "sha256": "aedd509591c9bf40dc1b377c04c0b1f2ca2f291fec2d66fd6516d5724cbf50d4"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-COUPONS-C2-M5-7U40-R9M5-C2-M5-03-FRAME-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-03-frame-qty1-mm.stl",
+      "sha256": "5d034f435c1acffd71459e9a2c2af95296203f9363621bebc33b8c844b37beb1"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-COUPONS-C2-M5-7U40-R9M5-C2-M5-PLATE-QTY1-MM-DXF",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.dxf",
+      "sha256": "4707d0f173002ddb2e47b7aa817e33cccc3b059ad352793a7918e032fc7c41e3"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-COUPONS-C2-M5-7U40-R9M5-C2-M5-PLATE-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.step",
+      "sha256": "5a00cf94ee9016b141891a778004dee05bfe30a866b13b290c50c2aaf4952794"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-COUPONS-C2-M5-7U40-R9M5-C2-M5-PLATE-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.stl",
+      "sha256": "ad55453a969a9d587b947d4eb97458a080bd8a9c2b1993fdc830ddbc1a8fce17"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-COUPONS-N1-7U40-R9M5-N1-M5-NUT-LADDER-QTY1-MM-STEP",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/coupons/n1/7u40-r9m5-n1-m5-nut-ladder-qty1-mm.step",
+      "sha256": "1146170aafa570bd548216f8de7726eec84de5a7252bf8e1757bc099faa098d0"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-COUPONS-N1-7U40-R9M5-N1-M5-NUT-LADDER-QTY1-MM-STL",
+      "component": "coupon",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/coupons/n1/7u40-r9m5-n1-m5-nut-ladder-qty1-mm.stl",
+      "sha256": "6cf7481e473186ebfb09ba2ecfd9025ad29c7f6be57326c669bf639fd5dc6539"
+    },
+    {
+      "id": "R9M5-PUBLIC-DOWNLOADS-CANDIDATE-R9-LID-M5-01-M5-COUPONS-METAL-NOT-APPROVED-ZIP",
+      "component": "package",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "public/downloads/candidate/r9-lid-m5-01-m5-coupons-metal-NOT-APPROVED.zip",
+      "sha256": "a8ba2f7878c6188a0bef147eb041e94f85513361137cefc1cf4652397a21742a"
+    },
+    {
+      "id": "R9M5-PUBLIC-DOWNLOADS-CANDIDATE-R9-LID-M5-01-M5-COUPONS-PA12-NOT-APPROVED-ZIP",
+      "component": "package",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "public/downloads/candidate/r9-lid-m5-01-m5-coupons-pa12-NOT-APPROVED.zip",
+      "sha256": "1a07c8f8ca5caf53e61d81be6ba2dfb01b5851e2b2f0e14cbc22c0d153673fcf"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-BL-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-bl-qty1-mm.step",
+      "sha256": "19fdd403a4fb3523137010ce2444747ab0945cd44b6ae4be9a3b384d1e748177"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-BL-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-bl-qty1-mm.stl",
+      "sha256": "4dbe1789349957663db914a0b79077b50995ebca3ea2750bdc13ab9e538beebf"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-BR-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-br-qty1-mm.step",
+      "sha256": "500d116422f98609ebf85a494e8f0c6a8b72310969a2b2a878a53ef005bb1d4c"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-BR-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-br-qty1-mm.stl",
+      "sha256": "5b0b4c4814d005f3fb46f90b0b74c0e28930948d86e601f7f61f4992051dd523"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-FL-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-fl-qty1-mm.step",
+      "sha256": "02d69bde871afc6e307c4150ec9fea0ea5ae9d6931a38b54df02b35be1700ec2"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-FL-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-fl-qty1-mm.stl",
+      "sha256": "d66edf0e43904c22dc3d63279ec058426a2d2bbf21bcca9fc6a31f58978aa5e5"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-FR-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-fr-qty1-mm.step",
+      "sha256": "9562993c65c65ec7a914c0df583815eeccf7e2f12b0142d8a22f1127a372ad9c"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-FR-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p0/lid/7u40-r9m5-lid-frame-fr-qty1-mm.stl",
+      "sha256": "62ae5be0d83b68312af540f8d2536eec6c37580364219b361a5d537f174f0ba9"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-BL-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-bl-qty1-mm.step",
+      "sha256": "8baee325e087f7dea4173669fe972462def84a72bbd9fe0054a5d86196737a67"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-BL-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-bl-qty1-mm.stl",
+      "sha256": "4cfe4162104b5066abe9d1c8833a097b5d4e0040bee9c7949428203726e73d91"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-BR-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-br-qty1-mm.step",
+      "sha256": "a3a6ce933b6d3dc0e9e49ab5bc8146569c2d5a052228b230b704e3c53424d8e5"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-BR-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-br-qty1-mm.stl",
+      "sha256": "63a8bd018fc8db1d0ef4b8ab4e4f2b79d0d788be98a0129b52c931928f509275"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-FL-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-fl-qty1-mm.step",
+      "sha256": "aaba03ddaf57a5da860eef17e81318230d6e900e9e9cdb8c7480493c7b29a5cc"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-FL-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-fl-qty1-mm.stl",
+      "sha256": "0ad55f8ada6eba9d12eac6bf221df8a71f4b63dd43da1c3e56bde7a085917312"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-FR-QTY1-MM-STEP",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-fr-qty1-mm.step",
+      "sha256": "13fb73b741e12ccb9ab242e9bc990ae5ba3973a1115adf4999ec1231f7fbe7ca"
+    },
+    {
+      "id": "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-FR-QTY1-MM-STL",
+      "component": "lid",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "engineering/r9-lid-m5-01/out/pa12/t1p2/lid/7u40-r9m5-lid-frame-fr-qty1-mm.stl",
+      "sha256": "1bec12b84c4e5a5bb9814a02eb31d8be36d16d4f778704656578c8f838ef4b0c"
+    },
+    {
+      "id": "R9M5-PUBLIC-PREVIEWS-R9-LID-M5-01-HTML",
+      "component": "preview",
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "path": "public/previews/r9-lid-m5-01.html",
+      "sha256": "9651bf4201ae7a377ea0c1d584eb7cfa07ae55451d5f22c35f9aa0d80a5dd18f"
+    },
+    {
       "id": "R9F-PUBLIC-DOWNLOADS-CANDIDATE-R9-FITFIX-01-7U40-T1P0-ALUMINUM-NOT-APPROVED-ZIP",
       "component": "package",
       "model": "7u40",
@@ -2163,6 +2483,46 @@
       "revision": "R9-FITFIX-01",
       "path": "public/previews/r9-fitfix-01.html",
       "sha256": "18d13083ff0c7f795206e8adaa46be7f70ca51a349779b7af636ed8f3f84dcb2"
+    }
+  ],
+  "lid_revision_candidates": [
+    {
+      "model": "7u40",
+      "revision": "R9-LID-M5-01",
+      "base_revision": "R9-FITFIX-01",
+      "issue": 123,
+      "designated_current": false,
+      "production_approved": false,
+      "combination": {
+        "body_plates": "R9-FITFIX-01 (unchanged)",
+        "guards": "R9-FITFIX-01 (unchanged)",
+        "lid_frames_and_plates": "R9-LID-M5-01"
+      },
+      "candidate_ids": [
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-ALUMINUM-T1P0-7U40-R9M5-LID-PLATE-QTY1-MM-DXF",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-ALUMINUM-T1P0-7U40-R9M5-LID-PLATE-QTY1-MM-STEP",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-ALUMINUM-T1P0-7U40-R9M5-LID-PLATE-QTY1-MM-STL",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-ALUMINUM-T1P2-7U40-R9M5-LID-PLATE-QTY1-MM-DXF",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-ALUMINUM-T1P2-7U40-R9M5-LID-PLATE-QTY1-MM-STEP",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-ALUMINUM-T1P2-7U40-R9M5-LID-PLATE-QTY1-MM-STL",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-BL-QTY1-MM-STEP",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-BL-QTY1-MM-STL",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-BR-QTY1-MM-STEP",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-BR-QTY1-MM-STL",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-FL-QTY1-MM-STEP",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-FL-QTY1-MM-STL",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-FR-QTY1-MM-STEP",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P0-LID-7U40-R9M5-LID-FRAME-FR-QTY1-MM-STL",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-BL-QTY1-MM-STEP",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-BL-QTY1-MM-STL",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-BR-QTY1-MM-STEP",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-BR-QTY1-MM-STL",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-FL-QTY1-MM-STEP",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-FL-QTY1-MM-STL",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-FR-QTY1-MM-STEP",
+        "R9M5-ENGINEERING-R9-LID-M5-01-OUT-PA12-T1P2-LID-7U40-R9M5-LID-FRAME-FR-QTY1-MM-STL"
+      ],
+      "note": "M5 screw + nylon lock nut for plate/frame assembly only. No lid-to-body lock. Physical fit and nut test pending; current_lid_manufacturing stays R9-FITFIX-01."
     }
   ]
 }

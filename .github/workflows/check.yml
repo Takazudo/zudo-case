@@ -33,6 +33,7 @@ jobs:
       - run: pnpm check:r9
       - run: node --test tests/fitfix-pcb-materials.test.mjs
       - run: pnpm check:fitfix
+      - run: pnpm check:lid-m5
       - run: pnpm check:fit-test-order
       - run: node --test tests/order-map.test.mjs
       - run: pnpm check:r9-ledger
@@ -86,6 +87,14 @@ jobs:
         run: |
           uv run --locked --project ../r9-prototype-01 python build.py --out "$RUNNER_TEMP/fitfix"
           uv run --locked --project ../r9-prototype-01 python tools/compare_r9_patterns.py --fixed "$RUNNER_TEMP/fitfix/aluminum/body"
+      - name: R9-LID-M5-01 regression tests
+        run: uv run --locked --project ../r9-prototype-01 python tests/test_m5.py
+        working-directory: engineering/r9-lid-m5-01
+      - name: Regenerate R9-LID-M5-01 in disposable output and compare every output hash
+        working-directory: engineering/r9-lid-m5-01
+        run: |
+          uv run --locked --project ../r9-prototype-01 python build.py --out "$RUNNER_TEMP/lidm5"
+          uv run --locked --project ../r9-prototype-01 python tools/compare_outputs.py --fresh "$RUNNER_TEMP/lidm5"
       - name: Verify anodizing replacement geometry, exports and mutation guards
         run: uv run --locked --project ../r9-prototype-01 python test_revision.py
         working-directory: engineering/r9-anodizing-01

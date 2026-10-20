@@ -1,0 +1,9 @@
+{
+  "python": "3.12.3",
+  "cadquery": "2.7.0",
+  "ezdxf": "1.4.4",
+  "numpy": "2.5.3",
+  "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+  "repository_python_cq_range_compatible": true,
+  "seconds": 208.63
+}

@@ -1,0 +1,25 @@
+﻿variant,part,material,group,per_set_quantity,order_quantity,volume_mm3,stl,step,dxf,status,note
+t1p2,lid-frame-fr,PA12-HP black candidate,lid,1,1,21715.1891,pa12/t1p2/lid/7u40-r9m5-lid-frame-fr-qty1-mm.stl,pa12/t1p2/lid/7u40-r9m5-lid-frame-fr-qty1-mm.step,,candidate-not-approved,
+t1p2,lid-frame-fl,PA12-HP black candidate,lid,1,1,21715.1891,pa12/t1p2/lid/7u40-r9m5-lid-frame-fl-qty1-mm.stl,pa12/t1p2/lid/7u40-r9m5-lid-frame-fl-qty1-mm.step,,candidate-not-approved,
+t1p2,lid-frame-bl,PA12-HP black candidate,lid,1,1,21715.1891,pa12/t1p2/lid/7u40-r9m5-lid-frame-bl-qty1-mm.stl,pa12/t1p2/lid/7u40-r9m5-lid-frame-bl-qty1-mm.step,,candidate-not-approved,
+t1p2,lid-frame-br,PA12-HP black candidate,lid,1,1,21715.1891,pa12/t1p2/lid/7u40-r9m5-lid-frame-br-qty1-mm.stl,pa12/t1p2/lid/7u40-r9m5-lid-frame-br-qty1-mm.step,,candidate-not-approved,
+t1p2,lid-plate,A5052 t1.5 black anodized candidate,lid-metal,1,1,113620.752,aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.stl,aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.step,aluminum/t1p2/7u40-r9m5-lid-plate-qty1-mm.dxf,candidate-not-approved,
+t1p0,lid-frame-fr,PA12-HP black candidate,lid,1,1,21588.8454,pa12/t1p0/lid/7u40-r9m5-lid-frame-fr-qty1-mm.stl,pa12/t1p0/lid/7u40-r9m5-lid-frame-fr-qty1-mm.step,,candidate-not-approved,
+t1p0,lid-frame-fl,PA12-HP black candidate,lid,1,1,21588.8454,pa12/t1p0/lid/7u40-r9m5-lid-frame-fl-qty1-mm.stl,pa12/t1p0/lid/7u40-r9m5-lid-frame-fl-qty1-mm.step,,candidate-not-approved,
+t1p0,lid-frame-bl,PA12-HP black candidate,lid,1,1,21588.8454,pa12/t1p0/lid/7u40-r9m5-lid-frame-bl-qty1-mm.stl,pa12/t1p0/lid/7u40-r9m5-lid-frame-bl-qty1-mm.step,,candidate-not-approved,
+t1p0,lid-frame-br,PA12-HP black candidate,lid,1,1,21588.8454,pa12/t1p0/lid/7u40-r9m5-lid-frame-br-qty1-mm.stl,pa12/t1p0/lid/7u40-r9m5-lid-frame-br-qty1-mm.step,,candidate-not-approved,
+t1p0,lid-plate,A5052 t1.5 black anodized candidate,lid-metal,1,1,113284.392,aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.stl,aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.step,aluminum/t1p0/7u40-r9m5-lid-plate-qty1-mm.dxf,candidate-not-approved,
+coupon,c2-m5-01-frame,PA12-HP black candidate,coupon,1,1,3529.1232,coupons/c2-m5/7u40-r9m5-c2-m5-01-frame-qty1-mm.stl,coupons/c2-m5/7u40-r9m5-c2-m5-01-frame-qty1-mm.step,,candidate-not-approved,
+coupon,c2-m5-plate,A5052 t1.5 black anodized candidate,coupon-metal,1,1,1133.513,coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.stl,coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.step,coupons/c2-m5/7u40-r9m5-c2-m5-plate-qty1-mm.dxf,candidate-not-approved,
+coupon,c2-m5-02-frame,PA12-HP black candidate,coupon,1,1,3514.2672,coupons/c2-m5/7u40-r9m5-c2-m5-02-frame-qty1-mm.stl,coupons/c2-m5/7u40-r9m5-c2-m5-02-frame-qty1-mm.step,,candidate-not-approved,
+coupon,c2-m5-03-frame,PA12-HP black candidate,coupon,1,1,3544.2672,coupons/c2-m5/7u40-r9m5-c2-m5-03-frame-qty1-mm.stl,coupons/c2-m5/7u40-r9m5-c2-m5-03-frame-qty1-mm.step,,candidate-not-approved,
+coupon,n1-m5-nut-ladder,PA12-HP black candidate,coupon,1,1,3559.499,coupons/n1/7u40-r9m5-n1-m5-nut-ladder-qty1-mm.stl,coupons/n1/7u40-r9m5-n1-m5-nut-ladder-qty1-mm.step,,candidate-not-approved,
+t1p2,m5-screw,M5 screw (ZB40 family). Length candidate below,hardware,8,8,,,,,assumption-not-identified,Recommended 10 mm without washer; see dimensions.json screw_lengths_passing_all_sites
+t1p2,m5-nylon-lock-nut,"M5 nylon insert lock nut, s 7.68-8.0, h 4.7-5.0 (table)",hardware,8,8,,,,,catalogue-table-not-measured,
+t1p0,m5-screw,M5 screw (ZB40 family). Length candidate below,hardware,8,8,,,,,assumption-not-identified,Recommended 10 mm without washer; see dimensions.json screw_lengths_passing_all_sites
+t1p0,m5-nylon-lock-nut,"M5 nylon insert lock nut, s 7.68-8.0, h 4.7-5.0 (table)",hardware,8,8,,,,,catalogue-table-not-measured,
+coupon,m5-screw+nut (C2-M5 + N1 trials),M5 screw + M5 nylon lock nut,hardware,4,4,,,,,assumption-not-identified,"1 set for the shared C2-M5 plate, 3 nuts for N1"
+t1p2,R9-FITFIX-01 7u40-t1p2-pa12-NOT-APPROVED.zip,unchanged body plates + guards (reuse). Its lid frames/plate are superseded by this revision,unchanged-reference,,0,,,engineering/r9-fitfix-01/out/7u40-t1p2-pa12-NOT-APPROVED.zip,,sha256 a49c5db6671ed7c697bd55a108f734380745a653cc5693be2743b0878a2654b7,
+t1p2,R9-FITFIX-01 7u40-t1p2-aluminum-NOT-APPROVED.zip,unchanged body plates + guards (reuse). Its lid frames/plate are superseded by this revision,unchanged-reference,,0,,,engineering/r9-fitfix-01/out/7u40-t1p2-aluminum-NOT-APPROVED.zip,,sha256 f6a3fe08b17dcdc26ae97bdf27b3a9c450c7b6d0bdd362238bb1f96f5f657546,
+t1p0,R9-FITFIX-01 7u40-t1p0-pa12-NOT-APPROVED.zip,unchanged body plates + guards (reuse). Its lid frames/plate are superseded by this revision,unchanged-reference,,0,,,engineering/r9-fitfix-01/out/7u40-t1p0-pa12-NOT-APPROVED.zip,,sha256 9db0d645a9ba8379dcb8cddbd32e118c5e26bded70ff2b35b945a2c93e3f4006,
+t1p0,R9-FITFIX-01 7u40-t1p0-aluminum-NOT-APPROVED.zip,unchanged body plates + guards (reuse). Its lid frames/plate are superseded by this revision,unchanged-reference,,0,,,engineering/r9-fitfix-01/out/7u40-t1p0-aluminum-NOT-APPROVED.zip,,sha256 2d398fd3ffa86580280abf13f6cd42d7a78251613df4c56e75e7e0c684387ae7,

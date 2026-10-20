@@ -33,6 +33,8 @@
     "test:ledger": "node --test tests/ledger-*.test.mjs",
     "check:fitfix": "node scripts/sync-fitfix.mjs --check",
     "sync:fitfix": "node scripts/sync-fitfix.mjs",
+    "check:lid-m5": "node scripts/sync-lid-m5.mjs --check",
+    "sync:lid-m5": "node scripts/sync-lid-m5.mjs",
     "check:fit-test-order": "python3 scripts/prepare-fit-test-order.py --check",
     "build:two-way": "node engineering/two-way/tw-01/build.cjs",
     "check:two-way": "node engineering/two-way/tw-01/build.cjs --check",

@@ -1,0 +1,370 @@
+{
+  "revision": "R9-LID-M5-01",
+  "source": {
+    "status": "User-attached product dimension table (ss-2026-10-21-011738.png, row M5), transcribed in issue #123. Catalogue values, not a physical measurement or tolerance guarantee.",
+    "thread": "M5",
+    "pitch": 0.8,
+    "height_min": 4.7,
+    "height_max": 5.0,
+    "metal_hex_height_min": 3.2,
+    "across_flats_min": 7.68,
+    "across_flats_max": 8.0,
+    "product_photo_across_flats": 7.83,
+    "type": "M5 nylon-insert lock nut (same family as ZB40)"
+  },
+  "design_envelope": {
+    "nut_across_flats": 8.0,
+    "nut_height": 5.0,
+    "note": "Design envelope from the table maxima. The pocket is not sized to the 7.83 photo value."
+  },
+  "adopted": {
+    "through_hole": 5.5,
+    "pocket_af": 8.4,
+    "pocket_effective_depth": 5.5,
+    "nut_roof": 1.5,
+    "nut_wall_min": 1.6,
+    "boss_half_length": 7.0,
+    "plate_edge_to_axis": 5.5,
+    "pocket_overcut": 0.2,
+    "af_ladder": [
+      8.3,
+      8.4,
+      8.5
+    ]
+  },
+  "adopted_reasons": {
+    "through_hole": "Issue start value 5.5 kept: M5 normal clearance, same as the R6/R9 5.5 body holes.",
+    "pocket_af": "Changed from the 8.5 start value to 8.4. 8.4 still clears the 8.0 envelope by 0.4 (0.2 per flat). With a nut whose corners are truncated like ISO 10511 (e_min/s = 8.79/8.0), a 7.68 across-flats nut reaches 4.22 mm corner radius: that locks against an 8.4 pocket (4.20 inscribed radius) but could spin in an 8.5 pocket (4.25). Sharp-corner nominal nuts lock in both. The N1 ladder coupon tests 8.3/8.4/8.5 physically.",
+    "pocket_effective_depth": "Issue start value 5.5 kept: 0.5 over the 5.0 envelope height. The 0.2 overcut below the boss is not counted.",
+    "nut_roof": "Issue start value 1.5 kept.",
+    "nut_wall_min": "1.6 = issue minimum 1.5 plus 0.1 margin; it sets the boss depth perpendicular to the edge.",
+    "plate_edge_to_axis": "Moved inward from the M3 3.9 so an assumed 10 mm head stays fully on the plate (0.5 margin) and the side boss stays outside the 40HP rail/panel X range.",
+    "boss_half_length": "M3 14 mm boss length kept; 7.0 exceeds hex corner radius + 1.6 wall (6.45)."
+  },
+  "assumptions": {
+    "status": "Variable assumptions. Screw head, washer and length were not identified from the product pages and were not measured.",
+    "head_diameter_max": 10.0,
+    "head_height_max": 5.0,
+    "screw_major_diameter": 5.0,
+    "washer_outer_diameter": 10.0,
+    "washer_thickness": 1.0,
+    "candidate_lengths": [
+      10,
+      12,
+      14
+    ],
+    "min_protrusion_pitches": 2,
+    "nut_corner_ratio_e_over_s": 1.09875,
+    "driver_column_diameter": 10.0,
+    "insertion_inward_travel": 30.0
+  },
+  "m3_before": {
+    "assembly_hole": 3.4,
+    "nut_af": 5.9,
+    "boss_depth": 4.4,
+    "nut_roof": 1.5,
+    "screw_inset": 6.0
+  },
+  "variants": {
+    "t1p2": {
+      "interface": {
+        "guard_opening_mm": [
+          223.4,
+          328.0
+        ],
+        "guard_exterior_mm": [
+          232.4,
+          337.0
+        ],
+        "guard_bottom_z_mm": -1.2,
+        "guard_top_z_mm": 92.2,
+        "guard_envelope_height_mm": 93.4,
+        "lid_seat_z_mm": 92.2,
+        "plate_bottom_z_mm": 122.2,
+        "plate_top_z_mm": 123.7,
+        "lip_top_z_mm": 124.0,
+        "locator_bottom_z_mm": 80.2,
+        "flat_wall_mm": 1.2,
+        "metal_offset_mm": 0.3,
+        "lid_plate_mm": [
+          228.2,
+          332.8,
+          1.5
+        ],
+        "lid_locator_xy_clearance_mm": 0.7,
+        "lid_engagement_mm": 12.0,
+        "plate_under_clearance_to_assumed_knob_mm": 4.2
+      },
+      "plate_mm": [
+        228.2,
+        332.8,
+        1.5
+      ],
+      "m5_sites": 8,
+      "hole_alignment_matched": true,
+      "by_edge": {
+        "front": {
+          "frames": [
+            "lid-frame-fr",
+            "lid-frame-fl",
+            "lid-frame-bl",
+            "lid-frame-br"
+          ],
+          "across_flats_measured": {
+            "min": 8.4,
+            "max": 8.4
+          },
+          "effective_depth": {
+            "min": 5.5
+          },
+          "roof_thickness": {
+            "min": 1.5
+          },
+          "min_wall_true": {
+            "min": 1.6
+          },
+          "wall_to_outer_face": {
+            "min": 3.4
+          },
+          "wall_to_interior": {
+            "min": 1.6
+          },
+          "boss_bottom_z": 115.2,
+          "plate_edge_ligament": {
+            "min": 2.75
+          },
+          "plate_edge_to_axis": {
+            "min": 5.5
+          },
+          "head_margin_on_plate": {
+            "min": 0.5
+          },
+          "head_clearance_to_frames": {
+            "min": 1.1
+          },
+          "axis_xy_first": [
+            34.86,
+            -160.9
+          ]
+        },
+        "side": {
+          "frames": [
+            "lid-frame-fr",
+            "lid-frame-fl",
+            "lid-frame-bl",
+            "lid-frame-br"
+          ],
+          "across_flats_measured": {
+            "min": 8.4,
+            "max": 8.4
+          },
+          "effective_depth": {
+            "min": 5.5
+          },
+          "roof_thickness": {
+            "min": 1.5
+          },
+          "min_wall_true": {
+            "min": 1.6
+          },
+          "wall_to_outer_face": {
+            "min": 3.4
+          },
+          "wall_to_interior": {
+            "min": 1.6
+          },
+          "boss_bottom_z": 115.2,
+          "plate_edge_ligament": {
+            "min": 2.75
+          },
+          "plate_edge_to_axis": {
+            "min": 5.5
+          },
+          "head_margin_on_plate": {
+            "min": 0.5
+          },
+          "head_clearance_to_frames": {
+            "min": 1.1
+          },
+          "axis_xy_first": [
+            108.6,
+            -84.25
+          ]
+        }
+      },
+      "lid_frame_volume_cm3": 86.8608,
+      "screw_lengths_passing_all_sites": [
+        {
+          "length": 10,
+          "washer": false
+        },
+        {
+          "length": 12,
+          "washer": false
+        },
+        {
+          "length": 12,
+          "washer": true
+        },
+        {
+          "length": 14,
+          "washer": false
+        },
+        {
+          "length": 14,
+          "washer": true
+        }
+      ]
+    },
+    "t1p0": {
+      "interface": {
+        "guard_opening_mm": [
+          223.8,
+          328.4
+        ],
+        "guard_exterior_mm": [
+          232.0,
+          336.6
+        ],
+        "guard_bottom_z_mm": -1.0,
+        "guard_top_z_mm": 92.0,
+        "guard_envelope_height_mm": 93.0,
+        "lid_seat_z_mm": 92.0,
+        "plate_bottom_z_mm": 122.0,
+        "plate_top_z_mm": 123.5,
+        "lip_top_z_mm": 123.8,
+        "locator_bottom_z_mm": 80.0,
+        "flat_wall_mm": 1.0,
+        "metal_offset_mm": 0.3,
+        "lid_plate_mm": [
+          227.8,
+          332.4,
+          1.5
+        ],
+        "lid_locator_xy_clearance_mm": 0.7,
+        "lid_engagement_mm": 12.0,
+        "plate_under_clearance_to_assumed_knob_mm": 4.0
+      },
+      "plate_mm": [
+        227.8,
+        332.4,
+        1.5
+      ],
+      "m5_sites": 8,
+      "hole_alignment_matched": true,
+      "by_edge": {
+        "front": {
+          "frames": [
+            "lid-frame-fr",
+            "lid-frame-fl",
+            "lid-frame-bl",
+            "lid-frame-br"
+          ],
+          "across_flats_measured": {
+            "min": 8.4,
+            "max": 8.4
+          },
+          "effective_depth": {
+            "min": 5.5
+          },
+          "roof_thickness": {
+            "min": 1.5
+          },
+          "min_wall_true": {
+            "min": 1.6
+          },
+          "wall_to_outer_face": {
+            "min": 3.4
+          },
+          "wall_to_interior": {
+            "min": 1.6
+          },
+          "boss_bottom_z": 115.0,
+          "plate_edge_ligament": {
+            "min": 2.75
+          },
+          "plate_edge_to_axis": {
+            "min": 5.5
+          },
+          "head_margin_on_plate": {
+            "min": 0.5
+          },
+          "head_clearance_to_frames": {
+            "min": 1.1
+          },
+          "axis_xy_first": [
+            34.8,
+            -160.7
+          ]
+        },
+        "side": {
+          "frames": [
+            "lid-frame-fr",
+            "lid-frame-fl",
+            "lid-frame-bl",
+            "lid-frame-br"
+          ],
+          "across_flats_measured": {
+            "min": 8.4,
+            "max": 8.4
+          },
+          "effective_depth": {
+            "min": 5.5
+          },
+          "roof_thickness": {
+            "min": 1.5
+          },
+          "min_wall_true": {
+            "min": 1.6
+          },
+          "wall_to_outer_face": {
+            "min": 3.4
+          },
+          "wall_to_interior": {
+            "min": 1.6
+          },
+          "boss_bottom_z": 115.0,
+          "plate_edge_ligament": {
+            "min": 2.75
+          },
+          "plate_edge_to_axis": {
+            "min": 5.5
+          },
+          "head_margin_on_plate": {
+            "min": 0.5
+          },
+          "head_clearance_to_frames": {
+            "min": 1.1
+          },
+          "axis_xy_first": [
+            108.4,
+            -84.15
+          ]
+        }
+      },
+      "lid_frame_volume_cm3": 86.3554,
+      "screw_lengths_passing_all_sites": [
+        {
+          "length": 10,
+          "washer": false
+        },
+        {
+          "length": 12,
+          "washer": false
+        },
+        {
+          "length": 12,
+          "washer": true
+        },
+        {
+          "length": 14,
+          "washer": false
+        },
+        {
+          "length": 14,
+          "washer": true
+        }
+      ]
+    }
+  }
+}

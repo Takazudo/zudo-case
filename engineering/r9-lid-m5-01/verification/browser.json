@@ -1,0 +1,31 @@
+{
+  "widths": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "renderer": "webgl"
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "renderer": "webgl"
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "width 1440: M5 summary, 16 fastener envelopes, variants/open/travel, LID-T1P2-FRONT/LID-T1P2-SIDE/LID-T1P0-FRONT/LID-T1P0-SIDE/C2-M5-01/C2-M5-02/C2-M5-03/N1",
+    "width 390: M5 summary, 16 fastener envelopes, variants/open/travel, LID-T1P2-FRONT/LID-T1P2-SIDE/LID-T1P0-FRONT/LID-T1P0-SIDE/C2-M5-01/C2-M5-02/C2-M5-03/N1"
+  ],
+  "images": [
+    "case-1440.png",
+    "case-open-1440.png",
+    "lid-t1p2-front.png",
+    "lid-t1p2-side.png",
+    "c2-m5-01.png",
+    "c2-m5-02.png",
+    "c2-m5-03.png",
+    "n1.png",
+    "case-390.png"
+  ],
+  "passed": true
+}
