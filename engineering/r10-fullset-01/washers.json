@@ -1,0 +1,50 @@
+{
+  "units": "mm",
+  "material": "black ASA (home print)",
+  "types": {
+    "corner-cap": {
+      "shape": "rounded_rectangle",
+      "width": 16,
+      "length": 12,
+      "thickness": 1,
+      "hole_diameter": 5.5,
+      "eccentricity": 0,
+      "corner_radius": 1.5,
+      "xy_fit": 0,
+      "elephant_foot": 0
+    },
+    "lower-cap": {
+      "shape": "rounded_rectangle",
+      "width": 14,
+      "length": 16,
+      "thickness": 1,
+      "hole_diameter": 5.5,
+      "eccentricity": 1,
+      "corner_radius": 1.5,
+      "xy_fit": 0,
+      "elephant_foot": 0
+    },
+    "capsule-pad": {
+      "shape": "capsule",
+      "width": 12,
+      "length": 20,
+      "thickness": 1,
+      "hole_diameter": 5.5,
+      "eccentricity": 0,
+      "corner_radius": 6,
+      "xy_fit": 0,
+      "elephant_foot": 0
+    },
+    "round-replacement": {
+      "shape": "round",
+      "width": 10,
+      "length": 10,
+      "thickness": 1,
+      "hole_diameter": 5.5,
+      "eccentricity": 0,
+      "corner_radius": 5,
+      "xy_fit": 0,
+      "elephant_foot": 0
+    }
+  }
+}
