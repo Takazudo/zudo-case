@@ -1,0 +1,64 @@
+{
+  "revision": "P3-PRINTED-5MM-7U-RAILS",
+  "units": "mm",
+  "status": "design-prototype-not-production-approved",
+  "reference_commit": "6a99404a4e4220bb18b88d7d0f063571d1dad7b9",
+  "body": {
+    "inside_width": 226.4,
+    "inside_depth": 331.0,
+    "wall_height": 89.5,
+    "panel_thickness": 5.0,
+    "slot_length": 10.5,
+    "slot_width": 5.5,
+    "bracket_shim": 1.0,
+    "floor_split_y": 0.0,
+    "seam_gap": 0.3,
+    "edge_radius": 0.6,
+    "center_pair_offset_y": 25.0
+  },
+  "lid": {
+    "wall_thickness": 5.0,
+    "rise_to_roof_underside": 38.0,
+    "roof_thickness": 5.0,
+    "locator_engagement": 7.5,
+    "locator_thickness": 5.0,
+    "locator_clearance_per_side": 0.3,
+    "ledge_projection": 3.0,
+    "ledge_height": 5.0,
+    "roof_edge_clearance": 0.3,
+    "roof_split_y": 0.0
+  },
+  "printer": {
+    "name": "Bambu Lab H2D",
+    "user_max_part_edge": 350.0,
+    "single_nozzle_xy": [
+      325.0,
+      320.0
+    ],
+    "dual_nozzle_xy": [
+      300.0,
+      320.0
+    ],
+    "combined_nozzle_xy_reference_only": [
+      350.0,
+      320.0
+    ],
+    "z_max": 325.0,
+    "brim_allowance_each_side": 5.0,
+    "long_wall_rotation_deg": 45.0
+  },
+  "notes": [
+    "5mm means nominal panel thickness, not layer height or infill width.",
+    "STL is unitless; the supplied reference is interpreted as millimetres.",
+    "The reference lid-edge STL is inspected as a geometric idea; it is not uniformly scaled.",
+    "Metal variant and its full-set handoff are unchanged.",
+    "Printed edge guards and fastening ears are omitted: the 5mm panels themselves have softened outer edges.",
+    "Lid and body remain joined only by removable transport straps. L brackets and M5 fasteners are metal, not printed substitutes.",
+    "Single-nozzle build-area checks use a rectangular envelope plus 5mm brim, not a completed Bambu Studio slice.",
+    "Lid interior rise is 38mm (2mm more than the supplied reference profile) to clear modeled M5 roof-fastener tips above the 27mm knob-height assumption.",
+    "P2 removes both floor and roof seam joining strips, their fasteners, washers and holes.",
+    "Floor halves have equal size, split at Y=0 with the retained 0.3mm assembly gap.",
+    "Each long-side lower central bracket is replaced by two independent brackets at Y=-25/+25mm. The rail-mount hole near Y=0 is preserved.",
+    "Floor and roof halves are supported independently at the perimeter. No direct seam connector, glue or new interlock is added."
+  ]
+}

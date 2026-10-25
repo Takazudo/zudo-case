@@ -1,0 +1,1864 @@
+[
+  {
+    "check": "valid solid floor-1",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim floor-1",
+    "passed": true,
+    "footprint": [
+      246.4,
+      180.35
+    ]
+  },
+  {
+    "check": "part edge <=350 floor-1",
+    "passed": true,
+    "dimensions": [
+      236.40000000000003,
+      170.35,
+      5.0
+    ]
+  },
+  {
+    "check": "readback STL floor-1",
+    "passed": true
+  },
+  {
+    "check": "readback STEP floor-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-2",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim floor-2",
+    "passed": true,
+    "footprint": [
+      246.4,
+      180.35
+    ]
+  },
+  {
+    "check": "part edge <=350 floor-2",
+    "passed": true,
+    "dimensions": [
+      236.40000000000003,
+      170.35,
+      5.0
+    ]
+  },
+  {
+    "check": "readback STL floor-2",
+    "passed": true
+  },
+  {
+    "check": "readback STEP floor-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid wall-front",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim wall-front",
+    "passed": true,
+    "footprint": [
+      236.4,
+      99.5
+    ]
+  },
+  {
+    "check": "part edge <=350 wall-front",
+    "passed": true,
+    "dimensions": [
+      226.4,
+      89.5,
+      5.000000000000011
+    ]
+  },
+  {
+    "check": "readback STL wall-front",
+    "passed": true
+  },
+  {
+    "check": "readback STEP wall-front",
+    "passed": true
+  },
+  {
+    "check": "valid solid wall-back",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim wall-back",
+    "passed": true,
+    "footprint": [
+      236.4,
+      99.5
+    ]
+  },
+  {
+    "check": "part edge <=350 wall-back",
+    "passed": true,
+    "dimensions": [
+      226.4,
+      89.5,
+      5.000000000000011
+    ]
+  },
+  {
+    "check": "readback STL wall-back",
+    "passed": true
+  },
+  {
+    "check": "readback STEP wall-back",
+    "passed": true
+  },
+  {
+    "check": "valid solid wall-right",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim wall-right",
+    "passed": true,
+    "footprint": [
+      313.9124,
+      313.9124
+    ]
+  },
+  {
+    "check": "part edge <=350 wall-right",
+    "passed": true,
+    "dimensions": [
+      341.0,
+      89.5,
+      5.000000000000011
+    ]
+  },
+  {
+    "check": "readback STL wall-right",
+    "passed": true
+  },
+  {
+    "check": "readback STEP wall-right",
+    "passed": true
+  },
+  {
+    "check": "valid solid wall-left",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim wall-left",
+    "passed": true,
+    "footprint": [
+      313.9124,
+      313.9124
+    ]
+  },
+  {
+    "check": "part edge <=350 wall-left",
+    "passed": true,
+    "dimensions": [
+      341.0,
+      89.5,
+      5.000000000000011
+    ]
+  },
+  {
+    "check": "readback STL wall-left",
+    "passed": true
+  },
+  {
+    "check": "readback STEP wall-left",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-lower-front-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-lower-front-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-lower-back-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-lower-back-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-lower-right-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-lower-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-lower-right-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-lower-right-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-lower-left-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-lower-left-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-lower-left-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-lower-left-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-corner--1--1-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-corner--1--1-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-corner--1-1-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-corner--1-1-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-corner-1--1-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-corner-1--1-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-corner-1-1-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid bracket-corner-1-1-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-front-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-front-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-front-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-front-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-front-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-front-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-front-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-front-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-front-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-front-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-front-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-front-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-front-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-front-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-front-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-front-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-front-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-front-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-front-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-front-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-front-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-front-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-front-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-front-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-back-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-back-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-back-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-back-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-back-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-back-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-back-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-back-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-back-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-back-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-back-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-back-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-back-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-back-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-back-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-back-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-back-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-back-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-back-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-back-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-back-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-back-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-back-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-back-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-right-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-right-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-right-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-right-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-right-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-right-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-right-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-right-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-right-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-right-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-right-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-right-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-right-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-right-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-right-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-right-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-right-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-right-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-right-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-right-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-right-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-right-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-right-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-right-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-right-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-right-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-right-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-right-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-left-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-left-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-left-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-left-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-left-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-left-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-left-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-left-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-left-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-left-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-left-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-left-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-left-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-left-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-left-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-left-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-left-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-left-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-left-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-left-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-left-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-left-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-left-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-left-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-left-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-left-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-left-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-left-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid inner-left-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid outer-left-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid bolt-left-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid nut-left-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-inside-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-outside-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-bolt-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-round-pad-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-nut-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-inside-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-outside-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-bolt-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-round-pad-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-nut-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-inside-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-outside-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-bolt-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-round-pad-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-nut-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-inside-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-outside-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-bolt-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-round-pad-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-nut-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-inside-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-outside-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-bolt-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-round-pad-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-nut-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-inside-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-outside-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-bolt-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-round-pad-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-nut-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-inside-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-outside-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-bolt-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-round-pad-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-nut-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-inside-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-outside-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-bolt-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-round-pad-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-nut-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-inside-8",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-outside-8",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-bolt-8",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-round-pad-8",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-nut-8",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-inside-9",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-outside-9",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-bolt-9",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-round-pad-9",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-nut-9",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-inside-10",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-outside-10",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-bolt-10",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-round-pad-10",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-nut-10",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-inside-11",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-pad-outside-11",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-bolt-11",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-round-pad-11",
+    "passed": true
+  },
+  {
+    "check": "valid solid floor-nut-11",
+    "passed": true
+  },
+  {
+    "check": "valid solid foot--1--1",
+    "passed": true
+  },
+  {
+    "check": "valid solid foot--1-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid foot-1--1",
+    "passed": true
+  },
+  {
+    "check": "valid solid foot-1-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-edge-front",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim lid-edge-front",
+    "passed": true,
+    "footprint": [
+      236.4,
+      60.5
+    ]
+  },
+  {
+    "check": "part edge <=350 lid-edge-front",
+    "passed": true,
+    "dimensions": [
+      226.4,
+      50.50000000000001,
+      10.300000000000002
+    ]
+  },
+  {
+    "check": "readback STL lid-edge-front",
+    "passed": true
+  },
+  {
+    "check": "readback STEP lid-edge-front",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bracket-front-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-shim-front-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-cap-front-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bolt-front-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-nut-front-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bracket-front-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-shim-front-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-cap-front-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bolt-front-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-nut-front-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-edge-back",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim lid-edge-back",
+    "passed": true,
+    "footprint": [
+      236.4,
+      60.5
+    ]
+  },
+  {
+    "check": "part edge <=350 lid-edge-back",
+    "passed": true,
+    "dimensions": [
+      226.4,
+      50.50000000000001,
+      10.300000000000002
+    ]
+  },
+  {
+    "check": "readback STL lid-edge-back",
+    "passed": true
+  },
+  {
+    "check": "readback STEP lid-edge-back",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bracket-back-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-shim-back-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-cap-back-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bolt-back-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-nut-back-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bracket-back-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-shim-back-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-cap-back-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bolt-back-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-nut-back-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-edge-right",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim lid-edge-right",
+    "passed": true,
+    "footprint": [
+      281.0319,
+      281.0319
+    ]
+  },
+  {
+    "check": "part edge <=350 lid-edge-right",
+    "passed": true,
+    "dimensions": [
+      341.0,
+      50.50000000000001,
+      10.300000000000002
+    ]
+  },
+  {
+    "check": "readback STL lid-edge-right",
+    "passed": true
+  },
+  {
+    "check": "readback STEP lid-edge-right",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bracket-right-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-shim-right-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-cap-right-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bolt-right-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-nut-right-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bracket-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-shim-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-cap-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bolt-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-nut-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-edge-left",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim lid-edge-left",
+    "passed": true,
+    "footprint": [
+      281.0319,
+      281.0319
+    ]
+  },
+  {
+    "check": "part edge <=350 lid-edge-left",
+    "passed": true,
+    "dimensions": [
+      341.0,
+      50.50000000000001,
+      10.300000000000002
+    ]
+  },
+  {
+    "check": "readback STL lid-edge-left",
+    "passed": true
+  },
+  {
+    "check": "readback STEP lid-edge-left",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bracket-left-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-shim-left-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-cap-left-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bolt-left-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-nut-left-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bracket-left-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-shim-left-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-cap-left-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-bolt-left-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-nut-left-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-top-1",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim lid-top-1",
+    "passed": true,
+    "footprint": [
+      235.8,
+      175.05
+    ]
+  },
+  {
+    "check": "part edge <=350 lid-top-1",
+    "passed": true,
+    "dimensions": [
+      225.80000000000004,
+      165.04999999999998,
+      5.0
+    ]
+  },
+  {
+    "check": "readback STL lid-top-1",
+    "passed": true
+  },
+  {
+    "check": "readback STEP lid-top-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid lid-top-2",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim lid-top-2",
+    "passed": true,
+    "footprint": [
+      235.8,
+      175.05
+    ]
+  },
+  {
+    "check": "part edge <=350 lid-top-2",
+    "passed": true,
+    "dimensions": [
+      225.8,
+      165.04999999999998,
+      5.0
+    ]
+  },
+  {
+    "check": "readback STL lid-top-2",
+    "passed": true
+  },
+  {
+    "check": "readback STEP lid-top-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-bolt-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-pad-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-nut-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-underpad-0",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-bolt-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-pad-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-nut-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-underpad-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-bolt-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-pad-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-nut-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-underpad-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-bolt-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-pad-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-nut-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-underpad-3",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-bolt-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-pad-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-nut-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-underpad-4",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-bolt-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-pad-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-nut-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-underpad-5",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-bolt-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-pad-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-nut-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-underpad-6",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-bolt-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-pad-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-nut-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid roof-underpad-7",
+    "passed": true
+  },
+  {
+    "check": "valid solid frame-envelope",
+    "passed": true
+  },
+  {
+    "check": "valid solid pad-horizontal",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim pad-horizontal",
+    "passed": true,
+    "footprint": [
+      30.0,
+      22.0
+    ]
+  },
+  {
+    "check": "part edge <=350 pad-horizontal",
+    "passed": true,
+    "dimensions": [
+      20.0,
+      12.0,
+      1.0
+    ]
+  },
+  {
+    "check": "readback STL pad-horizontal",
+    "passed": true
+  },
+  {
+    "check": "readback STEP pad-horizontal",
+    "passed": true
+  },
+  {
+    "check": "valid solid pad-vertical",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim pad-vertical",
+    "passed": true,
+    "footprint": [
+      22.0,
+      30.0
+    ]
+  },
+  {
+    "check": "part edge <=350 pad-vertical",
+    "passed": true,
+    "dimensions": [
+      12.0,
+      20.0,
+      1.0
+    ]
+  },
+  {
+    "check": "readback STL pad-vertical",
+    "passed": true
+  },
+  {
+    "check": "readback STEP pad-vertical",
+    "passed": true
+  },
+  {
+    "check": "valid solid washer-round",
+    "passed": true
+  },
+  {
+    "check": "flat placement with 5mm brim washer-round",
+    "passed": true,
+    "footprint": [
+      20.0,
+      20.0
+    ]
+  },
+  {
+    "check": "part edge <=350 washer-round",
+    "passed": true,
+    "dimensions": [
+      10.0,
+      10.0,
+      1.0
+    ]
+  },
+  {
+    "check": "readback STL washer-round",
+    "passed": true
+  },
+  {
+    "check": "readback STEP washer-round",
+    "passed": true
+  },
+  {
+    "check": "valid solid section-wall-right",
+    "passed": true
+  },
+  {
+    "check": "valid solid section-lid-edge-right",
+    "passed": true
+  },
+  {
+    "check": "valid solid section-lid-top-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid lower-wall-front",
+    "passed": true
+  },
+  {
+    "check": "valid solid lower-wall-back",
+    "passed": true
+  },
+  {
+    "check": "valid solid lower-wall-right",
+    "passed": true
+  },
+  {
+    "check": "valid solid lower-wall-left",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-floor-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-floor-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-wall-right",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-bracket-lower-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-bracket-lower-right-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-inner-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-outer-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-bolt-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-nut-right-1",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-inner-right-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-outer-right-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-bolt-right-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-nut-right-2",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-floor-pad-inside-9",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-floor-pad-outside-9",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-floor-bolt-9",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-floor-round-pad-9",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-floor-nut-9",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-floor-pad-inside-10",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-floor-pad-outside-10",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-floor-bolt-10",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-floor-round-pad-10",
+    "passed": true
+  },
+  {
+    "check": "valid solid pair-floor-nut-10",
+    "passed": true
+  },
+  {
+    "check": "printed structure and bracket nominal overlap",
+    "passed": true,
+    "collisions": []
+  },
+  {
+    "check": "sampled straight lid lift path",
+    "passed": true,
+    "samples": [
+      {
+        "lift": 0,
+        "overlap_mm3": 0.0
+      },
+      {
+        "lift": 0.5,
+        "overlap_mm3": 0.0
+      },
+      {
+        "lift": 1,
+        "overlap_mm3": 0.0
+      },
+      {
+        "lift": 2,
+        "overlap_mm3": 0.0
+      },
+      {
+        "lift": 4,
+        "overlap_mm3": 0.0
+      },
+      {
+        "lift": 6,
+        "overlap_mm3": 0.0
+      },
+      {
+        "lift": 7.5,
+        "overlap_mm3": 0
+      },
+      {
+        "lift": 8,
+        "overlap_mm3": 0
+      },
+      {
+        "lift": 10,
+        "overlap_mm3": 0
+      },
+      {
+        "lift": 15,
+        "overlap_mm3": 0
+      }
+    ]
+  },
+  {
+    "check": "body keeps interior",
+    "passed": true
+  },
+  {
+    "check": "stock bracket count",
+    "passed": true
+  },
+  {
+    "check": "lid vs assumed 27mm knob zone",
+    "passed": true,
+    "collisions": [],
+    "scope": "x +-102 / y +-150 / z rim..rim+27; not source detailed modules"
+  },
+  {
+    "check": "P2 no seam-strip parts or hardware",
+    "passed": true
+  },
+  {
+    "check": "P2 centered floor split",
+    "passed": true
+  },
+  {
+    "check": "P2 equal floor panel sizes",
+    "passed": true,
+    "size_mm": [
+      236.40164475829457,
+      170.35082247914733,
+      5.008066423818862
+    ]
+  },
+  {
+    "check": "P2 floor halves same volume",
+    "passed": true
+  },
+  {
+    "check": "P2 floor halves identical after 180 degree rotation",
+    "passed": true
+  },
+  {
+    "check": "P2 floor seam gap",
+    "passed": true,
+    "gap_mm": 0.2999997999998689
+  },
+  {
+    "check": "P2 twelve floor bracket slots",
+    "passed": true
+  },
+  {
+    "check": "P2 four lower fastenings right",
+    "passed": true,
+    "positions_mm": [
+      -126.5,
+      -25.0,
+      25.0,
+      126.5
+    ]
+  },
+  {
+    "check": "P2 no central lower wall hole right",
+    "passed": true
+  },
+  {
+    "check": "P2 preserves central rail mount right",
+    "passed": true
+  },
+  {
+    "check": "P2 support sits entirely on one floor half right/-25.0",
+    "passed": true,
+    "range_mm": [
+      -33.00000010000003,
+      -16.99999989999997
+    ]
+  },
+  {
+    "check": "P2 support sits entirely on one floor half right/25.0",
+    "passed": true,
+    "range_mm": [
+      16.99999989999997,
+      33.00000010000003
+    ]
+  },
+  {
+    "check": "P2 four lower fastenings left",
+    "passed": true,
+    "positions_mm": [
+      -126.5,
+      -25.0,
+      25.0,
+      126.5
+    ]
+  },
+  {
+    "check": "P2 no central lower wall hole left",
+    "passed": true
+  },
+  {
+    "check": "P2 preserves central rail mount left",
+    "passed": true
+  },
+  {
+    "check": "P2 support sits entirely on one floor half left/-25.0",
+    "passed": true,
+    "range_mm": [
+      16.99999989999997,
+      33.00000010000003
+    ]
+  },
+  {
+    "check": "P2 support sits entirely on one floor half left/25.0",
+    "passed": true,
+    "range_mm": [
+      -33.00000010000003,
+      -16.99999989999997
+    ]
+  },
+  {
+    "check": "P2 old floor strip bore removed -60/10",
+    "passed": true
+  },
+  {
+    "check": "P2 old floor strip bore removed -60/30",
+    "passed": true
+  },
+  {
+    "check": "P2 old roof strip bore removed -60/-10",
+    "passed": true
+  },
+  {
+    "check": "P2 old roof strip bore removed -60/10",
+    "passed": true
+  },
+  {
+    "check": "P2 old floor strip bore removed 60/10",
+    "passed": true
+  },
+  {
+    "check": "P2 old floor strip bore removed 60/30",
+    "passed": true
+  },
+  {
+    "check": "P2 old roof strip bore removed 60/-10",
+    "passed": true
+  },
+  {
+    "check": "P2 old roof strip bore removed 60/10",
+    "passed": true
+  },
+  {
+    "check": "P2 new wall fastener alignment right/1",
+    "passed": true
+  },
+  {
+    "check": "P2 new wall fastener alignment right/2",
+    "passed": true
+  },
+  {
+    "check": "P2 new wall fastener alignment left/1",
+    "passed": true
+  },
+  {
+    "check": "P2 new wall fastener alignment left/2",
+    "passed": true
+  },
+  {
+    "check": "P2 structural printed count",
+    "passed": true
+  },
+  {
+    "check": "whole floor needs split for flat single-nozzle print",
+    "passed": true
+  },
+  {
+    "check": "whole lid top needs split for flat single-nozzle print",
+    "passed": true
+  },
+  {
+    "check": "all detailed rail/PCB, warpage, print strength, transport",
+    "status": "NOT VERIFIED: rail mesh absent; envelope shown only. Bambu Studio slicing not performed."
+  }
+]

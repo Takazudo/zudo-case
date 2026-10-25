@@ -216,6 +216,30 @@
     "sidebar_position": 20
   },
   {
+    "path": "printed-5mm/design.mdx",
+    "title": "P3構造と組立",
+    "description": "7U40・5mm印刷板、レール、金具、載せ蓋の位置関係。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "printed-5mm/index.mdx",
+    "title": "7U40・5mm家庭印刷ケース",
+    "description": "金属R10と独立したP3家庭印刷版の設計・プレビュー・印刷ファイル。",
+    "sidebar_position": 45
+  },
+  {
+    "path": "printed-5mm/preview.mdx",
+    "title": "P3・3Dプレビュー",
+    "description": "印刷ケースと実形状レールの9つの確認画面。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "printed-5mm/print-files.mdx",
+    "title": "P3印刷ファイルと手順",
+    "description": "家庭印刷用STL、編集ソース、印刷枚数と確認範囲。",
+    "sidebar_position": 30
+  },
+  {
     "path": "resources/body-preview.mdx",
     "title": "R6・本体とレールのプレビュー",
     "description": "８mmスペーサーと３機種の名目寸法を確認する。",

@@ -2572,5 +2572,12 @@
       "lid_engagement_mm": 12,
       "plate_under_clearance_to_assumed_knob_mm": 4
     }
+  },
+  "current_printed_5mm_candidate": {
+    "model": "7u40",
+    "revision": "P3-PRINTED-5MM-7U-RAILS",
+    "status": "HOME_PRINT_CANDIDATE_NOT_PHYSICALLY_VERIFIED",
+    "production_approved": false,
+    "source": "engineering/printed-5mm/p3/"
   }
 }

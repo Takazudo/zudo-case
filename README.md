@@ -16,6 +16,10 @@
 
 [R9-FITFIX-01](src/content/docs/design/r9-fitfix-01.mdx)を追加。ガードと蓋座面の修正候補で、固定環境の生成・検査記録は `engineering/r9-fitfix-01/verification/`。旧R9は履歴として保存し、現物嵌合・接着・運搬と製造承認は未完了。
 
+## 独立した7U40・5mm家庭印刷版
+
+[P3-PRINTED-5MM-7U-RAILS](src/content/docs/printed-5mm/index.mdx)は黒ASAの本体・載せ蓋12構造部品を家庭印刷する別系列です。[3Dプレビュー](src/content/docs/printed-5mm/preview.mdx)と[STL/編集ソース](src/content/docs/printed-5mm/print-files.mdx)を参照。R10金属ケースと準備済みJLCカートは変更しません。実スライス・現物嵌合・強度・運搬は未確認です。
+
 ## 家庭印刷用8mmスペーサー
 
 フレームとケース側板の間に入れる[8mmスペーサーのSTL・編集用ソース・印刷手順](engineering/home-print-spacer-01/README.md)を追加。外径10mm／穴径5.5mmはR6由来の仮寸法です。まず1個で現物確認し、3U60は4個、7U40/7U60は各10個を印刷します。

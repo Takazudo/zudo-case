@@ -30,6 +30,8 @@ jobs:
       - run: pnpm test:two-way
       - run: pnpm check:two-way
       - run: pnpm check:docs
+      - run: pnpm check:printed-5mm
+      - run: pnpm test:printed-5mm
       - run: pnpm check:r9
       - run: node --test tests/fitfix-pcb-materials.test.mjs
       - run: pnpm check:fitfix
@@ -107,3 +109,20 @@ jobs:
         run: uv run --locked --project engineering/r9-prototype-01 python engineering/r10-fullset-01/tests/regenerate.py
       - name: Verify exported cap margins and fixed-bracket travel scope
         run: uv run --locked --project engineering/r9-prototype-01 python engineering/r10-fullset-01/tests/cap_margins.py --check
+
+  printed-5mm-cad:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@557e51de59eb14aaaba2ed9621916900a91d50c6 # v6.6.1
+        with:
+          version: 0.10.2
+      - name: Build printed P3 from clean locked source
+        run: |
+          uv sync --locked --project engineering/printed-5mm/p3
+          uv run --locked --project engineering/printed-5mm/p3 python engineering/printed-5mm/p3/build.py --out "$RUNNER_TEMP/printed-p3"
+      - name: Check generated print inventory and accepted geometry
+        run: python3 engineering/printed-5mm/p3/verify.py --out "$RUNNER_TEMP/printed-p3" --published-root .
+      - name: Reject invalid print, scene and parameter inputs
+        run: python3 engineering/printed-5mm/p3/negative.py --out "$RUNNER_TEMP/printed-p3"

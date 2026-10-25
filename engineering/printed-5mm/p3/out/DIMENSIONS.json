@@ -1,0 +1,54 @@
+{
+  "body_outside": [
+    236.4,
+    341.0,
+    94.5
+  ],
+  "body_inside": [
+    226.4,
+    331.0,
+    89.5
+  ],
+  "roof_inside": [
+    225.8,
+    330.4,
+    5
+  ],
+  "lid_seat": 94.5,
+  "roof_underside": 132.5,
+  "roof_top": 137.5,
+  "height_including_roof_washer_and_head": 139.9,
+  "floor_half_size": [
+    236.4,
+    170.35,
+    5.0
+  ],
+  "floor_split_y": 0.0,
+  "paired_support_y": [
+    -25.0,
+    25.0
+  ],
+  "body_brackets": 20,
+  "lid_brackets": 8,
+  "knob_assumption_top": 121.5,
+  "roof_nominal_knob_clearance": 11.0,
+  "largest_part_edge": 341.0,
+  "rail_unit": {
+    "layout": "3U + 3U + 1U / 40HP",
+    "rails": 6,
+    "fixer_pcbs": 2,
+    "padder_pcbs": 6,
+    "spacers": 10,
+    "mounts": 10,
+    "rail_end_screws": 12,
+    "rail_length": 204,
+    "pcb_top_z": 93.0,
+    "rail_top_z": 92.935544,
+    "rail_support_below_rim": 1.564456000000007,
+    "inside_width": 226.4,
+    "frame_width": 210.4,
+    "spacer_each": 8,
+    "mount_z": 71.6894265,
+    "source_rigid_only": true
+  }
+}
