@@ -70,13 +70,98 @@
     },
     "combined_shipping": null,
     "complete_case_total": null,
-    "note": "Batch totals differ slightly from sums of individually rounded displayed row prices. Do not substitute a line-price sum or add separate shipping estimates as a final combined total. Cart summary is zero with all items unselected."
+    "note": "Earlier batch-display snapshot totals 20251 JPY; current cart-row prices sum to 20248 JPY. The 3 JPY display difference is preserved; its cause is unverified. Shipping excluded, tax unknown. Do not add separate shipping estimates as a final combined shipping charge. No final engineering-reviewed price or invoice is confirmed.",
+    "cart_row_breakdown": {
+      "basis": "Sum of currently observed cart row prices, each quantity1; not a final engineering-reviewed quote",
+      "full_set": {
+        "item_count": 26,
+        "metal_jpy": 12308,
+        "pa12_jpy": 7940,
+        "total_jpy": 20248,
+        "part_ids": [
+          "panel-front",
+          "panel-back",
+          "panel-right",
+          "panel-left",
+          "panel-floor",
+          "lid-plate",
+          "top-0-0",
+          "top-0-1",
+          "top-1-0",
+          "top-1-1",
+          "corner--1--1",
+          "corner--1-1",
+          "corner-1--1",
+          "corner-1-1",
+          "lower-front-0",
+          "lower-front-1",
+          "lower-back-0",
+          "lower-back-1",
+          "lower-right-0",
+          "lower-right-1",
+          "lower-left-0",
+          "lower-left-1",
+          "lid-frame-fr",
+          "lid-frame-fl",
+          "lid-frame-bl",
+          "lid-frame-br"
+        ]
+      },
+      "base_without_lid": {
+        "item_count": 21,
+        "metal_jpy": 9310,
+        "pa12_jpy": 2872,
+        "total_jpy": 12182,
+        "part_ids": [
+          "panel-front",
+          "panel-back",
+          "panel-right",
+          "panel-left",
+          "panel-floor",
+          "top-0-0",
+          "top-0-1",
+          "top-1-0",
+          "top-1-1",
+          "corner--1--1",
+          "corner--1-1",
+          "corner-1--1",
+          "corner-1-1",
+          "lower-front-0",
+          "lower-front-1",
+          "lower-back-0",
+          "lower-back-1",
+          "lower-right-0",
+          "lower-right-1",
+          "lower-left-0",
+          "lower-left-1"
+        ]
+      },
+      "lid_only": {
+        "item_count": 5,
+        "metal_jpy": 2998,
+        "pa12_jpy": 5068,
+        "total_jpy": 8066,
+        "part_ids": [
+          "lid-plate",
+          "lid-frame-fr",
+          "lid-frame-fl",
+          "lid-frame-bl",
+          "lid-frame-br"
+        ]
+      },
+      "classification": "Lid is lid-plate plus four lid-frame parts. top-* guards belong to the body/base. Every part counted once.",
+      "shipping_included": false,
+      "tax_status": "not shown/unknown",
+      "cart_external_hardware_and_home_asa_included": false
+    },
+    "batch_minus_cart_rows_jpy": 3,
+    "display_difference_cause": "unverified; rounding is not established"
   },
   "pending": [
     "Supplier DFM and thin-wall review",
     "Dedicated D4 hanging-hole and rack-mark acceptance",
     "Final reviewed price, tax, combined shipping and delivery",
-    "User final order/payment decision",
+    "Owner intends to order this set; order submission and payment completion not confirmed",
     "Physical fit, assembly, load and transport validation"
   ],
   "excluded": [
@@ -432,5 +517,12 @@
       "cart_reference": "D2026102645500030-7543760A",
       "displayed_price_jpy": 1267
     }
-  ]
+  ],
+  "owner_intent": {
+    "statement": "この準備済み26点セットを注文する予定",
+    "source": "ユーザー: OK。これでオーダーするのでとりあえずレポジトリのドキュメントにメモしておいて",
+    "scope": "R10-FULLSET-01 one full set, six aluminum and twenty PA12, qty1 each",
+    "order_completion_confirmed": false,
+    "payment_completion_confirmed": false
+  }
 }
