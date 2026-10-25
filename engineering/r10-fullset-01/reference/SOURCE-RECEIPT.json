@@ -1,0 +1,167 @@
+{
+  "created_for": "Local Codex handoff; not manufacturing data",
+  "planning_date": "2026-10-26",
+  "repository": "https://github.com/Takazudo/zudo-case",
+  "base_branch": "main",
+  "inspected_commit": "6a99404a4e4220bb18b88d7d0f063571d1dad7b9",
+  "planning_github_mutations": false,
+  "new_fullset_CAD_generated": false,
+  "repository_checks_rerun": false,
+  "r2_input": {
+    "archive": "zudo-case-fastened-guards-r2.zip",
+    "bytes": 4077566,
+    "sha256": "70223eeaf38f58db052c794c88d6b4e8877559558100cd9568728139e0275ec7",
+    "zip_crc_pass": true,
+    "zip_member_count": 35,
+    "original_manifest_members_verified": 34,
+    "embedded_reference": "reference/r2",
+    "original_members_unchanged": true,
+    "html_sha256": "19c60becd7222c1c331b51133eb541206f57640b9ed9aa798a4b04a6bb128f61",
+    "archived_instructions_superseded": [
+      "reference/r2/NEXT-ORDER.md"
+    ]
+  },
+  "prototype_inspection_this_turn": {
+    "all_manifest_listed_sizes_and_hashes_match": true,
+    "python_source_syntax_parses": true,
+    "new1_categories": {
+      "panels": 5,
+      "brackets": 18,
+      "top": 4,
+      "guardA": 8,
+      "guardB": 4,
+      "inner": 36,
+      "caps": 46,
+      "hardware": 108,
+      "feet": 4
+    },
+    "guard_instances": 16,
+    "new_ASA_washer_instances": 72,
+    "retained_bottom_washer_instances": 10
+  },
+  "historical_prototype_evidence_not_rerun": {
+    "geometry_record_entries": 68,
+    "browser_record_entries": 83,
+    "renderer": {
+      "version": "Canvas 2D",
+      "renderer": "CPU triangle rasterizer + z-buffer; not WebGL"
+    },
+    "limits": [
+      "No physical fit/load/creep tests",
+      "No real GPU/WebGL claim from Canvas rendering",
+      "Touch and native fullscreen are not tested"
+    ],
+    "summary": {
+      "passed": 83,
+      "failed": 0
+    }
+  },
+  "user_reference_images": [
+    {
+      "path": "reference/user-images/ss-2026-10-25-020632.png",
+      "role": "Upper-channel fit feedback",
+      "bytes": 37956,
+      "sha256": "fce3166b58a6e7e477e670b08fe866ddd5b1f525c9f9f09943d028cf7e2fb283"
+    },
+    {
+      "path": "reference/user-images/ss-2026-10-25-020831.png",
+      "role": "L-bracket/panel contact and washer feedback",
+      "bytes": 2323787,
+      "sha256": "e6328d26cffd6107e0c5371f5af73eea8fd82dc079f6526e6a0cf92809a95f99"
+    },
+    {
+      "path": "reference/user-images/ss-2026-10-25-020502.png",
+      "role": "Guard tab/fastener positions, one panel view",
+      "bytes": 2011145,
+      "sha256": "d6c5091c9b981c424715bca532d9c7c6dec7c0c3404762d2b2cf0019f4872af6"
+    },
+    {
+      "path": "reference/user-images/ss-2026-10-25-020431.png",
+      "role": "Guard tab/fastener positions, other panel view",
+      "bytes": 402587,
+      "sha256": "bb4ee50e364711fdb4465cda84db6614f120c2b19aab4c830269f766b93e7e06"
+    },
+    {
+      "path": "reference/user-images/ss-2026-10-25-234216.png",
+      "role": "R1 washer protrusion feedback, corner",
+      "bytes": 219880,
+      "sha256": "4ef1a672cb3c1f67cfc8a653da5c459df35f6aece87b6578f08cd98804a521b3"
+    },
+    {
+      "path": "reference/user-images/ss-2026-10-25-234159.png",
+      "role": "R1 washer protrusion feedback, central overlap",
+      "bytes": 314839,
+      "sha256": "489496cee93c93fbdbb934b9a7ddd76ef194996c3169f1db560f4a79d9190c76"
+    },
+    {
+      "path": "reference/user-images/ss-2026-10-21-011709.png",
+      "role": "User M5 locknut product image",
+      "bytes": 162388,
+      "sha256": "801fee4dfc74b17a3a48fe2ba2ea9163bcdd697eea8675040eccce427f8dbf75"
+    },
+    {
+      "path": "reference/user-images/ss-2026-10-21-011738.png",
+      "role": "User M5 locknut dimension table",
+      "bytes": 745864,
+      "sha256": "e44c992c4adc651cf9420914d8c96e0e571681f8b524f83eec545abb6e0843a6"
+    }
+  ],
+  "source_references": [
+    {
+      "role": "current_main",
+      "url": "https://api.github.com/repos/Takazudo/zudo-case/branches/main"
+    },
+    {
+      "role": "open_pr_inventory",
+      "url": "https://api.github.com/repos/Takazudo/zudo-case/pulls?state=open&per_page=100&page=1"
+    },
+    {
+      "role": "repository_instructions",
+      "url": "https://github.com/Takazudo/zudo-case/blob/6a99404a4e4220bb18b88d7d0f063571d1dad7b9/AGENTS.md"
+    },
+    {
+      "role": "readme",
+      "url": "https://github.com/Takazudo/zudo-case/blob/6a99404a4e4220bb18b88d7d0f063571d1dad7b9/README.md"
+    },
+    {
+      "role": "status",
+      "url": "https://github.com/Takazudo/zudo-case/blob/6a99404a4e4220bb18b88d7d0f063571d1dad7b9/src/content/docs/overview/status.mdx"
+    },
+    {
+      "role": "selected_spec",
+      "url": "https://github.com/Takazudo/zudo-case/blob/6a99404a4e4220bb18b88d7d0f063571d1dad7b9/project/current-spec.json"
+    },
+    {
+      "role": "release_registry",
+      "url": "https://github.com/Takazudo/zudo-case/blob/6a99404a4e4220bb18b88d7d0f063571d1dad7b9/project/release-state.json"
+    },
+    {
+      "role": "m5_source_parameters",
+      "url": "https://github.com/Takazudo/zudo-case/blob/6a99404a4e4220bb18b88d7d0f063571d1dad7b9/engineering/r9-lid-m5-01/parameters.json"
+    },
+    {
+      "role": "m5_registry_guard",
+      "url": "https://github.com/Takazudo/zudo-case/blob/6a99404a4e4220bb18b88d7d0f063571d1dad7b9/scripts/sync-lid-m5.mjs"
+    },
+    {
+      "role": "anodizing_policy_history",
+      "url": "https://github.com/Takazudo/zudo-case/blob/6a99404a4e4220bb18b88d7d0f063571d1dad7b9/engineering/r9-anodizing-01/README.md"
+    },
+    {
+      "role": "check_workflow",
+      "url": "https://github.com/Takazudo/zudo-case/blob/6a99404a4e4220bb18b88d7d0f063571d1dad7b9/.github/workflows/check.yml"
+    },
+    {
+      "role": "deploy_guard",
+      "url": "https://github.com/Takazudo/zudo-case/blob/6a99404a4e4220bb18b88d7d0f063571d1dad7b9/.github/workflows/deploy.yml"
+    },
+    {
+      "role": "physical_issue",
+      "url": "https://github.com/Takazudo/zudo-case/issues/102"
+    },
+    {
+      "role": "supplier_wall_information",
+      "url": "https://jlc3dp.com/help/article/pa12-hp-nylon"
+    }
+  ]
+}

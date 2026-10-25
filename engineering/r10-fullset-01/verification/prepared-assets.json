@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "file": "R10-FULLSET-01-aluminum.zip",
+      "sha256": "709b65f7e12cc7901bde4212a9c4354adf41ced4915922c873ed1e13dbeeaede"
+    },
+    {
+      "file": "R10-FULLSET-01-pa12.zip",
+      "sha256": "b327e8267b4f667a1b620fae16049a8111af0b812c153bbec60697ebfd74b965"
+    },
+    {
+      "file": "R10-FULLSET-01-home-print.zip",
+      "sha256": "35edc8dbbdb454cc6f719c4464dd04b0d1408e8d2e29148285a9c68cab1538d7"
+    }
+  ],
+  "preview_identical": true,
+  "current_preview_index_link": true
+}

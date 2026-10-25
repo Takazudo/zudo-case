@@ -1,0 +1,283 @@
+{
+  "panel_joints": [
+    {
+      "instance": "shaft-front-0",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-front-1",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-front-2",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-front-3",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-front-4",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-front-5",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-back-0",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-back-1",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-back-2",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-back-3",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-back-4",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-back-5",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-right-0",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-right-1",
+      "length_mm": 16,
+      "grip_mm": 7.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 3.5
+    },
+    {
+      "instance": "shaft-right-2",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-right-3",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-right-4",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-right-5",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-right-6",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-left-0",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-left-1",
+      "length_mm": 16,
+      "grip_mm": 7.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 3.5
+    },
+    {
+      "instance": "shaft-left-2",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-left-3",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-left-4",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-left-5",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-left-6",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-floor-0",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-floor-1",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-floor-2",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-floor-3",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-floor-4",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-floor-5",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-floor-6",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-floor-7",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-floor-8",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    },
+    {
+      "instance": "shaft-floor-9",
+      "length_mm": 14,
+      "grip_mm": 6.5,
+      "nut_height_assumed_mm": 5,
+      "projection_mm": 2.5
+    }
+  ],
+  "lid": {
+    "quantity": 8,
+    "length_mm": 10,
+    "grip_mm": 3,
+    "nut_height_mm": [
+      4.7,
+      5
+    ],
+    "projection_mm": [
+      2,
+      2.3
+    ],
+    "washer_quantity": 0
+  },
+  "feet": {
+    "quantity": 4,
+    "height_assumed_mm": 3,
+    "bottom_fastener_projection_mm": 2.4,
+    "nominal_uncompressed_clearance_mm": 0.6
+  },
+  "straps": {
+    "quantity": 2,
+    "product": null
+  },
+  "unknowns": [
+    "Head diameters, bracket hole centers, nut and screw products, foot compression, strap product remain assumptions"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "revision": "R10-FULLSET-01",
+  "base_commit": "6a99404a4e4220bb18b88d7d0f063571d1dad7b9",
+  "model": "7u40",
+  "units": "mm",
+  "production_approved": false,
+  "body": {
+    "width": 229.4,
+    "depth": 334.0,
+    "height": 91.0,
+    "metal": 1.5
+  },
+  "guard": {
+    "wall": 1.0,
+    "cover": 5.0,
+    "fit_per_face": 0.1,
+    "adhesive_per_face": 0.0,
+    "end_gap": 0.5,
+    "vertical_end_gap": 0.25,
+    "outer_radius": 0
+  },
+  "lid": {
+    "rise_to_plate_underside": 30.0,
+    "frame_wall": 1.5,
+    "frame_seam": 0.4,
+    "plate_thickness": 1.5,
+    "plate_edge_gap": 0.6,
+    "plate_corner_radius": 3.0,
+    "top_lip": 0.3,
+    "ledge_depth": 8.0,
+    "ledge_thickness": 1.5,
+    "boss_depth": 4.4,
+    "nut_af": 5.9,
+    "nut_roof": 1.5,
+    "screw_inset": 6.0,
+    "front_screw_fraction": 0.3,
+    "side_screw_fraction": 0.5,
+    "assembly_hole": 3.4,
+    "locator_clearance": 0.7,
+    "locator_wall": 2.0,
+    "locator_engagement": 12.0,
+    "bridge_height": 2.5,
+    "lead_radius": 0.4,
+    "module_panel": 2.0,
+    "knob_height": 25.0
+  },
+  "selected_profile": "7u40-t1-groove1p70-m5",
+  "slot": {
+    "length": 10.5,
+    "width": 5.5,
+    "nominal_shift": 1.0
+  },
+  "m5": {
+    "through_hole": 5.5,
+    "pocket_af": 8.4,
+    "pocket_effective_depth": 5.5,
+    "nut_roof": 1.5,
+    "nut_wall_min": 1.6,
+    "boss_half_length": 7.0,
+    "plate_edge_to_axis": 5.5,
+    "pocket_overcut": 0.2
+  },
+  "hanging_holes": {
+    "floor": [
+      0,
+      0
+    ],
+    "front": [
+      0,
+      45
+    ],
+    "back": [
+      0,
+      45
+    ],
+    "left": [
+      65,
+      26
+    ],
+    "right": [
+      65,
+      26
+    ],
+    "lid": [
+      0,
+      0
+    ]
+  },
+  "costs": {
+    "aluminum": null,
+    "pa12": null,
+    "hardware": null
+  }
+}

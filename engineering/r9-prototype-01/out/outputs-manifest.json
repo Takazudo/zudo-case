@@ -244,10 +244,10 @@
       "sha256": "3bd3803775af001e1c73c6da3db238bc3a99f2b7b33baab11cf8e323a80fff85"
     },
     {
-      "bytes": 38741,
+      "bytes": 40121,
       "kind": "document_registry_reference",
       "path": "project/current-spec.json",
-      "sha256": "ae3a41f42418c6e879780221d3ba2384fd59ff74d75cc075d41b5b6f0cc91903"
+      "sha256": "c88bc995753076807dd41abaa3701baeff2e5a5523dd1f606b18d0f224045cdf"
     },
     {
       "bytes": 4388,
@@ -256,10 +256,10 @@
       "sha256": "d517e1311a26f9a8894ad4772051c70d5de09c9192fa371a083597432fbc274f"
     },
     {
-      "bytes": 3196,
+      "bytes": 3918,
       "kind": "user_decisions_reference",
       "path": "project/source-notes/user-decisions.md",
-      "sha256": "0e1692d770600bc7d9da3e4995584e776bca04d831cac2d5db47950742d1f54b"
+      "sha256": "f878491e770e3eadf8eaa434da57ea4ce86b5dfda5b2254831c053c61dc5e5c4"
     },
     {
       "bytes": 34534918,

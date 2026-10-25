@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "width": 1440,
+      "file": "R10-FULLSET-01-aluminum.zip",
+      "bytes": 189842,
+      "sha256": "34fce4c2e3e74d16b6fa00a8cc8056596324484dbf6e982d446875952acb5409"
+    },
+    {
+      "width": 1440,
+      "file": "R10-FULLSET-01-pa12.zip",
+      "bytes": 752282,
+      "sha256": "97927530c278e91e38550bedded6eeed4dbbd172e9f7c3b9d1bdc369cb596817"
+    },
+    {
+      "width": 1440,
+      "file": "R10-FULLSET-01-home-print.zip",
+      "bytes": 92297,
+      "sha256": "fa1210f3b501dcb06a96d5c9b3fa2810f9b13028ad57c490923ed7ee5d75a2fd"
+    },
+    {
+      "width": 390,
+      "file": "R10-FULLSET-01-aluminum.zip",
+      "bytes": 189842,
+      "sha256": "34fce4c2e3e74d16b6fa00a8cc8056596324484dbf6e982d446875952acb5409"
+    },
+    {
+      "width": 390,
+      "file": "R10-FULLSET-01-pa12.zip",
+      "bytes": 752282,
+      "sha256": "97927530c278e91e38550bedded6eeed4dbbd172e9f7c3b9d1bdc369cb596817"
+    },
+    {
+      "width": 390,
+      "file": "R10-FULLSET-01-home-print.zip",
+      "bytes": 92297,
+      "sha256": "fa1210f3b501dcb06a96d5c9b3fa2810f9b13028ad57c490923ed7ee5d75a2fd"
+    },
+    {
+      "width": 320,
+      "file": "R10-FULLSET-01-aluminum.zip",
+      "bytes": 189842,
+      "sha256": "34fce4c2e3e74d16b6fa00a8cc8056596324484dbf6e982d446875952acb5409"
+    },
+    {
+      "width": 320,
+      "file": "R10-FULLSET-01-pa12.zip",
+      "bytes": 752282,
+      "sha256": "97927530c278e91e38550bedded6eeed4dbbd172e9f7c3b9d1bdc369cb596817"
+    },
+    {
+      "width": 320,
+      "file": "R10-FULLSET-01-home-print.zip",
+      "bytes": 92297,
+      "sha256": "fa1210f3b501dcb06a96d5c9b3fa2810f9b13028ad57c490923ed7ee5d75a2fd"
+    }
+  ]
+}

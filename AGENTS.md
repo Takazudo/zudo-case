@@ -53,7 +53,7 @@ The initial environment could not resolve npm. `scripts/setup.mjs` generates an 
 
 ## Next engineering work
 
-Use G01–G11 in `project/open-issues.json`: update R8 manufacturing geometry; implement slot tolerances; finalize guard retention and lid fit; confirm actual knob envelope and hardware; price black-anodized aluminum; choose/test straps; test assembly/transport. Start with small fit pieces and 7u40, then apply proven common changes to other models. Preserve undecided items explicitly.
+Use G01–G11 in `project/open-issues.json`: update R8 manufacturing geometry; implement slot tolerances; finalize guard retention and lid fit; confirm actual knob envelope and hardware; price black-anodized aluminum; choose/test straps; test assembly/transport. For the 7U40 R10-FULLSET-01 revision, prepare ONE full prototype set (six aluminum plates and twenty PA12 pieces) before physical evaluation. The 2026-10-26 user decision supersedes the earlier coupon-first workflow: no additional paid supplier samples or home washer tests gate preparation. Black ASA washers are editable home-print parts. Keep other models unchanged and preserve undecided items explicitly.
 
 ## 2WAY experimental family
 

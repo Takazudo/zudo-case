@@ -54,6 +54,12 @@
     "sidebar_position": 50
   },
   {
+    "path": "design/r10-fullset-01.mdx",
+    "title": "R10・7U40一式の試作準備",
+    "description": "固定耳付きt1ガード、溝1.70mm、M5載せ蓋と家庭用ASA座金を1台分にまとめる。",
+    "sidebar_position": 95
+  },
+  {
     "path": "design/r9-fitfix-01.mdx",
     "title": "7U40 R9-FITFIX-01 修正候補",
     "description": "金属への侵入、ガード実肉厚、蓋座面を修正した未承認候補。",
@@ -217,8 +223,8 @@
   },
   {
     "path": "resources/current-preview.mdx",
-    "title": "R8・載せ蓋コンセプトの旧プレビュー",
-    "description": "R9の起点となった表示モデル。R8版の製作CADではない。",
+    "title": "現行R10一式と旧版プレビュー",
+    "description": "7U40の選定一式と、過去のR8コンセプトへの入口。",
     "sidebar_position": 10
   },
   {

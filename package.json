@@ -41,7 +41,12 @@
     "test:two-way": "node --test engineering/two-way/tw-01/tests/*.test.cjs",
     "test:two-way:browser": "node engineering/two-way/tw-01/tests/browser.cjs",
     "check:preview-isolation": "node --test tests/real-cli/preview-isolation.test.mjs",
-    "check:wind": "zfb wind audit --fail-on error"
+    "check:wind": "zfb wind audit --fail-on error",
+    "build:fullset": "uv run --locked --project engineering/r9-prototype-01 python engineering/r10-fullset-01/build.py",
+    "build:home-washers": "uv run --locked --project engineering/r9-prototype-01 python engineering/r10-fullset-01/build.py --washers-only --out .cache/r10-home-washers",
+    "sync:fullset": "node scripts/sync-fullset.mjs",
+    "check:fullset": "node scripts/sync-fullset.mjs --check",
+    "test:fullset": "python3 engineering/r10-fullset-01/tests/test_contract.py"
   },
   "dependencies": {
     "@takazudo/zfb": "4.5.0",

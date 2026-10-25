@@ -1,0 +1,79 @@
+{
+  "url": "file:///home/takazudo/repos/circuits/zudo-case/engineering/r10-fullset-01/out/preview.html",
+  "cells": [
+    {
+      "width": 1440,
+      "renderer": {
+        "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "renderer": "WebKit WebGL"
+      },
+      "parts": 328,
+      "view": "case",
+      "overflow": false,
+      "checks": "8 inspection modes, assembly/explosion, section, layers, travel warnings, lid, colors, orbit/zoom, reset, JSON export/valid+invalid import, PNG bytes",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "renderer": {
+        "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "renderer": "WebKit WebGL"
+      },
+      "parts": 328,
+      "view": "case",
+      "overflow": false,
+      "checks": "8 inspection modes, assembly/explosion, section, layers, travel warnings, lid, colors, orbit/zoom, reset, JSON export/valid+invalid import, PNG bytes",
+      "errors": []
+    },
+    {
+      "width": 320,
+      "renderer": {
+        "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+        "renderer": "WebKit WebGL"
+      },
+      "parts": 328,
+      "view": "case",
+      "overflow": false,
+      "checks": "8 inspection modes, assembly/explosion, section, layers, travel warnings, lid, colors, orbit/zoom, reset, JSON export/valid+invalid import, PNG bytes",
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "renderer": {
+        "version": "Canvas 2D",
+        "renderer": "CPU triangle rasterizer + z-buffer; not WebGL"
+      },
+      "parts": 328,
+      "view": "case",
+      "overflow": false,
+      "checks": "8 inspection modes, assembly/explosion, section, layers, travel warnings, lid, colors, orbit/zoom, reset, JSON export/valid+invalid import, PNG bytes",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "renderer": {
+        "version": "Canvas 2D",
+        "renderer": "CPU triangle rasterizer + z-buffer; not WebGL"
+      },
+      "parts": 328,
+      "view": "case",
+      "overflow": false,
+      "checks": "8 inspection modes, assembly/explosion, section, layers, travel warnings, lid, colors, orbit/zoom, reset, JSON export/valid+invalid import, PNG bytes",
+      "errors": []
+    },
+    {
+      "width": 320,
+      "renderer": {
+        "version": "Canvas 2D",
+        "renderer": "CPU triangle rasterizer + z-buffer; not WebGL"
+      },
+      "parts": 328,
+      "view": "case",
+      "overflow": false,
+      "checks": "8 inspection modes, assembly/explosion, section, layers, travel warnings, lid, colors, orbit/zoom, reset, JSON export/valid+invalid import, PNG bytes",
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

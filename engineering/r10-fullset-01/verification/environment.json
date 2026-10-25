@@ -1,0 +1,9 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "cadquery": "2.7.0",
+  "ezdxf": "1.4.4",
+  "numpy": "2.5.3",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "geometry_environment": "engineering/r9-prototype-01/uv.lock",
+  "webgl": "Chromium headless SwiftShader; not physical GPU validation"
+}

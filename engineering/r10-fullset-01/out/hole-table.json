@@ -1,0 +1,850 @@
+[
+  {
+    "part": "panel-front",
+    "local_uv": [
+      53.7,
+      10.0
+    ],
+    "assembly_xyz": [
+      -59.5,
+      -167.0,
+      11.5
+    ],
+    "kind": "lower",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-front",
+    "local_uv": [
+      172.7,
+      10.0
+    ],
+    "assembly_xyz": [
+      59.5,
+      -167.0,
+      11.5
+    ],
+    "kind": "lower",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-front",
+    "local_uv": [
+      10.0,
+      35.0
+    ],
+    "assembly_xyz": [
+      -103.2,
+      -167.0,
+      36.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-front",
+    "local_uv": [
+      216.4,
+      35.0
+    ],
+    "assembly_xyz": [
+      103.2,
+      -167.0,
+      36.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-front",
+    "local_uv": [
+      10.0,
+      65.0
+    ],
+    "assembly_xyz": [
+      -103.2,
+      -167.0,
+      66.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-front",
+    "local_uv": [
+      216.4,
+      65.0
+    ],
+    "assembly_xyz": [
+      103.2,
+      -167.0,
+      66.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-back",
+    "local_uv": [
+      53.7,
+      10.0
+    ],
+    "assembly_xyz": [
+      59.5,
+      167.0,
+      11.5
+    ],
+    "kind": "lower",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-back",
+    "local_uv": [
+      172.7,
+      10.0
+    ],
+    "assembly_xyz": [
+      -59.5,
+      167.0,
+      11.5
+    ],
+    "kind": "lower",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-back",
+    "local_uv": [
+      10.0,
+      35.0
+    ],
+    "assembly_xyz": [
+      103.2,
+      167.0,
+      36.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-back",
+    "local_uv": [
+      216.4,
+      35.0
+    ],
+    "assembly_xyz": [
+      -103.2,
+      167.0,
+      36.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-back",
+    "local_uv": [
+      10.0,
+      65.0
+    ],
+    "assembly_xyz": [
+      103.2,
+      167.0,
+      66.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-back",
+    "local_uv": [
+      216.4,
+      65.0
+    ],
+    "assembly_xyz": [
+      -103.2,
+      167.0,
+      66.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-right",
+    "local_uv": [
+      40.5,
+      10.0
+    ],
+    "assembly_xyz": [
+      114.7,
+      -126.5,
+      11.5
+    ],
+    "kind": "lower",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-right",
+    "local_uv": [
+      167.0,
+      10.0
+    ],
+    "assembly_xyz": [
+      114.7,
+      0.0,
+      11.5
+    ],
+    "kind": "lower",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-right",
+    "local_uv": [
+      293.5,
+      10.0
+    ],
+    "assembly_xyz": [
+      114.7,
+      126.5,
+      11.5
+    ],
+    "kind": "lower",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-right",
+    "local_uv": [
+      11.5,
+      35.0
+    ],
+    "assembly_xyz": [
+      114.7,
+      -155.5,
+      36.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-right",
+    "local_uv": [
+      322.5,
+      35.0
+    ],
+    "assembly_xyz": [
+      114.7,
+      155.5,
+      36.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-right",
+    "local_uv": [
+      11.5,
+      65.0
+    ],
+    "assembly_xyz": [
+      114.7,
+      -155.5,
+      66.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-right",
+    "local_uv": [
+      322.5,
+      65.0
+    ],
+    "assembly_xyz": [
+      114.7,
+      155.5,
+      66.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-right",
+    "local_uv": [
+      32.468128500000006,
+      66.6894265
+    ],
+    "assembly_xyz": [
+      114.7,
+      -134.5318715,
+      68.1894265
+    ],
+    "kind": "rail",
+    "diameter": 5.5,
+    "slot_length": null,
+    "angle": null
+  },
+  {
+    "part": "panel-right",
+    "local_uv": [
+      99.73406,
+      66.6894265
+    ],
+    "assembly_xyz": [
+      114.7,
+      -67.26594,
+      68.1894265
+    ],
+    "kind": "rail",
+    "diameter": 5.5,
+    "slot_length": null,
+    "angle": null
+  },
+  {
+    "part": "panel-right",
+    "local_uv": [
+      166.999992,
+      66.6894265
+    ],
+    "assembly_xyz": [
+      114.7,
+      -8.000000008223651e-06,
+      68.1894265
+    ],
+    "kind": "rail",
+    "diameter": 5.5,
+    "slot_length": null,
+    "angle": null
+  },
+  {
+    "part": "panel-right",
+    "local_uv": [
+      234.2659145,
+      66.6894265
+    ],
+    "assembly_xyz": [
+      114.7,
+      67.26591450000001,
+      68.1894265
+    ],
+    "kind": "rail",
+    "diameter": 5.5,
+    "slot_length": null,
+    "angle": null
+  },
+  {
+    "part": "panel-right",
+    "local_uv": [
+      301.496536,
+      66.6894265
+    ],
+    "assembly_xyz": [
+      114.7,
+      134.496536,
+      68.1894265
+    ],
+    "kind": "rail",
+    "diameter": 5.5,
+    "slot_length": null,
+    "angle": null
+  },
+  {
+    "part": "panel-left",
+    "local_uv": [
+      40.5,
+      10.0
+    ],
+    "assembly_xyz": [
+      -114.7,
+      126.5,
+      11.5
+    ],
+    "kind": "lower",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-left",
+    "local_uv": [
+      167.0,
+      10.0
+    ],
+    "assembly_xyz": [
+      -114.7,
+      0.0,
+      11.5
+    ],
+    "kind": "lower",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-left",
+    "local_uv": [
+      293.5,
+      10.0
+    ],
+    "assembly_xyz": [
+      -114.7,
+      -126.5,
+      11.5
+    ],
+    "kind": "lower",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-left",
+    "local_uv": [
+      11.5,
+      35.0
+    ],
+    "assembly_xyz": [
+      -114.7,
+      155.5,
+      36.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-left",
+    "local_uv": [
+      322.5,
+      35.0
+    ],
+    "assembly_xyz": [
+      -114.7,
+      -155.5,
+      36.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-left",
+    "local_uv": [
+      11.5,
+      65.0
+    ],
+    "assembly_xyz": [
+      -114.7,
+      155.5,
+      66.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-left",
+    "local_uv": [
+      322.5,
+      65.0
+    ],
+    "assembly_xyz": [
+      -114.7,
+      -155.5,
+      66.5
+    ],
+    "kind": "corner",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-left",
+    "local_uv": [
+      301.53187149999997,
+      66.6894265
+    ],
+    "assembly_xyz": [
+      -114.7,
+      -134.5318715,
+      68.1894265
+    ],
+    "kind": "rail",
+    "diameter": 5.5,
+    "slot_length": null,
+    "angle": null
+  },
+  {
+    "part": "panel-left",
+    "local_uv": [
+      234.26594,
+      66.6894265
+    ],
+    "assembly_xyz": [
+      -114.7,
+      -67.26594,
+      68.1894265
+    ],
+    "kind": "rail",
+    "diameter": 5.5,
+    "slot_length": null,
+    "angle": null
+  },
+  {
+    "part": "panel-left",
+    "local_uv": [
+      167.000008,
+      66.6894265
+    ],
+    "assembly_xyz": [
+      -114.7,
+      -8.000000008223651e-06,
+      68.1894265
+    ],
+    "kind": "rail",
+    "diameter": 5.5,
+    "slot_length": null,
+    "angle": null
+  },
+  {
+    "part": "panel-left",
+    "local_uv": [
+      99.73408549999999,
+      66.6894265
+    ],
+    "assembly_xyz": [
+      -114.7,
+      67.26591450000001,
+      68.1894265
+    ],
+    "kind": "rail",
+    "diameter": 5.5,
+    "slot_length": null,
+    "angle": null
+  },
+  {
+    "part": "panel-left",
+    "local_uv": [
+      32.50346400000001,
+      66.6894265
+    ],
+    "assembly_xyz": [
+      -114.7,
+      134.496536,
+      68.1894265
+    ],
+    "kind": "rail",
+    "diameter": 5.5,
+    "slot_length": null,
+    "angle": null
+  },
+  {
+    "part": "panel-floor",
+    "local_uv": [
+      55.2,
+      322.5
+    ],
+    "assembly_xyz": [
+      -59.5,
+      -155.5,
+      0.0
+    ],
+    "kind": "floor-front",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-floor",
+    "local_uv": [
+      174.2,
+      322.5
+    ],
+    "assembly_xyz": [
+      59.5,
+      -155.5,
+      0.0
+    ],
+    "kind": "floor-front",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-floor",
+    "local_uv": [
+      55.2,
+      11.5
+    ],
+    "assembly_xyz": [
+      -59.5,
+      155.5,
+      0.0
+    ],
+    "kind": "floor-front",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-floor",
+    "local_uv": [
+      174.2,
+      11.5
+    ],
+    "assembly_xyz": [
+      59.5,
+      155.5,
+      0.0
+    ],
+    "kind": "floor-front",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 90
+  },
+  {
+    "part": "panel-floor",
+    "local_uv": [
+      11.5,
+      293.5
+    ],
+    "assembly_xyz": [
+      -103.2,
+      -126.5,
+      0.0
+    ],
+    "kind": "floor-side",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-floor",
+    "local_uv": [
+      11.5,
+      167.0
+    ],
+    "assembly_xyz": [
+      -103.2,
+      0.0,
+      0.0
+    ],
+    "kind": "floor-side",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-floor",
+    "local_uv": [
+      11.5,
+      40.5
+    ],
+    "assembly_xyz": [
+      -103.2,
+      126.5,
+      0.0
+    ],
+    "kind": "floor-side",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-floor",
+    "local_uv": [
+      217.9,
+      293.5
+    ],
+    "assembly_xyz": [
+      103.2,
+      -126.5,
+      0.0
+    ],
+    "kind": "floor-side",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-floor",
+    "local_uv": [
+      217.9,
+      167.0
+    ],
+    "assembly_xyz": [
+      103.2,
+      0.0,
+      0.0
+    ],
+    "kind": "floor-side",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "panel-floor",
+    "local_uv": [
+      217.9,
+      40.5
+    ],
+    "assembly_xyz": [
+      103.2,
+      126.5,
+      0.0
+    ],
+    "kind": "floor-side",
+    "diameter": 5.5,
+    "slot_length": 10.5,
+    "angle": 0
+  },
+  {
+    "part": "lid-plate",
+    "local_uv": [
+      148.44,
+      5.5
+    ],
+    "assembly_xyz": [
+      34.739999999999995,
+      -160.5,
+      122.0
+    ],
+    "kind": "lid",
+    "diameter": 5.5
+  },
+  {
+    "part": "lid-plate",
+    "local_uv": [
+      221.9,
+      81.95
+    ],
+    "assembly_xyz": [
+      108.2,
+      -84.05,
+      122.0
+    ],
+    "kind": "lid",
+    "diameter": 5.5
+  },
+  {
+    "part": "lid-plate",
+    "local_uv": [
+      78.96000000000001,
+      5.5
+    ],
+    "assembly_xyz": [
+      -34.739999999999995,
+      -160.5,
+      122.0
+    ],
+    "kind": "lid",
+    "diameter": 5.5
+  },
+  {
+    "part": "lid-plate",
+    "local_uv": [
+      5.5,
+      81.95
+    ],
+    "assembly_xyz": [
+      -108.2,
+      -84.05,
+      122.0
+    ],
+    "kind": "lid",
+    "diameter": 5.5
+  },
+  {
+    "part": "lid-plate",
+    "local_uv": [
+      78.96000000000001,
+      326.5
+    ],
+    "assembly_xyz": [
+      -34.739999999999995,
+      160.5,
+      122.0
+    ],
+    "kind": "lid",
+    "diameter": 5.5
+  },
+  {
+    "part": "lid-plate",
+    "local_uv": [
+      5.5,
+      250.05
+    ],
+    "assembly_xyz": [
+      -108.2,
+      84.05,
+      122.0
+    ],
+    "kind": "lid",
+    "diameter": 5.5
+  },
+  {
+    "part": "lid-plate",
+    "local_uv": [
+      148.44,
+      326.5
+    ],
+    "assembly_xyz": [
+      34.739999999999995,
+      160.5,
+      122.0
+    ],
+    "kind": "lid",
+    "diameter": 5.5
+  },
+  {
+    "part": "lid-plate",
+    "local_uv": [
+      221.9,
+      250.05
+    ],
+    "assembly_xyz": [
+      108.2,
+      84.05,
+      122.0
+    ],
+    "kind": "lid",
+    "diameter": 5.5
+  }
+]
