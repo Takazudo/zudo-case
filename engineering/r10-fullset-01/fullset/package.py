@@ -20,7 +20,7 @@ def make(out,root,manifest,report,lid_report):
         quantities.append(dict(id=p['id'],material=p['material'],destination=p['procurement'],quantity=p['quantity'],selected_print_quantity=p.get('selected_print_quantity',0),instances=p['quantity'],step=p['step'],stl=p['stl'],dxf=p.get('dxf','')))
     for p in hardware:quantities.append(dict(id=p['id'],material=p['material'],destination=p['procurement'],quantity=p['quantity'],selected_print_quantity=0,instances=p['quantity'],step='',stl='',dxf=''))
     with (out/'BOM.csv').open('w') as f:
-        w=csv.DictWriter(f,fieldnames=quantities[0].keys());w.writeheader();w.writerows(quantities)
+        w=csv.DictWriter(f,fieldnames=quantities[0].keys(),lineterminator='\n');w.writeheader();w.writerows(quantities)
     text='''# R10-FULLSET-01 — ONE 7U40 prototype / 注文相談の入口
 
 選定: `7u40-t1-groove1p70-m5`。この版だけで1台分。量産承認ではない (`production_approved=false`)。旧R9/R2クーポンと混ぜない。
@@ -89,7 +89,7 @@ uv run --locked --project engineering/r9-prototype-01 python engineering/r10-ful
         rows=[r for r in manifest['parts'] if r['procurement']==dest]
         table=f'{dest}/quantity-finish.csv'
         with (out/table).open('w') as f:
-            writer=csv.writer(f);writer.writerow(['part','quantity','material_finish','primary_file','alternative_or_reference_file'])
+            writer=csv.writer(f,lineterminator='\n');writer.writerow(['part','quantity','material_finish','primary_file','alternative_or_reference_file'])
             for r in rows:writer.writerow([r['id'],r['quantity'],r['material'],r['step'] if dest=='aluminum' else r['stl'],r['dxf'] if dest=='aluminum' else r['step']])
         files=[table]+[r[k] for r in rows for k in (('step','dxf') if dest=='aluminum' else ('stl','step'))]
         if dest=='aluminum':files+=['hole-table.json']+[f'drawings/{r["id"]}.svg' for r in rows]

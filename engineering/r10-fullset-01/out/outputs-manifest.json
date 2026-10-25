@@ -20,7 +20,7 @@
     },
     {
       "path": "engineering/r10-fullset-01/fullset/package.py",
-      "sha256": "b1c995828dd56eca09ba4fc8f96aeeb0220955a0a196a72cd70e518e98eada54"
+      "sha256": "76e67e0be198279e1f50c645f5536e0b3ca3c46a0b0e9e98d84a7696cfbce936"
     },
     {
       "path": "engineering/r10-fullset-01/fullset/preview.py",
@@ -162,8 +162,8 @@
   "files": [
     {
       "path": "BOM.csv",
-      "sha256": "73599b5c9e173890bf88f6005bde2a26465d95a3310f614ce6ecd34e8a2ee3d2",
-      "bytes": 5018
+      "sha256": "baddf7ae0be3cd72f797782ec18ec0cc942c959b115ae1c5c68ae592d2d5eaa0",
+      "bytes": 4971
     },
     {
       "path": "ORDER-START-HERE.md",
@@ -172,18 +172,18 @@
     },
     {
       "path": "R10-FULLSET-01-aluminum.zip",
-      "sha256": "34fce4c2e3e74d16b6fa00a8cc8056596324484dbf6e982d446875952acb5409",
-      "bytes": 189842
+      "sha256": "7352b40d134e2136af658a39e3150da98f7f2711a89af80d641c0eda9e1f49a1",
+      "bytes": 189834
     },
     {
       "path": "R10-FULLSET-01-home-print.zip",
-      "sha256": "fa1210f3b501dcb06a96d5c9b3fa2810f9b13028ad57c490923ed7ee5d75a2fd",
-      "bytes": 92297
+      "sha256": "7ff0a3c4bc848235b87ed3922beca44f28a1bd4ed62b2b8118dfdc4718ab88af",
+      "bytes": 92291
     },
     {
       "path": "R10-FULLSET-01-pa12.zip",
-      "sha256": "97927530c278e91e38550bedded6eeed4dbbd172e9f7c3b9d1bdc369cb596817",
-      "bytes": 752282
+      "sha256": "f24aa6fb56a68b435030a0b3acc53a1566755e77ca712174ebf176073a91049a",
+      "bytes": 752274
     },
     {
       "path": "aluminum/lid-plate-qty1-mm.dxf",
@@ -277,8 +277,8 @@
     },
     {
       "path": "aluminum/quantity-finish.csv",
-      "sha256": "94cdb4e4d2d604d5d4f336b65e518870e5c97d871bae16190e1981231381ed2b",
-      "bytes": 872
+      "sha256": "9cde8457fadd8539c39544c986ae4b7f2e8b0ebe5bd10cc609bf6f687791f14d",
+      "bytes": 865
     },
     {
       "path": "drawings/lid-plate.svg",
@@ -582,8 +582,8 @@
     },
     {
       "path": "pa12/quantity-finish.csv",
-      "sha256": "cb7e182bb15839aca0e5416bee0227c58ebe2d83bb208261f1ee522fd1be328b",
-      "bytes": 2034
+      "sha256": "8ee94d4acc4c0f6ecafd818b37e1fccebce46dfb0640016adcd3ce819fe828aa",
+      "bytes": 2013
     },
     {
       "path": "pa12/top-0-0-qty1-mm.step",
