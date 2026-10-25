@@ -258,6 +258,10 @@
       "outside_mm3": 5.325394904245791,
       "uncovered_mm3": 7.853981635337167e-13,
       "bearing_area_mm2": 133.48489412355843,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -3.25,
+      "fixed_bracket_overlap_mm3": 29.801196170117116,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -266,6 +270,10 @@
       "outside_mm3": 2.5387790362943643,
       "uncovered_mm3": 7.853981635337167e-13,
       "bearing_area_mm2": 136.2715099915099,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -3.0,
+      "fixed_bracket_overlap_mm3": 27.79656849497696,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -274,7 +282,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981635163583e-13,
       "bearing_area_mm2": 138.81028902780417,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -2.75,
+      "fixed_bracket_overlap_mm3": 25.69450357718722,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -282,7 +294,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981634417209e-13,
       "bearing_area_mm2": 138.8102890278042,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -2.5,
+      "fixed_bracket_overlap_mm3": 23.5068551871383,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -290,7 +306,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981634417208e-13,
       "bearing_area_mm2": 138.8102890278043,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -2.25,
+      "fixed_bracket_overlap_mm3": 21.244280876482662,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -298,7 +318,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981634417208e-13,
       "bearing_area_mm2": 138.81028902780417,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -2.0,
+      "fixed_bracket_overlap_mm3": 18.91663702853681,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -306,7 +330,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981633692369e-13,
       "bearing_area_mm2": 138.81028902780417,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -1.75,
+      "fixed_bracket_overlap_mm3": 16.53333645482544,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -314,7 +342,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981633508898e-13,
       "bearing_area_mm2": 138.81028902780423,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -1.5,
+      "fixed_bracket_overlap_mm3": 14.103758040638388,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -322,7 +354,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981634111784e-13,
       "bearing_area_mm2": 138.81028902780417,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -1.25,
+      "fixed_bracket_overlap_mm3": 11.63786080201196,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -330,7 +366,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981633891248e-13,
       "bearing_area_mm2": 138.81028902780417,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -1.0,
+      "fixed_bracket_overlap_mm3": 9.147363325376784,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -338,7 +378,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981633974482e-13,
       "bearing_area_mm2": 138.81028902780426,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -0.75,
+      "fixed_bracket_overlap_mm3": 6.64856184022948,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -346,7 +390,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981634113576e-13,
       "bearing_area_mm2": 138.81028902780423,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -0.5,
+      "fixed_bracket_overlap_mm3": 4.170830535313614,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -354,7 +402,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981633720102e-13,
       "bearing_area_mm2": 138.81028902780423,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -0.25,
+      "fixed_bracket_overlap_mm3": 1.792576674309759,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -362,6 +414,10 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981633508898e-13,
       "bearing_area_mm2": 138.8102890278042,
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": 0.0,
+      "fixed_bracket_overlap_mm3": 0.0,
+      "fixed_bracket_clear": true,
       "usable_nominal": true
     },
     {
@@ -370,6 +426,10 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981634600678e-13,
       "bearing_area_mm2": 138.81028902780415,
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": 0.25,
+      "fixed_bracket_overlap_mm3": 0.0,
+      "fixed_bracket_clear": true,
       "usable_nominal": true
     },
     {
@@ -378,6 +438,10 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981634417208e-13,
       "bearing_area_mm2": 138.81028902780417,
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": 0.0,
+      "fixed_bracket_overlap_mm3": 0.0,
+      "fixed_bracket_clear": true,
       "usable_nominal": true
     },
     {
@@ -386,7 +450,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981634417208e-13,
       "bearing_area_mm2": 138.81028902780426,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -0.25,
+      "fixed_bracket_overlap_mm3": 1.7925766743097358,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -394,7 +462,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981634417209e-13,
       "bearing_area_mm2": 138.81028902780417,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -0.5,
+      "fixed_bracket_overlap_mm3": 4.170830535313619,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -402,7 +474,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.85398163480017e-13,
       "bearing_area_mm2": 138.81028902780417,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -0.75,
+      "fixed_bracket_overlap_mm3": 6.648561840229412,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "corner",
@@ -410,6 +486,10 @@
       "outside_mm3": 2.538779036294364,
       "uncovered_mm3": 7.853981635337167e-13,
       "bearing_area_mm2": 136.27150999150993,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -1.0,
+      "fixed_bracket_overlap_mm3": 9.147363325376825,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -418,6 +498,10 @@
       "outside_mm3": 5.325394904245803,
       "uncovered_mm3": 7.853981635337167e-13,
       "bearing_area_mm2": 133.48489412355812,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -1.25,
+      "fixed_bracket_overlap_mm3": 11.637860802011968,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -426,6 +510,10 @@
       "outside_mm3": 41.06255190783021,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 129.74773711997398,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -3.25,
+      "fixed_bracket_overlap_mm3": 29.80119617011708,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -434,6 +522,10 @@
       "outside_mm3": 37.56255190783021,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 133.24773711997403,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -3.0,
+      "fixed_bracket_overlap_mm3": 27.79656849497674,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -442,6 +534,10 @@
       "outside_mm3": 34.06255190783022,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 136.747737119974,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -2.75,
+      "fixed_bracket_overlap_mm3": 25.694503577187163,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -450,6 +546,10 @@
       "outside_mm3": 30.562551907830212,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 140.24773711997403,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -2.5,
+      "fixed_bracket_overlap_mm3": 23.506855187138417,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -458,6 +558,10 @@
       "outside_mm3": 27.062551907830212,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 143.74773711997406,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -2.25,
+      "fixed_bracket_overlap_mm3": 21.244280876482712,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -466,6 +570,10 @@
       "outside_mm3": 23.56255190783022,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 147.24773711997398,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -2.0,
+      "fixed_bracket_overlap_mm3": 18.916637028536684,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -474,6 +582,10 @@
       "outside_mm3": 20.062551907830215,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 150.74773711997395,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -1.75,
+      "fixed_bracket_overlap_mm3": 16.533336454825527,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -482,6 +594,10 @@
       "outside_mm3": 16.563567421005843,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 154.24672160679845,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -1.5,
+      "fixed_bracket_overlap_mm3": 14.103758040638247,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -490,6 +606,10 @@
       "outside_mm3": 13.079800745688889,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 157.73048828211535,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -1.25,
+      "fixed_bracket_overlap_mm3": 11.637860802011971,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -498,6 +618,10 @@
       "outside_mm3": 9.638475708782247,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 161.171813319022,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -1.0,
+      "fixed_bracket_overlap_mm3": 9.14736332537682,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -506,6 +630,10 @@
       "outside_mm3": 6.274757066643682,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 164.53553196116064,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -0.75,
+      "fixed_bracket_overlap_mm3": 6.6485618402293944,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -514,6 +642,10 @@
       "outside_mm3": 3.031347225792302,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 167.77894180201145,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -0.5,
+      "fixed_bracket_overlap_mm3": 4.17083053531359,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -522,7 +654,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 170.81028902780423,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -0.25,
+      "fixed_bracket_overlap_mm3": 1.792576674309742,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "lower",
@@ -530,6 +666,10 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 170.81028902780426,
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": 0.0,
+      "fixed_bracket_overlap_mm3": 0.0,
+      "fixed_bracket_clear": true,
       "usable_nominal": true
     },
     {
@@ -538,6 +678,10 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 170.81028902780426,
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": 0.25,
+      "fixed_bracket_overlap_mm3": 0.0,
+      "fixed_bracket_clear": true,
       "usable_nominal": true
     },
     {
@@ -546,6 +690,10 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 170.81028902780417,
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": 0.0,
+      "fixed_bracket_overlap_mm3": 0.0,
+      "fixed_bracket_clear": true,
       "usable_nominal": true
     },
     {
@@ -554,7 +702,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 170.8102890278043,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -0.25,
+      "fixed_bracket_overlap_mm3": 1.7925766743097449,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "lower",
@@ -562,7 +714,11 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 7.853981635667775e-13,
       "bearing_area_mm2": 170.81028902780423,
-      "usable_nominal": true
+      "cap_outline_usable_nominal": true,
+      "fixed_bracket_clearance_mm": -0.5,
+      "fixed_bracket_overlap_mm3": 4.170830535313595,
+      "fixed_bracket_clear": false,
+      "usable_nominal": false
     },
     {
       "kind": "lower",
@@ -570,6 +726,10 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 0.38549391592361737,
       "bearing_area_mm2": 171.19578294372727,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -0.75,
+      "fixed_bracket_overlap_mm3": 6.648561840229401,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -578,6 +738,10 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 1.0748828410026068,
       "bearing_area_mm2": 171.8851718688061,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -1.0,
+      "fixed_bracket_overlap_mm3": 9.147363325376848,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     },
     {
@@ -586,6 +750,10 @@
       "outside_mm3": 0.0,
       "uncovered_mm3": 1.945784191419921,
       "bearing_area_mm2": 172.75607321922314,
+      "cap_outline_usable_nominal": false,
+      "fixed_bracket_clearance_mm": -1.25,
+      "fixed_bracket_overlap_mm3": 11.637860802011977,
+      "fixed_bracket_clear": false,
       "usable_nominal": false
     }
   ]

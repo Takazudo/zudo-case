@@ -1,0 +1,361 @@
+{
+  "scope": "CAD measurements from reimported STEP outer wires and adopted pad/slot geometry. 0.25mm samples, not a tolerance rating. Cap projection validity is separate from shaft collision with the fixed nominal bracket.",
+  "types": [
+    {
+      "type": "corner",
+      "export_step_sha256": "4ef7c56c1a33b2bc6c5d9e0636a68b2286bd2fd8d2bd37eed37a4463cb860c13",
+      "sampled_cap_outline_range_mm": [
+        -2.0,
+        2.0
+      ],
+      "samples": [
+        {
+          "offset_mm": -2.5,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 0.25,
+          "bearing_area_mm2": 133.48489412355843
+        },
+        {
+          "offset_mm": -2.25,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 0.5,
+          "bearing_area_mm2": 136.2715099915099
+        },
+        {
+          "offset_mm": -2.0,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 0.0,
+          "slot_outline_coverage_margin_mm": 0.75,
+          "bearing_area_mm2": 138.81028902780417
+        },
+        {
+          "offset_mm": -1.75,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 0.25,
+          "slot_outline_coverage_margin_mm": 1.0,
+          "bearing_area_mm2": 138.8102890278042
+        },
+        {
+          "offset_mm": -1.5,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 0.5,
+          "slot_outline_coverage_margin_mm": 1.25,
+          "bearing_area_mm2": 138.8102890278043
+        },
+        {
+          "offset_mm": -1.25,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 0.75,
+          "slot_outline_coverage_margin_mm": 1.5,
+          "bearing_area_mm2": 138.81028902780417
+        },
+        {
+          "offset_mm": -1.0,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 1.0,
+          "slot_outline_coverage_margin_mm": 1.75,
+          "bearing_area_mm2": 138.81028902780417
+        },
+        {
+          "offset_mm": -0.75,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 1.0,
+          "slot_outline_coverage_margin_mm": 2.0,
+          "bearing_area_mm2": 138.81028902780423
+        },
+        {
+          "offset_mm": -0.5,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 1.0,
+          "slot_outline_coverage_margin_mm": 2.25,
+          "bearing_area_mm2": 138.81028902780417
+        },
+        {
+          "offset_mm": -0.25,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 1.0,
+          "slot_outline_coverage_margin_mm": 2.5,
+          "bearing_area_mm2": 138.81028902780417
+        },
+        {
+          "offset_mm": 0.0,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 1.0,
+          "slot_outline_coverage_margin_mm": 2.75,
+          "bearing_area_mm2": 138.81028902780426
+        },
+        {
+          "offset_mm": 0.25,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 1.0,
+          "slot_outline_coverage_margin_mm": 2.5,
+          "bearing_area_mm2": 138.81028902780423
+        },
+        {
+          "offset_mm": 0.5,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 1.0,
+          "slot_outline_coverage_margin_mm": 2.25,
+          "bearing_area_mm2": 138.81028902780423
+        },
+        {
+          "offset_mm": 0.75,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": true,
+          "pad_edge_margin_mm": 1.0,
+          "slot_outline_coverage_margin_mm": 2.0,
+          "bearing_area_mm2": 138.8102890278042
+        },
+        {
+          "offset_mm": 1.0,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": true,
+          "pad_edge_margin_mm": 1.0,
+          "slot_outline_coverage_margin_mm": 1.75,
+          "bearing_area_mm2": 138.81028902780415
+        },
+        {
+          "offset_mm": 1.25,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": true,
+          "pad_edge_margin_mm": 0.75,
+          "slot_outline_coverage_margin_mm": 1.5,
+          "bearing_area_mm2": 138.81028902780417
+        },
+        {
+          "offset_mm": 1.5,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 0.5,
+          "slot_outline_coverage_margin_mm": 1.25,
+          "bearing_area_mm2": 138.81028902780426
+        },
+        {
+          "offset_mm": 1.75,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 0.25,
+          "slot_outline_coverage_margin_mm": 1.0,
+          "bearing_area_mm2": 138.81028902780417
+        },
+        {
+          "offset_mm": 2.0,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 0.0,
+          "slot_outline_coverage_margin_mm": 0.75,
+          "bearing_area_mm2": 138.81028902780417
+        },
+        {
+          "offset_mm": 2.25,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 0.5,
+          "bearing_area_mm2": 136.27150999150993
+        },
+        {
+          "offset_mm": 2.5,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 0.25,
+          "bearing_area_mm2": 133.48489412355812
+        }
+      ]
+    },
+    {
+      "type": "lower",
+      "export_step_sha256": "cdf0eb3f145d3861fb019df469e2e4e393f2e29becef132ac8720e34ad493f8d",
+      "sampled_cap_outline_range_mm": [
+        0.5,
+        1.75
+      ],
+      "samples": [
+        {
+          "offset_mm": -2.5,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 1.25,
+          "bearing_area_mm2": 129.74773711997398
+        },
+        {
+          "offset_mm": -2.25,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 1.5,
+          "bearing_area_mm2": 133.24773711997403
+        },
+        {
+          "offset_mm": -2.0,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 1.75,
+          "bearing_area_mm2": 136.747737119974
+        },
+        {
+          "offset_mm": -1.75,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 2.0,
+          "bearing_area_mm2": 140.24773711997403
+        },
+        {
+          "offset_mm": -1.5,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 2.25,
+          "bearing_area_mm2": 143.74773711997406
+        },
+        {
+          "offset_mm": -1.25,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 2.5,
+          "bearing_area_mm2": 147.24773711997398
+        },
+        {
+          "offset_mm": -1.0,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 2.75,
+          "bearing_area_mm2": 150.74773711997395
+        },
+        {
+          "offset_mm": -0.75,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 2.5,
+          "bearing_area_mm2": 154.24672160679845
+        },
+        {
+          "offset_mm": -0.5,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 2.25,
+          "bearing_area_mm2": 157.73048828211535
+        },
+        {
+          "offset_mm": -0.25,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 2.0,
+          "bearing_area_mm2": 161.171813319022
+        },
+        {
+          "offset_mm": 0.0,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 1.75,
+          "bearing_area_mm2": 164.53553196116064
+        },
+        {
+          "offset_mm": 0.25,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": null,
+          "slot_outline_coverage_margin_mm": 1.5,
+          "bearing_area_mm2": 167.77894180201145
+        },
+        {
+          "offset_mm": 0.5,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 0.0,
+          "slot_outline_coverage_margin_mm": 1.25,
+          "bearing_area_mm2": 170.81028902780423
+        },
+        {
+          "offset_mm": 0.75,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": true,
+          "pad_edge_margin_mm": 0.25,
+          "slot_outline_coverage_margin_mm": 1.0,
+          "bearing_area_mm2": 170.81028902780426
+        },
+        {
+          "offset_mm": 1.0,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": true,
+          "pad_edge_margin_mm": 0.5,
+          "slot_outline_coverage_margin_mm": 0.75,
+          "bearing_area_mm2": 170.81028902780426
+        },
+        {
+          "offset_mm": 1.25,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": true,
+          "pad_edge_margin_mm": 0.75,
+          "slot_outline_coverage_margin_mm": 0.5,
+          "bearing_area_mm2": 170.81028902780417
+        },
+        {
+          "offset_mm": 1.5,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 1.0,
+          "slot_outline_coverage_margin_mm": 0.25,
+          "bearing_area_mm2": 170.8102890278043
+        },
+        {
+          "offset_mm": 1.75,
+          "cap_outline_usable_nominal": true,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 0.75,
+          "slot_outline_coverage_margin_mm": 4.144781530454461e-16,
+          "bearing_area_mm2": 170.81028902780423
+        },
+        {
+          "offset_mm": 2.0,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 0.5,
+          "slot_outline_coverage_margin_mm": null,
+          "bearing_area_mm2": 171.19578294372727
+        },
+        {
+          "offset_mm": 2.25,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 0.25,
+          "slot_outline_coverage_margin_mm": null,
+          "bearing_area_mm2": 171.8851718688061
+        },
+        {
+          "offset_mm": 2.5,
+          "cap_outline_usable_nominal": false,
+          "fixed_bracket_clear": false,
+          "pad_edge_margin_mm": 0.0,
+          "slot_outline_coverage_margin_mm": null,
+          "bearing_area_mm2": 172.75607321922314
+        }
+      ]
+    }
+  ]
+}

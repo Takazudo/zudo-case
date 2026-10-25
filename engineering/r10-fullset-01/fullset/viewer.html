@@ -121,7 +121,7 @@ function updateCoverage(){
  $('travel').value=state.travel;$('washerKind').value=state.washerKind;
  $('travelOut').textContent=(state.travel>=0?'+':'')+state.travel.toFixed(2)+' mm';
  const r=coverageResult();
- $('coverage').textContent=(r.usable_nominal?'このサンプル位置は輪郭内・長穴被覆成立。':'この位置は不成立、または未サンプル。')+' 0.25mm刻みの公称BRep判定。外への体積 '+(r.outside_mm3?.toFixed(3)??'—')+'mm³、未被覆 '+(r.uncovered_mm3?.toFixed(3)??'—')+'mm³、耳上の受け面積 '+(r.bearing_area_mm2?.toFixed(2)??'—')+'mm²。強度・製造公差の評価ではありません。';
+ $('coverage').textContent=(r.usable_nominal?'このサンプル位置は輪郭内・長穴被覆成立。':'この位置は不成立、または未サンプル。')+' 押さえ輪郭: '+(r.cap_outline_usable_nominal?'成立':'不成立')+'、固定金具の穴余裕 '+(r.fixed_bracket_clearance_mm?.toFixed(2)??'—')+'mm。偏心座金では金具との衝突は直せません。金具を固定してねじだけ動かす比較で、実際の公差吸収量とは別です。0.25mm刻みの公称BRep判定。外への体積 '+(r.outside_mm3?.toFixed(3)??'—')+'mm³、未被覆 '+(r.uncovered_mm3?.toFixed(3)??'—')+'mm³、耳上の受け面積 '+(r.bearing_area_mm2?.toFixed(2)??'—')+'mm²。強度・製造公差の評価ではありません。';
  $('coverage').style.background=r.usable_nominal?'var(--teal-light)':'#faf1df';
  $('coverage').dataset.status=r.usable_nominal?'fits':'outside-envelope';
 }

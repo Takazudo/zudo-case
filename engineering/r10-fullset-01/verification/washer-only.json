@@ -4,9 +4,9 @@
   "eccentricity_mm": 1.25,
   "xy_radial_fit_mm": 0.05,
   "supplier_packages_unchanged": {
-    "public/downloads/candidate/R10-FULLSET-01-aluminum.zip": "7352b40d134e2136af658a39e3150da98f7f2711a89af80d641c0eda9e1f49a1",
-    "public/downloads/candidate/R10-FULLSET-01-pa12.zip": "f24aa6fb56a68b435030a0b3acc53a1566755e77ca712174ebf176073a91049a",
-    "public/downloads/candidate/R10-FULLSET-01-home-print.zip": "7ff0a3c4bc848235b87ed3922beca44f28a1bd4ed62b2b8118dfdc4718ab88af"
+    "public/downloads/candidate/R10-FULLSET-01-aluminum.zip": "709b65f7e12cc7901bde4212a9c4354adf41ced4915922c873ed1e13dbeeaede",
+    "public/downloads/candidate/R10-FULLSET-01-pa12.zip": "b327e8267b4f667a1b620fae16049a8111af0b812c153bbec60697ebfd74b965",
+    "public/downloads/candidate/R10-FULLSET-01-home-print.zip": "35edc8dbbdb454cc6f719c4464dd04b0d1408e8d2e29148285a9c68cab1538d7"
   },
   "stl_files": 5
 }

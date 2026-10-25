@@ -58,6 +58,14 @@ class Contract(unittest.TestCase):
     def test_preserved_old_bytes(self):
         m=json.loads((ROOT/'reference/preserved-bytes.json').read_text())
         for f in m['files']:self.assertEqual(hashlib.sha256((ROOT.parent.parent/f['path']).read_bytes()).hexdigest(),f['sha256'],f['path'])
+    def test_fixed_bracket_collision_is_not_a_washer_success(self):
+        v=json.loads((ROOT/'out/validation.json').read_text())
+        for kind in ['corner','lower']:
+            r=next(r for r in v['travel'] if r['kind']==kind and r['offset_mm']==1.75)
+            self.assertTrue(r['cap_outline_usable_nominal'])
+            self.assertFalse(r['fixed_bracket_clear'])
+            self.assertFalse(r['usable_nominal'])
+            self.assertGreater(r['fixed_bracket_overlap_mm3'],0)
     def test_validation_and_ligaments(self):
         for name in ['validation','joint-checks','hanging-hole-checks','lid-checks']:
             self.assertTrue(json.loads((ROOT/f'out/{name}.json').read_text())['passed'],name)

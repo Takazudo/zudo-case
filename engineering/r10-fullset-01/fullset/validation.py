@@ -29,7 +29,15 @@ def check(shapes,items,out):
             shift=n/4;u,v=(shift,0) if kind=='corner' else (0,11.5+shift)
             outline=g.outer_cap(u,v,0,1,kind,True);cap=g.outer_cap(u,v,0,1,kind)
             outside=outline.cut(pad).Volume();uncovered=slot.cut(outline).Volume();bearing=cap.intersect(pad.cut(slot)).Volume()
-            travel.append(dict(kind=kind,offset_mm=shift,outside_mm3=outside,uncovered_mm3=uncovered,bearing_area_mm2=bearing,usable_nominal=outside<1e-6 and uncovered<1e-6))
+            bracket_id='bracket-corner-1--1-0' if kind=='corner' else 'bracket-right-1'
+            shaft_id='shaft-right-3' if kind=='corner' else 'shaft-right-1'
+            moved=shapes[shaft_id].translate((0,shift-1,0) if kind=='corner' else (0,0,shift-1))
+            hit=overlaps(moved,shapes[bracket_id])
+            bore_r=min(e.radius() for e in shapes[bracket_id].Edges() if e.geomType()=='CIRCLE')
+            shaft_r=min(e.radius() for e in shapes[shaft_id].Edges() if e.geomType()=='CIRCLE')
+            clearance=bore_r-shaft_r-abs(shift-1)
+            cap_ok=outside<1e-6 and uncovered<1e-6
+            travel.append(dict(kind=kind,offset_mm=shift,outside_mm3=outside,uncovered_mm3=uncovered,bearing_area_mm2=bearing,cap_outline_usable_nominal=cap_ok,fixed_bracket_clearance_mm=clearance,fixed_bracket_overlap_mm3=hit,fixed_bracket_clear=hit<1e-6,usable_nominal=cap_ok and hit<1e-6))
         nominal=next(r for r in travel if r['kind']==kind and r['offset_mm']==1)
         checks.append(dict(check='nominal cap support '+kind,passed=nominal['usable_nominal']))
     checks.append(dict(check='local stepped web and ears',passed=all(len(shapes[f'lower-{f}-1'].Solids())==1 and overlaps(shapes[f'lower-{f}-0'],shapes[f'lower-{f}-1'])<1e-6 for f in ('left','right')),thin_ears_mm=1,local_web_mm=2))

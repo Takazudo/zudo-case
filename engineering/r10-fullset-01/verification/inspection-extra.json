@@ -6,6 +6,7 @@
     "black open appearance",
     "open lid JSON restores label",
     "invalid camera and boolean rejected",
-    "central overlap section"
+    "central overlap section",
+    "cap outline passes but fixed bracket collision warns at+1.75 for both cap types"
   ]
 }

@@ -35,7 +35,7 @@ def create(items,shapes,out,profile,travel):
         crop=g.box(u-20,u+20,v-18,v+18,-8,12)
         for item in items:
             id=item['id']
-            if id not in shapes or not (id in ['panel-right','lower-right-0','lower-right-1','corner-1--1'] or id.endswith(f'right-{k}')):continue
+            if id not in shapes or not (id in ['panel-right','lower-right-0','lower-right-1','corner-1--1','bracket-corner-1--1-0'] or id.endswith(f'right-{k}')):continue
             shape=shapes[id].moved(loc).intersect(crop).clean()
             if not shape.Solids() or shape.Volume()<1e-6:continue
             shape=shape.translate((-u,-v,0))

@@ -105,3 +105,5 @@ jobs:
 
       - name: Regenerate fullset twice and verify every exported/package byte
         run: uv run --locked --project engineering/r9-prototype-01 python engineering/r10-fullset-01/tests/regenerate.py
+      - name: Verify exported cap margins and fixed-bracket travel scope
+        run: uv run --locked --project engineering/r9-prototype-01 python engineering/r10-fullset-01/tests/cap_margins.py --check
