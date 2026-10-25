@@ -45,6 +45,17 @@
       "corner_radius": 5,
       "xy_fit": 0,
       "elephant_foot": 0
+    },
+    "floor-cap": {
+      "shape": "capsule",
+      "width": 12,
+      "length": 20,
+      "thickness": 1,
+      "hole_diameter": 5.5,
+      "eccentricity": 3,
+      "corner_radius": 6,
+      "xy_fit": 0,
+      "elephant_foot": 0
     }
   }
 }

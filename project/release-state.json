@@ -2524,5 +2524,53 @@
       ],
       "note": "M5 screw + nylon lock nut for plate/frame assembly only. No lid-to-body lock. Physical fit and nut test pending; current_lid_manufacturing stays R9-FITFIX-01."
     }
-  ]
+  ],
+  "current_fullset_candidate": {
+    "revision": "R10-FULLSET-01",
+    "model": "7u40",
+    "profile": "7u40-t1-groove1p70-m5",
+    "production_approved": false,
+    "manifest_path": "engineering/r10-fullset-01/out/selected-order.json",
+    "manifest_sha256": "1119d18d37ab5b48d49709ba725214bbd70ff548d4b5f028ea4b4551c7cbe496",
+    "preview": "/previews/r10-fullset-01.html",
+    "packages": [
+      "/downloads/candidate/R10-FULLSET-01-aluminum.zip",
+      "/downloads/candidate/R10-FULLSET-01-pa12.zip",
+      "/downloads/candidate/R10-FULLSET-01-home-print.zip"
+    ],
+    "quantities": {
+      "aluminum": 6,
+      "pa12": 20,
+      "new_home_print": 72,
+      "reused_circular_washers": 20
+    },
+    "interface": {
+      "guard_opening_mm": [
+        224.20000000000002,
+        328.8
+      ],
+      "guard_exterior_mm": [
+        231.6,
+        336.2
+      ],
+      "guard_bottom_z_mm": -1,
+      "guard_top_z_mm": 92,
+      "guard_envelope_height_mm": 93,
+      "lid_seat_z_mm": 92,
+      "plate_bottom_z_mm": 122,
+      "plate_top_z_mm": 123.5,
+      "lip_top_z_mm": 123.8,
+      "locator_bottom_z_mm": 80,
+      "flat_wall_mm": 1,
+      "metal_offset_mm": 0.1,
+      "lid_plate_mm": [
+        227.4,
+        332,
+        1.5
+      ],
+      "lid_locator_xy_clearance_mm": 0.7,
+      "lid_engagement_mm": 12,
+      "plate_under_clearance_to_assumed_knob_mm": 4
+    }
+  }
 }

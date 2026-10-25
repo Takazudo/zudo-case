@@ -1,0 +1,285 @@
+{
+  "passed": true,
+  "sampled_top_wall_roof": [
+    {
+      "part": "top-1-0",
+      "axis": 1,
+      "measured_mm": 1.0,
+      "expected_mm": 1
+    },
+    {
+      "part": "top-1-0",
+      "axis": 1,
+      "measured_mm": 1.0,
+      "expected_mm": 1
+    },
+    {
+      "part": "top-1-0",
+      "axis": 2,
+      "measured_mm": 1.0,
+      "expected_mm": 1
+    }
+  ],
+  "body_tool_assumption": "D10 cylinders,20mm straight access; wall-to-bracket fasteners tightened before bottom fasteners; bottom tightened before source frame is installed",
+  "body_tool_collisions_in_selected_sequence": [],
+  "wall_tool_obstructions_if_bottom_installed_first": [
+    {
+      "joint": "front-0",
+      "part": "nut-floor-0",
+      "volume_mm3": 82.88509481333845
+    },
+    {
+      "joint": "front-0",
+      "part": "shaft-floor-0",
+      "volume_mm3": 104.8185194377667
+    },
+    {
+      "joint": "front-1",
+      "part": "nut-floor-1",
+      "volume_mm3": 82.88509481334069
+    },
+    {
+      "joint": "front-1",
+      "part": "shaft-floor-1",
+      "volume_mm3": 104.81851943776671
+    },
+    {
+      "joint": "back-0",
+      "part": "nut-floor-3",
+      "volume_mm3": 82.8811694998085
+    },
+    {
+      "joint": "back-0",
+      "part": "shaft-floor-3",
+      "volume_mm3": 104.82057342508087
+    },
+    {
+      "joint": "back-1",
+      "part": "nut-floor-2",
+      "volume_mm3": 82.88116949980947
+    },
+    {
+      "joint": "back-1",
+      "part": "shaft-floor-2",
+      "volume_mm3": 104.82057342508085
+    },
+    {
+      "joint": "right-0",
+      "part": "nut-floor-7",
+      "volume_mm3": 82.97496134769949
+    },
+    {
+      "joint": "right-0",
+      "part": "shaft-floor-7",
+      "volume_mm3": 104.8215423740602
+    },
+    {
+      "joint": "right-1",
+      "part": "nut-floor-8",
+      "volume_mm3": 82.97496134800699
+    },
+    {
+      "joint": "right-1",
+      "part": "shaft-floor-8",
+      "volume_mm3": 104.82154237379896
+    },
+    {
+      "joint": "right-2",
+      "part": "nut-floor-9",
+      "volume_mm3": 82.97496134407456
+    },
+    {
+      "joint": "right-2",
+      "part": "shaft-floor-9",
+      "volume_mm3": 104.82154237685718
+    },
+    {
+      "joint": "left-0",
+      "part": "nut-floor-6",
+      "volume_mm3": 82.97626408647196
+    },
+    {
+      "joint": "left-0",
+      "part": "shaft-floor-6",
+      "volume_mm3": 104.82069437775854
+    },
+    {
+      "joint": "left-1",
+      "part": "nut-floor-5",
+      "volume_mm3": 82.97626408647461
+    },
+    {
+      "joint": "left-1",
+      "part": "shaft-floor-5",
+      "volume_mm3": 104.82069437778794
+    },
+    {
+      "joint": "left-2",
+      "part": "nut-floor-4",
+      "volume_mm3": 82.97626408595971
+    },
+    {
+      "joint": "left-2",
+      "part": "shaft-floor-4",
+      "volume_mm3": 104.82069437764885
+    }
+  ],
+  "tool_obstructions_with_source_frame": [
+    {
+      "joint": "front-4",
+      "part": "fixer--1",
+      "volume_mm3": 218.6121107280269
+    },
+    {
+      "joint": "front-4",
+      "part": "padder--1-row0",
+      "volume_mm3": 203.93531666395705
+    },
+    {
+      "joint": "front-4",
+      "part": "rail-end-bolt--1-1",
+      "volume_mm3": 0.3319740690627627
+    },
+    {
+      "joint": "front-5",
+      "part": "fixer-1",
+      "volume_mm3": 218.6121107280269
+    },
+    {
+      "joint": "front-5",
+      "part": "padder-1-row0",
+      "volume_mm3": 203.93531666395717
+    },
+    {
+      "joint": "front-5",
+      "part": "rail-end-bolt-1-1",
+      "volume_mm3": 0.33197405298352517
+    },
+    {
+      "joint": "back-4",
+      "part": "fixer-1",
+      "volume_mm3": 218.90142007196212
+    },
+    {
+      "joint": "back-4",
+      "part": "padder-1-row2",
+      "volume_mm3": 203.56043517865342
+    },
+    {
+      "joint": "back-4",
+      "part": "rail-end-bolt-1-6",
+      "volume_mm3": 0.3319708451694897
+    },
+    {
+      "joint": "back-5",
+      "part": "fixer--1",
+      "volume_mm3": 218.90142007196235
+    },
+    {
+      "joint": "back-5",
+      "part": "padder--1-row2",
+      "volume_mm3": 203.56043517865336
+    },
+    {
+      "joint": "back-5",
+      "part": "rail-end-bolt--1-6",
+      "volume_mm3": 0.33197082914249487
+    },
+    {
+      "joint": "right-5",
+      "part": "fixer-1",
+      "volume_mm3": 106.18270734012447
+    },
+    {
+      "joint": "right-5",
+      "part": "padder-1-row0",
+      "volume_mm3": 106.1827073401245
+    },
+    {
+      "joint": "right-5",
+      "part": "rail-end-bolt-1-1",
+      "volume_mm3": 3.3921159968509733
+    },
+    {
+      "joint": "right-6",
+      "part": "fixer-1",
+      "volume_mm3": 106.18270734012333
+    },
+    {
+      "joint": "right-6",
+      "part": "padder-1-row2",
+      "volume_mm3": 106.05008893392485
+    },
+    {
+      "joint": "right-6",
+      "part": "rail-end-bolt-1-6",
+      "volume_mm3": 3.39210139931279
+    },
+    {
+      "joint": "left-5",
+      "part": "fixer--1",
+      "volume_mm3": 106.18270734012333
+    },
+    {
+      "joint": "left-5",
+      "part": "padder--1-row2",
+      "volume_mm3": 106.05008893392487
+    },
+    {
+      "joint": "left-5",
+      "part": "rail-end-bolt--1-6",
+      "volume_mm3": 3.392101399312791
+    },
+    {
+      "joint": "left-6",
+      "part": "fixer--1",
+      "volume_mm3": 106.18270734012444
+    },
+    {
+      "joint": "left-6",
+      "part": "padder--1-row0",
+      "volume_mm3": 106.18270734012445
+    },
+    {
+      "joint": "left-6",
+      "part": "rail-end-bolt--1-1",
+      "volume_mm3": 3.392115996850971
+    },
+    {
+      "joint": "floor-4",
+      "part": "fixer--1",
+      "volume_mm3": 20.268767403258067
+    },
+    {
+      "joint": "floor-5",
+      "part": "fixer--1",
+      "volume_mm3": 28.764877993263028
+    },
+    {
+      "joint": "floor-6",
+      "part": "fixer--1",
+      "volume_mm3": 20.077816040686
+    },
+    {
+      "joint": "floor-7",
+      "part": "fixer-1",
+      "volume_mm3": 20.26876740325807
+    },
+    {
+      "joint": "floor-8",
+      "part": "fixer-1",
+      "volume_mm3": 28.764877993263024
+    },
+    {
+      "joint": "floor-9",
+      "part": "fixer-1",
+      "volume_mm3": 20.077816040686006
+    }
+  ],
+  "fastener_collisions": [],
+  "rail_envelope_collisions": [],
+  "bottom_head_z": -2.4,
+  "feet_z": -3.0,
+  "uncompressed_clearance_mm": 0.6000000000000001,
+  "hardware_envelopes_are_assumptions": true
+}

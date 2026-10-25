@@ -1,0 +1,250 @@
+[
+  {
+    "part": "panel-front",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "aluminum/panel-front-qty1-mm.step",
+    "new_sha256": "e08deaa97c838abdd97da49d2fcd409c2925f73c36001ddc904a42fdf92a7de4",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "panel-back",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "aluminum/panel-back-qty1-mm.step",
+    "new_sha256": "e08deaa97c838abdd97da49d2fcd409c2925f73c36001ddc904a42fdf92a7de4",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "panel-right",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "aluminum/panel-right-qty1-mm.step",
+    "new_sha256": "2d89607278ec92d261022b6856f229417d135bbb82223058ca77f2583f282d06",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "panel-left",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "aluminum/panel-left-qty1-mm.step",
+    "new_sha256": "f18902880183d6c1aaabc3aaa1ba7de82e56f1fe363a9c0d69f31dd9ae13a9c1",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "panel-floor",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "aluminum/panel-floor-qty1-mm.step",
+    "new_sha256": "094732b2ba7f015264ea9791f1da5065266835f767569e9444507bc406c139bc",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lid-plate",
+    "old_source": "engineering/r9-lid-m5-01/lidm5/geometry.py",
+    "old_sha256": "430852dc4e6ff1826bd04df16617111b92e5720d858cd13c35bde098325e431c",
+    "new_step": "aluminum/lid-plate-qty1-mm.step",
+    "new_sha256": "c0c15c80674483747a90ec493c93492064d1d6016a2bb982786846eb02831213",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "top-0-0",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/top-0-0-qty1-mm.step",
+    "new_sha256": "253f947b8758184537615db9d296c2057d2f3bc628de585be405266e2b1fefc9",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "top-0-1",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/top-0-1-qty1-mm.step",
+    "new_sha256": "ad5992bd77152bc32f3a46135a70655880bbb14c280fcc671bf03f679264c17a",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "top-1-0",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/top-1-0-qty1-mm.step",
+    "new_sha256": "86938f70b6ae0ee7852c6f59b102ba4c2211c3b4809c25987bc2b899dcf21487",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "top-1-1",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/top-1-1-qty1-mm.step",
+    "new_sha256": "df3253091849d0fa20a6aba2b211cc3a97743e2f647ecfae50be0780003d7688",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "corner--1--1",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/corner--1--1-qty1-mm.step",
+    "new_sha256": "f50909cd9fa9429b28f4456dbb52e83c6327876d75ff9d8794092a29a3185513",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "corner--1-1",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/corner--1-1-qty1-mm.step",
+    "new_sha256": "2a8868259ddfe411947fc2be26f17c2f4ec02b04cd421276b09cf11cbf8a8a17",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "corner-1--1",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/corner-1--1-qty1-mm.step",
+    "new_sha256": "331ae3e5d0b46f6b4a520ed376a1fd4e8c10b42d97cd4a54998c54240ed1772b",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "corner-1-1",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/corner-1-1-qty1-mm.step",
+    "new_sha256": "d134c83ccdb203214da571a74a7515122669e1a0853a541c70b0598d99e77cb9",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lower-front-0",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/lower-front-0-qty1-mm.step",
+    "new_sha256": "960613e0ea9925554b066624c25503b8b49c260f8def925cdbab8067ceb59152",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lower-front-1",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/lower-front-1-qty1-mm.step",
+    "new_sha256": "ee1979931b036fff347ccf4ec2e604332fc44007ad75438bce3fcf5ea4786cdc",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lower-back-0",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/lower-back-0-qty1-mm.step",
+    "new_sha256": "845767a1a1ffa85e7c989d82e0995a3932454f0561ed390de5f77cd9909d9271",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lower-back-1",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/lower-back-1-qty1-mm.step",
+    "new_sha256": "e4fa9a3b64c505abe3ab643640744255beae95d8027a68b58a81b4dd0eb8d9eb",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lower-right-0",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/lower-right-0-qty1-mm.step",
+    "new_sha256": "1ca7e4562c62bf5fa084d62f6efbb1052f8e5a2d927dfcd17da14983f0ded7fd",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lower-right-1",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/lower-right-1-qty1-mm.step",
+    "new_sha256": "812c6e395c9b797c9fe01bb7182ea00adbcc7f4bf8ac2d314de435ee414f7e8c",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lower-left-0",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/lower-left-0-qty1-mm.step",
+    "new_sha256": "b8a951d1aa6080ae94cb5494cb9bcd620823401daca18f42bc143eb9d3c1d5b9",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lower-left-1",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "pa12/lower-left-1-qty1-mm.step",
+    "new_sha256": "3484b17d38371407501fdd6ff3fdc60d1877bfdb80bc32b25934d83ac797b65f",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lid-frame-fr",
+    "old_source": "engineering/r9-lid-m5-01/lidm5/geometry.py",
+    "old_sha256": "430852dc4e6ff1826bd04df16617111b92e5720d858cd13c35bde098325e431c",
+    "new_step": "pa12/lid-frame-fr-qty1-mm.step",
+    "new_sha256": "a56024489122bc0c4fb12a149560a2e69c5be151438b9191b30c7d97518ec05c",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lid-frame-fl",
+    "old_source": "engineering/r9-lid-m5-01/lidm5/geometry.py",
+    "old_sha256": "430852dc4e6ff1826bd04df16617111b92e5720d858cd13c35bde098325e431c",
+    "new_step": "pa12/lid-frame-fl-qty1-mm.step",
+    "new_sha256": "f90fc4beaa4ff898427d8353ecf12e1d79f50031a1f6669ca97c3d799418b702",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lid-frame-bl",
+    "old_source": "engineering/r9-lid-m5-01/lidm5/geometry.py",
+    "old_sha256": "430852dc4e6ff1826bd04df16617111b92e5720d858cd13c35bde098325e431c",
+    "new_step": "pa12/lid-frame-bl-qty1-mm.step",
+    "new_sha256": "dd1d32ce2554fb1df2d8a8329afeb8a5f27cd2a39460d8617b293b1ef322f944",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lid-frame-br",
+    "old_source": "engineering/r9-lid-m5-01/lidm5/geometry.py",
+    "old_sha256": "430852dc4e6ff1826bd04df16617111b92e5720d858cd13c35bde098325e431c",
+    "new_step": "pa12/lid-frame-br-qty1-mm.step",
+    "new_sha256": "3560969d7ff7308848bd81514c9a4808f6b897e589fbe0194da4a9ea8285e4e2",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "corner-cap",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "home-print/corner-cap-mm.step",
+    "new_sha256": "4ef7c56c1a33b2bc6c5d9e0636a68b2286bd2fd8d2bd37eed37a4463cb860c13",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "lower-cap",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "home-print/lower-cap-mm.step",
+    "new_sha256": "cdf0eb3f145d3861fb019df469e2e4e393f2e29becef132ac8720e34ad493f8d",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "capsule-pad",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "home-print/capsule-pad-mm.step",
+    "new_sha256": "ec0649ad8c8a829de0708c4972d34d6f6f0b27f71a510a41c58157f05b7a5669",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "round-replacement",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "home-print/round-replacement-mm.step",
+    "new_sha256": "367ea130e5a0ce866d25abcfb275647c75817eb1faf501b0dfb6e1eab8c8680e",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  },
+  {
+    "part": "floor-cap",
+    "old_source": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+    "old_sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424",
+    "new_step": "home-print/floor-cap-mm.step",
+    "new_sha256": "448126eb6803f2b3a218c01c836387972ea54a3f0503e3439493c08f5d6e1d21",
+    "change": "New integrated R10 geometry; see selected parameters and local correction notes"
+  }
+]

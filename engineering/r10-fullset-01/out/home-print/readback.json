@@ -1,0 +1,117 @@
+[
+  {
+    "id": "corner-cap",
+    "step": "home-print/corner-cap-mm.step",
+    "stl": "home-print/corner-cap-mm.stl",
+    "dimensions_mm": [
+      16.0,
+      12.0,
+      1.0
+    ],
+    "readback": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 516,
+      "triangles": 1032,
+      "bbox_error_mm": 0.0,
+      "volume_error_mm3": 0.0070065727410622,
+      "cad_volume_mm3": 166.3102890278042,
+      "edge_incidence_histogram": {
+        "2": 1548
+      }
+    }
+  },
+  {
+    "id": "lower-cap",
+    "step": "home-print/lower-cap-mm.step",
+    "stl": "home-print/lower-cap-mm.stl",
+    "dimensions_mm": [
+      14.0,
+      16.0,
+      1.0
+    ],
+    "readback": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 516,
+      "triangles": 1032,
+      "bbox_error_mm": 0.0,
+      "volume_error_mm3": 0.007006347082921138,
+      "cad_volume_mm3": 198.31028902780423,
+      "edge_incidence_histogram": {
+        "2": 1548
+      }
+    }
+  },
+  {
+    "id": "capsule-pad",
+    "step": "home-print/capsule-pad-mm.step",
+    "stl": "home-print/capsule-pad-mm.stl",
+    "dimensions_mm": [
+      12.0,
+      20.0,
+      1.0
+    ],
+    "readback": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 508,
+      "triangles": 1016,
+      "bbox_error_mm": 0.0018644332885742188,
+      "volume_error_mm3": 0.037022360056255366,
+      "cad_volume_mm3": 185.33904108645976,
+      "edge_incidence_histogram": {
+        "2": 1524
+      }
+    }
+  },
+  {
+    "id": "round-replacement",
+    "step": "home-print/round-replacement-mm.step",
+    "stl": "home-print/round-replacement-mm.stl",
+    "dimensions_mm": [
+      10.0,
+      10.0,
+      1.0
+    ],
+    "readback": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 504,
+      "triangles": 1008,
+      "bbox_error_mm": 0.0015540122985839844,
+      "volume_error_mm3": 0.022701710969428746,
+      "cad_volume_mm3": 54.781521896972016,
+      "edge_incidence_histogram": {
+        "2": 1512
+      }
+    }
+  },
+  {
+    "id": "floor-cap",
+    "step": "home-print/floor-cap-mm.step",
+    "stl": "home-print/floor-cap-mm.stl",
+    "dimensions_mm": [
+      12.0,
+      20.0,
+      1.0
+    ],
+    "readback": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "vertices": 508,
+      "triangles": 1016,
+      "bbox_error_mm": 0.0018649101257324219,
+      "volume_error_mm3": 0.037022335867305856,
+      "cad_volume_mm3": 185.33904108645976,
+      "edge_incidence_histogram": {
+        "2": 1524
+      }
+    }
+  }
+]

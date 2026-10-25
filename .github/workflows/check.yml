@@ -33,6 +33,8 @@ jobs:
       - run: pnpm check:r9
       - run: node --test tests/fitfix-pcb-materials.test.mjs
       - run: pnpm check:fitfix
+      - run: pnpm check:fullset
+      - run: pnpm test:fullset
       - run: pnpm check:lid-m5
       - run: pnpm check:fit-test-order
       - run: node --test tests/order-map.test.mjs
@@ -100,3 +102,6 @@ jobs:
         working-directory: engineering/r9-anodizing-01
       - name: Verify original/revised preview mesh cache
         run: uv run --locked --project engineering/r9-prototype-01 python engineering/order-map/aluminum_meshes.py --check
+
+      - name: Regenerate fullset twice and verify every exported/package byte
+        run: uv run --locked --project engineering/r9-prototype-01 python engineering/r10-fullset-01/tests/regenerate.py

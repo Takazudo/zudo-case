@@ -7,26 +7,14 @@ ROOT=Path(__file__).resolve().parent
 sys.path[:0]=[str(ROOT.parent/'r9-fitfix-01'),str(ROOT.parent/'r9-lid-m5-01')]
 import cadquery as cq
 from fitfix import io
-from fitfix.geometry import Body,Guard,interface
+from fitfix.geometry import Body,Guard,Part,interface
 from fitfix.reference import load_reference
 from lidm5.geometry import M5,lid_parts_m5
 from fullset import geometry as g
 REV='R10-FULLSET-01'
 io.REVISION=REV
 
-def washer(p):
-    w,l,t=p['width'],p['length'],p['thickness'];r=p['corner_radius'];e=p['eccentricity']
-    assert min(w,l,t,p['hole_diameter'])>0 and all(math.isfinite(v) for v in (w,l,t,r,e,p['xy_fit'],p['elephant_foot']))
-    if p['shape']=='round':s=g.disk(0,e,0,t,w/2)
-    elif p['shape']=='capsule':s=g.slot(0,e,l,w,0,t,90)
-    else:s=g.rr(-w/2,w/2,e-l/2,e+l/2,0,t,r)
-    hole=p['hole_diameter']/2+p['xy_fit']
-    if hole<=0:raise ValueError('Nonpositive compensated bore')
-    s=s.cut(g.disk(0,0,-1,t+1,hole))
-    ef=p['elephant_foot']
-    if ef<0 or ef>=t:raise ValueError('elephant_foot must be >=0 and < thickness')
-    if ef:s=s.cut(cq.Solid.makeCone(hole+ef,hole,ef,cq.Vector(0,0,0)))
-    return s.clean()
+from fullset.home_washers import washer
 
 def export(s,out,stem):
     assert s.isValid() and len(s.Solids())==1 and s.Volume()>0,stem
@@ -76,7 +64,11 @@ def main():
         params=wp['types']['capsule-pad']
         if abs(params['thickness']-(n1-n0))>1e-8:raise ValueError('Thickness changes require stack redesign')
         return washer(params).rotate((0,0,0),(0,0,1),ang-90).translate((u,v,n0))
-    g.outer_cap=cap;g.coverwasher=capsule
+    def floor_cover(u,v,n0,n1,ang=0):
+        # Eccentric outline moves toward floor centre; bore remains on bolt axis.
+        angle=(90 if u>0 else -90) if ang==0 else (180 if v>0 else 0)
+        return washer(wp['types']['floor-cap']).rotate((0,0,0),(0,0,1),angle).translate((u,v,n0))
+    g.outer_cap=cap;g.coverwasher=capsule;g.floor_cover=floor_cover
     print('Integrated body and joints',flush=True)
     items=g.build_case(True,p['guard']['wall']);shapes=g.solids
     b=Body(**p['body']);guard=Guard(**p['guard']);lid=p['lid'];m=M5(**p['m5']);m.validate(8,5)
@@ -94,6 +86,26 @@ def main():
             items.append(dict(id=e['id'],name=e['name'],cat='sourceFrame',mesh=key,box=bb,note='Pinned original 204mm rail mesh; unchanged',material='existing rail',role='rail',group=e['id'],volume=None,solids=None,explode=[0,0,1]))
         else:g.add(items,r6.SHAPES[e['id']],e['id'],e['name'],'sourceFrame',material='existing PCB/hardware',role=e['role'],explode=[0,0,1])
         reference.append(dict(id=e['id'],role=e['role'],quantity=1,procurement='existing/reused'))
+    from lidm5.geometry import screw_envelope,nut_envelope
+    for site in sites:
+        env=screw_envelope(site['x'],site['y'],inter['plate_top_z_mm'],10,10,5,5)
+        for tag,shape in [('head',env['head']),('shaft',env['shank']),('nut',nut_envelope(site['x'],site['y'],inter['plate_bottom_z_mm']-1.5,8,5,site['hex_angle']))]:
+            g.add(items,shape,'lid-'+tag+'-'+site['frame']+'-'+site['site'],'M5 lid '+tag+' (assumed envelope)','lid',role='lid-hardware',material='purchased metal hardware',explode=[0,0,2])
+    hardware_stacks=[]
+    for f in g.FACES:
+        for k,(u,v,ang,role) in enumerate(g.panel_holes(f)):
+            if role=='rail':continue
+            if role=='corner':u-=math.copysign(1,u)
+            elif role=='lower':v+=1
+            elif role=='floor-front':v-=math.copysign(1,v)
+            else:u-=math.copysign(1,u)
+            lap=f in ('left','right') and role=='lower' and abs(u)<.1
+            length=16 if lap else 14
+            grip=7.5 if lap else 6.5
+            shape=g.disk(u,v,1-length,1,2.5) if f=='floor' else g.disk(u,v,-4.5,-4.5+length,2.5)
+            id=f'shaft-{f}-{k}';shapes[id]=g.world(shape,f);item=next(i for i in items if i['id']==id);item['mesh']=g.mesh(shapes[id]);item['note']=f'M5 L{length}; grip {grip}; nut h5 assumed; projection {length-grip-5}'
+            hardware_stacks.append(dict(instance=id,length_mm=length,grip_mm=grip,nut_height_assumed_mm=5,projection_mm=length-grip-5))
+    io.write_json(out/'hardware-stacks.json',dict(panel_joints=hardware_stacks,lid=dict(quantity=8,length_mm=10,grip_mm=3,nut_height_mm=[4.7,5],projection_mm=[2,2.3],washer_quantity=0),feet=dict(quantity=4,height_assumed_mm=3,bottom_fastener_projection_mm=2.4,nominal_uncompressed_clearance_mm=.6),straps=dict(quantity=2,product=None),unknowns=['Head diameters, bracket hole centers, nut and screw products, foot compression, strap product remain assumptions']))
     # Independent flat plates: local x/y correspond to each explicit face basis.
     registry=[];hole_table=[]
     for f in g.FACES:
@@ -118,6 +130,16 @@ def main():
     row=dict(id='lid-plate',quantity=1,procurement='aluminum',material='A5052 t1.5; deburred; black anodized after machining',**export(flat,out,'aluminum/lid-plate-qty1-mm'))
     row['dxf']='aluminum/lid-plate-qty1-mm.dxf';row['hanging_hole_uv']=[hx+w/2,hy+d/2];row['local_to_assembly']=dict(origin=[-w/2,-d/2,z],x=[1,0,0],y=[0,1,0],z=[0,0,1]);io.dxf(out/row['dxf'],w,d,[(x+w/2,y+d/2,5.5) for x,y in holes]+[(hx+w/2,hy+d/2,4)],radius=lid['plate_corner_radius']);registry.append(row)
     for x,y in holes:hole_table.append(dict(part='lid-plate',local_uv=[x+w/2,y+d/2],assembly_xyz=[x,y,z],kind='lid',diameter=5.5))
+    # Exact source hole centres, including the asymmetric rail positions.
+    source_checks=[]
+    for e in entries:
+        if e.get('role')!='aluminumPanel':continue
+        id='panel-'+('floor' if e['id']=='metal-bottom' else e['id'].split('-')[1])
+        actual=sorted(tuple(round(x,6) for x in r['assembly_xyz']) for r in hole_table if r['part']==id)
+        expected=sorted(tuple(round(x,6) for x in xyz) for xyz in e['holeCenters'])
+        assert actual==expected,(id,actual,expected)
+        source_checks.append(dict(part=id,original_centres_match=True,centres=actual))
+    io.write_json(out/'source-datums.json',source_checks)
     print('Export PA12 full-length parts',flush=True)
     for item in items:
         if item['role'] not in ('guard','lid') or item['id']=='lid-plate':continue
@@ -128,21 +150,42 @@ def main():
     counts=Counter()
     for item in items:
         id=item['id']
-        if id.startswith('inner-') or id.startswith('cap-floor'):kind='capsule-pad'
+        if id.startswith('inner-'):kind='capsule-pad'
+        elif id.startswith('cap-floor'):kind='floor-cap'
         elif id.startswith('cap-'):kind='lower-cap' if item['box'][5]<30 else 'corner-cap'
         elif id.startswith('retain-') or id.startswith('outer-washer-'):kind='round-replacement'
         else:continue
         item['print_type']=kind;counts[kind]+=1
-    assert counts=={'capsule-pad':46,'corner-cap':16,'lower-cap':10,'round-replacement':20},counts
+    assert counts=={'capsule-pad':36,'floor-cap':10,'corner-cap':16,'lower-cap':10,'round-replacement':20},counts
     for r in records:
-        r.update(quantity=counts[r['id']],procurement='home-print' if r['id']!='round-replacement' else 'existing/reused; optional home replacement',material='black ASA',instances=[i['id'] for i in items if i.get('print_type')==r['id']]);registry.append(r)
+        r.update(quantity=counts[r['id']],selected_print_quantity=0 if r['id']=='round-replacement' else counts[r['id']],procurement='home-print' if r['id']!='round-replacement' else 'existing/reused; optional home replacement',material='black ASA' if r['id']!='round-replacement' else 'Existing stock; material unverified. Optional replacement: black ASA',instances=[i['id'] for i in items if i.get('print_type')==r['id']]);registry.append(r)
     manifest=dict(revision=REV,profile=p['selected_profile'],model='7u40',units='mm',production_approved=False,status='preparation-in-progress',parameters_sha256=io.digest(ROOT/'parameters.json'),washer_parameters_sha256=io.digest(a.washer_parameters),parts=registry,existing_frame=reference,interface=inter,prices=p['costs'])
+    for row in registry:
+        if row['procurement']!='aluminum':continue
+        dx=cq.importers.importDXF(str(out/row['dxf'])).wires().toPending().extrude(1.5).val()
+        st=cq.importers.importStep(str(out/row['step'])).val()
+        delta=dx.cut(st).Volume()+st.cut(dx).Volume()
+        assert dx.isValid() and len(dx.Solids())==1 and delta<1e-4,(row['id'],delta)
+        row['dxf_readback_symmetric_difference_mm3']=delta
     io.write_json(out/'selected-order.json',manifest);io.write_json(out/'hole-table.json',hole_table)
     io.write_json(out/'scene.json',dict(revision=REV,profile=p['selected_profile'],meshes=g.meshes,scenes={'new1':items}))
     io.write_json(out/'geometry-checks.json',g.audits)
-    from fullset.validation import check
+    for item in items:
+        if item['id'] in shapes:
+            bb=io.bounds(shapes[item['id']]);item['box']=bb['min']+bb['max']
+    from fullset.validation import check,hanging,joints
     report=check(shapes,items,out)
+    joint=joints(shapes,items,out)
+    hang=hanging(shapes,items,p,out)
+    report["passed"]=report["passed"] and hang["passed"] and joint["passed"]
+    from fullset.lidchecks import validate
+    lid_report=validate(b,guard,lid,m,parts,sites,shapes,items,out)
+    report["passed"]=report["passed"] and lid_report["passed"]
+    from fullset.preview import create
+    create(items,shapes,out,p['selected_profile'],report['travel'])
     print('Nominal validation:',report['passed'],flush=True)
+    from fullset.package import make
+    make(out,ROOT,manifest,report,lid_report)
     print('Written',len(registry),'part definitions',out,flush=True)
 
 if __name__=='__main__':main()

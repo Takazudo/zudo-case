@@ -260,7 +260,7 @@ def build_case(new=True,wall=1):
     add(items,s,'inner-'+id,'内側保護ワッシャー · 1mm','inner',f,note='パネルとL金具の間。20×12mm、丸穴φ5.5。ASA黒の試作候補／ナイロンと同一材ではない。',explode=[x*-.35 for x in normal],material='ASA黒 試作候補',role='washer')
    if f=='floor':
     # Retain original inside washer/nut above bracket. Add external wide cover for slot.
-    if new:add(items,coverwasher(u,v,0,1,ang),'cap-'+id,'底面・長穴押さえワッシャー','caps',f,note='新規ASA t1。底面低頭1.4mmを加えて2.4mm、仮脚3mmとの公称差0.6mm。',explode=[x*1.6 for x in normal],material='ASA黒',role='washer')
+    if new:add(items,floor_cover(u,v,0,1,ang),'cap-'+id,'底面・長穴押さえワッシャー','caps',f,note='新規ASA t1。底面低頭1.4mmを加えて2.4mm、仮脚3mmとの公称差0.6mm。',explode=[x*1.6 for x in normal],material='ASA黒',role='washer')
     hn=1 if new else 0
     add(items,head(u,v,hn,hn+1.4),'head-'+id,'底板の外側・低頭M5（模式）','hardware',f,explode=[x*2.4 for x in normal],material='金属',role='fastener')
     seat=-T-sh-2

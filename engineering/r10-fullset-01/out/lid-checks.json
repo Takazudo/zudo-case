@@ -1,0 +1,1431 @@
+{
+  "passed": true,
+  "failed": [],
+  "sites": [
+    {
+      "frame": "lid-frame-fr",
+      "site": "front",
+      "axis_xy": [
+        34.739999999999995,
+        -160.5
+      ],
+      "across_flats_measured": [
+        8.399999999999986,
+        8.399999999999986,
+        8.399999999999986
+      ],
+      "corner_radius_measured": [
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741
+      ],
+      "flat_wall_along_normals": [
+        3.8829091796874944,
+        1.6000051269531257,
+        3.8829091796874944,
+        3.8829091796874944,
+        3.4000051269531206,
+        3.8829091796874944
+      ],
+      "min_wall_true": 1.6000000000000227,
+      "wall_to_outer_face": 3.4000051269531206,
+      "wall_to_interior": 1.6000051269531257,
+      "roof_underside_z": 120.5,
+      "plate_contact_z": 122.00000512695313,
+      "roof_thickness": 1.500005126953127,
+      "boss_bottom_z": 114.99999389648438,
+      "effective_depth": 5.5000061035156165,
+      "overcut_not_counted": 0.2,
+      "plate_hole_present": true,
+      "plate_edge_ligament": 2.75,
+      "plate_edge_to_axis": 5.5,
+      "head_margin_on_plate": 0.5,
+      "head_clearance_to_frames": 1.0999999999999943,
+      "head_collisions": [],
+      "driver_column_collisions": [],
+      "nut_envelope_collisions": [],
+      "anti_rotation": {
+        "max_nut_seated_overlap_mm3": 0.0,
+        "min_sharp": {
+          "across_flats": 7.68,
+          "corner_radius": 4.434050067376326,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.6756375156178747,
+          "locks": true,
+          "free_rotation_deg": 11.300894921445003
+        },
+        "min_truncated": {
+          "across_flats": 7.68,
+          "corner_radius": 4.2192,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 0.2903842608586966,
+          "locks": true,
+          "free_rotation_deg": 24.531880228938114
+        },
+        "photo_truncated": {
+          "across_flats": 7.83,
+          "corner_radius": 4.30160625,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.542655245449537,
+          "locks": true,
+          "free_rotation_deg": 17.522111617036536
+        }
+      },
+      "insertion": {
+        "samples": 29,
+        "collisions": [],
+        "passed": true,
+        "path": "seated -> straight down past the boss bottom (+0.5) -> inward toward the lid centre",
+        "continuous_sweep_verified": false
+      },
+      "screws": [
+        {
+          "length": 10,
+          "washer": false,
+          "tip_z": 113.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 2.299999999999997,
+            "5.0": 2.0
+          },
+          "tip_below_boss_bottom": 1.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 12,
+          "washer": false,
+          "tip_z": 111.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 4.299999999999997,
+            "5.0": 4.0
+          },
+          "tip_below_boss_bottom": 3.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": false,
+          "tip_z": 109.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 6.299999999999997,
+            "5.0": 6.0
+          },
+          "tip_below_boss_bottom": 5.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 10,
+          "washer": true,
+          "tip_z": 114.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 1.2999999999999972,
+            "5.0": 1.0
+          },
+          "tip_below_boss_bottom": 0.4999938964843835,
+          "nylon_engaged": false,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": false
+        },
+        {
+          "length": 12,
+          "washer": true,
+          "tip_z": 112.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 3.299999999999997,
+            "5.0": 3.0
+          },
+          "tip_below_boss_bottom": 2.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": true,
+          "tip_z": 110.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 5.299999999999997,
+            "5.0": 5.0
+          },
+          "tip_below_boss_bottom": 4.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "frame": "lid-frame-fr",
+      "site": "side",
+      "axis_xy": [
+        108.2,
+        -84.05
+      ],
+      "across_flats_measured": [
+        8.399999999999986,
+        8.399999999999986,
+        8.399999999999986
+      ],
+      "corner_radius_measured": [
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741
+      ],
+      "flat_wall_along_normals": [
+        3.8829091796874944,
+        3.8829091796874944,
+        1.6000051269531257,
+        3.8829091796874944,
+        3.8829091796874944,
+        3.4000051269531206
+      ],
+      "min_wall_true": 1.6000000000000085,
+      "wall_to_outer_face": 3.4000051269531206,
+      "wall_to_interior": 1.6000051269531257,
+      "roof_underside_z": 120.5,
+      "plate_contact_z": 122.00000512695313,
+      "roof_thickness": 1.500005126953127,
+      "boss_bottom_z": 114.99999389648438,
+      "effective_depth": 5.5000061035156165,
+      "overcut_not_counted": 0.2,
+      "plate_hole_present": true,
+      "plate_edge_ligament": 2.75,
+      "plate_edge_to_axis": 5.5,
+      "head_margin_on_plate": 0.5,
+      "head_clearance_to_frames": 1.0999999999999943,
+      "head_collisions": [],
+      "driver_column_collisions": [],
+      "nut_envelope_collisions": [],
+      "anti_rotation": {
+        "max_nut_seated_overlap_mm3": 0.0,
+        "min_sharp": {
+          "across_flats": 7.68,
+          "corner_radius": 4.434050067376326,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.6756375156181065,
+          "locks": true,
+          "free_rotation_deg": 11.300894921445003
+        },
+        "min_truncated": {
+          "across_flats": 7.68,
+          "corner_radius": 4.2192,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 0.29038426085860886,
+          "locks": true,
+          "free_rotation_deg": 24.531880228938114
+        },
+        "photo_truncated": {
+          "across_flats": 7.83,
+          "corner_radius": 4.30160625,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.542655245449814,
+          "locks": true,
+          "free_rotation_deg": 17.522111617036536
+        }
+      },
+      "insertion": {
+        "samples": 29,
+        "collisions": [],
+        "passed": true,
+        "path": "seated -> straight down past the boss bottom (+0.5) -> inward toward the lid centre",
+        "continuous_sweep_verified": false
+      },
+      "screws": [
+        {
+          "length": 10,
+          "washer": false,
+          "tip_z": 113.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 2.299999999999997,
+            "5.0": 2.0
+          },
+          "tip_below_boss_bottom": 1.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 12,
+          "washer": false,
+          "tip_z": 111.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 4.299999999999997,
+            "5.0": 4.0
+          },
+          "tip_below_boss_bottom": 3.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": false,
+          "tip_z": 109.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 6.299999999999997,
+            "5.0": 6.0
+          },
+          "tip_below_boss_bottom": 5.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 10,
+          "washer": true,
+          "tip_z": 114.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 1.2999999999999972,
+            "5.0": 1.0
+          },
+          "tip_below_boss_bottom": 0.4999938964843835,
+          "nylon_engaged": false,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": false
+        },
+        {
+          "length": 12,
+          "washer": true,
+          "tip_z": 112.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 3.299999999999997,
+            "5.0": 3.0
+          },
+          "tip_below_boss_bottom": 2.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": true,
+          "tip_z": 110.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 5.299999999999997,
+            "5.0": 5.0
+          },
+          "tip_below_boss_bottom": 4.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "frame": "lid-frame-fl",
+      "site": "front",
+      "axis_xy": [
+        -34.739999999999995,
+        -160.5
+      ],
+      "across_flats_measured": [
+        8.399999999999986,
+        8.399999999999986,
+        8.399999999999986
+      ],
+      "corner_radius_measured": [
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741
+      ],
+      "flat_wall_along_normals": [
+        3.8829091796874944,
+        1.6000051269531257,
+        3.8829091796874944,
+        3.8829091796874944,
+        3.4000051269531206,
+        3.8829091796874944
+      ],
+      "min_wall_true": 1.6000000000000227,
+      "wall_to_outer_face": 3.4000051269531206,
+      "wall_to_interior": 1.6000051269531257,
+      "roof_underside_z": 120.5,
+      "plate_contact_z": 122.00000512695313,
+      "roof_thickness": 1.500005126953127,
+      "boss_bottom_z": 114.99999389648438,
+      "effective_depth": 5.5000061035156165,
+      "overcut_not_counted": 0.2,
+      "plate_hole_present": true,
+      "plate_edge_ligament": 2.75,
+      "plate_edge_to_axis": 5.5,
+      "head_margin_on_plate": 0.5,
+      "head_clearance_to_frames": 1.0999999999999943,
+      "head_collisions": [],
+      "driver_column_collisions": [],
+      "nut_envelope_collisions": [],
+      "anti_rotation": {
+        "max_nut_seated_overlap_mm3": 0.0,
+        "min_sharp": {
+          "across_flats": 7.68,
+          "corner_radius": 4.434050067376326,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.675637515618001,
+          "locks": true,
+          "free_rotation_deg": 11.300894921445003
+        },
+        "min_truncated": {
+          "across_flats": 7.68,
+          "corner_radius": 4.2192,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 0.290384260858681,
+          "locks": true,
+          "free_rotation_deg": 24.531880228938114
+        },
+        "photo_truncated": {
+          "across_flats": 7.83,
+          "corner_radius": 4.30160625,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.542655245446894,
+          "locks": true,
+          "free_rotation_deg": 17.522111617036536
+        }
+      },
+      "insertion": {
+        "samples": 29,
+        "collisions": [],
+        "passed": true,
+        "path": "seated -> straight down past the boss bottom (+0.5) -> inward toward the lid centre",
+        "continuous_sweep_verified": false
+      },
+      "screws": [
+        {
+          "length": 10,
+          "washer": false,
+          "tip_z": 113.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 2.299999999999997,
+            "5.0": 2.0
+          },
+          "tip_below_boss_bottom": 1.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 12,
+          "washer": false,
+          "tip_z": 111.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 4.299999999999997,
+            "5.0": 4.0
+          },
+          "tip_below_boss_bottom": 3.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": false,
+          "tip_z": 109.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 6.299999999999997,
+            "5.0": 6.0
+          },
+          "tip_below_boss_bottom": 5.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 10,
+          "washer": true,
+          "tip_z": 114.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 1.2999999999999972,
+            "5.0": 1.0
+          },
+          "tip_below_boss_bottom": 0.4999938964843835,
+          "nylon_engaged": false,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": false
+        },
+        {
+          "length": 12,
+          "washer": true,
+          "tip_z": 112.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 3.299999999999997,
+            "5.0": 3.0
+          },
+          "tip_below_boss_bottom": 2.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": true,
+          "tip_z": 110.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 5.299999999999997,
+            "5.0": 5.0
+          },
+          "tip_below_boss_bottom": 4.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "frame": "lid-frame-fl",
+      "site": "side",
+      "axis_xy": [
+        -108.2,
+        -84.05
+      ],
+      "across_flats_measured": [
+        8.399999999999986,
+        8.399999999999986,
+        8.399999999999986
+      ],
+      "corner_radius_measured": [
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741
+      ],
+      "flat_wall_along_normals": [
+        3.8829091796874944,
+        3.8829091796874944,
+        3.4000051269531206,
+        3.8829091796874944,
+        3.8829091796874944,
+        1.6000051269531257
+      ],
+      "min_wall_true": 1.6000000000000085,
+      "wall_to_outer_face": 3.4000051269531206,
+      "wall_to_interior": 1.6000051269531257,
+      "roof_underside_z": 120.5,
+      "plate_contact_z": 122.00000512695313,
+      "roof_thickness": 1.500005126953127,
+      "boss_bottom_z": 114.99999389648438,
+      "effective_depth": 5.5000061035156165,
+      "overcut_not_counted": 0.2,
+      "plate_hole_present": true,
+      "plate_edge_ligament": 2.75,
+      "plate_edge_to_axis": 5.5,
+      "head_margin_on_plate": 0.5,
+      "head_clearance_to_frames": 1.0999999999999943,
+      "head_collisions": [],
+      "driver_column_collisions": [],
+      "nut_envelope_collisions": [],
+      "anti_rotation": {
+        "max_nut_seated_overlap_mm3": 0.0,
+        "min_sharp": {
+          "across_flats": 7.68,
+          "corner_radius": 4.434050067376326,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.6756375156180647,
+          "locks": true,
+          "free_rotation_deg": 11.300894921445003
+        },
+        "min_truncated": {
+          "across_flats": 7.68,
+          "corner_radius": 4.2192,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 0.2903842608586115,
+          "locks": true,
+          "free_rotation_deg": 24.531880228938114
+        },
+        "photo_truncated": {
+          "across_flats": 7.83,
+          "corner_radius": 4.30160625,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.5426552454501943,
+          "locks": true,
+          "free_rotation_deg": 17.522111617036536
+        }
+      },
+      "insertion": {
+        "samples": 29,
+        "collisions": [],
+        "passed": true,
+        "path": "seated -> straight down past the boss bottom (+0.5) -> inward toward the lid centre",
+        "continuous_sweep_verified": false
+      },
+      "screws": [
+        {
+          "length": 10,
+          "washer": false,
+          "tip_z": 113.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 2.299999999999997,
+            "5.0": 2.0
+          },
+          "tip_below_boss_bottom": 1.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 12,
+          "washer": false,
+          "tip_z": 111.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 4.299999999999997,
+            "5.0": 4.0
+          },
+          "tip_below_boss_bottom": 3.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": false,
+          "tip_z": 109.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 6.299999999999997,
+            "5.0": 6.0
+          },
+          "tip_below_boss_bottom": 5.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 10,
+          "washer": true,
+          "tip_z": 114.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 1.2999999999999972,
+            "5.0": 1.0
+          },
+          "tip_below_boss_bottom": 0.4999938964843835,
+          "nylon_engaged": false,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": false
+        },
+        {
+          "length": 12,
+          "washer": true,
+          "tip_z": 112.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 3.299999999999997,
+            "5.0": 3.0
+          },
+          "tip_below_boss_bottom": 2.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": true,
+          "tip_z": 110.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 5.299999999999997,
+            "5.0": 5.0
+          },
+          "tip_below_boss_bottom": 4.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "frame": "lid-frame-bl",
+      "site": "front",
+      "axis_xy": [
+        -34.739999999999995,
+        160.5
+      ],
+      "across_flats_measured": [
+        8.399999999999986,
+        8.399999999999986,
+        8.399999999999986
+      ],
+      "corner_radius_measured": [
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741
+      ],
+      "flat_wall_along_normals": [
+        3.8829091796874944,
+        3.4000051269531206,
+        3.8829091796874944,
+        3.8829091796874944,
+        1.6000051269531257,
+        3.8829091796874944
+      ],
+      "min_wall_true": 1.6000000000000227,
+      "wall_to_outer_face": 3.4000051269531206,
+      "wall_to_interior": 1.6000051269531257,
+      "roof_underside_z": 120.5,
+      "plate_contact_z": 122.00000512695313,
+      "roof_thickness": 1.500005126953127,
+      "boss_bottom_z": 114.99999389648438,
+      "effective_depth": 5.5000061035156165,
+      "overcut_not_counted": 0.2,
+      "plate_hole_present": true,
+      "plate_edge_ligament": 2.75,
+      "plate_edge_to_axis": 5.5,
+      "head_margin_on_plate": 0.5,
+      "head_clearance_to_frames": 1.0999999999999943,
+      "head_collisions": [],
+      "driver_column_collisions": [],
+      "nut_envelope_collisions": [],
+      "anti_rotation": {
+        "max_nut_seated_overlap_mm3": 0.0,
+        "min_sharp": {
+          "across_flats": 7.68,
+          "corner_radius": 4.434050067376326,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.6756375156181686,
+          "locks": true,
+          "free_rotation_deg": 11.300894921445003
+        },
+        "min_truncated": {
+          "across_flats": 7.68,
+          "corner_radius": 4.2192,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 0.2903842608587123,
+          "locks": true,
+          "free_rotation_deg": 24.531880228938114
+        },
+        "photo_truncated": {
+          "across_flats": 7.83,
+          "corner_radius": 4.30160625,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.5426552454472438,
+          "locks": true,
+          "free_rotation_deg": 17.522111617036536
+        }
+      },
+      "insertion": {
+        "samples": 29,
+        "collisions": [],
+        "passed": true,
+        "path": "seated -> straight down past the boss bottom (+0.5) -> inward toward the lid centre",
+        "continuous_sweep_verified": false
+      },
+      "screws": [
+        {
+          "length": 10,
+          "washer": false,
+          "tip_z": 113.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 2.299999999999997,
+            "5.0": 2.0
+          },
+          "tip_below_boss_bottom": 1.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 12,
+          "washer": false,
+          "tip_z": 111.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 4.299999999999997,
+            "5.0": 4.0
+          },
+          "tip_below_boss_bottom": 3.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": false,
+          "tip_z": 109.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 6.299999999999997,
+            "5.0": 6.0
+          },
+          "tip_below_boss_bottom": 5.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 10,
+          "washer": true,
+          "tip_z": 114.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 1.2999999999999972,
+            "5.0": 1.0
+          },
+          "tip_below_boss_bottom": 0.4999938964843835,
+          "nylon_engaged": false,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": false
+        },
+        {
+          "length": 12,
+          "washer": true,
+          "tip_z": 112.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 3.299999999999997,
+            "5.0": 3.0
+          },
+          "tip_below_boss_bottom": 2.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": true,
+          "tip_z": 110.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 5.299999999999997,
+            "5.0": 5.0
+          },
+          "tip_below_boss_bottom": 4.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "frame": "lid-frame-bl",
+      "site": "side",
+      "axis_xy": [
+        -108.2,
+        84.05
+      ],
+      "across_flats_measured": [
+        8.399999999999986,
+        8.399999999999986,
+        8.399999999999986
+      ],
+      "corner_radius_measured": [
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741
+      ],
+      "flat_wall_along_normals": [
+        3.8829091796874944,
+        3.8829091796874944,
+        3.4000051269531206,
+        3.8829091796874944,
+        3.8829091796874944,
+        1.6000051269531257
+      ],
+      "min_wall_true": 1.6000000000000085,
+      "wall_to_outer_face": 3.4000051269531206,
+      "wall_to_interior": 1.6000051269531257,
+      "roof_underside_z": 120.5,
+      "plate_contact_z": 122.00000512695313,
+      "roof_thickness": 1.500005126953127,
+      "boss_bottom_z": 114.99999389648438,
+      "effective_depth": 5.5000061035156165,
+      "overcut_not_counted": 0.2,
+      "plate_hole_present": true,
+      "plate_edge_ligament": 2.75,
+      "plate_edge_to_axis": 5.5,
+      "head_margin_on_plate": 0.5,
+      "head_clearance_to_frames": 1.0999999999999943,
+      "head_collisions": [],
+      "driver_column_collisions": [],
+      "nut_envelope_collisions": [],
+      "anti_rotation": {
+        "max_nut_seated_overlap_mm3": 0.0,
+        "min_sharp": {
+          "across_flats": 7.68,
+          "corner_radius": 4.434050067376326,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.675637515617974,
+          "locks": true,
+          "free_rotation_deg": 11.300894921445003
+        },
+        "min_truncated": {
+          "across_flats": 7.68,
+          "corner_radius": 4.2192,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 0.2903842608585846,
+          "locks": true,
+          "free_rotation_deg": 24.531880228938114
+        },
+        "photo_truncated": {
+          "across_flats": 7.83,
+          "corner_radius": 4.30160625,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.5426552454507356,
+          "locks": true,
+          "free_rotation_deg": 17.522111617036536
+        }
+      },
+      "insertion": {
+        "samples": 29,
+        "collisions": [],
+        "passed": true,
+        "path": "seated -> straight down past the boss bottom (+0.5) -> inward toward the lid centre",
+        "continuous_sweep_verified": false
+      },
+      "screws": [
+        {
+          "length": 10,
+          "washer": false,
+          "tip_z": 113.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 2.299999999999997,
+            "5.0": 2.0
+          },
+          "tip_below_boss_bottom": 1.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 12,
+          "washer": false,
+          "tip_z": 111.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 4.299999999999997,
+            "5.0": 4.0
+          },
+          "tip_below_boss_bottom": 3.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": false,
+          "tip_z": 109.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 6.299999999999997,
+            "5.0": 6.0
+          },
+          "tip_below_boss_bottom": 5.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 10,
+          "washer": true,
+          "tip_z": 114.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 1.2999999999999972,
+            "5.0": 1.0
+          },
+          "tip_below_boss_bottom": 0.4999938964843835,
+          "nylon_engaged": false,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": false
+        },
+        {
+          "length": 12,
+          "washer": true,
+          "tip_z": 112.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 3.299999999999997,
+            "5.0": 3.0
+          },
+          "tip_below_boss_bottom": 2.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": true,
+          "tip_z": 110.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 5.299999999999997,
+            "5.0": 5.0
+          },
+          "tip_below_boss_bottom": 4.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "frame": "lid-frame-br",
+      "site": "front",
+      "axis_xy": [
+        34.739999999999995,
+        160.5
+      ],
+      "across_flats_measured": [
+        8.399999999999986,
+        8.399999999999986,
+        8.399999999999986
+      ],
+      "corner_radius_measured": [
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741
+      ],
+      "flat_wall_along_normals": [
+        3.8829091796874944,
+        3.4000051269531206,
+        3.8829091796874944,
+        3.8829091796874944,
+        1.6000051269531257,
+        3.8829091796874944
+      ],
+      "min_wall_true": 1.6000000000000227,
+      "wall_to_outer_face": 3.4000051269531206,
+      "wall_to_interior": 1.6000051269531257,
+      "roof_underside_z": 120.5,
+      "plate_contact_z": 122.00000512695313,
+      "roof_thickness": 1.500005126953127,
+      "boss_bottom_z": 114.99999389648438,
+      "effective_depth": 5.5000061035156165,
+      "overcut_not_counted": 0.2,
+      "plate_hole_present": true,
+      "plate_edge_ligament": 2.75,
+      "plate_edge_to_axis": 5.5,
+      "head_margin_on_plate": 0.5,
+      "head_clearance_to_frames": 1.0999999999999943,
+      "head_collisions": [],
+      "driver_column_collisions": [],
+      "nut_envelope_collisions": [],
+      "anti_rotation": {
+        "max_nut_seated_overlap_mm3": 0.0,
+        "min_sharp": {
+          "across_flats": 7.68,
+          "corner_radius": 4.434050067376326,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.6756375156180097,
+          "locks": true,
+          "free_rotation_deg": 11.300894921445003
+        },
+        "min_truncated": {
+          "across_flats": 7.68,
+          "corner_radius": 4.2192,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 0.2903842608586736,
+          "locks": true,
+          "free_rotation_deg": 24.531880228938114
+        },
+        "photo_truncated": {
+          "across_flats": 7.83,
+          "corner_radius": 4.30160625,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.542655245449814,
+          "locks": true,
+          "free_rotation_deg": 17.522111617036536
+        }
+      },
+      "insertion": {
+        "samples": 29,
+        "collisions": [],
+        "passed": true,
+        "path": "seated -> straight down past the boss bottom (+0.5) -> inward toward the lid centre",
+        "continuous_sweep_verified": false
+      },
+      "screws": [
+        {
+          "length": 10,
+          "washer": false,
+          "tip_z": 113.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 2.299999999999997,
+            "5.0": 2.0
+          },
+          "tip_below_boss_bottom": 1.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 12,
+          "washer": false,
+          "tip_z": 111.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 4.299999999999997,
+            "5.0": 4.0
+          },
+          "tip_below_boss_bottom": 3.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": false,
+          "tip_z": 109.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 6.299999999999997,
+            "5.0": 6.0
+          },
+          "tip_below_boss_bottom": 5.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 10,
+          "washer": true,
+          "tip_z": 114.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 1.2999999999999972,
+            "5.0": 1.0
+          },
+          "tip_below_boss_bottom": 0.4999938964843835,
+          "nylon_engaged": false,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": false
+        },
+        {
+          "length": 12,
+          "washer": true,
+          "tip_z": 112.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 3.299999999999997,
+            "5.0": 3.0
+          },
+          "tip_below_boss_bottom": 2.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": true,
+          "tip_z": 110.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 5.299999999999997,
+            "5.0": 5.0
+          },
+          "tip_below_boss_bottom": 4.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "frame": "lid-frame-br",
+      "site": "side",
+      "axis_xy": [
+        108.2,
+        84.05
+      ],
+      "across_flats_measured": [
+        8.399999999999986,
+        8.399999999999986,
+        8.399999999999986
+      ],
+      "corner_radius_measured": [
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741,
+        4.849743652343741
+      ],
+      "flat_wall_along_normals": [
+        3.8829091796874944,
+        3.8829091796874944,
+        1.6000051269531257,
+        3.8829091796874944,
+        3.8829091796874944,
+        3.4000051269531206
+      ],
+      "min_wall_true": 1.6000000000000085,
+      "wall_to_outer_face": 3.4000051269531206,
+      "wall_to_interior": 1.6000051269531257,
+      "roof_underside_z": 120.5,
+      "plate_contact_z": 122.00000512695313,
+      "roof_thickness": 1.500005126953127,
+      "boss_bottom_z": 114.99999389648438,
+      "effective_depth": 5.5000061035156165,
+      "overcut_not_counted": 0.2,
+      "plate_hole_present": true,
+      "plate_edge_ligament": 2.75,
+      "plate_edge_to_axis": 5.5,
+      "head_margin_on_plate": 0.5,
+      "head_clearance_to_frames": 1.0999999999999943,
+      "head_collisions": [],
+      "driver_column_collisions": [],
+      "nut_envelope_collisions": [],
+      "anti_rotation": {
+        "max_nut_seated_overlap_mm3": 0.0,
+        "min_sharp": {
+          "across_flats": 7.68,
+          "corner_radius": 4.434050067376326,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.6756375156180745,
+          "locks": true,
+          "free_rotation_deg": 11.300894921445003
+        },
+        "min_truncated": {
+          "across_flats": 7.68,
+          "corner_radius": 4.2192,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 0.290384260858576,
+          "locks": true,
+          "free_rotation_deg": 24.531880228938114
+        },
+        "photo_truncated": {
+          "across_flats": 7.83,
+          "corner_radius": 4.30160625,
+          "pocket_inscribed_radius": 4.2,
+          "turned_30deg_overlap_mm3": 2.5426552454502085,
+          "locks": true,
+          "free_rotation_deg": 17.522111617036536
+        }
+      },
+      "insertion": {
+        "samples": 29,
+        "collisions": [],
+        "passed": true,
+        "path": "seated -> straight down past the boss bottom (+0.5) -> inward toward the lid centre",
+        "continuous_sweep_verified": false
+      },
+      "screws": [
+        {
+          "length": 10,
+          "washer": false,
+          "tip_z": 113.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 2.299999999999997,
+            "5.0": 2.0
+          },
+          "tip_below_boss_bottom": 1.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 12,
+          "washer": false,
+          "tip_z": 111.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 4.299999999999997,
+            "5.0": 4.0
+          },
+          "tip_below_boss_bottom": 3.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": false,
+          "tip_z": 109.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 6.299999999999997,
+            "5.0": 6.0
+          },
+          "tip_below_boss_bottom": 5.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 10,
+          "washer": true,
+          "tip_z": 114.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 1.2999999999999972,
+            "5.0": 1.0
+          },
+          "tip_below_boss_bottom": 0.4999938964843835,
+          "nylon_engaged": false,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": false
+        },
+        {
+          "length": 12,
+          "washer": true,
+          "tip_z": 112.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 3.299999999999997,
+            "5.0": 3.0
+          },
+          "tip_below_boss_bottom": 2.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        },
+        {
+          "length": 14,
+          "washer": true,
+          "tip_z": 110.5,
+          "protrusion_beyond_nut_min_max": {
+            "4.7": 5.299999999999997,
+            "5.0": 5.0
+          },
+          "tip_below_boss_bottom": 4.4999938964843835,
+          "nylon_engaged": true,
+          "tip_collisions": [],
+          "shank_frame_collisions": [],
+          "shank_plate_collision": false,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "lift_path_samples": [
+    {
+      "dz": 0,
+      "collisions": []
+    },
+    {
+      "dz": 0.25,
+      "collisions": []
+    },
+    {
+      "dz": 0.5,
+      "collisions": []
+    },
+    {
+      "dz": 1,
+      "collisions": []
+    },
+    {
+      "dz": 2,
+      "collisions": []
+    },
+    {
+      "dz": 4,
+      "collisions": []
+    },
+    {
+      "dz": 8,
+      "collisions": []
+    },
+    {
+      "dz": 12,
+      "collisions": []
+    },
+    {
+      "dz": 15,
+      "collisions": []
+    },
+    {
+      "dz": 30,
+      "collisions": []
+    },
+    {
+      "dz": 60,
+      "collisions": []
+    }
+  ],
+  "continuous_sweep_verified": false,
+  "rail_check": "Conservative bounding envelopes of original mesh; original mesh rendered unchanged",
+  "knob_envelope": "module panel2 + knob25, cables removed; provisional"
+}

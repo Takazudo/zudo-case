@@ -1,0 +1,1777 @@
+{
+  "revision": "R10-FULLSET-01",
+  "profile": "7u40-t1-groove1p70-m5",
+  "model": "7u40",
+  "units": "mm",
+  "production_approved": false,
+  "status": "full-set-prototype-preparation; physical and vendor confirmation pending",
+  "parameters_sha256": "65894c5d4455dc183652151627c54a87e74891f47b2a3190d66a8845b23662c3",
+  "washer_parameters_sha256": "a8f7f9663edb0fc64c334eca35cccf6b169f3da65ccc346e301f508b538f9ffb",
+  "parts": [
+    {
+      "id": "panel-front",
+      "quantity": 1,
+      "procurement": "aluminum",
+      "material": "A5052 t1.5; deburred; black anodized after machining",
+      "step": "aluminum/panel-front-qty1-mm.step",
+      "stl": "aluminum/panel-front-qty1-mm.stl",
+      "dimensions_mm": [
+        226.4,
+        89.5,
+        1.5
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 1796,
+        "triangles": 3616,
+        "bbox_error_mm": 6.103515630684342e-06,
+        "volume_error_mm3": 0.09562693319094251,
+        "cad_volume_mm3": 29914.025794093497,
+        "edge_incidence_histogram": {
+          "2": 5424
+        }
+      },
+      "hanging_hole_uv": [
+        113.2,
+        43.5
+      ],
+      "fixture_mark_region": "Around dedicated D4 hole; supplier confirmation pending",
+      "dxf": "aluminum/panel-front-qty1-mm.dxf",
+      "local_to_assembly": {
+        "origin": [
+          -113.2,
+          -165.5,
+          1.5
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ],
+        "y": [
+          0,
+          0,
+          1
+        ],
+        "z": [
+          0,
+          -1,
+          0
+        ]
+      },
+      "dxf_readback_symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "panel-back",
+      "quantity": 1,
+      "procurement": "aluminum",
+      "material": "A5052 t1.5; deburred; black anodized after machining",
+      "step": "aluminum/panel-back-qty1-mm.step",
+      "stl": "aluminum/panel-back-qty1-mm.stl",
+      "dimensions_mm": [
+        226.4,
+        89.5,
+        1.5
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 1796,
+        "triangles": 3616,
+        "bbox_error_mm": 6.103515630684342e-06,
+        "volume_error_mm3": 0.09562693319094251,
+        "cad_volume_mm3": 29914.025794093497,
+        "edge_incidence_histogram": {
+          "2": 5424
+        }
+      },
+      "hanging_hole_uv": [
+        113.2,
+        43.5
+      ],
+      "fixture_mark_region": "Around dedicated D4 hole; supplier confirmation pending",
+      "dxf": "aluminum/panel-back-qty1-mm.dxf",
+      "local_to_assembly": {
+        "origin": [
+          113.2,
+          165.5,
+          1.5
+        ],
+        "x": [
+          -1,
+          0,
+          0
+        ],
+        "y": [
+          0,
+          0,
+          1
+        ],
+        "z": [
+          0,
+          1,
+          0
+        ]
+      },
+      "dxf_readback_symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "panel-right",
+      "quantity": 1,
+      "procurement": "aluminum",
+      "material": "A5052 t1.5; deburred; black anodized after machining",
+      "step": "aluminum/panel-right-qty1-mm.step",
+      "stl": "aluminum/panel-right-qty1-mm.stl",
+      "dimensions_mm": [
+        334.0,
+        89.5,
+        1.5
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 3312,
+        "triangles": 6672,
+        "bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.1850247898037196,
+        "cad_volume_mm3": 44104.25114410853,
+        "edge_incidence_histogram": {
+          "2": 10008
+        }
+      },
+      "hanging_hole_uv": [
+        232.0,
+        24.5
+      ],
+      "fixture_mark_region": "Around dedicated D4 hole; supplier confirmation pending",
+      "dxf": "aluminum/panel-right-qty1-mm.dxf",
+      "local_to_assembly": {
+        "origin": [
+          113.2,
+          -167.0,
+          1.5
+        ],
+        "x": [
+          0,
+          1,
+          0
+        ],
+        "y": [
+          0,
+          0,
+          1
+        ],
+        "z": [
+          1,
+          0,
+          0
+        ]
+      },
+      "dxf_readback_symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "panel-left",
+      "quantity": 1,
+      "procurement": "aluminum",
+      "material": "A5052 t1.5; deburred; black anodized after machining",
+      "step": "aluminum/panel-left-qty1-mm.step",
+      "stl": "aluminum/panel-left-qty1-mm.stl",
+      "dimensions_mm": [
+        334.0,
+        89.5,
+        1.5
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 3312,
+        "triangles": 6672,
+        "bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.18505611931323074,
+        "cad_volume_mm3": 44104.25114410853,
+        "edge_incidence_histogram": {
+          "2": 10008
+        }
+      },
+      "hanging_hole_uv": [
+        232.0,
+        24.5
+      ],
+      "fixture_mark_region": "Around dedicated D4 hole; supplier confirmation pending",
+      "dxf": "aluminum/panel-left-qty1-mm.dxf",
+      "local_to_assembly": {
+        "origin": [
+          -113.2,
+          167.0,
+          1.5
+        ],
+        "x": [
+          0,
+          -1,
+          0
+        ],
+        "y": [
+          0,
+          0,
+          1
+        ],
+        "z": [
+          -1,
+          0,
+          0
+        ]
+      },
+      "dxf_readback_symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "panel-floor",
+      "quantity": 1,
+      "procurement": "aluminum",
+      "material": "A5052 t1.5; deburred; black anodized after machining",
+      "step": "aluminum/panel-floor-qty1-mm.step",
+      "stl": "aluminum/panel-floor-qty1-mm.stl",
+      "dimensions_mm": [
+        229.4,
+        334.0,
+        1.5
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 2820,
+        "triangles": 5680,
+        "bbox_error_mm": 6.103515630684342e-06,
+        "volume_error_mm3": 0.15242405113531277,
+        "cad_volume_mm3": 114141.67602743681,
+        "edge_incidence_histogram": {
+          "2": 8520
+        }
+      },
+      "hanging_hole_uv": [
+        114.7,
+        167.0
+      ],
+      "fixture_mark_region": "Around dedicated D4 hole; supplier confirmation pending",
+      "dxf": "aluminum/panel-floor-qty1-mm.dxf",
+      "local_to_assembly": {
+        "origin": [
+          -114.7,
+          167.0,
+          1.5
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ],
+        "y": [
+          0,
+          -1,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "dxf_readback_symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "lid-plate",
+      "quantity": 1,
+      "procurement": "aluminum",
+      "material": "A5052 t1.5; deburred; black anodized after machining",
+      "step": "aluminum/lid-plate-qty1-mm.step",
+      "stl": "aluminum/lid-plate-qty1-mm.stl",
+      "dimensions_mm": [
+        227.4,
+        332.0,
+        1.5
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 2532,
+        "triangles": 5096,
+        "bbox_error_mm": 6.103515630684342e-06,
+        "volume_error_mm3": 0.10595288197509944,
+        "cad_volume_mm3": 112929.6624115887,
+        "edge_incidence_histogram": {
+          "2": 7644
+        }
+      },
+      "dxf": "aluminum/lid-plate-qty1-mm.dxf",
+      "hanging_hole_uv": [
+        113.7,
+        166.0
+      ],
+      "local_to_assembly": {
+        "origin": [
+          -113.7,
+          -166.0,
+          122.0
+        ],
+        "x": [
+          1,
+          0,
+          0
+        ],
+        "y": [
+          0,
+          1,
+          0
+        ],
+        "z": [
+          0,
+          0,
+          1
+        ]
+      },
+      "dxf_readback_symmetric_difference_mm3": 0.0
+    },
+    {
+      "id": "top-0-0",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          -115.80000000000001,
+          -168.10000000000002,
+          86.0
+        ]
+      },
+      "step": "pa12/top-0-0-qty1-mm.step",
+      "stl": "pa12/top-0-0-qty1-mm.stl",
+      "dimensions_mm": [
+        115.55000000000001,
+        167.85000000000002,
+        6.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 24,
+        "triangles": 44,
+        "bbox_error_mm": 6.1035156022626325e-06,
+        "volume_error_mm3": 0.0001381110837428423,
+        "cad_volume_mm3": 3831.8899999999967,
+        "edge_incidence_histogram": {
+          "2": 66
+        }
+      }
+    },
+    {
+      "id": "top-0-1",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          -115.80000000000001,
+          0.25,
+          86.0
+        ]
+      },
+      "step": "pa12/top-0-1-qty1-mm.step",
+      "stl": "pa12/top-0-1-qty1-mm.stl",
+      "dimensions_mm": [
+        115.55000000000001,
+        167.85,
+        6.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 24,
+        "triangles": 44,
+        "bbox_error_mm": 6.103515630684342e-06,
+        "volume_error_mm3": 0.0014373374197020894,
+        "cad_volume_mm3": 3831.8900000000012,
+        "edge_incidence_histogram": {
+          "2": 66
+        }
+      }
+    },
+    {
+      "id": "top-1-0",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          0.25,
+          -168.10000000000002,
+          86.0
+        ]
+      },
+      "step": "pa12/top-1-0-qty1-mm.step",
+      "stl": "pa12/top-1-0-qty1-mm.stl",
+      "dimensions_mm": [
+        115.55,
+        167.85000000000002,
+        6.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 24,
+        "triangles": 44,
+        "bbox_error_mm": 6.1035156022626325e-06,
+        "volume_error_mm3": 0.0008590531429035764,
+        "cad_volume_mm3": 3831.8899999999976,
+        "edge_incidence_histogram": {
+          "2": 66
+        }
+      }
+    },
+    {
+      "id": "top-1-1",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          0.25,
+          0.25,
+          86.0
+        ]
+      },
+      "step": "pa12/top-1-1-qty1-mm.step",
+      "stl": "pa12/top-1-1-qty1-mm.stl",
+      "dimensions_mm": [
+        115.55,
+        167.85,
+        6.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 24,
+        "triangles": 44,
+        "bbox_error_mm": 6.103515630684342e-06,
+        "volume_error_mm3": 0.0021582794397545513,
+        "cad_volume_mm3": 3831.8899999999885,
+        "edge_incidence_histogram": {
+          "2": 66
+        }
+      }
+    },
+    {
+      "id": "corner--1--1",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          -115.7,
+          -168.0,
+          5.25
+        ]
+      },
+      "step": "pa12/corner--1--1-qty1-mm.step",
+      "stl": "pa12/corner--1--1-qty1-mm.stl",
+      "dimensions_mm": [
+        22.5,
+        22.5,
+        80.5
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 1580,
+        "triangles": 3172,
+        "bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.029293586450194198,
+        "cad_volume_mm3": 1597.5995634576273,
+        "edge_incidence_histogram": {
+          "2": 4758
+        }
+      }
+    },
+    {
+      "id": "corner--1-1",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          -115.7,
+          145.5,
+          5.25
+        ]
+      },
+      "step": "pa12/corner--1-1-qty1-mm.step",
+      "stl": "pa12/corner--1-1-qty1-mm.stl",
+      "dimensions_mm": [
+        22.5,
+        22.5,
+        80.5
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 1580,
+        "triangles": 3172,
+        "bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.029292098836549485,
+        "cad_volume_mm3": 1597.5995634576252,
+        "edge_incidence_histogram": {
+          "2": 4758
+        }
+      }
+    },
+    {
+      "id": "corner-1--1",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          93.2,
+          -168.0,
+          5.25
+        ]
+      },
+      "step": "pa12/corner-1--1-qty1-mm.step",
+      "stl": "pa12/corner-1--1-qty1-mm.stl",
+      "dimensions_mm": [
+        22.5,
+        22.5,
+        80.5
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 1580,
+        "triangles": 3172,
+        "bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.029292098836094738,
+        "cad_volume_mm3": 1597.5995634576257,
+        "edge_incidence_histogram": {
+          "2": 4758
+        }
+      }
+    },
+    {
+      "id": "corner-1-1",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          93.2,
+          145.5,
+          5.25
+        ]
+      },
+      "step": "pa12/corner-1-1-qty1-mm.step",
+      "stl": "pa12/corner-1-1-qty1-mm.stl",
+      "dimensions_mm": [
+        22.5,
+        22.5,
+        80.5
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 1580,
+        "triangles": 3172,
+        "bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.02929061121972154,
+        "cad_volume_mm3": 1597.5995634576266,
+        "edge_incidence_histogram": {
+          "2": 4758
+        }
+      }
+    },
+    {
+      "id": "lower-front-0",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          -114.7,
+          -168.0,
+          -1.0
+        ]
+      },
+      "step": "pa12/lower-front-0-qty1-mm.step",
+      "stl": "pa12/lower-front-0-qty1-mm.stl",
+      "dimensions_mm": [
+        114.45,
+        6.0,
+        24.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 472,
+        "triangles": 944,
+        "bbox_error_mm": 3.051757815342171e-06,
+        "volume_error_mm3": 0.0058833788357333106,
+        "cad_volume_mm3": 1493.3514526636313,
+        "edge_incidence_histogram": {
+          "2": 1416
+        }
+      }
+    },
+    {
+      "id": "lower-front-1",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          0.25,
+          -168.0,
+          -1.0
+        ]
+      },
+      "step": "pa12/lower-front-1-qty1-mm.step",
+      "stl": "pa12/lower-front-1-qty1-mm.stl",
+      "dimensions_mm": [
+        114.45,
+        6.0,
+        24.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 472,
+        "triangles": 944,
+        "bbox_error_mm": 3.051757815342171e-06,
+        "volume_error_mm3": 0.005883358437131392,
+        "cad_volume_mm3": 1493.3514526636309,
+        "edge_incidence_histogram": {
+          "2": 1416
+        }
+      }
+    },
+    {
+      "id": "lower-back-0",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          0.25,
+          162.0,
+          -1.0
+        ]
+      },
+      "step": "pa12/lower-back-0-qty1-mm.step",
+      "stl": "pa12/lower-back-0-qty1-mm.stl",
+      "dimensions_mm": [
+        114.45,
+        6.0,
+        24.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 472,
+        "triangles": 944,
+        "bbox_error_mm": 3.051757815342171e-06,
+        "volume_error_mm3": 0.0058833584366766445,
+        "cad_volume_mm3": 1493.3514526636313,
+        "edge_incidence_histogram": {
+          "2": 1416
+        }
+      }
+    },
+    {
+      "id": "lower-back-1",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          -114.7,
+          162.0,
+          -1.0
+        ]
+      },
+      "step": "pa12/lower-back-1-qty1-mm.step",
+      "stl": "pa12/lower-back-1-qty1-mm.stl",
+      "dimensions_mm": [
+        114.45,
+        6.0,
+        24.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 472,
+        "triangles": 944,
+        "bbox_error_mm": 3.051757815342171e-06,
+        "volume_error_mm3": 0.005883378835960684,
+        "cad_volume_mm3": 1493.351452663631,
+        "edge_incidence_histogram": {
+          "2": 1416
+        }
+      }
+    },
+    {
+      "id": "lower-right-0",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          109.7,
+          -161.75,
+          -1.0
+        ]
+      },
+      "step": "pa12/lower-right-0-qty1-mm.step",
+      "stl": "pa12/lower-right-0-qty1-mm.stl",
+      "dimensions_mm": [
+        6.0,
+        169.75,
+        24.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 932,
+        "triangles": 1868,
+        "bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.013631713823997416,
+        "cad_volume_mm3": 2262.194595823793,
+        "edge_incidence_histogram": {
+          "2": 2802
+        }
+      }
+    },
+    {
+      "id": "lower-right-1",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          109.7,
+          -8.0,
+          -1.0
+        ]
+      },
+      "step": "pa12/lower-right-1-qty1-mm.step",
+      "stl": "pa12/lower-right-1-qty1-mm.stl",
+      "dimensions_mm": [
+        7.0,
+        169.75,
+        24.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 1005,
+        "triangles": 2014,
+        "bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.012919996940581768,
+        "cad_volume_mm3": 2284.936741691436,
+        "edge_incidence_histogram": {
+          "2": 3021
+        }
+      }
+    },
+    {
+      "id": "lower-left-0",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          -115.7,
+          -8.0,
+          -1.0
+        ]
+      },
+      "step": "pa12/lower-left-0-qty1-mm.step",
+      "stl": "pa12/lower-left-0-qty1-mm.stl",
+      "dimensions_mm": [
+        6.0,
+        169.75,
+        24.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 932,
+        "triangles": 1868,
+        "bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.013628960999994888,
+        "cad_volume_mm3": 2262.194595823794,
+        "edge_incidence_histogram": {
+          "2": 2802
+        }
+      }
+    },
+    {
+      "id": "lower-left-1",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          -116.7,
+          -161.75,
+          -1.0
+        ]
+      },
+      "step": "pa12/lower-left-1-qty1-mm.step",
+      "stl": "pa12/lower-left-1-qty1-mm.stl",
+      "dimensions_mm": [
+        7.0,
+        169.75,
+        24.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 1005,
+        "triangles": 2014,
+        "bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.012923169193982176,
+        "cad_volume_mm3": 2284.936741691436,
+        "edge_incidence_histogram": {
+          "2": 3021
+        }
+      }
+    },
+    {
+      "id": "lid-frame-fr",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          0.19999999999999996,
+          -168.1,
+          80.0
+        ]
+      },
+      "step": "pa12/lid-frame-fr-qty1-mm.step",
+      "stl": "pa12/lid-frame-fr-qty1-mm.stl",
+      "dimensions_mm": [
+        115.6,
+        167.9,
+        43.8
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 766,
+        "triangles": 1536,
+        "bbox_error_mm": 6.103515630684342e-06,
+        "volume_error_mm3": 0.022594287860556506,
+        "cad_volume_mm3": 21462.101646147876,
+        "edge_incidence_histogram": {
+          "2": 2304
+        }
+      }
+    },
+    {
+      "id": "lid-frame-fl",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          -115.8,
+          -168.1,
+          80.0
+        ]
+      },
+      "step": "pa12/lid-frame-fl-qty1-mm.step",
+      "stl": "pa12/lid-frame-fl-qty1-mm.stl",
+      "dimensions_mm": [
+        115.60000000000001,
+        167.9,
+        43.8
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 766,
+        "triangles": 1536,
+        "bbox_error_mm": 6.103515630684342e-06,
+        "volume_error_mm3": 0.022277495791058755,
+        "cad_volume_mm3": 21462.101646147843,
+        "edge_incidence_histogram": {
+          "2": 2304
+        }
+      }
+    },
+    {
+      "id": "lid-frame-bl",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          -115.8,
+          0.19999999999998863,
+          80.0
+        ]
+      },
+      "step": "pa12/lid-frame-bl-qty1-mm.step",
+      "stl": "pa12/lid-frame-bl-qty1-mm.stl",
+      "dimensions_mm": [
+        115.60000000000002,
+        167.9,
+        43.8
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 766,
+        "triangles": 1536,
+        "bbox_error_mm": 6.103515630684342e-06,
+        "volume_error_mm3": 0.020105635700019775,
+        "cad_volume_mm3": 21462.10164614786,
+        "edge_incidence_histogram": {
+          "2": 2304
+        }
+      }
+    },
+    {
+      "id": "lid-frame-br",
+      "quantity": 1,
+      "procurement": "pa12",
+      "material": "MJF PA12-HP; black dyed",
+      "local_to_assembly": {
+        "translation": [
+          0.1999999999999999,
+          0.19999999999998863,
+          80.0
+        ]
+      },
+      "step": "pa12/lid-frame-br-qty1-mm.step",
+      "stl": "pa12/lid-frame-br-qty1-mm.stl",
+      "dimensions_mm": [
+        115.6,
+        167.9,
+        43.8
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 766,
+        "triangles": 1536,
+        "bbox_error_mm": 6.103515630684342e-06,
+        "volume_error_mm3": 0.020422427776793484,
+        "cad_volume_mm3": 21462.10164614784,
+        "edge_incidence_histogram": {
+          "2": 2304
+        }
+      }
+    },
+    {
+      "id": "corner-cap",
+      "step": "home-print/corner-cap-mm.step",
+      "stl": "home-print/corner-cap-mm.stl",
+      "dimensions_mm": [
+        16.0,
+        12.0,
+        1.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 516,
+        "triangles": 1032,
+        "bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.0070065727410622,
+        "cad_volume_mm3": 166.3102890278042,
+        "edge_incidence_histogram": {
+          "2": 1548
+        }
+      },
+      "quantity": 16,
+      "selected_print_quantity": 16,
+      "procurement": "home-print",
+      "material": "black ASA",
+      "instances": [
+        "cap-front-2",
+        "cap-front-3",
+        "cap-front-4",
+        "cap-front-5",
+        "cap-back-2",
+        "cap-back-3",
+        "cap-back-4",
+        "cap-back-5",
+        "cap-right-3",
+        "cap-right-4",
+        "cap-right-5",
+        "cap-right-6",
+        "cap-left-3",
+        "cap-left-4",
+        "cap-left-5",
+        "cap-left-6"
+      ]
+    },
+    {
+      "id": "lower-cap",
+      "step": "home-print/lower-cap-mm.step",
+      "stl": "home-print/lower-cap-mm.stl",
+      "dimensions_mm": [
+        14.0,
+        16.0,
+        1.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 516,
+        "triangles": 1032,
+        "bbox_error_mm": 0.0,
+        "volume_error_mm3": 0.007006347082921138,
+        "cad_volume_mm3": 198.31028902780423,
+        "edge_incidence_histogram": {
+          "2": 1548
+        }
+      },
+      "quantity": 10,
+      "selected_print_quantity": 10,
+      "procurement": "home-print",
+      "material": "black ASA",
+      "instances": [
+        "cap-front-0",
+        "cap-front-1",
+        "cap-back-0",
+        "cap-back-1",
+        "cap-right-0",
+        "cap-right-1",
+        "cap-right-2",
+        "cap-left-0",
+        "cap-left-1",
+        "cap-left-2"
+      ]
+    },
+    {
+      "id": "capsule-pad",
+      "step": "home-print/capsule-pad-mm.step",
+      "stl": "home-print/capsule-pad-mm.stl",
+      "dimensions_mm": [
+        12.0,
+        20.0,
+        1.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 508,
+        "triangles": 1016,
+        "bbox_error_mm": 0.0018644332885742188,
+        "volume_error_mm3": 0.037022360056255366,
+        "cad_volume_mm3": 185.33904108645976,
+        "edge_incidence_histogram": {
+          "2": 1524
+        }
+      },
+      "quantity": 36,
+      "selected_print_quantity": 36,
+      "procurement": "home-print",
+      "material": "black ASA",
+      "instances": [
+        "inner-front-0",
+        "inner-front-1",
+        "inner-front-2",
+        "inner-front-3",
+        "inner-front-4",
+        "inner-front-5",
+        "inner-back-0",
+        "inner-back-1",
+        "inner-back-2",
+        "inner-back-3",
+        "inner-back-4",
+        "inner-back-5",
+        "inner-right-0",
+        "inner-right-1",
+        "inner-right-2",
+        "inner-right-3",
+        "inner-right-4",
+        "inner-right-5",
+        "inner-right-6",
+        "inner-left-0",
+        "inner-left-1",
+        "inner-left-2",
+        "inner-left-3",
+        "inner-left-4",
+        "inner-left-5",
+        "inner-left-6",
+        "inner-floor-0",
+        "inner-floor-1",
+        "inner-floor-2",
+        "inner-floor-3",
+        "inner-floor-4",
+        "inner-floor-5",
+        "inner-floor-6",
+        "inner-floor-7",
+        "inner-floor-8",
+        "inner-floor-9"
+      ]
+    },
+    {
+      "id": "round-replacement",
+      "step": "home-print/round-replacement-mm.step",
+      "stl": "home-print/round-replacement-mm.stl",
+      "dimensions_mm": [
+        10.0,
+        10.0,
+        1.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 504,
+        "triangles": 1008,
+        "bbox_error_mm": 0.0015540122985839844,
+        "volume_error_mm3": 0.022701710969428746,
+        "cad_volume_mm3": 54.781521896972016,
+        "edge_incidence_histogram": {
+          "2": 1512
+        }
+      },
+      "quantity": 20,
+      "selected_print_quantity": 0,
+      "procurement": "existing/reused; optional home replacement",
+      "material": "Existing stock; material unverified. Optional replacement: black ASA",
+      "instances": [
+        "retain-floor-0",
+        "retain-floor-1",
+        "retain-floor-2",
+        "retain-floor-3",
+        "retain-floor-4",
+        "retain-floor-5",
+        "retain-floor-6",
+        "retain-floor-7",
+        "retain-floor-8",
+        "retain-floor-9",
+        "outer-washer--1-1",
+        "outer-washer--1-2",
+        "outer-washer--1-3",
+        "outer-washer--1-4",
+        "outer-washer--1-5",
+        "outer-washer-1-1",
+        "outer-washer-1-2",
+        "outer-washer-1-3",
+        "outer-washer-1-4",
+        "outer-washer-1-5"
+      ]
+    },
+    {
+      "id": "floor-cap",
+      "step": "home-print/floor-cap-mm.step",
+      "stl": "home-print/floor-cap-mm.stl",
+      "dimensions_mm": [
+        12.0,
+        20.0,
+        1.0
+      ],
+      "readback": {
+        "watertight": true,
+        "winding_consistent": true,
+        "positive_volume": true,
+        "vertices": 508,
+        "triangles": 1016,
+        "bbox_error_mm": 0.0018649101257324219,
+        "volume_error_mm3": 0.037022335867305856,
+        "cad_volume_mm3": 185.33904108645976,
+        "edge_incidence_histogram": {
+          "2": 1524
+        }
+      },
+      "quantity": 10,
+      "selected_print_quantity": 10,
+      "procurement": "home-print",
+      "material": "black ASA",
+      "instances": [
+        "cap-floor-0",
+        "cap-floor-1",
+        "cap-floor-2",
+        "cap-floor-3",
+        "cap-floor-4",
+        "cap-floor-5",
+        "cap-floor-6",
+        "cap-floor-7",
+        "cap-floor-8",
+        "cap-floor-9"
+      ]
+    }
+  ],
+  "existing_frame": [
+    {
+      "id": "rail-1",
+      "role": "rail",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-2",
+      "role": "rail",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-3",
+      "role": "rail",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-4",
+      "role": "rail",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-5",
+      "role": "rail",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-6",
+      "role": "rail",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "fixer--1",
+      "role": "fixer",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "padder--1-row0",
+      "role": "padder",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "padder--1-row1",
+      "role": "padder",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "padder--1-row2",
+      "role": "padder",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "spacer--1-1",
+      "role": "innerSpacer",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "outer-washer--1-1",
+      "role": "outerWasher",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-bolt--1-1",
+      "role": "mountBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-nut--1-1",
+      "role": "mountNut",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "spacer--1-2",
+      "role": "innerSpacer",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "outer-washer--1-2",
+      "role": "outerWasher",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-bolt--1-2",
+      "role": "mountBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-nut--1-2",
+      "role": "mountNut",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "spacer--1-3",
+      "role": "innerSpacer",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "outer-washer--1-3",
+      "role": "outerWasher",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-bolt--1-3",
+      "role": "mountBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-nut--1-3",
+      "role": "mountNut",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "spacer--1-4",
+      "role": "innerSpacer",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "outer-washer--1-4",
+      "role": "outerWasher",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-bolt--1-4",
+      "role": "mountBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-nut--1-4",
+      "role": "mountNut",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "spacer--1-5",
+      "role": "innerSpacer",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "outer-washer--1-5",
+      "role": "outerWasher",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-bolt--1-5",
+      "role": "mountBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-nut--1-5",
+      "role": "mountNut",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-end-bolt--1-1",
+      "role": "railEndBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-end-bolt--1-2",
+      "role": "railEndBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-end-bolt--1-3",
+      "role": "railEndBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-end-bolt--1-4",
+      "role": "railEndBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-end-bolt--1-5",
+      "role": "railEndBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-end-bolt--1-6",
+      "role": "railEndBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "fixer-1",
+      "role": "fixer",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "padder-1-row0",
+      "role": "padder",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "padder-1-row1",
+      "role": "padder",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "padder-1-row2",
+      "role": "padder",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "spacer-1-1",
+      "role": "innerSpacer",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "outer-washer-1-1",
+      "role": "outerWasher",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-bolt-1-1",
+      "role": "mountBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-nut-1-1",
+      "role": "mountNut",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "spacer-1-2",
+      "role": "innerSpacer",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "outer-washer-1-2",
+      "role": "outerWasher",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-bolt-1-2",
+      "role": "mountBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-nut-1-2",
+      "role": "mountNut",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "spacer-1-3",
+      "role": "innerSpacer",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "outer-washer-1-3",
+      "role": "outerWasher",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-bolt-1-3",
+      "role": "mountBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-nut-1-3",
+      "role": "mountNut",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "spacer-1-4",
+      "role": "innerSpacer",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "outer-washer-1-4",
+      "role": "outerWasher",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-bolt-1-4",
+      "role": "mountBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-nut-1-4",
+      "role": "mountNut",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "spacer-1-5",
+      "role": "innerSpacer",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "outer-washer-1-5",
+      "role": "outerWasher",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-bolt-1-5",
+      "role": "mountBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "mount-nut-1-5",
+      "role": "mountNut",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-end-bolt-1-1",
+      "role": "railEndBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-end-bolt-1-2",
+      "role": "railEndBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-end-bolt-1-3",
+      "role": "railEndBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-end-bolt-1-4",
+      "role": "railEndBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-end-bolt-1-5",
+      "role": "railEndBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    },
+    {
+      "id": "rail-end-bolt-1-6",
+      "role": "railEndBolt",
+      "quantity": 1,
+      "procurement": "existing/reused"
+    }
+  ],
+  "interface": {
+    "guard_opening_mm": [
+      224.20000000000002,
+      328.8
+    ],
+    "guard_exterior_mm": [
+      231.6,
+      336.2
+    ],
+    "guard_bottom_z_mm": -1.0,
+    "guard_top_z_mm": 92.0,
+    "guard_envelope_height_mm": 93.0,
+    "lid_seat_z_mm": 92.0,
+    "plate_bottom_z_mm": 122.0,
+    "plate_top_z_mm": 123.5,
+    "lip_top_z_mm": 123.8,
+    "locator_bottom_z_mm": 80.0,
+    "flat_wall_mm": 1.0,
+    "metal_offset_mm": 0.1,
+    "lid_plate_mm": [
+      227.4,
+      332.0,
+      1.5
+    ],
+    "lid_locator_xy_clearance_mm": 0.7,
+    "lid_engagement_mm": 12.0,
+    "plate_under_clearance_to_assumed_knob_mm": 4.0
+  },
+  "prices": {
+    "aluminum": null,
+    "pa12": null,
+    "hardware": null
+  },
+  "hardware": [
+    {
+      "id": "source-fixer",
+      "quantity": 2,
+      "procurement": "existing/reused",
+      "material": "original real hardware / PCB / rail",
+      "price": null
+    },
+    {
+      "id": "source-innerSpacer",
+      "quantity": 10,
+      "procurement": "existing/reused",
+      "material": "original real hardware / PCB / rail",
+      "price": null
+    },
+    {
+      "id": "source-mountBolt",
+      "quantity": 10,
+      "procurement": "existing/reused",
+      "material": "original real hardware / PCB / rail",
+      "price": null
+    },
+    {
+      "id": "source-mountNut",
+      "quantity": 10,
+      "procurement": "existing/reused",
+      "material": "original real hardware / PCB / rail",
+      "price": null
+    },
+    {
+      "id": "source-padder",
+      "quantity": 6,
+      "procurement": "existing/reused",
+      "material": "original real hardware / PCB / rail",
+      "price": null
+    },
+    {
+      "id": "source-rail",
+      "quantity": 6,
+      "procurement": "existing/reused",
+      "material": "original real hardware / PCB / rail",
+      "price": null
+    },
+    {
+      "id": "source-railEndBolt",
+      "quantity": 12,
+      "procurement": "existing/reused",
+      "material": "original real hardware / PCB / rail",
+      "price": null
+    },
+    {
+      "id": "L-bracket-20x20x16-t2",
+      "quantity": 18,
+      "procurement": "existing/reused",
+      "material": "metal",
+      "price": null
+    },
+    {
+      "id": "body-M5x14",
+      "quantity": 34,
+      "procurement": "purchased hardware",
+      "material": "metal screw; assumed head",
+      "price": null
+    },
+    {
+      "id": "body-M5x16",
+      "quantity": 2,
+      "procurement": "purchased hardware",
+      "material": "metal screw; assumed head",
+      "price": null
+    },
+    {
+      "id": "body-M5-nut",
+      "quantity": 36,
+      "procurement": "purchased hardware",
+      "material": "metal nylon-insert lock nut",
+      "price": null
+    },
+    {
+      "id": "lid-M5x10",
+      "quantity": 8,
+      "procurement": "purchased hardware",
+      "material": "metal screw; assumed head",
+      "price": null
+    },
+    {
+      "id": "lid-M5-nut",
+      "quantity": 8,
+      "procurement": "purchased hardware",
+      "material": "metal nylon-insert lock nut",
+      "price": null
+    },
+    {
+      "id": "feet-d10-h3-assumed",
+      "quantity": 4,
+      "procurement": "purchased hardware",
+      "material": "rubber; product not selected",
+      "price": null
+    },
+    {
+      "id": "external-strap",
+      "quantity": 2,
+      "procurement": "purchased hardware",
+      "material": "product not selected",
+      "price": null
+    }
+  ],
+  "existing_frame_accounting": "outerWasher instances are included in round-replacement reused20; other source roles appear once in hardware"
+}

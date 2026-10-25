@@ -8,6 +8,10 @@
 
 ## 現行7U40候補
 
+[R10-FULLSET-01 一式準備](src/content/docs/design/r10-fullset-01.mdx): アルミ6枚、PA12 20個、家庭ASA 72個。追加の有料クーポン注文を前提にしない。実装・検証の状況は同版の記録を参照。製造承認ではない。
+
+### 旧候補
+
 [R9-FITFIX-01](src/content/docs/design/r9-fitfix-01.mdx)を追加。ガードと蓋座面の修正候補で、固定環境の生成・検査記録は `engineering/r9-fitfix-01/verification/`。旧R9は履歴として保存し、現物嵌合・接着・運搬と製造承認は未完了。
 
 ## 家庭印刷用8mmスペーサー

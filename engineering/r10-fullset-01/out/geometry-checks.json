@@ -1,0 +1,230 @@
+[
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "front-0",
+    "type": "lower",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981619282333e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "front-1",
+    "type": "lower",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981619282333e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "front-2",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.85398163909432e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "front-3",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981639108347e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "front-4",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981659604597e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "front-5",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981659618624e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "back-0",
+    "type": "lower",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981619282333e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "back-1",
+    "type": "lower",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981619282333e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "back-2",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.85398163909432e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "back-3",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981639108347e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "back-4",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981659604597e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "back-5",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981659618624e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "right-0",
+    "type": "lower",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981636468514e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "right-1",
+    "type": "lower",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981635667775e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "right-2",
+    "type": "lower",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981636468514e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "right-3",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981590299693e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "right-4",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.85398159031372e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "right-5",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.85398161080997e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "right-6",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981610823997e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "left-0",
+    "type": "lower",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981636468514e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "left-1",
+    "type": "lower",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981635667775e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "left-2",
+    "type": "lower",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981636468514e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "left-3",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981590299693e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "left-4",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.85398159031372e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "left-5",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.85398161080997e-13,
+    "passed": true
+  },
+  {
+    "check": "G2 wall cap stays within original rounded pad",
+    "part": "left-6",
+    "type": "corner",
+    "outside_mm3": 0.0,
+    "uncovered_slot_outline_mm3": 7.853981610823997e-13,
+    "passed": true
+  },
+  {
+    "check": "central lap A/B overlap",
+    "variant": 1.0,
+    "side": "left",
+    "overlap_mm3": 0.0,
+    "passed": true
+  },
+  {
+    "check": "central lap A/B overlap",
+    "variant": 1.0,
+    "side": "right",
+    "overlap_mm3": 0.0,
+    "passed": true
+  },
+  {
+    "check": "panel joint count",
+    "variant": "new1.0",
+    "count": 36,
+    "passed": true
+  }
+]

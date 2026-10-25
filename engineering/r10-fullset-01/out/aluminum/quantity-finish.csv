@@ -1,0 +1,7 @@
+part,quantity,material_finish,primary_file,alternative_or_reference_file
+panel-front,1,A5052 t1.5; deburred; black anodized after machining,aluminum/panel-front-qty1-mm.step,aluminum/panel-front-qty1-mm.dxf
+panel-back,1,A5052 t1.5; deburred; black anodized after machining,aluminum/panel-back-qty1-mm.step,aluminum/panel-back-qty1-mm.dxf
+panel-right,1,A5052 t1.5; deburred; black anodized after machining,aluminum/panel-right-qty1-mm.step,aluminum/panel-right-qty1-mm.dxf
+panel-left,1,A5052 t1.5; deburred; black anodized after machining,aluminum/panel-left-qty1-mm.step,aluminum/panel-left-qty1-mm.dxf
+panel-floor,1,A5052 t1.5; deburred; black anodized after machining,aluminum/panel-floor-qty1-mm.step,aluminum/panel-floor-qty1-mm.dxf
+lid-plate,1,A5052 t1.5; deburred; black anodized after machining,aluminum/lid-plate-qty1-mm.step,aluminum/lid-plate-qty1-mm.dxf

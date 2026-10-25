@@ -1,0 +1,654 @@
+{
+  "revision": "R10-FULLSET-01",
+  "production_approved": false,
+  "inputs": [
+    {
+      "path": "engineering/r10-fullset-01/build.py",
+      "sha256": "15cbcf2946f09b89c6ef7148f254f48879e2b70ad512e37a91fbfe12b746b970"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/geometry.py",
+      "sha256": "8896437743ef205293d116ed1eb213b8beeb92f3e613d56f5b1150661472d9ac"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/home_washers.py",
+      "sha256": "8dfb4e82bcb6dcbc4a3be19f765b3d4d592d8e320fb670455835dc15df13b1fc"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/lidchecks.py",
+      "sha256": "672262b5e653178554d89d8a7b8936588f8f4b27db60f078cde7db753bcd1fde"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/package.py",
+      "sha256": "b1c995828dd56eca09ba4fc8f96aeeb0220955a0a196a72cd70e518e98eada54"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/preview.py",
+      "sha256": "63ffeec8423d03ebf71d7d7a8961e3bd877b00e3257b4818484f7bf4bc24f830"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/validation.py",
+      "sha256": "0fb3d570aff7a3da59fdcde1ce367ae0e17c28c0185915469b8b2ef75b702e0d"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/viewer.html",
+      "sha256": "4c89e45092377c8e8069d2002dd0123dfb9b99dab50f1a5d66360eb26ee971e1"
+    },
+    {
+      "path": "engineering/r10-fullset-01/parameters.json",
+      "sha256": "65894c5d4455dc183652151627c54a87e74891f47b2a3190d66a8845b23662c3"
+    },
+    {
+      "path": "engineering/r10-fullset-01/washers.json",
+      "sha256": "a8f7f9663edb0fc64c334eca35cccf6b169f3da65ccc346e301f508b538f9ffb"
+    },
+    {
+      "path": "engineering/r6-body/build_geometry.py",
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d"
+    },
+    {
+      "path": "engineering/r6-body/design-parameters.json",
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/commit.json",
+      "sha256": "2ba9e91550233485378a650cb6aec5a967cff45de04d576ab67424b38346676d"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/panel-geometry.json",
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/placements.json",
+      "sha256": "fca80fff8c825fb89727c0643dd9d1a6dbeb09b03c060ef2a4c2a1910acba03c"
+    },
+    {
+      "path": "engineering/r6-body/source-data/panels/sources.json",
+      "sha256": "68be9d20a0f388a88c159516265716f7b884eea8020966ee3ad6bf507407e650"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/github-tree.json",
+      "sha256": "d6e5f9d33c5f0fa88d6ecec8b1db0c472cf270c70159adc58d4719a3c2de4e9e"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/nuts-v2-40hp-single.stl",
+      "sha256": "88a153fe717f582f80656fe10c74df5ec1717f53e6b202fff078532b00b06c5a"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/provenance.json",
+      "sha256": "7ce7a866e63406be593e55011dcff6431fc91dec8679a4db82e9f9e99495ef2c"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/rail_dimensions.json",
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail40/rail_mesh.json",
+      "sha256": "6ddbf622f9bcd8f4d1316d76ce2c55b4cecfb3c166de6f88826fda3bb19c2753"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail60/github-tree.json",
+      "sha256": "d6e5f9d33c5f0fa88d6ecec8b1db0c472cf270c70159adc58d4719a3c2de4e9e"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail60/provenance.json",
+      "sha256": "734835b3b49e48368abe7c6c9523af2e1f752c6b42a8811620ae2bbce8e48d30"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail60/rail_dimensions.json",
+      "sha256": "b518e0d6f3a21ab7e08bb1147c35c078475a3ac0c6106daafd863e7c9acfa337"
+    },
+    {
+      "path": "engineering/r6-body/source-data/rail60/rail_mesh.json",
+      "sha256": "eff25355d247f8455eccaf8ffd9e2d659d729a7d7571acb715137c8bc2dbbf2b"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/__init__.py",
+      "sha256": "cfe1436ef6cfdda4dfecddb3a51b7514faa1c36d01953fc3d652c2d22f5c7a40"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/coupons.py",
+      "sha256": "ef02b1a4dcf7bb5d78aa83f2159b0dcbbb752557c1fd8c06ed5eedf021d40eea"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/geometry.py",
+      "sha256": "e25a1f72dc356cffb2989ae9c444e929309bd6d50020c5c81e4f82431eaedb9c"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/io.py",
+      "sha256": "cbaf617c38b4725476b838f777b10f14554615c64a1041fd3d0c7cfb223fb6ff"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/preview.py",
+      "sha256": "37418ee17ab1a35baac7d94c8422a4c0d22c95c6ca6d2531a60a1fbe9ec56bc2"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/reference.py",
+      "sha256": "7016e9eb14347bd0beb0cd161ce72d1f63d880ce944d6f4ca2363f07d99d3427"
+    },
+    {
+      "path": "engineering/r9-fitfix-01/fitfix/validation.py",
+      "sha256": "f03d965f0be2e153a4bcb66958490846aee63322b47eeba8c23d790f0b8526bd"
+    },
+    {
+      "path": "engineering/r9-lid-m5-01/lidm5/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "engineering/r9-lid-m5-01/lidm5/checks.py",
+      "sha256": "855929d0a4a8df45115b1197158f51288271849db5573d800ecbf410806fc917"
+    },
+    {
+      "path": "engineering/r9-lid-m5-01/lidm5/coupons.py",
+      "sha256": "3d7a5eed6ebc1c161577ad149334ff8986f4cd0099d5a2640bcfe4ede9dfa9b8"
+    },
+    {
+      "path": "engineering/r9-lid-m5-01/lidm5/geometry.py",
+      "sha256": "430852dc4e6ff1826bd04df16617111b92e5720d858cd13c35bde098325e431c"
+    },
+    {
+      "path": "engineering/r9-lid-m5-01/lidm5/preview.py",
+      "sha256": "493d816176f51f042143e88cfda874eaf436da0e0780a36236971552a6084402"
+    },
+    {
+      "path": "engineering/r9-lid-m5-01/parameters.json",
+      "sha256": "1de6c448ffe534b26dee6918508af53d0512398668677be7f8d1b07aa79a043b"
+    },
+    {
+      "path": "engineering/r9-prototype-01/uv.lock",
+      "sha256": "3bd3803775af001e1c73c6da3db238bc3a99f2b7b33baab11cf8e323a80fff85"
+    }
+  ],
+  "files": [
+    {
+      "path": "BOM.csv",
+      "sha256": "73599b5c9e173890bf88f6005bde2a26465d95a3310f614ce6ecd34e8a2ee3d2",
+      "bytes": 5018
+    },
+    {
+      "path": "ORDER-START-HERE.md",
+      "sha256": "bdd51dc2eababd581cbeb271f2b2c1ea7c4d441aef2a9255b2a3f78ac60deb83",
+      "bytes": 4020
+    },
+    {
+      "path": "R10-FULLSET-01-aluminum.zip",
+      "sha256": "34fce4c2e3e74d16b6fa00a8cc8056596324484dbf6e982d446875952acb5409",
+      "bytes": 189842
+    },
+    {
+      "path": "R10-FULLSET-01-home-print.zip",
+      "sha256": "fa1210f3b501dcb06a96d5c9b3fa2810f9b13028ad57c490923ed7ee5d75a2fd",
+      "bytes": 92297
+    },
+    {
+      "path": "R10-FULLSET-01-pa12.zip",
+      "sha256": "97927530c278e91e38550bedded6eeed4dbbd172e9f7c3b9d1bdc369cb596817",
+      "bytes": 752282
+    },
+    {
+      "path": "aluminum/lid-plate-qty1-mm.dxf",
+      "sha256": "3a1d21ea8d6555213962f83b15fad9225718424d6c09163ddf4d1ebf88fba63d",
+      "bytes": 16891
+    },
+    {
+      "path": "aluminum/lid-plate-qty1-mm.step",
+      "sha256": "c0c15c80674483747a90ec493c93492064d1d6016a2bb982786846eb02831213",
+      "bytes": 65405
+    },
+    {
+      "path": "aluminum/lid-plate-qty1-mm.stl",
+      "sha256": "7f4a3f9f1b86bbb24f8d166b7d3c7a08c0e214feaa79adc2b0484f6ed25da8e5",
+      "bytes": 254884
+    },
+    {
+      "path": "aluminum/panel-back-qty1-mm.dxf",
+      "sha256": "c77f5fa453fdfae64baba7b8079e1f68fcec6f234b1df514d7a222ee4e38b15c",
+      "bytes": 18802
+    },
+    {
+      "path": "aluminum/panel-back-qty1-mm.step",
+      "sha256": "e08deaa97c838abdd97da49d2fcd409c2925f73c36001ddc904a42fdf92a7de4",
+      "bytes": 119392
+    },
+    {
+      "path": "aluminum/panel-back-qty1-mm.stl",
+      "sha256": "4b464ac606077c242c06741bb2702cd4fee7f680c3fc3594575ff69b84b16468",
+      "bytes": 180884
+    },
+    {
+      "path": "aluminum/panel-floor-qty1-mm.dxf",
+      "sha256": "5b34c15f91babc2977e72e14dabfb4046dc0573b1d99aa650a3428f2d36f7290",
+      "bytes": 20790
+    },
+    {
+      "path": "aluminum/panel-floor-qty1-mm.step",
+      "sha256": "094732b2ba7f015264ea9791f1da5065266835f767569e9444507bc406c139bc",
+      "bytes": 187360
+    },
+    {
+      "path": "aluminum/panel-floor-qty1-mm.stl",
+      "sha256": "421aabe02984e9486774148ed475177d48fc05b79140c715a287248a87f877b3",
+      "bytes": 284084
+    },
+    {
+      "path": "aluminum/panel-front-qty1-mm.dxf",
+      "sha256": "c77f5fa453fdfae64baba7b8079e1f68fcec6f234b1df514d7a222ee4e38b15c",
+      "bytes": 18802
+    },
+    {
+      "path": "aluminum/panel-front-qty1-mm.step",
+      "sha256": "e08deaa97c838abdd97da49d2fcd409c2925f73c36001ddc904a42fdf92a7de4",
+      "bytes": 119392
+    },
+    {
+      "path": "aluminum/panel-front-qty1-mm.stl",
+      "sha256": "4b464ac606077c242c06741bb2702cd4fee7f680c3fc3594575ff69b84b16468",
+      "bytes": 180884
+    },
+    {
+      "path": "aluminum/panel-left-qty1-mm.dxf",
+      "sha256": "50ea12cfd4224ced1076c7c00c8930d4af4256581234e257cde747e06b20b191",
+      "bytes": 19870
+    },
+    {
+      "path": "aluminum/panel-left-qty1-mm.step",
+      "sha256": "f18902880183d6c1aaabc3aaa1ba7de82e56f1fe363a9c0d69f31dd9ae13a9c1",
+      "bytes": 155869
+    },
+    {
+      "path": "aluminum/panel-left-qty1-mm.stl",
+      "sha256": "a4234d2f8393ffb81a64a1188e75eebabf41baa3285a4d802611343adcc639c4",
+      "bytes": 333684
+    },
+    {
+      "path": "aluminum/panel-right-qty1-mm.dxf",
+      "sha256": "3ed00750928be9585c258c710a31dc42a0f37f6701fa833e6ba9eafdab5bb2ca",
+      "bytes": 19856
+    },
+    {
+      "path": "aluminum/panel-right-qty1-mm.step",
+      "sha256": "2d89607278ec92d261022b6856f229417d135bbb82223058ca77f2583f282d06",
+      "bytes": 155869
+    },
+    {
+      "path": "aluminum/panel-right-qty1-mm.stl",
+      "sha256": "16c02c63af899d840551f1018b453674106bd032d57c4530e3fd70c720cd3a5c",
+      "bytes": 333684
+    },
+    {
+      "path": "aluminum/quantity-finish.csv",
+      "sha256": "94cdb4e4d2d604d5d4f336b65e518870e5c97d871bae16190e1981231381ed2b",
+      "bytes": 872
+    },
+    {
+      "path": "drawings/lid-plate.svg",
+      "sha256": "791acbe1bc6ccb1b4e3ced6455173c66a79ad42b860b03785b53e1d35a558710",
+      "bytes": 1097
+    },
+    {
+      "path": "drawings/panel-back.svg",
+      "sha256": "782accb02759c4ab5539b99f16f07b86a01766d8e7e73e5b42fc7093d15bb740",
+      "bytes": 1240
+    },
+    {
+      "path": "drawings/panel-floor.svg",
+      "sha256": "110e5c878e48aa968d00b4fa54237fcaecf08d7a6a91fe2091ad7783f72ba483",
+      "bytes": 1818
+    },
+    {
+      "path": "drawings/panel-front.svg",
+      "sha256": "c8fab5de8a9f31a531dabdd765807c8dc5322a2236477253fab5e377524727f4",
+      "bytes": 1241
+    },
+    {
+      "path": "drawings/panel-left.svg",
+      "sha256": "4d2f75babafdea70623c5f3a4cd437e43cf9dc1320408a25132454b477ff7e6d",
+      "bytes": 1872
+    },
+    {
+      "path": "drawings/panel-right.svg",
+      "sha256": "730c255551fd293f7293e7e4da4bf9b1975e9eabdfebc2ac214cf8dabef8b84c",
+      "bytes": 1859
+    },
+    {
+      "path": "geometry-checks.json",
+      "sha256": "5c42c4d9cdf1c74b3f3eea8aea29f0385d29e80ecc1d27b9f1b5c4a0010c8bc7",
+      "bytes": 5959
+    },
+    {
+      "path": "hanging-hole-checks.json",
+      "sha256": "04b4adbc4e45be581dbab0216a61feccbdfcc50bdc0627e143bdacef025e7f67",
+      "bytes": 1603
+    },
+    {
+      "path": "hardware-stacks.json",
+      "sha256": "13f6a67e89cf350bae8a75c2660e36e216de6b2c2444625e8c697fb0955585ad",
+      "bytes": 6104
+    },
+    {
+      "path": "hole-table.json",
+      "sha256": "4725ce06548a79443f21590b6f65301679f37545395d814510a6de4ac7c3ae6a",
+      "bytes": 12697
+    },
+    {
+      "path": "home-print/README.md",
+      "sha256": "3cc6e67dc0125b6faca2ec5e32792aa033f8d6298e14b32f5ef15a64af931c2e",
+      "bytes": 2576
+    },
+    {
+      "path": "home-print/capsule-pad-mm.step",
+      "sha256": "ec0649ad8c8a829de0708c4972d34d6f6f0b27f71a510a41c58157f05b7a5669",
+      "bytes": 21104
+    },
+    {
+      "path": "home-print/capsule-pad-mm.stl",
+      "sha256": "62a16c3a6089761b7da19a96fcace12770665838e79a6c82ffa2d37478dc3d14",
+      "bytes": 50884
+    },
+    {
+      "path": "home-print/corner-cap-mm.step",
+      "sha256": "4ef7c56c1a33b2bc6c5d9e0636a68b2286bd2fd8d2bd37eed37a4463cb860c13",
+      "bytes": 35311
+    },
+    {
+      "path": "home-print/corner-cap-mm.stl",
+      "sha256": "d0032a64b14c94de1e25354121a2c419d279600da7aa7c064d267b14e929f159",
+      "bytes": 51684
+    },
+    {
+      "path": "home-print/floor-cap-mm.step",
+      "sha256": "448126eb6803f2b3a218c01c836387972ea54a3f0503e3439493c08f5d6e1d21",
+      "bytes": 21000
+    },
+    {
+      "path": "home-print/floor-cap-mm.stl",
+      "sha256": "5bca60f7732cafee9643b27075fae670366616b8cdabd5c13a3603eca4491ccd",
+      "bytes": 50884
+    },
+    {
+      "path": "home-print/lower-cap-mm.step",
+      "sha256": "cdf0eb3f145d3861fb019df469e2e4e393f2e29becef132ac8720e34ad493f8d",
+      "bytes": 35317
+    },
+    {
+      "path": "home-print/lower-cap-mm.stl",
+      "sha256": "bf528c05f46675eac9d475847f6bfbfc8cab198574e78e464de613ab308961a7",
+      "bytes": 51684
+    },
+    {
+      "path": "home-print/orientation.svg",
+      "sha256": "43066da6e5fdf70b9bb602f44ab2bac2b0c193da3193d07f28f175e3c057b867",
+      "bytes": 675
+    },
+    {
+      "path": "home-print/parameters.json",
+      "sha256": "a8f7f9663edb0fc64c334eca35cccf6b169f3da65ccc346e301f508b538f9ffb",
+      "bytes": 1290
+    },
+    {
+      "path": "home-print/readback.json",
+      "sha256": "60165e02d27c54018cc43e1a73761c61739b5a4c7079e82b84ee697f78e8b7f9",
+      "bytes": 2722
+    },
+    {
+      "path": "home-print/round-replacement-mm.step",
+      "sha256": "367ea130e5a0ce866d25abcfb275647c75817eb1faf501b0dfb6e1eab8c8680e",
+      "bytes": 9252
+    },
+    {
+      "path": "home-print/round-replacement-mm.stl",
+      "sha256": "4d417a8d519960d28fbe3a01da63006327355cca5e9fb99143a1442953f1a215",
+      "bytes": 50484
+    },
+    {
+      "path": "home-print/washer-source.py",
+      "sha256": "8dfb4e82bcb6dcbc4a3be19f765b3d4d592d8e320fb670455835dc15df13b1fc",
+      "bytes": 2442
+    },
+    {
+      "path": "joint-checks.json",
+      "sha256": "87d35a173ae19a53370d93b6249de425d0cb9513d12de159f80147dcbb4054de",
+      "bytes": 6252
+    },
+    {
+      "path": "lid-checks.json",
+      "sha256": "235938b4172ce23ba4eb7460ccab0b1a7af7469ca24b627bd37aef686727feb7",
+      "bytes": 42540
+    },
+    {
+      "path": "old-to-new.json",
+      "sha256": "e809e48823f8ee36aaf2d1b3d8b1020fc8ca27a0ab4c144d2cf9d2baab7e3bcf",
+      "bytes": 13343
+    },
+    {
+      "path": "pa12/corner--1--1-qty1-mm.step",
+      "sha256": "f50909cd9fa9429b28f4456dbb52e83c6327876d75ff9d8794092a29a3185513",
+      "bytes": 169324
+    },
+    {
+      "path": "pa12/corner--1--1-qty1-mm.stl",
+      "sha256": "eaa68789fecc2785fd0a045cdd168376f7dd19d4165464dacfd4efbdd0bdeffe",
+      "bytes": 158684
+    },
+    {
+      "path": "pa12/corner--1-1-qty1-mm.step",
+      "sha256": "2a8868259ddfe411947fc2be26f17c2f4ec02b04cd421276b09cf11cbf8a8a17",
+      "bytes": 173993
+    },
+    {
+      "path": "pa12/corner--1-1-qty1-mm.stl",
+      "sha256": "03e942eae889e81574f0eb283ab93300d753a4d97d30532568343661b90dbf1f",
+      "bytes": 158684
+    },
+    {
+      "path": "pa12/corner-1--1-qty1-mm.step",
+      "sha256": "331ae3e5d0b46f6b4a520ed376a1fd4e8c10b42d97cd4a54998c54240ed1772b",
+      "bytes": 174037
+    },
+    {
+      "path": "pa12/corner-1--1-qty1-mm.stl",
+      "sha256": "96a39589cbca903289ea85a112979f4cddd87ff73e053fc57307d2b73dfe0465",
+      "bytes": 158684
+    },
+    {
+      "path": "pa12/corner-1-1-qty1-mm.step",
+      "sha256": "d134c83ccdb203214da571a74a7515122669e1a0853a541c70b0598d99e77cb9",
+      "bytes": 178659
+    },
+    {
+      "path": "pa12/corner-1-1-qty1-mm.stl",
+      "sha256": "45e5f420434ca08c2d92b1e19958615afe94ac7d852570e2b9b20c6cbbe7c55f",
+      "bytes": 158684
+    },
+    {
+      "path": "pa12/lid-frame-bl-qty1-mm.step",
+      "sha256": "dd1d32ce2554fb1df2d8a8329afeb8a5f27cd2a39460d8617b293b1ef322f944",
+      "bytes": 172109
+    },
+    {
+      "path": "pa12/lid-frame-bl-qty1-mm.stl",
+      "sha256": "e174ab2307c1505088aefaa2e0d39b06fdb0aaba23dcd17f2b278af7fecf6544",
+      "bytes": 76884
+    },
+    {
+      "path": "pa12/lid-frame-br-qty1-mm.step",
+      "sha256": "3560969d7ff7308848bd81514c9a4808f6b897e589fbe0194da4a9ea8285e4e2",
+      "bytes": 173282
+    },
+    {
+      "path": "pa12/lid-frame-br-qty1-mm.stl",
+      "sha256": "0fa7fbc2555d40cba8508654b7c11355a7c3a917213a2a1d31998035ec7bc983",
+      "bytes": 76884
+    },
+    {
+      "path": "pa12/lid-frame-fl-qty1-mm.step",
+      "sha256": "f90fc4beaa4ff898427d8353ecf12e1d79f50031a1f6669ca97c3d799418b702",
+      "bytes": 171943
+    },
+    {
+      "path": "pa12/lid-frame-fl-qty1-mm.stl",
+      "sha256": "cf8acf4fe740775007c8722b01d5b2130d02dcd3a0422cac91c23bba7216edb0",
+      "bytes": 76884
+    },
+    {
+      "path": "pa12/lid-frame-fr-qty1-mm.step",
+      "sha256": "a56024489122bc0c4fb12a149560a2e69c5be151438b9191b30c7d97518ec05c",
+      "bytes": 169844
+    },
+    {
+      "path": "pa12/lid-frame-fr-qty1-mm.stl",
+      "sha256": "cb9c5442b905046c0f0d009b4c3c7ea92862c5dfe89d4e3d803f811d55d3b44a",
+      "bytes": 76884
+    },
+    {
+      "path": "pa12/lower-back-0-qty1-mm.step",
+      "sha256": "845767a1a1ffa85e7c989d82e0995a3932454f0561ed390de5f77cd9909d9271",
+      "bytes": 69111
+    },
+    {
+      "path": "pa12/lower-back-0-qty1-mm.stl",
+      "sha256": "cd695ced84b1eab1aa117f0a876e5f9db0fd6757afc4d1b2b583e960e8e0522e",
+      "bytes": 47284
+    },
+    {
+      "path": "pa12/lower-back-1-qty1-mm.step",
+      "sha256": "e4fa9a3b64c505abe3ab643640744255beae95d8027a68b58a81b4dd0eb8d9eb",
+      "bytes": 69089
+    },
+    {
+      "path": "pa12/lower-back-1-qty1-mm.stl",
+      "sha256": "e8b9db21b0a428d9271795fc5840aef94c647eaedd1ba55289559f2092ead0fd",
+      "bytes": 47284
+    },
+    {
+      "path": "pa12/lower-front-0-qty1-mm.step",
+      "sha256": "960613e0ea9925554b066624c25503b8b49c260f8def925cdbab8067ceb59152",
+      "bytes": 69049
+    },
+    {
+      "path": "pa12/lower-front-0-qty1-mm.stl",
+      "sha256": "e285283365be946ab0b70dd235f5cd99fc77c35e103bcea3650fe983a67a1df4",
+      "bytes": 47284
+    },
+    {
+      "path": "pa12/lower-front-1-qty1-mm.step",
+      "sha256": "ee1979931b036fff347ccf4ec2e604332fc44007ad75438bce3fcf5ea4786cdc",
+      "bytes": 69063
+    },
+    {
+      "path": "pa12/lower-front-1-qty1-mm.stl",
+      "sha256": "0ebae9d700280b245d988e655dbc5c3aba0899233adabd6768ba2923d6fa6790",
+      "bytes": 47284
+    },
+    {
+      "path": "pa12/lower-left-0-qty1-mm.step",
+      "sha256": "b8a951d1aa6080ae94cb5494cb9bcd620823401daca18f42bc143eb9d3c1d5b9",
+      "bytes": 120501
+    },
+    {
+      "path": "pa12/lower-left-0-qty1-mm.stl",
+      "sha256": "daa1f00b8f3ceb37cdc68b29a48e52228d560c8ac9cf2e70fb06cc5f94f92c6a",
+      "bytes": 93484
+    },
+    {
+      "path": "pa12/lower-left-1-qty1-mm.step",
+      "sha256": "3484b17d38371407501fdd6ff3fdc60d1877bfdb80bc32b25934d83ac797b65f",
+      "bytes": 140974
+    },
+    {
+      "path": "pa12/lower-left-1-qty1-mm.stl",
+      "sha256": "4db3f1e3372a39508547289a9e094d7610d5f78884723eb1055235e1aa5ff6c0",
+      "bytes": 100784
+    },
+    {
+      "path": "pa12/lower-right-0-qty1-mm.step",
+      "sha256": "1ca7e4562c62bf5fa084d62f6efbb1052f8e5a2d927dfcd17da14983f0ded7fd",
+      "bytes": 120474
+    },
+    {
+      "path": "pa12/lower-right-0-qty1-mm.stl",
+      "sha256": "5f601718b29de845b9a742757aa2f4c1be8fd5d4796085a78055a37188a0c846",
+      "bytes": 93484
+    },
+    {
+      "path": "pa12/lower-right-1-qty1-mm.step",
+      "sha256": "812c6e395c9b797c9fe01bb7182ea00adbcc7f4bf8ac2d314de435ee414f7e8c",
+      "bytes": 140659
+    },
+    {
+      "path": "pa12/lower-right-1-qty1-mm.stl",
+      "sha256": "9b5a973d2e4194b8086047e73729a1e9410dfd282a4a2f97c94debd0cc0add0e",
+      "bytes": 100784
+    },
+    {
+      "path": "pa12/quantity-finish.csv",
+      "sha256": "cb7e182bb15839aca0e5416bee0227c58ebe2d83bb208261f1ee522fd1be328b",
+      "bytes": 2034
+    },
+    {
+      "path": "pa12/top-0-0-qty1-mm.step",
+      "sha256": "253f947b8758184537615db9d296c2057d2f3bc628de585be405266e2b1fefc9",
+      "bytes": 42726
+    },
+    {
+      "path": "pa12/top-0-0-qty1-mm.stl",
+      "sha256": "a3e626c34955fdd7b3a2c2304a6293e481d3d926571a1632fe0bc7a24c12f845",
+      "bytes": 2284
+    },
+    {
+      "path": "pa12/top-0-1-qty1-mm.step",
+      "sha256": "ad5992bd77152bc32f3a46135a70655880bbb14c280fcc671bf03f679264c17a",
+      "bytes": 42676
+    },
+    {
+      "path": "pa12/top-0-1-qty1-mm.stl",
+      "sha256": "1e11c31f5e6aff8fe6b860fb88df06ab67aead54b3f00b0a8b7028dc286a0135",
+      "bytes": 2284
+    },
+    {
+      "path": "pa12/top-1-0-qty1-mm.step",
+      "sha256": "86938f70b6ae0ee7852c6f59b102ba4c2211c3b4809c25987bc2b899dcf21487",
+      "bytes": 42668
+    },
+    {
+      "path": "pa12/top-1-0-qty1-mm.stl",
+      "sha256": "15c3bae8dd385533bbb6eac937c67ccae8544b4eb2d10b41b83263150338eabe",
+      "bytes": 2284
+    },
+    {
+      "path": "pa12/top-1-1-qty1-mm.step",
+      "sha256": "df3253091849d0fa20a6aba2b211cc3a97743e2f647ecfae50be0780003d7688",
+      "bytes": 42621
+    },
+    {
+      "path": "pa12/top-1-1-qty1-mm.stl",
+      "sha256": "7f96171405d5e1dfb8403d236dbaee4abbb8ed2c3e2e306664dab6782db0cf9b",
+      "bytes": 2284
+    },
+    {
+      "path": "preview.html",
+      "sha256": "1e0838345ada7c1e6225a2861740435fab184740346f8d7fcb934b61c9ed54a8",
+      "bytes": 7986969
+    },
+    {
+      "path": "scene.json",
+      "sha256": "9fc704c1630a8d03d92b3a1b8ecd7a90698bd8b53cecc8555872cd5bac38d95b",
+      "bytes": 17552560
+    },
+    {
+      "path": "selected-order.json",
+      "sha256": "1119d18d37ab5b48d49709ba725214bbd70ff548d4b5f028ea4b4551c7cbe496",
+      "bytes": 42540
+    },
+    {
+      "path": "source-datums.json",
+      "sha256": "68a9ea50ba4c6bf5f355bb3af0e7f1d3aa879c928b92a4e3b52bfce2066a681f",
+      "bytes": 3334
+    },
+    {
+      "path": "validation.json",
+      "sha256": "a0b42ef563367f614e41204f2dcc8af61bb76bdfb872b6e985ec8631c4810fc6",
+      "bytes": 16009
+    }
+  ]
+}

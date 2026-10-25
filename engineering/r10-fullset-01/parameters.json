@@ -17,7 +17,7 @@
     "adhesive_per_face": 0.0,
     "end_gap": 0.5,
     "vertical_end_gap": 0.25,
-    "outer_radius": 0.4
+    "outer_radius": 0
   },
   "lid": {
     "rise_to_plate_underside": 30.0,
@@ -75,11 +75,11 @@
     ],
     "left": [
       65,
-      45
+      26
     ],
     "right": [
       65,
-      45
+      26
     ],
     "lid": [
       0,

@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "holes": [
+    {
+      "part": "panel-front",
+      "face_uv": [
+        0,
+        45
+      ],
+      "diameter": 4,
+      "edge_ligament_mm": 41.5,
+      "fixture_access_rod_assumption": "D4, 11mm inward / 5mm outward from exterior",
+      "collisions": []
+    },
+    {
+      "part": "panel-back",
+      "face_uv": [
+        0,
+        45
+      ],
+      "diameter": 4,
+      "edge_ligament_mm": 41.5,
+      "fixture_access_rod_assumption": "D4, 11mm inward / 5mm outward from exterior",
+      "collisions": []
+    },
+    {
+      "part": "panel-right",
+      "face_uv": [
+        65,
+        26
+      ],
+      "diameter": 4,
+      "edge_ligament_mm": 22.5,
+      "fixture_access_rod_assumption": "D4, 11mm inward / 5mm outward from exterior",
+      "collisions": []
+    },
+    {
+      "part": "panel-left",
+      "face_uv": [
+        65,
+        26
+      ],
+      "diameter": 4,
+      "edge_ligament_mm": 22.5,
+      "fixture_access_rod_assumption": "D4, 11mm inward / 5mm outward from exterior",
+      "collisions": []
+    },
+    {
+      "part": "panel-floor",
+      "face_uv": [
+        0,
+        0
+      ],
+      "diameter": 4,
+      "edge_ligament_mm": 112.7,
+      "fixture_access_rod_assumption": "D4, 11mm inward / 5mm outward from exterior",
+      "collisions": []
+    },
+    {
+      "part": "lid-plate",
+      "face_uv": [
+        0,
+        0
+      ],
+      "diameter": 4,
+      "edge_ligament_mm": 111.7,
+      "collisions": [],
+      "fixture_access_rod_assumption": "D4,1mm below plate and5mm above; fixture before assembly"
+    }
+  ],
+  "supplier_approved": false
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "modified_type": "lower-cap",
+  "eccentricity_mm": 1.25,
+  "xy_radial_fit_mm": 0.05,
+  "supplier_packages_unchanged": {
+    "public/downloads/candidate/R10-FULLSET-01-aluminum.zip": "34fce4c2e3e74d16b6fa00a8cc8056596324484dbf6e982d446875952acb5409",
+    "public/downloads/candidate/R10-FULLSET-01-pa12.zip": "97927530c278e91e38550bedded6eeed4dbbd172e9f7c3b9d1bdc369cb596817",
+    "public/downloads/candidate/R10-FULLSET-01-home-print.zip": "fa1210f3b501dcb06a96d5c9b3fa2810f9b13028ad57c490923ed7ee5d75a2fd"
+  },
+  "stl_files": 5
+}

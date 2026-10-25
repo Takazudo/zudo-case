@@ -150,6 +150,15 @@ ${bom}
 
 出典：[R6サマリー](/evidence/r6-family-summary.json)、各機種のmodel-summary.json、<a href="/evidence/r8-original-readme.md">R8 README</a>。
 `);
+if(spec.current_fullset_candidate){
+ const c=spec.current_fullset_candidate;
+ const intro=`## 7U40の現行一式: ${c.revision}
+
+選定構成は [R10一式](../design/r10-fullset-01.mdx)。アルミ${c.quantities.aluminum}枚、PA12 ${c.quantities.pa12}個、家庭ASA ${c.quantities.new_home_print}個。蓋板${dims(c.interface.lid_plate_mm)}mm、座面Z${f(c.interface.lid_seat_z_mm)}mm。以下の旧R9/R6表は履歴・他機種の基準で、この一式の発注数量ではありません。
+
+`;
+ for(const p of pages){if(p.rel.endsWith('models/7u40.mdx')||p.rel.endsWith('manufacturing/bom.mdx')||p.rel.endsWith('models/comparison.mdx'))p.text=p.text.replace(/(\{\/\* GENERATED:[^\n]+\n\n)/,'$1'+intro)}
+}
 return pages;
 }
 
