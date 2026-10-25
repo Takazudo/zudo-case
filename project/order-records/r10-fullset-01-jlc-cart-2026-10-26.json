@@ -1,0 +1,436 @@
+{
+  "schema_version": 1,
+  "record_date": "2026-10-26",
+  "revision": "R10-FULLSET-01",
+  "profile": "7u40-t1-groove1p70-m5",
+  "source_commit": "a5e002870109b18d63431aed5654bb04b11d604c",
+  "status": "CART_PREPARED_NOT_ORDERED_NOT_PAID",
+  "production_approved": false,
+  "quote_submitted": false,
+  "order_submitted": false,
+  "paid": false,
+  "selected_manifest_sha256": "1119d18d37ab5b48d49709ba725214bbd70ff548d4b5f028ea4b4551c7cbe496",
+  "package_sha256": {
+    "aluminum": "709b65f7e12cc7901bde4212a9c4354adf41ced4915922c873ed1e13dbeeaede",
+    "pa12": "b327e8267b4f667a1b620fae16049a8111af0b812c153bbec60697ebfd74b965"
+  },
+  "cart": {
+    "distinct_files": 26,
+    "aluminum": 6,
+    "pa12": 20,
+    "quantity_per_file": 1,
+    "duplicate_files": 0
+  },
+  "settings": {
+    "aluminum": {
+      "material": "Aluminum 5052",
+      "thickness_mm": 1.5,
+      "surface_finish": "Anodizing-Black-Matte",
+      "product_desc": "Aluminum Alloy Rectangular Plate",
+      "hs_code": "761699",
+      "build_days": 4,
+      "deburring": "requested in remark; supplier confirmation pending",
+      "bending": false
+    },
+    "pa12": {
+      "technology": "MJF(Nylon)",
+      "material": "PA12-HP Nylon",
+      "color": "Black",
+      "surface_finish": "Dyeing-Dyed Black",
+      "thread": "No thread",
+      "package_box": "With JLC3DP Logo",
+      "product_desc": "Plastic Enclosure",
+      "hs_code": "392690",
+      "build_days": 3
+    }
+  },
+  "prior_order": {
+    "batch": "W2026100405546498",
+    "batch_status": "Shipped",
+    "aluminum_reference": "SMS2610043000187-7543760A",
+    "pa12_reference": "D2026100416500087-7543760A",
+    "pa12_file": "7u40-r9f-c1-01-guard-qty1-mm.stl",
+    "evidence": "Orders > expand batch > individual Product Details shows PA12-HP, Black, Dyeing Dyed Black, Plastic Enclosure. Separate batch Order Details incorrectly/contradictorily displayed File Error and blank Product Desc for all examined 3D rows; do not infer failed purchase from that view alone."
+  },
+  "quote": {
+    "currency": "JPY",
+    "aluminum_all_six_displayed": 12306,
+    "pa12_first_ten_displayed": 6056,
+    "pa12_second_ten_displayed": 1889,
+    "sum_of_batch_displays": 20251,
+    "displayed_line_prices_sum": 20248,
+    "is_final_invoice": false,
+    "manual_quote_rows_at_save": 0,
+    "tax_status": "not shown/unknown",
+    "shipping_included": false,
+    "shipping_estimates": {
+      "aluminum": 1573,
+      "pa12_first_ten": 1559,
+      "pa12_second_ten": 1133
+    },
+    "combined_shipping": null,
+    "complete_case_total": null,
+    "note": "Batch totals differ slightly from sums of individually rounded displayed row prices. Do not substitute a line-price sum or add separate shipping estimates as a final combined total. Cart summary is zero with all items unselected."
+  },
+  "pending": [
+    "Supplier DFM and thin-wall review",
+    "Dedicated D4 hanging-hole and rack-mark acceptance",
+    "Final reviewed price, tax, combined shipping and delivery",
+    "User final order/payment decision",
+    "Physical fit, assembly, load and transport validation"
+  ],
+  "excluded": [
+    "72 home-print black ASA pieces",
+    "20 reused circular washers",
+    "Existing rails/PCBs/brackets/hardware",
+    "New screw/nut/feet/straps procurement"
+  ],
+  "verification": {
+    "hashes_matched": 26,
+    "site_dimensions_matched": true,
+    "site_quantities_matched": true,
+    "geometry_modified": false,
+    "custom_tolerance_selected": false,
+    "code_or_cad_tests": "not run: only documentation record, no CAD/source changes"
+  },
+  "parts": [
+    {
+      "part_id": "panel-front",
+      "file": "engineering/r10-fullset-01/out/aluminum/panel-front-qty1-mm.step",
+      "sha256": "e08deaa97c838abdd97da49d2fcd409c2925f73c36001ddc904a42fdf92a7de4",
+      "quantity": 1,
+      "dimensions_mm": [
+        226.4,
+        89.5,
+        1.5
+      ],
+      "cart_reference": "SMS2610263000219-7543760A",
+      "displayed_price_jpy": 1415
+    },
+    {
+      "part_id": "panel-back",
+      "file": "engineering/r10-fullset-01/out/aluminum/panel-back-qty1-mm.step",
+      "sha256": "e08deaa97c838abdd97da49d2fcd409c2925f73c36001ddc904a42fdf92a7de4",
+      "quantity": 1,
+      "dimensions_mm": [
+        226.4,
+        89.5,
+        1.5
+      ],
+      "cart_reference": "SMS2610263000226-7543760A",
+      "displayed_price_jpy": 1415
+    },
+    {
+      "part_id": "panel-right",
+      "file": "engineering/r10-fullset-01/out/aluminum/panel-right-qty1-mm.step",
+      "sha256": "2d89607278ec92d261022b6856f229417d135bbb82223058ca77f2583f282d06",
+      "quantity": 1,
+      "dimensions_mm": [
+        334,
+        89.5,
+        1.5
+      ],
+      "cart_reference": "SMS2610263000232-7543760A",
+      "displayed_price_jpy": 1722
+    },
+    {
+      "part_id": "panel-left",
+      "file": "engineering/r10-fullset-01/out/aluminum/panel-left-qty1-mm.step",
+      "sha256": "f18902880183d6c1aaabc3aaa1ba7de82e56f1fe363a9c0d69f31dd9ae13a9c1",
+      "quantity": 1,
+      "dimensions_mm": [
+        334,
+        89.5,
+        1.5
+      ],
+      "cart_reference": "SMS2610263000220-7543760A",
+      "displayed_price_jpy": 1722
+    },
+    {
+      "part_id": "panel-floor",
+      "file": "engineering/r10-fullset-01/out/aluminum/panel-floor-qty1-mm.step",
+      "sha256": "094732b2ba7f015264ea9791f1da5065266835f767569e9444507bc406c139bc",
+      "quantity": 1,
+      "dimensions_mm": [
+        229.4,
+        334,
+        1.5
+      ],
+      "cart_reference": "SMS2610263000227-7543760A",
+      "displayed_price_jpy": 3036
+    },
+    {
+      "part_id": "lid-plate",
+      "file": "engineering/r10-fullset-01/out/aluminum/lid-plate-qty1-mm.step",
+      "sha256": "c0c15c80674483747a90ec493c93492064d1d6016a2bb982786846eb02831213",
+      "quantity": 1,
+      "dimensions_mm": [
+        227.4,
+        332,
+        1.5
+      ],
+      "cart_reference": "SMS2610263000229-7543760A",
+      "displayed_price_jpy": 2998
+    },
+    {
+      "part_id": "top-0-0",
+      "file": "engineering/r10-fullset-01/out/pa12/top-0-0-qty1-mm.stl",
+      "sha256": "a3e626c34955fdd7b3a2c2304a6293e481d3d926571a1632fe0bc7a24c12f845",
+      "quantity": 1,
+      "dimensions_mm": [
+        115.55,
+        167.85,
+        6
+      ],
+      "cart_reference": "D2026102646500026-7543760A",
+      "displayed_price_jpy": 226
+    },
+    {
+      "part_id": "top-0-1",
+      "file": "engineering/r10-fullset-01/out/pa12/top-0-1-qty1-mm.stl",
+      "sha256": "1e11c31f5e6aff8fe6b860fb88df06ab67aead54b3f00b0a8b7028dc286a0135",
+      "quantity": 1,
+      "dimensions_mm": [
+        115.55,
+        167.85,
+        6
+      ],
+      "cart_reference": "D2026102646500043-7543760A",
+      "displayed_price_jpy": 226
+    },
+    {
+      "part_id": "top-1-0",
+      "file": "engineering/r10-fullset-01/out/pa12/top-1-0-qty1-mm.stl",
+      "sha256": "15c3bae8dd385533bbb6eac937c67ccae8544b4eb2d10b41b83263150338eabe",
+      "quantity": 1,
+      "dimensions_mm": [
+        115.55,
+        167.85,
+        6
+      ],
+      "cart_reference": "D2026102646500038-7543760A",
+      "displayed_price_jpy": 226
+    },
+    {
+      "part_id": "top-1-1",
+      "file": "engineering/r10-fullset-01/out/pa12/top-1-1-qty1-mm.stl",
+      "sha256": "7f96171405d5e1dfb8403d236dbaee4abbb8ed2c3e2e306664dab6782db0cf9b",
+      "quantity": 1,
+      "dimensions_mm": [
+        115.55,
+        167.85,
+        6
+      ],
+      "cart_reference": "D2026102646500024-7543760A",
+      "displayed_price_jpy": 226
+    },
+    {
+      "part_id": "corner--1--1",
+      "file": "engineering/r10-fullset-01/out/pa12/corner--1--1-qty1-mm.stl",
+      "sha256": "eaa68789fecc2785fd0a045cdd168376f7dd19d4165464dacfd4efbdd0bdeffe",
+      "quantity": 1,
+      "dimensions_mm": [
+        22.5,
+        22.5,
+        80.5
+      ],
+      "cart_reference": "D2026102645500050-7543760A",
+      "displayed_price_jpy": 164
+    },
+    {
+      "part_id": "corner--1-1",
+      "file": "engineering/r10-fullset-01/out/pa12/corner--1-1-qty1-mm.stl",
+      "sha256": "03e942eae889e81574f0eb283ab93300d753a4d97d30532568343661b90dbf1f",
+      "quantity": 1,
+      "dimensions_mm": [
+        22.5,
+        22.5,
+        80.5
+      ],
+      "cart_reference": "D2026102645500042-7543760A",
+      "displayed_price_jpy": 164
+    },
+    {
+      "part_id": "corner-1--1",
+      "file": "engineering/r10-fullset-01/out/pa12/corner-1--1-qty1-mm.stl",
+      "sha256": "96a39589cbca903289ea85a112979f4cddd87ff73e053fc57307d2b73dfe0465",
+      "quantity": 1,
+      "dimensions_mm": [
+        22.5,
+        22.5,
+        80.5
+      ],
+      "cart_reference": "D2026102645500061-7543760A",
+      "displayed_price_jpy": 164
+    },
+    {
+      "part_id": "corner-1-1",
+      "file": "engineering/r10-fullset-01/out/pa12/corner-1-1-qty1-mm.stl",
+      "sha256": "45e5f420434ca08c2d92b1e19958615afe94ac7d852570e2b9b20c6cbbe7c55f",
+      "quantity": 1,
+      "dimensions_mm": [
+        22.5,
+        22.5,
+        80.5
+      ],
+      "cart_reference": "D2026102645500053-7543760A",
+      "displayed_price_jpy": 164
+    },
+    {
+      "part_id": "lower-front-0",
+      "file": "engineering/r10-fullset-01/out/pa12/lower-front-0-qty1-mm.stl",
+      "sha256": "e285283365be946ab0b70dd235f5cd99fc77c35e103bcea3650fe983a67a1df4",
+      "quantity": 1,
+      "dimensions_mm": [
+        114.45,
+        6,
+        24
+      ],
+      "cart_reference": "D2026102646500036-7543760A",
+      "displayed_price_jpy": 164
+    },
+    {
+      "part_id": "lower-front-1",
+      "file": "engineering/r10-fullset-01/out/pa12/lower-front-1-qty1-mm.stl",
+      "sha256": "0ebae9d700280b245d988e655dbc5c3aba0899233adabd6768ba2923d6fa6790",
+      "quantity": 1,
+      "dimensions_mm": [
+        114.45,
+        6,
+        24
+      ],
+      "cart_reference": "D2026102646500018-7543760A",
+      "displayed_price_jpy": 164
+    },
+    {
+      "part_id": "lower-back-0",
+      "file": "engineering/r10-fullset-01/out/pa12/lower-back-0-qty1-mm.stl",
+      "sha256": "cd695ced84b1eab1aa117f0a876e5f9db0fd6757afc4d1b2b583e960e8e0522e",
+      "quantity": 1,
+      "dimensions_mm": [
+        114.45,
+        6,
+        24
+      ],
+      "cart_reference": "D2026102645500019-7543760A",
+      "displayed_price_jpy": 164
+    },
+    {
+      "part_id": "lower-back-1",
+      "file": "engineering/r10-fullset-01/out/pa12/lower-back-1-qty1-mm.stl",
+      "sha256": "e8b9db21b0a428d9271795fc5840aef94c647eaedd1ba55289559f2092ead0fd",
+      "quantity": 1,
+      "dimensions_mm": [
+        114.45,
+        6,
+        24
+      ],
+      "cart_reference": "D2026102645500044-7543760A",
+      "displayed_price_jpy": 164
+    },
+    {
+      "part_id": "lower-right-0",
+      "file": "engineering/r10-fullset-01/out/pa12/lower-right-0-qty1-mm.stl",
+      "sha256": "5f601718b29de845b9a742757aa2f4c1be8fd5d4796085a78055a37188a0c846",
+      "quantity": 1,
+      "dimensions_mm": [
+        6,
+        169.75,
+        24
+      ],
+      "cart_reference": "D2026102646500034-7543760A",
+      "displayed_price_jpy": 164
+    },
+    {
+      "part_id": "lower-right-1",
+      "file": "engineering/r10-fullset-01/out/pa12/lower-right-1-qty1-mm.stl",
+      "sha256": "9b5a973d2e4194b8086047e73729a1e9410dfd282a4a2f97c94debd0cc0add0e",
+      "quantity": 1,
+      "dimensions_mm": [
+        7,
+        169.75,
+        24
+      ],
+      "cart_reference": "D2026102646500028-7543760A",
+      "displayed_price_jpy": 164
+    },
+    {
+      "part_id": "lower-left-0",
+      "file": "engineering/r10-fullset-01/out/pa12/lower-left-0-qty1-mm.stl",
+      "sha256": "daa1f00b8f3ceb37cdc68b29a48e52228d560c8ac9cf2e70fb06cc5f94f92c6a",
+      "quantity": 1,
+      "dimensions_mm": [
+        6,
+        169.75,
+        24
+      ],
+      "cart_reference": "D2026102646500046-7543760A",
+      "displayed_price_jpy": 164
+    },
+    {
+      "part_id": "lower-left-1",
+      "file": "engineering/r10-fullset-01/out/pa12/lower-left-1-qty1-mm.stl",
+      "sha256": "4db3f1e3372a39508547289a9e094d7610d5f78884723eb1055235e1aa5ff6c0",
+      "quantity": 1,
+      "dimensions_mm": [
+        7,
+        169.75,
+        24
+      ],
+      "cart_reference": "D2026102646500029-7543760A",
+      "displayed_price_jpy": 164
+    },
+    {
+      "part_id": "lid-frame-fr",
+      "file": "engineering/r10-fullset-01/out/pa12/lid-frame-fr-qty1-mm.stl",
+      "sha256": "cb9c5442b905046c0f0d009b4c3c7ea92862c5dfe89d4e3d803f811d55d3b44a",
+      "quantity": 1,
+      "dimensions_mm": [
+        115.6,
+        167.9,
+        43.8
+      ],
+      "cart_reference": "D2026102645500052-7543760A",
+      "displayed_price_jpy": 1267
+    },
+    {
+      "part_id": "lid-frame-fl",
+      "file": "engineering/r10-fullset-01/out/pa12/lid-frame-fl-qty1-mm.stl",
+      "sha256": "cf8acf4fe740775007c8722b01d5b2130d02dcd3a0422cac91c23bba7216edb0",
+      "quantity": 1,
+      "dimensions_mm": [
+        115.6,
+        167.9,
+        43.8
+      ],
+      "cart_reference": "D2026102645500033-7543760A",
+      "displayed_price_jpy": 1267
+    },
+    {
+      "part_id": "lid-frame-bl",
+      "file": "engineering/r10-fullset-01/out/pa12/lid-frame-bl-qty1-mm.stl",
+      "sha256": "e174ab2307c1505088aefaa2e0d39b06fdb0aaba23dcd17f2b278af7fecf6544",
+      "quantity": 1,
+      "dimensions_mm": [
+        115.6,
+        167.9,
+        43.8
+      ],
+      "cart_reference": "D2026102645500023-7543760A",
+      "displayed_price_jpy": 1267
+    },
+    {
+      "part_id": "lid-frame-br",
+      "file": "engineering/r10-fullset-01/out/pa12/lid-frame-br-qty1-mm.stl",
+      "sha256": "0fa7fbc2555d40cba8508654b7c11355a7c3a917213a2a1d31998035ec7bc983",
+      "quantity": 1,
+      "dimensions_mm": [
+        115.6,
+        167.9,
+        43.8
+      ],
+      "cart_reference": "D2026102645500030-7543760A",
+      "displayed_price_jpy": 1267
+    }
+  ]
+}
