@@ -289,4 +289,3 @@ def build_case(new=True,wall=1):
    audits.append({'check':'central lap A/B overlap','variant':wall,'side':f,'overlap_mm3':vol,'passed':vol<1e-6})
  audits.append({'check':'panel joint count','variant':prefix+str(wall),'count':sum(1 for p in items if p['id'].startswith('shaft-')),'passed':sum(1 for p in items if p['id'].startswith('shaft-'))==36})
  return items
-
