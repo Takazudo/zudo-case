@@ -115,7 +115,7 @@ jobs:
         run: uv run --locked --project engineering/r9-prototype-01 python engineering/r10-fullset-01/tests/cap_margins.py --check
 
   printed-5mm-cad:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
