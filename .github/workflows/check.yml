@@ -26,6 +26,10 @@ jobs:
         with:
           node-version: 24
           cache: pnpm
+      # The retained fitfix preview was exported with Python 3.12 gzip headers.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - run: pnpm install --frozen-lockfile
       - run: pnpm test:two-way
       - run: pnpm check:two-way
@@ -126,3 +130,7 @@ jobs:
         run: python3 engineering/printed-5mm/p3/verify.py --out "$RUNNER_TEMP/printed-p3" --published-root .
       - name: Reject invalid print, scene and parameter inputs
         run: python3 engineering/printed-5mm/p3/negative.py --out "$RUNNER_TEMP/printed-p3"
+      - name: Install Chromium for the P3 browser regression
+        run: uv run --locked --project engineering/printed-5mm/p3 python -m playwright install --with-deps chromium
+      - name: Exercise the P3 standalone viewer in Chromium
+        run: uv run --locked --project engineering/printed-5mm/p3 python "$RUNNER_TEMP/printed-p3/source/verify_browser.py"

@@ -1,11 +1,16 @@
 """Exercise rejection gates on disposable copies of one successful full build."""
 from pathlib import Path
-import argparse,hashlib,json,os,shutil,subprocess,sys,tempfile
+import argparse,errno,hashlib,json,os,shutil,subprocess,sys,tempfile
 root=Path(__file__).resolve().parent
 p=argparse.ArgumentParser();p.add_argument('--out',required=True,type=Path);a=p.parse_args()
 source=a.out.resolve()
 def copy(src,dst):
-    shutil.copytree(src,dst,copy_function=os.link)
+    def link_or_copy(a,b):
+        try: return os.link(a,b)
+        except OSError as e:
+            if e.errno != errno.EXDEV: raise
+            return shutil.copy2(a,b)
+    shutil.copytree(src,dst,copy_function=link_or_copy)
 def rewrite(path,data):
     path.unlink();path.write_text(json.dumps(data,separators=(',',':')))
 def refresh_model_manifest(dst):

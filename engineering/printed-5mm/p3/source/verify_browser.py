@@ -8,7 +8,7 @@ def ok(name,passed,**kw):
  records.append(dict(check=name,passed=bool(passed),**kw));print(('PASS ' if passed else 'FAIL ')+name,flush=True)
  if not passed:raise AssertionError(name)
 with sync_playwright() as p:
- browser=p.chromium.launch(executable_path=os.environ.get('CHROMIUM','/usr/bin/chromium'),headless=True,args=['--no-sandbox','--disable-dev-shm-usage','--enable-unsafe-swiftshader'])
+ browser=p.chromium.launch(executable_path=os.environ.get('CHROMIUM'),headless=True,args=['--no-sandbox','--disable-dev-shm-usage','--enable-unsafe-swiftshader'])
  page=browser.new_page(viewport={'width':1440,'height':1000},device_scale_factor=1,accept_downloads=True)
  page.on('pageerror',lambda e:errors.append(str(e)))
  file_result={'attempted':True,'succeeded':False,'error':'Direct file navigation did not complete in this environment; isolated process stopped at 120s. Functional suite uses the same HTML via page.set_content.'}
