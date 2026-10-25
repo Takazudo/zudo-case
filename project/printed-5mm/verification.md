@@ -11,3 +11,5 @@
 - R10選定manifest、JLCカート記録、アルミ/PA12 ZIPは変更しない。金属一式の`check:fullset`と13テストも通過。
 
 残る確認: Bambu Studioの実スライスとサポート・キープアウト、ASA反りと強度、中央継ぎ目のたわみ、ネジ長・ナット、物理嵌合、運搬。現物評価前に製造承認へ格上げしません。
+
+画面記録: [組込ビュー](verification/assembly-ui.png)、[H2D配置](verification/bed.png)、[390px画面](verification/mobile-390.png)。この3枚は今回のCanvasブラウザー検査から選んだ記録で、旧アーカイブの画像ではありません。
