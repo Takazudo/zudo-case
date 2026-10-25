@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "transport": "actual local zfb dev HTTP GET after CSV newline normalization",
+  "files": [
+    {
+      "url": "http://localhost:4399/downloads/candidate/R10-FULLSET-01-aluminum.zip",
+      "bytes": 189834,
+      "sha256": "7352b40d134e2136af658a39e3150da98f7f2711a89af80d641c0eda9e1f49a1"
+    },
+    {
+      "url": "http://localhost:4399/downloads/candidate/R10-FULLSET-01-home-print.zip",
+      "bytes": 92291,
+      "sha256": "7ff0a3c4bc848235b87ed3922beca44f28a1bd4ed62b2b8118dfdc4718ab88af"
+    },
+    {
+      "url": "http://localhost:4399/downloads/candidate/R10-FULLSET-01-pa12.zip",
+      "bytes": 752274,
+      "sha256": "f24aa6fb56a68b435030a0b3acc53a1566755e77ca712174ebf176073a91049a"
+    }
+  ]
+}
