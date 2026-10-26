@@ -38,4 +38,15 @@ python3 engineering/printed-5mm/p4-uniform-vents/negative.py --out /tmp/p4-build
 
 `regenerate.py` は別々の空出力先へ2回生成し、2回目はソースZIPを展開したものからビルドします。ローカルの重い生成・ブラウザー・全チェックは共有heavy-guardを通します。
 
-実行結果とブラウザー記録は完了後に追記します。実スライス、ASA反り・クリープ、締結の長期保持、現物嵌合、運搬・荷重、熱・防塵性能は未確認です。製造承認・発注は行いません。
+独立した空出力先2個（2回目はソースZIP展開）で、74ペイロードのバイト一致を確認しました。最終版Canvas／WebGLはそれぞれ186項目通過。直接file://、全14画面、P3比較、15印刷配置、設定保存・異常入力拒否、選択・solo・レイヤー、PNG、390/320pxを含みます。各経路の実rendererは `verification/browser-canvas-checks.json` と `verification/browser-webgl-checks.json` に記録しています。
+
+ローカル文書と全リポジトリチェックの結果は完了後に追記します。実スライス、ASA反り・クリープ、締結の長期保持、現物嵌合、運搬・荷重、熱・防塵性能は未確認です。製造承認・発注は行いません。
+
+## 配布ファイル
+
+| ファイル | SHA-256 |
+|---|---|
+| `public/downloads/candidate/printed-5mm-p4-uniform-vents-stl.zip` | `0587817a6243e6602da90d6b1386982b39b6841033aaadf8d30a0975d149c4f8` |
+| `public/downloads/candidate/printed-5mm-p4-uniform-vents-source.zip` | `39f61516979676800e06285ac0e266ab38c7324f715603d13563a79aa19c440d` |
+
+四壁は `engineering/printed-5mm/p4-uniform-vents/out/stl/wall-{front,back,right,left}.stl` と同 `out/step/wall-{front,back,right,left}.step`。左右各25、前後各16の通気孔。四壁だけの便宜ZIPは作らず、15 STL＋15 STEP入りの一式を配布します。

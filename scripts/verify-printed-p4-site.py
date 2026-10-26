@@ -26,8 +26,11 @@ with sync_playwright() as pw:
                 page.screenshot(path=str(out/f'docs-preview-{width}.png'),full_page=True)
     registry=json.loads((root/'project/printed-5mm/p4-uniform-vents/files.json').read_text())
     for f in registry['files']:
-        if f['path'].startswith('public/'):
+        if f['path'].startswith('public/') and f['path'].endswith('.zip'):
             response=page.request.get(base+'/'+f['path'][7:]);check('GET '+f['path'],response.status==200 and hashlib.sha256(response.body()).hexdigest()==f['sha256'])
+    # Dev intentionally injects site CSS/live reload into HTML; download ZIPs remain exact bytes.
+    response=page.request.get(base+'/previews/printed-5mm-p4-uniform-vents.html')
+    check('local preview GET is current P4',response.status==200 and 'P4-PRINTED-5MM-UNIFORM-VENTS' in response.text())
     check('no page errors',not errors)
     (out/'checks.json').write_text(json.dumps({'passed':True,'checks':checks,'browser':browser.version},indent=2)+'\n')
     print('P4 local docs:',len(checks),'checks passed')
