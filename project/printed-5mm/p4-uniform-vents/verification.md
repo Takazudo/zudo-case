@@ -40,7 +40,7 @@ python3 engineering/printed-5mm/p4-uniform-vents/negative.py --out /tmp/p4-build
 
 独立した空出力先2個（2回目はソースZIP展開）で、74ペイロードのバイト一致を確認しました。最終版Canvas／WebGLはそれぞれ186項目通過。直接file://、全14画面、P3比較、15印刷配置、設定保存・異常入力拒否、選択・solo・レイヤー、PNG、390/320pxを含みます。各経路の実rendererは `verification/browser-canvas-checks.json` と `verification/browser-webgl-checks.json` に記録しています。
 
-ローカル文書と全リポジトリチェックの結果は完了後に追記します。実スライス、ASA反り・クリープ、締結の長期保持、現物嵌合、運搬・荷重、熱・防塵性能は未確認です。製造承認・発注は行いません。
+ローカル文書の検査は `scripts/verify-printed-p4-site.py`、全体の実行手順は `.github/workflows/check.yml`。文書・P3/P4クリーンCAD・既存CADの最終コミットに対する結果は [PR #127](https://github.com/Takazudo/zudo-case/pull/127) のチェック記録を参照してください。devはHTMLにCSSと再読込タグを挿入するため、ZIPはGETの生バイトhashを照合し、埋込HTMLは同一オリジン・P4版・実操作を確認します。実スライス、ASA反り・クリープ、締結の長期保持、現物嵌合、運搬・荷重、熱・防塵性能は未確認です。製造承認・発注は行いません。
 
 ## 配布ファイル
 
