@@ -1,0 +1,16 @@
+Part,Quantity,Native flat size mm,Rotation deg,Footprint with 5mm brim,STL,Notes
+floor-1,1,"[236.4, 170.35, 5.0]",0,"[246.4, 180.35]",stl/floor-1.stl,5mm. Equal 236.4 x 170.35mm halves; centered 0.3mm seam. Two independent side brackets at Y=-25/+25mm. No joining strip or strip holes.
+floor-2,1,"[236.4, 170.35, 5.0]",0,"[246.4, 180.35]",stl/floor-2.stl,5mm. Equal 236.4 x 170.35mm halves; centered 0.3mm seam. Two independent side brackets at Y=-25/+25mm. No joining strip or strip holes.
+wall-front,1,"[226.4, 89.5, 5.0]",0,"[236.4, 99.5]",stl/wall-front.stl,Original interior kept. 341mm sides print flat at 45 degrees; not upright.
+wall-back,1,"[226.4, 89.5, 5.0]",0,"[236.4, 99.5]",stl/wall-back.stl,Original interior kept. 341mm sides print flat at 45 degrees; not upright.
+wall-right,1,"[341.0, 89.5, 5.0]",45,"[313.9124, 313.9124]",stl/wall-right.stl,Original interior kept. 341mm sides print flat at 45 degrees; not upright.
+wall-left,1,"[341.0, 89.5, 5.0]",45,"[313.9124, 313.9124]",stl/wall-left.stl,Original interior kept. 341mm sides print flat at 45 degrees; not upright.
+lid-edge-front,1,"[226.4, 50.5, 10.3]",0,"[236.4, 60.5]",stl/lid-edge-front.stl,"Reference-inspired 5mm wall + 5mm inward locator, 7.5mm engagement, 0.3mm side clearance, segmented 3mm ledge. Local support required under the offset locator when printed outside-face down."
+lid-edge-back,1,"[226.4, 50.5, 10.3]",0,"[236.4, 60.5]",stl/lid-edge-back.stl,"Reference-inspired 5mm wall + 5mm inward locator, 7.5mm engagement, 0.3mm side clearance, segmented 3mm ledge. Local support required under the offset locator when printed outside-face down."
+lid-edge-right,1,"[341.0, 50.5, 10.3]",45,"[281.0319, 281.0319]",stl/lid-edge-right.stl,"Reference-inspired 5mm wall + 5mm inward locator, 7.5mm engagement, 0.3mm side clearance, segmented 3mm ledge. Local support required under the offset locator when printed outside-face down."
+lid-edge-left,1,"[341.0, 50.5, 10.3]",45,"[281.0319, 281.0319]",stl/lid-edge-left.stl,"Reference-inspired 5mm wall + 5mm inward locator, 7.5mm engagement, 0.3mm side clearance, segmented 3mm ledge. Local support required under the offset locator when printed outside-face down."
+lid-top-1,1,"[225.8, 165.05, 5.0]",0,"[235.8, 175.05]",stl/lid-top-1.stl,5mm roof rests on the segmented ledges and bolts to stock L brackets. Two independent halves; no joining strip or strip holes.
+lid-top-2,1,"[225.8, 165.05, 5.0]",0,"[235.8, 175.05]",stl/lid-top-2.stl,5mm roof rests on the segmented ledges and bolts to stock L brackets. Two independent halves; no joining strip or strip holes.
+pad-horizontal,48,"[20.0, 12.0, 1.0]",0,"[30.0, 22.0]",stl/pad-horizontal.stl,ASA washer prototype. Parameterized; replaceable at home. Not a nylon-material equivalence.
+pad-vertical,48,"[12.0, 20.0, 1.0]",0,"[22.0, 30.0]",stl/pad-vertical.stl,ASA washer prototype. Parameterized; replaceable at home. Not a nylon-material equivalence.
+washer-round,28,"[10.0, 10.0, 1.0]",0,"[20.0, 20.0]",stl/washer-round.stl,ASA washer prototype. Parameterized; replaceable at home. Not a nylon-material equivalence.

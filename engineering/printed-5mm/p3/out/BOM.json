@@ -1,0 +1,751 @@
+{
+  "revision": "P3-PRINTED-5MM-7U-RAILS",
+  "printed": [
+    {
+      "id": "floor-1",
+      "name": "Floor half 1",
+      "native_print_dimensions_mm": [
+        236.4,
+        170.35,
+        5.0
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        236.4,
+        170.35,
+        5.0
+      ],
+      "with_5mm_brim_mm": [
+        246.4,
+        180.35
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "stl/floor-1.stl",
+      "volume_mm3": 199815.179,
+      "note": "5mm. Equal 236.4 x 170.35mm halves; centered 0.3mm seam. Two independent side brackets at Y=-25/+25mm. No joining strip or strip holes."
+    },
+    {
+      "id": "floor-2",
+      "name": "Floor half 2",
+      "native_print_dimensions_mm": [
+        236.4,
+        170.35,
+        5.0
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        236.4,
+        170.35,
+        5.0
+      ],
+      "with_5mm_brim_mm": [
+        246.4,
+        180.35
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "stl/floor-2.stl",
+      "volume_mm3": 199815.179,
+      "note": "5mm. Equal 236.4 x 170.35mm halves; centered 0.3mm seam. Two independent side brackets at Y=-25/+25mm. No joining strip or strip holes."
+    },
+    {
+      "id": "wall-front",
+      "name": "Front wall — 5mm",
+      "native_print_dimensions_mm": [
+        226.4,
+        89.5,
+        5.0
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        226.4,
+        89.5,
+        5.0
+      ],
+      "with_5mm_brim_mm": [
+        236.4,
+        99.5
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "stl/wall-front.stl",
+      "volume_mm3": 99774.706,
+      "note": "Original interior kept. 341mm sides print flat at 45 degrees; not upright."
+    },
+    {
+      "id": "wall-back",
+      "name": "Back wall — 5mm",
+      "native_print_dimensions_mm": [
+        226.4,
+        89.5,
+        5.0
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        226.4,
+        89.5,
+        5.0
+      ],
+      "with_5mm_brim_mm": [
+        236.4,
+        99.5
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "stl/wall-back.stl",
+      "volume_mm3": 99774.706,
+      "note": "Original interior kept. 341mm sides print flat at 45 degrees; not upright."
+    },
+    {
+      "id": "wall-right",
+      "name": "Right wall — 5mm",
+      "native_print_dimensions_mm": [
+        341.0,
+        89.5,
+        5.0
+      ],
+      "rotation_degrees": 45,
+      "bed_footprint_mm": [
+        303.9124,
+        303.9124,
+        5.0
+      ],
+      "with_5mm_brim_mm": [
+        313.9124,
+        313.9124
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "stl/wall-right.stl",
+      "volume_mm3": 149951.666,
+      "note": "Original interior kept. 341mm sides print flat at 45 degrees; not upright."
+    },
+    {
+      "id": "wall-left",
+      "name": "Left wall — 5mm",
+      "native_print_dimensions_mm": [
+        341.0,
+        89.5,
+        5.0
+      ],
+      "rotation_degrees": 45,
+      "bed_footprint_mm": [
+        303.9124,
+        303.9124,
+        5.0
+      ],
+      "with_5mm_brim_mm": [
+        313.9124,
+        313.9124
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "stl/wall-left.stl",
+      "volume_mm3": 149951.666,
+      "note": "Original interior kept. 341mm sides print flat at 45 degrees; not upright."
+    },
+    {
+      "id": "lid-edge-front",
+      "name": "Front stepped lid edge",
+      "native_print_dimensions_mm": [
+        226.4,
+        50.5,
+        10.3
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        226.4,
+        50.5,
+        10.3
+      ],
+      "with_5mm_brim_mm": [
+        236.4,
+        60.5
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "stl/lid-edge-front.stl",
+      "volume_mm3": 64379.472,
+      "note": "Reference-inspired 5mm wall + 5mm inward locator, 7.5mm engagement, 0.3mm side clearance, segmented 3mm ledge. Local support required under the offset locator when printed outside-face down."
+    },
+    {
+      "id": "lid-edge-back",
+      "name": "Back stepped lid edge",
+      "native_print_dimensions_mm": [
+        226.4,
+        50.5,
+        10.3
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        226.4,
+        50.5,
+        10.3
+      ],
+      "with_5mm_brim_mm": [
+        236.4,
+        60.5
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "stl/lid-edge-back.stl",
+      "volume_mm3": 64379.472,
+      "note": "Reference-inspired 5mm wall + 5mm inward locator, 7.5mm engagement, 0.3mm side clearance, segmented 3mm ledge. Local support required under the offset locator when printed outside-face down."
+    },
+    {
+      "id": "lid-edge-right",
+      "name": "Right stepped lid edge",
+      "native_print_dimensions_mm": [
+        341.0,
+        50.5,
+        10.3
+      ],
+      "rotation_degrees": 45,
+      "bed_footprint_mm": [
+        271.0319,
+        271.0319,
+        10.3
+      ],
+      "with_5mm_brim_mm": [
+        281.0319,
+        281.0319
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "stl/lid-edge-right.stl",
+      "volume_mm3": 97483.072,
+      "note": "Reference-inspired 5mm wall + 5mm inward locator, 7.5mm engagement, 0.3mm side clearance, segmented 3mm ledge. Local support required under the offset locator when printed outside-face down."
+    },
+    {
+      "id": "lid-edge-left",
+      "name": "Left stepped lid edge",
+      "native_print_dimensions_mm": [
+        341.0,
+        50.5,
+        10.3
+      ],
+      "rotation_degrees": 45,
+      "bed_footprint_mm": [
+        271.0319,
+        271.0319,
+        10.3
+      ],
+      "with_5mm_brim_mm": [
+        281.0319,
+        281.0319
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "stl/lid-edge-left.stl",
+      "volume_mm3": 97483.072,
+      "note": "Reference-inspired 5mm wall + 5mm inward locator, 7.5mm engagement, 0.3mm side clearance, segmented 3mm ledge. Local support required under the offset locator when printed outside-face down."
+    },
+    {
+      "id": "lid-top-1",
+      "name": "Lid top half 1 — 5mm",
+      "native_print_dimensions_mm": [
+        225.8,
+        165.05,
+        5.0
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        225.8,
+        165.05,
+        5.0
+      ],
+      "with_5mm_brim_mm": [
+        235.8,
+        175.05
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "stl/lid-top-1.stl",
+      "volume_mm3": 185865.512,
+      "note": "5mm roof rests on the segmented ledges and bolts to stock L brackets. Two independent halves; no joining strip or strip holes."
+    },
+    {
+      "id": "lid-top-2",
+      "name": "Lid top half 2 — 5mm",
+      "native_print_dimensions_mm": [
+        225.8,
+        165.05,
+        5.0
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        225.8,
+        165.05,
+        5.0
+      ],
+      "with_5mm_brim_mm": [
+        235.8,
+        175.05
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "stl/lid-top-2.stl",
+      "volume_mm3": 185865.512,
+      "note": "5mm roof rests on the segmented ledges and bolts to stock L brackets. Two independent halves; no joining strip or strip holes."
+    },
+    {
+      "id": "pad-horizontal",
+      "name": "Pad Horizontal",
+      "native_print_dimensions_mm": [
+        20.0,
+        12.0,
+        1.0
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        20.0,
+        12.0,
+        1.0
+      ],
+      "with_5mm_brim_mm": [
+        30.0,
+        22.0
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 48,
+      "file": "stl/pad-horizontal.stl",
+      "volume_mm3": 185.339,
+      "note": "ASA washer prototype. Parameterized; replaceable at home. Not a nylon-material equivalence."
+    },
+    {
+      "id": "pad-vertical",
+      "name": "Pad Vertical",
+      "native_print_dimensions_mm": [
+        12.0,
+        20.0,
+        1.0
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        12.0,
+        20.0,
+        1.0
+      ],
+      "with_5mm_brim_mm": [
+        22.0,
+        30.0
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 48,
+      "file": "stl/pad-vertical.stl",
+      "volume_mm3": 185.339,
+      "note": "ASA washer prototype. Parameterized; replaceable at home. Not a nylon-material equivalence."
+    },
+    {
+      "id": "washer-round",
+      "name": "Washer Round",
+      "native_print_dimensions_mm": [
+        10.0,
+        10.0,
+        1.0
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        10.0,
+        10.0,
+        1.0
+      ],
+      "with_5mm_brim_mm": [
+        20.0,
+        20.0
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 28,
+      "file": "stl/washer-round.stl",
+      "volume_mm3": 54.782,
+      "note": "ASA washer prototype. Parameterized; replaceable at home. Not a nylon-material equivalence."
+    }
+  ],
+  "assembly_inventory": {
+    "floor": [
+      "floor-1",
+      "floor-2"
+    ],
+    "panels": [
+      "wall-front",
+      "wall-back",
+      "wall-right",
+      "wall-left"
+    ],
+    "brackets": [
+      "bracket-lower-front-0",
+      "bracket-lower-front-1",
+      "bracket-lower-back-0",
+      "bracket-lower-back-1",
+      "bracket-lower-right-0",
+      "bracket-lower-right-1",
+      "bracket-lower-right-2",
+      "bracket-lower-right-3",
+      "bracket-lower-left-0",
+      "bracket-lower-left-1",
+      "bracket-lower-left-2",
+      "bracket-lower-left-3",
+      "bracket-corner--1--1-0",
+      "bracket-corner--1--1-1",
+      "bracket-corner--1-1-0",
+      "bracket-corner--1-1-1",
+      "bracket-corner-1--1-0",
+      "bracket-corner-1--1-1",
+      "bracket-corner-1-1-0",
+      "bracket-corner-1-1-1",
+      "lid-bracket-front-0",
+      "lid-bracket-front-1",
+      "lid-bracket-back-0",
+      "lid-bracket-back-1",
+      "lid-bracket-right-0",
+      "lid-bracket-right-1",
+      "lid-bracket-left-0",
+      "lid-bracket-left-1"
+    ],
+    "washers": [
+      "inner-front-0",
+      "outer-front-0",
+      "inner-front-1",
+      "outer-front-1",
+      "inner-front-2",
+      "outer-front-2",
+      "inner-front-3",
+      "outer-front-3",
+      "inner-front-4",
+      "outer-front-4",
+      "inner-front-5",
+      "outer-front-5",
+      "inner-back-0",
+      "outer-back-0",
+      "inner-back-1",
+      "outer-back-1",
+      "inner-back-2",
+      "outer-back-2",
+      "inner-back-3",
+      "outer-back-3",
+      "inner-back-4",
+      "outer-back-4",
+      "inner-back-5",
+      "outer-back-5",
+      "inner-right-0",
+      "outer-right-0",
+      "inner-right-1",
+      "outer-right-1",
+      "inner-right-2",
+      "outer-right-2",
+      "inner-right-3",
+      "outer-right-3",
+      "inner-right-4",
+      "outer-right-4",
+      "inner-right-5",
+      "outer-right-5",
+      "inner-right-6",
+      "outer-right-6",
+      "inner-right-7",
+      "outer-right-7",
+      "inner-left-0",
+      "outer-left-0",
+      "inner-left-1",
+      "outer-left-1",
+      "inner-left-2",
+      "outer-left-2",
+      "inner-left-3",
+      "outer-left-3",
+      "inner-left-4",
+      "outer-left-4",
+      "inner-left-5",
+      "outer-left-5",
+      "inner-left-6",
+      "outer-left-6",
+      "inner-left-7",
+      "outer-left-7",
+      "floor-pad-inside-0",
+      "floor-pad-outside-0",
+      "floor-round-pad-0",
+      "floor-pad-inside-1",
+      "floor-pad-outside-1",
+      "floor-round-pad-1",
+      "floor-pad-inside-2",
+      "floor-pad-outside-2",
+      "floor-round-pad-2",
+      "floor-pad-inside-3",
+      "floor-pad-outside-3",
+      "floor-round-pad-3",
+      "floor-pad-inside-4",
+      "floor-pad-outside-4",
+      "floor-round-pad-4",
+      "floor-pad-inside-5",
+      "floor-pad-outside-5",
+      "floor-round-pad-5",
+      "floor-pad-inside-6",
+      "floor-pad-outside-6",
+      "floor-round-pad-6",
+      "floor-pad-inside-7",
+      "floor-pad-outside-7",
+      "floor-round-pad-7",
+      "floor-pad-inside-8",
+      "floor-pad-outside-8",
+      "floor-round-pad-8",
+      "floor-pad-inside-9",
+      "floor-pad-outside-9",
+      "floor-round-pad-9",
+      "floor-pad-inside-10",
+      "floor-pad-outside-10",
+      "floor-round-pad-10",
+      "floor-pad-inside-11",
+      "floor-pad-outside-11",
+      "floor-round-pad-11",
+      "lid-shim-front-0",
+      "lid-cap-front-0",
+      "lid-shim-front-1",
+      "lid-cap-front-1",
+      "lid-shim-back-0",
+      "lid-cap-back-0",
+      "lid-shim-back-1",
+      "lid-cap-back-1",
+      "lid-shim-right-0",
+      "lid-cap-right-0",
+      "lid-shim-right-1",
+      "lid-cap-right-1",
+      "lid-shim-left-0",
+      "lid-cap-left-0",
+      "lid-shim-left-1",
+      "lid-cap-left-1",
+      "roof-pad-0",
+      "roof-underpad-0",
+      "roof-pad-1",
+      "roof-underpad-1",
+      "roof-pad-2",
+      "roof-underpad-2",
+      "roof-pad-3",
+      "roof-underpad-3",
+      "roof-pad-4",
+      "roof-underpad-4",
+      "roof-pad-5",
+      "roof-underpad-5",
+      "roof-pad-6",
+      "roof-underpad-6",
+      "roof-pad-7",
+      "roof-underpad-7"
+    ],
+    "hardware": [
+      "bolt-front-0",
+      "nut-front-0",
+      "bolt-front-1",
+      "nut-front-1",
+      "bolt-front-2",
+      "nut-front-2",
+      "bolt-front-3",
+      "nut-front-3",
+      "bolt-front-4",
+      "nut-front-4",
+      "bolt-front-5",
+      "nut-front-5",
+      "bolt-back-0",
+      "nut-back-0",
+      "bolt-back-1",
+      "nut-back-1",
+      "bolt-back-2",
+      "nut-back-2",
+      "bolt-back-3",
+      "nut-back-3",
+      "bolt-back-4",
+      "nut-back-4",
+      "bolt-back-5",
+      "nut-back-5",
+      "bolt-right-0",
+      "nut-right-0",
+      "bolt-right-1",
+      "nut-right-1",
+      "bolt-right-2",
+      "nut-right-2",
+      "bolt-right-3",
+      "nut-right-3",
+      "bolt-right-4",
+      "nut-right-4",
+      "bolt-right-5",
+      "nut-right-5",
+      "bolt-right-6",
+      "nut-right-6",
+      "bolt-right-7",
+      "nut-right-7",
+      "bolt-left-0",
+      "nut-left-0",
+      "bolt-left-1",
+      "nut-left-1",
+      "bolt-left-2",
+      "nut-left-2",
+      "bolt-left-3",
+      "nut-left-3",
+      "bolt-left-4",
+      "nut-left-4",
+      "bolt-left-5",
+      "nut-left-5",
+      "bolt-left-6",
+      "nut-left-6",
+      "bolt-left-7",
+      "nut-left-7",
+      "floor-bolt-0",
+      "floor-nut-0",
+      "floor-bolt-1",
+      "floor-nut-1",
+      "floor-bolt-2",
+      "floor-nut-2",
+      "floor-bolt-3",
+      "floor-nut-3",
+      "floor-bolt-4",
+      "floor-nut-4",
+      "floor-bolt-5",
+      "floor-nut-5",
+      "floor-bolt-6",
+      "floor-nut-6",
+      "floor-bolt-7",
+      "floor-nut-7",
+      "floor-bolt-8",
+      "floor-nut-8",
+      "floor-bolt-9",
+      "floor-nut-9",
+      "floor-bolt-10",
+      "floor-nut-10",
+      "floor-bolt-11",
+      "floor-nut-11",
+      "lid-bolt-front-0",
+      "lid-nut-front-0",
+      "lid-bolt-front-1",
+      "lid-nut-front-1",
+      "lid-bolt-back-0",
+      "lid-nut-back-0",
+      "lid-bolt-back-1",
+      "lid-nut-back-1",
+      "lid-bolt-right-0",
+      "lid-nut-right-0",
+      "lid-bolt-right-1",
+      "lid-nut-right-1",
+      "lid-bolt-left-0",
+      "lid-nut-left-0",
+      "lid-bolt-left-1",
+      "lid-nut-left-1",
+      "roof-bolt-0",
+      "roof-nut-0",
+      "roof-bolt-1",
+      "roof-nut-1",
+      "roof-bolt-2",
+      "roof-nut-2",
+      "roof-bolt-3",
+      "roof-nut-3",
+      "roof-bolt-4",
+      "roof-nut-4",
+      "roof-bolt-5",
+      "roof-nut-5",
+      "roof-bolt-6",
+      "roof-nut-6",
+      "roof-bolt-7",
+      "roof-nut-7"
+    ],
+    "feet": [
+      "foot--1--1",
+      "foot--1-1",
+      "foot-1--1",
+      "foot-1-1"
+    ],
+    "lidEdges": [
+      "lid-edge-front",
+      "lid-edge-back",
+      "lid-edge-right",
+      "lid-edge-left"
+    ],
+    "lidRoof": [
+      "lid-top-1",
+      "lid-top-2"
+    ],
+    "railPCB": [
+      "rail-fixer-left",
+      "rail-fixer-right"
+    ],
+    "railPads": [
+      "rail-padder-left-1",
+      "rail-padder-left-2",
+      "rail-padder-left-3",
+      "rail-padder-right-1",
+      "rail-padder-right-2",
+      "rail-padder-right-3"
+    ],
+    "rails": [
+      "rail-1",
+      "rail-2",
+      "rail-3",
+      "rail-4",
+      "rail-5",
+      "rail-6"
+    ],
+    "railSpacers": [
+      "rail-spacer-left-1",
+      "rail-spacer-left-2",
+      "rail-spacer-left-3",
+      "rail-spacer-left-4",
+      "rail-spacer-left-5",
+      "rail-spacer-right-1",
+      "rail-spacer-right-2",
+      "rail-spacer-right-3",
+      "rail-spacer-right-4",
+      "rail-spacer-right-5"
+    ],
+    "railHardware": [
+      "rail-mount-washer-left-1",
+      "rail-mount-bolt-left-1",
+      "rail-mount-nut-left-1",
+      "rail-mount-washer-left-2",
+      "rail-mount-bolt-left-2",
+      "rail-mount-nut-left-2",
+      "rail-mount-washer-left-3",
+      "rail-mount-bolt-left-3",
+      "rail-mount-nut-left-3",
+      "rail-mount-washer-left-4",
+      "rail-mount-bolt-left-4",
+      "rail-mount-nut-left-4",
+      "rail-mount-washer-left-5",
+      "rail-mount-bolt-left-5",
+      "rail-mount-nut-left-5",
+      "rail-end-bolt-left-1",
+      "rail-end-bolt-left-2",
+      "rail-end-bolt-left-3",
+      "rail-end-bolt-left-4",
+      "rail-end-bolt-left-5",
+      "rail-end-bolt-left-6",
+      "rail-mount-washer-right-1",
+      "rail-mount-bolt-right-1",
+      "rail-mount-nut-right-1",
+      "rail-mount-washer-right-2",
+      "rail-mount-bolt-right-2",
+      "rail-mount-nut-right-2",
+      "rail-mount-washer-right-3",
+      "rail-mount-bolt-right-3",
+      "rail-mount-nut-right-3",
+      "rail-mount-washer-right-4",
+      "rail-mount-bolt-right-4",
+      "rail-mount-nut-right-4",
+      "rail-mount-washer-right-5",
+      "rail-mount-bolt-right-5",
+      "rail-mount-nut-right-5",
+      "rail-end-bolt-right-1",
+      "rail-end-bolt-right-2",
+      "rail-end-bolt-right-3",
+      "rail-end-bolt-right-4",
+      "rail-end-bolt-right-5",
+      "rail-end-bolt-right-6"
+    ]
+  },
+  "reference_components": {
+    "rails": 6,
+    "frame_pcbs": 2,
+    "row_padders": 6,
+    "spacers": 10,
+    "mount_bolts": 10,
+    "outer_washers": 10,
+    "mount_nuts": 10,
+    "rail_end_screws": 12
+  },
+  "body_brackets": 20,
+  "lid_brackets": 8
+}
