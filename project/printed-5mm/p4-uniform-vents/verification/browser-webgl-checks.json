@@ -1,0 +1,774 @@
+{
+  "checks": [
+    {
+      "check": "requested renderer available",
+      "passed": true
+    },
+    {
+      "check": "initial render",
+      "passed": true
+    },
+    {
+      "check": "source rails visible by default",
+      "passed": true
+    },
+    {
+      "check": "old frame envelope entirely removed",
+      "passed": true
+    },
+    {
+      "check": "source PCB count 2+6",
+      "passed": true
+    },
+    {
+      "check": "10 spacers / 12 rail-end bolts",
+      "passed": true
+    },
+    {
+      "check": "ten mount-bolt",
+      "passed": true
+    },
+    {
+      "check": "ten mount-nut",
+      "passed": true
+    },
+    {
+      "check": "ten mount-washer",
+      "passed": true
+    },
+    {
+      "check": "original 204mm rails retained",
+      "passed": true
+    },
+    {
+      "check": "three rows have two rails",
+      "passed": true
+    },
+    {
+      "check": "P2 seam strips absent",
+      "passed": true
+    },
+    {
+      "check": "P2 equal floor dimensions",
+      "passed": true
+    },
+    {
+      "check": "P2 paired supports",
+      "passed": true
+    },
+    {
+      "check": "P2 28 L brackets",
+      "passed": true
+    },
+    {
+      "check": "reference rail objects not new print parts",
+      "passed": true
+    },
+    {
+      "check": "view assembly",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry assembly",
+      "passed": true
+    },
+    {
+      "check": "active tab assembly",
+      "passed": true
+    },
+    {
+      "check": "view rails",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry rails",
+      "passed": true
+    },
+    {
+      "check": "active tab rails",
+      "passed": true
+    },
+    {
+      "check": "view railMount",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry railMount",
+      "passed": true
+    },
+    {
+      "check": "active tab railMount",
+      "passed": true
+    },
+    {
+      "check": "view bed",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry bed",
+      "passed": true
+    },
+    {
+      "check": "active tab bed",
+      "passed": true
+    },
+    {
+      "check": "view edge",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry edge",
+      "passed": true
+    },
+    {
+      "check": "active tab edge",
+      "passed": true
+    },
+    {
+      "check": "view seams",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry seams",
+      "passed": true
+    },
+    {
+      "check": "active tab seams",
+      "passed": true
+    },
+    {
+      "check": "view pair",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry pair",
+      "passed": true
+    },
+    {
+      "check": "active tab pair",
+      "passed": true
+    },
+    {
+      "check": "view lid",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry lid",
+      "passed": true
+    },
+    {
+      "check": "active tab lid",
+      "passed": true
+    },
+    {
+      "check": "view reference",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry reference",
+      "passed": true
+    },
+    {
+      "check": "active tab reference",
+      "passed": true
+    },
+    {
+      "check": "view panel-front",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry panel-front",
+      "passed": true
+    },
+    {
+      "check": "active tab panel-front",
+      "passed": true
+    },
+    {
+      "check": "view panel-back",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry panel-back",
+      "passed": true
+    },
+    {
+      "check": "active tab panel-back",
+      "passed": true
+    },
+    {
+      "check": "view panel-right",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry panel-right",
+      "passed": true
+    },
+    {
+      "check": "active tab panel-right",
+      "passed": true
+    },
+    {
+      "check": "view panel-left",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry panel-left",
+      "passed": true
+    },
+    {
+      "check": "active tab panel-left",
+      "passed": true
+    },
+    {
+      "check": "view inside-right",
+      "passed": true
+    },
+    {
+      "check": "nonempty geometry inside-right",
+      "passed": true
+    },
+    {
+      "check": "active tab inside-right",
+      "passed": true
+    },
+    {
+      "check": "vent metadata front",
+      "passed": true
+    },
+    {
+      "check": "P3 comparison mesh front",
+      "passed": true
+    },
+    {
+      "check": "P4 restored front",
+      "passed": true
+    },
+    {
+      "check": "vent metadata back",
+      "passed": true
+    },
+    {
+      "check": "P3 comparison mesh back",
+      "passed": true
+    },
+    {
+      "check": "P4 restored back",
+      "passed": true
+    },
+    {
+      "check": "vent metadata right",
+      "passed": true
+    },
+    {
+      "check": "P3 comparison mesh right",
+      "passed": true
+    },
+    {
+      "check": "P4 restored right",
+      "passed": true
+    },
+    {
+      "check": "vent metadata left",
+      "passed": true
+    },
+    {
+      "check": "P3 comparison mesh left",
+      "passed": true
+    },
+    {
+      "check": "P4 restored left",
+      "passed": true
+    },
+    {
+      "check": "rail-only view contains complete66 components",
+      "passed": true
+    },
+    {
+      "check": "rail spacing readout",
+      "passed": true
+    },
+    {
+      "check": "actual middle mounting local section",
+      "passed": true
+    },
+    {
+      "check": "mount stack readout",
+      "passed": true
+    },
+    {
+      "check": "paired support closeup unchanged",
+      "passed": true
+    },
+    {
+      "check": "both equal floor halves retained",
+      "passed": true
+    },
+    {
+      "check": "bed scene floor-1",
+      "passed": true
+    },
+    {
+      "check": "bed footprint floor-1",
+      "passed": true
+    },
+    {
+      "check": "brim display floor-1",
+      "passed": true
+    },
+    {
+      "check": "bed scene floor-2",
+      "passed": true
+    },
+    {
+      "check": "bed footprint floor-2",
+      "passed": true
+    },
+    {
+      "check": "brim display floor-2",
+      "passed": true
+    },
+    {
+      "check": "bed scene wall-front",
+      "passed": true
+    },
+    {
+      "check": "bed footprint wall-front",
+      "passed": true
+    },
+    {
+      "check": "brim display wall-front",
+      "passed": true
+    },
+    {
+      "check": "bed scene wall-back",
+      "passed": true
+    },
+    {
+      "check": "bed footprint wall-back",
+      "passed": true
+    },
+    {
+      "check": "brim display wall-back",
+      "passed": true
+    },
+    {
+      "check": "bed scene wall-right",
+      "passed": true
+    },
+    {
+      "check": "bed footprint wall-right",
+      "passed": true
+    },
+    {
+      "check": "brim display wall-right",
+      "passed": true
+    },
+    {
+      "check": "bed scene wall-left",
+      "passed": true
+    },
+    {
+      "check": "bed footprint wall-left",
+      "passed": true
+    },
+    {
+      "check": "brim display wall-left",
+      "passed": true
+    },
+    {
+      "check": "bed scene lid-edge-front",
+      "passed": true
+    },
+    {
+      "check": "bed footprint lid-edge-front",
+      "passed": true
+    },
+    {
+      "check": "brim display lid-edge-front",
+      "passed": true
+    },
+    {
+      "check": "bed scene lid-edge-back",
+      "passed": true
+    },
+    {
+      "check": "bed footprint lid-edge-back",
+      "passed": true
+    },
+    {
+      "check": "brim display lid-edge-back",
+      "passed": true
+    },
+    {
+      "check": "bed scene lid-edge-right",
+      "passed": true
+    },
+    {
+      "check": "bed footprint lid-edge-right",
+      "passed": true
+    },
+    {
+      "check": "brim display lid-edge-right",
+      "passed": true
+    },
+    {
+      "check": "bed scene lid-edge-left",
+      "passed": true
+    },
+    {
+      "check": "bed footprint lid-edge-left",
+      "passed": true
+    },
+    {
+      "check": "brim display lid-edge-left",
+      "passed": true
+    },
+    {
+      "check": "bed scene lid-top-1",
+      "passed": true
+    },
+    {
+      "check": "bed footprint lid-top-1",
+      "passed": true
+    },
+    {
+      "check": "brim display lid-top-1",
+      "passed": true
+    },
+    {
+      "check": "bed scene lid-top-2",
+      "passed": true
+    },
+    {
+      "check": "bed footprint lid-top-2",
+      "passed": true
+    },
+    {
+      "check": "brim display lid-top-2",
+      "passed": true
+    },
+    {
+      "check": "bed scene pad-horizontal",
+      "passed": true
+    },
+    {
+      "check": "bed footprint pad-horizontal",
+      "passed": true
+    },
+    {
+      "check": "brim display pad-horizontal",
+      "passed": true
+    },
+    {
+      "check": "bed scene pad-vertical",
+      "passed": true
+    },
+    {
+      "check": "bed footprint pad-vertical",
+      "passed": true
+    },
+    {
+      "check": "brim display pad-vertical",
+      "passed": true
+    },
+    {
+      "check": "bed scene washer-round",
+      "passed": true
+    },
+    {
+      "check": "bed footprint washer-round",
+      "passed": true
+    },
+    {
+      "check": "brim display washer-round",
+      "passed": true
+    },
+    {
+      "check": "lid absent initially to expose rails",
+      "passed": true
+    },
+    {
+      "check": "lid restored with one toggle",
+      "passed": true
+    },
+    {
+      "check": "closedBtn",
+      "passed": true
+    },
+    {
+      "check": "rail stays installed with closedBtn",
+      "passed": true
+    },
+    {
+      "check": "openBtn",
+      "passed": true
+    },
+    {
+      "check": "rail stays installed with openBtn",
+      "passed": true
+    },
+    {
+      "check": "explode state",
+      "passed": true
+    },
+    {
+      "check": "rail group moves coherently",
+      "passed": true
+    },
+    {
+      "check": "reassemble",
+      "passed": true
+    },
+    {
+      "check": "toggle xray",
+      "passed": true
+    },
+    {
+      "check": "toggle pins",
+      "passed": true
+    },
+    {
+      "check": "toggle section",
+      "passed": true
+    },
+    {
+      "check": "show all from partial",
+      "passed": true
+    },
+    {
+      "check": "hide all",
+      "passed": true
+    },
+    {
+      "check": "show all",
+      "passed": true
+    },
+    {
+      "check": "hide category rails",
+      "passed": true
+    },
+    {
+      "check": "hide category railPCB",
+      "passed": true
+    },
+    {
+      "check": "hide category railPads",
+      "passed": true
+    },
+    {
+      "check": "hide category railSpacers",
+      "passed": true
+    },
+    {
+      "check": "hide category railHardware",
+      "passed": true
+    },
+    {
+      "check": "solo category",
+      "passed": true
+    },
+    {
+      "check": "click source geometry selects a part",
+      "passed": true
+    },
+    {
+      "check": "solo picked part",
+      "passed": true
+    },
+    {
+      "check": "settings schema",
+      "passed": true
+    },
+    {
+      "check": "settings roundtrip",
+      "passed": true
+    },
+    {
+      "check": "reject invalid visibility type",
+      "passed": true
+    },
+    {
+      "check": "invalid settings view type",
+      "passed": true
+    },
+    {
+      "check": "invalid settings layer type",
+      "passed": true
+    },
+    {
+      "check": "invalid settings comparison view",
+      "passed": true
+    },
+    {
+      "check": "invalid settings inherited view",
+      "passed": true
+    },
+    {
+      "check": "invalid settings inherited category",
+      "passed": true
+    },
+    {
+      "check": "invalid settings comparison",
+      "passed": true
+    },
+    {
+      "check": "invalid settings camera",
+      "passed": true
+    },
+    {
+      "check": "invalid settings pattern",
+      "passed": true
+    },
+    {
+      "check": "invalid settings stale P3",
+      "passed": true
+    },
+    {
+      "check": "perspective switch",
+      "passed": true
+    },
+    {
+      "check": "keyboard orbit",
+      "passed": true
+    },
+    {
+      "check": "finite fitted camera",
+      "passed": true
+    },
+    {
+      "check": "PNG export header",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/assembly",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/rails",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/railMount",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/bed",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/edge",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/seams",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/pair",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/lid",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/reference",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/panel-front",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/panel-back",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/panel-right",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/panel-left",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 390/inside-right",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/assembly",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/rails",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/railMount",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/bed",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/edge",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/seams",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/pair",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/lid",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/reference",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/panel-front",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/panel-back",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/panel-right",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/panel-left",
+      "passed": true
+    },
+    {
+      "check": "no page horizontal overflow 320/inside-right",
+      "passed": true
+    },
+    {
+      "check": "no runtime errors",
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "count": 189,
+  "renderer": {
+    "version": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+    "renderer": "WebKit WebGL"
+  },
+  "browser_version": "143.0.7499.4",
+  "page_errors": [],
+  "file_url": {
+    "attempted": true,
+    "succeeded": true
+  },
+  "display_method": "file URL",
+  "webgl_verified": true
+}

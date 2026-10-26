@@ -1,0 +1,376 @@
+{
+  "revision": "P4-PRINTED-5MM-UNIFORM-VENTS",
+  "model": "7u40",
+  "status": "HOME_PRINT_CANDIDATE_NOT_PHYSICALLY_VERIFIED",
+  "print_parts": {
+    "structural": 12,
+    "optional_types": 3
+  },
+  "optional_quantities": {
+    "pad-horizontal": 48,
+    "pad-vertical": 48,
+    "washer-round": 28
+  },
+  "files": [
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/.python-version",
+      "bytes": 7,
+      "sha256": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/README.md",
+      "bytes": 1246,
+      "sha256": "ff9b0841ea5d4aaf02b7ef8d93ba23b4e47a8b95b69b3f00e85b4ee9a729a731"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/build.py",
+      "bytes": 10294,
+      "sha256": "fab1717e825511bca03ed222d359b37a5c148760146779d54dc6481685d43e7f"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/negative.py",
+      "bytes": 2985,
+      "sha256": "5ee5ed0a00dac6277db1e0e01b21538b051c429a5500bc9ac5429d030b3883ff"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/BOM.json",
+      "bytes": 18364,
+      "sha256": "5c3e698baebde8aed3486ffff76506046b3d421568edd5215cd2f10a0f8dafc2"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/DIMENSIONS.json",
+      "bytes": 999,
+      "sha256": "ccc70a76ba43dea8aea22404ffe745b09a5aa2d22452439da65e52d3ed845953"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/PRINT-MAPPING.json",
+      "bytes": 11810,
+      "sha256": "3cf5782f32323d334034a4392e0afddb50f5929976212a3e09441ac385fa0e31"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/PRINT-PARTS.csv",
+      "bytes": 3109,
+      "sha256": "23caa84e2eca7a5f1eb331a090a52b1306b5eecf1f2fef628cb7a2a1cec25cd9"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/PRINT-START-HERE.md",
+      "bytes": 1922,
+      "sha256": "1056b887668e187f7d4495eb73897a4195fa553fee20c65a22153840c53e2d4a"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/RAIL-PLACEMENT.json",
+      "bytes": 7628,
+      "sha256": "ac8fd52debacc738838dc4c9607e4c75b9951696bf664037c5e049480f7ccfb9"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/VENTILATION.json",
+      "bytes": 60301,
+      "sha256": "6b776f1ca76d34da1ff7cad70ae2b3f9f96c57f414bdc7faf0017f84c165cf24"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/accepted-geometry-comparison.json",
+      "bytes": 9928,
+      "sha256": "5802abfdd773a2d709d10269507a5044ea226ddd6602170f4b0c8d3830e9064b"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/geometry-checks.json",
+      "bytes": 44878,
+      "sha256": "94a381fc2ac0397071a2d81323085415f1900c439b45c66a509172555a6a0998"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/print-bed-checks.json",
+      "bytes": 8437,
+      "sha256": "98f784448b7f8627e7664028efce3297423470f2ccd7c2018001aeb4cce97905"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/rail-geometry-checks.json",
+      "bytes": 19526,
+      "sha256": "4696b4543fe1c0dd243f124a23df464acff8ab68add80a5060df183d00b45ec2"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/floor-1.step",
+      "bytes": 128945,
+      "sha256": "23b5fef12d3afb4d8a24001a9f8678689436a20271b0ddf451697eccbc694566"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/floor-2.step",
+      "bytes": 128911,
+      "sha256": "bd800b01f594f680aa8311fa396b76b6bf0182821d2769b8992535027912edde"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/lid-edge-back.step",
+      "bytes": 132029,
+      "sha256": "e4266c63362b94c860fdc2de8600804cbf12b5f5f7972468c503eed787eec7da"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/lid-edge-front.step",
+      "bytes": 132293,
+      "sha256": "8a46eeeb917e5b9d0e15c94b7cf04e1260b10b075bbde6b4610b6d8638012eac"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/lid-edge-left.step",
+      "bytes": 132288,
+      "sha256": "c598366c95962d8ec9d151e032b2651e94ed1949b1a96eab2c72982e7d6be0ea"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/lid-edge-right.step",
+      "bytes": 132002,
+      "sha256": "edbbaf7a765486a2ef96b04d561efbb9a93c4cfba69da21bf90bd37b0757c812"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/lid-top-1.step",
+      "bytes": 39290,
+      "sha256": "e425f3590970abe3679f4864b48fe91cd3fb1f9e9838d72323064960cf9ad6bf"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/lid-top-2.step",
+      "bytes": 39248,
+      "sha256": "d451b11bbd91b6e9fcbdd27271fb69663d965fd5573a1684fc4ffbd2892880d4"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/pad-horizontal.step",
+      "bytes": 20896,
+      "sha256": "374e5368a8138f672d25a8ed972c8a66e69389939f43cd307d4efeb2ff0862df"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/pad-vertical.step",
+      "bytes": 21184,
+      "sha256": "191c4c79a86164ef37c2ef01f13ed7e3e62b7a447bd01c41210ff79fc06c43c3"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/wall-back.step",
+      "bytes": 626434,
+      "sha256": "a56a3e7aec931b3cfbf787c18692f5fe8569fc756bfd2e3358b877f5aaa4f291"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/wall-front.step",
+      "bytes": 627728,
+      "sha256": "67a42dbac92201a70c9449fd9cb81e08ae97466a530c1ad635691a1f3378d9f0"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/wall-left.step",
+      "bytes": 970274,
+      "sha256": "c19815ff6ca81f326c608946cd3aae9f21b1bce25c46b0e25be8ce8ea5913078"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/wall-right.step",
+      "bytes": 968189,
+      "sha256": "2c846079fe867bddcdda82dfcabf7007ee1662c2cc387c93dbb4c7a777cd2dbc"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/step/washer-round.step",
+      "bytes": 9312,
+      "sha256": "c635ad4e53b2402e2982e6a10e1b3a8bb8e8ec02eda3142d82bc92dd992820bf"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/floor-1.stl",
+      "bytes": 113484,
+      "sha256": "960f79d0d1b34ed1a3bacb60241a7439c102ce786c462c516a4c2e2cb2382a36"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/floor-2.stl",
+      "bytes": 113484,
+      "sha256": "1fcf6b16fd6d2240b994914f8292620f9a6b862231a181877c534750ea609b2b"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/lid-edge-back.stl",
+      "bytes": 55884,
+      "sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/lid-edge-front.stl",
+      "bytes": 55884,
+      "sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/lid-edge-left.stl",
+      "bytes": 55884,
+      "sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/lid-edge-right.stl",
+      "bytes": 55884,
+      "sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/lid-top-1.stl",
+      "bytes": 77084,
+      "sha256": "167a47149983924ba440e2c220781837f49a5cce56d0725b5774cf73f0c6f522"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/lid-top-2.stl",
+      "bytes": 77084,
+      "sha256": "b056b7e864a9d779eda4a39a1c6c9b3986b6bff84eda59475e2a7aa842051599"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/pad-horizontal.stl",
+      "bytes": 34084,
+      "sha256": "2a08d1088fec93f6bc380b2e1be37d9fcd1db7338895a5c2385278b7113ee065"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/pad-vertical.stl",
+      "bytes": 34084,
+      "sha256": "0d27507cc73f7e07b6778dfd6997a6b6acf5757c773675004139d403af56db50"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/wall-back.stl",
+      "bytes": 406684,
+      "sha256": "414473a2815ffd842dcfd5774c936370be9c2cab18031293fec28772b400e61f"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/wall-front.stl",
+      "bytes": 406684,
+      "sha256": "414473a2815ffd842dcfd5774c936370be9c2cab18031293fec28772b400e61f"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/wall-left.stl",
+      "bytes": 686684,
+      "sha256": "4d15c8063e646c0bda0d0d96475f20b197f3016015363ef2adc29daacdf6ecaf"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/wall-right.stl",
+      "bytes": 686684,
+      "sha256": "494ed8932484aac785e55820f4ae8c042a81414933b89d3ffbcb1c59b1d2f350"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/out/stl/washer-round.stl",
+      "bytes": 33684,
+      "sha256": "e9dd796d2d49770481ccaed825a24c1f19ddf48a8aa1517442051df525c3ef06"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/pyproject.toml",
+      "bytes": 210,
+      "sha256": "6922846d1e0106d88b1a5d2b75045967326020b4a9db844655cc790fa1f7b247"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/reference/ACCEPTED-GEOMETRY.json",
+      "bytes": 10595,
+      "sha256": "935e11f7ea25a904744958cd54238c0cb8bb99dc151664d7c297cc5180f02afb"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/reference/P2-PRINT-FILES.json",
+      "bytes": 4391,
+      "sha256": "7caaafdf084699747a666ce226adfed147ff8bc7e22a8899649c2dffa554d7b6"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/reference/P4-SOURCE-RECEIPT.json",
+      "bytes": 3697,
+      "sha256": "0e91a431b3e9e3d89367c26b53d29c576684100e3b9a65b30a92af115d8faa69"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/reference/PRESERVATION.json",
+      "bytes": 38658,
+      "sha256": "3f400853778eccef0cc23cdd935c76da2602001ea3fe6742d003340830d851d6"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/reference/SOURCE-RECEIPT.json",
+      "bytes": 1969,
+      "sha256": "9752403db9439b00f8331cd43e3592ec884db4639e080e902b3d8b1cac0e2c22"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/reference/lid-edge.stl",
+      "bytes": 25884,
+      "sha256": "37898c2fdf8f098df66aa5ed88c74cf437e77f5f72be8ab66bc5e785d0887692"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/reference/rail-source/build_geometry.py",
+      "bytes": 50199,
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/reference/rail-source/design-parameters.json",
+      "bytes": 23552,
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/reference/rail-source/source-data/panels/panel-geometry.json",
+      "bytes": 627540,
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/reference/rail-source/source-data/rail40/rail_dimensions.json",
+      "bytes": 5151,
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/reference/rail-source/source-data/rail40/rail_mesh.json",
+      "bytes": 16569,
+      "sha256": "6ddbf622f9bcd8f4d1316d76ce2c55b4cecfb3c166de6f88826fda3bb19c2753"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/regenerate.py",
+      "bytes": 1152,
+      "sha256": "713a36893d5f603080d0d6d8337d67c11d8fa58d8e3196d8e29e529cf0ddc692"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/source/build_case.py",
+      "bytes": 25038,
+      "sha256": "7a48c94589ec90113159791149ac74223b31a4469948c344f1ac25b1af10e022"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/source/build_html.py",
+      "bytes": 1471,
+      "sha256": "d6b171e5cd80274429e802abfc9aeef282d134f02ccd520ad4a16e1dcc757ffa"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/source/build_rails.py",
+      "bytes": 18092,
+      "sha256": "8948741d1482884aeeb20d4afd6716632db0988ccbfc56060dd000667ce81c3b"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/source/parameters.json",
+      "bytes": 3980,
+      "sha256": "3a2c3cdc116c98de251ff076ea3246ed2a5d673076a7c3425126b28f914b283a"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/source/ventilation.py",
+      "bytes": 4636,
+      "sha256": "26a9424dca539315317c4b29c487d94c996f415788a2bcd9d49fe747d50896a7"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/source/ventilation_report.py",
+      "bytes": 3180,
+      "sha256": "4eb1bdfd9bad807bd31e53fcdc7843bd92ca17e5945bf6bb7922b946da934314"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/source/verify_browser.py",
+      "bytes": 12592,
+      "sha256": "f1963cf228397d462bc4e8d170d3ca13c52c3e61e54e0870f04aafef6bef1ff2"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/source/viewer-template.html",
+      "bytes": 55722,
+      "sha256": "502cb90f02c1b49513c6187a7afddda0956ec132cba8aa5e1bcc56edb91b667a"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/uv.lock",
+      "bytes": 121345,
+      "sha256": "21c6f6a2235a8b33f4555075382eac324d4b3e2a6385591999eaa5f975106a93"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/validate_parameters.py",
+      "bytes": 2634,
+      "sha256": "db3bedd66757a63fd4e97051b4c3427ede507f937ce294d738a56c0909a5d99d"
+    },
+    {
+      "path": "engineering/printed-5mm/p4-uniform-vents/verify.py",
+      "bytes": 4428,
+      "sha256": "eeddf53af784f9b8a9f9d5d01621350453488b06557940bcc41364bff1dc5d9e"
+    },
+    {
+      "path": "public/downloads/candidate/printed-5mm-p4-uniform-vents-source.zip",
+      "bytes": 210701,
+      "sha256": "d3954dfd090b9791caf094699fb386442105a37e97ff685c937d46d2e40398fb"
+    },
+    {
+      "path": "public/downloads/candidate/printed-5mm-p4-uniform-vents-stl.zip",
+      "bytes": 1330050,
+      "sha256": "0587817a6243e6602da90d6b1386982b39b6841033aaadf8d30a0975d149c4f8"
+    },
+    {
+      "path": "public/previews/printed-5mm-p4-uniform-vents.html",
+      "bytes": 10789928,
+      "sha256": "1a91adc15736c51961323aafe1803cfb3e66b5e94cb1fe0e8044c4f9c3ce98ae"
+    }
+  ]
+}

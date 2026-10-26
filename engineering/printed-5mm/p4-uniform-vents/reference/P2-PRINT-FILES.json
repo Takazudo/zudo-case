@@ -1,0 +1,152 @@
+[
+  {
+    "path": "step/floor-1.step",
+    "sha256": "d4341b2d6ce34166b1168b0cd8a909d8479742761802cd9e3810e7b86b9320dd",
+    "bytes": 128945
+  },
+  {
+    "path": "step/floor-2.step",
+    "sha256": "64dbeb1994b6720d97e69ffe5ea9bcebbe02e7e6516b35c7d31e65317ec64904",
+    "bytes": 128911
+  },
+  {
+    "path": "step/lid-edge-back.step",
+    "sha256": "72f5f75bbc877bb80a70ab11c72b119c7cc4dc7bbff52b13fb2a1f54b3ab8e39",
+    "bytes": 132029
+  },
+  {
+    "path": "step/lid-edge-front.step",
+    "sha256": "22631d2a219096ec45b99f245c03d5c4b81077de4d64017f45e66b5349345185",
+    "bytes": 132293
+  },
+  {
+    "path": "step/lid-edge-left.step",
+    "sha256": "582bdf3df78659611d9b927a32e39b3c2ed20e535b6711e72748967e7e732876",
+    "bytes": 132288
+  },
+  {
+    "path": "step/lid-edge-right.step",
+    "sha256": "19cace53a295005285395fa00654ca442e361f47e704e472656ec85db3c81712",
+    "bytes": 132002
+  },
+  {
+    "path": "step/lid-top-1.step",
+    "sha256": "da03747362f19373ff80bce4eae1594b4826c71009b4ebe33615ba38190ee0a7",
+    "bytes": 39290
+  },
+  {
+    "path": "step/lid-top-2.step",
+    "sha256": "09c0c218478c19fcba2850558f2ea9fdb49f6cb3082a86af5f526bdedcf4f45c",
+    "bytes": 39248
+  },
+  {
+    "path": "step/pad-horizontal.step",
+    "sha256": "0c99e8acdf7a1128ce47655a6c4820e4d4f612192d34b11e6f58d610665138de",
+    "bytes": 20896
+  },
+  {
+    "path": "step/pad-vertical.step",
+    "sha256": "2308b2a1572a6d0916e09c909786a10e01461cbbdd0fcb907476bf3c6acb1d51",
+    "bytes": 21184
+  },
+  {
+    "path": "step/wall-back.step",
+    "sha256": "10c380a477d9732ebb5829100485a447039b003d9903a0d2c9ee8e8f5fbe4e27",
+    "bytes": 136969
+  },
+  {
+    "path": "step/wall-front.step",
+    "sha256": "da58d6eefd926d683c0ff368abcb00061d26bfb50ebcebbee314edd2a5e65ed3",
+    "bytes": 137191
+  },
+  {
+    "path": "step/wall-left.step",
+    "sha256": "104cbbab9cee166fda90495ab66fd7afebf1f5079964c9be3deba86424cc9d15",
+    "bytes": 192459
+  },
+  {
+    "path": "step/wall-right.step",
+    "sha256": "8499be5f446fb7de34048064d92973ff3d26eaff82d70a769d0d2d2f7a819133",
+    "bytes": 192149
+  },
+  {
+    "path": "step/washer-round.step",
+    "sha256": "0a4a65c9ae68f77fab7d61b8629c13357a649b3d7593773774a4eedcdb08ddca",
+    "bytes": 9312
+  },
+  {
+    "path": "stl/floor-1.stl",
+    "sha256": "960f79d0d1b34ed1a3bacb60241a7439c102ce786c462c516a4c2e2cb2382a36",
+    "bytes": 113484
+  },
+  {
+    "path": "stl/floor-2.stl",
+    "sha256": "1fcf6b16fd6d2240b994914f8292620f9a6b862231a181877c534750ea609b2b",
+    "bytes": 113484
+  },
+  {
+    "path": "stl/lid-edge-back.stl",
+    "sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+    "bytes": 55884
+  },
+  {
+    "path": "stl/lid-edge-front.stl",
+    "sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+    "bytes": 55884
+  },
+  {
+    "path": "stl/lid-edge-left.stl",
+    "sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+    "bytes": 55884
+  },
+  {
+    "path": "stl/lid-edge-right.stl",
+    "sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+    "bytes": 55884
+  },
+  {
+    "path": "stl/lid-top-1.stl",
+    "sha256": "167a47149983924ba440e2c220781837f49a5cce56d0725b5774cf73f0c6f522",
+    "bytes": 77084
+  },
+  {
+    "path": "stl/lid-top-2.stl",
+    "sha256": "b056b7e864a9d779eda4a39a1c6c9b3986b6bff84eda59475e2a7aa842051599",
+    "bytes": 77084
+  },
+  {
+    "path": "stl/pad-horizontal.stl",
+    "sha256": "2a08d1088fec93f6bc380b2e1be37d9fcd1db7338895a5c2385278b7113ee065",
+    "bytes": 34084
+  },
+  {
+    "path": "stl/pad-vertical.stl",
+    "sha256": "0d27507cc73f7e07b6778dfd6997a6b6acf5757c773675004139d403af56db50",
+    "bytes": 34084
+  },
+  {
+    "path": "stl/wall-back.stl",
+    "sha256": "b06639dcdaba7d9404e1520ef474295ae8d657a703cdd647ed755de91ac0a831",
+    "bytes": 121884
+  },
+  {
+    "path": "stl/wall-front.stl",
+    "sha256": "b06639dcdaba7d9404e1520ef474295ae8d657a703cdd647ed755de91ac0a831",
+    "bytes": 121884
+  },
+  {
+    "path": "stl/wall-left.stl",
+    "sha256": "b6593405f6f98e72f469ff71d0ce2910d1fc9944f73959f3a043ace0b902e0ce",
+    "bytes": 241684
+  },
+  {
+    "path": "stl/wall-right.stl",
+    "sha256": "0f02d578633034967004691f48723e477129d68117cc4925eb7aa04ee62c3e90",
+    "bytes": 241684
+  },
+  {
+    "path": "stl/washer-round.stl",
+    "sha256": "e9dd796d2d49770481ccaed825a24c1f19ddf48a8aa1517442051df525c3ef06",
+    "bytes": 33684
+  }
+]

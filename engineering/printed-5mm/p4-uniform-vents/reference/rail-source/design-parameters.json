@@ -1,0 +1,855 @@
+{
+  "schema": "zudo.case.family.v1",
+  "revision": "R6-SOURCE-FAMILY-01",
+  "units": "mm",
+  "sourceData": {
+    "panels": "source-data/panels/panel-geometry.json",
+    "rail60": "source-data/rail60/rail_mesh.json",
+    "rail40": "source-data/rail40/rail_mesh.json"
+  },
+  "inputs": {
+    "fixerThicknessMm": {
+      "value": 1.6,
+      "basis": "ユーザーが現行PCBの板厚1.6mmを確認。元CAD公称値とも一致。",
+      "status": "user_confirmed"
+    },
+    "padderThicknessMm": {
+      "value": 1.6,
+      "basis": "ユーザーが現行PCBの板厚1.6mmを確認。元CAD公称値とも一致。",
+      "status": "user_confirmed"
+    },
+    "innerSpacerThicknessMm": {
+      "value": 8,
+      "basis": "ユーザー指定。ブラケット2mmに対する2.2mm設計余裕と対向する1.4mm頭を避ける。",
+      "status": "user_specified"
+    },
+    "outerWasherThicknessMm": {
+      "value": 1,
+      "basis": "ユーザー指定",
+      "status": "user_specified"
+    },
+    "metalThicknessMm": {
+      "value": 1.5,
+      "basis": "今回の設計選択",
+      "status": "design_selection"
+    },
+    "caseHeightMm": {
+      "value": 91,
+      "basis": "従来のケース高さを維持。レール資料からは一意に決まらない。",
+      "status": "design_selection"
+    },
+    "fixerTopOffsetBelowCaseMm": {
+      "value": 1.5,
+      "basis": "fixer上端を外板上端より1.5mm下げる設計選択。",
+      "status": "design_selection"
+    },
+    "verticalBracketCenterHeightsMm": {
+      "value": [
+        36.5,
+        66.5
+      ],
+      "basis": "従来の配置を維持。実L字ソリッドとPCBの交差体積0を確認。bboxの重複は実体干渉ではない。",
+      "status": "design_selection"
+    },
+    "bracketOuterMm": {
+      "value": [
+        20,
+        20,
+        16
+      ],
+      "basis": "ユーザーの在庫指定",
+      "status": "user_specified"
+    },
+    "bracketThicknessMm": {
+      "value": 2,
+      "basis": "ユーザー測定値",
+      "status": "user_measured"
+    },
+    "bracketHoleInsetMm": {
+      "value": 10,
+      "basis": "外板内面から10mm。現物穴中心は未確認。",
+      "status": "provisional"
+    },
+    "metalClearanceHoleDiameterMm": {
+      "value": 5.5,
+      "basis": "M5用の今回の設計値。",
+      "status": "design_selection"
+    },
+    "mountBoltLengthMm": {
+      "value": 20,
+      "basis": "8mmスペーサー積層の模式表示用。必要ねじ長の推奨ではない。",
+      "status": "display_only"
+    },
+    "mountHeadDiameterMm": {
+      "value": 9,
+      "basis": "頭径9mmは模式形状。選択取付点とpadder窓の収まりを元CADで検証。",
+      "status": "provisional"
+    },
+    "mountHeadHeightMm": {
+      "value": 1.4,
+      "basis": "ユーザー指定の現物頭高さ",
+      "status": "user_specified"
+    },
+    "lockNutHeightMm": {
+      "value": 5,
+      "basis": "外側締結の模式表示用。ユーザー指定でナット実寸は今回の設計計算対象外。必要ねじ長の推奨値ではない。",
+      "status": "display_only"
+    },
+    "lockNutAcrossFlatsMm": {
+      "value": 8,
+      "basis": "外側締結の模式表示用。ユーザー指定でナット実寸は今回の設計計算対象外。必要ねじ長の推奨値ではない。",
+      "status": "display_only"
+    },
+    "nylonOuterDiameterMm": {
+      "value": 10,
+      "basis": "スペーサー・外ワッシャー共通の仮外径",
+      "status": "provisional"
+    },
+    "nylonInnerDiameterMm": {
+      "value": 5.5,
+      "basis": "スペーサー・外ワッシャー共通の仮内径",
+      "status": "provisional"
+    },
+    "railEndBoltLengthMm": {
+      "value": 40,
+      "basis": "旧組立ガイドのM5×40を仮採用。現行適合は未確認。",
+      "status": "provisional"
+    },
+    "railEndHeadDiameterMm": {
+      "value": 9,
+      "basis": "仮形状",
+      "status": "provisional"
+    },
+    "railEndHeadHeightMm": {
+      "value": 1.4,
+      "basis": "対向頭のクリアランス確認にも1.4mmを採用。",
+      "status": "design_selection"
+    },
+    "guardCoverageMm": {
+      "value": 5,
+      "basis": "R3細幅を維持",
+      "status": "design_selection"
+    },
+    "guardInnerOverhangMm": {
+      "value": 1,
+      "basis": "外板内面から開口内へ1mm。",
+      "status": "design_selection"
+    },
+    "guardOuterEdgeRadiusMm": {
+      "value": 0.4,
+      "basis": "R3同様",
+      "status": "design_selection"
+    },
+    "guardContactClearanceMm": {
+      "value": 0,
+      "basis": "見積用の公称接触形状。保持方法と製造用嵌合公差は未確定。",
+      "status": "unvalidated_nominal"
+    },
+    "bracketAllowanceThicknessMm": {
+      "value": 2.2,
+      "basis": "2mm金具に0.2mmを足した設計占有厚。実体CADは2mm。",
+      "status": "design_selection"
+    },
+    "frontBackInsideClearanceMm": {
+      "value": 8,
+      "basis": "約8mmの指定。ソース全体包絡から必要奥行を求め、ケース外形Dを整数mmへ切り上げる。",
+      "status": "user_specified"
+    },
+    "bracketHeadDiameterMm": {
+      "value": 12,
+      "basis": "接合用の頭径は未実測、D12で包絡を確認する模式形状。",
+      "status": "provisional"
+    },
+    "maxGuardPartLengthMm": {
+      "value": 180,
+      "basis": "薄型ガードの最大辺を概ね180mm以内に分割する設計。",
+      "status": "design_selection"
+    },
+    "footDiameterMm": {
+      "value": 10,
+      "basis": "貼付式黒ゴム脚の未選定仮寸法。JLCガードには含めない。",
+      "status": "design_selection"
+    },
+    "footHeightMm": {
+      "value": 3,
+      "basis": "底の外側低頭1.4mmより接地面を1.6mm下げる仮寸法。",
+      "status": "design_selection"
+    },
+    "footInsetMm": {
+      "value": 20,
+      "basis": "底板の各外縁から20mm内側に中心を置く。",
+      "status": "design_selection"
+    }
+  },
+  "comparisons": {
+    "r3T1p2VolumeCm3": 27.838290008,
+    "r3T1p2QuoteJpy": 2264,
+    "quoteScope": "前回R3の12部品。送料等別。R6は全モデル未見積。",
+    "r2OriginalVolumeCm3": 208.914
+  },
+  "notes": [
+    "fixer/padder PCB厚1.6mmはユーザー確認済。",
+    "7Uは6本のレールを3U+3U+1Uに並べる一つの箱。内部仕切り板は追加しない。",
+    "元PCB輪郭の微差を改変せず、全パダーを同じ厚み層へ並べる。",
+    "実物ナット寸法はケース・ガードの設計条件に含めない。"
+  ],
+  "defaultModel": "7u40",
+  "models": {
+    "3u60": {
+      "label": "3U 60HP",
+      "hp": 60,
+      "layout": [
+        "3U"
+      ],
+      "fixer": "fixer3u",
+      "rail": "rail60",
+      "sideBottomBracketCount": 2
+    },
+    "7u40": {
+      "label": "7U 40HP · 3U + 3U + 1U",
+      "hp": 40,
+      "layout": [
+        "3U",
+        "3U",
+        "1U"
+      ],
+      "fixer": "fixer7u",
+      "rail": "rail40",
+      "sideBottomBracketCount": 3
+    },
+    "7u60": {
+      "label": "7U 60HP · 3U + 3U + 1U",
+      "hp": 60,
+      "layout": [
+        "3U",
+        "3U",
+        "1U"
+      ],
+      "fixer": "fixer7u",
+      "rail": "rail60",
+      "sideBottomBracketCount": 3
+    }
+  },
+  "derived": {
+    "3u60": {
+      "railLengthMm": 305.0,
+      "railFrameWidthMm": 311.4,
+      "railUnitDepthMm": 134.53186,
+      "enclosureInnerWidthMm": 327.4,
+      "enclosureMetalEnvelopeMm": [
+        330.4,
+        154.0,
+        91
+      ],
+      "minimumDepthFor8mmMm": 153.53186,
+      "selectedRoundedDepthMm": 154.0,
+      "frontBackInsideClearanceMm": 8.234070000000003,
+      "fixerTopZMm": 89.5,
+      "fixerBottomZMm": 59.509958,
+      "mountAxesPerSide": [
+        {
+          "sourceUV": [
+            22.265929999999997,
+            21.3105735
+          ],
+          "worldYZ": [
+            -45.0,
+            68.1894265
+          ],
+          "row": 0
+        },
+        {
+          "sourceUV": [
+            112.26593,
+            21.3105735
+          ],
+          "worldYZ": [
+            45.0,
+            68.1894265
+          ],
+          "row": 0
+        }
+      ],
+      "mountingGripMm": 12.1,
+      "bracketCount": 16,
+      "bracketBottomCount": 8,
+      "frontBackBottomBracketXsMm": [
+        -109.99999999999999,
+        109.99999999999999
+      ],
+      "leftRightBottomBracketYsMm": [
+        -36.5,
+        36.5
+      ],
+      "feet": {
+        "headSide": "outside",
+        "washerNutSide": "inside",
+        "footCount": 4,
+        "footDiameterMm": 10,
+        "footHeightMm": 3,
+        "footInsetMm": 20,
+        "contactPlaneZMm": -3,
+        "bottomHeadLowestZMm": -1.4,
+        "headToContactPlaneGapMm": 1.6,
+        "interferences": [],
+        "note": "貼付式既製ゴム脚の提案。穴なし。JLCガード数と体積には含めない。"
+      },
+      "positiveXStackMm": {
+        "railEnd": 152.5,
+        "padderOuter": 154.1,
+        "fixerOuter": 155.7,
+        "innerSpacerOuter": 163.7,
+        "metalOuter": 165.2,
+        "outerWasherOuter": 166.2
+      },
+      "padderPlacementsPerSide": [
+        {
+          "kind": "padder3u",
+          "u": 0.0,
+          "v": 0.0,
+          "row": 0,
+          "label": "3U"
+        }
+      ],
+      "guardVariants": {
+        "t1p2": {
+          "thicknessMm": 1.2,
+          "coverMm": 5,
+          "coverageMm": 5,
+          "radiusMm": 0.4,
+          "partCount": 12,
+          "totalGuardParts": 12,
+          "typeCount": 4,
+          "quantities": [
+            2,
+            4,
+            2,
+            4
+          ],
+          "totalVolumeCm3": 27.33348987,
+          "volumeCm3": 27.33348987,
+          "approxMassG": 27.607,
+          "maxPartLengthMm": 166.4,
+          "outerEnvelopeMm": [
+            332.8,
+            156.4,
+            93.4
+          ],
+          "outerDimensions": [
+            332.8,
+            156.4,
+            93.4
+          ],
+          "feetIncludedEnvelopeMm": [
+            332.8,
+            156.4,
+            95.2
+          ],
+          "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+          "openingMm": [
+            325.4,
+            149.0
+          ],
+          "quoteJpy": null,
+          "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+        },
+        "t1p0": {
+          "thicknessMm": 1.0,
+          "coverMm": 5,
+          "coverageMm": 5,
+          "radiusMm": 0.4,
+          "partCount": 12,
+          "totalGuardParts": 12,
+          "typeCount": 4,
+          "quantities": [
+            2,
+            4,
+            2,
+            4
+          ],
+          "totalVolumeCm3": 22.30124427,
+          "volumeCm3": 22.30124427,
+          "approxMassG": 22.524,
+          "maxPartLengthMm": 166.2,
+          "outerEnvelopeMm": [
+            332.4,
+            156.0,
+            93.0
+          ],
+          "outerDimensions": [
+            332.4,
+            156.0,
+            93.0
+          ],
+          "feetIncludedEnvelopeMm": [
+            332.4,
+            156.0,
+            95.0
+          ],
+          "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+          "openingMm": [
+            325.4,
+            149.0
+          ],
+          "quoteJpy": null,
+          "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+        }
+      },
+      "equations": {
+        "frameWidth": "railLength + 2 * (padderThickness + fixerThickness)",
+        "enclosureInnerWidth": "railFrameWidth + 2 * innerSpacerThickness",
+        "enclosureMetalWidth": "enclosureInnerWidth + 2 * metalThickness",
+        "depth": "ceil(max registered rail-unit half-depth * 2 + 2 * 8mm + 2 * metalThickness)",
+        "mountingGrip": "fixerThickness + innerSpacerThickness + metalThickness + outerWasherThickness; padder not in the clamped stack"
+      }
+    },
+    "7u40": {
+      "railLengthMm": 204.0,
+      "railFrameWidthMm": 210.4,
+      "railUnitDepthMm": 314.754456,
+      "enclosureInnerWidthMm": 226.4,
+      "enclosureMetalEnvelopeMm": [
+        229.4,
+        334.0,
+        91
+      ],
+      "minimumDepthFor8mmMm": 333.754456,
+      "selectedRoundedDepthMm": 334.0,
+      "frontBackInsideClearanceMm": 8.122771999999998,
+      "fixerTopZMm": 89.5,
+      "fixerBottomZMm": 29.484619000000002,
+      "mountAxesPerSide": [
+        {
+          "sourceUV": [
+            22.8453565,
+            21.3105735
+          ],
+          "worldYZ": [
+            -134.5318715,
+            68.1894265
+          ],
+          "row": 0
+        },
+        {
+          "sourceUV": [
+            90.111288,
+            21.3105735
+          ],
+          "worldYZ": [
+            -67.26594,
+            68.1894265
+          ],
+          "row": 0
+        },
+        {
+          "sourceUV": [
+            157.37722,
+            21.3105735
+          ],
+          "worldYZ": [
+            -8.000000008223651e-06,
+            68.1894265
+          ],
+          "row": 1
+        },
+        {
+          "sourceUV": [
+            224.6431425,
+            21.3105735
+          ],
+          "worldYZ": [
+            67.26591450000001,
+            68.1894265
+          ],
+          "row": 1
+        },
+        {
+          "sourceUV": [
+            291.873764,
+            21.3105735
+          ],
+          "worldYZ": [
+            134.496536,
+            68.1894265
+          ],
+          "row": 2
+        }
+      ],
+      "mountingGripMm": 12.1,
+      "bracketCount": 18,
+      "bracketBottomCount": 10,
+      "frontBackBottomBracketXsMm": [
+        -59.5,
+        59.5
+      ],
+      "leftRightBottomBracketYsMm": [
+        -126.5,
+        0.0,
+        126.5
+      ],
+      "feet": {
+        "headSide": "outside",
+        "washerNutSide": "inside",
+        "footCount": 4,
+        "footDiameterMm": 10,
+        "footHeightMm": 3,
+        "footInsetMm": 20,
+        "contactPlaneZMm": -3,
+        "bottomHeadLowestZMm": -1.4,
+        "headToContactPlaneGapMm": 1.6,
+        "interferences": [],
+        "note": "貼付式既製ゴム脚の提案。穴なし。JLCガード数と体積には含めない。"
+      },
+      "positiveXStackMm": {
+        "railEnd": 102.0,
+        "padderOuter": 103.6,
+        "fixerOuter": 105.2,
+        "innerSpacerOuter": 113.2,
+        "metalOuter": 114.7,
+        "outerWasherOuter": 115.7
+      },
+      "padderPlacementsPerSide": [
+        {
+          "kind": "padder3u",
+          "u": 0.0,
+          "v": 0.0,
+          "row": 0,
+          "label": "3U 1"
+        },
+        {
+          "kind": "padder3u",
+          "u": 134.53186,
+          "v": 0.0,
+          "row": 1,
+          "label": "3U 2"
+        },
+        {
+          "kind": "padder1u",
+          "u": 269.039027,
+          "v": -0.025081,
+          "row": 2,
+          "label": "1U"
+        }
+      ],
+      "guardVariants": {
+        "t1p2": {
+          "thicknessMm": 1.2,
+          "coverMm": 5,
+          "coverageMm": 5,
+          "radiusMm": 0.4,
+          "partCount": 16,
+          "totalGuardParts": 16,
+          "typeCount": 6,
+          "quantities": [
+            2,
+            2,
+            4,
+            2,
+            2,
+            4
+          ],
+          "totalVolumeCm3": 31.0956796,
+          "volumeCm3": 31.0956796,
+          "approxMassG": 31.407,
+          "maxPartLengthMm": 168.2,
+          "outerEnvelopeMm": [
+            231.8,
+            336.4,
+            93.4
+          ],
+          "outerDimensions": [
+            231.8,
+            336.4,
+            93.4
+          ],
+          "feetIncludedEnvelopeMm": [
+            231.8,
+            336.4,
+            95.2
+          ],
+          "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+          "openingMm": [
+            224.4,
+            329.0
+          ],
+          "quoteJpy": null,
+          "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+        },
+        "t1p0": {
+          "thicknessMm": 1.0,
+          "coverMm": 5,
+          "coverageMm": 5,
+          "radiusMm": 0.4,
+          "partCount": 16,
+          "totalGuardParts": 16,
+          "typeCount": 6,
+          "quantities": [
+            2,
+            2,
+            4,
+            2,
+            2,
+            4
+          ],
+          "totalVolumeCm3": 25.371394,
+          "volumeCm3": 25.371394,
+          "approxMassG": 25.625,
+          "maxPartLengthMm": 168.0,
+          "outerEnvelopeMm": [
+            231.4,
+            336.0,
+            93.0
+          ],
+          "outerDimensions": [
+            231.4,
+            336.0,
+            93.0
+          ],
+          "feetIncludedEnvelopeMm": [
+            231.4,
+            336.0,
+            95.0
+          ],
+          "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+          "openingMm": [
+            224.4,
+            329.0
+          ],
+          "quoteJpy": null,
+          "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+        }
+      },
+      "equations": {
+        "frameWidth": "railLength + 2 * (padderThickness + fixerThickness)",
+        "enclosureInnerWidth": "railFrameWidth + 2 * innerSpacerThickness",
+        "enclosureMetalWidth": "enclosureInnerWidth + 2 * metalThickness",
+        "depth": "ceil(max registered rail-unit half-depth * 2 + 2 * 8mm + 2 * metalThickness)",
+        "mountingGrip": "fixerThickness + innerSpacerThickness + metalThickness + outerWasherThickness; padder not in the clamped stack"
+      }
+    },
+    "7u60": {
+      "railLengthMm": 305.0,
+      "railFrameWidthMm": 311.4,
+      "railUnitDepthMm": 314.754456,
+      "enclosureInnerWidthMm": 327.4,
+      "enclosureMetalEnvelopeMm": [
+        330.4,
+        334.0,
+        91
+      ],
+      "minimumDepthFor8mmMm": 333.754456,
+      "selectedRoundedDepthMm": 334.0,
+      "frontBackInsideClearanceMm": 8.122771999999998,
+      "fixerTopZMm": 89.5,
+      "fixerBottomZMm": 29.484619000000002,
+      "mountAxesPerSide": [
+        {
+          "sourceUV": [
+            22.8453565,
+            21.3105735
+          ],
+          "worldYZ": [
+            -134.5318715,
+            68.1894265
+          ],
+          "row": 0
+        },
+        {
+          "sourceUV": [
+            90.111288,
+            21.3105735
+          ],
+          "worldYZ": [
+            -67.26594,
+            68.1894265
+          ],
+          "row": 0
+        },
+        {
+          "sourceUV": [
+            157.37722,
+            21.3105735
+          ],
+          "worldYZ": [
+            -8.000000008223651e-06,
+            68.1894265
+          ],
+          "row": 1
+        },
+        {
+          "sourceUV": [
+            224.6431425,
+            21.3105735
+          ],
+          "worldYZ": [
+            67.26591450000001,
+            68.1894265
+          ],
+          "row": 1
+        },
+        {
+          "sourceUV": [
+            291.873764,
+            21.3105735
+          ],
+          "worldYZ": [
+            134.496536,
+            68.1894265
+          ],
+          "row": 2
+        }
+      ],
+      "mountingGripMm": 12.1,
+      "bracketCount": 18,
+      "bracketBottomCount": 10,
+      "frontBackBottomBracketXsMm": [
+        -109.99999999999999,
+        109.99999999999999
+      ],
+      "leftRightBottomBracketYsMm": [
+        -126.5,
+        0.0,
+        126.5
+      ],
+      "feet": {
+        "headSide": "outside",
+        "washerNutSide": "inside",
+        "footCount": 4,
+        "footDiameterMm": 10,
+        "footHeightMm": 3,
+        "footInsetMm": 20,
+        "contactPlaneZMm": -3,
+        "bottomHeadLowestZMm": -1.4,
+        "headToContactPlaneGapMm": 1.6,
+        "interferences": [],
+        "note": "貼付式既製ゴム脚の提案。穴なし。JLCガード数と体積には含めない。"
+      },
+      "positiveXStackMm": {
+        "railEnd": 152.5,
+        "padderOuter": 154.1,
+        "fixerOuter": 155.7,
+        "innerSpacerOuter": 163.7,
+        "metalOuter": 165.2,
+        "outerWasherOuter": 166.2
+      },
+      "padderPlacementsPerSide": [
+        {
+          "kind": "padder3u",
+          "u": 0.0,
+          "v": 0.0,
+          "row": 0,
+          "label": "3U 1"
+        },
+        {
+          "kind": "padder3u",
+          "u": 134.53186,
+          "v": 0.0,
+          "row": 1,
+          "label": "3U 2"
+        },
+        {
+          "kind": "padder1u",
+          "u": 269.039027,
+          "v": -0.025081,
+          "row": 2,
+          "label": "1U"
+        }
+      ],
+      "guardVariants": {
+        "t1p2": {
+          "thicknessMm": 1.2,
+          "coverMm": 5,
+          "coverageMm": 5,
+          "radiusMm": 0.4,
+          "partCount": 16,
+          "totalGuardParts": 16,
+          "typeCount": 6,
+          "quantities": [
+            2,
+            2,
+            4,
+            2,
+            2,
+            4
+          ],
+          "totalVolumeCm3": 35.90556773,
+          "volumeCm3": 35.90556773,
+          "approxMassG": 36.265,
+          "maxPartLengthMm": 168.2,
+          "outerEnvelopeMm": [
+            332.8,
+            336.4,
+            93.4
+          ],
+          "outerDimensions": [
+            332.8,
+            336.4,
+            93.4
+          ],
+          "feetIncludedEnvelopeMm": [
+            332.8,
+            336.4,
+            95.2
+          ],
+          "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+          "openingMm": [
+            325.4,
+            329.0
+          ],
+          "quoteJpy": null,
+          "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+        },
+        "t1p0": {
+          "thicknessMm": 1.0,
+          "coverMm": 5,
+          "coverageMm": 5,
+          "radiusMm": 0.4,
+          "partCount": 16,
+          "totalGuardParts": 16,
+          "typeCount": 6,
+          "quantities": [
+            2,
+            2,
+            4,
+            2,
+            2,
+            4
+          ],
+          "totalVolumeCm3": 29.29652214,
+          "volumeCm3": 29.29652214,
+          "approxMassG": 29.589,
+          "maxPartLengthMm": 168.0,
+          "outerEnvelopeMm": [
+            332.4,
+            336.0,
+            93.0
+          ],
+          "outerDimensions": [
+            332.4,
+            336.0,
+            93.0
+          ],
+          "feetIncludedEnvelopeMm": [
+            332.4,
+            336.0,
+            95.0
+          ],
+          "envelopeScope": "outerEnvelope: guard/metal only. feetIncludedEnvelope: guard/metal/feet, excludes side fastener protrusion.",
+          "openingMm": [
+            325.4,
+            329.0
+          ],
+          "quoteJpy": null,
+          "quoteStatus": "R6未見積。前回R3の2,264円は異なる寸法の比較基準。"
+        }
+      },
+      "equations": {
+        "frameWidth": "railLength + 2 * (padderThickness + fixerThickness)",
+        "enclosureInnerWidth": "railFrameWidth + 2 * innerSpacerThickness",
+        "enclosureMetalWidth": "enclosureInnerWidth + 2 * metalThickness",
+        "depth": "ceil(max registered rail-unit half-depth * 2 + 2 * 8mm + 2 * metalThickness)",
+        "mountingGrip": "fixerThickness + innerSpacerThickness + metalThickness + outerWasherThickness; padder not in the clamped stack"
+      }
+    }
+  }
+}

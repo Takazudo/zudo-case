@@ -1,0 +1,101 @@
+{
+  "accepted_archive_sha256": "104de884b60615cadbabb8381880fa8ae08be418a3667ad0e74c712811cd0a8d",
+  "inherited": [
+    {
+      "path": "engineering/printed-5mm/p3/source/build_case.py",
+      "sha256": "edbeea7860fe01a56adf3a89ad6ebe5d42f42b801a50421ad175fc9f4b340dcc"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/source/build_html.py",
+      "sha256": "893be879e5bb9b1aba215aff6f428d423f78ba9ee61abb92ea9c5f2031ce79f2"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/source/build_rails.py",
+      "sha256": "cb300b4a37db8e80e4e6e78aa61fce03db1badfa415d533f7a3791bd9143e28c"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/source/parameters.json",
+      "sha256": "f7bf6ee6d444a75b5c7145cccb82c50cd705d228a87ef7c8e8fdd73d5a740c17"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/source/verify_browser.py",
+      "sha256": "b6208fff4987f39aba34b7d7d427b2537c2ab3b974edd13973d14020117b8ac5"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/source/viewer-template.html",
+      "sha256": "2f52b1cfc5c6c2e4712e9f3cee2fa03ee600af40ad53e0505215e09e867d5af0"
+    }
+  ],
+  "accepted_panels": [
+    {
+      "path": "panels/uniform-wall-back.step",
+      "sha256": "7b8d3b2ed05130363955da1cebffb377c8d4b9cc6f6c5c20a516084f02d64d19"
+    },
+    {
+      "path": "panels/uniform-wall-back.stl",
+      "sha256": "316b36ce4c9e60d8a9bda1d7ef51ede49e88fc870f5caf2e45a541daa985f8f5"
+    },
+    {
+      "path": "panels/uniform-wall-front.step",
+      "sha256": "e88b59bd6577d1a9f7889b088293c585e363fba19d90d4e33367ab7ba0520586"
+    },
+    {
+      "path": "panels/uniform-wall-front.stl",
+      "sha256": "f459f19b8603a1abbaed0e5aa9b23d952947096fbe17d122f7cc369d94b529d3"
+    },
+    {
+      "path": "panels/uniform-wall-left.step",
+      "sha256": "50b8ff1974d447445eb4ef8ba79845d61505320b7b701127afc924cdbad82201"
+    },
+    {
+      "path": "panels/uniform-wall-left.stl",
+      "sha256": "b5ae29f5c08781e190b31c8e2066ae9ff677ef76ddce132e6d5f24af43b57aee"
+    },
+    {
+      "path": "panels/uniform-wall-right.step",
+      "sha256": "996282a9e53e90db44c87e5473ac7f113f8545db7158e653a669f1cb45a68175"
+    },
+    {
+      "path": "panels/uniform-wall-right.stl",
+      "sha256": "aee9450742fa43ba782baa4cc4f572504305c93fe258bb0694d3231ea1c9e996"
+    }
+  ],
+  "reference_inputs": [
+    {
+      "path": "reference/ACCEPTED-GEOMETRY.json",
+      "sha256": "935e11f7ea25a904744958cd54238c0cb8bb99dc151664d7c297cc5180f02afb"
+    },
+    {
+      "path": "reference/P2-PRINT-FILES.json",
+      "sha256": "7caaafdf084699747a666ce226adfed147ff8bc7e22a8899649c2dffa554d7b6"
+    },
+    {
+      "path": "reference/SOURCE-RECEIPT.json",
+      "sha256": "9752403db9439b00f8331cd43e3592ec884db4639e080e902b3d8b1cac0e2c22"
+    },
+    {
+      "path": "reference/lid-edge.stl",
+      "sha256": "37898c2fdf8f098df66aa5ed88c74cf437e77f5f72be8ab66bc5e785d0887692"
+    },
+    {
+      "path": "reference/rail-source/build_geometry.py",
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d"
+    },
+    {
+      "path": "reference/rail-source/design-parameters.json",
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b"
+    },
+    {
+      "path": "reference/rail-source/source-data/panels/panel-geometry.json",
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c"
+    },
+    {
+      "path": "reference/rail-source/source-data/rail40/rail_dimensions.json",
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210"
+    },
+    {
+      "path": "reference/rail-source/source-data/rail40/rail_mesh.json",
+      "sha256": "6ddbf622f9bcd8f4d1316d76ce2c55b4cecfb3c166de6f88826fda3bb19c2753"
+    }
+  ]
+}
