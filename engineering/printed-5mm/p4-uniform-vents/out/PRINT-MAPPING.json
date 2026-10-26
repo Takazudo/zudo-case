@@ -1,0 +1,302 @@
+[
+  {
+    "part": "floor-1",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/floor-1.stl",
+    "p3_sha256": "960f79d0d1b34ed1a3bacb60241a7439c102ce786c462c516a4c2e2cb2382a36",
+    "p4_path": "stl/floor-1.stl",
+    "p4_sha256": "960f79d0d1b34ed1a3bacb60241a7439c102ce786c462c516a4c2e2cb2382a36",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "floor-1",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/floor-1.step",
+    "p3_sha256": "23b5fef12d3afb4d8a24001a9f8678689436a20271b0ddf451697eccbc694566",
+    "p4_path": "step/floor-1.step",
+    "p4_sha256": "23b5fef12d3afb4d8a24001a9f8678689436a20271b0ddf451697eccbc694566",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "floor-2",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/floor-2.stl",
+    "p3_sha256": "1fcf6b16fd6d2240b994914f8292620f9a6b862231a181877c534750ea609b2b",
+    "p4_path": "stl/floor-2.stl",
+    "p4_sha256": "1fcf6b16fd6d2240b994914f8292620f9a6b862231a181877c534750ea609b2b",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "floor-2",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/floor-2.step",
+    "p3_sha256": "bd800b01f594f680aa8311fa396b76b6bf0182821d2769b8992535027912edde",
+    "p4_path": "step/floor-2.step",
+    "p4_sha256": "bd800b01f594f680aa8311fa396b76b6bf0182821d2769b8992535027912edde",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-back",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/lid-edge-back.stl",
+    "p3_sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+    "p4_path": "stl/lid-edge-back.stl",
+    "p4_sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-back",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/lid-edge-back.step",
+    "p3_sha256": "e4266c63362b94c860fdc2de8600804cbf12b5f5f7972468c503eed787eec7da",
+    "p4_path": "step/lid-edge-back.step",
+    "p4_sha256": "e4266c63362b94c860fdc2de8600804cbf12b5f5f7972468c503eed787eec7da",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-front",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/lid-edge-front.stl",
+    "p3_sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+    "p4_path": "stl/lid-edge-front.stl",
+    "p4_sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-front",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/lid-edge-front.step",
+    "p3_sha256": "8a46eeeb917e5b9d0e15c94b7cf04e1260b10b075bbde6b4610b6d8638012eac",
+    "p4_path": "step/lid-edge-front.step",
+    "p4_sha256": "8a46eeeb917e5b9d0e15c94b7cf04e1260b10b075bbde6b4610b6d8638012eac",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-left",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/lid-edge-left.stl",
+    "p3_sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+    "p4_path": "stl/lid-edge-left.stl",
+    "p4_sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-left",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/lid-edge-left.step",
+    "p3_sha256": "c598366c95962d8ec9d151e032b2651e94ed1949b1a96eab2c72982e7d6be0ea",
+    "p4_path": "step/lid-edge-left.step",
+    "p4_sha256": "c598366c95962d8ec9d151e032b2651e94ed1949b1a96eab2c72982e7d6be0ea",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-right",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/lid-edge-right.stl",
+    "p3_sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+    "p4_path": "stl/lid-edge-right.stl",
+    "p4_sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-right",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/lid-edge-right.step",
+    "p3_sha256": "edbbaf7a765486a2ef96b04d561efbb9a93c4cfba69da21bf90bd37b0757c812",
+    "p4_path": "step/lid-edge-right.step",
+    "p4_sha256": "edbbaf7a765486a2ef96b04d561efbb9a93c4cfba69da21bf90bd37b0757c812",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-top-1",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/lid-top-1.stl",
+    "p3_sha256": "167a47149983924ba440e2c220781837f49a5cce56d0725b5774cf73f0c6f522",
+    "p4_path": "stl/lid-top-1.stl",
+    "p4_sha256": "167a47149983924ba440e2c220781837f49a5cce56d0725b5774cf73f0c6f522",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-top-1",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/lid-top-1.step",
+    "p3_sha256": "e425f3590970abe3679f4864b48fe91cd3fb1f9e9838d72323064960cf9ad6bf",
+    "p4_path": "step/lid-top-1.step",
+    "p4_sha256": "e425f3590970abe3679f4864b48fe91cd3fb1f9e9838d72323064960cf9ad6bf",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-top-2",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/lid-top-2.stl",
+    "p3_sha256": "b056b7e864a9d779eda4a39a1c6c9b3986b6bff84eda59475e2a7aa842051599",
+    "p4_path": "stl/lid-top-2.stl",
+    "p4_sha256": "b056b7e864a9d779eda4a39a1c6c9b3986b6bff84eda59475e2a7aa842051599",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-top-2",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/lid-top-2.step",
+    "p3_sha256": "d451b11bbd91b6e9fcbdd27271fb69663d965fd5573a1684fc4ffbd2892880d4",
+    "p4_path": "step/lid-top-2.step",
+    "p4_sha256": "d451b11bbd91b6e9fcbdd27271fb69663d965fd5573a1684fc4ffbd2892880d4",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "pad-horizontal",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/pad-horizontal.stl",
+    "p3_sha256": "2a08d1088fec93f6bc380b2e1be37d9fcd1db7338895a5c2385278b7113ee065",
+    "p4_path": "stl/pad-horizontal.stl",
+    "p4_sha256": "2a08d1088fec93f6bc380b2e1be37d9fcd1db7338895a5c2385278b7113ee065",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "pad-horizontal",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/pad-horizontal.step",
+    "p3_sha256": "374e5368a8138f672d25a8ed972c8a66e69389939f43cd307d4efeb2ff0862df",
+    "p4_path": "step/pad-horizontal.step",
+    "p4_sha256": "374e5368a8138f672d25a8ed972c8a66e69389939f43cd307d4efeb2ff0862df",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "pad-vertical",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/pad-vertical.stl",
+    "p3_sha256": "0d27507cc73f7e07b6778dfd6997a6b6acf5757c773675004139d403af56db50",
+    "p4_path": "stl/pad-vertical.stl",
+    "p4_sha256": "0d27507cc73f7e07b6778dfd6997a6b6acf5757c773675004139d403af56db50",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "pad-vertical",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/pad-vertical.step",
+    "p3_sha256": "191c4c79a86164ef37c2ef01f13ed7e3e62b7a447bd01c41210ff79fc06c43c3",
+    "p4_path": "step/pad-vertical.step",
+    "p4_sha256": "191c4c79a86164ef37c2ef01f13ed7e3e62b7a447bd01c41210ff79fc06c43c3",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "wall-back",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/wall-back.stl",
+    "p3_sha256": "b06639dcdaba7d9404e1520ef474295ae8d657a703cdd647ed755de91ac0a831",
+    "p4_path": "stl/wall-back.stl",
+    "p4_sha256": "414473a2815ffd842dcfd5774c936370be9c2cab18031293fec28772b400e61f",
+    "unchanged_bytes": false,
+    "change": "Uniform vents only"
+  },
+  {
+    "part": "wall-back",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/wall-back.step",
+    "p3_sha256": "e0250a1b26bc9f5683abef65edbb023a8d71d8e854af56349ce53b11d8bb96f2",
+    "p4_path": "step/wall-back.step",
+    "p4_sha256": "a56a3e7aec931b3cfbf787c18692f5fe8569fc756bfd2e3358b877f5aaa4f291",
+    "unchanged_bytes": false,
+    "change": "Uniform vents only"
+  },
+  {
+    "part": "wall-front",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/wall-front.stl",
+    "p3_sha256": "b06639dcdaba7d9404e1520ef474295ae8d657a703cdd647ed755de91ac0a831",
+    "p4_path": "stl/wall-front.stl",
+    "p4_sha256": "414473a2815ffd842dcfd5774c936370be9c2cab18031293fec28772b400e61f",
+    "unchanged_bytes": false,
+    "change": "Uniform vents only"
+  },
+  {
+    "part": "wall-front",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/wall-front.step",
+    "p3_sha256": "8280bbf91f580a41c2c8736003627f83d550d6f2fc2c2142a9910b6ff3197752",
+    "p4_path": "step/wall-front.step",
+    "p4_sha256": "67a42dbac92201a70c9449fd9cb81e08ae97466a530c1ad635691a1f3378d9f0",
+    "unchanged_bytes": false,
+    "change": "Uniform vents only"
+  },
+  {
+    "part": "wall-left",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/wall-left.stl",
+    "p3_sha256": "b6593405f6f98e72f469ff71d0ce2910d1fc9944f73959f3a043ace0b902e0ce",
+    "p4_path": "stl/wall-left.stl",
+    "p4_sha256": "4d15c8063e646c0bda0d0d96475f20b197f3016015363ef2adc29daacdf6ecaf",
+    "unchanged_bytes": false,
+    "change": "Uniform vents only"
+  },
+  {
+    "part": "wall-left",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/wall-left.step",
+    "p3_sha256": "cde54a289f2c7fae57ed5bcf92cbca890c1f79275669f4ecccafea9163951831",
+    "p4_path": "step/wall-left.step",
+    "p4_sha256": "c19815ff6ca81f326c608946cd3aae9f21b1bce25c46b0e25be8ce8ea5913078",
+    "unchanged_bytes": false,
+    "change": "Uniform vents only"
+  },
+  {
+    "part": "wall-right",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/wall-right.stl",
+    "p3_sha256": "0f02d578633034967004691f48723e477129d68117cc4925eb7aa04ee62c3e90",
+    "p4_path": "stl/wall-right.stl",
+    "p4_sha256": "494ed8932484aac785e55820f4ae8c042a81414933b89d3ffbcb1c59b1d2f350",
+    "unchanged_bytes": false,
+    "change": "Uniform vents only"
+  },
+  {
+    "part": "wall-right",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/wall-right.step",
+    "p3_sha256": "a9fe62c46bf2e0eb2ad6b8ad9aad1b2f222ca62e897d549846a24d9633094874",
+    "p4_path": "step/wall-right.step",
+    "p4_sha256": "2c846079fe867bddcdda82dfcabf7007ee1662c2cc387c93dbb4c7a777cd2dbc",
+    "unchanged_bytes": false,
+    "change": "Uniform vents only"
+  },
+  {
+    "part": "washer-round",
+    "format": "stl",
+    "p3_path": "engineering/printed-5mm/p3/out/stl/washer-round.stl",
+    "p3_sha256": "e9dd796d2d49770481ccaed825a24c1f19ddf48a8aa1517442051df525c3ef06",
+    "p4_path": "stl/washer-round.stl",
+    "p4_sha256": "e9dd796d2d49770481ccaed825a24c1f19ddf48a8aa1517442051df525c3ef06",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "washer-round",
+    "format": "step",
+    "p3_path": "engineering/printed-5mm/p3/out/step/washer-round.step",
+    "p3_sha256": "c635ad4e53b2402e2982e6a10e1b3a8bb8e8ec02eda3142d82bc92dd992820bf",
+    "p4_path": "step/washer-round.step",
+    "p4_sha256": "c635ad4e53b2402e2982e6a10e1b3a8bb8e8ec02eda3142d82bc92dd992820bf",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "floor-1",
+    "name": "Floor half 1",
+    "native_print_dimensions_mm": [
+      236.4,
+      170.35,
+      5.0
+    ],
+    "rotation_degrees": 0,
+    "bed_footprint_mm": [
+      236.4,
+      170.35,
+      5.0
+    ],
+    "with_5mm_brim_mm": [
+      246.4,
+      180.35
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 1,
+    "file": "stl/floor-1.stl",
+    "volume_mm3": 199815.179,
+    "note": "5mm. Equal 236.4 x 170.35mm halves; centered 0.3mm seam. Two independent side brackets at Y=-25/+25mm. No joining strip or strip holes."
+  },
+  {
+    "id": "floor-2",
+    "name": "Floor half 2",
+    "native_print_dimensions_mm": [
+      236.4,
+      170.35,
+      5.0
+    ],
+    "rotation_degrees": 0,
+    "bed_footprint_mm": [
+      236.4,
+      170.35,
+      5.0
+    ],
+    "with_5mm_brim_mm": [
+      246.4,
+      180.35
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 1,
+    "file": "stl/floor-2.stl",
+    "volume_mm3": 199815.179,
+    "note": "5mm. Equal 236.4 x 170.35mm halves; centered 0.3mm seam. Two independent side brackets at Y=-25/+25mm. No joining strip or strip holes."
+  },
+  {
+    "id": "wall-front",
+    "name": "Front wall \u2014 5mm",
+    "native_print_dimensions_mm": [
+      226.4,
+      89.5,
+      5.0
+    ],
+    "rotation_degrees": 0,
+    "bed_footprint_mm": [
+      226.4,
+      89.5,
+      5.0
+    ],
+    "with_5mm_brim_mm": [
+      236.4,
+      99.5
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 1,
+    "file": "stl/wall-front.stl",
+    "volume_mm3": 92111.874,
+    "note": "Original interior kept. 341mm sides print flat at 45 degrees; not upright."
+  },
+  {
+    "id": "wall-back",
+    "name": "Back wall \u2014 5mm",
+    "native_print_dimensions_mm": [
+      226.4,
+      89.5,
+      5.0
+    ],
+    "rotation_degrees": 0,
+    "bed_footprint_mm": [
+      226.4,
+      89.5,
+      5.0
+    ],
+    "with_5mm_brim_mm": [
+      236.4,
+      99.5
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 1,
+    "file": "stl/wall-back.stl",
+    "volume_mm3": 92111.874,
+    "note": "Original interior kept. 341mm sides print flat at 45 degrees; not upright."
+  },
+  {
+    "id": "wall-right",
+    "name": "Right wall \u2014 5mm",
+    "native_print_dimensions_mm": [
+      341.0,
+      89.5,
+      5.0
+    ],
+    "rotation_degrees": 45,
+    "bed_footprint_mm": [
+      303.9124,
+      303.9124,
+      5.0
+    ],
+    "with_5mm_brim_mm": [
+      313.9124,
+      313.9124
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 1,
+    "file": "stl/wall-right.stl",
+    "volume_mm3": 137978.491,
+    "note": "Original interior kept. 341mm sides print flat at 45 degrees; not upright."
+  },
+  {
+    "id": "wall-left",
+    "name": "Left wall \u2014 5mm",
+    "native_print_dimensions_mm": [
+      341.0,
+      89.5,
+      5.0
+    ],
+    "rotation_degrees": 45,
+    "bed_footprint_mm": [
+      303.9124,
+      303.9124,
+      5.0
+    ],
+    "with_5mm_brim_mm": [
+      313.9124,
+      313.9124
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 1,
+    "file": "stl/wall-left.stl",
+    "volume_mm3": 137978.491,
+    "note": "Original interior kept. 341mm sides print flat at 45 degrees; not upright."
+  },
+  {
+    "id": "lid-edge-front",
+    "name": "Front stepped lid edge",
+    "native_print_dimensions_mm": [
+      226.4,
+      50.5,
+      10.3
+    ],
+    "rotation_degrees": 0,
+    "bed_footprint_mm": [
+      226.4,
+      50.5,
+      10.3
+    ],
+    "with_5mm_brim_mm": [
+      236.4,
+      60.5
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 1,
+    "file": "stl/lid-edge-front.stl",
+    "volume_mm3": 64379.472,
+    "note": "Reference-inspired 5mm wall + 5mm inward locator, 7.5mm engagement, 0.3mm side clearance, segmented 3mm ledge. Local support required under the offset locator when printed outside-face down."
+  },
+  {
+    "id": "lid-edge-back",
+    "name": "Back stepped lid edge",
+    "native_print_dimensions_mm": [
+      226.4,
+      50.5,
+      10.3
+    ],
+    "rotation_degrees": 0,
+    "bed_footprint_mm": [
+      226.4,
+      50.5,
+      10.3
+    ],
+    "with_5mm_brim_mm": [
+      236.4,
+      60.5
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 1,
+    "file": "stl/lid-edge-back.stl",
+    "volume_mm3": 64379.472,
+    "note": "Reference-inspired 5mm wall + 5mm inward locator, 7.5mm engagement, 0.3mm side clearance, segmented 3mm ledge. Local support required under the offset locator when printed outside-face down."
+  },
+  {
+    "id": "lid-edge-right",
+    "name": "Right stepped lid edge",
+    "native_print_dimensions_mm": [
+      341.0,
+      50.5,
+      10.3
+    ],
+    "rotation_degrees": 45,
+    "bed_footprint_mm": [
+      271.0319,
+      271.0319,
+      10.3
+    ],
+    "with_5mm_brim_mm": [
+      281.0319,
+      281.0319
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 1,
+    "file": "stl/lid-edge-right.stl",
+    "volume_mm3": 97483.072,
+    "note": "Reference-inspired 5mm wall + 5mm inward locator, 7.5mm engagement, 0.3mm side clearance, segmented 3mm ledge. Local support required under the offset locator when printed outside-face down."
+  },
+  {
+    "id": "lid-edge-left",
+    "name": "Left stepped lid edge",
+    "native_print_dimensions_mm": [
+      341.0,
+      50.5,
+      10.3
+    ],
+    "rotation_degrees": 45,
+    "bed_footprint_mm": [
+      271.0319,
+      271.0319,
+      10.3
+    ],
+    "with_5mm_brim_mm": [
+      281.0319,
+      281.0319
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 1,
+    "file": "stl/lid-edge-left.stl",
+    "volume_mm3": 97483.072,
+    "note": "Reference-inspired 5mm wall + 5mm inward locator, 7.5mm engagement, 0.3mm side clearance, segmented 3mm ledge. Local support required under the offset locator when printed outside-face down."
+  },
+  {
+    "id": "lid-top-1",
+    "name": "Lid top half 1 \u2014 5mm",
+    "native_print_dimensions_mm": [
+      225.8,
+      165.05,
+      5.0
+    ],
+    "rotation_degrees": 0,
+    "bed_footprint_mm": [
+      225.8,
+      165.05,
+      5.0
+    ],
+    "with_5mm_brim_mm": [
+      235.8,
+      175.05
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 1,
+    "file": "stl/lid-top-1.stl",
+    "volume_mm3": 185865.512,
+    "note": "5mm roof rests on the segmented ledges and bolts to stock L brackets. Two independent halves; no joining strip or strip holes."
+  },
+  {
+    "id": "lid-top-2",
+    "name": "Lid top half 2 \u2014 5mm",
+    "native_print_dimensions_mm": [
+      225.8,
+      165.05,
+      5.0
+    ],
+    "rotation_degrees": 0,
+    "bed_footprint_mm": [
+      225.8,
+      165.05,
+      5.0
+    ],
+    "with_5mm_brim_mm": [
+      235.8,
+      175.05
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 1,
+    "file": "stl/lid-top-2.stl",
+    "volume_mm3": 185865.512,
+    "note": "5mm roof rests on the segmented ledges and bolts to stock L brackets. Two independent halves; no joining strip or strip holes."
+  },
+  {
+    "id": "pad-horizontal",
+    "name": "Pad Horizontal",
+    "native_print_dimensions_mm": [
+      20.0,
+      12.0,
+      1.0
+    ],
+    "rotation_degrees": 0,
+    "bed_footprint_mm": [
+      20.0,
+      12.0,
+      1.0
+    ],
+    "with_5mm_brim_mm": [
+      30.0,
+      22.0
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 48,
+    "file": "stl/pad-horizontal.stl",
+    "volume_mm3": 185.339,
+    "note": "ASA washer prototype. Parameterized; replaceable at home. Not a nylon-material equivalence."
+  },
+  {
+    "id": "pad-vertical",
+    "name": "Pad Vertical",
+    "native_print_dimensions_mm": [
+      12.0,
+      20.0,
+      1.0
+    ],
+    "rotation_degrees": 0,
+    "bed_footprint_mm": [
+      12.0,
+      20.0,
+      1.0
+    ],
+    "with_5mm_brim_mm": [
+      22.0,
+      30.0
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 48,
+    "file": "stl/pad-vertical.stl",
+    "volume_mm3": 185.339,
+    "note": "ASA washer prototype. Parameterized; replaceable at home. Not a nylon-material equivalence."
+  },
+  {
+    "id": "washer-round",
+    "name": "Washer Round",
+    "native_print_dimensions_mm": [
+      10.0,
+      10.0,
+      1.0
+    ],
+    "rotation_degrees": 0,
+    "bed_footprint_mm": [
+      10.0,
+      10.0,
+      1.0
+    ],
+    "with_5mm_brim_mm": [
+      20.0,
+      20.0
+    ],
+    "fits_single_nozzle_rect": true,
+    "quantity": 28,
+    "file": "stl/washer-round.stl",
+    "volume_mm3": 54.782,
+    "note": "ASA washer prototype. Parameterized; replaceable at home. Not a nylon-material equivalence."
+  }
+]

@@ -26,3 +26,18 @@ rows=holes_expected('front');rows[0]=(0,46,90,'lower')
 try:cut_wall(wall,'front',rows,p,check)
 except ValueError:print('rejected changed fastening coordinates')
 else:raise AssertionError('changed fastening coordinates')
+# Exercise the post-assembly hardware gate, beyond the parameter digest lock.
+import tempfile,subprocess,shutil
+ap=__import__('argparse').ArgumentParser();ap.add_argument('--out',type=Path);args=ap.parse_args()
+if args.out:
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp=Path(tmp);(tmp/'source').mkdir()
+        for name in ('ventilation.py','ventilation_report.py','parameters.json'):
+            shutil.copy2(Path(__file__).parent/'source'/name,tmp/'source'/name)
+        m=json.loads((args.out/'source/model.json').read_text())
+        bracket=next(x for x in m['scenes']['assembly'] if x['id']=='bracket-lower-front-0')
+        bracket['box'][5]=40
+        (tmp/'source/model.json').write_text(json.dumps(m))
+        result=subprocess.run([sys.executable,str(tmp/'source/ventilation_report.py')],capture_output=True,text=True)
+        assert result.returncode and 'AssertionError' in result.stderr,result.stderr
+        print('rejected actual assembly hardware margin failure')

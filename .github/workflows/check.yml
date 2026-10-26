@@ -134,3 +134,49 @@ jobs:
         run: uv run --locked --project engineering/printed-5mm/p3 python -m playwright install --with-deps chromium
       - name: Exercise the P3 standalone viewer in Chromium
         run: uv run --locked --project engineering/printed-5mm/p3 python "$RUNNER_TEMP/printed-p3/source/verify_browser.py"
+
+  printed-p4-cad:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@557e51de59eb14aaaba2ed9621916900a91d50c6
+        with:
+          version: 0.10.2
+      - name: Install locked P4 CAD environment
+        run: uv sync --locked --project engineering/printed-5mm/p4-uniform-vents
+      - name: Two clean builds including extracted source and preservation checks
+        run: uv run --locked --project engineering/printed-5mm/p4-uniform-vents python engineering/printed-5mm/p4-uniform-vents/regenerate.py --published-root .
+      - name: Geometry negative tests
+        run: uv run --locked --project engineering/printed-5mm/p4-uniform-vents python engineering/printed-5mm/p4-uniform-vents/validate_parameters.py
+      - name: Build browser test copy and reject stale inputs
+        run: |
+          uv run --locked --project engineering/printed-5mm/p4-uniform-vents python engineering/printed-5mm/p4-uniform-vents/build.py --out "$RUNNER_TEMP/p4-browser"
+          python3 engineering/printed-5mm/p4-uniform-vents/negative.py --out "$RUNNER_TEMP/p4-browser"
+          uv run --locked --project engineering/printed-5mm/p4-uniform-vents python engineering/printed-5mm/p4-uniform-vents/validate_parameters.py --out "$RUNNER_TEMP/p4-browser"
+      - name: Install browser
+        run: uv run --locked --project engineering/printed-5mm/p4-uniform-vents python -m playwright install --with-deps chromium
+      - name: Canvas direct-file viewer regression
+        run: uv run --locked --project engineering/printed-5mm/p4-uniform-vents python "$RUNNER_TEMP/p4-browser/source/verify_browser.py"
+      - name: WebGL direct-file viewer regression
+        env:
+          RENDERER: webgl
+        run: uv run --locked --project engineering/printed-5mm/p4-uniform-vents python "$RUNNER_TEMP/p4-browser/source/verify_browser.py"
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.30.3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Integrated local docs and exact download GET hashes
+        run: |
+          pnpm dev --port 4391 > "$RUNNER_TEMP/p4-site.log" 2>&1 &
+          site_pid=$!
+          trap 'kill "$site_pid"' EXIT
+          for attempt in $(seq 1 90); do
+            if curl --fail --silent http://localhost:4391/docs/printed-5mm/p4-preview/ -o /dev/null; then break; fi
+            sleep 2
+          done
+          uv run --locked --project engineering/printed-5mm/p4-uniform-vents python scripts/verify-printed-p4-site.py

@@ -18,7 +18,7 @@
 
 ## 独立した7U40・5mm家庭印刷版
 
-[P3-PRINTED-5MM-7U-RAILS](src/content/docs/printed-5mm/index.mdx)は黒ASAの本体・載せ蓋12構造部品を家庭印刷する別系列です。[3Dプレビュー](src/content/docs/printed-5mm/preview.mdx)と[STL/編集ソース](src/content/docs/printed-5mm/print-files.mdx)を参照。R10金属ケースと準備済みJLCカートは変更しません。実スライス・現物嵌合・強度・運搬は未確認です。
+[P4-PRINTED-5MM-UNIFORM-VENTS](src/content/docs/printed-5mm/index.mdx)は黒ASAの本体・載せ蓋12構造部品を家庭印刷する別系列です。[3Dプレビュー](src/content/docs/printed-5mm/p4-preview.mdx)と[STL/編集ソース](src/content/docs/printed-5mm/p4-print-files.mdx)を参照。R10金属ケースと準備済みJLCカートは変更しません。実スライス・現物嵌合・強度・運搬は未確認です。
 
 ## 家庭印刷用8mmスペーサー
 

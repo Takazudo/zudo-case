@@ -58,4 +58,4 @@ def cut_wall(s,f,rows,p,check):
         check(f'P4 through full thickness {f}/{n}',result.intersect(c).Volume()<1e-6 and abs(s.intersect(c).Volume()-area*5/len(cutters))<1e-5)
     web=min(a.distance(b) for i,a in enumerate(cutters) for b in cutters[:i])
     check('P4 web '+f,web>=v['minimum_web']-1e-7,minimum_mm=web)
-    return result,{'wall':f,'count':len(cutters),'centers':v['centers'][f],'width':3,'height':32,'radius':.5,'pitch':11,'z_range':[30,62],'open_area_mm2':area,'minimum_hole_clearance_mm':gap,'minimum_web_mm':web,'minimum_edge_mm':min(25,min((170.5 if f in ('left','right') else 113.2)-abs(u)-1.5 for u in v['centers'][f])),'holes':rows}
+    return result,{'wall':f,'count':len(cutters),'centers':v['centers'][f],'width':3,'height':32,'radius':.5,'pitch':11,'z_range':[30,62],'open_area_mm2':area,'minimum_hole_clearance_mm':gap,'minimum_web_mm':web,'minimum_edge_mm':min(min(c.BoundingBox().xmin-b0.xmin,b0.xmax-c.BoundingBox().xmax,c.BoundingBox().ymin-b0.ymin,b0.ymax-c.BoundingBox().ymax) for c in cutters),'holes':rows}

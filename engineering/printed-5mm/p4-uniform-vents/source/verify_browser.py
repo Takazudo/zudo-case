@@ -1,4 +1,4 @@
-"""P3 browser regression. Tests real self-contained HTML; no external assets."""
+"""P4 browser regression. Tests real self-contained HTML; no external assets."""
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 import json,os,time
@@ -11,11 +11,11 @@ with sync_playwright() as p:
  browser=p.chromium.launch(executable_path=os.environ.get('CHROMIUM'),headless=True,args=['--no-sandbox','--disable-dev-shm-usage','--enable-unsafe-swiftshader'])
  page=browser.new_page(viewport={'width':1440,'height':1000},device_scale_factor=1,accept_downloads=True)
  page.on('pageerror',lambda e:errors.append(str(e)))
- file_result={'attempted':True,'succeeded':False,'error':'Direct file navigation did not complete in this environment; isolated process stopped at 120s. Functional suite uses the same HTML via page.set_content.'}
- print('Loading inline HTML for browser regression',flush=True)
- page.set_content(HTML.read_text(),wait_until='load',timeout=20000)
+ url=os.environ.get('TEST_URL',HTML.as_uri())+'?renderer='+os.environ.get('RENDERER','canvas')
+ page.goto(url,wait_until='load',timeout=60000)
+ file_result={'attempted':url.startswith('file:'),'succeeded':url.startswith('file:')}
  page.wait_for_function('window.study&&study.frames>0',timeout=60000)
- renderer=page.evaluate('study.glInfo()');ok('initial render',page.evaluate('study.parts.length>0'))
+ renderer=page.evaluate('study.glInfo()');ok('requested renderer available',('WebGL' in renderer['version']) if os.environ.get('RENDERER')=='webgl' else renderer['version']=='Canvas 2D');ok('initial render',page.evaluate('study.parts.length>0'))
  ok('source rails visible by default',page.evaluate('study.visibleParts().filter(p=>p.cat==="rails").length===6'))
  ok('old frame envelope entirely removed',page.evaluate('study.parts.every(p=>p.cat!=="frame"&&p.id!=="frame-envelope")'))
  ok('source PCB count 2+6',page.evaluate('study.parts.filter(p=>p.cat==="railPCB").length===2 && study.parts.filter(p=>p.cat==="railPads").length===6'))
@@ -31,7 +31,7 @@ with sync_playwright() as p:
  ok('reference rail objects not new print parts',page.locator('#printPart option').evaluate_all('(es)=>es.every(e=>!e.value.startsWith("rail-"))'))
  page.locator('#stage').screenshot(path=str(ROOT/'evidence/assembly.png'))
  page.screenshot(path=str(ROOT/'evidence/assembly-ui.png'))
- views=['assembly','rails','railMount','bed','edge','seams','pair','lid','reference']
+ views=['assembly','rails','railMount','bed','edge','seams','pair','lid','reference','panel-front','panel-back','panel-right','panel-left','inside-right']
  for view in views:
   page.locator(f'[data-view="{view}"]').click();page.wait_for_timeout(100)
   ok('view '+view,page.evaluate('study.state.view')==view)
@@ -39,6 +39,14 @@ with sync_playwright() as p:
   ok('active tab '+view,page.locator(f'[data-view="{view}"]').get_attribute('aria-pressed')=='true')
   page.locator('#stage').screenshot(path=str(ROOT/f'evidence/{view}.png'))
   if view in ['rails','railMount']:page.screenshot(path=str(ROOT/f'evidence/{view}-ui.png'))
+ for side in ['front','back','right','left']:
+  page.locator(f'[data-view="panel-{side}"]').click()
+  ok('vent metadata '+side,page.evaluate('(side)=>study.parts.find(p=>p.id==="wall-"+side).ventilation.count',side)==(25 if side in ['left','right'] else 16))
+  mesh=page.evaluate('(side)=>study.parts.find(p=>p.id==="wall-"+side).mesh',side)
+  page.locator('#compareP3').check()
+  ok('P3 comparison mesh '+side,page.evaluate('(side)=>study.parts.find(p=>p.id==="wall-"+side).mesh',side)!=mesh)
+  page.locator('#compareP3').uncheck()
+  ok('P4 restored '+side,page.evaluate('(side)=>study.parts.find(p=>p.id==="wall-"+side).mesh',side)==mesh)
  page.locator('[data-view="rails"]').click()
  ok('rail-only view contains complete66 components',page.evaluate('study.parts.length===66 && study.parts.every(p=>p.existingReference===true)'))
  ok('rail spacing readout','210.4' in page.locator('#measure').inner_text())
@@ -92,6 +100,9 @@ with sync_playwright() as p:
  page.locator('#fileInput').set_input_files(str(dest));page.wait_for_timeout(100);ok('settings roundtrip',page.evaluate('study.state.view')==j['state']['view'] and page.evaluate('study.state.lidVisible')==j['state']['lidVisible'])
  bad=ROOT/'evidence/invalid-settings.json';j['state']['lidVisible']='yes';bad.write_text(json.dumps(j));old=page.evaluate('JSON.stringify(study.state)')
  page.locator('#fileInput').set_input_files(str(bad));page.wait_for_timeout(100);ok('reject invalid visibility type',page.evaluate('JSON.stringify(study.state)')==old and 'Invalid' in page.locator('#toast').inner_text());bad.unlink()
+ for label,mutate in [('inherited view',lambda j:j['state'].update(view='__proto__')),('inherited category',lambda j:j['state'].update(hidden=['constructor'])),('comparison',lambda j:j['state'].update(compareP3='yes')),('camera',lambda j:j['cam'].update(span=-1)),('pattern',lambda j:j.update(schema='rejected-pattern-02')),('stale P3',lambda j:j.update(schema='zudo-case-printed-p3/1'))]:
+  j=json.loads((ROOT/'evidence/exported-settings.json').read_text());mutate(j);bad.write_text(json.dumps(j));old=page.evaluate('JSON.stringify(study.state)');page.locator('#fileInput').set_input_files(str(bad));page.wait_for_timeout(100)
+  ok('invalid settings '+label,page.evaluate('JSON.stringify(study.state)')==old);bad.unlink()
  page.locator('#projectBtn').click();ok('perspective switch',not page.evaluate('study.state.ortho'));page.locator('#projectBtn').click()
  yaw=page.evaluate('study.camera.yaw');page.locator('#canvas').focus();page.keyboard.press('ArrowRight');ok('keyboard orbit',page.evaluate('study.camera.yaw')!=yaw)
  page.locator('#fitBtn').click();ok('finite fitted camera',page.evaluate('Number.isFinite(study.camera.span)&&study.camera.span>0'))
@@ -107,5 +118,5 @@ with sync_playwright() as p:
   page.evaluate('study.setView("assembly")');page.screenshot(path=str(ROOT/f'evidence/mobile-{width}.png'),full_page=True)
  ok('no runtime errors',not errors,errors=errors)
  result={'checks':records,'count':len(records),'renderer':renderer,'browser_version':browser.version,'page_errors':errors,'file_url':file_result,'display_method':'file URL' if file_result['succeeded'] else 'same HTML via page.set_content','webgl_verified':renderer['version']!='Canvas 2D'}
- (ROOT/'evidence/browser-checks.json').write_text(json.dumps(result,indent=2));print('PASS',len(records),'checks;',renderer,'file_url:',file_result)
+ (ROOT/('evidence/browser-'+os.environ.get('RENDERER','canvas')+'-checks.json')).write_text(json.dumps(result,indent=2));print('PASS',len(records),'checks;',renderer,'file_url:',file_result)
  browser.close()

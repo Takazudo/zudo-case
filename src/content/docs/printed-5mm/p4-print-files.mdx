@@ -1,0 +1,14 @@
+---
+title: "P4印刷ファイルと手順"
+description: "家庭印刷用STL、編集ソース、印刷枚数と確認範囲。"
+sidebar_position: 31
+---
+
+<PreviewLink path="/downloads/candidate/printed-5mm-p4-uniform-vents-stl.zip">STL/STEPと印刷案内をダウンロード</PreviewLink> ／ <PreviewLink path="/downloads/candidate/printed-5mm-p4-uniform-vents-source.zip">編集用ソースをダウンロード</PreviewLink>。mm単位のSTLはベッド上の非負座標、STEPは組立座標です。各ZIPの `PRINT-START-HERE.md` を先に読んでください。
+
+構造部品は底2、壁4、蓋の縁4、屋根2の計12点。任意の家庭印刷品は横パッド48、縦パッド48、丸座金28。レール取付用の既存外側座金10個はこの28個へ含めません。金属金具・ねじ・レール・PCBは印刷インベントリ外です。
+
+H2D単一ノズルの325 × 320mm領域と各辺5mmのブリムを矩形で確認します。部品最長辺350mmも守ります。341mmの長板は一体で45度に寝かせます。蓋の位置決め段差には局所サポートが必要です。実際のBambu Studioスライス、サポート経路、キープアウト、反り、ASAの強度は未検証です。
+
+
+四壁の[Uniform通気孔](./ventilation.mdx)は締結穴とは独立しています。通気孔なしの旧[P3履歴](./print-files.mdx)も保存しています。

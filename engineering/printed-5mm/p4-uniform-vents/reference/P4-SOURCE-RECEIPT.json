@@ -59,5 +59,43 @@
       "path": "panels/uniform-wall-right.stl",
       "sha256": "aee9450742fa43ba782baa4cc4f572504305c93fe258bb0694d3231ea1c9e996"
     }
+  ],
+  "reference_inputs": [
+    {
+      "path": "reference/ACCEPTED-GEOMETRY.json",
+      "sha256": "935e11f7ea25a904744958cd54238c0cb8bb99dc151664d7c297cc5180f02afb"
+    },
+    {
+      "path": "reference/P2-PRINT-FILES.json",
+      "sha256": "7caaafdf084699747a666ce226adfed147ff8bc7e22a8899649c2dffa554d7b6"
+    },
+    {
+      "path": "reference/SOURCE-RECEIPT.json",
+      "sha256": "9752403db9439b00f8331cd43e3592ec884db4639e080e902b3d8b1cac0e2c22"
+    },
+    {
+      "path": "reference/lid-edge.stl",
+      "sha256": "37898c2fdf8f098df66aa5ed88c74cf437e77f5f72be8ab66bc5e785d0887692"
+    },
+    {
+      "path": "reference/rail-source/build_geometry.py",
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d"
+    },
+    {
+      "path": "reference/rail-source/design-parameters.json",
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b"
+    },
+    {
+      "path": "reference/rail-source/source-data/panels/panel-geometry.json",
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c"
+    },
+    {
+      "path": "reference/rail-source/source-data/rail40/rail_dimensions.json",
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210"
+    },
+    {
+      "path": "reference/rail-source/source-data/rail40/rail_mesh.json",
+      "sha256": "6ddbf622f9bcd8f4d1316d76ce2c55b4cecfb3c166de6f88826fda3bb19c2753"
+    }
   ]
 }

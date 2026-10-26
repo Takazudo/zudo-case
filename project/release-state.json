@@ -2575,9 +2575,10 @@
   },
   "current_printed_5mm_candidate": {
     "model": "7u40",
-    "revision": "P3-PRINTED-5MM-7U-RAILS",
+    "revision": "P4-PRINTED-5MM-UNIFORM-VENTS",
     "status": "HOME_PRINT_CANDIDATE_NOT_PHYSICALLY_VERIFIED",
     "production_approved": false,
-    "source": "engineering/printed-5mm/p3/"
+    "source": "engineering/printed-5mm/p4-uniform-vents/",
+    "registry": "project/printed-5mm/p4-uniform-vents/files.json"
   }
 }
