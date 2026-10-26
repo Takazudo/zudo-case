@@ -334,13 +334,13 @@
     },
     {
       "path": "engineering/printed-5mm/p4-uniform-vents/source/verify_browser.py",
-      "bytes": 12395,
-      "sha256": "541be7c006741b735407753bec40e0174bea18bf33455e866afdb96e00063939"
+      "bytes": 12592,
+      "sha256": "f1963cf228397d462bc4e8d170d3ca13c52c3e61e54e0870f04aafef6bef1ff2"
     },
     {
       "path": "engineering/printed-5mm/p4-uniform-vents/source/viewer-template.html",
-      "bytes": 55520,
-      "sha256": "94f8cb2b3c3c4de77204d2e055a99f383b7695bef78600b0ed49d11e8ccc3ad9"
+      "bytes": 55722,
+      "sha256": "502cb90f02c1b49513c6187a7afddda0956ec132cba8aa5e1bcc56edb91b667a"
     },
     {
       "path": "engineering/printed-5mm/p4-uniform-vents/uv.lock",
@@ -359,8 +359,8 @@
     },
     {
       "path": "public/downloads/candidate/printed-5mm-p4-uniform-vents-source.zip",
-      "bytes": 210632,
-      "sha256": "39f61516979676800e06285ac0e266ab38c7324f715603d13563a79aa19c440d"
+      "bytes": 210701,
+      "sha256": "d3954dfd090b9791caf094699fb386442105a37e97ff685c937d46d2e40398fb"
     },
     {
       "path": "public/downloads/candidate/printed-5mm-p4-uniform-vents-stl.zip",
@@ -369,8 +369,8 @@
     },
     {
       "path": "public/previews/printed-5mm-p4-uniform-vents.html",
-      "bytes": 10789726,
-      "sha256": "ba7a29228b9705d165f9969ebb6d57986732c415b36d280bedbbe02a73c24b69"
+      "bytes": 10789928,
+      "sha256": "1a91adc15736c51961323aafe1803cfb3e66b5e94cb1fe0e8044c4f9c3ce98ae"
     }
   ]
 }
