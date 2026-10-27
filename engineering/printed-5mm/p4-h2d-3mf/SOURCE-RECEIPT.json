@@ -1,0 +1,110 @@
+{
+  "revision": "P4-H2D-3MF-PLA06-R1",
+  "cad_revision": "P4-PRINTED-5MM-UNIFORM-VENTS",
+  "cad_commit": "0b498e69b52ef01be3fbe2086625aa9818aa6a54",
+  "skill_source": "Takazudo/claude-settings",
+  "skill_reference_revision": "b8d3ed5d181af33dce4d2cd64f968fededfa71cf",
+  "template_project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+  "studio_version": "02.08.02.61",
+  "studio_appimage_sha256": "d501b103fac5424513ec0e8d6bc145fb30719de2c7d94d7320d723740c81a7fd",
+  "sources": [
+    {
+      "path": "input-stl/floor-1.stl",
+      "sha256": "960f79d0d1b34ed1a3bacb60241a7439c102ce786c462c516a4c2e2cb2382a36",
+      "bytes": 113484
+    },
+    {
+      "path": "input-stl/floor-2.stl",
+      "sha256": "1fcf6b16fd6d2240b994914f8292620f9a6b862231a181877c534750ea609b2b",
+      "bytes": 113484
+    },
+    {
+      "path": "input-stl/lid-edge-back.stl",
+      "sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+      "bytes": 55884
+    },
+    {
+      "path": "input-stl/lid-edge-front.stl",
+      "sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+      "bytes": 55884
+    },
+    {
+      "path": "input-stl/lid-edge-left.stl",
+      "sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+      "bytes": 55884
+    },
+    {
+      "path": "input-stl/lid-edge-right.stl",
+      "sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+      "bytes": 55884
+    },
+    {
+      "path": "input-stl/lid-top-1.stl",
+      "sha256": "167a47149983924ba440e2c220781837f49a5cce56d0725b5774cf73f0c6f522",
+      "bytes": 77084
+    },
+    {
+      "path": "input-stl/lid-top-2.stl",
+      "sha256": "b056b7e864a9d779eda4a39a1c6c9b3986b6bff84eda59475e2a7aa842051599",
+      "bytes": 77084
+    },
+    {
+      "path": "input-stl/pad-horizontal.stl",
+      "sha256": "2a08d1088fec93f6bc380b2e1be37d9fcd1db7338895a5c2385278b7113ee065",
+      "bytes": 34084
+    },
+    {
+      "path": "input-stl/pad-vertical.stl",
+      "sha256": "0d27507cc73f7e07b6778dfd6997a6b6acf5757c773675004139d403af56db50",
+      "bytes": 34084
+    },
+    {
+      "path": "input-stl/wall-back.stl",
+      "sha256": "414473a2815ffd842dcfd5774c936370be9c2cab18031293fec28772b400e61f",
+      "bytes": 406684
+    },
+    {
+      "path": "input-stl/wall-front.stl",
+      "sha256": "414473a2815ffd842dcfd5774c936370be9c2cab18031293fec28772b400e61f",
+      "bytes": 406684
+    },
+    {
+      "path": "input-stl/wall-left.stl",
+      "sha256": "4d15c8063e646c0bda0d0d96475f20b197f3016015363ef2adc29daacdf6ecaf",
+      "bytes": 686684
+    },
+    {
+      "path": "input-stl/wall-right.stl",
+      "sha256": "494ed8932484aac785e55820f4ae8c042a81414933b89d3ffbcb1c59b1d2f350",
+      "bytes": 686684
+    },
+    {
+      "path": "input-stl/washer-round.stl",
+      "sha256": "e9dd796d2d49770481ccaed825a24c1f19ddf48a8aa1517442051df525c3ef06",
+      "bytes": 33684
+    },
+    {
+      "path": "cad-source/printed-5mm-p4-uniform-vents-source.zip",
+      "sha256": "d3954dfd090b9791caf094699fb386442105a37e97ff685c937d46d2e40398fb",
+      "bytes": 210701
+    },
+    {
+      "path": "template/h2d-empty-original.3mf",
+      "sha256": "0349a5f3759e8d42b8f9f0fd47b25c9110f90294e21104369e8d4d58bb8a2b59",
+      "bytes": 20419
+    },
+    {
+      "path": "template/h2d-empty-right.3mf",
+      "sha256": "b209e256d6e7d9b7689f91d2162a33179847649cad5960c3aa5405dc66adfd8f",
+      "bytes": 15887
+    }
+  ],
+  "helper_changes": [
+    "Serialize OPC relationships with default namespace so Studio can load them.",
+    "Use confirmed right nozzle rectangle only when H2D manual mapping assigns both slots to Right (2). Otherwise keep original common-area test.",
+    "Default template path follows this standalone package layout."
+  ],
+  "right_nozzle_source": "https://github.com/bambulab/BambuStudio/blob/v02.08.02.61/src/slic3r/GUI/FilamentMapPanel.cpp#L146",
+  "settings_scope": "Only the two long body walls use manual Right mapping; all process/material/nozzle diameter settings retained. Other thirteen types retain original template project settings bytes.",
+  "studio_thumbnail_limitation": "CLI OpenGL thumbnail initialization unavailable here. Supplied generated projects have no thumbnail references. Validation of Studio re-exports removes generated preview/cache references in memory only; model bytes and process settings remain unchanged."
+}

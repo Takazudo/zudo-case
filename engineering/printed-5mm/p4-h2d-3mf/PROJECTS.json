@@ -1,0 +1,381 @@
+{
+  "revision": "P4-H2D-3MF-PLA06-R1",
+  "unsliced": true,
+  "projects": [
+    {
+      "part": "floor-1",
+      "file": "projects/p4-floor-1-h2d-pla06.3mf",
+      "sha256": "fedba8d39a2fdbe7e6126ea1cdf115602915056eed5950aa0ae66dc576121bf2",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          56.8000030518,
+          69.8249969482,
+          0.0
+        ],
+        [
+          293.1999969478,
+          240.1750030522,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "floor-2",
+      "file": "projects/p4-floor-2-h2d-pla06.3mf",
+      "sha256": "840988d1692c8f29de9771a8e073571f66c1e927b1bd8f871f3100d10f230c04",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          56.8000030518,
+          69.8249969482,
+          0.0
+        ],
+        [
+          293.1999969478,
+          240.1750030522,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "wall-front",
+      "file": "projects/p4-wall-front-h2d-pla06.3mf",
+      "sha256": "8231b226c8014ddb1ef3b32ac89c51f3c69ef55039883df4e194a6e722506bf9",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          61.8000030518,
+          110.25,
+          0.0
+        ],
+        [
+          288.1999969478,
+          199.75,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "wall-back",
+      "file": "projects/p4-wall-back-h2d-pla06.3mf",
+      "sha256": "8a866264e4ad03810349f31235e313efa2f5d06e1476e924e8c99972e1898d19",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          61.8000030518,
+          110.25,
+          0.0
+        ],
+        [
+          288.1999969478,
+          199.75,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "wall-right",
+      "file": "projects/p4-wall-right-h2d-right-pla06.3mf",
+      "sha256": "7a65b7812e0e7ae3250e99f2b5c26454cb3287adee1b8dfe07dc62928f6a20ca",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": true,
+      "source_rotation_degrees": 45,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          35.5442161362,
+          5.0,
+          0.0
+        ],
+        [
+          339.45578386420004,
+          308.911567728,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "wall-left",
+      "file": "projects/p4-wall-left-h2d-right-pla06.3mf",
+      "sha256": "775696151c4efde1435bea951dac767befc999aa9d0e34bc7ce1f8a4e64db4ec",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": true,
+      "source_rotation_degrees": 45,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          35.5442161362,
+          5.0,
+          0.0
+        ],
+        [
+          339.45578386420004,
+          308.911567728,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "lid-edge-front",
+      "file": "projects/p4-lid-edge-front-h2d-pla06.3mf",
+      "sha256": "f012cb024927629a4a3440ab04456b4594de953d0d73b95e2f82b4bd636cc0bc",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          61.8000030518,
+          129.75,
+          0.0
+        ],
+        [
+          288.1999969478,
+          180.25,
+          10.3000001907
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "lid-edge-back",
+      "file": "projects/p4-lid-edge-back-h2d-pla06.3mf",
+      "sha256": "2a51a754d51ef42935fe7f7c5ff18680d6261d96bb460eaa8898c19992ffc8f2",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          61.8000030518,
+          129.75,
+          0.0
+        ],
+        [
+          288.1999969478,
+          180.25,
+          10.3000001907
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "lid-edge-right",
+      "file": "projects/p4-lid-edge-right-h2d-pla06.3mf",
+      "sha256": "1d8a03b5c66a048ea871c1b28bdc1d218bdafa3af987f2b7b75c913593d25c12",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 45,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          39.4844474595,
+          19.4844474595,
+          0.0
+        ],
+        [
+          310.51555254050004,
+          290.51555254050004,
+          10.3000001907
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "lid-edge-left",
+      "file": "projects/p4-lid-edge-left-h2d-pla06.3mf",
+      "sha256": "5c255d7c7ab27f3e74959016fa215e77f8debf0f622eba7fc12bb243e47dad61",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 45,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          39.4844474595,
+          19.4844474595,
+          0.0
+        ],
+        [
+          310.51555254050004,
+          290.51555254050004,
+          10.3000001907
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "lid-top-1",
+      "file": "projects/p4-lid-top-1-h2d-pla06.3mf",
+      "sha256": "af66fb7285a7c80ebe5694da550a0d8f0a5773d8b82b15a4b5be6a998139253a",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          62.0999984741,
+          72.4749984741,
+          0.0
+        ],
+        [
+          287.90000152609997,
+          237.5250015261,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "lid-top-2",
+      "file": "projects/p4-lid-top-2-h2d-pla06.3mf",
+      "sha256": "f2895791705699d8f3d3c86f98d0f6fbadae6c312742b2792f47d9c1a8d398f5",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          62.0999984741,
+          72.4749984741,
+          0.0
+        ],
+        [
+          287.90000152609997,
+          237.5250015261,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "pad-horizontal",
+      "file": "projects/p4-pad-horizontal-h2d-pla06.3mf",
+      "sha256": "7897c84e81448bd044351a44790a4a40e6873098dd3a3a3e7b6116643dbc4320",
+      "objects_in_project": 1,
+      "structural": false,
+      "quantity_in_p4_inventory": 48,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          165.0,
+          149.0,
+          0.0
+        ],
+        [
+          185.0,
+          161.0,
+          1.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "pad-vertical",
+      "file": "projects/p4-pad-vertical-h2d-pla06.3mf",
+      "sha256": "02877a871c60c398d6b7458787b792ccd2d7fe5c82f40db26048742865b29918",
+      "objects_in_project": 1,
+      "structural": false,
+      "quantity_in_p4_inventory": 48,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          169.0,
+          145.0,
+          0.0
+        ],
+        [
+          181.0,
+          165.0,
+          1.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    },
+    {
+      "part": "washer-round",
+      "file": "projects/p4-washer-round-h2d-pla06.3mf",
+      "sha256": "358d591ed98b2fa4ae4a3cbc0204ab05ee34e0601445388d1afd0c5c989898a8",
+      "objects_in_project": 1,
+      "structural": false,
+      "quantity_in_p4_inventory": 28,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          170.0,
+          150.0,
+          0.0
+        ],
+        [
+          180.0,
+          160.0,
+          1.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": true,
+      "studio_load_export_verified": true
+    }
+  ]
+}

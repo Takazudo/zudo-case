@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "title": "P4 floor-2 / H2D / unsliced",
+  "description": "P4 geometry unchanged. Settings retained; user will configure print details. No toolpaths.",
+  "margin_mm": 5,
+  "gap_mm": 6,
+  "objects": [
+    {
+      "name": "P4 floor-2",
+      "mesh": "../input-stl/floor-2.stl",
+      "filament": 1,
+      "position_mm": [
+        56.80000305175781,
+        69.82499694824219
+      ],
+      "rotate_z_degrees": 0
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "title": "P4 pad-horizontal / H2D / unsliced",
+  "description": "P4 geometry unchanged. Settings retained; user will configure print details. No toolpaths.",
+  "margin_mm": 5,
+  "gap_mm": 6,
+  "objects": [
+    {
+      "name": "P4 pad-horizontal",
+      "mesh": "../input-stl/pad-horizontal.stl",
+      "filament": 1,
+      "position_mm": [
+        165.0,
+        149.0
+      ],
+      "rotate_z_degrees": 0
+    }
+  ]
+}

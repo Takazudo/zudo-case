@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "title": "P4 lid-edge-front / H2D / unsliced",
+  "description": "P4 geometry unchanged. Settings retained; user will configure print details. No toolpaths.",
+  "margin_mm": 5,
+  "gap_mm": 6,
+  "objects": [
+    {
+      "name": "P4 lid-edge-front",
+      "mesh": "../input-stl/lid-edge-front.stl",
+      "filament": 1,
+      "position_mm": [
+        61.80000305175781,
+        129.75
+      ],
+      "rotate_z_degrees": 0
+    }
+  ]
+}

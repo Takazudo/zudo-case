@@ -1,0 +1,70 @@
+{
+  "generated": {
+    "status": "structural_checks_passed",
+    "build_items": [
+      {
+        "object_id": "2",
+        "instance_id": 0,
+        "bounds_mm": [
+          [
+            61.8000030518,
+            129.75,
+            0.0
+          ],
+          [
+            288.1999969478,
+            180.25,
+            10.3000001907
+          ]
+        ]
+      }
+    ],
+    "meshes": [
+      {
+        "model": "3D/3dmodel.model",
+        "object_id": "1",
+        "vertices": 556,
+        "triangles": 1116,
+        "signed_volume_mm3": 64379.68667
+      }
+    ],
+    "layout_checked": true,
+    "contains_toolpaths": false,
+    "not_checked": [
+      "Bambu Studio load/slicing",
+      "self-intersections",
+      "wall thickness and fit",
+      "support/brim/prime tower clearance",
+      "sequential-print toolhead clearance"
+    ],
+    "settings_changes": {},
+    "settings_bytes_unchanged": true,
+    "removed_cached_members": [
+      "Metadata/filament_sequence.json",
+      "Metadata/pick_1.png",
+      "Metadata/plate_1.png",
+      "Metadata/plate_1_small.png",
+      "Metadata/plate_no_light_1.png",
+      "Metadata/slice_info.config",
+      "Metadata/top_1.png"
+    ],
+    "original_template_changed_keys": []
+  },
+  "studio": {
+    "verified": true,
+    "version": "02.08.02.61",
+    "exit_code": 0,
+    "generated_settings_unchanged": true,
+    "added_bookkeeping_keys": [
+      "different_settings_to_system",
+      "filament_map_2",
+      "inherits_group"
+    ],
+    "geometry_bounds_preserved_tolerance_mm": 0.002,
+    "triangles_preserved": true,
+    "contains_toolpaths": false,
+    "slicing_performed": false,
+    "thumbnail_generation_verified": false,
+    "validation_copy_generated_preview_references_removed": true
+  }
+}
