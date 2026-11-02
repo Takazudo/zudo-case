@@ -1,12 +1,12 @@
 """Regenerate unsliced projects twice and compare every delivered byte."""
 from pathlib import Path
-import argparse,tempfile,subprocess,sys,zipfile
+import argparse,tempfile,subprocess,sys,zipfile,os
 root=Path(__file__).resolve().parent
 p=argparse.ArgumentParser();p.add_argument('--cad',required=True,type=Path);p.add_argument('--published-root',type=Path);a=p.parse_args()
 with tempfile.TemporaryDirectory() as tmp:
     tmp=Path(tmp)
-    for name in ('first','second'):
-        subprocess.run([sys.executable,str(root/'build.py'),'--cad',str(a.cad),'--out',str(tmp/name)],check=True)
+    for seed,name in enumerate(('first','second'),1):
+        subprocess.run([sys.executable,str(root/'build.py'),'--cad',str(a.cad),'--out',str(tmp/name)],check=True,env=os.environ|{'PYTHONHASHSEED':str(seed)})
     for f in (tmp/'first').rglob('*'):
         if not f.is_file():continue
         rel=f.relative_to(tmp/'first')

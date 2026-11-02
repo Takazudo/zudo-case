@@ -571,7 +571,7 @@ def validate_project(data, template_data=None, layout=False):
     if template_data is not None:
         old = settings(template_data)
         report['settings_changes'] = {k: {'before': old.get(k), 'after': d.get(k)}
-                  for k in old.keys() | d.keys() if old.get(k) != d.get(k)}
+                  for k in sorted(old.keys() | d.keys()) if old.get(k) != d.get(k)}
         report['settings_bytes_unchanged'] = data[SETTINGS] == template_data[SETTINGS]
     return report
 
