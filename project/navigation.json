@@ -224,7 +224,7 @@
   {
     "path": "printed-5mm/index.mdx",
     "title": "7U40・5mm家庭印刷ケース",
-    "description": "金属R10と独立したP4家庭印刷版の設計・プレビュー・印刷ファイル。",
+    "description": "金属R10と独立したP5家庭印刷版の設計・プレビュー・印刷ファイル。",
     "sidebar_position": 45
   },
   {
@@ -244,6 +244,24 @@
     "title": "P4印刷ファイルと手順",
     "description": "家庭印刷用STL、編集ソース、印刷枚数と確認範囲。",
     "sidebar_position": 31
+  },
+  {
+    "path": "printed-5mm/p5-design.mdx",
+    "title": "P5・J3差し込み接合",
+    "description": "本体6枚の一体タブと閉じた受け穴、保持するフタと元レール。",
+    "sidebar_position": 12
+  },
+  {
+    "path": "printed-5mm/p5-preview.mdx",
+    "title": "P5・3Dプレビュー",
+    "description": "J3接合・側板輪郭・フタ整列と元レールを同一CADで確認。",
+    "sidebar_position": 22
+  },
+  {
+    "path": "printed-5mm/p5-print-files.mdx",
+    "title": "P5・STL/STEPとH2D 3MF",
+    "description": "本体6枚を同時交換する印刷一式、再生成ソースと未スライスPLA06プロジェクト。",
+    "sidebar_position": 32
   },
   {
     "path": "printed-5mm/preview.mdx",

@@ -1,0 +1,411 @@
+{
+  "revision": "P5-H2D-3MF-PLA06-R1",
+  "unsliced": true,
+  "projects": [
+    {
+      "part": "floor-1",
+      "file": "projects/p5-floor-1-h2d-pla06.3mf",
+      "sha256": "f6b5eb53139bc2b06badac1ebfd3541a0085a468558e009090305d388debf8f7",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          57.0999984741,
+          69.8249969482,
+          0.0
+        ],
+        [
+          292.90000152609997,
+          240.1750030522,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "fc7b735adaa38e7700199add548995395f2e95f02185d42a9c622fa85ede9ed7",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "floor-2",
+      "file": "projects/p5-floor-2-h2d-pla06.3mf",
+      "sha256": "fda94cf98211cdcbd3c89fa0a0154d69e8345d4b94fad8e15af81f106d3727f6",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          57.0999984741,
+          69.8249969482,
+          0.0
+        ],
+        [
+          292.90000152609997,
+          240.1750030522,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "506afa6ed568a951de97511923c82844966085daacd5cae1bbceac9f9ffa8df7",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "wall-front",
+      "file": "projects/p5-wall-front-h2d-pla06.3mf",
+      "sha256": "7ebcdc2139c380ce8c51179a936384c9a7478bc95cfedf665f311c9942b9b378",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          57.0999984741,
+          110.25,
+          0.0
+        ],
+        [
+          292.90000152609997,
+          199.75,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "a9453365b665a820835be8b44a57f6ad6e6abe372091ffc0727edc3b47ee21d1",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "wall-back",
+      "file": "projects/p5-wall-back-h2d-pla06.3mf",
+      "sha256": "1bd9e1cd1079f1d376dd748da841699e16838b0b82fe68df731fa1cf539526fe",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          57.0999984741,
+          110.25,
+          0.0
+        ],
+        [
+          292.90000152609997,
+          199.75,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "3bb220b3339960337ac247c4d909da1786b631a958423ef14ab2955b223ef060",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "wall-right",
+      "file": "projects/p5-wall-right-h2d-right-pla06.3mf",
+      "sha256": "a493ba03c299131087e991ce79f02c22f5c1288b88908774c8f2fb8c902549a4",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": true,
+      "source_rotation_degrees": 45,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          32.4145355225,
+          4.91453168797,
+          0.0
+        ],
+        [
+          342.5854644775,
+          315.08546831197,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "5c29527d8ea17ecbc6c9a5fcf670b8a7ac314b780170c449a2c973c59e5b6bde",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "wall-left",
+      "file": "projects/p5-wall-left-h2d-right-pla06.3mf",
+      "sha256": "9e5b8b028b660b7895b220e102be2cee42b6c2c7508cb2f3eeec52fd9e52c757",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": true,
+      "source_rotation_degrees": 45,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          32.4145355225,
+          4.91453168797,
+          0.0
+        ],
+        [
+          342.5854644775,
+          315.08546831197,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "8a069d918b30610a0fc9f3d4ae482f4ab196506d0d50dcb4a4efd1473c8a7800",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "lid-edge-front",
+      "file": "projects/p5-lid-edge-front-h2d-pla06.3mf",
+      "sha256": "9faef8569c3d456c97661a35e4a65cbad5c6c7a686feac90cd5546a031290107",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          61.8000030518,
+          129.75,
+          0.0
+        ],
+        [
+          288.1999969478,
+          180.25,
+          10.3000001907
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "lid-edge-back",
+      "file": "projects/p5-lid-edge-back-h2d-pla06.3mf",
+      "sha256": "090c198ab7b57fef3072d6139bad8fa82db29f32e5d1d9495b59c29b67604b29",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          61.8000030518,
+          129.75,
+          0.0
+        ],
+        [
+          288.1999969478,
+          180.25,
+          10.3000001907
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "lid-edge-right",
+      "file": "projects/p5-lid-edge-right-h2d-pla06.3mf",
+      "sha256": "060c4cb54e0c78db81f2440013a08efe6ab58c2fde2fb87fa03f61c7c65e8160",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 45,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          39.4844474595,
+          19.4844474595,
+          0.0
+        ],
+        [
+          310.51555254050004,
+          290.51555254050004,
+          10.3000001907
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "lid-edge-left",
+      "file": "projects/p5-lid-edge-left-h2d-pla06.3mf",
+      "sha256": "6627c69c9ce324a30b66a96d776b9a9495bee21815dc23c32f5acf0010a52ac1",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 45,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          39.4844474595,
+          19.4844474595,
+          0.0
+        ],
+        [
+          310.51555254050004,
+          290.51555254050004,
+          10.3000001907
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "lid-top-1",
+      "file": "projects/p5-lid-top-1-h2d-pla06.3mf",
+      "sha256": "50914e0bb10f1d21fb4a86027726a4e25f5b61bba4e6fec15fefadef049fe371",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          62.0999984741,
+          72.4749984741,
+          0.0
+        ],
+        [
+          287.90000152609997,
+          237.5250015261,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "167a47149983924ba440e2c220781837f49a5cce56d0725b5774cf73f0c6f522",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "lid-top-2",
+      "file": "projects/p5-lid-top-2-h2d-pla06.3mf",
+      "sha256": "841bf139d6df6ebbfddf3d2eeb4034760ae7f882a4cfab08e651dafa0cee2019",
+      "objects_in_project": 1,
+      "structural": true,
+      "quantity_in_p4_inventory": 1,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          62.0999984741,
+          72.4749984741,
+          0.0
+        ],
+        [
+          287.90000152609997,
+          237.5250015261,
+          5.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "b056b7e864a9d779eda4a39a1c6c9b3986b6bff84eda59475e2a7aa842051599",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "pad-horizontal",
+      "file": "projects/p5-pad-horizontal-h2d-pla06.3mf",
+      "sha256": "9bcbca86e23023be615dfccc682fba605850df9d67e9d50cb1c6aef3775d5845",
+      "objects_in_project": 1,
+      "structural": false,
+      "quantity_in_p4_inventory": 48,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          165.0,
+          149.0,
+          0.0
+        ],
+        [
+          185.0,
+          161.0,
+          1.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "2a08d1088fec93f6bc380b2e1be37d9fcd1db7338895a5c2385278b7113ee065",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "pad-vertical",
+      "file": "projects/p5-pad-vertical-h2d-pla06.3mf",
+      "sha256": "05b833d750e605af768e6c55af191bc805293f07a5122956ec26baeee759b855",
+      "objects_in_project": 1,
+      "structural": false,
+      "quantity_in_p4_inventory": 48,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          169.0,
+          145.0,
+          0.0
+        ],
+        [
+          181.0,
+          165.0,
+          1.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "0d27507cc73f7e07b6778dfd6997a6b6acf5757c773675004139d403af56db50",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    },
+    {
+      "part": "washer-round",
+      "file": "projects/p5-washer-round-h2d-pla06.3mf",
+      "sha256": "4c5882448633af7d2eff9d4224d9d61c05c383bb78973184f3721568778648ce",
+      "objects_in_project": 1,
+      "structural": false,
+      "quantity_in_p4_inventory": 28,
+      "right_only": false,
+      "source_rotation_degrees": 0,
+      "additional_rotation_degrees": 0,
+      "bed_bounds_mm": [
+        [
+          170.0,
+          150.0,
+          0.0
+        ],
+        [
+          180.0,
+          160.0,
+          1.0
+        ]
+      ],
+      "settings_bytes_unchanged_from_original_template": false,
+      "source_stl_sha256": "e9dd796d2d49770481ccaed825a24c1f19ddf48a8aa1517442051df525c3ef06",
+      "brim_mm": 0,
+      "studio_load_export_verified": false
+    }
+  ]
+}

@@ -27,13 +27,13 @@ if a.published_root:
     mapping={}
     for file in (out/'stl').glob('*.stl'): mapping[file]=repo/'engineering/printed-5mm/p5-tab-joints/out/stl'/file.name
     for file in (out/'step').glob('*.step'): mapping[file]=repo/'engineering/printed-5mm/p5-tab-joints/out/step'/file.name
-    for name in ('BOM.json','PRINT-PARTS.csv','PRINT-START-HERE.md','DIMENSIONS.json','accepted-geometry-comparison.json','VENTILATION.json','PRINT-MAPPING.json'):
+    for name in ('BOM.json','PRINT-PARTS.csv','PRINT-START-HERE.md','DIMENSIONS.json','accepted-geometry-comparison.json','VENTILATION.json','PRINT-MAPPING.json','JOINTS.json'):
         mapping[out/name]=repo/'engineering/printed-5mm/p5-tab-joints/out'/name
-    for name in ('geometry-checks.json','rail-geometry-checks.json','print-bed-checks.json'):
+    for name in ('geometry-checks.json','rail-geometry-checks.json','print-bed-checks.json','joint-checks.json'):
         mapping[out/'evidence'/name]=repo/'engineering/printed-5mm/p5-tab-joints/out'/name
     mapping[out/'reference/RAIL-PLACEMENT.json']=repo/'engineering/printed-5mm/p5-tab-joints/out/RAIL-PLACEMENT.json'
     mapping[out/'zudo-case-printed-5mm-p5-tab-joints.html']=repo/'public/previews/printed-5mm-p5-tab-joints.html'
-    for name in ('printed-5mm-p5-tab-joints-stl.zip','printed-5mm-p5-tab-joints-source.zip'):
+    for name in ('printed-5mm-p5-tab-joints-stl.zip','printed-5mm-p5-tab-joints-source.zip','printed-5mm-p5-tab-joints-body.zip'):
         mapping[out/name]=repo/'public/downloads/candidate'/name
     for generated,published in mapping.items():
         assert hashlib.sha256(generated.read_bytes()).digest()==hashlib.sha256(published.read_bytes()).digest(),published
@@ -60,3 +60,17 @@ if a.published_root:
             for ext in ('step','stl'):
                 assert (out/ext/(pid+'.'+ext)).read_bytes()==(repo/'engineering/printed-5mm/p3/out'/ext/(pid+'.'+ext)).read_bytes(),pid
 print('P4 vents and P3/R10 preservation verified')
+
+assert len(json.loads((out/'evidence/joint-checks.json').read_text()))>=100
+assert model['joint']['receiver_count']==model['joint']['integral_tab_count']==16
+assert model['parameters']['printer']['brim_allowance_each_side']==0
+assert all(p['fits_single_nozzle_rect'] for p in model['parts'])
+with zipfile.ZipFile(out/'printed-5mm-p5-tab-joints-body.zip') as z:
+    assert len(z.namelist())==len(set(z.namelist()))
+    assert len([n for n in z.namelist() if n.endswith('.stl')])==6
+    assert len([n for n in z.namelist() if n.endswith('.step')])==6
+    for name in z.namelist():assert z.read(name)==(out/name).read_bytes()
+if a.published_root:
+    for f in json.loads((out/'reference/P5-BASELINE.json').read_text())['files']:
+        assert hashlib.sha256((repo/f['path']).read_bytes()).hexdigest()==f['sha256'],f['path']
+print('P5 J3 joints and P3/P4/3MF/R10 preservation verified')

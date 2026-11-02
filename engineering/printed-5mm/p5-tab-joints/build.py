@@ -96,7 +96,7 @@ def main():
     (out/'PRINT-START-HERE.md').write_text(start)
     print_files=[out/folder/f'{p}.{folder}' for p in print_ids for folder in ('stl','step')]
     source_files=[p for p in (out/'source').iterdir() if p.is_file() and p.name!='model.json']+[p for p in (out/'reference').rglob('*') if p.is_file()]+[out/'PRINT-START-HERE.md']+[out/name for name in ('build.py','verify.py','negative.py','validate_parameters.py','regenerate.py','pyproject.toml','uv.lock','.python-version','README.md')]
-    zip_files(out/'printed-5mm-p5-tab-joints-stl.zip',out,print_files+[out/'PRINT-START-HERE.md',out/'BOM.json',out/'PRINT-PARTS.csv',out/'PRINT-MAPPING.json',out/'VENTILATION.json',out/'reference/P4-SOURCE-RECEIPT.json'])
+    zip_files(out/'printed-5mm-p5-tab-joints-stl.zip',out,print_files+[out/'PRINT-START-HERE.md',out/'BOM.json',out/'PRINT-PARTS.csv',out/'PRINT-MAPPING.json',out/'VENTILATION.json',out/'JOINTS.json',out/'reference/accepted-j3/RECEIPT.json',out/'reference/P4-SOURCE-RECEIPT.json'])
     zip_files(out/'printed-5mm-p5-tab-joints-source.zip',out,source_files)
     zip_files(out/'printed-5mm-p5-tab-joints-body.zip',out,[f for f in print_files if f.stem.startswith(('wall-','floor-'))]+[out/'PRINT-START-HERE.md',out/'PRINT-MAPPING.json'])
     artifacts=[p for p in out.rglob('*') if p.is_file() and p.name!='outputs-manifest.json' and '__pycache__' not in p.parts]

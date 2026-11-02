@@ -1,0 +1,97 @@
+{
+  "generated": {
+    "status": "structural_checks_passed",
+    "build_items": [
+      {
+        "object_id": "2",
+        "instance_id": 0,
+        "bounds_mm": [
+          [
+            32.4145355225,
+            4.91453168797,
+            0.0
+          ],
+          [
+            342.5854644775,
+            315.08546831197,
+            5.0
+          ]
+        ]
+      }
+    ],
+    "meshes": [
+      {
+        "model": "3D/3dmodel.model",
+        "object_id": "1",
+        "vertices": 8224,
+        "triangles": 16628,
+        "signed_volume_mm3": 151675.624558
+      }
+    ],
+    "layout_checked": true,
+    "contains_toolpaths": false,
+    "not_checked": [
+      "Bambu Studio load/slicing",
+      "self-intersections",
+      "wall thickness and fit",
+      "support/brim/prime tower clearance",
+      "sequential-print toolhead clearance"
+    ],
+    "settings_changes": {
+      "brim_type": {
+        "before": "auto_brim",
+        "after": "no_brim"
+      },
+      "brim_width": {
+        "before": "5",
+        "after": "0"
+      }
+    },
+    "settings_bytes_unchanged": false,
+    "removed_cached_members": [
+      "Metadata/filament_sequence.json",
+      "Metadata/pick_1.png",
+      "Metadata/plate_1.png",
+      "Metadata/plate_1_small.png",
+      "Metadata/plate_no_light_1.png",
+      "Metadata/slice_info.config",
+      "Metadata/top_1.png"
+    ],
+    "source_mesh_fingerprint": "f9291f2241d5a0443870d14323a123e04b7514ce5544c225153f5693a7d8b26d",
+    "mesh_identity_verified": true,
+    "original_template_changed_keys": [
+      "brim_type",
+      "brim_width",
+      "filament_map",
+      "filament_map_mode"
+    ],
+    "settings_diff": {
+      "brim_type": {
+        "before": "auto_brim",
+        "after": "no_brim"
+      },
+      "brim_width": {
+        "before": "5",
+        "after": "0"
+      },
+      "filament_map": {
+        "before": [
+          "1",
+          "1"
+        ],
+        "after": [
+          "2",
+          "2"
+        ]
+      },
+      "filament_map_mode": {
+        "before": "Auto For Flush",
+        "after": "Manual"
+      }
+    }
+  },
+  "studio": {
+    "verified": false,
+    "status": "NOT RUN: Studio executable unavailable"
+  }
+}

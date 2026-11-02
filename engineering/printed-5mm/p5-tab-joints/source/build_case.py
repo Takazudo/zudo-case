@@ -72,9 +72,9 @@ def record(s,id,name,cat,*,note='',ex=(0,0,0),group='body',local=None,angle=0,ma
  parts.append(row);breps[id]=s
  if printit:
   orient=local if local is not None else s
-  bb=orient.BoundingBox();orient=orient.translate((-bb.xmin,-bb.ymin,-bb.zmin))
+  bb=orient.BoundingBox();first_translation=[-bb.xmin,-bb.ymin,-bb.zmin];orient=orient.translate(tuple(first_translation))
   ob=orient.BoundingBox();dim=[ob.xlen,ob.ylen,ob.zlen]
-  placed=orient.rotate((0,0,0),(0,0,1),angle);pb=placed.BoundingBox();placed=placed.translate((-pb.xmin,-pb.ymin,-pb.zmin))
+  placed=orient.rotate((0,0,0),(0,0,1),angle);pb=placed.BoundingBox();last_translation=[-pb.xmin,-pb.ymin,-pb.zmin];placed=placed.translate(tuple(last_translation))
   pb=placed.BoundingBox();dims=[pb.xlen,pb.ylen,pb.zlen];brim=P['printer']['brim_allowance_each_side'];xy=[dims[0]+2*brim,dims[1]+2*brim]
   fit=xy[0]<=325+1e-6 and xy[1]<=320+1e-6 and dims[2]<=325
   check('flat placement without brim '+id,fit,footprint=[round(x,4) for x in xy])
@@ -88,8 +88,10 @@ def record(s,id,name,cat,*,note='',ex=(0,0,0),group='body',local=None,angle=0,ma
    m.export(ROOT/'stl'/f'{id}.stl')
    m=trimesh.load(ROOT/'stl'/f'{id}.stl',force='mesh')
   check('readback STL '+id,m.is_watertight and m.is_winding_consistent and m.volume>0)
+  check('STL volume and print coordinates '+id,abs(m.volume-placed.Volume())<max(.3,placed.Volume()*.0002) and np.allclose(m.bounds,[[pb.xmin,pb.ymin,pb.zmin],[pb.xmax,pb.ymax,pb.zmax]],atol=.005))
   read=cq.importers.importStep(str(ROOT/'step'/f'{id}.step')).val();check('readback STEP '+id,read.isValid() and abs(read.Volume()-s.Volume())<max(1e-3,s.Volume()*1e-6))
   plan={'id':id,'name':name,'native_print_dimensions_mm':[round(x,4) for x in dim],'rotation_degrees':angle,'bed_footprint_mm':[round(x,4) for x in dims], 'footprint_with_brim_mm':[round(x,4) for x in xy], 'fits_single_nozzle_rect':fit,'quantity':1,'file':f'stl/{id}.stl','volume_mm3':round(s.Volume(),3),'note':note}
+  plan['assembly_to_print']={'wall_face':id.split('-')[-1] if id.startswith(('wall-','lid-edge-')) else None,'wall_operation':'inverse FACES plane, then rotate X 180deg' if id.startswith(('wall-','lid-edge-')) else 'identity','translate_before_rotation_mm':first_translation,'rotate_z_deg':angle,'translate_after_rotation_mm':last_translation,'scale':1,'units':'mm'}
   row['print']=plan;printed.append(plan)
   # Centre actual oriented STL geometry in the true single-nozzle rectangle.
   centered=placed.translate((-dims[0]/2,-dims[1]/2,.2))
@@ -344,6 +346,7 @@ for k,(x,y,a) in enumerate(fh):
  region=box(x-7,x+7,y-7,y+7,-1,6)
  for pid in ('floor-1','floor-2'):
   old=baseline_breps[pid].intersect(region);new=breps[pid].intersect(region)
+  if old.Volume()<1e-7 and new.Volume()<1e-7:continue
   check(f'P5 retained floor seat {pid}/{k}',old.cut(new).Volume()+new.cut(old).Volume()<1e-5)
 body_ids=['wall-front','wall-back','wall-left','wall-right','floor-1','floor-2']
 for p in parts:

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "title": "P5 lid-edge-back / H2D / unsliced",
+  "description": "P5 geometry unchanged. Settings retained; user will configure print details. No toolpaths.",
+  "margin_mm": 0,
+  "settings": {
+    "brim_type": "no_brim",
+    "brim_width": "0"
+  },
+  "gap_mm": 6,
+  "objects": [
+    {
+      "name": "P5 lid-edge-back",
+      "mesh": "../input-stl/lid-edge-back.stl",
+      "filament": 1,
+      "position_mm": [
+        61.80000305175781,
+        129.75
+      ],
+      "rotate_z_degrees": 0
+    }
+  ]
+}

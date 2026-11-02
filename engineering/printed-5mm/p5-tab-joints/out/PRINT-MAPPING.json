@@ -1,0 +1,302 @@
+[
+  {
+    "part": "floor-1",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/floor-1.stl",
+    "p4_sha256": "960f79d0d1b34ed1a3bacb60241a7439c102ce786c462c516a4c2e2cb2382a36",
+    "p5_path": "stl/floor-1.stl",
+    "p5_sha256": "fc7b735adaa38e7700199add548995395f2e95f02185d42a9c622fa85ede9ed7",
+    "unchanged_bytes": false,
+    "change": "J3 tab joint"
+  },
+  {
+    "part": "floor-1",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/floor-1.step",
+    "p4_sha256": "23b5fef12d3afb4d8a24001a9f8678689436a20271b0ddf451697eccbc694566",
+    "p5_path": "step/floor-1.step",
+    "p5_sha256": "765df4e431a9e9708163062e8f4bb1c51392f63cb1fd472d3598d49ba5a89fc4",
+    "unchanged_bytes": false,
+    "change": "J3 tab joint"
+  },
+  {
+    "part": "floor-2",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/floor-2.stl",
+    "p4_sha256": "1fcf6b16fd6d2240b994914f8292620f9a6b862231a181877c534750ea609b2b",
+    "p5_path": "stl/floor-2.stl",
+    "p5_sha256": "506afa6ed568a951de97511923c82844966085daacd5cae1bbceac9f9ffa8df7",
+    "unchanged_bytes": false,
+    "change": "J3 tab joint"
+  },
+  {
+    "part": "floor-2",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/floor-2.step",
+    "p4_sha256": "bd800b01f594f680aa8311fa396b76b6bf0182821d2769b8992535027912edde",
+    "p5_path": "step/floor-2.step",
+    "p5_sha256": "549db08cf5985f8bce260f095205cbed56d37500d2d77b229f9947998256bdfa",
+    "unchanged_bytes": false,
+    "change": "J3 tab joint"
+  },
+  {
+    "part": "lid-edge-back",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/lid-edge-back.stl",
+    "p4_sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+    "p5_path": "stl/lid-edge-back.stl",
+    "p5_sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-back",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/lid-edge-back.step",
+    "p4_sha256": "e4266c63362b94c860fdc2de8600804cbf12b5f5f7972468c503eed787eec7da",
+    "p5_path": "step/lid-edge-back.step",
+    "p5_sha256": "e4266c63362b94c860fdc2de8600804cbf12b5f5f7972468c503eed787eec7da",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-front",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/lid-edge-front.stl",
+    "p4_sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+    "p5_path": "stl/lid-edge-front.stl",
+    "p5_sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-front",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/lid-edge-front.step",
+    "p4_sha256": "8a46eeeb917e5b9d0e15c94b7cf04e1260b10b075bbde6b4610b6d8638012eac",
+    "p5_path": "step/lid-edge-front.step",
+    "p5_sha256": "8a46eeeb917e5b9d0e15c94b7cf04e1260b10b075bbde6b4610b6d8638012eac",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-left",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/lid-edge-left.stl",
+    "p4_sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+    "p5_path": "stl/lid-edge-left.stl",
+    "p5_sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-left",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/lid-edge-left.step",
+    "p4_sha256": "c598366c95962d8ec9d151e032b2651e94ed1949b1a96eab2c72982e7d6be0ea",
+    "p5_path": "step/lid-edge-left.step",
+    "p5_sha256": "c598366c95962d8ec9d151e032b2651e94ed1949b1a96eab2c72982e7d6be0ea",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-right",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/lid-edge-right.stl",
+    "p4_sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+    "p5_path": "stl/lid-edge-right.stl",
+    "p5_sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-edge-right",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/lid-edge-right.step",
+    "p4_sha256": "edbbaf7a765486a2ef96b04d561efbb9a93c4cfba69da21bf90bd37b0757c812",
+    "p5_path": "step/lid-edge-right.step",
+    "p5_sha256": "edbbaf7a765486a2ef96b04d561efbb9a93c4cfba69da21bf90bd37b0757c812",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-top-1",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/lid-top-1.stl",
+    "p4_sha256": "167a47149983924ba440e2c220781837f49a5cce56d0725b5774cf73f0c6f522",
+    "p5_path": "stl/lid-top-1.stl",
+    "p5_sha256": "167a47149983924ba440e2c220781837f49a5cce56d0725b5774cf73f0c6f522",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-top-1",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/lid-top-1.step",
+    "p4_sha256": "e425f3590970abe3679f4864b48fe91cd3fb1f9e9838d72323064960cf9ad6bf",
+    "p5_path": "step/lid-top-1.step",
+    "p5_sha256": "e425f3590970abe3679f4864b48fe91cd3fb1f9e9838d72323064960cf9ad6bf",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-top-2",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/lid-top-2.stl",
+    "p4_sha256": "b056b7e864a9d779eda4a39a1c6c9b3986b6bff84eda59475e2a7aa842051599",
+    "p5_path": "stl/lid-top-2.stl",
+    "p5_sha256": "b056b7e864a9d779eda4a39a1c6c9b3986b6bff84eda59475e2a7aa842051599",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "lid-top-2",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/lid-top-2.step",
+    "p4_sha256": "d451b11bbd91b6e9fcbdd27271fb69663d965fd5573a1684fc4ffbd2892880d4",
+    "p5_path": "step/lid-top-2.step",
+    "p5_sha256": "d451b11bbd91b6e9fcbdd27271fb69663d965fd5573a1684fc4ffbd2892880d4",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "pad-horizontal",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/pad-horizontal.stl",
+    "p4_sha256": "2a08d1088fec93f6bc380b2e1be37d9fcd1db7338895a5c2385278b7113ee065",
+    "p5_path": "stl/pad-horizontal.stl",
+    "p5_sha256": "2a08d1088fec93f6bc380b2e1be37d9fcd1db7338895a5c2385278b7113ee065",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "pad-horizontal",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/pad-horizontal.step",
+    "p4_sha256": "374e5368a8138f672d25a8ed972c8a66e69389939f43cd307d4efeb2ff0862df",
+    "p5_path": "step/pad-horizontal.step",
+    "p5_sha256": "374e5368a8138f672d25a8ed972c8a66e69389939f43cd307d4efeb2ff0862df",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "pad-vertical",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/pad-vertical.stl",
+    "p4_sha256": "0d27507cc73f7e07b6778dfd6997a6b6acf5757c773675004139d403af56db50",
+    "p5_path": "stl/pad-vertical.stl",
+    "p5_sha256": "0d27507cc73f7e07b6778dfd6997a6b6acf5757c773675004139d403af56db50",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "pad-vertical",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/pad-vertical.step",
+    "p4_sha256": "191c4c79a86164ef37c2ef01f13ed7e3e62b7a447bd01c41210ff79fc06c43c3",
+    "p5_path": "step/pad-vertical.step",
+    "p5_sha256": "191c4c79a86164ef37c2ef01f13ed7e3e62b7a447bd01c41210ff79fc06c43c3",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "wall-back",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/wall-back.stl",
+    "p4_sha256": "414473a2815ffd842dcfd5774c936370be9c2cab18031293fec28772b400e61f",
+    "p5_path": "stl/wall-back.stl",
+    "p5_sha256": "3bb220b3339960337ac247c4d909da1786b631a958423ef14ab2955b223ef060",
+    "unchanged_bytes": false,
+    "change": "J3 tab joint"
+  },
+  {
+    "part": "wall-back",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/wall-back.step",
+    "p4_sha256": "a56a3e7aec931b3cfbf787c18692f5fe8569fc756bfd2e3358b877f5aaa4f291",
+    "p5_path": "step/wall-back.step",
+    "p5_sha256": "f3d351b473fde183196e8a8461662db38f0e27f06a39ae4996e1a36f0e4e1421",
+    "unchanged_bytes": false,
+    "change": "J3 tab joint"
+  },
+  {
+    "part": "wall-front",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/wall-front.stl",
+    "p4_sha256": "414473a2815ffd842dcfd5774c936370be9c2cab18031293fec28772b400e61f",
+    "p5_path": "stl/wall-front.stl",
+    "p5_sha256": "a9453365b665a820835be8b44a57f6ad6e6abe372091ffc0727edc3b47ee21d1",
+    "unchanged_bytes": false,
+    "change": "J3 tab joint"
+  },
+  {
+    "part": "wall-front",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/wall-front.step",
+    "p4_sha256": "67a42dbac92201a70c9449fd9cb81e08ae97466a530c1ad635691a1f3378d9f0",
+    "p5_path": "step/wall-front.step",
+    "p5_sha256": "02c869635ab67257cdae693ad0b444d13d54004612e8e2f183d5ad5699662495",
+    "unchanged_bytes": false,
+    "change": "J3 tab joint"
+  },
+  {
+    "part": "wall-left",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/wall-left.stl",
+    "p4_sha256": "4d15c8063e646c0bda0d0d96475f20b197f3016015363ef2adc29daacdf6ecaf",
+    "p5_path": "stl/wall-left.stl",
+    "p5_sha256": "8a069d918b30610a0fc9f3d4ae482f4ab196506d0d50dcb4a4efd1473c8a7800",
+    "unchanged_bytes": false,
+    "change": "J3 tab joint"
+  },
+  {
+    "part": "wall-left",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/wall-left.step",
+    "p4_sha256": "c19815ff6ca81f326c608946cd3aae9f21b1bce25c46b0e25be8ce8ea5913078",
+    "p5_path": "step/wall-left.step",
+    "p5_sha256": "2b441c4c019aef8e4715711b9058d1e863f0408a7d5d6794b4a38e08b808cf10",
+    "unchanged_bytes": false,
+    "change": "J3 tab joint"
+  },
+  {
+    "part": "wall-right",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/wall-right.stl",
+    "p4_sha256": "494ed8932484aac785e55820f4ae8c042a81414933b89d3ffbcb1c59b1d2f350",
+    "p5_path": "stl/wall-right.stl",
+    "p5_sha256": "5c29527d8ea17ecbc6c9a5fcf670b8a7ac314b780170c449a2c973c59e5b6bde",
+    "unchanged_bytes": false,
+    "change": "J3 tab joint"
+  },
+  {
+    "part": "wall-right",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/wall-right.step",
+    "p4_sha256": "2c846079fe867bddcdda82dfcabf7007ee1662c2cc387c93dbb4c7a777cd2dbc",
+    "p5_path": "step/wall-right.step",
+    "p5_sha256": "d5e74bd9c24f1465db06f08383a14ed78e8f5798bfb1f41d396fe312ed987c42",
+    "unchanged_bytes": false,
+    "change": "J3 tab joint"
+  },
+  {
+    "part": "washer-round",
+    "format": "stl",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/stl/washer-round.stl",
+    "p4_sha256": "e9dd796d2d49770481ccaed825a24c1f19ddf48a8aa1517442051df525c3ef06",
+    "p5_path": "stl/washer-round.stl",
+    "p5_sha256": "e9dd796d2d49770481ccaed825a24c1f19ddf48a8aa1517442051df525c3ef06",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  },
+  {
+    "part": "washer-round",
+    "format": "step",
+    "p4_path": "engineering/printed-5mm/p4-uniform-vents/out/step/washer-round.step",
+    "p4_sha256": "c635ad4e53b2402e2982e6a10e1b3a8bb8e8ec02eda3142d82bc92dd992820bf",
+    "p5_path": "step/washer-round.step",
+    "p5_sha256": "c635ad4e53b2402e2982e6a10e1b3a8bb8e8ec02eda3142d82bc92dd992820bf",
+    "unchanged_bytes": true,
+    "change": "unchanged"
+  }
+]

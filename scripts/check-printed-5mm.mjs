@@ -1,9 +1,11 @@
+import {verifyP5} from './check-printed-p5.mjs';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
 import { execFileSync } from 'node:child_process';
 export function verifyPrinted(root=resolve(import.meta.dirname,'..')) {
+verifyP5(root);
 const currentPath='project/printed-5mm/p4-uniform-vents/files.json';
 const current=JSON.parse(readFileSync(resolve(root,currentPath)));
 assert.equal(current.revision,'P4-PRINTED-5MM-UNIFORM-VENTS');
@@ -24,7 +26,7 @@ for(const file of registry.files){
  assert.ok(data.length<25*1024*1024,`Asset too large: ${file.path}`);
 }
 const release=JSON.parse(readFileSync(resolve(root,'project/release-state.json')));
-assert.equal(release.current_printed_5mm_candidate.revision,current.revision);
+assert.equal(release.current_printed_5mm_candidate.revision,'P5-PRINTED-5MM-TAB-JOINTS-J3');
 assert.equal(release.current_fullset_candidate?.revision,'R10-FULLSET-01');
 const cart=JSON.parse(readFileSync(resolve(root,'project/order-records/r10-fullset-01-jlc-cart-2026-10-26.json')));
 assert.equal(cart.status,'CART_PREPARED_NOT_ORDERED_NOT_PAID');

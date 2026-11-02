@@ -1,0 +1,81 @@
+{
+  "generated": {
+    "status": "structural_checks_passed",
+    "build_items": [
+      {
+        "object_id": "2",
+        "instance_id": 0,
+        "bounds_mm": [
+          [
+            57.0999984741,
+            110.25,
+            0.0
+          ],
+          [
+            292.90000152609997,
+            199.75,
+            5.0
+          ]
+        ]
+      }
+    ],
+    "meshes": [
+      {
+        "model": "3D/3dmodel.model",
+        "object_id": "1",
+        "vertices": 3984,
+        "triangles": 8052,
+        "signed_volume_mm3": 93143.328118
+      }
+    ],
+    "layout_checked": true,
+    "contains_toolpaths": false,
+    "not_checked": [
+      "Bambu Studio load/slicing",
+      "self-intersections",
+      "wall thickness and fit",
+      "support/brim/prime tower clearance",
+      "sequential-print toolhead clearance"
+    ],
+    "settings_changes": {
+      "brim_type": {
+        "before": "auto_brim",
+        "after": "no_brim"
+      },
+      "brim_width": {
+        "before": "5",
+        "after": "0"
+      }
+    },
+    "settings_bytes_unchanged": false,
+    "removed_cached_members": [
+      "Metadata/filament_sequence.json",
+      "Metadata/pick_1.png",
+      "Metadata/plate_1.png",
+      "Metadata/plate_1_small.png",
+      "Metadata/plate_no_light_1.png",
+      "Metadata/slice_info.config",
+      "Metadata/top_1.png"
+    ],
+    "source_mesh_fingerprint": "bf44a2d16a64147ec8c2dd3c482b6b2438b2b0cf594a2feaa8725dc3a17ae166",
+    "mesh_identity_verified": true,
+    "original_template_changed_keys": [
+      "brim_type",
+      "brim_width"
+    ],
+    "settings_diff": {
+      "brim_type": {
+        "before": "auto_brim",
+        "after": "no_brim"
+      },
+      "brim_width": {
+        "before": "5",
+        "after": "0"
+      }
+    }
+  },
+  "studio": {
+    "verified": false,
+    "status": "NOT RUN: Studio executable unavailable"
+  }
+}

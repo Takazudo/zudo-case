@@ -180,3 +180,48 @@ jobs:
             sleep 2
           done
           uv run --locked --project engineering/printed-5mm/p4-uniform-vents python scripts/verify-printed-p4-site.py
+
+  printed-p5-cad:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: astral-sh/setup-uv@557e51de59eb14aaaba2ed9621916900a91d50c6
+        with:
+          version: 0.10.2
+      - name: Install locked P5 CAD environment
+        run: uv sync --locked --project engineering/printed-5mm/p5-tab-joints
+      - name: Clean builds, source ZIP rebuild and historical preservation
+        run: uv run --locked --project engineering/printed-5mm/p5-tab-joints python engineering/printed-5mm/p5-tab-joints/regenerate.py --published-root .
+      - name: Build browser and negative-test copy
+        run: |
+          uv run --locked --project engineering/printed-5mm/p5-tab-joints python engineering/printed-5mm/p5-tab-joints/build.py --out "$RUNNER_TEMP/p5"
+          uv run --locked --project engineering/printed-5mm/p5-tab-joints python engineering/printed-5mm/p5-tab-joints/negative.py --out "$RUNNER_TEMP/p5"
+          uv run --locked --project engineering/printed-5mm/p5-tab-joints python engineering/printed-5mm/p5-tab-joints/validate_parameters.py --out "$RUNNER_TEMP/p5"
+      - name: H2D no-brim projects and deterministic package checks
+        run: |
+          python3 engineering/printed-5mm/p5-h2d-3mf/test_contract.py
+          python3 engineering/printed-5mm/p5-h2d-3mf/regenerate.py --cad "$RUNNER_TEMP/p5" --published-root .
+      - name: Install Chromium
+        run: uv run --locked --project engineering/printed-5mm/p5-tab-joints python -m playwright install --with-deps chromium
+      - name: Canvas and WebGL viewer regressions
+        run: |
+          uv run --locked --project engineering/printed-5mm/p5-tab-joints python "$RUNNER_TEMP/p5/source/verify_browser.py"
+          RENDERER=webgl uv run --locked --project engineering/printed-5mm/p5-tab-joints python "$RUNNER_TEMP/p5/source/verify_browser.py"
+      - uses: pnpm/action-setup@f40ffcd9367d9f12939873eb1018b921a783ffaa
+        with:
+          version: 10.30.3
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24
+      - run: pnpm install --frozen-lockfile
+      - name: Local docs, embedded viewer and download hashes
+        run: |
+          pnpm dev --port 4391 > "$RUNNER_TEMP/p5-site.log" 2>&1 &
+          site_pid=$!
+          trap 'kill "$site_pid"' EXIT
+          for attempt in $(seq 1 90); do
+            if curl --fail --silent http://localhost:4391/docs/printed-5mm/p5-preview/ -o /dev/null; then break; fi
+            sleep 2
+          done
+          uv run --locked --project engineering/printed-5mm/p5-tab-joints python scripts/verify-printed-p5-site.py

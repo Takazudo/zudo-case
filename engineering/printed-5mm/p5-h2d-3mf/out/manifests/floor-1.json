@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "title": "P5 floor-1 / H2D / unsliced",
+  "description": "P5 geometry unchanged. Settings retained; user will configure print details. No toolpaths.",
+  "margin_mm": 0,
+  "settings": {
+    "brim_type": "no_brim",
+    "brim_width": "0"
+  },
+  "gap_mm": 6,
+  "objects": [
+    {
+      "name": "P5 floor-1",
+      "mesh": "../input-stl/floor-1.stl",
+      "filament": 1,
+      "position_mm": [
+        57.099998474121094,
+        69.82499694824219
+      ],
+      "rotate_z_degrees": 0
+    }
+  ]
+}

@@ -12,7 +12,7 @@ def box(x0,x1,y0,y1,z0,z1):return cq.Solid.makeBox(x1-x0,y1-y0,z1-z0,cq.Vector(x
 fixture=ROOT/'reference/accepted-j3'
 for f in json.loads((fixture/'RECEIPT.json').read_text())['files']:
     check('immutable acceptance '+f['path'],hashlib.sha256((fixture/f['path']).read_bytes()).hexdigest()==f['sha256'])
-parts={p.stem:read(p) for p in (ROOT/'step').glob('*.step')}
+parts={p.stem:read(p) for p in sorted((ROOT/'step').glob('*.step'))}
 body={k:s for k,s in parts.items() if k.startswith(('wall-','floor-'))}
 for pid,s in body.items():
     accepted=read(fixture/(pid+'.step'))

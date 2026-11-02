@@ -38,3 +38,19 @@ with tempfile.TemporaryDirectory() as tmp:
     rejected([sys.executable,str(d/'build.py'),'--out',str(tmp/'invalid-output')],'unsupported panel thickness')
     param['body']['panel_thickness']=5;param['lid']['locator_clearance_per_side']=0.4;rewrite(d/'source/parameters.json',param)
     rejected([sys.executable,str(d/'build.py'),'--out',str(tmp/'unreviewed-output')],'unreviewed locator change')
+
+# Check geometry directly, so refreshing a payload hash cannot bless a stale part.
+import cadquery as cq
+with tempfile.TemporaryDirectory() as tmp:
+    tmp=Path(tmp)
+    for label,mutate in [
+        ('J2 rectangular side',lambda s:s.fuse(cq.Solid.makeBox(5,349,98,cq.Vector(113.2,-174.5,-3.5)))),
+        ('J1 bottom notch',lambda s:s.cut(cq.Solid.makeBox(7,20,3.5,cq.Vector(112.2,-170.5,-3.5)))),
+        ('missing integral floor tabs',None),
+    ]:
+        d=tmp/label.replace(' ','-');copy(source,d)
+        pid='wall-right' if mutate else 'floor-1';path=d/'step'/f'{pid}.step'
+        solid=cq.importers.importStep(str(path)).val()
+        changed=mutate(solid) if mutate else solid.intersect(cq.Solid.makeBox(226.1,400,10,cq.Vector(-113.05,-200,-1)))
+        path.unlink();cq.exporters.export(changed,str(path))
+        rejected([sys.executable,str(d/'source/verify_joints.py')],label)

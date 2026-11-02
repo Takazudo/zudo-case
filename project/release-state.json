@@ -2575,10 +2575,10 @@
   },
   "current_printed_5mm_candidate": {
     "model": "7u40",
-    "revision": "P4-PRINTED-5MM-UNIFORM-VENTS",
+    "revision": "P5-PRINTED-5MM-TAB-JOINTS-J3",
     "status": "HOME_PRINT_CANDIDATE_NOT_PHYSICALLY_VERIFIED",
     "production_approved": false,
-    "source": "engineering/printed-5mm/p4-uniform-vents/",
-    "registry": "project/printed-5mm/p4-uniform-vents/files.json"
+    "source": "engineering/printed-5mm/p5-tab-joints/",
+    "registry": "project/printed-5mm/p5-tab-joints/files.json"
   }
 }
