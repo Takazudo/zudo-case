@@ -1,0 +1,937 @@
+{
+  "base_commit": "da119d8e011d219c2c62d1b664a8640366eb8c6f",
+  "current_fullset_candidate": {
+    "revision": "R10-FULLSET-01",
+    "model": "7u40",
+    "profile": "7u40-t1-groove1p70-m5",
+    "production_approved": false,
+    "manifest_path": "engineering/r10-fullset-01/out/selected-order.json",
+    "manifest_sha256": "1119d18d37ab5b48d49709ba725214bbd70ff548d4b5f028ea4b4551c7cbe496",
+    "preview": "/previews/r10-fullset-01.html",
+    "packages": [
+      "/downloads/candidate/R10-FULLSET-01-aluminum.zip",
+      "/downloads/candidate/R10-FULLSET-01-pa12.zip",
+      "/downloads/candidate/R10-FULLSET-01-home-print.zip"
+    ],
+    "quantities": {
+      "aluminum": 6,
+      "pa12": 20,
+      "new_home_print": 72,
+      "reused_circular_washers": 20
+    },
+    "interface": {
+      "guard_opening_mm": [
+        224.20000000000002,
+        328.8
+      ],
+      "guard_exterior_mm": [
+        231.6,
+        336.2
+      ],
+      "guard_bottom_z_mm": -1,
+      "guard_top_z_mm": 92,
+      "guard_envelope_height_mm": 93,
+      "lid_seat_z_mm": 92,
+      "plate_bottom_z_mm": 122,
+      "plate_top_z_mm": 123.5,
+      "lip_top_z_mm": 123.8,
+      "locator_bottom_z_mm": 80,
+      "flat_wall_mm": 1,
+      "metal_offset_mm": 0.1,
+      "lid_plate_mm": [
+        227.4,
+        332,
+        1.5
+      ],
+      "lid_locator_xy_clearance_mm": 0.7,
+      "lid_engagement_mm": 12,
+      "plate_under_clearance_to_assumed_knob_mm": 4
+    }
+  },
+  "files": [
+    {
+      "path": "engineering/printed-5mm/p3/.python-version",
+      "sha256": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/README.md",
+      "sha256": "1db019daf5bb24f29168a50517977f3fd6c0fb5dba8b73baf5d80563d0360682"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/build.py",
+      "sha256": "f429735f09437c1662d34e15d867fe1eb6b11ef7e5f752e33a0f9a45ddea8f4c"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/negative.py",
+      "sha256": "5ee5ed0a00dac6277db1e0e01b21538b051c429a5500bc9ac5429d030b3883ff"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/BOM.json",
+      "sha256": "e90f8faa05fa9e998a74f41158a144d6d3e6cf481a86e1495375b127fa929afb"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/DIMENSIONS.json",
+      "sha256": "ccc70a76ba43dea8aea22404ffe745b09a5aa2d22452439da65e52d3ed845953"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/PRINT-PARTS.csv",
+      "sha256": "23caa84e2eca7a5f1eb331a090a52b1306b5eecf1f2fef628cb7a2a1cec25cd9"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/PRINT-START-HERE.md",
+      "sha256": "c3b1c885eba454712e6a831f53b2599e76221b1216031b52576b1b043629e9c6"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/RAIL-PLACEMENT.json",
+      "sha256": "ac8fd52debacc738838dc4c9607e4c75b9951696bf664037c5e049480f7ccfb9"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/accepted-geometry-comparison.json",
+      "sha256": "50f56bfe298a6e44968c12bbba127e9c4f4eeb3f635117c412e4f1863b9d1780"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/geometry-checks.json",
+      "sha256": "db426c0083715881d6bb5a661235551fcedd41d3dba41a4ef0ab08412d0e08d1"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/print-bed-checks.json",
+      "sha256": "6d4c390e1cdca81a5a0f34c41f11092327a53fc5ce9dffddbba209682184a23a"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/rail-geometry-checks.json",
+      "sha256": "4696b4543fe1c0dd243f124a23df464acff8ab68add80a5060df183d00b45ec2"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/floor-1.step",
+      "sha256": "23b5fef12d3afb4d8a24001a9f8678689436a20271b0ddf451697eccbc694566"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/floor-2.step",
+      "sha256": "bd800b01f594f680aa8311fa396b76b6bf0182821d2769b8992535027912edde"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/lid-edge-back.step",
+      "sha256": "e4266c63362b94c860fdc2de8600804cbf12b5f5f7972468c503eed787eec7da"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/lid-edge-front.step",
+      "sha256": "8a46eeeb917e5b9d0e15c94b7cf04e1260b10b075bbde6b4610b6d8638012eac"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/lid-edge-left.step",
+      "sha256": "c598366c95962d8ec9d151e032b2651e94ed1949b1a96eab2c72982e7d6be0ea"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/lid-edge-right.step",
+      "sha256": "edbbaf7a765486a2ef96b04d561efbb9a93c4cfba69da21bf90bd37b0757c812"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/lid-top-1.step",
+      "sha256": "e425f3590970abe3679f4864b48fe91cd3fb1f9e9838d72323064960cf9ad6bf"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/lid-top-2.step",
+      "sha256": "d451b11bbd91b6e9fcbdd27271fb69663d965fd5573a1684fc4ffbd2892880d4"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/pad-horizontal.step",
+      "sha256": "374e5368a8138f672d25a8ed972c8a66e69389939f43cd307d4efeb2ff0862df"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/pad-vertical.step",
+      "sha256": "191c4c79a86164ef37c2ef01f13ed7e3e62b7a447bd01c41210ff79fc06c43c3"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/wall-back.step",
+      "sha256": "e0250a1b26bc9f5683abef65edbb023a8d71d8e854af56349ce53b11d8bb96f2"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/wall-front.step",
+      "sha256": "8280bbf91f580a41c2c8736003627f83d550d6f2fc2c2142a9910b6ff3197752"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/wall-left.step",
+      "sha256": "cde54a289f2c7fae57ed5bcf92cbca890c1f79275669f4ecccafea9163951831"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/wall-right.step",
+      "sha256": "a9fe62c46bf2e0eb2ad6b8ad9aad1b2f222ca62e897d549846a24d9633094874"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/step/washer-round.step",
+      "sha256": "c635ad4e53b2402e2982e6a10e1b3a8bb8e8ec02eda3142d82bc92dd992820bf"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/floor-1.stl",
+      "sha256": "960f79d0d1b34ed1a3bacb60241a7439c102ce786c462c516a4c2e2cb2382a36"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/floor-2.stl",
+      "sha256": "1fcf6b16fd6d2240b994914f8292620f9a6b862231a181877c534750ea609b2b"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/lid-edge-back.stl",
+      "sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/lid-edge-front.stl",
+      "sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/lid-edge-left.stl",
+      "sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/lid-edge-right.stl",
+      "sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/lid-top-1.stl",
+      "sha256": "167a47149983924ba440e2c220781837f49a5cce56d0725b5774cf73f0c6f522"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/lid-top-2.stl",
+      "sha256": "b056b7e864a9d779eda4a39a1c6c9b3986b6bff84eda59475e2a7aa842051599"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/pad-horizontal.stl",
+      "sha256": "2a08d1088fec93f6bc380b2e1be37d9fcd1db7338895a5c2385278b7113ee065"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/pad-vertical.stl",
+      "sha256": "0d27507cc73f7e07b6778dfd6997a6b6acf5757c773675004139d403af56db50"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/wall-back.stl",
+      "sha256": "b06639dcdaba7d9404e1520ef474295ae8d657a703cdd647ed755de91ac0a831"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/wall-front.stl",
+      "sha256": "b06639dcdaba7d9404e1520ef474295ae8d657a703cdd647ed755de91ac0a831"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/wall-left.stl",
+      "sha256": "b6593405f6f98e72f469ff71d0ce2910d1fc9944f73959f3a043ace0b902e0ce"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/wall-right.stl",
+      "sha256": "0f02d578633034967004691f48723e477129d68117cc4925eb7aa04ee62c3e90"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/out/stl/washer-round.stl",
+      "sha256": "e9dd796d2d49770481ccaed825a24c1f19ddf48a8aa1517442051df525c3ef06"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/pyproject.toml",
+      "sha256": "6922846d1e0106d88b1a5d2b75045967326020b4a9db844655cc790fa1f7b247"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/reference/ACCEPTED-GEOMETRY.json",
+      "sha256": "935e11f7ea25a904744958cd54238c0cb8bb99dc151664d7c297cc5180f02afb"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/reference/P2-PRINT-FILES.json",
+      "sha256": "7caaafdf084699747a666ce226adfed147ff8bc7e22a8899649c2dffa554d7b6"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/reference/SOURCE-RECEIPT.json",
+      "sha256": "9752403db9439b00f8331cd43e3592ec884db4639e080e902b3d8b1cac0e2c22"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/reference/lid-edge.stl",
+      "sha256": "37898c2fdf8f098df66aa5ed88c74cf437e77f5f72be8ab66bc5e785d0887692"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/reference/rail-source/build_geometry.py",
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/reference/rail-source/design-parameters.json",
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/reference/rail-source/source-data/panels/panel-geometry.json",
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/reference/rail-source/source-data/rail40/rail_dimensions.json",
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/reference/rail-source/source-data/rail40/rail_mesh.json",
+      "sha256": "6ddbf622f9bcd8f4d1316d76ce2c55b4cecfb3c166de6f88826fda3bb19c2753"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/source/build_case.py",
+      "sha256": "edbeea7860fe01a56adf3a89ad6ebe5d42f42b801a50421ad175fc9f4b340dcc"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/source/build_html.py",
+      "sha256": "893be879e5bb9b1aba215aff6f428d423f78ba9ee61abb92ea9c5f2031ce79f2"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/source/build_rails.py",
+      "sha256": "cb300b4a37db8e80e4e6e78aa61fce03db1badfa415d533f7a3791bd9143e28c"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/source/parameters.json",
+      "sha256": "f7bf6ee6d444a75b5c7145cccb82c50cd705d228a87ef7c8e8fdd73d5a740c17"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/source/verify_browser.py",
+      "sha256": "b6208fff4987f39aba34b7d7d427b2537c2ab3b974edd13973d14020117b8ac5"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/source/viewer-template.html",
+      "sha256": "2f52b1cfc5c6c2e4712e9f3cee2fa03ee600af40ad53e0505215e09e867d5af0"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/uv.lock",
+      "sha256": "21c6f6a2235a8b33f4555075382eac324d4b3e2a6385591999eaa5f975106a93"
+    },
+    {
+      "path": "engineering/printed-5mm/p3/verify.py",
+      "sha256": "4f0ff93f4eb3fa94c5e8c6f752791f46c373e96c0c49696bf4ee8e00ad5b2538"
+    },
+    {
+      "path": "engineering/r10-fullset-01/README.md",
+      "sha256": "9a4109cc7713f3b0e6554245d2113cdaabb348a1d649ad0cc9ff2c0ad7b05d66"
+    },
+    {
+      "path": "engineering/r10-fullset-01/build.py",
+      "sha256": "15cbcf2946f09b89c6ef7148f254f48879e2b70ad512e37a91fbfe12b746b970"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/geometry.py",
+      "sha256": "cd57a7c68c37f7bbbf65b613a78d99eeea74463b2db59254355451b913442b44"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/home_washers.py",
+      "sha256": "8dfb4e82bcb6dcbc4a3be19f765b3d4d592d8e320fb670455835dc15df13b1fc"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/lidchecks.py",
+      "sha256": "672262b5e653178554d89d8a7b8936588f8f4b27db60f078cde7db753bcd1fde"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/package.py",
+      "sha256": "76e67e0be198279e1f50c645f5536e0b3ca3c46a0b0e9e98d84a7696cfbce936"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/preview.py",
+      "sha256": "e1b9a4e9a796f1f466cbeea646afcd06b30d5f1526159e0eafcd385cf6c08239"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/validation.py",
+      "sha256": "d2d8315d993d0ca9d44082829cbda909ade29f7a649eb9863b9fa857fd230595"
+    },
+    {
+      "path": "engineering/r10-fullset-01/fullset/viewer.html",
+      "sha256": "bc2c30ebc5d7fb0b3aee1713c0836849a59660d0466205cc1fffb319a2216f94"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/BOM.csv",
+      "sha256": "baddf7ae0be3cd72f797782ec18ec0cc942c959b115ae1c5c68ae592d2d5eaa0"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/ORDER-START-HERE.md",
+      "sha256": "bdd51dc2eababd581cbeb271f2b2c1ea7c4d441aef2a9255b2a3f78ac60deb83"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/R10-FULLSET-01-aluminum.zip",
+      "sha256": "709b65f7e12cc7901bde4212a9c4354adf41ced4915922c873ed1e13dbeeaede"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/R10-FULLSET-01-home-print.zip",
+      "sha256": "35edc8dbbdb454cc6f719c4464dd04b0d1408e8d2e29148285a9c68cab1538d7"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/R10-FULLSET-01-pa12.zip",
+      "sha256": "b327e8267b4f667a1b620fae16049a8111af0b812c153bbec60697ebfd74b965"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/lid-plate-qty1-mm.dxf",
+      "sha256": "3a1d21ea8d6555213962f83b15fad9225718424d6c09163ddf4d1ebf88fba63d"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/lid-plate-qty1-mm.step",
+      "sha256": "c0c15c80674483747a90ec493c93492064d1d6016a2bb982786846eb02831213"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/lid-plate-qty1-mm.stl",
+      "sha256": "7f4a3f9f1b86bbb24f8d166b7d3c7a08c0e214feaa79adc2b0484f6ed25da8e5"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-back-qty1-mm.dxf",
+      "sha256": "c77f5fa453fdfae64baba7b8079e1f68fcec6f234b1df514d7a222ee4e38b15c"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-back-qty1-mm.step",
+      "sha256": "e08deaa97c838abdd97da49d2fcd409c2925f73c36001ddc904a42fdf92a7de4"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-back-qty1-mm.stl",
+      "sha256": "4b464ac606077c242c06741bb2702cd4fee7f680c3fc3594575ff69b84b16468"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-floor-qty1-mm.dxf",
+      "sha256": "5b34c15f91babc2977e72e14dabfb4046dc0573b1d99aa650a3428f2d36f7290"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-floor-qty1-mm.step",
+      "sha256": "094732b2ba7f015264ea9791f1da5065266835f767569e9444507bc406c139bc"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-floor-qty1-mm.stl",
+      "sha256": "421aabe02984e9486774148ed475177d48fc05b79140c715a287248a87f877b3"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-front-qty1-mm.dxf",
+      "sha256": "c77f5fa453fdfae64baba7b8079e1f68fcec6f234b1df514d7a222ee4e38b15c"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-front-qty1-mm.step",
+      "sha256": "e08deaa97c838abdd97da49d2fcd409c2925f73c36001ddc904a42fdf92a7de4"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-front-qty1-mm.stl",
+      "sha256": "4b464ac606077c242c06741bb2702cd4fee7f680c3fc3594575ff69b84b16468"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-left-qty1-mm.dxf",
+      "sha256": "50ea12cfd4224ced1076c7c00c8930d4af4256581234e257cde747e06b20b191"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-left-qty1-mm.step",
+      "sha256": "f18902880183d6c1aaabc3aaa1ba7de82e56f1fe363a9c0d69f31dd9ae13a9c1"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-left-qty1-mm.stl",
+      "sha256": "a4234d2f8393ffb81a64a1188e75eebabf41baa3285a4d802611343adcc639c4"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-right-qty1-mm.dxf",
+      "sha256": "3ed00750928be9585c258c710a31dc42a0f37f6701fa833e6ba9eafdab5bb2ca"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-right-qty1-mm.step",
+      "sha256": "2d89607278ec92d261022b6856f229417d135bbb82223058ca77f2583f282d06"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/panel-right-qty1-mm.stl",
+      "sha256": "16c02c63af899d840551f1018b453674106bd032d57c4530e3fd70c720cd3a5c"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/aluminum/quantity-finish.csv",
+      "sha256": "9cde8457fadd8539c39544c986ae4b7f2e8b0ebe5bd10cc609bf6f687791f14d"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/drawings/lid-plate.svg",
+      "sha256": "791acbe1bc6ccb1b4e3ced6455173c66a79ad42b860b03785b53e1d35a558710"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/drawings/panel-back.svg",
+      "sha256": "782accb02759c4ab5539b99f16f07b86a01766d8e7e73e5b42fc7093d15bb740"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/drawings/panel-floor.svg",
+      "sha256": "110e5c878e48aa968d00b4fa54237fcaecf08d7a6a91fe2091ad7783f72ba483"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/drawings/panel-front.svg",
+      "sha256": "c8fab5de8a9f31a531dabdd765807c8dc5322a2236477253fab5e377524727f4"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/drawings/panel-left.svg",
+      "sha256": "4d2f75babafdea70623c5f3a4cd437e43cf9dc1320408a25132454b477ff7e6d"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/drawings/panel-right.svg",
+      "sha256": "730c255551fd293f7293e7e4da4bf9b1975e9eabdfebc2ac214cf8dabef8b84c"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/geometry-checks.json",
+      "sha256": "5c42c4d9cdf1c74b3f3eea8aea29f0385d29e80ecc1d27b9f1b5c4a0010c8bc7"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/hanging-hole-checks.json",
+      "sha256": "04b4adbc4e45be581dbab0216a61feccbdfcc50bdc0627e143bdacef025e7f67"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/hardware-stacks.json",
+      "sha256": "13f6a67e89cf350bae8a75c2660e36e216de6b2c2444625e8c697fb0955585ad"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/hole-table.json",
+      "sha256": "4725ce06548a79443f21590b6f65301679f37545395d814510a6de4ac7c3ae6a"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/README.md",
+      "sha256": "3cc6e67dc0125b6faca2ec5e32792aa033f8d6298e14b32f5ef15a64af931c2e"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/capsule-pad-mm.step",
+      "sha256": "ec0649ad8c8a829de0708c4972d34d6f6f0b27f71a510a41c58157f05b7a5669"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/capsule-pad-mm.stl",
+      "sha256": "62a16c3a6089761b7da19a96fcace12770665838e79a6c82ffa2d37478dc3d14"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/corner-cap-mm.step",
+      "sha256": "4ef7c56c1a33b2bc6c5d9e0636a68b2286bd2fd8d2bd37eed37a4463cb860c13"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/corner-cap-mm.stl",
+      "sha256": "d0032a64b14c94de1e25354121a2c419d279600da7aa7c064d267b14e929f159"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/floor-cap-mm.step",
+      "sha256": "448126eb6803f2b3a218c01c836387972ea54a3f0503e3439493c08f5d6e1d21"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/floor-cap-mm.stl",
+      "sha256": "5bca60f7732cafee9643b27075fae670366616b8cdabd5c13a3603eca4491ccd"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/lower-cap-mm.step",
+      "sha256": "cdf0eb3f145d3861fb019df469e2e4e393f2e29becef132ac8720e34ad493f8d"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/lower-cap-mm.stl",
+      "sha256": "bf528c05f46675eac9d475847f6bfbfc8cab198574e78e464de613ab308961a7"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/orientation.svg",
+      "sha256": "43066da6e5fdf70b9bb602f44ab2bac2b0c193da3193d07f28f175e3c057b867"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/parameters.json",
+      "sha256": "a8f7f9663edb0fc64c334eca35cccf6b169f3da65ccc346e301f508b538f9ffb"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/readback.json",
+      "sha256": "60165e02d27c54018cc43e1a73761c61739b5a4c7079e82b84ee697f78e8b7f9"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/round-replacement-mm.step",
+      "sha256": "367ea130e5a0ce866d25abcfb275647c75817eb1faf501b0dfb6e1eab8c8680e"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/round-replacement-mm.stl",
+      "sha256": "4d417a8d519960d28fbe3a01da63006327355cca5e9fb99143a1442953f1a215"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/home-print/washer-source.py",
+      "sha256": "8dfb4e82bcb6dcbc4a3be19f765b3d4d592d8e320fb670455835dc15df13b1fc"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/joint-checks.json",
+      "sha256": "87d35a173ae19a53370d93b6249de425d0cb9513d12de159f80147dcbb4054de"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/lid-checks.json",
+      "sha256": "235938b4172ce23ba4eb7460ccab0b1a7af7469ca24b627bd37aef686727feb7"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/old-to-new.json",
+      "sha256": "e809e48823f8ee36aaf2d1b3d8b1020fc8ca27a0ab4c144d2cf9d2baab7e3bcf"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/outputs-manifest.json",
+      "sha256": "02c2a832e73d27b02ecd775cd6af654fccf928acaa2eb3b0a84b33f3f8180f27"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/corner--1--1-qty1-mm.step",
+      "sha256": "f50909cd9fa9429b28f4456dbb52e83c6327876d75ff9d8794092a29a3185513"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/corner--1--1-qty1-mm.stl",
+      "sha256": "eaa68789fecc2785fd0a045cdd168376f7dd19d4165464dacfd4efbdd0bdeffe"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/corner--1-1-qty1-mm.step",
+      "sha256": "2a8868259ddfe411947fc2be26f17c2f4ec02b04cd421276b09cf11cbf8a8a17"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/corner--1-1-qty1-mm.stl",
+      "sha256": "03e942eae889e81574f0eb283ab93300d753a4d97d30532568343661b90dbf1f"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/corner-1--1-qty1-mm.step",
+      "sha256": "331ae3e5d0b46f6b4a520ed376a1fd4e8c10b42d97cd4a54998c54240ed1772b"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/corner-1--1-qty1-mm.stl",
+      "sha256": "96a39589cbca903289ea85a112979f4cddd87ff73e053fc57307d2b73dfe0465"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/corner-1-1-qty1-mm.step",
+      "sha256": "d134c83ccdb203214da571a74a7515122669e1a0853a541c70b0598d99e77cb9"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/corner-1-1-qty1-mm.stl",
+      "sha256": "45e5f420434ca08c2d92b1e19958615afe94ac7d852570e2b9b20c6cbbe7c55f"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lid-frame-bl-qty1-mm.step",
+      "sha256": "dd1d32ce2554fb1df2d8a8329afeb8a5f27cd2a39460d8617b293b1ef322f944"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lid-frame-bl-qty1-mm.stl",
+      "sha256": "e174ab2307c1505088aefaa2e0d39b06fdb0aaba23dcd17f2b278af7fecf6544"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lid-frame-br-qty1-mm.step",
+      "sha256": "3560969d7ff7308848bd81514c9a4808f6b897e589fbe0194da4a9ea8285e4e2"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lid-frame-br-qty1-mm.stl",
+      "sha256": "0fa7fbc2555d40cba8508654b7c11355a7c3a917213a2a1d31998035ec7bc983"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lid-frame-fl-qty1-mm.step",
+      "sha256": "f90fc4beaa4ff898427d8353ecf12e1d79f50031a1f6669ca97c3d799418b702"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lid-frame-fl-qty1-mm.stl",
+      "sha256": "cf8acf4fe740775007c8722b01d5b2130d02dcd3a0422cac91c23bba7216edb0"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lid-frame-fr-qty1-mm.step",
+      "sha256": "a56024489122bc0c4fb12a149560a2e69c5be151438b9191b30c7d97518ec05c"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lid-frame-fr-qty1-mm.stl",
+      "sha256": "cb9c5442b905046c0f0d009b4c3c7ea92862c5dfe89d4e3d803f811d55d3b44a"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-back-0-qty1-mm.step",
+      "sha256": "845767a1a1ffa85e7c989d82e0995a3932454f0561ed390de5f77cd9909d9271"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-back-0-qty1-mm.stl",
+      "sha256": "cd695ced84b1eab1aa117f0a876e5f9db0fd6757afc4d1b2b583e960e8e0522e"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-back-1-qty1-mm.step",
+      "sha256": "e4fa9a3b64c505abe3ab643640744255beae95d8027a68b58a81b4dd0eb8d9eb"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-back-1-qty1-mm.stl",
+      "sha256": "e8b9db21b0a428d9271795fc5840aef94c647eaedd1ba55289559f2092ead0fd"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-front-0-qty1-mm.step",
+      "sha256": "960613e0ea9925554b066624c25503b8b49c260f8def925cdbab8067ceb59152"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-front-0-qty1-mm.stl",
+      "sha256": "e285283365be946ab0b70dd235f5cd99fc77c35e103bcea3650fe983a67a1df4"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-front-1-qty1-mm.step",
+      "sha256": "ee1979931b036fff347ccf4ec2e604332fc44007ad75438bce3fcf5ea4786cdc"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-front-1-qty1-mm.stl",
+      "sha256": "0ebae9d700280b245d988e655dbc5c3aba0899233adabd6768ba2923d6fa6790"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-left-0-qty1-mm.step",
+      "sha256": "b8a951d1aa6080ae94cb5494cb9bcd620823401daca18f42bc143eb9d3c1d5b9"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-left-0-qty1-mm.stl",
+      "sha256": "daa1f00b8f3ceb37cdc68b29a48e52228d560c8ac9cf2e70fb06cc5f94f92c6a"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-left-1-qty1-mm.step",
+      "sha256": "3484b17d38371407501fdd6ff3fdc60d1877bfdb80bc32b25934d83ac797b65f"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-left-1-qty1-mm.stl",
+      "sha256": "4db3f1e3372a39508547289a9e094d7610d5f78884723eb1055235e1aa5ff6c0"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-right-0-qty1-mm.step",
+      "sha256": "1ca7e4562c62bf5fa084d62f6efbb1052f8e5a2d927dfcd17da14983f0ded7fd"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-right-0-qty1-mm.stl",
+      "sha256": "5f601718b29de845b9a742757aa2f4c1be8fd5d4796085a78055a37188a0c846"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-right-1-qty1-mm.step",
+      "sha256": "812c6e395c9b797c9fe01bb7182ea00adbcc7f4bf8ac2d314de435ee414f7e8c"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/lower-right-1-qty1-mm.stl",
+      "sha256": "9b5a973d2e4194b8086047e73729a1e9410dfd282a4a2f97c94debd0cc0add0e"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/quantity-finish.csv",
+      "sha256": "8ee94d4acc4c0f6ecafd818b37e1fccebce46dfb0640016adcd3ce819fe828aa"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/top-0-0-qty1-mm.step",
+      "sha256": "253f947b8758184537615db9d296c2057d2f3bc628de585be405266e2b1fefc9"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/top-0-0-qty1-mm.stl",
+      "sha256": "a3e626c34955fdd7b3a2c2304a6293e481d3d926571a1632fe0bc7a24c12f845"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/top-0-1-qty1-mm.step",
+      "sha256": "ad5992bd77152bc32f3a46135a70655880bbb14c280fcc671bf03f679264c17a"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/top-0-1-qty1-mm.stl",
+      "sha256": "1e11c31f5e6aff8fe6b860fb88df06ab67aead54b3f00b0a8b7028dc286a0135"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/top-1-0-qty1-mm.step",
+      "sha256": "86938f70b6ae0ee7852c6f59b102ba4c2211c3b4809c25987bc2b899dcf21487"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/top-1-0-qty1-mm.stl",
+      "sha256": "15c3bae8dd385533bbb6eac937c67ccae8544b4eb2d10b41b83263150338eabe"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/top-1-1-qty1-mm.step",
+      "sha256": "df3253091849d0fa20a6aba2b211cc3a97743e2f647ecfae50be0780003d7688"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/pa12/top-1-1-qty1-mm.stl",
+      "sha256": "7f96171405d5e1dfb8403d236dbaee4abbb8ed2c3e2e306664dab6782db0cf9b"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/preview.html",
+      "sha256": "5321492e4b6c4c8a31dfdae74190322e3b437c0fefaa19fd4002b690feef7def"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/scene.json",
+      "sha256": "9fc704c1630a8d03d92b3a1b8ecd7a90698bd8b53cecc8555872cd5bac38d95b"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/selected-order.json",
+      "sha256": "1119d18d37ab5b48d49709ba725214bbd70ff548d4b5f028ea4b4551c7cbe496"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/source-datums.json",
+      "sha256": "68a9ea50ba4c6bf5f355bb3af0e7f1d3aa879c928b92a4e3b52bfce2066a681f"
+    },
+    {
+      "path": "engineering/r10-fullset-01/out/validation.json",
+      "sha256": "b508df5a5e8ad17ed98478c9acb270456df3eee5a1574f15b954d0374e11a57e"
+    },
+    {
+      "path": "engineering/r10-fullset-01/parameters.json",
+      "sha256": "65894c5d4455dc183652151627c54a87e74891f47b2a3190d66a8845b23662c3"
+    },
+    {
+      "path": "engineering/r10-fullset-01/reference/DECISIONS.md",
+      "sha256": "785056e3191109d63d8423450679cf6ae2f9d7f5cc43b7db2ce51a6bd69fdd8c"
+    },
+    {
+      "path": "engineering/r10-fullset-01/reference/README.md",
+      "sha256": "9fb5755899cfd6ada59044f3e4022d355e0c37d4506265606cf68465f9a00ddd"
+    },
+    {
+      "path": "engineering/r10-fullset-01/reference/SOURCE-RECEIPT.json",
+      "sha256": "24c203c0c7056470893f0290145b8a5c3122b0a3b49ee2f23959ba98d561e275"
+    },
+    {
+      "path": "engineering/r10-fullset-01/reference/preserved-bytes.json",
+      "sha256": "a07aab6d0ce278f9cdb5f76c08618302d1a770c06e06b2fdd95c4e5bbb8b0292"
+    },
+    {
+      "path": "engineering/r10-fullset-01/reference/r2-NEXT-ORDER-SUPERSEDED.md",
+      "sha256": "154b9e552a524c927f8628ce61a0d26782e049b7151c14279d7253d75b20b28c"
+    },
+    {
+      "path": "engineering/r10-fullset-01/reference/r2-build_geometry.py",
+      "sha256": "b290eaaf8186f108e1eef3d03d2df54a07201f8fd203ada35094f7a99047e424"
+    },
+    {
+      "path": "engineering/r10-fullset-01/tests/browser.cjs",
+      "sha256": "a92eb22ad36bab78566cee9b59e3d868c2c254600217eab84c0d5328e31b8fbe"
+    },
+    {
+      "path": "engineering/r10-fullset-01/tests/cap_margins.py",
+      "sha256": "23424d4513e79abc92673a77b76f65840dce7378597be0cc71572d7e9ee6de06"
+    },
+    {
+      "path": "engineering/r10-fullset-01/tests/docs-browser.cjs",
+      "sha256": "42b997ee2cd8db111c7648ee5bab39d63b1c01b4f62d1270308d8be043ab2b36"
+    },
+    {
+      "path": "engineering/r10-fullset-01/tests/inspection-extra.cjs",
+      "sha256": "8a9e8d3e89081c662ed90135f9b3aec98b628ffa4885a3f552efca4a1ba7f210"
+    },
+    {
+      "path": "engineering/r10-fullset-01/tests/regenerate.py",
+      "sha256": "888133c9e43d7854ae3b7cd5240d9f2672ea1ae55c3a3deb1c09fc6076274fa8"
+    },
+    {
+      "path": "engineering/r10-fullset-01/tests/test_contract.py",
+      "sha256": "01ae2f15e16ca0c3493e1200bdcb1f5f5ac42e06993b67603e36d6963ba4049f"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/Canvas-1440-open.png",
+      "sha256": "3f72c44fbb83585a7cf65f88d6ff54f182398aa63feb5b193be8441a7821654c"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/Canvas-1440.png",
+      "sha256": "b800af290fd17b21b14386b678e06c1c9c42c29256d5b01cff41719646968a7b"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/Canvas-390-open.png",
+      "sha256": "25227d94082736b9da3eef1b35a50dfcafba90141977768afa2607ca0751fdca"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/Canvas-390.png",
+      "sha256": "84b9e3b6c33468aa9ca762c5eae659affb74570fc8f6b9ef333d7a28d1b6d165"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/LOCAL-VALIDATION.md",
+      "sha256": "d577ef0d7891a1b776a3ed416c66a1eb36a20e955b6e4486f746fa945ca3d4ee"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/WebGL-1440-open.png",
+      "sha256": "c2ae90e1902f70b1b68e150635ff8da6ca422977970cb9958c85eb57644a7b72"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/WebGL-1440.png",
+      "sha256": "8e93ef16a9c8520a3816c95695c9aa755e5e7ef4c4ded211bc2c196bea544f6d"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/WebGL-390-open.png",
+      "sha256": "e1b875224883f6463a1900b00d7b11e6f7b488952eb3850d627274cce3c62c28"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/WebGL-390.png",
+      "sha256": "74bcffd72a5d4930b42e8b0a2273f7d65676e4d9b4e3b2f5707bc5875c560c01"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/assembly-exploded.png",
+      "sha256": "56d9e1d5d2479b6c5deccf47a234cf32559106211d363742e92f6ade727c7b4d"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/browser.json",
+      "sha256": "d38fd533ca0a7da14674c7f9087daf555a46f8df860f862a979a062cb6f54140"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/cap-margins.json",
+      "sha256": "a500574fdae3073bd110e5950e3d6b2d991aa5bf48487512a72d4d14ef56dbef"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/docs-1440.png",
+      "sha256": "c5b0631734b0774eaa8fa112105bf5b941492da3b7452f74f69cdb07d900f26f"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/docs-320.png",
+      "sha256": "266056c9de2fe3ffe72b786540a7628aa8655ed3cc0ae4ee4edf799dd71faa0b"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/docs-390.png",
+      "sha256": "9c2f0b30ecb65fa17254f4a9b534e9d3dce5b59d6f9b737ba1d5652467b892f0"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/docs-browser.json",
+      "sha256": "6f67067a95e2a7cbcb353c517706601fed9f2cdb6c107d11ef88595c5f0687c7"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/download-bytes-final.json",
+      "sha256": "636bd158685bdaad6337260715add3d6952199dc164db3d971f52a7644ed5c33"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/environment.json",
+      "sha256": "c1753c610d020404bd8003485eab5894c6b523876abcc174cc94a2112af8db83"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/inspection-extra.json",
+      "sha256": "a75719c52110df86837785fe65c2e3ed6b245d950cabb824d38b457aec0d19e6"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/intake.json",
+      "sha256": "d77fa7e70c29cffdeedccfd2b684e11d9ca4f44019db082a9c83293523995016"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/lap-section.png",
+      "sha256": "96c6a07765baf6d14c7f1e6312a804272fb9d2bafcad201e8cee64643ef61e0c"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/open-black.png",
+      "sha256": "2bfa8fd98b8b8fd9002901d198e9e4025d35ada788d6b28584113e8d497f3e60"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/prepared-assets.json",
+      "sha256": "1c7314e6c91d003b814862a9e992124845805f3e582f115707121277a1fd724b"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/washer-fixed-bracket-warning.png",
+      "sha256": "15cebd33774bcbf8641e35f3cbc405f7cda2504ec3aca5c9fc4f323df639da1b"
+    },
+    {
+      "path": "engineering/r10-fullset-01/verification/washer-only.json",
+      "sha256": "7b2cd982ee98e7aa9442fadc924ddb2089567e73ca233879d4bada4e67581e40"
+    },
+    {
+      "path": "engineering/r10-fullset-01/washers.json",
+      "sha256": "a8f7f9663edb0fc64c334eca35cccf6b169f3da65ccc346e301f508b538f9ffb"
+    },
+    {
+      "path": "project/order-records/r10-fullset-01-jlc-cart-2026-10-26.json",
+      "sha256": "1420d5b8587e89980aa840b4f474e9756284a37900d8a5e320821e05965ad0c4"
+    },
+    {
+      "path": "project/order-records/r10-fullset-01-jlc-cart-2026-10-26.md",
+      "sha256": "b22b96d3786a67f78f2680bec87e9b96d1e0e51e7907083a74ad3170195dcd55"
+    },
+    {
+      "path": "project/printed-5mm/files.json",
+      "sha256": "ef5cca4e2cf5b245d8425121b451015cb04e7e83f53900ad843959877b6567cf"
+    },
+    {
+      "path": "project/printed-5mm/verification.md",
+      "sha256": "054522d5c6df1cf45b95472e4ca07265fb112a10e57dd29a08f18e01a6215b3d"
+    },
+    {
+      "path": "project/printed-5mm/verification/assembly-ui.png",
+      "sha256": "31395636f325d6e58bb26aa4c144c6b7ab59d7b96687d371da5acbd4a60e99e6"
+    },
+    {
+      "path": "project/printed-5mm/verification/bed.png",
+      "sha256": "205664a03daec28ff8c8591ae880a9c11fee85bf2a8fbed44763e4e4cd62091f"
+    },
+    {
+      "path": "project/printed-5mm/verification/mobile-390.png",
+      "sha256": "f0f0c676eae9843e77e8e6a69dafdd3bab10f1c2d58083d9b5c29b6a2d57cc33"
+    },
+    {
+      "path": "public/downloads/candidate/R10-FULLSET-01-aluminum.zip",
+      "sha256": "709b65f7e12cc7901bde4212a9c4354adf41ced4915922c873ed1e13dbeeaede"
+    },
+    {
+      "path": "public/downloads/candidate/R10-FULLSET-01-home-print.zip",
+      "sha256": "35edc8dbbdb454cc6f719c4464dd04b0d1408e8d2e29148285a9c68cab1538d7"
+    },
+    {
+      "path": "public/downloads/candidate/R10-FULLSET-01-pa12.zip",
+      "sha256": "b327e8267b4f667a1b620fae16049a8111af0b812c153bbec60697ebfd74b965"
+    },
+    {
+      "path": "public/downloads/candidate/printed-5mm-p3-source.zip",
+      "sha256": "1177dbbe373faede6658abcc598471af38d407a8ff7db6f2fc9b380ba523db9c"
+    },
+    {
+      "path": "public/downloads/candidate/printed-5mm-p3-stl.zip",
+      "sha256": "70c659f2389277836d87accb2ae30efcc4ab199b43b4aac7ce250fea00c70c6a"
+    },
+    {
+      "path": "public/previews/printed-5mm-p3.html",
+      "sha256": "3d1f7afc3aa33cbab981e452c0b31bcec7fea903374bc76552368434849f64ea"
+    }
+  ]
+}

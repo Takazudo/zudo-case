@@ -1435,5 +1435,97 @@
       "structural": 12,
       "optional": 3
     }
+  },
+  "printed_variant_p5_tab_joints": {
+    "revision": "P5-PRINTED-5MM-TAB-JOINTS-J3",
+    "model": "7u40",
+    "source": "engineering/printed-5mm/p5-tab-joints/",
+    "production_approved": false,
+    "body": {
+      "inside_width": 226.4,
+      "inside_depth": 331,
+      "wall_height": 89.5,
+      "panel_thickness": 5,
+      "slot_length": 10.5,
+      "slot_width": 5.5,
+      "bracket_shim": 1,
+      "floor_split_y": 0,
+      "seam_gap": 0.3,
+      "edge_radius": 0.6,
+      "center_pair_offset_y": 25
+    },
+    "joint": {
+      "end_tab_centers_z": [
+        24,
+        55
+      ],
+      "floor_tab_centers_y": [
+        -100,
+        -60,
+        60,
+        100
+      ],
+      "slot_clearance_each": 0.2,
+      "receiver_corner_radius": 0.4,
+      "shoulder_x": 113.05,
+      "tab_root_x": 112.9,
+      "tab_tip_x": 117.9,
+      "outline_yz": [
+        [
+          -170.5,
+          -3.5
+        ],
+        [
+          -170.5,
+          10
+        ],
+        [
+          -174.5,
+          14
+        ],
+        [
+          -174.5,
+          78.5
+        ],
+        [
+          -170.5,
+          82.5
+        ],
+        [
+          -170.5,
+          94.5
+        ],
+        [
+          170.5,
+          94.5
+        ],
+        [
+          170.5,
+          82.5
+        ],
+        [
+          174.5,
+          78.5
+        ],
+        [
+          174.5,
+          14
+        ],
+        [
+          170.5,
+          10
+        ],
+        [
+          170.5,
+          -3.5
+        ]
+      ]
+    },
+    "brim_mm": 0,
+    "preserved_from": "P4-PRINTED-5MM-UNIFORM-VENTS",
+    "print_types": {
+      "structural": 12,
+      "optional": 3
+    }
   }
 }

@@ -1,0 +1,176 @@
+{
+  "source": {
+    "repository": "Takazudo/zudo-rail",
+    "commit": "0f7316ad9000b7906e5769aa89aff2dc18c661c8",
+    "stl_url": "https://raw.githubusercontent.com/Takazudo/zudo-rail/0f7316ad9000b7906e5769aa89aff2dc18c661c8/working/nuts-v2-40hp-single.stl",
+    "stl_bytes": 29684,
+    "path": "working/nuts-v2-40hp-single.stl",
+    "github_blob_sha": "b10e9856af6bf75967936bda7537d12525992ffc",
+    "fetched_at_utc": "2026-09-23T20:37:59.401263+00:00",
+    "sha256": "88a153fe717f582f80656fe10c74df5ec1717f53e6b202fff078532b00b06c5a",
+    "git_blob_sha1": "b10e9856af6bf75967936bda7537d12525992ffc"
+  },
+  "units": {
+    "assumed": "mm",
+    "basis": "STL is unitless; source file named 40HP and length204 retained exactly. No scaling from 60HP or multiplication by nominalHP pitch."
+  },
+  "exact_mesh_measurements": {
+    "bbox_min": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bbox_max": [
+      20.131988525390625,
+      12.586471557617188,
+      204.0
+    ],
+    "extent_xyz": [
+      20.131988525390625,
+      12.586471557617188,
+      204.0
+    ],
+    "long_axis": "source Z",
+    "long_axis_length_mm": 204.0,
+    "triangle_count": 592,
+    "unique_vertices_count": 236,
+    "source_z_planes": [
+      0.0,
+      10.0,
+      194.0,
+      204.0
+    ]
+  },
+  "rail_end_attachment": {
+    "axis_direction_source": [
+      0,
+      0,
+      1
+    ],
+    "source_center_xy_mm": [
+      14.930564880371094,
+      6.7535858154296875
+    ],
+    "center_method": "Midpoint of opposed planar arms at X=11.930343627929688 and 17.9307861328125; Y=5.753509521484375 and 7.753662109375. This is an inferred design center of the open star-shaped recess, not a fitted circle or declared CAD datum.",
+    "circular_diameter_mm": null,
+    "shape": "open star/cross recess, not a circular drilled hole",
+    "opposed_arm_x_span_mm": 6.0004425048828125,
+    "opposed_arm_y_span_mm": 2.000152587890625
+  },
+  "proposed_registration": {
+    "condition": "Set target axis center worldY/worldZ from the applicable side-fixer source hole center. Rail center worldX=0. Source Y=max lip should face outside of each mounting row.",
+    "positive_y_rail_matrix_row_major": [
+      [
+        0,
+        0,
+        1,
+        -102
+      ],
+      [
+        0,
+        1,
+        0,
+        -6.7535858154296875
+      ],
+      [
+        -1,
+        0,
+        0,
+        14.930564880371094
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "negative_y_rail_matrix_row_major": [
+      [
+        0,
+        0,
+        -1,
+        102
+      ],
+      [
+        0,
+        -1,
+        0,
+        6.7535858154296875
+      ],
+      [
+        -1,
+        0,
+        0,
+        14.930564880371094
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "matrix_target_note": "Matrices place rail attachment axis at worldY=0, worldZ=0. Add targetY to matrix[1][3], targetZ to matrix[2][3]. Rotations both have determinant +1. Row pitch and row Z are controlled by actual fixer data and are not encoded here.",
+    "rail_lip_max_z_above_attachment_center_mm": 14.930564880371094,
+    "rail_min_z_below_attachment_center_mm": 5.201423645019531
+  },
+  "nominal_width_stack": {
+    "rail_mm": 204,
+    "padder_thickness_mm": 1.6,
+    "fixer_thickness_mm": 1.6,
+    "rail_unit_external_width_mm": 210.4,
+    "inner_washer_each_mm": 8,
+    "enclosure_internal_width_mm": 226.4,
+    "aluminum_each_mm": 1.5,
+    "enclosure_external_width_mm": 229.4,
+    "thickness_status": "PCB 1.6 KiCad nominal; aluminum1.5 design; spacer8 approved by user; no manufacturing tolerance included"
+  },
+  "comparison_to_60hp": {
+    "source_sha256": "584dea8a321824e370d5439104613eebc43a28d4fcd3b44f112b3c32fefc36a2",
+    "same_triangle_count": true,
+    "source_xy_triangle_coordinate_order_identical": true,
+    "max_source_xy_coordinate_difference_mm": 0.0,
+    "long_axis_difference_mm": 101.0,
+    "source_z_correspondences_40hp_60hp_mm": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        10.0,
+        10.0
+      ],
+      [
+        194.0,
+        295.0
+      ],
+      [
+        204.0,
+        305.0
+      ]
+    ],
+    "same_profile_and_attachment_center": true,
+    "warning": "40HP file is204mm, not the203.2mm product of40*5.08. Retain source204mm."
+  },
+  "mesh_topology_observations": {
+    "unique_geometric_triangle_multiplicities": {
+      "tcs_count": {
+        "1": 532,
+        "2": 30
+      }
+    },
+    "exact_edge_incidence_histogram": {
+      "2": 704,
+      "4": 92
+    },
+    "duplicate_triangle_pairs": 30,
+    "note": "Original file kept unchanged. Duplicate and coincident faces exist; do not use raw signed mesh volume as a certified material volume. Viewer may preserve source triangles, or omit only exact duplicate triangles for rendering."
+  },
+  "unresolved": [
+    "Actual PCB manufacturing thickness/tolerance; nominal1.6 used",
+    "Attachment axis is inferred from opposing flats, no native rail datum supplied",
+    "7U row centers and assembly depth/height derive from 7U fixer, not this rail file",
+    "Head diameter and actual fastener/washer manufacturing tolerance remain separate hardware inputs"
+  ]
+}

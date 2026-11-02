@@ -1,0 +1,593 @@
+[
+  {
+    "check": "immutable acceptance GEOMETRY.json",
+    "passed": true
+  },
+  {
+    "check": "immutable acceptance floor-1.step",
+    "passed": true
+  },
+  {
+    "check": "immutable acceptance floor-2.step",
+    "passed": true
+  },
+  {
+    "check": "immutable acceptance wall-back.step",
+    "passed": true
+  },
+  {
+    "check": "immutable acceptance wall-front.step",
+    "passed": true
+  },
+  {
+    "check": "immutable acceptance wall-left.step",
+    "passed": true
+  },
+  {
+    "check": "immutable acceptance wall-right.step",
+    "passed": true
+  },
+  {
+    "check": "accepted J3 bidirectional Boolean floor-1",
+    "passed": true,
+    "difference_mm3": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "check": "accepted J3 area floor-1",
+    "passed": true
+  },
+  {
+    "check": "positive connected BRep floor-1",
+    "passed": true
+  },
+  {
+    "check": "accepted J3 bidirectional Boolean floor-2",
+    "passed": true,
+    "difference_mm3": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "check": "accepted J3 area floor-2",
+    "passed": true
+  },
+  {
+    "check": "positive connected BRep floor-2",
+    "passed": true
+  },
+  {
+    "check": "accepted J3 bidirectional Boolean wall-back",
+    "passed": true,
+    "difference_mm3": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "check": "accepted J3 area wall-back",
+    "passed": true
+  },
+  {
+    "check": "positive connected BRep wall-back",
+    "passed": true
+  },
+  {
+    "check": "accepted J3 bidirectional Boolean wall-front",
+    "passed": true,
+    "difference_mm3": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "check": "accepted J3 area wall-front",
+    "passed": true
+  },
+  {
+    "check": "positive connected BRep wall-front",
+    "passed": true
+  },
+  {
+    "check": "accepted J3 bidirectional Boolean wall-left",
+    "passed": true,
+    "difference_mm3": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "check": "accepted J3 area wall-left",
+    "passed": true
+  },
+  {
+    "check": "positive connected BRep wall-left",
+    "passed": true
+  },
+  {
+    "check": "accepted J3 bidirectional Boolean wall-right",
+    "passed": true,
+    "difference_mm3": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "check": "accepted J3 area wall-right",
+    "passed": true
+  },
+  {
+    "check": "positive connected BRep wall-right",
+    "passed": true
+  },
+  {
+    "check": "side overall wall-left",
+    "passed": true
+  },
+  {
+    "check": "341mm upper wall-left",
+    "passed": true
+  },
+  {
+    "check": "341mm lower wall-left",
+    "passed": true
+  },
+  {
+    "check": "46 separate openings wall-left",
+    "passed": true
+  },
+  {
+    "check": "side overall wall-right",
+    "passed": true
+  },
+  {
+    "check": "341mm upper wall-right",
+    "passed": true
+  },
+  {
+    "check": "341mm lower wall-right",
+    "passed": true
+  },
+  {
+    "check": "46 separate openings wall-right",
+    "passed": true
+  },
+  {
+    "check": "body separate floor-1/floor-2",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate floor-1/wall-back",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate floor-1/wall-front",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate floor-1/wall-left",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate floor-1/wall-right",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate floor-2/wall-back",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate floor-2/wall-front",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate floor-2/wall-left",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate floor-2/wall-right",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate wall-back/wall-front",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate wall-back/wall-left",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate wall-back/wall-right",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate wall-front/wall-left",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate wall-front/wall-right",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "body separate wall-left/wall-right",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion left/0",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion left/1",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion left/2",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion left/3",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion left/4.7",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion left/6",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion left/12",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion left/24",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion right/0",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion right/1",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion right/2",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion right/3",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion right/4.7",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion right/6",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion right/12",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "X insertion right/24",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-back/0",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-back/0.5",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-back/1",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-back/4",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-back/7.5",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-back/15",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-front/0",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-front/0.5",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-front/1",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-front/4",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-front/7.5",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-front/15",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-left/0",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-left/0.5",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-left/1",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-left/4",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-left/7.5",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-left/15",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-right/0",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-right/0.5",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-right/1",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-right/4",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-right/7.5",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-edge-right/15",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-top-1/0",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-top-1/0.5",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-top-1/1",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-top-1/4",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-top-1/7.5",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-top-1/15",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-top-2/0",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-top-2/0.5",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-top-2/1",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-top-2/4",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-top-2/7.5",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift lid-top-2/15",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "receiver hardware projection receiver-right--1-24",
+    "passed": true,
+    "minimum_mm": 1.9697715603592263,
+    "nearest": "bracket-corner-1--1-0"
+  },
+  {
+    "check": "receiver hardware projection receiver-right--1-55",
+    "passed": true,
+    "minimum_mm": 1.131370849898482,
+    "nearest": "bracket-corner-1--1-0"
+  },
+  {
+    "check": "receiver hardware projection receiver-right-1-24",
+    "passed": true,
+    "minimum_mm": 1.9697715603592263,
+    "nearest": "bracket-corner-1-1-0"
+  },
+  {
+    "check": "receiver hardware projection receiver-right-1-55",
+    "passed": true,
+    "minimum_mm": 1.131370849898482,
+    "nearest": "bracket-corner-1-1-0"
+  },
+  {
+    "check": "receiver hardware projection receiver-right-floor--100.0",
+    "passed": true,
+    "minimum_mm": 8.338465086573185,
+    "nearest": "bracket-lower-right-0"
+  },
+  {
+    "check": "receiver hardware projection receiver-right-floor--60.0",
+    "passed": true,
+    "minimum_mm": 16.819036833302906,
+    "nearest": "bracket-lower-right-1"
+  },
+  {
+    "check": "receiver hardware projection receiver-right-floor-60.0",
+    "passed": true,
+    "minimum_mm": 16.819036833302906,
+    "nearest": "bracket-lower-right-2"
+  },
+  {
+    "check": "receiver hardware projection receiver-right-floor-100.0",
+    "passed": true,
+    "minimum_mm": 8.338465086573185,
+    "nearest": "bracket-lower-right-3"
+  },
+  {
+    "check": "receiver hardware projection receiver-left--1-24",
+    "passed": true,
+    "minimum_mm": 1.9697715603592263,
+    "nearest": "bracket-corner--1--1-0"
+  },
+  {
+    "check": "receiver hardware projection receiver-left--1-55",
+    "passed": true,
+    "minimum_mm": 1.131370849898482,
+    "nearest": "bracket-corner--1--1-0"
+  },
+  {
+    "check": "receiver hardware projection receiver-left-1-24",
+    "passed": true,
+    "minimum_mm": 1.9697715603592263,
+    "nearest": "bracket-corner--1-1-0"
+  },
+  {
+    "check": "receiver hardware projection receiver-left-1-55",
+    "passed": true,
+    "minimum_mm": 1.131370849898482,
+    "nearest": "bracket-corner--1-1-0"
+  },
+  {
+    "check": "receiver hardware projection receiver-left-floor--100.0",
+    "passed": true,
+    "minimum_mm": 8.338465086573185,
+    "nearest": "bracket-lower-left-3"
+  },
+  {
+    "check": "receiver hardware projection receiver-left-floor--60.0",
+    "passed": true,
+    "minimum_mm": 16.819036833302906,
+    "nearest": "bracket-lower-left-2"
+  },
+  {
+    "check": "receiver hardware projection receiver-left-floor-60.0",
+    "passed": true,
+    "minimum_mm": 16.819036833302906,
+    "nearest": "bracket-lower-left-1"
+  },
+  {
+    "check": "receiver hardware projection receiver-left-floor-100.0",
+    "passed": true,
+    "minimum_mm": 8.338465086573185,
+    "nearest": "bracket-lower-left-0"
+  },
+  {
+    "check": "receiver hardware minimum",
+    "passed": true
+  }
+]

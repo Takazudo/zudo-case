@@ -1,0 +1,24 @@
+---
+title: "P5・STL/STEPとH2D 3MF"
+description: "本体6枚を同時交換する印刷一式、再生成ソースと未スライスPLA06プロジェクト。"
+sidebar_position: 32
+---
+
+| 内容 | ダウンロード |
+|---|---|
+| 全ケース15 STL＋15 STEP | <PreviewLink path="/downloads/candidate/printed-5mm-p5-tab-joints-stl.zip">P5全ケースZIP</PreviewLink> |
+| 単独再生成ソース・lock・原入力 | <PreviewLink path="/downloads/candidate/printed-5mm-p5-tab-joints-source.zip">P5ソースZIP</PreviewLink> |
+| 本体6枚の交換セット | <PreviewLink path="/downloads/candidate/printed-5mm-p5-tab-joints-body.zip">P5本体6枚ZIP</PreviewLink> |
+| H2D PLA・0.6mm、未スライス15種類 | <PreviewLink path="/downloads/candidate/printed-5mm-p5-tab-joints-h2d-3mf.zip">P5 3MF一式</PreviewLink> |
+
+**P4からは左右側板・前後板・底2枚の6枚をセットで交換します。** P4の床236.4mm幅を新側板へ混ぜません。旧P4の蓋6枚と任意パッド／座金3型は再使用できます。左右2枚だけの交換ZIPは提供しません。
+
+構造12部品は各1個。任意パッドは横48・縦48・丸座金28。3MFは1種類につき1部品・1プレートです。複製数量はmanifestに記録し、レール・PCB・金属部品を印刷品へ混ぜません。
+
+STLはmm・印刷姿勢、STEPは組立座標。長側板は一体・45度平置き済みです。追加の45度回転や倍率変更をしません。ブリム0mm、単一ノズル325×320mm内です。長側板は手動Right、X25..350／Y0..320の領域を使います。
+
+3MFは保存済みPLA・0.6mmテンプレートを継承し、工程設定の変更はbrim_type=no_brim、brim_width=0だけです。元の壁2周・15% infill・support OFF等は保持します。これは推奨印刷設定や段付き蓋のサポート保証ではありません。設計のASA想定とPLA工程設定は別です。
+
+G-codeは含みません。実スライス、反り、現物嵌合、荷重、クリープ、運搬は未確認です。部品hash、配置、設定diff、ソフトウェア検査の範囲はZIP内manifestと同版の検証記録を参照してください。
+
+[設計・組立と再生成](./p5-design.mdx)・[プレビュー](./p5-preview.mdx)。[旧P4](./p4-print-files.mdx)と[P3](./print-files.mdx)は履歴として保存します。

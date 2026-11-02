@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "title": "P5 lid-top-2 / H2D / unsliced",
+  "description": "P5 geometry unchanged. Settings retained; user will configure print details. No toolpaths.",
+  "margin_mm": 0,
+  "settings": {
+    "brim_type": "no_brim",
+    "brim_width": "0"
+  },
+  "gap_mm": 6,
+  "objects": [
+    {
+      "name": "P5 lid-top-2",
+      "mesh": "../input-stl/lid-top-2.stl",
+      "filament": 1,
+      "position_mm": [
+        62.099998474121094,
+        72.4749984741211
+      ],
+      "rotate_z_degrees": 0
+    }
+  ]
+}

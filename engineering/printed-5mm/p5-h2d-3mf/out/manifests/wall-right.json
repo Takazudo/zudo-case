@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "title": "P5 wall-right / H2D / unsliced",
+  "description": "P5 geometry unchanged. Settings retained; user will configure print details. No toolpaths.",
+  "margin_mm": 0,
+  "settings": {
+    "brim_type": "no_brim",
+    "brim_width": "0"
+  },
+  "gap_mm": 6,
+  "objects": [
+    {
+      "name": "P5 wall-right",
+      "mesh": "../input-stl/wall-right.stl",
+      "filament": 1,
+      "position_mm": [
+        32.41453552246094,
+        4.914531687973067
+      ],
+      "rotate_z_degrees": 0
+    }
+  ]
+}

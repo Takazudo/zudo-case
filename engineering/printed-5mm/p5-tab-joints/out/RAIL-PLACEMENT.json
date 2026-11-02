@@ -1,0 +1,426 @@
+{
+  "parameters": {
+    "source_commit": "6a99404a4e4220bb18b88d7d0f063571d1dad7b9",
+    "rail_length": 204,
+    "pcb_thickness": 1.6,
+    "pcb_top_z": 93.0,
+    "floor_datum_shift": 3.5,
+    "mount_z": 71.6894265,
+    "mount_y": [
+      -134.5318715,
+      -67.26594,
+      -8.000000008223651e-06,
+      67.26591450000001,
+      134.496536
+    ],
+    "rail_axis_yz": [
+      [
+        -151.3439345,
+        78.0049775
+      ],
+      [
+        -28.843391999999994,
+        78.0049795
+      ],
+      [
+        -16.8473745,
+        78.0049795
+      ],
+      [
+        105.65319800000003,
+        78.0049795
+      ],
+      [
+        117.68447850000001,
+        78.0049795
+      ],
+      [
+        151.3439325,
+        78.0049795
+      ]
+    ],
+    "spacer_length": 8,
+    "mount_bolt_length_display": 25,
+    "rail_end_bolt_length_display": 40,
+    "assembly_existing_components": 66,
+    "printed_case_changed": false
+  },
+  "mounts": [
+    {
+      "side": "left",
+      "axis_yz": [
+        -134.5318715,
+        71.6894265
+      ],
+      "hole_radius": 2.75,
+      "fixer_outer_x": -105.2,
+      "wall_inside_x": -113.2,
+      "wall_outside_x": -118.2,
+      "spacer": 8,
+      "grip_to_nut": 15.6,
+      "display_bolt_shank": 25,
+      "nominal_tip_projection_beyond_nut": 4.4
+    },
+    {
+      "side": "left",
+      "axis_yz": [
+        -67.26594,
+        71.6894265
+      ],
+      "hole_radius": 2.75,
+      "fixer_outer_x": -105.2,
+      "wall_inside_x": -113.2,
+      "wall_outside_x": -118.2,
+      "spacer": 8,
+      "grip_to_nut": 15.6,
+      "display_bolt_shank": 25,
+      "nominal_tip_projection_beyond_nut": 4.4
+    },
+    {
+      "side": "left",
+      "axis_yz": [
+        -8.000000008223651e-06,
+        71.6894265
+      ],
+      "hole_radius": 2.75,
+      "fixer_outer_x": -105.2,
+      "wall_inside_x": -113.2,
+      "wall_outside_x": -118.2,
+      "spacer": 8,
+      "grip_to_nut": 15.6,
+      "display_bolt_shank": 25,
+      "nominal_tip_projection_beyond_nut": 4.4
+    },
+    {
+      "side": "left",
+      "axis_yz": [
+        67.26591450000001,
+        71.6894265
+      ],
+      "hole_radius": 2.75,
+      "fixer_outer_x": -105.2,
+      "wall_inside_x": -113.2,
+      "wall_outside_x": -118.2,
+      "spacer": 8,
+      "grip_to_nut": 15.6,
+      "display_bolt_shank": 25,
+      "nominal_tip_projection_beyond_nut": 4.4
+    },
+    {
+      "side": "left",
+      "axis_yz": [
+        134.496536,
+        71.6894265
+      ],
+      "hole_radius": 2.75,
+      "fixer_outer_x": -105.2,
+      "wall_inside_x": -113.2,
+      "wall_outside_x": -118.2,
+      "spacer": 8,
+      "grip_to_nut": 15.6,
+      "display_bolt_shank": 25,
+      "nominal_tip_projection_beyond_nut": 4.4
+    },
+    {
+      "side": "right",
+      "axis_yz": [
+        -134.5318715,
+        71.6894265
+      ],
+      "hole_radius": 2.75,
+      "fixer_outer_x": 105.2,
+      "wall_inside_x": 113.2,
+      "wall_outside_x": 118.2,
+      "spacer": 8,
+      "grip_to_nut": 15.6,
+      "display_bolt_shank": 25,
+      "nominal_tip_projection_beyond_nut": 4.4
+    },
+    {
+      "side": "right",
+      "axis_yz": [
+        -67.26594,
+        71.6894265
+      ],
+      "hole_radius": 2.75,
+      "fixer_outer_x": 105.2,
+      "wall_inside_x": 113.2,
+      "wall_outside_x": 118.2,
+      "spacer": 8,
+      "grip_to_nut": 15.6,
+      "display_bolt_shank": 25,
+      "nominal_tip_projection_beyond_nut": 4.4
+    },
+    {
+      "side": "right",
+      "axis_yz": [
+        -8.000000008223651e-06,
+        71.6894265
+      ],
+      "hole_radius": 2.75,
+      "fixer_outer_x": 105.2,
+      "wall_inside_x": 113.2,
+      "wall_outside_x": 118.2,
+      "spacer": 8,
+      "grip_to_nut": 15.6,
+      "display_bolt_shank": 25,
+      "nominal_tip_projection_beyond_nut": 4.4
+    },
+    {
+      "side": "right",
+      "axis_yz": [
+        67.26591450000001,
+        71.6894265
+      ],
+      "hole_radius": 2.75,
+      "fixer_outer_x": 105.2,
+      "wall_inside_x": 113.2,
+      "wall_outside_x": 118.2,
+      "spacer": 8,
+      "grip_to_nut": 15.6,
+      "display_bolt_shank": 25,
+      "nominal_tip_projection_beyond_nut": 4.4
+    },
+    {
+      "side": "right",
+      "axis_yz": [
+        134.496536,
+        71.6894265
+      ],
+      "hole_radius": 2.75,
+      "fixer_outer_x": 105.2,
+      "wall_inside_x": 113.2,
+      "wall_outside_x": 118.2,
+      "spacer": 8,
+      "grip_to_nut": 15.6,
+      "display_bolt_shank": 25,
+      "nominal_tip_projection_beyond_nut": 4.4
+    }
+  ],
+  "rail_bounds": [
+    [
+      -102.0,
+      -157.17682,
+      72.803554,
+      102.0,
+      -144.590349,
+      92.935542
+    ],
+    [
+      -102.0,
+      -35.596978,
+      72.803556,
+      102.0,
+      -23.010506,
+      92.935544
+    ],
+    [
+      -102.0,
+      -22.68026,
+      72.803556,
+      102.0,
+      -10.093789,
+      92.935544
+    ],
+    [
+      -102.0,
+      98.899612,
+      72.803556,
+      102.0,
+      111.486084,
+      92.935544
+    ],
+    [
+      -102.0,
+      111.851593,
+      72.803556,
+      102.0,
+      124.438064,
+      92.935544
+    ],
+    [
+      -102.0,
+      144.590347,
+      72.803556,
+      102.0,
+      157.176818,
+      92.935544
+    ]
+  ],
+  "source_transforms": [
+    {
+      "id": "rail-1",
+      "matrix": [
+        [
+          0.0,
+          0.0,
+          -1.0,
+          102.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          -144.5903486845703
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          92.93554238037109
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "rail-2",
+      "matrix": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          -102.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -35.59697781542968
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          92.9355443803711
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "rail-3",
+      "matrix": [
+        [
+          0.0,
+          0.0,
+          -1.0,
+          102.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          -10.093788684570313
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          92.9355443803711
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "rail-4",
+      "matrix": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          -102.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          98.89961218457034
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          92.9355443803711
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "rail-5",
+      "matrix": [
+        [
+          0.0,
+          0.0,
+          -1.0,
+          102.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          124.4380643154297
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          92.9355443803711
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "rail-6",
+      "matrix": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          -102.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          144.5903466845703
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          92.9355443803711
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

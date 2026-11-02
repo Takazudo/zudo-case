@@ -1,0 +1,42 @@
+{
+  "base_zip": "zudo-case-printed-5mm-p2(1).zip",
+  "base_zip_sha256": "54bdc0467c23b30747a3dbeca56ff2726ac1541c408dcb197dbc4f1c630747a3",
+  "reference_repository": "Takazudo/zudo-case",
+  "reference_commit": "6a99404a4e4220bb18b88d7d0f063571d1dad7b9",
+  "reference_folder": "engineering/r6-body",
+  "files": [
+    {
+      "path": "build_geometry.py",
+      "bytes": 50199,
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d",
+      "git_blob_sha1": "77c998e0bbdd4a390604b7724d8f2f17b3618ffe"
+    },
+    {
+      "path": "design-parameters.json",
+      "bytes": 23552,
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b",
+      "git_blob_sha1": "c9a2fe501928856f850a26541fe9cd3048664f5f"
+    },
+    {
+      "path": "source-data/panels/panel-geometry.json",
+      "bytes": 627540,
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c",
+      "git_blob_sha1": "04836d809db024613023beba1cd5d355bf5eb184"
+    },
+    {
+      "path": "source-data/rail40/rail_mesh.json",
+      "bytes": 16569,
+      "sha256": "6ddbf622f9bcd8f4d1316d76ce2c55b4cecfb3c166de6f88826fda3bb19c2753",
+      "git_blob_sha1": "178fd2e720d83b92f2430603e5592c5854ca2087"
+    },
+    {
+      "path": "source-data/rail40/rail_dimensions.json",
+      "bytes": 5151,
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210",
+      "git_blob_sha1": "1c60b9076473bd36aab30765cbaa8c11ac03337b"
+    }
+  ],
+  "recovered_from": "zudo-case-fitfix-01.zip / reference/r6-body. panel-geometry, rail_mesh and generator Git blob hashes match inspected pinned repository files.",
+  "zzmod_reference": "components/mdx/zudo-block-case-3d-preview/lazy-case-viewer.tsx and library round4 case UI were read. No rail geometry from that folded-panel renderer is substituted for source rails.",
+  "transforms": "Only rigid placement; P2 vertical datum is +3.5 mm vs R6. No scaled rail or repaired PCB contour."
+}

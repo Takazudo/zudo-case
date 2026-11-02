@@ -1,0 +1,446 @@
+{
+  "revision": "P5-PRINTED-5MM-TAB-JOINTS-J3",
+  "source_parameter_sha256": "e1a3ec08e1535ffd5a959aaf56952e5f885e71640bad25472aeae71f0daa9f26",
+  "files": [
+    {
+      "path": ".python-version",
+      "sha256": "e72b03ed5b70312f2782f2b05055c55b24670e126d50e24c4f2c559bf288f810",
+      "bytes": 7
+    },
+    {
+      "path": "BOM.json",
+      "sha256": "e099edeefd98e7485e7b01c08214f08c21d58d745b5251ad6bcd30c9bf6583c1",
+      "bytes": 25401
+    },
+    {
+      "path": "DIMENSIONS.json",
+      "sha256": "c23c04708f724e58f2caac6973ad9455ea2b73a011fda5f88ce7dc04527b45c3",
+      "bytes": 1095
+    },
+    {
+      "path": "JOINTS.json",
+      "sha256": "7e4c62b5cd7770f01a4c030ba49237c10c8d1cfb399bc11177815db0371a8f30",
+      "bytes": 2247
+    },
+    {
+      "path": "PRINT-MAPPING.json",
+      "sha256": "e632d630b176ba326f1daf758ba982f7c73921a692f64cb758e034bfbd4de16c",
+      "bytes": 12198
+    },
+    {
+      "path": "PRINT-PARTS.csv",
+      "sha256": "00bb6b6bc645420f8fe492450b2c86d71b1fe30e0285a907312267acd38f0bc3",
+      "bytes": 3152
+    },
+    {
+      "path": "PRINT-START-HERE.md",
+      "sha256": "d8d1091a847e83c65c11170d0db5455af8363f9d2c247de89ebba9e8b278dd4b",
+      "bytes": 2738
+    },
+    {
+      "path": "README.md",
+      "sha256": "d8d1091a847e83c65c11170d0db5455af8363f9d2c247de89ebba9e8b278dd4b",
+      "bytes": 2738
+    },
+    {
+      "path": "VENTILATION.json",
+      "sha256": "c7c79e27de91b97b0ce5ad2b19cedd07b8c70c17c649f4deddd5d7bd599bb3e5",
+      "bytes": 60301
+    },
+    {
+      "path": "accepted-geometry-comparison.json",
+      "sha256": "dc590ac64e9e57df0006240abd4229dd5b61ff1e4451f580eca6c245831192d4",
+      "bytes": 8097
+    },
+    {
+      "path": "build.py",
+      "sha256": "9f242ac44918a1526f9a08563ed364c950290334656963cd01d78c56ee03c15d",
+      "bytes": 8827
+    },
+    {
+      "path": "evidence/geometry-checks.json",
+      "sha256": "ed4e0404de6316c7c466a95257764ea3acc4e4ee2adb41aa51c56416b0a2b571",
+      "bytes": 82348
+    },
+    {
+      "path": "evidence/joint-checks.json",
+      "sha256": "9dd8302a4239824202281e2f386bff63422936762f65dc84b7cf67f16e8eeda4",
+      "bytes": 11956
+    },
+    {
+      "path": "evidence/print-bed-checks.json",
+      "sha256": "529adaee41390e2c2dbcbe8a9ff874cd121f2f79783130207319179d66f07112",
+      "bytes": 14964
+    },
+    {
+      "path": "evidence/rail-geometry-checks.json",
+      "sha256": "4696b4543fe1c0dd243f124a23df464acff8ab68add80a5060df183d00b45ec2",
+      "bytes": 19526
+    },
+    {
+      "path": "evidence/reference-inspection.json",
+      "sha256": "6ee2ead6905fefe31f279f8552abecce1e7c2cd1568d2bac29a8549b546ddc94",
+      "bytes": 543
+    },
+    {
+      "path": "negative.py",
+      "sha256": "10ec41098013cd59e8fda7c0d58f990cc02415ada9ced51d73deb4e0270dc894",
+      "bytes": 3878
+    },
+    {
+      "path": "printed-5mm-p5-tab-joints-body.zip",
+      "sha256": "2dd2e0192a38eded5ed55f6e99267a89e8afc36d41ef3763a800e85e7abf7837",
+      "bytes": 1254759
+    },
+    {
+      "path": "printed-5mm-p5-tab-joints-source.zip",
+      "sha256": "07425362b83808dd0f4dc550a31cc4988531265b792f60ca2715233ca3b23684",
+      "bytes": 974266
+    },
+    {
+      "path": "printed-5mm-p5-tab-joints-stl.zip",
+      "sha256": "196abb3a851bf9872249012829bea7542296a52c9385607f4fa213c6ae4a7866",
+      "bytes": 1479081
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "6922846d1e0106d88b1a5d2b75045967326020b4a9db844655cc790fa1f7b247",
+      "bytes": 210
+    },
+    {
+      "path": "reference/ACCEPTED-GEOMETRY.json",
+      "sha256": "935e11f7ea25a904744958cd54238c0cb8bb99dc151664d7c297cc5180f02afb",
+      "bytes": 10595
+    },
+    {
+      "path": "reference/P2-PRINT-FILES.json",
+      "sha256": "7caaafdf084699747a666ce226adfed147ff8bc7e22a8899649c2dffa554d7b6",
+      "bytes": 4391
+    },
+    {
+      "path": "reference/P4-SOURCE-RECEIPT.json",
+      "sha256": "0e91a431b3e9e3d89367c26b53d29c576684100e3b9a65b30a92af115d8faa69",
+      "bytes": 3697
+    },
+    {
+      "path": "reference/P5-BASELINE.json",
+      "sha256": "94d4dbac997dde835c07b6cfb7b54241de541ee52d84c6d274a9d78cedee6cf7",
+      "bytes": 61175
+    },
+    {
+      "path": "reference/PRESERVATION.json",
+      "sha256": "3f400853778eccef0cc23cdd935c76da2602001ea3fe6742d003340830d851d6",
+      "bytes": 38658
+    },
+    {
+      "path": "reference/RAIL-PLACEMENT.json",
+      "sha256": "ac8fd52debacc738838dc4c9607e4c75b9951696bf664037c5e049480f7ccfb9",
+      "bytes": 7628
+    },
+    {
+      "path": "reference/SOURCE-RECEIPT.json",
+      "sha256": "9752403db9439b00f8331cd43e3592ec884db4639e080e902b3d8b1cac0e2c22",
+      "bytes": 1969
+    },
+    {
+      "path": "reference/accepted-j3/GEOMETRY.json",
+      "sha256": "976f96bd1a38202a5a46211f1a523cde99dc70fa136628d200e784330197723d",
+      "bytes": 13800
+    },
+    {
+      "path": "reference/accepted-j3/RECEIPT.json",
+      "sha256": "0af1d0358a0db5824bd969091ddaec54f6e041c366f40cc2f663ca40df9c4960",
+      "bytes": 1008
+    },
+    {
+      "path": "reference/accepted-j3/floor-1.step",
+      "sha256": "76d67de4877fb579ed491f63c652a1e5e60ddc3eeb1f9394bd9f92b053f9fe37",
+      "bytes": 175600
+    },
+    {
+      "path": "reference/accepted-j3/floor-2.step",
+      "sha256": "1bd92b826483a9125e74d11e52314d6be03f8132e0ee1fed36bad63b38563ca1",
+      "bytes": 175536
+    },
+    {
+      "path": "reference/accepted-j3/wall-back.step",
+      "sha256": "e0a41173c4706ab74d18091ad295546926ba361eca455252fba32e1a23866609",
+      "bytes": 668640
+    },
+    {
+      "path": "reference/accepted-j3/wall-front.step",
+      "sha256": "1f40b9dfb4324152fc3b874beb4e09179bcc02a6a7fe4caae72f633fae60a65a",
+      "bytes": 742040
+    },
+    {
+      "path": "reference/accepted-j3/wall-left.step",
+      "sha256": "9352288f295e0730b1c73fa60ad735a3f85fca6af10cdbbe8987f914844b9336",
+      "bytes": 1377316
+    },
+    {
+      "path": "reference/accepted-j3/wall-right.step",
+      "sha256": "bc6ab4da3113e39d852fd479a8c6a27ea2256e5be1b8e53cb0ec5173474a6354",
+      "bytes": 1363388
+    },
+    {
+      "path": "reference/lid-edge.stl",
+      "sha256": "37898c2fdf8f098df66aa5ed88c74cf437e77f5f72be8ab66bc5e785d0887692",
+      "bytes": 25884
+    },
+    {
+      "path": "reference/rail-source/build_geometry.py",
+      "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d",
+      "bytes": 50199
+    },
+    {
+      "path": "reference/rail-source/design-parameters.json",
+      "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b",
+      "bytes": 23552
+    },
+    {
+      "path": "reference/rail-source/source-data/panels/panel-geometry.json",
+      "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c",
+      "bytes": 627540
+    },
+    {
+      "path": "reference/rail-source/source-data/rail40/rail_dimensions.json",
+      "sha256": "0f1f0a9cbe3d6153ecd979a9a952efb25c30315c49471a9d9e9fa5809def2210",
+      "bytes": 5151
+    },
+    {
+      "path": "reference/rail-source/source-data/rail40/rail_mesh.json",
+      "sha256": "6ddbf622f9bcd8f4d1316d76ce2c55b4cecfb3c166de6f88826fda3bb19c2753",
+      "bytes": 16569
+    },
+    {
+      "path": "regenerate.py",
+      "sha256": "b1364b96e375674e91e44b156989532f8e759ec706bf019d23a1e0d185a57891",
+      "bytes": 1149
+    },
+    {
+      "path": "source/build_case.py",
+      "sha256": "203a702b0a4d250092ffd9c0c4cd793f27e5f107af88d384856d491a45dd93ac",
+      "bytes": 28382
+    },
+    {
+      "path": "source/build_html.py",
+      "sha256": "6a4fa11fbc387be452d259964f1515c35503a313c5307a974cce036e975ae912",
+      "bytes": 698
+    },
+    {
+      "path": "source/build_rails.py",
+      "sha256": "ec7913c256c2d1a0a00d7894ef76d86c3519961de8438eaf38b5f2000a69f823",
+      "bytes": 18092
+    },
+    {
+      "path": "source/joints.py",
+      "sha256": "487f321cff49c7d37e44aece9453a52a4f5667201cf7844735dd935f0d6fde9c",
+      "bytes": 2729
+    },
+    {
+      "path": "source/model.json",
+      "sha256": "e003079fa4200d3467c7ae715ac1c038fa296a4c3b837dc7a5d3c010bad0041d",
+      "bytes": 13031971
+    },
+    {
+      "path": "source/parameters.json",
+      "sha256": "e1a3ec08e1535ffd5a959aaf56952e5f885e71640bad25472aeae71f0daa9f26",
+      "bytes": 4832
+    },
+    {
+      "path": "source/ventilation.py",
+      "sha256": "6a40e0aa8256333503a3b3fbec3b77fa4e02c9a9dde2248c445ed14e18c7b4d8",
+      "bytes": 4636
+    },
+    {
+      "path": "source/ventilation_report.py",
+      "sha256": "4eb1bdfd9bad807bd31e53fcdc7843bd92ca17e5945bf6bb7922b946da934314",
+      "bytes": 3180
+    },
+    {
+      "path": "source/verify_browser.py",
+      "sha256": "34b42642630a7c515af58f899ae359118965dedfb5ee5b343408ba00aadf3de3",
+      "bytes": 13202
+    },
+    {
+      "path": "source/verify_joints.py",
+      "sha256": "dc31d19695717bee506ff54e1af82a3d9f6cf1b16021c75473c35f117b183e7b",
+      "bytes": 5413
+    },
+    {
+      "path": "source/viewer-template.html",
+      "sha256": "4da0582c2a142cfb43befa564fa2b0061dafb0706b408ca95aaf367c1b2d5931",
+      "bytes": 57914
+    },
+    {
+      "path": "step/floor-1.step",
+      "sha256": "765df4e431a9e9708163062e8f4bb1c51392f63cb1fd472d3598d49ba5a89fc4",
+      "bytes": 177409
+    },
+    {
+      "path": "step/floor-2.step",
+      "sha256": "549db08cf5985f8bce260f095205cbed56d37500d2d77b229f9947998256bdfa",
+      "bytes": 177359
+    },
+    {
+      "path": "step/lid-edge-back.step",
+      "sha256": "e4266c63362b94c860fdc2de8600804cbf12b5f5f7972468c503eed787eec7da",
+      "bytes": 132029
+    },
+    {
+      "path": "step/lid-edge-front.step",
+      "sha256": "8a46eeeb917e5b9d0e15c94b7cf04e1260b10b075bbde6b4610b6d8638012eac",
+      "bytes": 132293
+    },
+    {
+      "path": "step/lid-edge-left.step",
+      "sha256": "c598366c95962d8ec9d151e032b2651e94ed1949b1a96eab2c72982e7d6be0ea",
+      "bytes": 132288
+    },
+    {
+      "path": "step/lid-edge-right.step",
+      "sha256": "edbbaf7a765486a2ef96b04d561efbb9a93c4cfba69da21bf90bd37b0757c812",
+      "bytes": 132002
+    },
+    {
+      "path": "step/lid-top-1.step",
+      "sha256": "e425f3590970abe3679f4864b48fe91cd3fb1f9e9838d72323064960cf9ad6bf",
+      "bytes": 39290
+    },
+    {
+      "path": "step/lid-top-2.step",
+      "sha256": "d451b11bbd91b6e9fcbdd27271fb69663d965fd5573a1684fc4ffbd2892880d4",
+      "bytes": 39248
+    },
+    {
+      "path": "step/pad-horizontal.step",
+      "sha256": "374e5368a8138f672d25a8ed972c8a66e69389939f43cd307d4efeb2ff0862df",
+      "bytes": 20896
+    },
+    {
+      "path": "step/pad-vertical.step",
+      "sha256": "191c4c79a86164ef37c2ef01f13ed7e3e62b7a447bd01c41210ff79fc06c43c3",
+      "bytes": 21184
+    },
+    {
+      "path": "step/wall-back.step",
+      "sha256": "f3d351b473fde183196e8a8461662db38f0e27f06a39ae4996e1a36f0e4e1421",
+      "bytes": 678577
+    },
+    {
+      "path": "step/wall-front.step",
+      "sha256": "02c869635ab67257cdae693ad0b444d13d54004612e8e2f183d5ad5699662495",
+      "bytes": 679765
+    },
+    {
+      "path": "step/wall-left.step",
+      "sha256": "2b441c4c019aef8e4715711b9058d1e863f0408a7d5d6794b4a38e08b808cf10",
+      "bytes": 1360614
+    },
+    {
+      "path": "step/wall-right.step",
+      "sha256": "d5e74bd9c24f1465db06f08383a14ed78e8f5798bfb1f41d396fe312ed987c42",
+      "bytes": 1255750
+    },
+    {
+      "path": "step/washer-round.step",
+      "sha256": "c635ad4e53b2402e2982e6a10e1b3a8bb8e8ec02eda3142d82bc92dd992820bf",
+      "bytes": 9312
+    },
+    {
+      "path": "stl/floor-1.stl",
+      "sha256": "fc7b735adaa38e7700199add548995395f2e95f02185d42a9c622fa85ede9ed7",
+      "bytes": 108284
+    },
+    {
+      "path": "stl/floor-2.stl",
+      "sha256": "506afa6ed568a951de97511923c82844966085daacd5cae1bbceac9f9ffa8df7",
+      "bytes": 108284
+    },
+    {
+      "path": "stl/lid-edge-back.stl",
+      "sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+      "bytes": 55884
+    },
+    {
+      "path": "stl/lid-edge-front.stl",
+      "sha256": "061d61ff458a9b65b92c9bd8fcd7107e6a2e7cb2e157fc57bf2da666667c5275",
+      "bytes": 55884
+    },
+    {
+      "path": "stl/lid-edge-left.stl",
+      "sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+      "bytes": 55884
+    },
+    {
+      "path": "stl/lid-edge-right.stl",
+      "sha256": "cbb07a4439168bba238728d4aaeadec381ebcf94f19d8dffc39efdad07845e6c",
+      "bytes": 55884
+    },
+    {
+      "path": "stl/lid-top-1.stl",
+      "sha256": "167a47149983924ba440e2c220781837f49a5cce56d0725b5774cf73f0c6f522",
+      "bytes": 77084
+    },
+    {
+      "path": "stl/lid-top-2.stl",
+      "sha256": "b056b7e864a9d779eda4a39a1c6c9b3986b6bff84eda59475e2a7aa842051599",
+      "bytes": 77084
+    },
+    {
+      "path": "stl/pad-horizontal.stl",
+      "sha256": "2a08d1088fec93f6bc380b2e1be37d9fcd1db7338895a5c2385278b7113ee065",
+      "bytes": 34084
+    },
+    {
+      "path": "stl/pad-vertical.stl",
+      "sha256": "0d27507cc73f7e07b6778dfd6997a6b6acf5757c773675004139d403af56db50",
+      "bytes": 34084
+    },
+    {
+      "path": "stl/wall-back.stl",
+      "sha256": "3bb220b3339960337ac247c4d909da1786b631a958423ef14ab2955b223ef060",
+      "bytes": 402684
+    },
+    {
+      "path": "stl/wall-front.stl",
+      "sha256": "a9453365b665a820835be8b44a57f6ad6e6abe372091ffc0727edc3b47ee21d1",
+      "bytes": 402684
+    },
+    {
+      "path": "stl/wall-left.stl",
+      "sha256": "8a069d918b30610a0fc9f3d4ae482f4ab196506d0d50dcb4a4efd1473c8a7800",
+      "bytes": 831484
+    },
+    {
+      "path": "stl/wall-right.stl",
+      "sha256": "5c29527d8ea17ecbc6c9a5fcf670b8a7ac314b780170c449a2c973c59e5b6bde",
+      "bytes": 831484
+    },
+    {
+      "path": "stl/washer-round.stl",
+      "sha256": "e9dd796d2d49770481ccaed825a24c1f19ddf48a8aa1517442051df525c3ef06",
+      "bytes": 33684
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "21c6f6a2235a8b33f4555075382eac324d4b3e2a6385591999eaa5f975106a93",
+      "bytes": 121345
+    },
+    {
+      "path": "validate_parameters.py",
+      "sha256": "8b19a0e346f1b9ab71fce74a73130a82efc3e33c3b41cafff84f10defc4777ae",
+      "bytes": 3025
+    },
+    {
+      "path": "verify.py",
+      "sha256": "15f58bb350e7651a748a4e11c6019eeb2154c444b6b0f914a183986bd77aa132",
+      "bytes": 5460
+    },
+    {
+      "path": "zudo-case-printed-5mm-p5-tab-joints.html",
+      "sha256": "1fd42bb5970d8b6119fb5e9612fd9d6eadf5eab86140610f4b864a272d067d6c",
+      "bytes": 13089876
+    }
+  ]
+}

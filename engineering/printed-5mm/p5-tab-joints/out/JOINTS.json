@@ -1,0 +1,90 @@
+{
+  "receiver_hardware_distances": [
+    {
+      "id": "receiver-right--1-24",
+      "gap_mm": 1.9697715603592263,
+      "nearest": "bracket-corner-1--1-0"
+    },
+    {
+      "id": "receiver-right--1-55",
+      "gap_mm": 1.131370849898482,
+      "nearest": "bracket-corner-1--1-0"
+    },
+    {
+      "id": "receiver-right-1-24",
+      "gap_mm": 1.9697715603592263,
+      "nearest": "bracket-corner-1-1-0"
+    },
+    {
+      "id": "receiver-right-1-55",
+      "gap_mm": 1.131370849898482,
+      "nearest": "bracket-corner-1-1-0"
+    },
+    {
+      "id": "receiver-right-floor--100.0",
+      "gap_mm": 8.338465086573185,
+      "nearest": "bracket-lower-right-0"
+    },
+    {
+      "id": "receiver-right-floor--60.0",
+      "gap_mm": 16.819036833302906,
+      "nearest": "bracket-lower-right-1"
+    },
+    {
+      "id": "receiver-right-floor-60.0",
+      "gap_mm": 16.819036833302906,
+      "nearest": "bracket-lower-right-2"
+    },
+    {
+      "id": "receiver-right-floor-100.0",
+      "gap_mm": 8.338465086573185,
+      "nearest": "bracket-lower-right-3"
+    },
+    {
+      "id": "receiver-left--1-24",
+      "gap_mm": 1.9697715603592263,
+      "nearest": "bracket-corner--1--1-0"
+    },
+    {
+      "id": "receiver-left--1-55",
+      "gap_mm": 1.131370849898482,
+      "nearest": "bracket-corner--1--1-0"
+    },
+    {
+      "id": "receiver-left-1-24",
+      "gap_mm": 1.9697715603592263,
+      "nearest": "bracket-corner--1-1-0"
+    },
+    {
+      "id": "receiver-left-1-55",
+      "gap_mm": 1.131370849898482,
+      "nearest": "bracket-corner--1-1-0"
+    },
+    {
+      "id": "receiver-left-floor--100.0",
+      "gap_mm": 8.338465086573185,
+      "nearest": "bracket-lower-left-3"
+    },
+    {
+      "id": "receiver-left-floor--60.0",
+      "gap_mm": 16.819036833302906,
+      "nearest": "bracket-lower-left-2"
+    },
+    {
+      "id": "receiver-left-floor-60.0",
+      "gap_mm": 16.819036833302906,
+      "nearest": "bracket-lower-left-1"
+    },
+    {
+      "id": "receiver-left-floor-100.0",
+      "gap_mm": 8.338465086573185,
+      "nearest": "bracket-lower-left-0"
+    }
+  ],
+  "receiver_count": 16,
+  "integral_tab_count": 16,
+  "shoulder_clearance_mm": 0.15,
+  "tip_recess_mm": 0.3,
+  "insertion_mm": 4.7,
+  "slot_clearance_each_mm": 0.2
+}

@@ -244,10 +244,10 @@
       "sha256": "3bd3803775af001e1c73c6da3db238bc3a99f2b7b33baab11cf8e323a80fff85"
     },
     {
-      "bytes": 42463,
+      "bytes": 44113,
       "kind": "document_registry_reference",
       "path": "project/current-spec.json",
-      "sha256": "ee970ea5e967e0c27fa8c7500f1ce54f96fcc157308b8ef7559e185e1cf9f569"
+      "sha256": "e1e33c76a8e0d492cf662dd0e6ca6703b3467c3422e645b9f5ce365b096d5ebd"
     },
     {
       "bytes": 4388,
