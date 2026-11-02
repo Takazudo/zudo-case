@@ -1,0 +1,658 @@
+{
+  "acceptance_source": "J3-7U40-MID-TABS-FLAT-BOTTOM-STUDY",
+  "proposed_maintained_revision": "P5-PRINTED-5MM-TAB-JOINTS-J3",
+  "repository_base": "f4cc4b166bd552e1630482ac8dddfe35d35f0876",
+  "source_archive_sha256": "b5b36171b0bf9c54a489a55b47a9669e1f4762973c7a9a6f16da14855ac2a469",
+  "units": "mm",
+  "side_outline_yz": [
+    [
+      -170.5,
+      -3.5
+    ],
+    [
+      -170.5,
+      10
+    ],
+    [
+      -174.5,
+      14
+    ],
+    [
+      -174.5,
+      78.5
+    ],
+    [
+      -170.5,
+      82.5
+    ],
+    [
+      -170.5,
+      94.5
+    ],
+    [
+      170.5,
+      94.5
+    ],
+    [
+      170.5,
+      82.5
+    ],
+    [
+      174.5,
+      78.5
+    ],
+    [
+      174.5,
+      14
+    ],
+    [
+      170.5,
+      10
+    ],
+    [
+      170.5,
+      -3.5
+    ]
+  ],
+  "panel_data": [
+    {
+      "id": "wall-right",
+      "name": "受け穴付き側板 right",
+      "native_print_dimensions_mm": [
+        349.0,
+        98.0,
+        5.000000000000046
+      ],
+      "rotation_degrees": 45,
+      "bed_footprint_mm": [
+        310.17134880347055,
+        310.1713488034705,
+        5.000000000000046
+      ],
+      "footprint_with_brim_mm": [
+        310.17134880347055,
+        310.1713488034705
+      ],
+      "brim_each_mm": 0,
+      "centered_edge_margins_mm": [
+        7.414325598264725,
+        4.914325598264753
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "panels/stl/wall-right.stl",
+      "volume_mm3": 151674.08476458862,
+      "note": "ブリム0mm。単一ノズル領域の中心へ平置き。スライサーの除外領域・実反りは未検証。"
+    },
+    {
+      "id": "wall-left",
+      "name": "受け穴付き側板 left",
+      "native_print_dimensions_mm": [
+        349.0,
+        98.0,
+        5.0000000000000435
+      ],
+      "rotation_degrees": 45,
+      "bed_footprint_mm": [
+        310.17134880347055,
+        310.1713488034705,
+        5.0000000000000435
+      ],
+      "footprint_with_brim_mm": [
+        310.17134880347055,
+        310.1713488034705
+      ],
+      "brim_each_mm": 0,
+      "centered_edge_margins_mm": [
+        7.414325598264725,
+        4.914325598264753
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "panels/stl/wall-left.stl",
+      "volume_mm3": 151674.08476458892,
+      "note": "ブリム0mm。単一ノズル領域の中心へ平置き。スライサーの除外領域・実反りは未検証。"
+    },
+    {
+      "id": "wall-front",
+      "name": "タブ付き wall-front",
+      "native_print_dimensions_mm": [
+        235.8,
+        89.5,
+        5.0000000000000115
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        235.8,
+        89.5,
+        5.0000000000000115
+      ],
+      "footprint_with_brim_mm": [
+        235.8,
+        89.5
+      ],
+      "brim_each_mm": 0,
+      "centered_edge_margins_mm": [
+        44.599999999999994,
+        115.25
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "panels/stl/wall-front.stl",
+      "volume_mm3": 93142.60821926416,
+      "note": "ブリム0mm。単一ノズル領域の中心へ平置き。スライサーの除外領域・実反りは未検証。"
+    },
+    {
+      "id": "wall-back",
+      "name": "タブ付き wall-back",
+      "native_print_dimensions_mm": [
+        235.8,
+        89.5,
+        5.0000000000000115
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        235.8,
+        89.5,
+        5.0000000000000115
+      ],
+      "footprint_with_brim_mm": [
+        235.8,
+        89.5
+      ],
+      "brim_each_mm": 0,
+      "centered_edge_margins_mm": [
+        44.599999999999994,
+        115.25
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "panels/stl/wall-back.stl",
+      "volume_mm3": 93142.60821926415,
+      "note": "ブリム0mm。単一ノズル領域の中心へ平置き。スライサーの除外領域・実反りは未検証。"
+    },
+    {
+      "id": "floor-1",
+      "name": "タブ付き floor-1",
+      "native_print_dimensions_mm": [
+        235.8,
+        170.35,
+        5.0
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        235.8,
+        170.35,
+        5.0
+      ],
+      "footprint_with_brim_mm": [
+        235.8,
+        170.35
+      ],
+      "brim_each_mm": 0,
+      "centered_edge_margins_mm": [
+        44.599999999999994,
+        74.825
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "panels/stl/floor-1.stl",
+      "volume_mm3": 192982.92616671667,
+      "note": "ブリム0mm。単一ノズル領域の中心へ平置き。スライサーの除外領域・実反りは未検証。"
+    },
+    {
+      "id": "floor-2",
+      "name": "タブ付き floor-2",
+      "native_print_dimensions_mm": [
+        235.8,
+        170.35,
+        5.0
+      ],
+      "rotation_degrees": 0,
+      "bed_footprint_mm": [
+        235.8,
+        170.35,
+        5.0
+      ],
+      "footprint_with_brim_mm": [
+        235.8,
+        170.35
+      ],
+      "brim_each_mm": 0,
+      "centered_edge_margins_mm": [
+        44.599999999999994,
+        74.825
+      ],
+      "fits_single_nozzle_rect": true,
+      "quantity": 1,
+      "file": "panels/stl/floor-2.stl",
+      "volume_mm3": 192982.92616671667,
+      "note": "ブリム0mm。単一ノズル領域の中心へ平置き。スライサーの除外領域・実反りは未検証。"
+    }
+  ],
+  "receiver_windows": [
+    {
+      "id": "receiver-right--1-24",
+      "part": "wall-right",
+      "kind": "end",
+      "center_yz": [
+        -168.0,
+        24
+      ],
+      "size_yz": [
+        5.4,
+        12.4
+      ]
+    },
+    {
+      "id": "receiver-right--1-55",
+      "part": "wall-right",
+      "kind": "end",
+      "center_yz": [
+        -168.0,
+        55
+      ],
+      "size_yz": [
+        5.4,
+        12.4
+      ]
+    },
+    {
+      "id": "receiver-right-1-24",
+      "part": "wall-right",
+      "kind": "end",
+      "center_yz": [
+        168.0,
+        24
+      ],
+      "size_yz": [
+        5.4,
+        12.4
+      ]
+    },
+    {
+      "id": "receiver-right-1-55",
+      "part": "wall-right",
+      "kind": "end",
+      "center_yz": [
+        168.0,
+        55
+      ],
+      "size_yz": [
+        5.4,
+        12.4
+      ]
+    },
+    {
+      "id": "receiver-right-floor--100.0",
+      "part": "wall-right",
+      "kind": "floor",
+      "center_yz": [
+        -100.0,
+        2.5
+      ],
+      "size_yz": [
+        20.4,
+        5.4
+      ]
+    },
+    {
+      "id": "receiver-right-floor--60.0",
+      "part": "wall-right",
+      "kind": "floor",
+      "center_yz": [
+        -60.0,
+        2.5
+      ],
+      "size_yz": [
+        20.4,
+        5.4
+      ]
+    },
+    {
+      "id": "receiver-right-floor-60.0",
+      "part": "wall-right",
+      "kind": "floor",
+      "center_yz": [
+        60.0,
+        2.5
+      ],
+      "size_yz": [
+        20.4,
+        5.4
+      ]
+    },
+    {
+      "id": "receiver-right-floor-100.0",
+      "part": "wall-right",
+      "kind": "floor",
+      "center_yz": [
+        100.0,
+        2.5
+      ],
+      "size_yz": [
+        20.4,
+        5.4
+      ]
+    },
+    {
+      "id": "receiver-left--1-24",
+      "part": "wall-left",
+      "kind": "end",
+      "center_yz": [
+        -168.0,
+        24
+      ],
+      "size_yz": [
+        5.4,
+        12.4
+      ]
+    },
+    {
+      "id": "receiver-left--1-55",
+      "part": "wall-left",
+      "kind": "end",
+      "center_yz": [
+        -168.0,
+        55
+      ],
+      "size_yz": [
+        5.4,
+        12.4
+      ]
+    },
+    {
+      "id": "receiver-left-1-24",
+      "part": "wall-left",
+      "kind": "end",
+      "center_yz": [
+        168.0,
+        24
+      ],
+      "size_yz": [
+        5.4,
+        12.4
+      ]
+    },
+    {
+      "id": "receiver-left-1-55",
+      "part": "wall-left",
+      "kind": "end",
+      "center_yz": [
+        168.0,
+        55
+      ],
+      "size_yz": [
+        5.4,
+        12.4
+      ]
+    },
+    {
+      "id": "receiver-left-floor--100.0",
+      "part": "wall-left",
+      "kind": "floor",
+      "center_yz": [
+        -100.0,
+        2.5
+      ],
+      "size_yz": [
+        20.4,
+        5.4
+      ]
+    },
+    {
+      "id": "receiver-left-floor--60.0",
+      "part": "wall-left",
+      "kind": "floor",
+      "center_yz": [
+        -60.0,
+        2.5
+      ],
+      "size_yz": [
+        20.4,
+        5.4
+      ]
+    },
+    {
+      "id": "receiver-left-floor-60.0",
+      "part": "wall-left",
+      "kind": "floor",
+      "center_yz": [
+        60.0,
+        2.5
+      ],
+      "size_yz": [
+        20.4,
+        5.4
+      ]
+    },
+    {
+      "id": "receiver-left-floor-100.0",
+      "part": "wall-left",
+      "kind": "floor",
+      "center_yz": [
+        100.0,
+        2.5
+      ],
+      "size_yz": [
+        20.4,
+        5.4
+      ]
+    }
+  ],
+  "tabs": [
+    {
+      "id": "tab-front--1-24",
+      "part": "wall-front",
+      "receiver": "wall-left",
+      "kind": "end"
+    },
+    {
+      "id": "tab-front--1-55",
+      "part": "wall-front",
+      "receiver": "wall-left",
+      "kind": "end"
+    },
+    {
+      "id": "tab-front-1-24",
+      "part": "wall-front",
+      "receiver": "wall-right",
+      "kind": "end"
+    },
+    {
+      "id": "tab-front-1-55",
+      "part": "wall-front",
+      "receiver": "wall-right",
+      "kind": "end"
+    },
+    {
+      "id": "tab-back--1-24",
+      "part": "wall-back",
+      "receiver": "wall-left",
+      "kind": "end"
+    },
+    {
+      "id": "tab-back--1-55",
+      "part": "wall-back",
+      "receiver": "wall-left",
+      "kind": "end"
+    },
+    {
+      "id": "tab-back-1-24",
+      "part": "wall-back",
+      "receiver": "wall-right",
+      "kind": "end"
+    },
+    {
+      "id": "tab-back-1-55",
+      "part": "wall-back",
+      "receiver": "wall-right",
+      "kind": "end"
+    },
+    {
+      "id": "tab-floor-1--1--60",
+      "part": "floor-1",
+      "receiver": "wall-left",
+      "kind": "floor"
+    },
+    {
+      "id": "tab-floor-1-1--60",
+      "part": "floor-1",
+      "receiver": "wall-right",
+      "kind": "floor"
+    },
+    {
+      "id": "tab-floor-1--1--100",
+      "part": "floor-1",
+      "receiver": "wall-left",
+      "kind": "floor"
+    },
+    {
+      "id": "tab-floor-1-1--100",
+      "part": "floor-1",
+      "receiver": "wall-right",
+      "kind": "floor"
+    },
+    {
+      "id": "tab-floor-2--1-60",
+      "part": "floor-2",
+      "receiver": "wall-left",
+      "kind": "floor"
+    },
+    {
+      "id": "tab-floor-2-1-60",
+      "part": "floor-2",
+      "receiver": "wall-right",
+      "kind": "floor"
+    },
+    {
+      "id": "tab-floor-2--1-100",
+      "part": "floor-2",
+      "receiver": "wall-left",
+      "kind": "floor"
+    },
+    {
+      "id": "tab-floor-2-1-100",
+      "part": "floor-2",
+      "receiver": "wall-right",
+      "kind": "floor"
+    }
+  ],
+  "frame_envelope": [
+    -105.2,
+    -157.377228,
+    32.984619,
+    105.2,
+    157.377228,
+    93.0
+  ],
+  "frame_clearances_mm": {
+    "left": 8.0,
+    "right": 8.0,
+    "front": 8.122771999999998,
+    "back": 8.122771999999998
+  },
+  "lid": {
+    "unchanged": true,
+    "outer_xy": [
+      236.4,
+      341
+    ],
+    "pieces": 6
+  },
+  "foot_clearance_mm": 1.5,
+  "receiver_hardware_projection_margins": [
+    {
+      "id": "receiver-right--1-24",
+      "gap_mm": 1.9697715603592263,
+      "nearest": "bracket-corner-1--1-0"
+    },
+    {
+      "id": "receiver-right--1-55",
+      "gap_mm": 1.131370849898482,
+      "nearest": "bracket-corner-1--1-0"
+    },
+    {
+      "id": "receiver-right-1-24",
+      "gap_mm": 1.9697715603592263,
+      "nearest": "bracket-corner-1-1-0"
+    },
+    {
+      "id": "receiver-right-1-55",
+      "gap_mm": 1.131370849898482,
+      "nearest": "bracket-corner-1-1-0"
+    },
+    {
+      "id": "receiver-right-floor--100.0",
+      "gap_mm": 8.338465086573185,
+      "nearest": "bracket-lower-right-0"
+    },
+    {
+      "id": "receiver-right-floor--60.0",
+      "gap_mm": 16.819036833302906,
+      "nearest": "bracket-lower-right-1"
+    },
+    {
+      "id": "receiver-right-floor-60.0",
+      "gap_mm": 16.819036833302906,
+      "nearest": "bracket-lower-right-2"
+    },
+    {
+      "id": "receiver-right-floor-100.0",
+      "gap_mm": 8.338465086573185,
+      "nearest": "bracket-lower-right-3"
+    },
+    {
+      "id": "receiver-left--1-24",
+      "gap_mm": 1.9697715603592263,
+      "nearest": "bracket-corner--1--1-0"
+    },
+    {
+      "id": "receiver-left--1-55",
+      "gap_mm": 1.131370849898482,
+      "nearest": "bracket-corner--1--1-0"
+    },
+    {
+      "id": "receiver-left-1-24",
+      "gap_mm": 1.9697715603592263,
+      "nearest": "bracket-corner--1-1-0"
+    },
+    {
+      "id": "receiver-left-1-55",
+      "gap_mm": 1.131370849898482,
+      "nearest": "bracket-corner--1-1-0"
+    },
+    {
+      "id": "receiver-left-floor--100.0",
+      "gap_mm": 8.338465086573185,
+      "nearest": "bracket-lower-left-3"
+    },
+    {
+      "id": "receiver-left-floor--60.0",
+      "gap_mm": 16.819036833302906,
+      "nearest": "bracket-lower-left-2"
+    },
+    {
+      "id": "receiver-left-floor-60.0",
+      "gap_mm": 16.819036833302906,
+      "nearest": "bracket-lower-left-1"
+    },
+    {
+      "id": "receiver-left-floor-100.0",
+      "gap_mm": 8.338465086573185,
+      "nearest": "bracket-lower-left-0"
+    }
+  ],
+  "brim_each_mm": 0,
+  "side_xy_no_brim": [
+    310.17134880347055,
+    310.1713488034705
+  ],
+  "new_body_pieces_from_p4": 6,
+  "new_body_pieces_from_j1_j2": 2,
+  "scope_notes": [
+    "The old J2 rectangular note in the received parameters is stale; accepted J3 geometry overrides it.",
+    "Archive body STEP files are acceptance fixtures, not permission to make them the only maintained CAD source.",
+    "All historical test counts describe stored records, not newly executed CAD/browser tests."
+  ]
+}

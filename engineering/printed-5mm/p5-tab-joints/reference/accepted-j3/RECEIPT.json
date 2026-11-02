@@ -1,0 +1,33 @@
+{
+  "source_archive_sha256": "b5b36171b0bf9c54a489a55b47a9669e1f4762973c7a9a6f16da14855ac2a469",
+  "files": [
+    {
+      "path": "GEOMETRY.json",
+      "sha256": "976f96bd1a38202a5a46211f1a523cde99dc70fa136628d200e784330197723d"
+    },
+    {
+      "path": "floor-1.step",
+      "sha256": "76d67de4877fb579ed491f63c652a1e5e60ddc3eeb1f9394bd9f92b053f9fe37"
+    },
+    {
+      "path": "floor-2.step",
+      "sha256": "1bd92b826483a9125e74d11e52314d6be03f8132e0ee1fed36bad63b38563ca1"
+    },
+    {
+      "path": "wall-back.step",
+      "sha256": "e0a41173c4706ab74d18091ad295546926ba361eca455252fba32e1a23866609"
+    },
+    {
+      "path": "wall-front.step",
+      "sha256": "1f40b9dfb4324152fc3b874beb4e09179bcc02a6a7fe4caae72f633fae60a65a"
+    },
+    {
+      "path": "wall-left.step",
+      "sha256": "9352288f295e0730b1c73fa60ad735a3f85fca6af10cdbbe8987f914844b9336"
+    },
+    {
+      "path": "wall-right.step",
+      "sha256": "bc6ab4da3113e39d852fd479a8c6a27ea2256e5be1b8e53cb0ec5173474a6354"
+    }
+  ]
+}
