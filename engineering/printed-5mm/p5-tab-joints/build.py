@@ -33,7 +33,7 @@ def main():
     if params['revision'] != REVISION or params['body']['panel_thickness'] != 5 or params['body']['inside_width'] != 226.4 or params['body']['inside_depth'] != 331 or params['body']['wall_height'] != 89.5 or params['lid']['rise_to_roof_underside'] != 38 or params['printer']['single_nozzle_xy'] != [325.0,320.0]:
         raise SystemExit('Unsupported P4 profile; review geometry and checks before changing parameters')
     shutil.copytree(ROOT/'source',out/'source',ignore=shutil.ignore_patterns('model.json','__pycache__'))
-    shutil.copytree(ROOT/'reference',out/'reference')
+    shutil.copytree(ROOT/'reference',out/'reference',ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
     for name in ('build.py','verify.py','negative.py','validate_parameters.py','regenerate.py','pyproject.toml','uv.lock','.python-version','README.md'):
         shutil.copy2(ROOT/name,out/name)
     for script,args in [('build_case.py',[]),('build_rails.py',['--base',str(out/'source/model.json')]),('ventilation_report.py',[]),('verify_joints.py',[]),('build_html.py',[])]:
@@ -95,7 +95,7 @@ def main():
     start = (ROOT/'README.md').read_text()
     (out/'PRINT-START-HERE.md').write_text(start)
     print_files=[out/folder/f'{p}.{folder}' for p in print_ids for folder in ('stl','step')]
-    source_files=[p for p in (out/'source').iterdir() if p.is_file() and p.name!='model.json']+[p for p in (out/'reference').rglob('*') if p.is_file()]+[out/'PRINT-START-HERE.md']+[out/name for name in ('build.py','verify.py','negative.py','validate_parameters.py','regenerate.py','pyproject.toml','uv.lock','.python-version','README.md')]
+    source_files=[p for p in (out/'source').iterdir() if p.is_file() and p.name!='model.json']+[p for p in (out/'reference').rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix!='.pyc']+[out/'PRINT-START-HERE.md']+[out/name for name in ('build.py','verify.py','negative.py','validate_parameters.py','regenerate.py','pyproject.toml','uv.lock','.python-version','README.md')]
     zip_files(out/'printed-5mm-p5-tab-joints-stl.zip',out,print_files+[out/'PRINT-START-HERE.md',out/'BOM.json',out/'PRINT-PARTS.csv',out/'PRINT-MAPPING.json',out/'VENTILATION.json',out/'JOINTS.json',out/'reference/accepted-j3/RECEIPT.json',out/'reference/P4-SOURCE-RECEIPT.json'])
     zip_files(out/'printed-5mm-p5-tab-joints-source.zip',out,source_files)
     zip_files(out/'printed-5mm-p5-tab-joints-body.zip',out,[f for f in print_files if f.stem.startswith(('wall-','floor-'))]+[out/'PRINT-START-HERE.md',out/'PRINT-MAPPING.json'])

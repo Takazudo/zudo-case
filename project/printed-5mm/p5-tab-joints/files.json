@@ -24,8 +24,8 @@
     },
     {
       "path": "engineering/printed-5mm/p5-tab-joints/build.py",
-      "bytes": 8720,
-      "sha256": "77af2b0ecee6401e7942a7aaa0f69089bfc9955f7f60072c74624a4742a1a477"
+      "bytes": 8827,
+      "sha256": "9f242ac44918a1526f9a08563ed364c950290334656963cd01d78c56ee03c15d"
     },
     {
       "path": "engineering/printed-5mm/p5-tab-joints/negative.py",
@@ -89,8 +89,8 @@
     },
     {
       "path": "engineering/printed-5mm/p5-tab-joints/out/outputs-manifest.json",
-      "bytes": 14278,
-      "sha256": "bfd8f2310b06964094b2a5d74ad659f836d245abbd1835b4ba4f04e6e90be120"
+      "bytes": 14277,
+      "sha256": "b6745547c5f575cb8bb422a8d0bb82d795eadc6bcc51edc0e92ea3d59a40d995"
     },
     {
       "path": "engineering/printed-5mm/p5-tab-joints/out/print-bed-checks.json",
@@ -424,8 +424,8 @@
     },
     {
       "path": "engineering/printed-5mm/p5-tab-joints/verify.py",
-      "bytes": 5362,
-      "sha256": "f0f52d8fa4c4530f7e9569560236a1637b4ec282382eb30b0794c12a963c964b"
+      "bytes": 5460,
+      "sha256": "15f58bb350e7651a748a4e11c6019eeb2154c444b6b0f914a183986bd77aa132"
     },
     {
       "path": "engineering/printed-5mm/p5-h2d-3mf/README.md",
@@ -794,8 +794,8 @@
     },
     {
       "path": "public/downloads/candidate/printed-5mm-p5-tab-joints-source.zip",
-      "bytes": 1020366,
-      "sha256": "c8d7d1852fbb44903929584c14f3bff1095aaca419890aad4165c1882fd510b9"
+      "bytes": 974266,
+      "sha256": "07425362b83808dd0f4dc550a31cc4988531265b792f60ca2715233ca3b23684"
     },
     {
       "path": "public/downloads/candidate/printed-5mm-p5-tab-joints-stl.zip",

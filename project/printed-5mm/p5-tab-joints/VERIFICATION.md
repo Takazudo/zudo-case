@@ -41,6 +41,7 @@ Bambu Studio実行ファイルがないためStudio再読込／再保存はNOT R
 - 3MF contract: 3検査PASS（除外域凸包、旧P4入力拒否、決定的ZIP）。
 - 既存保存／現行ポインター: 9回帰検査PASS。
 - 独立read-only review: 配布body ZIP／3MF ZIPと生成物の照合不足2件を修正し、再レビューで残存阻害事項なし。
+- CIで検出したローカルPythonキャッシュ混入をsource ZIPから除外し、キャッシュ禁止検査を追加。R9の文書参照ハッシュと資産台帳をP5追記後の仕様書へ同期（R9/R10形状・配布CADは変更なし）。
 - CADの2回生成（2回目はsource ZIP展開）で88 payloadの完全一致と公開物一致を確認。
 - 3MFを異なるPython hash seedで2回生成し、全ファイルと公開ZIP全メンバーの一致を確認。
 - 再生成検査でSTEP列挙順と3MF設定差分JSONのキー順依存を検出してソートを追加。最新ソースの完全再生成、既存4 jobとP5 jobの最終結果は [PR #128](https://github.com/Takazudo/zudo-case/pull/128) のチェックを参照する。

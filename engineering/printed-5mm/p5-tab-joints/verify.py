@@ -21,6 +21,7 @@ for zpath in (out/'printed-5mm-p5-tab-joints-stl.zip',out/'printed-5mm-p5-tab-jo
  with zipfile.ZipFile(zpath) as z:
   assert z.testzip() is None
   assert len(z.namelist())==len(set(z.namelist()))
+  assert all('__pycache__' not in Path(n).parts and not n.endswith('.pyc') for n in z.namelist())
   for name in z.namelist(): assert z.read(name)==(out/name).read_bytes(),name
 if a.published_root:
     repo=a.published_root

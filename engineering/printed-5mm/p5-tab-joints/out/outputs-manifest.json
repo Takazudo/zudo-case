@@ -54,8 +54,8 @@
     },
     {
       "path": "build.py",
-      "sha256": "77af2b0ecee6401e7942a7aaa0f69089bfc9955f7f60072c74624a4742a1a477",
-      "bytes": 8720
+      "sha256": "9f242ac44918a1526f9a08563ed364c950290334656963cd01d78c56ee03c15d",
+      "bytes": 8827
     },
     {
       "path": "evidence/geometry-checks.json",
@@ -94,8 +94,8 @@
     },
     {
       "path": "printed-5mm-p5-tab-joints-source.zip",
-      "sha256": "c8d7d1852fbb44903929584c14f3bff1095aaca419890aad4165c1882fd510b9",
-      "bytes": 1020366
+      "sha256": "07425362b83808dd0f4dc550a31cc4988531265b792f60ca2715233ca3b23684",
+      "bytes": 974266
     },
     {
       "path": "printed-5mm-p5-tab-joints-stl.zip",
@@ -434,8 +434,8 @@
     },
     {
       "path": "verify.py",
-      "sha256": "f0f52d8fa4c4530f7e9569560236a1637b4ec282382eb30b0794c12a963c964b",
-      "bytes": 5362
+      "sha256": "15f58bb350e7651a748a4e11c6019eeb2154c444b6b0f914a183986bd77aa132",
+      "bytes": 5460
     },
     {
       "path": "zudo-case-printed-5mm-p5-tab-joints.html",
