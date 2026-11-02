@@ -41,6 +41,6 @@ Bambu Studio実行ファイルがないためStudio再読込／再保存はNOT R
 - 3MF contract: 3検査PASS（除外域凸包、旧P4入力拒否、決定的ZIP）。
 - 既存保存／現行ポインター: 9回帰検査PASS。
 - 独立read-only review: 配布body ZIP／3MF ZIPと生成物の照合不足2件を修正し、再レビューで残存阻害事項なし。
-- 再生成検査でSTEP列挙順依存を検出してソートを追加。最新ソースの完全再生成とCIは完了後に追記する。
+- 再生成検査でSTEP列挙順依存を検出してソートを追加。最新ソースの完全再生成、既存4 jobとP5 jobの最終結果は [PR #128](https://github.com/Takazudo/zudo-case/pull/128) のチェックを参照する。
 
 ブラウザ検査JSONと採用形状の3画像は `evidence/` に保存。
