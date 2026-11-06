@@ -1,0 +1,84 @@
+---
+title: "3U＋3U＋1U・40HP"
+description: "7u40のR6/R8基準と、旧・未承認のR9-FITFIX-01候補を示す。"
+sidebar_position: 20
+---
+
+{/* GENERATED: node scripts/sync-reference-tables.mjs / project/current-spec.json */}
+
+## 7U40の現行一式: R10-FULLSET-01
+
+選定構成は [R10一式](../design/r10-fullset-01.mdx)。アルミ6枚、PA12 20個、家庭ASA 72個。蓋板227.4 × 332 × 1.5mm、座面Z92mm。以下の旧R9/R6表は履歴・他機種の基準で、この一式の発注数量ではありません。
+
+## この機種
+
+**主な確認対象。** リュックへ入れて運ぶ用途を重視する40HPの３列ケース。 3U＋3U＋1Uは同じ平面に並ぶ。上下二段のケースではない。
+
+![R6の組立形状](/assets/images/r6/7u40-assembled.png)
+
+## R6基準の寸法と数量（履歴）
+
+| 項目 | 値 |
+|---|---|
+| 本体アルミ外形 W×D×H | **229.4 × 334 × 91mm** |
+| 1.2mmガード込み（脚・外側金具を除く） | 231.8 × 336.4 × 93.4mm |
+| ガードと仮脚込み（外側金具を除く） | 231.8 × 336.4 × 95.2mm |
+| 実レール長 | 204mm |
+| レールユニット外幅 | 210.4mm |
+| 全ユニットの前後包絡 | 314.754456mm |
+| 前後板の内面までの片側余白 | 8.122772mm |
+| 上端ガードまでの片側余白 | 7.122772mm |
+| レール本数 | 6 |
+| ブラケット | 18 |
+| レールと外箱のM5締結 | 10点 |
+| 内側8mmスペーサー／外側1mm座金 | 各10個 |
+| 板の穴合計 | 46（R6は丸穴。R9候補は長穴36＋丸穴10） |
+
+## R9-FITFIX-01の製作候補（未承認）
+
+7u40の旧候補データです（R10一式より前のR9系、未承認）。R6の本体形状を起点に、独立したアルミ板5枚、ブラケット用の36か所の長穴候補（幅×全長 5.5 × 7.5mm、移動量候補 ±1mm）、レール固定用の丸穴10か所を出力しています。長穴の方向・移動量、金具と座金の適合は製造判断・現物確認が残ります。
+
+蓋はアルミ板1枚とPA12枠4部品の直線持ち上げ式です。蓋と本体のロックはなく、運搬時の外周バンドは別部品です。嵌合、ノブ・ケーブルの空間、枠の保持は未確認です。製造承認や価格確定を示すデータではありません。
+
+<PreviewLink path="/downloads/candidate/r9-fitfix-01-7u40-t1p0-aluminum-NOT-APPROVED.zip">アルミ本体＋天板（1.0mm用）</PreviewLink> ／ <PreviewLink path="/downloads/candidate/r9-fitfix-01-7u40-t1p0-pa12-NOT-APPROVED.zip">PA12ガード＋蓋枠（1.0mm）</PreviewLink> ／ <PreviewLink path="/downloads/candidate/r9-fitfix-01-7u40-t1p2-aluminum-NOT-APPROVED.zip">アルミ本体＋天板（1.2mm用）</PreviewLink> ／ <PreviewLink path="/downloads/candidate/r9-fitfix-01-7u40-t1p2-pa12-NOT-APPROVED.zip">PA12ガード＋蓋枠（1.2mm）</PreviewLink> ／ <PreviewLink path="/downloads/candidate/r9-fitfix-01-fit-coupons-metal-NOT-APPROVED.zip">アルミ試験片</PreviewLink> ／ <PreviewLink path="/downloads/candidate/r9-fitfix-01-fit-coupons-pa12-NOT-APPROVED.zip">PA12試験片</PreviewLink> ／ <PreviewLink path="/previews/r9-fitfix-01.html">R9-FITFIX-01プレビュー</PreviewLink>
+
+基本案のガード外形は232.4 × 337mm、実肉厚1.2mm、ガード上端・蓋座面Z=92.2mm。天板は228.2 × 332.8 × 1.5mm。ガード16個で体積39.235cm³（1.0mm案は31.938cm³）。比較1.0mm案も専用の蓋を使います。[旧候補の詳細](../design/history/r9-fitfix-01.mdx)とBOMを確認してください。以下のR6/R8表と画像は履歴です。
+
+## R6基準のアルミ本体５枚
+
+| 部品 | サイズmm | 枚数 | 穴数/枚 |
+|---|---|---:|---:|
+| 底板 | 229.4 × 334 × 1.5 | 1 | 10 |
+| 前後板 | 226.4 × 89.5 × 1.5 | 2 | 6 |
+| 左右板 | 334 × 89.5 × 1.5 | 2 | 12 |
+
+材質候補A5052、t1.5、黒アルマイト。外形・板厚は現在の名目値。長穴、穴中心、公差、表面の許容状態を確定してから製作承認する。
+
+## R6ガード1.2mmの参考内訳
+
+| 部品 | 数量 | 単体の外接寸法mm | 単体体積cm³ |
+|---|---:|---|---:|
+| 上端L字ガード A | 2 | 115.9 × 168.2 × 6.2 | 2.933 |
+| 上端L字ガード B | 2 | 115.9 × 168.2 × 6.2 | 2.933 |
+| 前後下辺・半分 | 4 | 115.9 × 6.2 × 6.2 | 1.554 |
+| 左右下辺・半分 A | 2 | 6.2 × 167 × 6.2 | 2.202 |
+| 左右下辺・半分 B | 2 | 6.2 × 167 × 6.2 | 2.202 |
+| 縦辺コーナーガード | 4 | 6.2 × 6.2 × 81 | 1.086 |
+
+合計**16個、31.096cm³**。1.0mm版は**25.371cm³**。STLは１個ずつ、数量を注文画面へ指定する。
+
+<PreviewLink path="/downloads/reference/7u40-r6-guards-t1p2-NOT-RELEASED.zip">1.2mm STL一式</PreviewLink> ／ <PreviewLink path="/downloads/reference/7u40-r6-guards-t1p0-NOT-RELEASED.zip">1.0mm STL一式</PreviewLink> ／ <PreviewLink path="/downloads/reference/7u40-r6-aluminum-NOT-RELEASED.zip">アルミ参考データ</PreviewLink>
+
+## 蓋はR8の表示寸法
+
+天板：**227.6 × 332.2 × 1.5mm**。蓋の外周：231.8 × 336.4mm。蓋付き高さは脚・模式ねじ頭まで**128.8mm**。バンド・側面ナットの突出は別。
+
+前後の段差を差し込み、真上へ外す。30mmのノブ用高さ、2mm厚の段差、差し込み12mm、片側0.7mmの隙間は現在のプレビュー条件で、実物のフィットを保証しない。
+
+バンド一周の幾何概算：**721.2mm**。バックルと重なり代は含めていない。
+
+R8の寸法は表示用の基準です。7u40では旧候補R9-FITFIX-01の蓋板・PA12枠も出力していますが、嵌合と仕様は未確定です。R7のロック用枠・前後M3穴は採用しません。[R8プレビュー](../resources/current-preview.mdx)と[発注前ゲート](../verification/before-order.mdx)を確認する。
+
+## 根拠
+
+R6の engineering/r6-body/engineering/7u40/model-summary.json と [本体サマリー](/evidence/r6-family-summary.json)、[ガードmanifest](/evidence/7u40-t1p2-r6-guard-manifest.json)、[R8パラメータ](/evidence/r8-preview-parameters.json)から表を生成した。今回、新しいCADを検証した値ではない。

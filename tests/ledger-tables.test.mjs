@@ -73,14 +73,14 @@ test("a ledger-only change fails --check and names affected pages", async t => {
 
   const result = runCli(root, "--check");
   assert.equal(result.status, 1);
-  assert.match(result.stderr, /src\/content\/docs\/models\/7u40\.mdx/);
-  assert.match(result.stderr, /src\/content\/docs\/models\/comparison\.mdx/);
+  assert.match(result.stderr, /src\/content\/docs\/metal-case\/models\/7u40\.mdx/);
+  assert.match(result.stderr, /src\/content\/docs\/metal-case\/models\/comparison\.mdx/);
   assert.match(result.stderr, /node scripts\/sync-reference-tables\.mjs/);
 });
 
 test("a hand-edited generated page fails --check", async t => {
   const { root } = await makeFixture(t);
-  const rel = "src/content/docs/models/7u40.mdx";
+  const rel = "src/content/docs/metal-case/models/7u40.mdx";
   const pagePath = path.join(root, rel);
   await writeFile(pagePath, `${await readFile(pagePath, "utf8")}\n<!-- hand edit -->\n`);
 

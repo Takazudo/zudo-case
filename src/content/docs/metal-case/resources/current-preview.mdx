@@ -1,0 +1,41 @@
+---
+title: "現行R10一式と旧版プレビュー"
+description: "7U40の選定一式と、過去のR8コンセプトへの入口。"
+sidebar_position: 10
+---
+
+金属ケースのプレビューです。家庭印刷ケースは[P5のプレビュー](../../printed-5mm/p5-preview.mdx)、2WAYは[TW-01 ワークベンチ](../../two-way/preview.mdx)を参照。
+
+**現行7U40一式: [R10-FULLSET-01](../design/r10-fullset-01.mdx)。**
+
+<PreviewLink path="/previews/r10-fullset-01.html">R10現行プレビューを開く</PreviewLink>
+
+<PreviewFrame path="/previews/r10-fullset-01.html" title="R10 7U40選定一式" />
+
+以下は旧版と、3U60・7U60の基準になっているR8の表示。旧R9/R8の注文データをR10一式へ混ぜない。
+
+
+
+**旧7U40製作候補は[R9ページ](../design/history/r9-fitfix-01.mdx)の<PreviewLink path="/previews/r9-fitfix-01.html">R9プレビュー</PreviewLink>。** このページのR8は採用した載せ蓋方式の履歴表示で、R9の製作用候補とは版が異なる。R9も現物嵌合・強度・運搬結果ではない。
+
+## 操作する
+
+**<PreviewLink path="/previews/r8-simple-lid.html">R8旧プレビューを別タブで開く</PreviewLink>**。プレビュー用サイトで配信する元の単一HTMLで、約4.7MB。7U40から始まり、３機種を切り替えられる。3U60・7U60の載せ蓋は現在もこのR8表示が基準。
+
+<PreviewFrame path="/previews/r8-simple-lid.html" title="R8 載せ蓋と外周バンドの3Dプレビュー" />
+
+埋め込み枠が狭い場合は別タブで確認する。左ドラッグで回転、スクロールで拡大、右ドラッグで移動。WebGL2とDecompressionStreamに対応するブラウザーが必要。
+
+## 表示の意味
+
+「日常」はバンドなしの載せ蓋。「運搬」は外周バンド２本。「使用中」は蓋を真上へ外す。持ち上げスライダー、天板/外板の透過、差し込み部の色分け、断面の拡大、ノブ25mmの仮領域が使える。
+
+バンドの解除や締付力のシミュレーションはない。バックル、弾性、重なり、天板のたわみは模式化していない。クリックで部品名を確認できるが、その表示形状が発注用CADであるという意味ではない。
+
+:::warning[発注データは別]
+
+R8ソースの`manufacturingFilesUpdated`は`false`。この版には製作用STL・STEP・DXFがない。天板・段差の再CAD化が必要。
+
+:::
+
+編集するソースは`engineering/r8-preview/`。<a href="/evidence/r8-original-readme.md">元README</a>と[元manifest](/evidence/r8-original-manifest.json)も同梱した。

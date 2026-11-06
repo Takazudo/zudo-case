@@ -1,0 +1,32 @@
+---
+title: "元レール・PCBと出典"
+description: "zudo-railのレールSTLとzudo-blanksのfixer/padder PCB。固定コミットと保存場所、各系列での使い方。"
+sidebar_position: 20
+---
+
+## 元データを変えない
+
+| 対象 | 固定コミット |
+|---|---|
+| zudo-rail | `0f7316ad9000b7906e5769aa89aff2dc18c661c8` |
+| zudo-blanks PCB | `b4db88ce5c93709f3f2f0a031f75190081f02443` |
+
+40HP/60HPのレールSTLと、3U/7U fixer・3U/1U padderのKiCadファイルをR6の`engineering/r6-body/source-data/`に保存している。出典のprovenance・commitも同梱。今回ネットから再取得したという意味ではない。
+
+実データを変更する場合は、参照コミットと新しい出力版を一緒に更新する。小数の微差を説明なく丸めたり、40HPを60HPの比例縮小で代用したりしない。40HPのレールは204mm、60HPは305mm。
+
+## 各系列での使い方
+
+| 系列 | 使い方 |
+|---|---|
+| 金属ケース | R6本体の積層とレール配置の根拠（[積層の設計](../metal-case/design/rail-stack.mdx)、[CADの再生成](../metal-case/resources/engineering.mdx)） |
+| 家庭印刷ケース | 7U40の40HPレール6本・fixer 2枚・padder 6枚を元形状のまま配置（[P5の設計](../printed-5mm/p5-design.mdx)） |
+| 2WAY | A／B／Cの元フレームと輪郭（[元レール・PCBフレーム](../two-way/rail-frame.mdx)） |
+
+レールユニットの製作費はケース原価に含めません（ユーザー指定）。各系列のプレビューにあるレール・PCBの表示は参照形状で、ねじとの全面衝突検査ではありません。
+
+## 製品・組立の参照ページ
+
+[元zudo-block](https://takazudomodular.com/products/zb60-intro/) ／ [zudo-rail組立](https://takazudomodular.com/guides/how-to-build-zudo-rail/) ／ [10BOX組立](https://takazudomodular.com/guides/how-to-build-10box/) ／ [ケース構成例](https://panels.takazudomodular.com/case-models/)
+
+これらは会話での参照先です。整理時に内容の再検証や設計寸法の再抽出はしていません。元STL/PCBの正確なURLとハッシュはR6の`source-data/`にあります。

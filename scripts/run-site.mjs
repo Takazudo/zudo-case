@@ -62,7 +62,7 @@ async function mirrorSources() {
   if (previousSources.has('zfb.config.ts') && sources.has('zfb.config.ts')
     && !previousSources.get('zfb.config.ts').equals(sources.get('zfb.config.ts'))) {
     await writeFile(path.join(runRoot, 'zfb.config.ts'), previewRunConfig({ root, configRoot: runRoot, command, origin: previewOrigin }));
-    // Imported authored config changes need a fresh native process on zfb 4.5.0.
+    // Imported authored config changes need a fresh native process (observed on zfb 4.5.0; retained on 5.2.0).
     restartRequested = true;
     killChildGroup('SIGTERM');
   }

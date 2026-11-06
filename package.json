@@ -4,17 +4,21 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
   "scripts": {
     "setup": "node scripts/setup.mjs",
     "check:docs": "node scripts/check-docs.mjs",
+    "sync:doc-routes": "node scripts/sync-doc-routes.mjs",
+    "check:doc-routes": "node scripts/sync-doc-routes.mjs --check",
+    "test:doc-structure": "node --test tests/doc-structure.test.mjs",
     "check:r9": "node scripts/lib/r9-manifest-check.mjs",
     "check:r9-doc-table": "node scripts/sync-r9-doc-table.mjs --check",
     "check:r9-confirm": "node scripts/check-r9-confirm.mjs",
     "check:r9-ledger": "node scripts/sync-r9-ledger.mjs --check",
     "test:r9": "node --test tests/r9-manifest-check.test.mjs",
     "check:built-preview-links": "node scripts/check-built-preview-links.mjs",
+    "check:built-doc-routes": "node scripts/check-built-doc-routes.mjs",
     "check:tables": "node scripts/sync-reference-tables.mjs --check",
     "check:assets": "node scripts/verify-assets.mjs",
     "sync:tables": "node scripts/sync-reference-tables.mjs",
@@ -53,14 +57,14 @@
     "build:printed-p3": "uv run --locked --project engineering/printed-5mm/p3 python engineering/printed-5mm/p3/build.py --out .cache/printed-5mm-build"
   },
   "dependencies": {
-    "@takazudo/zfb": "4.5.0",
-    "@takazudo/zfb-md-wasm": "4.5.0",
-    "@takazudo/zfb-runtime": "4.5.0",
-    "@takazudo/zudo-doc": "^6.2.0",
+    "@takazudo/zfb": "5.2.0",
+    "@takazudo/zfb-md-wasm": "5.2.0",
+    "@takazudo/zfb-runtime": "5.2.0",
+    "@takazudo/zudo-doc": "^9.1.2",
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@takazudo/zudo-doc-history-server": "6.2.0",
+    "@takazudo/zudo-doc-history-server": "9.1.2",
     "@types/node": "^22.0.0",
     "typescript": "^5.9.0",
     "wrangler": "4.138.0"

@@ -2,6 +2,7 @@ import { checkPlateGeometry } from './lib/ledger-checks.mjs';
 import { checkProjectState } from './lib/state-checks.mjs';
 import { extractDocumentUrls } from './lib/preview-links-check.mjs';
 import { PRODUCTION_PREVIEW_ORIGIN } from './lib/preview-origin.mjs';
+import { checkNavigationOrder, checkRouteMap } from './lib/doc-structure-checks.mjs';
 import { readFile, readdir, mkdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -19,12 +20,12 @@ for(const p of all){
  const match=text.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);
  if(!match){errors.push(`${rel}: frontmatterなし`);continue;}
  const fm={};
- for(const ln of match[1].split('\n')){const m=ln.match(/^(title|description|sidebar_position):\s*(.+)$/);if(!m)continue;try{fm[m[1]]=JSON.parse(m[2]);}catch{fm[m[1]]=m[2];}}
+ for(const ln of match[1].split('\n')){const m=ln.match(/^(title|description|sidebar_position|unlisted):\s*(.+)$/);if(!m)continue;try{fm[m[1]]=JSON.parse(m[2]);}catch{fm[m[1]]=m[2];}}
  assert(typeof fm.title==='string'&&fm.title.length>0,`${rel}: title必須`);
  assert(typeof fm.description==='string'&&fm.description.length>0,`${rel}: description必須`);
  assert(typeof fm.sidebar_position==='number',`${rel}: sidebar_positionは数値`);
- nav.push({path:rel,...fm});
- const parent=path.dirname(rel);if(!groups.has(parent))groups.set(parent,[]);groups.get(parent).push({rel,pos:fm.sidebar_position});
+ nav.push({path:rel,...fm,body:text.slice(match[0].length)});
+ const parent=path.dirname(rel);if(!groups.has(parent))groups.set(parent,[]);groups.get(parent).push(rel);
  let fenced=false, admonitions=0;const content=[];
  for(const line of text.slice(match[0].length).split('\n')){
   if(/^\s*```/.test(line)){fenced=!fenced;continue;}if(fenced)continue;
@@ -47,14 +48,13 @@ for(const p of all){
   localLinks++;assert(await exists(dest),`${rel}: リンク先なし ${u}`);
  }
 }
-// A category index belongs to the root navigation, not its own child position set.
-for(const [parent,items]of groups){
- assert(await exists(path.join(docs,parent,'index.mdx')),`${parent}: カテゴリーindex.mdxなし`);
- const ps=items.filter(x=>!x.rel.endsWith('/index.mdx')).map(x=>x.pos);
- assert(new Set(ps).size===ps.length,`${parent}: sidebar_position重複`);
-}
-const catPos=nav.filter(x=>x.path.endsWith('/index.mdx')).map(x=>x.sidebar_position);
-assert(new Set(catPos).size===catPos.length,'カテゴリのsidebar_position重複');
+// Every directory needs its category index. Sibling ordering is checked per
+// parent: a category index takes part in its parent's ordering, and unlisted
+// compatibility pages are excluded from navigation ordering.
+for (const parent of groups.keys())
+ if(parent!=='.')assert(await exists(path.join(docs,parent,'index.mdx')),`${parent}: カテゴリーindex.mdxなし`);
+errors.push(...checkNavigationOrder(nav));
+errors.push(...checkRouteMap(nav, await json('project/doc-routes.json')));
 const s=await json('project/current-spec.json'), release=await json('project/release-state.json');
 errors.push(...checkPlateGeometry(s));
 for(const [key,m]of Object.entries(s.models)){
@@ -73,11 +73,12 @@ const q=await json('project/quote-records.json');
 const gates=await json('project/open-issues.json');
 errors.push(...await checkProjectState({root,spec:s,release,quotes:q,gates}));
 nav.sort((a,b)=>a.path.localeCompare(b.path));
-await writeFile(path.join(root,'project/navigation.json'),JSON.stringify(nav,null,2)+'\n');
+// Generated inventory of document paths (not the live sidebar configuration).
+await writeFile(path.join(root,'project/navigation.json'),JSON.stringify(nav.map(({body,...x})=>x),null,2)+'\n');
 const report={checkedAt:new Date().toISOString(),tool:'dependency-free static/document consistency check',
  officialZudoDocBuild:'not-run-in-this-check',mdxCompiler:'not-run-in-this-check',
- mdxPages:all.length,categories:groups.size,localLinksChecked:localLinks,errors,warnings,
+ mdxPages:all.length,listedPages:nav.filter(x=>x.unlisted!==true).length,compatibilityPages:nav.filter(x=>x.unlisted===true).length,categories:groups.size,localLinksChecked:localLinks,errors,warnings,
  note:'リンク先の存在・frontmatter・数量/寸法の算術を確認。MDXコンパイル、機構の強度・干渉、発注適合の検証ではありません。'};
 await mkdir(path.join(root,'project/validation'),{recursive:true});
 await writeFile(path.join(root,'project/validation/static-check.json'),JSON.stringify(report,null,2)+'\n');
-if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else console.log(`OK: ${all.length} MDX / ${groups.size}カテゴリ / ${localLinks}内部リンク。公式ビルド・MDXコンパイルはこの検査の対象外です。`);
+if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}else console.log(`OK: ${all.length} MDX（正式${nav.filter(x=>x.unlisted!==true).length}・互換${nav.filter(x=>x.unlisted===true).length}） / ${groups.size}カテゴリ / ${localLinks}内部リンク。公式ビルド・MDXコンパイルはこの検査の対象外です。`);

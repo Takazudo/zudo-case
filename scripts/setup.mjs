@@ -6,7 +6,8 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { spawnSync } from "node:child_process";
 
 const defaultRoot = fileURLToPath(new URL("../", import.meta.url));
-const defaultCliVersion = "6.2.0";
+export const defaultCliVersion = "9.1.2";
+export const minimumNodeMajor = 24;
 const exists = async (p) => { try { await access(p); return true; } catch { return false; } };
 const json = async (p) => JSON.parse(await readFile(p, "utf8"));
 const sha256 = async (p) => createHash("sha256").update(await readFile(p)).digest("hex");
@@ -226,7 +227,7 @@ function packageManagerVersion(command) {
 async function main() {
   const args = process.argv.slice(2);
   if (args.includes("--help")) {
-    console.log("node scripts/setup.mjs [--dry-run] [--from /path/to/fresh-official-scaffold]\nnode scripts/setup.mjs --record-install\n環境変数: ZUDO_DOC_CLI_VERSION（既定 6.2.0）。作成済みの記事・設定を保持します。");
+    console.log(`node scripts/setup.mjs [--dry-run] [--from /path/to/fresh-official-scaffold]\nnode scripts/setup.mjs --record-install\n環境変数: ZUDO_DOC_CLI_VERSION（既定 ${defaultCliVersion}）。Node.js ${minimumNodeMajor}以上。作成済みの記事・設定を保持します。`);
     return;
   }
   const root = defaultRoot;
@@ -236,7 +237,7 @@ async function main() {
     return;
   }
   const major = Number(process.versions.node.split(".")[0]);
-  if (major < 22) throw new Error("Node.js 22以上が必要です。");
+  if (major < minimumNodeMajor) throw new Error(`Node.js ${minimumNodeMajor}以上が必要です。`);
   const fromIdx = args.indexOf("--from");
   if (fromIdx !== -1 && !args[fromIdx + 1]) throw new Error("--fromの後に新規scaffoldのパスを指定してください。");
   const allowed = new Set(["--dry-run", "--from"]);

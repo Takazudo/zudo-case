@@ -1,11 +1,34 @@
 ---
 title: "7U40・5mm家庭印刷ケース"
-description: "金属R10と独立したP5家庭印刷版の設計・プレビュー・印刷ファイル。"
-sidebar_position: 45
+description: "黒ASAの5mm板で本体と載せ蓋を家庭印刷する系列。現行P5、旧版P4（Uniform通気孔）とP3（通気孔なし）。"
+sidebar_position: 30
 ---
 
-7U40の **P5-PRINTED-5MM-TAB-JOINTS-J3** は、黒ASAの5mm板で本体と段付き載せ蓋を家庭印刷する候補です。[R10金属ケース](../design/r10-fullset-01.mdx)と[2WAY](../two-way/index.mdx)は別系列です。製造承認、現物嵌合、運搬確認は未完了です。
+7U40用のケースを黒ASAの5mm板で家庭印刷する系列です。本体（底2・壁4）と段付き載せ蓋（縁4・屋根2）の構造12部品に、任意の横パッド・縦パッド・丸座金を加えます。元の204mm・40HPレール6本とfixer/padder PCBはそのまま使い、金属L金具・ねじ・PCBは印刷セットに含めません。[金属ケース](../metal-case/index.mdx)と[2WAY](../two-way/index.mdx)は別系列で、この系列の版は金属ケースのR10一式やJLCカート記録を変えません。
 
-[P5構造](./p5-design.mdx)・[P5プレビュー](./p5-preview.mdx)・[P5印刷ファイル](./p5-print-files.mdx)・[通気孔の仕様](./ventilation.mdx)が現行候補です。旧P4の[構造](./p4-design.mdx)・[プレビュー](./p4-preview.mdx)・[印刷ファイル](./p4-print-files.mdx)と、旧P3の[構造](./design.mdx)、[プレビュー](./preview.mdx)、[ファイル](./print-files.mdx)は無通気孔版の履歴として保存します。
+## 版
 
-<CategoryNav category="printed-5mm" />
+| 版 | 位置づけ | 変更点 |
+|---|---|---|
+| **P5-PRINTED-5MM-TAB-JOINTS-J3** | 現行候補 | 本体6枚（左右側板・前後板・底2枚）をJ3差し込み接合へ変更。P4の蓋6枚と任意パッド・座金3型は再使用 |
+| P4-PRINTED-5MM-UNIFORM-VENTS | 履歴 | P3の四壁にUniform通気孔82個を追加し、締結穴と分離 |
+| P3-PRINTED-5MM-7U-RAILS | 履歴 | 通気孔のない最初の基準 |
+
+いずれも同じ系列の改訂です。製造承認、実スライス、現物嵌合、強度、運搬確認は未完了です。
+
+## 現行P5
+
+- [構造と組立](./p5-design.mdx)
+- [3Dプレビュー](./p5-preview.mdx)
+- [STL/STEPとH2D 3MF](./p5-print-files.mdx)
+- [通気孔の仕様](./ventilation.mdx)（P4で導入し、P5も82開口と専用締結穴を保持）
+
+旧版のページは[P4・P3の履歴](./history.mdx)にまとめています。
+
+## 次に確認すること
+
+P5は公称値での生成とソフトウェア検査（形状、パッケージ、ビューアー）まで済んでいます。次の確認はユーザーの印刷環境で行います。
+
+- H2D 3MFはユーザーのPLA・0.6mmテンプレートを継承した未スライスのプロジェクト。実スライス、サポート、反りを確認する。
+- 受け穴とタブの片側0.2mm・肩0.15mm・実挿入4.7mmは公称値。現物で差し込み・締結・ガタを確認する。
+- ASAの強度・クリープ、蓋の段差サポート、脚の潰れ、運搬は未確認。

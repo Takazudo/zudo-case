@@ -9,7 +9,7 @@ const f = (n, d=3) => Number(n.toFixed(d)).toString();
 const dims = a => a.map(n=>f(n)).join(" × ");
 function page(rel,title,desc,pos,body) {
   const text=`---\ntitle: ${JSON.stringify(title)}\ndescription: ${JSON.stringify(desc)}\nsidebar_position: ${pos}\n---\n\n{/* GENERATED: node scripts/sync-reference-tables.mjs / project/current-spec.json */}\n\n${body.trim()}\n`;
-  pages.push({ rel: path.posix.join("src/content/docs", rel), text });
+  pages.push({ rel: path.posix.join("src/content/docs/metal-case", rel), text });
 }
 let i=10;
 for (const m of models) {
@@ -18,13 +18,13 @@ for (const m of models) {
  const catalog=g.catalog.map(p=>`| ${p.name} | ${p.quantity} | ${dims(p.dimensions)} | ${f(p.volumeCm3)} |`).join("\n");
  const candidate=m.candidate_revision ? `## ${m.candidate_revision}の製作候補（未承認）
 
-7u40用の候補データです。R6の本体形状を起点に、独立したアルミ板${m.candidate_body_summary.independent_plate_count}枚、ブラケット用の${m.candidate_body_summary.bracket_slot_count}か所の長穴候補（幅×全長 ${dims(m.candidate_body_summary.bracket_slot_size_mm)}mm、移動量候補 ±${f(m.candidate_body_summary.bracket_slot_candidate_travel_each_direction_mm)}mm）、レール固定用の丸穴${m.candidate_body_summary.rail_round_hole_count}か所を出力しています。長穴の方向・移動量、金具と座金の適合は製造判断・現物確認が残ります。
+7u40の旧候補データです（R10一式より前のR9系、未承認）。R6の本体形状を起点に、独立したアルミ板${m.candidate_body_summary.independent_plate_count}枚、ブラケット用の${m.candidate_body_summary.bracket_slot_count}か所の長穴候補（幅×全長 ${dims(m.candidate_body_summary.bracket_slot_size_mm)}mm、移動量候補 ±${f(m.candidate_body_summary.bracket_slot_candidate_travel_each_direction_mm)}mm）、レール固定用の丸穴${m.candidate_body_summary.rail_round_hole_count}か所を出力しています。長穴の方向・移動量、金具と座金の適合は製造判断・現物確認が残ります。
 
 蓋はアルミ板${m.candidate_lid_summary.aluminum_plate_count}枚とPA12枠${m.candidate_lid_summary.pa12_frame_piece_count}部品の直線持ち上げ式です。蓋と本体のロックはなく、運搬時の外周バンドは別部品です。嵌合、ノブ・ケーブルの空間、枠の保持は未確認です。製造承認や価格確定を示すデータではありません。
 
 ${m.candidate_links ? m.candidate_links.map(x=>`<PreviewLink path="${x.path}">${x.label}</PreviewLink>`).join(' ／ ') : `<PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-aluminum-NOT-APPROVED.zip">R9アルミ候補ZIP</PreviewLink> ／ <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-pa12-NOT-APPROVED.zip">R9 PA12候補ZIP</PreviewLink> ／ <PreviewLink path="/downloads/candidate/7u40-r9-prototype-01-coupons-NOT-APPROVED.zip">R9クーポン候補ZIP</PreviewLink> ／ <PreviewLink path="/previews/r9-prototype-01.html">R9プレビュー</PreviewLink>`}
 
-${m.candidate_interface ? `基本案のガード外形は${dims(m.candidate_interface.t1p2.guard_exterior_mm)}mm、実肉厚1.2mm、ガード上端・蓋座面Z=${f(m.candidate_interface.t1p2.lid_seat_z_mm)}mm。天板は${dims(m.candidate_interface.t1p2.lid_plate_mm)}mm。ガード${m.candidate_guard_summary.t1p2.count}個で体積${f(m.candidate_guard_summary.t1p2.volume_cm3)}cm³（1.0mm案は${f(m.candidate_guard_summary.t1p0.volume_cm3)}cm³）。比較1.0mm案も専用の蓋を使います。[修正候補の詳細](../design/r9-fitfix-01.mdx)とBOMを確認してください。以下のR6/R8表と画像は履歴です。` : ''}
+${m.candidate_interface ? `基本案のガード外形は${dims(m.candidate_interface.t1p2.guard_exterior_mm)}mm、実肉厚1.2mm、ガード上端・蓋座面Z=${f(m.candidate_interface.t1p2.lid_seat_z_mm)}mm。天板は${dims(m.candidate_interface.t1p2.lid_plate_mm)}mm。ガード${m.candidate_guard_summary.t1p2.count}個で体積${f(m.candidate_guard_summary.t1p2.volume_cm3)}cm³（1.0mm案は${f(m.candidate_guard_summary.t1p0.volume_cm3)}cm³）。比較1.0mm案も専用の蓋を使います。[旧候補の詳細](../design/history/r9-fitfix-01.mdx)とBOMを確認してください。以下のR6/R8表と画像は履歴です。` : ''}
 
 ` : "";
  const candidateSection=candidate ? `\n\n${candidate.trim()}\n\n` : "\n\n";
@@ -32,7 +32,7 @@ ${m.candidate_interface ? `基本案のガード外形は${dims(m.candidate_inte
    ? `R6は丸穴。R9候補は長穴${m.candidate_body_summary.bracket_slot_count}＋丸穴${m.candidate_body_summary.rail_round_hole_count}`
    : "R6の丸穴。長穴未反映";
  const description=m.candidate_revision
-   ? `${m.id}のR6/R8基準と、未承認の${m.candidate_revision}候補を示す。`
+   ? `${m.id}のR6/R8基準と、旧・未承認の${m.candidate_revision}候補を示す。`
    : `本体はR6の名目CAD、載せ蓋はR8プレビュー。${m.id}の寸法と数量。`;
  page(`models/${m.id}.mdx`,m.label,description,i,`
 ## この機種
@@ -84,7 +84,7 @@ ${catalog}
 バンド一周の幾何概算：**${f(l.strapLoopGeometricEstimateMm)}mm**。バックルと重なり代は含めていない。
 
 ${m.candidate_revision
-  ? `R8の寸法は表示用の基準です。7u40では${m.candidate_revision}の蓋板・PA12枠候補を別途出力していますが、嵌合と仕様は未確定です。R7のロック用枠・前後M3穴は採用しません。[R8プレビュー](../resources/current-preview.mdx)と[発注前ゲート](../verification/before-order.mdx)を確認する。`
+  ? `R8の寸法は表示用の基準です。7u40では旧候補${m.candidate_revision}の蓋板・PA12枠も出力していますが、嵌合と仕様は未確定です。R7のロック用枠・前後M3穴は採用しません。[R8プレビュー](../resources/current-preview.mdx)と[発注前ゲート](../verification/before-order.mdx)を確認する。`
   : "**この載せ蓋の製作用CADは未更新。** R7のロック用枠・前後M3穴を発注しない。[R8プレビュー](../resources/current-preview.mdx)と[発注前ゲート](../verification/before-order.mdx)を確認する。"}
 
 ## 根拠
@@ -95,13 +95,13 @@ R6の ${m.sources[0]} と [本体サマリー](/evidence/r6-family-summary.json)
 }
 const cmp=models.map(m=>`| ${m.label} | ${dims(m.metal_mm)} | ${dims(m.candidate_interface ? [...m.candidate_interface.t1p2.guard_exterior_mm,m.candidate_interface.t1p2.guard_envelope_height_mm] : m.guards.t1p2.outerEnvelopeMm)} | ${m.hardware_counts.panelBracket} | ${m.hardware_counts.mountBolt} | ${m.guards.t1p2.partCount} | ${f(m.candidate_guard_summary?.t1p2.volume_cm3 ?? m.guards.t1p2.totalVolumeCm3)} | ${m.candidate_revision ? `${m.candidate_revision}・未承認` : "—"} |`).join("\n");
 page("models/comparison.mdx","３機種の比較","共通値と、機種によって増える板・金具・ガードを一覧にする。",40,`
-## 本体比較（7U40は現行候補）
+## 本体比較（7U40は旧R9候補の値）
 
 | 機種 | アルミ外形mm | ガード込みmm | 金具 | ケース固定M5 | ガード個数 | 1.2mm体積cm³ | R9候補 |
 |---|---|---|---:|---:|---:|---:|---|
 ${cmp}
 
-7u40の現行候補は[R9-FITFIX-01](../design/r9-fitfix-01.mdx)です。上表の7U40ガード寸法・体積は同候補の生成値です。現物の嵌合・保持・運搬確認と製造判断が残り、未承認です。3u60と7u60の数値はR6/R8基準です。
+上表の7U40ガード寸法・体積は旧候補[R9-FITFIX-01](../design/history/r9-fitfix-01.mdx)の生成値で、R10一式の値ではありません。R9-FITFIX-01は未承認のまま残る旧候補です。3u60と7u60の数値はR6/R8基準です。
 
 単位mm。ガード込みは脚・外側ナット・蓋・バンドを除く。３機種ともアルミの高さは91mm、レールの側面離隔は8mm、前後の全ユニットからの余白は約8mm。
 
@@ -134,7 +134,7 @@ page('manufacturing/bom.mdx','ケース側BOM','レールユニットの費用�
 |---|---:|---:|---:|---|
 ${bom}
 
-7U40の現行候補の材質別ZIP・試験片の数量は[R9-FITFIX-01](../design/r9-fitfix-01.mdx)を参照。1.2mm/1.0mmの蓋は専用で、C2の再利用部材（order_quantity=0）は重複発注しません。
+旧候補R9-FITFIX-01の材質別ZIP・試験片の数量は[R9-FITFIX-01](../design/history/r9-fitfix-01.mdx)を参照（R10一式の数量ではない）。1.2mm/1.0mmの蓋は専用で、C2の再利用部材（order_quantity=0）は重複発注しません。
 
 ## レール費用の除外
 

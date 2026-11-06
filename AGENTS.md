@@ -2,12 +2,24 @@
 
 ## Start here
 
-This is a Japanese zudo-doc MDX documentation workspace for a case family. Read `README.md`, `project/current-spec.json`, `project/release-state.json`, and `src/content/docs/overview/status.mdx` before making changes. The user develops locally and will prepare physical confirmation and supplier orders. Do not send orders or approve manufacture without explicit authorization.
+This is a Japanese zudo-doc MDX documentation workspace for several independent case families. Read `README.md`, `project/release-state.json` and `src/content/docs/overview/status.mdx` before making changes, then the rules for the family you touch (for the metal family also `project/current-spec.json` and `src/content/docs/metal-case/status.mdx`). The user develops locally and will prepare physical confirmation and supplier orders. Do not send orders or approve manufacture without explicit authorization.
 
-## Preserve the adopted design
+## Global rules (all families)
 
-- Three models: `3u60`, `7u40`, `7u60`. Priority is `7u40` for backpack transport. 7U means 3U + 3U + 1U in ONE plane.
-- Five independent aluminum plates, nominal 1.5mm, candidate A5052 black anodized. No old thick-panel interlocking tabs.
+- Families are independent: metal case (`metal-case`, R6–R10), home-printed 5mm case (`printed-5mm`, P3–P5), 2WAY study (`two-way`, F5/TW-01) and shared parts/source data (`shared`). A candidate in one family never changes another family's geometry, quantities, packages or order records.
+- Nothing is production-approved. `engineering/release` has no approved files and `production_approved` stays `false`. Software checks, watertight meshes or browser previews are not physical validation or approval.
+- Preserve design semantics, approval state, CAD, binaries, provenance, quantities and history. Keep old source folders/ZIPs and preserved manifests immutable; work in a new revision and record input/output hashes.
+- Follow the source precedence order and the price discipline in the metal section; they apply to every family. Do not promote estimates, schematic previews or assistant commentary into measured or tested facts.
+- Family-specific rules: metal case below; home-printed case in `engineering/printed-5mm/AGENTS.md`; 2WAY in `engineering/two-way/AGENTS.md`.
+
+## Metal case family rules (3U60 / 7U40 / 7U60)
+
+These rules apply to the metal family only. The interlocking-tab prohibition does not apply to the home-printed P5 family, whose J3 tab joints are adopted there (see `engineering/printed-5mm/AGENTS.md`).
+
+### Preserve the adopted design
+
+- Three metal-case models: `3u60`, `7u40`, `7u60`. Priority is `7u40` for backpack transport. 7U means 3U + 3U + 1U in ONE plane.
+- Five independent aluminum plates, nominal 1.5mm, candidate A5052 black anodized. No old thick-panel interlocking tabs in the metal family.
 - Existing 20×20×16mm metal L brackets. Thickness measured 2mm; 2.2mm is a modeling allowance, NOT a measured value.
 - User wants positional tolerance absorbed by slotted holes + clamping. Do not demand exact matching round holes as the only solution. Slot directions and travel still need a manufacturing decision.
 - Existing rail STLs: 40HP is 204mm long, 60HP is 305mm. Do not rescale one to make the other.
@@ -17,7 +29,7 @@ This is a Japanese zudo-doc MDX documentation workspace for a case family. Read 
 - Adopted lid is a straight lift-off 10BOX-style locating lid, aluminum sheet + PA12 frame. NO lid/body M3 locks, rear hooks, sliders, rotary locks or magnets. Two removable external straps hold it during transport. Plate/frame assembly screws are separate and may remain.
 - Lid rise30mm, module panel2mm+knob25mm, cables removed are provisional assumptions, not validation for every module.
 
-## Source precedence and status
+### Source precedence and status (general order; metal examples)
 
 1. Explicit user decisions and confirmed measurements: `project/source-notes/user-decisions.md`.
 2. Saved source STL / KiCad + pinned source commits.
@@ -29,32 +41,36 @@ This is a Japanese zudo-doc MDX documentation workspace for a case family. Read 
 R7 in `public/downloads/archive` is an obsolete screw-lock lid. Its added body holes and locking parts are not adopted.
 `engineering/release` currently has no approved manufacturing files. Do not populate it merely because a mesh is watertight or a browser preview looks correct.
 
-## Price discipline
+### Price discipline
 
 Actual user screenshot: old R3 t1.2 body guards12pcs total JPY2264, dyed black. Tax not shown; shipping not included in the screenshot. It is not the current case or lid quote.
 Old aluminum prices and 11–13k / 14–17k / 17–21k body budgets were assistant estimates/reports with incomplete evidence. Keep this distinction.
 Unquoted current totals are null, not0. Rail unit manufacturing cost is excluded by request; existing stock brackets have zero incremental cash but nonzero product cost when known.
 
-## How to edit
+## How to edit the docs
 
-Author Japanese MDX in `src/content/docs`. Every category has a short `index.mdx` with `CategoryNav`. Keep `title`, `description`, and numeric `sidebar_position` frontmatter. No extra H1. Use relative `.mdx` links for docs and `/images` etc for public files.
-Five pages are generated: models3 + comparison + BOM. Update `project/current-spec.json`, then `node scripts/sync-reference-tables.mjs`; do not hand-edit generated rows.
+Author Japanese MDX in `src/content/docs`. The top level has six sections: `overview`, `metal-case`, `printed-5mm`, `two-way`, `shared`, `development`; every canonical page belongs to exactly one and every category directory has a short `index.mdx`. Keep `title`, `description`, and numeric `sidebar_position` frontmatter; positions must be unique among siblings (a category index is ordered among its parent's siblings). No extra H1. Use relative `.mdx` links for docs and `/images` etc for public files.
+Old URLs from before the 2026-11-06 restructure stay as `unlisted: true` compatibility pages generated from `project/doc-routes.json` by `node scripts/sync-doc-routes.mjs`. Never hand-edit them, never link to them from canonical pages, and add every new canonical page to the map. In a directory that still holds compatibility pages, use `CategoryNav categories={[...]}` rather than `category=`. The printed-5mm sidebar is explicit in `src/sidebars.js`.
+Five metal pages are generated: models3 + comparison + BOM under `metal-case/`. Update `project/current-spec.json`, then `node scripts/sync-reference-tables.mjs`; do not hand-edit generated rows. The R9 and R10 tables come from `scripts/sync-r9-doc-table.mjs` and `scripts/sync-fullset.mjs`.
 This JSON is a DOCUMENT registry, not the input to the CAD generator. Changes must separately reach the CAD, preview, outputs, then be verified.
-Keep old source folders/ZIPs immutable where possible. Work in a new revision and record input/output hashes. References inside source manifests can be relative to their original source folder.
+References inside source manifests can be relative to their original source folder.
 
 ## Checks and dependencies
 
-`node scripts/check-docs.mjs` — static content, link existence, dimension/count arithmetic.
+`node scripts/check-docs.mjs` — static content, link existence, sibling ordering, route map, dimension/count arithmetic.
+`node scripts/sync-doc-routes.mjs --check` and `node --test tests/doc-structure.test.mjs` — compatibility pages and section ownership; after `pnpm build`, `pnpm check:built-doc-routes` crawls the built HTML.
 `node scripts/verify-assets.mjs` — incoming-source/asset byte identity.
 `node --test tests/setup.test.mjs` — mock scaffold integration tests.
 After local official setup and installation: `pnpm build` and real browser tests.
 Do not claim these static checks constitute MDX compilation, FEA, fit, drop, fatigue, or load testing.
 The initial environment could not resolve npm. `scripts/setup.mjs` generates an OFFICIAL fresh scaffold locally then integrates framework files without overwriting authored MDX/config/assets. No fabricated dependency pins are included.
 
-## Next engineering work
+## Next metal engineering work
 
-Use G01–G11 in `project/open-issues.json`: update R8 manufacturing geometry; implement slot tolerances; finalize guard retention and lid fit; confirm actual knob envelope and hardware; price black-anodized aluminum; choose/test straps; test assembly/transport. For the 7U40 R10-FULLSET-01 revision, prepare ONE full prototype set (six aluminum plates and twenty PA12 pieces) before physical evaluation. The 2026-10-26 user decision supersedes the earlier coupon-first workflow: no additional paid supplier samples or home washer tests gate preparation. Black ASA washers are editable home-print parts. Keep other models unchanged and preserve undecided items explicitly.
+Use G01–G11 in `project/open-issues.json`: update R8 manufacturing geometry; implement slot tolerances; finalize guard retention and lid fit; confirm actual knob envelope and hardware; price black-anodized aluminum; choose/test straps; test assembly/transport. For the 7U40 R10-FULLSET-01 revision, prepare ONE full prototype set (six aluminum plates and twenty PA12 pieces) before physical evaluation. The 2026-10-26 user decision supersedes the earlier coupon-first workflow: no additional paid supplier samples or home washer tests gate preparation. Black ASA washers are editable home-print parts. Keep other models and families unchanged and preserve undecided items explicitly.
 
-## 2WAY experimental family
+## Other families
 
-The independent two-tray study is scoped by `engineering/two-way/AGENTS.md` and `project/two-way/`. F5 is immutable reference; TW-01 is the maintained workbench. It is separate from R9, not a manufacturing release. Its 72/58 mm patch-gap assumptions do not replace the single-tray lid specification.
+- Home-printed 5mm (P3/P4/P5): `engineering/printed-5mm/AGENTS.md`. P5 is current; P4 (Uniform four-wall vents) and P3 (no vents) are history.
+- 2WAY (F5/TW-01): `engineering/two-way/AGENTS.md` and `project/two-way/`. F5 is immutable reference; TW-01 is the maintained workbench. It is separate from R9/R10, not a manufacturing release. Its 72/58 mm patch-gap assumptions do not replace the single-tray lid specification.
+- Shared parts: the home-print 8mm spacer in `engineering/home-print-spacer-01/` (10mm OD / 5.5mm hole are provisional R6-derived values).

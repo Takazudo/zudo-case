@@ -152,10 +152,15 @@ test('real direct CLI scratch/define isolation works but reads mutable checkout 
   const f = await fixture(t);
   const firstPort = await port();
   const secondPort = await port();
+  // Boot the two direct processes one after the other. zudo-doc 9.x's routes plugin stages its route
+  // sources into <project root>/.zudo-doc/routes-src with rm + copy on every start, so two direct CLIs
+  // cold-booting at the same moment in one root can delete each other's staged files mid-bundle.
+  // (scripts/run-site.mjs gives each run its own root, so the site commands do not share that folder.)
   const first = f.launch('dev', ['--host', '127.0.0.1', '--port', String(firstPort), '--scratch-dir', '.zfb-build/direct-first', '--define', '__ZUDO_CASE_PREVIEW_ORIGIN__="http://localhost:8787"'], undefined, true);
-  const second = f.launch('dev', ['--host', '127.0.0.1', '--port', String(secondPort), '--scratch-dir', '.zfb-build/direct-second', '--define', '__ZUDO_CASE_PREVIEW_ORIGIN__="https://preview.example.test"'], undefined, true);
   await f.served(first, `http://127.0.0.1:${firstPort}`, ['http://localhost:8787/previews/local.html']);
+  const second = f.launch('dev', ['--host', '127.0.0.1', '--port', String(secondPort), '--scratch-dir', '.zfb-build/direct-second', '--define', '__ZUDO_CASE_PREVIEW_ORIGIN__="https://preview.example.test"'], undefined, true);
   await f.served(second, `http://127.0.0.1:${secondPort}`, ['https://preview.example.test/previews/local.html']);
+  await f.served(first, `http://127.0.0.1:${firstPort}`, ['http://localhost:8787/previews/local.html']);
   await f.completes(f.launch('build', ['--scratch-dir', '.zfb-build/direct-build', '--define', `__ZUDO_CASE_PREVIEW_ORIGIN__=${JSON.stringify(PRODUCTION_PREVIEW_ORIGIN)}`], undefined, true));
   await f.served(first, `http://127.0.0.1:${firstPort}`, ['http://localhost:8787/previews/local.html']);
   await f.served(second, `http://127.0.0.1:${secondPort}`, ['https://preview.example.test/previews/local.html']);

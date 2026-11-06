@@ -1,34 +1,23 @@
 ---
-title: "CADの再生成とソースデータ"
-description: "本体の生成環境と、プレビュー専用の生成を分ける。"
-sidebar_position: 40
+title: "CADの再生成とソースデータ（移動済み）"
+description: "旧URLの互換ページ。正式なページは/docs/metal-case/resources/engineering/。"
+sidebar_position: 999
+unlisted: true
 ---
 
-## R6本体
+{/* GENERATED: node scripts/sync-doc-routes.mjs / project/doc-routes.json */}
 
-`engineering/r6-body/`は提供されたZIPの内容を保持したフォルダー。`design-parameters.json`、`build_geometry.py`、`source-data/`、`engineering/`、`stl/`がある。
+:::note[このページは移動しました]
 
-元READMEではCadQuery 2.7とezdxf等を用い、`build_geometry.py`の後に`package_preview.py`を実行する流れを記録している。**今回の文書セットアップではこれらを自動実行しない。** ローカルの依存パッケージと出力先を確認してから、作業用コピーで実行する。
+正式なページ: **[CADの再生成とソースデータ](../metal-case/resources/engineering.mdx)**
 
-## R8プレビュー
+旧URLを残すための互換ページです。本文は移動先だけで管理します。
 
-`engineering/r8-preview/`には元のREADME、`prepare_models.py`、`build.py`、`model-data.js`、`app.js`がある。
+:::
 
-`prepare_models.py`は参照メッシュから表示形状を用意し、`build.py`は単一HTMLをまとめる。これを実行しても、発注用STL・STEP・DXFが自動的に揃うわけではない。製作用のソリッド・穴・数量・公差を別に設計して保存する必要がある。
-
-## 元データを変えない
-
-| 対象 | 固定コミット |
+| 旧URLの見出しアンカー | 移動先 |
 |---|---|
-| zudo-rail | `0f7316ad9000b7906e5769aa89aff2dc18c661c8` |
-| zudo-blanks PCB | `b4db88ce5c93709f3f2f0a031f75190081f02443` |
-
-40HP/60HPのレールSTLと、3U/7U fixer・3U/1U padderのKiCadファイルをR6の`source-data/`に保存している。出典のprovenance・commitも同梱。今回ネットから再取得したという意味ではない。
-
-実データを変更する場合は、参照コミットと新しい出力版を一緒に更新する。小数の微差を説明なく丸めたり、40HPを60HPの比例縮小で代用したりしない。
-
-## 文書とCADを混同しない
-
-`project/current-spec.json`はドキュメントの表を揃える台帳で、既存CADジェネレーターの入力そのものではない。更新後はCAD側の設定へ反映し、出力から新しい台帳を読み直す。ドキュメントだけ数値を変えて「反映済み」としない。
-
-現行のCAD移行作業は[次の作業](../handoff/tasks.mdx)へ。
+| <span id="r6本体"></span>`#r6本体` | [r6本体](../metal-case/resources/engineering.mdx#r6本体) |
+| <span id="r8プレビュー"></span>`#r8プレビュー` | [r8プレビュー](../metal-case/resources/engineering.mdx#r8プレビュー) |
+| <span id="元データを変えない"></span>`#元データを変えない` | [元データを変えない](../shared/rail-pcb-sources.mdx#元データを変えない) |
+| <span id="文書とcadを混同しない"></span>`#文書とcadを混同しない` | [文書とcadを混同しない](../metal-case/resources/engineering.mdx#文書とcadを混同しない) |

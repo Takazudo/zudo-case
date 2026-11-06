@@ -106,7 +106,7 @@ async function stage(previewStage, manifestStage, generationStage, id) {
   }
   await writeFile(
     join(previewStage, "index.html"),
-    '<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>ZUDO CASE previews</title></head><body><h1>ZUDO CASE previews</h1><p><a href="https://zudo-case.zudolab.dev/docs/resources/">文書とデータの説明</a></p><ul><li><a href="/previews/r10-fullset-01.html">R10 7U40一式（現行候補）</a></li><li><a href="/previews/r8-simple-lid.html">R8載せ蓋プレビュー（履歴）</a></li><li><a href="/previews/r6-body.html">R6本体プレビュー</a></li><li><a href="/previews/two-way/tw-01.html">TW-01 2WAY実験設計</a></li></ul><p>表示用・参照用の資料です。製作承認データではありません。</p></body></html>\n',
+    '<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>ZUDO CASE previews</title></head><body><h1>ZUDO CASE previews</h1><p><a href="https://zudo-case.zudolab.dev/docs/overview/start/">文書の入口（系列を選ぶ）</a></p><ul><li><a href="/previews/r10-fullset-01.html">金属ケース: R10 7U40一式（現行候補）</a></li><li><a href="/previews/r8-simple-lid.html">金属ケース: R8載せ蓋プレビュー（3U60・7U60の基準、7U40は履歴）</a></li><li><a href="/previews/r6-body.html">金属ケース: R6本体プレビュー</a></li><li><a href="/previews/printed-5mm-p5-tab-joints.html">家庭印刷ケース: P5（現行候補）</a></li><li><a href="/previews/two-way/tw-01.html">2WAY: TW-01 実験設計</a></li></ul><p>表示用・参照用の資料です。製作承認データではありません。</p></body></html>\n',
   );
   await writeFile(join(previewStage, "robots.txt"), "User-agent: *\nDisallow: /\n");
   const manifest = {};

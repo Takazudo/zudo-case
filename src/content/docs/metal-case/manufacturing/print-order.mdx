@@ -1,0 +1,41 @@
+---
+title: "JLC3DP用STLの投入と数量"
+description: "本体ガードの旧見積と、最新の３機種・載せ蓋を混同しない。"
+sidebar_position: 30
+---
+
+**7U40の現行一式候補は [R10-FULLSET-01](../design/r10-fullset-01.mdx)。追加の有料試験片を前提にせず、アルミ6枚・PA12 20個・別途家庭ASA 72個を準備する。以下の旧R9/R8・小型片の記述は履歴または他機種の基準で、R10の次注文を指定するものではない。**
+
+
+
+7U40のR10一式のPA12 20個は[R10一式](../design/r10-fullset-01.mdx)のZIPで扱う。旧R9の[未承認ZIP](../design/history/r9-prototype-01.mdx)の本体ガード・蓋枠・C1/C2/C3試験片と[小片手順](../verification/history/fit-test.mdx)は履歴。下の表はR6の参考データで、R9・R10の数量と混ぜない。PA12-HP黒染めの接着・反り・保持はどの版でも未検証。
+
+## 本体ガードの見積用データ
+
+材料候補は**PA12-HP Nylon／Dyed Black**。単位mm、倍率100%。各STLに入っているのは部品１個。ファイル名のqtyまたはmanifestのquantityを注文画面に設定する。
+
+| 機種 | 種類数 | 各種類の数量（ファイル順） | 合計 | 1.2mm見積用 |
+|---|---:|---|---:|---|
+| 3U60 | 4 | 2 / 4 / 2 / 4 | 12個 | <PreviewLink path="/downloads/reference/3u60-r6-guards-t1p2-NOT-RELEASED.zip">R6 STL</PreviewLink> |
+| 7U40 | 6 | 2 / 2 / 4 / 2 / 2 / 4 | 16個 | <PreviewLink path="/downloads/reference/7u40-r6-guards-t1p2-NOT-RELEASED.zip">R6 STL</PreviewLink> |
+| 7U60 | 6 | 2 / 2 / 4 / 2 / 2 / 4 | 16個 | <PreviewLink path="/downloads/reference/7u60-r6-guards-t1p2-NOT-RELEASED.zip">R6 STL</PreviewLink> |
+
+標準候補は1.2mm。1.0mm比較案は[データ一覧](../resources/files.mdx)へ。これは見積・嵌合検討の起点であり、保持方法まで承認した製品データではない。
+
+## 画面で記録するもの
+
+材料、染色、数量、寸法、各行金額、合計、通貨、税、送料、日時、ファイルの版とSHA-256を保存する。表の金額が単価か数量込みかも確認する。
+
+R2の過去画面では縦辺が２個で、必要数４個と合っていなかった。R3画面は12個の数量が揃い2,264円だった。今回も数量ミスを防ぐため、注文画面とmanifestを照合する。
+
+## R8版の蓋は未出力
+
+**R8版そのものの製作用STLはない。** 7U40の蓋はR10一式のM5載せ蓋（旧R9の蓋候補もあり）だが、実物嵌合を確認していない。R7のロック蓋部品を注文しない。
+
+## 造形前の小さな確認
+
+R9の段階では、全周の部品を一度に作る前に、ガード端面と蓋の差し込み部を含む短い試験片で確認する方針だった（R9 7U40のC1/C2/C3候補）。R10一式ではこの試験片注文を前提にしない。旧R7のM3ナット試験片は今回の載せ蓋の嵌合試験には代用しない。
+
+JLC3DPの最低厚さ・公差・追加課金は注文時の公式条件を確認する。過去の単価表から金額を保証せず、今回のデータを実際に投入した表示額を優先する。
+
+参照：[JLC3DP PA12-HP](https://jlc3dp.com/help/article/pa12-hp-nylon)、[嵌合試作](../verification/history/fit-test.mdx)。
