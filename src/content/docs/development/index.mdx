@@ -1,0 +1,15 @@
+---
+title: "開発・保守"
+description: "サイトの起動、依存とscaffoldの保守、文書・表・資産の更新、文書の構成と旧URL。"
+sidebar_position: 60
+---
+
+文書サイトとリポジトリの保守手順です。ケースの設計・状態は各系列のページにあります。
+
+<CategoryNav category="development" />
+
+## 作業を引き継ぐ際の境界
+
+文書の整理・保守には、注文操作、業者への連絡、デプロイ、新CADの製作承認は含まない。次の担当が自動的に発注へ進めないよう、リリース状態は`false`のまま残している。
+
+元のソース（例: `engineering/r6-body`、`engineering/r8-preview`、2WAYの`engineering/two-way/f5-reference/`、家庭印刷の受領ファイル）は変更しない。変更は新しい作業ディレクトリーと版で行い、元データとの差分とハッシュを残す。系列ごとの規則はリポジトリの`AGENTS.md`と各`engineering/*/AGENTS.md`にある。

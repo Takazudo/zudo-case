@@ -1,28 +1,29 @@
-# ZUDO CASE — zudo-doc引継ぎセット
+# ZUDO CASE — モジュール用ケースの設計・製作資料
 
-**D1 / 文書スナップショット: 2026-09-24**
+ユーロラック等のモジュールを収めるケースを、互いに独立した設計系列ごとに整理した日本語のzudo-docサイトとエンジニアリング資料です。現物確認・見積・注文の判断材料をまとめますが、**製造承認済みのファイルはありません**（`engineering/release/`は注意書きだけ、`project/release-state.json`の`production_approved`は`false`）。注文・支払い・製造承認はユーザーが別に判断します。
 
-3U・60HP、3U＋3U＋1U・40HP、3U＋3U＋1U・60HPの金属ケースを、現物確認・見積・発注へ進めるためのドキュメントです。本文は日本語のMDX、サイト設定はzudo-doc用です。
+## 系列と入口
 
-このD1は**資料整理の版**です。ケースCADの新しい版や、製造承認ではありません。
+サイトは６つのセクションに分かれ、ヘッダーの各項目が１セクションに対応します。最初に読むページは[プロジェクトを選ぶ](src/content/docs/overview/start.mdx)、系列をまたぐ状態の要約は[全体の状態](src/content/docs/overview/status.mdx)です。
 
-## 現行7U40候補
+| セクション | 対象 | 現行の版と状態 | 入口 |
+|---|---|---|---|
+| 全体案内 | 系列の選択、全体の状態、用語 | — | [overview](src/content/docs/overview/index.mdx) |
+| 金属ケース | 3U60・7U40・7U60の単トレー（アルミ平板＋L字ブラケット、載せ蓋＋外周バンド） | 7U40は**R10-FULLSET-01**の一式準備候補（JLCカート保存済み・未発注・未払い）。3U60・7U60はR6本体・R8載せ蓋の基準。R9系は旧候補の履歴 | [metal-case](src/content/docs/metal-case/index.mdx) |
+| 家庭印刷ケース | 7U40・5mm黒ASAの家庭印刷版 | **P5-PRINTED-5MM-TAB-JOINTS-J3**が現行。P4（Uniform四壁通気孔）とP3（通気孔なし）は旧版。ソフトウェア検査のみ | [printed-5mm](src/content/docs/printed-5mm/index.mdx) |
+| 2WAY 実験設計 | 2トレーのA／B／C構成 | **TW-01**が作業版、F5は不変の原資料。製作CADではない | [two-way](src/content/docs/two-way/index.mdx) |
+| 共通部品・元データ | 家庭印刷8mmスペーサー、元レール・PCBと出典 | スペーサーは高さ8mm採用、外径10mm・穴径5.5mmは仮寸法 | [shared](src/content/docs/shared/index.mdx) |
+| 開発・保守 | サイトの起動、更新手順、文書の構成と旧URL | — | [development](src/content/docs/development/index.mdx) |
 
-[R10-FULLSET-01 一式準備](src/content/docs/design/r10-fullset-01.mdx): アルミ6枚、PA12 20個、家庭ASA 72個。追加の有料クーポン注文を前提にしない。実装・検証の状況は同版の記録を参照。製造承認ではない。
+画像・図は`/files/`のAsset Viewerにあります。ある系列の候補が他の系列の仕様・数量・注文記録を変えることはありません。
 
-[2026-10-26 JLCカート準備記録](project/order-records/r10-fullset-01-jlc-cart-2026-10-26.md): メタル6点・PA12 20点、各1個を保存済み。未発注・未払い。前回購入設定、ファイルhash、価格の範囲と残件を記録。
+### 金属ケース7U40の現行候補
 
-### 旧候補
+[R10-FULLSET-01 一式準備](src/content/docs/metal-case/design/r10-fullset-01.mdx): アルミ6枚、PA12 20個、家庭ASA 72個。2026-10-26のユーザー決定により、追加の有料試験片の注文を前提にしません。[2026-10-26 JLCカート準備記録](project/order-records/r10-fullset-01-jlc-cart-2026-10-26.md)のとおり、メタル6点・PA12 20点を各1個保存済みで、未発注・未払いです。R9系（R9-PROTOTYPE-01、R9-FITFIX-01、R9-LID-M5-01）は[旧候補の履歴](src/content/docs/metal-case/design/history/index.mdx)として保存しています。
 
-[R9-FITFIX-01](src/content/docs/design/r9-fitfix-01.mdx)を追加。ガードと蓋座面の修正候補で、固定環境の生成・検査記録は `engineering/r9-fitfix-01/verification/`。旧R9は履歴として保存し、現物嵌合・接着・運搬と製造承認は未完了。
+### 家庭印刷用8mmスペーサー
 
-## 独立した7U40・5mm家庭印刷版
-
-[P5-PRINTED-5MM-TAB-JOINTS-J3](src/content/docs/printed-5mm/index.mdx)は黒ASAの本体・載せ蓋12構造部品を家庭印刷する別系列です。[3Dプレビュー](src/content/docs/printed-5mm/p5-preview.mdx)と[STL/編集ソース](src/content/docs/printed-5mm/p5-print-files.mdx)を参照。R10金属ケースと準備済みJLCカートは変更しません。実スライス・現物嵌合・強度・運搬は未確認です。
-
-## 家庭印刷用8mmスペーサー
-
-フレームとケース側板の間に入れる[8mmスペーサーのSTL・編集用ソース・印刷手順](engineering/home-print-spacer-01/README.md)を追加。外径10mm／穴径5.5mmはR6由来の仮寸法です。まず1個で現物確認し、3U60は4個、7U40/7U60は各10個を印刷します。
+フレームとケース側板の間に入れる[8mmスペーサーのSTL・編集用ソース・印刷手順](engineering/home-print-spacer-01/README.md)。文書は[共通部品](src/content/docs/shared/home-print-spacer.mdx)にあります。まず1個で現物確認し、3U60は4個、7U40/7U60は各10個を印刷します。
 
 ## まず起動する
 
@@ -40,7 +41,7 @@ pnpm dev
 
 このセットの初期化には公式`create-zudo-doc@5.27.0`を使いました。`scripts/setup.mjs`はscaffoldをまだ取り込んでいない文書のみのスナップショット向けです。この初期化済みチェックアウトでは再実行せず、ロックファイルから依存を復元してください。Git初期化、デプロイ、注文は自動実行しません。
 
-2026-09-24の初回ビルドでは44ページを生成し、41件の文書ルートと検索項目、47件の公開資産を確認しました。現在は画像・図15件をzudo-docのAsset Viewerに移し、`/files/`の一覧と各閲覧ページを追加して60ページを生成します。同日のChrome 146.0.7680.153で、desktop 1440×900とnarrow 390×844の実表示も確認しました。41ルートと8カテゴリを両幅で開き、narrowでの横はみ出しはなく、検索・テーマ・画像・R8/R6プレビューの主要操作も動作しました。画面ごとの記録、ダウンロード件数、スクリーンショットは[検証記録](project/browser-validation.md)にまとめています。物理的な嵌合・強度・運搬試験はこのブラウザー確認に含みません。`pnpm dev`が表示するURLを開き、「現在地と最初に読むページ」から読んでください。
+2026-09-24（D1）の初回ビルドでは44ページを生成し、41件の文書ルートと検索項目、47件の公開資産を確認しました。以下の件数はその時点の記録です。同日のChrome 146.0.7680.153で、desktop 1440×900とnarrow 390×844の実表示も確認しました。41ルートと8カテゴリを両幅で開き、narrowでの横はみ出しはなく、検索・テーマ・画像・R8/R6プレビューの主要操作も動作しました。画面ごとの記録、ダウンロード件数、スクリーンショットは[検証記録](project/browser-validation.md)にまとめています。物理的な嵌合・強度・運搬試験はこのブラウザー確認に含みません。`pnpm dev`が表示するURLを開き、「プロジェクトを選ぶ」から読んでください。現在の文書数と旧URLの扱いは[文書の構成と旧URL](src/content/docs/development/doc-structure.mdx)を参照してください。
 
 ### ローカルと本番のプレビュー確認
 
@@ -80,60 +81,46 @@ node scripts/setup.mjs --from /absolute/path/to/fresh-official-scaffold
 
 既に運用中のサイトへ統合する場合は、setupを実行せず、記事・資産・設定を個別にマージしてください。補助スクリプトはファイル衝突があると上書きせず停止します。CLIの版は`ZUDO_DOC_CLI_VERSION`環境変数で指定でき、デフォルトは`9.1.2`です。生成結果は`.handoff/`に記録します。
 
-## 入っているもの
+## 文書の構成と旧URL
 
-| 大分類 | 内容 |
-|---|---|
-| 概要 | 現在地、採用仕様、未確認事項、用語 |
-| ３機種 | 寸法、レール・金具・ガード数量、比較表 |
-| 設計 | レール積層、8mmスペーサー、長穴、締結、ガード、載せ蓋とバンド |
-| 製作 | BOM、見積依頼条件、印刷用データの扱い、過去価格の根拠 |
-| 検証 | 嵌合・組立・持ち運びの確認と、発注前ゲート |
-| 資料 | R8とR6の3Dプレビュー、CAD、STL、STEP、DXF、元データ |
-| 判断履歴 | 5→8mm、ガード薄肉化、蓋のロック不採用、バンド採用 |
-| 引継ぎ | セットアップ、次工程、更新手順 |
+`src/content/docs/`の最上位は`overview`・`metal-case`・`printed-5mm`・`two-way`・`shared`・`development`の６セクションです。正式ページはどれか１つのセクションに属し、各カテゴリに`index.mdx`の入口があります。家庭印刷のサイドバーは`src/sidebars.js`で「現行 P5」「履歴 P4」「履歴 P3」に分けています。
 
-**41文書ページ、8カテゴリ**です。カテゴリ一覧は`project/navigation.json`にあります。画像・図は`/files/`の一覧と閲覧ページにも表示されます。既存のプレビューは、サイトを起動しなくても`public/previews/r8-simple-lid.html`をブラウザーで直接開けます。
+2026-11-06の再編前にあった`models/`・`design/`・`manufacturing/`・`verification/`・`resources/`・`decisions/`・`handoff/`などのURLは、`unlisted: true`の互換ページとして残します。互換ページはサイドバー・検索・前後リンクに出ず、移動先へのリンクと旧見出しアンカーを持ちます。対応表は`project/doc-routes.json`で、互換ページと[所有表](src/content/docs/development/doc-structure.mdx)は`pnpm sync:doc-routes`で生成します。互換ページを手で編集しないでください。
 
-## 最初に確認すべき状態
+## 金属ケースで最初に確認すべき状態
 
 | 対象 | 現在の扱い |
 |---|---|
 | 採用方式 | 10BOX式の載せ蓋＋運搬時だけ外周バンド２本。蓋と本体のロックなし |
-| 本体 | R6の名目CADが修正起点。３機種・8mmスペーサー・薄型ガード |
-| ブラケット用長穴 | 意図は採用済み。R6の製作図にはまだ丸穴が残る |
-| 蓋 | R8の表示用形状まで。新しい製作用STL/STEP/DXFは未生成 |
+| 7U40 | R10-FULLSET-01の一式準備候補。現物嵌合・締結・運搬は未評価 |
+| 3U60・7U60 | R6の名目CADとR8載せ蓋の表示寸法が基準。長穴・ガード保持・蓋の製作形状は未反映 |
 | R7のM3ロック蓋 | 不採用の参考資料。最終仕様として注文しない |
 | 現在の総原価 | 未確定。旧R3ガード2,264円を現行全体の見積に流用しない |
 | 製作承認ファイル | なし。`engineering/release/`は注意書きだけ |
 
-ガードの固定方法・嵌合、公差、ノブ上方の隙間、バンドによる天板のたわみ等も確認待ちです。ここを見失わないため、`project/open-issues.json`と発注前ゲートを用意しました。
+ガードの固定方法・嵌合、公差、ノブ上方の隙間、バンドによる天板のたわみ等も確認待ちです。`project/open-issues.json`と[発注前ゲート](src/content/docs/metal-case/verification/before-order.mdx)で管理します。
 
 ## フォルダー
 
 ```text
-zudo-case-doc/
-├── README.md / AGENTS.md
-├── zfb.config.ts                 # この文書サイトの設定
-├── setup.preset.json             # 公式初期化CLIへ渡す設定
-├── src/content/docs/             # 41ページのMDX
+zudo-case/
+├── README.md / AGENTS.md          # 全体ルール。系列別は engineering/*/AGENTS.md
+├── zfb.config.ts                  # サイト設定（６セクションのヘッダー）
+├── src/
+│   ├── content/docs/             # MDX（６セクション＋旧URLの互換ページ）
+│   └── sidebars.js               # 家庭印刷の明示サイドバー
 ├── public/
-│   ├── assets/                  # Asset Viewerの画像・図・見積画面
-│   ├── previews/                # R8/R6の単一HTML
-│   ├── evidence/                # 旧README、計算結果
-│   └── downloads/
-│       ├── reference/           # 未承認のR6参照データ
-│       └── archive/             # 不採用のR7・ロック比較
-├── engineering/
-│   ├── r6-body/                 # 元ソース・CAD・STL・PCB
-│   ├── r8-preview/              # 載せ蓋の表示用ソース
-│   └── release/                 # 承認後にのみ格納
-├── project/                     # 仕様・根拠・見積・課題・ハッシュ
-├── scripts/                     # 初期化、整合チェック、表の再生成
-└── tests/                       # 初期化の安全な取り込みを検査
+│   ├── assets/                   # Asset Viewerの画像・図・見積画面
+│   ├── previews/                 # 単一HTMLの3Dプレビュー
+│   ├── evidence/                 # 旧README、計算結果
+│   └── downloads/                # 候補・参照・旧版のZIP
+├── engineering/                   # 系列ごとのCADソースと出力（engineering/README.md）
+├── project/                       # 仕様・根拠・見積・課題・注文記録・doc-routes.json
+├── scripts/                       # 初期化、整合チェック、表とページの再生成
+└── tests/                         # 初期化・台帳・文書構成などの検査
 ```
 
-元のR6/R8ソースと旧アーカイブは保全しています。過去の生成コードやREADMEにある絶対パス・前提は作成当時のものです。そのまま全スクリプトを一括実行せず、`src/content/docs/resources/engineering.mdx`を読んでからローカル環境に合わせてください。
+元のR6/R8ソースと旧アーカイブは保全しています。過去の生成コードやREADMEにある絶対パス・前提は作成当時のものです。そのまま全スクリプトを一括実行せず、[元レール・PCBと出典](src/content/docs/shared/rail-pcb-sources.mdx)と`engineering/README.md`を読んでからローカル環境に合わせてください。
 
 ## 更新と静的チェック
 
@@ -141,11 +128,14 @@ zudo-case-doc/
 
 ```sh
 node scripts/check-docs.mjs
+node scripts/sync-doc-routes.mjs --check
+node --test tests/doc-structure.test.mjs
 node scripts/verify-assets.mjs
 node --test tests/setup.test.mjs
 ```
 
-- `check-docs`: メタデータ、ローカルリンク先、機種寸法・数量・見積加算の整合を検査します。MDXコンパイラではありません。
+- `check-docs`: メタデータ、ローカルリンク先、同じ階層での`sidebar_position`の重複、旧URL対応表との整合、機種寸法・数量・見積加算の整合を検査します。MDXコンパイラではありません。
+- `check:doc-routes`／`test:doc-structure`: 互換ページと所有表が`project/doc-routes.json`から生成した内容と一致すること、６セクションとヘッダーの対応、家庭印刷サイドバーの網羅を確認します。ビルド後は`pnpm check:built-doc-routes`で旧URL・アンカー・検索除外・内部リンクを実HTMLで確認します。
 - `verify-assets`: 同梱資産のSHA-256を、引継ぎ時の台帳に照合します。CADの強度・干渉・公差を保証するものではありません。意図的に変更した資産は差分になります。
 - `test:setup`: 模擬scaffoldを使い、既存記事保護・衝突停止・復旧を確認します。公式CLIの実行確認ではありません。
 
@@ -157,7 +147,7 @@ node scripts/sync-reference-tables.mjs
 node scripts/check-docs.mjs
 ```
 
-自動生成の対象は３機種ページ、機種比較、BOMの５ページ。**台帳はCADジェネレーターの入力ではありません**。ここだけ直して製作データを更新済みにしないでください。
+自動生成の対象は`src/content/docs/metal-case/`の３機種ページ、機種比較、BOMの５ページ。R9とR10の表は`scripts/sync-r9-doc-table.mjs`と`scripts/sync-fullset.mjs`が金属ケースの各ページへ書き込みます。**台帳はCADジェネレーターの入力ではありません**。ここだけ直して製作データを更新済みにしないでください。
 
 ## 根拠と公開範囲
 
@@ -177,9 +167,9 @@ Cloudflare Workers Static Assetsへの公開設定は２つのホストに分け
 
 公式資料: [Installation](https://zudo-doc.takazudomodular.com/docs/getting-started/installation/) / [CLI](https://zudo-doc.takazudomodular.com/docs/reference/create-zudo-doc/) / [Configuration](https://zudo-doc.takazudomodular.com/docs/guides/configuration/)
 
-## 2WAY experimental family
+## 2WAY 実験設計
 
-The independent two-tray study is scoped by `engineering/two-way/AGENTS.md` and `project/two-way/`. F5 is immutable reference; TW-01 is the maintained workbench. It is separate from R9, not a manufacturing release. Its 72/58 mm patch-gap assumptions do not replace the single-tray lid specification.
+独立した2トレーの検討は`engineering/two-way/AGENTS.md`と`project/two-way/`の範囲で扱います。F5は不変の原資料、TW-01が保守する作業版です。金属ケースのR9/R10とは別系列で、製造用リリースではありません。72/58mmのパッチ隙間の仮定は単トレーの蓋仕様を置き換えません。
 
 TW-01の通常生成はオフラインで、既存CADの再生成を必要としません。
 

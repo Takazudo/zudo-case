@@ -1,7 +1,9 @@
 import { TwoWayTable, TwoWayFrameTable } from "./components/two-way-table.jsx";
 import { defineChromeBindings } from "@takazudo/zudo-doc/chrome-bindings";
 import { PreviewFrame, PreviewLink, PreviewSource } from "./components/preview-links.jsx";
+import { sidebars } from "./sidebars.js";
 
 export const chromeBindings = defineChromeBindings({
   mdxExtras: { PreviewFrame, PreviewLink, PreviewSource, TwoWayTable, TwoWayFrameTable },
+  sidebarsConfig: sidebars,
 });

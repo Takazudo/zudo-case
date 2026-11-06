@@ -34,6 +34,8 @@ jobs:
       - run: pnpm test:two-way
       - run: pnpm check:two-way
       - run: pnpm check:docs
+      - run: pnpm check:doc-routes
+      - run: pnpm test:doc-structure
       - run: pnpm check:printed-5mm
       - run: pnpm test:printed-5mm
       - run: pnpm check:r9
@@ -59,6 +61,7 @@ jobs:
         run: node --test tests/prepare-worker-assets.test.mjs tests/verify-deployed-assets.test.mjs
       - run: pnpm build
       - run: pnpm check:built-preview-links
+      - run: pnpm check:built-doc-routes
       - run: pnpm check:images
       - run: pnpm prepare:worker-assets
       - run: node --test tests/worker-assets.test.mjs tests/worker-assets-deployment.test.mjs

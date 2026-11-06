@@ -1,321 +1,689 @@
 [
   {
     "path": "decisions/decisions.mdx",
-    "title": "採用・不採用の判断",
-    "description": "どの案へ戻してはいけないかを明確にする。",
-    "sidebar_position": 10
+    "title": "採用・不採用の判断（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/history/decisions/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "decisions/history.mdx",
-    "title": "R1〜R9の変更履歴",
-    "description": "名称が似たファイルの取り違えを防ぐための経緯。",
-    "sidebar_position": 20
+    "title": "R1〜R9の変更履歴（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/history/revisions/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "decisions/index.mdx",
-    "title": "判断履歴",
-    "description": "採用・不採用と、変更理由を残す。",
-    "sidebar_position": 70
+    "title": "判断と版の履歴（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/history/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "design/brackets-slots.mdx",
-    "title": "ブラケットと公差吸収用の長穴",
-    "description": "穴位置を厳密に合わせるのではなく、組立時に調整して締める。",
-    "sidebar_position": 30
+    "title": "ブラケットと公差吸収用の長穴（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/design/brackets-slots/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "design/construction.mdx",
-    "title": "平板５枚と役割分担",
-    "description": "部材の強度、端の保護、取り外しを分ける。",
-    "sidebar_position": 10
+    "title": "平板５枚と役割分担（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/design/construction/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "design/fasteners-feet.mdx",
-    "title": "締結材・底面・接地",
-    "description": "実測値と模式部品を区別して、突出と接触を確認する。",
-    "sidebar_position": 60
+    "title": "締結材・底面・接地（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/design/fasteners-feet/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "design/guards.mdx",
-    "title": "薄型PA12ガード",
-    "description": "本体の強度は金具へ任せ、樹脂は端の被覆と意匠に絞る。",
-    "sidebar_position": 40
+    "title": "薄型PA12ガード（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/design/guards/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "design/index.mdx",
-    "title": "共通設計",
-    "description": "平板、レール、締結、ガード、載せ蓋の役割。",
-    "sidebar_position": 30
+    "title": "設計（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/design/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "design/lid-bands.mdx",
-    "title": "10BOX式の載せ蓋と外周バンド",
-    "description": "可動ロックを持たせず、位置決めと運搬時の保持を分ける。",
-    "sidebar_position": 50
+    "title": "10BOX式の載せ蓋と外周バンド（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/design/lid-bands/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "design/r10-fullset-01.mdx",
-    "title": "R10・7U40一式の試作準備",
-    "description": "固定耳付きt1ガード、溝1.70mm、M5載せ蓋と家庭用ASA座金を1台分にまとめる。",
-    "sidebar_position": 95
+    "title": "R10・7U40一式の試作準備（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/design/r10-fullset-01/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "design/r9-fitfix-01.mdx",
-    "title": "7U40 R9-FITFIX-01 修正候補",
-    "description": "金属への侵入、ガード実肉厚、蓋座面を修正した未承認候補。",
-    "sidebar_position": 80
+    "title": "7U40 R9-FITFIX-01 修正候補（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/design/history/r9-fitfix-01/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "design/r9-lid-m5-01.mdx",
-    "title": "7U40 R9-LID-M5-01 フタのM5化候補",
-    "description": "アルミ天板とPA12フタ枠の組立をM5ネジ＋ナイロンロックナットへ変えた未承認候補。",
-    "sidebar_position": 90
+    "title": "7U40 R9-LID-M5-01 フタのM5化候補（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/design/history/r9-lid-m5-01/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "design/r9-prototype-01.mdx",
-    "title": "7U40 R9 製作候補",
-    "description": "R9-PROTOTYPE-01の形状、出力と未検証事項を同じ版で確認する。",
-    "sidebar_position": 70
+    "title": "7U40 R9 製作候補（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/design/history/r9-prototype-01/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "design/rail-stack.mdx",
-    "title": "実レール・PCB・8mmスペーサー",
-    "description": "幅を決める積層と、締付長の積層を混同しない。",
-    "sidebar_position": 20
+    "title": "実レール・PCB・8mmスペーサー（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/design/rail-stack/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
-    "path": "handoff/index.mdx",
-    "title": "ローカルへの引継ぎ",
-    "description": "zudo-docの初期化、更新手順、次の作業。",
-    "sidebar_position": 80
-  },
-  {
-    "path": "handoff/maintenance.mdx",
-    "title": "文書・表・資産の更新",
-    "description": "MDXの編集と、参照表の同期を分離する。",
+    "path": "development/doc-structure.mdx",
+    "title": "文書の構成と旧URL",
+    "description": "６つの区分、各ページの所有区分、旧URLから正式なページへの対応。",
     "sidebar_position": 30
   },
   {
-    "path": "handoff/setup.mdx",
+    "path": "development/index.mdx",
+    "title": "開発・保守",
+    "description": "サイトの起動、依存とscaffoldの保守、文書・表・資産の更新、文書の構成と旧URL。",
+    "sidebar_position": 60
+  },
+  {
+    "path": "development/maintenance.mdx",
+    "title": "文書・表・資産の更新",
+    "description": "MDXの編集と、参照表の同期を分離する。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "development/setup.mdx",
     "title": "ローカルでzudo-docを起動する",
     "description": "公式CLIで土台を生成し、このMDX・資産をそのまま使う。",
     "sidebar_position": 10
   },
   {
+    "path": "handoff/index.mdx",
+    "title": "開発・保守（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/development/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "handoff/maintenance.mdx",
+    "title": "文書・表・資産の更新（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/development/maintenance/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "handoff/setup.mdx",
+    "title": "ローカルでzudo-docを起動する（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/development/setup/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
     "path": "handoff/tasks.mdx",
-    "title": "次に行う作業",
-    "description": "7U40から試作へ進め、共通構造を３機種へ展開する。",
-    "sidebar_position": 20
+    "title": "金属ケースの次工程（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/next-steps/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "manufacturing/aluminum-order.mdx",
+    "title": "アルミ板の見積・発注条件（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/manufacturing/aluminum-order/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "manufacturing/bands-suppliers.mdx",
+    "title": "調達先と運搬バンドの候補（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/manufacturing/bands-suppliers/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "manufacturing/bom.mdx",
+    "title": "ケース側BOM（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/manufacturing/bom/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "manufacturing/costs.mdx",
+    "title": "見積・概算・未取得費用（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/manufacturing/costs/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "manufacturing/fit-test-order.mdx",
+    "title": "小型試験片の見積・発注準備（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/manufacturing/history/fit-test-order/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "manufacturing/index.mdx",
+    "title": "製作・見積（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/manufacturing/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "manufacturing/print-order.mdx",
+    "title": "JLC3DP用STLの投入と数量（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/manufacturing/print-order/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "manufacturing/r9-rfq-draft.mdx",
+    "title": "R9アルミ参考見積の未送信文案（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/manufacturing/history/r9-rfq-draft/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "metal-case/design/brackets-slots.mdx",
+    "title": "ブラケットと公差吸収用の長穴",
+    "description": "穴位置を厳密に合わせるのではなく、組立時に調整して締める。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "metal-case/design/construction.mdx",
+    "title": "平板５枚と役割分担",
+    "description": "部材の強度、端の保護、取り外しを分ける。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "metal-case/design/fasteners-feet.mdx",
+    "title": "締結材・底面・接地",
+    "description": "実測値と模式部品を区別して、突出と接触を確認する。",
+    "sidebar_position": 60
+  },
+  {
+    "path": "metal-case/design/guards.mdx",
+    "title": "薄型PA12ガード",
+    "description": "本体の強度は金具へ任せ、樹脂は端の被覆と意匠に絞る。",
+    "sidebar_position": 40
+  },
+  {
+    "path": "metal-case/design/history/index.mdx",
+    "title": "旧候補（R9系）",
+    "description": "7U40のR9-PROTOTYPE-01、R9-FITFIX-01、R9-LID-M5-01。R10の出発点として保存する未承認候補。",
+    "sidebar_position": 90
+  },
+  {
+    "path": "metal-case/design/history/r9-fitfix-01.mdx",
+    "title": "7U40 R9-FITFIX-01 修正候補",
+    "description": "金属への侵入、ガード実肉厚、蓋座面を修正した未承認候補。",
+    "sidebar_position": 80
+  },
+  {
+    "path": "metal-case/design/history/r9-lid-m5-01.mdx",
+    "title": "7U40 R9-LID-M5-01 フタのM5化候補",
+    "description": "アルミ天板とPA12フタ枠の組立をM5ネジ＋ナイロンロックナットへ変えた未承認候補。",
+    "sidebar_position": 90
+  },
+  {
+    "path": "metal-case/design/history/r9-prototype-01.mdx",
+    "title": "7U40 R9 製作候補",
+    "description": "R9-PROTOTYPE-01の形状、出力と未検証事項を同じ版で確認する。",
+    "sidebar_position": 70
+  },
+  {
+    "path": "metal-case/design/index.mdx",
+    "title": "設計",
+    "description": "R10一式と、平板・レール・締結・ガード・載せ蓋の共通設計。R9系の旧候補は履歴に分ける。",
+    "sidebar_position": 50
+  },
+  {
+    "path": "metal-case/design/lid-bands.mdx",
+    "title": "10BOX式の載せ蓋と外周バンド",
+    "description": "可動ロックを持たせず、位置決めと運搬時の保持を分ける。",
+    "sidebar_position": 50
+  },
+  {
+    "path": "metal-case/design/r10-fullset-01.mdx",
+    "title": "R10・7U40一式の試作準備",
+    "description": "固定耳付きt1ガード、溝1.70mm、M5載せ蓋と家庭用ASA座金を1台分にまとめる。",
+    "sidebar_position": 5
+  },
+  {
+    "path": "metal-case/design/rail-stack.mdx",
+    "title": "実レール・PCB・8mmスペーサー",
+    "description": "幅を決める積層と、締付長の積層を混同しない。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "metal-case/history/decisions.mdx",
+    "title": "採用・不採用の判断",
+    "description": "どの案へ戻してはいけないかを明確にする。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "metal-case/history/index.mdx",
+    "title": "判断と版の履歴",
+    "description": "採用・不採用の判断と、R1〜R9の変更経緯。",
+    "sidebar_position": 90
+  },
+  {
+    "path": "metal-case/history/revisions.mdx",
+    "title": "R1〜R9の変更履歴",
+    "description": "名称が似たファイルの取り違えを防ぐための経緯。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "metal-case/index.mdx",
+    "title": "金属ケース",
+    "description": "アルミ平板とPA12ガードの単トレーケース３機種。7U40はR10一式候補、3U60・7U60はR6/R8基準。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "metal-case/manufacturing/aluminum-order.mdx",
     "title": "アルミ板の見積・発注条件",
     "description": "黒アルマイトまで材料込みで比較し、長穴と仕上げを図面へ結び付ける。",
     "sidebar_position": 20
   },
   {
-    "path": "manufacturing/bands-suppliers.mdx",
+    "path": "metal-case/manufacturing/bands-suppliers.mdx",
     "title": "調達先と運搬バンドの候補",
     "description": "会話で挙げた候補を残す。品番・価格の再確認は注文前に行う。",
     "sidebar_position": 50
   },
   {
-    "path": "manufacturing/bom.mdx",
+    "path": "metal-case/manufacturing/bom.mdx",
     "title": "ケース側BOM",
     "description": "レールユニットの費用を除き、本体・蓋・バンドを分けて管理する。",
     "sidebar_position": 10
   },
   {
-    "path": "manufacturing/costs.mdx",
+    "path": "metal-case/manufacturing/costs.mdx",
     "title": "見積・概算・未取得費用",
     "description": "実額を確認できるのは旧R3ガード。現在の総原価は未確定。",
     "sidebar_position": 40
   },
   {
-    "path": "manufacturing/fit-test-order.mdx",
+    "path": "metal-case/manufacturing/history/fit-test-order.mdx",
     "title": "小型試験片の見積・発注準備",
     "description": "R9-FITFIX-01の材質別数量、未送信文案、乾式試験の進め方。",
     "sidebar_position": 27
   },
   {
-    "path": "manufacturing/index.mdx",
-    "title": "製作・見積",
-    "description": "BOM、発注条件、価格根拠を分けて管理する。",
-    "sidebar_position": 40
+    "path": "metal-case/manufacturing/history/index.mdx",
+    "title": "旧発注準備（試験片・R9 RFQ）",
+    "description": "R9系で準備した小型試験片の見積セットと、R9アルミの未送信RFQ。R10では使わない手順。",
+    "sidebar_position": 90
   },
   {
-    "path": "manufacturing/print-order.mdx",
-    "title": "JLC3DP用STLの投入と数量",
-    "description": "本体ガードの旧見積と、最新の３機種・載せ蓋を混同しない。",
-    "sidebar_position": 30
-  },
-  {
-    "path": "manufacturing/r9-rfq-draft.mdx",
+    "path": "metal-case/manufacturing/history/r9-rfq-draft.mdx",
     "title": "R9アルミ参考見積の未送信文案",
     "description": "7U40の６枚セットを数量別に比較するための未送信RFQ。",
     "sidebar_position": 25
   },
   {
-    "path": "models/3u60.mdx",
+    "path": "metal-case/manufacturing/index.mdx",
+    "title": "製作・見積",
+    "description": "BOM、アルミと樹脂の発注条件、価格根拠、調達先。旧試験片の発注準備は履歴に分ける。",
+    "sidebar_position": 60
+  },
+  {
+    "path": "metal-case/manufacturing/print-order.mdx",
+    "title": "JLC3DP用STLの投入と数量",
+    "description": "本体ガードの旧見積と、最新の３機種・載せ蓋を混同しない。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "metal-case/models/3u60.mdx",
     "title": "3U・60HP",
     "description": "本体はR6の名目CAD、載せ蓋はR8プレビュー。3u60の寸法と数量。",
     "sidebar_position": 10
   },
   {
-    "path": "models/7u40.mdx",
+    "path": "metal-case/models/7u40.mdx",
     "title": "3U＋3U＋1U・40HP",
-    "description": "7u40のR6/R8基準と、未承認のR9-FITFIX-01候補を示す。",
+    "description": "7u40のR6/R8基準と、旧・未承認のR9-FITFIX-01候補を示す。",
     "sidebar_position": 20
   },
   {
-    "path": "models/7u60.mdx",
+    "path": "metal-case/models/7u60.mdx",
     "title": "3U＋3U＋1U・60HP",
     "description": "本体はR6の名目CAD、載せ蓋はR8プレビュー。7u60の寸法と数量。",
     "sidebar_position": 30
   },
   {
-    "path": "models/comparison.mdx",
+    "path": "metal-case/models/comparison.mdx",
     "title": "３機種の比較",
     "description": "共通値と、機種によって増える板・金具・ガードを一覧にする。",
     "sidebar_position": 40
   },
   {
-    "path": "models/index.mdx",
+    "path": "metal-case/models/index.mdx",
     "title": "３機種の仕様",
-    "description": "共通寸法から生成したモデル別の寸法・数量。",
-    "sidebar_position": 20
-  },
-  {
-    "path": "overview/glossary.mdx",
-    "title": "用語と座標",
-    "description": "7U、fixer、padder、穴、ガードの意味を揃える。",
+    "description": "金属ケース３機種の寸法・数量。台帳から生成し、7U40はR10一式の入口も示す。",
     "sidebar_position": 40
   },
   {
-    "path": "overview/index.mdx",
-    "title": "はじめに",
-    "description": "現在地と、製作へ進むための読み順。",
+    "path": "metal-case/next-steps.mdx",
+    "title": "金属ケースの次工程",
+    "description": "7U40はR10一式の業者確認と注文判断、到着後の一式評価。3U60・7U60はR6/R8から未着手。旧R9の工程は履歴。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "metal-case/resources/body-preview.mdx",
+    "title": "R6・本体とレールのプレビュー",
+    "description": "８mmスペーサーと３機種の名目寸法を確認する。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "metal-case/resources/current-preview.mdx",
+    "title": "現行R10一式と旧版プレビュー",
+    "description": "7U40の選定一式と、過去のR8コンセプトへの入口。",
     "sidebar_position": 10
   },
   {
-    "path": "overview/scope.mdx",
+    "path": "metal-case/resources/engineering.mdx",
+    "title": "CADの再生成とソースデータ",
+    "description": "本体の生成環境と、プレビュー専用の生成を分ける。",
+    "sidebar_position": 40
+  },
+  {
+    "path": "metal-case/resources/files.mdx",
+    "title": "版別ファイルとダウンロード",
+    "description": "採用方針、参照CAD、不採用アーカイブを区別する。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "metal-case/resources/index.mdx",
+    "title": "データとプレビュー",
+    "description": "R10一式と旧版のプレビュー、版別のファイル、CADの再生成、出典。",
+    "sidebar_position": 80
+  },
+  {
+    "path": "metal-case/resources/sources.mdx",
+    "title": "資料台帳と出典",
+    "description": "ユーザー指定、提供ファイル、外部ページを区別する。",
+    "sidebar_position": 50
+  },
+  {
+    "path": "metal-case/scope.mdx",
     "title": "目的・範囲・根拠の扱い",
     "description": "価格、安全、外観、分解・運搬の条件を記録する。",
     "sidebar_position": 30
   },
   {
+    "path": "metal-case/status.mdx",
+    "title": "金属ケースの採用仕様とデータ状態",
+    "description": "金属ケース３機種で決めたこと、モデルにあること、未確認のことを分離する。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "metal-case/verification/assemble-test.mdx",
+    "title": "組立・蓋・持ち運びの確認",
+    "description": "実モジュールを入れた完成構成で確認するための計画。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "metal-case/verification/before-order.mdx",
+    "title": "発注前ゲート",
+    "description": "発注の直前に、仕様・図面・実物の一致を確認する。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "metal-case/verification/history/coupon-record.mdx",
+    "title": "試験片の空欄記録票",
+    "description": "C1・C2・C3の実物結果を版と一緒に残す未記入書式。",
+    "sidebar_position": 45
+  },
+  {
+    "path": "metal-case/verification/history/fit-test.mdx",
+    "title": "小さい試験片から確認する",
+    "description": "保持と公差の未確定部分を、全体注文の前に切り分ける。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "metal-case/verification/history/index.mdx",
+    "title": "旧試験手順（小型試験片）",
+    "description": "R9系のC1〜C5試験片による確認手順と空欄記録票。R10一式の次工程ではない。",
+    "sidebar_position": 90
+  },
+  {
+    "path": "metal-case/verification/index.mdx",
+    "title": "現物確認・承認",
+    "description": "発注前ゲート、組立・運搬の確認、現物寸法の記録、検証と製作承認の区別。",
+    "sidebar_position": 70
+  },
+  {
+    "path": "metal-case/verification/measurements.mdx",
+    "title": "現物寸法の空欄記録票",
+    "description": "金具、締結材、ノブ、バンド、板材を必要な範囲で記録する。",
+    "sidebar_position": 55
+  },
+  {
+    "path": "metal-case/verification/release.mdx",
+    "title": "検証記録と製作承認",
+    "description": "既存の幾何検証、今回の文書検査、将来の実機試験を分ける。",
+    "sidebar_position": 40
+  },
+  {
+    "path": "models/3u60.mdx",
+    "title": "3U・60HP（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/models/3u60/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "models/7u40.mdx",
+    "title": "3U＋3U＋1U・40HP（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/models/7u40/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "models/7u60.mdx",
+    "title": "3U＋3U＋1U・60HP（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/models/7u60/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "models/comparison.mdx",
+    "title": "３機種の比較（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/models/comparison/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "models/index.mdx",
+    "title": "３機種の仕様（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/models/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "overview/glossary.mdx",
+    "title": "用語と座標",
+    "description": "7U、fixer、padder、穴、ガードの意味を系列共通で揃える。",
+    "sidebar_position": 40
+  },
+  {
+    "path": "overview/index.mdx",
+    "title": "全体案内",
+    "description": "系列の選び方、全体の状態、共通の用語。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "overview/scope.mdx",
+    "title": "目的・範囲・根拠の扱い（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/scope/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
     "path": "overview/start.mdx",
-    "title": "現在地と最初に読むページ",
-    "description": "３機種の金属ケースを、現物確認・見積・発注へつなぐ。",
+    "title": "プロジェクトを選ぶ",
+    "description": "金属ケース、家庭印刷ケース、2WAY実験設計、共通部品のどれを読むかを選び、現行候補・プレビュー・ファイルへ進む。",
     "sidebar_position": 10
   },
   {
     "path": "overview/status.mdx",
-    "title": "採用仕様とデータ状態",
-    "description": "決めたこと、モデルにあること、未確認のことを分離する。",
+    "title": "全体の状態",
+    "description": "系列ごとの現行版、成熟度、承認・発注の状態をまとめる。詳細は各系列のページで管理する。",
     "sidebar_position": 20
   },
   {
     "path": "printed-5mm/design.mdx",
     "title": "P3構造と組立",
     "description": "7U40・5mm印刷板、レール、金具、載せ蓋の位置関係。",
-    "sidebar_position": 10
+    "sidebar_position": 31
+  },
+  {
+    "path": "printed-5mm/history.mdx",
+    "title": "P4・P3の履歴",
+    "description": "家庭印刷ケースの旧版。P4はUniform通気孔の版、P3は通気孔のない最初の基準。",
+    "sidebar_position": 20
   },
   {
     "path": "printed-5mm/index.mdx",
     "title": "7U40・5mm家庭印刷ケース",
-    "description": "金属R10と独立したP5家庭印刷版の設計・プレビュー・印刷ファイル。",
-    "sidebar_position": 45
+    "description": "黒ASAの5mm板で本体と載せ蓋を家庭印刷する系列。現行P5、旧版P4（Uniform通気孔）とP3（通気孔なし）。",
+    "sidebar_position": 30
   },
   {
     "path": "printed-5mm/p4-design.mdx",
     "title": "P4構造と組立",
     "description": "7U40・5mm印刷板、レール、金具、載せ蓋の位置関係。",
-    "sidebar_position": 11
+    "sidebar_position": 21
   },
   {
     "path": "printed-5mm/p4-preview.mdx",
     "title": "P4・3Dプレビュー",
     "description": "印刷ケースと実形状レールの9つの確認画面。",
-    "sidebar_position": 21
+    "sidebar_position": 22
   },
   {
     "path": "printed-5mm/p4-print-files.mdx",
     "title": "P4印刷ファイルと手順",
     "description": "家庭印刷用STL、編集ソース、印刷枚数と確認範囲。",
-    "sidebar_position": 31
+    "sidebar_position": 23
   },
   {
     "path": "printed-5mm/p5-design.mdx",
     "title": "P5・J3差し込み接合",
     "description": "本体6枚の一体タブと閉じた受け穴、保持するフタと元レール。",
-    "sidebar_position": 12
+    "sidebar_position": 10
   },
   {
     "path": "printed-5mm/p5-preview.mdx",
     "title": "P5・3Dプレビュー",
     "description": "J3接合・側板輪郭・フタ整列と元レールを同一CADで確認。",
-    "sidebar_position": 22
+    "sidebar_position": 11
   },
   {
     "path": "printed-5mm/p5-print-files.mdx",
     "title": "P5・STL/STEPとH2D 3MF",
     "description": "本体6枚を同時交換する印刷一式、再生成ソースと未スライスPLA06プロジェクト。",
-    "sidebar_position": 32
+    "sidebar_position": 12
   },
   {
     "path": "printed-5mm/preview.mdx",
     "title": "P3・3Dプレビュー",
     "description": "印刷ケースと実形状レールの9つの確認画面。",
-    "sidebar_position": 20
+    "sidebar_position": 32
   },
   {
     "path": "printed-5mm/print-files.mdx",
     "title": "P3印刷ファイルと手順",
     "description": "家庭印刷用STL、編集ソース、印刷枚数と確認範囲。",
-    "sidebar_position": 30
+    "sidebar_position": 33
   },
   {
     "path": "printed-5mm/ventilation.mdx",
     "title": "P4 Uniform通気孔と独立した締結穴",
     "description": "四壁82開口の幾何仕様、ねじ穴との分離と未検証事項。",
-    "sidebar_position": 15
+    "sidebar_position": 13
   },
   {
     "path": "resources/body-preview.mdx",
-    "title": "R6・本体とレールのプレビュー",
-    "description": "８mmスペーサーと３機種の名目寸法を確認する。",
-    "sidebar_position": 20
+    "title": "R6・本体とレールのプレビュー（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/resources/body-preview/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "resources/current-preview.mdx",
-    "title": "現行R10一式と旧版プレビュー",
-    "description": "7U40の選定一式と、過去のR8コンセプトへの入口。",
-    "sidebar_position": 10
+    "title": "現行R10一式と旧版プレビュー（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/resources/current-preview/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "resources/engineering.mdx",
-    "title": "CADの再生成とソースデータ",
-    "description": "本体の生成環境と、プレビュー専用の生成を分ける。",
-    "sidebar_position": 40
+    "title": "CADの再生成とソースデータ（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/resources/engineering/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "resources/files.mdx",
-    "title": "版別ファイルとダウンロード",
-    "description": "採用方針、参照CAD、不採用アーカイブを区別する。",
-    "sidebar_position": 30
+    "title": "版別ファイルとダウンロード（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/resources/files/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "resources/index.mdx",
-    "title": "データとプレビュー",
-    "description": "現行プレビュー、版別のCAD、根拠ファイル。",
-    "sidebar_position": 60
+    "title": "データとプレビュー（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/resources/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "resources/sources.mdx",
-    "title": "資料台帳と出典",
-    "description": "ユーザー指定、提供ファイル、外部ページを区別する。",
+    "title": "資料台帳と出典（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/resources/sources/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "shared/home-print-spacer.mdx",
+    "title": "家庭印刷の8mmスペーサー",
+    "description": "fixer外面とケース側板の間に入れる中空円筒HOME-PRINT-SPACER-01。高さ8mmは採用、外径・穴径は仮寸法。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "shared/index.mdx",
+    "title": "共通部品・元データ",
+    "description": "複数の系列で使う家庭印刷スペーサーと、元レール・PCBの出典。",
     "sidebar_position": 50
+  },
+  {
+    "path": "shared/rail-pcb-sources.mdx",
+    "title": "元レール・PCBと出典",
+    "description": "zudo-railのレールSTLとzudo-blanksのfixer/padder PCB。固定コミットと保存場所、各系列での使い方。",
+    "sidebar_position": 20
   },
   {
     "path": "two-way/design.mdx",
@@ -327,7 +695,7 @@
     "path": "two-way/index.mdx",
     "title": "2WAY / 実験設計",
     "description": "元フレームを使う2トレーのケース構成とTW-01の検討範囲。",
-    "sidebar_position": 90
+    "sidebar_position": 40
   },
   {
     "path": "two-way/preview.mdx",
@@ -355,44 +723,51 @@
   },
   {
     "path": "verification/assemble-test.mdx",
-    "title": "組立・蓋・持ち運びの確認",
-    "description": "実モジュールを入れた完成構成で確認するための計画。",
-    "sidebar_position": 30
+    "title": "組立・蓋・持ち運びの確認（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/verification/assemble-test/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "verification/before-order.mdx",
-    "title": "発注前ゲート",
-    "description": "発注の直前に、仕様・図面・実物の一致を確認する。",
-    "sidebar_position": 10
+    "title": "発注前ゲート（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/verification/before-order/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "verification/coupon-record.mdx",
-    "title": "試験片の空欄記録票",
-    "description": "C1・C2・C3の実物結果を版と一緒に残す未記入書式。",
-    "sidebar_position": 45
+    "title": "試験片の空欄記録票（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/verification/history/coupon-record/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "verification/fit-test.mdx",
-    "title": "小さい試験片から確認する",
-    "description": "保持と公差の未確定部分を、全体注文の前に切り分ける。",
-    "sidebar_position": 20
+    "title": "小さい試験片から確認する（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/verification/history/fit-test/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "verification/index.mdx",
-    "title": "現物確認・承認",
-    "description": "計算やプレビューで確認したことと、現物で確認すべきこと。",
-    "sidebar_position": 50
+    "title": "現物確認・承認（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/verification/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "verification/measurements.mdx",
-    "title": "現物寸法の空欄記録票",
-    "description": "金具、締結材、ノブ、バンド、板材を必要な範囲で記録する。",
-    "sidebar_position": 55
+    "title": "現物寸法の空欄記録票（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/verification/measurements/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "verification/release.mdx",
-    "title": "検証記録と製作承認",
-    "description": "既存の幾何検証、今回の文書検査、将来の実機試験を分ける。",
-    "sidebar_position": 40
+    "title": "検証記録と製作承認（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/metal-case/verification/release/。",
+    "sidebar_position": 999,
+    "unlisted": true
   }
 ]
