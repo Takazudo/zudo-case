@@ -39,7 +39,9 @@ export async function checkBuiltDocRoutes(root, dist = path.join(root, 'dist')) 
     const oldRoute = routeFor(entry.source);
     const old = pages.get(oldRoute);
     if (!old) { errors.push(`old route not built: ${oldRoute}`); continue; }
-    if (isCompatibility(entry) && !values(old.html, 'href').some(h => decode(h).split('#')[0] === canonicalRoute))
+    // The link must be in the page body: the sidebar on a compatibility page may already link the canonical page.
+    const main = old.html.match(/<main[\s>][\s\S]*?<\/main>/)?.[0] ?? '';
+    if (isCompatibility(entry) && !values(main, 'href').some(h => decode(h).split('#')[0].replace(/\/?$/, '/') === canonicalRoute))
       errors.push(`${oldRoute}: no link to canonical ${canonicalRoute}`);
     for (const anchor of entry.anchors ?? []) {
       if (!old.ids.has(anchor)) errors.push(`${oldRoute}: preserved anchor #${anchor} missing`);
