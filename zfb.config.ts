@@ -5,6 +5,7 @@ import { zudoDoc } from "@takazudo/zudo-doc/config";
 // This file owns only the documentation project's settings.
 export default defineConfig(
   zudoDoc({
+    themePack: "default",
     siteName: "ZUDO CASE",
     siteDescription: "金属平板ケース３機種の設計・検証・見積・発注準備。採用仕様と製作データの状態を分けて管理する。",
     defaultLocale: "ja",

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
   "scripts": {
     "setup": "node scripts/setup.mjs",
@@ -53,14 +53,14 @@
     "build:printed-p3": "uv run --locked --project engineering/printed-5mm/p3 python engineering/printed-5mm/p3/build.py --out .cache/printed-5mm-build"
   },
   "dependencies": {
-    "@takazudo/zfb": "4.5.0",
-    "@takazudo/zfb-md-wasm": "4.5.0",
-    "@takazudo/zfb-runtime": "4.5.0",
-    "@takazudo/zudo-doc": "^6.2.0",
+    "@takazudo/zfb": "5.2.0",
+    "@takazudo/zfb-md-wasm": "5.2.0",
+    "@takazudo/zfb-runtime": "5.2.0",
+    "@takazudo/zudo-doc": "^9.1.2",
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@takazudo/zudo-doc-history-server": "6.2.0",
+    "@takazudo/zudo-doc-history-server": "9.1.2",
     "@types/node": "^22.0.0",
     "typescript": "^5.9.0",
     "wrangler": "4.138.0"

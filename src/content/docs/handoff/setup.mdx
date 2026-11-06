@@ -6,7 +6,7 @@ sidebar_position: 10
 
 ## 現在のチェックアウト
 
-このチェックアウトは公式`create-zudo-doc@5.27.0`で初期化済みで、生成されたフレームワーク設定、`package.json`、`pnpm-lock.yaml`を含む。確認に使った環境はNode.js 24.13.1、pnpm 10.30.3。Node.js 22以上を用意する。
+このチェックアウトは公式`create-zudo-doc@5.27.0`で初期化済みで、生成されたフレームワーク設定、`package.json`、`pnpm-lock.yaml`を含む。現在の依存はzudo-doc 9.1.2・zfb 5.2.0系で、scaffoldは`create-zudo-doc@9.1.2`と照合済み（2026-11-06）。Node.js 24以上とpnpm 10.30.3を用意する。2026-11-06の確認環境はNode.js 24.22.2、pnpm 10.30.3。
 
 新しいチェックアウトでは、リポジトリのルートから次を実行する。
 
@@ -19,7 +19,7 @@ pnpm build
 pnpm dev
 ```
 
-`pnpm install --frozen-lockfile`は追跡中のlockfileと依存定義が合わない場合に停止する。`pnpm dev`が表示するURLをブラウザーで開く。2026-09-24の初回`pnpm build`は44ページ、41文書ルートと検索項目、47公開資産を生成した。現在はAsset Viewerの画像・図15件と一覧を加え、合計60ページを生成する。
+`pnpm install --frozen-lockfile`は追跡中のlockfileと依存定義が合わない場合に停止する。`pnpm dev`が表示するURLをブラウザーで開く。2026-09-24の初回`pnpm build`は44ページ、41文書ルートと検索項目、47公開資産を生成した。現在のページ数は文書の追加で変わるため、`pnpm build`の表示と`project/validation/static-check.json`で確認する。
 
 ## 文書のみのスナップショットを初期化する場合
 
@@ -27,7 +27,7 @@ pnpm dev
 
 ## バージョンを指定する
 
-scaffolderの指定版は`5.27.0`。別版を試す場合は動作確認した版を明示する。
+`scripts/setup.mjs`の既定版は`9.1.2`（初期化時は`5.27.0`）。別版を試す場合は動作確認した版を明示する。
 
 ```sh
 ZUDO_DOC_CLI_VERSION=確認したバージョン node scripts/setup.mjs
