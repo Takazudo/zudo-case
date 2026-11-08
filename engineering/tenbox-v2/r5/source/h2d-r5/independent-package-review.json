@@ -1,0 +1,1061 @@
+{
+  "scope": "Independent actual-package mesh/build, effective brim, selected-nozzle reach, actual-shape exclusion, and BOM validation. All physical parts have flat placements; no Studio slice or physical-print test is claimed.",
+  "project_count": 15,
+  "stored_object_count": 22,
+  "required_physical_part_count": 23,
+  "all_included_projects_passed": true,
+  "flat_layouts_cover_all_required_parts": true,
+  "all_studio_xml_dispatch_contracts_pass": true,
+  "studio_application_loaded": false,
+  "sliced": false,
+  "unresolved_flat_parts": [],
+  "common_floor_print_stl": {
+    "vertices": 516,
+    "triangles": 1064,
+    "closed_two_manifold": true,
+    "consistent_winding": true,
+    "connected_component_count": 1,
+    "positive_signed_volume_mm3": 234769.0698631343,
+    "source_is_same_verified_3mf_posed_mesh": true,
+    "model_bounds_xyz_mm": [
+      [
+        4.074733858412586,
+        4.403160983158784,
+        0.0
+      ],
+      [
+        320.92526614141,
+        315.59683901716,
+        5.0
+      ]
+    ],
+    "sha256": "e5936b2f46e2d81e0633a01e5a4a7c6184e2b5adca83c098bf1ac723935f939d"
+  },
+  "reports": [
+    {
+      "project": "body-bottom-common.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 2,
+      "assembly_ids": [
+        "body-bottom-back",
+        "body-bottom-front"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Manual",
+      "plate_filament_maps": "1 1",
+      "objects": [
+        {
+          "name": "R5 common floor \u2014 flat \u221245 degrees \u2014 print twice",
+          "model_bounds_mm": [
+            [
+              4.074733858412586,
+              4.403160983158784,
+              0.0
+            ],
+            [
+              320.92526614141,
+              315.59683901716,
+              5.0
+            ]
+          ],
+          "brim_type": "no_brim",
+          "brim_width_mm": 0.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            4.074733858412586,
+            4.403160983158784,
+            320.92526614141,
+            315.59683901716
+          ],
+          "nozzle_scope": "locked left only",
+          "checked_nozzle_area_mm": [
+            0.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true,
+          "common_area_pass": false,
+          "minimum_nozzle_edge_margins_mm": [
+            4.074733858412586,
+            4.07473385858998,
+            4.403160983158784,
+            4.4031609828400065
+          ],
+          "exclusion_check_method": "Actual posed mesh convex hull versus saved exclusion polygons",
+          "actual_shape_exclusion_checks": [
+            {
+              "rectangle_xy_mm": [
+                145.0,
+                310.0,
+                256.0,
+                326.0
+              ],
+              "hull_overlap_area_mm2": 0.0,
+              "minimum_hull_clearance_mm": 21.19448850720464
+            }
+          ],
+          "mesh_integrity": {
+            "vertices": 516,
+            "triangles": 1064,
+            "closed_two_manifold": true,
+            "consistent_winding": true,
+            "connected_component_count": 1,
+            "positive_signed_volume_mm3": 234769.06986313424
+          }
+        }
+      ]
+    },
+    {
+      "project": "lid-top-single.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "lid-top-single"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Manual",
+      "plate_filament_maps": "1 1",
+      "objects": [
+        {
+          "name": "R4 lid roof \u2014 flat / left nozzle",
+          "model_bounds_mm": [
+            [
+              4.0,
+              10.0,
+              0.0
+            ],
+            [
+              321.0,
+              300.0,
+              5.0
+            ]
+          ],
+          "brim_type": "no_brim",
+          "brim_width_mm": 0.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            4.0,
+            10.0,
+            321.0,
+            300.0
+          ],
+          "nozzle_scope": "locked left only",
+          "checked_nozzle_area_mm": [
+            0.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true,
+          "common_area_pass": false
+        }
+      ]
+    },
+    {
+      "project": "lid-left.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "lid-left"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "lid-left",
+          "model_bounds_mm": [
+            [
+              40.0,
+              10.0,
+              0.0
+            ],
+            [
+              80.99981,
+              310.0,
+              13.0
+            ]
+          ],
+          "brim_type": "no_brim",
+          "brim_width_mm": 0.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            40.0,
+            10.0,
+            80.99981,
+            310.0
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    },
+    {
+      "project": "lid-right.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "lid-right"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "lid-right",
+          "model_bounds_mm": [
+            [
+              40.0,
+              10.0,
+              0.0
+            ],
+            [
+              80.99981,
+              310.0,
+              13.0
+            ]
+          ],
+          "brim_type": "no_brim",
+          "brim_width_mm": 0.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            40.0,
+            10.0,
+            80.99981,
+            310.0
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    },
+    {
+      "project": "body-left.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "body-left"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "body-left",
+          "model_bounds_mm": [
+            [
+              40.0,
+              6.0,
+              0.0
+            ],
+            [
+              115.50226,
+              314.0,
+              10.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            34.9,
+            0.9000000000000004,
+            120.60226,
+            319.1
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    },
+    {
+      "project": "body-right.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "body-right"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "body-right",
+          "model_bounds_mm": [
+            [
+              40.0,
+              6.0,
+              0.0
+            ],
+            [
+              115.5,
+              314.0,
+              10.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            34.9,
+            0.9000000000000004,
+            120.6,
+            319.1
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    },
+    {
+      "project": "body-front.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "body-front"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "body-front",
+          "model_bounds_mm": [
+            [
+              46.6247638756,
+              26.6247638756,
+              0.0
+            ],
+            [
+              303.3752361246,
+              283.3752361246,
+              8.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            41.5247638756,
+            21.5247638756,
+            308.47523612460003,
+            288.47523612460003
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    },
+    {
+      "project": "body-back.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "body-back"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "body-back",
+          "model_bounds_mm": [
+            [
+              33.8968418142,
+              13.8968418142,
+              0.0
+            ],
+            [
+              316.1031581862,
+              296.1031581862,
+              8.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            28.7968418142,
+            8.7968418142,
+            321.2031581862,
+            301.2031581862
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    },
+    {
+      "project": "lid-front.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "lid-front"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "lid-front",
+          "model_bounds_mm": [
+            [
+              42.0993229024,
+              22.0993229024,
+              0.0
+            ],
+            [
+              307.9006770974,
+              287.9006770974,
+              10.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            36.999322902399996,
+            16.999322902400003,
+            313.0006770974,
+            293.0006770974
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    },
+    {
+      "project": "lid-back.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "lid-back"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "lid-back",
+          "model_bounds_mm": [
+            [
+              42.0993229024,
+              22.0993229024,
+              0.0
+            ],
+            [
+              307.9006770974,
+              287.9006770974,
+              10.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            36.999322902399996,
+            16.999322902400003,
+            313.0006770974,
+            293.0006770974
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    },
+    {
+      "project": "stand-left.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "stand-left"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "stand-left",
+          "model_bounds_mm": [
+            [
+              40.0,
+              9.0,
+              0.0
+            ],
+            [
+              117.82147217,
+              310.86703491,
+              30.00000191
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            34.9,
+            3.9000000000000004,
+            122.92147217,
+            315.96703491
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    },
+    {
+      "project": "stand-right.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "stand-right"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "stand-right",
+          "model_bounds_mm": [
+            [
+              40.0,
+              9.0,
+              0.0
+            ],
+            [
+              117.82147217,
+              310.86703491,
+              30.0000019
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            34.9,
+            3.9000000000000004,
+            122.92147217,
+            315.96703491
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    },
+    {
+      "project": "stand-connector-front.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "stand-connector-front"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "stand-connector-front",
+          "model_bounds_mm": [
+            [
+              41.75482178,
+              125.0,
+              0.0
+            ],
+            [
+              308.24517822,
+              185.0,
+              5.00000048
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            36.65482178,
+            119.9,
+            313.34517822000004,
+            190.1
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    },
+    {
+      "project": "stand-connector-back.3mf",
+      "passed": true,
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "assembly_ids": [
+        "stand-connector-back"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "stand-connector-back",
+          "model_bounds_mm": [
+            [
+              41.75482178,
+              125.0,
+              0.0
+            ],
+            [
+              308.24517822,
+              185.0,
+              5.00000048
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            36.65482178,
+            119.9,
+            313.34517822000004,
+            190.1
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    },
+    {
+      "project": "spacers-8.3mf",
+      "passed": true,
+      "stored_object_count": 8,
+      "required_physical_quantity": 8,
+      "assembly_ids": [
+        "spacer-left-1",
+        "spacer-left-2",
+        "spacer-left-3",
+        "spacer-left-4",
+        "spacer-right-1",
+        "spacer-right-2",
+        "spacer-right-3",
+        "spacer-right-4"
+      ],
+      "global_settings_bytes_unchanged": true,
+      "studio_xml_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "plate_filament_map_mode": "Auto For Flush",
+      "plate_filament_maps": null,
+      "objects": [
+        {
+          "name": "8mm spacer 1 of8",
+          "model_bounds_mm": [
+            [
+              134.0,
+              138.0,
+              0.0
+            ],
+            [
+              143.99378461,
+              147.99689182,
+              8.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            128.9,
+            132.9,
+            149.09378461,
+            153.09689182
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        },
+        {
+          "name": "8mm spacer 2 of8",
+          "model_bounds_mm": [
+            [
+              158.0,
+              138.0,
+              0.0
+            ],
+            [
+              167.99378461,
+              147.99689182,
+              8.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            152.9,
+            132.9,
+            173.09378461,
+            153.09689182
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        },
+        {
+          "name": "8mm spacer 3 of8",
+          "model_bounds_mm": [
+            [
+              182.0,
+              138.0,
+              0.0
+            ],
+            [
+              191.99378461,
+              147.99689182,
+              8.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            176.9,
+            132.9,
+            197.09378461,
+            153.09689182
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        },
+        {
+          "name": "8mm spacer 4 of8",
+          "model_bounds_mm": [
+            [
+              206.0,
+              138.0,
+              0.0
+            ],
+            [
+              215.99378461,
+              147.99689182,
+              8.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            200.9,
+            132.9,
+            221.09378461,
+            153.09689182
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        },
+        {
+          "name": "8mm spacer 5 of8",
+          "model_bounds_mm": [
+            [
+              134.0,
+              162.0,
+              0.0
+            ],
+            [
+              143.99378461,
+              171.99689182,
+              8.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            128.9,
+            156.9,
+            149.09378461,
+            177.09689182
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        },
+        {
+          "name": "8mm spacer 6 of8",
+          "model_bounds_mm": [
+            [
+              158.0,
+              162.0,
+              0.0
+            ],
+            [
+              167.99378461,
+              171.99689182,
+              8.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            152.9,
+            156.9,
+            173.09378461,
+            177.09689182
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        },
+        {
+          "name": "8mm spacer 7 of8",
+          "model_bounds_mm": [
+            [
+              182.0,
+              162.0,
+              0.0
+            ],
+            [
+              191.99378461,
+              171.99689182,
+              8.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            176.9,
+            156.9,
+            197.09378461,
+            177.09689182
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        },
+        {
+          "name": "8mm spacer 8 of8",
+          "model_bounds_mm": [
+            [
+              206.0,
+              162.0,
+              0.0
+            ],
+            [
+              215.99378461,
+              171.99689182,
+              8.0
+            ]
+          ],
+          "brim_type": "outer_only",
+          "brim_width_mm": 5.0,
+          "brim_gap_mm": 0.1,
+          "checked_envelope_mm": [
+            200.9,
+            156.9,
+            221.09378461,
+            177.09689182
+          ],
+          "nozzle_scope": "common",
+          "checked_nozzle_area_mm": [
+            25.0,
+            0.0,
+            325.0,
+            320.0
+          ],
+          "inside_selected_scope": true,
+          "clear_of_wrapping_exclusion": true,
+          "on_bed_and_below_height": true
+        }
+      ]
+    }
+  ]
+}

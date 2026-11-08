@@ -1,6 +1,6 @@
 ---
 title: "ローカルでzudo-docを起動する"
-description: "公式CLIで土台を生成し、このMDX・資産をそのまま使う。"
+description: "現在のチェックアウトの起動、プレビュー配信元、依存・scaffold保守と配信・復旧の手順。"
 sidebar_position: 10
 ---
 
@@ -20,6 +20,8 @@ pnpm dev
 ```
 
 `pnpm install --frozen-lockfile`は追跡中のlockfileと依存定義が合わない場合に停止する。`pnpm dev`が表示するURLをブラウザーで開く。2026-09-24の初回`pnpm build`は44ページ、41文書ルートと検索項目、47公開資産を生成した。現在のページ数は文書の追加で変わるため、`pnpm build`の表示と`project/validation/static-check.json`で確認する。
+
+初期の文書のみのスナップショットではnpmレジストリの名前解決が`EAI_AGAIN`となり、初期化とビルドを確認できませんでした。その後2026-09-24に公式scaffolderとlockfileによる導入を完了しています。これは当時の記録で、現在の実行結果ではありません。
 
 ## 文書のみのスナップショットを初期化する場合
 
@@ -47,8 +49,39 @@ pnpm create zudo-doc zudo-case-doc-site --lang ja --no-i18n --no-git --no-instal
 
 2026-09-24のChrome 146.0.7680.153でdesktop 1440×900、narrow 390×844を確認した。41文書ルートと8カテゴリが両幅で表示され、narrowでは横はみ出しがなかった。検索・テーマ・画像・R8/R6プレビューの操作も確認済み。経路別の結果、非空ダウンロード、画面記録はリポジトリの`project/browser-validation.md`にまとめる。ビルドやブラウザーの表示確認は、嵌合・強度・運搬などの現物試験を代替しない。
 
-Cloudflareでは`zudo-case.zudolab.dev`を文書・Asset Viewer・根拠ファイルに、`zudo-case-preview.zudolab.dev`を単体プレビュー・参照/旧版ZIPに使う。`pnpm build`後に`pnpm prepare:worker-assets`を実行して２つの配信フォルダーを作る。GitHub Actionsは`main`へのpushでプレビュー、文書の順にデプロイする。`noindex`は有効にしているが、アクセス制御ではない。旧ソースZIPや見積画像もURLを知る人は閲覧できる。
+Cloudflareでは`zudo-case.zudolab.dev`を文書・Asset Viewer・根拠ファイルに、`zudo-case-preview.zudolab.dev`を単体プレビュー・参照/旧版ZIPに使う。`pnpm build`後に`pnpm prepare:worker-assets`を実行して２つの配信フォルダーを作る。GitHub Actionsは`main`へのpushでプレビュー、文書の順にデプロイする。ただし最終コミットメッセージに`[skip deploy]`があるpushはデプロイジョブをスキップする。`[skip ci]`とは異なり検査は維持する。文書更新そのものをデプロイの許可とは扱わない。`noindex`は有効にしているが、アクセス制御ではない。旧ソースZIPや見積画像もURLを知る人は閲覧できる。
 
 このセットはルートパス配信を想定。サブパス配信に変える場合は、iframeと画像/ダウンロードのURLも確認する。
 
 公式：[Installation](https://zudo-doc.takazudomodular.com/docs/getting-started/installation/)、[CLI](https://zudo-doc.takazudomodular.com/docs/reference/create-zudo-doc/)、[設定API](https://zudo-doc.takazudomodular.com/docs/guides/configuration/)。
+
+## ローカルと本番のプレビュー確認
+
+`pnpm dev`で開いた文書のR8/R6プレビューと参照・旧版ZIPのリンクは、既定では同じチェックアウトの`public/previews/`と`public/downloads/`を参照します。R8ページの埋め込み枠の下にある「表示元: ローカル (public/)」を確認してください。`public/previews/r8-simple-lid.html`を変更すると、開き直したローカル文書からその変更を確認できます。
+
+別のプレビュー配信元を試すときは、起動時にHTTP(S)のoriginだけを指定します。パスは付けません。次の例のホストは、実際のローカル配信先へ置き換えてください。
+
+```sh
+ZUDO_CASE_PREVIEW_ORIGIN=http://preview.example.test:8787 pnpm dev
+```
+
+`dev`・`check`・`build` は同じチェックアウトで併用できます。起動ごとに `.cache/site-runs/run-*` の独立した設定と内部キャッシュを使うため、別コマンドを実行しても稼働中のdevの表示元は変わりません。異なるoverrideを指定したdevも、`pnpm dev --port 3001` のように別ポートで起動できます。記事・コード・設定は実行ごとのコピーを使い、devでは元の編集・追加・削除を約250ms間隔で反映します。`public/previews/` と `public/downloads/` は元のチェックアウトを直接参照します。`public/assets/` は zfb 4.5.0 で見つかったdev配信制限（zudo-front-builder#4233）の回避として、実行ごとの内部資産領域へ同期します。zfb 5.2.0でもこの同期を維持しています。設定を編集すると、同じ表示元とポートでネイティブdevプロセスを再起動します。build/checkは起動時のコード・設定コピーを使います。
+
+内部キャッシュは終了時に削除します。強制終了などで残った実行フォルダーは、対応するプロセスが停止していることを確認してから削除してください。公開ビルドは従来どおりチェックアウトの `dist/` に出力し、`pnpm preview` もその出力を配信します。buildは `.cache/site-build.lock` で直列化し、同時の２件目をエラーで停止します。強制終了でロックが残った場合は、所有プロセスが停止済みと確認してから削除してください。
+
+この場合は枠下に指定先のホストが表示されます。本番ビルドの既定値は`https://zudo-case-preview.zudolab.dev`で、文書とプレビューの２ホスト配信を維持します。本番ビルド前は上記環境変数を外してください。`pnpm build`後の`pnpm check:built-preview-links`で、生成した文書HTMLに本番ホストのリンクがあり、ローカルURLが混入していないことを確認できます。
+
+## 依存・scaffoldの保守
+
+現在のホストは zfb 5.2.0 / zudo-doc 9.1.2（history-server 9.1.2）、TypeScript 5.9を使います。Classicの外観を保つため`zfb.config.ts`で`themePack: "default"`を明示しています。コピーした公式scaffoldの版・変更箇所・同期手順は `ZUDO_DEPS_PINS.md`、9.1.2更新の実行結果は `project/maintenance-zudo-doc-9.1.2.md`、前回6.2.0更新は `project/maintenance-120.md` を参照してください。`pnpm check:wind` と `pnpm check:preview-isolation` は非デプロイ検証です。後者はインストール済みの実CLIで別ポート・並行build/check・編集・設定再読込を検証します。新CLIのscratch/defineは使えますが、build/checkの入力スナップショットを維持するためmirrorを残しています。
+
+
+## 公開配信の検証範囲
+
+ローカルのモックテスト（`node --test tests/verify-deployed-assets.test.mjs tests/worker-assets.test.mjs`）は、短いサンプル資産でHTTP転送、SHA-256照合、Workerのチャンク欠落・切り詰めを確認します。デプロイ後のGitHub Actionsと`pnpm verify:deployed`は、対象２ファイルを全量GETでストリーム読み込みし、チェックアウト内の元ファイルとバイト数・SHA-256を照合します。HEADリクエストは到達確認だけです。どちらもブラウザー/WebGL表示の証拠ではなく、ブラウザー表示の確認はリポジトリの`project/browser-validation.md`を参照してください。
+
+第三者ライブラリや元資料の著作権・ライセンス表示は元ファイルの記載に従います。資料整理によって再ライセンスしたものではありません。
+
+## 再実行と復旧
+
+`pnpm prepare:worker-assets`を同じビルド結果に対して再実行すると、世代番号と分割ファイルの完全性を確認してから「already prepared」と表示し、配信ファイルを変更せず終了します。不完全な分割ファイルや片方だけ残った入力が見つかった場合は停止します。`pnpm build`を再実行して入力を作り直し、改めて`pnpm prepare:worker-assets`を実行してください。準備中の失敗でも元の`dist/previews`と`dist/downloads`は移動せず、成功後にだけ配信用のコピーから除きます。`public/`や`engineering/`の元資料には触れません。

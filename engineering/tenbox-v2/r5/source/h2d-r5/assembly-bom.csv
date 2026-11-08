@@ -1,0 +1,16 @@
+project,stored_objects,plate_runs,required_parts,assembly_ids
+projects/body-bottom-common.3mf,1,2,2,body-bottom-back; body-bottom-front
+projects/lid-top-single.3mf,1,1,1,lid-top-single
+projects/lid-left.3mf,1,1,1,lid-left
+projects/lid-right.3mf,1,1,1,lid-right
+projects/body-left.3mf,1,1,1,body-left
+projects/body-right.3mf,1,1,1,body-right
+projects/body-front.3mf,1,1,1,body-front
+projects/body-back.3mf,1,1,1,body-back
+projects/lid-front.3mf,1,1,1,lid-front
+projects/lid-back.3mf,1,1,1,lid-back
+projects/stand-left.3mf,1,1,1,stand-left
+projects/stand-right.3mf,1,1,1,stand-right
+projects/stand-connector-front.3mf,1,1,1,stand-connector-front
+projects/stand-connector-back.3mf,1,1,1,stand-connector-back
+projects/spacers-8.3mf,8,1,8,spacer-left-1; spacer-left-2; spacer-left-3; spacer-left-4; spacer-right-1; spacer-right-2; spacer-right-3; spacer-right-4

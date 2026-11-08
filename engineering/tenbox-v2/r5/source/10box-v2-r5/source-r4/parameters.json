@@ -1,0 +1,671 @@
+{
+  "revision": "10BOX-V2-R4-FLAT-LID",
+  "units": "mm",
+  "dimensions": {
+    "inside_width_mm": 327.4,
+    "body_width_mm": 337.4,
+    "lid_width_mm": 337.4,
+    "original_body_width_mm": 327.4,
+    "original_body_depth_mm": 300,
+    "original_rim_z_mm": 72,
+    "front_floor_z_mm": [
+      36,
+      41
+    ],
+    "rear_floor_z_mm": [
+      0,
+      5
+    ],
+    "v2_max_body_depth_mm": 308,
+    "v2_lowest_side_z_mm": -3.5,
+    "max_male_width_mm": 336.8,
+    "nominal_panel_thickness_mm": 5,
+    "lid_roof_panel_mm": [
+      317,
+      290,
+      5
+    ],
+    "lid_roof_panel_count": 1,
+    "maximum_lid_side_thickness_mm": 13
+  },
+  "jointParameters": {
+    "receiver_clearance_per_face_mm": 0.2,
+    "receiver_corner_radius_mm": 0.4,
+    "shoulder_gap_mm": 0.15,
+    "tip_recess_mm": 0.3,
+    "insertion_mm": 4.7,
+    "receiver_count": 14,
+    "tab_count": 14,
+    "front_tab_count_per_end": 1,
+    "rear_tab_count_per_end": 2,
+    "floor_tab_count_per_side_per_half": 2,
+    "root_x_mm": 163.4,
+    "shoulder_x_mm": 163.55,
+    "tip_x_mm": 168.4,
+    "joints": [
+      {
+        "id": "front-upper",
+        "part": "body-front",
+        "y": -147.5,
+        "z": 54.0,
+        "w": 5.0,
+        "h": 12.0
+      },
+      {
+        "id": "back-lower",
+        "part": "body-back",
+        "y": 147.5,
+        "z": 24.0,
+        "w": 5.0,
+        "h": 12.0
+      },
+      {
+        "id": "back-upper",
+        "part": "body-back",
+        "y": 147.5,
+        "z": 52.0,
+        "w": 5.0,
+        "h": 12.0
+      },
+      {
+        "id": "floor-front-outer",
+        "part": "body-bottom-front",
+        "y": -95.0,
+        "z": 38.5,
+        "w": 20.0,
+        "h": 5.0
+      },
+      {
+        "id": "floor-front-inner",
+        "part": "body-bottom-front",
+        "y": -55.0,
+        "z": 38.5,
+        "w": 20.0,
+        "h": 5.0
+      },
+      {
+        "id": "floor-back-inner",
+        "part": "body-bottom-back",
+        "y": 55.0,
+        "z": 2.5,
+        "w": 20.0,
+        "h": 5.0
+      },
+      {
+        "id": "floor-back-outer",
+        "part": "body-bottom-back",
+        "y": 95.0,
+        "z": 2.5,
+        "w": 20.0,
+        "h": 5.0
+      }
+    ]
+  },
+  "mountParameters": {
+    "frame_to_side_inner_face_gap_mm": 8.0,
+    "previous_frame_to_side_inner_face_gap_mm": 3.0,
+    "case_width_increase_mm": 10.0,
+    "rail_panel_plane_z_mm": 72.0,
+    "previous_preview_rail_panel_plane_z_mm": 76.25,
+    "rail_frame_outer_face_x_mm": [
+      -155.7,
+      155.7
+    ],
+    "side_inner_face_x_mm": [
+      -163.7,
+      163.7
+    ],
+    "side_outer_face_x_mm": [
+      -168.7,
+      168.7
+    ],
+    "rail_mount_hole_diameter_mm": 5.5,
+    "mount_z_mm": 63.3205295,
+    "mount_y_mm": [
+      -114.06234741210938,
+      -22.92181396484375,
+      22.9183349609375,
+      114.05886840820312
+    ],
+    "mounts_per_side": 4,
+    "total_side_mounts": 8,
+    "mount_interpretation": "2 screws per 3U rail frame x 2 rows on each long side",
+    "selected_frame_slot": "upper",
+    "upper_frame_slot_offset_below_panel_plane_mm": 8.6794705,
+    "old_tall_slot_top_cap_center_z_mm": 62.103275,
+    "mount_raise_from_old_top_cap_center_mm": 1.2172545000000028,
+    "front_frame_bottom_clearance_above_shallow_floor_mm": 1.0,
+    "spacers": {
+      "count": 8,
+      "length_mm": 8,
+      "outer_diameter_mm": 10,
+      "inner_diameter_mm": 5.5,
+      "status": "reference geometry; choose hardware after physical fit check"
+    }
+  },
+  "ventParameters": {
+    "style": "7U P5 straight-sided rounded rectangular vents, R0.5",
+    "width_mm": 3.0,
+    "corner_radius_mm": 0.5,
+    "pitch_mm": 11.0,
+    "shallow_side_height_mm": 18.0,
+    "deep_side_and_back_height_mm": 32.0,
+    "side_vents_per_panel": 16,
+    "back_vents": 25,
+    "side_layout": [
+      {
+        "y": -132.0,
+        "z": 56.0,
+        "width": 3.0,
+        "height": 18.0,
+        "radius": 0.5,
+        "mount_web_mm": 11.437652587890625
+      },
+      {
+        "y": -99.0,
+        "z": 56.0,
+        "width": 3.0,
+        "height": 18.0,
+        "radius": 0.5,
+        "mount_web_mm": 8.562347412109375
+      },
+      {
+        "y": -88.0,
+        "z": 56.0,
+        "width": 3.0,
+        "height": 18.0,
+        "radius": 0.5,
+        "mount_web_mm": 19.562347412109375
+      },
+      {
+        "y": -77.0,
+        "z": 56.0,
+        "width": 3.0,
+        "height": 18.0,
+        "radius": 0.5,
+        "mount_web_mm": 30.562347412109375
+      },
+      {
+        "y": -66.0,
+        "z": 56.0,
+        "width": 3.0,
+        "height": 18.0,
+        "radius": 0.5,
+        "mount_web_mm": 36.57818603515625
+      },
+      {
+        "y": -55.0,
+        "z": 56.0,
+        "width": 3.0,
+        "height": 18.0,
+        "radius": 0.5,
+        "mount_web_mm": 25.57818603515625
+      },
+      {
+        "y": -44.0,
+        "z": 56.0,
+        "width": 3.0,
+        "height": 18.0,
+        "radius": 0.5,
+        "mount_web_mm": 14.57818603515625
+      },
+      {
+        "y": -11.0,
+        "z": 56.0,
+        "width": 3.0,
+        "height": 18.0,
+        "radius": 0.5,
+        "mount_web_mm": 5.42181396484375
+      },
+      {
+        "y": 11.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5,
+        "mount_web_mm": 5.5016904124366
+      },
+      {
+        "y": 44.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5,
+        "mount_web_mm": 14.626140829577597
+      },
+      {
+        "y": 55.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5,
+        "mount_web_mm": 25.61016227859284
+      },
+      {
+        "y": 66.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5,
+        "mount_web_mm": 36.60262810906497
+      },
+      {
+        "y": 77.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5,
+        "mount_web_mm": 30.583379837113235
+      },
+      {
+        "y": 88.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5,
+        "mount_web_mm": 19.59434519664648
+      },
+      {
+        "y": 99.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5,
+        "mount_web_mm": 8.623021348854262
+      },
+      {
+        "y": 132.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5,
+        "mount_web_mm": 11.494077912364531
+      }
+    ],
+    "back_layout": [
+      {
+        "x": -132.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": -121.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": -110.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": -99.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": -88.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": -77.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": -66.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": -55.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": -44.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": -33.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": -22.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": -11.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 0.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 11.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 22.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 33.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 44.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 55.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 66.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 77.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 88.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 99.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 110.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 121.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      },
+      {
+        "x": 132.0,
+        "z": 46.0,
+        "width": 3.0,
+        "height": 32.0,
+        "radius": 0.5
+      }
+    ],
+    "minimum_side_vent_to_OD10_mount_web_mm": 5.42181396484375,
+    "back_bracket_fixings": {
+      "count": 5,
+      "profile": "vertical capsule",
+      "width_mm": 5.5,
+      "overall_height_mm": 10.5,
+      "centers_x_z_mm": [
+        [
+          -117.68523,
+          17.799975
+        ],
+        [
+          -58.84209,
+          17.799975
+        ],
+        [
+          0.00105,
+          17.799975
+        ],
+        [
+          58.84413,
+          17.799975
+        ],
+        [
+          117.687205,
+          17.799975
+        ]
+      ],
+      "centers_preserved": true
+    }
+  },
+  "widthParameters": {
+    "overall_increase_mm": 10,
+    "side_translation_each_mm": 5,
+    "feature_free_insertion_plane_x_mm": [
+      -124,
+      124
+    ],
+    "roof_seam_x_mm": null,
+    "rail_and_stand_width_changed": false,
+    "single_roof_panel": true,
+    "roof_compensation": {
+      "roof_width_reduction_mm": 10.4,
+      "top_cap_width_each_mm": 5,
+      "seam_each_mm": 0.2
+    }
+  },
+  "lidParameters": {
+    "roof_panel_count": 1,
+    "roof_dimensions_mm": [
+      317,
+      290,
+      5
+    ],
+    "previous_roof_dimensions_mm": [
+      327.4,
+      290,
+      5
+    ],
+    "roof_slot_count": 8,
+    "lid_front_back_slots_each": 2,
+    "lid_side_slots_each": 2,
+    "all_r3_slot_axes_and_profiles_retained": true,
+    "outside_lid_width_mm": 337.4,
+    "top_cap_width_mm": 5,
+    "top_cap_thickness_mm": 5,
+    "top_cap_y_range_mm": [
+      -145,
+      145
+    ],
+    "top_cap_z_range_mm": [
+      108,
+      113
+    ],
+    "old_side_ledge_retained": true,
+    "side_ledge_added_width_mm": 5,
+    "side_ledge_added_thickness_mm": 5,
+    "bearing_plane_z_mm": 108,
+    "nominal_roof_side_seam_mm": 0.2,
+    "nominal_roof_bearing_width_mm": 2.8,
+    "side_ledge_geometry": {
+      "lid-left": {
+        "sign": -1,
+        "ledge_y_range_mm": [
+          -117.50824,
+          117.50830000000002
+        ],
+        "cap_bounds_mm": [
+          -163.7,
+          -145.0,
+          108.0,
+          -158.7,
+          145.0,
+          113.0
+        ],
+        "extension_bounds_mm": [
+          -160.7,
+          -117.50824,
+          103.0,
+          -155.7,
+          117.50830000000002,
+          108.0
+        ]
+      },
+      "lid-right": {
+        "sign": 1,
+        "ledge_y_range_mm": [
+          -117.50830000000002,
+          117.50824
+        ],
+        "cap_bounds_mm": [
+          158.7,
+          -145.0,
+          108.0,
+          163.7,
+          145.0,
+          113.0
+        ],
+        "extension_bounds_mm": [
+          155.7,
+          -117.50830000000002,
+          103.0,
+          160.7,
+          117.50824,
+          108.0
+        ]
+      }
+    },
+    "front_back_support_ledges_each_retained": 5,
+    "lower_front_back_locating_tongues_retained": true,
+    "print_orientation": "Roof flat,317mm along printerX and290mm along printerY. Lid sides outer-face-down.",
+    "printing_status": "Structural geometric review; Studio toolpaths and physical printing remain pending.",
+    "body_floor_status": "R2/R3 body floors remain unchanged and do not fit flat in the H2D single-nozzle envelope.",
+    "nominal_side_fixing_support": [
+      {
+        "center_xy_mm": [
+          -150.89994999999988,
+          -128.500215
+        ],
+        "edge_ligament_mm": 2.1000499999999818,
+        "OD10_washer_to_edge_mm": 2.600050000000124,
+        "washer_contact_area_mm2": 29.74027313701722
+      },
+      {
+        "center_xy_mm": [
+          -150.8988500000001,
+          128.499875
+        ],
+        "edge_ligament_mm": 2.1011499999998193,
+        "OD10_washer_to_edge_mm": 2.6011499999999046,
+        "washer_contact_area_mm2": 29.74022838677251
+      },
+      {
+        "center_xy_mm": [
+          150.8988500000001,
+          -128.499875
+        ],
+        "edge_ligament_mm": 2.1011499999998193,
+        "OD10_washer_to_edge_mm": 2.6011499999999046,
+        "washer_contact_area_mm2": 29.740228386772856
+      },
+      {
+        "center_xy_mm": [
+          150.89994999999988,
+          128.500215
+        ],
+        "edge_ligament_mm": 2.1000499999999818,
+        "OD10_washer_to_edge_mm": 2.600050000000124,
+        "washer_contact_area_mm2": 29.740273137017923
+      }
+    ],
+    "minimum_side_slot_edge_ligament_mm": 2.1000499999999818,
+    "minimum_nominal_OD10_washer_to_edge_mm": 2.600050000000124
+  },
+  "lidLedgeDetail": {
+    "right_wall_x_mm": [
+      163.7,
+      168.7
+    ],
+    "top_cap_x_mm": [
+      158.7,
+      163.7
+    ],
+    "roof_right_x_mm": 158.5,
+    "shelf_inner_x_mm": 155.7,
+    "roof_bottom_z_mm": 108,
+    "roof_top_z_mm": 113,
+    "shelf_extension_z_mm": [
+      103,
+      108
+    ],
+    "seam_mm": 0.2,
+    "bearing_mm": 2.8,
+    "clip_bounds_mm": [
+      148.0,
+      -12.0,
+      99.0,
+      169.5,
+      12.0,
+      113.5
+    ]
+  },
+  "limitations": [
+    "Review geometry only; no physical-print, strength, or fit approval is implied.",
+    "The roof is317x290x5mm and intended to print flat. Use the verified single-nozzle H2D reach and the supplied plate layout.",
+    "All body panels and both full-width body floors remain unchanged. Those floors still do not fit flat in the H2D single-nozzle area.",
+    "The roof keeps its original bracket slots. Minimum side-slot edge ligament is about2.10005mm; nominal OD10 washer envelope remains inside the roof.",
+    "Original small end-wall support intersections remain inherited; combined top assembly is compared with R3 to account for roof material transferred to side caps."
+  ]
+}

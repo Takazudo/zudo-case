@@ -11,7 +11,7 @@
     "check:docs": "node scripts/check-docs.mjs",
     "sync:doc-routes": "node scripts/sync-doc-routes.mjs",
     "check:doc-routes": "node scripts/sync-doc-routes.mjs --check",
-    "test:doc-structure": "node --test tests/doc-structure.test.mjs",
+    "test:doc-structure": "node --test tests/doc-structure.test.mjs tests/printed-navigation.test.mjs",
     "check:r9": "node scripts/lib/r9-manifest-check.mjs",
     "check:r9-doc-table": "node scripts/sync-r9-doc-table.mjs --check",
     "check:r9-confirm": "node scripts/check-r9-confirm.mjs",
@@ -54,7 +54,12 @@
     "build:printed-5mm": "uv run --locked --project engineering/printed-5mm/p5-tab-joints python engineering/printed-5mm/p5-tab-joints/build.py --out .cache/printed-p5-build",
     "check:printed-5mm": "node scripts/check-printed-5mm.mjs",
     "test:printed-5mm": "node --test tests/printed-5mm.test.mjs tests/printed-p4.test.mjs",
-    "build:printed-p3": "uv run --locked --project engineering/printed-5mm/p3 python engineering/printed-5mm/p3/build.py --out .cache/printed-5mm-build"
+    "build:printed-p3": "uv run --locked --project engineering/printed-5mm/p3 python engineering/printed-5mm/p3/build.py --out .cache/printed-5mm-build",
+    "build:tenbox-v2": "uv run --locked --project engineering/tenbox-v2/r5 python engineering/tenbox-v2/r5/build.py --out .cache/tenbox-v2-build",
+    "check:tenbox-v2": "node scripts/check-tenbox-v2.mjs",
+    "test:tenbox-v2": "python3 engineering/tenbox-v2/r5/test_contract.py",
+    "test:case-navigation:browser": "python3 scripts/verify-case-navigation.py",
+    "test:tenbox-v2:browser": "python3 scripts/verify-tenbox-site.py"
   },
   "dependencies": {
     "@takazudo/zfb": "5.2.0",

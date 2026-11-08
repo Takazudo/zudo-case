@@ -1,0 +1,1014 @@
+[
+  {
+    "check": "valid connected panel body-left",
+    "passed": true,
+    "solid_count": 1,
+    "volume_mm3": 78947.62074647304,
+    "bounds_mm": [
+      -168.7,
+      -154.0,
+      -3.5,
+      -158.7,
+      154.0,
+      72.00226
+    ]
+  },
+  {
+    "check": "valid connected panel body-right",
+    "passed": true,
+    "solid_count": 1,
+    "volume_mm3": 78944.22569793198,
+    "bounds_mm": [
+      158.7,
+      -154.0,
+      -3.5,
+      168.7,
+      154.0,
+      72.0
+    ]
+  },
+  {
+    "check": "valid connected panel body-front",
+    "passed": true,
+    "solid_count": 1,
+    "volume_mm3": 61036.56153480085,
+    "bounds_mm": [
+      -168.4,
+      -150.0,
+      36.0,
+      168.4,
+      -142.0,
+      72.0
+    ]
+  },
+  {
+    "check": "valid connected panel body-back",
+    "passed": true,
+    "solid_count": 1,
+    "volume_mm3": 108570.79290124324,
+    "bounds_mm": [
+      -168.4,
+      142.0,
+      0.0,
+      168.4,
+      150.0,
+      72.0
+    ]
+  },
+  {
+    "check": "valid connected panel body-bottom-front",
+    "passed": true,
+    "solid_count": 1,
+    "volume_mm3": 236769.069863382,
+    "bounds_mm": [
+      -168.4,
+      -144.99432,
+      36.0,
+      168.4,
+      0.0,
+      41.0
+    ]
+  },
+  {
+    "check": "valid connected panel body-bottom-back",
+    "passed": true,
+    "solid_count": 1,
+    "volume_mm3": 236769.06986338153,
+    "bounds_mm": [
+      -168.4,
+      0.0,
+      0.0,
+      168.4,
+      144.99432,
+      5.0
+    ]
+  },
+  {
+    "check": "valid connected panel lid-left",
+    "passed": true,
+    "solid_count": 1,
+    "volume_mm3": 77644.34698124026,
+    "bounds_mm": [
+      -168.7,
+      -150.0,
+      72.00019,
+      -155.7,
+      150.0,
+      113.0
+    ]
+  },
+  {
+    "check": "valid connected panel lid-right",
+    "passed": true,
+    "solid_count": 1,
+    "volume_mm3": 77644.34698124035,
+    "bounds_mm": [
+      155.7,
+      -150.0,
+      72.00019,
+      168.7,
+      150.0,
+      113.0
+    ]
+  },
+  {
+    "check": "valid connected panel lid-front",
+    "passed": true,
+    "solid_count": 1,
+    "volume_mm3": 90513.30041129162,
+    "bounds_mm": [
+      -163.7,
+      -150.0,
+      64.5,
+      163.70796,
+      -140.0,
+      112.99986
+    ]
+  },
+  {
+    "check": "valid connected panel lid-back",
+    "passed": true,
+    "solid_count": 1,
+    "volume_mm3": 90513.30041129167,
+    "bounds_mm": [
+      -163.70796,
+      140.0,
+      64.5,
+      163.7,
+      150.0,
+      112.99986
+    ]
+  },
+  {
+    "check": "valid connected panel lid-top-single",
+    "passed": true,
+    "solid_count": 1,
+    "volume_mm3": 457607.0536351032,
+    "bounds_mm": [
+      -158.5,
+      -145.0,
+      108.0,
+      158.5,
+      145.0,
+      113.0
+    ]
+  },
+  {
+    "check": "roof317x290x5 dimensions",
+    "passed": true,
+    "actual_bounds_mm": [
+      -158.5,
+      -145.0,
+      108.0,
+      158.5,
+      145.0,
+      113.0
+    ],
+    "expected_bounds_mm": [
+      -158.5,
+      -145.0,
+      108.0,
+      158.5,
+      145.0,
+      113.0
+    ]
+  },
+  {
+    "check": "roof retains eight slots",
+    "passed": true,
+    "measured_count": 8
+  },
+  {
+    "check": "roof slot axes and profiles unchanged",
+    "passed": true,
+    "before_hole_bounds_mm": [
+      [
+        -156.39995000000002,
+        -131.10019,
+        113.0,
+        -145.39994999999976,
+        -125.90024,
+        113.0
+      ],
+      [
+        -156.39885000000018,
+        125.8999,
+        113.0,
+        -145.39885,
+        131.09985,
+        113.0
+      ],
+      [
+        -120.28630000000007,
+        126.70000999999976,
+        113.0,
+        -115.08635,
+        137.69995000000011,
+        113.0
+      ],
+      [
+        -120.2863,
+        -137.69995,
+        113.0,
+        -115.08634999999977,
+        -126.70001,
+        113.0
+      ],
+      [
+        115.08634999999977,
+        126.70001,
+        113.0,
+        120.2863,
+        137.69995,
+        113.0
+      ],
+      [
+        115.08635,
+        -137.69995000000011,
+        113.0,
+        120.28630000000007,
+        -126.70000999999976,
+        113.0
+      ],
+      [
+        145.39885,
+        -131.09985,
+        113.0,
+        156.39885000000018,
+        -125.8999,
+        113.0
+      ],
+      [
+        145.39994999999976,
+        125.90024,
+        113.0,
+        156.39995000000002,
+        131.10019,
+        113.0
+      ]
+    ],
+    "after_hole_bounds_mm": [
+      [
+        -156.39995000000002,
+        -131.10019,
+        113.0,
+        -145.39994999999976,
+        -125.90024,
+        113.0
+      ],
+      [
+        -156.39885000000018,
+        125.8999,
+        113.0,
+        -145.39885,
+        131.09985,
+        113.0
+      ],
+      [
+        -120.28630000000007,
+        126.70000999999976,
+        113.0,
+        -115.08635,
+        137.69995000000011,
+        113.0
+      ],
+      [
+        -120.2863,
+        -137.69995,
+        113.0,
+        -115.08634999999977,
+        -126.70001,
+        113.0
+      ],
+      [
+        115.08634999999977,
+        126.70001,
+        113.0,
+        120.2863,
+        137.69995,
+        113.0
+      ],
+      [
+        115.08635,
+        -137.69995000000011,
+        113.0,
+        120.28630000000007,
+        -126.70000999999976,
+        113.0
+      ],
+      [
+        145.39885,
+        -131.09985,
+        113.0,
+        156.39885000000018,
+        -125.8999,
+        113.0
+      ],
+      [
+        145.39994999999976,
+        125.90024,
+        113.0,
+        156.39995000000002,
+        131.10019,
+        113.0
+      ]
+    ]
+  },
+  {
+    "check": "roof only loses the two5.2mm strips",
+    "passed": true,
+    "removed_volume_mm3": 15079.999999999964,
+    "added_volume_mm3": 0.0,
+    "expected_removed_mm3": 15080.0
+  },
+  {
+    "check": "side changes purely additive lid-left",
+    "passed": true,
+    "original_material_removed_mm3": 0.0,
+    "unexpected_added_mm3": 0.0,
+    "actual_added_volume_mm3": 13123.5310175146
+  },
+  {
+    "check": "actual underside bearing lid-left",
+    "passed": true,
+    "contact_area_mm2": 658.0463120000028,
+    "expected_area_mm2": 658.0463120000001,
+    "bearing_width_mm": 2.8,
+    "bearing_y_range_mm": [
+      -117.50824,
+      117.50830000000002
+    ],
+    "bearing_plane_z_mm": 108
+  },
+  {
+    "check": "actual0.2mm roof seam lid-left",
+    "passed": true,
+    "measured_gap_mm": 0.19999999999998863
+  },
+  {
+    "check": "no roof penetration at bearing lid-left",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "13mm maximum side thickness lid-left",
+    "passed": true,
+    "thickness_mm": 13.0
+  },
+  {
+    "check": "side bracket holes retained lid-left",
+    "passed": true,
+    "measured_count": 2
+  },
+  {
+    "check": "side changes purely additive lid-right",
+    "passed": true,
+    "original_material_removed_mm3": 0.0,
+    "unexpected_added_mm3": 0.0,
+    "actual_added_volume_mm3": 13123.53101751463
+  },
+  {
+    "check": "actual underside bearing lid-right",
+    "passed": true,
+    "contact_area_mm2": 658.0463120000028,
+    "expected_area_mm2": 658.0463120000001,
+    "bearing_width_mm": 2.8,
+    "bearing_y_range_mm": [
+      -117.50830000000002,
+      117.50824
+    ],
+    "bearing_plane_z_mm": 108
+  },
+  {
+    "check": "actual0.2mm roof seam lid-right",
+    "passed": true,
+    "measured_gap_mm": 0.19999999999998863
+  },
+  {
+    "check": "no roof penetration at bearing lid-right",
+    "passed": true,
+    "overlap_mm3": 0.0
+  },
+  {
+    "check": "13mm maximum side thickness lid-right",
+    "passed": true,
+    "thickness_mm": 13.0
+  },
+  {
+    "check": "side bracket holes retained lid-right",
+    "passed": true,
+    "measured_count": 2
+  },
+  {
+    "check": "retained side fixing support 1",
+    "passed": true,
+    "nominal_center_xy_mm": [
+      -150.89994999999988,
+      -128.500215
+    ],
+    "minimum_slot_edge_ligament_mm": 2.1000499999999818,
+    "nominal_OD10_washer_to_edge_mm": 2.600050000000124,
+    "nominal_washer_contact_area_before_mm2": 29.74027313701722,
+    "nominal_washer_contact_area_after_mm2": 29.74027313701722,
+    "nominal5mm_shaft_overlap_mm3": 0.0
+  },
+  {
+    "check": "retained side fixing support 2",
+    "passed": true,
+    "nominal_center_xy_mm": [
+      -150.8988500000001,
+      128.499875
+    ],
+    "minimum_slot_edge_ligament_mm": 2.1011499999998193,
+    "nominal_OD10_washer_to_edge_mm": 2.6011499999999046,
+    "nominal_washer_contact_area_before_mm2": 29.74022838677251,
+    "nominal_washer_contact_area_after_mm2": 29.74022838677251,
+    "nominal5mm_shaft_overlap_mm3": 0.0
+  },
+  {
+    "check": "retained side fixing support 7",
+    "passed": true,
+    "nominal_center_xy_mm": [
+      150.8988500000001,
+      -128.499875
+    ],
+    "minimum_slot_edge_ligament_mm": 2.1011499999998193,
+    "nominal_OD10_washer_to_edge_mm": 2.6011499999999046,
+    "nominal_washer_contact_area_before_mm2": 29.740228386772856,
+    "nominal_washer_contact_area_after_mm2": 29.740228386772856,
+    "nominal5mm_shaft_overlap_mm3": 0.0
+  },
+  {
+    "check": "retained side fixing support 8",
+    "passed": true,
+    "nominal_center_xy_mm": [
+      150.89994999999988,
+      128.500215
+    ],
+    "minimum_slot_edge_ligament_mm": 2.1000499999999818,
+    "nominal_OD10_washer_to_edge_mm": 2.600050000000124,
+    "nominal_washer_contact_area_before_mm2": 29.740273137017923,
+    "nominal_washer_contact_area_after_mm2": 29.740273137017923,
+    "nominal5mm_shaft_overlap_mm3": 0.0
+  },
+  {
+    "check": "unchanged export step/body-back.step",
+    "passed": true,
+    "sha256": "e82f69a295f9132ec040c08bfa9b90e506261505bc6932f6592a31eb71b38d01"
+  },
+  {
+    "check": "unchanged export step/body-bottom-back.step",
+    "passed": true,
+    "sha256": "bf9bbede9a50a6353dbb01ef0b000e2891d03f279607d83c6d5318b7cc955376"
+  },
+  {
+    "check": "unchanged export step/body-bottom-front.step",
+    "passed": true,
+    "sha256": "ab464597f46a6630565520359c871ceea31ee3f02d6f8129fe17873d8dd45a25"
+  },
+  {
+    "check": "unchanged export step/body-front.step",
+    "passed": true,
+    "sha256": "7bd8506e92967a54ab1fb4a8127ed81d5cbb122197642737da0670a11229e13b"
+  },
+  {
+    "check": "unchanged export step/body-left.step",
+    "passed": true,
+    "sha256": "d804cce4575ff234718f85a8287f9ea13d0e10ab0c1832064e2d7c59b5eb1d44"
+  },
+  {
+    "check": "unchanged export step/body-right.step",
+    "passed": true,
+    "sha256": "85476a9b5d6c0f8a86ce63821e13bb1ab04027502efbf9cfa020e98793b65736"
+  },
+  {
+    "check": "unchanged export step/lid-back.step",
+    "passed": true,
+    "sha256": "b61b964859904e5e37c80bd7f5d39018ef68e3d588814d630cf2266a6958a525"
+  },
+  {
+    "check": "unchanged export step/lid-front.step",
+    "passed": true,
+    "sha256": "adfda3648ef01fdaca03e0d65611e6fcae0ee2ac090ebe99befcc35713f9fd08"
+  },
+  {
+    "check": "unchanged export step/spacer-8mm-reference.step",
+    "passed": true,
+    "sha256": "9d174f857cb865e489a151ec34da0f4422f3d33fbe7797ce79139f1c5edaea29"
+  },
+  {
+    "check": "unchanged export step/spacer-left-1.step",
+    "passed": true,
+    "sha256": "6b7e7210f33db6f9319b32482387510d609e7b652e227079cc41c55bebd2dc16"
+  },
+  {
+    "check": "unchanged export step/spacer-left-2.step",
+    "passed": true,
+    "sha256": "76ec9c933c8094aacf381b56ead58819b4654d4b322b0b1ee9f85f2aca3474f5"
+  },
+  {
+    "check": "unchanged export step/spacer-left-3.step",
+    "passed": true,
+    "sha256": "35fb489dd768f95e274d0565b51ba39dbef84a4845efdda2614d0bcfbc343b7d"
+  },
+  {
+    "check": "unchanged export step/spacer-left-4.step",
+    "passed": true,
+    "sha256": "d6026bcaa4d666be836932a06ec4855b2ecd6f3bfb5c033b9a932f50f3742f25"
+  },
+  {
+    "check": "unchanged export step/spacer-right-1.step",
+    "passed": true,
+    "sha256": "054c7a1b0ca582ec3c6267bc8591c958d8771b37440c02c5d7dc4dd8257138e8"
+  },
+  {
+    "check": "unchanged export step/spacer-right-2.step",
+    "passed": true,
+    "sha256": "98d4b5500ef51366ba28aa715c6354fbe17c238c8a28253c0ccb41ea8c9d5e28"
+  },
+  {
+    "check": "unchanged export step/spacer-right-3.step",
+    "passed": true,
+    "sha256": "19f040f370745ceb719019bb6754f7394ae7e2c68438a7d334c16f65435063ca"
+  },
+  {
+    "check": "unchanged export step/spacer-right-4.step",
+    "passed": true,
+    "sha256": "8a0796728d71d3028fd52a103d2b4cfe23a77a50f4f7aac03452a6e43a4f1ae5"
+  },
+  {
+    "check": "unchanged export stl-review/body-back.stl",
+    "passed": true,
+    "sha256": "828bf722ed76e3eee5c841c3b29c3b54bc10f5d46f004ffda897c5501d127195"
+  },
+  {
+    "check": "unchanged export stl-review/body-bottom-back.stl",
+    "passed": true,
+    "sha256": "0506f343ff1725931c535664ca4fbc9b31d72996f75fe5028dce069a372a91ee"
+  },
+  {
+    "check": "unchanged export stl-review/body-bottom-front.stl",
+    "passed": true,
+    "sha256": "c6b7c48328acbda567538b031d62cc55cb157469097aedc8fa7ec447f228b457"
+  },
+  {
+    "check": "unchanged export stl-review/body-front.stl",
+    "passed": true,
+    "sha256": "27cba9882f6cbf6dff817fc7d585764d15ecd587bdc55b059a7339bcde782e94"
+  },
+  {
+    "check": "unchanged export stl-review/body-left.stl",
+    "passed": true,
+    "sha256": "a418c55c99baa9ad4fc965352052d23056099bf856dc15c28597083d8ad77b70"
+  },
+  {
+    "check": "unchanged export stl-review/body-right.stl",
+    "passed": true,
+    "sha256": "071cdf8ca4f42c4369593d3c6669413f9165c80c1dbbdfa2992935628e99c5cb"
+  },
+  {
+    "check": "unchanged export stl-review/lid-back.stl",
+    "passed": true,
+    "sha256": "7424fc68564e4db0d7f22130e30708b55863ee0c8bd807ceb29e83a7acccabeb"
+  },
+  {
+    "check": "unchanged export stl-review/lid-front.stl",
+    "passed": true,
+    "sha256": "fa2a985aa0839e78d27ccd804e56696d56b2e029ab8e40375979743e7abeea8d"
+  },
+  {
+    "check": "unchanged export stl-review/spacer-8mm-reference.stl",
+    "passed": true,
+    "sha256": "5cb1f72b90fe9382648b3393e17e5c9dddc0354c1917fd8a89d2738a7fba72aa"
+  },
+  {
+    "check": "unchanged preview part body-left",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part body-right",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part body-front",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part body-back",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part body-bottom-front",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part body-bottom-back",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part lid-front",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part lid-back",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part stand-left",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part stand-right",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part stand-connector-front",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part stand-connector-back",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part spacer-left-1",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part spacer-left-2",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part spacer-left-3",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part spacer-left-4",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part spacer-right-1",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part spacer-right-2",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part spacer-right-3",
+    "passed": true
+  },
+  {
+    "check": "unchanged preview part spacer-right-4",
+    "passed": true
+  },
+  {
+    "check": "combined top assembly end contact lid-front",
+    "passed": true,
+    "r3_overlap_mm3": 2.2117714853975485,
+    "r4_overlap_mm3": 2.2062634853970273,
+    "added_overlap_mm3": -0.005508000000521207
+  },
+  {
+    "check": "combined top assembly end contact lid-back",
+    "passed": true,
+    "r3_overlap_mm3": 2.2117714854013286,
+    "r4_overlap_mm3": 2.2062634854032197,
+    "added_overlap_mm3": -0.0055079999981089145
+  },
+  {
+    "check": "lid lift body-left/0",
+    "passed": true,
+    "lift_mm": 0,
+    "r3_overlap_mm3": 3.105750446005377,
+    "r4_overlap_mm3": 3.105750446005377,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-right/0",
+    "passed": true,
+    "lift_mm": 0,
+    "r3_overlap_mm3": 0.0007500000002380602,
+    "r4_overlap_mm3": 0.0007500000002380602,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-front/0",
+    "passed": true,
+    "lift_mm": 0,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-back/0",
+    "passed": true,
+    "lift_mm": 0,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-front/0",
+    "passed": true,
+    "lift_mm": 0,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-back/0",
+    "passed": true,
+    "lift_mm": 0,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-left/0.5",
+    "passed": true,
+    "lift_mm": 0.5,
+    "r3_overlap_mm3": 0.000700226000222262,
+    "r4_overlap_mm3": 0.000700226000222262,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-right/0.5",
+    "passed": true,
+    "lift_mm": 0.5,
+    "r3_overlap_mm3": 0.0007000000002221896,
+    "r4_overlap_mm3": 0.0007000000002221896,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-front/0.5",
+    "passed": true,
+    "lift_mm": 0.5,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-back/0.5",
+    "passed": true,
+    "lift_mm": 0.5,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-front/0.5",
+    "passed": true,
+    "lift_mm": 0.5,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-back/0.5",
+    "passed": true,
+    "lift_mm": 0.5,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-left/1",
+    "passed": true,
+    "lift_mm": 1,
+    "r3_overlap_mm3": 0.0006502260002063913,
+    "r4_overlap_mm3": 0.0006502260002063913,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-right/1",
+    "passed": true,
+    "lift_mm": 1,
+    "r3_overlap_mm3": 0.0006500000002063188,
+    "r4_overlap_mm3": 0.0006500000002063188,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-front/1",
+    "passed": true,
+    "lift_mm": 1,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-back/1",
+    "passed": true,
+    "lift_mm": 1,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-front/1",
+    "passed": true,
+    "lift_mm": 1,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-back/1",
+    "passed": true,
+    "lift_mm": 1,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-left/4",
+    "passed": true,
+    "lift_mm": 4,
+    "r3_overlap_mm3": 0.00035022600011116713,
+    "r4_overlap_mm3": 0.00035022600011116713,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-right/4",
+    "passed": true,
+    "lift_mm": 4,
+    "r3_overlap_mm3": 0.0003500000001110948,
+    "r4_overlap_mm3": 0.0003500000001110948,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-front/4",
+    "passed": true,
+    "lift_mm": 4,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-back/4",
+    "passed": true,
+    "lift_mm": 4,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-front/4",
+    "passed": true,
+    "lift_mm": 4,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-back/4",
+    "passed": true,
+    "lift_mm": 4,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-left/7.5",
+    "passed": true,
+    "lift_mm": 7.5,
+    "r3_overlap_mm3": 2.2600000007241672e-07,
+    "r4_overlap_mm3": 2.2600000007241672e-07,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-right/7.5",
+    "passed": true,
+    "lift_mm": 7.5,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-front/7.5",
+    "passed": true,
+    "lift_mm": 7.5,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-back/7.5",
+    "passed": true,
+    "lift_mm": 7.5,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-front/7.5",
+    "passed": true,
+    "lift_mm": 7.5,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-back/7.5",
+    "passed": true,
+    "lift_mm": 7.5,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-left/15",
+    "passed": true,
+    "lift_mm": 15,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-right/15",
+    "passed": true,
+    "lift_mm": 15,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-front/15",
+    "passed": true,
+    "lift_mm": 15,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-back/15",
+    "passed": true,
+    "lift_mm": 15,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-front/15",
+    "passed": true,
+    "lift_mm": 15,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-back/15",
+    "passed": true,
+    "lift_mm": 15,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-left/50",
+    "passed": true,
+    "lift_mm": 50,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-right/50",
+    "passed": true,
+    "lift_mm": 50,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-front/50",
+    "passed": true,
+    "lift_mm": 50,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-back/50",
+    "passed": true,
+    "lift_mm": 50,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-front/50",
+    "passed": true,
+    "lift_mm": 50,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  },
+  {
+    "check": "lid lift body-bottom-back/50",
+    "passed": true,
+    "lift_mm": 50,
+    "r3_overlap_mm3": 0.0,
+    "r4_overlap_mm3": 0.0,
+    "added_overlap_mm3": 0.0
+  }
+]

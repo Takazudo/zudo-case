@@ -13,14 +13,17 @@ sidebar_position: 20
 | [金属ケース](../metal-case/status.mdx) | 7U40 | R10-FULLSET-01（一式準備の候補） | R9系は旧候補、R6/R8は出発点 | CADと生成検査あり。JLCカート準備済み・未発注・未払い。現物評価なし |
 | [金属ケース](../metal-case/status.mdx) | 3U60・7U60 | R6本体・R8載せ蓋の基準 | R7ロック蓋は不採用 | 名目CADと表示用モデル。長穴・嵌合など未反映 |
 | [家庭印刷ケース](../printed-5mm/index.mdx) | 7U40・5mm | P5-PRINTED-5MM-TAB-JOINTS-J3 | P4（Uniform通気孔）、P3（通気孔なし） | ソフトウェアでの生成・検査のみ。実スライス・嵌合・強度・運搬は未確認 |
+| [10BOX-v2](../tenbox-v2/index.mdx) | 2 × 3U60HP | R5（採用済み設計） | 固定R4入力は再生成の依存 | ソフトウェア統合候補。実スライス・印刷・現物嵌合・荷重未確認 |
 | [2WAY 実験設計](../two-way/index.mdx) | A／B／C（2トレー） | TW-01（作業版） | F5（不変の原資料） | 閲覧・寸法検討の出力。製作CADではない |
 | [共通部品](../shared/index.mdx) | 家庭印刷8mmスペーサー | home-print-spacer-01 | — | 高さ8mmは採用、外径10mm・穴径5.5mmはR6由来の仮寸法 |
+
+10BOX-v2の版・出力・原入力のhashは`project/tenbox-v2/manifest.json`が管理します。金属用の`project/current-spec.json`を10BOX-v2の仕様として使いません。
 
 ## 承認・発注の状態
 
 - 製造承認済みファイルは0件です。`engineering/release/`は注意書きだけで、`project/release-state.json`の`production_approved`は`false`です。
 - 金属7U40のR10一式はJLCのカートに保存済みで、未発注・未払いです（`project/order-records/`）。
-- 家庭印刷・2WAY・共通部品のソフトウェア検査は、物理的な検証や製造承認ではありません。
+- 7U40家庭印刷・10BOX-v2・2WAY・共通部品のソフトウェア検査は、物理的な検証や製造承認ではありません。
 - ナビゲーションや文書の位置を変えても、版の状態・承認・数量は変わりません。
 
 ## 版名の対応
@@ -29,6 +32,7 @@ sidebar_position: 20
 |---|---|---|
 | R6・R7・R8・R9・R10 | 金属ケース | R6本体、R7不採用ロック蓋、R8載せ蓋の表示、R9旧候補、R10現行一式候補 |
 | P3・P4・P5 | 家庭印刷ケース | 同じ系列の改訂。P5が現行、P4・P3は履歴 |
+| R5（10BOX-v2） | 10BOX-v2 | 独立した2 × 3U60HPケース。金属R6〜R10や7U40 P5とは別系列 |
 | F5・TW-01 | 2WAY | F5は原資料、TW-01は作業版 |
 | D1 | 文書 | 2026-09-24の資料整理の版。ケースCADの版ではない |
 

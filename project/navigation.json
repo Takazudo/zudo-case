@@ -112,13 +112,13 @@
   {
     "path": "development/maintenance.mdx",
     "title": "文書・表・資産の更新",
-    "description": "MDXの編集と、参照表の同期を分離する。",
+    "description": "読者の作業と系列の境界を保つ、文書配置・構成・生成物・旧URLの共通編集方針。",
     "sidebar_position": 20
   },
   {
     "path": "development/setup.mdx",
     "title": "ローカルでzudo-docを起動する",
-    "description": "公式CLIで土台を生成し、このMDX・資産をそのまま使う。",
+    "description": "現在のチェックアウトの起動、プレビュー配信元、依存・scaffold保守と配信・復旧の手順。",
     "sidebar_position": 10
   },
   {
@@ -300,6 +300,12 @@
     "title": "金属ケース",
     "description": "アルミ平板とPA12ガードの単トレーケース３機種。7U40はR10一式候補、3U60・7U60はR6/R8基準。",
     "sidebar_position": 20
+  },
+  {
+    "path": "metal-case/maintaining-data.mdx",
+    "title": "金属ケースの台帳・製作データを保守する",
+    "description": "金属ケースの生成表、見積の登録と選択、製作候補と承認台帳の更新手順。",
+    "sidebar_position": 85
   },
   {
     "path": "metal-case/manufacturing/aluminum-order.mdx",
@@ -544,7 +550,7 @@
   {
     "path": "overview/start.mdx",
     "title": "プロジェクトを選ぶ",
-    "description": "金属ケース、家庭印刷ケース、2WAY実験設計、共通部品のどれを読むかを選び、現行候補・プレビュー・ファイルへ進む。",
+    "description": "金属ケース、7U40家庭印刷、10BOX-v2、2WAY実験設計、共通部品のどれを読むかを選び、現行候補・プレビュー・ファイルへ進む。",
     "sidebar_position": 10
   },
   {
@@ -684,6 +690,42 @@
     "title": "元レール・PCBと出典",
     "description": "zudo-railのレールSTLとzudo-blanksのfixer/padder PCB。固定コミットと保存場所、各系列での使い方。",
     "sidebar_position": 20
+  },
+  {
+    "path": "tenbox-v2/assembly.mdx",
+    "title": "10BOX-v2・組立と向き",
+    "description": "本体6枚と蓋5枚の接合、フレーム固定、8個のスペーサー、同一部品の回転と金物未確定事項。",
+    "sidebar_position": 40
+  },
+  {
+    "path": "tenbox-v2/design-and-validation.mdx",
+    "title": "10BOX-v2・設計と検証",
+    "description": "採用寸法とR5の隅カット、増分ソースの出典、ファイル形式修正とソフトウェア検証の限界。",
+    "sidebar_position": 50
+  },
+  {
+    "path": "tenbox-v2/index.mdx",
+    "title": "10BOX-v2・2組の3U60HPケース",
+    "description": "受け入れたR5の現行ファイル、印刷と組立の入口。7U40家庭印刷とは独立した系列。",
+    "sidebar_position": 35
+  },
+  {
+    "path": "tenbox-v2/preview.mdx",
+    "title": "10BOX-v2・3Dプレビュー",
+    "description": "R5の組立、差し込み、レール隙間、蓋、底の開口とH2D配置を実形状で確認。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "tenbox-v2/print-files.mdx",
+    "title": "10BOX-v2・印刷ファイルと数量",
+    "description": "現行R5の15個のH2Dプロジェクト、23部品、編集用ソースと組立座標STEP/STL。",
+    "sidebar_position": 20
+  },
+  {
+    "path": "tenbox-v2/printing.mdx",
+    "title": "10BOX-v2・印刷配置と設定",
+    "description": "底板と天板のLEFTノズル平置き、実投影輪郭による除外域検査と維持したH2D設定。",
+    "sidebar_position": 30
   },
   {
     "path": "two-way/design.mdx",

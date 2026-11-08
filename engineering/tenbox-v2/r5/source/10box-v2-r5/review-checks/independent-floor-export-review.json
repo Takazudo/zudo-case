@@ -1,0 +1,3043 @@
+{
+  "scope": "Independent R5 exported STEP audit of only the changed floor panels and their existing corner interfaces. No printer reach, sliced-toolpath, material-strength, or physical-print qualification.",
+  "passed": 27,
+  "failed": 0,
+  "floors": {
+    "body-bottom-front": {
+      "bounds_mm": [
+        -168.4,
+        -144.99432,
+        36.0,
+        168.4,
+        1.80696635214176e-14,
+        41.0
+      ],
+      "volume_mm3": 234769.06986338206,
+      "corners": [
+        {
+          "bounds_mm": [
+            -163.55,
+            -16.000000000000014,
+            36.0,
+            -147.55,
+            0.0,
+            41.0
+          ],
+          "edge_legs_mm": [
+            16.0,
+            16.000000000000014
+          ],
+          "triangle_opening_area_mm2": 128.00000000000006,
+          "diagonal_edge_length_mm": 22.62741699796953,
+          "removed_volume_mm3": 640.0000000000002,
+          "location": "center step"
+        },
+        {
+          "bounds_mm": [
+            151.55,
+            -12.000000000000009,
+            36.0,
+            163.55,
+            0.0,
+            41.0
+          ],
+          "edge_legs_mm": [
+            12.0,
+            12.000000000000009
+          ],
+          "triangle_opening_area_mm2": 72.00000000000004,
+          "diagonal_edge_length_mm": 16.970562748477146,
+          "removed_volume_mm3": 360.0000000000002,
+          "location": "center step"
+        },
+        {
+          "bounds_mm": [
+            -163.55,
+            -144.99432,
+            36.0,
+            -151.55,
+            -132.99432,
+            41.0
+          ],
+          "edge_legs_mm": [
+            12.0,
+            12.0
+          ],
+          "triangle_opening_area_mm2": 72.00000000000004,
+          "diagonal_edge_length_mm": 16.97056274847714,
+          "removed_volume_mm3": 360.0000000000002,
+          "location": "outer end"
+        },
+        {
+          "bounds_mm": [
+            147.55,
+            -144.99432,
+            36.0,
+            163.55,
+            -128.99431999999996,
+            41.0
+          ],
+          "edge_legs_mm": [
+            16.0,
+            16.00000000000003
+          ],
+          "triangle_opening_area_mm2": 127.99999999999984,
+          "diagonal_edge_length_mm": 22.62741699796954,
+          "removed_volume_mm3": 639.9999999999992,
+          "location": "outer end"
+        }
+      ],
+      "removed_area_mm2": 399.9999999999999,
+      "removed_material_fraction": 0.008447049275287598,
+      "slots": [
+        {
+          "center_mm": [
+            117.67118499997204,
+            -132.18824499993977,
+            41.0
+          ],
+          "bounds_mm": [
+            115.06058999994407,
+            -137.69167999997782,
+            41.0,
+            120.28178,
+            -126.68480999990172,
+            41.0
+          ],
+          "axis_change_mm": 2.48584409370972e-11,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 25.524185993117396,
+          "nominal_OD10_washer_diagonal_clearance_mm": 25.182775173264226,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 23.137228392369398,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928400000100893,
+              "original_contact_area_mm2": 41.6332905352537,
+              "revised_contact_area_mm2": 41.63329053525374
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.5857111047082,
+              "revised_contact_area_mm2": 29.58571110466501
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928400000100893,
+              "original_contact_area_mm2": 41.63329053524895,
+              "revised_contact_area_mm2": 41.633290535249
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            150.92922499994103,
+            -114.40792499997508,
+            41.0
+          ],
+          "bounds_mm": [
+            145.42578999995635,
+            -117.01852000000001,
+            41.0,
+            156.43265999992573,
+            -111.79732999995014,
+            41.0
+          ],
+          "axis_change_mm": 4.9454511489408965e-11,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 14.579799365946393,
+          "nominal_OD10_washer_diagonal_clearance_mm": 14.238374403954538,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 12.192827623095305,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928399999597545,
+              "original_contact_area_mm2": 41.63329053524797,
+              "revised_contact_area_mm2": 41.633290535247966
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585737632094744,
+              "revised_contact_area_mm2": 29.5857376322949
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928399999597545,
+              "original_contact_area_mm2": 41.633290535250936,
+              "revised_contact_area_mm2": 41.633290535251376
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            58.826754999994876,
+            -132.18824499994486,
+            41.0
+          ],
+          "bounds_mm": [
+            56.21613999998974,
+            -137.69167999994724,
+            41.0,
+            61.43737,
+            -126.68480999994244,
+            41.0
+          ],
+          "axis_change_mm": 1.3577317138777556e-12,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 67.1334744101067,
+          "nominal_OD10_washer_diagonal_clearance_mm": 66.79207066130158,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 64.74653802255145,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928199999972684,
+              "original_contact_area_mm2": 41.63315453822284,
+              "revised_contact_area_mm2": 41.63315453822292
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585505639969305,
+              "revised_contact_area_mm2": 29.58550563997454
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928199999972684,
+              "original_contact_area_mm2": 41.633154538218065,
+              "revised_contact_area_mm2": 41.633154538218164
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -0.017634999998982215,
+            -132.18824499993204,
+            41.0
+          ],
+          "bounds_mm": [
+            -2.6282400000073878,
+            -137.69167999991822,
+            41.0,
+            2.5929700000094233,
+            -126.68480999994584,
+            41.0
+          ],
+          "axis_change_mm": 1.1368878926877637e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 108.74274868496039,
+          "nominal_OD10_washer_diagonal_clearance_mm": 108.40133786509219,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 106.35579815528801,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892829999977785,
+              "original_contact_area_mm2": 41.63322253697898,
+              "revised_contact_area_mm2": 41.633222536979
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585671150496655,
+              "revised_contact_area_mm2": 29.585671150511928
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892829999977785,
+              "original_contact_area_mm2": 41.63322253697428,
+              "revised_contact_area_mm2": 41.6332225369743
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -58.862054999996005,
+            -132.1882449999319,
+            41.0
+          ],
+          "bounds_mm": [
+            -61.472640000000006,
+            -137.69167999992462,
+            41.0,
+            -56.251469999992,
+            -126.68480999993919,
+            41.0
+          ],
+          "axis_change_mm": 4.412235823639328e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 69.93694773654482,
+          "nominal_OD10_washer_diagonal_clearance_mm": 69.59553691668025,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 67.54998306473273,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928499999887087,
+              "original_contact_area_mm2": 41.63335853304674,
+              "revised_contact_area_mm2": 41.633358533046746
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.58588519740621,
+              "revised_contact_area_mm2": 29.58588519742056
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928499999887087,
+              "original_contact_area_mm2": 41.63335853304203,
+              "revised_contact_area_mm2": 41.633358533042035
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -117.70646999997551,
+            -132.18824499994957,
+            41.0
+          ],
+          "bounds_mm": [
+            -120.31708,
+            -137.69167999998146,
+            41.0,
+            -115.09585999995102,
+            -126.6848099999177,
+            41.0
+          ],
+          "axis_change_mm": 2.3962046393942263e-12,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 28.327666390623364,
+          "nominal_OD10_washer_diagonal_clearance_mm": 27.986252035226855,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 25.940715860935658,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928250000073845,
+              "original_contact_area_mm2": 41.633188537661105,
+              "revised_contact_area_mm2": 41.63318853766115
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585570374499298,
+              "revised_contact_area_mm2": 29.585570374533955
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928250000073845,
+              "original_contact_area_mm2": 41.633188537656366,
+              "revised_contact_area_mm2": 41.63318853765641
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -150.89392999991762,
+            -114.40792499996275,
+            41.0
+          ],
+          "bounds_mm": [
+            -156.3973499999343,
+            -117.01851999999998,
+            41.0,
+            -145.39050999990093,
+            -111.79732999992551,
+            41.0
+          ],
+          "axis_change_mm": 4.831690603168681e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 17.433173217932843,
+          "nominal_OD10_washer_diagonal_clearance_mm": 17.091758862568003,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 15.046222688296558,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892824999979453,
+              "original_contact_area_mm2": 41.633290535248,
+              "revised_contact_area_mm2": 41.6332905352484
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.58572922532616,
+              "revised_contact_area_mm2": 29.58572922502517
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892824999979453,
+              "original_contact_area_mm2": 41.63329053525169,
+              "revised_contact_area_mm2": 41.63329053525135
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            150.9292249999384,
+            -35.9486949999961,
+            41.0
+          ],
+          "bounds_mm": [
+            145.42578999995217,
+            -38.55930000000001,
+            41.0,
+            156.43265999992462,
+            -33.33808999999219,
+            41.0
+          ],
+          "axis_change_mm": 5.5933924610345255e-11,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 21.19994518344921,
+          "nominal_OD10_washer_diagonal_clearance_mm": 20.858520221438827,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 18.81298051163145,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892829999982318,
+              "original_contact_area_mm2": 41.63324146647217,
+              "revised_contact_area_mm2": 41.633241466472505
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585697943294864,
+              "revised_contact_area_mm2": 29.58569794345614
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892829999982318,
+              "original_contact_area_mm2": 41.63323760645689,
+              "revised_contact_area_mm2": 41.63323760645652
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -150.89392999996318,
+            -35.94869499999905,
+            41.0
+          ],
+          "bounds_mm": [
+            -156.3973499999895,
+            -38.55930000000067,
+            41.0,
+            -145.39050999993688,
+            -33.33808999999743,
+            41.0
+          ],
+          "axis_change_mm": 8.080217512445813e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 18.39646478594328,
+          "nominal_OD10_washer_diagonal_clearance_mm": 18.055050430519195,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 16.009521327283572,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.89281500002469,
+              "original_contact_area_mm2": 41.633241466442435,
+              "revised_contact_area_mm2": 41.63324146644256
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585689536177945,
+              "revised_contact_area_mm2": 29.585689535945296
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.89281500002469,
+              "original_contact_area_mm2": 41.633237606609754,
+              "revised_contact_area_mm2": 41.633237606609704
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        }
+      ],
+      "tabs": [
+        {
+          "bounds_mm": [
+            -168.4,
+            -65.0,
+            36.0,
+            -163.55,
+            -45.0,
+            41.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        },
+        {
+          "bounds_mm": [
+            -168.4,
+            -105.0,
+            36.0,
+            -163.55,
+            -85.0,
+            41.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        },
+        {
+          "bounds_mm": [
+            163.55,
+            -65.0,
+            36.0,
+            168.4,
+            -45.0,
+            41.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        },
+        {
+          "bounds_mm": [
+            163.55,
+            -105.0,
+            36.0,
+            168.4,
+            -85.0,
+            41.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        }
+      ],
+      "corner_and_end_lip_overlaps": [
+        {
+          "neighbor": "body-left",
+          "lip_bounds_mm": [
+            -163.7,
+            -11.92377,
+            40.99243,
+            -158.7,
+            0.0,
+            40.99243
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.007570000000001187,
+          "original_projected_overlap_mm2": 57.830284500000296,
+          "revised_projected_overlap_mm2": 0.29936000644999505,
+          "projected_overlap_lost_mm2": 57.5309244935503,
+          "location": "corner lip"
+        },
+        {
+          "neighbor": "body-left",
+          "lip_bounds_mm": [
+            -163.7,
+            -142.97974,
+            40.99243,
+            -158.7,
+            -138.07617,
+            40.99243
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.007570000000001187,
+          "original_projected_overlap_mm2": 23.782314500000123,
+          "revised_projected_overlap_mm2": 0.0,
+          "projected_overlap_lost_mm2": 23.782314500000123,
+          "location": "corner lip"
+        },
+        {
+          "neighbor": "body-right",
+          "lip_bounds_mm": [
+            158.7,
+            -11.92377,
+            40.99103,
+            163.7,
+            0.0,
+            40.99103
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.008969999999997924,
+          "original_projected_overlap_mm2": 57.83028450000027,
+          "revised_projected_overlap_mm2": 11.394440006450033,
+          "projected_overlap_lost_mm2": 46.435844493550235,
+          "location": "corner lip"
+        },
+        {
+          "neighbor": "body-right",
+          "lip_bounds_mm": [
+            158.7,
+            -142.97974,
+            40.99103,
+            163.7,
+            -138.07617,
+            40.99103
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.008969999999997924,
+          "original_projected_overlap_mm2": 23.782314500000123,
+          "revised_projected_overlap_mm2": 0.0,
+          "projected_overlap_lost_mm2": 23.782314500000123,
+          "location": "corner lip"
+        },
+        {
+          "neighbor": "body-front",
+          "lip_bounds_mm": [
+            -156.71492,
+            -145.0,
+            40.99026,
+            -133.71333,
+            -142.0,
+            40.99026
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.009740000000000748,
+          "original_projected_overlap_mm2": 68.8741209687997,
+          "revised_projected_overlap_mm2": 57.89167384559907,
+          "projected_overlap_lost_mm2": 10.982447123200629,
+          "location": "corner lip"
+        },
+        {
+          "neighbor": "body-front",
+          "lip_bounds_mm": [
+            -106.69966,
+            -145.0,
+            40.99026,
+            -69.86897,
+            -142.0,
+            40.99026
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.009740000000000748,
+          "original_projected_overlap_mm2": 110.28287168079952,
+          "revised_projected_overlap_mm2": 110.28287168079838,
+          "projected_overlap_lost_mm2": 1.1368683772161603e-12,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-front",
+          "lip_bounds_mm": [
+            -47.85518,
+            -145.0,
+            40.99026,
+            -11.02449,
+            -142.0,
+            40.99026
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.009740000000000748,
+          "original_projected_overlap_mm2": 110.28287168079953,
+          "revised_projected_overlap_mm2": 110.28287168079841,
+          "projected_overlap_lost_mm2": 1.1226575225009583e-12,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-front",
+          "lip_bounds_mm": [
+            10.989249999999998,
+            -145.0,
+            40.99026,
+            47.81993,
+            -142.0,
+            40.99026
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.009740000000000748,
+          "original_projected_overlap_mm2": 110.28284173759955,
+          "revised_projected_overlap_mm2": 110.28284173759945,
+          "projected_overlap_lost_mm2": 9.947598300641403e-14,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-front",
+          "lip_bounds_mm": [
+            69.83367,
+            -145.0,
+            40.99026,
+            106.66436,
+            -142.0,
+            40.99026
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.009740000000000748,
+          "original_projected_overlap_mm2": 110.28287168079956,
+          "revised_projected_overlap_mm2": 110.28287168079947,
+          "projected_overlap_lost_mm2": 8.526512829121202e-14,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-front",
+          "lip_bounds_mm": [
+            133.71337,
+            -145.0,
+            40.99026,
+            156.71489,
+            -142.0,
+            40.99026
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.009740000000000748,
+          "original_projected_overlap_mm2": 68.87391136639971,
+          "revised_projected_overlap_mm2": 45.91427407279994,
+          "projected_overlap_lost_mm2": 22.95963729359977,
+          "location": "corner lip"
+        }
+      ],
+      "neighbor_intersections": [
+        {
+          "neighbor": "body-left",
+          "old_overlap_mm3": 0.6178073744300999,
+          "new_overlap_mm3": 0.002266155248826946
+        },
+        {
+          "neighbor": "body-right",
+          "old_overlap_mm3": 0.7320650130298345,
+          "new_overlap_mm3": 0.10220812685783329
+        },
+        {
+          "neighbor": "body-front",
+          "old_overlap_mm3": 5.638286223982457,
+          "new_overlap_mm3": 5.307690321762799
+        },
+        {
+          "neighbor": "body-back",
+          "old_overlap_mm3": 0.0,
+          "new_overlap_mm3": 0.0
+        }
+      ]
+    },
+    "body-bottom-back": {
+      "bounds_mm": [
+        -168.4,
+        -1.42108547152e-14,
+        0.0,
+        168.4,
+        144.99432,
+        5.0
+      ],
+      "volume_mm3": 234769.06986338177,
+      "corners": [
+        {
+          "bounds_mm": [
+            147.55,
+            0.0,
+            0.0,
+            163.55,
+            16.000000000000014,
+            5.0
+          ],
+          "edge_legs_mm": [
+            16.0,
+            16.000000000000014
+          ],
+          "triangle_opening_area_mm2": 127.99999999999986,
+          "diagonal_edge_length_mm": 22.62741699796953,
+          "removed_volume_mm3": 639.9999999999993,
+          "location": "center step"
+        },
+        {
+          "bounds_mm": [
+            -163.55,
+            -1.42108547152e-14,
+            0.0,
+            -151.55,
+            12.000000000000009,
+            5.0
+          ],
+          "edge_legs_mm": [
+            12.0,
+            12.000000000000023
+          ],
+          "triangle_opening_area_mm2": 72.00000000000009,
+          "diagonal_edge_length_mm": 16.970562748477157,
+          "removed_volume_mm3": 360.00000000000045,
+          "location": "center step"
+        },
+        {
+          "bounds_mm": [
+            -163.55,
+            128.99431999999996,
+            0.0,
+            -147.55,
+            144.99432,
+            5.0
+          ],
+          "edge_legs_mm": [
+            16.0,
+            16.00000000000003
+          ],
+          "triangle_opening_area_mm2": 127.9999999999998,
+          "diagonal_edge_length_mm": 22.62741699796954,
+          "removed_volume_mm3": 639.999999999999,
+          "location": "outer end"
+        },
+        {
+          "bounds_mm": [
+            151.55,
+            132.99432,
+            0.0,
+            163.55,
+            144.99432,
+            5.0
+          ],
+          "edge_legs_mm": [
+            12.0,
+            12.0
+          ],
+          "triangle_opening_area_mm2": 72.00000000000004,
+          "diagonal_edge_length_mm": 16.97056274847714,
+          "removed_volume_mm3": 360.0000000000002,
+          "location": "outer end"
+        }
+      ],
+      "removed_area_mm2": 399.99999999999795,
+      "removed_material_fraction": 0.008447049275287574,
+      "slots": [
+        {
+          "center_mm": [
+            150.89392999999635,
+            35.94869500000145,
+            5.0
+          ],
+          "bounds_mm": [
+            145.39050999999617,
+            33.33809000000044,
+            5.0,
+            156.39734999999652,
+            38.55930000000245,
+            5.0
+          ],
+          "axis_change_mm": 7.762821658018119e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 18.39646478594328,
+          "nominal_OD10_washer_diagonal_clearance_mm": 18.05505043049743,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 16.009521327279856,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892814999999171,
+              "original_contact_area_mm2": 41.63323760661544,
+              "revised_contact_area_mm2": 41.63323760661544
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585689535965813,
+              "revised_contact_area_mm2": 29.5856895359658
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892814999999171,
+              "original_contact_area_mm2": 41.63324146645171,
+              "revised_contact_area_mm2": 41.63324146645171
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -150.92922499993836,
+            35.94869500000199,
+            5.0
+          ],
+          "bounds_mm": [
+            -156.43265999992482,
+            33.33808999999883,
+            5.0,
+            -145.42578999995186,
+            38.55930000000515,
+            5.0
+          ],
+          "axis_change_mm": 8.450381726173933e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 21.19994518344921,
+          "nominal_OD10_washer_diagonal_clearance_mm": 20.858520221443026,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 18.81298051163494,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.89282999998332,
+              "original_contact_area_mm2": 41.63323760646508,
+              "revised_contact_area_mm2": 41.63323760646508
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585697943457884,
+              "revised_contact_area_mm2": 29.58569794345835
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.89282999998332,
+              "original_contact_area_mm2": 41.63324146648475,
+              "revised_contact_area_mm2": 41.63324146648475
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            150.89392999999416,
+            114.40792499999887,
+            5.0
+          ],
+          "bounds_mm": [
+            145.390509999995,
+            111.7973299999953,
+            5.0,
+            156.3973499999933,
+            117.01852000000245,
+            5.0
+          ],
+          "axis_change_mm": 8.676771314227237e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 17.433173217932843,
+          "nominal_OD10_washer_diagonal_clearance_mm": 17.09175886248834,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 15.046222688205496,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928249999955753,
+              "original_contact_area_mm2": 41.633290535255405,
+              "revised_contact_area_mm2": 41.633290535255405
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.58572922507293,
+              "revised_contact_area_mm2": 29.585729225073088
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928249999955753,
+              "original_contact_area_mm2": 41.63329053525562,
+              "revised_contact_area_mm2": 41.63329053525562
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            117.70646999999593,
+            132.1882449999958,
+            5.0
+          ],
+          "bounds_mm": [
+            115.09585999999032,
+            126.68480999998711,
+            5.0,
+            120.31708000000155,
+            137.69168000000448,
+            5.0
+          ],
+          "axis_change_mm": 1.8198773652309366e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 28.327666390623364,
+          "nominal_OD10_washer_diagonal_clearance_mm": 27.986252035179746,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 25.9407158608916,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928250000030715,
+              "original_contact_area_mm2": 41.633188537663415,
+              "revised_contact_area_mm2": 41.633188537663415
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.5855703745158,
+              "revised_contact_area_mm2": 29.585570374515697
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928250000030715,
+              "original_contact_area_mm2": 41.63318853766289,
+              "revised_contact_area_mm2": 41.63318853766289
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            58.86205499999998,
+            132.18824499999602,
+            5.0
+          ],
+          "bounds_mm": [
+            56.25146999999694,
+            126.68480999998901,
+            5.0,
+            61.47264000000301,
+            137.69168000000303,
+            5.0
+          ],
+          "axis_change_mm": 1.764951541129878e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 69.93694773654482,
+          "nominal_OD10_washer_diagonal_clearance_mm": 69.59553691663211,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 67.5499830646738,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928500000039747,
+              "original_contact_area_mm2": 41.63335853304903,
+              "revised_contact_area_mm2": 41.63335853304903
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585885197409755,
+              "revised_contact_area_mm2": 29.58588519741036
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928500000039747,
+              "original_contact_area_mm2": 41.633358533048515,
+              "revised_contact_area_mm2": 41.633358533048515
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            0.017634999999974754,
+            132.18824499999639,
+            5.0
+          ],
+          "bounds_mm": [
+            -2.5929700000014853,
+            126.68480999999386,
+            5.0,
+            2.6282400000014348,
+            137.6916799999989,
+            5.0
+          ],
+          "axis_change_mm": 1.1369225860323765e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 108.74274868496039,
+          "nominal_OD10_washer_diagonal_clearance_mm": 108.40133786504737,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 106.35579815522674,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892830000001066,
+              "original_contact_area_mm2": 41.63322253698133,
+              "revised_contact_area_mm2": 41.63322253698133
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585671150512248,
+              "revised_contact_area_mm2": 29.585671150512233
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892830000001066,
+              "original_contact_area_mm2": 41.6332225369808,
+              "revised_contact_area_mm2": 41.6332225369808
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -58.82675499999654,
+            132.18824499999505,
+            5.0
+          ],
+          "bounds_mm": [
+            -61.43737,
+            126.68480999999196,
+            5.0,
+            -56.216139999993075,
+            137.69167999999812,
+            5.0
+          ],
+          "axis_change_mm": 8.332760994342108e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 67.1334744101067,
+          "nominal_OD10_washer_diagonal_clearance_mm": 66.79207066126493,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 64.74653802251314,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928199999996167,
+              "original_contact_area_mm2": 41.6331545382251,
+              "revised_contact_area_mm2": 41.6331545382251
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585505639973903,
+              "revised_contact_area_mm2": 29.585505639973995
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928199999996167,
+              "original_contact_area_mm2": 41.63315453822456,
+              "revised_contact_area_mm2": 41.63315453822456
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -150.92922499994552,
+            114.40792499999674,
+            5.0
+          ],
+          "bounds_mm": [
+            -156.43265999992573,
+            111.79732999999105,
+            5.0,
+            -145.42578999996528,
+            117.01852000000243,
+            5.0
+          ],
+          "axis_change_mm": 3.377881604366369e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 14.579799365946393,
+          "nominal_OD10_washer_diagonal_clearance_mm": 14.23837440393605,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 12.19282762306636,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892839999974541,
+              "original_contact_area_mm2": 41.63329053525538,
+              "revised_contact_area_mm2": 41.63329053525538
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.58573763225378,
+              "revised_contact_area_mm2": 29.585737632254226
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892839999974541,
+              "original_contact_area_mm2": 41.63329053525573,
+              "revised_contact_area_mm2": 41.63329053525573
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -117.67118499997451,
+            132.18824499999423,
+            5.0
+          ],
+          "bounds_mm": [
+            -120.28178,
+            126.68480999999083,
+            5.0,
+            -115.06058999994903,
+            137.69167999999763,
+            5.0
+          ],
+          "axis_change_mm": 1.1718571004216928e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 25.524185993117396,
+          "nominal_OD10_washer_diagonal_clearance_mm": 25.182775173223952,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 23.137228392351876,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892839999977916,
+              "original_contact_area_mm2": 41.63329053525598,
+              "revised_contact_area_mm2": 41.63329053525598
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585711104671795,
+              "revised_contact_area_mm2": 29.585711104671773
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892839999977916,
+              "original_contact_area_mm2": 41.63329053525549,
+              "revised_contact_area_mm2": 41.63329053525549
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        }
+      ],
+      "tabs": [
+        {
+          "bounds_mm": [
+            -168.4,
+            45.0,
+            0.0,
+            -163.55,
+            65.0,
+            5.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        },
+        {
+          "bounds_mm": [
+            -168.4,
+            85.0,
+            0.0,
+            -163.55,
+            105.0,
+            5.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        },
+        {
+          "bounds_mm": [
+            163.55,
+            45.0,
+            0.0,
+            168.4,
+            65.0,
+            5.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        },
+        {
+          "bounds_mm": [
+            163.55,
+            85.0,
+            0.0,
+            168.4,
+            105.0,
+            5.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        }
+      ],
+      "corner_and_end_lip_overlaps": [
+        {
+          "neighbor": "body-left",
+          "lip_bounds_mm": [
+            -163.7,
+            0.0,
+            5.0094,
+            -158.7,
+            11.92383,
+            5.0094
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009400000000000297,
+          "original_projected_overlap_mm2": 57.830575500000286,
+          "revised_projected_overlap_mm2": 11.39472643445002,
+          "projected_overlap_lost_mm2": 46.435849065550265,
+          "location": "corner lip"
+        },
+        {
+          "neighbor": "body-left",
+          "lip_bounds_mm": [
+            -163.7,
+            138.11148,
+            5.0094,
+            -158.7,
+            143.01508,
+            5.0094
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009400000000000297,
+          "original_projected_overlap_mm2": 23.782460000000167,
+          "revised_projected_overlap_mm2": 0.0,
+          "projected_overlap_lost_mm2": 23.782460000000167,
+          "location": "corner lip"
+        },
+        {
+          "neighbor": "body-right",
+          "lip_bounds_mm": [
+            158.7,
+            0.0,
+            5.008,
+            163.7,
+            11.92383,
+            5.008
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.008000000000000007,
+          "original_projected_overlap_mm2": 57.83057550000027,
+          "revised_projected_overlap_mm2": 0.29940643445000115,
+          "projected_overlap_lost_mm2": 57.53116906555027,
+          "location": "corner lip"
+        },
+        {
+          "neighbor": "body-right",
+          "lip_bounds_mm": [
+            158.7,
+            138.11148,
+            5.008,
+            163.7,
+            143.01508,
+            5.008
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.008000000000000007,
+          "original_projected_overlap_mm2": 23.782460000000167,
+          "revised_projected_overlap_mm2": 0.0,
+          "projected_overlap_lost_mm2": 23.782460000000167,
+          "location": "corner lip"
+        },
+        {
+          "neighbor": "body-back",
+          "lip_bounds_mm": [
+            -156.71398,
+            142.0,
+            5.00952,
+            -133.71239,
+            145.0,
+            5.00952
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009520000000000195,
+          "original_projected_overlap_mm2": 68.8741209687997,
+          "revised_projected_overlap_mm2": 45.91720850639989,
+          "projected_overlap_lost_mm2": 22.956912462399814,
+          "location": "corner lip"
+        },
+        {
+          "neighbor": "body-back",
+          "lip_bounds_mm": [
+            -106.66338,
+            142.0,
+            5.00952,
+            -69.83269,
+            145.0,
+            5.00952
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009520000000000195,
+          "original_projected_overlap_mm2": 110.28287168079956,
+          "revised_projected_overlap_mm2": 110.28287168079956,
+          "projected_overlap_lost_mm2": 0.0,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-back",
+          "lip_bounds_mm": [
+            -47.81896,
+            142.0,
+            5.00952,
+            -10.988329999999998,
+            145.0,
+            5.00952
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009520000000000195,
+          "original_projected_overlap_mm2": 110.28269202159954,
+          "revised_projected_overlap_mm2": 110.28269202159954,
+          "projected_overlap_lost_mm2": 0.0,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-back",
+          "lip_bounds_mm": [
+            11.02546,
+            142.0,
+            5.00952,
+            47.85615,
+            145.0,
+            5.00952
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009520000000000195,
+          "original_projected_overlap_mm2": 110.28287168079953,
+          "revised_projected_overlap_mm2": 110.28287168079953,
+          "projected_overlap_lost_mm2": 0.0,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-back",
+          "lip_bounds_mm": [
+            69.86982,
+            142.0,
+            5.00952,
+            106.70051,
+            145.0,
+            5.00952
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009520000000000195,
+          "original_projected_overlap_mm2": 110.28287168079952,
+          "revised_projected_overlap_mm2": 110.28287168079952,
+          "projected_overlap_lost_mm2": 0.0,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-back",
+          "lip_bounds_mm": [
+            133.71431,
+            142.0,
+            5.00952,
+            156.71577,
+            145.0,
+            5.00952
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009520000000000195,
+          "original_projected_overlap_mm2": 68.87373170719965,
+          "revised_projected_overlap_mm2": 57.8887394119997,
+          "projected_overlap_lost_mm2": 10.984992295199952,
+          "location": "corner lip"
+        }
+      ],
+      "neighbor_intersections": [
+        {
+          "neighbor": "body-left",
+          "old_overlap_mm3": 0.0,
+          "new_overlap_mm3": 0.0
+        },
+        {
+          "neighbor": "body-right",
+          "old_overlap_mm3": 0.0,
+          "new_overlap_mm3": 0.0
+        },
+        {
+          "neighbor": "body-front",
+          "old_overlap_mm3": 0.0,
+          "new_overlap_mm3": 0.0
+        },
+        {
+          "neighbor": "body-back",
+          "old_overlap_mm3": 0.0,
+          "new_overlap_mm3": 0.0
+        }
+      ]
+    }
+  },
+  "unchanged_parts": [
+    {
+      "part": "body-back",
+      "byte_identical": true
+    },
+    {
+      "part": "body-front",
+      "byte_identical": true
+    },
+    {
+      "part": "body-left",
+      "byte_identical": true
+    },
+    {
+      "part": "body-right",
+      "byte_identical": true
+    },
+    {
+      "part": "lid-back",
+      "byte_identical": true
+    },
+    {
+      "part": "lid-front",
+      "byte_identical": true
+    },
+    {
+      "part": "lid-left",
+      "byte_identical": true
+    },
+    {
+      "part": "lid-right",
+      "byte_identical": true
+    },
+    {
+      "part": "lid-top-single",
+      "byte_identical": true
+    },
+    {
+      "part": "spacer-8mm-reference",
+      "byte_identical": true
+    },
+    {
+      "part": "spacer-left-1",
+      "byte_identical": true
+    },
+    {
+      "part": "spacer-left-2",
+      "byte_identical": true
+    },
+    {
+      "part": "spacer-left-3",
+      "byte_identical": true
+    },
+    {
+      "part": "spacer-left-4",
+      "byte_identical": true
+    },
+    {
+      "part": "spacer-right-1",
+      "byte_identical": true
+    },
+    {
+      "part": "spacer-right-2",
+      "byte_identical": true
+    },
+    {
+      "part": "spacer-right-3",
+      "byte_identical": true
+    },
+    {
+      "part": "spacer-right-4",
+      "byte_identical": true
+    }
+  ],
+  "step_sha256": {
+    "10box-v2-r5/source-r4/step/body-bottom-front.step": "ab464597f46a6630565520359c871ceea31ee3f02d6f8129fe17873d8dd45a25",
+    "10box-v2-r5/source-r4/step/body-bottom-back.step": "bf9bbede9a50a6353dbb01ef0b000e2891d03f279607d83c6d5318b7cc955376",
+    "10box-v2-r5/step/body-bottom-front.step": "4d96ff29df11bd992e8e9b46c616fc7a5fd1305e8e73330000a64566c8afcc75",
+    "10box-v2-r5/step/body-bottom-back.step": "bc908deac3a8e7f3646560b380a1ea7177904167c05e338b2d01563c923494ba",
+    "10box-v2-r5/step/body-left.step": "d804cce4575ff234718f85a8287f9ea13d0e10ab0c1832064e2d7c59b5eb1d44",
+    "10box-v2-r5/step/body-right.step": "85476a9b5d6c0f8a86ce63821e13bb1ab04027502efbf9cfa020e98793b65736",
+    "10box-v2-r5/step/body-front.step": "7bd8506e92967a54ab1fb4a8127ed81d5cbb122197642737da0670a11229e13b",
+    "10box-v2-r5/step/body-back.step": "e82f69a295f9132ec040c08bfa9b90e506261505bc6932f6592a31eb71b38d01",
+    "10box-v2-r5/source-r4/step/body-back.step": "e82f69a295f9132ec040c08bfa9b90e506261505bc6932f6592a31eb71b38d01",
+    "10box-v2-r5/source-r4/step/body-front.step": "7bd8506e92967a54ab1fb4a8127ed81d5cbb122197642737da0670a11229e13b",
+    "10box-v2-r5/source-r4/step/body-left.step": "d804cce4575ff234718f85a8287f9ea13d0e10ab0c1832064e2d7c59b5eb1d44",
+    "10box-v2-r5/source-r4/step/body-right.step": "85476a9b5d6c0f8a86ce63821e13bb1ab04027502efbf9cfa020e98793b65736",
+    "10box-v2-r5/source-r4/step/lid-back.step": "b61b964859904e5e37c80bd7f5d39018ef68e3d588814d630cf2266a6958a525",
+    "10box-v2-r5/step/lid-back.step": "b61b964859904e5e37c80bd7f5d39018ef68e3d588814d630cf2266a6958a525",
+    "10box-v2-r5/source-r4/step/lid-front.step": "adfda3648ef01fdaca03e0d65611e6fcae0ee2ac090ebe99befcc35713f9fd08",
+    "10box-v2-r5/step/lid-front.step": "adfda3648ef01fdaca03e0d65611e6fcae0ee2ac090ebe99befcc35713f9fd08",
+    "10box-v2-r5/source-r4/step/lid-left.step": "5e26b3b1223ed7b3f590ba2556986dc48d79641a88438155cb7bed85ab1b75f1",
+    "10box-v2-r5/step/lid-left.step": "5e26b3b1223ed7b3f590ba2556986dc48d79641a88438155cb7bed85ab1b75f1",
+    "10box-v2-r5/source-r4/step/lid-right.step": "a2d12cce6ce4e06289f28fc6e34646551711595d414f0288ef8e7c2e67935151",
+    "10box-v2-r5/step/lid-right.step": "a2d12cce6ce4e06289f28fc6e34646551711595d414f0288ef8e7c2e67935151",
+    "10box-v2-r5/source-r4/step/lid-top-single.step": "33b7ec7b5406a83d71e9d7daffb1e473006a17b0ddebfc1da64c8a205ce8f9f4",
+    "10box-v2-r5/step/lid-top-single.step": "33b7ec7b5406a83d71e9d7daffb1e473006a17b0ddebfc1da64c8a205ce8f9f4",
+    "10box-v2-r5/source-r4/step/spacer-8mm-reference.step": "9d174f857cb865e489a151ec34da0f4422f3d33fbe7797ce79139f1c5edaea29",
+    "10box-v2-r5/step/spacer-8mm-reference.step": "9d174f857cb865e489a151ec34da0f4422f3d33fbe7797ce79139f1c5edaea29",
+    "10box-v2-r5/source-r4/step/spacer-left-1.step": "6b7e7210f33db6f9319b32482387510d609e7b652e227079cc41c55bebd2dc16",
+    "10box-v2-r5/step/spacer-left-1.step": "6b7e7210f33db6f9319b32482387510d609e7b652e227079cc41c55bebd2dc16",
+    "10box-v2-r5/source-r4/step/spacer-left-2.step": "76ec9c933c8094aacf381b56ead58819b4654d4b322b0b1ee9f85f2aca3474f5",
+    "10box-v2-r5/step/spacer-left-2.step": "76ec9c933c8094aacf381b56ead58819b4654d4b322b0b1ee9f85f2aca3474f5",
+    "10box-v2-r5/source-r4/step/spacer-left-3.step": "35fb489dd768f95e274d0565b51ba39dbef84a4845efdda2614d0bcfbc343b7d",
+    "10box-v2-r5/step/spacer-left-3.step": "35fb489dd768f95e274d0565b51ba39dbef84a4845efdda2614d0bcfbc343b7d",
+    "10box-v2-r5/source-r4/step/spacer-left-4.step": "d6026bcaa4d666be836932a06ec4855b2ecd6f3bfb5c033b9a932f50f3742f25",
+    "10box-v2-r5/step/spacer-left-4.step": "d6026bcaa4d666be836932a06ec4855b2ecd6f3bfb5c033b9a932f50f3742f25",
+    "10box-v2-r5/source-r4/step/spacer-right-1.step": "054c7a1b0ca582ec3c6267bc8591c958d8771b37440c02c5d7dc4dd8257138e8",
+    "10box-v2-r5/step/spacer-right-1.step": "054c7a1b0ca582ec3c6267bc8591c958d8771b37440c02c5d7dc4dd8257138e8",
+    "10box-v2-r5/source-r4/step/spacer-right-2.step": "98d4b5500ef51366ba28aa715c6354fbe17c238c8a28253c0ccb41ea8c9d5e28",
+    "10box-v2-r5/step/spacer-right-2.step": "98d4b5500ef51366ba28aa715c6354fbe17c238c8a28253c0ccb41ea8c9d5e28",
+    "10box-v2-r5/source-r4/step/spacer-right-3.step": "19f040f370745ceb719019bb6754f7394ae7e2c68438a7d334c16f65435063ca",
+    "10box-v2-r5/step/spacer-right-3.step": "19f040f370745ceb719019bb6754f7394ae7e2c68438a7d334c16f65435063ca",
+    "10box-v2-r5/source-r4/step/spacer-right-4.step": "8a0796728d71d3028fd52a103d2b4cfe23a77a50f4f7aac03452a6e43a4f1ae5",
+    "10box-v2-r5/step/spacer-right-4.step": "8a0796728d71d3028fd52a103d2b4cfe23a77a50f4f7aac03452a6e43a4f1ae5"
+  },
+  "checks": [
+    {
+      "check": "all other active STEP files remain byte-identical to frozen R4",
+      "passed": true,
+      "parts": [
+        {
+          "part": "body-back",
+          "byte_identical": true
+        },
+        {
+          "part": "body-front",
+          "byte_identical": true
+        },
+        {
+          "part": "body-left",
+          "byte_identical": true
+        },
+        {
+          "part": "body-right",
+          "byte_identical": true
+        },
+        {
+          "part": "lid-back",
+          "byte_identical": true
+        },
+        {
+          "part": "lid-front",
+          "byte_identical": true
+        },
+        {
+          "part": "lid-left",
+          "byte_identical": true
+        },
+        {
+          "part": "lid-right",
+          "byte_identical": true
+        },
+        {
+          "part": "lid-top-single",
+          "byte_identical": true
+        },
+        {
+          "part": "spacer-8mm-reference",
+          "byte_identical": true
+        },
+        {
+          "part": "spacer-left-1",
+          "byte_identical": true
+        },
+        {
+          "part": "spacer-left-2",
+          "byte_identical": true
+        },
+        {
+          "part": "spacer-left-3",
+          "byte_identical": true
+        },
+        {
+          "part": "spacer-left-4",
+          "byte_identical": true
+        },
+        {
+          "part": "spacer-right-1",
+          "byte_identical": true
+        },
+        {
+          "part": "spacer-right-2",
+          "byte_identical": true
+        },
+        {
+          "part": "spacer-right-3",
+          "byte_identical": true
+        },
+        {
+          "part": "spacer-right-4",
+          "byte_identical": true
+        }
+      ]
+    },
+    {
+      "check": "body-bottom-front is one valid connected solid",
+      "passed": true,
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 234769.06986338206
+    },
+    {
+      "check": "body-bottom-front keeps assembly bounds and 5 mm thickness",
+      "passed": true,
+      "before_bounds_mm": [
+        -168.4,
+        -144.99432,
+        36.0,
+        168.4,
+        0.0,
+        41.0
+      ],
+      "after_bounds_mm": [
+        -168.4,
+        -144.99432,
+        36.0,
+        168.4,
+        1.80696635214176e-14,
+        41.0
+      ],
+      "dimensions_mm": [
+        336.8,
+        144.99432000000002,
+        5.0
+      ]
+    },
+    {
+      "check": "body-bottom-front differs only by the approved 12/16 mm corner cuts",
+      "passed": true,
+      "unexpected_volume_mm3": 0.0,
+      "missing_volume_mm3": 0.0,
+      "clipping_bands": {
+        "u": "assembly X",
+        "v": "assembly Y minus -72.49716",
+        "absolute_u_plus_v_max_mm": 224.04716000000002,
+        "absolute_minus_u_plus_v_max_mm": 220.04716000000002
+      }
+    },
+    {
+      "check": "body-bottom-front adds no material and removes exactly 2000 cubic mm",
+      "passed": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 1999.9999999999995,
+      "removed_material_fraction": 0.008447049275287598
+    },
+    {
+      "check": "body-bottom-front has exactly four triangular floor openings",
+      "passed": true,
+      "corners": [
+        {
+          "bounds_mm": [
+            -163.55,
+            -16.000000000000014,
+            36.0,
+            -147.55,
+            0.0,
+            41.0
+          ],
+          "edge_legs_mm": [
+            16.0,
+            16.000000000000014
+          ],
+          "triangle_opening_area_mm2": 128.00000000000006,
+          "diagonal_edge_length_mm": 22.62741699796953,
+          "removed_volume_mm3": 640.0000000000002,
+          "location": "center step"
+        },
+        {
+          "bounds_mm": [
+            151.55,
+            -12.000000000000009,
+            36.0,
+            163.55,
+            0.0,
+            41.0
+          ],
+          "edge_legs_mm": [
+            12.0,
+            12.000000000000009
+          ],
+          "triangle_opening_area_mm2": 72.00000000000004,
+          "diagonal_edge_length_mm": 16.970562748477146,
+          "removed_volume_mm3": 360.0000000000002,
+          "location": "center step"
+        },
+        {
+          "bounds_mm": [
+            -163.55,
+            -144.99432,
+            36.0,
+            -151.55,
+            -132.99432,
+            41.0
+          ],
+          "edge_legs_mm": [
+            12.0,
+            12.0
+          ],
+          "triangle_opening_area_mm2": 72.00000000000004,
+          "diagonal_edge_length_mm": 16.97056274847714,
+          "removed_volume_mm3": 360.0000000000002,
+          "location": "outer end"
+        },
+        {
+          "bounds_mm": [
+            147.55,
+            -144.99432,
+            36.0,
+            163.55,
+            -128.99431999999996,
+            41.0
+          ],
+          "edge_legs_mm": [
+            16.0,
+            16.00000000000003
+          ],
+          "triangle_opening_area_mm2": 127.99999999999984,
+          "diagonal_edge_length_mm": 22.62741699796954,
+          "removed_volume_mm3": 639.9999999999992,
+          "location": "outer end"
+        }
+      ],
+      "total_opening_area_mm2": 400.0
+    },
+    {
+      "check": "body-bottom-front retains all nine closed slot profiles and axes",
+      "passed": true,
+      "original_slot_count": 9,
+      "revised_slot_count": 9,
+      "slots": [
+        {
+          "center_mm": [
+            117.67118499997204,
+            -132.18824499993977,
+            41.0
+          ],
+          "bounds_mm": [
+            115.06058999994407,
+            -137.69167999997782,
+            41.0,
+            120.28178,
+            -126.68480999990172,
+            41.0
+          ],
+          "axis_change_mm": 2.48584409370972e-11,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 25.524185993117396,
+          "nominal_OD10_washer_diagonal_clearance_mm": 25.182775173264226,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 23.137228392369398,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928400000100893,
+              "original_contact_area_mm2": 41.6332905352537,
+              "revised_contact_area_mm2": 41.63329053525374
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.5857111047082,
+              "revised_contact_area_mm2": 29.58571110466501
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928400000100893,
+              "original_contact_area_mm2": 41.63329053524895,
+              "revised_contact_area_mm2": 41.633290535249
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            150.92922499994103,
+            -114.40792499997508,
+            41.0
+          ],
+          "bounds_mm": [
+            145.42578999995635,
+            -117.01852000000001,
+            41.0,
+            156.43265999992573,
+            -111.79732999995014,
+            41.0
+          ],
+          "axis_change_mm": 4.9454511489408965e-11,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 14.579799365946393,
+          "nominal_OD10_washer_diagonal_clearance_mm": 14.238374403954538,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 12.192827623095305,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928399999597545,
+              "original_contact_area_mm2": 41.63329053524797,
+              "revised_contact_area_mm2": 41.633290535247966
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585737632094744,
+              "revised_contact_area_mm2": 29.5857376322949
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928399999597545,
+              "original_contact_area_mm2": 41.633290535250936,
+              "revised_contact_area_mm2": 41.633290535251376
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            58.826754999994876,
+            -132.18824499994486,
+            41.0
+          ],
+          "bounds_mm": [
+            56.21613999998974,
+            -137.69167999994724,
+            41.0,
+            61.43737,
+            -126.68480999994244,
+            41.0
+          ],
+          "axis_change_mm": 1.3577317138777556e-12,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 67.1334744101067,
+          "nominal_OD10_washer_diagonal_clearance_mm": 66.79207066130158,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 64.74653802255145,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928199999972684,
+              "original_contact_area_mm2": 41.63315453822284,
+              "revised_contact_area_mm2": 41.63315453822292
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585505639969305,
+              "revised_contact_area_mm2": 29.58550563997454
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928199999972684,
+              "original_contact_area_mm2": 41.633154538218065,
+              "revised_contact_area_mm2": 41.633154538218164
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -0.017634999998982215,
+            -132.18824499993204,
+            41.0
+          ],
+          "bounds_mm": [
+            -2.6282400000073878,
+            -137.69167999991822,
+            41.0,
+            2.5929700000094233,
+            -126.68480999994584,
+            41.0
+          ],
+          "axis_change_mm": 1.1368878926877637e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 108.74274868496039,
+          "nominal_OD10_washer_diagonal_clearance_mm": 108.40133786509219,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 106.35579815528801,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892829999977785,
+              "original_contact_area_mm2": 41.63322253697898,
+              "revised_contact_area_mm2": 41.633222536979
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585671150496655,
+              "revised_contact_area_mm2": 29.585671150511928
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892829999977785,
+              "original_contact_area_mm2": 41.63322253697428,
+              "revised_contact_area_mm2": 41.6332225369743
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -58.862054999996005,
+            -132.1882449999319,
+            41.0
+          ],
+          "bounds_mm": [
+            -61.472640000000006,
+            -137.69167999992462,
+            41.0,
+            -56.251469999992,
+            -126.68480999993919,
+            41.0
+          ],
+          "axis_change_mm": 4.412235823639328e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 69.93694773654482,
+          "nominal_OD10_washer_diagonal_clearance_mm": 69.59553691668025,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 67.54998306473273,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928499999887087,
+              "original_contact_area_mm2": 41.63335853304674,
+              "revised_contact_area_mm2": 41.633358533046746
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.58588519740621,
+              "revised_contact_area_mm2": 29.58588519742056
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928499999887087,
+              "original_contact_area_mm2": 41.63335853304203,
+              "revised_contact_area_mm2": 41.633358533042035
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -117.70646999997551,
+            -132.18824499994957,
+            41.0
+          ],
+          "bounds_mm": [
+            -120.31708,
+            -137.69167999998146,
+            41.0,
+            -115.09585999995102,
+            -126.6848099999177,
+            41.0
+          ],
+          "axis_change_mm": 2.3962046393942263e-12,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 28.327666390623364,
+          "nominal_OD10_washer_diagonal_clearance_mm": 27.986252035226855,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 25.940715860935658,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928250000073845,
+              "original_contact_area_mm2": 41.633188537661105,
+              "revised_contact_area_mm2": 41.63318853766115
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585570374499298,
+              "revised_contact_area_mm2": 29.585570374533955
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928250000073845,
+              "original_contact_area_mm2": 41.633188537656366,
+              "revised_contact_area_mm2": 41.63318853765641
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -150.89392999991762,
+            -114.40792499996275,
+            41.0
+          ],
+          "bounds_mm": [
+            -156.3973499999343,
+            -117.01851999999998,
+            41.0,
+            -145.39050999990093,
+            -111.79732999992551,
+            41.0
+          ],
+          "axis_change_mm": 4.831690603168681e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 17.433173217932843,
+          "nominal_OD10_washer_diagonal_clearance_mm": 17.091758862568003,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 15.046222688296558,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892824999979453,
+              "original_contact_area_mm2": 41.633290535248,
+              "revised_contact_area_mm2": 41.6332905352484
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.58572922532616,
+              "revised_contact_area_mm2": 29.58572922502517
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892824999979453,
+              "original_contact_area_mm2": 41.63329053525169,
+              "revised_contact_area_mm2": 41.63329053525135
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            150.9292249999384,
+            -35.9486949999961,
+            41.0
+          ],
+          "bounds_mm": [
+            145.42578999995217,
+            -38.55930000000001,
+            41.0,
+            156.43265999992462,
+            -33.33808999999219,
+            41.0
+          ],
+          "axis_change_mm": 5.5933924610345255e-11,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 21.19994518344921,
+          "nominal_OD10_washer_diagonal_clearance_mm": 20.858520221438827,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 18.81298051163145,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892829999982318,
+              "original_contact_area_mm2": 41.63324146647217,
+              "revised_contact_area_mm2": 41.633241466472505
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585697943294864,
+              "revised_contact_area_mm2": 29.58569794345614
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892829999982318,
+              "original_contact_area_mm2": 41.63323760645689,
+              "revised_contact_area_mm2": 41.63323760645652
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -150.89392999996318,
+            -35.94869499999905,
+            41.0
+          ],
+          "bounds_mm": [
+            -156.3973499999895,
+            -38.55930000000067,
+            41.0,
+            -145.39050999993688,
+            -33.33808999999743,
+            41.0
+          ],
+          "axis_change_mm": 8.080217512445813e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 18.39646478594328,
+          "nominal_OD10_washer_diagonal_clearance_mm": 18.055050430519195,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 16.009521327283572,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.89281500002469,
+              "original_contact_area_mm2": 41.633241466442435,
+              "revised_contact_area_mm2": 41.63324146644256
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585689536177945,
+              "revised_contact_area_mm2": 29.585689535945296
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.89281500002469,
+              "original_contact_area_mm2": 41.633237606609754,
+              "revised_contact_area_mm2": 41.633237606609704
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "check": "body-bottom-front retains the material within each 20 x 20 mm local fixing region",
+      "passed": true,
+      "region_size_mm": [
+        20,
+        20,
+        5
+      ],
+      "scope": "Local geometry retention; no bracket hardware dimensions assumed."
+    },
+    {
+      "check": "body-bottom-front preserves nominal OD10 washer land through nominal slot travel",
+      "passed": true,
+      "minimum_diagonal_clearance_mm": 12.192827623095305,
+      "washer_dimensions_mm": {
+        "outer_diameter": 10,
+        "inner_diameter": 5.5
+      },
+      "scope": "Nominal geometric envelope; physical hardware and strength are not qualified."
+    },
+    {
+      "check": "body-bottom-front retains all four tab profiles and their inner roots",
+      "passed": true,
+      "tabs": [
+        {
+          "bounds_mm": [
+            -168.4,
+            -65.0,
+            36.0,
+            -163.55,
+            -45.0,
+            41.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        },
+        {
+          "bounds_mm": [
+            -168.4,
+            -105.0,
+            36.0,
+            -163.55,
+            -85.0,
+            41.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        },
+        {
+          "bounds_mm": [
+            163.55,
+            -65.0,
+            36.0,
+            168.4,
+            -45.0,
+            41.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        },
+        {
+          "bounds_mm": [
+            163.55,
+            -105.0,
+            36.0,
+            168.4,
+            -85.0,
+            41.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "check": "body-bottom-front introduces no additional intersection with neighboring walls",
+      "passed": true,
+      "intersections": [
+        {
+          "neighbor": "body-left",
+          "old_overlap_mm3": 0.6178073744300999,
+          "new_overlap_mm3": 0.002266155248826946
+        },
+        {
+          "neighbor": "body-right",
+          "old_overlap_mm3": 0.7320650130298345,
+          "new_overlap_mm3": 0.10220812685783329
+        },
+        {
+          "neighbor": "body-front",
+          "old_overlap_mm3": 5.638286223982457,
+          "new_overlap_mm3": 5.307690321762799
+        },
+        {
+          "neighbor": "body-back",
+          "old_overlap_mm3": 0.0,
+          "new_overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "check": "body-bottom-front retains all four middle end-lip overlaps",
+      "passed": true,
+      "contacts": [
+        {
+          "neighbor": "body-front",
+          "lip_bounds_mm": [
+            -106.69966,
+            -145.0,
+            40.99026,
+            -69.86897,
+            -142.0,
+            40.99026
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.009740000000000748,
+          "original_projected_overlap_mm2": 110.28287168079952,
+          "revised_projected_overlap_mm2": 110.28287168079838,
+          "projected_overlap_lost_mm2": 1.1368683772161603e-12,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-front",
+          "lip_bounds_mm": [
+            -47.85518,
+            -145.0,
+            40.99026,
+            -11.02449,
+            -142.0,
+            40.99026
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.009740000000000748,
+          "original_projected_overlap_mm2": 110.28287168079953,
+          "revised_projected_overlap_mm2": 110.28287168079841,
+          "projected_overlap_lost_mm2": 1.1226575225009583e-12,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-front",
+          "lip_bounds_mm": [
+            10.989249999999998,
+            -145.0,
+            40.99026,
+            47.81993,
+            -142.0,
+            40.99026
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.009740000000000748,
+          "original_projected_overlap_mm2": 110.28284173759955,
+          "revised_projected_overlap_mm2": 110.28284173759945,
+          "projected_overlap_lost_mm2": 9.947598300641403e-14,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-front",
+          "lip_bounds_mm": [
+            69.83367,
+            -145.0,
+            40.99026,
+            106.66436,
+            -142.0,
+            40.99026
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.009740000000000748,
+          "original_projected_overlap_mm2": 110.28287168079956,
+          "revised_projected_overlap_mm2": 110.28287168079947,
+          "projected_overlap_lost_mm2": 8.526512829121202e-14,
+          "location": "middle end lip"
+        }
+      ]
+    },
+    {
+      "check": "body-bottom-front retains partial overlap with both end-panel corner lips",
+      "passed": true,
+      "contacts": [
+        {
+          "neighbor": "body-front",
+          "lip_bounds_mm": [
+            -156.71492,
+            -145.0,
+            40.99026,
+            -133.71333,
+            -142.0,
+            40.99026
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.009740000000000748,
+          "original_projected_overlap_mm2": 68.8741209687997,
+          "revised_projected_overlap_mm2": 57.89167384559907,
+          "projected_overlap_lost_mm2": 10.982447123200629,
+          "location": "corner lip"
+        },
+        {
+          "neighbor": "body-front",
+          "lip_bounds_mm": [
+            133.71337,
+            -145.0,
+            40.99026,
+            156.71489,
+            -142.0,
+            40.99026
+          ],
+          "lip_bottom_relative_to_floor_top_mm": -0.009740000000000748,
+          "original_projected_overlap_mm2": 68.87391136639971,
+          "revised_projected_overlap_mm2": 45.91427407279994,
+          "projected_overlap_lost_mm2": 22.95963729359977,
+          "location": "corner lip"
+        }
+      ]
+    },
+    {
+      "check": "body-bottom-back is one valid connected solid",
+      "passed": true,
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 234769.06986338177
+    },
+    {
+      "check": "body-bottom-back keeps assembly bounds and 5 mm thickness",
+      "passed": true,
+      "before_bounds_mm": [
+        -168.4,
+        0.0,
+        0.0,
+        168.4,
+        144.99432,
+        5.0
+      ],
+      "after_bounds_mm": [
+        -168.4,
+        -1.42108547152e-14,
+        0.0,
+        168.4,
+        144.99432,
+        5.0
+      ],
+      "dimensions_mm": [
+        336.8,
+        144.99432,
+        5.0
+      ]
+    },
+    {
+      "check": "body-bottom-back differs only by the approved 12/16 mm corner cuts",
+      "passed": true,
+      "unexpected_volume_mm3": 0.0,
+      "missing_volume_mm3": 0.0,
+      "clipping_bands": {
+        "u": "assembly X",
+        "v": "assembly Y minus 72.49716",
+        "absolute_u_plus_v_max_mm": 224.04716000000002,
+        "absolute_minus_u_plus_v_max_mm": 220.04716000000002
+      }
+    },
+    {
+      "check": "body-bottom-back adds no material and removes exactly 2000 cubic mm",
+      "passed": true,
+      "added_mm3": 0.0,
+      "removed_mm3": 1999.9999999999898,
+      "removed_material_fraction": 0.008447049275287574
+    },
+    {
+      "check": "body-bottom-back has exactly four triangular floor openings",
+      "passed": true,
+      "corners": [
+        {
+          "bounds_mm": [
+            147.55,
+            0.0,
+            0.0,
+            163.55,
+            16.000000000000014,
+            5.0
+          ],
+          "edge_legs_mm": [
+            16.0,
+            16.000000000000014
+          ],
+          "triangle_opening_area_mm2": 127.99999999999986,
+          "diagonal_edge_length_mm": 22.62741699796953,
+          "removed_volume_mm3": 639.9999999999993,
+          "location": "center step"
+        },
+        {
+          "bounds_mm": [
+            -163.55,
+            -1.42108547152e-14,
+            0.0,
+            -151.55,
+            12.000000000000009,
+            5.0
+          ],
+          "edge_legs_mm": [
+            12.0,
+            12.000000000000023
+          ],
+          "triangle_opening_area_mm2": 72.00000000000009,
+          "diagonal_edge_length_mm": 16.970562748477157,
+          "removed_volume_mm3": 360.00000000000045,
+          "location": "center step"
+        },
+        {
+          "bounds_mm": [
+            -163.55,
+            128.99431999999996,
+            0.0,
+            -147.55,
+            144.99432,
+            5.0
+          ],
+          "edge_legs_mm": [
+            16.0,
+            16.00000000000003
+          ],
+          "triangle_opening_area_mm2": 127.9999999999998,
+          "diagonal_edge_length_mm": 22.62741699796954,
+          "removed_volume_mm3": 639.999999999999,
+          "location": "outer end"
+        },
+        {
+          "bounds_mm": [
+            151.55,
+            132.99432,
+            0.0,
+            163.55,
+            144.99432,
+            5.0
+          ],
+          "edge_legs_mm": [
+            12.0,
+            12.0
+          ],
+          "triangle_opening_area_mm2": 72.00000000000004,
+          "diagonal_edge_length_mm": 16.97056274847714,
+          "removed_volume_mm3": 360.0000000000002,
+          "location": "outer end"
+        }
+      ],
+      "total_opening_area_mm2": 399.9999999999998
+    },
+    {
+      "check": "body-bottom-back retains all nine closed slot profiles and axes",
+      "passed": true,
+      "original_slot_count": 9,
+      "revised_slot_count": 9,
+      "slots": [
+        {
+          "center_mm": [
+            150.89392999999635,
+            35.94869500000145,
+            5.0
+          ],
+          "bounds_mm": [
+            145.39050999999617,
+            33.33809000000044,
+            5.0,
+            156.39734999999652,
+            38.55930000000245,
+            5.0
+          ],
+          "axis_change_mm": 7.762821658018119e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 18.39646478594328,
+          "nominal_OD10_washer_diagonal_clearance_mm": 18.05505043049743,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 16.009521327279856,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892814999999171,
+              "original_contact_area_mm2": 41.63323760661544,
+              "revised_contact_area_mm2": 41.63323760661544
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585689535965813,
+              "revised_contact_area_mm2": 29.5856895359658
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892814999999171,
+              "original_contact_area_mm2": 41.63324146645171,
+              "revised_contact_area_mm2": 41.63324146645171
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -150.92922499993836,
+            35.94869500000199,
+            5.0
+          ],
+          "bounds_mm": [
+            -156.43265999992482,
+            33.33808999999883,
+            5.0,
+            -145.42578999995186,
+            38.55930000000515,
+            5.0
+          ],
+          "axis_change_mm": 8.450381726173933e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 21.19994518344921,
+          "nominal_OD10_washer_diagonal_clearance_mm": 20.858520221443026,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 18.81298051163494,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.89282999998332,
+              "original_contact_area_mm2": 41.63323760646508,
+              "revised_contact_area_mm2": 41.63323760646508
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585697943457884,
+              "revised_contact_area_mm2": 29.58569794345835
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.89282999998332,
+              "original_contact_area_mm2": 41.63324146648475,
+              "revised_contact_area_mm2": 41.63324146648475
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            150.89392999999416,
+            114.40792499999887,
+            5.0
+          ],
+          "bounds_mm": [
+            145.390509999995,
+            111.7973299999953,
+            5.0,
+            156.3973499999933,
+            117.01852000000245,
+            5.0
+          ],
+          "axis_change_mm": 8.676771314227237e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 17.433173217932843,
+          "nominal_OD10_washer_diagonal_clearance_mm": 17.09175886248834,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 15.046222688205496,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928249999955753,
+              "original_contact_area_mm2": 41.633290535255405,
+              "revised_contact_area_mm2": 41.633290535255405
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.58572922507293,
+              "revised_contact_area_mm2": 29.585729225073088
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928249999955753,
+              "original_contact_area_mm2": 41.63329053525562,
+              "revised_contact_area_mm2": 41.63329053525562
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            117.70646999999593,
+            132.1882449999958,
+            5.0
+          ],
+          "bounds_mm": [
+            115.09585999999032,
+            126.68480999998711,
+            5.0,
+            120.31708000000155,
+            137.69168000000448,
+            5.0
+          ],
+          "axis_change_mm": 1.8198773652309366e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 28.327666390623364,
+          "nominal_OD10_washer_diagonal_clearance_mm": 27.986252035179746,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 25.9407158608916,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928250000030715,
+              "original_contact_area_mm2": 41.633188537663415,
+              "revised_contact_area_mm2": 41.633188537663415
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.5855703745158,
+              "revised_contact_area_mm2": 29.585570374515697
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928250000030715,
+              "original_contact_area_mm2": 41.63318853766289,
+              "revised_contact_area_mm2": 41.63318853766289
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            58.86205499999998,
+            132.18824499999602,
+            5.0
+          ],
+          "bounds_mm": [
+            56.25146999999694,
+            126.68480999998901,
+            5.0,
+            61.47264000000301,
+            137.69168000000303,
+            5.0
+          ],
+          "axis_change_mm": 1.764951541129878e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 69.93694773654482,
+          "nominal_OD10_washer_diagonal_clearance_mm": 69.59553691663211,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 67.5499830646738,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928500000039747,
+              "original_contact_area_mm2": 41.63335853304903,
+              "revised_contact_area_mm2": 41.63335853304903
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585885197409755,
+              "revised_contact_area_mm2": 29.58588519741036
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928500000039747,
+              "original_contact_area_mm2": 41.633358533048515,
+              "revised_contact_area_mm2": 41.633358533048515
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            0.017634999999974754,
+            132.18824499999639,
+            5.0
+          ],
+          "bounds_mm": [
+            -2.5929700000014853,
+            126.68480999999386,
+            5.0,
+            2.6282400000014348,
+            137.6916799999989,
+            5.0
+          ],
+          "axis_change_mm": 1.1369225860323765e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 108.74274868496039,
+          "nominal_OD10_washer_diagonal_clearance_mm": 108.40133786504737,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 106.35579815522674,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892830000001066,
+              "original_contact_area_mm2": 41.63322253698133,
+              "revised_contact_area_mm2": 41.63322253698133
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585671150512248,
+              "revised_contact_area_mm2": 29.585671150512233
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892830000001066,
+              "original_contact_area_mm2": 41.6332225369808,
+              "revised_contact_area_mm2": 41.6332225369808
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -58.82675499999654,
+            132.18824499999505,
+            5.0
+          ],
+          "bounds_mm": [
+            -61.43737,
+            126.68480999999196,
+            5.0,
+            -56.216139999993075,
+            137.69167999999812,
+            5.0
+          ],
+          "axis_change_mm": 8.332760994342108e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 67.1334744101067,
+          "nominal_OD10_washer_diagonal_clearance_mm": 66.79207066126493,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 64.74653802251314,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.8928199999996167,
+              "original_contact_area_mm2": 41.6331545382251,
+              "revised_contact_area_mm2": 41.6331545382251
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585505639973903,
+              "revised_contact_area_mm2": 29.585505639973995
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.8928199999996167,
+              "original_contact_area_mm2": 41.63315453822456,
+              "revised_contact_area_mm2": 41.63315453822456
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -150.92922499994552,
+            114.40792499999674,
+            5.0
+          ],
+          "bounds_mm": [
+            -156.43265999992573,
+            111.79732999999105,
+            5.0,
+            -145.42578999996528,
+            117.01852000000243,
+            5.0
+          ],
+          "axis_change_mm": 3.377881604366369e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 14.579799365946393,
+          "nominal_OD10_washer_diagonal_clearance_mm": 14.23837440393605,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 12.19282762306636,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892839999974541,
+              "original_contact_area_mm2": 41.63329053525538,
+              "revised_contact_area_mm2": 41.63329053525538
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.58573763225378,
+              "revised_contact_area_mm2": 29.585737632254226
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892839999974541,
+              "original_contact_area_mm2": 41.63329053525573,
+              "revised_contact_area_mm2": 41.63329053525573
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        },
+        {
+          "center_mm": [
+            -117.67118499997451,
+            132.18824499999423,
+            5.0
+          ],
+          "bounds_mm": [
+            -120.28178,
+            126.68480999999083,
+            5.0,
+            -115.06058999994903,
+            137.69167999999763,
+            5.0
+          ],
+          "axis_change_mm": 1.1718571004216928e-13,
+          "profile_extra_mm3": 0.0,
+          "profile_lost_mm3": 0.0,
+          "new_diagonal_edge_web_mm": 25.524185993117396,
+          "nominal_OD10_washer_diagonal_clearance_mm": 25.182775173223952,
+          "OD10_full_nominal_slot_travel_diagonal_clearance_mm": 23.137228392351876,
+          "washer_contact_samples": [
+            {
+              "nominal_slot_travel_offset_mm": -2.892839999977916,
+              "original_contact_area_mm2": 41.63329053525598,
+              "revised_contact_area_mm2": 41.63329053525598
+            },
+            {
+              "nominal_slot_travel_offset_mm": 0.0,
+              "original_contact_area_mm2": 29.585711104671795,
+              "revised_contact_area_mm2": 29.585711104671773
+            },
+            {
+              "nominal_slot_travel_offset_mm": 2.892839999977916,
+              "original_contact_area_mm2": 41.63329053525549,
+              "revised_contact_area_mm2": 41.63329053525549
+            }
+          ],
+          "local_20x20_mounting_region_extra_mm3": 0.0,
+          "local_20x20_mounting_region_lost_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "check": "body-bottom-back retains the material within each 20 x 20 mm local fixing region",
+      "passed": true,
+      "region_size_mm": [
+        20,
+        20,
+        5
+      ],
+      "scope": "Local geometry retention; no bracket hardware dimensions assumed."
+    },
+    {
+      "check": "body-bottom-back preserves nominal OD10 washer land through nominal slot travel",
+      "passed": true,
+      "minimum_diagonal_clearance_mm": 12.19282762306636,
+      "washer_dimensions_mm": {
+        "outer_diameter": 10,
+        "inner_diameter": 5.5
+      },
+      "scope": "Nominal geometric envelope; physical hardware and strength are not qualified."
+    },
+    {
+      "check": "body-bottom-back retains all four tab profiles and their inner roots",
+      "passed": true,
+      "tabs": [
+        {
+          "bounds_mm": [
+            -168.4,
+            45.0,
+            0.0,
+            -163.55,
+            65.0,
+            5.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        },
+        {
+          "bounds_mm": [
+            -168.4,
+            85.0,
+            0.0,
+            -163.55,
+            105.0,
+            5.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        },
+        {
+          "bounds_mm": [
+            163.55,
+            45.0,
+            0.0,
+            168.4,
+            65.0,
+            5.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        },
+        {
+          "bounds_mm": [
+            163.55,
+            85.0,
+            0.0,
+            168.4,
+            105.0,
+            5.0
+          ],
+          "volume_mm3": 484.99999999999943,
+          "tab_extra_mm3": 0.0,
+          "tab_lost_mm3": 0.0,
+          "inner_5mm_root_extra_mm3": 0.0,
+          "inner_5mm_root_lost_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "check": "body-bottom-back introduces no additional intersection with neighboring walls",
+      "passed": true,
+      "intersections": [
+        {
+          "neighbor": "body-left",
+          "old_overlap_mm3": 0.0,
+          "new_overlap_mm3": 0.0
+        },
+        {
+          "neighbor": "body-right",
+          "old_overlap_mm3": 0.0,
+          "new_overlap_mm3": 0.0
+        },
+        {
+          "neighbor": "body-front",
+          "old_overlap_mm3": 0.0,
+          "new_overlap_mm3": 0.0
+        },
+        {
+          "neighbor": "body-back",
+          "old_overlap_mm3": 0.0,
+          "new_overlap_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "check": "body-bottom-back retains all four middle end-lip overlaps",
+      "passed": true,
+      "contacts": [
+        {
+          "neighbor": "body-back",
+          "lip_bounds_mm": [
+            -106.66338,
+            142.0,
+            5.00952,
+            -69.83269,
+            145.0,
+            5.00952
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009520000000000195,
+          "original_projected_overlap_mm2": 110.28287168079956,
+          "revised_projected_overlap_mm2": 110.28287168079956,
+          "projected_overlap_lost_mm2": 0.0,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-back",
+          "lip_bounds_mm": [
+            -47.81896,
+            142.0,
+            5.00952,
+            -10.988329999999998,
+            145.0,
+            5.00952
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009520000000000195,
+          "original_projected_overlap_mm2": 110.28269202159954,
+          "revised_projected_overlap_mm2": 110.28269202159954,
+          "projected_overlap_lost_mm2": 0.0,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-back",
+          "lip_bounds_mm": [
+            11.02546,
+            142.0,
+            5.00952,
+            47.85615,
+            145.0,
+            5.00952
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009520000000000195,
+          "original_projected_overlap_mm2": 110.28287168079953,
+          "revised_projected_overlap_mm2": 110.28287168079953,
+          "projected_overlap_lost_mm2": 0.0,
+          "location": "middle end lip"
+        },
+        {
+          "neighbor": "body-back",
+          "lip_bounds_mm": [
+            69.86982,
+            142.0,
+            5.00952,
+            106.70051,
+            145.0,
+            5.00952
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009520000000000195,
+          "original_projected_overlap_mm2": 110.28287168079952,
+          "revised_projected_overlap_mm2": 110.28287168079952,
+          "projected_overlap_lost_mm2": 0.0,
+          "location": "middle end lip"
+        }
+      ]
+    },
+    {
+      "check": "body-bottom-back retains partial overlap with both end-panel corner lips",
+      "passed": true,
+      "contacts": [
+        {
+          "neighbor": "body-back",
+          "lip_bounds_mm": [
+            -156.71398,
+            142.0,
+            5.00952,
+            -133.71239,
+            145.0,
+            5.00952
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009520000000000195,
+          "original_projected_overlap_mm2": 68.8741209687997,
+          "revised_projected_overlap_mm2": 45.91720850639989,
+          "projected_overlap_lost_mm2": 22.956912462399814,
+          "location": "corner lip"
+        },
+        {
+          "neighbor": "body-back",
+          "lip_bounds_mm": [
+            133.71431,
+            142.0,
+            5.00952,
+            156.71577,
+            145.0,
+            5.00952
+          ],
+          "lip_bottom_relative_to_floor_top_mm": 0.009520000000000195,
+          "original_projected_overlap_mm2": 68.87373170719965,
+          "revised_projected_overlap_mm2": 57.8887394119997,
+          "projected_overlap_lost_mm2": 10.984992295199952,
+          "location": "corner lip"
+        }
+      ]
+    },
+    {
+      "check": "front and back are one common part under 180 degree Z rotation plus 36 mm height",
+      "passed": true,
+      "extra_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "rotation_z_degrees": 180,
+      "height_offset_mm": 36
+    },
+    {
+      "check": "337.4 mm exterior width and existing side-frame datums are unchanged",
+      "passed": true,
+      "outside_width_mm": 337.4,
+      "scope": "Body side/end STEP bytes and floor assembly coordinates unchanged."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "revision": "10BOX-V2-R5-FLAT-FLOORS",
+  "rear_floor_center_xy_mm": [0.0, 72.49716],
+  "main_rectangle_half_width_mm": 163.55,
+  "main_rectangle_half_depth_mm": 72.49716,
+  "NE_SW_chamfer_leg_mm": 12.0,
+  "NW_SE_chamfer_leg_mm": 16.0,
+  "floor_thickness_mm": 5.0,
+  "front_floor_height_offset_mm": 36.0,
+  "tab_root_x_mm": 163.4,
+  "tab_tip_x_mm": 168.4,
+  "rear_tab_y_centers_mm": [55.0, 95.0],
+  "tab_width_mm": 20.0,
+  "nominal_print_yaw_degrees": -45.0,
+  "nominal_print_center_xy_mm": [162.5, 160.0],
+  "tessellation_linear_tolerance_mm": 0.06,
+  "tessellation_angular_tolerance_rad": 0.2,
+  "validation_volume_tolerance_mm3": 0.001,
+  "stl_vertex_weld_tolerance_mm": 0.00001,
+  "stl_volume_relative_tolerance": 0.000001
+}

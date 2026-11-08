@@ -1,0 +1,53 @@
+{
+  "scope": "Only the two changed standalone STL exports; exact binary bytes inspected independently of3MF.",
+  "reports": [
+    {
+      "passed": true,
+      "file": "body-bottom-front.stl",
+      "sha256": "ba1c501e8908f4fd53dd45b1ef642aad80f10ac8b77a18391dde58ae7990a426",
+      "vertex_weld_tolerance_mm": 1e-05,
+      "maximum_actual_weld_distance_mm": 0.0,
+      "triangles": 1064,
+      "welded_vertices": 516,
+      "edges": 1596,
+      "degenerate_triangles": 0,
+      "duplicate_triangles": 0,
+      "boundary_edges": 0,
+      "non_two_manifold_edges": 0,
+      "inconsistently_wound_edges": 0,
+      "nonmanifold_vertex_fans": 0,
+      "connected_components": 1,
+      "opposed_or_zero_stored_normals": 0,
+      "euler_characteristic": -16,
+      "expected_euler_for_nine_through_holes": -16,
+      "signed_volume_mm3": 234769.07710544832,
+      "cad_volume_mm3": 234769.06986338142,
+      "relative_volume_error": 3.08476193491879e-08,
+      "maximum_relative_volume_error": 1e-06
+    },
+    {
+      "passed": true,
+      "file": "body-bottom-back.stl",
+      "sha256": "d46de80df66e98998d3d8b6ec206520cb726f7efddf6cc8f3f2cfd63fbbf348b",
+      "vertex_weld_tolerance_mm": 1e-05,
+      "maximum_actual_weld_distance_mm": 0.0,
+      "triangles": 1064,
+      "welded_vertices": 516,
+      "edges": 1596,
+      "degenerate_triangles": 0,
+      "duplicate_triangles": 0,
+      "boundary_edges": 0,
+      "non_two_manifold_edges": 0,
+      "inconsistently_wound_edges": 0,
+      "nonmanifold_vertex_fans": 0,
+      "connected_components": 1,
+      "opposed_or_zero_stored_normals": 0,
+      "euler_characteristic": -16,
+      "expected_euler_for_nine_through_holes": -16,
+      "signed_volume_mm3": 234769.07710544844,
+      "cad_volume_mm3": 234769.06986338136,
+      "relative_volume_error": 3.0847620092995354e-08,
+      "maximum_relative_volume_error": 1e-06
+    }
+  ]
+}

@@ -811,6 +811,55 @@
    "owner": "development",
    "canonical": "development/doc-structure.mdx",
    "treatment": "new"
+  },
+  {
+   "source": null,
+   "canonical": "tenbox-v2/index.mdx",
+   "owner": "tenbox-v2",
+   "treatment": "new",
+   "anchors": []
+  },
+  {
+   "source": null,
+   "canonical": "tenbox-v2/preview.mdx",
+   "owner": "tenbox-v2",
+   "treatment": "new",
+   "anchors": []
+  },
+  {
+   "source": null,
+   "canonical": "tenbox-v2/print-files.mdx",
+   "owner": "tenbox-v2",
+   "treatment": "new",
+   "anchors": []
+  },
+  {
+   "source": null,
+   "canonical": "tenbox-v2/printing.mdx",
+   "owner": "tenbox-v2",
+   "treatment": "new",
+   "anchors": []
+  },
+  {
+   "source": null,
+   "canonical": "tenbox-v2/assembly.mdx",
+   "owner": "tenbox-v2",
+   "treatment": "new",
+   "anchors": []
+  },
+  {
+   "source": null,
+   "canonical": "tenbox-v2/design-and-validation.mdx",
+   "owner": "tenbox-v2",
+   "treatment": "new",
+   "anchors": []
+  },
+  {
+   "source": null,
+   "canonical": "metal-case/maintaining-data.mdx",
+   "owner": "metal-case",
+   "treatment": "new",
+   "anchors": []
   }
  ]
 }

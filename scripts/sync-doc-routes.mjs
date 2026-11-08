@@ -13,6 +13,7 @@ export const OWNER_LABELS = {
   overview: '全体案内',
   'metal-case': '金属ケース',
   'printed-5mm': '家庭印刷ケース',
+  'tenbox-v2': '10BOX-v2',
   'two-way': '2WAY 実験設計',
   shared: '共通部品・元データ',
   development: '開発・保守',

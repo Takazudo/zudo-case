@@ -15,6 +15,10 @@
 
 - `printed-5mm/`：P3（通気孔なし）、P4（Uniform四壁通気孔）、P5（J3差し込み接合、現行）と各H2D 3MF。作業ルールは`printed-5mm/AGENTS.md`。
 
+## 10BOX-v2（2 × 3U60HP）
+
+- `tenbox-v2/r5/`：採用済みR5の独立した家庭印刷候補。7U40 P5とは別系列。原入力・固定R4依存・設定・検証は`tenbox-v2/AGENTS.md`と`../project/tenbox-v2/manifest.json`を参照。製造承認なし。
+
 ## 2WAY 実験設計
 
 - `two-way/`：F5（不変の原資料）とTW-01（作業版）。作業ルールは`two-way/AGENTS.md`。製作CADではない。

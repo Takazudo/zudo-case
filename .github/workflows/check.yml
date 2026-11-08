@@ -36,6 +36,8 @@ jobs:
       - run: pnpm check:docs
       - run: pnpm check:doc-routes
       - run: pnpm test:doc-structure
+      - run: pnpm check:tenbox-v2
+      - run: pnpm test:tenbox-v2
       - run: pnpm check:printed-5mm
       - run: pnpm test:printed-5mm
       - run: pnpm check:r9
@@ -228,3 +230,47 @@ jobs:
             sleep 2
           done
           uv run --locked --project engineering/printed-5mm/p5-tab-joints python scripts/verify-printed-p5-site.py
+
+  tenbox-v2-cad-and-browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: astral-sh/setup-uv@557e51de59eb14aaaba2ed9621916900a91d50c6
+        with:
+          version: 0.10.2
+      - name: Install independent locked R5 CAD environment
+        run: uv sync --locked --project engineering/tenbox-v2/r5
+      - name: Clean CAD and extracted source-package rebuilds
+        run: uv run --locked --project engineering/tenbox-v2/r5 python engineering/tenbox-v2/r5/regenerate.py
+      - name: Importer dispatch and corrupt ZIP failure fixtures
+        run: python3 engineering/tenbox-v2/r5/test_contract.py
+      - uses: pnpm/action-setup@f40ffcd9367d9f12939873eb1018b921a783ffaa
+        with:
+          version: 10.30.3
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 24
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - name: Install pinned browser verification tooling
+        run: |
+          uv venv --python 3.12.14 "$RUNNER_TEMP/browser-env"
+          uv pip install --python "$RUNNER_TEMP/browser-env/bin/python" playwright==1.62.0
+          "$RUNNER_TEMP/browser-env/bin/python" -m playwright install --with-deps chromium
+      - name: Canvas/WebGL, integrated iframe, navigation and full HTTP download verification
+        run: |
+          pnpm dev --port 4391 > "$RUNNER_TEMP/tenbox-site.log" 2>&1 &
+          site_pid=$!
+          python3 -m http.server 4393 --directory dist > "$RUNNER_TEMP/tenbox-built.log" 2>&1 &
+          built_pid=$!
+          ZUDO_CASE_PREVIEW_ORIGIN=http://localhost:4391 pnpm dev --port 4392 > "$RUNNER_TEMP/tenbox-override.log" 2>&1 &
+          override_pid=$!
+          trap 'kill "$site_pid" "$built_pid" "$override_pid"' EXIT
+          for attempt in $(seq 1 90); do
+            if curl --fail --silent http://localhost:4391/docs/tenbox-v2/preview/ -o /dev/null; then break; fi
+            sleep 2
+          done
+          "$RUNNER_TEMP/browser-env/bin/python" scripts/verify-tenbox-site.py
+          "$RUNNER_TEMP/browser-env/bin/python" scripts/verify-case-navigation.py
+          SITE_URL=http://localhost:4392 EXPECTED_PREVIEW_ORIGIN=http://localhost:4391 CASE_NAV_EVIDENCE=.cache/case-navigation-override "$RUNNER_TEMP/browser-env/bin/python" scripts/verify-case-navigation.py

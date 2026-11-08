@@ -1,0 +1,27 @@
+{
+  "scope": "Isolated rebuild using corrected bundled h2d-r5 serializer/frozen inputs plus R5 CAD STEP/source-preserved/model_data only; no R3/R4 directory or original corrupt archive available.",
+  "passed": true,
+  "project_count": 15,
+  "stored_object_count": 22,
+  "required_physical_part_count": 23,
+  "studio_xml_contract_archive_count": 29,
+  "studio_xml_contract_passed_count": 29,
+  "studio_xml_contract_failed_count": 0,
+  "studio_application_loaded": false,
+  "sliced": false,
+  "seconds": 4.3401265144348145,
+  "runs": [
+    {
+      "script": "build_flat_projects.py",
+      "exit_code": 0,
+      "stdout": "{\"archive_count\": 29, \"passed_count\": 29, \"failed_count\": 0, \"all_source_dispatch_contracts_pass\": true, \"studio_application_loaded\": false, \"sliced\": false}\n{\"projects\": 15, \"stored_objects\": 22, \"required_physical_parts\": 23, \"floor_pose\": \"/tmp/10box-r5-importfix-rebuild-7sl95qi6/h2d-r5/floor-print-pose.json\", \"floor_print_stl\": \"/tmp/10box-r5-importfix-rebuild-7sl95qi6/h2d-r5/meshes/body-bottom-common-print.stl\", \"floor_clearance\": {\"left_nozzle_area_xy_mm\": [0.0, 0.0, 325.0, 320.0], \"minimum_nozzle_edge_margins_mm\": {\"left\": 4.074733858412586, \"right\": 4.07473385858998, \"front\": 4.403160983158784, \"rear\": 4.4031609828400065}, \"projected_hull_xy_mm\": [[320.92526614141, 104.10120076396001], [109.42962788841, 315.59683901716], [86.80221089071, 315.59683901716], [66.40619662001001, 302.05976052316], [52.26406099631, 287.91762490016], [38.12192537251, 273.77548927616], [23.97978974881, 259.63335365216], [4.074733858412586, 232.86936198416], [4.074733858412586, 215.89879923616002], [215.57037211141002, 4.403160983158784], [238.19778910941002, 4.403160983158784], [262.13335365241, 21.47978974886], [276.27548927641004, 35.62192537256], [304.55976052341003, 63.90619661996], [320.92526614141, 87.13063801546001]], \"exclusions\": [{\"setting\": \"wrapping_exclude_area\", \"rectangle_xy_mm\": [145.0, 310.0, 256.0, 326.0], \"projected_hull_overlap_area_mm2\": 0.0, \"projected_hull_clearance_mm\": 21.19448850720464}], \"portion_above_y310_xrange_mm\": [78.36957836106917, 115.02646690556469], \"bounding_rectangle_intersects_wrapping_exclusion\": true, \"validation_method\": \"Conservative projected mesh convex hull against the saved exclusion polygon; model bbox is used only for rectangular nozzle reach.\"}}\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_flat_packages.py",
+      "exit_code": 0,
+      "stdout": "{\"projects\": 15, \"stored_objects\": 22, \"required_physical_parts\": 23, \"all_included_passed\": true, \"common_floor_print_stl_passed\": true, \"sliced\": false}\n",
+      "stderr": ""
+    }
+  ]
+}
