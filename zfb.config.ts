@@ -7,7 +7,7 @@ export default defineConfig(
   zudoDoc({
     themePack: "default",
     siteName: "ZUDO CASE",
-    siteDescription: "モジュール用ケースの独立した設計系列（金属ケース、家庭印刷ケース、2WAY実験設計）と共通部品の設計・検証・発注準備。採用仕様と製作データの状態を分けて管理する。",
+    siteDescription: "モジュール用ケースの独立した設計系列（金属ケース、7U40家庭印刷、10BOX-v2、2WAY実験設計）と共通部品の設計・検証・発注準備。採用仕様と製作データの状態を分けて管理する。",
     defaultLocale: "ja",
     locales: {},
     base: "/",
@@ -28,10 +28,15 @@ export default defineConfig(
     docHistory: false,
     docMetainfo: false,
     headerNav: [
-      { label: "全体案内", path: "/docs/overview", categoryMatch: "overview" },
-      { label: "金属ケース", path: "/docs/metal-case", categoryMatch: "metal-case" },
-      { label: "家庭印刷", path: "/docs/printed-5mm", categoryMatch: "printed-5mm" },
-      { label: "2WAY", path: "/docs/two-way", categoryMatch: "two-way" },
+      {
+        label: "ケース", path: "/docs/overview/start", categoryMatch: "overview",
+        children: [
+          { label: "金属ケース", path: "/docs/metal-case", categoryMatch: "metal-case" },
+          { label: "7U40家庭印刷", path: "/docs/printed-5mm", categoryMatch: "printed-5mm" },
+          { label: "10BOX-v2", path: "/docs/tenbox-v2", categoryMatch: "tenbox-v2" },
+          { label: "2WAY", path: "/docs/two-way", categoryMatch: "two-way" },
+        ],
+      },
       { label: "共通部品", path: "/docs/shared", categoryMatch: "shared" },
       { label: "開発・保守", path: "/docs/development", categoryMatch: "development" },
       { label: "画像・図", path: "/files", versioned: false },

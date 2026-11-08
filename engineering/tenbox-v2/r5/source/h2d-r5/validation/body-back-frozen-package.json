@@ -1,0 +1,44 @@
+{
+  "status": "structural_checks_passed",
+  "build_items": [
+    {
+      "object_id": "2",
+      "instance_id": 0,
+      "bounds_mm": [
+        [
+          33.8968418142,
+          13.8968418142,
+          0.0
+        ],
+        [
+          316.1031581862,
+          296.1031581862,
+          8.0
+        ]
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "model": "3D/3dmodel.model",
+      "object_id": "1",
+      "vertices": 4148,
+      "triangles": 8412,
+      "signed_volume_mm3": 108571.904194
+    }
+  ],
+  "layout_checked": true,
+  "contains_toolpaths": false,
+  "not_checked": [
+    "Bambu Studio load/slicing",
+    "self-intersections",
+    "wall thickness and fit",
+    "support/brim/prime tower clearance",
+    "sequential-print toolhead clearance"
+  ],
+  "settings_changes": {},
+  "settings_bytes_unchanged": true,
+  "studio_root_relationship_dispatch_pass": true,
+  "studio_application_loaded": false,
+  "xml_import_compatibility": "Raw namespace-unaware root Relationship dispatch now passes; full surface checks recorded separately."
+}

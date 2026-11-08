@@ -1,0 +1,124 @@
+<div id="tenbox-v2-r5">
+  <style>
+    #tenbox-v2-r5{color-scheme:light dark;--tb-paper:light-dark(#f5f6f2,#20292b);--tb-card:light-dark(#fffefa,#273235);--tb-ink:light-dark(#20393b,#edf2ec);--tb-sub:light-dark(#526a6b,#b0c3bf);--tb-line:light-dark(#ced9d3,#435757);--tb-accent:light-dark(#166b61,#a7d7c8);--tb-active:light-dark(#234c48,#b4d8c9);--tb-active-text:light-dark(#fffef8,#183c37);font:14px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--tb-paper);color:var(--tb-ink);width:100%;overflow:hidden;isolation:isolate}
+    #tenbox-v2-r5 *{box-sizing:border-box}
+    #tenbox-v2-r5 button,#tenbox-v2-r5 select,#tenbox-v2-r5 input{font:inherit;color:inherit}
+    #tenbox-v2-r5 button{border:1px solid var(--tb-line);background:var(--tb-card);border-radius:5px;padding:6px 10px;white-space:nowrap;line-height:1.3}
+    #tenbox-v2-r5 button:hover{background:color-mix(in srgb,var(--tb-accent) 9%,var(--tb-card))}
+    #tenbox-v2-r5 button[aria-pressed=true]{background:var(--tb-active);color:var(--tb-active-text);border-color:var(--tb-active)}
+    #tenbox-v2-r5 button:focus-visible,#tenbox-v2-r5 select:focus-visible,#tenbox-v2-r5 input:focus-visible{outline:3px solid var(--tb-accent);outline-offset:3px}
+    #tenbox-v2-r5 .tb-head{padding:17px 104px 16px 20px;display:flex;align-items:center;gap:15px;min-height:76px;border-top:3px solid var(--tb-accent)}
+    #tenbox-v2-r5 .tb-title{font-size:22px;font-weight:600;letter-spacing:-.03em;line-height:1.2;margin:0}
+    #tenbox-v2-r5 .tb-subtitle{font-size:12px;color:var(--tb-sub);margin:4px 0 0}
+    #tenbox-v2-r5 .tb-version{font-size:11px;letter-spacing:.05em;padding:4px 7px;border:1px solid var(--tb-line);white-space:nowrap}
+    #tenbox-v2-r5 .tb-modes{padding:0 16px 12px;display:flex;flex-wrap:wrap;gap:5px;border-bottom:1px solid var(--tb-line)}
+    #tenbox-v2-r5 .tb-modes button{font-size:12px;padding:7px 10px}
+    #tenbox-v2-r5 .tb-layout{display:grid;grid-template-columns:minmax(0,1fr) 205px}
+    #tenbox-v2-r5 .tb-stage{position:relative;min-width:0;min-height:540px;height:570px;background:#dfe9e7;overflow:hidden}
+    #tenbox-v2-r5 .tb-stage:fullscreen{width:100vw;height:100vh}
+    #tenbox-v2-r5 canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}
+    #tenbox-v2-r5 canvas:active{cursor:grabbing}
+    #tenbox-v2-r5 .tb-stage-head{position:absolute;top:16px;left:18px;right:100px;pointer-events:none;color:#233f40}
+    #tenbox-v2-r5 .tb-stage-title{font-size:14px;font-weight:600}
+    #tenbox-v2-r5 .tb-stage-detail{font-size:11px;line-height:1.55;margin-top:4px;color:#476461;max-width:390px}
+    #tenbox-v2-r5 .tb-stage-tools{position:absolute;right:12px;top:12px;display:flex;gap:4px}
+    #tenbox-v2-r5 .tb-stage-tools button{font-size:11px;padding:5px 7px}
+    #tenbox-v2-r5 .tb-cameras{display:flex;gap:4px;position:absolute;left:14px;bottom:36px;right:14px;flex-wrap:wrap}
+    #tenbox-v2-r5 .tb-cameras button{font-size:11px;padding:5px 8px}
+    #tenbox-v2-r5 .tb-gesture{position:absolute;left:16px;bottom:12px;color:#4a6865;font-size:11px;pointer-events:none}
+    #tenbox-v2-r5 .tb-scale{position:absolute;right:15px;bottom:14px;border-bottom:2px solid #527773;height:19px;text-align:center;color:#3f605c;font-size:11px;pointer-events:none}
+    #tenbox-v2-r5 .tb-scale:before,#tenbox-v2-r5 .tb-scale:after{content:"";position:absolute;bottom:0;height:5px;border-left:1px solid #527773}
+    #tenbox-v2-r5 .tb-scale:before{left:0}#tenbox-v2-r5 .tb-scale:after{right:0}
+    #tenbox-v2-r5 .tb-loading{position:absolute;inset:0;display:grid;place-items:center;background:#dfe9e7;color:#35534e;padding:24px;text-align:center;z-index:5}
+    #tenbox-v2-r5 .tb-dimension{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+    #tenbox-v2-r5 .tb-dimension path{fill:none;stroke:#174d48;stroke-width:1.5}
+    #tenbox-v2-r5 .tb-dimension text{font:500 13px system-ui,sans-serif;fill:#173f3c;paint-order:stroke;stroke:#dfe9e7;stroke-width:5px;stroke-linejoin:round;text-anchor:middle}
+    #tenbox-v2-r5 .tb-sidebar{padding:14px;background:var(--tb-card);border-left:1px solid var(--tb-line);min-width:0}
+    #tenbox-v2-r5 .tb-block{padding-bottom:13px;margin-bottom:12px;border-bottom:1px solid var(--tb-line)}
+    #tenbox-v2-r5 .tb-block:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+    #tenbox-v2-r5 .tb-label{font-size:11px;letter-spacing:.04em;color:var(--tb-sub);margin-bottom:7px;display:block}
+    #tenbox-v2-r5 .tb-control-head{display:flex;justify-content:space-between;align-items:baseline;gap:6px;margin-bottom:7px;font-size:12px}
+    #tenbox-v2-r5 .tb-num{font-variant-numeric:tabular-nums}
+    #tenbox-v2-r5 input[type=range]{width:100%;accent-color:var(--tb-accent);margin:0;height:23px}
+    #tenbox-v2-r5 .tb-toggle{display:flex;gap:7px;align-items:center;font-size:12px;margin:7px 0;min-height:21px}
+    #tenbox-v2-r5 input[type=checkbox]{accent-color:var(--tb-accent);width:14px;height:14px;margin:0}
+    #tenbox-v2-r5 .tb-pair{display:flex;gap:4px}
+    #tenbox-v2-r5 .tb-pair button{flex:1;padding:6px 5px;font-size:11px}
+    #tenbox-v2-r5 select{width:100%;max-width:100%;font-size:12px;padding:7px 6px;border:1px solid var(--tb-line);border-radius:4px;background:var(--tb-card)}
+    #tenbox-v2-r5 .tb-key{display:flex;align-items:center;gap:7px;font-size:11px;margin:5px 0;color:var(--tb-sub)}
+    #tenbox-v2-r5 .tb-swatch{width:10px;height:10px;border-radius:2px;flex:none}
+    #tenbox-v2-r5 .tb-inspect{font-size:11px;line-height:1.6;color:var(--tb-sub);min-height:60px}
+    #tenbox-v2-r5 .tb-inspect strong{font-size:12px;color:var(--tb-ink);font-weight:600;display:block;margin-bottom:3px}
+    #tenbox-v2-r5 .tb-foot{padding:10px 17px;display:flex;flex-wrap:wrap;gap:5px 18px;font-size:11px;color:var(--tb-sub);border-top:1px solid var(--tb-line)}
+    #tenbox-v2-r5 .tb-joint-readout{display:grid;grid-template-columns:1fr auto;gap:3px 8px;font-size:11px}
+    #tenbox-v2-r5 .tb-joint-readout span:nth-child(even){font-variant-numeric:tabular-nums}
+    #tenbox-v2-r5 .tb-hidden{display:none!important}
+    @media(max-width:580px){#tenbox-v2-r5 .tb-head{padding-left:14px;gap:8px}#tenbox-v2-r5 .tb-title{font-size:20px}#tenbox-v2-r5 .tb-version{display:none}#tenbox-v2-r5 .tb-modes{padding-left:12px;padding-right:12px}#tenbox-v2-r5 .tb-layout{grid-template-columns:1fr}#tenbox-v2-r5 .tb-stage{height:480px;min-height:480px}#tenbox-v2-r5 .tb-sidebar{border-left:0;border-top:1px solid var(--tb-line);display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px}#tenbox-v2-r5 .tb-block{margin:0;padding-bottom:10px}#tenbox-v2-r5 .tb-sidebar .tb-block:nth-child(3){grid-column:1/-1}#tenbox-v2-r5 .tb-sidebar .tb-block:nth-child(4){display:none}#tenbox-v2-r5 .tb-stage-head{left:14px;right:90px}#tenbox-v2-r5 .tb-gesture{max-width:195px}#tenbox-v2-r5 .tb-cameras{bottom:47px}#tenbox-v2-r5 .tb-gesture{bottom:12px}#tenbox-v2-r5 .tb-scale{bottom:20px}}
+    @media(pointer:coarse){#tenbox-v2-r5 button{min-height:42px}#tenbox-v2-r5 .tb-toggle{min-height:35px}#tenbox-v2-r5 input[type=range]{height:34px}#tenbox-v2-r5 select{font-size:16px}#tenbox-v2-r5 .tb-cameras{bottom:55px}#tenbox-v2-r5 .tb-stage-head{top:64px;right:20px}}
+  </style>
+  <header class="tb-head">
+    <div><h2 class="tb-title">10BOX v2</h2><p class="tb-subtitle">Clipped floor corners · flat printing · one nozzle</p></div>
+    <span class="tb-version">R5 / REVIEW</span>
+  </header>
+  <nav class="tb-modes" aria-label="Inspection view">
+    <button type="button" class="cursor-interaction" data-view="floor-fit" aria-pressed="true">Floor on H2D</button>
+    <button type="button" class="cursor-interaction" data-view="floor-top" aria-pressed="false">Clipped floor</button>
+    <button type="button" class="cursor-interaction" data-view="underside" aria-pressed="false">Case underside</button>
+    <button type="button" class="cursor-interaction" data-view="lid-fit" aria-pressed="false">Lid fit</button>
+    <button type="button" class="cursor-interaction" data-view="lid-ledge" aria-pressed="false">Side ledge</button>
+    <button type="button" class="cursor-interaction" data-view="lid-top" aria-pressed="false">One-piece roof</button>
+    <button type="button" class="cursor-interaction" data-view="lid-end" aria-pressed="false">Lid end wall</button>
+    <button type="button" class="cursor-interaction" data-view="h2d" aria-pressed="false">Roof on H2D</button>
+    <button type="button" class="cursor-interaction" data-view="assembly" aria-pressed="false">Body</button>
+    <button type="button" class="cursor-interaction" data-view="side" aria-pressed="false">Side panel</button>
+    <button type="button" class="cursor-interaction" data-view="back" aria-pressed="false">Back panel</button>
+    <button type="button" class="cursor-interaction" data-view="rail-gap" aria-pressed="false">8 mm gap</button>
+    <button type="button" class="cursor-interaction" data-view="insert" aria-pressed="false">Insert sides</button>
+    <button type="button" class="cursor-interaction" data-view="front-joint" aria-pressed="false">Front joint</button>
+    <button type="button" class="cursor-interaction" data-view="floor-joint" aria-pressed="false">Bottom joint</button>
+    <button type="button" class="cursor-interaction" data-view="original" aria-pressed="false">Previous floor</button>
+  </nav>
+  <div class="tb-layout">
+    <section class="tb-stage" data-id="stage" aria-label="Interactive 3D model">
+      <canvas data-id="canvas" role="img" aria-label="10BOX v2 in 3D. Drag to orbit, right-drag to pan, scroll to zoom. Use the view buttons for fixed views."></canvas>
+      <svg class="tb-dimension tb-hidden" data-id="gapDimension" role="img" aria-label="8 millimetres between the rail frame and side panel"><path data-id="gapLine"></path><text data-id="gapText">8.0 mm</text></svg>
+      <svg class="tb-dimension tb-hidden" data-id="ledgeDimension" role="img" aria-label="Side flange extends 5 millimetres inward and is 5 millimetres thick; the lower shelf supports 2.8 millimetres of the roof"><path data-id="flangeLine"></path><text data-id="flangeText">5 mm</text><path data-id="thickLine"></path><text data-id="thickText">5 mm</text><path data-id="bearingLine"></path><text data-id="bearingText">2.8 mm</text></svg>
+      <div class="tb-stage-head"><div class="tb-stage-title" data-id="stageTitle">Revised assembly</div><div class="tb-stage-detail" data-id="stageDetail">337.4 mm wide · 8 mm spacers · unchanged 60HP frames</div></div>
+      <div class="tb-stage-tools"><button type="button" class="cursor-interaction" data-id="fit">Fit</button><button type="button" class="cursor-interaction" data-id="full" aria-label="Toggle fullscreen">↗</button></div>
+      <div class="tb-cameras" aria-label="Camera view">
+        <button type="button" class="cursor-interaction" data-camera="iso">3D</button><button type="button" class="cursor-interaction" data-camera="front">Front</button><button type="button" class="cursor-interaction" data-camera="side">Side</button><button type="button" class="cursor-interaction" data-camera="top">Top</button><button type="button" class="cursor-interaction" data-camera="bottom">Underside</button>
+      </div>
+      <div class="tb-gesture">Drag to orbit · Scroll to zoom</div><div class="tb-scale" data-id="scale"></div>
+      <div class="tb-loading" data-id="loading">Preparing the 3D model…</div>
+    </section>
+    <aside class="tb-sidebar" aria-label="Model controls">
+      <div class="tb-block">
+        <div class="tb-control-head"><label for="tb-v2-explode" data-id="explodeLabel">Separate panels</label><output class="tb-num" data-id="explodeValue">0 mm</output></div>
+        <input id="tb-v2-explode" data-id="explode" type="range" min="0" max="45" step="0.5" value="0" aria-label="Panel separation in millimetres">
+        <div class="tb-pair" style="margin-top:8px"><button type="button" class="cursor-interaction" data-id="assembled">Assemble</button><button type="button" class="cursor-interaction" data-id="separate">Separate</button></div>
+      </div>
+      <div class="tb-block">
+        <span class="tb-label">ASSEMBLY PARTS</span>
+        <label class="tb-toggle"><input type="checkbox" data-id="rails" checked>Frames &amp; spacers</label>
+        <label class="tb-toggle"><input type="checkbox" data-id="lid" checked>Lift-off lid · one-piece roof</label>
+        <div data-id="lidControl" class="tb-hidden"><div class="tb-control-head"><label for="tb-v2-lidlift">Lift lid</label><output class="tb-num" data-id="lidValue">0 mm</output></div><input id="tb-v2-lidlift" data-id="lidlift" type="range" min="0" max="150" step="1" value="0"></div>
+        <label class="tb-toggle"><input type="checkbox" data-id="stand">Original stand</label>
+        <label class="tb-toggle"><input type="checkbox" data-id="xray">Transparent walls</label>
+        <div class="tb-pair" style="margin-top:10px"><button type="button" class="cursor-interaction" data-id="color" aria-pressed="true">Part colors</button><button type="button" class="cursor-interaction" data-id="black" aria-pressed="false">Black</button></div>
+      </div>
+      <div class="tb-block">
+        <label class="tb-label" for="tb-v2-part">INSPECT A PART</label>
+        <select id="tb-v2-part" data-id="part"><option value="">Whole assembly</option></select>
+        <div class="tb-inspect" data-id="inspector" aria-live="polite" style="margin-top:9px"><strong>R5 floor</strong>Four clipped corners · common part × 2</div>
+      </div>
+      <div class="tb-block">
+        <span class="tb-label">DESIGN DIMENSIONS</span>
+        <div class="tb-joint-readout"><span>Body / lid width</span><span data-id="bodyWidth">337.4 mm</span><span>Frame gap / side</span><span data-id="frameGap">8 mm</span><span>Floor corner cuts</span><span data-id="floorCuts">4</span><span>Floor quantity</span><span>2 identical</span><span>Roof width</span><span data-id="roofWidth">317 mm</span><span>Side extension</span><span data-id="flangeWidth">5 mm</span><span>Roof fixings</span><span data-id="roofFixings">8</span><span>Lid end fixings</span><span data-id="endFixings">2 each</span><span>Panel thickness</span><span>5 mm</span></div>
+        <div style="margin-top:10px"><div class="tb-key"><i class="tb-swatch" style="background:#c6d4c8"></i>Side panels / receivers</div><div class="tb-key"><i class="tb-swatch" style="background:#3f8179"></i>Front &amp; back / tabs</div><div class="tb-key"><i class="tb-swatch" style="background:#d39a56"></i>Bottom panels / tabs</div></div>
+      </div>
+    </aside>
+  </div>
+  <footer class="tb-foot"><span data-id="partcount">One common floor · print twice</span><span>Flat placement checked · Studio slice and physical fit pending</span><span data-id="renderer"></span></footer>
+  <script type="application/octet-stream" data-id="model">__MODEL_GZIP__</script>
+  <script>__VIEWER_SCRIPT__</script>
+</div>

@@ -2580,5 +2580,13 @@
     "production_approved": false,
     "source": "engineering/printed-5mm/p5-tab-joints/",
     "registry": "project/printed-5mm/p5-tab-joints/files.json"
+  },
+  "current_tenbox_v2_candidate": {
+    "family": "tenbox-v2",
+    "revision": "R5",
+    "production_approved": false,
+    "status": "ACCEPTED_DESIGN_SOFTWARE_INTEGRATION_NOT_PHYSICALLY_VERIFIED",
+    "source": "engineering/tenbox-v2/r5/",
+    "registry": "project/tenbox-v2/manifest.json"
   }
 }

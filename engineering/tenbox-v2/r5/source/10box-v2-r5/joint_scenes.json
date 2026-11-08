@@ -1,0 +1,266 @@
+{
+  "scenes": {
+    "front-joint": [
+      {
+        "id": "front-joint-body-right",
+        "sourceId": "body-right",
+        "name": "body-right",
+        "cat": "sides",
+        "mesh": "front-joint-body-right",
+        "box": [
+          158.7,
+          -154.0,
+          35.0,
+          168.70000000000002,
+          -127.0,
+          69.0
+        ],
+        "explode": [
+          1,
+          0,
+          0
+        ],
+        "group": "detail",
+        "material": "Exact CAD section detail",
+        "volume": 3905.969929040618
+      },
+      {
+        "id": "front-joint-body-front",
+        "sourceId": "body-front",
+        "name": "body-front",
+        "cat": "ends",
+        "mesh": "front-joint-body-front",
+        "box": [
+          150.0,
+          -150.0,
+          36.0,
+          168.4,
+          -142.0,
+          69.0
+        ],
+        "explode": [
+          0,
+          0,
+          0
+        ],
+        "group": "detail",
+        "material": "Exact CAD section detail",
+        "volume": 2627.6653287051017
+      }
+    ],
+    "floor-joint": [
+      {
+        "id": "floor-joint-body-right",
+        "sourceId": "body-right",
+        "name": "body-right",
+        "cat": "sides",
+        "mesh": "floor-joint-body-right",
+        "box": [
+          163.7,
+          75.0,
+          -3.5,
+          168.7,
+          115.0,
+          20.0
+        ],
+        "explode": [
+          1,
+          0,
+          0
+        ],
+        "group": "detail",
+        "material": "Exact R5 CAD section",
+        "volume": 4149.886725877125
+      },
+      {
+        "id": "floor-joint-body-bottom-back",
+        "sourceId": "body-bottom-back",
+        "name": "body-bottom-back",
+        "cat": "floor",
+        "mesh": "floor-joint-body-bottom-back",
+        "box": [
+          150.0,
+          75.0,
+          0.0,
+          168.4,
+          115.0,
+          5.0
+        ],
+        "explode": [
+          0,
+          0,
+          0
+        ],
+        "group": "detail",
+        "material": "Exact R5 CAD section",
+        "volume": 3100.3400674073537
+      }
+    ],
+    "rail-gap": [
+      {
+        "id": "rail-gap-body-right",
+        "sourceId": "body-right",
+        "name": "body-right",
+        "cat": "sides",
+        "mesh": "rail-gap-body-right",
+        "box": [
+          163.7,
+          -125.0,
+          53.0,
+          168.70000000000002,
+          -103.0,
+          72.0
+        ],
+        "explode": [
+          0,
+          0,
+          0
+        ],
+        "group": "detail",
+        "material": "Exact CAD section detail",
+        "volume": 1971.2085277861358
+      },
+      {
+        "id": "rail-gap-spacer-right-1",
+        "sourceId": "spacer-right-1",
+        "name": "spacer-right-1",
+        "cat": "spacers",
+        "mesh": "rail-gap-spacer-right-1",
+        "box": [
+          155.7,
+          -119.06234741210938,
+          58.3205295,
+          163.7,
+          -109.06234741210938,
+          68.32052949999999
+        ],
+        "explode": [
+          0,
+          0,
+          0
+        ],
+        "group": "detail",
+        "material": "Exact CAD section detail",
+        "volume": 438.25217517577636
+      },
+      {
+        "id": "rail-gap-frame3u",
+        "sourceId": "rail-frame3u-right-front",
+        "name": "frame3u",
+        "cat": "railPCB",
+        "mesh": "rail-gap-frame3u",
+        "box": [
+          154.1,
+          -125.0,
+          53.0,
+          155.7,
+          -103.0,
+          72.0
+        ],
+        "explode": [
+          0,
+          0,
+          0
+        ],
+        "group": "detail",
+        "material": "Exact CAD section detail",
+        "volume": 495.9537114280747
+      }
+    ],
+    "lid-ledge": [
+      {
+        "id": "lid-ledge-lid-right",
+        "sourceId": "lid-right",
+        "name": "Supported lid side",
+        "cat": "lidEdges",
+        "group": "lid",
+        "mesh": "lid-ledge-lid-right",
+        "box": [
+          155.7,
+          -12.0,
+          99.0,
+          168.7,
+          12.0,
+          113.0
+        ],
+        "explode": [
+          0,
+          0,
+          0
+        ],
+        "material": "Exact R4 CAD section",
+        "volume": 3240.48096
+      },
+      {
+        "id": "lid-ledge-lid-top-single",
+        "sourceId": "lid-top-single",
+        "name": "Roof on bearing ledge",
+        "cat": "lidRoof",
+        "group": "lid",
+        "mesh": "lid-ledge-lid-top-single",
+        "box": [
+          148.0,
+          -12.0,
+          108.0,
+          158.5,
+          12.0,
+          113.0
+        ],
+        "explode": [
+          0,
+          0,
+          0
+        ],
+        "material": "Exact R4 CAD section",
+        "volume": 1259.9999999999998
+      }
+    ],
+    "floor-top": [
+      {
+        "id": "floor-top-body-bottom-back",
+        "name": "\u672c\u4f53\u30fb\u5965\u306e\u5e95\u9762",
+        "cat": "floor",
+        "mesh": "r5-body-bottom-back",
+        "box": [
+          -168.4,
+          -2.842170943040401e-14,
+          0.0,
+          168.4,
+          144.99432000000002,
+          5.000000000000001
+        ],
+        "explode": [
+          0,
+          0,
+          0
+        ],
+        "group": "body",
+        "material": "10BOX V2 R5 / 5mm printed floor; review only",
+        "volume": 234769.06986338136,
+        "source_file": "10box-body-bottom.stl",
+        "source_matrix_z_up": [
+          -1.0,
+          0.0,
+          0.0,
+          158.7,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width_operation": "feature-free +/-124 mm insertion bands, 5 mm each applicable side",
+        "note": "Four12/16mm corner chamfers for flat diagonal H2D placement. All9slots and4tabs retained. Same common print shape as the other floor.",
+        "change_from_r4": "Removed four small corner triangles; no slot/tab/mount or case resizing.",
+        "sourceId": "body-bottom-back"
+      }
+    ]
+  }
+}

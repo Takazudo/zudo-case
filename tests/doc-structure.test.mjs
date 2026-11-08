@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
+import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { checkNavigationOrder, checkRouteMap, siblingGroup } from '../scripts/lib/doc-structure-checks.mjs';
 import { GENERATED_MARK, frontmatter, isCompatibility, renderRoutePages, routeFor } from '../scripts/sync-doc-routes.mjs';
@@ -10,7 +11,7 @@ import { sidebars } from '../src/sidebars.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const docs = path.join(root, 'src/content/docs');
-const SECTIONS = ['overview', 'metal-case', 'printed-5mm', 'two-way', 'shared', 'development'];
+const SECTIONS = ['overview', 'metal-case', 'printed-5mm', 'tenbox-v2', 'two-way', 'shared', 'development'];
 
 async function walk(dir) {
   const out = [];
@@ -72,10 +73,26 @@ test('every baseline document is accounted for and the generated pages are curre
   for (const { rel, text } of await renderRoutePages(root)) assert.equal(await readFile(path.join(root, rel), 'utf8'), text, `${rel} drifted; run node scripts/sync-doc-routes.mjs`);
 });
 
-test('six sections own every canonical page and match the header navigation', async () => {
+test('independent sections own every canonical page and nested header destination', async () => {
   const config = await readFile(path.join(root, 'zfb.config.ts'), 'utf8');
-  const matches = [...config.matchAll(/categoryMatch: "([^"]+)"/g)].map(m => m[1]);
-  assert.deepEqual(matches, SECTIONS);
+  const header = vm.runInNewContext(`(${config.match(/headerNav:\s*(\[[\s\S]*?\]),\n    headerRightItems/)[1]})`);
+  const allItems = items => items.flatMap(item => [item, ...allItems(item.children ?? [])]);
+  const owners = allItems(header).filter(item => item.categoryMatch).map(item => item.categoryMatch);
+  assert.deepEqual(Array.from(owners), SECTIONS);
+  assert.equal(header[0].label, 'ケース');
+  assert.equal(header[0].path, '/docs/overview/start');
+  assert.deepEqual(Array.from(header[0].children, item => item.categoryMatch), ['metal-case', 'printed-5mm', 'tenbox-v2', 'two-way']);
+  assert.equal(header.filter(item => item.categoryMatch === 'overview').length, 1);
+  assert.equal(header.find(item => item.path === '/files').versioned, false);
+  for (const section of SECTIONS) {
+    const definition = sidebars[section];
+    assert.ok(definition && !Array.isArray(definition), section);
+    assert.equal(definition.scopeRoot, 'configured', section);
+    if (section !== 'printed-5mm') {
+      assert.deepEqual(definition.items, [], section);
+      assert.equal(definition.initialPath, undefined, section);
+    }
+  }
   assert.match(config, /path: "\/files"/);
   assert.match(config, /themePack: "default"/);
   assert.match(config, /entryDocSlug: "overview\/start"/);
@@ -101,14 +118,7 @@ test('compatibility pages stay out of category cards', async () => {
   for (const d of nav.filter(d => d.unlisted === true)) assert.doesNotMatch(d.body, /<CategoryNav/, d.path);
 });
 
-test('printed sidebar lists every printed page once and only canonical pages', async () => {
-  const ids = [];
-  const visit = items => { for (const item of items) { if (typeof item === 'string') ids.push(item); else if (item.type === 'doc') ids.push(item.id); else if (item.type === 'category') visit(item.items); } };
-  visit(sidebars['printed-5mm']);
-  const printed = map.entries.filter(e => e.owner === 'printed-5mm').map(e => routeFor(e.canonical).slice('/docs/'.length, -1));
-  assert.deepEqual([...ids].sort(), [...printed].sort());
-  assert.equal(new Set(ids).size, ids.length);
-  // P3/P4/P5 leaf URLs are kept.
+test('printed leaf URLs remain canonical while chrome owns only the editorial view', async () => {
   for (const leaf of ['design', 'preview', 'print-files', 'p4-design', 'p4-preview', 'p4-print-files', 'p5-design', 'p5-preview', 'p5-print-files', 'ventilation'])
     assert.ok(map.entries.some(e => e.source === `printed-5mm/${leaf}.mdx` && e.canonical === e.source && e.treatment === 'retained'), leaf);
 });

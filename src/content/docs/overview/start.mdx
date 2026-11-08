@@ -1,18 +1,11 @@
 ---
 title: "プロジェクトを選ぶ"
-description: "金属ケース、家庭印刷ケース、2WAY実験設計、共通部品のどれを読むかを選び、現行候補・プレビュー・ファイルへ進む。"
+description: "金属ケース、7U40家庭印刷、10BOX-v2、2WAY実験設計、共通部品のどれを読むかを選び、現行候補・プレビュー・ファイルへ進む。"
 sidebar_position: 10
 ---
 
-このリポジトリには、互いに独立した３つのケース系列と、系列をまたいで使う共通部品・元データがあります。まず読みたい系列を選んでください。各系列は自分の版と状態を持ち、ある系列の候補が他の系列の仕様を変えることはありません。
+互いに独立した４つのケース系列から、目的に合う入口を選びます。現行版・ファイル・検証の詳細は各系列が管理します。全系列とも製造未承認で、ソフトウェア検査と現物確認は別です。
 
-:::warning[製造承認済みのデータはありません]
-
-どの系列にも製造承認済みファイルはありません（`engineering/release/`は注意書きのREADMEだけ）。ソフトウェア上の生成・検査が通っていても、現物の嵌合・強度・運搬の確認とは別です。注文・支払い・製造承認はユーザーが別に判断します。
-
-:::
-
-{/* 旧版の見出しアンカー（現在の計画・読む順序・独立した家庭印刷版）を残す */}
 <span id="現在の計画"></span><span id="読む順序"></span><span id="独立した家庭印刷版"></span>
 
 ## 系列の一覧
@@ -21,35 +14,16 @@ sidebar_position: 10
 |---|---|---|---|
 | [金属ケース](../metal-case/index.mdx) | 3U60・7U40・7U60の単トレー | 7U40は **R10-FULLSET-01**（一式準備の候補）。3U60・7U60はR6本体・R8載せ蓋の基準 | 7U40はJLCカート準備済み・未発注・未払い。製造承認なし |
 | [家庭印刷ケース](../printed-5mm/index.mdx) | 7U40・5mm黒ASA | **P5-PRINTED-5MM-TAB-JOINTS-J3**（P4・P3は同じ系列の旧版） | ソフトウェア検査のみ。実スライス・嵌合・強度・運搬は未確認 |
+| [10BOX-v2](../tenbox-v2/index.mdx) | 2 × 3U60HPの独立した家庭印刷ケース | **R5**（採用済み設計） | ソフトウェア統合候補。実スライス・印刷・現物嵌合・荷重は未確認 |
 | [2WAY 実験設計](../two-way/index.mdx) | 2トレーのA／B／C構成 | **TW-01**（保守する作業版。F5は不変の原資料） | 閲覧・寸法検討用。製作CADではなく製造未承認 |
 | [共通部品・元データ](../shared/index.mdx) | 8mmスペーサー、元レール・PCB | 家庭印刷スペーサーは試作値 | 高さ8mmは採用、外径・穴径は仮寸法 |
 
-## 金属ケース（3U60・7U40・7U60）
+## 現行版を確認する
 
-アルミ平板５枚＋L字ブラケットの本体と、真上へ外す載せ蓋＋運搬時の外周バンド２本を使う単トレーのケースです。7U40の現行候補R10-FULLSET-01はアルミ6枚・PA12 20個・家庭ASA 72個の１台分で、追加の有料試験片を前提にしません。
-
-- 入口: [金属ケースの概要](../metal-case/index.mdx) ／ [状態](../metal-case/status.mdx)
-- プレビュー: [R10一式の3Dプレビュー](../metal-case/resources/current-preview.mdx)
-- ファイル: [R10一式のZIPと数量](../metal-case/design/r10-fullset-01.mdx) ／ [版別ファイル](../metal-case/resources/files.mdx)
-- 次の作業: [金属ケースの次工程](../metal-case/next-steps.mdx)
-
-## 家庭印刷ケース（7U40・5mm）
-
-黒ASAの5mm板で本体と段付き載せ蓋を家庭印刷する別系列です。P5は本体6枚をJ3差し込み接合へ変え、P4の蓋6枚と任意パッド・座金を引き継ぎます。P4は四壁にUniform通気孔を持つ版、P3は通気孔のない最初の基準です。
-
-- 入口: [家庭印刷ケースの概要](../printed-5mm/index.mdx)
-- プレビュー: [P5の3Dプレビュー](../printed-5mm/p5-preview.mdx)
-- ファイル: [P5のSTL/STEPとH2D 3MF](../printed-5mm/p5-print-files.mdx)
-- 次の作業: [未確認の項目](../printed-5mm/index.mdx#次に確認すること) ／ 旧版は[P4・P3の履歴](../printed-5mm/history.mdx)
-
-## 2WAY 実験設計（TW-01）
-
-2つのモジュール入りトレーを対向させて運び、演奏時は分ける構成の寸法・姿勢を検討する作業版です。A／B／Cの構成を切り替えられます。閲覧・設定用の出力は製作CADではなく、単トレーの金属ケースや家庭印刷ケースの仕様も変えません。
-
-- 入口: [2WAYの概要](../two-way/index.mdx)
-- プレビュー: [TW-01 ワークベンチ](../two-way/preview.mdx)
-- ファイル: [TW-01 ダウンロード](../two-way/resources.mdx)
-- 次の作業: [検証記録と次の現物開発](../two-way/verification.mdx)
+- 金属ケース：[状態](../metal-case/status.mdx)・[R10プレビュー](../metal-case/resources/current-preview.mdx)・[ファイル](../metal-case/resources/files.mdx)。
+- 7U40家庭印刷：[P5プレビュー](../printed-5mm/p5-preview.mdx)・[印刷ファイル](../printed-5mm/p5-print-files.mdx)。P4・P3は[履歴](../printed-5mm/history.mdx)。
+- 10BOX-v2：[R5プレビュー](../tenbox-v2/preview.mdx)・[印刷ファイルと数量](../tenbox-v2/print-files.mdx)・[印刷姿勢と確認範囲](../tenbox-v2/printing.mdx)。
+- 2WAY：[TW-01プレビュー](../two-way/preview.mdx)・[ファイル](../two-way/resources.mdx)・[検証記録](../two-way/verification.mdx)。
 
 ## 共通部品と開発
 

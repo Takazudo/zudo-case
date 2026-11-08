@@ -1,0 +1,1673 @@
+{
+  "schema": 1,
+  "family": "tenbox-v2",
+  "current_revision": "r5",
+  "production_approved": false,
+  "status": "software_checked_candidate_not_physically_verified",
+  "source": "engineering/tenbox-v2/r5/",
+  "docs": "src/content/docs/tenbox-v2/",
+  "tracking": {
+    "epic": "https://github.com/Takazudo/zudo-case/issues/130",
+    "assets": "https://github.com/Takazudo/zudo-case/issues/131"
+  },
+  "provenance": [
+    {
+      "repository": "https://github.com/Takazudo/zudo-case",
+      "commit": "6a99404a4e4220bb18b88d7d0f063571d1dad7b9",
+      "role": "7U 40HP P5 separate round rail bores, vertical bracket capsules, and 3 mm R0.5 vents",
+      "local_reference": "source-preserved/zudo-case-parameters-p5.json"
+    },
+    {
+      "repository": "https://github.com/zudolab/zzmod",
+      "commit": "78d5cb099b8b4a577b91419ec7cd1adb0a3d3810",
+      "role": "Original 10BOX assembly and exact 3U side-frame PCB geometry",
+      "local_reference": "source-preserved/panel-contours.json"
+    },
+    {
+      "source": "10box.zip / justway",
+      "role": "User-provided baseline panels; source byte hashes retained",
+      "local_reference": "source-receipts.json"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "engineering/tenbox-v2/r5/inputs/10box-original-stl-input.zip",
+      "bytes": 76516,
+      "sha256": "044d73201596a536d842709d171d7b47b8d2a854e53e976831931e0fd0b897e8"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/inputs/10box-v2-r5-review-bundle-fixed.zip",
+      "bytes": 6542286,
+      "sha256": "2b1b180784a3efd7af58ddcf255f976b0b1f16cdf2aac9197c235fec7f29cedc"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/README.md",
+      "bytes": 6059,
+      "sha256": "a740db61f60b10c4b3281fdd2e88977680dbb7a9c3452bac01c33a7e5ebc869a"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/build_geometry.py",
+      "bytes": 18456,
+      "sha256": "9b1dbcae72d0a1a974b6c708fdf3a6aa190b84ad1336ae2fcd2847ad402d1957"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/design-config.json",
+      "bytes": 732,
+      "sha256": "0e38818c21a778c32de850fb056ec26ab0dc1f5bacb0f4c4380e87a933bdfe61"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/design-references.json",
+      "bytes": 725,
+      "sha256": "1055ca30d3dd34e64e7f14df951a1a94ea71428b90d7ad83a5f56acfc6f5204a"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/geometry-checks.json",
+      "bytes": 14667,
+      "sha256": "8c3a567dc2cf193582fa88a5c2a9f2efc1b196256c5e0b7b89b0d87cd1d3a1e0"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/joint_scenes.json",
+      "bytes": 5993,
+      "sha256": "b5108520e2b53d8a5a23cc9a0ffcb79a1b8b059a4cbd2a174fd421974b155816"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/model_data.json",
+      "bytes": 2243494,
+      "sha256": "6e523afc1b9396d1c009545592a2b9ff0021324479d8c40ae1887e47cf8ca09b"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/parameters.json",
+      "bytes": 18408,
+      "sha256": "b3996a1cb9ff30999ad572e510fea8ae91858907ebac0e8ad9c01113b467c474"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/requirements.txt",
+      "bytes": 29,
+      "sha256": "9998cbff2abad6425ea15483f26f37e2a35c3db945c799fb6866574bc8ce825c"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/review-checks/floor-corner-proposal-review.json",
+      "bytes": 12189,
+      "sha256": "8d75542e4dcbf5962096abff665db40ae48821fcf2a8d09198cedefa5b0cc542"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/review-checks/independent-floor-export-review.json",
+      "bytes": 100514,
+      "sha256": "c97f653490e64d24f7793fb459816cbe0cacccc2bffe6de272e5b6c856729374"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/review-checks/independent-floor-export-review.md",
+      "bytes": 3128,
+      "sha256": "88b24e4acd519b41ba9936fdf49f8f31e19890cd858523643aac5140581830de"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/review-checks/stl-integrity.json",
+      "bytes": 1882,
+      "sha256": "8a97a31774226262305de6d5691e0c3113e9df76f12321ebb8bed1d848c49de7"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/review-checks/verify_floor_exports.py",
+      "bytes": 17985,
+      "sha256": "3949c3e62170412497a9064adcc98dc0c811c5628c234c5390634e5849570e00"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/10box-body-back.stl",
+      "bytes": 31284,
+      "sha256": "448c1a00873f773f5778e136bfb7931c438722f20df4ba56d557e324f4fae12c"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/10box-body-bottom.stl",
+      "bytes": 49284,
+      "sha256": "c3b7efaf164c89611f15ae59402fe0a606654ee5a87c607ed96690161e54be66"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/10box-body-front.stl",
+      "bytes": 31284,
+      "sha256": "524b773ec50d3ec67ca843bdb8c526a431b63786f5e3298c7fe199b89c9af05c"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/10box-body-side1.stl",
+      "bytes": 100684,
+      "sha256": "e5f559b49eb8471cc91302fe69b5e7e139b11b4836f104886714b61b09353b6d"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/10box-body-side2.stl",
+      "bytes": 100684,
+      "sha256": "119cdc8d9fc40b73794b4f2e44adb7c896216213450283957cf8d318f1261349"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/10box-leg-base.stl",
+      "bytes": 2884,
+      "sha256": "6080f1acb413f9a0fc04b0cd79b28a036b70d01f9729e43b8c9cf10b337d04c1"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/10box-leg-connector.stl",
+      "bytes": 2284,
+      "sha256": "61929fedcde650b06c57c13502cf880e9997dcc3d28abc72cfa467df6b080016"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/10box-lid-frontback.stl",
+      "bytes": 25884,
+      "sha256": "37898c2fdf8f098df66aa5ed88c74cf437e77f5f72be8ab66bc5e785d0887692"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/10box-lid-main.stl",
+      "bytes": 33084,
+      "sha256": "09c89c9abb38ff17cfb665a9dab076bbc9a0dea723da37985d01d8f1a3977baa"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/10box-lid-side.stl",
+      "bytes": 12084,
+      "sha256": "de5cdd6e389820cd8122bb5ec61a4030d61c6ea85cb0fc67714301d634b5917c"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/assembly.json",
+      "bytes": 11320,
+      "sha256": "af6e451d1f74af2517a2b8bef1c0bd4fcf331f68b33520d6afdece5ace638431"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/cap-polygons.json",
+      "bytes": 415121,
+      "sha256": "b2edfe87066fc1332002fc6ad0d9316cfe95ce185216931c33768aab37a3e23c"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/panel-contours.json",
+      "bytes": 137063,
+      "sha256": "0c0cc1318aafabd466a74bcc55730fe7f725273c911847c8578fbf273ab27e8f"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-preserved/zudo-case-parameters-p5.json",
+      "bytes": 4833,
+      "sha256": "5459f4f9a716de2340d9f3aac5c4d205f2b9c6f38c223d086139c6b038ba9935"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/geometry-checks.json",
+      "bytes": 23263,
+      "sha256": "5ff05852baf14e7ab51bb1c5997632fed21069f3e31de23d7550e6456f5d2ff6"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/model_data.json",
+      "bytes": 2139786,
+      "sha256": "a543d95109723b5a8450dbc9ba07c8dce1ab437e519aa620dd44f70e9893e280"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/parameters.json",
+      "bytes": 15059,
+      "sha256": "29eb58276cfb6eadedd67bacace83cd9857642b047ef592c3e7d5ee914adbf58"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/source-receipts.json",
+      "bytes": 5744,
+      "sha256": "68d4f00764536c56a9268c732b52105b2ce5760eb9d7d00ddb05737ea286cb18"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/body-back.step",
+      "bytes": 1141018,
+      "sha256": "e82f69a295f9132ec040c08bfa9b90e506261505bc6932f6592a31eb71b38d01"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/body-bottom-back.step",
+      "bytes": 1037087,
+      "sha256": "bf9bbede9a50a6353dbb01ef0b000e2891d03f279607d83c6d5318b7cc955376"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/body-bottom-front.step",
+      "bytes": 1042299,
+      "sha256": "ab464597f46a6630565520359c871ceea31ee3f02d6f8129fe17873d8dd45a25"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/body-front.step",
+      "bytes": 665218,
+      "sha256": "7bd8506e92967a54ab1fb4a8127ed81d5cbb122197642737da0670a11229e13b"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/body-left.step",
+      "bytes": 991779,
+      "sha256": "d804cce4575ff234718f85a8287f9ea13d0e10ab0c1832064e2d7c59b5eb1d44"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/body-right.step",
+      "bytes": 865009,
+      "sha256": "85476a9b5d6c0f8a86ce63821e13bb1ab04027502efbf9cfa020e98793b65736"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/lid-back.step",
+      "bytes": 307822,
+      "sha256": "b61b964859904e5e37c80bd7f5d39018ef68e3d588814d630cf2266a6958a525"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/lid-front.step",
+      "bytes": 308220,
+      "sha256": "adfda3648ef01fdaca03e0d65611e6fcae0ee2ac090ebe99befcc35713f9fd08"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/lid-left.step",
+      "bytes": 255758,
+      "sha256": "5e26b3b1223ed7b3f590ba2556986dc48d79641a88438155cb7bed85ab1b75f1"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/lid-right.step",
+      "bytes": 255460,
+      "sha256": "a2d12cce6ce4e06289f28fc6e34646551711595d414f0288ef8e7c2e67935151"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/lid-top-single.step",
+      "bytes": 810196,
+      "sha256": "33b7ec7b5406a83d71e9d7daffb1e473006a17b0ddebfc1da64c8a205ce8f9f4"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/spacer-8mm-reference.step",
+      "bytes": 9310,
+      "sha256": "9d174f857cb865e489a151ec34da0f4422f3d33fbe7797ce79139f1c5edaea29"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/spacer-left-1.step",
+      "bytes": 9555,
+      "sha256": "6b7e7210f33db6f9319b32482387510d609e7b652e227079cc41c55bebd2dc16"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/spacer-left-2.step",
+      "bytes": 9555,
+      "sha256": "76ec9c933c8094aacf381b56ead58819b4654d4b322b0b1ee9f85f2aca3474f5"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/spacer-left-3.step",
+      "bytes": 9555,
+      "sha256": "35fb489dd768f95e274d0565b51ba39dbef84a4845efdda2614d0bcfbc343b7d"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/spacer-left-4.step",
+      "bytes": 9541,
+      "sha256": "d6026bcaa4d666be836932a06ec4855b2ecd6f3bfb5c033b9a932f50f3742f25"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/spacer-right-1.step",
+      "bytes": 9541,
+      "sha256": "054c7a1b0ca582ec3c6267bc8591c958d8771b37440c02c5d7dc4dd8257138e8"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/spacer-right-2.step",
+      "bytes": 9541,
+      "sha256": "98d4b5500ef51366ba28aa715c6354fbe17c238c8a28253c0ccb41ea8c9d5e28"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/spacer-right-3.step",
+      "bytes": 9541,
+      "sha256": "19f040f370745ceb719019bb6754f7394ae7e2c68438a7d334c16f65435063ca"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/step/spacer-right-4.step",
+      "bytes": 9527,
+      "sha256": "8a0796728d71d3028fd52a103d2b4cfe23a77a50f4f7aac03452a6e43a4f1ae5"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/stl-review/body-back.stl",
+      "bytes": 420684,
+      "sha256": "828bf722ed76e3eee5c841c3b29c3b54bc10f5d46f004ffda897c5501d127195"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/stl-review/body-bottom-back.stl",
+      "bytes": 52484,
+      "sha256": "0506f343ff1725931c535664ca4fbc9b31d72996f75fe5028dce069a372a91ee"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/stl-review/body-bottom-front.stl",
+      "bytes": 52484,
+      "sha256": "c6b7c48328acbda567538b031d62cc55cb157469097aedc8fa7ec447f228b457"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/stl-review/body-front.stl",
+      "bytes": 34084,
+      "sha256": "27cba9882f6cbf6dff817fc7d585764d15ecd587bdc55b059a7339bcde782e94"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/stl-review/body-left.stl",
+      "bytes": 374684,
+      "sha256": "a418c55c99baa9ad4fc965352052d23056099bf856dc15c28597083d8ad77b70"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/stl-review/body-right.stl",
+      "bytes": 374684,
+      "sha256": "071cdf8ca4f42c4369593d3c6669413f9165c80c1dbbdfa2992935628e99c5cb"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/stl-review/lid-back.stl",
+      "bytes": 16484,
+      "sha256": "7424fc68564e4db0d7f22130e30708b55863ee0c8bd807ceb29e83a7acccabeb"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/stl-review/lid-front.stl",
+      "bytes": 16484,
+      "sha256": "fa2a985aa0839e78d27ccd804e56696d56b2e029ab8e40375979743e7abeea8d"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/stl-review/lid-left.stl",
+      "bytes": 13684,
+      "sha256": "c707dec6f638d5418d675d49a2b22eca8d5a358b5dd56253147b5a2242ca9a7f"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/stl-review/lid-right.stl",
+      "bytes": 13684,
+      "sha256": "a4643863b6a0f7ba5619090708e5e83e277f849f112d0f6c307712fe3190ad1a"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/stl-review/lid-top-single.stl",
+      "bytes": 43884,
+      "sha256": "ffe4c56801641144d61cc791c6d919d73edc18b97f604be460d67087b05c0d37"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-r4/stl-review/spacer-8mm-reference.stl",
+      "bytes": 25284,
+      "sha256": "5cb1f72b90fe9382648b3393e17e5c9dddc0354c1917fd8a89d2738a7fba72aa"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/source-receipts.json",
+      "bytes": 5744,
+      "sha256": "2ad40eccbe091d9683ca95e7dae237238b454433bb818f67441a671a1efc0400"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/body-back.step",
+      "bytes": 1141018,
+      "sha256": "e82f69a295f9132ec040c08bfa9b90e506261505bc6932f6592a31eb71b38d01"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/body-bottom-back.step",
+      "bytes": 1009332,
+      "sha256": "bc908deac3a8e7f3646560b380a1ea7177904167c05e338b2d01563c923494ba"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/body-bottom-common.step",
+      "bytes": 1009332,
+      "sha256": "bc908deac3a8e7f3646560b380a1ea7177904167c05e338b2d01563c923494ba"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/body-bottom-front.step",
+      "bytes": 1011152,
+      "sha256": "4d96ff29df11bd992e8e9b46c616fc7a5fd1305e8e73330000a64566c8afcc75"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/body-front.step",
+      "bytes": 665218,
+      "sha256": "7bd8506e92967a54ab1fb4a8127ed81d5cbb122197642737da0670a11229e13b"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/body-left.step",
+      "bytes": 991779,
+      "sha256": "d804cce4575ff234718f85a8287f9ea13d0e10ab0c1832064e2d7c59b5eb1d44"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/body-right.step",
+      "bytes": 865009,
+      "sha256": "85476a9b5d6c0f8a86ce63821e13bb1ab04027502efbf9cfa020e98793b65736"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/lid-back.step",
+      "bytes": 307822,
+      "sha256": "b61b964859904e5e37c80bd7f5d39018ef68e3d588814d630cf2266a6958a525"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/lid-front.step",
+      "bytes": 308220,
+      "sha256": "adfda3648ef01fdaca03e0d65611e6fcae0ee2ac090ebe99befcc35713f9fd08"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/lid-left.step",
+      "bytes": 255758,
+      "sha256": "5e26b3b1223ed7b3f590ba2556986dc48d79641a88438155cb7bed85ab1b75f1"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/lid-right.step",
+      "bytes": 255460,
+      "sha256": "a2d12cce6ce4e06289f28fc6e34646551711595d414f0288ef8e7c2e67935151"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/lid-top-single.step",
+      "bytes": 810196,
+      "sha256": "33b7ec7b5406a83d71e9d7daffb1e473006a17b0ddebfc1da64c8a205ce8f9f4"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/spacer-8mm-reference.step",
+      "bytes": 9310,
+      "sha256": "9d174f857cb865e489a151ec34da0f4422f3d33fbe7797ce79139f1c5edaea29"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/spacer-left-1.step",
+      "bytes": 9555,
+      "sha256": "6b7e7210f33db6f9319b32482387510d609e7b652e227079cc41c55bebd2dc16"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/spacer-left-2.step",
+      "bytes": 9555,
+      "sha256": "76ec9c933c8094aacf381b56ead58819b4654d4b322b0b1ee9f85f2aca3474f5"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/spacer-left-3.step",
+      "bytes": 9555,
+      "sha256": "35fb489dd768f95e274d0565b51ba39dbef84a4845efdda2614d0bcfbc343b7d"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/spacer-left-4.step",
+      "bytes": 9541,
+      "sha256": "d6026bcaa4d666be836932a06ec4855b2ecd6f3bfb5c033b9a932f50f3742f25"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/spacer-right-1.step",
+      "bytes": 9541,
+      "sha256": "054c7a1b0ca582ec3c6267bc8591c958d8771b37440c02c5d7dc4dd8257138e8"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/spacer-right-2.step",
+      "bytes": 9541,
+      "sha256": "98d4b5500ef51366ba28aa715c6354fbe17c238c8a28253c0ccb41ea8c9d5e28"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/spacer-right-3.step",
+      "bytes": 9541,
+      "sha256": "19f040f370745ceb719019bb6754f7394ae7e2c68438a7d334c16f65435063ca"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/step/spacer-right-4.step",
+      "bytes": 9527,
+      "sha256": "8a0796728d71d3028fd52a103d2b4cfe23a77a50f4f7aac03452a6e43a4f1ae5"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/body-back.stl",
+      "bytes": 420684,
+      "sha256": "828bf722ed76e3eee5c841c3b29c3b54bc10f5d46f004ffda897c5501d127195"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/body-bottom-back.stl",
+      "bytes": 53284,
+      "sha256": "d46de80df66e98998d3d8b6ec206520cb726f7efddf6cc8f3f2cfd63fbbf348b"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/body-bottom-common.stl",
+      "bytes": 53284,
+      "sha256": "d46de80df66e98998d3d8b6ec206520cb726f7efddf6cc8f3f2cfd63fbbf348b"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/body-bottom-front.stl",
+      "bytes": 53284,
+      "sha256": "ba1c501e8908f4fd53dd45b1ef642aad80f10ac8b77a18391dde58ae7990a426"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/body-front.stl",
+      "bytes": 34084,
+      "sha256": "27cba9882f6cbf6dff817fc7d585764d15ecd587bdc55b059a7339bcde782e94"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/body-left.stl",
+      "bytes": 374684,
+      "sha256": "a418c55c99baa9ad4fc965352052d23056099bf856dc15c28597083d8ad77b70"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/body-right.stl",
+      "bytes": 374684,
+      "sha256": "071cdf8ca4f42c4369593d3c6669413f9165c80c1dbbdfa2992935628e99c5cb"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/lid-back.stl",
+      "bytes": 16484,
+      "sha256": "7424fc68564e4db0d7f22130e30708b55863ee0c8bd807ceb29e83a7acccabeb"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/lid-front.stl",
+      "bytes": 16484,
+      "sha256": "fa2a985aa0839e78d27ccd804e56696d56b2e029ab8e40375979743e7abeea8d"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/lid-left.stl",
+      "bytes": 13684,
+      "sha256": "c707dec6f638d5418d675d49a2b22eca8d5a358b5dd56253147b5a2242ca9a7f"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/lid-right.stl",
+      "bytes": 13684,
+      "sha256": "a4643863b6a0f7ba5619090708e5e83e277f849f112d0f6c307712fe3190ad1a"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/lid-top-single.stl",
+      "bytes": 43884,
+      "sha256": "ffe4c56801641144d61cc791c6d919d73edc18b97f604be460d67087b05c0d37"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/10box-v2-r5/stl-review/spacer-8mm-reference.stl",
+      "bytes": 25284,
+      "sha256": "5cb1f72b90fe9382648b3393e17e5c9dddc0354c1917fd8a89d2738a7fba72aa"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/README.md",
+      "bytes": 6959,
+      "sha256": "bab102f9cc3f24d413c6035121103ce68cf6d5193dae9ebe76f375fa046b9349"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/accepted-bundle-MANIFEST.sha256",
+      "bytes": 21044,
+      "sha256": "e5203d9b0625049f4461c1b330cd906aa2d205b0eaa30a10b6035948e2c9d425"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/README.md",
+      "bytes": 8670,
+      "sha256": "de36200aa0ca2f57fa159b644983c2ed1afd88e324e365cfe393ae25c7b50c75"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/assembly-bom.csv",
+      "bytes": 873,
+      "sha256": "12a49bd1fd5fd412620c7c321cd0fc3c6270eed57f84ad7c31fb92cf288bd3d4"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/build_flat_projects.py",
+      "bytes": 18434,
+      "sha256": "87a5aa6e37f88376e5ace97a0818928caf974bb90d1edc9d761a386de26d5b25"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/floor-print-pose.json",
+      "bytes": 61579,
+      "sha256": "7804c2563b825c3728668236267286bd32f37722cdd0dde7d614dd1882335b86"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/h2d-project-report.json",
+      "bytes": 19819,
+      "sha256": "80f91ca83582cbc40729b084d03f10c7152b0ab584123e48c4d52e74b6c6fcc2"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/import-repair-report.json",
+      "bytes": 17678,
+      "sha256": "6efc372127351489d387a45b0dcb02ea49130922d35f4d3f2024e844acb3e866"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/independent-package-review.json",
+      "bytes": 27257,
+      "sha256": "2c1edc70ae08a5dc27bf823882a428720481c548d5f64b49bbbec9f6da99fca3"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/manifests/body-bottom-common-left-nozzle.json",
+      "bytes": 2905,
+      "sha256": "b93591a31ece29978bc264c9b5fed3523fc284ba09a2ed28ac5f21f4c417d6bb"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/meshes/body-bottom-common-print.mesh.json",
+      "bytes": 83450,
+      "sha256": "fc3f970551c46672f475bb47d2f5fec65aa0d14e90cc00d9c335f03c19aeee98"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/meshes/body-bottom-common-print.stl",
+      "bytes": 230576,
+      "sha256": "e5936b2f46e2d81e0633a01e5a4a7c6184e2b5adca83c098bf1ac723935f939d"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/body-back.3mf",
+      "bytes": 121397,
+      "sha256": "bd484ec986c17a749fdb2e076b5a78a85a986b9fafd980f8850f81f52dff4c29"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/body-bottom-common.3mf",
+      "bytes": 27791,
+      "sha256": "3cec52eeb8aec1eb67a7c9edbbfafe2c41f3d39d23da7df512ca28e616882007"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/body-front.3mf",
+      "bytes": 22673,
+      "sha256": "23e2722ed537d5359ed8cdc750889f7bfa3b4a41295d972eca44f1fe51d53617"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/body-left.3mf",
+      "bytes": 87010,
+      "sha256": "839574c5deebca49fee9dc26a4f174adaa0eb1b9c681b84570894920fd35e879"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/body-right.3mf",
+      "bytes": 86428,
+      "sha256": "df3a4deadc63b0e14f3e49f5ca1d2cbb018e59c22fea4ee9e15113634b8ed949"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/lid-back.3mf",
+      "bytes": 19019,
+      "sha256": "00a7a8cd8f63898691807a5c64d7b76fe592a4b456b63104af5b2bdc7cba8113"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/lid-front.3mf",
+      "bytes": 19003,
+      "sha256": "f8f14c879a6f04843fc1fd8a4c9dbac578dd3518ce52991751f6067775e0e10a"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/lid-left.3mf",
+      "bytes": 17591,
+      "sha256": "fae911ce26da493a5d43ab74289b6e80a9c9608c5fd8554c1f7989371d9238f7"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/lid-right.3mf",
+      "bytes": 17581,
+      "sha256": "ba5b722134de4282f4261ff64f7241b033c1cb454fbd33142583b7b12df0706c"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/lid-top-single.3mf",
+      "bytes": 23444,
+      "sha256": "cdd513b719a3c976b152a524fba3f3381db8a162889f47c586e2dfbc04730311"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/spacers-8.3mf",
+      "bytes": 59721,
+      "sha256": "613fa304c685196d7ef7722eeee62c101caf25f0bb8288368e18711cf28fc1af"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/stand-connector-back.3mf",
+      "bytes": 15570,
+      "sha256": "0d0f00996319da8d976d4557fe8f34c4c7bb90a34fd145e64323aca9de02af48"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/stand-connector-front.3mf",
+      "bytes": 15571,
+      "sha256": "5cebbb7dcb711d10606a0f9deb265b619f83796bd1af8ebaaf32f930ad362c9a"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/stand-left.3mf",
+      "bytes": 15762,
+      "sha256": "5de4da1d6eabb8d3932daf4c31963e6501150882a942ab744ff409a59c2b1edc"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/projects/stand-right.3mf",
+      "bytes": 15766,
+      "sha256": "bda56ad4eec3aa91fea9efcfc5d3ee826069d595251a1f1c693f2b7c3d9daf78"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/rebuild-verification.json",
+      "bytes": 2712,
+      "sha256": "a89d8ccfc031ebe6f5809c5119b933590519f20a2817508a163233ca9bb4fb5c"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/roof-print-pose.json",
+      "bytes": 47471,
+      "sha256": "a6dea93de18a1e7dea94cd8fd2152c8287b8e63213cdd9a56a701fec956d3ab8"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/body-back.3mf",
+      "bytes": 121397,
+      "sha256": "bd484ec986c17a749fdb2e076b5a78a85a986b9fafd980f8850f81f52dff4c29"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/body-front.3mf",
+      "bytes": 22673,
+      "sha256": "23e2722ed537d5359ed8cdc750889f7bfa3b4a41295d972eca44f1fe51d53617"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/body-left.3mf",
+      "bytes": 87010,
+      "sha256": "839574c5deebca49fee9dc26a4f174adaa0eb1b9c681b84570894920fd35e879"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/body-right.3mf",
+      "bytes": 86428,
+      "sha256": "df3a4deadc63b0e14f3e49f5ca1d2cbb018e59c22fea4ee9e15113634b8ed949"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/lid-back.3mf",
+      "bytes": 19019,
+      "sha256": "00a7a8cd8f63898691807a5c64d7b76fe592a4b456b63104af5b2bdc7cba8113"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/lid-front.3mf",
+      "bytes": 19003,
+      "sha256": "f8f14c879a6f04843fc1fd8a4c9dbac578dd3518ce52991751f6067775e0e10a"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/lid-left.3mf",
+      "bytes": 17591,
+      "sha256": "fae911ce26da493a5d43ab74289b6e80a9c9608c5fd8554c1f7989371d9238f7"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/lid-right.3mf",
+      "bytes": 17581,
+      "sha256": "ba5b722134de4282f4261ff64f7241b033c1cb454fbd33142583b7b12df0706c"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/lid-top-single.3mf",
+      "bytes": 23444,
+      "sha256": "cdd513b719a3c976b152a524fba3f3381db8a162889f47c586e2dfbc04730311"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/roof-print-pose.json",
+      "bytes": 47471,
+      "sha256": "d98eebd1574a2f289b2e44ed6c9c5fdb5e9c956d21b5b70d8f8730109e8e2e82"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/source-metadata.json",
+      "bytes": 13722,
+      "sha256": "eebdfa1ef4a8197750d1866cf8cba6f7792f8e1155ef60527b9c09e6fa1321e1"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/spacers-8.3mf",
+      "bytes": 59721,
+      "sha256": "613fa304c685196d7ef7722eeee62c101caf25f0bb8288368e18711cf28fc1af"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/stand-connector-back.3mf",
+      "bytes": 15570,
+      "sha256": "0d0f00996319da8d976d4557fe8f34c4c7bb90a34fd145e64323aca9de02af48"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/stand-connector-front.3mf",
+      "bytes": 15571,
+      "sha256": "5cebbb7dcb711d10606a0f9deb265b619f83796bd1af8ebaaf32f930ad362c9a"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/stand-left.3mf",
+      "bytes": 15762,
+      "sha256": "5de4da1d6eabb8d3932daf4c31963e6501150882a942ab744ff409a59c2b1edc"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-flat-r4/stand-right.3mf",
+      "bytes": 15766,
+      "sha256": "bda56ad4eec3aa91fea9efcfc5d3ee826069d595251a1f1c693f2b7c3d9daf78"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/source-template/h2d-empty.3mf",
+      "bytes": 20419,
+      "sha256": "0349a5f3759e8d42b8f9f0fd47b25c9110f90294e21104369e8d4d58bb8a2b59"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/sources/left-nozzle-mapping.md",
+      "bytes": 3451,
+      "sha256": "b2a9e18cd42d89983bab152b6dc0a30c86128e56669323413dec58ba3156fe38"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/sources/studio-exclusion-check.md",
+      "bytes": 1814,
+      "sha256": "b1bd8d2fcaf6f9842f6f40d79c3e263be0a795a85aa3f81967ee37cef32168d0"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/sources/studio-import-repair.md",
+      "bytes": 3780,
+      "sha256": "fa860133860e8807612eb6c28dccf532d9291e6d744883a95b0f50a9e3e290ba"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/studio-import-contract-review.json",
+      "bytes": 42608,
+      "sha256": "48d6f677bc0179815ec5696757aa336cfcaa2faae5d6c38c86c2530d2d2eec12"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/tools/bambu_3mf.py",
+      "bytes": 39667,
+      "sha256": "381e9d4b1378e1eac3472d400a0a8b1edc5fe3f973b6e236e08ab39bf809f5a0"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/tools/studio_cli.py",
+      "bytes": 2512,
+      "sha256": "94aa590576a52dae2db58e3cf0497311c01f9a32342d3a5e8d5cc438889b16c0"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/body-back-frozen-package.json",
+      "bytes": 1046,
+      "sha256": "9408d4520091af0c3da21bd00be7fba95b7ff3661ea87c1af9ddc4a3f63a594d"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/body-bottom-common-stl.json",
+      "bytes": 81,
+      "sha256": "5e4023675abe62d9f284ad5e48f79a8640aabed46e9ad27a306d9b4238affe8e"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/body-bottom-common-structural.json",
+      "bytes": 3539,
+      "sha256": "41299515bbe46aa653def501ec713a73301f5a009b19242d0f350b199afb147f"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/body-front-frozen-package.json",
+      "bytes": 1043,
+      "sha256": "45d677fe41012487bf7a41eaf3a588229c2572bee0324f63c724ae7cd813b353"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/body-left-frozen-package.json",
+      "bytes": 1013,
+      "sha256": "66f73d1fcc917c906037d6793ce60e6386120bf2d9be92bc306659e1212457ca"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/body-right-frozen-package.json",
+      "bytes": 1009,
+      "sha256": "be4205844d952abbf01e53a789e9ac8a1beea75c8a989069699284d5557459c6"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/lid-back-frozen-package.json",
+      "bytes": 1043,
+      "sha256": "31479e46fb8e1e7f4613d052208ff14d71ba1c504664047f7b958eb10338d3e9"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/lid-front-frozen-package.json",
+      "bytes": 1043,
+      "sha256": "31479e46fb8e1e7f4613d052208ff14d71ba1c504664047f7b958eb10338d3e9"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/lid-left-frozen-package.json",
+      "bytes": 1011,
+      "sha256": "4363e5f64e8c94f535947740721bb90f96549f95fc0a181440bbac9aeb9ad42e"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/lid-right-frozen-package.json",
+      "bytes": 1011,
+      "sha256": "4363e5f64e8c94f535947740721bb90f96549f95fc0a181440bbac9aeb9ad42e"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/lid-top-single-frozen-package.json",
+      "bytes": 1008,
+      "sha256": "56a8b0db8a180dab1d0ab706de97ee0c81fe976ed75725553a4f036ea01a0ced"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/spacers-8-frozen-package.json",
+      "bytes": 3806,
+      "sha256": "d0ad4420e6046fa847b00e44db362143e54ebe346d46dc757c5b85fe783c5e67"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/stand-connector-back-frozen-package.json",
+      "bytes": 1027,
+      "sha256": "aee84019f864cf9be204fefc338eb85a7648840543ba3c96facbd8097b1633c0"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/stand-connector-front-frozen-package.json",
+      "bytes": 1027,
+      "sha256": "aee84019f864cf9be204fefc338eb85a7648840543ba3c96facbd8097b1633c0"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/stand-left-frozen-package.json",
+      "bytes": 1027,
+      "sha256": "f2e5ead6ae136fda617e48b75222ea12710483843ee00a65c1b25be27b053f20"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/validation/stand-right-frozen-package.json",
+      "bytes": 1025,
+      "sha256": "0aacf4be237fe531b5fe6792434142a964008ecf4ab5c512d3e3c67951506105"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/verify_flat_packages.py",
+      "bytes": 15215,
+      "sha256": "1bc3fa336cb994feb134c9a32af9ac006a291f3cc253976045461d05c49e19d2"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/h2d-r5/verify_studio_import_contract.py",
+      "bytes": 13493,
+      "sha256": "674726540f7ed12165a8151874f14ae9530de9ef0450f474b4d3f3f87801c1a3"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/preview-r5/build_preview.py",
+      "bytes": 7381,
+      "sha256": "b5b0cc7119573f1063a768999648a456cdecaa4cd6f2b8a1b561712a72509924"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/preview-r5/build_print_scene.py",
+      "bytes": 4077,
+      "sha256": "74ba9a78c89e5e751542c590adcd4246b22ee1715fc005d25c3013fc67d0f6ae"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/preview-r5/check_renderer.cjs",
+      "bytes": 12523,
+      "sha256": "922265d57fc70331787fb61a0d7a3d32a8f4aeebe107fd3bd44cd041a57a9e2a"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/preview-r5/package-lock.json",
+      "bytes": 495,
+      "sha256": "546fd37c43966b9aed19b058a0825d65ddb302738df0526eebbf6b3d5ad5e03f"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/preview-r5/package.json",
+      "bytes": 50,
+      "sha256": "fb1f1be69ede3b863080dea0e322ff6e19f4ccbd99d5eb7aba94aeb5514b71e0"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/preview-r5/tenbox-v2-template.html",
+      "bytes": 14919,
+      "sha256": "77b414b3a0edc518df832a63347fefd5a8f2748caa20215bd9b54d55253dffc5"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/preview-r5/viewer-app.js",
+      "bytes": 20434,
+      "sha256": "25b084fc94eab7e18a083682650860208f6267ad3977bb5ac40083bd9f1fdf58"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/preview-r5/viewer-built.js",
+      "bytes": 31409,
+      "sha256": "9461d5fcbcc659a06b24a22faa41fb40bf9c31439fcf4513c42519fc514fde72"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/preview-r5/viewer-data.json",
+      "bytes": 1844533,
+      "sha256": "8f7c5f099c12c908bb9bca5bfdcb97d0e03b3aedb44c70e3c462b5141bb50f8c"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/research/zudo-case/viewer-template.html",
+      "bytes": 57915,
+      "sha256": "d85dc9ccc29451acd8e343640ae8d4179ceaa42db0dac2b97a97145f2dec8c7e"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/source/research/zzmod/rail-3u60-geometry.json",
+      "bytes": 289996,
+      "sha256": "3790d8aa762f040af6c9d0d93d49495dd7425b0bf4fdbc1633fef500a5971e79"
+    }
+  ],
+  "public_files": [
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5-print.zip",
+      "bytes": 594496,
+      "sha256": "68ac9126b53ae3e1cd8f3359c943d78c2490331806809a9e73285310e9873027"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5-review.zip",
+      "bytes": 2214169,
+      "sha256": "0f53338cf77d3393ad32db0bbf1aac4442dcca1a3a219f447d0675825dd1c61b"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5-source.zip",
+      "bytes": 6233289,
+      "sha256": "9bf1ed35a5ff62caff97d5a4c7a03a6f53425d2d84452b4d3f19315f0df24d96"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/body-back.3mf",
+      "bytes": 121397,
+      "sha256": "bd484ec986c17a749fdb2e076b5a78a85a986b9fafd980f8850f81f52dff4c29"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/body-bottom-common.3mf",
+      "bytes": 27787,
+      "sha256": "779499bf84ee5a8d1a5d4153d908b5bf46988b0a558a43b8e8c054f7433d245b"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/body-front.3mf",
+      "bytes": 22673,
+      "sha256": "23e2722ed537d5359ed8cdc750889f7bfa3b4a41295d972eca44f1fe51d53617"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/body-left.3mf",
+      "bytes": 87010,
+      "sha256": "839574c5deebca49fee9dc26a4f174adaa0eb1b9c681b84570894920fd35e879"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/body-right.3mf",
+      "bytes": 86428,
+      "sha256": "df3a4deadc63b0e14f3e49f5ca1d2cbb018e59c22fea4ee9e15113634b8ed949"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/lid-back.3mf",
+      "bytes": 19019,
+      "sha256": "00a7a8cd8f63898691807a5c64d7b76fe592a4b456b63104af5b2bdc7cba8113"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/lid-front.3mf",
+      "bytes": 19003,
+      "sha256": "f8f14c879a6f04843fc1fd8a4c9dbac578dd3518ce52991751f6067775e0e10a"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/lid-left.3mf",
+      "bytes": 17591,
+      "sha256": "fae911ce26da493a5d43ab74289b6e80a9c9608c5fd8554c1f7989371d9238f7"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/lid-right.3mf",
+      "bytes": 17581,
+      "sha256": "ba5b722134de4282f4261ff64f7241b033c1cb454fbd33142583b7b12df0706c"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/lid-top-single.3mf",
+      "bytes": 23444,
+      "sha256": "cdd513b719a3c976b152a524fba3f3381db8a162889f47c586e2dfbc04730311"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/spacers-8.3mf",
+      "bytes": 59721,
+      "sha256": "613fa304c685196d7ef7722eeee62c101caf25f0bb8288368e18711cf28fc1af"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/stand-connector-back.3mf",
+      "bytes": 15570,
+      "sha256": "0d0f00996319da8d976d4557fe8f34c4c7bb90a34fd145e64323aca9de02af48"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/stand-connector-front.3mf",
+      "bytes": 15571,
+      "sha256": "5cebbb7dcb711d10606a0f9deb265b619f83796bd1af8ebaaf32f930ad362c9a"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/stand-left.3mf",
+      "bytes": 15762,
+      "sha256": "5de4da1d6eabb8d3932daf4c31963e6501150882a942ab744ff409a59c2b1edc"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r5/stand-right.3mf",
+      "bytes": 15766,
+      "sha256": "bda56ad4eec3aa91fea9efcfc5d3ee826069d595251a1f1c693f2b7c3d9daf78"
+    },
+    {
+      "path": "public/previews/tenbox-v2-r5.html",
+      "bytes": 586120,
+      "sha256": "4aa7b56f015e80f3b8d2f0ee5c60b1cf8dbdb7f2fc199e2295d2cfd4a4af6074"
+    }
+  ],
+  "printed_parts": [
+    {
+      "id": "body-left",
+      "quantity": 1,
+      "group": "body",
+      "units": "mm"
+    },
+    {
+      "id": "body-right",
+      "quantity": 1,
+      "group": "body",
+      "units": "mm"
+    },
+    {
+      "id": "body-front",
+      "quantity": 1,
+      "group": "body",
+      "units": "mm"
+    },
+    {
+      "id": "body-back",
+      "quantity": 1,
+      "group": "body",
+      "units": "mm"
+    },
+    {
+      "id": "body-bottom-front",
+      "quantity": 1,
+      "group": "body",
+      "units": "mm"
+    },
+    {
+      "id": "body-bottom-back",
+      "quantity": 1,
+      "group": "body",
+      "units": "mm"
+    },
+    {
+      "id": "lid-left",
+      "quantity": 1,
+      "group": "lid",
+      "units": "mm"
+    },
+    {
+      "id": "lid-right",
+      "quantity": 1,
+      "group": "lid",
+      "units": "mm"
+    },
+    {
+      "id": "lid-front",
+      "quantity": 1,
+      "group": "lid",
+      "units": "mm"
+    },
+    {
+      "id": "lid-back",
+      "quantity": 1,
+      "group": "lid",
+      "units": "mm"
+    },
+    {
+      "id": "lid-top-single",
+      "quantity": 1,
+      "group": "lid",
+      "units": "mm"
+    },
+    {
+      "id": "stand-left",
+      "quantity": 1,
+      "group": "stand",
+      "units": "mm"
+    },
+    {
+      "id": "stand-right",
+      "quantity": 1,
+      "group": "stand",
+      "units": "mm"
+    },
+    {
+      "id": "stand-connector-front",
+      "quantity": 1,
+      "group": "stand",
+      "units": "mm"
+    },
+    {
+      "id": "stand-connector-back",
+      "quantity": 1,
+      "group": "stand",
+      "units": "mm"
+    },
+    {
+      "id": "spacer-left-1",
+      "quantity": 1,
+      "group": "mounts",
+      "units": "mm"
+    },
+    {
+      "id": "spacer-left-2",
+      "quantity": 1,
+      "group": "mounts",
+      "units": "mm"
+    },
+    {
+      "id": "spacer-left-3",
+      "quantity": 1,
+      "group": "mounts",
+      "units": "mm"
+    },
+    {
+      "id": "spacer-left-4",
+      "quantity": 1,
+      "group": "mounts",
+      "units": "mm"
+    },
+    {
+      "id": "spacer-right-1",
+      "quantity": 1,
+      "group": "mounts",
+      "units": "mm"
+    },
+    {
+      "id": "spacer-right-2",
+      "quantity": 1,
+      "group": "mounts",
+      "units": "mm"
+    },
+    {
+      "id": "spacer-right-3",
+      "quantity": 1,
+      "group": "mounts",
+      "units": "mm"
+    },
+    {
+      "id": "spacer-right-4",
+      "quantity": 1,
+      "group": "mounts",
+      "units": "mm"
+    }
+  ],
+  "printed_bom": {
+    "body": 6,
+    "lid": 5,
+    "stand": 4,
+    "spacers": 8,
+    "total": 23,
+    "reference_rails_pcb_hardware_included": false,
+    "complete_purchased_hardware_bom": false
+  },
+  "print_projects": [
+    {
+      "part_id": "body-bottom-common",
+      "project_file": "projects/body-bottom-common.3mf",
+      "assembly_ids": [
+        "body-bottom-back",
+        "body-bottom-front"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 2,
+      "plate_runs_for_assembly": 2
+    },
+    {
+      "part_id": "lid-top-single",
+      "project_file": "projects/lid-top-single.3mf",
+      "assembly_ids": [
+        "lid-top-single"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "lid-left",
+      "project_file": "projects/lid-left.3mf",
+      "assembly_ids": [
+        "lid-left"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "lid-right",
+      "project_file": "projects/lid-right.3mf",
+      "assembly_ids": [
+        "lid-right"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "body-left",
+      "project_file": "projects/body-left.3mf",
+      "assembly_ids": [
+        "body-left"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "body-right",
+      "project_file": "projects/body-right.3mf",
+      "assembly_ids": [
+        "body-right"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "body-front",
+      "project_file": "projects/body-front.3mf",
+      "assembly_ids": [
+        "body-front"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "body-back",
+      "project_file": "projects/body-back.3mf",
+      "assembly_ids": [
+        "body-back"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "lid-front",
+      "project_file": "projects/lid-front.3mf",
+      "assembly_ids": [
+        "lid-front"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "lid-back",
+      "project_file": "projects/lid-back.3mf",
+      "assembly_ids": [
+        "lid-back"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "stand-left",
+      "project_file": "projects/stand-left.3mf",
+      "assembly_ids": [
+        "stand-left"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "stand-right",
+      "project_file": "projects/stand-right.3mf",
+      "assembly_ids": [
+        "stand-right"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "stand-connector-front",
+      "project_file": "projects/stand-connector-front.3mf",
+      "assembly_ids": [
+        "stand-connector-front"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "stand-connector-back",
+      "project_file": "projects/stand-connector-back.3mf",
+      "assembly_ids": [
+        "stand-connector-back"
+      ],
+      "stored_object_count": 1,
+      "required_physical_quantity": 1,
+      "plate_runs_for_assembly": 1
+    },
+    {
+      "part_id": "spacers-8",
+      "project_file": "projects/spacers-8.3mf",
+      "assembly_ids": [
+        "spacer-left-1",
+        "spacer-left-2",
+        "spacer-left-3",
+        "spacer-left-4",
+        "spacer-right-1",
+        "spacer-right-2",
+        "spacer-right-3",
+        "spacer-right-4"
+      ],
+      "stored_object_count": 8,
+      "required_physical_quantity": 8,
+      "plate_runs_for_assembly": 1
+    }
+  ],
+  "print_poses": {
+    "floor": {
+      "part_id": "body-bottom-common",
+      "units": "mm",
+      "source_file": "10box-v2-r5/step/body-bottom-common.step",
+      "source_sha256": "bc908deac3a8e7f3646560b380a1ea7177904167c05e338b2d01563c923494ba",
+      "assembly_ids": [
+        "body-bottom-back",
+        "body-bottom-front"
+      ],
+      "required_physical_quantity": 2,
+      "stored_object_count": 1,
+      "rotation_matrix_row_major": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865476,
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        111.23676654723388,
+        108.73676654723388,
+        0.0
+      ],
+      "formula": "x′=(X+Y−72.49716)/sqrt(2)+162.5; y′=(−X+Y−72.49716)/sqrt(2)+160; z′=Z",
+      "yaw_degrees": -45,
+      "model_bounds_xyz_mm": [
+        [
+          4.074733858412586,
+          4.403160983158784,
+          0.0
+        ],
+        [
+          320.92526614141,
+          315.59683901716,
+          5.0
+        ]
+      ],
+      "model_dimensions_xyz_mm": [
+        316.85053228299745,
+        311.1936780340012,
+        5.0
+      ],
+      "brim_type": "no_brim",
+      "brim_width_mm": 0,
+      "brim_object_gap_mm": 0.1,
+      "supports": false,
+      "left_area_xy_mm": [
+        0,
+        0,
+        325,
+        320
+      ],
+      "common_area_xy_mm": [
+        25,
+        0,
+        325,
+        320
+      ],
+      "common_height_mm": 320,
+      "excluded_xy_mm": [
+        145,
+        310,
+        256,
+        326
+      ],
+      "plate_override": {
+        "filament_map_mode": "Manual",
+        "filament_maps": "1 1"
+      },
+      "clearance": {
+        "left_nozzle_area_xy_mm": [
+          0.0,
+          0.0,
+          325.0,
+          320.0
+        ],
+        "minimum_nozzle_edge_margins_mm": {
+          "left": 4.074733858412586,
+          "right": 4.07473385858998,
+          "front": 4.403160983158784,
+          "rear": 4.4031609828400065
+        },
+        "projected_hull_xy_mm": [
+          [
+            320.92526614141,
+            104.10120076396001
+          ],
+          [
+            109.42962788841,
+            315.59683901716
+          ],
+          [
+            86.80221089071,
+            315.59683901716
+          ],
+          [
+            66.40619662001001,
+            302.05976052316
+          ],
+          [
+            52.26406099631,
+            287.91762490016
+          ],
+          [
+            38.12192537251,
+            273.77548927616
+          ],
+          [
+            23.97978974881,
+            259.63335365216
+          ],
+          [
+            4.074733858412586,
+            232.86936198416
+          ],
+          [
+            4.074733858412586,
+            215.89879923616002
+          ],
+          [
+            215.57037211141002,
+            4.403160983158784
+          ],
+          [
+            238.19778910941002,
+            4.403160983158784
+          ],
+          [
+            262.13335365241,
+            21.47978974886
+          ],
+          [
+            276.27548927641004,
+            35.62192537256
+          ],
+          [
+            304.55976052341003,
+            63.90619661996
+          ],
+          [
+            320.92526614141,
+            87.13063801546001
+          ]
+        ],
+        "exclusions": [
+          {
+            "setting": "wrapping_exclude_area",
+            "rectangle_xy_mm": [
+              145.0,
+              310.0,
+              256.0,
+              326.0
+            ],
+            "projected_hull_overlap_area_mm2": 0.0,
+            "projected_hull_clearance_mm": 21.19448850720464
+          }
+        ],
+        "portion_above_y310_xrange_mm": [
+          78.36957836106917,
+          115.02646690556469
+        ],
+        "bounding_rectangle_intersects_wrapping_exclusion": true,
+        "validation_method": "Conservative projected mesh convex hull against the saved exclusion polygon; model bbox is used only for rectangular nozzle reach."
+      }
+    },
+    "roof": {
+      "part_id": "lid-top-single",
+      "units": "mm",
+      "source_file": "10box-v2-r5/step/lid-top-single.step",
+      "source_sha256": "33b7ec7b5406a83d71e9d7daffb1e473006a17b0ddebfc1da64c8a205ce8f9f4",
+      "rotation_matrix_row_major": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "translation_mm": [
+        162.5,
+        155.0,
+        -108.0
+      ],
+      "formula": "Flat: (x+162.5,y+155,z−108); left nozzle only",
+      "model_bounds_xyz_mm": [
+        [
+          4.0,
+          10.0,
+          0.0
+        ],
+        [
+          321.0,
+          300.0,
+          5.0
+        ]
+      ],
+      "model_dimensions_xyz_mm": [
+        317.0,
+        290.0,
+        5.0
+      ],
+      "brim_type": "no_brim",
+      "brim_width_mm": 0,
+      "brim_object_gap_mm": 0.1,
+      "left_area_xy_mm": [
+        0,
+        0,
+        325,
+        320
+      ],
+      "common_area_xy_mm": [
+        25,
+        0,
+        325,
+        320
+      ],
+      "common_height_mm": 320,
+      "excluded_xy_mm": [
+        145,
+        310,
+        256,
+        326
+      ],
+      "plate_override": {
+        "filament_map_mode": "Manual",
+        "filament_maps": "1 1"
+      }
+    }
+  },
+  "settings": {
+    "template": "engineering/tenbox-v2/r5/source/h2d-r5/source-template/h2d-empty.3mf",
+    "template_preserved": true,
+    "printer": "H2D",
+    "nozzle_mm": 0.6,
+    "material": "PLA",
+    "other_project_overrides": "preserved",
+    "floor_roof_nozzle": "left only",
+    "floor_roof_filament_map_mode": "Manual",
+    "floor_roof_filament_maps": "1 1",
+    "floor_roof_object_extruder": "1",
+    "floor_roof_brim_support": "none"
+  },
+  "incremental_dependencies": {
+    "cad": "source/10box-v2-r5/source-r4 STEP/model inputs; only floors regenerated",
+    "h2d": "common floor regenerated; 14 corrected frozen source-flat-r4 projects copied",
+    "preview": "frozen P5-derived renderer, native rail geometry, R4 comparison model, exact floor/roof poses"
+  },
+  "verification": {
+    "accepted_input_generator_checks": 82,
+    "accepted_input_export_step_checks": 27,
+    "accepted_input_import_contracts": 29,
+    "accepted_input_software_renderer_checks": 36,
+    "current_clean_build": "passed",
+    "current_extracted_source_rebuild": "passed",
+    "current_cad_checks": 82,
+    "current_export_step_checks": 27,
+    "current_import_contracts": 29,
+    "current_actual_project_settings_layouts": 15,
+    "current_zip_negative_tests": 5,
+    "current_stl_topology_winding": "passed all 13 current standalone assembly STL exports and every mesh in all 15 3MFs; actual topology, winding and positive volume",
+    "browser": "recorded separately by integrated verification",
+    "native_studio_load": "not_performed",
+    "native_studio_slice": "not_performed",
+    "physical_print_fit_load": "not_performed",
+    "orders_prices_approval": "outside scope"
+  },
+  "benign_generated_differences": [
+    "STEP generated headers/timestamps",
+    "3MF object UUIDs and ZIP timestamps"
+  ],
+  "acceptance_rule": "Geometry, meshes, transforms and settings must match accepted inputs; output hashes alone are not geometry equivalence.",
+  "tooling_files": [
+    {
+      "path": "engineering/tenbox-v2/r5/build.py",
+      "bytes": 6204,
+      "sha256": "c0141e18d513c6aa016513882d0c1ba9d96ac3729ab8dbeca1632c0294fdb42a"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/verify.py",
+      "bytes": 6299,
+      "sha256": "59829cbb23f69bdcfbbd781ce6bb37f5550bc770555090c84e13724b67641b7b"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/regenerate.py",
+      "bytes": 1743,
+      "sha256": "9c8dcf5e9b360efb9d5c77a49d15eb854807e258f7e9e059c5d200a8125f2a88"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/test_contract.py",
+      "bytes": 3370,
+      "sha256": "b99fb15aea871ed5c6880b92760793c47a502e367f02386c9f58dc74c7205cfb"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/pyproject.toml",
+      "bytes": 184,
+      "sha256": "880826b455698d649f7096b921bf279c47bfcfb0850f72397fa6983069fdc9c8"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/uv.lock",
+      "bytes": 97408,
+      "sha256": "ddad5dd5c4a45c7bece1f48c1edb65944d77596e954f1c5a4b5eeeebf9b526dc"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/.python-version",
+      "bytes": 8,
+      "sha256": "f50159fad3f4319868eb38717b91d55843c41e9803014c8de05e116a6d0bcfdc"
+    },
+    {
+      "path": "engineering/tenbox-v2/r5/README.md",
+      "bytes": 3672,
+      "sha256": "ff2dcbe4806964a4b73c10f3febcf6799b8d0fa09a81ad39a63ddd8e8411207e"
+    }
+  ]
+}

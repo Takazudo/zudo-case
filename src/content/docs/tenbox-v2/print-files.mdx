@@ -1,0 +1,33 @@
+---
+title: "10BOX-v2・印刷ファイルと数量"
+description: "現行R5の15個のH2Dプロジェクト、23部品、編集用ソースと組立座標STEP/STL。"
+sidebar_position: 20
+---
+
+<PreviewSource />
+
+| ファイル | 用途 |
+|---|---|
+| <PreviewLink path="/downloads/candidate/tenbox-v2-r5-print.zip">R5・印刷セット</PreviewLink> | H2D 0.6mm/PLAの設定済み3MF 15個、共通底板の印刷姿勢STL、数量表と姿勢 |
+| <PreviewLink path="/downloads/candidate/tenbox-v2-r5-source.zip">R5・編集用ソース</PreviewLink> | 固定Python環境、増分CAD/H2D/プレビュー生成コード、再生成に必要な凍結入力 |
+| <PreviewLink path="/downloads/candidate/tenbox-v2-r5-review.zip">R5・形状確認セット</PreviewLink> | 組立座標STEP/STL、オフライン単体プレビュー |
+| <PreviewLink path="/downloads/candidate/tenbox-v2-r5/body-bottom-common.3mf">共通底板3MF</PreviewLink> | 1枚／プレート、同じものを2回印刷 |
+| <PreviewLink path="/downloads/candidate/tenbox-v2-r5/lid-top-single.3mf">天板3MF</PreviewLink> | LEFTノズルで平置き、1枚 |
+
+## 23個の印刷部品
+
+| グループ | 数量 | 扱い |
+|---|---:|---|
+| 本体 | 6 | 左右・前後壁4＋同じ底板2 |
+| 蓋 | 5 | 1枚天板＋縁4 |
+| スタンド | 4 | 左右＋連結2、受入形状を据置 |
+| 8mmスペーサー | 8 | 1プロジェクト・1プレートで8個 |
+| **合計** | **23** | レール・PCB・金物を除く |
+
+15プロジェクトには22オブジェクトを保存しています。共通底板は1つの物理形状を2回印刷するので、16回のプレート実行で23部品になります。「共通底板」を前後底板に加える3枚目として数えません。購入金物一式のBOMではありません。
+
+## 座標と入力の扱い
+
+reviewセットの通常STEP/STLは**組立座標**です。前底板のZ36..41mmは正常です。印刷は保存姿勢を持つ3MFを優先し、STLを使う場合はprintセットの`print-oriented-stl/body-bottom-common-print.stl`を選びます。受領した元ZIP・出典とhashはリポジトリの`engineering/tenbox-v2/r5/inputs/`と`project/tenbox-v2/manifest.json`に保持します。sourceセットの内部R4入力は再生成に必要なbaselineであり、旧版の印刷を推奨する配布物ではありません。
+
+[印刷設定](./printing.mdx)と[組立](./assembly.mdx)を確認してください。これらは未スライス・未印刷の候補です。

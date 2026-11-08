@@ -1,0 +1,205 @@
+{
+  "status": "structural_checks_passed",
+  "build_items": [
+    {
+      "object_id": "2",
+      "instance_id": 0,
+      "bounds_mm": [
+        [
+          134.0,
+          138.0,
+          0.0
+        ],
+        [
+          143.99378461,
+          147.99689182,
+          8.0
+        ]
+      ]
+    },
+    {
+      "object_id": "4",
+      "instance_id": 0,
+      "bounds_mm": [
+        [
+          158.0,
+          138.0,
+          0.0
+        ],
+        [
+          167.99378461,
+          147.99689182,
+          8.0
+        ]
+      ]
+    },
+    {
+      "object_id": "6",
+      "instance_id": 0,
+      "bounds_mm": [
+        [
+          182.0,
+          138.0,
+          0.0
+        ],
+        [
+          191.99378461,
+          147.99689182,
+          8.0
+        ]
+      ]
+    },
+    {
+      "object_id": "8",
+      "instance_id": 0,
+      "bounds_mm": [
+        [
+          206.0,
+          138.0,
+          0.0
+        ],
+        [
+          215.99378461,
+          147.99689182,
+          8.0
+        ]
+      ]
+    },
+    {
+      "object_id": "10",
+      "instance_id": 0,
+      "bounds_mm": [
+        [
+          134.0,
+          162.0,
+          0.0
+        ],
+        [
+          143.99378461,
+          171.99689182,
+          8.0
+        ]
+      ]
+    },
+    {
+      "object_id": "12",
+      "instance_id": 0,
+      "bounds_mm": [
+        [
+          158.0,
+          162.0,
+          0.0
+        ],
+        [
+          167.99378461,
+          171.99689182,
+          8.0
+        ]
+      ]
+    },
+    {
+      "object_id": "14",
+      "instance_id": 0,
+      "bounds_mm": [
+        [
+          182.0,
+          162.0,
+          0.0
+        ],
+        [
+          191.99378461,
+          171.99689182,
+          8.0
+        ]
+      ]
+    },
+    {
+      "object_id": "16",
+      "instance_id": 0,
+      "bounds_mm": [
+        [
+          206.0,
+          162.0,
+          0.0
+        ],
+        [
+          215.99378461,
+          171.99689182,
+          8.0
+        ]
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "model": "3D/3dmodel.model",
+      "object_id": "1",
+      "vertices": 252,
+      "triangles": 504,
+      "signed_volume_mm3": 437.52601
+    },
+    {
+      "model": "3D/3dmodel.model",
+      "object_id": "3",
+      "vertices": 252,
+      "triangles": 504,
+      "signed_volume_mm3": 437.52601
+    },
+    {
+      "model": "3D/3dmodel.model",
+      "object_id": "5",
+      "vertices": 252,
+      "triangles": 504,
+      "signed_volume_mm3": 437.52601
+    },
+    {
+      "model": "3D/3dmodel.model",
+      "object_id": "7",
+      "vertices": 252,
+      "triangles": 504,
+      "signed_volume_mm3": 437.52601
+    },
+    {
+      "model": "3D/3dmodel.model",
+      "object_id": "9",
+      "vertices": 252,
+      "triangles": 504,
+      "signed_volume_mm3": 437.52601
+    },
+    {
+      "model": "3D/3dmodel.model",
+      "object_id": "11",
+      "vertices": 252,
+      "triangles": 504,
+      "signed_volume_mm3": 437.52601
+    },
+    {
+      "model": "3D/3dmodel.model",
+      "object_id": "13",
+      "vertices": 252,
+      "triangles": 504,
+      "signed_volume_mm3": 437.52601
+    },
+    {
+      "model": "3D/3dmodel.model",
+      "object_id": "15",
+      "vertices": 252,
+      "triangles": 504,
+      "signed_volume_mm3": 437.52601
+    }
+  ],
+  "layout_checked": true,
+  "contains_toolpaths": false,
+  "not_checked": [
+    "Bambu Studio load/slicing",
+    "self-intersections",
+    "wall thickness and fit",
+    "support/brim/prime tower clearance",
+    "sequential-print toolhead clearance"
+  ],
+  "settings_changes": {},
+  "settings_bytes_unchanged": true,
+  "studio_root_relationship_dispatch_pass": true,
+  "studio_application_loaded": false,
+  "xml_import_compatibility": "Raw namespace-unaware root Relationship dispatch now passes; full surface checks recorded separately."
+}

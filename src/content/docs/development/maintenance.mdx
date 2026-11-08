@@ -1,59 +1,110 @@
 ---
 title: "文書・表・資産の更新"
-description: "MDXの編集と、参照表の同期を分離する。"
+description: "読者の作業と系列の境界を保つ、文書配置・構成・生成物・旧URLの共通編集方針。"
 sidebar_position: 20
 ---
 
+このページが、人とエージェントの共通の編集方針です。対象はケースを選ぶ人、現行ファイルで印刷・組立を準備する人、設計の根拠を確認する人、サイトと台帳を保守する人です。現行手順から目的を達成できるようにし、旧版の開発経緯を順に読まないと作業できない構成にしません。
+
 ## 文書を書くルール
 
-文書は６つの区分に置く: `overview/`（全体案内）、`metal-case/`（金属ケース）、`printed-5mm/`（家庭印刷ケース）、`two-way/`（2WAY 実験設計）、`shared/`（共通部品・元データ）、`development/`（開発・保守）。系列のページは系列の区分へ置き、他の系列の仕様や数量をまとめて書かない。共通部品の区分には、複数の系列で使う部品と元データだけを置く。
+日本語MDXを`src/content/docs/`へ置きます。各カテゴリに短い`index.mdx`を作り、全ページに`title`・`description`・数値の`sidebar_position`を指定します。順番は同じ親で重複させません。カテゴリの`index.mdx`の値は親の兄弟との並び順です。本文にH1を加えず、見出しは`##`から始めます。文書間リンクは相対`.mdx`、公開資産は`/images`などの公開パスを使います。
 
-各カテゴリに`index.mdx`を置き、すべてのページへ`title`・`description`・`sidebar_position`を指定する。`sidebar_position`は同じ親の中で重複させない。カテゴリの`index.mdx`の値は親カテゴリの並び順に参加する。本文は`##`から始める。文書間リンクは拡張子付きの相対`.mdx`リンクにする。
+新しいページ、既存ページへの新しい作業・話題の追加、ページの役割変更には、次の４点を確認します。誤字・表現・書式だけの修正は省略できます。
 
-カテゴリ一覧はzudo-docの`CategoryNav`。互換ページを含むカテゴリでは`categories`で表示する子ページを明示する。家庭印刷ケースのサイドバーは、版ごとのグループを保つため`src/sidebars.js`で明示している。新しいページを追加したらここにも加える。特別な描画フレームワークを追加せず、MDXと標準の注記・表を中心にした。
+1. 誰が、この内容を使って何をできるようになるか。
+2. 同じ役割のページが既にないか。タイトル、description、カテゴリ一覧を検索し、draft・unlistedも重複候補として確認する。
+3. どのカテゴリが所有するか。競合する置き場所と、次の境界表で決め手になる違いは何か。
+4. 追加によってカテゴリの意味が変わるか。
+
+答えが明確なら配置し、PRまたは作業記録へ理由を１行残します。日常の配置理由をこの方針へ蓄積する必要はありません。
+
+## カテゴリの意味と境界
+
+以下は今回の依頼で確定した**編集上の決定**です。仕様の採用・寸法の測定・製作承認とは別です。正式なページは７区分のどれか１つが所有します。
+
+| 区分 | 読者と作業・含む内容 | 含めない内容・隣との境界 |
+|---|---|---|
+| `overview/` | ケースを選ぶ人の入口、系列をまたぐ短い状態要約、共通の用語 | 版別の印刷手順・数量・詳しい設計根拠は各系列へ。全体案内からリンクする |
+| `metal-case/` | 金属ケースを準備する人の３機種、R6〜R10、製作候補、見積、発注前確認、金属台帳保守 | 家庭印刷P3〜P5や10BOX-v2の仕様は含めない。「10BOX式の載せ蓋」という方式名だけで10BOX-v2へ分類しない |
+| `printed-5mm/` | 7U40・5mm家庭印刷の現行P5、旧P4/P3、関連プレビュー・ファイル・通気孔 | 独立した二段3U60HPの10BOX-v2、金属R10の数量・発注記録は含めない |
+| `tenbox-v2/` | 二段3U60HPの独立10BOX-v2。現行R5の印刷、組立、ファイル、設計根拠と検証限界 | 7U40のP5改訂ではない。旧R1〜R4を現行作業の必読手順にしない |
+| `two-way/` | 2トレーの検討を読む人のF5原資料、TW-01作業版、構成比較 | 製造用CADや単トレーの蓋仕様を置き換えない |
+| `shared/` | 複数系列が参照する部品・元レール・PCB・出典 | 一系列だけの部品数量や採用値は系列側。部品が似ているだけで共通仕様にしない |
+| `development/` | サイトを起動・保守する人の環境、文書編集方針、生成所有と旧URL、配信の仕組み | 金属だけの見積・承認台帳は[金属台帳保守](../metal-case/maintaining-data.mdx)へ。CAD作業は系列のengineeringへ |
+
+## 構成を見直す条件
+
+カテゴリ競合、同じ読者作業の重複、既存の定義と異なる独立した内容群、読者が目的のページを見つけられない具体的な報告がある場合に見直します。ページ数、均等さ、点数だけを理由に再編しません。
+
+まずカテゴリ一覧とこの方針を読み、関係・競合するページと例外だけを順に確認します。調べた範囲を作業記録へ示し、部分調査を全体監査と呼びません。読者の困りごとを１〜２文で書き、既存ページへの追記、見出し・入口の改善、局所的な分割・統合、主たる置き場所と関連リンクを比較します。問題を解決できる案から選び、同等なら変更量を比較します。構成維持も有効な結論です。同じ入力を新しい根拠なしに再分類しません。
+
+後続の著者に必要な境界、重要な例外、実施した再編の理由だけをここへ残します。所有者の決定、設定・既存文書で確認できる事実、未確認の仮説を区別し、空欄や推測を確定ルールにしません。既存方針で解けない重要な目標の衝突だけを所有者へ確認します。
+
+## ナビゲーションとURLの例外
+
+通常はファイルシステムの階層と、リンク先を持つカテゴリの行をそのまま使います。ヘッダーの「ケース」は全体案内への入口で、金属・7U40家庭印刷・10BOX-v2・2WAYを選べます。これはヘッダーだけのグループで、サイドバーに架空の親は作りません。行き先の所有はURL先頭と固有の`categoryMatch`で決まります。
+
+`overview`・`metal-case`・`tenbox-v2`・`two-way`・`shared`・`development`は`src/sidebars.js`の`items: []`と`scopeRoot: "configured"`で、その系列の実際の根を上限にします。初回表示とRestoreは系列全体、Broadenはそこを越えません。短い平坦な区分に狭い`initialPath`を足しません。
+
+**公開URL維持の例外（決定）:** `printed-5mm`の既存ページは平坦なURLを保持し、`src/navigation/printed-tree.js`の編集ツリーで、リンク付きの入口の下にP5設計・履歴・P4設計・P3設計をこの順で置きます。P5配下はプレビュー・ファイル・通気孔、P4/P3配下はそれぞれプレビュー・ファイル。P4/P3は初期折り畳みです。ページ追加時はメンバー表にも加え、正式ページがちょうど１回ずつ現れることを検査します。
+
+この例外は同じコンテキストを渡すHeader/Sidebarの組だけを変更します。パンくず、前後リンク、検索、sitemap、`CategoryNav`はURLベースのままです。したがって家庭印刷の入口と各設計ページは編集ツリーと同じ順のリンクを本文へ明示します。通常の一覧は標準`CategoryNav`を使い、互換ページの残るディレクトリは`categories={[...]}`で正式な子だけを列挙します。
 
 ## ページを移動するとき
 
-ページを動かす場合は`project/doc-routes.json`へ旧ページ・所有区分・正式なページ・扱いを記録し、`node scripts/sync-doc-routes.mjs`で旧URLの互換ページ（`unlisted: true`）と[文書の構成と旧URL](./doc-structure.mdx)の表を生成する。互換ページは手で編集しない。旧ページの見出しアンカーは互換ページに残り、移動先の見出しへリンクする。内部リンクは常に正式なページへ向ける。
+既存の正式URLは保持します。移動が必要な別の依頼では、論理上の分類とファイル移動によるURL変更を別々に判断します。`project/doc-routes.json`へ所有区分・正式なページ・旧ページ・扱いを記録し、`node scripts/sync-doc-routes.mjs`で`unlisted: true`互換ページと[所有表](./doc-structure.mdx)を生成します。今回の新規ページは`source: null`で追加し、正式行を重複させません。
+
+互換ページを手で編集せず、旧見出しアンカーを残し、内部リンクは正式ページへ向けます。互換ページはルートとして存在しますがサイドバー・検索・前後リンクから除外します。言語・版の追加や移動は`zfb.config.ts`の`docsDir`・locale設定を確認して別に扱い、版スナップショットを現在文書と一緒に再編しません。
 
 ## 数字の更新
 
-金属ケースの機種別ページ、比較表、BOMは`project/current-spec.json`から生成する。
+金属の表と製作・見積台帳の更新手順は[金属ケースの台帳・製作データを保守する](../metal-case/maintaining-data.mdx#数字の更新)へ移しました。金属用`project/current-spec.json`を他系列の仕様に流用しません。10BOX-v2は`project/tenbox-v2/manifest.json`、7U40家庭印刷と2WAYは各系列の台帳を参照します。
 
-```sh
-node scripts/sync-reference-tables.mjs
-node scripts/check-docs.mjs
-```
+## 生成物の所有
 
-台帳の数値はR6/R8の出力から読み取った値。CAD変更後に出力と照合して台帳を更新する。図面を変えずに台帳だけ変えて「製作済み」としない。生成対象ファイルの先頭コメントにも編集元を記載する。R9-PROTOTYPE-01の版・ファイル表は`scripts/sync-r9-doc-table.mjs`、R10一式のZIP・座金の表は`scripts/sync-fullset.mjs`が生成する。
+| 対象 | 編集元・再生成コマンド |
+|---|---|
+| 旧URL互換ページ・文書所有表 | `project/doc-routes.json` → `node scripts/sync-doc-routes.mjs` |
+| 金属３機種・比較・BOMの５ページ | `project/current-spec.json` → `node scripts/sync-reference-tables.mjs` |
+| 金属R9の版・ファイル表 | 対応する台帳 → `node scripts/sync-r9-doc-table.mjs` |
+| 金属R10のZIP・座金表 | 対応する一式台帳 → `node scripts/sync-fullset.mjs` |
+| 系列ごとのCAD・パッケージ・プレビュー | 各`engineering/*/AGENTS.md`・README・版付きソースと検証手順 |
+
+生成対象は直接編集せず、ソースまたは設定を変えて再生成します。元ソース、受領ZIP、元マニフェストは不変の根拠として保全します。台帳はCADジェネレーターの入力と同義ではありません。数値の更新だけで形状・製作ファイル・検証・承認が更新されたとは記載しません。
 
 ## リンク・資産を確認する
 
 ```sh
-node scripts/verify-assets.mjs
-node scripts/check-docs.mjs
+pnpm check:docs
+pnpm check:doc-routes
+pnpm test:doc-structure
+pnpm check:assets
+pnpm test:setup
+pnpm check
+pnpm build
+pnpm check:built-doc-routes
+pnpm check:built-preview-links
+pnpm check:images
 ```
 
-ハッシュ検査は同梱元が変更されていないかを調べる。実際の設計更新でファイルが変わった場合は、旧版を残し、新版の情報を`project/artifact-manifest.json`と`project/release-state.json`へ追加する。無条件に期待ハッシュを上書きして検査を通さない。
+該当系列と変更箇所の追加検査も実行し、実行コマンドと観測した結果を記録します。未実行を合格にしません。静的整合、MDXビルド、実ブラウザー、CAD形状、実スライス、現物嵌合・荷重は異なる確認です。表示変更はdesktopと390pxの実ブラウザーで、キーボード／メニュー／Restore／Broaden／系列の所有と旧版ページの到達を確かめます。
+
+ハッシュ検査で元データとの差を見つけたら、旧版を保全して新版の根拠・入力出力ハッシュを対応する台帳へ追加します。期待ハッシュの上書きだけで検査を通しません。配信・起動・復旧の詳細は[起動と保守](./setup.mdx)、過去のブラウザー記録はリポジトリの`project/browser-validation.md`を参照してください。
 
 ## 過去版の見せ方
 
-現行プレビューのページから、ロック付きの旧版を「最新」としてリンクしない。アーカイブを削除せずに区別する。価格も、対象版と条件を変えずに履歴へ残す。
-
-このサイトの文書更新日と、CADの改訂日と、業者見積日と、実測日は別。日付が分からない過去発言へ推測の日付を付けない。
-
-公式の根拠：[Writing Docs](https://zudo-doc.takazudomodular.com/docs/getting-started/writing-docs/)、[Sidebar](https://zudo-doc.takazudomodular.com/docs/guides/sidebar/)。
+現在の作業に必要な情報を先に置き、旧版のプレビューやダウンロードは版と状態を明示します。旧アーカイブは削除せず、旧ロック蓋を最新と呼びません。価格は対象版と条件を保って履歴に残します。文書更新日、CAD改訂日、業者見積日、実測日を区別し、分からない過去発言へ日付を推測しません。
 
 ## 見積・製作データの状態を進める
 
-現在価格の欄（`current_total_jpy`・`current_lid_price_jpy`・`current_band_price_jpy`）は未見積・採用前なら`null`のままにする。対応する`current_*_scope`も`null`または省略とする。相見積を複数保存しても、採用するまで現在額を埋める必要はない。`0`は未確認の代用にしない。
+金属だけの登録・採用・承認台帳は[金属ケースの手順](../metal-case/maintaining-data.mdx#見積・製作データの状態を進める)を参照してください。候補の登録、ソフトウェア検査、プレビュー表示は製造承認を意味しません。全系列の`production_approved`は`false`を保持し、注文・価格採用・現物確認を文書整理から推定しません。
 
-`project/quote-records.json`へ現在版の見積を追加するときは、台帳全体で一意の空でない`id`、`kind`（`supplier_quote`または`user_quote_screenshot`）、`applies_to_current_release: true`、`component`（`total`・`lid`・`band`）、`model`または`models`の一方だけ、`revision`、正の整数の`quantity`、`price_basis`、`currency`、空でない`tax_status`、真偽値の`shipping_included`、リポジトリ内に実在する`source`を記録する。`price_basis`は`total_jpy`が１台あたりなら`per_unit`、対象数量分の合計なら`lot_total`。`rows[].row_jpy`の合計を`total_jpy`と一致させる。過去の助手による概算は履歴のまま保持し、現行価格の根拠にはしない。
+## 参照した構成ガイド
 
-現在額を採用するときは、対応する`current_*_scope`に機種・版・`quantity`・`price_basis`・`tax_status`・`shipping_included`と、採用した見積IDだけの`quote_ids`（重複のない空でない配列）を記す。選択した見積は同じ`component`で、機種の集合とすべての条件が範囲に一致する必要がある。その`total_jpy`の合計だけを現在額へ転記する。未選択の相見積は加算しない。数量、単価／ロット総額、税、送料条件の換算は扱わない。異なる条件を比較するときは別の見積として保存し、条件が一致するものを選ぶ。
+zudo-doc 9.1.2のAPIを使い、次の固定版ガイドを方針の根拠としています。パッケージ更新だけではこの方針は更新されません。
 
-複数見積を合算する場合は、必要な部品・数量を重複なくカバーする説明を空でない`coverage_note`に記す。選択見積間で同じ`rows[].part`ラベルがあると重複計上として拒否する。ただし、ラベルが違う部品や費用の意味上の重複まで検査では証明できないため、説明と根拠を人が確認する。部品別価格を全体価格に混ぜない。
-
-新しい製作候補は`project/release-state.json`の`candidate_files`にリポジトリ相対`path`とファイルの`sha256`を記録する。従来の`path`・`sha256`だけの項目も有効。候補を版付きで識別するときは、台帳内で一意な空でない`id`と、`component`、`model`または`models`の一方、`revision`を記録する。`model`/`models`は`current-spec.json`の機種キーを使う。`current_lid_manufacturing`は`null`、または`model`/`models`の一方、`revision`、`candidate_ids`（空でなく重複しない候補ID一覧）を持つオブジェクトとする。参照先すべての`component`は`lid`、機種集合と版は現行指定に一致させる。アルミ板とPA12フレームなど複数ファイルで蓋候補を構成するときは、それぞれのIDを一覧にする。参照先のファイル存在とSHA-256も検査する。候補の登録や現行指定だけでは製造承認にならず、`production_approved`、機種別`manufacturing_release`、`release_gate`、G01〜G11を進めない。`engineering/release/`への配置は承認後に限り、`published_release_files`に同じパスとハッシュを記録する。
-
-承認には`approval_record`の承認者・日付・承認ファイル一覧（各パスとSHA-256）・`model_revisions`（機種別の製作版）、G01〜G11すべての`closed`状態、`result.summary`、実在する根拠ファイルの`result.evidence`一覧、`current-spec.json`の`release_gate`および機種別`manufacturing_release`との一致が必要。R8がプレビューだけの間、`latest_preview_is_manufacturing_data`は`false`とする。静的チェックは台帳・ファイル・ハッシュの整合を見るもので、加工適合、強度、現物試験、製造承認そのものを代行しない。
+- [Maintaining Documentation Structure](https://github.com/zudolab/zudo-doc/blob/500d6b044d3581230a639fe303634bc54b3b51a0/src/content/docs/guides/maintaining-documentation-structure.mdx)
+- [How to Structure Navigations](https://github.com/zudolab/zudo-doc/blob/500d6b044d3581230a639fe303634bc54b3b51a0/src/content/docs/getting-started/structuring-navigations.mdx)
+- [Editorial Navigation](https://github.com/zudolab/zudo-doc/blob/500d6b044d3581230a639fe303634bc54b3b51a0/src/content/docs/guides/editorial-navigation.mdx)
+- [Header Navigation](https://github.com/zudolab/zudo-doc/blob/500d6b044d3581230a639fe303634bc54b3b51a0/src/content/docs/guides/header-navigation.mdx)

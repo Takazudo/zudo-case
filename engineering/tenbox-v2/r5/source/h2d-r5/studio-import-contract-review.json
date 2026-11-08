@@ -1,0 +1,1480 @@
+{
+  "schema": "10box-r5-studio-import-contract/1",
+  "scope": "Namespace-unaware Expat plus exact pinned Studio tag dispatch, OPC/model/config references, UUID prefixes and saved settings. This is a focused import contract check, not a complete Studio application load or slice.",
+  "pinned_commit": "4c2c19a4bf698edf153555dfe28fd4f81d6550be",
+  "source_url": "https://github.com/bambulab/BambuStudio/blob/4c2c19a4bf698edf153555dfe28fd4f81d6550be/src/libslic3r/Format/bbs_3mf.cpp",
+  "source_lines": {
+    "parser_namespace_mode": 2916,
+    "relationship_dispatch": 5555,
+    "empty_model_path_rejection": [
+      2139,
+      2140
+    ],
+    "model_dispatch": [
+      3907,
+      3946
+    ],
+    "configuration_dispatch": [
+      4001,
+      4040
+    ]
+  },
+  "archive_count": 29,
+  "passed_count": 29,
+  "failed_count": 0,
+  "all_source_dispatch_contracts_pass": true,
+  "studio_application_loaded": false,
+  "sliced": false,
+  "records": [
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/body-back.3mf",
+      "sha256": "bd484ec986c17a749fdb2e076b5a78a85a986b9fafd980f8850f81f52dff4c29",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/body-bottom-common.3mf",
+      "sha256": "3cec52eeb8aec1eb67a7c9edbbfafe2c41f3d39d23da7df512ca28e616882007",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Manual",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/body-front.3mf",
+      "sha256": "23e2722ed537d5359ed8cdc750889f7bfa3b4a41295d972eca44f1fe51d53617",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/body-left.3mf",
+      "sha256": "839574c5deebca49fee9dc26a4f174adaa0eb1b9c681b84570894920fd35e879",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/body-right.3mf",
+      "sha256": "df3a4deadc63b0e14f3e49f5ca1d2cbb018e59c22fea4ee9e15113634b8ed949",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/lid-back.3mf",
+      "sha256": "00a7a8cd8f63898691807a5c64d7b76fe592a4b456b63104af5b2bdc7cba8113",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/lid-front.3mf",
+      "sha256": "f8f14c879a6f04843fc1fd8a4c9dbac578dd3518ce52991751f6067775e0e10a",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/lid-left.3mf",
+      "sha256": "fae911ce26da493a5d43ab74289b6e80a9c9608c5fd8554c1f7989371d9238f7",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/lid-right.3mf",
+      "sha256": "ba5b722134de4282f4261ff64f7241b033c1cb454fbd33142583b7b12df0706c",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/lid-top-single.3mf",
+      "sha256": "cdd513b719a3c976b152a524fba3f3381db8a162889f47c586e2dfbc04730311",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Manual",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/spacers-8.3mf",
+      "sha256": "613fa304c685196d7ef7722eeee62c101caf25f0bb8288368e18711cf28fc1af",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 16,
+      "mesh_count": 8,
+      "build_instance_count": 8,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/stand-connector-back.3mf",
+      "sha256": "0d0f00996319da8d976d4557fe8f34c4c7bb90a34fd145e64323aca9de02af48",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/stand-connector-front.3mf",
+      "sha256": "5cebbb7dcb711d10606a0f9deb265b619f83796bd1af8ebaaf32f930ad362c9a",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/stand-left.3mf",
+      "sha256": "5de4da1d6eabb8d3932daf4c31963e6501150882a942ab744ff409a59c2b1edc",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/projects/stand-right.3mf",
+      "sha256": "bda56ad4eec3aa91fea9efcfc5d3ee826069d595251a1f1c693f2b7c3d9daf78",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/body-back.3mf",
+      "sha256": "bd484ec986c17a749fdb2e076b5a78a85a986b9fafd980f8850f81f52dff4c29",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/body-front.3mf",
+      "sha256": "23e2722ed537d5359ed8cdc750889f7bfa3b4a41295d972eca44f1fe51d53617",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/body-left.3mf",
+      "sha256": "839574c5deebca49fee9dc26a4f174adaa0eb1b9c681b84570894920fd35e879",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/body-right.3mf",
+      "sha256": "df3a4deadc63b0e14f3e49f5ca1d2cbb018e59c22fea4ee9e15113634b8ed949",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/lid-back.3mf",
+      "sha256": "00a7a8cd8f63898691807a5c64d7b76fe592a4b456b63104af5b2bdc7cba8113",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/lid-front.3mf",
+      "sha256": "f8f14c879a6f04843fc1fd8a4c9dbac578dd3518ce52991751f6067775e0e10a",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/lid-left.3mf",
+      "sha256": "fae911ce26da493a5d43ab74289b6e80a9c9608c5fd8554c1f7989371d9238f7",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/lid-right.3mf",
+      "sha256": "ba5b722134de4282f4261ff64f7241b033c1cb454fbd33142583b7b12df0706c",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/lid-top-single.3mf",
+      "sha256": "cdd513b719a3c976b152a524fba3f3381db8a162889f47c586e2dfbc04730311",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Manual",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/spacers-8.3mf",
+      "sha256": "613fa304c685196d7ef7722eeee62c101caf25f0bb8288368e18711cf28fc1af",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 16,
+      "mesh_count": 8,
+      "build_instance_count": 8,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/stand-connector-back.3mf",
+      "sha256": "0d0f00996319da8d976d4557fe8f34c4c7bb90a34fd145e64323aca9de02af48",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/stand-connector-front.3mf",
+      "sha256": "5cebbb7dcb711d10606a0f9deb265b619f83796bd1af8ebaaf32f930ad362c9a",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/stand-left.3mf",
+      "sha256": "5de4da1d6eabb8d3932daf4c31963e6501150882a942ab744ff409a59c2b1edc",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    },
+    {
+      "path": "/workspace/scratch/9e689581f306/h2d-r5/source-flat-r4/stand-right.3mf",
+      "sha256": "bda56ad4eec3aa91fea9efcfc5d3ee826069d595251a1f1c693f2b7c3d9daf78",
+      "source_dispatch_contract_pass": true,
+      "studio_application_loaded": false,
+      "sliced": false,
+      "errors": [],
+      "relationship_element_names": [
+        "Relationship",
+        "Relationships"
+      ],
+      "recognized_main_model_targets": [
+        "/3D/3dmodel.model"
+      ],
+      "model_element_names": [
+        "build",
+        "component",
+        "components",
+        "item",
+        "mesh",
+        "metadata",
+        "model",
+        "object",
+        "resources",
+        "triangle",
+        "triangles",
+        "vertex",
+        "vertices"
+      ],
+      "configuration_element_names": [
+        "assemble",
+        "assemble_item",
+        "config",
+        "metadata",
+        "model_instance",
+        "object",
+        "part",
+        "plate"
+      ],
+      "model_resource_count": 2,
+      "mesh_count": 1,
+      "build_instance_count": 1,
+      "uuid_prefixes_and_values_valid": true,
+      "object_part_plate_assembly_references_resolve": true,
+      "content_types_checked": true,
+      "effective_filament_map_mode": "Auto For Flush",
+      "filament_count": 2,
+      "project_settings_sha256": "99b34023dcf3d8142abb119f426ca54d499a4d07026c7e406e2b062147c7a356",
+      "settings_bytes_match_template": true
+    }
+  ]
+}

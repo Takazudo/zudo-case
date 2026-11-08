@@ -6,11 +6,11 @@ This is a Japanese zudo-doc MDX documentation workspace for several independent 
 
 ## Global rules (all families)
 
-- Families are independent: metal case (`metal-case`, R6–R10), home-printed 5mm case (`printed-5mm`, P3–P5), 2WAY study (`two-way`, F5/TW-01) and shared parts/source data (`shared`). A candidate in one family never changes another family's geometry, quantities, packages or order records.
+- Families are independent: metal case (`metal-case`, R6–R10), home-printed 5mm case (`printed-5mm`, P3–P5), independent two-frame 10BOX-v2 (`tenbox-v2`, R5), 2WAY study (`two-way`, F5/TW-01) and shared parts/source data (`shared`). A candidate in one family never changes another family's geometry, quantities, packages or order records.
 - Nothing is production-approved. `engineering/release` has no approved files and `production_approved` stays `false`. Software checks, watertight meshes or browser previews are not physical validation or approval.
 - Preserve design semantics, approval state, CAD, binaries, provenance, quantities and history. Keep old source folders/ZIPs and preserved manifests immutable; work in a new revision and record input/output hashes.
 - Follow the source precedence order and the price discipline in the metal section; they apply to every family. Do not promote estimates, schematic previews or assistant commentary into measured or tested facts.
-- Family-specific rules: metal case below; home-printed case in `engineering/printed-5mm/AGENTS.md`; 2WAY in `engineering/two-way/AGENTS.md`.
+- Family-specific rules: metal case below; home-printed case in `engineering/printed-5mm/AGENTS.md`; 10BOX-v2 in `engineering/tenbox-v2/AGENTS.md`; 2WAY in `engineering/two-way/AGENTS.md`.
 
 ## Metal case family rules (3U60 / 7U40 / 7U60)
 
@@ -49,11 +49,9 @@ Unquoted current totals are null, not0. Rail unit manufacturing cost is excluded
 
 ## How to edit the docs
 
-Author Japanese MDX in `src/content/docs`. The top level has six sections: `overview`, `metal-case`, `printed-5mm`, `two-way`, `shared`, `development`; every canonical page belongs to exactly one and every category directory has a short `index.mdx`. Keep `title`, `description`, and numeric `sidebar_position` frontmatter; positions must be unique among siblings (a category index is ordered among its parent's siblings). No extra H1. Use relative `.mdx` links for docs and `/images` etc for public files.
-Old URLs from before the 2026-11-06 restructure stay as `unlisted: true` compatibility pages generated from `project/doc-routes.json` by `node scripts/sync-doc-routes.mjs`. Never hand-edit them, never link to them from canonical pages, and add every new canonical page to the map. In a directory that still holds compatibility pages, use `CategoryNav categories={[...]}` rather than `category=`. The printed-5mm sidebar is explicit in `src/sidebars.js`.
-Five metal pages are generated: models3 + comparison + BOM under `metal-case/`. Update `project/current-spec.json`, then `node scripts/sync-reference-tables.mjs`; do not hand-edit generated rows. The R9 and R10 tables come from `scripts/sync-r9-doc-table.mjs` and `scripts/sync-fullset.mjs`.
-This JSON is a DOCUMENT registry, not the input to the CAD generator. Changes must separately reach the CAD, preview, outputs, then be verified.
-References inside source manifests can be relative to their original source folder.
+Before adding a page, changing its role, or changing categories, read `src/content/docs/development/maintenance.mdx`, the one canonical editorial policy. It owns the readers/tasks, category boundaries, placement questions, structure-review procedure, generated ownership and URL/navigation exceptions. Typo, wording and formatting fixes skip the structure check. README and CLAUDE point to this same policy; do not add a competing AUTHORING.md or duplicate it here.
+
+Preserve the family engineering instructions above and below. Generated content is edited through its declared source and generator, including `project/doc-routes.json` for compatibility pages and ownership. A document registry is not a CAD generator input: geometry, preview, outputs and verification require their own work. References inside source manifests can remain relative to their original source folder.
 
 ## Checks and dependencies
 
@@ -72,5 +70,6 @@ Use G01–G11 in `project/open-issues.json`: update R8 manufacturing geometry; i
 ## Other families
 
 - Home-printed 5mm (P3/P4/P5): `engineering/printed-5mm/AGENTS.md`. P5 is current; P4 (Uniform four-wall vents) and P3 (no vents) are history.
+- 10BOX-v2 (R5): `engineering/tenbox-v2/AGENTS.md` and `project/tenbox-v2/manifest.json`. Independent two-frame 3U60HP case, not a P5 revision. Accepted geometry and saved print settings are fixed; physical/native validation remains unperformed.
 - 2WAY (F5/TW-01): `engineering/two-way/AGENTS.md` and `project/two-way/`. F5 is immutable reference; TW-01 is the maintained workbench. It is separate from R9/R10, not a manufacturing release. Its 72/58 mm patch-gap assumptions do not replace the single-tray lid specification.
 - Shared parts: the home-print 8mm spacer in `engineering/home-print-spacer-01/` (10mm OD / 5.5mm hole are provisional R6-derived values).

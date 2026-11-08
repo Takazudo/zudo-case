@@ -1,0 +1,449 @@
+{
+  "revision": "R5 XML import compatibility repair",
+  "scope": "Only root relationship XML serialization changed inside each archive. Namespace-aware meaning is unchanged; lexical Relationship tags now match Studio import dispatch.",
+  "current_project_count": 15,
+  "frozen_project_count": 14,
+  "all29_original_dispatch_failed": true,
+  "all29_repaired_dispatch_passed": true,
+  "sliced": false,
+  "studio_application_loaded": false,
+  "records": [
+    {
+      "project": "projects/body-back.3mf",
+      "original_sha256": "048f74b42cc693fde444767580da0fbcc1ded67604c4efc1917d8f6e948452fb",
+      "repaired_sha256": "bd484ec986c17a749fdb2e076b5a78a85a986b9fafd980f8850f81f52dff4c29",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/body-bottom-common.3mf",
+      "original_sha256": "a055eef7043778bbc7e0c0a5a10f49c104e86bd9507175545d57322a209f0784",
+      "repaired_sha256": "3cec52eeb8aec1eb67a7c9edbbfafe2c41f3d39d23da7df512ca28e616882007",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/body-front.3mf",
+      "original_sha256": "ecaf8a9ea25c4c19bb45e4bca5dcdf1bca15115a7029b6dfb66916ab83d807cb",
+      "repaired_sha256": "23e2722ed537d5359ed8cdc750889f7bfa3b4a41295d972eca44f1fe51d53617",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/body-left.3mf",
+      "original_sha256": "20537de4338738d253031b655532b6578a2cc61437cbf7c23f974409cd0e9ed5",
+      "repaired_sha256": "839574c5deebca49fee9dc26a4f174adaa0eb1b9c681b84570894920fd35e879",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/body-right.3mf",
+      "original_sha256": "dd727b6d452943010ad03156d964a3f05982ee0b8d4602a12c835ef465916107",
+      "repaired_sha256": "df3a4deadc63b0e14f3e49f5ca1d2cbb018e59c22fea4ee9e15113634b8ed949",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/lid-back.3mf",
+      "original_sha256": "5e00e1460c63ae80f4ffc8cc016aa3391482da956d542cd753f4d5a42df3f862",
+      "repaired_sha256": "00a7a8cd8f63898691807a5c64d7b76fe592a4b456b63104af5b2bdc7cba8113",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/lid-front.3mf",
+      "original_sha256": "6eb19936cb0ae9a6b829d978430d4e2f90dfeed33768b1c7e182d1ea027610ce",
+      "repaired_sha256": "f8f14c879a6f04843fc1fd8a4c9dbac578dd3518ce52991751f6067775e0e10a",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/lid-left.3mf",
+      "original_sha256": "fe5798e81227c5e0cd24b2f6564d9730a49cf842c423fa50ceda0317717c98d0",
+      "repaired_sha256": "fae911ce26da493a5d43ab74289b6e80a9c9608c5fd8554c1f7989371d9238f7",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/lid-right.3mf",
+      "original_sha256": "db0142d3874a313c7b3af25243a90ee9c8fc1f9ce05f98f81d37cebaa9acad86",
+      "repaired_sha256": "ba5b722134de4282f4261ff64f7241b033c1cb454fbd33142583b7b12df0706c",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/lid-top-single.3mf",
+      "original_sha256": "9cef6a45b7e7fa8283fa5845908755d2d078690bbfb9cad33ea661a33c11131b",
+      "repaired_sha256": "cdd513b719a3c976b152a524fba3f3381db8a162889f47c586e2dfbc04730311",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/spacers-8.3mf",
+      "original_sha256": "128f7264430cc3ab32f2fe8ba1e853fa2d2f1a7f4da55ac855108a862b0b3558",
+      "repaired_sha256": "613fa304c685196d7ef7722eeee62c101caf25f0bb8288368e18711cf28fc1af",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/stand-connector-back.3mf",
+      "original_sha256": "3e14d7bab922111c82231bda8bfc8394d946ae013dd9c1da7daac7881e7c4b93",
+      "repaired_sha256": "0d0f00996319da8d976d4557fe8f34c4c7bb90a34fd145e64323aca9de02af48",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/stand-connector-front.3mf",
+      "original_sha256": "bc6d12fbb83f0d54dc5a26701a65affc32c85b77b8a124ee4b6124bab7867f92",
+      "repaired_sha256": "5cebbb7dcb711d10606a0f9deb265b619f83796bd1af8ebaaf32f930ad362c9a",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/stand-left.3mf",
+      "original_sha256": "0aeb54ba2649077a4bf298b9faa1b7cce568af94f7ced7ff0a35eb64d80eb71a",
+      "repaired_sha256": "5de4da1d6eabb8d3932daf4c31963e6501150882a942ab744ff409a59c2b1edc",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "projects/stand-right.3mf",
+      "original_sha256": "e158485aeb4d5dc46615bafdcf57efc8245107b5145455e6f29da727d7bc30c1",
+      "repaired_sha256": "bda56ad4eec3aa91fea9efcfc5d3ee826069d595251a1f1c693f2b7c3d9daf78",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/body-back.3mf",
+      "original_sha256": "048f74b42cc693fde444767580da0fbcc1ded67604c4efc1917d8f6e948452fb",
+      "repaired_sha256": "bd484ec986c17a749fdb2e076b5a78a85a986b9fafd980f8850f81f52dff4c29",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/body-front.3mf",
+      "original_sha256": "ecaf8a9ea25c4c19bb45e4bca5dcdf1bca15115a7029b6dfb66916ab83d807cb",
+      "repaired_sha256": "23e2722ed537d5359ed8cdc750889f7bfa3b4a41295d972eca44f1fe51d53617",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/body-left.3mf",
+      "original_sha256": "20537de4338738d253031b655532b6578a2cc61437cbf7c23f974409cd0e9ed5",
+      "repaired_sha256": "839574c5deebca49fee9dc26a4f174adaa0eb1b9c681b84570894920fd35e879",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/body-right.3mf",
+      "original_sha256": "dd727b6d452943010ad03156d964a3f05982ee0b8d4602a12c835ef465916107",
+      "repaired_sha256": "df3a4deadc63b0e14f3e49f5ca1d2cbb018e59c22fea4ee9e15113634b8ed949",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/lid-back.3mf",
+      "original_sha256": "5e00e1460c63ae80f4ffc8cc016aa3391482da956d542cd753f4d5a42df3f862",
+      "repaired_sha256": "00a7a8cd8f63898691807a5c64d7b76fe592a4b456b63104af5b2bdc7cba8113",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/lid-front.3mf",
+      "original_sha256": "6eb19936cb0ae9a6b829d978430d4e2f90dfeed33768b1c7e182d1ea027610ce",
+      "repaired_sha256": "f8f14c879a6f04843fc1fd8a4c9dbac578dd3518ce52991751f6067775e0e10a",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/lid-left.3mf",
+      "original_sha256": "fe5798e81227c5e0cd24b2f6564d9730a49cf842c423fa50ceda0317717c98d0",
+      "repaired_sha256": "fae911ce26da493a5d43ab74289b6e80a9c9608c5fd8554c1f7989371d9238f7",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/lid-right.3mf",
+      "original_sha256": "db0142d3874a313c7b3af25243a90ee9c8fc1f9ce05f98f81d37cebaa9acad86",
+      "repaired_sha256": "ba5b722134de4282f4261ff64f7241b033c1cb454fbd33142583b7b12df0706c",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/lid-top-single.3mf",
+      "original_sha256": "9cef6a45b7e7fa8283fa5845908755d2d078690bbfb9cad33ea661a33c11131b",
+      "repaired_sha256": "cdd513b719a3c976b152a524fba3f3381db8a162889f47c586e2dfbc04730311",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/spacers-8.3mf",
+      "original_sha256": "128f7264430cc3ab32f2fe8ba1e853fa2d2f1a7f4da55ac855108a862b0b3558",
+      "repaired_sha256": "613fa304c685196d7ef7722eeee62c101caf25f0bb8288368e18711cf28fc1af",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/stand-connector-back.3mf",
+      "original_sha256": "3e14d7bab922111c82231bda8bfc8394d946ae013dd9c1da7daac7881e7c4b93",
+      "repaired_sha256": "0d0f00996319da8d976d4557fe8f34c4c7bb90a34fd145e64323aca9de02af48",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/stand-connector-front.3mf",
+      "original_sha256": "bc6d12fbb83f0d54dc5a26701a65affc32c85b77b8a124ee4b6124bab7867f92",
+      "repaired_sha256": "5cebbb7dcb711d10606a0f9deb265b619f83796bd1af8ebaaf32f930ad362c9a",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/stand-left.3mf",
+      "original_sha256": "0aeb54ba2649077a4bf298b9faa1b7cce568af94f7ced7ff0a35eb64d80eb71a",
+      "repaired_sha256": "5de4da1d6eabb8d3932daf4c31963e6501150882a942ab744ff409a59c2b1edc",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    },
+    {
+      "project": "source-flat-r4/stand-right.3mf",
+      "original_sha256": "e158485aeb4d5dc46615bafdcf57efc8245107b5145455e6f29da727d7bc30c1",
+      "repaired_sha256": "bda56ad4eec3aa91fea9efcfc5d3ee826069d595251a1f1c693f2b7c3d9daf78",
+      "changed_members": [
+        "_rels/.rels"
+      ],
+      "geometry_and_build_bytes_unchanged": true,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "original_studio_main_model_targets": [],
+      "repaired_studio_main_model_targets": [
+        "/3D/3dmodel.model"
+      ]
+    }
+  ],
+  "schema": "10box-r5-import-repair/1",
+  "original_failure_reproduction": "Namespace-unaware Expat matching the pinned Studio Relationship tag comparison: original archives yield zero model targets; repaired archives yield /3D/3dmodel.model."
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "repository": "https://github.com/Takazudo/zudo-case",
+    "commit": "6a99404a4e4220bb18b88d7d0f063571d1dad7b9",
+    "role": "7U 40HP P5 separate round rail bores, vertical bracket capsules, and 3 mm R0.5 vents",
+    "local_reference": "source-preserved/zudo-case-parameters-p5.json"
+  },
+  {
+    "repository": "https://github.com/zudolab/zzmod",
+    "commit": "78d5cb099b8b4a577b91419ec7cd1adb0a3d3810",
+    "role": "Original 10BOX assembly and exact 3U side-frame PCB geometry",
+    "local_reference": "source-preserved/panel-contours.json"
+  },
+  {
+    "source": "10box.zip / justway",
+    "role": "User-provided baseline panels; source byte hashes retained",
+    "local_reference": "source-receipts.json"
+  }
+]
