@@ -6,7 +6,7 @@
   "darkScheme": "Default Dark",
   "defaultMode": "dark",
   "respectPrefersColorScheme": true,
-  "themePack": "default",
+  "themePack": "graphite",
   "features": [
     "search",
     "sidebarFilter",

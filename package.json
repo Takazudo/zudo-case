@@ -11,7 +11,7 @@
     "check:docs": "node scripts/check-docs.mjs",
     "sync:doc-routes": "node scripts/sync-doc-routes.mjs",
     "check:doc-routes": "node scripts/sync-doc-routes.mjs --check",
-    "test:doc-structure": "node --test tests/doc-structure.test.mjs tests/printed-navigation.test.mjs",
+    "test:doc-structure": "node --test tests/doc-structure.test.mjs tests/printed-navigation.test.mjs tests/site-imagery.test.mjs",
     "check:r9": "node scripts/lib/r9-manifest-check.mjs",
     "check:r9-doc-table": "node scripts/sync-r9-doc-table.mjs --check",
     "check:r9-confirm": "node scripts/check-r9-confirm.mjs",
@@ -62,14 +62,14 @@
     "test:tenbox-v2:browser": "python3 scripts/verify-tenbox-site.py"
   },
   "dependencies": {
-    "@takazudo/zfb": "5.2.0",
-    "@takazudo/zfb-md-wasm": "5.2.0",
-    "@takazudo/zfb-runtime": "5.2.0",
-    "@takazudo/zudo-doc": "^9.1.2",
+    "@takazudo/zfb": "6.0.1",
+    "@takazudo/zfb-md-wasm": "6.0.1",
+    "@takazudo/zfb-runtime": "6.0.1",
+    "@takazudo/zudo-doc": "^10.0.3",
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@takazudo/zudo-doc-history-server": "9.1.2",
+    "@takazudo/zudo-doc-history-server": "10.0.3",
     "@types/node": "^22.0.0",
     "typescript": "^5.9.0",
     "wrangler": "4.138.0"

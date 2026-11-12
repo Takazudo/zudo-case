@@ -6,7 +6,7 @@ sidebar_position: 10
 
 ## 現在のチェックアウト
 
-このチェックアウトは公式`create-zudo-doc@5.27.0`で初期化済みで、生成されたフレームワーク設定、`package.json`、`pnpm-lock.yaml`を含む。現在の依存はzudo-doc 9.1.2・zfb 5.2.0系で、scaffoldは`create-zudo-doc@9.1.2`と照合済み（2026-11-06）。Node.js 24以上とpnpm 10.30.3を用意する。2026-11-06の確認環境はNode.js 24.22.2、pnpm 10.30.3。
+このチェックアウトは公式`create-zudo-doc@5.27.0`で初期化済みで、生成されたフレームワーク設定、`package.json`、`pnpm-lock.yaml`を含む。現在の依存はzudo-doc 10.0.3・zfb 6.0.1系で、scaffoldは`create-zudo-doc@10.0.3`と照合済み（2026-11-12）。Node.js 24以上とpnpm 10.30.3を用意する。2026-11-12の確認環境はNode.js 24.22.1、pnpm 10.30.3。
 
 新しいチェックアウトでは、リポジトリのルートから次を実行する。
 
@@ -29,7 +29,7 @@ pnpm dev
 
 ## バージョンを指定する
 
-`scripts/setup.mjs`の既定版は`9.1.2`（初期化時は`5.27.0`）。別版を試す場合は動作確認した版を明示する。
+`scripts/setup.mjs`の既定版は`10.0.3`（初期化時は`5.27.0`）。別版を試す場合は動作確認した版を明示する。
 
 ```sh
 ZUDO_DOC_CLI_VERSION=確認したバージョン node scripts/setup.mjs
@@ -65,7 +65,7 @@ Cloudflareでは`zudo-case.zudolab.dev`を文書・Asset Viewer・根拠ファ�
 ZUDO_CASE_PREVIEW_ORIGIN=http://preview.example.test:8787 pnpm dev
 ```
 
-`dev`・`check`・`build` は同じチェックアウトで併用できます。起動ごとに `.cache/site-runs/run-*` の独立した設定と内部キャッシュを使うため、別コマンドを実行しても稼働中のdevの表示元は変わりません。異なるoverrideを指定したdevも、`pnpm dev --port 3001` のように別ポートで起動できます。記事・コード・設定は実行ごとのコピーを使い、devでは元の編集・追加・削除を約250ms間隔で反映します。`public/previews/` と `public/downloads/` は元のチェックアウトを直接参照します。`public/assets/` は zfb 4.5.0 で見つかったdev配信制限（zudo-front-builder#4233）の回避として、実行ごとの内部資産領域へ同期します。zfb 5.2.0でもこの同期を維持しています。設定を編集すると、同じ表示元とポートでネイティブdevプロセスを再起動します。build/checkは起動時のコード・設定コピーを使います。
+`dev`・`check`・`build` は同じチェックアウトで併用できます。起動ごとに `.cache/site-runs/run-*` の独立した設定と内部キャッシュを使うため、別コマンドを実行しても稼働中のdevの表示元は変わりません。異なるoverrideを指定したdevも、`pnpm dev --port 3001` のように別ポートで起動できます。記事・コード・設定は実行ごとのコピーを使い、devでは元の編集・追加・削除を約250ms間隔で反映します。`public/previews/` と `public/downloads/` は元のチェックアウトを直接参照します。`public/assets/` は zfb 4.5.0 で見つかったdev配信制限（zudo-front-builder#4233）の回避として、実行ごとの内部資産領域へ同期します。zfb 6.0.1でもこの同期を維持しています。設定を編集すると、同じ表示元とポートでネイティブdevプロセスを再起動します。build/checkは起動時のコード・設定コピーを使います。
 
 内部キャッシュは終了時に削除します。強制終了などで残った実行フォルダーは、対応するプロセスが停止していることを確認してから削除してください。公開ビルドは従来どおりチェックアウトの `dist/` に出力し、`pnpm preview` もその出力を配信します。buildは `.cache/site-build.lock` で直列化し、同時の２件目をエラーで停止します。強制終了でロックが残った場合は、所有プロセスが停止済みと確認してから削除してください。
 
@@ -73,7 +73,7 @@ ZUDO_CASE_PREVIEW_ORIGIN=http://preview.example.test:8787 pnpm dev
 
 ## 依存・scaffoldの保守
 
-現在のホストは zfb 5.2.0 / zudo-doc 9.1.2（history-server 9.1.2）、TypeScript 5.9を使います。Classicの外観を保つため`zfb.config.ts`で`themePack: "default"`を明示しています。コピーした公式scaffoldの版・変更箇所・同期手順は `ZUDO_DEPS_PINS.md`、9.1.2更新の実行結果は `project/maintenance-zudo-doc-9.1.2.md`、前回6.2.0更新は `project/maintenance-120.md` を参照してください。`pnpm check:wind` と `pnpm check:preview-isolation` は非デプロイ検証です。後者はインストール済みの実CLIで別ポート・並行build/check・編集・設定再読込を検証します。新CLIのscratch/defineは使えますが、build/checkの入力スナップショットを維持するためmirrorを残しています。
+現在のホストは zfb 6.0.1 / zudo-doc 10.0.3（history-server 10.0.3）、TypeScript 5.9を使います。外観はGraphiteで、`zfb.config.ts`と`setup.preset.json`の両方に`themePack: "graphite"`を明示しています（zudo-doc 10では`"default"`がGraphiteの別名になり、生成CLIは`"default"`を拒否するため）。zfb 6はesbuildを使わず、`ZFB_BUNDLER`・`ZFB_ROLLDOWN_PROTOTYPE`を設定するとすべてのzfbコマンドが停止します。`ZFB_ESBUILD_BIN`も読まれません。これらを環境に設定しないでください。トップページの図は`public/img/zudo-case-logo.svg`、リンク共有用カードは`public/img/ogp.png`です。`siteUrl`を設定したため、各ページの`canonical`と`og:url`も本番ホストを指します（`noindex`は維持）。編集元と再生成手順は`project/site-imagery/README.md`にあります。コピーした公式scaffoldの版・変更箇所・同期手順は `ZUDO_DEPS_PINS.md`、10.0.3更新の実行結果は `project/maintenance-zudo-doc-10.0.3.md`、9.1.2更新は `project/maintenance-zudo-doc-9.1.2.md`、6.2.0更新は `project/maintenance-120.md` を参照してください。`pnpm check:wind` と `pnpm check:preview-isolation` は非デプロイ検証です。後者はインストール済みの実CLIで別ポート・並行build/check・編集・設定再読込を検証します。新CLIのscratch/defineは使えますが、build/checkの入力スナップショットを維持するためmirrorを残しています。
 
 
 ## 公開配信の検証範囲

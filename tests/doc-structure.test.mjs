@@ -94,7 +94,7 @@ test('independent sections own every canonical page and nested header destinatio
     }
   }
   assert.match(config, /path: "\/files"/);
-  assert.match(config, /themePack: "default"/);
+  assert.match(config, /themePack: "graphite"/);
   assert.match(config, /entryDocSlug: "overview\/start"/);
   for (const entry of map.entries) {
     assert.ok(SECTIONS.includes(entry.owner), entry.canonical);

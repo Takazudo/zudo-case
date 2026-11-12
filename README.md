@@ -27,7 +27,7 @@ pnpm build
 pnpm dev
 ```
 
-`pnpm dev`が表示するURLを開いてください。起動環境、プレビュー配信元の変更、依存・scaffoldの保守、デプロイと復旧は[サイトの起動と保守](src/content/docs/development/setup.mdx)にあります。過去の実行結果は[ブラウザー記録](project/browser-validation.md)、[zudo-doc 9.1.2保守記録](project/maintenance-zudo-doc-9.1.2.md)を参照してください。
+`pnpm dev`が表示するURLを開いてください。起動環境、プレビュー配信元の変更、依存・scaffoldの保守、デプロイと復旧は[サイトの起動と保守](src/content/docs/development/setup.mdx)にあります。過去の実行結果は[ブラウザー記録](project/browser-validation.md)、[zudo-doc 10.0.3保守記録](project/maintenance-zudo-doc-10.0.3.md)、[zudo-doc 9.1.2保守記録](project/maintenance-zudo-doc-9.1.2.md)を参照してください。
 
 ## 文書と設計を更新する
 
