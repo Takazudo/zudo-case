@@ -6,7 +6,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { spawnSync } from "node:child_process";
 
 const defaultRoot = fileURLToPath(new URL("../", import.meta.url));
-export const defaultCliVersion = "9.1.2";
+export const defaultCliVersion = "10.0.3";
 export const minimumNodeMajor = 24;
 const exists = async (p) => { try { await access(p); return true; } catch { return false; } };
 const json = async (p) => JSON.parse(await readFile(p, "utf8"));

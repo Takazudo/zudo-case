@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "tracker": "https://github.com/Takazudo/zudo-case/issues/134",
+  "baseRevision": "6efb8ec0aacdb981327cef2ae00b7be40e6585d7",
+  "procedure": {
+    "skill": "Takazudo/claude-settings skills/dev-bump-zudo-deps",
+    "commit": "c541f4984e4da43b4fb5d60b3d348b36988e43ee",
+    "resolver": "scripts/resolve-bumps.mjs, run from a clone outside the checkout; scanned 3 package.json, 5 bumps, 0 tag/skip/error"
+  },
+  "selectedTuple": {
+    "frozenAt": "2026-11-12T11:50Z (implementation start)",
+    "node": ">=24 (verified locally with v24.22.1; CI Node 24)",
+    "pnpm": "10.30.3",
+    "packages": {
+      "@takazudo/zudo-doc": {
+        "version": "10.0.3",
+        "from": "9.1.2 (lockfile)",
+        "integrity": "sha512-olYXrDtZYQ6g17RhhIAFw39eFcpLpZJpzdWJArQQFpseUnDaHt4KxC3ZrkNrZcvow1gPwxVbHs+9MzsS5kC3RQ==",
+        "provenance": "no npm gitHead; tag zudo-doc-v10.0.3 peels to c7210d5cbb26c3b765271b71c0c8effd01f54995 in zudolab/zudo-doc"
+      },
+      "@takazudo/zudo-doc-history-server": {
+        "version": "10.0.3",
+        "from": "9.1.2",
+        "integrity": "sha512-tCuY++1KYIUKAQJxiytvdWGAj6QbwsN/C/YYitrgIt5LdPgQpRXwISd9KuHAm62X51RNpCKm35fKzngk38jkMA==",
+        "provenance": "no npm gitHead; tag zudo-doc-history-server-10.0.3 peels to c7210d5cbb26c3b765271b71c0c8effd01f54995"
+      },
+      "create-zudo-doc": {
+        "version": "10.0.3",
+        "integrity": "sha512-kr8DJEI51TmnS/fAzeH5IQM2mRLBgXKjJp7R0KABS5fwdcuxr5EXk8FUCYIZ/Sg2tuhTNMMjNJoWgrwQXeo3Hw==",
+        "gitHead": "c7210d5cbb26c3b765271b71c0c8effd01f54995",
+        "provenance": "npm gitHead equals the commit tag v10.0.3 peels to"
+      },
+      "@takazudo/zfb": {
+        "version": "6.0.1",
+        "from": "5.2.0",
+        "integrity": "sha512-ApV742DBH847yPpLHIpEfpx+mTr1pKX5SxQU76p9sImAH0rhC9Yvw9Exh0APzqLs2UVs/bFiUYzpJa1LrN9pKg==",
+        "provenance": "no npm gitHead; Takazudo/zudo-front-builder tag v6.0.1 -> e6bd0a7c6864a2211fe4d846ec8511b2b7f300bd (v5.2.0 -> 0f17c8e947548b4c4a82ebce112bd5f026e1b21b)"
+      },
+      "@takazudo/zfb-runtime": {
+        "version": "6.0.1",
+        "from": "5.2.0",
+        "integrity": "sha512-89gYXHjwkbLfOQhlfHf3iM/WBu4gEoNiUyYNlZwVkxE4rkh7HZ87a/qZIiIkd2ZUnT1EjbLf9+dLjFha5jjIcw==",
+        "peer": "@takazudo/zfb 6.0.1"
+      },
+      "@takazudo/zfb-md-wasm": {
+        "version": "6.0.1",
+        "from": "5.2.0",
+        "integrity": "sha512-eH9DZcA1s0t36/elBkSNQQtbygnk+3gS/FCqQtT84mzJTpYZpD/3nidogA0ycAj0W9f8CpPBkYF/eCIMa96M2A=="
+      },
+      "@takazudo/zfb-linux-x64-gnu": {
+        "version": "6.0.1",
+        "integrity": "sha512-BYK13/BZDRWdPqAA7W9ia7DzQCqTnMVmwkq9A7bf7Gs0lP8TblFKrpZH1/6I9AcRdeNaascHcgzJPjm6HHBp9w==",
+        "gitHead": "e6bd0a7c6864a2211fe4d846ec8511b2b7f300bd"
+      }
+    },
+    "selectionNotes": [
+      "npm dist-tag latest at start: zudo-doc, history-server and create-zudo-doc 10.0.3; zfb, zfb-runtime and zfb-md-wasm 6.0.1. No prerelease channel or graduation involved.",
+      "zudo-doc 10.0.3 peers: zfb/zfb-md-wasm/zfb-runtime ^6.0.1, history-server ^10.0.0, zod ^4.3.6 (root zod ^4.3.6 resolves 4.6.5).",
+      "Retained: TypeScript ^5.9 (generator 10.0.2+ writes ^7.0.2; no requirement found for this checkout, pnpm check passes on 5.9.3), Wrangler 4.138.0 (generator's 4.160.0 pin applies to MCP scaffolds only), @types/node ^22.",
+      "Nested manifests engineering/tenbox-v2/r5/source/preview-r5 (pngjs) and engineering/two-way/tw-01/tests/browser (playwright) have no @takazudo dependencies; not reinstalled."
+    ]
+  },
+  "initializer": {
+    "package": "create-zudo-doc",
+    "version": "10.0.3",
+    "commit": "c7210d5cbb26c3b765271b71c0c8effd01f54995",
+    "verified": "npm gitHead equals the commit tag v10.0.3 peels to"
+  },
+  "previous": {
+    "version": "9.1.2",
+    "commit": "4b5b54e3e0f383cfbf1e7b6038c6b65ee7c5f9d2",
+    "receipt": ".handoff/maintenance-scaffold-9.1.2.json"
+  },
+  "command": "npx --yes create-zudo-doc@<9.1.2|10.0.3> <disposable-directory> --preset <copy-of-setup.preset.json> --no-install --no-git --yes",
+  "presetNote": "9.1.2 was generated from the checkout preset (themePack \"default\"); 10.0.3 from a copy with themePack \"graphite\" because create-zudo-doc 10.x rejects \"default\" (verified: 'Unknown theme pack \"default\" in preset').",
+  "comparison": {
+    "result": "Ten of the eleven copied scaffold files are byte-identical in the regenerated 9.1.2 output, the checkout and the 10.0.3 output. pages/docs/[[...slug]].tsx changed upstream in a comment only (doc-history patch target renamed to DocHistoryBoundary from @takazudo/zudo-doc/doc-history-area); the checkout had no local edits there, so the 10.0.3 file was taken.",
+    "otherGeneratedDifferences": [
+      "package.json: zfb family 5.2.0 -> 6.0.1, @takazudo/zudo-doc ^9.1.2 -> ^10.0.3 (applied); typescript ^5.9.0 -> ^7.0.2 (not applied, see selectionNotes)",
+      "zfb.config.ts: the 10.0.3 output omits themePack for Graphite (the default); this checkout writes themePack \"graphite\" explicitly in zfb.config.ts and setup.preset.json so runtime and regeneration agree",
+      "AGENTS.md, AUTHORING.md, README.md, CLAUDE.md: generated defaults (new in 9.1.3) not imported; src/content/docs/development/maintenance.mdx remains the single editorial policy",
+      "starter getting-started MDX: generic scaffold content, not imported"
+    ],
+    "migrationReview": [
+      "zudo-doc 10.0.0 themePack \"default\" now means Graphite and Classic moved to \"classic\": the site intentionally adopts Graphite; set explicitly",
+      "zudo-doc 10.0.0 stored switcher slug \"default\": themePackSwitcher is not enabled; a stale zudo-doc-theme-pack value is ignored (browser-verified)",
+      "zfb 6.0.0 esbuild removed; ZFB_BUNDLER / ZFB_ROLLDOWN_PROTOTYPE fail every command, ZFB_ESBUILD_BIN ignored: none referenced in scripts, workflows or docs; pnpm-workspace onlyBuiltDependencies esbuild kept because zudo-doc and wrangler still depend on esbuild",
+      "zfb 6.0.0 config compiled by native worker: custom runner's per-run zfb.config.ts and authored-config import work (check, build, dev and preview-isolation tests pass); scratch mirroring and public/assets dev sync retained",
+      "zudo-doc 9.1.5 docHistoryMeta default binding: docHistory is disabled; no effect"
+    ]
+  },
+  "verification": "project/maintenance-zudo-doc-10.0.3.md",
+  "files": [
+    {
+      "path": ".npmrc",
+      "sha256": "ca4d7a13a3f0d62cc370e3e70f99a5a35f42b05fc922cb513c036ae0f18b2f9d",
+      "changedFromOld": false,
+      "localMatchesNew": true
+    },
+    {
+      "path": "pages/docs/[[...slug]].tsx",
+      "sha256": "1312f6d4d3169356656b5f2d6ba8bdf2c36d5687b86d35e770b91f122ed032fc",
+      "changedFromOld": true,
+      "localMatchesNew": true,
+      "oldSha256": "34ddfd89f8e6b915b432f586509c47bb321bd9987ac6b2fe675e1339c2b141e1",
+      "action": "replaced with the 10.0.3 output (comment-only change; no local customization existed)"
+    },
+    {
+      "path": "pages/index.tsx",
+      "sha256": "d4abf8a5823a212f066c1caf58a0d9247004da3abc6ef6ae9ee8282c71bb39c2",
+      "changedFromOld": false,
+      "localMatchesNew": true
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "sha256": "22ad89799dd348e3c87e9e6ee6e8a004d76a11410cbd0f3745c0460434ff3d41",
+      "changedFromOld": false,
+      "localMatchesNew": true
+    },
+    {
+      "path": "public/favicon-16x16.png",
+      "sha256": "34951457a35bfa39ff867d057dd86d285a29a3e7aa3736450583fc65e6640107",
+      "changedFromOld": false,
+      "localMatchesNew": true
+    },
+    {
+      "path": "public/favicon-32x32.png",
+      "sha256": "54e72e42acffd05f95ebda6089cb0085a8f475de9cfd25089a2a70a9d4155a3d",
+      "changedFromOld": false,
+      "localMatchesNew": true
+    },
+    {
+      "path": "public/favicon.ico",
+      "sha256": "2d32951acc699902d255971823fb69d9021e47c3ca7b08fea8d4811e3b224c17",
+      "changedFromOld": false,
+      "localMatchesNew": true
+    },
+    {
+      "path": "public/favicon.svg",
+      "sha256": "f8719195755bc771db093d5f6c2e0892def2d75501746347dda03ca2a97e764a",
+      "changedFromOld": false,
+      "localMatchesNew": true
+    },
+    {
+      "path": "scripts/check-links.js",
+      "sha256": "b44a7e17357470b95af514c49480f39d77a470a1889c71fe155a6f3c21e52176",
+      "changedFromOld": false,
+      "localMatchesNew": true
+    },
+    {
+      "path": "src/styles/global.css",
+      "sha256": "6642c2175abc0cab75ee3424bc582ea5f40ba84384756d5fcb33ca478784db4f",
+      "changedFromOld": false,
+      "localMatchesNew": true
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "3cac289a423f376f4c9c9f815edd6a99543ceb16e8b8c7c36250d5adab46692b",
+      "changedFromOld": false,
+      "localMatchesNew": true
+    }
+  ]
+}
