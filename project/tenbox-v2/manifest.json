@@ -956,8 +956,8 @@
     },
     {
       "path": "public/downloads/candidate/tenbox-v2-r5-source.zip",
-      "bytes": 6233289,
-      "sha256": "9bf1ed35a5ff62caff97d5a4c7a03a6f53425d2d84452b4d3f19315f0df24d96"
+      "bytes": 6233397,
+      "sha256": "20af1f2cc1196aa5f2660e94912a8ed0d4347f2670e7662da0e11436a11128b0"
     },
     {
       "path": "public/downloads/candidate/tenbox-v2-r5/body-back.3mf",
@@ -1625,7 +1625,8 @@
   },
   "benign_generated_differences": [
     "STEP generated headers/timestamps",
-    "3MF object UUIDs and ZIP timestamps"
+    "3MF object UUIDs and ZIP timestamps",
+    "3MF ModificationDate metadata stamped with the build day (verify.py normalizes it with UUIDs; added 2026-11-12 after the day-bound comparison failed CI)"
   ],
   "acceptance_rule": "Geometry, meshes, transforms and settings must match accepted inputs; output hashes alone are not geometry equivalence.",
   "tooling_files": [
@@ -1636,8 +1637,8 @@
     },
     {
       "path": "engineering/tenbox-v2/r5/verify.py",
-      "bytes": 6299,
-      "sha256": "59829cbb23f69bdcfbbd781ce6bb37f5550bc770555090c84e13724b67641b7b"
+      "bytes": 6607,
+      "sha256": "e10b386da12d5128e5457d1be0d4e8bb69ab8ffa69290cc4dbafa7a7ac22aadf"
     },
     {
       "path": "engineering/tenbox-v2/r5/regenerate.py",

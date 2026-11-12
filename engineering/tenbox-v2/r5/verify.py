@@ -70,7 +70,9 @@ def verify(out):
                         points = np.array([[float(v.attrib[a]) for a in ['x','y','z']] for v in mesh.findall('{*}vertices/{*}vertex')])
                         triangles = np.array([[int(t.attrib[a]) for a in ['v1','v2','v3']] for t in mesh.findall('{*}triangles/{*}triangle')])
                         flats.mesh_integrity(points, triangles)
-                    normalize = lambda raw: re.sub(rb'p:[Uu][Uu][Ii][Dd]="[^"]+"', b'p:UUID="BENIGN-UUID"', raw)
+                    # build_flat_projects.py stamps ModificationDate with the build day; like UUIDs it is not geometry or settings.
+                    normalize = lambda raw: re.sub(rb'<metadata name="ModificationDate">[^<]*</metadata>', b'<metadata name="ModificationDate">BENIGN-DATE</metadata>',
+                                                   re.sub(rb'p:[Uu][Uu][Ii][Dd]="[^"]+"', b'p:UUID="BENIGN-UUID"', raw))
                     assert normalize(fresh.read(name)) == normalize(saved.read(name)), (project.name, name)
                 if name.endswith('.config') or name == '[Content_Types].xml':
                     assert fresh.read(name) == saved.read(name), (project.name, name)
