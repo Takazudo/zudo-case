@@ -13,7 +13,8 @@ ZUDO CASEのトップページ図とリンク共有用カードの編集元で�
 ## 再生成
 
 ```sh
-pip install fonttools==4.68.0
+pip install fonttools==4.68.0 pillow
+npm install --no-save playwright   # または既存のplaywrightをNODE_PATHで指定する
 python3 project/site-imagery/build.py          # 2つのSVGを書き出す
 node project/site-imagery/render.mjs           # PNGを書き出す（playwright と Chromium が必要）
 python3 project/site-imagery/build.py --check  # SVGが編集元と一致するか確認

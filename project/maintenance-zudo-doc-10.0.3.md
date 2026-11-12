@@ -31,7 +31,7 @@ Generated 9.1.2 (checkout preset) and 10.0.3 (preset copy with `themePack: "grap
 
 - `themePack: "graphite"` in `zfb.config.ts` and `setup.preset.json`. The previous `"default"` rendered Classic on 9.1.2; this change intentionally adopts Graphite. Appearance toggle and preference storage are unchanged.
 - `public/img/zudo-case-logo.svg` (decorative case-frame and rails illustration, transparent, CSS-mask friendly; not a drawing of an approved design) and `public/img/ogp.png` (1200×630). Source and steps: `project/site-imagery/README.md`.
-- `siteUrl`, `logo` and `metaTags` (description, ogImage, ogSiteName, `summary_large_image`) in `zfb.config.ts`. `noindex: true` is kept, so every page still has `noindex, nofollow` and `robots.txt` stays `Disallow: /`. Preview services that respect robots.txt may not fetch the card; that is not changed here. The header has no brand icon (`headerBrand` is off); the logo renders only in the home hero.
+- `siteUrl`, `logo` and `metaTags` (description, ogImage, ogSiteName, `summary_large_image`) in `zfb.config.ts`. `siteUrl` also makes every doc page emit `<link rel=canonical>` and `og:url` on `https://zudo-case.zudolab.dev`, including builds served from other hosts. `noindex: true` is kept, so every page still has `noindex, nofollow` and `robots.txt` stays `Disallow: /`. Preview services that respect robots.txt may not fetch the card; that is not changed here. The header has no brand icon (`headerBrand` is off); the logo renders only in the home hero.
 
 ## Verification (Node 24.22.1, pnpm 10.30.3, 2026-11-12)
 
