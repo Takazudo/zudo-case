@@ -11,7 +11,7 @@
     "check:docs": "node scripts/check-docs.mjs",
     "sync:doc-routes": "node scripts/sync-doc-routes.mjs",
     "check:doc-routes": "node scripts/sync-doc-routes.mjs --check",
-    "test:doc-structure": "node --test tests/doc-structure.test.mjs tests/printed-navigation.test.mjs",
+    "test:doc-structure": "node --test tests/doc-structure.test.mjs tests/printed-navigation.test.mjs tests/site-imagery.test.mjs",
     "check:r9": "node scripts/lib/r9-manifest-check.mjs",
     "check:r9-doc-table": "node scripts/sync-r9-doc-table.mjs --check",
     "check:r9-confirm": "node scripts/check-r9-confirm.mjs",
