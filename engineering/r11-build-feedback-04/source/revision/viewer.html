@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>ZUDO CASE — R11-BUILD-FEEDBACK-04 / 7U40</title>
+  <style>
+    :root {
+      --paper: #f6f7f3; --panel: #fcfdf9; --stage: #eaf0f1;
+      --ink: #203238; --muted: #62747a; --line: #d6dfdc;
+      --teal: #167b7e; --teal-soft: #e6efeb; --ochre: #b58032;
+      --focus: #247ba7;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; color: var(--ink); background: var(--paper); }
+    body { font: 14px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif; }
+    button, input, select { font: inherit; }
+    button, select { cursor: pointer; }
+    button { padding: 6px 11px; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink); line-height: 1.5; }
+    button:hover { background: #edf3ef; border-color: #98b9b2; }
+    button.active, button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: white; }
+    button:disabled { cursor: default; opacity: .4; }
+    button:focus-visible, input:focus-visible, select:focus-visible, canvas:focus-visible, summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    input[type="checkbox"], input[type="range"] { accent-color: var(--teal); }
+    input[type="checkbox"] { width: 15px; height: 15px; margin: 0; flex: none; }
+    input[type="range"] { width: 100%; margin: 8px 0 2px; cursor: pointer; }
+    select { max-width: 100%; width: 100%; border: 1px solid var(--line); border-radius: 5px; padding: 7px; background: white; color: var(--ink); }
+    .header { padding: 22px 28px 18px; border-top: 4px solid var(--teal); display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+    .eyebrow { color: var(--muted); font-size: 10px; letter-spacing: .15em; font-weight: 750; }
+    h1 { font-size: 23px; line-height: 1.4; margin: 3px 0 0; font-weight: 700; }
+    .revision { text-align: right; color: var(--muted); font-size: 11px; }
+    .badge { padding: 4px 8px; border: 1px solid #d7d8c9; border-radius: 4px; background: #eeeee5; color: #5a604f; margin-bottom: 4px; display: inline-block; font-size: 10px; letter-spacing: .025em; }
+    .tabs { display: flex; padding: 0 22px; gap: 4px; overflow-x: auto; border-bottom: 1px solid var(--line); scrollbar-width: thin; }
+    .tabs button { padding: 11px 13px; border: 0; border-radius: 6px 6px 0 0; background: transparent; white-space: nowrap; color: var(--muted); font-size: 12px; font-weight: 650; }
+    .tabs button.active { background: var(--ink); color: white; }
+    .tabs .number { font-size: 9px; opacity: .6; margin-right: 6px; }
+    .workspace { display: grid; grid-template-columns: minmax(0,1fr) 304px; height: calc(100dvh - 159px); min-height: 670px; max-height: 1050px; border-bottom: 1px solid var(--line); }
+    .stage { background: var(--stage); display: flex; flex-direction: column; overflow: hidden; min-width: 0; }
+    .viewhead { padding: 18px 23px 4px; display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+    .viewhead h2 { margin: 4px 0; font-size: 19px; line-height: 1.45; font-weight: 680; }
+    .viewhead p { margin: 4px 0; font-size: 12px; color: var(--muted); max-width: 710px; line-height: 1.75; }
+    .view-kicker { font-size: 10px; color: var(--teal); font-weight: 750; letter-spacing: .12em; }
+    .toolbar { display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; flex: none; padding-top: 2px; }
+    .toolbar button { font-size: 11px; padding: 6px 8px; background: #fffffff0; }
+    .canvas-wrap { position: relative; flex: 1; min-height: 320px; overflow: hidden; }
+    #canvas { display: block; width: 100%; height: 100%; touch-action: none; cursor: grab; }
+    #canvas.dragging { cursor: grabbing; }
+    .view-state { position: absolute; left: 23px; bottom: 13px; display: flex; gap: 5px; flex-wrap: wrap; pointer-events: none; }
+    .view-state span { font-size: 10px; border-radius: 4px; padding: 4px 7px; background: #ffffffc9; color: #48646b; border: 1px solid #d1dfde; }
+    .scale { position: absolute; bottom: 17px; right: 23px; height: 19px; border-bottom: 2px solid #7d9299; color: #61777e; font-size: 10px; text-align: center; pointer-events: none; }
+    .scale:before, .scale:after { content: ""; position: absolute; bottom: 0; height: 6px; border-left: 1px solid #7d9299; }
+    .scale:before { left: 0; } .scale:after { right: 0; }
+    .stagefooter { border-top: 1px solid #d9e2e2; padding: 11px 22px 12px; background: #e8eeee; }
+    .legend { display: flex; gap: 6px 14px; flex-wrap: wrap; font-size: 10px; color: #415a63; min-height: 17px; }
+    .legend span { display: inline-flex; align-items: center; gap: 5px; }
+    .swatch { width: 9px; height: 9px; border-radius: 2px; flex: none; display: inline-block; }
+    .stagefooter .bottom { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 10px; }
+    .help { font-size: 10px; color: var(--muted); line-height: 1.6; }
+    .presets { display: flex; flex-wrap: wrap; gap: 4px; justify-content: flex-end; }
+    .presets button { font-size: 10px; padding: 4px 7px; }
+    .sidebar { min-width: 0; overflow: auto; padding: 18px; background: var(--panel); border-left: 1px solid var(--line); }
+    .section { padding-bottom: 17px; margin-bottom: 17px; border-bottom: 1px solid var(--line); }
+    .section:last-child { border: 0; padding-bottom: 0; margin-bottom: 0; }
+    .section h3 { color: var(--muted); font-size: 11px; letter-spacing: .07em; margin: 0 0 11px; font-weight: 700; }
+    .split, .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .row { margin: 9px 0; }
+    .row label { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; }
+    .seg { display: flex; gap: 4px; }
+    .seg button { flex: 1; padding: 6px; font-size: 11px; }
+    .readout { font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .fine { font-size: 10px; line-height: 1.75; color: var(--muted); margin: 7px 0 0; }
+    .checkpoints { list-style: none; margin: 0; padding: 0; font-size: 12px; line-height: 1.8; }
+    .checkpoints li { padding-left: 11px; position: relative; margin: 6px 0; }
+    .checkpoints li:before { content: ""; width: 4px; height: 4px; background: var(--teal); border-radius: 50%; position: absolute; left: 0; top: 9px; }
+    .feedback-refs { display: inline-block; color: var(--teal); background: var(--teal-soft); padding: 3px 7px; font-size: 10px; border-radius: 4px; margin-top: 8px; }
+    .layer-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
+    .layer-head h3 { margin: 0; }
+    .layer-head button { font-size: 9px; padding: 3px 6px; }
+    .layer { display: flex; align-items: center; justify-content: space-between; gap: 7px; margin: 7px 0; }
+    .layer label { display: flex; align-items: center; gap: 7px; font-size: 11px; cursor: pointer; }
+    .solo { padding: 2px 5px; font-size: 9px; border: 0; background: transparent; color: var(--muted); }
+    .inspector { padding: 10px 11px; border: 1px solid var(--line); background: white; border-radius: 6px; margin-top: 8px; overflow-wrap: anywhere; }
+    .inspector strong { display: block; font-size: 12px; margin-bottom: 5px; }
+    .inspector p { margin: 5px 0; font-size: 11px; color: var(--muted); line-height: 1.7; }
+    .inspector .part-id { font-size: 10px; color: #849196; }
+    .small-actions { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px; }
+    .small-actions button { font-size: 10px; padding: 5px 7px; flex: 1; }
+    .dimensions { display: grid; grid-template-columns: 1fr auto; gap: 6px 10px; font-size: 11px; align-items: baseline; }
+    .dimensions b { font-size: 11px; font-weight: 650; text-align: right; font-variant-numeric: tabular-nums; }
+    .summary { padding: 23px 28px 25px; display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .summary article { border-left: 2px solid #bed0ca; padding-left: 14px; }
+    .summary h3 { font-size: 12px; margin: 0 0 6px; }
+    .summary p { font-size: 11px; color: var(--muted); line-height: 1.9; margin: 0; }
+    .footer { padding: 0 28px 24px; color: var(--muted); font-size: 10px; }
+    .loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); background: var(--stage); font-size: 13px; z-index: 3; }
+    .loading.hidden { display: none; }
+    .error { display: none; position: absolute; inset: 25px 25px auto; z-index: 5; padding: 16px; background: #fff6f2; border: 1px solid #d8a99a; border-radius: 6px; color: #8c3f28; font-size: 12px; white-space: pre-wrap; }
+    .empty { display: none; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); padding: 13px 18px; border: 1px solid var(--line); border-radius: 6px; background: #ffffffed; color: var(--muted); font-size: 12px; text-align: center; }
+    .toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); display: none; max-width: min(85vw,550px); padding: 10px 16px; background: var(--ink); color: white; border-radius: 7px; font-size: 12px; z-index: 10; }
+    .stage:fullscreen { width: 100vw; height: 100vh; max-height: none; }
+    .sidebar::-webkit-scrollbar { width: 5px; }
+    .sidebar::-webkit-scrollbar-thumb { background: #bdceca; border-radius: 4px; }
+    @media (min-width:1700px) { .workspace { grid-template-columns: minmax(0,1fr) 332px; } .sidebar { padding: 22px; } }
+    @media (max-width:1050px) { .header { padding: 17px 19px 15px; } h1 { font-size: 20px; } .workspace { grid-template-columns: minmax(0,1fr) 270px; } .sidebar { padding: 15px; } .viewhead { display: block; padding: 14px 17px 3px; } .toolbar { position: static; justify-content: flex-start; margin-top: 10px; gap: 4px; } .stagefooter { padding: 10px 15px; } .stagefooter .bottom { align-items: flex-end; } .viewhead h2 { font-size: 17px; } }
+    @media (max-width:780px) { .header { gap: 12px; align-items: flex-start; } h1 { font-size: 17px; } .eyebrow { font-size: 9px; } .revision { font-size: 9px; max-width: 150px; } .badge { font-size: 8px; } .tabs { padding: 0 10px; } .tabs button { font-size: 11px; padding: 10px; } .workspace { display: block; height: auto; min-height: 0; max-height: none; } .stage { height: 690px; } .sidebar { border-left: 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 20px; overflow: visible; } .section { margin: 0; } .summary { gap: 18px; padding: 22px 20px; } .footer { padding: 0 20px 20px; } }
+    @media (max-width:480px) { .header { padding: 14px 14px 13px; } h1 { font-size: 15px; max-width: 245px; } .revision { max-width: 118px; font-size: 8px; } .badge { word-break: break-word; padding: 3px 5px; } .tabs .number { display: none; } .stage { height: 670px; } .viewhead h2 { font-size: 16px; } .viewhead p { font-size: 11px; } .canvas-wrap { min-height: 280px; } .stagefooter .bottom { display: block; } .presets { justify-content: flex-start; margin-top: 8px; } .help { font-size: 9px; } .legend { font-size: 9px; gap: 4px 9px; } .view-state { left: 15px; bottom: 12px; max-width: 65%; } .scale { right: 15px; } .sidebar { display: block; padding: 18px; } .section { margin-bottom: 18px; } .summary { grid-template-columns: 1fr; gap: 16px; } }
+    @media (prefers-reduced-motion:reduce) { * { scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div><div class="eyebrow">ZUDO CASE / 7U40 METAL CASE</div><h1>蓋の内側ガイドを、前後左右に。</h1></div>
+    <div class="revision"><div class="badge">R11-BUILD-FEEDBACK-04 · レビュー用</div><div>229.4 × 334 × 91 mm / 本体基準</div></div>
+  </header>
+  <nav id="tabs" class="tabs" aria-label="確認する箇所"></nav>
+  <main class="workspace">
+    <section class="stage" id="stage" aria-label="3Dプレビュー">
+      <div class="viewhead">
+        <div><div id="viewKicker" class="view-kicker"></div><h2 id="viewTitle"></h2><p id="viewDesc"></p></div>
+        <div class="toolbar">
+          <button id="fitBtn" title="表示中の部品を画面に収める（F）">全体表示</button>
+          <button id="projectionBtn" aria-pressed="true">平行投影</button>
+          <button id="pngBtn" title="現在の3D表示をPNG画像として保存">PNG</button>
+          <button id="fullscreenBtn" title="プレビューを全画面で表示">拡大</button>
+        </div>
+      </div>
+      <div class="canvas-wrap" id="canvasWrap">
+        <canvas id="canvas" tabindex="0" aria-label="ドラッグで回転、Shiftまたは右ドラッグで移動、ホイールで拡大縮小。クリックで部品を選択。"></canvas>
+        <div class="view-state"><span id="positionState">組立位置</span><span id="partsState"></span></div>
+        <div id="scale" class="scale"></div>
+        <div id="loading" class="loading">モデルを読み込んでいます…</div>
+        <div id="fail" class="error" role="alert"></div>
+        <div id="empty" class="empty">表示中の部品はありません。<br>「全て表示」で戻せます。</div>
+      </div>
+      <div class="stagefooter">
+        <div id="legend" class="legend" aria-label="部品の色分け"></div>
+        <div class="bottom">
+          <div class="help">ドラッグ：回転 · 右ドラッグ / Shift：移動 · ホイール：拡大縮小<br>クリック：部品を選択 · キーボード：矢印 / ＋ / − / F</div>
+          <div class="presets" aria-label="見る方向">
+            <button data-camera="iso">斜め</button><button data-camera="front">正面</button><button data-camera="side">側面</button><button data-camera="top">上から</button><button data-camera="bottom">底から</button><button data-camera="reverse">反対側</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="sidebar" aria-label="表示と部品情報">
+      <section class="section">
+        <h3>表示</h3>
+        <div class="seg"><button id="colorBtn" aria-pressed="true">部品の色分け</button><button id="blackBtn" aria-pressed="false">黒い外観</button></div>
+        <div class="row"><label><input id="xray" type="checkbox">金属パネルを透過</label></div>
+        <div class="row"><label><input id="hardware" type="checkbox" checked>ネジ・ナット</label><label><input id="lid" type="checkbox">蓋</label></div>
+        <div class="row"><label><input id="edges" type="checkbox" checked>輪郭線</label><button id="resetBtn" class="solo">表示をリセット</button></div>
+        <div class="split"><span style="font-size:12px">分解表示</span><output id="explodeValue" class="readout">0.0 mm</output></div>
+        <input id="explode" type="range" min="0" max="30" step="0.5" value="0" aria-label="説明用の分解間隔">
+        <div class="seg"><button id="assembleBtn" aria-pressed="true">組立位置</button><button id="explodeBtn" aria-pressed="false">分解して見る</button></div>
+        <p class="fine">分解時の移動量は説明用です。部品の実寸や隙間は変わりません。</p>
+      </section>
+      <section class="section">
+        <h3>このビューの確認ポイント</h3>
+        <ul id="checkpoints" class="checkpoints"></ul>
+        <span id="feedbackRefs" class="feedback-refs"></span>
+      </section>
+      <section class="section">
+        <div class="layer-head"><h3>部品の表示</h3><button id="allBtn">全て表示</button></div>
+        <div id="layerRows"></div>
+      </section>
+      <section class="section">
+        <h3>選択した部品</h3>
+        <select id="partSelect" aria-label="部品を選択"><option value="">3D表示をクリック、または一覧から選択</option></select>
+        <div id="inspector" class="inspector"></div>
+        <div class="small-actions"><button id="focusBtn" disabled>寄って見る</button><button id="soloBtn" disabled>この部品だけ</button><button id="clearBtn">選択解除</button></div>
+      </section>
+      <section class="section">
+        <h3>寸法と留め方</h3>
+        <div id="dimensions" class="dimensions"></div>
+        <p class="fine">表示メッシュの寸法です。細部ビューでは切り出した部分の外接寸法を表示します。</p>
+      </section>
+    </aside>
+  </main>
+  <section class="summary" aria-label="今回の改修方針">
+    <article><h3>蓋を四辺で位置決め</h3><p>左右にも厚さ2 mm、掛かり12 mmの内側ガイドを追加。四隅と左右中央の計6部品を変更し、蓋枠8部品を維持しました。</p></article>
+    <article><h3>3DP部品の寸法を確認</h3><p>20個とも最長辺は250 mm未満、最大210 mm。部品を選択すると実寸と体積を確認できます。最低価格の適用は未確認です。</p></article>
+    <article><h3>金具を避けて真上に外す</h3><p>本体上端の座金とナットに合わせ、四辺に18 mm幅の逃げを8箇所。蓋は持ち上げ式を維持し、運搬時は外部ベルトで保持します。</p></article>
+  </section>
+  <footer class="footer">R11-BUILD-FEEDBACK-04 / レビュー用候補。色は部品の識別用、寸法単位はmm。実際の嵌合・締付けは現物で確認します。</footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script id="model-data" type="application/json">__MODEL__</script>
+  <script>
+  (function () {
+    'use strict';
+
+    const $ = function (id) { return document.getElementById(id); };
+    function showError(error) {
+      $('loading').classList.add('hidden');
+      $('fail').textContent = 'プレビューを表示できませんでした。\n' + (error && error.message ? error.message : String(error));
+      $('fail').style.display = 'block';
+    }
+    window.addEventListener('error', function (event) { showError(event.error || event.message); });
+    window.addEventListener('unhandledrejection', function (event) { showError(event.reason); });
+
+    try {
+      const DATA = JSON.parse($('model-data').textContent);
+      if (!DATA.meshes || !DATA.scenes) throw new Error('モデルデータがありません。');
+
+      const CATEGORIES = {
+        panels: { label: 'アルミパネル', color: [0.34, 0.41, 0.44] },
+        corner: { label: '一体コーナー', color: [0.075, 0.49, 0.50] },
+        span: { label: '中央の接続部品', color: [0.73, 0.52, 0.23] },
+        inner: { label: '内側の固定耳', color: [0.35, 0.53, 0.70] },
+        guide: { label: '仮の脚', color: [0.82, 0.66, 0.34] },
+        washer: { label: '丸ワッシャー', color: [0.25, 0.31, 0.35] },
+        spacer: { label: 'レールのスペーサー', color: [0.54, 0.64, 0.65] },
+        hardware: { label: 'ネジ・ナット', color: [0.68, 0.74, 0.77] },
+        brackets: { label: 'L字金具', color: [0.54, 0.64, 0.65] },
+        lidFrame: { label: '蓋フレーム', color: [0.43, 0.33, 0.53] },
+        lidMetal: { label: '蓋アルミ', color: [0.53, 0.53, 0.61] },
+        lidHardware: { label: '蓋のネジ・ナット', color: [0.71, 0.75, 0.79] },
+        sourceFrame: { label: 'レール・PCB', color: [0.30, 0.48, 0.36] }
+      };
+      const VIEWS = {
+        lidguides: {
+          label: '蓋・四辺の内側ガイド', kicker: 'FOUR-SIDED LID GUIDES', title: '蓋の内側ガイドを、四辺へ。',
+          description: '蓋枠を下から見る表示。左右にも厚さ2 mm、掛かり12 mmのガイドを追加しました。',
+          refs: 'R11-04 / 左右の位置決めを追加', yaw: 0.75, pitch: -0.70, hardware: false, lid: true,
+          points: ['前後に加え、左右もケースの内側へ入る形状。', '本体上端のナット・座金を避ける、下向きに開いた逃げ8箇所。', '蓋枠は8部品のまま。真上に外れ、運搬時は外部ベルトで保持。']
+        },
+        lidfit: {
+          label: '側面ガイドのはまり', kicker: 'SIDE GUIDE / HARDWARE CLEARANCE', title: '側面の金具を避けて、内側へ差し込む。',
+          description: '右側Y＋95 mm付近の切り出し表示。分解量を増やすと、蓋だけが上へ移動します。',
+          refs: 'R11-04 / 側面のガイドと逃げ', yaw: -1.1, pitch: 0.30, lid: true, hidden: ['sourceFrame'],
+          points: ['ガード内面から0.7 mmの公称隙間。', '幅18 mmの逃げはZ90.5まで。座金の全調整域の上端Z90から0.5 mm離す。', 'レールは初期非表示。レイヤーを切り替えて周辺の空間を確認できます。']
+        },
+        inside: {
+          label: '内側の耳', kicker: 'INSIDE FIXING EARS', title: '縦角と下辺の32箇所を、内外から挟む。',
+          description: '一体の内側耳を見るため、金具・ネジを省いた表示。上端8箇所の耳と座金は従来どおりです。',
+          refs: 'R11-03の本体内側耳を維持', yaw: 0.75, pitch: 0.80, hardware: false,
+          points: ['縦角16＋下辺の壁8＋底面8に、厚さ1mmの内側耳。', '32枚の内側丸ワッシャーを、既存の3DP部品へ統合。', '上端8箇所は、長穴にナットを直接当てないため丸座金を残す。']
+        },
+        assembly: {
+          label: '全体', kicker: 'ASSEMBLY', title: '四辺で位置を決める、持ち上げ式の蓋。',
+          description: '本体の内外の耳を維持し、蓋の左右にも内側ガイドを追加した組立形状です。',
+          refs: 'R11-04 / 本体・蓋・元レール', yaw: 0.75, pitch: 0.63, lid: true,
+          points: ['蓋の内側ガイドを前後2辺から4辺へ。', '金属板・穴・ネジ・ナットの位置はR11-03と同じ。', '3DP部品20個、独立した丸ワッシャー64枚を維持。']
+        },
+        nylon: {
+          label: '3DP部品', kicker: 'PRINTED PARTS', title: '角は一体に、継ぎ目は固定耳で。',
+          description: 'R11-03の本体形状を維持。部品を選ぶと外接寸法とCAD体積を確認できます。',
+          refs: 'R11-03から本体12部品は変更なし', yaw: 0.75, pitch: 0.70, hardware: false,
+          points: ['四隅の内側耳は、縦の位置決め壁につながる一体形状。', '下辺の内側L字耳は中央部品と一体で、壁と底面を受ける。', '3DP部品は本体12＋蓋8のまま。現在価格は未見積。']
+        },
+        corner: {
+          label: '角と位置決め', kicker: 'CORNER & PANEL SEATS', title: 'パネルの居場所を、角の内側に。',
+          description: '角の切り出し表示。内側の耳、板、外側の耳と、残したL字金具の積層を確認します。',
+          refs: 'R11-03 / 縦角の内側耳', yaw: -2.35, pitch: 0.52, xray: true,
+          points: ['新しい1mmの耳が、板とL字金具の間の座金を置き換える。', '耳は縦の位置決め壁へつながり、独立した部品にならない。', '金具レイヤーを隠すと内側の耳が見えます。']
+        },
+        top: {
+          label: '上端の内外', kicker: 'TOP / TWO-SIDED EARS', title: '上端の固定耳を、内側にも外側にも。',
+          description: '上端は従来の内側耳と丸ワッシャーを維持。ナットを長穴へ直接押し付けない構成です。',
+          refs: '上端8箇所 / 既存形状を維持', yaw: 2.5, pitch: 0.37, hidden: ['sourceFrame'],
+          points: ['外側の重ね耳と内側の耳でパネルを挟む。', '内側の丸座金がナットの荷重を分散。', 'レールは初期非表示。周辺の空間はレイヤーで確認。']
+        },
+        lap: {
+          label: '重ね接合', kicker: 'SHARED FASTENER', title: '隣り合う2つの耳を、同じネジで留める。',
+          description: '下辺の接合部。外側の重ね耳に加え、内側にも壁・底面をつなぐL字の耳があります。',
+          refs: 'R11-03 / 下辺の内側L字耳', yaw: -0.65, pitch: 0.36,
+          points: ['内側の耳は中央部品と一体。隣の角部品に逃げを設ける。', 'ナットは従来どおり金属L字金具へ当たる。', '内側座金2枚を省略。外側の丸ワッシャーは残す。']
+        },
+        lid: {
+          label: '蓋', kicker: 'LID SEGMENTS', title: '8つの継ぎ目を、天面と側壁で固定。',
+          description: '四隅と各辺の中央、計8部品。蓋板の8本に加え、側壁にも8本の接合ネジを配置します。',
+          refs: '#5', yaw: 0.75, pitch: 0.70, lid: true,
+          points: ['四隅4個と左右の中央2個に、側面のガイドを追加。', '四辺の内側スカートに、本体上端の金具を避ける切欠き8箇所。', '蓋は真上に外す。運搬時の保持には外部ベルトを使用。']
+        },
+        lidjoint: {
+          label: '蓋の継ぎ目', kicker: 'LID / TALL WALL JOINT', title: '背の高い蓋フレームも、接合部で固定。',
+          description: '蓋の継ぎ目を切り出して表示。天面の固定と側壁の接合を見ます。',
+          refs: '#5', yaw: 2.55, pitch: 0.42, lid: true,
+          points: ['天面と側壁の2方向から、重ね部を固定。', '側壁ネジは蓋の部品同士だけをつなぎます。', 'ナットの向きと、内側の作業スペースを見る。']
+        },
+        panels: {
+          label: '板の穴配置', kicker: 'PANEL HOLES', title: '新しい固定位置に、板の穴を合わせる。',
+          description: '本体の金属パネル。左右下辺中央の4長穴と、専用Ø4吊り穴を削除した穴配置です。',
+          refs: 'R11-02から変更なし / 機能穴を維持', yaw: 0.75, pitch: 0.55, hardware: false,
+          points: ['前後板の接合位置は X±59.5 mm。', '側板の接合位置は Y±95 mm。レールの丸穴10個は維持。', '専用Ø4穴は蓋を含む6枚すべてから削除。長穴のみの3枚の吊り方は未確認。']
+        },
+        slots: {
+          label: '長穴 +5 mm', kicker: 'SLOT EXTENSION', title: '長穴を、板端からさらに内側へ5 mm。',
+          description: '縦・横とも同じ考え方で延長。板端側の端を保ち、内側の調整範囲を広げます。',
+          refs: '#9 / 同種の長穴すべて', yaw: -0.30, pitch: 0.12, hardware: false,
+          points: ['一方向に5 mm追加。両端に5 mmずつではありません。', '縦の長穴も、横の長穴も対象。', '丸穴と長穴を区別して確認。']
+        },
+        rail: {
+          label: 'レール固定', kicker: 'RAIL / OUTSIDE NUT', title: 'レール固定だけは、ナットを外側へ。',
+          description: 'モジュール側にナットを出さない接続を確認します。本体の一般接合とは向きが異なります。',
+          refs: '#5 / ナット配置の例外', yaw: 2.35, pitch: 0.37,
+          points: ['レールとケースの接続は外側ナット。', 'モジュール側の空間を確保する。', 'パネル透過で内外の積層を確認。']
+        }
+      };
+      const HARDWARE_CATS = ['hardware', 'lidHardware'];
+      const LID_CATS = ['lidFrame', 'lidMetal', 'lidHardware'];
+      const PANEL_CATS = ['panels', 'lidMetal'];
+      const state = {
+        view: 'lidguides', color: true, ortho: true, xray: false, hardware: true,
+        lid: false, edges: true, explode: 0, hidden: [], selected: null, only: null
+      };
+      let activeParts = [];
+      let cam = { target: [0, 0, 45], yaw: 0.75, pitch: 0.63, span: 380, up: 'z' };
+      let matrix, eye, right, up, forward;
+      let dirty = true;
+      let frameNumber = 0;
+      let toastTimer;
+      let canvas = $('canvas');
+      let gl = null;
+      let ctx = null;
+      let program, positionAttribute, normalAttribute;
+      const uniforms = {};
+      const buffers = new Map();
+      const softwareCache = new Map();
+      let softCanvas = null;
+
+      // Small, dependency-free Z-up renderer retained from the R10 study.
+      // The mesh data is generated by CAD and embedded in this file by build.py.
+      const V = {
+        add: function (a, b) { return a.map(function (x, i) { return x + b[i]; }); },
+        sub: function (a, b) { return a.map(function (x, i) { return x - b[i]; }); },
+        mul: function (a, n) { return a.map(function (x) { return x * n; }); },
+        dot: function (a, b) { return a[0] * b[0] + a[1] * b[1] + a[2] * b[2]; },
+        cross: function (a, b) { return [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]]; },
+        norm: function (a) { const length = Math.hypot.apply(null, a) || 1; return a.map(function (x) { return x / length; }); }
+      };
+      function matmul(a, b) {
+        const c = new Float32Array(16);
+        for (let j = 0; j < 4; j++) for (let i = 0; i < 4; i++) for (let k = 0; k < 4; k++) c[j * 4 + i] += a[k * 4 + i] * b[j * 4 + k];
+        return c;
+      }
+      function lookAt(e, t) {
+        const z = V.norm(V.sub(e, t));
+        const x = V.norm(V.cross([0, 0, 1], z));
+        const y = V.cross(z, x);
+        return new Float32Array([x[0], y[0], z[0], 0, x[1], y[1], z[1], 0, x[2], y[2], z[2], 0, -V.dot(x, e), -V.dot(y, e), -V.dot(z, e), 1]);
+      }
+      function ortho(l, r, b, t, n, f) {
+        return new Float32Array([2 / (r - l), 0, 0, 0, 0, 2 / (t - b), 0, 0, 0, 0, -2 / (f - n), 0, -(r + l) / (r - l), -(t + b) / (t - b), -(f + n) / (f - n), 1]);
+      }
+      function perspective(fovy, aspect, n, f) {
+        const z = 1 / Math.tan(fovy / 2);
+        return new Float32Array([z / aspect, 0, 0, 0, 0, z, 0, 0, 0, 0, (f + n) / (n - f), -1, 0, 0, 2 * f * n / (n - f), 0]);
+      }
+      function transform4(m, p) {
+        const v = [p[0], p[1], p[2], 1];
+        return [0, 1, 2, 3].map(function (i) { return v.reduce(function (sum, a, j) { return sum + a * m[j * 4 + i]; }, 0); });
+      }
+      function hex(c) {
+        return '#' + c.map(function (x) { return Math.round(x * 255).toString(16).padStart(2, '0'); }).join('');
+      }
+      function category(key) { return CATEGORIES[key] || { label: key || '部品', color: [0.50, 0.57, 0.58] }; }
+      function displayCategory(part) {
+        if (part.cat !== 'sourceFrame') return part.cat;
+        if (['mountBolt', 'mountNut'].includes(part.role)) return 'hardware';
+        if (part.role === 'outerWasher') return 'washer';
+        if (part.role === 'innerSpacer') return 'spacer';
+        return part.cat;
+      }
+      function offset(part) {
+        const vector = Array.isArray(part.explode) ? part.explode : [0, 0, 0];
+        return vector.map(function (x) { return x * state.explode; });
+      }
+      function shown(part) {
+        if (state.hidden.includes(part.cat)) return false;
+        if (!state.hardware && HARDWARE_CATS.includes(part.cat)) return false;
+        if (!state.lid && LID_CATS.includes(part.cat)) return false;
+        return !state.only || part.id === state.only;
+      }
+      function partColor(part) {
+        let color = category(part.cat).color;
+        if (!state.color) {
+          if (PANEL_CATS.includes(part.cat)) color = [0.18, 0.215, 0.235];
+          else if (HARDWARE_CATS.includes(part.cat)) color = [0.35, 0.39, 0.42];
+          else if (part.cat === 'brackets') color = [0.35, 0.40, 0.42];
+          else color = [0.13, 0.16, 0.17];
+        }
+        return part.id === state.selected ? [0.91, 0.66, 0.29] : color;
+      }
+      function partBox(part) {
+        if (Array.isArray(part.box) && part.box.length === 6) return part.box;
+        const points = DATA.meshes[part.mesh].p;
+        const box = [Infinity, Infinity, Infinity, -Infinity, -Infinity, -Infinity];
+        for (let i = 0; i < points.length; i += 3) for (let k = 0; k < 3; k++) {
+          box[k] = Math.min(box[k], points[i + k]); box[k + 3] = Math.max(box[k + 3], points[i + k]);
+        }
+        return box;
+      }
+      function sceneBounds(parts) {
+        const box = [Infinity, Infinity, Infinity, -Infinity, -Infinity, -Infinity];
+        for (const part of parts) {
+          const move = offset(part);
+          for (let k = 0; k < 3; k++) { box[k] = Math.min(box[k], part.box[k] + move[k]); box[k + 3] = Math.max(box[k + 3], part.box[k + 3] + move[k]); }
+        }
+        return box;
+      }
+
+      function setupGL() {
+        gl = canvas.getContext('webgl', { antialias: true, alpha: false, preserveDrawingBuffer: true });
+        if (!gl) return;
+        const vertexSource = 'attribute vec3 aP; attribute vec3 aN; uniform mat4 uMVP; uniform vec3 uOffset; varying vec3 vN; varying vec3 vP; void main(){ vP=aP+uOffset; vN=aN; gl_Position=uMVP*vec4(vP,1.0); }';
+        const fragmentSource = 'precision highp float; varying vec3 vN; varying vec3 vP; uniform vec4 uColor; uniform vec3 uEye; uniform float uMetal; uniform float uLine; void main(){ vec3 n=normalize(vN); if(!gl_FrontFacing)n=-n; vec3 light=normalize(vec3(-.5,-.55,1.)); vec3 fill=normalize(vec3(.6,.7,.5)); vec3 V=normalize(uEye-vP); float diffuse=.48+.34*max(dot(n,light),0.)+.18*max(dot(n,fill),0.); float spec=pow(max(dot(n,normalize(light+V)),0.),mix(15.,65.,uMetal)); float rim=pow(1.-abs(dot(n,V)),3.); vec3 c=uColor.rgb*diffuse+vec3(spec*mix(.06,.26,uMetal))+vec3(rim*.035); if(uLine>.5)c=uColor.rgb; gl_FragColor=vec4(c,uColor.a); }';
+        function compile(type, source) {
+          const shader = gl.createShader(type);
+          gl.shaderSource(shader, source); gl.compileShader(shader);
+          if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(shader));
+          return shader;
+        }
+        program = gl.createProgram();
+        gl.attachShader(program, compile(gl.VERTEX_SHADER, vertexSource));
+        gl.attachShader(program, compile(gl.FRAGMENT_SHADER, fragmentSource));
+        gl.linkProgram(program);
+        if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(program));
+        gl.useProgram(program);
+        for (const key of ['MVP', 'Offset', 'Color', 'Eye', 'Metal', 'Line']) uniforms[key] = gl.getUniformLocation(program, 'u' + key);
+        positionAttribute = gl.getAttribLocation(program, 'aP');
+        normalAttribute = gl.getAttribLocation(program, 'aN');
+        gl.enableVertexAttribArray(positionAttribute); gl.enableVertexAttribArray(normalAttribute);
+        gl.enable(gl.DEPTH_TEST); gl.depthFunc(gl.LEQUAL); gl.disable(gl.CULL_FACE);
+        gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+      }
+      try { setupGL(); } catch (error) { console.warn('WebGL initialization failed; using mesh rasterizer.', error); gl = null; }
+      if (!gl) {
+        // A canvas which already requested WebGL cannot change context type.
+        const replacement = canvas.cloneNode(false);
+        canvas.replaceWith(replacement); canvas = replacement;
+        ctx = canvas.getContext('2d');
+        if (!ctx) throw new Error('この環境では描画コンテキストを作成できません。');
+      }
+
+      function createBuffers(key) {
+        if (!gl || buffers.has(key)) return;
+        const mesh = DATA.meshes[key];
+        if (!mesh) throw new Error('メッシュがありません: ' + key);
+        const points = mesh.p, indices = mesh.i;
+        const normals = new Float32Array(points.length);
+        const edges = new Map();
+        const collectEdges = indices.length < 800000;
+        for (let i = 0; i < indices.length; i += 3) {
+          const ia = indices[i], ib = indices[i + 1], ic = indices[i + 2];
+          const a = points.slice(ia * 3, ia * 3 + 3), b = points.slice(ib * 3, ib * 3 + 3), c = points.slice(ic * 3, ic * 3 + 3);
+          const normal = V.cross(V.sub(b, a), V.sub(c, a));
+          for (const index of [ia, ib, ic]) for (let k = 0; k < 3; k++) normals[index * 3 + k] += normal[k];
+          if (!collectEdges) continue;
+          const unitNormal = V.norm(normal);
+          for (const pair of [[a, b], [b, c], [c, a]]) {
+            const sa = pair[0].map(function (v) { return Math.round(v * 100000); }).join(',');
+            const sb = pair[1].map(function (v) { return Math.round(v * 100000); }).join(',');
+            const edgeKey = sa < sb ? sa + '|' + sb : sb + '|' + sa;
+            const existing = edges.get(edgeKey);
+            if (!existing) edges.set(edgeKey, { a: pair[0], b: pair[1], normal: unitNormal, count: 1, sharp: false });
+            else { existing.count++; if (V.dot(existing.normal, unitNormal) < 0.86) existing.sharp = true; }
+          }
+        }
+        for (let i = 0; i < normals.length; i += 3) {
+          const length = Math.hypot(normals[i], normals[i + 1], normals[i + 2]) || 1;
+          normals[i] /= length; normals[i + 1] /= length; normals[i + 2] /= length;
+        }
+        const linePoints = [];
+        for (const edge of edges.values()) if (edge.sharp || edge.count === 1) linePoints.push.apply(linePoints, edge.a.concat(edge.b));
+        function buffer(target, data) { const result = gl.createBuffer(); gl.bindBuffer(target, result); gl.bufferData(target, data, gl.STATIC_DRAW); return result; }
+        let indexType = gl.UNSIGNED_SHORT;
+        let indexArray;
+        if (points.length / 3 > 65535) {
+          if (!gl.getExtension('OES_element_index_uint')) throw new Error('大きなメッシュ用の描画拡張がありません。');
+          indexArray = new Uint32Array(indices); indexType = gl.UNSIGNED_INT;
+        } else indexArray = new Uint16Array(indices);
+        buffers.set(key, {
+          position: buffer(gl.ARRAY_BUFFER, new Float32Array(points)), normal: buffer(gl.ARRAY_BUFFER, normals),
+          index: buffer(gl.ELEMENT_ARRAY_BUFFER, indexArray), count: indices.length, indexType: indexType,
+          lines: buffer(gl.ARRAY_BUFFER, new Float32Array(linePoints)), lineCount: linePoints.length / 3
+        });
+      }
+
+      function updateCamera() {
+        const cp = Math.cos(cam.pitch), sp = Math.sin(cam.pitch);
+        const direction = [cp * Math.sin(cam.yaw), -cp * Math.cos(cam.yaw), sp];
+        eye = V.add(cam.target, V.mul(direction, cam.span * 2.6));
+        forward = V.norm(V.sub(cam.target, eye)); right = V.norm(V.cross(forward, [0, 0, 1])); up = V.cross(right, forward);
+        const aspect = Math.max(1, canvas.clientWidth) / Math.max(1, canvas.clientHeight);
+        const projection = state.ortho
+          ? ortho(-cam.span * aspect / 2, cam.span * aspect / 2, -cam.span / 2, cam.span / 2, 0.01, cam.span * 18)
+          : perspective(2 * Math.atan(1 / 5.2), aspect, 0.01, cam.span * 18);
+        matrix = matmul(projection, lookAt(eye, cam.target));
+      }
+      function fitCamera(parts) {
+        const chosen = Array.isArray(parts) ? parts : activeParts.filter(shown);
+        if (!chosen.length) return;
+        const box = sceneBounds(chosen);
+        cam.target = [0, 1, 2].map(function (k) { return (box[k] + box[k + 3]) / 2; });
+        updateCamera();
+        let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+        for (const x of [box[0], box[3]]) for (const y of [box[1], box[4]]) for (const z of [box[2], box[5]]) {
+          const point = V.sub([x, y, z], cam.target);
+          const px = V.dot(point, right), py = V.dot(point, up);
+          minX = Math.min(minX, px); maxX = Math.max(maxX, px); minY = Math.min(minY, py); maxY = Math.max(maxY, py);
+        }
+        const aspect = Math.max(1, canvas.clientWidth) / Math.max(1, canvas.clientHeight);
+        cam.span = Math.max(5, maxY - minY, (maxX - minX) / aspect) * 1.22;
+        dirty = true;
+      }
+      function drawPart(part, transparent) {
+        const buffer = buffers.get(part.mesh);
+        if (!buffer) return;
+        gl.bindBuffer(gl.ARRAY_BUFFER, buffer.position); gl.vertexAttribPointer(positionAttribute, 3, gl.FLOAT, false, 0, 0);
+        gl.bindBuffer(gl.ARRAY_BUFFER, buffer.normal); gl.vertexAttribPointer(normalAttribute, 3, gl.FLOAT, false, 0, 0);
+        gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, buffer.index);
+        gl.uniform3fv(uniforms.Offset, offset(part));
+        const color = partColor(part);
+        gl.uniform4f(uniforms.Color, color[0], color[1], color[2], transparent ? 0.22 : 1);
+        gl.uniform1f(uniforms.Metal, HARDWARE_CATS.includes(part.cat) || part.cat === 'brackets' ? 1 : PANEL_CATS.includes(part.cat) ? 0.55 : 0);
+        gl.uniform1f(uniforms.Line, 0);
+        gl.enable(gl.POLYGON_OFFSET_FILL); gl.polygonOffset(1, 1);
+        gl.drawElements(gl.TRIANGLES, buffer.count, buffer.indexType, 0);
+        gl.disable(gl.POLYGON_OFFSET_FILL);
+        if ((state.edges || part.id === state.selected) && buffer.lineCount) {
+          gl.enable(gl.BLEND); gl.uniform1f(uniforms.Line, 1);
+          const selected = part.id === state.selected;
+          gl.uniform4f(uniforms.Color, selected ? 0.51 : 0.19, selected ? 0.32 : 0.27, selected ? 0.10 : 0.29, transparent ? 0.28 : selected ? 0.70 : 0.20);
+          gl.bindBuffer(gl.ARRAY_BUFFER, buffer.lines); gl.vertexAttribPointer(positionAttribute, 3, gl.FLOAT, false, 0, 0);
+          gl.disableVertexAttribArray(normalAttribute); gl.vertexAttrib3f(normalAttribute, 0, 0, 1);
+          gl.drawArrays(gl.LINES, 0, buffer.lineCount); gl.enableVertexAttribArray(normalAttribute);
+          if (!transparent) gl.disable(gl.BLEND);
+        }
+      }
+
+      // Offline fallback rasterizes the same CAD triangles with a depth buffer.
+      function softwareMesh(key) {
+        if (softwareCache.has(key)) return softwareCache.get(key);
+        const mesh = DATA.meshes[key], points = mesh.p, triangles = [];
+        for (let i = 0; i < mesh.i.length; i += 3) {
+          const a = points.slice(mesh.i[i] * 3, mesh.i[i] * 3 + 3);
+          const b = points.slice(mesh.i[i + 1] * 3, mesh.i[i + 1] * 3 + 3);
+          const c = points.slice(mesh.i[i + 2] * 3, mesh.i[i + 2] * 3 + 3);
+          triangles.push({ a: a, b: b, c: c, n: V.norm(V.cross(V.sub(b, a), V.sub(c, a))) });
+        }
+        softwareCache.set(key, triangles);
+        return triangles;
+      }
+      function renderSoftware() {
+        const ratio = Math.min(1.1, 1100 / Math.max(1, canvas.clientWidth), 800 / Math.max(1, canvas.clientHeight));
+        const width = Math.max(1, Math.round(canvas.clientWidth * ratio));
+        const height = Math.max(1, Math.round(canvas.clientHeight * ratio));
+        if (!softCanvas) softCanvas = document.createElement('canvas');
+        softCanvas.width = width; softCanvas.height = height;
+        const context = softCanvas.getContext('2d'), image = context.createImageData(width, height), pixels = image.data;
+        const depth = new Float32Array(width * height); depth.fill(Infinity);
+        for (let i = 0; i < pixels.length; i += 4) { pixels[i] = 234; pixels[i + 1] = 240; pixels[i + 2] = 241; pixels[i + 3] = 255; }
+        const light = V.norm([-0.5, -0.55, 1]), fill = V.norm([0.6, 0.7, 0.5]);
+        const opaque = [], transparent = [];
+        function project(point) {
+          const transformed = transform4(matrix, point);
+          return [(transformed[0] / transformed[3] + 1) * width / 2, (1 - transformed[1] / transformed[3]) * height / 2, transformed[2] / transformed[3]];
+        }
+        for (const part of activeParts.filter(shown)) {
+          const move = offset(part), base = partColor(part), alpha = state.xray && PANEL_CATS.includes(part.cat) ? 0.22 : 1;
+          const metal = HARDWARE_CATS.includes(part.cat) || part.cat === 'brackets' ? 1 : PANEL_CATS.includes(part.cat) ? 0.55 : 0;
+          for (const triangle of softwareMesh(part.mesh)) {
+            const a = V.add(triangle.a, move), b = V.add(triangle.b, move), c = V.add(triangle.c, move);
+            const centre = V.mul(V.add(V.add(a, b), c), 1 / 3), view = V.norm(V.sub(eye, centre));
+            let normal = triangle.n;
+            if (V.dot(normal, view) < 0) normal = V.mul(normal, -1);
+            const diffuse = 0.48 + 0.34 * Math.max(V.dot(normal, light), 0) + 0.18 * Math.max(V.dot(normal, fill), 0);
+            const spec = Math.pow(Math.max(V.dot(normal, V.norm(V.add(light, view))), 0), 15 + 50 * metal) * (0.06 + 0.20 * metal);
+            const rim = Math.pow(1 - Math.abs(V.dot(normal, view)), 3) * 0.035;
+            const color = base.map(function (v) { return Math.max(0, Math.min(255, Math.round((v * diffuse + spec + rim) * 255))); });
+            (alpha === 1 ? opaque : transparent).push({ a: project(a), b: project(b), c: project(c), color: color, alpha: alpha });
+          }
+        }
+        transparent.sort(function (a, b) { return (b.a[2] + b.b[2] + b.c[2]) - (a.a[2] + a.b[2] + a.c[2]); });
+        function raster(triangle) {
+          const a = triangle.a, b = triangle.b, c = triangle.c;
+          const area = (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0]);
+          if (Math.abs(area) < 0.000001) return;
+          const x0 = Math.max(0, Math.floor(Math.min(a[0], b[0], c[0]))), x1 = Math.min(width - 1, Math.ceil(Math.max(a[0], b[0], c[0])));
+          const y0 = Math.max(0, Math.floor(Math.min(a[1], b[1], c[1]))), y1 = Math.min(height - 1, Math.ceil(Math.max(a[1], b[1], c[1])));
+          if (x0 > x1 || y0 > y1) return;
+          const inverse = 1 / area, ux = (b[1] - c[1]) * inverse, vx = (c[1] - a[1]) * inverse;
+          for (let y = y0; y <= y1; y++) {
+            let u = ((b[0] - (x0 + 0.5)) * (c[1] - (y + 0.5)) - (b[1] - (y + 0.5)) * (c[0] - (x0 + 0.5))) * inverse;
+            let v = ((c[0] - (x0 + 0.5)) * (a[1] - (y + 0.5)) - (c[1] - (y + 0.5)) * (a[0] - (x0 + 0.5))) * inverse;
+            for (let x = x0; x <= x1; x++, u += ux, v += vx) {
+              const q = 1 - u - v;
+              if (u < -0.000001 || v < -0.000001 || q < -0.000001) continue;
+              const z = u * a[2] + v * b[2] + q * c[2], at = y * width + x;
+              if (z > depth[at] + 0.0000001 || z < -1 || z > 1) continue;
+              const index = at * 4;
+              if (triangle.alpha === 1) { depth[at] = z; pixels[index] = triangle.color[0]; pixels[index + 1] = triangle.color[1]; pixels[index + 2] = triangle.color[2]; }
+              else for (let k = 0; k < 3; k++) pixels[index + k] = Math.round(pixels[index + k] * (1 - triangle.alpha) + triangle.color[k] * triangle.alpha);
+            }
+          }
+        }
+        for (const triangle of opaque) raster(triangle);
+        for (const triangle of transparent) raster(triangle);
+        context.putImageData(image, 0, 0); ctx.imageSmoothingEnabled = true;
+        ctx.drawImage(softCanvas, 0, 0, canvas.width, canvas.height);
+      }
+
+      function updateScale() {
+        const perMM = canvas.clientHeight / cam.span;
+        const options = [0.5, 1, 2, 5, 10, 20, 50, 100, 200];
+        const mm = options.reduce(function (a, b) { return Math.abs(b * perMM - 92) < Math.abs(a * perMM - 92) ? b : a; });
+        $('scale').style.width = mm * perMM + 'px'; $('scale').textContent = mm + ' mm';
+        $('scale').style.display = state.ortho ? 'block' : 'none';
+      }
+      function render() {
+        if (!dirty) return;
+        dirty = false;
+        const ratio = Math.min(window.devicePixelRatio || 1, 2);
+        const width = Math.max(1, Math.round(canvas.clientWidth * ratio)), height = Math.max(1, Math.round(canvas.clientHeight * ratio));
+        if (canvas.width !== width || canvas.height !== height) { canvas.width = width; canvas.height = height; }
+        updateCamera();
+        if (!gl) renderSoftware();
+        else {
+          gl.viewport(0, 0, width, height); gl.clearColor(234 / 255, 240 / 255, 241 / 255, 1);
+          gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT); gl.useProgram(program);
+          gl.uniformMatrix4fv(uniforms.MVP, false, matrix); gl.uniform3fv(uniforms.Eye, eye);
+          gl.depthMask(true); gl.disable(gl.BLEND);
+          const parts = activeParts.filter(shown), transparent = [];
+          for (const part of parts) {
+            if (state.xray && PANEL_CATS.includes(part.cat)) transparent.push(part);
+            else drawPart(part, false);
+          }
+          function centre(part) { return V.add([0, 1, 2].map(function (k) { return (part.box[k] + part.box[k + 3]) / 2; }), offset(part)); }
+          transparent.sort(function (a, b) { return V.dot(V.sub(centre(b), eye), forward) - V.dot(V.sub(centre(a), eye), forward); });
+          gl.enable(gl.BLEND); gl.depthMask(false);
+          for (const part of transparent) drawPart(part, true);
+          gl.depthMask(true); gl.disable(gl.BLEND);
+        }
+        updateScale(); frameNumber++;
+      }
+      function tick() { render(); requestAnimationFrame(tick); }
+
+      function toast(message) {
+        clearTimeout(toastTimer); $('toast').textContent = message; $('toast').style.display = 'block';
+        toastTimer = setTimeout(function () { $('toast').style.display = 'none'; }, 2800);
+      }
+      function renderTabs() {
+        const root = $('tabs');
+        let number = 0;
+        for (const key of Object.keys(VIEWS)) {
+          if (!DATA.scenes[key]) continue;
+          const button = document.createElement('button'), index = document.createElement('span');
+          index.className = 'number'; index.textContent = String(++number).padStart(2, '0');
+          button.dataset.view = key; button.append(index, document.createTextNode(VIEWS[key].label));
+          button.onclick = function () { setView(key); }; root.append(button);
+        }
+      }
+      function renderLayers() {
+        const root = $('layerRows'); root.replaceChildren();
+        const present = new Set(activeParts.map(function (part) { return part.cat; }));
+        for (const key of Array.from(new Set(Object.keys(CATEGORIES).concat(Array.from(present))))) {
+          if (!present.has(key)) continue;
+          const row = document.createElement('div'), label = document.createElement('label'), check = document.createElement('input');
+          const swatch = document.createElement('span'), solo = document.createElement('button');
+          row.className = 'layer'; check.type = 'checkbox'; check.dataset.cat = key;
+          swatch.className = 'swatch'; swatch.style.background = hex(category(key).color);
+          check.onchange = function () { setLayer(key, check.checked); };
+          label.append(check, swatch, document.createTextNode(category(key).label));
+          solo.className = 'solo'; solo.textContent = '単独'; solo.title = category(key).label + 'だけ表示';
+          solo.onclick = function () {
+            state.only = null; state.hidden = Array.from(present).filter(function (cat) { return cat !== key; });
+            state.hardware = true; state.lid = true; syncUI(); fitCamera();
+          };
+          row.append(label, solo); root.append(row);
+        }
+      }
+      function setLayer(key, visible) {
+        state.only = null;
+        state.hidden = state.hidden.filter(function (cat) { return cat !== key; });
+        if (!visible) state.hidden.push(key);
+        if (visible && HARDWARE_CATS.includes(key)) state.hardware = true;
+        if (visible && LID_CATS.includes(key)) state.lid = true;
+        syncUI();
+      }
+      function renderPartOptions() {
+        const select = $('partSelect'); select.replaceChildren();
+        const empty = document.createElement('option'); empty.value = ''; empty.textContent = '3D表示をクリック、または一覧から選択'; select.append(empty);
+        for (const part of activeParts) {
+          const option = document.createElement('option'); option.value = part.id;
+          option.textContent = part.name || part.id; select.append(option);
+        }
+      }
+      function renderInspector() {
+        const root = $('inspector'), part = activeParts.find(function (item) { return item.id === state.selected; });
+        root.replaceChildren(); $('focusBtn').disabled = !part; $('soloBtn').disabled = !part;
+        $('partSelect').value = part ? part.id : '';
+        const title = document.createElement('strong');
+        if (!part) {
+          title.textContent = '部品を選択';
+          const text = document.createElement('p'); text.textContent = 'クリックした部品の役割、寸法、注記を表示します。'; root.append(title, text); return;
+        }
+        title.textContent = part.name || part.id; root.append(title);
+        for (const text of [category(part.cat).label, part.role, '表示メッシュ外接 ' + [0, 1, 2].map(function (k) { return (part.box[k + 3] - part.box[k]).toFixed(2); }).join(' × ') + ' mm', part.note]) {
+          if (!text) continue;
+          const paragraph = document.createElement('p'); paragraph.textContent = String(text); root.append(paragraph);
+        }
+        if (['corner', 'span', 'lidFrame'].includes(part.cat)) {
+          const physical = DATA.scenes.assembly.find(function (item) { return item.id === (part.source_part_id || part.id); }) || part;
+          const sizes = [0, 1, 2].map(function (k) { return physical.box[k + 3] - physical.box[k]; });
+          const lines = ['PA12部品全体 ' + sizes.map(function (v) { return v.toFixed(2); }).join(' × ') + ' mm',
+                         'CAD体積 ' + (physical.volume_mm3 / 1000).toFixed(3) + ' cm³',
+                         '最長辺 ' + Math.max.apply(null, sizes).toFixed(2) + ' mm / 大型基準250 mm未満',
+                         'JLCの個別価格：未見積。最低価格の適用は未確認。'];
+          for (const text of lines) { const p = document.createElement('p'); p.textContent = text; root.append(p); }
+        }
+        const id = document.createElement('p'); id.className = 'part-id'; id.textContent = part.id; root.append(id);
+      }
+      function renderDimensions() {
+        const p = DATA.parameters || {};
+        const body = p.body || {}, slots = p.slots || {}, hardware = p.hardware || {}, locators = p.locators || {};
+        const rows = [['本体の基準寸法', [body.width || 229.4, body.depth || 334, body.height || 91].join(' × ') + ' mm']];
+        if (['assembly', 'panels', 'slots'].includes(state.view)) rows.push(['板厚', (body.metal || 1.5) + ' mm']);
+        if (['assembly', 'panels', 'slots'].includes(state.view)) {
+          rows.push(['長穴の幅 × 全長', (slots.width || 5.5) + ' × ' + (slots.new_length || 15.5) + ' mm']);
+          rows.push(['長穴の追加長さ', '内側へ +' + Number(slots.inward_extension || 5).toFixed(1) + ' mm']);
+        }
+        if (['assembly', 'corner', 'top', 'lap'].includes(state.view)) {
+          rows.push(['本体ネジ・仮寸法', 'M5 × ' + (hardware.body_screw_length || 12)]);
+          rows.push(['通常ナット高さ・仮', Number(hardware.nut_height || 4).toFixed(1) + ' mm']);
+          if (['assembly', 'corner', 'lap'].includes(state.view)) rows.push(['底面・前後縦角の薄ナット・仮', Number(hardware.front_back_corner_nut_height || 2.7).toFixed(1) + ' mm']);
+        }
+        if (['inside', 'nylon', 'corner'].includes(state.view)) {
+          rows.push(['内側の位置決め壁', (locators.separator_wall || 0.8) + ' mm']);
+          rows.push(['板と板の隙間', Number(locators.panel_edge_gap || 1).toFixed(1) + ' mm']);
+        }
+        if (state.view === 'panels') {
+          rows.push(['側板の接合 Y', '±95.0 mm']);
+          rows.push(['本体の長穴 / レール丸穴', '40 / 10']);
+          rows.push(['専用吊り穴', '0']);
+          rows.push(['上側コーナー軸 Z', Number(hardware.upper_corner_axis_z || 65).toFixed(1) + ' mm']);
+        }
+        if (['lidguides', 'lidfit', 'lid', 'lidjoint'].includes(state.view)) {
+          rows.push(['フレームの分割', '8部品']);
+          rows.push(['蓋板 / 側壁ネジ', '各8本']);
+          rows.push(['内側のガイド', '前・後・左・右']);
+          rows.push(['掛かり / 厚さ', '12 / 2 mm']);
+          rows.push(['ガードとの公称隙間', '0.7 mm']);
+          rows.push(['スカートの逃げ', '幅18 mm × 8箇所']);
+        }
+        if (['assembly', 'nylon', 'lap', 'top'].includes(state.view)) rows.push(['本体の重ね耳', '1 + 1 mm']);
+        if (['lid', 'lidjoint'].includes(state.view)) rows.push(['蓋の重ね耳', '1.5 + 1.5 mm']);
+        if (['assembly', 'corner', 'top', 'lap'].includes(state.view)) rows.push(['丸ワッシャー', 'Ø15 / Ø5 / t1 mm']);
+        if (['assembly', 'nylon'].includes(state.view)) rows.push(['本体 / 蓋の3DP部品', '12 / 8']);
+        if (['inside', 'assembly', 'nylon', 'corner', 'lap'].includes(state.view)) rows.push(['追加した内側の耳', '32箇所 / t1 mm'], ['独立した丸座金', '64枚']);
+        rows.push(['本体のナット', '内側'], ['レール固定ナット', '外側']);
+        const root = $('dimensions'); root.replaceChildren();
+        for (const row of rows) { const label = document.createElement('span'), value = document.createElement('b'); label.textContent = row[0]; value.textContent = row[1]; root.append(label, value); }
+      }
+      function syncUI() {
+        const info = VIEWS[state.view];
+        $('viewKicker').textContent = String(Object.keys(VIEWS).indexOf(state.view) + 1).padStart(2, '0') + ' / ' + info.kicker;
+        $('viewTitle').textContent = info.title; $('viewDesc').textContent = info.description;
+        document.querySelectorAll('[data-view]').forEach(function (button) { const active = button.dataset.view === state.view; button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active)); });
+        $('colorBtn').setAttribute('aria-pressed', String(state.color)); $('blackBtn').setAttribute('aria-pressed', String(!state.color));
+        $('projectionBtn').textContent = state.ortho ? '平行投影' : '遠近投影'; $('projectionBtn').setAttribute('aria-pressed', String(state.ortho));
+        for (const key of ['xray', 'hardware', 'lid', 'edges']) $(key).checked = state[key];
+        $('hardware').disabled = !activeParts.some(function (part) { return HARDWARE_CATS.includes(part.cat); });
+        $('lid').disabled = !activeParts.some(function (part) { return LID_CATS.includes(part.cat); });
+        $('xray').disabled = !activeParts.some(function (part) { return PANEL_CATS.includes(part.cat); });
+        $('explode').value = state.explode; $('explodeValue').textContent = state.explode.toFixed(1) + ' mm';
+        $('assembleBtn').setAttribute('aria-pressed', String(state.explode === 0)); $('explodeBtn').setAttribute('aria-pressed', String(state.explode > 0));
+        const visible = activeParts.filter(shown);
+        $('positionState').textContent = state.explode > 0 ? '分解表示 · 説明用' : '組立位置';
+        $('partsState').textContent = visible.length + ' / ' + activeParts.length + ' 部品' + (gl ? '' : ' · Canvas');
+        $('empty').style.display = visible.length ? 'none' : 'block';
+        document.querySelectorAll('[data-cat]').forEach(function (check) { check.checked = activeParts.some(function (part) { return part.cat === check.dataset.cat && shown(part); }); });
+        $('allBtn').textContent = visible.length === activeParts.length && !state.only ? '全て非表示' : '全て表示';
+        const legend = $('legend'); legend.replaceChildren();
+        const present = Array.from(new Set(visible.map(function (part) { return part.cat; })));
+        for (const key of present) { const span = document.createElement('span'), swatch = document.createElement('i'); swatch.className = 'swatch'; swatch.style.background = hex(state.color ? category(key).color : [0.2, 0.25, 0.27]); span.append(swatch, document.createTextNode(category(key).label)); legend.append(span); }
+        const list = $('checkpoints'); list.replaceChildren();
+        for (const point of info.points) { const item = document.createElement('li'); item.textContent = point; list.append(item); }
+        $('feedbackRefs').textContent = info.refs;
+        renderDimensions();
+        dirty = true;
+      }
+      function setView(key) {
+        if (!VIEWS[key] || !Array.isArray(DATA.scenes[key])) throw new Error('ビューがありません: ' + key);
+        const info = VIEWS[key];
+        state.view = key; state.selected = null; state.only = null; state.hidden = (info.hidden || []).slice(); state.explode = 0;
+        state.lid = !!info.lid; state.hardware = info.hardware !== false; state.xray = !!info.xray;
+        activeParts = DATA.scenes[key].map(function (item, i) {
+          if (!DATA.meshes[item.mesh]) throw new Error('部品のメッシュがありません: ' + (item.id || item.mesh));
+          const part = Object.assign({ id: key + '-' + i, name: '', role: '', note: '', explode: [0, 0, 0] }, item);
+          part.cat = displayCategory(part);
+          part.box = partBox(part); return part;
+        });
+        for (const part of activeParts) createBuffers(part.mesh);
+        cam.yaw = info.yaw; cam.pitch = info.pitch;
+        renderLayers(); renderPartOptions(); renderInspector(); syncUI(); fitCamera();
+        if (window.history && window.history.replaceState) {
+          try { history.replaceState(null, '', '#' + key); } catch (error) { /* File and sandbox origins may restrict history. */ }
+        }
+        render();
+      }
+      function selectPart(id) {
+        const part = activeParts.find(function (item) { return item.id === id; });
+        state.selected = part ? part.id : null; renderInspector(); dirty = true;
+      }
+
+      // Select the nearest actual triangle, including in orthographic mode.
+      function rayTriangle(origin, direction, a, b, c) {
+        const e1 = V.sub(b, a), e2 = V.sub(c, a), h = V.cross(direction, e2), determinant = V.dot(e1, h);
+        if (Math.abs(determinant) < 1e-9) return null;
+        const inverse = 1 / determinant, s = V.sub(origin, a), u = inverse * V.dot(s, h);
+        if (u < 0 || u > 1) return null;
+        const q = V.cross(s, e1), v = inverse * V.dot(direction, q);
+        if (v < 0 || u + v > 1) return null;
+        const distance = inverse * V.dot(e2, q); return distance > 0 ? distance : null;
+      }
+      function rayBox(origin, direction, box) {
+        let nearest = -Infinity, farthest = Infinity;
+        for (let k = 0; k < 3; k++) {
+          if (Math.abs(direction[k]) < 1e-10) { if (origin[k] < box[k] || origin[k] > box[k + 3]) return false; continue; }
+          const a = (box[k] - origin[k]) / direction[k], b = (box[k + 3] - origin[k]) / direction[k];
+          nearest = Math.max(nearest, Math.min(a, b)); farthest = Math.min(farthest, Math.max(a, b));
+          if (farthest < nearest) return false;
+        }
+        return farthest > 0;
+      }
+      function pick(clientX, clientY) {
+        updateCamera();
+        const rect = canvas.getBoundingClientRect(), x = (clientX - rect.left) / rect.width * 2 - 1, y = 1 - (clientY - rect.top) / rect.height * 2, aspect = rect.width / rect.height;
+        let origin, direction;
+        if (state.ortho) { origin = V.add(eye, V.add(V.mul(right, x * cam.span * aspect / 2), V.mul(up, y * cam.span / 2))); direction = forward; }
+        else { origin = eye; direction = V.norm(V.add(forward, V.add(V.mul(right, x * aspect / 5.2), V.mul(up, y / 5.2)))); }
+        let best = Infinity, found = null;
+        for (const part of activeParts.filter(shown)) {
+          const localOrigin = V.sub(origin, offset(part));
+          if (!rayBox(localOrigin, direction, part.box)) continue;
+          const mesh = DATA.meshes[part.mesh], points = mesh.p;
+          for (let i = 0; i < mesh.i.length; i += 3) {
+            const a = points.slice(mesh.i[i] * 3, mesh.i[i] * 3 + 3), b = points.slice(mesh.i[i + 1] * 3, mesh.i[i + 1] * 3 + 3), c = points.slice(mesh.i[i + 2] * 3, mesh.i[i + 2] * 3 + 3);
+            const distance = rayTriangle(localOrigin, direction, a, b, c);
+            if (distance !== null && distance < best) { best = distance; found = part; }
+          }
+        }
+        selectPart(found ? found.id : null);
+      }
+
+      let drag = null, lastPinch = null;
+      const pointers = new Map();
+      function pan(dx, dy) {
+        updateCamera(); const scale = cam.span / Math.max(1, canvas.clientHeight);
+        cam.target = V.add(cam.target, V.add(V.mul(right, -dx * scale), V.mul(up, dy * scale)));
+      }
+      canvas.addEventListener('contextmenu', function (event) { event.preventDefault(); });
+      canvas.addEventListener('pointerdown', function (event) {
+        canvas.focus({ preventScroll: true }); canvas.setPointerCapture(event.pointerId); canvas.classList.add('dragging');
+        pointers.set(event.pointerId, [event.clientX, event.clientY]);
+        drag = { x: event.clientX, y: event.clientY, total: 0, pan: event.button === 2 || event.button === 1 || event.shiftKey };
+        if (pointers.size === 2) {
+          const values = Array.from(pointers.values());
+          lastPinch = { distance: Math.hypot(values[0][0] - values[1][0], values[0][1] - values[1][1]), middle: [(values[0][0] + values[1][0]) / 2, (values[0][1] + values[1][1]) / 2] };
+          drag.total = 10;
+        }
+      });
+      canvas.addEventListener('pointermove', function (event) {
+        if (!drag || !pointers.has(event.pointerId)) return;
+        pointers.set(event.pointerId, [event.clientX, event.clientY]);
+        if (pointers.size === 2) {
+          const values = Array.from(pointers.values());
+          const distance = Math.hypot(values[0][0] - values[1][0], values[0][1] - values[1][1]);
+          const middle = [(values[0][0] + values[1][0]) / 2, (values[0][1] + values[1][1]) / 2];
+          if (lastPinch) { cam.span = Math.max(2, Math.min(2500, cam.span * lastPinch.distance / Math.max(1, distance))); pan(middle[0] - lastPinch.middle[0], middle[1] - lastPinch.middle[1]); }
+          lastPinch = { distance: distance, middle: middle }; drag.total += 10; dirty = true; return;
+        }
+        const dx = event.clientX - drag.x, dy = event.clientY - drag.y;
+        drag.x = event.clientX; drag.y = event.clientY; drag.total += Math.abs(dx) + Math.abs(dy);
+        if (drag.pan || event.shiftKey) pan(dx, dy);
+        else { cam.yaw -= dx * 0.008; cam.pitch = Math.max(-1.565, Math.min(1.565, cam.pitch + dy * 0.007)); }
+        dirty = true;
+      });
+      canvas.addEventListener('pointerup', function (event) {
+        if (drag && drag.total < 5 && event.button === 0) pick(event.clientX, event.clientY);
+        pointers.delete(event.pointerId); lastPinch = null;
+        if (!pointers.size) { drag = null; canvas.classList.remove('dragging'); }
+        else if (drag) { const remaining = Array.from(pointers.values())[0]; drag.x = remaining[0]; drag.y = remaining[1]; drag.total = 10; }
+      });
+      canvas.addEventListener('pointercancel', function (event) { pointers.delete(event.pointerId); drag = null; lastPinch = null; canvas.classList.remove('dragging'); });
+      canvas.addEventListener('wheel', function (event) { event.preventDefault(); cam.span = Math.max(2, Math.min(2500, cam.span * Math.exp(event.deltaY * 0.001))); dirty = true; }, { passive: false });
+      canvas.addEventListener('keydown', function (event) {
+        let used = true;
+        if (event.key === 'ArrowLeft') cam.yaw -= 0.1;
+        else if (event.key === 'ArrowRight') cam.yaw += 0.1;
+        else if (event.key === 'ArrowUp') cam.pitch = Math.min(1.565, cam.pitch + 0.1);
+        else if (event.key === 'ArrowDown') cam.pitch = Math.max(-1.565, cam.pitch - 0.1);
+        else if (event.key.toLowerCase() === 'f') fitCamera();
+        else if (event.key === '+' || event.key === '=') cam.span = Math.max(2, cam.span * 0.9);
+        else if (event.key === '-') cam.span = Math.min(2500, cam.span * 1.1);
+        else if (event.key === 'Escape') { state.only = null; selectPart(null); syncUI(); }
+        else used = false;
+        if (used) { event.preventDefault(); dirty = true; }
+      });
+
+      function cameraPreset(key) {
+        if (key === 'iso') { cam.yaw = VIEWS[state.view].yaw; cam.pitch = VIEWS[state.view].pitch; }
+        else if (key === 'front') { cam.yaw = 0; cam.pitch = 0; }
+        else if (key === 'side') { cam.yaw = Math.PI / 2; cam.pitch = 0; }
+        else if (key === 'top') { cam.yaw = 0; cam.pitch = 1.565; }
+        else if (key === 'bottom') { cam.yaw = 0; cam.pitch = -1.565; }
+        else if (key === 'reverse') { cam.yaw += Math.PI; }
+        fitCamera(); dirty = true;
+      }
+      function setExplode(value, refit) {
+        state.explode = Math.max(0, Math.min(30, Number(value) || 0)); syncUI(); if (refit) fitCamera();
+      }
+      function download(blob, name) {
+        const url = URL.createObjectURL(blob), link = document.createElement('a'); link.href = url; link.download = name; link.click();
+        setTimeout(function () { URL.revokeObjectURL(url); }, 5000);
+      }
+      function exportPNG() {
+        dirty = true; render();
+        const image = document.createElement('canvas'), scale = canvas.width / Math.max(1, canvas.clientWidth);
+        const headerHeight = Math.round(76 * scale), footerHeight = Math.round(38 * scale);
+        image.width = canvas.width; image.height = canvas.height + headerHeight + footerHeight;
+        const context = image.getContext('2d'); context.fillStyle = '#eaf0f1'; context.fillRect(0, 0, image.width, image.height);
+        context.fillStyle = '#203238'; context.font = '600 ' + Math.round(17 * scale) + 'px sans-serif';
+        context.fillText(VIEWS[state.view].title, 22 * scale, 32 * scale);
+        context.fillStyle = '#62747a'; context.font = Math.round(10 * scale) + 'px sans-serif';
+        context.fillText('ZUDO CASE / R11-BUILD-FEEDBACK-04 / ' + VIEWS[state.view].label + ' / レビュー用', 22 * scale, 55 * scale);
+        context.drawImage(canvas, 0, headerHeight);
+        context.fillText((state.explode > 0 ? '分解表示（説明用）' : '組立位置') + ' · ' + (state.ortho ? '平行投影' : '遠近投影') + ' · mm', 22 * scale, image.height - 15 * scale);
+        image.toBlob(function (blob) { if (blob) download(blob, 'zudo-case-r11-' + state.view + '.png'); else toast('PNGを書き出せませんでした。'); }, 'image/png');
+      }
+
+      $('colorBtn').onclick = function () { state.color = true; syncUI(); };
+      $('blackBtn').onclick = function () { state.color = false; syncUI(); };
+      for (const key of ['xray', 'hardware', 'lid', 'edges']) $(key).onchange = function (event) { state[key] = event.target.checked; state.only = null; syncUI(); if (key === 'lid') fitCamera(); };
+      $('explode').oninput = function (event) { setExplode(event.target.value, false); };
+      $('explode').onchange = function () { fitCamera(); };
+      $('assembleBtn').onclick = function () { setExplode(0, true); };
+      $('explodeBtn').onclick = function () { setExplode(['assembly', 'nylon', 'panels', 'lid'].includes(state.view) ? 12 : 4, true); };
+      $('fitBtn').onclick = function () { fitCamera(); };
+      $('projectionBtn').onclick = function () { state.ortho = !state.ortho; syncUI(); };
+      $('resetBtn').onclick = function () { state.color = true; state.ortho = true; state.edges = true; setView(state.view); };
+      $('allBtn').onclick = function () {
+        const allVisible = activeParts.every(shown) && !state.only;
+        state.only = null; state.hidden = allVisible ? Array.from(new Set(activeParts.map(function (part) { return part.cat; }))) : [];
+        state.hardware = true; state.lid = true; syncUI(); if (!allVisible) fitCamera();
+      };
+      $('partSelect').onchange = function (event) { selectPart(event.target.value); };
+      $('focusBtn').onclick = function () { const part = activeParts.find(function (item) { return item.id === state.selected; }); if (part) { setLayer(part.cat, true); fitCamera([part]); } };
+      $('soloBtn').onclick = function () { state.only = state.selected; state.hidden = []; state.hardware = true; state.lid = true; syncUI(); fitCamera(); };
+      $('clearBtn').onclick = function () { state.only = null; selectPart(null); syncUI(); };
+      document.querySelectorAll('[data-camera]').forEach(function (button) { button.onclick = function () { cameraPreset(button.dataset.camera); }; });
+      $('fullscreenBtn').onclick = async function () {
+        try { if (document.fullscreenElement) await document.exitFullscreen(); else await $('stage').requestFullscreen(); }
+        catch (error) { toast('このブラウザーでは全画面表示できません。'); }
+      };
+      $('pngBtn').onclick = exportPNG;
+      new ResizeObserver(function () { if (activeParts.length) fitCamera(); dirty = true; }).observe($('canvasWrap'));
+      window.addEventListener('resize', function () { dirty = true; });
+      window.addEventListener('hashchange', function () { const key = location.hash.slice(1); if (VIEWS[key] && DATA.scenes[key] && key !== state.view) setView(key); });
+      if (gl) canvas.addEventListener('webglcontextlost', function (event) { event.preventDefault(); showError('描画コンテキストが中断されました。ページを再読み込みしてください。'); });
+
+      // Public diagnostics are local and contain only this viewer's model/state.
+      window.study = {
+        state: state,
+        get camera() { return cam; },
+        get parts() { return activeParts; },
+        get frames() { return frameNumber; },
+        get scene() { return state.view; },
+        get parameters() { return DATA.parameters; },
+        get revision() { return DATA.revision; },
+        get visibleParts() { return activeParts.filter(shown); },
+        setView: setView, select: selectPart, setLayer: setLayer,
+        setExplode: setExplode, cameraPreset: cameraPreset, fit: fitCamera,
+        render: function () { dirty = true; render(); }, exportPNG: exportPNG,
+        glInfo: function () { return gl ? { version: gl.getParameter(gl.VERSION), renderer: gl.getParameter(gl.RENDERER) } : { version: 'Canvas 2D', renderer: 'CPU triangle rasterizer + depth buffer' }; }
+      };
+      renderTabs(); renderDimensions();
+      const requested = location.hash.slice(1), initial = VIEWS[requested] && DATA.scenes[requested] ? requested : DATA.scenes.lidguides ? 'lidguides' : Object.keys(VIEWS).find(function (key) { return DATA.scenes[key]; });
+      if (!initial) throw new Error('表示できるシーンがありません。');
+      setView(initial); $('loading').classList.add('hidden'); requestAnimationFrame(tick);
+    } catch (error) { showError(error); }
+  })();
+  </script>
+</body>
+</html>

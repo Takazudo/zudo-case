@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "renderer": "Real inline CPU renderer in JSDOM/native canvas; host theme fixtures; not a browser/layout/WebGL test.",
+  "bytes": 905290,
+  "sha256": "76bdfcab5c634fa6b861b27714cd2de9df4c59d9bfbdcd1dcd5be151454978e3",
+  "source": {
+    "revision": "R11-BUILD-FEEDBACK-04",
+    "source": "Same R11 CAD meshes as the full viewer",
+    "source_scene_sha256": "20a6e0fc4cd3429a849774ccbce3b4e3561188b4580e76304ab93afda59788fd",
+    "coordinate_precision_mm": 0.001,
+    "assembly_omissions": [
+      "brackets",
+      "hardware",
+      "lidHardware",
+      "sourceFrame",
+      "washer"
+    ],
+    "detail_scenes_keep_hardware": true
+  },
+  "scenes": [
+    {
+      "scene": "lidguides",
+      "file": "lidguides.png",
+      "parts": 8,
+      "visible": 8
+    },
+    {
+      "scene": "lidfit",
+      "file": "lidfit.png",
+      "parts": 12,
+      "visible": 9
+    },
+    {
+      "scene": "inside",
+      "file": "inside.png",
+      "parts": 17,
+      "visible": 17
+    },
+    {
+      "scene": "assembly",
+      "file": "assembly.png",
+      "parts": 30,
+      "visible": 30
+    },
+    {
+      "scene": "nylon",
+      "file": "nylon.png",
+      "parts": 12,
+      "visible": 12
+    },
+    {
+      "scene": "corner",
+      "file": "corner.png",
+      "parts": 22,
+      "visible": 22
+    },
+    {
+      "scene": "top",
+      "file": "top.png",
+      "parts": 10,
+      "visible": 8
+    },
+    {
+      "scene": "lap",
+      "file": "lap.png",
+      "parts": 13,
+      "visible": 13
+    },
+    {
+      "scene": "lid",
+      "file": "lid.png",
+      "parts": 57,
+      "visible": 57
+    },
+    {
+      "scene": "lidjoint",
+      "file": "lidjoint.png",
+      "parts": 9,
+      "visible": 9
+    },
+    {
+      "scene": "panels",
+      "file": "panels.png",
+      "parts": 5,
+      "visible": 5
+    },
+    {
+      "scene": "slots",
+      "file": "slots.png",
+      "parts": 3,
+      "visible": 3
+    },
+    {
+      "scene": "rail",
+      "file": "rail.png",
+      "parts": 8,
+      "visible": 8
+    }
+  ],
+  "checks": {
+    "scene_control": true,
+    "explosion": true,
+    "hardware": true,
+    "selection": true,
+    "camera": true,
+    "metal": true,
+    "lid": true,
+    "theme_change": true
+  },
+  "errors": []
+}

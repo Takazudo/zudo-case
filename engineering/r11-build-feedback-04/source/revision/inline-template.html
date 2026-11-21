@@ -1,0 +1,134 @@
+<div id="zudo-case-r11-04-inline">
+  <div class="r11-caption text-small text-muted">R11-BUILD-FEEDBACK-04 · レビュー用候補</div>
+  <div class="viz-controls">
+    <label class="form-label">表示
+      <select class="form-select" data-ui="view" aria-label="確認する部位"></select>
+    </label>
+    <label class="form-label">視点
+      <select class="form-select" data-ui="camera" aria-label="視点">
+        <option value="iso">斜め</option><option value="front">前から</option><option value="side">横から</option><option value="top">上から</option><option value="bottom">底から</option>
+      </select>
+    </label>
+  </div>
+  <div class="viz-row">
+    <label class="form-check"><input class="form-check-input" data-ui="metal" type="checkbox" checked><span class="form-check-label">金属板</span></label>
+    <label class="form-check"><input class="form-check-input" data-ui="hardware" type="checkbox" checked><span class="form-check-label">ネジ・ナット</span></label>
+    <label class="form-check"><input class="form-check-input" data-ui="lid" type="checkbox"><span class="form-check-label">蓋</span></label>
+    <label class="form-check"><input class="form-check-input" data-ui="xray" type="checkbox"><span class="form-check-label">板を透過</span></label>
+    <button class="btn" data-ui="reverse" type="button">反対側</button>
+  </div>
+  <div class="r11-range">
+    <label class="form-label" for="r11-04-inline-explode">分解表示 <span class="tabular-nums" data-ui="explodeValue">0.0 mm</span></label>
+    <input id="r11-04-inline-explode" class="form-range" data-ui="explode" type="range" min="0" max="20" step="0.5" value="0">
+  </div>
+  <div class="r11-stage" data-ui="canvasWrap">
+    <canvas data-ui="canvas" class="cursor-interaction" aria-label="改訂したケースの3D形状。ドラッグで回転、右ドラッグで移動、ホイールで拡大。部品をクリックして名称を確認できます。">改訂したケースの3D形状</canvas>
+    <div class="r11-scale text-small" data-ui="scale"></div>
+    <div class="r11-loading text-muted" data-ui="loading">モデルを読み込み中…</div>
+  </div>
+  <div class="viz-row text-small" data-ui="legend" aria-label="部品の色分け"></div>
+  <div class="r11-detail text-small" data-ui="detail" aria-live="polite"></div>
+  <div class="text-destructive" data-ui="fail" role="alert" hidden></div>
+  <script type="application/octet-stream" data-ui="model">__MODEL_GZIP__</script>
+</div>
+<style>
+  #zudo-case-r11-04-inline { color: var(--foreground); }
+  #zudo-case-r11-04-inline .r11-caption { margin-bottom: 12px; padding-right: 95px; }
+  #zudo-case-r11-04-inline .r11-range { margin: 10px 0 0; }
+  #zudo-case-r11-04-inline .r11-stage { position: relative; margin: 4px 0 8px; }
+  #zudo-case-r11-04-inline canvas { display: block; width: 100%; height: 450px; touch-action: none; }
+  #zudo-case-r11-04-inline canvas.dragging { cursor: grabbing; }
+  #zudo-case-r11-04-inline .r11-scale { position: absolute; bottom: 12px; right: 12px; text-align: center; border-bottom: 2px solid var(--muted-foreground); color: var(--muted-foreground); pointer-events: none; }
+  #zudo-case-r11-04-inline .r11-loading { position: absolute; inset: 35% 0 auto; text-align: center; }
+  #zudo-case-r11-04-inline .r11-detail { margin-top: 8px; overflow-wrap: anywhere; }
+  #zudo-case-r11-04-inline .r11-swatch { display: inline-block; width: 9px; height: 9px; margin-right: 5px; }
+  @media(max-width: 520px) { #zudo-case-r11-04-inline canvas { height: 355px; } }
+</style>
+<script>
+(async function () {
+  'use strict';
+  const root = document.getElementById('zudo-case-r11-04-inline');
+  const $ = key => root.querySelector('[data-ui="' + key + '"]');
+  function showError(error) { $('loading').hidden = true; $('fail').hidden = false; $('fail').textContent = '3D表示を開けませんでした。' + (error.message || error); }
+  try {
+    if (typeof DecompressionStream !== 'function') throw new Error('このブラウザーは埋め込みデータの展開に対応していません。');
+    const compressed = Uint8Array.from(atob($('model').textContent.trim()), char => char.charCodeAt(0));
+    const DATA = JSON.parse(await new Response(new Blob([compressed]).stream().pipeThrough(new DecompressionStream('gzip'))).text());
+    const VIEWS = __VIEWS__;
+    const CATEGORIES = {
+      panels: {label:'アルミ板',token:'neutral'}, corner: {label:'一体コーナー',token:'--viz-series-1'},
+      span: {label:'中央部品',token:'--viz-series-2'}, inner: {label:'内側の耳',token:'--viz-series-3'},
+      guide: {label:'仮の脚',token:'--viz-series-4'}, washer: {label:'丸ワッシャー',token:'neutral'},
+      spacer: {label:'スペーサー',token:'neutral'}, hardware: {label:'ネジ・ナット',token:'metal'},
+      brackets: {label:'L字金具',token:'metal'}, lidFrame: {label:'蓋フレーム',token:'--viz-series-5'},
+      lidMetal: {label:'蓋アルミ',token:'neutral'}, lidHardware: {label:'蓋のネジ',token:'metal'},
+      sourceFrame: {label:'レール・PCB',token:'--viz-series-6'}
+    };
+    const HARDWARE_CATS = ['hardware','lidHardware'], LID_CATS = ['lidFrame','lidMetal','lidHardware'], PANEL_CATS = ['panels','lidMetal'];
+    const state = {view:'lidguides',color:true,ortho:true,xray:false,hardware:true,lid:false,metal:true,edges:true,explode:0,hidden:[],selected:null,only:null};
+    let activeParts = [], cam = {target:[0,0,45],yaw:0.75,pitch:0.63,span:380}, matrix, eye, right, up, forward;
+    let dirty = true, frameNumber = 0, canvas = $('canvas'), gl = null, ctx = null, program, positionAttribute, normalAttribute;
+    const uniforms = {}, buffers = new Map(), softwareCache = new Map();
+    let softCanvas = null, background = [], foreground = [], lineColor = [], selectionColor = [];
+    function themeColor(token) {
+      const probe = document.createElement('span'); probe.style.color = 'var(' + token + ')'; probe.hidden = true; root.append(probe);
+      const raw = getComputedStyle(probe).color; probe.remove();
+      if (!raw) throw new Error('表示色を取得できません: ' + token);
+      const sample = document.createElement('canvas'); sample.width=1; sample.height=1;
+      const context=sample.getContext('2d'); context.fillStyle=raw; context.fillRect(0,0,1,1);
+      return Array.from(context.getImageData(0,0,1,1).data).slice(0,3).map(value=>value/255);
+    }
+    function blend(a,b,weight) {return a.map((value,index)=>value*weight+b[index]*(1-weight));}
+    function readTheme() {
+      background = themeColor('--background'); foreground = themeColor('--foreground');
+      lineColor = themeColor('--muted-foreground'); selectionColor = themeColor('--viz-series-4');
+      for (const entry of Object.values(CATEGORIES)) entry.color = entry.token === 'neutral' ? blend(foreground,background,0.56) : entry.token === 'metal' ? blend(foreground,background,0.37) : themeColor(entry.token);
+      dirty = true;
+    }
+    readTheme();
+    __CORE__
+    function syncUI() {
+      $('view').value = state.view;
+      for (const key of ['metal','hardware','lid','xray']) $(key).checked = state[key];
+      $('metal').disabled = !activeParts.some(part=>PANEL_CATS.includes(part.cat));
+      $('xray').disabled = $('metal').disabled || !state.metal;
+      $('hardware').disabled = !activeParts.some(part=>HARDWARE_CATS.includes(part.cat));
+      $('lid').disabled = !activeParts.some(part=>LID_CATS.includes(part.cat)) || ['lidguides','lid','lidjoint'].includes(state.view);
+      $('explode').value = state.explode; $('explodeValue').textContent = state.explode.toFixed(1)+' mm';
+      const part = activeParts.find(item=>item.id===state.selected);
+      $('detail').textContent = part ? part.name + ' · ' + category(part.cat).label : VIEWS[state.view].detail;
+      const legend = $('legend'); legend.replaceChildren();
+      for (const key of new Set(activeParts.filter(shown).map(part=>part.cat))) {
+        const entry=category(key), label=document.createElement('span'), swatch=document.createElement('i');
+        swatch.className='r11-swatch'; swatch.style.background=hex(entry.color); label.append(swatch,document.createTextNode(entry.label)); legend.append(label);
+      }
+      dirty = true;
+    }
+    function setView(key) {
+      if (!DATA.scenes[key]) throw new Error('表示データがありません: '+key);
+      const info = VIEWS[key]; state.view=key; state.selected=null; state.only=null; state.explode=0; state.metal=true;
+      state.hidden=(info.hidden||[]).slice(); state.hardware=info.hardware!==false; state.lid=!!info.lid; state.xray=!!info.xray;
+      activeParts = DATA.scenes[key].map(item=>{const part=Object.assign({explode:[0,0,0]},item);part.cat=displayCategory(part);part.box=partBox(part);return part;});
+      for (const part of activeParts) createBuffers(part.mesh);
+      cam.yaw=info.yaw; cam.pitch=info.pitch; $('camera').value='iso'; syncUI(); fitCamera(); render();
+    }
+    function selectPart(id) {state.selected=activeParts.some(part=>part.id===id)?id:null;syncUI();}
+    __INTERACTION__
+    function setExplode(value,refit) {state.explode=Math.max(0,Math.min(20,Number(value)||0));syncUI();if(refit)fitCamera();}
+    for (const [key,info] of Object.entries(VIEWS)) {const option=document.createElement('option');option.value=key;option.textContent=info.label;$('view').append(option);}
+    $('view').onchange=event=>setView(event.target.value);
+    $('camera').onchange=event=>cameraPreset(event.target.value);
+    $('reverse').onclick=()=>cameraPreset('reverse');
+    for (const key of ['metal','hardware','lid','xray']) $(key).onchange=event=>{state[key]=event.target.checked;syncUI();fitCamera();};
+    $('explode').oninput=event=>setExplode(event.target.value,true);
+    new ResizeObserver(()=>{fitCamera();dirty=true;}).observe($('canvasWrap'));
+    const observer=new MutationObserver(()=>{readTheme();syncUI();});
+    observer.observe(document.documentElement,{attributes:true,attributeFilter:['class','style','data-theme']});
+    if (document.body) observer.observe(document.body,{attributes:true,attributeFilter:['class','style','data-theme']});
+    if (window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{readTheme();syncUI();});
+    root.study={state,setView,setExplode,select:selectPart,cameraPreset,fit:fitCamera,render:()=>{dirty=true;render();},get parts(){return activeParts;},get visibleParts(){return activeParts.filter(shown);},get camera(){return cam;},get frames(){return frameNumber;},get metadata(){return DATA.metadata;}};
+    if (gl) canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();showError('再読み込みしてください。');});
+    setView('lidguides'); $('loading').hidden=true; requestAnimationFrame(tick);
+  } catch(error) {showError(error);}
+})();
+</script>

@@ -168,3 +168,17 @@ for (const step of [
     assert.deepEqual(await readFile(join(root, "dist/downloads/archive/r7-m3-lid-source.zip")), sourceZip);
   });
 }
+
+test("preview host landing page lists only each project's current preview from the shared selection", async () => {
+  const { loadSelection, renderPreviewIndex } = await import("../scripts/prepare-worker-assets.mjs");
+  const selection = await loadSelection();
+  const html = renderPreviewIndex(selection);
+  for (const current of ["/previews/r11-build-feedback-04.html", "/previews/r8-simple-lid.html", "/previews/printed-5mm-p5-tab-joints.html", "/previews/tenbox-v2-r5.html", "/previews/two-way/tw-01.html"])
+    assert.ok(html.includes(`href="${current}"`), current);
+  for (const old of ["r10-fullset-01", "r9-prototype-01", "r9-fitfix-01", "r9-lid-m5-01", "printed-5mm-p4", "printed-5mm-p3", "r6-body"])
+    assert.ok(!html.includes(old), old);
+  assert.ok(html.includes("https://zudo-case.zudolab.dev/docs/archive/"));
+  const metal7u40 = selection.selections.find((s) => s.project === "metal-case" && s.model === "7u40");
+  assert.equal(metal7u40.revision, "R11-BUILD-FEEDBACK-04");
+  assert.equal(new Set(html.match(/href="\/previews\/[^"]+"/g)).size, html.match(/href="\/previews\/[^"]+"/g).length);
+});

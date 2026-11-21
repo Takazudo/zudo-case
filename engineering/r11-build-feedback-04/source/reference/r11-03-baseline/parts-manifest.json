@@ -1,0 +1,4699 @@
+{
+  "revision": "R11-BUILD-FEEDBACK-03",
+  "model": "7u40",
+  "units": "mm",
+  "production_approved": false,
+  "status": "CAD_REVIEW_CANDIDATE_NOT_PHYSICALLY_VERIFIED",
+  "counts": {
+    "nylon_parts": 20,
+    "sheetmetal_parts": 6,
+    "washer_models": 1,
+    "washer_instances": 64,
+    "part_models": 27,
+    "files": {
+      "step": 27,
+      "stl": 27,
+      "dxf": 6
+    }
+  },
+  "parts": [
+    {
+      "id": "body-top-front",
+      "name": "前板 上辺中央",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        139.0,
+        4.600000000000012,
+        28.0
+      ],
+      "volume_mm3": 3306.6211561112173,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -69.5,
+          -169.0,
+          64.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -69.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -169.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            64.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            69.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            169.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -64.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/body-top-front.step",
+          "sha256": "bae2068cad863e14c4d4196b8339454689677d8548446faa2ca73a3927b5ef13",
+          "bytes": 278929
+        },
+        "stl": {
+          "path": "pa12/body-top-front.stl",
+          "sha256": "aab504b7b5804efc0157ed3ee96fe73556a289b8e8271e5b1dc97f435b817e4e",
+          "bytes": 213684
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 1.2434497875801753e-14,
+          "volume_error_mm3": 8.640199666842818e-12,
+          "dimensions_mm": [
+            139.0,
+            4.6,
+            28.0
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 2126,
+          "triangles": 4272,
+          "bbox_error_mm": 9.536744371985151e-08,
+          "volume_error_mm3": 0.028003354143947945,
+          "cad_volume_mm3": 3306.6211561112173,
+          "edge_incidence_histogram": {
+            "2": 6408
+          }
+        }
+      },
+      "note": "ネジ位置で1＋1mmの外側重ね耳。従来の内側耳と丸ワッシャーを維持。上端だけはナットの面圧を分散する座金を残す。",
+      "production_approved": false
+    },
+    {
+      "id": "body-bottom-front",
+      "name": "前板 下辺中央",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        139.0,
+        30.0,
+        30.0
+      ],
+      "volume_mm3": 5846.656885108738,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -69.5,
+          -169.0,
+          -2.0000000000000004
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -69.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -169.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -2.0000000000000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            69.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            169.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            2.0000000000000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/body-bottom-front.step",
+          "sha256": "97d98581a213d10a76dfca08913a8b80532eb8bbde13a8dfe0258eebbb322195",
+          "bytes": 478950
+        },
+        "stl": {
+          "path": "pa12/body-bottom-front.stl",
+          "sha256": "745f8b9774c88236af361dfd7950c93805ee76bd6e7d8b6c69525f169ca4fc3b",
+          "bytes": 376084
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 8.041450852596689e-29,
+          "volume_error_mm3": 1.000444171950221e-11,
+          "dimensions_mm": [
+            139.0,
+            30.0,
+            30.0
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            1.3877787807822498e-16
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 3742,
+          "triangles": 7520,
+          "bbox_error_mm": 9.489415987208333e-20,
+          "volume_error_mm3": 0.061464734949367994,
+          "cad_volume_mm3": 5846.656885108738,
+          "edge_incidence_histogram": {
+            "2": 11280
+          }
+        }
+      },
+      "note": "ネジ位置で1＋1mmの外側重ね耳。壁と底面に一体の内側L字耳。各1mmで従来の内側丸ワッシャーを置換。",
+      "production_approved": false
+    },
+    {
+      "id": "body-top-back",
+      "name": "後板 上辺中央",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        139.0,
+        4.600000000000012,
+        28.0
+      ],
+      "volume_mm3": 3306.6211561112164,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -69.5,
+          164.39999999999998,
+          64.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -69.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            164.39999999999998
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            64.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            69.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -164.39999999999998
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -64.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/body-top-back.step",
+          "sha256": "5bb2fb18a7024bb521159d9d9ea07a2071160de8d8adab9edcd2f3bbfcf7454d",
+          "bytes": 279431
+        },
+        "stl": {
+          "path": "pa12/body-top-back.stl",
+          "sha256": "54a15e2f55cea5e475639931a8f0f5199d09d4a3390490a4087a88b3f48e5293",
+          "bytes": 213684
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 2.3092638912203256e-14,
+          "volume_error_mm3": 1.0459189070388675e-11,
+          "dimensions_mm": [
+            139.0,
+            4.599999999999971,
+            28.0
+          ],
+          "local_min_mm": [
+            0.0,
+            2.84217094304e-14,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 2126,
+          "triangles": 4272,
+          "bbox_error_mm": 9.536745437799254e-08,
+          "volume_error_mm3": 0.028032827905917657,
+          "cad_volume_mm3": 3306.6211561112164,
+          "edge_incidence_histogram": {
+            "2": 6408
+          }
+        }
+      },
+      "note": "ネジ位置で1＋1mmの外側重ね耳。従来の内側耳と丸ワッシャーを維持。上端だけはナットの面圧を分散する座金を残す。",
+      "production_approved": false
+    },
+    {
+      "id": "body-bottom-back",
+      "name": "後板 下辺中央",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        139.0,
+        30.0,
+        30.0
+      ],
+      "volume_mm3": 5846.656885108737,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -69.5,
+          139.0,
+          -2.0000000000000004
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -69.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            139.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -2.0000000000000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            69.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -139.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            2.0000000000000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/body-bottom-back.step",
+          "sha256": "6531a8240ec9f37f37607ac52a09754dd16aae723144f124c0a8a76e3fe3455d",
+          "bytes": 479257
+        },
+        "stl": {
+          "path": "pa12/body-bottom-back.stl",
+          "sha256": "124a4b9521efb8c9b18c424e1e06c7e6e83c9cdbee45ac8ab735d88144149251",
+          "bytes": 376084
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 8.041450852596689e-29,
+          "volume_error_mm3": 3.637978807091713e-12,
+          "dimensions_mm": [
+            139.0,
+            30.0,
+            30.0
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            1.3877787807822498e-16
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 3742,
+          "triangles": 7520,
+          "bbox_error_mm": 9.489415987208333e-20,
+          "volume_error_mm3": 0.06157341099151381,
+          "cad_volume_mm3": 5846.656885108737,
+          "edge_incidence_histogram": {
+            "2": 11280
+          }
+        }
+      },
+      "note": "ネジ位置で1＋1mmの外側重ね耳。壁と底面に一体の内側L字耳。各1mmで従来の内側丸ワッシャーを置換。",
+      "production_approved": false
+    },
+    {
+      "id": "body-top-right",
+      "name": "右側板 上辺中央",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        4.6,
+        210.0,
+        28.0
+      ],
+      "volume_mm3": 4279.321156111215,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          112.10000000000001,
+          -105.0,
+          64.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            112.10000000000001
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -105.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            64.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -112.10000000000001
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            105.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -64.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/body-top-right.step",
+          "sha256": "8b517136dc2474ab91c51f25747117b74f0652c15acf1de0a209a13e69ae9ba3",
+          "bytes": 280434
+        },
+        "stl": {
+          "path": "pa12/body-top-right.stl",
+          "sha256": "495634740710b77d0443ab78abe935575d1c859b8042a8ae596819d25d458b92",
+          "bytes": 213684
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 5.773159728050814e-15,
+          "volume_error_mm3": 1.8189894035458565e-11,
+          "dimensions_mm": [
+            4.6,
+            210.0,
+            28.0
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 2126,
+          "triangles": 4272,
+          "bbox_error_mm": 9.536742595628311e-08,
+          "volume_error_mm3": 0.02802877437807183,
+          "cad_volume_mm3": 4279.321156111215,
+          "edge_incidence_histogram": {
+            "2": 6408
+          }
+        }
+      },
+      "note": "ネジ位置で1＋1mmの外側重ね耳。従来の内側耳と丸ワッシャーを維持。上端だけはナットの面圧を分散する座金を残す。",
+      "production_approved": false
+    },
+    {
+      "id": "body-bottom-right",
+      "name": "右側板 下辺中央",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        30.0,
+        210.0,
+        30.0
+      ],
+      "volume_mm3": 7256.716885108735,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          86.7,
+          -105.0,
+          -2.0000000000000004
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            86.7
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -105.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -2.0000000000000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -86.7
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            105.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            2.0000000000000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/body-bottom-right.step",
+          "sha256": "53b8140e03541248231bcd032863e161b37df5db1b1ba8a05b597395dca998a4",
+          "bytes": 478944
+        },
+        "stl": {
+          "path": "pa12/body-bottom-right.stl",
+          "sha256": "78005e6dceca0614ed205fe1cb1286ce54318a614c362f4cc60b743eff01e406",
+          "bytes": 376084
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 8.041450852596689e-29,
+          "volume_error_mm3": 1.000444171950221e-11,
+          "dimensions_mm": [
+            30.0,
+            210.0,
+            30.0
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            1.3877787807822498e-16
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 3742,
+          "triangles": 7520,
+          "bbox_error_mm": 9.489415987208333e-20,
+          "volume_error_mm3": 0.06165837018943421,
+          "cad_volume_mm3": 7256.716885108735,
+          "edge_incidence_histogram": {
+            "2": 11280
+          }
+        }
+      },
+      "note": "ネジ位置で1＋1mmの外側重ね耳。壁と底面に一体の内側L字耳。各1mmで従来の内側丸ワッシャーを置換。",
+      "production_approved": false
+    },
+    {
+      "id": "body-top-left",
+      "name": "左側板 上辺中央",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        4.6,
+        210.0,
+        28.0
+      ],
+      "volume_mm3": 4279.321156111217,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -116.7,
+          -105.0,
+          64.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -116.7
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -105.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            64.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            116.7
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            105.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -64.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/body-top-left.step",
+          "sha256": "7489f83c5c50a0b80375aba696763750d731f6a1b830020ce53bfcb8d27ef6f1",
+          "bytes": 279002
+        },
+        "stl": {
+          "path": "pa12/body-top-left.stl",
+          "sha256": "65011e5fa721c54fe06af021cafa915ec878bc515a79a88f192c3d8e156941a9",
+          "bytes": 213684
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 8.185452315956354e-12,
+          "dimensions_mm": [
+            4.6,
+            210.0,
+            28.0
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 2126,
+          "triangles": 4272,
+          "bbox_error_mm": 9.536743128535363e-08,
+          "volume_error_mm3": 0.027990836737444624,
+          "cad_volume_mm3": 4279.321156111217,
+          "edge_incidence_histogram": {
+            "2": 6408
+          }
+        }
+      },
+      "note": "ネジ位置で1＋1mmの外側重ね耳。従来の内側耳と丸ワッシャーを維持。上端だけはナットの面圧を分散する座金を残す。",
+      "production_approved": false
+    },
+    {
+      "id": "body-bottom-left",
+      "name": "左側板 下辺中央",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        29.999999999999986,
+        210.0,
+        30.0
+      ],
+      "volume_mm3": 7256.716885108734,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -116.7,
+          -105.0,
+          -2.0000000000000004
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -116.7
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -105.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -2.0000000000000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            116.7
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            105.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            2.0000000000000004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/body-bottom-left.step",
+          "sha256": "d19329827aadaf295290bde1cb2daa966f2bf8bacc39fcdfe382fbe78d23175d",
+          "bytes": 478852
+        },
+        "stl": {
+          "path": "pa12/body-bottom-left.stl",
+          "sha256": "3c05861621b9043db4faad3fcee648f550882d06e0c70a8a4f12da18fe3b071f",
+          "bytes": 376084
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 1.4210854715202004e-14,
+          "volume_error_mm3": 0.0,
+          "dimensions_mm": [
+            30.0,
+            210.0,
+            30.0
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            1.3877787807822498e-16
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 3742,
+          "triangles": 7520,
+          "bbox_error_mm": 1.4210854715202004e-14,
+          "volume_error_mm3": 0.06147690495981806,
+          "cad_volume_mm3": 7256.716885108734,
+          "edge_incidence_histogram": {
+            "2": 11280
+          }
+        }
+      },
+      "note": "ネジ位置で1＋1mmの外側重ね耳。壁と底面に一体の内側L字耳。各1mmで従来の内側丸ワッシャーを置換。",
+      "production_approved": false
+    },
+    {
+      "id": "body-corner--1--1",
+      "name": "一体コーナー -1/-1",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        67.2,
+        84.00000000000003,
+        93.0
+      ],
+      "volume_mm3": 11589.121271642995,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -116.7,
+          -169.0,
+          -1.0000000000000002
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -116.7
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -169.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -1.0000000000000002
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            116.7
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            169.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0000000000000002
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/body-corner--1--1.step",
+          "sha256": "24cf6fb8a5db6699ddf564612551130659e2ce8f448e02a175cfad3ea65d4320",
+          "bytes": 1108867
+        },
+        "stl": {
+          "path": "pa12/body-corner--1--1.stl",
+          "sha256": "caf961e1e26e106835c6a249eefff6efa7f539681c693edc0316a7ce99d4106e",
+          "bytes": 748484
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 2.5268676040468563e-13,
+          "volume_error_mm3": 9.822542779147625e-11,
+          "dimensions_mm": [
+            67.2,
+            84.0,
+            93.00000000000026
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            -2.5268676040468563e-13
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 7450,
+          "triangles": 14968,
+          "bbox_error_mm": 3.051757815342171e-06,
+          "volume_error_mm3": 0.14003171630611178,
+          "cad_volume_mm3": 11589.121271642995,
+          "edge_incidence_histogram": {
+            "2": 22452
+          }
+        }
+      },
+      "note": "上下の腕・縦ガード・位置決め壁・内側の固定耳を一体化。縦角は外側t2＋内側t1。内側丸ワッシャー不要。",
+      "production_approved": false
+    },
+    {
+      "id": "body-corner--1-1",
+      "name": "一体コーナー -1/+1",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        67.2,
+        84.0,
+        93.0
+      ],
+      "volume_mm3": 11589.121271645554,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -116.7,
+          85.0,
+          -1.0000000000000002
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -116.7
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            85.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -1.0000000000000002
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            116.7
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -85.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0000000000000002
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/body-corner--1-1.step",
+          "sha256": "dc266465d9007a8c26e71bd62469baf97fdac7e691d37320decfa61afe4d6ebb",
+          "bytes": 1098055
+        },
+        "stl": {
+          "path": "pa12/body-corner--1-1.stl",
+          "sha256": "e593cd1ef45d9eab6a6009329bd7060b80c62f059f88143c4ea51a7a77bcc835",
+          "bytes": 748484
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 2.5268676040468563e-13,
+          "volume_error_mm3": 9.258656064048409e-10,
+          "dimensions_mm": [
+            67.2,
+            84.0,
+            93.00000000000026
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            -2.5268676040468563e-13
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 7450,
+          "triangles": 14968,
+          "bbox_error_mm": 3.051757815342171e-06,
+          "volume_error_mm3": 0.1394599304185249,
+          "cad_volume_mm3": 11589.121271645554,
+          "edge_incidence_histogram": {
+            "2": 22452
+          }
+        }
+      },
+      "note": "上下の腕・縦ガード・位置決め壁・内側の固定耳を一体化。縦角は外側t2＋内側t1。内側丸ワッシャー不要。",
+      "production_approved": false
+    },
+    {
+      "id": "body-corner-1--1",
+      "name": "一体コーナー +1/-1",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        67.20000000000002,
+        84.00000000000003,
+        93.0
+      ],
+      "volume_mm3": 11589.121271639922,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          49.5,
+          -169.0,
+          -1.0000000000000002
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            49.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -169.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -1.0000000000000002
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -49.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            169.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0000000000000002
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/body-corner-1--1.step",
+          "sha256": "ddc73e2dc79fa84f2876c165707bf603303631674b45837015f2dbd5e7e4ae2c",
+          "bytes": 1099531
+        },
+        "stl": {
+          "path": "pa12/body-corner-1--1.stl",
+          "sha256": "ce8f889e9049fdabbc7f3daf9862966b425fd7fc46a7acf831a74ef80fb1b0bc",
+          "bytes": 748484
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 2.5268676040468563e-13,
+          "volume_error_mm3": 2.637534635141492e-10,
+          "dimensions_mm": [
+            67.2,
+            84.0,
+            93.00000000000026
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            -2.5268676040468563e-13
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 7450,
+          "triangles": 14968,
+          "bbox_error_mm": 3.0517578295530257e-06,
+          "volume_error_mm3": 0.14068182099435944,
+          "cad_volume_mm3": 11589.121271639922,
+          "edge_incidence_histogram": {
+            "2": 22452
+          }
+        }
+      },
+      "note": "上下の腕・縦ガード・位置決め壁・内側の固定耳を一体化。縦角は外側t2＋内側t1。内側丸ワッシャー不要。",
+      "production_approved": false
+    },
+    {
+      "id": "body-corner-1-1",
+      "name": "一体コーナー +1/+1",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        67.20000000000002,
+        84.0,
+        93.0
+      ],
+      "volume_mm3": 11589.121271649296,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          49.5,
+          85.0,
+          -1.0000000000000002
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            49.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            85.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -1.0000000000000002
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -49.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -85.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.0000000000000002
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/body-corner-1-1.step",
+          "sha256": "276e2aad5b40dfaf1c0e217ec24916960e8ea8b3139e1d5dd5c2d77feda2755d",
+          "bytes": 1104807
+        },
+        "stl": {
+          "path": "pa12/body-corner-1-1.stl",
+          "sha256": "b21bada08da9a17fb5761b823b7955791b3535dfba2dbccc600c2e3d7974edf3",
+          "bytes": 748484
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 2.5268676040468563e-13,
+          "volume_error_mm3": 4.656612873077393e-10,
+          "dimensions_mm": [
+            67.2,
+            84.0,
+            93.00000000000026
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            -2.5268676040468563e-13
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 7450,
+          "triangles": 14968,
+          "bbox_error_mm": 3.0517578295530257e-06,
+          "volume_error_mm3": 0.1401098650167114,
+          "cad_volume_mm3": 11589.121271649296,
+          "edge_incidence_histogram": {
+            "2": 22452
+          }
+        }
+      },
+      "note": "上下の腕・縦ガード・位置決め壁・内側の固定耳を一体化。縦角は外側t2＋内側t1。内側丸ワッシャー不要。",
+      "production_approved": false
+    },
+    {
+      "id": "lid-corner-fl",
+      "name": "蓋枠 corner-fl",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        91.06000000000002,
+        94.05,
+        43.8
+      ],
+      "volume_mm3": 14405.742233343319,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -115.80000000000001,
+          -168.1,
+          80.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -115.80000000000001
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -168.1
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            80.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            115.80000000000001
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            168.1
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/lid-corner-fl.step",
+          "sha256": "1e0cd41de74a28881022621db89b82256769a35b5c1e8871cd81a711795dfc16",
+          "bytes": 129099
+        },
+        "stl": {
+          "path": "pa12/lid-corner-fl.stl",
+          "sha256": "af624243de068c788e8bdf3a22658b6e7434d89de1f06fd75731ba4787cfe200",
+          "bytes": 107684
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 1.4210854715202004e-14,
+          "volume_error_mm3": 3.637978807091713e-12,
+          "dimensions_mm": [
+            91.06,
+            94.05,
+            43.8
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 1070,
+          "triangles": 2152,
+          "bbox_error_mm": 3.051757815342171e-06,
+          "volume_error_mm3": 0.058774369314051,
+          "cad_volume_mm3": 14405.742233343319,
+          "edge_incidence_histogram": {
+            "2": 3228
+          }
+        }
+      },
+      "note": "連続した角／中央材。M5板ねじ＋横ねじで重ね継ぎ。接着不要。",
+      "production_approved": false
+    },
+    {
+      "id": "lid-corner-fr",
+      "name": "蓋枠 corner-fr",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        91.06,
+        94.05,
+        43.8
+      ],
+      "volume_mm3": 14405.742233343386,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          24.739999999999995,
+          -168.1,
+          80.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            24.739999999999995
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -168.1
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            80.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -24.739999999999995
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            168.1
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/lid-corner-fr.step",
+          "sha256": "be6c85c1e8394875ca5b1a8e45780370b0bfda4c70d66adbbacaee7b67be1718",
+          "bytes": 128074
+        },
+        "stl": {
+          "path": "pa12/lid-corner-fr.stl",
+          "sha256": "d71934d880297fdf5d72a9ec7f1da3fa1b86c959a8faa4a7cb4c75813f2df345",
+          "bytes": 107684
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 1.4210854715202004e-14,
+          "volume_error_mm3": 2.3646862246096134e-11,
+          "dimensions_mm": [
+            91.06000000000002,
+            94.05,
+            43.8
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 1070,
+          "triangles": 2152,
+          "bbox_error_mm": 3.051757815342171e-06,
+          "volume_error_mm3": 0.05900525092147291,
+          "cad_volume_mm3": 14405.742233343386,
+          "edge_incidence_histogram": {
+            "2": 3228
+          }
+        }
+      },
+      "note": "連続した角／中央材。M5板ねじ＋横ねじで重ね継ぎ。接着不要。",
+      "production_approved": false
+    },
+    {
+      "id": "lid-corner-br",
+      "name": "蓋枠 corner-br",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        91.06000000000002,
+        94.05,
+        43.8
+      ],
+      "volume_mm3": 14405.742233343406,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          24.739999999999995,
+          74.05,
+          80.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            24.739999999999995
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            74.05
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            80.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -24.739999999999995
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -74.05
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/lid-corner-br.step",
+          "sha256": "18f9094e6d37c0b85e425d276d2eea2e098e3b13486c34eba9685f93af3e33c9",
+          "bytes": 130221
+        },
+        "stl": {
+          "path": "pa12/lid-corner-br.stl",
+          "sha256": "44318951e6d42d066a36942f211c483b6ae8b9bcae0205537cf852e3fe02c8b9",
+          "bytes": 107684
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 1.4210854715202004e-14,
+          "volume_error_mm3": 6.730260793119669e-11,
+          "dimensions_mm": [
+            91.06,
+            94.05,
+            43.8
+          ],
+          "local_min_mm": [
+            -1.7145055188057998e-15,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 1070,
+          "triangles": 2152,
+          "bbox_error_mm": 3.051757815342171e-06,
+          "volume_error_mm3": 0.059296008992532734,
+          "cad_volume_mm3": 14405.742233343406,
+          "edge_incidence_histogram": {
+            "2": 3228
+          }
+        }
+      },
+      "note": "連続した角／中央材。M5板ねじ＋横ねじで重ね継ぎ。接着不要。",
+      "production_approved": false
+    },
+    {
+      "id": "lid-corner-bl",
+      "name": "蓋枠 corner-bl",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        91.06000000000002,
+        94.05,
+        43.8
+      ],
+      "volume_mm3": 14405.742233343411,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -115.80000000000001,
+          74.05,
+          80.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -115.80000000000001
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            74.05
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            80.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            115.80000000000001
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -74.05
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/lid-corner-bl.step",
+          "sha256": "f8df68fa8d7ef83715bb232986e3528dc0a326db6fceee94155485516cef3b62",
+          "bytes": 130531
+        },
+        "stl": {
+          "path": "pa12/lid-corner-bl.stl",
+          "sha256": "83be77da906b5c4cdc5f486b78f747a64bed36d18d4b46b5c8ef0baeb846673b",
+          "bytes": 107684
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 1.4210854715202004e-14,
+          "volume_error_mm3": 1.673470251262188e-10,
+          "dimensions_mm": [
+            91.06,
+            94.05,
+            43.8
+          ],
+          "local_min_mm": [
+            0.0,
+            -3.1086244689499938e-15,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 1070,
+          "triangles": 2152,
+          "bbox_error_mm": 3.051757815342171e-06,
+          "volume_error_mm3": 0.05906512723413471,
+          "cad_volume_mm3": 14405.742233343411,
+          "edge_incidence_histogram": {
+            "2": 3228
+          }
+        }
+      },
+      "note": "連続した角／中央材。M5板ねじ＋横ねじで重ね継ぎ。接着不要。",
+      "production_approved": false
+    },
+    {
+      "id": "lid-middle-front",
+      "name": "蓋枠 middle-front",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        89.47999999999999,
+        14.0,
+        43.8
+      ],
+      "volume_mm3": 8149.676233343359,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -44.739999999999995,
+          -168.1,
+          80.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -44.739999999999995
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -168.1
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            80.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            44.739999999999995
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            168.1
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/lid-middle-front.step",
+          "sha256": "4596acb3eb16196ab6895123d623111625e1d3013a09c44002417bad10ae80f7",
+          "bytes": 115720
+        },
+        "stl": {
+          "path": "pa12/lid-middle-front.stl",
+          "sha256": "9f9b051dcc88927da1259bb24fc5d0af2d02d71b970a985e2fdaaa9f9fe509a5",
+          "bytes": 107084
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 1.4210854715202004e-14,
+          "volume_error_mm3": 9.094947017729282e-13,
+          "dimensions_mm": [
+            89.48,
+            14.0,
+            43.8
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 1064,
+          "triangles": 2140,
+          "bbox_error_mm": 3.3569336039818154e-06,
+          "volume_error_mm3": 0.058837949922235566,
+          "cad_volume_mm3": 8149.676233343359,
+          "edge_incidence_histogram": {
+            "2": 3210
+          }
+        }
+      },
+      "note": "連続した角／中央材。M5板ねじ＋横ねじで重ね継ぎ。接着不要。",
+      "production_approved": false
+    },
+    {
+      "id": "lid-middle-right",
+      "name": "蓋枠 middle-right",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        14.000000000000028,
+        188.1,
+        31.799999999999997
+      ],
+      "volume_mm3": 12354.790233343361,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          101.79999999999998,
+          -94.05,
+          92.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            101.79999999999998
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -94.05
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            92.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -101.79999999999998
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            94.05
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -92.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/lid-middle-right.step",
+          "sha256": "5818bf91b2676ab64126420d348707c60768c845be1f0864c47b4108e3a1ddf7",
+          "bytes": 96428
+        },
+        "stl": {
+          "path": "pa12/lid-middle-right.stl",
+          "sha256": "5763e678c7e4ef01e86f7cb48a25001aaa497e8c3a5f57c205f91a7281324f6b",
+          "bytes": 105884
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 1.2434497875801753e-14,
+          "volume_error_mm3": 7.275957614183426e-12,
+          "dimensions_mm": [
+            14.000000000000016,
+            188.1,
+            31.8
+          ],
+          "local_min_mm": [
+            0.0,
+            -1.38777878078125e-15,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 1052,
+          "triangles": 2116,
+          "bbox_error_mm": 6.103515630684342e-06,
+          "volume_error_mm3": 0.058561486650432926,
+          "cad_volume_mm3": 12354.790233343361,
+          "edge_incidence_histogram": {
+            "2": 3174
+          }
+        }
+      },
+      "note": "連続した角／中央材。M5板ねじ＋横ねじで重ね継ぎ。接着不要。",
+      "production_approved": false
+    },
+    {
+      "id": "lid-middle-back",
+      "name": "蓋枠 middle-back",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        89.47999999999999,
+        14.000000000000005,
+        43.8
+      ],
+      "volume_mm3": 8149.676233343363,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -44.739999999999995,
+          154.1,
+          80.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -44.739999999999995
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            154.1
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            80.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            44.739999999999995
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -154.1
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -80.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/lid-middle-back.step",
+          "sha256": "70a5c9d3a6ceb922f3a2f4e400681b01098ed602bfc700cf676f8a7d861a01ef",
+          "bytes": 117933
+        },
+        "stl": {
+          "path": "pa12/lid-middle-back.stl",
+          "sha256": "7816d229fdf4041040a4ff59041516dcbef4dff1b5965e123f1bcf956183fa0f",
+          "bytes": 107084
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 1.4210854715202004e-14,
+          "volume_error_mm3": 4.547473508864641e-12,
+          "dimensions_mm": [
+            89.48,
+            14.000000000000005,
+            43.8
+          ],
+          "local_min_mm": [
+            -1.53080849893375e-15,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 1064,
+          "triangles": 2140,
+          "bbox_error_mm": 3.3569336039818154e-06,
+          "volume_error_mm3": 0.0592337706066246,
+          "cad_volume_mm3": 8149.676233343363,
+          "edge_incidence_histogram": {
+            "2": 3210
+          }
+        }
+      },
+      "note": "連続した角／中央材。M5板ねじ＋横ねじで重ね継ぎ。接着不要。",
+      "production_approved": false
+    },
+    {
+      "id": "lid-middle-left",
+      "name": "蓋枠 middle-left",
+      "category": "pa12",
+      "quantity": 1,
+      "material": "PA12-HP black candidate",
+      "dimensions_mm": [
+        14.000000000000032,
+        188.1,
+        31.799999999999997
+      ],
+      "volume_mm3": 12354.790233343363,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -115.80000000000001,
+          -94.05,
+          92.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -115.80000000000001
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -94.05
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            92.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            115.80000000000001
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            94.05
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -92.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "pa12/lid-middle-left.step",
+          "sha256": "85c1e7d20fc18d5e2687942abc69be33b3457b81824b6619dfbe59c999f5b81f",
+          "bytes": 96425
+        },
+        "stl": {
+          "path": "pa12/lid-middle-left.stl",
+          "sha256": "1a740337a3385742b117d37c25600957f805b17193508f36fcade3fa558db40d",
+          "bytes": 105884
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 2.842170943040401e-14,
+          "volume_error_mm3": 7.457856554538012e-11,
+          "dimensions_mm": [
+            14.000000000000004,
+            188.1,
+            31.8
+          ],
+          "local_min_mm": [
+            -4.374278717022502e-15,
+            -2.7755575615625e-15,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 1052,
+          "triangles": 2116,
+          "bbox_error_mm": 6.103515630684342e-06,
+          "volume_error_mm3": 0.058560532530464116,
+          "cad_volume_mm3": 12354.790233343363,
+          "edge_incidence_histogram": {
+            "2": 3174
+          }
+        }
+      },
+      "note": "連続した角／中央材。M5板ねじ＋横ねじで重ね継ぎ。接着不要。",
+      "production_approved": false
+    },
+    {
+      "id": "panel-front",
+      "name": "前板 / A5052 t1.5",
+      "category": "aluminum",
+      "quantity": 1,
+      "material": "A5052 black anodized candidate",
+      "dimensions_mm": [
+        224.4,
+        88.5,
+        1.5
+      ],
+      "volume_mm3": 28844.000466686728,
+      "transform": {
+        "face": "front",
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -112.2,
+          2.5,
+          -1.5
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0,
+            -0.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -167.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            -0.0,
+            0.0,
+            -112.2
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -165.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            112.2
+          ],
+          [
+            -0.0,
+            0.0,
+            1.0,
+            -2.5
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -165.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Sheet flattened into XY; Z is thickness."
+      },
+      "files": {
+        "step": {
+          "path": "aluminum/panel-front.step",
+          "sha256": "b57b6b76469d39f86293980e22fceb8b6d8814b520429f8cb451007ce001361c",
+          "bytes": 149829
+        },
+        "stl": {
+          "path": "aluminum/panel-front.stl",
+          "sha256": "f7b21f6e3d87da5ccd09b5fda8f62d289fc6e35b2028632fe726ac47efefec6c",
+          "bytes": 207084
+        },
+        "dxf": {
+          "path": "aluminum/panel-front.dxf",
+          "sha256": "464f4d0a4a93b8dfeec1dbe79808c3461957747fb2d96e2ca02ed1f257c0c75d",
+          "bytes": 19676
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 1.8189894035458565e-11,
+          "dimensions_mm": [
+            224.4,
+            88.5,
+            1.5
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 2056,
+          "triangles": 4140,
+          "bbox_error_mm": 6.103515630684342e-06,
+          "volume_error_mm3": 0.1173487221749383,
+          "cad_volume_mm3": 28844.000466686728,
+          "edge_incidence_histogram": {
+            "2": 6210
+          }
+        },
+        "dxf": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "bounds_match": true,
+            "volume_match": true,
+            "exact_profile_matches": true
+          },
+          "circle_count": 0,
+          "slot_count": 8,
+          "outline_corner_radius_mm": 0.0,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 0.0,
+          "symmetric_difference_mm3": 0.0,
+          "reconstructed_volume_mm3": 28844.000466686728,
+          "source": "DXF read back through CadQuery importDXF and extruded by sheet thickness"
+        }
+      },
+      "note": "全長穴を5mm内側へ延長。前後板幅224.4mm／壁下端Z2.5mm。",
+      "production_approved": false,
+      "flat_pattern": {
+        "thickness_mm": 1.5,
+        "corner_radius_mm": 0.0,
+        "round_holes_xy_d_mm": [],
+        "slots_xy_length_width_angle_mm": [
+          [
+            52.7,
+            11.5,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            171.7,
+            11.5,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            52.7,
+            75.0,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            171.7,
+            75.0,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            11.5,
+            34.0,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            212.9,
+            34.0,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            11.5,
+            62.5,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            212.9,
+            62.5,
+            15.5,
+            5.5,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "panel-back",
+      "name": "後板 / A5052 t1.5",
+      "category": "aluminum",
+      "quantity": 1,
+      "material": "A5052 black anodized candidate",
+      "dimensions_mm": [
+        224.4,
+        88.5,
+        1.5
+      ],
+      "volume_mm3": 28844.000466686728,
+      "transform": {
+        "face": "back",
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -112.2,
+          2.5,
+          -1.5
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -167.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            112.2
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0,
+            165.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            112.2
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0,
+            -2.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -165.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Sheet flattened into XY; Z is thickness."
+      },
+      "files": {
+        "step": {
+          "path": "aluminum/panel-back.step",
+          "sha256": "b57b6b76469d39f86293980e22fceb8b6d8814b520429f8cb451007ce001361c",
+          "bytes": 149829
+        },
+        "stl": {
+          "path": "aluminum/panel-back.stl",
+          "sha256": "f7b21f6e3d87da5ccd09b5fda8f62d289fc6e35b2028632fe726ac47efefec6c",
+          "bytes": 207084
+        },
+        "dxf": {
+          "path": "aluminum/panel-back.dxf",
+          "sha256": "464f4d0a4a93b8dfeec1dbe79808c3461957747fb2d96e2ca02ed1f257c0c75d",
+          "bytes": 19676
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 1.8189894035458565e-11,
+          "dimensions_mm": [
+            224.4,
+            88.5,
+            1.5
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 2056,
+          "triangles": 4140,
+          "bbox_error_mm": 6.103515630684342e-06,
+          "volume_error_mm3": 0.1173487221749383,
+          "cad_volume_mm3": 28844.000466686728,
+          "edge_incidence_histogram": {
+            "2": 6210
+          }
+        },
+        "dxf": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "bounds_match": true,
+            "volume_match": true,
+            "exact_profile_matches": true
+          },
+          "circle_count": 0,
+          "slot_count": 8,
+          "outline_corner_radius_mm": 0.0,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 0.0,
+          "symmetric_difference_mm3": 0.0,
+          "reconstructed_volume_mm3": 28844.000466686728,
+          "source": "DXF read back through CadQuery importDXF and extruded by sheet thickness"
+        }
+      },
+      "note": "全長穴を5mm内側へ延長。前後板幅224.4mm／壁下端Z2.5mm。",
+      "production_approved": false,
+      "flat_pattern": {
+        "thickness_mm": 1.5,
+        "corner_radius_mm": 0.0,
+        "round_holes_xy_d_mm": [],
+        "slots_xy_length_width_angle_mm": [
+          [
+            52.7,
+            11.5,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            171.7,
+            11.5,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            52.7,
+            75.0,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            171.7,
+            75.0,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            11.5,
+            34.0,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            212.9,
+            34.0,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            11.5,
+            62.5,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            212.9,
+            62.5,
+            15.5,
+            5.5,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "panel-right",
+      "name": "右側板 / A5052 t1.5",
+      "category": "aluminum",
+      "quantity": 1,
+      "material": "A5052 black anodized candidate",
+      "dimensions_mm": [
+        334.0,
+        88.5,
+        1.5
+      ],
+      "volume_mm3": 43215.21325836597,
+      "transform": {
+        "face": "right",
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -167.0,
+          2.5,
+          -1.5
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            -0.0,
+            1.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0,
+            -0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            -114.7
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            -0.0,
+            0.0,
+            1.0,
+            113.2
+          ],
+          [
+            1.0,
+            -0.0,
+            0.0,
+            -167.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            -0.0,
+            1.0,
+            0.0,
+            167.0
+          ],
+          [
+            0.0,
+            -0.0,
+            1.0,
+            -2.5
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            -113.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Sheet flattened into XY; Z is thickness."
+      },
+      "files": {
+        "step": {
+          "path": "aluminum/panel-right.step",
+          "sha256": "d96f38a979ff756914ad21db0e3732a55c65bd3656a5dcba10b02949948f93ff",
+          "bytes": 169148
+        },
+        "stl": {
+          "path": "aluminum/panel-right.stl",
+          "sha256": "ff8b6b4bc9ba368ad9310df728cf3a43e7f3ddce1c27799f86c7a48c2d97737d",
+          "bytes": 334084
+        },
+        "dxf": {
+          "path": "aluminum/panel-right.dxf",
+          "sha256": "5fa5a8edeac7c2749031a9716052bb1e8c4230664f76048a84078426b48f7e97",
+          "bytes": 20243
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 5.820766091346741e-11,
+          "dimensions_mm": [
+            334.0,
+            88.5,
+            1.5
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 3316,
+          "triangles": 6680,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 0.19195712570945034,
+          "cad_volume_mm3": 43215.21325836597,
+          "edge_incidence_histogram": {
+            "2": 10020
+          }
+        },
+        "dxf": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "bounds_match": true,
+            "volume_match": true,
+            "exact_profile_matches": true
+          },
+          "circle_count": 5,
+          "slot_count": 8,
+          "outline_corner_radius_mm": 0.0,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 0.0,
+          "symmetric_difference_mm3": 0.0,
+          "reconstructed_volume_mm3": 43215.21325836597,
+          "source": "DXF read back through CadQuery importDXF and extruded by sheet thickness"
+        }
+      },
+      "note": "全長穴を5mm内側へ延長。外形維持。壁下端Z2.5mm。",
+      "production_approved": false,
+      "flat_pattern": {
+        "thickness_mm": 1.5,
+        "corner_radius_mm": 0.0,
+        "round_holes_xy_d_mm": [
+          [
+            32.468128500000006,
+            65.6894265,
+            5.5
+          ],
+          [
+            99.73406,
+            65.6894265,
+            5.5
+          ],
+          [
+            166.999992,
+            65.6894265,
+            5.5
+          ],
+          [
+            234.2659145,
+            65.6894265,
+            5.5
+          ],
+          [
+            301.496536,
+            65.6894265,
+            5.5
+          ]
+        ],
+        "slots_xy_length_width_angle_mm": [
+          [
+            72.0,
+            11.5,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            262.0,
+            11.5,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            72.0,
+            75.0,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            262.0,
+            75.0,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            14.0,
+            34.0,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            320.0,
+            34.0,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            14.0,
+            62.5,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            320.0,
+            62.5,
+            15.5,
+            5.5,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "panel-left",
+      "name": "左側板 / A5052 t1.5",
+      "category": "aluminum",
+      "quantity": 1,
+      "material": "A5052 black anodized candidate",
+      "dimensions_mm": [
+        334.0,
+        88.5,
+        1.5
+      ],
+      "volume_mm3": 43215.21325836596,
+      "transform": {
+        "face": "left",
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -167.0,
+          2.5,
+          -1.5
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -114.7
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -113.2
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            167.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            2.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            0.0,
+            -1.0,
+            0.0,
+            167.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -2.5
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -113.2
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Sheet flattened into XY; Z is thickness."
+      },
+      "files": {
+        "step": {
+          "path": "aluminum/panel-left.step",
+          "sha256": "04021964b12ac1e8a40c1ef95e7ba5643ad3bb7894e0809fd552f6fe55260018",
+          "bytes": 169148
+        },
+        "stl": {
+          "path": "aluminum/panel-left.stl",
+          "sha256": "1ce6b507bacc2b85803a0c6c32a116dcf6f0912f0c365402b3a77b08ef45701a",
+          "bytes": 334084
+        },
+        "dxf": {
+          "path": "aluminum/panel-left.dxf",
+          "sha256": "8168251612b75c9c7d49fdd6c65ddff0df8df6dd96b3d2d34264cf2ea9db51b2",
+          "bytes": 20257
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 6.548361852765083e-11,
+          "dimensions_mm": [
+            334.0,
+            88.5,
+            1.5
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 3316,
+          "triangles": 6680,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 0.19198845518985763,
+          "cad_volume_mm3": 43215.21325836596,
+          "edge_incidence_histogram": {
+            "2": 10020
+          }
+        },
+        "dxf": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "bounds_match": true,
+            "volume_match": true,
+            "exact_profile_matches": true
+          },
+          "circle_count": 5,
+          "slot_count": 8,
+          "outline_corner_radius_mm": 0.0,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 7.275957614183426e-12,
+          "symmetric_difference_mm3": 0.0,
+          "reconstructed_volume_mm3": 43215.21325836597,
+          "source": "DXF read back through CadQuery importDXF and extruded by sheet thickness"
+        }
+      },
+      "note": "全長穴を5mm内側へ延長。外形維持。壁下端Z2.5mm。",
+      "production_approved": false,
+      "flat_pattern": {
+        "thickness_mm": 1.5,
+        "corner_radius_mm": 0.0,
+        "round_holes_xy_d_mm": [
+          [
+            301.53187149999997,
+            65.6894265,
+            5.5
+          ],
+          [
+            234.26594,
+            65.6894265,
+            5.5
+          ],
+          [
+            167.000008,
+            65.6894265,
+            5.5
+          ],
+          [
+            99.73408549999999,
+            65.6894265,
+            5.5
+          ],
+          [
+            32.50346400000001,
+            65.6894265,
+            5.5
+          ]
+        ],
+        "slots_xy_length_width_angle_mm": [
+          [
+            72.0,
+            11.5,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            262.0,
+            11.5,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            72.0,
+            75.0,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            262.0,
+            75.0,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            14.0,
+            34.0,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            320.0,
+            34.0,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            14.0,
+            62.5,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            320.0,
+            62.5,
+            15.5,
+            5.5,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "panel-floor",
+      "name": "底板 / A5052 t1.5",
+      "category": "aluminum",
+      "quantity": 1,
+      "material": "A5052 black anodized candidate",
+      "dimensions_mm": [
+        229.4,
+        334.0,
+        1.5
+      ],
+      "volume_mm3": 113984.30046668666,
+      "transform": {
+        "face": "floor",
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -114.7,
+          -167.0,
+          -1.5
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -114.7
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            167.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            1.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            114.7
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            167.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            1.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Sheet flattened into XY; Z is thickness."
+      },
+      "files": {
+        "step": {
+          "path": "aluminum/panel-floor.step",
+          "sha256": "bb898321b6aa0382db4c60d06c3c641924af0becb7de68c7eab001f1e8242867",
+          "bytes": 149849
+        },
+        "stl": {
+          "path": "aluminum/panel-floor.stl",
+          "sha256": "de6ca1290921f6c9c30dabefa95e492d4ab66652dbdf35d36446e51fd5e8ff15",
+          "bytes": 207084
+        },
+        "dxf": {
+          "path": "aluminum/panel-floor.dxf",
+          "sha256": "535a561383f09c168f967d228e5597ee47caf15beb98dc5e90f6b934242887f3",
+          "bytes": 19702
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 2.9103830456733704e-11,
+          "dimensions_mm": [
+            229.4,
+            334.0,
+            1.5
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 2056,
+          "triangles": 4140,
+          "bbox_error_mm": 6.103515630684342e-06,
+          "volume_error_mm3": 0.11509793653385714,
+          "cad_volume_mm3": 113984.30046668666,
+          "edge_incidence_histogram": {
+            "2": 6210
+          }
+        },
+        "dxf": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "bounds_match": true,
+            "volume_match": true,
+            "exact_profile_matches": true
+          },
+          "circle_count": 0,
+          "slot_count": 8,
+          "outline_corner_radius_mm": 0.0,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 0.0,
+          "symmetric_difference_mm3": 0.0,
+          "reconstructed_volume_mm3": 113984.30046668666,
+          "source": "DXF read back through CadQuery importDXF and extruded by sheet thickness"
+        }
+      },
+      "note": "全長穴を5mm内側へ延長。外形229.4×334mmを維持。左右の外側穴を新しい接合位置へ移設。",
+      "production_approved": false,
+      "flat_pattern": {
+        "thickness_mm": 1.5,
+        "corner_radius_mm": 0.0,
+        "round_holes_xy_d_mm": [],
+        "slots_xy_length_width_angle_mm": [
+          [
+            55.2,
+            14.0,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            174.2,
+            14.0,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            55.2,
+            320.0,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            174.2,
+            320.0,
+            15.5,
+            5.5,
+            90
+          ],
+          [
+            14.0,
+            72.0,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            14.0,
+            262.0,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            215.4,
+            72.0,
+            15.5,
+            5.5,
+            0
+          ],
+          [
+            215.4,
+            262.0,
+            15.5,
+            5.5,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lid-plate",
+      "name": "蓋アルミ板（R10外形・M5 8穴を維持／吊り穴なし）",
+      "category": "aluminum",
+      "quantity": 1,
+      "material": "A5052 1.5 mm black anodized candidate",
+      "dimensions_mm": [
+        227.4,
+        332.0,
+        1.5
+      ],
+      "volume_mm3": 112948.51196751022,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -113.7,
+          -166.0,
+          122.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -113.7
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -166.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            122.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            113.7
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            166.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -122.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "aluminum/lid-plate.step",
+          "sha256": "3efcff6478552b1a8f90330532e5e0263043a9786fdb738c0d167f9ea8c254d2",
+          "bytes": 61600
+        },
+        "stl": {
+          "path": "aluminum/lid-plate.stl",
+          "sha256": "fde29e12dd499743a15a0a995e353cfe157c564ac7dcaff6db2b61adea2e2e37",
+          "bytes": 229484
+        },
+        "dxf": {
+          "path": "aluminum/lid-plate.dxf",
+          "sha256": "b3fde11a10f212042dfa69b8d01fb9594c2134ea3598f86230ef01f760d1c050",
+          "bytes": 16790
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 5.820766091346741e-11,
+          "dimensions_mm": [
+            227.4,
+            332.0,
+            1.5
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 2280,
+          "triangles": 4588,
+          "bbox_error_mm": 6.103515630684342e-06,
+          "volume_error_mm3": 0.0981353855895577,
+          "cad_volume_mm3": 112948.51196751022,
+          "edge_incidence_histogram": {
+            "2": 6882
+          }
+        },
+        "dxf": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "bounds_match": true,
+            "volume_match": true,
+            "exact_profile_matches": true
+          },
+          "circle_count": 8,
+          "slot_count": 0,
+          "outline_corner_radius_mm": 3.0,
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 2.9103830456733704e-11,
+          "symmetric_difference_mm3": 0.0,
+          "reconstructed_volume_mm3": 112948.51196751025,
+          "source": "DXF read back through CadQuery importDXF and extruded by sheet thickness"
+        }
+      },
+      "note": "",
+      "production_approved": false,
+      "flat_pattern": {
+        "thickness_mm": 1.5,
+        "corner_radius_mm": 3.0,
+        "round_holes_xy_d_mm": [
+          [
+            78.96000000000001,
+            5.5,
+            5.5
+          ],
+          [
+            148.44,
+            5.5,
+            5.5
+          ],
+          [
+            221.9,
+            81.95,
+            5.5
+          ],
+          [
+            221.9,
+            250.05,
+            5.5
+          ],
+          [
+            148.44,
+            326.5,
+            5.5
+          ],
+          [
+            78.96000000000001,
+            326.5,
+            5.5
+          ],
+          [
+            5.5,
+            250.05,
+            5.5
+          ],
+          [
+            5.5,
+            81.95,
+            5.5
+          ]
+        ],
+        "slots_xy_length_width_angle_mm": []
+      }
+    },
+    {
+      "id": "round-washer",
+      "name": "丸ワッシャー Ø15 / Ø5 / t1",
+      "category": "home-print",
+      "quantity": 64,
+      "material": "black ASA from user geometry reference",
+      "dimensions_mm": [
+        15.0,
+        15.0,
+        1.0
+      ],
+      "volume_mm3": 157.07963267948966,
+      "transform": {
+        "face": null,
+        "placement": "local_min_XYZ_zero",
+        "oriented_local_minimum_before_translation_mm": [
+          -7.5,
+          -7.5,
+          0.0
+        ],
+        "source_to_oriented_local_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "export_to_assembly_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -7.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -7.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "assembly_to_export_4x4": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            7.5
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            7.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "roundtrip_symmetric_difference_mm3": 0.0,
+        "orientation_note": "Assembly orientation preserved; not a validated print orientation."
+      },
+      "files": {
+        "step": {
+          "path": "home-print/round-washer.step",
+          "sha256": "be011f1b40836789d1e182909c74975a883127a29ebd9dae5ed6522ea071a5fb",
+          "bytes": 9182
+        },
+        "stl": {
+          "path": "home-print/round-washer.stl",
+          "sha256": "d7d6506f6ffc2aca8c320c098893124734498070584923b5d55a10d5509d1084",
+          "bytes": 50484
+        }
+      },
+      "checks": {
+        "step": {
+          "passed": true,
+          "checks": {
+            "valid": true,
+            "one_solid": true,
+            "dimensions_match": true,
+            "volume_match": true
+          },
+          "bbox_error_mm": 0.0,
+          "volume_error_mm3": 3.439026841078885e-12,
+          "dimensions_mm": [
+            15.0,
+            15.0,
+            1.0
+          ],
+          "local_min_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "stl": {
+          "watertight": true,
+          "winding_consistent": true,
+          "positive_volume": true,
+          "vertices": 504,
+          "triangles": 1008,
+          "bbox_error_mm": 0.002331135096028447,
+          "volume_error_mm3": 0.06509433943131171,
+          "cad_volume_mm3": 157.07963267948966,
+          "edge_incidence_histogram": {
+            "2": 1512
+          }
+        }
+      },
+      "note": "One exact geometry, reused for all new loose washers. No printer profile is assigned here.",
+      "production_approved": false
+    }
+  ],
+  "validation": {
+    "passed": true,
+    "description": "Every exported STEP read back; every STL is closed, positively oriented and CAD-consistent; every saved DXF extruded and compared with the sheet CAD."
+  },
+  "notes": [
+    "No source geometry was rescaled or changed for export. Each recorded rigid transform restores the exact assembly placement.",
+    "PA12 local placement is a file datum, not a printer setup or validated print orientation.",
+    "Round washer dimensions come from the supplied transformed 3MF geometry: OD15, ID5, thickness1 mm.",
+    "These checks do not establish physical fit, fastening strength, nylon process tolerances, slicer validity or manufacturing approval."
+  ],
+  "assembly_shell": {
+    "file": {
+      "path": "assembly-shell.step",
+      "sha256": "b4f80a4b7c5989bb038161fded9262d9e62c06a8bae6394e5d29137679864d43",
+      "bytes": 9997490
+    },
+    "solids": 26,
+    "readback_valid": true,
+    "volume_error_mm3": 2.414453774690628e-07,
+    "coordinates": "Original assembly datum, X width/Y depth/Z up; floor underside Z0",
+    "scope": "Twenty printed components and six sheets; hardware and original rail frame are shown in the interactive preview instead."
+  }
+}

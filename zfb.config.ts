@@ -47,6 +47,7 @@ export default defineConfig(
       },
       { label: "共通部品", path: "/docs/shared", categoryMatch: "shared" },
       { label: "開発・保守", path: "/docs/development", categoryMatch: "development" },
+      { label: "アーカイブ", path: "/docs/archive", categoryMatch: "archive" },
       { label: "画像・図", path: "/files", versioned: false },
     ],
     headerRightItems: [

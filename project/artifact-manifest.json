@@ -4203,6 +4203,1518 @@
       "bytes": 159266,
       "sha256": "6d9b4e21cc915d75525734cfbafb84cfea9bf37a921c4b0d35757d2519e5591f",
       "status": "quote-only-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/README.md",
+      "bytes": 15528,
+      "sha256": "ac190dc86eb3ba94b53cb9e35a9fd64c63d0e90bf352fe0a061d81c496a998b3",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/build.py",
+      "bytes": 2456,
+      "sha256": "c2003257424577717e6e57fc73f088e6982492b0f3b3135b2bcc766a72d9f470",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/lid-plate.dxf",
+      "bytes": 16790,
+      "sha256": "b3fde11a10f212042dfa69b8d01fb9594c2134ea3598f86230ef01f760d1c050",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/lid-plate.step",
+      "bytes": 61600,
+      "sha256": "3efcff6478552b1a8f90330532e5e0263043a9786fdb738c0d167f9ea8c254d2",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/lid-plate.stl",
+      "bytes": 229484,
+      "sha256": "fde29e12dd499743a15a0a995e353cfe157c564ac7dcaff6db2b61adea2e2e37",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-back.dxf",
+      "bytes": 19676,
+      "sha256": "464f4d0a4a93b8dfeec1dbe79808c3461957747fb2d96e2ca02ed1f257c0c75d",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-back.step",
+      "bytes": 149829,
+      "sha256": "b57b6b76469d39f86293980e22fceb8b6d8814b520429f8cb451007ce001361c",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-back.stl",
+      "bytes": 207084,
+      "sha256": "f7b21f6e3d87da5ccd09b5fda8f62d289fc6e35b2028632fe726ac47efefec6c",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-floor.dxf",
+      "bytes": 19702,
+      "sha256": "535a561383f09c168f967d228e5597ee47caf15beb98dc5e90f6b934242887f3",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-floor.step",
+      "bytes": 149849,
+      "sha256": "bb898321b6aa0382db4c60d06c3c641924af0becb7de68c7eab001f1e8242867",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-floor.stl",
+      "bytes": 207084,
+      "sha256": "de6ca1290921f6c9c30dabefa95e492d4ab66652dbdf35d36446e51fd5e8ff15",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-front.dxf",
+      "bytes": 19676,
+      "sha256": "464f4d0a4a93b8dfeec1dbe79808c3461957747fb2d96e2ca02ed1f257c0c75d",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-front.step",
+      "bytes": 149829,
+      "sha256": "b57b6b76469d39f86293980e22fceb8b6d8814b520429f8cb451007ce001361c",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-front.stl",
+      "bytes": 207084,
+      "sha256": "f7b21f6e3d87da5ccd09b5fda8f62d289fc6e35b2028632fe726ac47efefec6c",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-left.dxf",
+      "bytes": 20257,
+      "sha256": "8168251612b75c9c7d49fdd6c65ddff0df8df6dd96b3d2d34264cf2ea9db51b2",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-left.step",
+      "bytes": 169148,
+      "sha256": "04021964b12ac1e8a40c1ef95e7ba5643ad3bb7894e0809fd552f6fe55260018",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-left.stl",
+      "bytes": 334084,
+      "sha256": "1ce6b507bacc2b85803a0c6c32a116dcf6f0912f0c365402b3a77b08ef45701a",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-right.dxf",
+      "bytes": 20243,
+      "sha256": "5fa5a8edeac7c2749031a9716052bb1e8c4230664f76048a84078426b48f7e97",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-right.step",
+      "bytes": 169148,
+      "sha256": "d96f38a979ff756914ad21db0e3732a55c65bd3656a5dcba10b02949948f93ff",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/aluminum/panel-right.stl",
+      "bytes": 334084,
+      "sha256": "ff8b6b4bc9ba368ad9310df728cf3a43e7f3ddce1c27799f86c7a48c2d97737d",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/assembly-shell.step",
+      "bytes": 10176370,
+      "sha256": "ba2d2eeafc022cd66311a39be63da174398d8095f3c5b63671f4dac77d6bc7c2",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/home-print/round-washer.step",
+      "bytes": 9182,
+      "sha256": "be011f1b40836789d1e182909c74975a883127a29ebd9dae5ed6522ea071a5fb",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/home-print/round-washer.stl",
+      "bytes": 50484,
+      "sha256": "d7d6506f6ffc2aca8c320c098893124734498070584923b5d55a10d5509d1084",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/assembly.png",
+      "bytes": 39661,
+      "sha256": "bcc9bda44dbcc9e2f26b9a604d2350e278ca49780cca36fab783dfb0f4e5b542",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/corner.png",
+      "bytes": 28264,
+      "sha256": "571d5755811cf70fac98560d7155290f3c7a7be9756f66888d44f9ce74c8e3fb",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/inline-report.json",
+      "bytes": 2227,
+      "sha256": "ed240977d21effac52ea4a1b3184e57b1e019fc14f996850d990c1c117dfd74f",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/inside.png",
+      "bytes": 53659,
+      "sha256": "931f4721954a0beb620f7ee6964030eebd52ecebb3c22cb6fcecde3db771e8ad",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/lap.png",
+      "bytes": 18396,
+      "sha256": "977161bfcbf2c6c25376dfa4a76d8ed4889d10b872f585e9d402db35c6e424a3",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/lid.png",
+      "bytes": 28309,
+      "sha256": "11758c3bd17f3afb1954dad4836389e6394683882521b8e5384e2b1971381b54",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/lidfit.png",
+      "bytes": 21075,
+      "sha256": "dd2b17d2d686fad2375ab82d7ac4f8205d5c5e7fa3fa43b662bdd276577c14f1",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/lidguides-dark.png",
+      "bytes": 43553,
+      "sha256": "57af9514d71e5e37a6fe2adb10620cdb62e07a6835a44998f4b474ef51fe1d8e",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/lidguides.png",
+      "bytes": 45491,
+      "sha256": "743a1dc65bae52357481c7b4078a3889980f9709ac5bf230de4d1977145cd4fc",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/lidjoint.png",
+      "bytes": 15915,
+      "sha256": "6ef5a70e27ea9c172b6b6a087eb2a7c08ea435b002bd57833dd81f4e31f23c5f",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/nylon.png",
+      "bytes": 73640,
+      "sha256": "f0a8c1121deffe1fa4d20ed2b8a5f178ba1ee5b9e3e18668eed4ebbd86335d22",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/panels.png",
+      "bytes": 30652,
+      "sha256": "32bca07b26164efedcdbf1373180c09d6100ea044bb65ec07ddd62409761a75b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/rail.png",
+      "bytes": 22302,
+      "sha256": "bb4077304ccf0f11fcaf2d1b9159be3e30af97c5e166f63ff54b0bab00a5c051",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/slots.png",
+      "bytes": 6556,
+      "sha256": "45029ac93d79d0aa55e90a567ab708f8e75ae259be60d966998156b391b629ec",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/top-exploded.png",
+      "bytes": 14554,
+      "sha256": "1552231031f5f8c64e56a33908514215682567088e2621a8de24038bdcb74171",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/inline-renders/top.png",
+      "bytes": 16341,
+      "sha256": "d46a0b9ba168a05960f3a905380c07b90ae4ed40202efbb40238e424046914f2",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/lid-locator-review.json",
+      "bytes": 17038,
+      "sha256": "ec857beb91ba3ea65860da205d808fa862deec09f61c0f44ec342718f217b32b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12-size-audit.csv",
+      "bytes": 2074,
+      "sha256": "f886a9c5e3a656a7950cba028519ad2d5de6c217be326b0b269f824b8d962213",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12-size-audit.json",
+      "bytes": 13933,
+      "sha256": "efba83967c14c455fe6d68aef862c730aca89c424078604ee607a6873631e08b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-bottom-back.step",
+      "bytes": 479257,
+      "sha256": "6531a8240ec9f37f37607ac52a09754dd16aae723144f124c0a8a76e3fe3455d",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-bottom-back.stl",
+      "bytes": 376084,
+      "sha256": "124a4b9521efb8c9b18c424e1e06c7e6e83c9cdbee45ac8ab735d88144149251",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-bottom-front.step",
+      "bytes": 478950,
+      "sha256": "97d98581a213d10a76dfca08913a8b80532eb8bbde13a8dfe0258eebbb322195",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-bottom-front.stl",
+      "bytes": 376084,
+      "sha256": "745f8b9774c88236af361dfd7950c93805ee76bd6e7d8b6c69525f169ca4fc3b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-bottom-left.step",
+      "bytes": 478852,
+      "sha256": "d19329827aadaf295290bde1cb2daa966f2bf8bacc39fcdfe382fbe78d23175d",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-bottom-left.stl",
+      "bytes": 376084,
+      "sha256": "3c05861621b9043db4faad3fcee648f550882d06e0c70a8a4f12da18fe3b071f",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-bottom-right.step",
+      "bytes": 478944,
+      "sha256": "53b8140e03541248231bcd032863e161b37df5db1b1ba8a05b597395dca998a4",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-bottom-right.stl",
+      "bytes": 376084,
+      "sha256": "78005e6dceca0614ed205fe1cb1286ce54318a614c362f4cc60b743eff01e406",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-corner--1--1.step",
+      "bytes": 1108867,
+      "sha256": "24cf6fb8a5db6699ddf564612551130659e2ce8f448e02a175cfad3ea65d4320",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-corner--1--1.stl",
+      "bytes": 748484,
+      "sha256": "caf961e1e26e106835c6a249eefff6efa7f539681c693edc0316a7ce99d4106e",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-corner--1-1.step",
+      "bytes": 1098055,
+      "sha256": "dc266465d9007a8c26e71bd62469baf97fdac7e691d37320decfa61afe4d6ebb",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-corner--1-1.stl",
+      "bytes": 748484,
+      "sha256": "e593cd1ef45d9eab6a6009329bd7060b80c62f059f88143c4ea51a7a77bcc835",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-corner-1--1.step",
+      "bytes": 1099531,
+      "sha256": "ddc73e2dc79fa84f2876c165707bf603303631674b45837015f2dbd5e7e4ae2c",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-corner-1--1.stl",
+      "bytes": 748484,
+      "sha256": "ce8f889e9049fdabbc7f3daf9862966b425fd7fc46a7acf831a74ef80fb1b0bc",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-corner-1-1.step",
+      "bytes": 1104807,
+      "sha256": "276e2aad5b40dfaf1c0e217ec24916960e8ea8b3139e1d5dd5c2d77feda2755d",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-corner-1-1.stl",
+      "bytes": 748484,
+      "sha256": "b21bada08da9a17fb5761b823b7955791b3535dfba2dbccc600c2e3d7974edf3",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-top-back.step",
+      "bytes": 279431,
+      "sha256": "5bb2fb18a7024bb521159d9d9ea07a2071160de8d8adab9edcd2f3bbfcf7454d",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-top-back.stl",
+      "bytes": 213684,
+      "sha256": "54a15e2f55cea5e475639931a8f0f5199d09d4a3390490a4087a88b3f48e5293",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-top-front.step",
+      "bytes": 278929,
+      "sha256": "bae2068cad863e14c4d4196b8339454689677d8548446faa2ca73a3927b5ef13",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-top-front.stl",
+      "bytes": 213684,
+      "sha256": "aab504b7b5804efc0157ed3ee96fe73556a289b8e8271e5b1dc97f435b817e4e",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-top-left.step",
+      "bytes": 279002,
+      "sha256": "7489f83c5c50a0b80375aba696763750d731f6a1b830020ce53bfcb8d27ef6f1",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-top-left.stl",
+      "bytes": 213684,
+      "sha256": "65011e5fa721c54fe06af021cafa915ec878bc515a79a88f192c3d8e156941a9",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-top-right.step",
+      "bytes": 280434,
+      "sha256": "8b517136dc2474ab91c51f25747117b74f0652c15acf1de0a209a13e69ae9ba3",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/body-top-right.stl",
+      "bytes": 213684,
+      "sha256": "495634740710b77d0443ab78abe935575d1c859b8042a8ae596819d25d458b92",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-corner-bl.step",
+      "bytes": 159369,
+      "sha256": "01e39904ce927ebfc6ec7b5ccb88a44507ffba6bdf6e6557e878400f398f758c",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-corner-bl.stl",
+      "bytes": 109284,
+      "sha256": "37bc14de9b5921faacb7feb7c964d589331f4363b40a6441805367855a7f9b70",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-corner-br.step",
+      "bytes": 159074,
+      "sha256": "21887173787b94afe1dce6d58f2148f903821ba9c772ef1e7217d2aa9ae8e56b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-corner-br.stl",
+      "bytes": 109284,
+      "sha256": "165cf9ed44888b8254f1cdea6963bd1f8728cf9b07c19cdc5b557d792d44b120",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-corner-fl.step",
+      "bytes": 158126,
+      "sha256": "eab2d765c9c2b660ca2c481d682538abcb48416b3b9d0a31f0240b8b19dd8e95",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-corner-fl.stl",
+      "bytes": 109284,
+      "sha256": "cfe0f1aa3c4c3ad9ef8228ac409de334b4ec2058f4f71948fce850f37c76e3d6",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-corner-fr.step",
+      "bytes": 157122,
+      "sha256": "1600cd71c2aa17bf40bb15b0b03a0364e8a42240bb70271856de725cef8f4f6a",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-corner-fr.stl",
+      "bytes": 109284,
+      "sha256": "e856f260337a0e6e1b654bb78020374f151f96f546b419ce4895e31c6cb9d79f",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-middle-back.step",
+      "bytes": 117933,
+      "sha256": "70a5c9d3a6ceb922f3a2f4e400681b01098ed602bfc700cf676f8a7d861a01ef",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-middle-back.stl",
+      "bytes": 107084,
+      "sha256": "7816d229fdf4041040a4ff59041516dcbef4dff1b5965e123f1bcf956183fa0f",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-middle-front.step",
+      "bytes": 115720,
+      "sha256": "4596acb3eb16196ab6895123d623111625e1d3013a09c44002417bad10ae80f7",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-middle-front.stl",
+      "bytes": 107084,
+      "sha256": "9f9b051dcc88927da1259bb24fc5d0af2d02d71b970a985e2fdaaa9f9fe509a5",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-middle-left.step",
+      "bytes": 117945,
+      "sha256": "e329839b51a49affda0b65230b08369e3815470eb76e1337bbec27a52c54f32f",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-middle-left.stl",
+      "bytes": 107084,
+      "sha256": "06fcb48aaef5acceac8e61ba3263ccc3bd793245db6bdfcefc7c246e2c920a22",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-middle-right.step",
+      "bytes": 117965,
+      "sha256": "2aeb62f1f9a18e1dd639aa355ce670f070554904dc01eb402f32b0dec451a24d",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/pa12/lid-middle-right.stl",
+      "bytes": 107084,
+      "sha256": "a3eef0ce408ee4c3f3bc003b0d7a46ff9a7ff57205aedd4bd38ed07fe9c9c489",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/panel-hole-map.csv",
+      "bytes": 2940,
+      "sha256": "899377b6880dd8b586826a4c0b14f8f52d280412c15b219911d9f70af202992d",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/parts-manifest.json",
+      "bytes": 107255,
+      "sha256": "561a7b1f42043af87e2a5145bc7b79331310ceabe3c65fdae6408bd6ae3dada6",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-manifest.json",
+      "bytes": 478,
+      "sha256": "f716d0b73c11a0d5e4fda59142bee9abe8b0c1f8318f57294ea79fa6c9364564",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/assembly.png",
+      "bytes": 74286,
+      "sha256": "129df335ca5ab08f2cb3e1213e7620f78b99bd2151a81aaf110336e169b2eebf",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/corner.png",
+      "bytes": 50414,
+      "sha256": "c18db6ddb51d74ecb76541119b96b328d9f5cd170fbd3f183971ed43f6885259",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/inside.png",
+      "bytes": 69096,
+      "sha256": "a134aab1e8e860e330af183859f7cb1213e1507b69b12b2c2008d51576f8de70",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/lap-exploded.png",
+      "bytes": 53505,
+      "sha256": "9ab460af706ac36ff1db262768499308baa5008de6ad455c193efbaee89e1c6b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/lap.png",
+      "bytes": 50944,
+      "sha256": "f10c268c520f78f2e2673f78c5b55a2299353bdab432d20ec931160479bd7268",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/lid.png",
+      "bytes": 50904,
+      "sha256": "14ad0e105358aabea71076a5a934b5af2b26488b74d6109c01c8ca016ecb0288",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/lidfit-exploded.png",
+      "bytes": 53517,
+      "sha256": "5f902194dc04d1dbb2a723abd93ac6e78f2bcf8c41fac2258f83ca102bf37c5b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/lidfit.png",
+      "bytes": 51413,
+      "sha256": "4fb690a5ff2c3a9169ea20942921806deb248ffc86a0d9ab1c251ef30dfdeecd",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/lidguides.png",
+      "bytes": 50802,
+      "sha256": "45c2189f853d83d56098d91c6b3cf672e1033d4d7082097afffb7a1b8766eea4",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/lidjoint-exploded.png",
+      "bytes": 45976,
+      "sha256": "7af25f383edf658fbdb8d4ed547578b320e6e7ed986204d263b9968b16914b74",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/lidjoint.png",
+      "bytes": 42647,
+      "sha256": "9abdd49a5ea20735d976d7edc5b189bbd4025d81cc0340e6a4c0e4215a92b66f",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/nylon.png",
+      "bytes": 67097,
+      "sha256": "fa2e0b05d0f51b16329d0786fbe42a0764bb301c16395b93895d9c4d75018c4b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/panels.png",
+      "bytes": 52375,
+      "sha256": "ba46b468b9feaee5b96cadfe37d764ee3249c421e187291b1afccb4776e2e1b6",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/rail.png",
+      "bytes": 49365,
+      "sha256": "299fb4c980c8fa29169e9ad7e3cb926917602b3f7a9835153b2f15c3dfeb312c",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/render-report.json",
+      "bytes": 8957,
+      "sha256": "3db1db0924cdb1495321756f834a61bb89358720835e096f75e35243a40575b2",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/slots.png",
+      "bytes": 36751,
+      "sha256": "25fd33fba15a4d955add346ff120a85c0f588b9d460b202c2c66a94255e4b923",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/top-exploded.png",
+      "bytes": 48721,
+      "sha256": "dedd728d88a37ff23aa36296a4cc43b95935555bbc50511f2cd5cf045857c4d5",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview-renders/top.png",
+      "bytes": 46561,
+      "sha256": "88d07b403dfe33ffa92dc203f7f90b634d1bb5e234f9d954ad75e1e02f6a3568",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/preview.html",
+      "bytes": 8261086,
+      "sha256": "0eeee0dc5c869b73cbfae6a4b25c269f4acf621bcdc42813c8df80b559c4543b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/quote-upload-plan.json",
+      "bytes": 7967,
+      "sha256": "f8cbaab2266b6c3eff6f42c2ee5bc3fd3c126041fd0b386f5a25226dd1c32b10",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/reference-clearance.json",
+      "bytes": 48122,
+      "sha256": "92a7f2d6a13e1b068a5d3a8a66869508e377bab67343eb0acaf814eed3740493",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/review-summary.json",
+      "bytes": 48742,
+      "sha256": "231a7a4e194d934859c38a0d9a23111a62f9e84566fbf5570534e17469f02c7e",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/revision-delta.json",
+      "bytes": 13440,
+      "sha256": "447518304c9c4067fb268e05fb843fd80ecaf9497f8b5db90a725374aa9e8dd4",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/scene.json",
+      "bytes": 8186466,
+      "sha256": "20a6e0fc4cd3429a849774ccbce3b4e3561188b4580e76304ab93afda59788fd",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/out/validation.json",
+      "bytes": 564407,
+      "sha256": "89d1fec3f04eb6e06a0c56ccf7acc0361283cc6aa1bdf2fadab2191043c09a88",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/package_review.py",
+      "bytes": 11643,
+      "sha256": "4f81f358a9fb682069f37cb1da2ba92c9933139478cae270a365cda187da6eb0",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/parameters.json",
+      "bytes": 6427,
+      "sha256": "a6130cc090db1d102b069c54a53350468503b1de4cc86784c006d8a0f9ac7e6a",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/inside-ear-user-annotation.json",
+      "bytes": 338,
+      "sha256": "1f85549a6e9a603414e4d4ff189d6dd12764f97e025ebe2be0e1a91f76fbbef3",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/inside-ear-user-annotation.png",
+      "bytes": 931835,
+      "sha256": "a478e3e04e17d263d678cf8e2208c29113bb4a34116559be622cf660f3bf375c",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/pcb-contours.json",
+      "bytes": 73856,
+      "sha256": "068ccfd1308f645399ac8007c9e03ad9a5d6c602c5187bb5184130e64f6477fc",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r10-cart-2026-10-26.json",
+      "bytes": 16583,
+      "sha256": "1420d5b8587e89980aa840b4f474e9756284a37900d8a5e320821e05965ad0c4",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r10-lid-plate.step",
+      "bytes": 65405,
+      "sha256": "c0c15c80674483747a90ec493c93492064d1d6016a2bb982786846eb02831213",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r10-parameters.json",
+      "bytes": 1756,
+      "sha256": "65894c5d4455dc183652151627c54a87e74891f47b2a3190d66a8845b23662c3",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/README.md",
+      "bytes": 272,
+      "sha256": "1675096d5bbcf61178b3c2e95006038645090c077cf803806b8beacb048eb438",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/aluminum/lid-plate.step",
+      "bytes": 65412,
+      "sha256": "a0093b171905e9412757561bcab6f6e926c43ad599897e63508d6c9c06d29438",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/aluminum/panel-back.step",
+      "bytes": 153635,
+      "sha256": "0486f8424614f2edc13c5fd1b320b49a05d9a011f30c99b1867da13cc40a6408",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/aluminum/panel-floor.step",
+      "bytes": 187408,
+      "sha256": "ddb45a4cfe0bf460c97ea6b1282808056eb71e0cc3c8dbc12f5bd91e5030f24a",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/aluminum/panel-front.step",
+      "bytes": 153635,
+      "sha256": "0486f8424614f2edc13c5fd1b320b49a05d9a011f30c99b1867da13cc40a6408",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/aluminum/panel-left.step",
+      "bytes": 190104,
+      "sha256": "c7864a76c5dded7a60006ac5f6af171fd0aa7b57458a768d796e1715ee361a2e",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/aluminum/panel-right.step",
+      "bytes": 190104,
+      "sha256": "d28dd96f383e4998907f56990c9187d7becb001324037a5c3110ae0b4673879a",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/copy-receipt.json",
+      "bytes": 4587,
+      "sha256": "61c207b1c6369ae56ea35f938b085c1f63d64c844dd20d6b918b17373abca54d",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/home-print/round-washer.step",
+      "bytes": 9182,
+      "sha256": "5867bc8d40c203240acbe91baefa9ac26302fe1bbc57b313fea67691a594ac7c",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/body-bottom-back.step",
+      "bytes": 293958,
+      "sha256": "b9a62c2b34acb94d30b3bfc2d11140bbf40e29452568c17998f8bfe87417d777",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/body-bottom-front.step",
+      "bytes": 293732,
+      "sha256": "66e1dd9570dab7f66c0826dacc5281c85f1a0614d3069d1c55165cb50b448033",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/body-bottom-left.step",
+      "bytes": 446982,
+      "sha256": "27639e0ce44a525aecedd7fc061da1e302da21a671e8771a792ab949a2cfdf56",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/body-bottom-right.step",
+      "bytes": 447125,
+      "sha256": "09dbc169ef3d5412abf69b781f9841d0247aa1f83291a077795a33dee1a01a3e",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/body-corner--1--1.step",
+      "bytes": 788661,
+      "sha256": "49c7d49ed7929e2d8f844892c8baa6019b1409335f8890e9e4bcdd58e5de7111",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/body-corner--1-1.step",
+      "bytes": 782164,
+      "sha256": "642e86d0078504ca7b600e78502d86650d980cb9f9e2d51fa188a1608d727c65",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/body-corner-1--1.step",
+      "bytes": 783378,
+      "sha256": "09f4ca13b286209a5013ec11f1a4c77f044afbbac8977b88ae7fd47593331f3f",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/body-corner-1-1.step",
+      "bytes": 785896,
+      "sha256": "b7ab4cf711d26f2e98651ef331578972cc9c33665d656eb2f31515a3546204e0",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/body-top-back.step",
+      "bytes": 279431,
+      "sha256": "6bfafa0f74f1d97f20e4c6287dcdc4131bae36432c47704ad8668076fdcf09f7",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/body-top-front.step",
+      "bytes": 278929,
+      "sha256": "2e388cd0df5365568c6496119245945ae41e3d41f23454df37b980e8131d2b48",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/body-top-left.step",
+      "bytes": 279002,
+      "sha256": "7f3e5dd43c2ccbf663969e7cfbfe06d77bd77681683f59825afe976f1a0fc2cf",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/body-top-right.step",
+      "bytes": 280434,
+      "sha256": "145c814ae0a39d062e4ee4e4ba64228e0ca8b6b245ca08143b10da0441f1d285",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/lid-corner-bl.step",
+      "bytes": 130531,
+      "sha256": "3fa832a76d6eb16a537c8db02fe6bf6ebad33704dc6deb2ecebde59721bb7cf8",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/lid-corner-br.step",
+      "bytes": 130221,
+      "sha256": "3960adfe3cb4d7c9980ce4b76084d2bba06d2bf46d939569600d3f5b2c73e906",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/lid-corner-fl.step",
+      "bytes": 129099,
+      "sha256": "67ed2df61420997c0f9fed329bf0d392a822df435fa74c4bd7010089d332caa3",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/lid-corner-fr.step",
+      "bytes": 128074,
+      "sha256": "b8a46d71116cfd1b99ca7168917a4cfcf83b986f0d847b5a89789b382aebe480",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/lid-middle-back.step",
+      "bytes": 117933,
+      "sha256": "0950e6303e7533f6f835fdfb710a780383a9a279c966476b34179ef364a75381",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/lid-middle-front.step",
+      "bytes": 115720,
+      "sha256": "5500c05be9fa474f8ca198294d86fe0a121aab4f46b21df49ce60c938ee18563",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/lid-middle-left.step",
+      "bytes": 96425,
+      "sha256": "335977ef0cd3fa65f8710615b0d39b2121cdfb85b240b814bb549f119a6829da",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/pa12/lid-middle-right.step",
+      "bytes": 96428,
+      "sha256": "88c897c98687f6d00bbc933ae6ed5fe354c8e0e1e9573a6c192f9a029c140a1e",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-01-baseline/parts-manifest.json",
+      "bytes": 107749,
+      "sha256": "217e499a5025b4da558def8244caf6030d966c6357960d09f310af9d21d3b156",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/README.md",
+      "bytes": 229,
+      "sha256": "0688c1d241034c1aea0d02496d3ca0ed71a65e1d05a4d4d4311bd0998aa98d46",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/aluminum/lid-plate.step",
+      "bytes": 61600,
+      "sha256": "3efcff6478552b1a8f90330532e5e0263043a9786fdb738c0d167f9ea8c254d2",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/aluminum/panel-back.step",
+      "bytes": 149829,
+      "sha256": "b57b6b76469d39f86293980e22fceb8b6d8814b520429f8cb451007ce001361c",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/aluminum/panel-floor.step",
+      "bytes": 149849,
+      "sha256": "bb898321b6aa0382db4c60d06c3c641924af0becb7de68c7eab001f1e8242867",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/aluminum/panel-front.step",
+      "bytes": 149829,
+      "sha256": "b57b6b76469d39f86293980e22fceb8b6d8814b520429f8cb451007ce001361c",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/aluminum/panel-left.step",
+      "bytes": 169148,
+      "sha256": "04021964b12ac1e8a40c1ef95e7ba5643ad3bb7894e0809fd552f6fe55260018",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/aluminum/panel-right.step",
+      "bytes": 169148,
+      "sha256": "d96f38a979ff756914ad21db0e3732a55c65bd3656a5dcba10b02949948f93ff",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/copy-receipt.json",
+      "bytes": 5095,
+      "sha256": "a1e147993153d7f80facd275766d132daf93f0618c7a64be2beec5da09d06056",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/home-print/round-washer.step",
+      "bytes": 9182,
+      "sha256": "be011f1b40836789d1e182909c74975a883127a29ebd9dae5ed6522ea071a5fb",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/body-bottom-back.step",
+      "bytes": 293958,
+      "sha256": "b1197a580cd37f8dca0cc9406233a44307317a9cbb7ccd7e0b47b5a013bc9bf7",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/body-bottom-front.step",
+      "bytes": 293732,
+      "sha256": "1ea3f1cf76928b5c3208885c6572dc0d549683f617258336a3e94a1f04543676",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/body-bottom-left.step",
+      "bytes": 293637,
+      "sha256": "97b8f8905abbec3b705cbe09619f0fde5c07f51807b8826368c244cf34e40456",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/body-bottom-right.step",
+      "bytes": 293725,
+      "sha256": "2d79e46700f3eeee37ed878c0e3fbf43cd08c30ab664b1073801795f4f693c46",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/body-corner--1--1.step",
+      "bytes": 788661,
+      "sha256": "b96c690b98b97f1f347b5531adf31e7cebb8c1eb1d254f6f5d4c5f275df8e29c",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/body-corner--1-1.step",
+      "bytes": 782160,
+      "sha256": "1ffc8b73111b017eaf2931704322d787c2d01663fdbff2bc82a6e9b295338205",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/body-corner-1--1.step",
+      "bytes": 783374,
+      "sha256": "e9300c2a2d5c5d56739cbafd6284a034b23ff25a04b4385863dc657f4e7701a4",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/body-corner-1-1.step",
+      "bytes": 785896,
+      "sha256": "921cdaeb74c137194e6a6e6b698ad56e6c8eaaba47439100fd90e6fb15f499e8",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/body-top-back.step",
+      "bytes": 279431,
+      "sha256": "5bb2fb18a7024bb521159d9d9ea07a2071160de8d8adab9edcd2f3bbfcf7454d",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/body-top-front.step",
+      "bytes": 278929,
+      "sha256": "bae2068cad863e14c4d4196b8339454689677d8548446faa2ca73a3927b5ef13",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/body-top-left.step",
+      "bytes": 279002,
+      "sha256": "7489f83c5c50a0b80375aba696763750d731f6a1b830020ce53bfcb8d27ef6f1",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/body-top-right.step",
+      "bytes": 280434,
+      "sha256": "8b517136dc2474ab91c51f25747117b74f0652c15acf1de0a209a13e69ae9ba3",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/lid-corner-bl.step",
+      "bytes": 130531,
+      "sha256": "f8df68fa8d7ef83715bb232986e3528dc0a326db6fceee94155485516cef3b62",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/lid-corner-br.step",
+      "bytes": 130221,
+      "sha256": "18f9094e6d37c0b85e425d276d2eea2e098e3b13486c34eba9685f93af3e33c9",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/lid-corner-fl.step",
+      "bytes": 129099,
+      "sha256": "1e0cd41de74a28881022621db89b82256769a35b5c1e8871cd81a711795dfc16",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/lid-corner-fr.step",
+      "bytes": 128074,
+      "sha256": "be6c85c1e8394875ca5b1a8e45780370b0bfda4c70d66adbbacaee7b67be1718",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/lid-middle-back.step",
+      "bytes": 117933,
+      "sha256": "70a5c9d3a6ceb922f3a2f4e400681b01098ed602bfc700cf676f8a7d861a01ef",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/lid-middle-front.step",
+      "bytes": 115720,
+      "sha256": "4596acb3eb16196ab6895123d623111625e1d3013a09c44002417bad10ae80f7",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/lid-middle-left.step",
+      "bytes": 96425,
+      "sha256": "85c1e7d20fc18d5e2687942abc69be33b3457b81824b6619dfbe59c999f5b81f",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/pa12/lid-middle-right.step",
+      "bytes": 96428,
+      "sha256": "5818bf91b2676ab64126420d348707c60768c845be1f0864c47b4108e3a1ddf7",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/parameters.json",
+      "bytes": 5279,
+      "sha256": "7b1f70865d246ee4c6f32ea69b49eece7cf79f9135f041b742a3f2d5935f5c76",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/parts-manifest.json",
+      "bytes": 106749,
+      "sha256": "803e3ba1f50182c194cfa53f2a357d788361982e378f966112706068e4d07df0",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-02-baseline/scene.json",
+      "bytes": 7960303,
+      "sha256": "4c90970ae5ccf83372b49fcdb59ad6e5b226164cb7459df03b07759ee635eb33",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/README.md",
+      "bytes": 186,
+      "sha256": "edfbc91da4239eac0f1a17ebc85d81ec2e8f0030ae6b320968de018838cacb3a",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/aluminum/lid-plate.step",
+      "bytes": 61600,
+      "sha256": "3efcff6478552b1a8f90330532e5e0263043a9786fdb738c0d167f9ea8c254d2",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/aluminum/panel-back.step",
+      "bytes": 149829,
+      "sha256": "b57b6b76469d39f86293980e22fceb8b6d8814b520429f8cb451007ce001361c",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/aluminum/panel-floor.step",
+      "bytes": 149849,
+      "sha256": "bb898321b6aa0382db4c60d06c3c641924af0becb7de68c7eab001f1e8242867",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/aluminum/panel-front.step",
+      "bytes": 149829,
+      "sha256": "b57b6b76469d39f86293980e22fceb8b6d8814b520429f8cb451007ce001361c",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/aluminum/panel-left.step",
+      "bytes": 169148,
+      "sha256": "04021964b12ac1e8a40c1ef95e7ba5643ad3bb7894e0809fd552f6fe55260018",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/aluminum/panel-right.step",
+      "bytes": 169148,
+      "sha256": "d96f38a979ff756914ad21db0e3732a55c65bd3656a5dcba10b02949948f93ff",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/assembly-path-check.json",
+      "bytes": 23056,
+      "sha256": "c9d1becfbb6b3091baa8be100c1325522f80f63d7ca475d0ecaf2c060413b37c",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/copy-receipt.json",
+      "bytes": 4444,
+      "sha256": "7529af956fb5aed49eeaa179dcb476ccd09d588658696bc8733e981ddaaf3610",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/home-print/round-washer.step",
+      "bytes": 9182,
+      "sha256": "be011f1b40836789d1e182909c74975a883127a29ebd9dae5ed6522ea071a5fb",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/body-bottom-back.step",
+      "bytes": 479257,
+      "sha256": "6531a8240ec9f37f37607ac52a09754dd16aae723144f124c0a8a76e3fe3455d",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/body-bottom-front.step",
+      "bytes": 478950,
+      "sha256": "97d98581a213d10a76dfca08913a8b80532eb8bbde13a8dfe0258eebbb322195",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/body-bottom-left.step",
+      "bytes": 478852,
+      "sha256": "d19329827aadaf295290bde1cb2daa966f2bf8bacc39fcdfe382fbe78d23175d",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/body-bottom-right.step",
+      "bytes": 478944,
+      "sha256": "53b8140e03541248231bcd032863e161b37df5db1b1ba8a05b597395dca998a4",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/body-corner--1--1.step",
+      "bytes": 1108867,
+      "sha256": "24cf6fb8a5db6699ddf564612551130659e2ce8f448e02a175cfad3ea65d4320",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/body-corner--1-1.step",
+      "bytes": 1098055,
+      "sha256": "dc266465d9007a8c26e71bd62469baf97fdac7e691d37320decfa61afe4d6ebb",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/body-corner-1--1.step",
+      "bytes": 1099531,
+      "sha256": "ddc73e2dc79fa84f2876c165707bf603303631674b45837015f2dbd5e7e4ae2c",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/body-corner-1-1.step",
+      "bytes": 1104807,
+      "sha256": "276e2aad5b40dfaf1c0e217ec24916960e8ea8b3139e1d5dd5c2d77feda2755d",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/body-top-back.step",
+      "bytes": 279431,
+      "sha256": "5bb2fb18a7024bb521159d9d9ea07a2071160de8d8adab9edcd2f3bbfcf7454d",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/body-top-front.step",
+      "bytes": 278929,
+      "sha256": "bae2068cad863e14c4d4196b8339454689677d8548446faa2ca73a3927b5ef13",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/body-top-left.step",
+      "bytes": 279002,
+      "sha256": "7489f83c5c50a0b80375aba696763750d731f6a1b830020ce53bfcb8d27ef6f1",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/body-top-right.step",
+      "bytes": 280434,
+      "sha256": "8b517136dc2474ab91c51f25747117b74f0652c15acf1de0a209a13e69ae9ba3",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/lid-corner-bl.step",
+      "bytes": 130531,
+      "sha256": "f8df68fa8d7ef83715bb232986e3528dc0a326db6fceee94155485516cef3b62",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/lid-corner-br.step",
+      "bytes": 130221,
+      "sha256": "18f9094e6d37c0b85e425d276d2eea2e098e3b13486c34eba9685f93af3e33c9",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/lid-corner-fl.step",
+      "bytes": 129099,
+      "sha256": "1e0cd41de74a28881022621db89b82256769a35b5c1e8871cd81a711795dfc16",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/lid-corner-fr.step",
+      "bytes": 128074,
+      "sha256": "be6c85c1e8394875ca5b1a8e45780370b0bfda4c70d66adbbacaee7b67be1718",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/lid-middle-back.step",
+      "bytes": 117933,
+      "sha256": "70a5c9d3a6ceb922f3a2f4e400681b01098ed602bfc700cf676f8a7d861a01ef",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/lid-middle-front.step",
+      "bytes": 115720,
+      "sha256": "4596acb3eb16196ab6895123d623111625e1d3013a09c44002417bad10ae80f7",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/lid-middle-left.step",
+      "bytes": 96425,
+      "sha256": "85c1e7d20fc18d5e2687942abc69be33b3457b81824b6619dfbe59c999f5b81f",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/pa12/lid-middle-right.step",
+      "bytes": 96428,
+      "sha256": "5818bf91b2676ab64126420d348707c60768c845be1f0864c47b4108e3a1ddf7",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/parameters.json",
+      "bytes": 6087,
+      "sha256": "ccd585d359c0a748b9e254767382172ba50013523ee8dcef06e733fba80b71c2",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/parts-manifest.json",
+      "bytes": 107189,
+      "sha256": "2c15b23fb74c520319610c1eeab62743c2fa47b197f5a1ffa8fc25637df699ae",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/r11-03-baseline/scene.json",
+      "bytes": 8063466,
+      "sha256": "eb43b27cb5d1b44e35c6da83554b4e9bc5aff75b213e96222d71904b5c2e9db8",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/source-frame.json",
+      "bytes": 2315704,
+      "sha256": "e6f26e1dc631ce8dfcf80d10189fb93d38287b2b1c29ba0dfda78b6aa5ec1fb0",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/reference/washer-reference.json",
+      "bytes": 460,
+      "sha256": "08de4fded40ff1f7379d23ff4e8dbd251932a81e8a5a19dc13f9c4a71ad4af11",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/requirements.txt",
+      "bytes": 42,
+      "sha256": "08d1d27be095a36d6e4e727ed000f660971c48ef0df15990157e677e6daab6c0",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/research/build_pricing_audit.py",
+      "bytes": 21207,
+      "sha256": "31827589d63f9d070c556c72c910ff57a4a552e20aeac31dde7124bdbcb92c57",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/research/hanging-hole-audit.json",
+      "bytes": 9791,
+      "sha256": "a7311c8f77a98c407a245785d9cae1e9c27bb8c961ed0cfe1edd6c62014e6654",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/research/hanging-hole-audit.md",
+      "bytes": 8736,
+      "sha256": "eefd77c48edf4376106f4322b910e5bffc74b8dd38a2eaca8a8dee6db9106bcb",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/research/jlc-pa12-pricing-audit.json",
+      "bytes": 27401,
+      "sha256": "08c4b1269f7a9dc4e4b22c149b5b16b2f9ba232420bfaa6be0592c4cd9b94e65",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/research/jlc-pa12-pricing-audit.md",
+      "bytes": 12003,
+      "sha256": "d4911cfe04f3981b5b7d48a82b789c8364449cb30778481f824331ca3d41eb9f",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/assembly_path_check.py",
+      "bytes": 11479,
+      "sha256": "518c02fbe6d09ef042aa06182738fc1028d677b17a7594c2ba826dadc2e104dd",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/body.py",
+      "bytes": 17067,
+      "sha256": "09ae0979ab2c4d28e7d88cc7f37040f8649d5c825dd8b6cc511a1a5a4f808f66",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/build_inline.py",
+      "bytes": 7340,
+      "sha256": "fcb8903b15472b91922a3d533f5ee878e6558299934c1942410a7905dc62f0ca",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/core.py",
+      "bytes": 2977,
+      "sha256": "bc0e1f746cc520e317ebddfa02e75afca801db439eca64e19b9c3290ed42099b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/export_io.py",
+      "bytes": 6576,
+      "sha256": "a2ca833a094d957c83d8a6f2c8ff7e771bfd912a86ab8094569a435f45344223",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/exporter.py",
+      "bytes": 12804,
+      "sha256": "8ea2982c85f4dfed62ad719d7ebb1b4a184c758d8f73a9321d00449a1bcdac52",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/inline-template.html",
+      "bytes": 10895,
+      "sha256": "f79e846fd82c52113083f625baf94ed7ddf1b36a35f706e63d3afa847933bb33",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/lid.py",
+      "bytes": 23405,
+      "sha256": "e50e11dbbfb50bde55ad5e6f9ed2c1a3bd966899223e4a480d9266d72325af50",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/preview.py",
+      "bytes": 8376,
+      "sha256": "c82b7672b3faedd389df2f6713948eef0a3bcfa75d69046d434460dc7b95f128",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/reference_check.py",
+      "bytes": 14463,
+      "sha256": "80b47c596985ecb8496511cf4e9e61a7857284c3e43a802c7615c1ca2a05edc0",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/render_inline.cjs",
+      "bytes": 6773,
+      "sha256": "1ec0396479e85af9ee5479860deea87fd4c0b79f6598cc013e593b013b360fbe",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/render_preview.cjs",
+      "bytes": 11181,
+      "sha256": "faf5bdb3aef487404486fb7544068e48151083abf618c01aa60c6ccd82527991",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/review_followup.py",
+      "bytes": 7658,
+      "sha256": "e7cb0ac5b4fc7fdfd0e934480c7f9008f96658f6bd001c375b72a026110e5e95",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/review_inner_ears.py",
+      "bytes": 28610,
+      "sha256": "e844363101dd21c74fe25ef64815e7d51d7113c22c3eee7c467fffa0797d192d",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/review_lid_locators.py",
+      "bytes": 13262,
+      "sha256": "5543c5e5949ff4b96349d45d8cf949de5482f356286ac7b3ea3605a6bbf65a4b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/validation.py",
+      "bytes": 6324,
+      "sha256": "faa8fdd4150e1e6117a75af4cd6739f55e383b639ada36ab2abc72cf441a68f7",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/source/revision/viewer.html",
+      "bytes": 74629,
+      "sha256": "cfb2fef86dbd5e9a5bf7163adb326bb7f386b43b065988712a210a971359d353",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/SOURCE-RECEIPT.json",
+      "bytes": 54967,
+      "sha256": "7b7d495c291e4d946dd754a10c9a125dd5f48087d3dd736fcbc1b2f494943725",
+      "status": "source-evidence"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/README.md",
+      "bytes": 6010,
+      "sha256": "a53e00c13fb096304608adaef9a5de5544d4a2012f2f0b6115d9bdd31a0e9f2b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/package.py",
+      "bytes": 10814,
+      "sha256": "b7cdab53969229e072e9b74a5e1e4ccdbb9138b0e1b4bb5f8eb78c4b09a9bf32",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/packages-manifest.json",
+      "bytes": 15936,
+      "sha256": "4dbf40d398da6477ab336ebde3d9294f10199e64b073e6464f007d97bc7fd273",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/packages/R11-BUILD-FEEDBACK-04-aluminum.zip",
+      "bytes": 457261,
+      "sha256": "0f5116beeff103aad06642cbf245543782abe3918e5951e188253b35a2a1a2d3",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/packages/R11-BUILD-FEEDBACK-04-home-print.zip",
+      "bytes": 12402,
+      "sha256": "cd38fd352056bcb502a4068c2bbe3ede490475a534544e9433cb374bd5770e19",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "engineering/r11-build-feedback-04/packages/R11-BUILD-FEEDBACK-04-pa12.zip",
+      "bytes": 2730141,
+      "sha256": "3f76b2d65b9b9b4ff63c871d9449ea99427bac50edd09f2768b486aa09fb6d2f",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/previews/r11-build-feedback-04.html",
+      "bytes": 8261086,
+      "sha256": "0eeee0dc5c869b73cbfae6a4b25c269f4acf621bcdc42813c8df80b559c4543b",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/downloads/candidate/R11-BUILD-FEEDBACK-04-source.zip",
+      "bytes": 16928225,
+      "sha256": "4c74dd94e84ecebee8ac8d714cb5ba60f0ff479667c8c7f4ed4c75790463fcad",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/downloads/candidate/R11-BUILD-FEEDBACK-04-pa12.zip",
+      "bytes": 2730141,
+      "sha256": "3f76b2d65b9b9b4ff63c871d9449ea99427bac50edd09f2768b486aa09fb6d2f",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/downloads/candidate/R11-BUILD-FEEDBACK-04-aluminum.zip",
+      "bytes": 457261,
+      "sha256": "0f5116beeff103aad06642cbf245543782abe3918e5951e188253b35a2a1a2d3",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/downloads/candidate/R11-BUILD-FEEDBACK-04-home-print.zip",
+      "bytes": 12402,
+      "sha256": "cd38fd352056bcb502a4068c2bbe3ede490475a534544e9433cb374bd5770e19",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/images/metal-case/r11-build-feedback-04/lid-guides.png",
+      "bytes": 50802,
+      "sha256": "45c2189f853d83d56098d91c6b3cf672e1033d4d7082097afffb7a1b8766eea4",
+      "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/images/metal-case/r11-build-feedback-04/lid-side-fit.png",
+      "bytes": 53517,
+      "sha256": "5f902194dc04d1dbb2a723abd93ac6e78f2bcf8c41fac2258f83ca102bf37c5b",
+      "status": "candidate-not-approved"
     }
   ]
 }

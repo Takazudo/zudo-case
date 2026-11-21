@@ -1,10 +1,11 @@
 export const PRINTED_SECTION = "printed-5mm";
 
+// Current-only editorial tree: the linked family root holds the current P5
+// design, whose tasks (preview, files, ventilation) nest under it. Superseded
+// P4/P3 reader pages live in the separate archive section (archive/printed-5mm/).
 export const printedMembers = new Map([
-  [PRINTED_SECTION, ["printed-5mm/p5-design", "printed-5mm/history", "printed-5mm/p4-design", "printed-5mm/design"]],
+  [PRINTED_SECTION, ["printed-5mm/p5-design"]],
   ["printed-5mm/p5-design", ["printed-5mm/p5-preview", "printed-5mm/p5-print-files", "printed-5mm/ventilation"]],
-  ["printed-5mm/p4-design", ["printed-5mm/p4-preview", "printed-5mm/p4-print-files"]],
-  ["printed-5mm/design", ["printed-5mm/preview", "printed-5mm/print-files"]],
 ]);
 
 export const printedSidebar = {
@@ -13,8 +14,6 @@ export const printedSidebar = {
   initialPathMode: "node",
   scopeRoot: "configured",
 };
-
-const initiallyCollapsed = new Set(["printed-5mm/p4-design", "printed-5mm/design"]);
 
 // Published flat URLs are fixed; only paired chrome sees these linked parents.
 export function toPrintedTree(tree) {
@@ -34,7 +33,6 @@ export function toPrintedTree(tree) {
     if (ancestors.includes(slug)) throw new Error(`Printed navigation cycle at "${slug}"`);
     return [{
       ...node,
-      ...(initiallyCollapsed.has(slug) ? { collapsed: true } : {}),
       children: (printedMembers.get(slug) ?? []).flatMap((member) => build(member, [...ancestors, slug])),
     }];
   };

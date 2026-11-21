@@ -10,4 +10,5 @@ export const sidebars = {
   "two-way": section(),
   shared: section(),
   development: section(),
+  archive: section(),
 };

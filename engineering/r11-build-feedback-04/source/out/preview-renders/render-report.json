@@ -1,0 +1,464 @@
+{
+  "passed": true,
+  "renderer": "The actual viewer CPU triangle rasterizer in JSDOM + native canvas; not a browser/WebGL/layout test.",
+  "template_sha256": "cfb2fef86dbd5e9a5bf7163adb326bb7f386b43b065988712a210a971359d353",
+  "model_sha256": "20a6e0fc4cd3429a849774ccbce3b4e3561188b4580e76304ab93afda59788fd",
+  "viewport_px": [
+    1100,
+    720
+  ],
+  "views": [
+    {
+      "view": "lidguides",
+      "file": "lidguides.png",
+      "visible_parts": 8,
+      "total_parts": 8,
+      "camera": {
+        "target": [
+          0,
+          0,
+          101.9
+        ],
+        "yaw": 0.75,
+        "pitch": -0.7,
+        "span": 358.28313729775056,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 112740,
+      "content_box_px": [
+        149,
+        65,
+        950,
+        646
+      ],
+      "elapsed_ms": 336
+    },
+    {
+      "view": "lidfit",
+      "file": "lidfit.png",
+      "visible_parts": 9,
+      "total_parts": 12,
+      "camera": {
+        "target": [
+          111.35,
+          92.5,
+          85.5
+        ],
+        "yaw": -1.1,
+        "pitch": 0.3,
+        "span": 37.79672810937448,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 354685,
+      "content_box_px": [
+        151,
+        71,
+        969,
+        616
+      ],
+      "elapsed_ms": 377
+    },
+    {
+      "view": "inside",
+      "file": "inside.png",
+      "visible_parts": 17,
+      "total_parts": 17,
+      "camera": {
+        "target": [
+          0,
+          0,
+          45
+        ],
+        "yaw": 0.75,
+        "pitch": 0.8,
+        "span": 435.5738738085585,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 223209,
+      "content_box_px": [
+        221,
+        67,
+        878,
+        651
+      ],
+      "elapsed_ms": 947
+    },
+    {
+      "view": "assembly",
+      "file": "assembly.png",
+      "visible_parts": 328,
+      "total_parts": 328,
+      "camera": {
+        "target": [
+          0,
+          0,
+          61.25
+        ],
+        "yaw": 0.75,
+        "pitch": 0.63,
+        "span": 433.98116121088617,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 237348,
+      "content_box_px": [
+        219,
+        79,
+        880,
+        640
+      ],
+      "elapsed_ms": 1915
+    },
+    {
+      "view": "nylon",
+      "file": "nylon.png",
+      "visible_parts": 12,
+      "total_parts": 12,
+      "camera": {
+        "target": [
+          0,
+          0,
+          45
+        ],
+        "yaw": 0.75,
+        "pitch": 0.7,
+        "span": 407.12456969725014,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 80714,
+      "content_box_px": [
+        198,
+        67,
+        901,
+        651
+      ],
+      "elapsed_ms": 538
+    },
+    {
+      "view": "corner",
+      "file": "corner.png",
+      "visible_parts": 22,
+      "total_parts": 22,
+      "camera": {
+        "target": [
+          97,
+          -148,
+          45.5
+        ],
+        "yaw": -2.35,
+        "pitch": 0.52,
+        "span": 137.03464872991964,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 151721,
+      "content_box_px": [
+        395,
+        76,
+        705,
+        649
+      ],
+      "elapsed_ms": 349
+    },
+    {
+      "view": "top",
+      "file": "top.png",
+      "visible_parts": 8,
+      "total_parts": 10,
+      "camera": {
+        "target": [
+          59.5,
+          -164.7,
+          76
+        ],
+        "yaw": 2.5,
+        "pitch": 0.37,
+        "span": 51.959338018128335,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 203603,
+      "content_box_px": [
+        294,
+        78,
+        779,
+        624
+      ],
+      "elapsed_ms": 303
+    },
+    {
+      "view": "lap",
+      "file": "lap.png",
+      "visible_parts": 13,
+      "total_parts": 13,
+      "camera": {
+        "target": [
+          59.5,
+          -150.7,
+          15.5
+        ],
+        "yaw": -0.65,
+        "pitch": 0.36,
+        "span": 69.3582674667819,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 150519,
+      "content_box_px": [
+        251,
+        168,
+        828,
+        615
+      ],
+      "elapsed_ms": 273
+    },
+    {
+      "view": "lid",
+      "file": "lid.png",
+      "visible_parts": 57,
+      "total_parts": 57,
+      "camera": {
+        "target": [
+          0,
+          0,
+          104.25
+        ],
+        "yaw": 0.75,
+        "pitch": 0.7,
+        "span": 368.0005756835021,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 235896,
+      "content_box_px": [
+        160,
+        76,
+        939,
+        642
+      ],
+      "elapsed_ms": 440
+    },
+    {
+      "view": "lidjoint",
+      "file": "lidjoint.png",
+      "visible_parts": 9,
+      "total_parts": 9,
+      "camera": {
+        "target": [
+          35.5,
+          -155.75,
+          104.25
+        ],
+        "yaw": 2.55,
+        "pitch": 0.42,
+        "span": 76.47365379768057,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 130193,
+      "content_box_px": [
+        341,
+        113,
+        771,
+        581
+      ],
+      "elapsed_ms": 261
+    },
+    {
+      "view": "panels",
+      "file": "panels.png",
+      "visible_parts": 5,
+      "total_parts": 5,
+      "camera": {
+        "target": [
+          0,
+          0,
+          45.5
+        ],
+        "yaw": 0.75,
+        "pitch": 0.55,
+        "span": 350.1981830986428,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 297355,
+      "content_box_px": [
+        143,
+        65,
+        956,
+        654
+      ],
+      "elapsed_ms": 512
+    },
+    {
+      "view": "slots",
+      "file": "slots.png",
+      "visible_parts": 3,
+      "total_parts": 3,
+      "camera": {
+        "target": [
+          77,
+          -165.5,
+          45.5
+        ],
+        "yaw": -0.3,
+        "pitch": 0.12,
+        "span": 113.83406178898419,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 244273,
+      "content_box_px": [
+        324,
+        65,
+        775,
+        654
+      ],
+      "elapsed_ms": 255
+    },
+    {
+      "view": "rail",
+      "file": "rail.png",
+      "visible_parts": 8,
+      "total_parts": 8,
+      "camera": {
+        "target": [
+          112.5,
+          -67,
+          74
+        ],
+        "yaw": 2.35,
+        "pitch": 0.37,
+        "span": 54.56494060857965,
+        "up": "z"
+      },
+      "explode_mm": 0,
+      "non_background_pixels": 168321,
+      "content_box_px": [
+        379,
+        83,
+        787,
+        626
+      ],
+      "elapsed_ms": 294
+    },
+    {
+      "view": "top",
+      "file": "top-exploded.png",
+      "visible_parts": 8,
+      "total_parts": 10,
+      "camera": {
+        "target": [
+          62.1,
+          -167.05,
+          82
+        ],
+        "yaw": 2.5,
+        "pitch": 0.37,
+        "span": 69.56167899902151,
+        "up": "z"
+      },
+      "explode_mm": 4,
+      "non_background_pixels": 146795,
+      "content_box_px": [
+        327,
+        93,
+        757,
+        616
+      ],
+      "elapsed_ms": 264
+    },
+    {
+      "view": "lap",
+      "file": "lap-exploded.png",
+      "visible_parts": 13,
+      "total_parts": 13,
+      "camera": {
+        "target": [
+          59.5,
+          -153.7,
+          12.5
+        ],
+        "yaw": -0.65,
+        "pitch": 0.36,
+        "span": 81.38297631181528,
+        "up": "z"
+      },
+      "explode_mm": 4,
+      "non_background_pixels": 138718,
+      "content_box_px": [
+        279,
+        164,
+        834,
+        626
+      ],
+      "elapsed_ms": 278
+    },
+    {
+      "view": "lidjoint",
+      "file": "lidjoint-exploded.png",
+      "visible_parts": 9,
+      "total_parts": 9,
+      "camera": {
+        "target": [
+          35.5,
+          -161.75,
+          114.25
+        ],
+        "yaw": 2.55,
+        "pitch": 0.42,
+        "span": 103.70812234315623,
+        "up": "z"
+      },
+      "explode_mm": 4,
+      "non_background_pixels": 84347,
+      "content_box_px": [
+        426,
+        130,
+        736,
+        597
+      ],
+      "elapsed_ms": 259
+    },
+    {
+      "view": "lidfit",
+      "file": "lidfit-exploded.png",
+      "visible_parts": 9,
+      "total_parts": 12,
+      "camera": {
+        "target": [
+          111.35,
+          92.5,
+          89.5
+        ],
+        "yaw": -1.1,
+        "pitch": 0.3,
+        "span": 47.12081224324038,
+        "up": "z"
+      },
+      "explode_mm": 4,
+      "non_background_pixels": 285354,
+      "content_box_px": [
+        230,
+        70,
+        886,
+        624
+      ],
+      "elapsed_ms": 294
+    }
+  ],
+  "interaction_checks": {
+    "explode_and_assemble": true,
+    "hardware_visibility": true,
+    "lid_visibility": true,
+    "panel_transparency_state": true,
+    "selection_and_isolation": true,
+    "camera_presets": true,
+    "png_export": true
+  },
+  "errors": []
+}

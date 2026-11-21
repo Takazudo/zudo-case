@@ -1,0 +1,1409 @@
+{
+  "pass_": true,
+  "scope": "Every new body/lid solid versus all66 unchanged source-frame items. Exact nominal source CAD for60, conservative source mesh bounding boxes for6 rails. Original source-to-source pairs and physical properties are outside this check.",
+  "source_receipt": {
+    "source_count": 66,
+    "exact_cad_count": 60,
+    "conservative_rail_boxes": 6,
+    "roles": {
+      "rail": 6,
+      "fixer": 2,
+      "padder": 6,
+      "innerSpacer": 10,
+      "outerWasher": 10,
+      "mountBolt": 10,
+      "mountNut": 10,
+      "railEndBolt": 12
+    },
+    "source_provenance": {
+      "repository": "https://github.com/Takazudo/zudo-case",
+      "commit": "b7a9e3cd1fba3a12fa8a625ab4f0f43d4a06674a",
+      "source_file": "engineering/r10-fullset-01/out/scene.json",
+      "source_sha256": "9fc704c1630a8d03d92b3a1b8ecd7a90698bd8b53cecc8555872cd5bac38d95b",
+      "scope": "All66original sourceFrame items and their exact mesh coordinates; geometry unchanged"
+    },
+    "contour_provenance": [
+      {
+        "path": "engineering/r6-body/source-data/panels/panel-geometry.json",
+        "sha256": "f45a18b791d61bf01d89a35b67916d68719b4d8c165ed1f50852568fb5d58c7c"
+      },
+      {
+        "path": "engineering/r6-body/design-parameters.json",
+        "sha256": "5b1b1f7d81f4b9b3747abd7dc72e43cd3952c594bb72e70e955b5766ef13db4b"
+      },
+      {
+        "path": "engineering/r6-body/build_geometry.py",
+        "sha256": "109d128864a05808232da2f806fcbacf4f871d474ccc84bab153986b6292194d"
+      }
+    ],
+    "bundled_input_sha256": {
+      "source-frame.json": "e6f26e1dc631ce8dfcf80d10189fb93d38287b2b1c29ba0dfda78b6aa5ec1fb0",
+      "pcb-contours.json": "068ccfd1308f645399ac8007c9e03ad9a5d6c602c5187bb5184130e64f6477fc"
+    },
+    "maximum_placement_difference_mm": 2.842170943040401e-14,
+    "source_reconstruction_checks": [
+      {
+        "id": "rail-1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": null
+      },
+      {
+        "id": "rail-2",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": null
+      },
+      {
+        "id": "rail-3",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": null
+      },
+      {
+        "id": "rail-4",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": null
+      },
+      {
+        "id": "rail-5",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": null
+      },
+      {
+        "id": "rail-6",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": null
+      },
+      {
+        "id": "fixer--1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00027277314802631736
+      },
+      {
+        "id": "padder--1-row0",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00037860463226024876
+      },
+      {
+        "id": "padder--1-row1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003786046308960067
+      },
+      {
+        "id": "padder--1-row2",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0004820987257971865
+      },
+      {
+        "id": "spacer--1-1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0001751757760075634
+      },
+      {
+        "id": "outer-washer--1-1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00047810302799433657
+      },
+      {
+        "id": "mount-bolt--1-1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.000233427995283364
+      },
+      {
+        "id": "mount-nut--1-1",
+        "bounds_difference_mm": 1.4210854715202004e-14,
+        "volume_difference_from_rounded_source_mm3": 0.00035878633971719864
+      },
+      {
+        "id": "spacer--1-2",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0001751757762917805
+      },
+      {
+        "id": "outer-washer--1-2",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00047810302795880943
+      },
+      {
+        "id": "mount-bolt--1-2",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00023342799505599032
+      },
+      {
+        "id": "mount-nut--1-2",
+        "bounds_difference_mm": 1.4210854715202004e-14,
+        "volume_difference_from_rounded_source_mm3": 0.00035878634000141574
+      },
+      {
+        "id": "spacer--1-3",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00017517577623493708
+      },
+      {
+        "id": "outer-washer--1-3",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00047810302796591486
+      },
+      {
+        "id": "mount-bolt--1-3",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00023342799511283374
+      },
+      {
+        "id": "mount-nut--1-3",
+        "bounds_difference_mm": 1.4210854715202004e-14,
+        "volume_difference_from_rounded_source_mm3": 0.00035878634091091044
+      },
+      {
+        "id": "spacer--1-4",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0001751757762917805
+      },
+      {
+        "id": "outer-washer--1-4",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00047810302795880943
+      },
+      {
+        "id": "mount-bolt--1-4",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00023342799505599032
+      },
+      {
+        "id": "mount-nut--1-4",
+        "bounds_difference_mm": 1.4210854715202004e-14,
+        "volume_difference_from_rounded_source_mm3": 0.00035878634005825916
+      },
+      {
+        "id": "spacer--1-5",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00017517577617809366
+      },
+      {
+        "id": "outer-washer--1-5",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0004781030279730203
+      },
+      {
+        "id": "mount-bolt--1-5",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00023342799482861665
+      },
+      {
+        "id": "mount-nut--1-5",
+        "bounds_difference_mm": 1.4210854715202004e-14,
+        "volume_difference_from_rounded_source_mm3": 0.0003587863398877289
+      },
+      {
+        "id": "rail-end-bolt--1-1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003151267185330653
+      },
+      {
+        "id": "rail-end-bolt--1-2",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003151267192151863
+      },
+      {
+        "id": "rail-end-bolt--1-3",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003151267192151863
+      },
+      {
+        "id": "rail-end-bolt--1-4",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003151267188741258
+      },
+      {
+        "id": "rail-end-bolt--1-5",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00031512671898781264
+      },
+      {
+        "id": "rail-end-bolt--1-6",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003151267185330653
+      },
+      {
+        "id": "fixer-1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00027277314438833855
+      },
+      {
+        "id": "padder-1-row0",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00037860463226024876
+      },
+      {
+        "id": "padder-1-row1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003786046308960067
+      },
+      {
+        "id": "padder-1-row2",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0004820987257971865
+      },
+      {
+        "id": "spacer-1-1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0001751757760075634
+      },
+      {
+        "id": "outer-washer-1-1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00047810302799433657
+      },
+      {
+        "id": "mount-bolt-1-1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00023342799522652058
+      },
+      {
+        "id": "mount-nut-1-1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003587863392340296
+      },
+      {
+        "id": "spacer-1-2",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00017517577617809366
+      },
+      {
+        "id": "outer-washer-1-2",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00047810302795880943
+      },
+      {
+        "id": "mount-bolt-1-2",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0002334279949991469
+      },
+      {
+        "id": "mount-nut-1-2",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00035878634005825916
+      },
+      {
+        "id": "spacer-1-3",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00017517577612125024
+      },
+      {
+        "id": "outer-washer-1-3",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00047810302796591486
+      },
+      {
+        "id": "mount-bolt-1-3",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0002334279949991469
+      },
+      {
+        "id": "mount-nut-1-3",
+        "bounds_difference_mm": 2.842170943040401e-14,
+        "volume_difference_from_rounded_source_mm3": 0.0003587863404561631
+      },
+      {
+        "id": "spacer-1-4",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00017517577617809366
+      },
+      {
+        "id": "outer-washer-1-4",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00047810302795880943
+      },
+      {
+        "id": "mount-bolt-1-4",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0002334279949991469
+      },
+      {
+        "id": "mount-nut-1-4",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00035878634005825916
+      },
+      {
+        "id": "spacer-1-5",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00017517577606440682
+      },
+      {
+        "id": "outer-washer-1-5",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0004781030279730203
+      },
+      {
+        "id": "mount-bolt-1-5",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00023342799477177323
+      },
+      {
+        "id": "mount-nut-1-5",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003587863393477164
+      },
+      {
+        "id": "rail-end-bolt-1-1",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003151267185330653
+      },
+      {
+        "id": "rail-end-bolt-1-2",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003151267192151863
+      },
+      {
+        "id": "rail-end-bolt-1-3",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003151267192151863
+      },
+      {
+        "id": "rail-end-bolt-1-4",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003151267188741258
+      },
+      {
+        "id": "rail-end-bolt-1-5",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.00031512671898781264
+      },
+      {
+        "id": "rail-end-bolt-1-6",
+        "bounds_difference_mm": 0.0,
+        "volume_difference_from_rounded_source_mm3": 0.0003151267185330653
+      }
+    ],
+    "source_hardware_is_nominal": true
+  },
+  "new_component_count": 262,
+  "pair_count": 17292,
+  "broad_phase_pruned": true,
+  "exact_boolean_pair_count": 126,
+  "near_distance_pair_count": 146,
+  "positive_volume_tolerance_mm3": 1e-06,
+  "distance_tolerance_mm": 1e-06,
+  "exact_source_collisions": [],
+  "unresolved_conservative_rail_envelope_overlaps": [],
+  "nominal_surface_contacts": [
+    {
+      "part": "panel-right",
+      "reference": "spacer-1-1",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-right",
+      "reference": "outer-washer-1-1",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-right",
+      "reference": "spacer-1-2",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-right",
+      "reference": "outer-washer-1-2",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-right",
+      "reference": "spacer-1-3",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-right",
+      "reference": "outer-washer-1-3",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-right",
+      "reference": "spacer-1-4",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-right",
+      "reference": "outer-washer-1-4",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-right",
+      "reference": "spacer-1-5",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-right",
+      "reference": "outer-washer-1-5",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-left",
+      "reference": "spacer--1-1",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-left",
+      "reference": "outer-washer--1-1",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-left",
+      "reference": "spacer--1-2",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-left",
+      "reference": "outer-washer--1-2",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-left",
+      "reference": "spacer--1-3",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-left",
+      "reference": "outer-washer--1-3",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-left",
+      "reference": "spacer--1-4",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-left",
+      "reference": "outer-washer--1-4",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-left",
+      "reference": "spacer--1-5",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    },
+    {
+      "part": "panel-left",
+      "reference": "outer-washer--1-5",
+      "reference_method": "exact original nominal CAD",
+      "intersection_mm3": 0.0,
+      "intentional_original_mount_bearing_contact": true
+    }
+  ],
+  "unexpected_surface_contacts": [],
+  "positive_clearances_or_bounds_at_most_1mm": [
+    {
+      "part": "panel-right",
+      "reference": "mount-bolt-1-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_mm": 0.24999999999999423,
+      "clearance_method": "exact CAD distance"
+    },
+    {
+      "part": "panel-right",
+      "reference": "mount-nut-1-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 1.0,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "panel-right",
+      "reference": "mount-bolt-1-2",
+      "reference_method": "exact original nominal CAD",
+      "clearance_mm": 0.2499999999999928,
+      "clearance_method": "exact CAD distance"
+    },
+    {
+      "part": "panel-right",
+      "reference": "mount-nut-1-2",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9999999999999858,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "panel-right",
+      "reference": "mount-bolt-1-3",
+      "reference_method": "exact original nominal CAD",
+      "clearance_mm": 0.24999999999999922,
+      "clearance_method": "exact CAD distance"
+    },
+    {
+      "part": "panel-right",
+      "reference": "mount-nut-1-3",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 1.0,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "panel-right",
+      "reference": "mount-bolt-1-4",
+      "reference_method": "exact original nominal CAD",
+      "clearance_mm": 0.2499999999999928,
+      "clearance_method": "exact CAD distance"
+    },
+    {
+      "part": "panel-right",
+      "reference": "mount-nut-1-4",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9999999999999858,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "panel-right",
+      "reference": "mount-bolt-1-5",
+      "reference_method": "exact original nominal CAD",
+      "clearance_mm": 0.24999999999999423,
+      "clearance_method": "exact CAD distance"
+    },
+    {
+      "part": "panel-right",
+      "reference": "mount-nut-1-5",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 1.0,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "panel-left",
+      "reference": "mount-bolt--1-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_mm": 0.24999999999999167,
+      "clearance_method": "exact CAD distance"
+    },
+    {
+      "part": "panel-left",
+      "reference": "mount-nut--1-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9999999999999716,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "panel-left",
+      "reference": "mount-bolt--1-2",
+      "reference_method": "exact original nominal CAD",
+      "clearance_mm": 0.24999999999999545,
+      "clearance_method": "exact CAD distance"
+    },
+    {
+      "part": "panel-left",
+      "reference": "mount-nut--1-2",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9999999999999716,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "panel-left",
+      "reference": "mount-bolt--1-3",
+      "reference_method": "exact original nominal CAD",
+      "clearance_mm": 0.24999999999999958,
+      "clearance_method": "exact CAD distance"
+    },
+    {
+      "part": "panel-left",
+      "reference": "mount-nut--1-3",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 1.0,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "panel-left",
+      "reference": "mount-bolt--1-4",
+      "reference_method": "exact original nominal CAD",
+      "clearance_mm": 0.24999999999999545,
+      "clearance_method": "exact CAD distance"
+    },
+    {
+      "part": "panel-left",
+      "reference": "mount-nut--1-4",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9999999999999716,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "panel-left",
+      "reference": "mount-bolt--1-5",
+      "reference_method": "exact original nominal CAD",
+      "clearance_mm": 0.24999999999999167,
+      "clearance_method": "exact CAD distance"
+    },
+    {
+      "part": "panel-left",
+      "reference": "mount-nut--1-5",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9999999999999716,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-front-2",
+      "reference": "rail-1",
+      "reference_method": "conservative bounding box",
+      "clearance_lower_bound_mm": 0.8231797578125111,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-front-3",
+      "reference": "rail-1",
+      "reference_method": "conservative bounding box",
+      "clearance_lower_bound_mm": 0.8231797578125111,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-front-4",
+      "reference": "fixer--1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.6227719999999977,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-front-5",
+      "reference": "fixer-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.6227719999999977,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-front-6",
+      "reference": "fixer--1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.6227719999999977,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-front-6",
+      "reference": "padder--1-row0",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.6227719999999977,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-front-7",
+      "reference": "fixer-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.6227719999999977,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-front-7",
+      "reference": "padder-1-row0",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.6227719999999977,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-back-2",
+      "reference": "rail-6",
+      "reference_method": "conservative bounding box",
+      "clearance_lower_bound_mm": 0.823181757812506,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-back-3",
+      "reference": "rail-6",
+      "reference_method": "conservative bounding box",
+      "clearance_lower_bound_mm": 0.823181757812506,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-back-4",
+      "reference": "fixer-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.6227719999999977,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-back-5",
+      "reference": "fixer--1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.6227719999999977,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-back-6",
+      "reference": "fixer-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.6227719999999977,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-back-6",
+      "reference": "padder-1-row2",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.6328980000000115,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-back-7",
+      "reference": "fixer--1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.6227719999999977,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-back-7",
+      "reference": "padder--1-row2",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.6328980000000115,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-right-2",
+      "reference": "fixer-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.5000000000000142,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-right-3",
+      "reference": "fixer-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.5000000000000142,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-right-4",
+      "reference": "fixer-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.5000000000000142,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-right-5",
+      "reference": "fixer-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.5000000000000142,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-right-6",
+      "reference": "fixer-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.5000000000000142,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "nut-right-6",
+      "reference": "rail-end-bolt-1-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.386175346482986,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-right-7",
+      "reference": "fixer-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.5000000000000142,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "nut-right-7",
+      "reference": "rail-end-bolt-1-6",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.3861773464829952,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-left-2",
+      "reference": "fixer--1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.5000000000000142,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-left-3",
+      "reference": "fixer--1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.5000000000000142,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-left-4",
+      "reference": "fixer--1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.5000000000000142,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-left-5",
+      "reference": "fixer--1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.5000000000000142,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-left-6",
+      "reference": "fixer--1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.5000000000000142,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "nut-left-6",
+      "reference": "rail-end-bolt--1-6",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.3861773464829952,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "shaft-left-7",
+      "reference": "fixer--1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.5000000000000142,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "nut-left-7",
+      "reference": "rail-end-bolt--1-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.386175346482986,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "lid-corner-fl",
+      "reference": "rail-end-bolt--1-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9950225000000046,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "lid-corner-fr",
+      "reference": "rail-end-bolt-1-1",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9950225000000046,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "lid-corner-br",
+      "reference": "rail-end-bolt-1-4",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9950204999999954,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "lid-corner-br",
+      "reference": "rail-end-bolt-1-5",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9950204999999954,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "lid-corner-br",
+      "reference": "rail-end-bolt-1-6",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9950204999999954,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "lid-corner-bl",
+      "reference": "rail-end-bolt--1-4",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9950204999999954,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "lid-corner-bl",
+      "reference": "rail-end-bolt--1-5",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9950204999999954,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "lid-corner-bl",
+      "reference": "rail-end-bolt--1-6",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9950204999999954,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "lid-middle-right",
+      "reference": "rail-end-bolt-1-2",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9950204999999954,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "lid-middle-right",
+      "reference": "rail-end-bolt-1-3",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9950204999999954,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "lid-middle-left",
+      "reference": "rail-end-bolt--1-2",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9950204999999954,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    },
+    {
+      "part": "lid-middle-left",
+      "reference": "rail-end-bolt--1-3",
+      "reference_method": "exact original nominal CAD",
+      "clearance_lower_bound_mm": 0.9950204999999954,
+      "clearance_method": "distance between disjoint enclosing boxes"
+    }
+  ],
+  "corner_pad_to_original_rail_mount_clearances": [
+    {
+      "part": "body-corner--1--1",
+      "reference": "outer-washer--1-1",
+      "clearance_mm": 1.468128500000006,
+      "method": "exact nominal CAD distance"
+    },
+    {
+      "part": "body-corner--1--1",
+      "reference": "mount-nut--1-1",
+      "clearance_mm": 1.8493263464829965,
+      "method": "exact nominal CAD distance"
+    },
+    {
+      "part": "body-corner--1-1",
+      "reference": "outer-washer--1-5",
+      "clearance_mm": 1.5034640000000081,
+      "method": "exact nominal CAD distance"
+    },
+    {
+      "part": "body-corner--1-1",
+      "reference": "mount-nut--1-5",
+      "clearance_mm": 1.8846618464829987,
+      "method": "exact nominal CAD distance"
+    },
+    {
+      "part": "body-corner-1--1",
+      "reference": "outer-washer-1-1",
+      "clearance_mm": 1.468128500000006,
+      "method": "exact nominal CAD distance"
+    },
+    {
+      "part": "body-corner-1--1",
+      "reference": "mount-nut-1-1",
+      "clearance_mm": 1.8493263464829965,
+      "method": "exact nominal CAD distance"
+    },
+    {
+      "part": "body-corner-1-1",
+      "reference": "outer-washer-1-5",
+      "clearance_mm": 1.5034640000000081,
+      "method": "exact nominal CAD distance"
+    },
+    {
+      "part": "body-corner-1-1",
+      "reference": "mount-nut-1-5",
+      "clearance_mm": 1.8846618464829987,
+      "method": "exact nominal CAD distance"
+    }
+  ],
+  "minimum_corner_pad_to_original_rail_mount_clearance_mm": 1.468128500000006,
+  "perpendicular_nut_pairs": {
+    "pair_count": 16,
+    "pairs": [
+      {
+        "kind": "vertical-corner",
+        "a": "nut-front-4",
+        "b": "nut-left-5",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.3000000000000114,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.681197846483002
+      },
+      {
+        "kind": "vertical-corner",
+        "a": "nut-front-6",
+        "b": "nut-left-7",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.3000000000000114,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.681197846483002
+      },
+      {
+        "kind": "vertical-corner",
+        "a": "nut-back-5",
+        "b": "nut-left-4",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.3000000000000114,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.681197846483002
+      },
+      {
+        "kind": "vertical-corner",
+        "a": "nut-back-7",
+        "b": "nut-left-6",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.3000000000000114,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.681197846483002
+      },
+      {
+        "kind": "vertical-corner",
+        "a": "nut-front-5",
+        "b": "nut-right-4",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.3000000000000114,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.681197846483002
+      },
+      {
+        "kind": "vertical-corner",
+        "a": "nut-front-7",
+        "b": "nut-right-6",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.3000000000000114,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.681197846483002
+      },
+      {
+        "kind": "vertical-corner",
+        "a": "nut-back-4",
+        "b": "nut-right-5",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.3000000000000114,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.681197846483002
+      },
+      {
+        "kind": "vertical-corner",
+        "a": "nut-back-6",
+        "b": "nut-right-7",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.3000000000000114,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.681197846483002
+      },
+      {
+        "kind": "wall-floor",
+        "a": "nut-front-0",
+        "b": "nut-floor-2",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.2999999999999998,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.6811978464829904
+      },
+      {
+        "kind": "wall-floor",
+        "a": "nut-front-1",
+        "b": "nut-floor-3",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.2999999999999998,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.6811978464829904
+      },
+      {
+        "kind": "wall-floor",
+        "a": "nut-back-0",
+        "b": "nut-floor-1",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.2999999999999998,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.6811978464829904
+      },
+      {
+        "kind": "wall-floor",
+        "a": "nut-back-1",
+        "b": "nut-floor-0",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.2999999999999998,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.6811978464829904
+      },
+      {
+        "kind": "wall-floor",
+        "a": "nut-right-0",
+        "b": "nut-floor-7",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.2999999999999998,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.6811978464829904
+      },
+      {
+        "kind": "wall-floor",
+        "a": "nut-right-1",
+        "b": "nut-floor-6",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.2999999999999998,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.6811978464829904
+      },
+      {
+        "kind": "wall-floor",
+        "a": "nut-left-0",
+        "b": "nut-floor-4",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.2999999999999998,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.6811978464829904
+      },
+      {
+        "kind": "wall-floor",
+        "a": "nut-left-1",
+        "b": "nut-floor-5",
+        "nut_intersection_mm3": 0.0,
+        "nut_clearance_mm": 1.2999999999999998,
+        "full_rotation_envelope_intersection_mm3": 0.0,
+        "full_rotation_envelope_clearance_mm": 0.6811978464829904
+      }
+    ],
+    "all_nut_pairs_have_positive_clearance": true,
+    "all_full_rotation_envelopes_have_positive_clearance": true,
+    "minimum_nut_clearance_mm": 1.2999999999999998,
+    "minimum_full_rotation_clearance_mm": 0.6811978464829904,
+    "hypothetical_tool_checks": [
+      {
+        "pair_kind": "vertical-corner",
+        "tool_at": "nut-front-4",
+        "other_nut": "nut-left-5",
+        "hypothetical_tool_diameter_mm": 10,
+        "inward_extension_beyond_nut_mm": 1,
+        "intersection_mm3": 0.0,
+        "clearance_mm": 0.30000000000001137
+      },
+      {
+        "pair_kind": "vertical-corner",
+        "tool_at": "nut-left-5",
+        "other_nut": "nut-front-4",
+        "hypothetical_tool_diameter_mm": 10,
+        "inward_extension_beyond_nut_mm": 1,
+        "intersection_mm3": 0.0,
+        "clearance_mm": 0.30000000000001137
+      },
+      {
+        "pair_kind": "vertical-corner",
+        "tool_at": "nut-front-4",
+        "other_nut": "nut-left-5",
+        "hypothetical_tool_diameter_mm": 10,
+        "inward_extension_beyond_nut_mm": 2,
+        "intersection_mm3": 2.7404133871618237,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "vertical-corner",
+        "tool_at": "nut-left-5",
+        "other_nut": "nut-front-4",
+        "hypothetical_tool_diameter_mm": 10,
+        "inward_extension_beyond_nut_mm": 2,
+        "intersection_mm3": 0.0,
+        "clearance_mm": 0.30000000000001137
+      },
+      {
+        "pair_kind": "vertical-corner",
+        "tool_at": "nut-front-4",
+        "other_nut": "nut-left-5",
+        "hypothetical_tool_diameter_mm": 10,
+        "inward_extension_beyond_nut_mm": 5,
+        "intersection_mm3": 7.93522756492319,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "vertical-corner",
+        "tool_at": "nut-left-5",
+        "other_nut": "nut-front-4",
+        "hypothetical_tool_diameter_mm": 10,
+        "inward_extension_beyond_nut_mm": 5,
+        "intersection_mm3": 0.0,
+        "clearance_mm": 0.30000000000001137
+      },
+      {
+        "pair_kind": "vertical-corner",
+        "tool_at": "nut-front-4",
+        "other_nut": "nut-left-5",
+        "hypothetical_tool_diameter_mm": 12,
+        "inward_extension_beyond_nut_mm": 1,
+        "intersection_mm3": 0.0,
+        "clearance_mm": 0.30000000000001137
+      },
+      {
+        "pair_kind": "vertical-corner",
+        "tool_at": "nut-left-5",
+        "other_nut": "nut-front-4",
+        "hypothetical_tool_diameter_mm": 12,
+        "inward_extension_beyond_nut_mm": 1,
+        "intersection_mm3": 2.6203795306595237,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "vertical-corner",
+        "tool_at": "nut-front-4",
+        "other_nut": "nut-left-5",
+        "hypothetical_tool_diameter_mm": 12,
+        "inward_extension_beyond_nut_mm": 2,
+        "intersection_mm3": 6.394390740286351,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "vertical-corner",
+        "tool_at": "nut-left-5",
+        "other_nut": "nut-front-4",
+        "hypothetical_tool_diameter_mm": 12,
+        "inward_extension_beyond_nut_mm": 2,
+        "intersection_mm3": 4.601855122292537,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "vertical-corner",
+        "tool_at": "nut-front-4",
+        "other_nut": "nut-left-5",
+        "hypothetical_tool_diameter_mm": 12,
+        "inward_extension_beyond_nut_mm": 5,
+        "intersection_mm3": 25.071482869377206,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "vertical-corner",
+        "tool_at": "nut-left-5",
+        "other_nut": "nut-front-4",
+        "hypothetical_tool_diameter_mm": 12,
+        "inward_extension_beyond_nut_mm": 5,
+        "intersection_mm3": 5.10180104601405,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "wall-floor",
+        "tool_at": "nut-front-0",
+        "other_nut": "nut-floor-2",
+        "hypothetical_tool_diameter_mm": 10,
+        "inward_extension_beyond_nut_mm": 1,
+        "intersection_mm3": 0.0,
+        "clearance_mm": 0.2999999999999998
+      },
+      {
+        "pair_kind": "wall-floor",
+        "tool_at": "nut-floor-2",
+        "other_nut": "nut-front-0",
+        "hypothetical_tool_diameter_mm": 10,
+        "inward_extension_beyond_nut_mm": 1,
+        "intersection_mm3": 0.0,
+        "clearance_mm": 0.3000000000000007
+      },
+      {
+        "pair_kind": "wall-floor",
+        "tool_at": "nut-front-0",
+        "other_nut": "nut-floor-2",
+        "hypothetical_tool_diameter_mm": 10,
+        "inward_extension_beyond_nut_mm": 2,
+        "intersection_mm3": 0.0,
+        "clearance_mm": 0.2999999999999998
+      },
+      {
+        "pair_kind": "wall-floor",
+        "tool_at": "nut-floor-2",
+        "other_nut": "nut-front-0",
+        "hypothetical_tool_diameter_mm": 10,
+        "inward_extension_beyond_nut_mm": 2,
+        "intersection_mm3": 2.7404133871610323,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "wall-floor",
+        "tool_at": "nut-front-0",
+        "other_nut": "nut-floor-2",
+        "hypothetical_tool_diameter_mm": 10,
+        "inward_extension_beyond_nut_mm": 5,
+        "intersection_mm3": 0.0,
+        "clearance_mm": 0.2999999999999998
+      },
+      {
+        "pair_kind": "wall-floor",
+        "tool_at": "nut-floor-2",
+        "other_nut": "nut-front-0",
+        "hypothetical_tool_diameter_mm": 10,
+        "inward_extension_beyond_nut_mm": 5,
+        "intersection_mm3": 7.935223487026251,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "wall-floor",
+        "tool_at": "nut-front-0",
+        "other_nut": "nut-floor-2",
+        "hypothetical_tool_diameter_mm": 12,
+        "inward_extension_beyond_nut_mm": 1,
+        "intersection_mm3": 2.6203795306598043,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "wall-floor",
+        "tool_at": "nut-floor-2",
+        "other_nut": "nut-front-0",
+        "hypothetical_tool_diameter_mm": 12,
+        "inward_extension_beyond_nut_mm": 1,
+        "intersection_mm3": 0.0,
+        "clearance_mm": 0.3000000000000007
+      },
+      {
+        "pair_kind": "wall-floor",
+        "tool_at": "nut-front-0",
+        "other_nut": "nut-floor-2",
+        "hypothetical_tool_diameter_mm": 12,
+        "inward_extension_beyond_nut_mm": 2,
+        "intersection_mm3": 4.601855227183096,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "wall-floor",
+        "tool_at": "nut-floor-2",
+        "other_nut": "nut-front-0",
+        "hypothetical_tool_diameter_mm": 12,
+        "inward_extension_beyond_nut_mm": 2,
+        "intersection_mm3": 6.394390740285713,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "wall-floor",
+        "tool_at": "nut-front-0",
+        "other_nut": "nut-floor-2",
+        "hypothetical_tool_diameter_mm": 12,
+        "inward_extension_beyond_nut_mm": 5,
+        "intersection_mm3": 5.101787558398565,
+        "clearance_mm": 0.0
+      },
+      {
+        "pair_kind": "wall-floor",
+        "tool_at": "nut-floor-2",
+        "other_nut": "nut-front-0",
+        "hypothetical_tool_diameter_mm": 12,
+        "inward_extension_beyond_nut_mm": 5,
+        "intersection_mm3": 25.07147472248792,
+        "clearance_mm": 0.0
+      }
+    ],
+    "tool_access_note": "Nut rotation is checked separately from tool access. These hypothetical D10/D12 coaxial tool noses are not actual tool models. Generic sockets are not cleared. Hold nuts with a suitable slim wrench or pliers while tightening the exterior screw; wall nuts before floor nuts, rail unit last. Later inner-nut service may require removal of the rail unit."
+  },
+  "expected_perpendicular_nut_pairs": 16,
+  "limitations": [
+    "Source hardware dimensions remain the original nominal/display envelopes, with their original uncertainty.",
+    "Rail box separation proves separation from that mesh; box overlap would require a separate mesh-level review.",
+    "No actual tool, printed-part tolerances, nylon strength, tightening torque, or assembled prototype is qualified."
+  ]
+}

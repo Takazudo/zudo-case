@@ -3,7 +3,7 @@ import { createReadStream, createWriteStream } from "node:fs";
 import { cp, lstat, mkdir, readdir, readFile, rename, rm, stat, writeFile } from "node:fs/promises";
 import { extname, join, relative, resolve, sep } from "node:path";
 import { pipeline } from "node:stream/promises";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const root = resolve(process.env.ZUDO_CASE_ROOT ?? fileURLToPath(new URL("..", import.meta.url)));
 const dist = join(root, "dist");
@@ -95,6 +95,31 @@ async function cleanStale() {
   }
 }
 
+// The preview-host landing page lists the current preview of each project from the
+// same per-project selection as the docs (project/current-selection.json). Superseded
+// previews keep their URLs but are reached only through the documentation archive.
+const selectionPath = fileURLToPath(new URL("../project/current-selection.json", import.meta.url));
+const docsOrigin = "https://zudo-case.zudolab.dev";
+const escapeHtml = (value) => String(value).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+
+export async function loadSelection(path = selectionPath) {
+  return JSON.parse(await readFile(path, "utf8"));
+}
+
+export function renderPreviewIndex(selection) {
+  const seen = new Set();
+  const items = [];
+  for (const entry of selection.selections) {
+    if (!entry.preview || seen.has(entry.preview.path)) continue;
+    if (!/^\/previews\/[\w./-]+\.html$/.test(entry.preview.path)) throw new Error(`Invalid preview path ${entry.preview.path}`);
+    seen.add(entry.preview.path);
+    const models = selection.selections.filter((other) => other.preview?.path === entry.preview.path).map((other) => other.label);
+    items.push(`<li><a href="${escapeHtml(entry.preview.path)}">${escapeHtml(entry.preview.label)}</a>（${escapeHtml(models.join("・"))}）</li>`);
+  }
+  const archive = `${docsOrigin}/docs/${selection.lifecycle.archive_entry.replace(/(?:\/index)?\.mdx$/, "")}/`;
+  return `<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>ZUDO CASE previews</title></head><body><h1>ZUDO CASE previews</h1><p><a href="${docsOrigin}/docs/overview/start/">文書の入口（系列を選ぶ）</a></p><h2>現行のプレビュー</h2><ul>${items.join("")}</ul><p>旧版のプレビューは元のURLのまま残し、<a href="${escapeHtml(archive)}">文書のアーカイブ</a>から案内します。</p><p>表示用・参照用の資料です。製作承認データではありません。</p></body></html>\n`;
+}
+
 function failAt(step) {
   if (process.env.PREPARE_FAIL_AT === step) throw new Error(`Injected failure at ${step}`);
 }
@@ -104,16 +129,15 @@ async function stage(previewStage, manifestStage, generationStage, id) {
   for (const directory of ["previews", "downloads"]) {
     await cp(join(dist, directory), join(previewStage, directory), { recursive: true });
   }
-  await writeFile(
-    join(previewStage, "index.html"),
-    '<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>ZUDO CASE previews</title></head><body><h1>ZUDO CASE previews</h1><p><a href="https://zudo-case.zudolab.dev/docs/overview/start/">文書の入口（系列を選ぶ）</a></p><ul><li><a href="/previews/r10-fullset-01.html">金属ケース: R10 7U40一式（現行候補）</a></li><li><a href="/previews/r8-simple-lid.html">金属ケース: R8載せ蓋プレビュー（3U60・7U60の基準、7U40は履歴）</a></li><li><a href="/previews/r6-body.html">金属ケース: R6本体プレビュー</a></li><li><a href="/previews/printed-5mm-p5-tab-joints.html">家庭印刷ケース: P5（現行候補）</a></li><li><a href="/previews/two-way/tw-01.html">2WAY: TW-01 実験設計</a></li></ul><p>表示用・参照用の資料です。製作承認データではありません。</p></body></html>\n',
-  );
+  await writeFile(join(previewStage, "index.html"), renderPreviewIndex(await loadSelection()));
   await writeFile(join(previewStage, "robots.txt"), "User-agent: *\nDisallow: /\n");
   const manifest = {};
   for await (const file of files(previewStage)) {
     const size = (await stat(file)).size;
     if (size <= limit) continue;
     const urlPath = routeFor(previewStage, file);
+    // The generated landing page is never a routed large asset (it stays far below the Workers limit).
+    if (urlPath === "/index.html" && size <= 25 * 1024 * 1024) continue;
     // validateInputs already checked this, but retain the invariant at the write site.
     if (!routedLargeAssets.has(urlPath)) throw new Error(`Oversized asset needs a Worker route: ${urlPath}`);
     const hash = createHash("sha256");
@@ -219,4 +243,4 @@ async function main() {
   console.log(`Prepared ${Object.keys(manifest).length} oversized assets for Workers (generation ${id}).`);
 }
 
-await main();
+if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) await main();

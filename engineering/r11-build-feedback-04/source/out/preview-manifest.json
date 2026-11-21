@@ -1,0 +1,22 @@
+{
+  "scene_parts": {
+    "lidguides": 8,
+    "lidfit": 12,
+    "inside": 17,
+    "assembly": 328,
+    "nylon": 12,
+    "panels": 5,
+    "lid": 57,
+    "corner": 22,
+    "top": 10,
+    "lap": 13,
+    "lidjoint": 9,
+    "slots": 3,
+    "rail": 8
+  },
+  "mesh_count": 372,
+  "triangles": 203283,
+  "scene_json_bytes": 8186466,
+  "source_frame_meshes_unchanged": true,
+  "prototype": "CAD-derived mesh viewer; cropped scenes are inspection sections, not additional physical parts"
+}

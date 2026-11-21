@@ -2573,6 +2573,56 @@
       "plate_under_clearance_to_assumed_knob_mm": 4
     }
   },
+  "current_metal_7u40_candidate": {
+    "revision": "R11-BUILD-FEEDBACK-04",
+    "model": "7u40",
+    "base_revision": "R10-FULLSET-01",
+    "status": "CAD_REVIEW_CANDIDATE_NOT_PHYSICALLY_VERIFIED",
+    "production_approved": false,
+    "source": "engineering/r11-build-feedback-04/",
+    "received_archive": {
+      "sha256": "4c74dd94e84ecebee8ac8d714cb5ba60f0ff479667c8c7f4ed4c75790463fcad",
+      "bytes": 16928225
+    },
+    "manifest_path": "engineering/r11-build-feedback-04/source/out/parts-manifest.json",
+    "manifest_sha256": "561a7b1f42043af87e2a5145bc7b79331310ceabe3c65fdae6408bd6ae3dada6",
+    "preview": "/previews/r11-build-feedback-04.html",
+    "packages": {
+      "source": "/downloads/candidate/R11-BUILD-FEEDBACK-04-source.zip",
+      "pa12": "/downloads/candidate/R11-BUILD-FEEDBACK-04-pa12.zip",
+      "aluminum": "/downloads/candidate/R11-BUILD-FEEDBACK-04-aluminum.zip",
+      "home-print": "/downloads/candidate/R11-BUILD-FEEDBACK-04-home-print.zip"
+    },
+    "quantities": {
+      "aluminum": 6,
+      "pa12": 20,
+      "pa12_body": 12,
+      "pa12_lid": 8,
+      "washer_models": 1,
+      "washer_instances": 64,
+      "l_brackets": 16
+    },
+    "sheet_cutouts": {
+      "body_slots": 40,
+      "rail_round_holes": 10,
+      "lid_round_holes": 8,
+      "total": 58
+    },
+    "body_slot_mm": [
+      15.5,
+      5.5
+    ],
+    "pa12_volume_cm3": {
+      "body": 87.7351,
+      "lid": 120.2104,
+      "total": 207.9455
+    },
+    "prices": {
+      "current_total_jpy": null,
+      "status": "unquoted"
+    },
+    "current_doc": "metal-case/design/r11-build-feedback-04.mdx"
+  },
   "current_printed_5mm_candidate": {
     "model": "7u40",
     "revision": "P5-PRINTED-5MM-TAB-JOINTS-J3",

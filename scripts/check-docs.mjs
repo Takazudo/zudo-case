@@ -20,7 +20,7 @@ for(const p of all){
  const match=text.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);
  if(!match){errors.push(`${rel}: frontmatterなし`);continue;}
  const fm={};
- for(const ln of match[1].split('\n')){const m=ln.match(/^(title|description|sidebar_position|unlisted):\s*(.+)$/);if(!m)continue;try{fm[m[1]]=JSON.parse(m[2]);}catch{fm[m[1]]=m[2];}}
+ for(const ln of match[1].split('\n')){const m=ln.match(/^(title|description|sidebar_position|unlisted|search_exclude):\s*(.+)$/);if(!m)continue;try{fm[m[1]]=JSON.parse(m[2]);}catch{fm[m[1]]=m[2];}}
  assert(typeof fm.title==='string'&&fm.title.length>0,`${rel}: title必須`);
  assert(typeof fm.description==='string'&&fm.description.length>0,`${rel}: description必須`);
  assert(typeof fm.sidebar_position==='number',`${rel}: sidebar_positionは数値`);

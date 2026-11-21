@@ -1,0 +1,12 @@
+{
+  "source_filename": "washers-spacer-1mm.3mf",
+  "sha256": "866bd1a172a1e8aef51e8a73779ff58408fa2a5089c0fd0e927f5815afee8509",
+  "source_bytes": 200946,
+  "verification": "Reference transformed3MF geometry inspected:136identical annulus instances. Raw modelheight5mm, buildZscale0.2\u2192finished1mm. OD15,ID5. No slicer profile transferred.",
+  "geometry_mm": {
+    "outer_diameter": 15,
+    "inner_diameter": 5,
+    "thickness": 1
+  },
+  "instances": 136
+}

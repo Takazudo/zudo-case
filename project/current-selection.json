@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "snapshot": "2026-11-22",
+  "note": "文書のライフサイクルと現行版の選択。系列・機種・用途ごとに現行版を指定する。数値・形状・数量は各系列の台帳（registry）が持ち、この表は複製しない。現行の指定は製造承認ではない（production_approved はすべて false）。最大の版番号や新しい日付で自動選択しない。",
+  "lifecycle": {
+    "current_owners": ["overview", "metal-case", "printed-5mm", "tenbox-v2", "two-way", "shared", "development"],
+    "archive_owner": "archive",
+    "archive_entry": "archive/index.mdx",
+    "search_policy": "current pages and archive landing pages (archive/index.mdx, archive/<project>/index.mdx) are searchable; other archive pages use zudo-doc search_exclude: true",
+    "routes": "project/doc-routes.json"
+  },
+  "selections": [
+    {
+      "project": "metal-case",
+      "model": "7u40",
+      "purpose": "design-candidate",
+      "revision": "R11-BUILD-FEEDBACK-04",
+      "label": "金属ケース 7U40",
+      "registry": { "file": "project/release-state.json", "key": "current_metal_7u40_candidate" },
+      "current_doc": "metal-case/design/r11-build-feedback-04.mdx",
+      "preview": { "path": "/previews/r11-build-feedback-04.html", "label": "R11-BUILD-FEEDBACK-04 一式（現行の設計候補）" },
+      "archive_doc": "archive/metal-case/index.mdx",
+      "legacy_ledger_note": "release-state/current-spec current_fullset_candidate, candidate_revision, current_body_geometry and current_lid_manufacturing keep their historical R10/R9 contracts and are not the current selection.",
+      "superseded": ["R10-FULLSET-01", "R9-LID-M5-01", "R9-FITFIX-01", "R9-PROTOTYPE-01", "R8/R7/R6 7U40 material"],
+      "production_approved": false
+    },
+    {
+      "project": "metal-case",
+      "model": "3u60",
+      "purpose": "reference-baseline",
+      "revision": "R6-SOURCE-FAMILY-01 + R8-SIMPLE-LID-PREVIEW",
+      "label": "金属ケース 3U60",
+      "registry": { "file": "project/current-spec.json", "key": "models.3u60" },
+      "current_doc": "metal-case/models/3u60.mdx",
+      "preview": { "path": "/previews/r8-simple-lid.html", "label": "R6本体＋R8載せ蓋（3U60・7U60の基準）" },
+      "limitations": "R6 has nominal round holes and no final guard fit; R8 is a lid concept preview without manufacturing exports.",
+      "production_approved": false
+    },
+    {
+      "project": "metal-case",
+      "model": "7u60",
+      "purpose": "reference-baseline",
+      "revision": "R6-SOURCE-FAMILY-01 + R8-SIMPLE-LID-PREVIEW",
+      "label": "金属ケース 7U60",
+      "registry": { "file": "project/current-spec.json", "key": "models.7u60" },
+      "current_doc": "metal-case/models/7u60.mdx",
+      "preview": { "path": "/previews/r8-simple-lid.html", "label": "R6本体＋R8載せ蓋（3U60・7U60の基準）" },
+      "limitations": "R6 has nominal round holes and no final guard fit; R8 is a lid concept preview without manufacturing exports.",
+      "production_approved": false
+    },
+    {
+      "project": "printed-5mm",
+      "model": "7u40",
+      "purpose": "home-print-candidate",
+      "revision": "P5-PRINTED-5MM-TAB-JOINTS-J3",
+      "label": "7U40家庭印刷 5mm",
+      "registry": { "file": "project/release-state.json", "key": "current_printed_5mm_candidate" },
+      "current_doc": "printed-5mm/p5-design.mdx",
+      "preview": { "path": "/previews/printed-5mm-p5-tab-joints.html", "label": "P5 J3差し込み接合（現行候補）" },
+      "archive_doc": "archive/printed-5mm/index.mdx",
+      "superseded": ["P4-PRINTED-5MM-UNIFORM-VENTS", "P3-PRINTED-5MM-7U-RAILS"],
+      "production_approved": false
+    },
+    {
+      "project": "tenbox-v2",
+      "model": "2x3u60hp",
+      "purpose": "home-print-candidate",
+      "revision": "R5",
+      "label": "10BOX-v2",
+      "registry": { "file": "project/tenbox-v2/manifest.json", "key": "current_revision" },
+      "current_doc": "tenbox-v2/index.mdx",
+      "preview": { "path": "/previews/tenbox-v2-r5.html", "label": "10BOX-v2 R5（現行）" },
+      "active_dependencies": ["fixed R4 STEP/model inputs consumed by R5 (engineering/tenbox-v2/)"],
+      "production_approved": false
+    },
+    {
+      "project": "two-way",
+      "model": "A/B/C",
+      "purpose": "experimental-workbench",
+      "revision": "TW-01",
+      "label": "2WAY",
+      "registry": { "file": "project/two-way/study-spec.json", "key": "revision" },
+      "current_doc": "two-way/index.mdx",
+      "preview": { "path": "/previews/two-way/tw-01.html", "label": "2WAY TW-01 ワークベンチ（A/B/C）" },
+      "immutable_reference": "F5 (engineering/two-way/f5-reference/), an input of TW-01, not a competing current version",
+      "production_approved": false
+    },
+    {
+      "project": "shared",
+      "model": "home-print spacer",
+      "purpose": "shared-part",
+      "revision": "HOME-PRINT-SPACER-01",
+      "label": "共通部品 8mmスペーサー",
+      "registry": { "file": "engineering/home-print-spacer-01/manifest.json", "key": "." },
+      "current_doc": "shared/home-print-spacer.mdx",
+      "limitations": "10 mm OD / 5.5 mm hole are provisional R6-derived values.",
+      "production_approved": false
+    },
+    {
+      "project": "shared",
+      "model": "rail/PCB sources",
+      "purpose": "source-reference",
+      "revision": "pinned source commits",
+      "label": "共通部品 元レール・PCB",
+      "registry": { "file": "project/current-spec.json", "key": "source_commits" },
+      "current_doc": "shared/rail-pcb-sources.mdx",
+      "production_approved": false
+    }
+  ]
+}

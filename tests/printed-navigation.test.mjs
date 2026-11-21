@@ -63,15 +63,23 @@ test('resolved sidebar preserves editorial children, restores its linked root an
   assert.ok(flatten(navigation.roots).every(node => node.slug.startsWith(PRINTED_SECTION)));
 });
 
-test('P4 and P3 start closed, while current-page ancestors open naturally', () => {
+test('printed navigation is current-only: P5 tasks, no P4/P3 or history rows', () => {
   const { nodes } = resolve(PRINTED_SECTION, printed);
-  const bySlug = new Map(flatten(nodes).map(node => [node.slug, node]));
-  for (const slug of ['printed-5mm/p4-design', 'printed-5mm/design']) {
-    assert.equal(bySlug.get(slug).collapsed, true);
-    assert.equal(sidebarBaselineOpen(bySlug.get(slug), undefined, 'printed-5mm/p5-preview'), false);
-    assert.equal(sidebarBaselineOpen(bySlug.get(slug), undefined, bySlug.get(slug).children[0].slug), true);
-  }
-  assert.equal(sidebarBaselineOpen(bySlug.get('printed-5mm/p5-design'), undefined, PRINTED_SECTION), true);
+  const slugs = flatten(nodes).map(node => node.slug);
+  assert.deepEqual(slugs, ['printed-5mm', 'printed-5mm/p5-design', 'printed-5mm/p5-preview', 'printed-5mm/p5-print-files', 'printed-5mm/ventilation']);
+  for (const node of flatten(nodes)) assert.notEqual(node.collapsed, true, node.slug);
+  assert.equal(sidebarBaselineOpen(flatten(nodes).find(node => node.slug === 'printed-5mm/p5-design'), undefined, PRINTED_SECTION), true);
+  // The archive is its own section; its printed pages never enter the current tree.
+  const archive = native.find(node => node.slug === 'archive');
+  assert.ok(flatten([archive]).some(node => node.slug === 'archive/printed-5mm/p4'));
+  assert.ok(!slugs.some(slug => slug.startsWith('archive/')));
+});
+
+test('native prev/next order of the current printed section never walks into archived pages', () => {
+  const section = native.find(node => node.slug === PRINTED_SECTION);
+  const order = flatten([section]).filter(node => node.hasPage).map(node => node.slug);
+  assert.ok(order.every(slug => slug.startsWith('printed-5mm')), order.join(','));
+  assert.ok(!order.some(slug => /p4|p3|history|\/design$|\/preview$|\/print-files$/.test(slug.replace(/p5-[a-z-]+$/, ''))), order.join(','));
 });
 
 test('native section sidebars retain linked roots and all descendants, bounded at their own section', () => {
