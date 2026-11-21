@@ -45,6 +45,8 @@ jobs:
       - run: pnpm check:fitfix
       - run: pnpm check:fullset
       - run: pnpm test:fullset
+      - run: pnpm check:r11
+      - run: pnpm test:r11
       - run: pnpm check:lid-m5
       - run: pnpm check:fit-test-order
       - run: node --test tests/order-map.test.mjs
@@ -181,7 +183,7 @@ jobs:
           site_pid=$!
           trap 'kill "$site_pid"' EXIT
           for attempt in $(seq 1 90); do
-            if curl --fail --silent http://localhost:4391/docs/printed-5mm/p4-preview/ -o /dev/null; then break; fi
+            if curl --fail --silent http://localhost:4391/docs/archive/printed-5mm/p4/preview/ -o /dev/null; then break; fi
             sleep 2
           done
           uv run --locked --project engineering/printed-5mm/p4-uniform-vents python scripts/verify-printed-p4-site.py

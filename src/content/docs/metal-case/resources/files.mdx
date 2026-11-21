@@ -1,55 +1,52 @@
 ---
 title: "版別ファイルとダウンロード"
-description: "採用方針、参照CAD、不採用アーカイブを区別する。"
+description: "7U40 R11と、3U60・7U60のR6/R8参照データの現行ファイル一覧。"
 sidebar_position: 30
 ---
 
-金属ケースのファイル一覧です。家庭印刷ケースは[P5の印刷ファイル](../../printed-5mm/p5-print-files.mdx)、2WAYは[TW-01 ダウンロード](../../two-way/resources.mdx)を参照。各系列のデータは独立しています。
+金属ケースの現行ファイル一覧です。家庭印刷ケースは[P5の印刷ファイル](../../printed-5mm/p5-print-files.mdx)、2WAYは[TW-01 ダウンロード](../../two-way/resources.mdx)を参照してください。各系列のデータは独立しています。どのファイルも製造承認前です。
 
 ## 現在使う起点
 
 | 機種 | データ | 保存場所／リンク | 用途 |
 |---|---|---|---|
-| 7U40 | **R10-FULLSET-01** 一式（アルミ6枚・PA12 20個・家庭ASA 72個） | [R10一式のZIPと数量](../design/r10-fullset-01.mdx)、<PreviewLink path="/previews/r10-fullset-01.html">プレビュー</PreviewLink>、`engineering/r10-fullset-01/` | 業者確認と注文判断の対象。製造承認ではない |
-| 3U60・7U60 | R6本体CADと元形状 | `engineering/r6-body/` | 本体・レール・ガードの基準 |
+| 7U40 | **R11-BUILD-FEEDBACK-04** 一式 | [設計とダウンロード](../design/r11-build-feedback-04.mdx#ダウンロード)、<PreviewLink path="/previews/r11-build-feedback-04.html">プレビュー</PreviewLink>、`engineering/r11-build-feedback-04/` | 設計レビュー、業者確認と注文判断の対象 |
+| 3U60・7U60 | R6本体CADと元形状 | `engineering/r6-body/`、<PreviewLink path="/previews/r6-body.html">R6プレビュー</PreviewLink> | 本体・レール・ガードの基準 |
 | 3U60・7U60 | R8単一HTML | <PreviewLink path="/previews/r8-simple-lid.html">プレビュー</PreviewLink> | 載せ蓋の採用意図の確認 |
 | 3U60・7U60 | R8編集ソース | `engineering/r8-preview/` | 載せ蓋の再CAD化の参考 |
-| 全機種 | 仕様台帳 | `project/current-spec.json` | 共通値、機種寸法、データ状態 |
+| 全機種 | 現行の選択と仕様台帳 | `project/current-selection.json`、`project/current-spec.json`、`project/release-state.json` | 現行版、共通値、機種寸法、データ状態 |
 | 全機種 | 承認ファイル | `engineering/release/` | **現状は空** |
 
-R10一式に旧R9、別肉厚、N1/C2等の試験片を混ぜない。R6/R8のデータは7U40ではR9/R10の出発点・履歴として扱う。
+R6・R8のプレビューは7U40の表示から始まりますが、その7U40は置き換わった形状です。7U40にはR11のファイルだけを使います。
 
-## 旧7U40候補（R9系）
+### 7U40 R11のZIP
 
-旧7U40製作候補は[R9-FITFIX-01](../design/history/r9-fitfix-01.mdx)。同ページの材質別ZIPと `engineering/r9-fitfix-01/out/BOM.csv` を参照。旧R9-PROTOTYPE-01のファイル・台帳も履歴として保存する。フタの組立ネジをM5化した改訂候補は[R9-LID-M5-01](../design/history/r9-lid-m5-01.mdx)で、`engineering/r9-lid-m5-01/out/` にフタ枠・天板・C2-M5／N1試験片と旧→新対応を置く。
-
-以下のR6データは3U60・7U60の基準、7U40では履歴です。
+| 用途 | ZIP |
+|---|---|
+| 元データ一式（受け取ったソースと出力をそのまま） | <PreviewLink path="/downloads/candidate/R11-BUILD-FEEDBACK-04-source.zip">source</PreviewLink> |
+| PA12 20個 | <PreviewLink path="/downloads/candidate/R11-BUILD-FEEDBACK-04-pa12.zip">pa12</PreviewLink> |
+| アルミ板6枚 | <PreviewLink path="/downloads/candidate/R11-BUILD-FEEDBACK-04-aluminum.zip">aluminum</PreviewLink> |
+| 家庭印刷の丸座金（1モデル、使用数64） | <PreviewLink path="/downloads/candidate/R11-BUILD-FEEDBACK-04-home-print.zip">home-print</PreviewLink> |
 
 ## R6・本体ガード
+
+3U60・7U60のR6ガードです。
 
 | 機種 | 1.2mm | 1.0mm | 数量 |
 |---|---|---|---|
 | 3U60 | <PreviewLink path="/downloads/reference/3u60-r6-guards-t1p2-NOT-RELEASED.zip">ZIP</PreviewLink> | <PreviewLink path="/downloads/reference/3u60-r6-guards-t1p0-NOT-RELEASED.zip">ZIP</PreviewLink> | 2/4/2/4 |
-| 7U40 | <PreviewLink path="/downloads/reference/7u40-r6-guards-t1p2-NOT-RELEASED.zip">ZIP</PreviewLink> | <PreviewLink path="/downloads/reference/7u40-r6-guards-t1p0-NOT-RELEASED.zip">ZIP</PreviewLink> | 2/2/4/2/2/4 |
 | 7U60 | <PreviewLink path="/downloads/reference/7u60-r6-guards-t1p2-NOT-RELEASED.zip">ZIP</PreviewLink> | <PreviewLink path="/downloads/reference/7u60-r6-guards-t1p0-NOT-RELEASED.zip">ZIP</PreviewLink> | 2/2/4/2/2/4 |
 
-元STLのバイトは変更していない。ZIPに用途警告を加えている。`NOT-RELEASED`は壊れたファイルという意味でなく、製作承認前であることを示す。
+元STLのバイトは変更していません。ZIPに用途警告を加えています。`NOT-RELEASED`は壊れたファイルという意味でなく、製作承認前であることを示します。
 
 ## R6・アルミ板の相談用データ
 
-<PreviewLink path="/downloads/reference/3u60-r6-aluminum-NOT-RELEASED.zip">3U60</PreviewLink> ／ <PreviewLink path="/downloads/reference/7u40-r6-aluminum-NOT-RELEASED.zip">7U40</PreviewLink> ／ <PreviewLink path="/downloads/reference/7u60-r6-aluminum-NOT-RELEASED.zip">7U60</PreviewLink>
+<PreviewLink path="/downloads/reference/3u60-r6-aluminum-NOT-RELEASED.zip">3U60</PreviewLink> ／ <PreviewLink path="/downloads/reference/7u60-r6-aluminum-NOT-RELEASED.zip">7U60</PreviewLink>
 
-底１枚、前後２枚、左右２枚分。**丸穴のままで長穴未反映**。そのまま製造開始を指示しない。R8蓋は入っていない。
+底１枚、前後２枚、左右２枚分。**丸穴のままで長穴未反映**です。そのまま製造開始を指示しません。R8蓋は入っていません。
 
 ## 不採用案のアーカイブ
 
-| データ | リンク | 注意 |
-|---|---|---|
-| R7・M3固定蓋の全ソース | <PreviewLink path="/downloads/archive/r7-m3-lid-source.zip">旧仕様ZIP</PreviewLink> | 本体前後のM3追加穴とロック部は不採用 |
-| 回転/スライドロック比較 | <PreviewLink path="/downloads/archive/rotation-slide-study.zip">比較ソースZIP</PreviewLink> | ラフな検討モデル。最終案に混ぜない |
+不採用の蓋の方式や置き換わった旧版のプレビュー・ダウンロードは、元のURLのまま[旧版のファイルとプレビュー](../../archive/metal-case/resources/files.mdx)に一覧があります。
 
-元ZIPは変更せず保持する。その中の「現行」「製作用」等は作成当時の意味であり、このサイトの採用仕様を示さない。
-
-初期R1〜R5の全生成物はこの整理セットへ重複収録していない。主要な変更理由は[履歴](../history/revisions.mdx)に保存している。R6以降の判断・修正に必要な元レールとPCBは収録済み。
-
-`project/artifact-manifest.json`に、同梱ファイルと出典のSHA-256を記録する。資料整理で機械部品を更新したと誤認しないよう、元版番号は維持した。
+`project/artifact-manifest.json`に、同梱ファイルと出典のSHA-256を記録しています。資料整理で機械部品を更新したと誤認しないよう、元版番号は維持しています。

@@ -6,7 +6,7 @@ import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { checkNavigationOrder, checkRouteMap, siblingGroup } from '../scripts/lib/doc-structure-checks.mjs';
 import { ARCHIVE_OWNER, GENERATED_MARK, compatibilityRoutes, expectsSearch, frontmatter, isCompatibility, lifecycleOf, renderRoutePages, routeFor } from '../scripts/sync-doc-routes.mjs';
-import { renderReferencePages } from '../scripts/sync-reference-tables.mjs';
+import { renderReferencePages, loadR11Inputs, ARCHIVE_7U40 } from '../scripts/sync-reference-tables.mjs';
 import { sidebars } from '../src/sidebars.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -216,8 +216,13 @@ test('every project has one current entry and the archive has project indexes on
 test('generated documents are written to canonical metal-case pages', async () => {
   const spec = JSON.parse(await readFile(path.join(root, 'project/current-spec.json'), 'utf8'));
   const canonical = new Set(map.entries.map(e => `src/content/docs/${e.canonical}`));
-  const pages = renderReferencePages(spec);
-  assert.deepEqual(pages.map(p => p.rel).sort(), ['bom', 'models/3u60', 'models/7u40', 'models/7u60', 'models/comparison'].map(x => `src/content/docs/metal-case/${x === 'bom' ? 'manufacturing/bom' : x}.mdx`).sort());
+  const pages = renderReferencePages(spec, await loadR11Inputs(root));
+  assert.deepEqual(pages.map(p => p.rel).sort(), [...['bom', 'models/3u60', 'models/7u40', 'models/7u60', 'models/comparison'].map(x => `src/content/docs/metal-case/${x === 'bom' ? 'manufacturing/bom' : x}.mdx`), ARCHIVE_7U40].sort());
+  // The current 7U40 table comes from the active R11 selection; R6/R9 values live only in the archive page.
+  const current7u40 = pages.find(p => p.rel.endsWith('metal-case/models/7u40.mdx')).text;
+  assert.match(current7u40, /R11-BUILD-FEEDBACK-04/);
+  assert.doesNotMatch(current7u40, /R9-FITFIX-01の製作候補|R6基準のアルミ本体/);
+  assert.match(pages.find(p => p.rel === ARCHIVE_7U40).text, /search_exclude: true/);
   for (const p of pages) {
     assert.ok(canonical.has(p.rel), p.rel);
     for (const m of p.text.matchAll(/\]\((\.[^)#]+\.mdx)/g)) {

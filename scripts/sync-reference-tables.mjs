@@ -2,7 +2,7 @@ import { readFile, writeFile, mkdir, realpath } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-export function renderReferencePages(spec) {
+function renderLegacyPages(spec) {
 const pages = [];
 const models = Object.values(spec.models);
 const f = (n, d=3) => Number(n.toFixed(d)).toString();
@@ -150,16 +150,189 @@ ${bom}
 
 出典：[R6サマリー](/evidence/r6-family-summary.json)、各機種のmodel-summary.json、<a href="/evidence/r8-original-readme.md">R8 README</a>。
 `);
-if(spec.current_fullset_candidate){
- const c=spec.current_fullset_candidate;
- const intro=`## 7U40の現行一式: ${c.revision}
-
-選定構成は [R10一式](../design/r10-fullset-01.mdx)。アルミ${c.quantities.aluminum}枚、PA12 ${c.quantities.pa12}個、家庭ASA ${c.quantities.new_home_print}個。蓋板${dims(c.interface.lid_plate_mm)}mm、座面Z${f(c.interface.lid_seat_z_mm)}mm。以下の旧R9/R6表は履歴・他機種の基準で、この一式の発注数量ではありません。
-
-`;
- for(const p of pages){if(p.rel.endsWith('models/7u40.mdx')||p.rel.endsWith('manufacturing/bom.mdx')||p.rel.endsWith('models/comparison.mdx'))p.text=p.text.replace(/(\{\/\* GENERATED:[^\n]+\n\n)/,'$1'+intro)}
-}
 return pages;
+}
+
+// ---------------------------------------------------------------------------
+// Per-model current tables. 3U60/7U60 keep their R6 body + R8 lid baseline
+// (legacy template). 7U40 is generated from the active selection
+// (release-state current_metal_7u40_candidate = R11-BUILD-FEEDBACK-04) and its
+// imported parts manifest. The superseded R6/R9 7U40 tables and the old
+// comparison/BOM rows are written to one archive page.
+// ---------------------------------------------------------------------------
+export const ARCHIVE_7U40 = "src/content/docs/archive/metal-case/models/7u40-r6-r9.mdx";
+
+export async function loadR11Inputs(root) {
+  const read = async p => JSON.parse(await readFile(path.join(root, p), "utf8"));
+  const release = await read("project/release-state.json");
+  const pointer = release.current_metal_7u40_candidate;
+  if (!pointer || pointer.model !== "7u40") throw new Error("release-state current_metal_7u40_candidate missing");
+  const out = path.posix.dirname(pointer.manifest_path);
+  const scene = await read(`${out}/scene.json`);
+  return { pointer, manifest: await read(pointer.manifest_path), validation: await read(`${out}/validation.json`), lid: scene.lid_metadata.counts };
+}
+
+export function renderReferencePages(spec, r11) {
+  if (!r11) throw new Error("renderReferencePages needs the R11 inputs (loadR11Inputs)");
+  const legacy = renderLegacyPages(spec);
+  const byRel = rel => legacy.find(p => p.rel === `src/content/docs/metal-case/${rel}`).text;
+  const f = (n, d = 4) => Number(n.toFixed(d)).toString();
+  const dims = a => a.map(n => f(n, 3)).join(" × ");
+  const head = (title, desc, pos, extra = "") => `---\ntitle: ${JSON.stringify(title)}\ndescription: ${JSON.stringify(desc)}\nsidebar_position: ${pos}\n${extra}---\n\n{/* GENERATED: node scripts/sync-reference-tables.mjs / project/current-spec.json + release-state current_metal_7u40_candidate */}\n\n`;
+  const { pointer: c, manifest, validation, lid } = r11;
+  const counts = validation.counts;
+  const m7 = spec.models["7u40"], h7 = m7.hardware_counts;
+  if (c.revision !== manifest.revision || c.production_approved !== false || manifest.production_approved !== false) throw new Error("R11 pointer/manifest mismatch or approval drift");
+  const parts = manifest.parts;
+  const sheets = parts.filter(p => p.category === "aluminum");
+  const pa12 = parts.filter(p => p.category === "pa12");
+  const washer = parts.find(p => p.category === "home-print");
+  const group = list => {
+    const out = new Map();
+    for (const p of list) {
+      const key = `${p.id.replace(/-(?:-?1--?1|-?1-1|fl|fr|bl|br|front|back|left|right)$/, "")}|${dims(p.dimensions_mm)}|${f(p.volume_mm3 / 1000)}`;
+      const g = out.get(key) ?? { ids: [], names: [], dims: dims(p.dimensions_mm), vol: p.volume_mm3 / 1000, qty: 0 };
+      g.ids.push(p.id); g.names.push(p.name); g.qty += p.quantity; out.set(key, g);
+    }
+    return [...out.values()];
+  };
+  const link = (p, label) => `<PreviewLink path="${p}">${label}</PreviewLink>`;
+  const sheetRows = sheets.map(p => `| ${p.name} | ${dims(p.dimensions_mm)} | ${p.quantity} |`).join("\n");
+  const pa12Rows = group(pa12).map(g => `| ${g.names.join("、")} | ${g.qty} | ${g.dims} | ${f(g.vol)} |`).join("\n");
+  const pages = [];
+  const push = (rel, text) => pages.push({ rel: `src/content/docs/metal-case/${rel}`, text });
+
+  push("models/3u60.mdx", byRel("models/3u60.mdx"));
+  push("models/7u60.mdx", byRel("models/7u60.mdx"));
+
+  push("models/7u40.mdx", head("7U40・40HP", "7U40の現行設計候補R11-BUILD-FEEDBACK-04の寸法と数量。製造承認ではない。", 20) + `
+## この機種
+
+**主な確認対象。** リュックへ入れて運ぶ用途を重視する40HPの３列ケース。3U＋3U＋1Uは同じ平面に並ぶ。上下二段のケースではない。現行は**${c.revision}**（CAD上のレビュー候補・現物未検証・製造承認なし）。設計の説明は[R11-04の設計候補](../design/r11-build-feedback-04.mdx)を参照。
+
+${link(c.preview, "R11-04の3Dプレビューを開く")}
+
+## 寸法と数量
+
+| 項目 | 値 |
+|---|---|
+| 本体アルミ外形 W×D×H | **${dims([manifest.parts.find(p => p.id === "panel-floor").dimensions_mm[0], manifest.parts.find(p => p.id === "panel-floor").dimensions_mm[1], 91])}mm** |
+| アルミ板 | t1.5、${c.quantities.aluminum}枚（本体5＋蓋板1） |
+| PA12部品 | ${c.quantities.pa12}個（本体${c.quantities.pa12_body}＋蓋${c.quantities.pa12_lid}）、最長辺${f(Math.max(...pa12.flatMap(p => p.dimensions_mm)), 3)}mm |
+| PA12の実体積 | 本体${f(c.pa12_volume_cm3.body)}＋蓋${f(c.pa12_volume_cm3.lid)}＝**${f(c.pa12_volume_cm3.total)}cm³** |
+| 金属L字ブラケット | ${counts.body_brackets} |
+| 本体ねじ位置 | ${counts.body_screw_sites}（長穴 ${dims(c.body_slot_mm)}mm、内側へ片側5mm延長） |
+| 本体ナット | 薄型${counts.body_thin_nuts}＋通常${counts.body_other_nuts}（M5、購入品の寸法は仮） |
+| 板の切欠き合計 | ${c.sheet_cutouts.total}（本体長穴${c.sheet_cutouts.body_slots}＋レール丸穴${c.sheet_cutouts.rail_round_holes}＋蓋丸穴${c.sheet_cutouts.lid_round_holes}）。専用の吊り穴${counts.dedicated_hanging_holes} |
+| 丸座金（家庭印刷ASA） | ${washer.name}、${washer.quantity}個（外側本体40＋上部内側本体8＋蓋の壁16） |
+| 実レール長／レール本数 | ${f(m7.rail_length_mm, 3)}mm／${h7.rail}本（元のレール・fixer/padder PCB・8mmスペーサーを維持） |
+| レールと外箱のM5締結 | ${h7.mountBolt}点（ナットはケース外側） |
+
+## アルミ板６枚
+
+| 部品 | 外形 mm | 枚数 |
+|---|---|---:|
+${sheetRows}
+
+材質候補A5052、t1.5、黒アルマイト。床・前後板は長穴だけで、アルマイトの吊り方法は未確認。
+
+## PA12部品20個
+
+| 部品 | 個数 | 単体の外接寸法 mm | 単体体積 cm³ |
+|---|---:|---|---:|
+${pa12Rows}
+
+寸法はアセンブリ姿勢での書き出し値で、印刷姿勢の検証値ではない。体積はCADの実体積で、価格の見積ではない。現在価格は未見積（null）。
+
+## 蓋（R11-04）
+
+アルミ蓋板1枚とPA12蓋枠${c.quantities.pa12_lid}個の直線持ち上げ式。四辺の内側ガイドが本体開口に入り（差込み12mm、厚さ2mm、片側0.7mmの公称隙間、上部ナット・座金用の下側開放の逃げ8か所）、運搬時は外周バンド２本で保持する。蓋のねじ（天板${lid.vertical_screws}＋壁${lid.horizontal_screws}）は蓋の部品どうしを留めるもので、本体へのロックではない。
+
+## 根拠
+
+${link(c.packages.source, "R11-04の編集用ソースと出力")}内の\`out/parts-manifest.json\`（sha256 \`${c.manifest_sha256}\`）と\`out/validation.json\`から生成した。名目CADの整合確認で、強度・耐久・現物の嵌合や製造承認を示すものではない。旧R6基準・R9候補の7U40表は[アーカイブ](../../archive/metal-case/models/7u40-r6-r9.mdx)に保存している。
+`);
+
+  const legacyCmp = s => s.match(/\| 機種 \| アルミ外形mm[\s\S]*?\n\n/)[0];
+  const r6 = ["3u60", "7u60"].map(id => spec.models[id]);
+  const cmpRows = [
+    ...r6.map(m => `| [${m.label}](./${m.id}.mdx) | R6本体＋R8載せ蓋（基準） | ${dims(m.metal_mm)} | 5＋蓋（R8は表示のみ） | ${m.hardware_counts.panelBracket} | ${m.hardware_counts.mountBolt} | ガード${m.guards.t1p2.partCount}個（1.2mm） | ${f(m.guards.t1p2.totalVolumeCm3)} |`),
+    `| [${m7.label}](./7u40.mdx) | ${c.revision} | ${dims([229.4, 334, 91])} | ${c.quantities.aluminum}（本体5＋蓋1） | ${counts.body_brackets} | ${h7.mountBolt} | PA12 ${c.quantities.pa12}個（本体${c.quantities.pa12_body}＋蓋${c.quantities.pa12_lid}） | ${f(c.pa12_volume_cm3.total)} |`,
+  ];
+  // keep model order 3u60, 7u40, 7u60
+  const ordered = [cmpRows[0], cmpRows[2], cmpRows[1]];
+  push("models/comparison.mdx", head("３機種の比較", "機種ごとの現行版と、その版での板・金具・樹脂部品の数量。", 40) + `
+## 本体比較（機種ごとの現行版）
+
+| 機種 | 現行の版 | アルミ外形 W×D×H mm | アルミ板 | L字金具 | ケース固定M5 | 樹脂部品 | 樹脂体積 cm³ |
+|---|---|---|---:|---:|---:|---|---:|
+${ordered.join("\n")}
+
+機種ごとに現行の版が異なる。7U40はR11-04の値、3U60と7U60はR6本体・R8載せ蓋の基準値で、互いの寸法・数量を流用しない。どの版も製造承認ではない。旧R9候補の7U40行は[アーカイブ](../../archive/metal-case/models/7u40-r6-r9.mdx#旧３機種比較7u40はr9候補値)に保存している。
+
+## 共通部と差分
+
+40HPは実STL長204mm、60HPは305mm。HPの比で引き延ばしていない。３機種とも元のレール・fixer/padder PCB・8mmスペーサーで組むレールユニットを本体から独立させる。3U→7Uは前後方向を長くし、fixerを7Uへ交換、3U padder２個と1U padder１個を各側へ配置する。
+
+3U60と7U60のR6基準は、本体を丸穴とL字金具（3U60は16個、7U60は18個）とPA12ガードで組む。7U40のR11-04は、ねじ位置で重ねて締めるPA12の接続部と内側の位置決めで板を並べ、金属L字金具16個で補強する。長穴は${dims(c.body_slot_mm)}mm。
+
+## 蓋と運搬
+
+全機種とも直線持ち上げ式の載せ蓋＋外周バンド２本。3U60と7U60はR8の表示用プレビューが基準で、製作用CADは未更新。7U40はR11-04のアルミ蓋板とPA12蓋枠８個（四辺の内側ガイド）。ノブの高さ・締付時の天板のたわみ・実物の嵌合は未確認。
+
+機種間で同じ部品として注文できるかは、完成したCADのファイルと数量を照合して決める。似た外形だけで同一品へまとめない。
+
+出典：3U60・7U60は[R6サマリー](/evidence/r6-family-summary.json)と[R8パラメータ](/evidence/r8-preview-parameters.json)、7U40はR11-04の\`out/parts-manifest.json\`と\`out/validation.json\`。
+`);
+
+  const row = (name, a, b, d, note) => `| ${name} | ${a} | ${b} | ${d} | ${note} |`;
+  const hc = id => spec.models[id].hardware_counts;
+  const [h3, h6] = [hc("3u60"), hc("7u60")];
+  const bomRows = [
+    row("本体アルミ板", h3.aluminumPanel, sheets.filter(p => p.id.startsWith("panel-")).length, h6.aluminumPanel, "A5052 t1.5、黒アルマイト候補"),
+    row("蓋アルミ板", "R8表示のみ", sheets.filter(p => p.id === "lid-plate").length, "R8表示のみ", "7U40はR11-04の蓋板（M5 8穴）"),
+    row("L字ブラケット", h3.panelBracket, counts.body_brackets, h6.panelBracket, "在庫20×20×16mm、厚2mm（実測）"),
+    row("本体の板接合M5ネジ", h3.panelJointBolt, counts.body_screw_sites, h6.panelJointBolt, "R6は丸穴、R11-04は長穴15.5×5.5"),
+    row("本体の板接合ナット", h3.panelJointNut, `${counts.body_thin_nuts + counts.body_other_nuts}（薄型${counts.body_thin_nuts}＋通常${counts.body_other_nuts}）`, h6.panelJointNut, "購入品の寸法は仮。R11-04は内側"),
+    row("本体の座金", h3.panelJointWasher, "48（外側40＋上部内側8）", h6.panelJointWasher, "R11-04は家庭印刷ASA丸座金Ø15/Ø5/t1。内側32か所は一体の受け座"),
+    row("蓋の組立ねじ（M5×12モデル）", "未定", `${lid.vertical_screws + lid.horizontal_screws}（天板${lid.vertical_screws}＋壁${lid.horizontal_screws}）`, "未定", "蓋の部品どうしの締結。本体へのロックではない"),
+    row("蓋の壁の座金", "—", lid.round_washers, "—", "R11-04は家庭印刷ASA丸座金"),
+    row("ユニット→ケースM5", h3.mountBolt, h7.mountBolt, h6.mountBolt, "頭1.4mm、軸長未確定"),
+    row("同ナット", h3.mountNut, h7.mountNut, h6.mountNut, "ケース外側（モジュール空間を確保）"),
+    row("内側8mmスペーサー", h3.innerSpacer, h7.innerSpacer, h6.innerSpacer, "内外径は模式値を含む"),
+    row("外側1mmナイロン座金", h3.outerWasher, h7.outerWasher, h6.outerWasher, "ユニット固定用"),
+    row("ゴム脚", h3.foot, h7.foot, h6.foot, "仮寸法。R11-04はØ10×高さ6mmを表示"),
+    row("PA12部品", `ガード${spec.models["3u60"].guards.t1p2.partCount}`, `${c.quantities.pa12}（本体${c.quantities.pa12_body}＋蓋${c.quantities.pa12_lid}）`, `ガード${spec.models["7u60"].guards.t1p2.partCount}`, "黒染めPA12-HP候補。R6は1.2mmガード、R11-04は接続部・蓋枠"),
+  ];
+  const legacyBom = byRel("manufacturing/bom.mdx");
+  const keep = h => legacyBom.slice(legacyBom.indexOf(`## ${h}`)).split(/\n(?=## )/)[0].trim();
+  push("manufacturing/bom.mdx", head("ケース側BOM", "機種ごとの現行版で、レールユニットの費用を除き、本体・蓋・バンドを分けて管理する。", 10) + `
+## ケース１台分の部品
+
+機種ごとの現行版で生成した表。3U60と7U60はR6のhardwareCountsとR8の構成、7U40は[R11-BUILD-FEEDBACK-04](../design/r11-build-feedback-04.mdx)の部品manifestと検証記録の数量。予備率、破損、予備金具は含めていない。**発注承認済みBOMではなく、数量確認の起点**。
+
+| 部品 | 3U60（R6/R8） | 7U40（${c.revision}） | 7U60（R6/R8） | 仕様／状態 |
+|---|---:|---:|---:|---|
+${bomRows.join("\n")}
+
+7U40のファイル一式は${link(c.packages.pa12, "PA12")}、${link(c.packages.aluminum, "アルミ")}、${link(c.packages["home-print"], "家庭印刷の座金")}のZIP。各ZIPの\`START-HERE.md\`が数量と版の入口。STEP・STL・DXFは同じ部品の別形式で、数量を二重に数えない。
+
+${keep("レール費用の除外")}
+
+## まだ数量を確定しないもの
+
+ガード保持の接着材や爪、当たり材、バンド位置決め、梱包などは最終設計／品番が未確定。購入するM5ねじ・ナットの寸法は仮で、画面上の形状から品番を推測して買わない。蓋と本体をつなぐロック（旧R7のM3など）は採用していない。
+
+${keep("在庫と費用")}
+`);
+
+  // Archive: superseded 7U40 R6-baseline / R9-candidate tables and the old comparison/BOM rows.
+  const old7 = byRel("models/7u40.mdx").replace(/^---[\s\S]*?\n---\n\n\{\/\*[^\n]*\*\/\}\n\n/, "");
+  const fixLinks = t => t.replaceAll("](../design/history/", "](../design/").replaceAll("](../resources/", "](../../../metal-case/resources/").replaceAll("](../verification/", "](../../../metal-case/verification/").replaceAll("](./3u60.mdx)", "](../../../metal-case/models/3u60.mdx)").replaceAll("](./7u40.mdx)", "](../../../metal-case/models/7u40.mdx)").replaceAll("](./7u60.mdx)", "](../../../metal-case/models/7u60.mdx)");
+  const oldCmp = legacyCmp(byRel("models/comparison.mdx"));
+  const oldBomTable = legacyBom.match(/\| 部品 \| 3U60 \| 7U40[\s\S]*?\n\n/)[0];
+  pages.push({ rel: ARCHIVE_7U40, text: `---\ntitle: "旧7U40表（R6基準・R9候補）"\ndescription: "R11-04に置き換わった7U40のR6基準の寸法・数量、R9-FITFIX-01候補、旧３機種比較とBOMの7U40列。"\nsidebar_position: 10\nsearch_exclude: true\n---\n\n{/* GENERATED: node scripts/sync-reference-tables.mjs / project/current-spec.json */}\n\n:::warning[アーカイブ（履歴）]\n\n7U40の旧表です。R6基準の値とR9-FITFIX-01候補の値は、R10一式を経てR11-BUILD-FEEDBACK-04に置き換わりました。現在の作業には [7U40の現行の寸法と数量](../../../metal-case/models/7u40.mdx) と [ケース側BOM](../../../metal-case/manufacturing/bom.mdx) を使ってください。3U60・7U60のR6/R8基準は現行ページに残っています。\n\n:::\n\n${fixLinks(old7.trim())}\n\n## 旧３機種比較（7U40はR9候補値）\n\n${fixLinks(oldCmp.trim())}\n\n7U40の行はR9-FITFIX-01候補の生成値です。\n\n## 旧BOM（7U40はR6基準・R9候補注記）\n\n${oldBomTable.trim()}\n` });
+  return pages;
 }
 
 async function main() {
@@ -172,7 +345,7 @@ async function main() {
   }
 
   const spec = JSON.parse(await readFile(path.join(root, "project/current-spec.json"), "utf8"));
-  const pages = renderReferencePages(spec);
+  const pages = renderReferencePages(spec, await loadR11Inputs(root));
 
   if (args.includes("--check")) {
     const drifted = [];

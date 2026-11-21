@@ -340,7 +340,10 @@
     "レール費用の除外",
     "まだ数量を確定しないもの",
     "在庫と費用"
-   ]
+   ],
+   "anchorTargets": {
+    "7u40の現行一式-r10-fullset-01": "archive/metal-case/design/r10-fullset-01.mdx"
+   }
   },
   {
    "source": "manufacturing/costs.mdx",
@@ -354,7 +357,12 @@
     "直近に提示された本体予算の履歴",
     "今回の最終方式で取り直す合計",
     "価格台帳"
-   ]
+   ],
+   "anchorTargets": {
+    "実際の見積画面": "archive/metal-case/manufacturing/price-history.mdx#実際の見積画面",
+    "過去に提示した切板価格": "archive/metal-case/manufacturing/price-history.mdx#過去に提示した切板価格",
+    "直近に提示された本体予算の履歴": "archive/metal-case/manufacturing/price-history.mdx#直近に提示された本体予算の履歴"
+   }
   },
   {
    "source": "manufacturing/fit-test-order.mdx",
@@ -451,7 +459,15 @@
     "r6ガード1-2mmの参考内訳",
     "蓋はr8の表示寸法",
     "根拠"
-   ]
+   ],
+   "anchorTargets": {
+    "7u40の現行一式-r10-fullset-01": "archive/metal-case/design/r10-fullset-01.mdx",
+    "r6基準の寸法と数量（履歴）": "archive/metal-case/models/7u40-r6-r9.mdx#r6基準の寸法と数量（履歴）",
+    "r9-fitfix-01の製作候補（未承認）": "archive/metal-case/models/7u40-r6-r9.mdx#r9-fitfix-01の製作候補（未承認）",
+    "r6基準のアルミ本体５枚": "archive/metal-case/models/7u40-r6-r9.mdx#r6基準のアルミ本体５枚",
+    "r6ガード1-2mmの参考内訳": "archive/metal-case/models/7u40-r6-r9.mdx#r6ガード1-2mmの参考内訳",
+    "蓋はr8の表示寸法": "archive/metal-case/models/7u40-r6-r9.mdx#蓋はr8の表示寸法"
+   }
   },
   {
    "source": "models/7u60.mdx",
@@ -481,7 +497,8 @@
     "蓋と運搬"
    ],
    "anchorTargets": {
-    "本体比較（7u40は現行候補）": "metal-case/models/comparison.mdx#本体比較（7u40は旧r9候補の値）"
+    "7u40の現行一式-r10-fullset-01": "archive/metal-case/design/r10-fullset-01.mdx",
+    "本体比較（7u40は現行候補）": "metal-case/models/comparison.mdx#本体比較（機種ごとの現行版）"
    }
   },
   {
@@ -580,7 +597,7 @@
    "owner": "printed-5mm",
    "canonical": "printed-5mm/index.mdx",
    "treatment": "retained",
-   "note": "系列の入口。P5/P4/P3の区分を明記"
+   "note": "系列の入口。現行P5とアーカイブへの案内"
   },
   {
    "source": "printed-5mm/p4-design.mdx",
@@ -879,6 +896,14 @@
   },
   {
    "source": null,
+   "canonical": "metal-case/design/r11-build-feedback-04.mdx",
+   "owner": "metal-case",
+   "treatment": "new",
+   "anchors": [],
+   "note": "7U40の現行設計候補R11-BUILD-FEEDBACK-04"
+  },
+  {
+   "source": null,
    "route": null,
    "owner": "archive",
    "canonical": "archive/metal-case/design/index.mdx",
@@ -1022,6 +1047,44 @@
    "owner": "archive",
    "treatment": "new",
    "anchors": []
+  },
+  {
+   "source": null,
+   "canonical": "archive/metal-case/manufacturing/price-history.mdx",
+   "owner": "archive",
+   "treatment": "new",
+   "anchors": [],
+   "note": "旧costs.mdxの見積画面・過去の切板価格・概算・R10カート金額"
+  },
+  {
+   "source": null,
+   "canonical": "archive/metal-case/resources/index.mdx",
+   "owner": "archive",
+   "treatment": "new",
+   "anchors": []
+  },
+  {
+   "source": null,
+   "canonical": "archive/metal-case/resources/files.mdx",
+   "owner": "archive",
+   "treatment": "new",
+   "anchors": [],
+   "note": "旧resources/files.mdx・current-preview.mdxの旧版プレビューと配布物"
+  },
+  {
+   "source": null,
+   "canonical": "archive/metal-case/models/index.mdx",
+   "owner": "archive",
+   "treatment": "new",
+   "anchors": []
+  },
+  {
+   "source": null,
+   "canonical": "archive/metal-case/models/7u40-r6-r9.mdx",
+   "owner": "archive",
+   "treatment": "new",
+   "anchors": [],
+   "note": "旧metal-case/models/7u40.mdxのR6基準・R9候補の表と旧比較・BOMの7U40列（生成）"
   },
   {
    "source": null,

@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { renderReferencePages } from "../scripts/sync-reference-tables.mjs";
+import { ARCHIVE_7U40, loadR11Inputs, renderReferencePages } from "../scripts/sync-reference-tables.mjs";
 
 const repoRoot = fileURLToPath(new URL("../", import.meta.url));
 const scriptPath = path.join(repoRoot, "scripts/sync-reference-tables.mjs");
@@ -20,9 +20,16 @@ async function makeFixture(t) {
   await copyFile(scriptPath, path.join(scriptDir, "sync-reference-tables.mjs"));
   await mkdir(path.join(root, "project"), { recursive: true });
   await copyFile(specPath, path.join(root, "project/current-spec.json"));
+  // The current 7U40 tables come from the active R11 selection and its imported outputs.
+  const r11 = await loadR11Inputs(repoRoot);
+  const out = path.posix.dirname(r11.pointer.manifest_path);
+  for (const rel of ["project/release-state.json", r11.pointer.manifest_path, `${out}/validation.json`, `${out}/scene.json`]) {
+    await mkdir(path.dirname(path.join(root, rel)), { recursive: true });
+    await copyFile(path.join(repoRoot, rel), path.join(root, rel));
+  }
 
   const spec = JSON.parse(await readFile(specPath, "utf8"));
-  const pages = renderReferencePages(spec);
+  const pages = renderReferencePages(spec, r11);
   for (const { rel } of pages) {
     const destination = path.join(root, rel);
     await mkdir(path.dirname(destination), { recursive: true });
@@ -42,7 +49,8 @@ function runCli(root, ...args) {
 
 test("synced generated pages pass --check", async t => {
   const { root, pages } = await makeFixture(t);
-  assert.equal(pages.length, 5);
+  assert.equal(pages.length, 6);
+  assert.ok(pages.some(p => p.rel === ARCHIVE_7U40));
 
   const result = runCli(root, "--check");
   assert.equal(result.status, 0, result.stderr);
@@ -71,11 +79,43 @@ test("a ledger-only change fails --check and names affected pages", async t => {
   spec.models["7u40"].metal_mm[0] += 10;
   await writeFile(fixtureSpecPath, `${JSON.stringify(spec, null, 2)}\n`);
 
+  // The legacy R6 7U40 values now feed only the archive page; the current 7U40 tables follow R11.
+  const result = runCli(root, "--check");
+  assert.equal(result.status, 1);
+  assert.ok(result.stderr.includes(ARCHIVE_7U40), result.stderr);
+  assert.doesNotMatch(result.stderr, /src\/content\/docs\/metal-case\/models\/7u40\.mdx/);
+  assert.match(result.stderr, /node scripts\/sync-reference-tables\.mjs/);
+
+  spec.models["3u60"].metal_mm[0] += 10;
+  await writeFile(fixtureSpecPath, `${JSON.stringify(spec, null, 2)}\n`);
+  const current = runCli(root, "--check");
+  assert.match(current.stderr, /src\/content\/docs\/metal-case\/models\/3u60\.mdx/);
+  assert.match(current.stderr, /src\/content\/docs\/metal-case\/models\/comparison\.mdx/);
+});
+
+test("an R11 manifest change fails --check on the current 7U40 table", async t => {
+  const { root } = await makeFixture(t);
+  const pointer = JSON.parse(await readFile(path.join(root, "project/release-state.json"), "utf8")).current_metal_7u40_candidate;
+  const manifestPath = path.join(root, pointer.manifest_path);
+  const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
+  const sheet = manifest.parts.find(p => p.category === "aluminum");
+  sheet.dimensions_mm[0] += 1;
+  await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
   const result = runCli(root, "--check");
   assert.equal(result.status, 1);
   assert.match(result.stderr, /src\/content\/docs\/metal-case\/models\/7u40\.mdx/);
-  assert.match(result.stderr, /src\/content\/docs\/metal-case\/models\/comparison\.mdx/);
-  assert.match(result.stderr, /node scripts\/sync-reference-tables\.mjs/);
+});
+
+test("an R11 revision or approval drift is refused instead of rendered", async t => {
+  const { root } = await makeFixture(t);
+  const pointer = JSON.parse(await readFile(path.join(root, "project/release-state.json"), "utf8")).current_metal_7u40_candidate;
+  const manifestPath = path.join(root, pointer.manifest_path);
+  const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
+  manifest.production_approved = true;
+  await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
+  const result = runCli(root, "--check");
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /approval drift/);
 });
 
 test("a hand-edited generated page fails --check", async t => {
@@ -136,7 +176,7 @@ test("regeneration restores a passing --check", async t => {
 
   const regeneration = runCli(root);
   assert.equal(regeneration.status, 0, regeneration.stderr);
-  assert.match(regeneration.stdout, /Generated 5 reference pages/);
+  assert.match(regeneration.stdout, /Generated 6 reference pages/);
 
   const afterRegeneration = runCli(root, "--check");
   assert.equal(afterRegeneration.status, 0, afterRegeneration.stderr);

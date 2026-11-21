@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
@@ -13,6 +14,7 @@ BASE = os.environ.get("SITE_URL", "http://localhost:4391").rstrip("/")
 OUT = Path(os.environ.get("CASE_NAV_EVIDENCE", ROOT / ".cache/case-navigation-browser"))
 OUT.mkdir(parents=True, exist_ok=True)
 ROUTES = json.loads((ROOT / "project/doc-routes.json").read_text())
+ARCHIVE_LANDING = re.compile(r"^archive/(?:[^/]+/)?index\.mdx$")
 checks: list[str] = []
 errors: list[str] = []
 
@@ -62,42 +64,30 @@ def branch_row(scope, slug):
 
 
 def exercise_printed(page, width):
+    # Printed shows only the current P5 tree; P4/P3 live under the top-level Archive.
     visit(page, "/docs/printed-5mm/")
     nav = sidebar(page, width)
-    expected_top = ["printed-5mm/p5-design", "printed-5mm/history", "printed-5mm/p4-design", "printed-5mm/design"]
+    expected_top = ["printed-5mm/p5-design"]
     for slug in expected_top:
         expect(doc_link(nav, slug)).to_have_count(1)
     check(f"{width} printed linked root", doc_link(nav, "printed-5mm").count() == 1)
     check(f"{width} initial Broaden absent at section ceiling", nav.locator("[data-sidebar-broaden]").count() == 0)
-    for slug in ["printed-5mm/p4-design", "printed-5mm/design"]:
-        row = branch_row(nav, slug)
-        button = row.locator("button[aria-expanded]")
-        expect(button).to_have_attribute("aria-expanded", "false")
-        checks.append(f"{width} {slug} initially collapsed")
-        button.focus()
-        page.keyboard.press("Enter")
-        expect(button).to_have_attribute("aria-expanded", "true")
+    for old in ["printed-5mm/p4-design", "printed-5mm/design", "printed-5mm/history"]:
+        check(f"{width} printed sidebar omits superseded {old}", doc_link(nav, old).count() == 0)
     actual = nav_hrefs(nav)
     expected = [route_for(row["canonical"]).rstrip("/") for row in ROUTES["entries"] if row["owner"] == "printed-5mm"]
-    check(f"{width} every printed canonical link once after keyboard expansion", sorted(actual) == sorted(expected) and len(actual) == len(set(actual)))
-    check(f"{width} printed design/historical parent order", [href for href in actual if href in ["/docs/" + slug for slug in expected_top]] == ["/docs/" + slug for slug in expected_top])
-    page.screenshot(path=str(OUT / f"printed-expanded-{width}.png"), full_page=True)
+    check(f"{width} every current printed canonical link once", sorted(actual) == sorted(expected) and len(actual) == len(set(actual)))
+    check(f"{width} printed sidebar has no archive link", not any(href.startswith("/docs/archive") for href in actual))
+    page.screenshot(path=str(OUT / f"printed-current-{width}.png"), full_page=True)
 
     focus = branch_row(nav, "printed-5mm/p5-design").locator("[data-sidebar-focus]")
     focus.focus()
     page.keyboard.press("Enter")
     expect(nav.locator("[data-sidebar-broaden]")).to_be_visible()
-    expect(doc_link(nav, "printed-5mm/p4-design")).to_have_count(0)
     checks.append(f"{width} keyboard focus narrows to P5")
     nav.locator("[data-sidebar-broaden]").click()
-    expect(doc_link(nav, "printed-5mm/p4-design")).to_be_visible()
     expect(nav.locator("[data-sidebar-broaden]")).to_have_count(0)
-    checks.append(f"{width} Broaden returns to printed root and stops")
-    branch_row(nav, "printed-5mm/p5-design").locator("[data-sidebar-focus]").click()
-    nav.locator("[data-sidebar-restore]").click()
-    expect(doc_link(nav, "printed-5mm/p4-design")).to_be_visible()
-    expect(nav.locator("[data-sidebar-broaden]")).to_have_count(0)
-    check(f"{width} Restore returns linked root", doc_link(nav, "printed-5mm").count() == 1)
+    check(f"{width} Broaden returns to printed root and stops", doc_link(nav, "printed-5mm").count() == 1)
 
     if width < 1024:
         nav.locator(":scope > button").click()
@@ -131,6 +121,7 @@ def exercise_sections(page, width):
         "overview": "overview/start", "metal-case": "metal-case/status",
         "tenbox-v2": "tenbox-v2/printing", "two-way": "two-way",
         "shared": "shared", "development": "development/maintenance",
+        "archive": "archive/metal-case",
     }
     for section, slug in representatives.items():
         visit(page, f"/docs/{slug}/")
@@ -139,7 +130,7 @@ def exercise_sections(page, width):
         check(f"{width} {section} current page owner", doc_link(nav, slug).get_attribute("aria-current") == "page")
         check(f"{width} {section} cannot broaden out of section", nav.locator("[data-sidebar-broaden]").count() == 0)
         check(f"{width} {section} only its own links", all(href == "/docs/" + section or href.startswith("/docs/" + section + "/") for href in nav_hrefs(nav)))
-        if section in ["tenbox-v2", "development"]:
+        if section in ["tenbox-v2", "development", "archive"]:
             page.screenshot(path=str(OUT / f"{section}-{width}.png"), full_page=True)
         if width >= 1024:
             owner = page.locator(f'header a[data-nav-category="{section}"]')
@@ -159,15 +150,35 @@ def exercise_origin(page, width):
     page.screenshot(path=str(OUT / f"tenbox-iframe-{width}.png"), full_page=True)
 
 
+def exercise_archive(page, width):
+    visit(page, "/docs/archive/")
+    for project in ["metal-case", "printed-5mm"]:
+        expect(page.locator(f'main a[href^="/docs/archive/{project}"]').first).to_be_visible()
+    checks.append(f"{width} archive landing links project archives")
+    visit(page, "/docs/archive/metal-case/design/r10-fullset-01/")
+    check(f"{width} archived R10 page shows the archive banner", page.locator("text=アーカイブ（履歴）").count() > 0)
+    check(f"{width} archived R10 page points to current R11", page.locator('main a[href*="/docs/metal-case/design/r11-build-feedback-04"]').count() > 0)
+    for current in ["/docs/metal-case/design/r11-build-feedback-04/", "/docs/printed-5mm/ventilation/"]:
+        visit(page, current)
+        pager = page.locator("[data-doc-pager] a[href]").evaluate_all("links => links.map(a => new URL(a.href).pathname)")
+        check(f"{width} {current} prev/next stays out of the archive", not any(href.startswith("/docs/archive") for href in pager))
+    page.screenshot(path=str(OUT / f"current-r11-{width}.png"), full_page=True)
+
+
 def exercise_search(page):
     response = page.request.get(BASE + "/search-index.json")
     check("search index GET HTTP 200", response.status == 200)
     index = response.json()
     searched = {item["url"].rstrip("/") for item in index if not str(item.get("id", "")).startswith("asset:")}
     for row in ROUTES["entries"]:
-        check("search canonical " + row["canonical"], route_for(row["canonical"]).rstrip("/") in searched)
-        if row.get("source") and row["source"] != row["canonical"]:
-            check("search excludes compatibility " + row["source"], route_for(row["source"]).rstrip("/") not in searched)
+        canonical = route_for(row["canonical"]).rstrip("/")
+        if row["canonical"].startswith("archive/") and not ARCHIVE_LANDING.match(row["canonical"]):
+            check("search excludes archive detail " + row["canonical"], canonical not in searched)
+        else:
+            check("search canonical " + row["canonical"], canonical in searched)
+        old = ([row["source"]] if row.get("source") and row["source"] != row["canonical"] else []) + [a["path"] for a in row.get("aliases", [])]
+        for source in old:
+            check("search excludes compatibility " + source, route_for(source).rstrip("/") not in searched)
     page.keyboard.press("Control+k")
     input_box = page.locator("[data-search-input]")
     expect(input_box).to_be_visible()
@@ -198,6 +209,7 @@ def main():
                 exercise_printed(page, width)
                 exercise_sections(page, width)
                 exercise_origin(page, width)
+                exercise_archive(page, width)
                 if width == 1440:
                     exercise_search(page)
                 context.close()

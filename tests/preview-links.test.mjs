@@ -5,7 +5,8 @@ import path from 'node:path';
 import os from 'node:os';
 import { resolvePreviewOrigin, previewUrl, previewSourceLabel, PRODUCTION_PREVIEW_ORIGIN } from '../scripts/lib/preview-origin.mjs';
 import { missingPreviewTargets } from '../scripts/lib/preview-links-check.mjs';
-import { renderReferencePages } from '../scripts/sync-reference-tables.mjs';
+import { renderReferencePages, loadR11Inputs, ARCHIVE_7U40 } from '../scripts/sync-reference-tables.mjs';
+import { fileURLToPath } from 'node:url';
 import { readFile } from 'node:fs/promises';
 
 test('production, dev, and override origins', () => {
@@ -32,8 +33,11 @@ test('missing markdown, frame/component, and generated preview targets fail', as
     ];
     for (const form of forms) assert.equal((await missingPreviewTargets(form, dir)).length, 1, form);
     const spec = JSON.parse(await readFile(new URL('../project/current-spec.json', import.meta.url), 'utf8'));
-    const generated = renderReferencePages(spec).find(page => page.rel.endsWith('models/7u40.mdx')).text;
-    assert.ok((await missingPreviewTargets(generated, dir)).length >= 3);
+    const pages = renderReferencePages(spec, await loadR11Inputs(fileURLToPath(new URL('../', import.meta.url))));
+    const generated = pages.find(page => page.rel.endsWith('metal-case/models/7u40.mdx')).text;
+    assert.deepEqual((await missingPreviewTargets(generated, dir)).sort(), ['/downloads/candidate/R11-BUILD-FEEDBACK-04-source.zip', '/previews/r11-build-feedback-04.html']);
+    const archived = pages.find(page => page.rel === ARCHIVE_7U40).text;
+    assert.ok((await missingPreviewTargets(archived, dir)).length >= 3);
     await writeFile(path.join(dir, 'previews/r8-simple-lid.html'), 'ok');
     assert.deepEqual(await missingPreviewTargets('<PreviewFrame path="/previews/r8-simple-lid.html" />', dir), []);
   } finally { await rm(dir, { recursive: true, force: true }); }

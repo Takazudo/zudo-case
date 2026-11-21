@@ -6,13 +6,14 @@
 
 | 系列 | 現行の位置づけ | 入口 |
 |---|---|---|
-| 金属ケース | 3U60・7U40・7U60。7U40はR10-FULLSET-01一式準備候補、JLCカート保存済み・未発注・未払い | [metal-case](src/content/docs/metal-case/index.mdx) |
-| 7U40家庭印刷 | 5mm板の現行P5。旧P4/P3は同系列の履歴 | [printed-5mm](src/content/docs/printed-5mm/index.mdx) |
-| 10BOX-v2 | 二段3U60HPの独立系列。受入済みR5ファイル、印刷・組立と検証限界 | [tenbox-v2](src/content/docs/tenbox-v2/index.mdx) |
-| 2WAY | TW-01が作業版、F5は不変の原資料。製造用CADではない | [two-way](src/content/docs/two-way/index.mdx) |
-| 共通部品・元データ | 家庭印刷8mmスペーサー、元レール・PCBと出典 | [shared](src/content/docs/shared/index.mdx) |
+| 金属ケース | 3U60・7U40・7U60。7U40はR11-BUILD-FEEDBACK-04（CADレビュー候補、現物未検証・価格未見積・未発注）、3U60・7U60はR6本体＋R8載せ蓋の基準 | [metal-case](src/content/docs/metal-case/index.mdx) |
+| 7U40家庭印刷 | 5mm板の現行P5-PRINTED-5MM-TAB-JOINTS-J3。旧P4/P3はアーカイブ | [printed-5mm](src/content/docs/printed-5mm/index.mdx) |
+| 10BOX-v2 | 二段3U60HPの独立系列。現行R5のファイル、印刷・組立と検証限界 | [tenbox-v2](src/content/docs/tenbox-v2/index.mdx) |
+| 2WAY | TW-01が作業版（A/B/Cはどれも現行の比較対象）、F5はその入力の不変の原資料。製造用CADではない | [two-way](src/content/docs/two-way/index.mdx) |
+| 共通部品・元データ | 家庭印刷8mmスペーサーHOME-PRINT-SPACER-01（外径・穴径は仮寸法）、元レール・PCBと出典 | [shared](src/content/docs/shared/index.mdx) |
+| アーカイブ | 置き換わった旧版の記録（金属7U40のR10以前、家庭印刷P4/P3など）。現行の作業には使わない | [archive](src/content/docs/archive/index.mdx) |
 
-画像・図はサイトの`/files/`、CAD作業の入口は[engineering/README.md](engineering/README.md)です。系列間で形状・数量・注文記録を混ぜません。`engineering/release/`には承認済みファイルを置いていません。注文・支払い・製造承認はユーザーが別に判断します。
+各系列の現行版の指定は`project/current-selection.json`にあります。通常の文書とナビゲーションは現行版だけを示し、旧版は[アーカイブ](src/content/docs/archive/index.mdx)から読めます。画像・図はサイトの`/files/`、CAD作業の入口は[engineering/README.md](engineering/README.md)です。系列間で形状・数量・注文記録を混ぜません。`engineering/release/`には承認済みファイルを置いていません。注文・支払い・製造承認はユーザーが別に判断します。
 
 ## 起動する
 

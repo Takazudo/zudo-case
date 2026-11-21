@@ -1,21 +1,52 @@
 ---
 title: "金属ケースの台帳・製作データを保守する"
-description: "金属ケースの生成表、見積の登録と選択、製作候補と承認台帳の更新手順。"
+description: "金属ケースの現行選択、生成表、見積の登録と選択、製作候補と承認台帳の更新手順。"
 sidebar_position: 85
 ---
 
 金属ケース（3U60・7U40・7U60）の台帳を更新する保守担当向けの手順です。独立した家庭印刷、10BOX-v2、2WAYの仕様台帳には適用しません。編集方針は[文書・表・資産の更新](../development/maintenance.mdx)、設計の現状は[採用仕様とデータ状態](./status.mdx)を参照してください。
 
+## 現行の選択
+
+文書が現行として示す版は`project/current-selection.json`の`selections`で、系列・機種・用途ごとに指定します。最大の版番号や新しい日付で自動的に選びません。指定は製造承認ではありません。
+
+| 機種 | 指定 | 台帳 |
+|---|---|---|
+| 7U40 | R11-BUILD-FEEDBACK-04 | `project/release-state.json`の`current_metal_7u40_candidate` |
+| 3U60・7U60 | R6本体＋R8載せ蓋の基準 | `project/current-spec.json`の`models.3u60`・`models.7u60` |
+
+7U40の取込み・公開コピー・現行指定は`engineering/r11-build-feedback-04/`から生成します。
+
+```sh
+pnpm sync:r11    # 公開コピーと current_metal_7u40_candidate を更新
+pnpm check:r11   # 受領メンバー・manifest・パッケージ・公開コピー・台帳ポインターを検査（書き込みなし）
+pnpm test:r11
+```
+
+`engineering/r11-build-feedback-04/source/`は受領物で変更しません。形状を変える場合は新しい版として取り込み、`current-selection.json`の指定を変えます。
+
+### 旧来のキーは履歴の契約のまま
+
+同じ台帳には、以前の版を指す旧来のキーが残っています。どれも当時の契約を保ったままで、現在の選択ではありません。現行の7U40を調べるときに読みません。
+
+| キー | 指す版 |
+|---|---|
+| `release-state.json`／`current-spec.json`の`current_fullset_candidate` | 旧7U40一式（R10） |
+| `release-state.json`の`candidate_revision`・`current_body_geometry` | 旧7U40候補（R9-FITFIX-01）。`current_body_geometry`の文字列の7U40部分も当時の記録 |
+| `release-state.json`の`current_lid_manufacturing` | 旧来の蓋候補指定（R9-FITFIX-01の蓋板・枠） |
+
+R10・R9の表を作る生成スクリプト（`scripts/sync-fullset.mjs`、`scripts/sync-r9-doc-table.mjs`）は[アーカイブ](../archive/metal-case/index.mdx)のページへ書き込みます。`current_metal_7u40_candidate`には書き込みません。
+
 ## 数字の更新
 
-金属ケースの機種別ページ、比較表、BOMは`project/current-spec.json`から生成する。
+金属ケースの機種別ページ、比較表、BOMは`project/current-spec.json`（7U40はR11の台帳を参照）から生成します。
 
 ```sh
 node scripts/sync-reference-tables.mjs
 node scripts/check-docs.mjs
 ```
 
-台帳の数値はR6/R8の出力から読み取った値。CAD変更後に出力と照合して台帳を更新する。図面を変えずに台帳だけ変えて「製作済み」としない。生成対象ファイルの先頭コメントにも編集元を記載する。R9-PROTOTYPE-01の版・ファイル表は`scripts/sync-r9-doc-table.mjs`、R10一式のZIP・座金の表は`scripts/sync-fullset.mjs`が生成する。
+台帳の数値はCADの出力から読み取った値です。CAD変更後に出力と照合して台帳を更新します。図面を変えずに台帳だけ変えて「製作済み」としません。生成対象ファイルの先頭コメントにも編集元を記載します。
 
 ## 見積・製作データの状態を進める
 
@@ -27,6 +58,6 @@ node scripts/check-docs.mjs
 
 複数見積を合算する場合は、必要な部品・数量を重複なくカバーする説明を空でない`coverage_note`に記す。選択見積間で同じ`rows[].part`ラベルがあると重複計上として拒否する。ただし、ラベルが違う部品や費用の意味上の重複まで検査では証明できないため、説明と根拠を人が確認する。部品別価格を全体価格に混ぜない。
 
-新しい製作候補は`project/release-state.json`の`candidate_files`にリポジトリ相対`path`とファイルの`sha256`を記録する。従来の`path`・`sha256`だけの項目も有効。候補を版付きで識別するときは、台帳内で一意な空でない`id`と、`component`、`model`または`models`の一方、`revision`を記録する。`model`/`models`は`current-spec.json`の機種キーを使う。`current_lid_manufacturing`は`null`、または`model`/`models`の一方、`revision`、`candidate_ids`（空でなく重複しない候補ID一覧）を持つオブジェクトとする。参照先すべての`component`は`lid`、機種集合と版は現行指定に一致させる。アルミ板とPA12フレームなど複数ファイルで蓋候補を構成するときは、それぞれのIDを一覧にする。参照先のファイル存在とSHA-256も検査する。候補の登録や現行指定だけでは製造承認にならず、`production_approved`、機種別`manufacturing_release`、`release_gate`、G01〜G11を進めない。`engineering/release/`への配置は承認後に限り、`published_release_files`に同じパスとハッシュを記録する。
+新しい製作候補は`project/release-state.json`の`candidate_files`にリポジトリ相対`path`とファイルの`sha256`を記録する。従来の`path`・`sha256`だけの項目も有効。候補を版付きで識別するときは、台帳内で一意な空でない`id`と、`component`、`model`または`models`の一方、`revision`を記録する。`model`/`models`は`current-spec.json`の機種キーを使う。`current_lid_manufacturing`は`null`、または`model`/`models`の一方、`revision`、`candidate_ids`（空でなく重複しない候補ID一覧）を持つオブジェクトとする。参照先すべての`component`は`lid`、機種集合と版は指定に一致させる。アルミ板とPA12フレームなど複数ファイルで蓋候補を構成するときは、それぞれのIDを一覧にする。参照先のファイル存在とSHA-256も検査する。候補の登録や指定だけでは製造承認にならず、`production_approved`、機種別`manufacturing_release`、`release_gate`、G01〜G11を進めない。`engineering/release/`への配置は承認後に限り、`published_release_files`に同じパスとハッシュを記録する。
 
 承認には`approval_record`の承認者・日付・承認ファイル一覧（各パスとSHA-256）・`model_revisions`（機種別の製作版）、G01〜G11すべての`closed`状態、`result.summary`、実在する根拠ファイルの`result.evidence`一覧、`current-spec.json`の`release_gate`および機種別`manufacturing_release`との一致が必要。R8がプレビューだけの間、`latest_preview_is_manufacturing_data`は`false`とする。静的チェックは台帳・ファイル・ハッシュの整合を見るもので、加工適合、強度、現物試験、製造承認そのものを代行しない。
