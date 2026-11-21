@@ -38,7 +38,7 @@ python3 engineering/r11-build-feedback-04/package.py
 pnpm sync:r11
 ```
 
-同じ入力からは同じバイト列のZIPになります（固定時刻 2026-11-22 00:00:00、固定権限、名前順、ZIP_DEFLATED）。`pnpm sync:r11` は公開コピーと `project/release-state.json` / `project/current-spec.json` の `current_fullset_candidate` だけを更新します。
+同じ入力からは同じバイト列のZIPになります（固定時刻 2026-11-22 00:00:00、固定権限、名前順、ZIP_DEFLATED）。`pnpm sync:r11` は公開コピーと `project/release-state.json` の `current_metal_7u40_candidate`（7U40の現行選択）だけを更新します。旧来の `current_fullset_candidate`（R10記録）と `project/current-spec.json` は変更しません。
 
 ## CAD の再構築（取り込み時は実行していません）
 

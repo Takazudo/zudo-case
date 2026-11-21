@@ -169,7 +169,12 @@ export async function loadR11Inputs(root) {
   if (!pointer || pointer.model !== "7u40") throw new Error("release-state current_metal_7u40_candidate missing");
   const out = path.posix.dirname(pointer.manifest_path);
   const scene = await read(`${out}/scene.json`);
-  return { pointer, manifest: await read(pointer.manifest_path), validation: await read(`${out}/validation.json`), lid: scene.lid_metadata.counts };
+  const validation = await read(`${out}/validation.json`);
+  const params = await read(`${path.posix.dirname(out)}/parameters.json`);
+  // Washer split, derived as in lib/r11-contract.mjs: distinct outer and retained inner body washers, plus lid-wall washers.
+  const ids = prefix => new Set(validation.body_fastener_bearing_contacts.flatMap(c => [...c.a, ...c.b]).filter(id => id.startsWith(prefix))).size;
+  const washers = { outside: ids("washer-out-"), inside: ids("washer-in-"), lid: scene.lid_metadata.counts.round_washers };
+  return { pointer, manifest: await read(pointer.manifest_path), validation, lid: scene.lid_metadata.counts, envelope: params.body, washers };
 }
 
 export function renderReferencePages(spec, r11) {
@@ -178,8 +183,10 @@ export function renderReferencePages(spec, r11) {
   const byRel = rel => legacy.find(p => p.rel === `src/content/docs/metal-case/${rel}`).text;
   const f = (n, d = 4) => Number(n.toFixed(d)).toString();
   const dims = a => a.map(n => f(n, 3)).join(" × ");
+  const zen = n => String(n).replace(/[0-9]/g, d => String.fromCharCode(d.charCodeAt(0) + 0xfee0));
   const head = (title, desc, pos, extra = "") => `---\ntitle: ${JSON.stringify(title)}\ndescription: ${JSON.stringify(desc)}\nsidebar_position: ${pos}\n${extra}---\n\n{/* GENERATED: node scripts/sync-reference-tables.mjs / project/current-spec.json + release-state current_metal_7u40_candidate */}\n\n`;
-  const { pointer: c, manifest, validation, lid } = r11;
+  const { pointer: c, manifest, validation, lid, envelope, washers: wb } = r11;
+  const env = [envelope.width, envelope.depth, envelope.height];
   const counts = validation.counts;
   const m7 = spec.models["7u40"], h7 = m7.hardware_counts;
   if (c.revision !== manifest.revision || c.production_approved !== false || manifest.production_approved !== false) throw new Error("R11 pointer/manifest mismatch or approval drift");
@@ -216,19 +223,19 @@ ${link(c.preview, "R11-04の3Dプレビューを開く")}
 
 | 項目 | 値 |
 |---|---|
-| 本体アルミ外形 W×D×H | **${dims([manifest.parts.find(p => p.id === "panel-floor").dimensions_mm[0], manifest.parts.find(p => p.id === "panel-floor").dimensions_mm[1], 91])}mm** |
-| アルミ板 | t1.5、${c.quantities.aluminum}枚（本体5＋蓋板1） |
+| 本体アルミ外形 W×D×H | **${dims(env)}mm** |
+| アルミ板 | t${f(envelope.metal, 3)}、${c.quantities.aluminum}枚（本体${sheets.filter(p => p.id.startsWith("panel-")).length}＋蓋板${sheets.filter(p => p.id === "lid-plate").length}） |
 | PA12部品 | ${c.quantities.pa12}個（本体${c.quantities.pa12_body}＋蓋${c.quantities.pa12_lid}）、最長辺${f(Math.max(...pa12.flatMap(p => p.dimensions_mm)), 3)}mm |
 | PA12の実体積 | 本体${f(c.pa12_volume_cm3.body)}＋蓋${f(c.pa12_volume_cm3.lid)}＝**${f(c.pa12_volume_cm3.total)}cm³** |
 | 金属L字ブラケット | ${counts.body_brackets} |
 | 本体ねじ位置 | ${counts.body_screw_sites}（長穴 ${dims(c.body_slot_mm)}mm、内側へ片側5mm延長） |
 | 本体ナット | 薄型${counts.body_thin_nuts}＋通常${counts.body_other_nuts}（M5、購入品の寸法は仮） |
 | 板の切欠き合計 | ${c.sheet_cutouts.total}（本体長穴${c.sheet_cutouts.body_slots}＋レール丸穴${c.sheet_cutouts.rail_round_holes}＋蓋丸穴${c.sheet_cutouts.lid_round_holes}）。専用の吊り穴${counts.dedicated_hanging_holes} |
-| 丸座金（家庭印刷ASA） | ${washer.name}、${washer.quantity}個（外側本体40＋上部内側本体8＋蓋の壁16） |
-| 実レール長／レール本数 | ${f(m7.rail_length_mm, 3)}mm／${h7.rail}本（元のレール・fixer/padder PCB・8mmスペーサーを維持） |
-| レールと外箱のM5締結 | ${h7.mountBolt}点（ナットはケース外側） |
+| 丸座金（家庭印刷ASA） | ${washer.name}、${washer.quantity}個（外側本体${wb.outside}＋上部内側本体${wb.inside}＋蓋の壁${wb.lid}） |
+| 実レール長／レール本数 | ${f(m7.rail_length_mm, 3)}mm／${h7.rail}本（R11-04も元のレール・fixer/padder PCB・8mmスペーサーを変更しない。値は台帳の7U40レール構成） |
+| レールと外箱のM5締結 | ${counts.body_round_rail_holes}点（レール丸穴。ナットはケース外側） |
 
-## アルミ板６枚
+## アルミ板${zen(c.quantities.aluminum)}枚
 
 | 部品 | 外形 mm | 枚数 |
 |---|---|---:|
@@ -236,7 +243,7 @@ ${sheetRows}
 
 材質候補A5052、t1.5、黒アルマイト。床・前後板は長穴だけで、アルマイトの吊り方法は未確認。
 
-## PA12部品20個
+## PA12部品${c.quantities.pa12}個
 
 | 部品 | 個数 | 単体の外接寸法 mm | 単体体積 cm³ |
 |---|---:|---|---:|
@@ -257,7 +264,7 @@ ${link(c.packages.source, "R11-04の編集用ソースと出力")}内の\`out/pa
   const r6 = ["3u60", "7u60"].map(id => spec.models[id]);
   const cmpRows = [
     ...r6.map(m => `| [${m.label}](./${m.id}.mdx) | R6本体＋R8載せ蓋（基準） | ${dims(m.metal_mm)} | 5＋蓋（R8は表示のみ） | ${m.hardware_counts.panelBracket} | ${m.hardware_counts.mountBolt} | ガード${m.guards.t1p2.partCount}個（1.2mm） | ${f(m.guards.t1p2.totalVolumeCm3)} |`),
-    `| [${m7.label}](./7u40.mdx) | ${c.revision} | ${dims([229.4, 334, 91])} | ${c.quantities.aluminum}（本体5＋蓋1） | ${counts.body_brackets} | ${h7.mountBolt} | PA12 ${c.quantities.pa12}個（本体${c.quantities.pa12_body}＋蓋${c.quantities.pa12_lid}） | ${f(c.pa12_volume_cm3.total)} |`,
+    `| [${m7.label}](./7u40.mdx) | ${c.revision} | ${dims(env)} | ${c.quantities.aluminum}（本体${c.quantities.aluminum - 1}＋蓋1） | ${counts.body_brackets} | ${counts.body_round_rail_holes} | PA12 ${c.quantities.pa12}個（本体${c.quantities.pa12_body}＋蓋${c.quantities.pa12_lid}） | ${f(c.pa12_volume_cm3.total)} |`,
   ];
   // keep model order 3u60, 7u40, 7u60
   const ordered = [cmpRows[0], cmpRows[2], cmpRows[1]];
@@ -290,14 +297,14 @@ ${ordered.join("\n")}
   const [h3, h6] = [hc("3u60"), hc("7u60")];
   const bomRows = [
     row("本体アルミ板", h3.aluminumPanel, sheets.filter(p => p.id.startsWith("panel-")).length, h6.aluminumPanel, "A5052 t1.5、黒アルマイト候補"),
-    row("蓋アルミ板", "R8表示のみ", sheets.filter(p => p.id === "lid-plate").length, "R8表示のみ", "7U40はR11-04の蓋板（M5 8穴）"),
+    row("蓋アルミ板", "R8表示のみ", sheets.filter(p => p.id === "lid-plate").length, "R8表示のみ", `7U40はR11-04の蓋板（M5 ${counts.lid_plate_bolt_holes}穴）`),
     row("L字ブラケット", h3.panelBracket, counts.body_brackets, h6.panelBracket, "在庫20×20×16mm、厚2mm（実測）"),
-    row("本体の板接合M5ネジ", h3.panelJointBolt, counts.body_screw_sites, h6.panelJointBolt, "R6は丸穴、R11-04は長穴15.5×5.5"),
+    row("本体の板接合M5ネジ", h3.panelJointBolt, counts.body_screw_sites, h6.panelJointBolt, `R6は丸穴、R11-04は長穴${dims(c.body_slot_mm)}`),
     row("本体の板接合ナット", h3.panelJointNut, `${counts.body_thin_nuts + counts.body_other_nuts}（薄型${counts.body_thin_nuts}＋通常${counts.body_other_nuts}）`, h6.panelJointNut, "購入品の寸法は仮。R11-04は内側"),
-    row("本体の座金", h3.panelJointWasher, "48（外側40＋上部内側8）", h6.panelJointWasher, "R11-04は家庭印刷ASA丸座金Ø15/Ø5/t1。内側32か所は一体の受け座"),
+    row("本体の座金", h3.panelJointWasher, `${wb.outside + wb.inside}（外側${wb.outside}＋上部内側${wb.inside}）`, h6.panelJointWasher, "R11-04は家庭印刷ASA丸座金Ø15/Ø5/t1。内側32か所は一体の受け座"),
     row("蓋の組立ねじ（M5×12モデル）", "未定", `${lid.vertical_screws + lid.horizontal_screws}（天板${lid.vertical_screws}＋壁${lid.horizontal_screws}）`, "未定", "蓋の部品どうしの締結。本体へのロックではない"),
     row("蓋の壁の座金", "—", lid.round_washers, "—", "R11-04は家庭印刷ASA丸座金"),
-    row("ユニット→ケースM5", h3.mountBolt, h7.mountBolt, h6.mountBolt, "頭1.4mm、軸長未確定"),
+    row("ユニット→ケースM5", h3.mountBolt, counts.body_round_rail_holes, h6.mountBolt, "頭1.4mm、軸長未確定。R11-04はレール丸穴の数"),
     row("同ナット", h3.mountNut, h7.mountNut, h6.mountNut, "ケース外側（モジュール空間を確保）"),
     row("内側8mmスペーサー", h3.innerSpacer, h7.innerSpacer, h6.innerSpacer, "内外径は模式値を含む"),
     row("外側1mmナイロン座金", h3.outerWasher, h7.outerWasher, h6.outerWasher, "ユニット固定用"),

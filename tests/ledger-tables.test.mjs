@@ -23,7 +23,7 @@ async function makeFixture(t) {
   // The current 7U40 tables come from the active R11 selection and its imported outputs.
   const r11 = await loadR11Inputs(repoRoot);
   const out = path.posix.dirname(r11.pointer.manifest_path);
-  for (const rel of ["project/release-state.json", r11.pointer.manifest_path, `${out}/validation.json`, `${out}/scene.json`]) {
+  for (const rel of ["project/release-state.json", r11.pointer.manifest_path, `${out}/validation.json`, `${out}/scene.json`, `${path.posix.dirname(out)}/parameters.json`]) {
     await mkdir(path.dirname(path.join(root, rel)), { recursive: true });
     await copyFile(path.join(repoRoot, rel), path.join(root, rel));
   }
@@ -104,6 +104,28 @@ test("an R11 manifest change fails --check on the current 7U40 table", async t =
   const result = runCli(root, "--check");
   assert.equal(result.status, 1);
   assert.match(result.stderr, /src\/content\/docs\/metal-case\/models\/7u40\.mdx/);
+});
+
+test("R11 envelope and washer data reach the 7U40 table, comparison and BOM", async t => {
+  const { root } = await makeFixture(t);
+  const pointer = JSON.parse(await readFile(path.join(root, "project/release-state.json"), "utf8")).current_metal_7u40_candidate;
+  const out = path.posix.dirname(pointer.manifest_path);
+  const paramsPath = path.join(root, path.posix.dirname(out), "parameters.json");
+  const params = JSON.parse(await readFile(paramsPath, "utf8"));
+  params.body.height += 1;
+  await writeFile(paramsPath, `${JSON.stringify(params, null, 2)}\n`);
+  const envelope = runCli(root, "--check");
+  assert.equal(envelope.status, 1);
+  for (const rel of ["models/7u40.mdx", "models/comparison.mdx"]) assert.ok(envelope.stderr.includes(`src/content/docs/metal-case/${rel}`), envelope.stderr);
+
+  const { root: other } = await makeFixture(t);
+  const scenePath = path.join(other, out, "scene.json");
+  const scene = JSON.parse(await readFile(scenePath, "utf8"));
+  scene.lid_metadata.counts.round_washers += 1;
+  await writeFile(scenePath, JSON.stringify(scene));
+  const washer = runCli(other, "--check");
+  assert.equal(washer.status, 1);
+  for (const rel of ["models/7u40.mdx", "manufacturing/bom.mdx"]) assert.ok(washer.stderr.includes(`src/content/docs/metal-case/${rel}`), washer.stderr);
 });
 
 test("an R11 revision or approval drift is refused instead of rendered", async t => {

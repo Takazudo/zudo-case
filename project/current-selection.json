@@ -20,7 +20,7 @@
       "current_doc": "metal-case/design/r11-build-feedback-04.mdx",
       "preview": { "path": "/previews/r11-build-feedback-04.html", "label": "R11-BUILD-FEEDBACK-04 一式（現行の設計候補）" },
       "archive_doc": "archive/metal-case/index.mdx",
-      "legacy_ledger_note": "release-state/current-spec current_fullset_candidate, candidate_revision, current_body_geometry and current_lid_manufacturing keep their historical R10/R9 contracts and are not the current selection.",
+      "legacy_ledger_note": "release-state/current-spec current_fullset_candidate, and release-state warning, current_design (7U40 part), candidate_revision, candidate_files, lid_revision_candidates, current_body_geometry and current_lid_manufacturing keep their historical R10/R9 contracts and are not the current 7U40 selection.",
       "superseded": ["R10-FULLSET-01", "R9-LID-M5-01", "R9-FITFIX-01", "R9-PROTOTYPE-01", "R8/R7/R6 7U40 material"],
       "production_approved": false
     },

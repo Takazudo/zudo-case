@@ -34,6 +34,8 @@ pnpm test:r11
 | `release-state.json`／`current-spec.json`の`current_fullset_candidate` | 旧7U40一式（R10） |
 | `release-state.json`の`candidate_revision`・`current_body_geometry` | 旧7U40候補（R9-FITFIX-01）。`current_body_geometry`の文字列の7U40部分も当時の記録 |
 | `release-state.json`の`current_lid_manufacturing` | 旧来の蓋候補指定（R9-FITFIX-01の蓋板・枠） |
+| `release-state.json`の`warning`・`candidate_files`・`lid_revision_candidates` | R9期の注意書きと候補ファイル一覧（R9-FITFIX-01・R9-LID-M5-01）。注意書きの「unapproved 7u40 candidate」も当時の記録 |
+| `release-state.json`の`current_design` | R6本体＋R8載せ蓋の基準。3U60・7U60では現行の基準だが、7U40の現行はR11-04 |
 
 R10・R9の表を作る生成スクリプト（`scripts/sync-fullset.mjs`、`scripts/sync-r9-doc-table.mjs`）は[アーカイブ](../archive/metal-case/index.mdx)のページへ書き込みます。`current_metal_7u40_candidate`には書き込みません。
 
