@@ -10,14 +10,14 @@
 
 | パス | 内容 |
 |---|---|
-| `source/` | 受領アーカイブ `zudo-case-r11-04-design-files.zip` の全238ファイルを、ルート `zudo-case-r11-04/` を外してバイト単位でそのまま展開したもの。**変更禁止**。 |
+| `source/` | 受領アーカイブ `zudo-case-r11-04-design-files.zip` の全238ファイルを、ルート `zudo-case-r11-04/` を外して展開したもの。公開リポジトリのため、メールのメッセージID・注文番号・保存先パスを含む3ファイル（`README.md` の保存先の節、`research/hanging-hole-audit.{md,json}`）だけを一般的な表現へ置き換え、受領時のハッシュを `SOURCE-RECEIPT.json` の `received_sha256` に残しています。他の235ファイルはバイト単位で同一。**変更禁止**。 |
 | `source/out/` | **現行**のレビュー済み出力（STEP/STL/DXF、`parts-manifest.json`、`validation.json`、`preview.html` など）。実物を作るときはここから。 |
 | `source/reference/` | **履歴**の比較入力（R11-01〜03 の基準、R10 の記録など）。製造には使わない。 |
 | `source/research/` | 価格・吊り穴の調査記録。価格はすべて未見積（null）。 |
 | `SOURCE-RECEIPT.json` | 受領アーカイブの SHA-256・サイズ・メンバー一覧、基準リビジョン、付属ファイル（変更蓋部品ZIP・PA12見積用ZIP・PNG・Markdown）との照合結果。 |
-| `package.py` | `source/out/` だけを読んで配布用ZIPを決定的に作る（Python 3 標準ライブラリのみ）。 |
+| `package.py` | `source/out/` から役割別の配布用ZIPを、`source/` 全体から公開用の元データZIPを決定的に作る（Python 3 標準ライブラリのみ）。 |
 | `packages/` | `R11-BUILD-FEEDBACK-04-{pa12,aluminum,home-print}.zip`。 |
-| `packages-manifest.json` | 各パッケージの役割・SHA-256・メンバーと元ファイルの対応、`package.py` 自身のハッシュ。`source` 役は受領アーカイブそのもの（`verbatim_received_archive: true`）。 |
+| `packages-manifest.json` | 各パッケージの役割・SHA-256・メンバーと元ファイルの対応、`package.py` 自身のハッシュ。`source` 役は `source/` の決定的な再パッケージ（`verbatim_received_archive: false`）。受領アーカイブ自体は公開せず、SHA-256 `4c74dd94…` で識別します。 |
 
 公開先: プレビュー `/previews/r11-build-feedback-04.html`（`source/out/preview.html` と同一）、ダウンロード `/downloads/candidate/R11-BUILD-FEEDBACK-04-{source,pa12,aluminum,home-print}.zip`、図 `/images/metal-case/r11-build-feedback-04/{lid-guides,lid-side-fit}.png`。
 

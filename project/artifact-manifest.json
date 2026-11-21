@@ -264,8 +264,8 @@
     },
     {
       "path": "engineering/README.md",
-      "bytes": 2828,
-      "sha256": "9b5f5ed0fcf186e559cb11d63dc691e7fb8def53d4fb08cdae6a83fd1491e69e",
+      "bytes": 2916,
+      "sha256": "ffccc85e99d10a15e480b85098e4146626af511c75df653b71e64bb2348464c7",
       "status": "supporting-not-released"
     },
     {
@@ -4200,8 +4200,8 @@
     },
     {
       "path": "engineering/r11-build-feedback-04/source/README.md",
-      "bytes": 15528,
-      "sha256": "ac190dc86eb3ba94b53cb9e35a9fd64c63d0e90bf352fe0a061d81c496a998b3",
+      "bytes": 15530,
+      "sha256": "d7d5dfd47f8303051c310ef7ed9daab5ab8d5144cbee4bdcdc7d422f74548e2a",
       "status": "candidate-not-approved"
     },
     {
@@ -5502,14 +5502,14 @@
     },
     {
       "path": "engineering/r11-build-feedback-04/source/research/hanging-hole-audit.json",
-      "bytes": 9791,
-      "sha256": "a7311c8f77a98c407a245785d9cae1e9c27bb8c961ed0cfe1edd6c62014e6654",
+      "bytes": 9127,
+      "sha256": "1582fe2115e0c292bad472646e91e70e742af655efdd848dfdfb3c92e958ed10",
       "status": "source-evidence"
     },
     {
       "path": "engineering/r11-build-feedback-04/source/research/hanging-hole-audit.md",
-      "bytes": 8736,
-      "sha256": "eefd77c48edf4376106f4322b910e5bffc74b8dd38a2eaca8a8dee6db9106bcb",
+      "bytes": 8310,
+      "sha256": "2b8fd1ccc594b7ccab588fccc55a7c2958b29671a671f81788b6107054cb1d75",
       "status": "source-evidence"
     },
     {
@@ -5628,26 +5628,26 @@
     },
     {
       "path": "engineering/r11-build-feedback-04/SOURCE-RECEIPT.json",
-      "bytes": 54967,
-      "sha256": "7b7d495c291e4d946dd754a10c9a125dd5f48087d3dd736fcbc1b2f494943725",
+      "bytes": 56276,
+      "sha256": "e2e6d2f78b128056f3b29d88c10c6c164d615cb0b86438b78fbd930405c7de69",
       "status": "source-evidence"
     },
     {
       "path": "engineering/r11-build-feedback-04/README.md",
-      "bytes": 6115,
-      "sha256": "762a3cc0e4abf90681eb34241746dcc8f8ee19289e17a2ec9a96e9da3abd860d",
+      "bytes": 6627,
+      "sha256": "78b65450a017f52ad38fa17e3774af239456ec959fc5b9cc20be8daa71a9c554",
       "status": "candidate-not-approved"
     },
     {
       "path": "engineering/r11-build-feedback-04/package.py",
-      "bytes": 10814,
-      "sha256": "b7cdab53969229e072e9b74a5e1e4ccdbb9138b0e1b4bb5f8eb78c4b09a9bf32",
+      "bytes": 11997,
+      "sha256": "ea12c02d27eaa72ac1c5438bdd0b4847a5bcc21cc1fe14ca67b80685c361bbef",
       "status": "candidate-not-approved"
     },
     {
       "path": "engineering/r11-build-feedback-04/packages-manifest.json",
-      "bytes": 15936,
-      "sha256": "4dbf40d398da6477ab336ebde3d9294f10199e64b073e6464f007d97bc7fd273",
+      "bytes": 16184,
+      "sha256": "e888f35184da5f561ae8f8e58729aafe4af2879e8396ba2c48352cf94d04b7d8",
       "status": "candidate-not-approved"
     },
     {
@@ -5676,8 +5676,8 @@
     },
     {
       "path": "public/downloads/candidate/R11-BUILD-FEEDBACK-04-source.zip",
-      "bytes": 16928225,
-      "sha256": "4c74dd94e84ecebee8ac8d714cb5ba60f0ff479667c8c7f4ed4c75790463fcad",
+      "bytes": 16927839,
+      "sha256": "a5f140144554fe4e814dee0df2547194f81db1cc0835bd9acc31c5b2985d8976",
       "status": "candidate-not-approved"
     },
     {

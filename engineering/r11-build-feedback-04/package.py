@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Build the R11-BUILD-FEEDBACK-04 download packages from the imported, reviewed outputs.
 
-Reads only ``source/out/`` (the byte-identical extraction of the received archive) and
-writes ``packages/*.zip`` plus ``packages-manifest.json``. Python 3 standard library only.
+Reads ``source/out/`` for the role packages and the whole ``source/`` tree (listed in
+SOURCE-RECEIPT.json) for the public source package. Writes ``packages/*.zip``, the public
+source ZIP and ``packages-manifest.json``. Python 3 standard library only.
 Deterministic: sorted members, fixed timestamp 2026-11-22 00:00:00, fixed permissions,
 ZIP_DEFLATED at level 9. No CAD is regenerated here.
 
@@ -26,7 +27,12 @@ MODE = 0o100644
 PUBLIC_DIR = 'public/downloads/candidate'
 URL_DIR = '/downloads/candidate'
 
-# The received archive is published verbatim (not rebuilt). Its identity is the accepted input.
+# The received archive is identified by hash only and is not published. The public source
+# download is a deterministic repackage of source/ (same root and member list), in which the
+# members marked "generalized" in SOURCE-RECEIPT.json have private account details replaced.
+SOURCE = HERE / 'source'
+RECEIPT = HERE / 'SOURCE-RECEIPT.json'
+ROOT_DIR = HERE.parents[1]
 RECEIVED_ARCHIVE = {
     'filename': 'zudo-case-r11-04-design-files.zip',
     'sha256': '4c74dd94e84ecebee8ac8d714cb5ba60f0ff479667c8c7f4ed4c75790463fcad',
@@ -185,14 +191,28 @@ def main():
             'members': members,
         })
     source_name = f'{REVISION}-source.zip'
+    receipt = json.loads(RECEIPT.read_text(encoding='utf-8'))
+    if receipt['received_archive']['sha256'] != RECEIVED_ARCHIVE['sha256']:
+        raise SystemExit('SOURCE-RECEIPT.json names a different received archive')
+    root = receipt['received_archive']['root']
+    source_entries = []
+    for m in receipt['members']:
+        data = (SOURCE / m['path']).read_bytes()
+        if sha256(data) != m['sha256'] or len(data) != m['bytes']:
+            raise SystemExit('source/ file differs from SOURCE-RECEIPT: ' + m['path'])
+        source_entries.append((root + m['path'], data))
+    source_blob = build_zip(source_entries)
+    (ROOT_DIR / PUBLIC_DIR / source_name).write_bytes(source_blob)
     records.insert(0, {
         'role': 'source',
         'path': None,
         'public_path': f'{PUBLIC_DIR}/{source_name}',
         'url': f'{URL_DIR}/{source_name}',
-        'bytes': RECEIVED_ARCHIVE['bytes'],
-        'sha256': RECEIVED_ARCHIVE['sha256'],
-        'verbatim_received_archive': True,
+        'bytes': len(source_blob),
+        'sha256': sha256(source_blob),
+        'verbatim_received_archive': False,
+        'generalized_members': [m['path'] for m in receipt['members'] if m.get('generalized')],
+        'received_archive_sha256': RECEIVED_ARCHIVE['sha256'],
         'received_filename': RECEIVED_ARCHIVE['filename'],
         'members_record': 'SOURCE-RECEIPT.json',
     })

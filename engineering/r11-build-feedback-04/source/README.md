@@ -133,4 +133,4 @@ python3 research/build_pricing_audit.py
 
 ## Artifact saving
 
-The destination for this round is **`/codex-artifacts/zudo-case/r11-build-feedback-04-20261122/`**. Keep its complete package, preview and reports separate from earlier rounds. Report a successful save only after observing Dropbox upload completion.
+Save this round's complete package, preview and reports to the owner's private artifact storage, separate from earlier rounds (the storage location is withheld in this published copy). Report a successful save only after observing the upload complete.

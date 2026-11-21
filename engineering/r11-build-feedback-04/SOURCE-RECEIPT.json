@@ -10,13 +10,14 @@
     "member_count": 238,
     "root": "zudo-case-r11-04/",
     "uncompressed_bytes": 90422668,
-    "published_verbatim_at": "public/downloads/candidate/R11-BUILD-FEEDBACK-04-source.zip"
+    "published": false,
+    "note": "The received archive is identified by this hash only. It is not published; the public source download is a deterministic repackage of source/ with private account details generalized."
   },
   "provenance": {
-    "original_location": "Dropbox /codex-artifacts/zudo-case/r11-build-feedback-04-20261122/",
+    "original_location": "The owner's private artifact storage (location withheld)",
     "received_via": "2026-11-22 handoff (prepared 2026-11-22 JST)",
     "tracking_issue": "Takazudo/zudo-case#138",
-    "note": "Extracted byte-for-byte into source/ with the archive root stripped. No CAD was regenerated on import."
+    "note": "Extracted into source/ with the archive root stripped; every member is byte-identical to the received archive except the generalized members listed in generalized_members. No CAD was regenerated on import."
   },
   "source_statement": {
     "base_commit": "b7a9e3cd1fba3a12fa8a625ab4f0f43d4a06674a",
@@ -355,11 +356,28 @@
       ]
     }
   },
+  "generalized_members": [
+    {
+      "path": "README.md",
+      "reason": "Artifact-saving section: private storage path replaced with general wording."
+    },
+    {
+      "path": "research/hanging-hole-audit.md",
+      "reason": "Mailbox message IDs/links and supplier order and customer references replaced with general wording; findings, dates and quoted supplier wording unchanged."
+    },
+    {
+      "path": "research/hanging-hole-audit.json",
+      "reason": "Mailbox message/thread IDs and URLs, order IDs, customer reference and line-item IDs replaced with general wording; findings, dates and scope unchanged."
+    }
+  ],
   "members": [
     {
       "path": "README.md",
-      "bytes": 15528,
-      "sha256": "ac190dc86eb3ba94b53cb9e35a9fd64c63d0e90bf352fe0a061d81c496a998b3"
+      "bytes": 15530,
+      "sha256": "d7d5dfd47f8303051c310ef7ed9daab5ab8d5144cbee4bdcdc7d422f74548e2a",
+      "received_bytes": 15528,
+      "received_sha256": "ac190dc86eb3ba94b53cb9e35a9fd64c63d0e90bf352fe0a061d81c496a998b3",
+      "generalized": true
     },
     {
       "path": "build.py",
@@ -1443,13 +1461,19 @@
     },
     {
       "path": "research/hanging-hole-audit.json",
-      "bytes": 9791,
-      "sha256": "a7311c8f77a98c407a245785d9cae1e9c27bb8c961ed0cfe1edd6c62014e6654"
+      "bytes": 9127,
+      "sha256": "1582fe2115e0c292bad472646e91e70e742af655efdd848dfdfb3c92e958ed10",
+      "received_bytes": 9791,
+      "received_sha256": "a7311c8f77a98c407a245785d9cae1e9c27bb8c961ed0cfe1edd6c62014e6654",
+      "generalized": true
     },
     {
       "path": "research/hanging-hole-audit.md",
-      "bytes": 8736,
-      "sha256": "eefd77c48edf4376106f4322b910e5bffc74b8dd38a2eaca8a8dee6db9106bcb"
+      "bytes": 8310,
+      "sha256": "2b8fd1ccc594b7ccab588fccc55a7c2958b29671a671f81788b6107054cb1d75",
+      "received_bytes": 8736,
+      "received_sha256": "eefd77c48edf4376106f4322b910e5bffc74b8dd38a2eaca8a8dee6db9106bcb",
+      "generalized": true
     },
     {
       "path": "research/jlc-pa12-pricing-audit.json",

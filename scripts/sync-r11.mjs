@@ -11,6 +11,8 @@ import {checkR11Contract, deriveR11Facts, readZip, sha256, R11_DIR, R11_SOURCE, 
 
 export const POINTER_FILES = ['project/release-state.json'];
 export const POINTER_KEY = 'current_metal_7u40_candidate';
+// Private account details that the published source copy must not carry (mailbox links, the private storage path).
+export const PRIVATE_DETAIL = /mail\.google\.com\/mail|codex-artifacts\//;
 const URL_DIR = '/downloads/candidate';
 const PUBLIC_DIR = 'public/downloads/candidate';
 export const PUBLIC_COPIES = [
@@ -56,8 +58,11 @@ export async function verifyPackages(root, receipt, pkgManifest) {
     const expectedPublic = `${PUBLIC_DIR}/${R11_REVISION}-${pkg.role}.zip`;
     if (pkg.public_path !== expectedPublic || pkg.url !== expectedPublic.replace(/^public/, '')) errors.push(`${pkg.role}: unexpected public path`);
     if (pkg.role === 'source') {
-      if (pkg.verbatim_received_archive !== true || pkg.sha256 !== receipt.received_archive.sha256 || pkg.bytes !== receipt.received_archive.bytes)
-        errors.push('source package is not the verbatim received archive');
+      // The public source ZIP is a deterministic repackage of source/; the received archive is identified by hash only.
+      const generalized = receipt.members.filter(m => m.generalized).map(m => m.path);
+      if (pkg.verbatim_received_archive !== false || pkg.received_archive_sha256 !== receipt.received_archive.sha256
+        || JSON.stringify(pkg.generalized_members) !== JSON.stringify(generalized))
+        errors.push('source package record does not match SOURCE-RECEIPT (received hash / generalized members)');
       continue;
     }
     let blob;
@@ -78,13 +83,20 @@ export async function verifyPackages(root, receipt, pkgManifest) {
   return errors;
 }
 
-export async function verifySourceZip(root, receipt) {
+export async function verifySourceZip(root, receipt, pkgManifest) {
   const errors = [];
   const p = path.join(root, PUBLIC_DIR, `${R11_REVISION}-source.zip`);
   let blob;
   try { blob = readFileSync(p); } catch { return [`${PUBLIC_DIR}/${R11_REVISION}-source.zip: missing`]; }
-  if (blob.length !== receipt.received_archive.bytes || sha256(blob) !== receipt.received_archive.sha256)
-    return [`${PUBLIC_DIR}/${R11_REVISION}-source.zip: not the verbatim received archive`];
+  const record = pkgManifest.packages.find(x => x.role === 'source');
+  if (blob.length !== record.bytes || sha256(blob) !== record.sha256)
+    return [`${PUBLIC_DIR}/${R11_REVISION}-source.zip: bytes/sha256 differ from packages-manifest; rerun package.py`];
+  // Received-archive bytes stay distinct from the published repackage: unchanged members keep their received hash,
+  // generalized members record both hashes, and nothing outside the receipt may appear.
+  for (const m of receipt.members) {
+    if (m.generalized ? !(m.received_sha256 && m.received_sha256 !== m.sha256) : (m.received_sha256 !== undefined))
+      errors.push(`SOURCE-RECEIPT ${m.path}: generalized/received hash record inconsistent`);
+  }
   const byPath = new Map(receipt.members.map(m => [m.path, m]));
   const entries = await readZip(blob);
   if (entries.length !== receipt.members.length) errors.push('source zip member count differs from receipt');
@@ -92,6 +104,7 @@ export async function verifySourceZip(root, receipt) {
     const rel = e.name.startsWith(receipt.received_archive.root) ? e.name.slice(receipt.received_archive.root.length) : null;
     const m = rel && byPath.get(rel);
     if (!m || sha256(e.data) !== m.sha256) errors.push(`source zip member ${e.name} differs from SOURCE-RECEIPT`);
+    if (PRIVATE_DETAIL.test(e.data.toString('latin1'))) errors.push(`source zip member ${e.name} still carries a private mailbox link or storage path`);
   }
   return errors;
 }
@@ -136,7 +149,7 @@ export async function runSync({root, check}) {
   errors.push(...verifyReceipt(root, receipt));
   errors.push(...checkR11Contract(root));
   errors.push(...await verifyPackages(root, receipt, pkgManifest));
-  errors.push(...await verifySourceZip(root, receipt));
+  errors.push(...await verifySourceZip(root, receipt, pkgManifest));
   if (errors.length) return {errors, changed};
 
   const copies = [...PUBLIC_COPIES, ...pkgManifest.packages.filter(p => p.role !== 'source')
