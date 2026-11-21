@@ -1,0 +1,906 @@
+{
+  "audit_date": "2026-11-22",
+  "revision": "R11-BUILD-FEEDBACK-04",
+  "production_approved": false,
+  "scope": "All 20 supplier PA12 parts; loose ASA washers and purchased rubber feet are outside the JLC PA12 quote.",
+  "geometry_basis": "Exported R11-BUILD-FEEDBACK-04 exact CAD dimensions and material volumes, compared with the saved R11-03 baseline; all 20 STL file hashes verified against the export manifest.",
+  "inputs": [
+    {
+      "path": "reference/r11-03-baseline/parts-manifest.json",
+      "sha256": "2c15b23fb74c520319610c1eeab62743c2fa47b197f5a1ffa8fc25637df699ae"
+    },
+    {
+      "path": "out/parts-manifest.json",
+      "sha256": "561a7b1f42043af87e2a5145bc7b79331310ceabe3c65fdae6408bd6ae3dada6"
+    },
+    {
+      "path": "reference/r10-cart-2026-10-26.json",
+      "sha256": "1420d5b8587e89980aa840b4f474e9756284a37900d8a5e320821e05965ad0c4"
+    }
+  ],
+  "rules": {
+    "large_part_surcharge_longest_axis_mm": 250,
+    "comparison": ">=",
+    "indicated_surcharge_start_usd": 8,
+    "starting_pa12_price_usd": 1,
+    "starting_price_volume_threshold_cm3": null,
+    "starting_price_envelope_threshold_cm3": null,
+    "starting_price_dimension_threshold_mm": null,
+    "full_formula_published": false,
+    "note": "Pass at <250 mm is not proof of the USD 1 starting tier. Shape-review surcharges remain unassessed."
+  },
+  "parts": [
+    {
+      "id": "body-top-front",
+      "quantity": 1,
+      "dimensions_mm": [
+        139.0,
+        4.6,
+        28.0
+      ],
+      "longest_mm": 139.0,
+      "material_volume_cm3": 3.306621156111217,
+      "prior_r11_03_volume_cm3": 3.306621156111217,
+      "envelope_volume_cm3": 17.903200000000048,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/body-top-front.stl",
+      "file_exists": true,
+      "stl_sha256": "aab504b7b5804efc0157ed3ee96fe73556a289b8e8271e5b1dc97f435b817e4e",
+      "uploaded": false
+    },
+    {
+      "id": "body-bottom-front",
+      "quantity": 1,
+      "dimensions_mm": [
+        139.0,
+        30.0,
+        30.0
+      ],
+      "longest_mm": 139.0,
+      "material_volume_cm3": 5.846656885108738,
+      "prior_r11_03_volume_cm3": 5.846656885108738,
+      "envelope_volume_cm3": 125.1,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/body-bottom-front.stl",
+      "file_exists": true,
+      "stl_sha256": "745f8b9774c88236af361dfd7950c93805ee76bd6e7d8b6c69525f169ca4fc3b",
+      "uploaded": false
+    },
+    {
+      "id": "body-top-back",
+      "quantity": 1,
+      "dimensions_mm": [
+        139.0,
+        4.6,
+        28.0
+      ],
+      "longest_mm": 139.0,
+      "material_volume_cm3": 3.306621156111216,
+      "prior_r11_03_volume_cm3": 3.306621156111216,
+      "envelope_volume_cm3": 17.903200000000048,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/body-top-back.stl",
+      "file_exists": true,
+      "stl_sha256": "54a15e2f55cea5e475639931a8f0f5199d09d4a3390490a4087a88b3f48e5293",
+      "uploaded": false
+    },
+    {
+      "id": "body-bottom-back",
+      "quantity": 1,
+      "dimensions_mm": [
+        139.0,
+        30.0,
+        30.0
+      ],
+      "longest_mm": 139.0,
+      "material_volume_cm3": 5.846656885108737,
+      "prior_r11_03_volume_cm3": 5.846656885108737,
+      "envelope_volume_cm3": 125.1,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/body-bottom-back.stl",
+      "file_exists": true,
+      "stl_sha256": "124a4b9521efb8c9b18c424e1e06c7e6e83c9cdbee45ac8ab735d88144149251",
+      "uploaded": false
+    },
+    {
+      "id": "body-top-right",
+      "quantity": 1,
+      "dimensions_mm": [
+        4.6,
+        210.0,
+        28.0
+      ],
+      "longest_mm": 210.0,
+      "material_volume_cm3": 4.279321156111215,
+      "prior_r11_03_volume_cm3": 4.279321156111215,
+      "envelope_volume_cm3": 27.047999999999995,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/body-top-right.stl",
+      "file_exists": true,
+      "stl_sha256": "495634740710b77d0443ab78abe935575d1c859b8042a8ae596819d25d458b92",
+      "uploaded": false
+    },
+    {
+      "id": "body-bottom-right",
+      "quantity": 1,
+      "dimensions_mm": [
+        30.0,
+        210.0,
+        30.0
+      ],
+      "longest_mm": 210.0,
+      "material_volume_cm3": 7.256716885108736,
+      "prior_r11_03_volume_cm3": 7.256716885108736,
+      "envelope_volume_cm3": 189.0,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/body-bottom-right.stl",
+      "file_exists": true,
+      "stl_sha256": "78005e6dceca0614ed205fe1cb1286ce54318a614c362f4cc60b743eff01e406",
+      "uploaded": false
+    },
+    {
+      "id": "body-top-left",
+      "quantity": 1,
+      "dimensions_mm": [
+        4.6,
+        210.0,
+        28.0
+      ],
+      "longest_mm": 210.0,
+      "material_volume_cm3": 4.279321156111217,
+      "prior_r11_03_volume_cm3": 4.279321156111217,
+      "envelope_volume_cm3": 27.047999999999995,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/body-top-left.stl",
+      "file_exists": true,
+      "stl_sha256": "65011e5fa721c54fe06af021cafa915ec878bc515a79a88f192c3d8e156941a9",
+      "uploaded": false
+    },
+    {
+      "id": "body-bottom-left",
+      "quantity": 1,
+      "dimensions_mm": [
+        30.0,
+        210.0,
+        30.0
+      ],
+      "longest_mm": 210.0,
+      "material_volume_cm3": 7.256716885108734,
+      "prior_r11_03_volume_cm3": 7.256716885108734,
+      "envelope_volume_cm3": 188.99999999999991,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/body-bottom-left.stl",
+      "file_exists": true,
+      "stl_sha256": "3c05861621b9043db4faad3fcee648f550882d06e0c70a8a4f12da18fe3b071f",
+      "uploaded": false
+    },
+    {
+      "id": "body-corner--1--1",
+      "quantity": 1,
+      "dimensions_mm": [
+        67.2,
+        84.0,
+        93.0
+      ],
+      "longest_mm": 93.0,
+      "material_volume_cm3": 11.589121271642995,
+      "prior_r11_03_volume_cm3": 11.589121271642995,
+      "envelope_volume_cm3": 524.9664000000001,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/body-corner--1--1.stl",
+      "file_exists": true,
+      "stl_sha256": "caf961e1e26e106835c6a249eefff6efa7f539681c693edc0316a7ce99d4106e",
+      "uploaded": false
+    },
+    {
+      "id": "body-corner--1-1",
+      "quantity": 1,
+      "dimensions_mm": [
+        67.2,
+        84.0,
+        93.0
+      ],
+      "longest_mm": 93.0,
+      "material_volume_cm3": 11.589121271645555,
+      "prior_r11_03_volume_cm3": 11.589121271645555,
+      "envelope_volume_cm3": 524.9664,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/body-corner--1-1.stl",
+      "file_exists": true,
+      "stl_sha256": "e593cd1ef45d9eab6a6009329bd7060b80c62f059f88143c4ea51a7a77bcc835",
+      "uploaded": false
+    },
+    {
+      "id": "body-corner-1--1",
+      "quantity": 1,
+      "dimensions_mm": [
+        67.2,
+        84.0,
+        93.0
+      ],
+      "longest_mm": 93.0,
+      "material_volume_cm3": 11.589121271639922,
+      "prior_r11_03_volume_cm3": 11.589121271639922,
+      "envelope_volume_cm3": 524.9664000000002,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/body-corner-1--1.stl",
+      "file_exists": true,
+      "stl_sha256": "ce8f889e9049fdabbc7f3daf9862966b425fd7fc46a7acf831a74ef80fb1b0bc",
+      "uploaded": false
+    },
+    {
+      "id": "body-corner-1-1",
+      "quantity": 1,
+      "dimensions_mm": [
+        67.2,
+        84.0,
+        93.0
+      ],
+      "longest_mm": 93.0,
+      "material_volume_cm3": 11.589121271649296,
+      "prior_r11_03_volume_cm3": 11.589121271649296,
+      "envelope_volume_cm3": 524.9664000000001,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/body-corner-1-1.stl",
+      "file_exists": true,
+      "stl_sha256": "b21bada08da9a17fb5761b823b7955791b3535dfba2dbccc600c2e3d7974edf3",
+      "uploaded": false
+    },
+    {
+      "id": "lid-corner-fl",
+      "quantity": 1,
+      "dimensions_mm": [
+        91.06,
+        94.05,
+        43.8
+      ],
+      "longest_mm": 94.05,
+      "material_volume_cm3": 16.80180473334332,
+      "prior_r11_03_volume_cm3": 14.405742233343318,
+      "envelope_volume_cm3": 375.1116534,
+      "material_volume_change_cm3": 2.396062500000002,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/lid-corner-fl.stl",
+      "file_exists": true,
+      "stl_sha256": "cfe0f1aa3c4c3ad9ef8228ac409de334b4ec2058f4f71948fce850f37c76e3d6",
+      "uploaded": false
+    },
+    {
+      "id": "lid-corner-fr",
+      "quantity": 1,
+      "dimensions_mm": [
+        91.06,
+        94.05,
+        43.8
+      ],
+      "longest_mm": 94.05,
+      "material_volume_cm3": 16.801804733343385,
+      "prior_r11_03_volume_cm3": 14.405742233343386,
+      "envelope_volume_cm3": 375.11165339999997,
+      "material_volume_change_cm3": 2.3960625,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/lid-corner-fr.stl",
+      "file_exists": true,
+      "stl_sha256": "e856f260337a0e6e1b654bb78020374f151f96f546b419ce4895e31c6cb9d79f",
+      "uploaded": false
+    },
+    {
+      "id": "lid-corner-br",
+      "quantity": 1,
+      "dimensions_mm": [
+        91.06,
+        94.05,
+        43.8
+      ],
+      "longest_mm": 94.05,
+      "material_volume_cm3": 16.801804733343424,
+      "prior_r11_03_volume_cm3": 14.405742233343407,
+      "envelope_volume_cm3": 375.1116534,
+      "material_volume_change_cm3": 2.396062500000016,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/lid-corner-br.stl",
+      "file_exists": true,
+      "stl_sha256": "165cf9ed44888b8254f1cdea6963bd1f8728cf9b07c19cdc5b557d792d44b120",
+      "uploaded": false
+    },
+    {
+      "id": "lid-corner-bl",
+      "quantity": 1,
+      "dimensions_mm": [
+        91.06,
+        94.05,
+        43.8
+      ],
+      "longest_mm": 94.05,
+      "material_volume_cm3": 16.801804733343396,
+      "prior_r11_03_volume_cm3": 14.405742233343412,
+      "envelope_volume_cm3": 375.1116534,
+      "material_volume_change_cm3": 2.3960624999999856,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/lid-corner-bl.stl",
+      "file_exists": true,
+      "stl_sha256": "37bc14de9b5921faacb7feb7c964d589331f4363b40a6441805367855a7f9b70",
+      "uploaded": false
+    },
+    {
+      "id": "lid-middle-front",
+      "quantity": 1,
+      "dimensions_mm": [
+        89.48,
+        14.0,
+        43.8
+      ],
+      "longest_mm": 89.47999999999999,
+      "material_volume_cm3": 8.149676233343358,
+      "prior_r11_03_volume_cm3": 8.149676233343358,
+      "envelope_volume_cm3": 54.86913599999998,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/lid-middle-front.stl",
+      "file_exists": true,
+      "stl_sha256": "9f9b051dcc88927da1259bb24fc5d0af2d02d71b970a985e2fdaaa9f9fe509a5",
+      "uploaded": false
+    },
+    {
+      "id": "lid-middle-right",
+      "quantity": 1,
+      "dimensions_mm": [
+        14.0,
+        188.1,
+        43.8
+      ],
+      "longest_mm": 188.1,
+      "material_volume_cm3": 18.351915233343348,
+      "prior_r11_03_volume_cm3": 12.354790233343362,
+      "envelope_volume_cm3": 115.34292000000022,
+      "material_volume_change_cm3": 5.997124999999987,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/lid-middle-right.stl",
+      "file_exists": true,
+      "stl_sha256": "a3eef0ce408ee4c3f3bc003b0d7a46ff9a7ff57205aedd4bd38ed07fe9c9c489",
+      "uploaded": false
+    },
+    {
+      "id": "lid-middle-back",
+      "quantity": 1,
+      "dimensions_mm": [
+        89.48,
+        14.0,
+        43.8
+      ],
+      "longest_mm": 89.47999999999999,
+      "material_volume_cm3": 8.149676233343362,
+      "prior_r11_03_volume_cm3": 8.149676233343362,
+      "envelope_volume_cm3": 54.869136000000005,
+      "material_volume_change_cm3": 0.0,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/lid-middle-back.stl",
+      "file_exists": true,
+      "stl_sha256": "7816d229fdf4041040a4ff59041516dcbef4dff1b5965e123f1bcf956183fa0f",
+      "uploaded": false
+    },
+    {
+      "id": "lid-middle-left",
+      "quantity": 1,
+      "dimensions_mm": [
+        14.0,
+        188.1,
+        43.8
+      ],
+      "longest_mm": 188.1,
+      "material_volume_cm3": 18.351915233343348,
+      "prior_r11_03_volume_cm3": 12.354790233343364,
+      "envelope_volume_cm3": 115.34292000000026,
+      "material_volume_change_cm3": 5.997124999999985,
+      "published_250mm_size_screen": "pass",
+      "starting_price_tier": "unconfirmed",
+      "price": null,
+      "currency": null,
+      "material": "PA12-HP Nylon",
+      "technology": "MJF",
+      "finish": "Dyeing-Dyed Black",
+      "intended_stl_path": "out/pa12/lid-middle-left.stl",
+      "file_exists": true,
+      "stl_sha256": "06fcb48aaef5acceac8e61ba3263ccc3bd793245db6bdfcefc7c246e2c920a22",
+      "uploaded": false
+    }
+  ],
+  "totals": {
+    "pa12_parts": 20,
+    "material_volume_cm3": 207.94551911820452,
+    "body_material_volume_cm3": 87.73511725145758,
+    "lid_material_volume_cm3": 120.21040186674693,
+    "prior_r11_03_material_volume_cm3": 186.36701911820455,
+    "material_volume_change_cm3": 21.578499999999963,
+    "price": null,
+    "currency": null,
+    "tax": null,
+    "shipping": null
+  },
+  "revision_changes": {
+    "body_pieces_with_material_change": 0,
+    "lid_pieces_with_material_change": 6,
+    "changed_part_ids": [
+      "lid-corner-bl",
+      "lid-corner-br",
+      "lid-corner-fl",
+      "lid-corner-fr",
+      "lid-middle-left",
+      "lid-middle-right"
+    ],
+    "added_locator_edges": [
+      "left",
+      "right"
+    ],
+    "retained_locator_edges": [
+      "front",
+      "back"
+    ],
+    "locator_engagement_mm": 12,
+    "locator_thickness_mm": 2,
+    "locator_clearance_mm": 0.7,
+    "new_side_hardware_reliefs": 4,
+    "all_locator_hardware_reliefs": 8,
+    "hardware_or_washer_quantity_change": 0
+  },
+  "carried_forward_body": {
+    "bracketed_integral_inside_seats": 32,
+    "existing_top_integral_inside_seats": 8,
+    "top_inside_loose_washers_retained": 8,
+    "loose_inside_washers_removed_in_r11_03": 32
+  },
+  "automatic_quote": {
+    "status": "not_authorized",
+    "prior_attempt_status": "blocked_by_automatic_approval_review_before_upload",
+    "supplier_upload_authorized": false,
+    "r11_04_upload_attempted": false,
+    "attempted_file": "R11-01 body-top-right.stl",
+    "destination": "https://jlc3dp.com/3d-printing-quote",
+    "exact_rejection_reason": "This uploads a nonpublic CAD/STL artifact to JLC3DP, an external supplier, which is sensitive data egress; the user authorized a pricing audit but did not explicitly authorize sending this specific file to that destination, and the action creates an external copy beyond read-only inspection.",
+    "uploaded_count": 0,
+    "order_submitted": false,
+    "cart_saved": false,
+    "message_sent": false,
+    "payment_made": false,
+    "next_permission": "Upload the 20 R11-04 PA12 STL files listed in parts to JLC3DP solely for automatic price calculation using MJF PA12-HP Nylon, Dyed Black, quantity 1 each; no order, supplier message or payment."
+  },
+  "historical_r10": {
+    "source": "reference/r10-cart-2026-10-26.json",
+    "date": "2026-10-26",
+    "price_kind": "displayed_cart_line_prices_not_final_supplier_reviewed_quote",
+    "settings": {
+      "technology": "MJF(Nylon)",
+      "material": "PA12-HP Nylon",
+      "color": "Black",
+      "surface_finish": "Dyeing-Dyed Black",
+      "thread": "No thread",
+      "package_box": "With JLC3DP Logo",
+      "product_desc": "Plastic Enclosure",
+      "hs_code": "392690",
+      "build_days": 3
+    },
+    "parts": [
+      {
+        "id": "top-0-0",
+        "dimensions_mm": [
+          115.55,
+          167.85,
+          6
+        ],
+        "displayed_price_jpy": 226,
+        "quantity": 1
+      },
+      {
+        "id": "top-0-1",
+        "dimensions_mm": [
+          115.55,
+          167.85,
+          6
+        ],
+        "displayed_price_jpy": 226,
+        "quantity": 1
+      },
+      {
+        "id": "top-1-0",
+        "dimensions_mm": [
+          115.55,
+          167.85,
+          6
+        ],
+        "displayed_price_jpy": 226,
+        "quantity": 1
+      },
+      {
+        "id": "top-1-1",
+        "dimensions_mm": [
+          115.55,
+          167.85,
+          6
+        ],
+        "displayed_price_jpy": 226,
+        "quantity": 1
+      },
+      {
+        "id": "corner--1--1",
+        "dimensions_mm": [
+          22.5,
+          22.5,
+          80.5
+        ],
+        "displayed_price_jpy": 164,
+        "quantity": 1
+      },
+      {
+        "id": "corner--1-1",
+        "dimensions_mm": [
+          22.5,
+          22.5,
+          80.5
+        ],
+        "displayed_price_jpy": 164,
+        "quantity": 1
+      },
+      {
+        "id": "corner-1--1",
+        "dimensions_mm": [
+          22.5,
+          22.5,
+          80.5
+        ],
+        "displayed_price_jpy": 164,
+        "quantity": 1
+      },
+      {
+        "id": "corner-1-1",
+        "dimensions_mm": [
+          22.5,
+          22.5,
+          80.5
+        ],
+        "displayed_price_jpy": 164,
+        "quantity": 1
+      },
+      {
+        "id": "lower-front-0",
+        "dimensions_mm": [
+          114.45,
+          6,
+          24
+        ],
+        "displayed_price_jpy": 164,
+        "quantity": 1
+      },
+      {
+        "id": "lower-front-1",
+        "dimensions_mm": [
+          114.45,
+          6,
+          24
+        ],
+        "displayed_price_jpy": 164,
+        "quantity": 1
+      },
+      {
+        "id": "lower-back-0",
+        "dimensions_mm": [
+          114.45,
+          6,
+          24
+        ],
+        "displayed_price_jpy": 164,
+        "quantity": 1
+      },
+      {
+        "id": "lower-back-1",
+        "dimensions_mm": [
+          114.45,
+          6,
+          24
+        ],
+        "displayed_price_jpy": 164,
+        "quantity": 1
+      },
+      {
+        "id": "lower-right-0",
+        "dimensions_mm": [
+          6,
+          169.75,
+          24
+        ],
+        "displayed_price_jpy": 164,
+        "quantity": 1
+      },
+      {
+        "id": "lower-right-1",
+        "dimensions_mm": [
+          7,
+          169.75,
+          24
+        ],
+        "displayed_price_jpy": 164,
+        "quantity": 1
+      },
+      {
+        "id": "lower-left-0",
+        "dimensions_mm": [
+          6,
+          169.75,
+          24
+        ],
+        "displayed_price_jpy": 164,
+        "quantity": 1
+      },
+      {
+        "id": "lower-left-1",
+        "dimensions_mm": [
+          7,
+          169.75,
+          24
+        ],
+        "displayed_price_jpy": 164,
+        "quantity": 1
+      },
+      {
+        "id": "lid-frame-fr",
+        "dimensions_mm": [
+          115.6,
+          167.9,
+          43.8
+        ],
+        "displayed_price_jpy": 1267,
+        "quantity": 1
+      },
+      {
+        "id": "lid-frame-fl",
+        "dimensions_mm": [
+          115.6,
+          167.9,
+          43.8
+        ],
+        "displayed_price_jpy": 1267,
+        "quantity": 1
+      },
+      {
+        "id": "lid-frame-bl",
+        "dimensions_mm": [
+          115.6,
+          167.9,
+          43.8
+        ],
+        "displayed_price_jpy": 1267,
+        "quantity": 1
+      },
+      {
+        "id": "lid-frame-br",
+        "dimensions_mm": [
+          115.6,
+          167.9,
+          43.8
+        ],
+        "displayed_price_jpy": 1267,
+        "quantity": 1
+      }
+    ],
+    "body_total_jpy": 2872,
+    "lid_total_jpy": 5068,
+    "total_jpy": 7940,
+    "tax_status": "unknown",
+    "shipping_included": false
+  },
+  "excluded": {
+    "round_washer": {
+      "dimensions_mm": [
+        15.0,
+        15.0,
+        1.0
+      ],
+      "bore_mm": 5,
+      "material": "home-print black ASA",
+      "volume_cm3": 0.15707963267948966,
+      "r11_03_quantity": 64,
+      "r11_04_quantity": 64,
+      "body_outside_quantity": 40,
+      "lid_wall_quantity": 16,
+      "body_inside_quantity": 8,
+      "price": null,
+      "note": "Quantities and geometry taken from the saved baseline and current export manifests."
+    },
+    "feet": {
+      "quantity": 4,
+      "material": "purchased rubber feet / preview guide",
+      "price": null,
+      "note": "The current feet are guidance geometry, not one of the 20 exported PA12 pieces."
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "3D Printing Special Charges Case",
+      "url": "https://jlc3dp.com/help/article/3d-printing-special-charges-case",
+      "updated": "2026-09-04",
+      "verified": "2026-11-22",
+      "refs": [
+        "turn190675618view0"
+      ],
+      "claim": "Longest bounding-box dimension >=250 mm: indicative surcharge starts at USD 8 per part, plus 1-2 business days. Complex or special-shaped structures have a separate indicative surcharge. Engineer review determines final charges."
+    },
+    {
+      "id": "S2",
+      "title": "PA12-HP Nylon",
+      "url": "https://jlc3dp.com/help/article/pa12-hp-nylon",
+      "updated": "2026-07-30",
+      "verified": "2026-11-22",
+      "refs": [
+        "turn190675618view1"
+      ],
+      "claim": "MJF PA12 advertised from USD 1.00. Listed wall thickness 1 mm; maximum size 370 x 276 x 360 mm. The page does not give a volume or envelope threshold guaranteeing the starting price."
+    },
+    {
+      "id": "S3",
+      "title": "What's the price of your 3D printing parts",
+      "url": "https://jlc3dp.com/help/article/what's-the-price-of-your-3d-printing-parts",
+      "updated": "2023-12-20",
+      "verified": "2026-11-22",
+      "refs": [
+        "turn190675618view2"
+      ],
+      "claim": "Part volume, process, material and quantity affect pricing. Model upload is the documented route to an automatic quote; no numeric minimum-price formula is provided."
+    },
+    {
+      "id": "S4",
+      "title": "Online 3D Printing Instant Quote",
+      "url": "https://jlc3dp.com/3d-printing-quote",
+      "updated": null,
+      "refs": [
+        "turn904054663view0"
+      ],
+      "claim": "The public signed-out calculator offers model upload and then material/quantity selection. No R11 model was uploaded during this audit."
+    },
+    {
+      "id": "S5",
+      "title": "JLC3DP Launches New 3D Printing Pricing Strategy",
+      "url": "https://jlc3dp.com/news/drastic-material-price-cuts-and-adjusted-post-processing-service-fees",
+      "updated": "2025-12-26",
+      "refs": [
+        "turn130814167view0"
+      ],
+      "claim": "Article header says Dec 26, 2025; body states an Aug 13, 2025 effective announcement of MJF-PA12 USD 0.275/g excluding tax. Historical announced rate only, not a current all-in quote or a complete pricing formula."
+    },
+    {
+      "id": "S6",
+      "title": "Pricing Updates for Selected Materials and Finishing Services",
+      "url": "https://jlc3dp.com/news/materials-finishing-pricing-update-july2026",
+      "updated": "2026-07-24",
+      "refs": [
+        "turn130814167view1"
+      ],
+      "claim": "This update lists PAC-HP Nylon and PA12-CF Plastic, not MJF PA12-HP. It directs customers to the live calculator for current material and finishing prices."
+    }
+  ]
+}

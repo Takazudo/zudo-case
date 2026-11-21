@@ -1,25 +1,57 @@
 ---
 title: "CADの再生成とソースデータ"
-description: "本体の生成環境と、プレビュー専用の生成を分ける。"
+description: "7U40 R11の受領ソースと再構築、3U60・7U60のR6本体とR8プレビュー。生成環境と文書台帳を分ける。"
 sidebar_position: 40
 ---
 
+## R11-BUILD-FEEDBACK-04（7U40）
+
+`engineering/r11-build-feedback-04/`に7U40の現行候補を置いています。
+
+| パス | 内容 |
+|---|---|
+| `source/` | 受け取った編集可能なソースと出力を、そのまま展開したもの。**変更しない** |
+| `source/out/` | 現行の出力（STEP/STL/DXF、`parts-manifest.json`、`validation.json`、`preview.html`など）。実物を作るときはここから |
+| `source/reference/` | 比較用の履歴入力。製造には使わない |
+| `source/research/` | 価格と吊り穴の調査記録。価格はすべて未見積 |
+| `package.py`・`packages/` | `source/out/`から配布用ZIP（PA12・アルミ・家庭印刷）を決定的に作る |
+
+配布ZIPを作り直し、公開コピーと台帳の指定を更新するときは次を実行します。
+
+```sh
+python3 engineering/r11-build-feedback-04/package.py
+pnpm sync:r11
+pnpm check:r11
+```
+
+CADの再構築（CadQuery 2.7、NumPy、ezdxf）は、**改訂ディレクトリ全体を別の場所へコピーし、そのコピーの中で**実行します。`source/`自体は上書きしません。
+
+```sh
+cp -a engineering/r11-build-feedback-04/source /tmp/r11-04-rebuild
+cd /tmp/r11-04-rebuild
+python3 build.py --verify
+python3 revision/review_followup.py
+python3 research/build_pricing_audit.py
+```
+
+`python3 build.py --preview-only`は製造用の書き出しなしでプレビューだけを作ります。これらのコマンドはアップロード・発注・印刷を行いません。形状を変えた場合は新しい版として扱い、保存済みの報告を最新とみなしません。
+
 ## R6本体
 
-`engineering/r6-body/`は提供されたZIPの内容を保持したフォルダー。`design-parameters.json`、`build_geometry.py`、`source-data/`、`engineering/`、`stl/`がある。
+`engineering/r6-body/`は3U60・7U60の本体の基準で、提供されたZIPの内容を保持したフォルダーです。`design-parameters.json`、`build_geometry.py`、`source-data/`、`engineering/`、`stl/`があります。
 
-元READMEではCadQuery 2.7とezdxf等を用い、`build_geometry.py`の後に`package_preview.py`を実行する流れを記録している。**今回の文書セットアップではこれらを自動実行しない。** ローカルの依存パッケージと出力先を確認してから、作業用コピーで実行する。
+元READMEではCadQuery 2.7とezdxf等を用い、`build_geometry.py`の後に`package_preview.py`を実行する流れを記録しています。**文書のセットアップではこれらを自動実行しません。** ローカルの依存パッケージと出力先を確認してから、作業用コピーで実行します。
 
 ## R8プレビュー
 
-`engineering/r8-preview/`には元のREADME、`prepare_models.py`、`build.py`、`model-data.js`、`app.js`がある。
+`engineering/r8-preview/`には元のREADME、`prepare_models.py`、`build.py`、`model-data.js`、`app.js`があります。3U60・7U60の載せ蓋の基準です。
 
-`prepare_models.py`は参照メッシュから表示形状を用意し、`build.py`は単一HTMLをまとめる。これを実行しても、発注用STL・STEP・DXFが自動的に揃うわけではない。製作用のソリッド・穴・数量・公差を別に設計して保存する必要がある。
+`prepare_models.py`は参照メッシュから表示形状を用意し、`build.py`は単一HTMLをまとめます。これを実行しても、発注用STL・STEP・DXFが揃うわけではありません。製作用のソリッド・穴・数量・公差を別に設計して保存する必要があります。
 
-元レール・PCBの固定コミットと扱いは系列共通の[元レール・PCBと出典](../../shared/rail-pcb-sources.mdx)にまとめた。
+元レール・PCBの固定コミットと扱いは系列共通の[元レール・PCBと出典](../../shared/rail-pcb-sources.mdx)にまとめています。
 
 ## 文書とCADを混同しない
 
-`project/current-spec.json`はドキュメントの表を揃える台帳で、既存CADジェネレーターの入力そのものではない。更新後はCAD側の設定へ反映し、出力から新しい台帳を読み直す。ドキュメントだけ数値を変えて「反映済み」としない。
+`project/current-spec.json`と`project/release-state.json`は文書の表と状態を揃える台帳で、CADジェネレーターの入力そのものではありません。CADを変えたら出力から台帳を読み直します。ドキュメントだけ数値を変えて「反映済み」としません。
 
-次の作業は[金属ケースの次工程](../next-steps.mdx)へ。R10一式の再生成は`engineering/r10-fullset-01/`のREADMEと[R10一式](../design/r10-fullset-01.mdx)を参照。
+次の作業は[金属ケースの次工程](../next-steps.mdx)、台帳の更新は[台帳・製作データの保守](../maintaining-data.mdx)へ。

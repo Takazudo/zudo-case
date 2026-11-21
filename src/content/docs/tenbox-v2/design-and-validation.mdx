@@ -23,7 +23,7 @@ sidebar_position: 50
 
 受け入れたR5では、後底板のNE/SWの脚12mm、NW/SEの脚16mmを45°に切り、5mm厚を貫通させています。1枚あたり400mm²・2,000mm³を除き、H2D左ノズルへの平置きを可能にします。4タブと9スロットは残ります。前底板は同じ形状を180°回転・Z＋36mmに置きます。
 
-この変更は意図した三角の隅開口を作り、以前の隅リップ接触の一部を除きます。「以前の全接触を維持した」「密閉した」とは扱いません。R4由来の1枚天板・棚と縁、幅・レール・ネジ軸は据え置きです。R1〜R4の開発記録を読まなくても、[現行印刷手順](./printing.mdx)と[組立](./assembly.mdx)から使えます。
+この変更は意図した三角の隅開口を作り、以前の隅リップ接触の一部を除きます。「以前の全接触を維持した」「密閉した」とは扱いません。R4由来の1枚天板・棚と縁、幅・レール・ネジ軸は据え置きです。現行の作業は[印刷手順](./printing.mdx)と[組立](./assembly.mdx)だけで完結します。
 
 ## 出典と再生成範囲
 
@@ -33,7 +33,7 @@ CADは同梱R4 STEP/modelから底板を増分生成し、H2Dは底板を生成�
 
 ## ファイル形式と検証の境界
 
-配布済み修正版は完全なZIPです。旧配布で欠けていたcentral directoryを持ち、CRCとmanifestを確認します。3MFの`_rels/.rels`はliteral `Relationship`を使います。名前空間付き`ns0:Relationship`はnamespace-aware XMLでは読めても、固定Studio importerのnamespaceなしExpat dispatchでは見つからないため、独立した負例で再発を防ぎます。model/configタグ、namespace/content type、p:UUID、object/component/part/plate参照も検査対象です。
+配布ZIPは完全なcentral directoryを持ち、CRCとmanifestを確認します。3MFの`_rels/.rels`はliteral `Relationship`を使います。名前空間付き`ns0:Relationship`はnamespace-aware XMLでは読めても、固定Studio importerのnamespaceなしExpat dispatchでは見つからないため、独立した負例で再発を防ぎます。model/configタグ、namespace/content type、p:UUID、object/component/part/plate参照も検査対象です。
 
 受領時の記録はCAD82項目、独立STEP27項目、importer contract29/29、software renderer/UI handler36/36です。これらは受領時の証拠であり、今回の実行結果と分けて台帳に記録します。新しいチェックではclean buildとsource ZIPからの再生成、実STEP/STLの形状・閉多様体・向き・正体積、BOMと保存姿勢、設定byte、単一ノズル範囲と実投影凸包を確認します。生成日時・UUIDの差を形状や設定変更と混同しません。
 

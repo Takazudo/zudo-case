@@ -1,0 +1,637 @@
+{
+  "revision": "R11-BUILD-FEEDBACK-04",
+  "passed": true,
+  "checks": {
+    "four_sided_guides": true,
+    "straight_lift_off": true
+  },
+  "guides": {
+    "passed": true,
+    "checks": {
+      "four_locator_edges_declared": true,
+      "physical_guide_faces_present_on_all_four_edges": true,
+      "all_eight_lid_frames_are_single_connected_solids": true,
+      "metadata_matches_independent_nominal_coordinates": true,
+      "eight_bottom_open_fastener_reliefs_present": true
+    },
+    "edges": [
+      {
+        "face": "front",
+        "outer_guide_coordinate_mm": -163.70000000000002,
+        "guide_normal": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "guide_face_area_mm2": 2290.8,
+        "engaged_material_volume_mm3": 4581.6,
+        "part_ids": [
+          "lid-corner-fl",
+          "lid-corner-fr",
+          "lid-middle-front"
+        ],
+        "engagement_z_mm": [
+          80.0,
+          92.0
+        ],
+        "thickness_mm": 2.0,
+        "minimum_clearance_to_body_upper_guards_mm": 0.6999999999999744,
+        "full_depth_probe_checks": [
+          {
+            "station_mm": -101.4,
+            "expected_volume_mm3": 48.0,
+            "occupied_volume_mm3": 48.0,
+            "passed": true
+          },
+          {
+            "station_mm": 0.0,
+            "expected_volume_mm3": 48.0,
+            "occupied_volume_mm3": 48.0,
+            "passed": true
+          },
+          {
+            "station_mm": 101.4,
+            "expected_volume_mm3": 48.0,
+            "occupied_volume_mm3": 48.0,
+            "passed": true
+          }
+        ],
+        "part_clearances": [
+          {
+            "part_id": "lid-corner-fl",
+            "clearance_to_body_upper_guards_mm": 0.6999999999999744
+          },
+          {
+            "part_id": "lid-corner-fr",
+            "clearance_to_body_upper_guards_mm": 0.6999999999999886
+          },
+          {
+            "part_id": "lid-middle-front",
+            "clearance_to_body_upper_guards_mm": 0.6999999999999886
+          }
+        ],
+        "passed": true
+      },
+      {
+        "face": "right",
+        "outer_guide_coordinate_mm": 111.4,
+        "guide_normal": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "guide_face_area_mm2": 3546.000000000001,
+        "engaged_material_volume_mm3": 7092.0000000000055,
+        "part_ids": [
+          "lid-corner-fr",
+          "lid-corner-br",
+          "lid-middle-right"
+        ],
+        "engagement_z_mm": [
+          80.0,
+          92.0
+        ],
+        "thickness_mm": 2.0,
+        "minimum_clearance_to_body_upper_guards_mm": 0.6999999999999886,
+        "full_depth_probe_checks": [
+          {
+            "station_mm": -153.70000000000002,
+            "expected_volume_mm3": 48.0,
+            "occupied_volume_mm3": 48.0,
+            "passed": true
+          },
+          {
+            "station_mm": 0.0,
+            "expected_volume_mm3": 48.0,
+            "occupied_volume_mm3": 48.0,
+            "passed": true
+          },
+          {
+            "station_mm": 153.70000000000002,
+            "expected_volume_mm3": 48.0,
+            "occupied_volume_mm3": 48.0,
+            "passed": true
+          }
+        ],
+        "part_clearances": [
+          {
+            "part_id": "lid-corner-fr",
+            "clearance_to_body_upper_guards_mm": 0.6999999999999886
+          },
+          {
+            "part_id": "lid-corner-br",
+            "clearance_to_body_upper_guards_mm": 0.6999999999999886
+          },
+          {
+            "part_id": "lid-middle-right",
+            "clearance_to_body_upper_guards_mm": 0.6999999999999886
+          }
+        ],
+        "passed": true
+      },
+      {
+        "face": "back",
+        "outer_guide_coordinate_mm": 163.70000000000002,
+        "guide_normal": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "guide_face_area_mm2": 2290.8,
+        "engaged_material_volume_mm3": 4581.600000000005,
+        "part_ids": [
+          "lid-corner-br",
+          "lid-corner-bl",
+          "lid-middle-back"
+        ],
+        "engagement_z_mm": [
+          80.0,
+          92.0
+        ],
+        "thickness_mm": 2.0,
+        "minimum_clearance_to_body_upper_guards_mm": 0.6999999999999886,
+        "full_depth_probe_checks": [
+          {
+            "station_mm": -101.4,
+            "expected_volume_mm3": 48.0,
+            "occupied_volume_mm3": 48.0,
+            "passed": true
+          },
+          {
+            "station_mm": 0.0,
+            "expected_volume_mm3": 48.0,
+            "occupied_volume_mm3": 48.0,
+            "passed": true
+          },
+          {
+            "station_mm": 101.4,
+            "expected_volume_mm3": 48.0,
+            "occupied_volume_mm3": 48.0,
+            "passed": true
+          }
+        ],
+        "part_clearances": [
+          {
+            "part_id": "lid-corner-br",
+            "clearance_to_body_upper_guards_mm": 0.6999999999999886
+          },
+          {
+            "part_id": "lid-corner-bl",
+            "clearance_to_body_upper_guards_mm": 0.6999999999999886
+          },
+          {
+            "part_id": "lid-middle-back",
+            "clearance_to_body_upper_guards_mm": 0.6999999999999886
+          }
+        ],
+        "passed": true
+      },
+      {
+        "face": "left",
+        "outer_guide_coordinate_mm": -111.4,
+        "guide_normal": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "guide_face_area_mm2": 3546.000000000001,
+        "engaged_material_volume_mm3": 7091.999999999993,
+        "part_ids": [
+          "lid-corner-fl",
+          "lid-corner-bl",
+          "lid-middle-left"
+        ],
+        "engagement_z_mm": [
+          80.0,
+          92.0
+        ],
+        "thickness_mm": 2.0,
+        "minimum_clearance_to_body_upper_guards_mm": 0.6999999999999744,
+        "full_depth_probe_checks": [
+          {
+            "station_mm": -153.70000000000002,
+            "expected_volume_mm3": 48.0,
+            "occupied_volume_mm3": 48.0,
+            "passed": true
+          },
+          {
+            "station_mm": 0.0,
+            "expected_volume_mm3": 48.0,
+            "occupied_volume_mm3": 48.0,
+            "passed": true
+          },
+          {
+            "station_mm": 153.70000000000002,
+            "expected_volume_mm3": 48.0,
+            "occupied_volume_mm3": 48.0,
+            "passed": true
+          }
+        ],
+        "part_clearances": [
+          {
+            "part_id": "lid-corner-fl",
+            "clearance_to_body_upper_guards_mm": 0.6999999999999744
+          },
+          {
+            "part_id": "lid-corner-bl",
+            "clearance_to_body_upper_guards_mm": 0.6999999999999886
+          },
+          {
+            "part_id": "lid-middle-left",
+            "clearance_to_body_upper_guards_mm": 0.6999999999999886
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "body_guard_inner_half_extents_mm": [
+      112.10000000000001,
+      164.4
+    ],
+    "locator_outer_half_extents_mm": [
+      111.4,
+      163.70000000000002
+    ],
+    "design_clearance_mm": 0.7,
+    "scope": "Original guide faces and exact BRep sections below the seating plane; probe volumes confirm continuous 12 mm engagement away from designed seams and reliefs. Clearance is geometric, not manufacturing fit."
+  },
+  "straight_lift_off": {
+    "passed": true,
+    "checks": {
+      "all_nonframe_lid_items_above_obstacles": true,
+      "all_eight_frame_sweeps_covered_and_clear": true,
+      "body_upper_adjustment_envelopes_included": true,
+      "all_source_items_included": true,
+      "end_pose_is_fully_above_obstacles": true
+    },
+    "translation_axis": [
+      0,
+      0,
+      1
+    ],
+    "translation_range_mm": [
+      0,
+      12.5
+    ],
+    "highest_obstacle_z_mm": 92.0,
+    "lowest_closed_lid_z_mm": 80.0,
+    "clearance_after_full_lift_mm": 0.5,
+    "exact_boolean_checks": 98,
+    "frame_sweeps": [
+      {
+        "part": "lid-corner-fl",
+        "pieces": 2,
+        "coverage": {
+          "upward_face_extrusions": 1,
+          "unsupported_faces": [],
+          "passed": true
+        },
+        "overlaps": [],
+        "passed": true
+      },
+      {
+        "part": "lid-corner-fr",
+        "pieces": 2,
+        "coverage": {
+          "upward_face_extrusions": 1,
+          "unsupported_faces": [],
+          "passed": true
+        },
+        "overlaps": [],
+        "passed": true
+      },
+      {
+        "part": "lid-corner-br",
+        "pieces": 2,
+        "coverage": {
+          "upward_face_extrusions": 1,
+          "unsupported_faces": [],
+          "passed": true
+        },
+        "overlaps": [],
+        "passed": true
+      },
+      {
+        "part": "lid-corner-bl",
+        "pieces": 2,
+        "coverage": {
+          "upward_face_extrusions": 1,
+          "unsupported_faces": [],
+          "passed": true
+        },
+        "overlaps": [],
+        "passed": true
+      },
+      {
+        "part": "lid-middle-front",
+        "pieces": 2,
+        "coverage": {
+          "upward_face_extrusions": 1,
+          "unsupported_faces": [],
+          "passed": true
+        },
+        "overlaps": [],
+        "passed": true
+      },
+      {
+        "part": "lid-middle-right",
+        "pieces": 2,
+        "coverage": {
+          "upward_face_extrusions": 1,
+          "unsupported_faces": [],
+          "passed": true
+        },
+        "overlaps": [],
+        "passed": true
+      },
+      {
+        "part": "lid-middle-back",
+        "pieces": 2,
+        "coverage": {
+          "upward_face_extrusions": 1,
+          "unsupported_faces": [],
+          "passed": true
+        },
+        "overlaps": [],
+        "passed": true
+      },
+      {
+        "part": "lid-middle-left",
+        "pieces": 2,
+        "coverage": {
+          "upward_face_extrusions": 1,
+          "unsupported_faces": [],
+          "passed": true
+        },
+        "overlaps": [],
+        "passed": true
+      }
+    ],
+    "collisions": [],
+    "excluded_above_plane_items": [
+      {
+        "id": "lid-plate",
+        "min_z_mm": 122.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-front-fl-plate-screw",
+        "min_z_mm": 111.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-front-fl-plate-nut",
+        "min_z_mm": 114.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-front-fl-wall-screw",
+        "min_z_mm": 100.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-front-fl-wall-nut",
+        "min_z_mm": 102.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-front-fl-wall-washer-outer",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-front-fl-wall-washer-inner",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-front-fr-plate-screw",
+        "min_z_mm": 111.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-front-fr-plate-nut",
+        "min_z_mm": 114.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-front-fr-wall-screw",
+        "min_z_mm": 100.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-front-fr-wall-nut",
+        "min_z_mm": 102.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-front-fr-wall-washer-outer",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-front-fr-wall-washer-inner",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-right-fr-plate-screw",
+        "min_z_mm": 111.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-right-fr-plate-nut",
+        "min_z_mm": 114.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-right-fr-wall-screw",
+        "min_z_mm": 100.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-right-fr-wall-nut",
+        "min_z_mm": 102.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-right-fr-wall-washer-outer",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-right-fr-wall-washer-inner",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-right-br-plate-screw",
+        "min_z_mm": 111.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-right-br-plate-nut",
+        "min_z_mm": 114.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-right-br-wall-screw",
+        "min_z_mm": 100.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-right-br-wall-nut",
+        "min_z_mm": 102.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-right-br-wall-washer-outer",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-right-br-wall-washer-inner",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-back-br-plate-screw",
+        "min_z_mm": 111.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-back-br-plate-nut",
+        "min_z_mm": 114.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-back-br-wall-screw",
+        "min_z_mm": 100.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-back-br-wall-nut",
+        "min_z_mm": 102.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-back-br-wall-washer-outer",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-back-br-wall-washer-inner",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-back-bl-plate-screw",
+        "min_z_mm": 111.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-back-bl-plate-nut",
+        "min_z_mm": 114.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-back-bl-wall-screw",
+        "min_z_mm": 100.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-back-bl-wall-nut",
+        "min_z_mm": 102.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-back-bl-wall-washer-outer",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-back-bl-wall-washer-inner",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-left-bl-plate-screw",
+        "min_z_mm": 111.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-left-bl-plate-nut",
+        "min_z_mm": 114.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-left-bl-wall-screw",
+        "min_z_mm": 100.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-left-bl-wall-nut",
+        "min_z_mm": 102.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-left-bl-wall-washer-outer",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-left-bl-wall-washer-inner",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-left-fl-plate-screw",
+        "min_z_mm": 111.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-left-fl-plate-nut",
+        "min_z_mm": 114.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-left-fl-wall-screw",
+        "min_z_mm": 100.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-left-fl-wall-nut",
+        "min_z_mm": 102.0,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-left-fl-wall-washer-outer",
+        "min_z_mm": 98.5,
+        "passed": true
+      },
+      {
+        "id": "lid-joint-left-fl-wall-washer-inner",
+        "min_z_mm": 98.5,
+        "passed": true
+      }
+    ],
+    "body_component_count": 205,
+    "source_item_count": 66,
+    "source_exact_cad_count": 60,
+    "conservative_rail_envelopes": 6,
+    "continuous_upper_fastener_travel_envelopes": 16,
+    "scope": "Continuous straight +Z union sweep, reversible for lowering; lower frame solids plus all upward planar-face extrusions. Exact nominal body and 60 source solids, conservative boxes for six rails, plus full upper nut/washer adjustment envelopes. No tilted removal, tool access, tolerances or physical fit qualification."
+  },
+  "input_hashes": {
+    "parameters.json": "a6130cc090db1d102b069c54a53350468503b1de4cc86784c006d8a0f9ac7e6a",
+    "revision/lid.py": "e50e11dbbfb50bde55ad5e6f9ed2c1a3bd966899223e4a480d9266d72325af50",
+    "revision/body.py": "09ae0979ab2c4d28e7d88cc7f37040f8649d5c825dd8b6cc511a1a5a4f808f66",
+    "revision/review_lid_locators.py": "5543c5e5949ff4b96349d45d8cf949de5482f356286ac7b3ea3605a6bbf65a4b",
+    "revision/review_inner_ears.py": "e844363101dd21c74fe25ef64815e7d51d7113c22c3eee7c467fffa0797d192d",
+    "reference/source-frame.json": "e6f26e1dc631ce8dfcf80d10189fb93d38287b2b1c29ba0dfda78b6aa5ec1fb0",
+    "reference/pcb-contours.json": "068ccfd1308f645399ac8007c9e03ad9a5d6c602c5187bb5184130e64f6477fc"
+  },
+  "elapsed_seconds": 8.115782976150513,
+  "production_approved": false,
+  "scope": "Nominal geometry only; additional lateral guidance does not establish a durability, strength or transport-retention rating."
+}

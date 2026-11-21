@@ -1,0 +1,145 @@
+{
+  "source_revision": "R11-BUILD-FEEDBACK-01",
+  "files": [
+    {
+      "path": "parts-manifest.json",
+      "sha256": "217e499a5025b4da558def8244caf6030d966c6357960d09f310af9d21d3b156",
+      "bytes": 107749
+    },
+    {
+      "path": "pa12/body-top-front.step",
+      "sha256": "2e388cd0df5365568c6496119245945ae41e3d41f23454df37b980e8131d2b48",
+      "bytes": 278929
+    },
+    {
+      "path": "pa12/body-bottom-front.step",
+      "sha256": "66e1dd9570dab7f66c0826dacc5281c85f1a0614d3069d1c55165cb50b448033",
+      "bytes": 293732
+    },
+    {
+      "path": "pa12/body-top-back.step",
+      "sha256": "6bfafa0f74f1d97f20e4c6287dcdc4131bae36432c47704ad8668076fdcf09f7",
+      "bytes": 279431
+    },
+    {
+      "path": "pa12/body-bottom-back.step",
+      "sha256": "b9a62c2b34acb94d30b3bfc2d11140bbf40e29452568c17998f8bfe87417d777",
+      "bytes": 293958
+    },
+    {
+      "path": "pa12/body-top-right.step",
+      "sha256": "145c814ae0a39d062e4ee4e4ba64228e0ca8b6b245ca08143b10da0441f1d285",
+      "bytes": 280434
+    },
+    {
+      "path": "pa12/body-bottom-right.step",
+      "sha256": "09dbc169ef3d5412abf69b781f9841d0247aa1f83291a077795a33dee1a01a3e",
+      "bytes": 447125
+    },
+    {
+      "path": "pa12/body-top-left.step",
+      "sha256": "7f3e5dd43c2ccbf663969e7cfbfe06d77bd77681683f59825afe976f1a0fc2cf",
+      "bytes": 279002
+    },
+    {
+      "path": "pa12/body-bottom-left.step",
+      "sha256": "27639e0ce44a525aecedd7fc061da1e302da21a671e8771a792ab949a2cfdf56",
+      "bytes": 446982
+    },
+    {
+      "path": "pa12/body-corner--1--1.step",
+      "sha256": "49c7d49ed7929e2d8f844892c8baa6019b1409335f8890e9e4bcdd58e5de7111",
+      "bytes": 788661
+    },
+    {
+      "path": "pa12/body-corner--1-1.step",
+      "sha256": "642e86d0078504ca7b600e78502d86650d980cb9f9e2d51fa188a1608d727c65",
+      "bytes": 782164
+    },
+    {
+      "path": "pa12/body-corner-1--1.step",
+      "sha256": "09f4ca13b286209a5013ec11f1a4c77f044afbbac8977b88ae7fd47593331f3f",
+      "bytes": 783378
+    },
+    {
+      "path": "pa12/body-corner-1-1.step",
+      "sha256": "b7ab4cf711d26f2e98651ef331578972cc9c33665d656eb2f31515a3546204e0",
+      "bytes": 785896
+    },
+    {
+      "path": "pa12/lid-corner-fl.step",
+      "sha256": "67ed2df61420997c0f9fed329bf0d392a822df435fa74c4bd7010089d332caa3",
+      "bytes": 129099
+    },
+    {
+      "path": "pa12/lid-corner-fr.step",
+      "sha256": "b8a46d71116cfd1b99ca7168917a4cfcf83b986f0d847b5a89789b382aebe480",
+      "bytes": 128074
+    },
+    {
+      "path": "pa12/lid-corner-br.step",
+      "sha256": "3960adfe3cb4d7c9980ce4b76084d2bba06d2bf46d939569600d3f5b2c73e906",
+      "bytes": 130221
+    },
+    {
+      "path": "pa12/lid-corner-bl.step",
+      "sha256": "3fa832a76d6eb16a537c8db02fe6bf6ebad33704dc6deb2ecebde59721bb7cf8",
+      "bytes": 130531
+    },
+    {
+      "path": "pa12/lid-middle-front.step",
+      "sha256": "5500c05be9fa474f8ca198294d86fe0a121aab4f46b21df49ce60c938ee18563",
+      "bytes": 115720
+    },
+    {
+      "path": "pa12/lid-middle-right.step",
+      "sha256": "88c897c98687f6d00bbc933ae6ed5fe354c8e0e1e9573a6c192f9a029c140a1e",
+      "bytes": 96428
+    },
+    {
+      "path": "pa12/lid-middle-back.step",
+      "sha256": "0950e6303e7533f6f835fdfb710a780383a9a279c966476b34179ef364a75381",
+      "bytes": 117933
+    },
+    {
+      "path": "pa12/lid-middle-left.step",
+      "sha256": "335977ef0cd3fa65f8710615b0d39b2121cdfb85b240b814bb549f119a6829da",
+      "bytes": 96425
+    },
+    {
+      "path": "aluminum/panel-front.step",
+      "sha256": "0486f8424614f2edc13c5fd1b320b49a05d9a011f30c99b1867da13cc40a6408",
+      "bytes": 153635
+    },
+    {
+      "path": "aluminum/panel-back.step",
+      "sha256": "0486f8424614f2edc13c5fd1b320b49a05d9a011f30c99b1867da13cc40a6408",
+      "bytes": 153635
+    },
+    {
+      "path": "aluminum/panel-right.step",
+      "sha256": "d28dd96f383e4998907f56990c9187d7becb001324037a5c3110ae0b4673879a",
+      "bytes": 190104
+    },
+    {
+      "path": "aluminum/panel-left.step",
+      "sha256": "c7864a76c5dded7a60006ac5f6af171fd0aa7b57458a768d796e1715ee361a2e",
+      "bytes": 190104
+    },
+    {
+      "path": "aluminum/panel-floor.step",
+      "sha256": "ddb45a4cfe0bf460c97ea6b1282808056eb71e0cc3c8dbc12f5bd91e5030f24a",
+      "bytes": 187408
+    },
+    {
+      "path": "aluminum/lid-plate.step",
+      "sha256": "a0093b171905e9412757561bcab6f6e926c43ad599897e63508d6c9c06d29438",
+      "bytes": 65412
+    },
+    {
+      "path": "home-print/round-washer.step",
+      "sha256": "5867bc8d40c203240acbe91baefa9ac26302fe1bbc57b313fea67691a594ac7c",
+      "bytes": 9182
+    }
+  ]
+}

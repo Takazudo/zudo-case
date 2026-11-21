@@ -1,41 +1,48 @@
 ---
-title: "現行R10一式と旧版プレビュー"
-description: "7U40の選定一式と、過去のR8コンセプトへの入口。"
+title: "現行のプレビュー"
+description: "7U40はR11-BUILD-FEEDBACK-04、3U60・7U60はR8載せ蓋の3Dプレビュー。"
 sidebar_position: 10
 ---
 
-金属ケースのプレビューです。家庭印刷ケースは[P5のプレビュー](../../printed-5mm/p5-preview.mdx)、2WAYは[TW-01 ワークベンチ](../../two-way/preview.mdx)を参照。
+金属ケースの現行のプレビューです。家庭印刷ケースは[P5のプレビュー](../../printed-5mm/p5-preview.mdx)、2WAYは[TW-01 ワークベンチ](../../two-way/preview.mdx)を参照してください。
 
-**現行7U40一式: [R10-FULLSET-01](../design/r10-fullset-01.mdx)。**
+## 7U40：R11-BUILD-FEEDBACK-04
 
-<PreviewLink path="/previews/r10-fullset-01.html">R10現行プレビューを開く</PreviewLink>
+<PreviewLink path="/previews/r11-build-feedback-04.html">R11-BUILD-FEEDBACK-04のプレビューを別タブで開く</PreviewLink>
 
-<PreviewFrame path="/previews/r10-fullset-01.html" title="R10 7U40選定一式" />
+<PreviewFrame path="/previews/r11-build-feedback-04.html" title="7U40 R11-BUILD-FEEDBACK-04 一式" />
 
-以下は旧版と、3U60・7U60の基準になっているR8の表示。旧R9/R8の注文データをR10一式へ混ぜない。
+設計の内容とファイルは[R11-BUILD-FEEDBACK-04](../design/r11-build-feedback-04.mdx)にあります。
 
+## 3U60・7U60：R8載せ蓋
 
+<PreviewLink path="/previews/r8-simple-lid.html">R8載せ蓋のプレビューを別タブで開く</PreviewLink>
 
-**旧7U40製作候補は[R9ページ](../design/history/r9-fitfix-01.mdx)の<PreviewLink path="/previews/r9-fitfix-01.html">R9プレビュー</PreviewLink>。** このページのR8は採用した載せ蓋方式の履歴表示で、R9の製作用候補とは版が異なる。R9も現物嵌合・強度・運搬結果ではない。
+<PreviewFrame path="/previews/r8-simple-lid.html" title="R8 載せ蓋と外周バンド（3U60・7U60の基準）" />
 
-## 操作する
+:::warning[7U40はR11を見る]
 
-**<PreviewLink path="/previews/r8-simple-lid.html">R8旧プレビューを別タブで開く</PreviewLink>**。プレビュー用サイトで配信する元の単一HTMLで、約4.7MB。7U40から始まり、３機種を切り替えられる。3U60・7U60の載せ蓋は現在もこのR8表示が基準。
-
-<PreviewFrame path="/previews/r8-simple-lid.html" title="R8 載せ蓋と外周バンドの3Dプレビュー" />
-
-埋め込み枠が狭い場合は別タブで確認する。左ドラッグで回転、スクロールで拡大、右ドラッグで移動。WebGL2とDecompressionStreamに対応するブラウザーが必要。
-
-## 表示の意味
-
-「日常」はバンドなしの載せ蓋。「運搬」は外周バンド２本。「使用中」は蓋を真上へ外す。持ち上げスライダー、天板/外板の透過、差し込み部の色分け、断面の拡大、ノブ25mmの仮領域が使える。
-
-バンドの解除や締付力のシミュレーションはない。バックル、弾性、重なり、天板のたわみは模式化していない。クリックで部品名を確認できるが、その表示形状が発注用CADであるという意味ではない。
-
-:::warning[発注データは別]
-
-R8ソースの`manufacturingFilesUpdated`は`false`。この版には製作用STL・STEP・DXFがない。天板・段差の再CAD化が必要。
+R8のプレビューは**7U40の表示から始まります**。画面上の「ケースを選択」で「3U / 60HP」または「3U＋3U＋1U / 60HP」に切り替えてください。R8に表示される7U40は置き換わった形状で、現行の7U40は[R11-BUILD-FEEDBACK-04](../design/r11-build-feedback-04.mdx)です。
 
 :::
 
-編集するソースは`engineering/r8-preview/`。<a href="/evidence/r8-original-readme.md">元README</a>と[元manifest](/evidence/r8-original-manifest.json)も同梱した。
+## 操作する
+
+どちらも元の単一HTMLをプレビュー用サイトで配信しています。埋め込み枠が狭い場合は別タブで確認します。左ドラッグで回転、右ドラッグで移動、ホイール（スクロール）で拡大します。
+
+- R11：13のビューを切り替えられます。パネル・金具・元のレール類の表示を切り替えてすき間を確認できます。CADのメッシュと描画処理を埋め込んでいます。
+- R8：約4.7MB。WebGL2とDecompressionStreamに対応するブラウザーが必要です。持ち上げスライダー、天板/外板の透過、差し込み部の色分け、断面の拡大、ノブ25mmの仮領域が使えます。
+
+## 表示の意味
+
+R11の分解表示の距離は説明用で、詳細ビューの断面は表示上の境界です。追加の製作上の継ぎ目ではありません。「蓋・四辺の内側ガイド」は蓋の枠8個を下から、「側面ガイドのはまり」は側面ガイドと本体上部の接合部の関係を示します。プレビューの描画確認はJSDOMとCPU canvasによるもので、実ブラウザーでの確認ではありません。
+
+R8の「日常」はバンドなしの載せ蓋、「運搬」は外周バンド２本、「使用中」は蓋を真上へ外した状態です。バンドの解除や締付力のシミュレーションはなく、バックル、弾性、重なり、天板のたわみは模式化していません。クリックで部品名を確認できますが、その表示形状が発注用CADであるという意味ではありません。
+
+:::warning[R8に発注データはない]
+
+R8ソースの`manufacturingFilesUpdated`は`false`です。この版には製作用STL・STEP・DXFがありません。3U60・7U60の天板・位置決め部は製作形状への作り直しが必要です。
+
+:::
+
+R8の編集するソースは`engineering/r8-preview/`。<a href="/evidence/r8-original-readme.md">元README</a>と[元manifest](/evidence/r8-original-manifest.json)も同梱しています。

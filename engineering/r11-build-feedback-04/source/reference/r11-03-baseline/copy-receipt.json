@@ -1,0 +1,130 @@
+{
+  "source_revision": "R11-BUILD-FEEDBACK-03",
+  "purpose": "Immutable prior-revision comparison inputs; current manufacturing files are in ../../out",
+  "files": [
+    {
+      "path": "pa12/body-top-front.step",
+      "sha256": "bae2068cad863e14c4d4196b8339454689677d8548446faa2ca73a3927b5ef13"
+    },
+    {
+      "path": "pa12/body-bottom-front.step",
+      "sha256": "97d98581a213d10a76dfca08913a8b80532eb8bbde13a8dfe0258eebbb322195"
+    },
+    {
+      "path": "pa12/body-top-back.step",
+      "sha256": "5bb2fb18a7024bb521159d9d9ea07a2071160de8d8adab9edcd2f3bbfcf7454d"
+    },
+    {
+      "path": "pa12/body-bottom-back.step",
+      "sha256": "6531a8240ec9f37f37607ac52a09754dd16aae723144f124c0a8a76e3fe3455d"
+    },
+    {
+      "path": "pa12/body-top-right.step",
+      "sha256": "8b517136dc2474ab91c51f25747117b74f0652c15acf1de0a209a13e69ae9ba3"
+    },
+    {
+      "path": "pa12/body-bottom-right.step",
+      "sha256": "53b8140e03541248231bcd032863e161b37df5db1b1ba8a05b597395dca998a4"
+    },
+    {
+      "path": "pa12/body-top-left.step",
+      "sha256": "7489f83c5c50a0b80375aba696763750d731f6a1b830020ce53bfcb8d27ef6f1"
+    },
+    {
+      "path": "pa12/body-bottom-left.step",
+      "sha256": "d19329827aadaf295290bde1cb2daa966f2bf8bacc39fcdfe382fbe78d23175d"
+    },
+    {
+      "path": "pa12/body-corner--1--1.step",
+      "sha256": "24cf6fb8a5db6699ddf564612551130659e2ce8f448e02a175cfad3ea65d4320"
+    },
+    {
+      "path": "pa12/body-corner--1-1.step",
+      "sha256": "dc266465d9007a8c26e71bd62469baf97fdac7e691d37320decfa61afe4d6ebb"
+    },
+    {
+      "path": "pa12/body-corner-1--1.step",
+      "sha256": "ddc73e2dc79fa84f2876c165707bf603303631674b45837015f2dbd5e7e4ae2c"
+    },
+    {
+      "path": "pa12/body-corner-1-1.step",
+      "sha256": "276e2aad5b40dfaf1c0e217ec24916960e8ea8b3139e1d5dd5c2d77feda2755d"
+    },
+    {
+      "path": "pa12/lid-corner-fl.step",
+      "sha256": "1e0cd41de74a28881022621db89b82256769a35b5c1e8871cd81a711795dfc16"
+    },
+    {
+      "path": "pa12/lid-corner-fr.step",
+      "sha256": "be6c85c1e8394875ca5b1a8e45780370b0bfda4c70d66adbbacaee7b67be1718"
+    },
+    {
+      "path": "pa12/lid-corner-br.step",
+      "sha256": "18f9094e6d37c0b85e425d276d2eea2e098e3b13486c34eba9685f93af3e33c9"
+    },
+    {
+      "path": "pa12/lid-corner-bl.step",
+      "sha256": "f8df68fa8d7ef83715bb232986e3528dc0a326db6fceee94155485516cef3b62"
+    },
+    {
+      "path": "pa12/lid-middle-front.step",
+      "sha256": "4596acb3eb16196ab6895123d623111625e1d3013a09c44002417bad10ae80f7"
+    },
+    {
+      "path": "pa12/lid-middle-right.step",
+      "sha256": "5818bf91b2676ab64126420d348707c60768c845be1f0864c47b4108e3a1ddf7"
+    },
+    {
+      "path": "pa12/lid-middle-back.step",
+      "sha256": "70a5c9d3a6ceb922f3a2f4e400681b01098ed602bfc700cf676f8a7d861a01ef"
+    },
+    {
+      "path": "pa12/lid-middle-left.step",
+      "sha256": "85c1e7d20fc18d5e2687942abc69be33b3457b81824b6619dfbe59c999f5b81f"
+    },
+    {
+      "path": "aluminum/panel-front.step",
+      "sha256": "b57b6b76469d39f86293980e22fceb8b6d8814b520429f8cb451007ce001361c"
+    },
+    {
+      "path": "aluminum/panel-back.step",
+      "sha256": "b57b6b76469d39f86293980e22fceb8b6d8814b520429f8cb451007ce001361c"
+    },
+    {
+      "path": "aluminum/panel-right.step",
+      "sha256": "d96f38a979ff756914ad21db0e3732a55c65bd3656a5dcba10b02949948f93ff"
+    },
+    {
+      "path": "aluminum/panel-left.step",
+      "sha256": "04021964b12ac1e8a40c1ef95e7ba5643ad3bb7894e0809fd552f6fe55260018"
+    },
+    {
+      "path": "aluminum/panel-floor.step",
+      "sha256": "bb898321b6aa0382db4c60d06c3c641924af0becb7de68c7eab001f1e8242867"
+    },
+    {
+      "path": "aluminum/lid-plate.step",
+      "sha256": "3efcff6478552b1a8f90330532e5e0263043a9786fdb738c0d167f9ea8c254d2"
+    },
+    {
+      "path": "home-print/round-washer.step",
+      "sha256": "be011f1b40836789d1e182909c74975a883127a29ebd9dae5ed6522ea071a5fb"
+    },
+    {
+      "path": "parts-manifest.json",
+      "sha256": "2c15b23fb74c520319610c1eeab62743c2fa47b197f5a1ffa8fc25637df699ae"
+    },
+    {
+      "path": "parameters.json",
+      "sha256": "ccd585d359c0a748b9e254767382172ba50013523ee8dcef06e733fba80b71c2"
+    },
+    {
+      "path": "scene.json",
+      "sha256": "eb43b27cb5d1b44e35c6da83554b4e9bc5aff75b213e96222d71904b5c2e9db8"
+    },
+    {
+      "path": "assembly-path-check.json",
+      "sha256": "c9d1becfbb6b3091baa8be100c1325522f80f63d7ca475d0ecaf2c060413b37c"
+    }
+  ]
+}

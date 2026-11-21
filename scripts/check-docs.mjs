@@ -3,6 +3,7 @@ import { checkProjectState } from './lib/state-checks.mjs';
 import { extractDocumentUrls } from './lib/preview-links-check.mjs';
 import { PRODUCTION_PREVIEW_ORIGIN } from './lib/preview-origin.mjs';
 import { checkNavigationOrder, checkRouteMap } from './lib/doc-structure-checks.mjs';
+import { checkR11Contract, R11_REVISION } from './lib/r11-contract.mjs';
 import { readFile, readdir, mkdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -20,7 +21,7 @@ for(const p of all){
  const match=text.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);
  if(!match){errors.push(`${rel}: frontmatterなし`);continue;}
  const fm={};
- for(const ln of match[1].split('\n')){const m=ln.match(/^(title|description|sidebar_position|unlisted):\s*(.+)$/);if(!m)continue;try{fm[m[1]]=JSON.parse(m[2]);}catch{fm[m[1]]=m[2];}}
+ for(const ln of match[1].split('\n')){const m=ln.match(/^(title|description|sidebar_position|unlisted|search_exclude):\s*(.+)$/);if(!m)continue;try{fm[m[1]]=JSON.parse(m[2]);}catch{fm[m[1]]=m[2];}}
  assert(typeof fm.title==='string'&&fm.title.length>0,`${rel}: title必須`);
  assert(typeof fm.description==='string'&&fm.description.length>0,`${rel}: description必須`);
  assert(typeof fm.sidebar_position==='number',`${rel}: sidebar_positionは数値`);
@@ -72,6 +73,16 @@ for(const [key,m]of Object.entries(s.models)){
 const q=await json('project/quote-records.json');
 const gates=await json('project/open-issues.json');
 errors.push(...await checkProjectState({root,spec:s,release,quotes:q,gates}));
+// The legacy R6/R8 spec invariants above stay for every spec model; the active 7U40 selection is R11-04.
+errors.push(...checkR11Contract(root).map(e=>`R11契約: ${e}`));
+{
+ const r11=release.current_metal_7u40_candidate, sel=(await json('project/current-selection.json')).selections.find(x=>x.project==='metal-case'&&x.model==='7u40');
+ assert(r11?.revision===R11_REVISION,`release-state.current_metal_7u40_candidate は ${R11_REVISION} であること`);
+ assert(r11?.production_approved===false,'R11-04は製造承認ではない（production_approved:false）');
+ assert(r11?.prices?.current_total_jpy===null,'R11-04の価格は未見積（null）');
+ assert(sel?.revision===r11?.revision,'current-selection.json の7U40がrelease-stateの現行選択と不一致');
+ assert(release.current_fullset_candidate?.revision==='R10-FULLSET-01','旧来のcurrent_fullset_candidateはR10記録のまま');
+}
 nav.sort((a,b)=>a.path.localeCompare(b.path));
 // Generated inventory of document paths (not the live sidebar configuration).
 await writeFile(path.join(root,'project/navigation.json'),JSON.stringify(nav.map(({body,...x})=>x),null,2)+'\n');

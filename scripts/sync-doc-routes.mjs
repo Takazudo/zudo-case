@@ -17,13 +17,24 @@ export const OWNER_LABELS = {
   'two-way': '2WAY 実験設計',
   shared: '共通部品・元データ',
   development: '開発・保守',
+  archive: 'アーカイブ',
 };
+// Document lifecycle. Current owners hold the latest applicable state only;
+// the archive owner holds superseded reader material. Archive detail pages are
+// excluded from default search with zudo-doc's `search_exclude` frontmatter,
+// while the archive landing pages listed below stay searchable as the explicit
+// entry into historical material.
+export const ARCHIVE_OWNER = 'archive';
+export const lifecycleOf = canonical => canonical.split('/')[0] === ARCHIVE_OWNER ? 'archive' : 'current';
+export const isArchiveLanding = canonical => /^archive\/(?:[^/]+\/)?index\.mdx$/.test(canonical);
+export const expectsSearch = canonical => lifecycleOf(canonical) === 'current' || isArchiveLanding(canonical);
 export const TREATMENT_LABELS = {
   retained: '維持',
   moved: '移動',
   'moved-historical': '移動・履歴',
   split: '分割',
   new: '新規',
+  archived: 'アーカイブへ移動',
 };
 
 export function routeFor(source) {
@@ -47,6 +58,19 @@ export function frontmatter(text) {
 // Compatibility pages exist where a source path no longer holds the canonical page.
 export function isCompatibility(entry) {
   return entry.source !== null && entry.source !== entry.canonical;
+}
+
+// The one enumerator of compatibility routes, shared by generation, source and
+// built checks and the ownership table. `baseline` is the original pre-2026-11-06
+// URL recorded in `source`; `alias` is a later URL listed in `aliases`. Every
+// route points directly at the entry's final canonical page (no chains).
+export function compatibilityRoutes(map) {
+  const routes = [];
+  for (const entry of map.entries) {
+    if (isCompatibility(entry)) routes.push({ kind: 'baseline', source: entry.source, canonical: entry.canonical, anchors: entry.anchors ?? [], anchorTargets: entry.anchorTargets, entry });
+    for (const alias of entry.aliases ?? []) routes.push({ kind: 'alias', source: alias.path, canonical: entry.canonical, anchors: alias.anchors ?? [], anchorTargets: alias.anchorTargets, entry });
+  }
+  return routes;
 }
 
 export function anchorTarget(entry, anchor) {
@@ -98,7 +122,8 @@ export function renderOwnershipTable(map, titles) {
   const rows = ['| 旧URL | 所有 | 正式なページ | 扱い |', '|---|---|---|---|'];
   const ordered = [...map.entries].sort((a, b) => a.canonical.localeCompare(b.canonical));
   for (const entry of ordered) {
-    const old = entry.source ? `\`${routeFor(entry.source)}\`` : '—';
+    const olds = [entry.source, ...(entry.aliases ?? []).map(a => a.path)].filter(Boolean);
+    const old = olds.length ? olds.map(p => `\`${routeFor(p)}\``).join('<br />') : '—';
     const link = relativeLink('development/doc-structure.mdx', entry.canonical);
     const note = entry.note ? `：${escapeText(entry.note)}` : '';
     rows.push(`| ${old} | ${OWNER_LABELS[entry.owner]} | [${escapeText(titles.get(entry.canonical))}](${link}) | ${TREATMENT_LABELS[entry.treatment]}${note} |`);
@@ -122,9 +147,17 @@ export async function renderRoutePages(root) {
     if (fm.unlisted) throw new Error(`${entry.canonical}: canonical page must not be unlisted`);
     titles.set(entry.canonical, fm.title);
   }
-  const pages = map.entries.filter(isCompatibility).map(entry => ({
-    rel: path.posix.join('src/content/docs', entry.source),
-    text: renderCompatibilityPage(entry, titles.get(entry.canonical)),
+  const canonicals = new Set(map.entries.map(e => e.canonical));
+  const seen = new Set();
+  const routes = compatibilityRoutes(map);
+  for (const route of routes) {
+    if (seen.has(route.source)) throw new Error(`${route.source}: compatibility path listed twice`);
+    if (canonicals.has(route.source)) throw new Error(`${route.source}: compatibility path is also a canonical page (alias chain)`);
+    seen.add(route.source);
+  }
+  const pages = routes.map(route => ({
+    rel: path.posix.join('src/content/docs', route.source),
+    text: renderCompatibilityPage(route, titles.get(route.canonical)),
   }));
   const structureRel = 'src/content/docs/development/doc-structure.mdx';
   const structure = await readFile(path.join(root, structureRel), 'utf8');

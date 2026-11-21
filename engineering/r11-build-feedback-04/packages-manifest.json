@@ -1,0 +1,385 @@
+{
+  "revision": "R11-BUILD-FEEDBACK-04",
+  "model": "7u40",
+  "production_approved": false,
+  "generator": {
+    "path": "package.py",
+    "sha256": "b7cdab53969229e072e9b74a5e1e4ccdbb9138b0e1b4bb5f8eb78c4b09a9bf32"
+  },
+  "input_root": "source/out/",
+  "deterministic": {
+    "timestamp": "2026-11-22T00:00:00",
+    "mode": "0644",
+    "compression": "ZIP_DEFLATED level 9",
+    "member_order": "sorted by name"
+  },
+  "paths_relative_to": "engineering/r11-build-feedback-04/",
+  "packages": [
+    {
+      "role": "source",
+      "path": null,
+      "public_path": "public/downloads/candidate/R11-BUILD-FEEDBACK-04-source.zip",
+      "url": "/downloads/candidate/R11-BUILD-FEEDBACK-04-source.zip",
+      "bytes": 16928225,
+      "sha256": "4c74dd94e84ecebee8ac8d714cb5ba60f0ff479667c8c7f4ed4c75790463fcad",
+      "verbatim_received_archive": true,
+      "received_filename": "zudo-case-r11-04-design-files.zip",
+      "members_record": "SOURCE-RECEIPT.json"
+    },
+    {
+      "role": "pa12",
+      "path": "packages/R11-BUILD-FEEDBACK-04-pa12.zip",
+      "public_path": "public/downloads/candidate/R11-BUILD-FEEDBACK-04-pa12.zip",
+      "url": "/downloads/candidate/R11-BUILD-FEEDBACK-04-pa12.zip",
+      "bytes": 2730141,
+      "sha256": "3f76b2d65b9b9b4ff63c871d9449ea99427bac50edd09f2768b486aa09fb6d2f",
+      "members": [
+        {
+          "name": "START-HERE.md",
+          "source": "package.py (generated text)",
+          "sha256": "ba47523b142234dd4ed9d0aaa9e14980a60eeee7bd5c5e1481d3c23ac7ae1c1f"
+        },
+        {
+          "name": "pa12-size-audit.csv",
+          "source": "source/out/pa12-size-audit.csv",
+          "sha256": "f886a9c5e3a656a7950cba028519ad2d5de6c217be326b0b269f824b8d962213"
+        },
+        {
+          "name": "pa12/body-bottom-back.step",
+          "source": "source/out/pa12/body-bottom-back.step",
+          "sha256": "6531a8240ec9f37f37607ac52a09754dd16aae723144f124c0a8a76e3fe3455d"
+        },
+        {
+          "name": "pa12/body-bottom-back.stl",
+          "source": "source/out/pa12/body-bottom-back.stl",
+          "sha256": "124a4b9521efb8c9b18c424e1e06c7e6e83c9cdbee45ac8ab735d88144149251"
+        },
+        {
+          "name": "pa12/body-bottom-front.step",
+          "source": "source/out/pa12/body-bottom-front.step",
+          "sha256": "97d98581a213d10a76dfca08913a8b80532eb8bbde13a8dfe0258eebbb322195"
+        },
+        {
+          "name": "pa12/body-bottom-front.stl",
+          "source": "source/out/pa12/body-bottom-front.stl",
+          "sha256": "745f8b9774c88236af361dfd7950c93805ee76bd6e7d8b6c69525f169ca4fc3b"
+        },
+        {
+          "name": "pa12/body-bottom-left.step",
+          "source": "source/out/pa12/body-bottom-left.step",
+          "sha256": "d19329827aadaf295290bde1cb2daa966f2bf8bacc39fcdfe382fbe78d23175d"
+        },
+        {
+          "name": "pa12/body-bottom-left.stl",
+          "source": "source/out/pa12/body-bottom-left.stl",
+          "sha256": "3c05861621b9043db4faad3fcee648f550882d06e0c70a8a4f12da18fe3b071f"
+        },
+        {
+          "name": "pa12/body-bottom-right.step",
+          "source": "source/out/pa12/body-bottom-right.step",
+          "sha256": "53b8140e03541248231bcd032863e161b37df5db1b1ba8a05b597395dca998a4"
+        },
+        {
+          "name": "pa12/body-bottom-right.stl",
+          "source": "source/out/pa12/body-bottom-right.stl",
+          "sha256": "78005e6dceca0614ed205fe1cb1286ce54318a614c362f4cc60b743eff01e406"
+        },
+        {
+          "name": "pa12/body-corner--1--1.step",
+          "source": "source/out/pa12/body-corner--1--1.step",
+          "sha256": "24cf6fb8a5db6699ddf564612551130659e2ce8f448e02a175cfad3ea65d4320"
+        },
+        {
+          "name": "pa12/body-corner--1--1.stl",
+          "source": "source/out/pa12/body-corner--1--1.stl",
+          "sha256": "caf961e1e26e106835c6a249eefff6efa7f539681c693edc0316a7ce99d4106e"
+        },
+        {
+          "name": "pa12/body-corner--1-1.step",
+          "source": "source/out/pa12/body-corner--1-1.step",
+          "sha256": "dc266465d9007a8c26e71bd62469baf97fdac7e691d37320decfa61afe4d6ebb"
+        },
+        {
+          "name": "pa12/body-corner--1-1.stl",
+          "source": "source/out/pa12/body-corner--1-1.stl",
+          "sha256": "e593cd1ef45d9eab6a6009329bd7060b80c62f059f88143c4ea51a7a77bcc835"
+        },
+        {
+          "name": "pa12/body-corner-1--1.step",
+          "source": "source/out/pa12/body-corner-1--1.step",
+          "sha256": "ddc73e2dc79fa84f2876c165707bf603303631674b45837015f2dbd5e7e4ae2c"
+        },
+        {
+          "name": "pa12/body-corner-1--1.stl",
+          "source": "source/out/pa12/body-corner-1--1.stl",
+          "sha256": "ce8f889e9049fdabbc7f3daf9862966b425fd7fc46a7acf831a74ef80fb1b0bc"
+        },
+        {
+          "name": "pa12/body-corner-1-1.step",
+          "source": "source/out/pa12/body-corner-1-1.step",
+          "sha256": "276e2aad5b40dfaf1c0e217ec24916960e8ea8b3139e1d5dd5c2d77feda2755d"
+        },
+        {
+          "name": "pa12/body-corner-1-1.stl",
+          "source": "source/out/pa12/body-corner-1-1.stl",
+          "sha256": "b21bada08da9a17fb5761b823b7955791b3535dfba2dbccc600c2e3d7974edf3"
+        },
+        {
+          "name": "pa12/body-top-back.step",
+          "source": "source/out/pa12/body-top-back.step",
+          "sha256": "5bb2fb18a7024bb521159d9d9ea07a2071160de8d8adab9edcd2f3bbfcf7454d"
+        },
+        {
+          "name": "pa12/body-top-back.stl",
+          "source": "source/out/pa12/body-top-back.stl",
+          "sha256": "54a15e2f55cea5e475639931a8f0f5199d09d4a3390490a4087a88b3f48e5293"
+        },
+        {
+          "name": "pa12/body-top-front.step",
+          "source": "source/out/pa12/body-top-front.step",
+          "sha256": "bae2068cad863e14c4d4196b8339454689677d8548446faa2ca73a3927b5ef13"
+        },
+        {
+          "name": "pa12/body-top-front.stl",
+          "source": "source/out/pa12/body-top-front.stl",
+          "sha256": "aab504b7b5804efc0157ed3ee96fe73556a289b8e8271e5b1dc97f435b817e4e"
+        },
+        {
+          "name": "pa12/body-top-left.step",
+          "source": "source/out/pa12/body-top-left.step",
+          "sha256": "7489f83c5c50a0b80375aba696763750d731f6a1b830020ce53bfcb8d27ef6f1"
+        },
+        {
+          "name": "pa12/body-top-left.stl",
+          "source": "source/out/pa12/body-top-left.stl",
+          "sha256": "65011e5fa721c54fe06af021cafa915ec878bc515a79a88f192c3d8e156941a9"
+        },
+        {
+          "name": "pa12/body-top-right.step",
+          "source": "source/out/pa12/body-top-right.step",
+          "sha256": "8b517136dc2474ab91c51f25747117b74f0652c15acf1de0a209a13e69ae9ba3"
+        },
+        {
+          "name": "pa12/body-top-right.stl",
+          "source": "source/out/pa12/body-top-right.stl",
+          "sha256": "495634740710b77d0443ab78abe935575d1c859b8042a8ae596819d25d458b92"
+        },
+        {
+          "name": "pa12/lid-corner-bl.step",
+          "source": "source/out/pa12/lid-corner-bl.step",
+          "sha256": "01e39904ce927ebfc6ec7b5ccb88a44507ffba6bdf6e6557e878400f398f758c"
+        },
+        {
+          "name": "pa12/lid-corner-bl.stl",
+          "source": "source/out/pa12/lid-corner-bl.stl",
+          "sha256": "37bc14de9b5921faacb7feb7c964d589331f4363b40a6441805367855a7f9b70"
+        },
+        {
+          "name": "pa12/lid-corner-br.step",
+          "source": "source/out/pa12/lid-corner-br.step",
+          "sha256": "21887173787b94afe1dce6d58f2148f903821ba9c772ef1e7217d2aa9ae8e56b"
+        },
+        {
+          "name": "pa12/lid-corner-br.stl",
+          "source": "source/out/pa12/lid-corner-br.stl",
+          "sha256": "165cf9ed44888b8254f1cdea6963bd1f8728cf9b07c19cdc5b557d792d44b120"
+        },
+        {
+          "name": "pa12/lid-corner-fl.step",
+          "source": "source/out/pa12/lid-corner-fl.step",
+          "sha256": "eab2d765c9c2b660ca2c481d682538abcb48416b3b9d0a31f0240b8b19dd8e95"
+        },
+        {
+          "name": "pa12/lid-corner-fl.stl",
+          "source": "source/out/pa12/lid-corner-fl.stl",
+          "sha256": "cfe0f1aa3c4c3ad9ef8228ac409de334b4ec2058f4f71948fce850f37c76e3d6"
+        },
+        {
+          "name": "pa12/lid-corner-fr.step",
+          "source": "source/out/pa12/lid-corner-fr.step",
+          "sha256": "1600cd71c2aa17bf40bb15b0b03a0364e8a42240bb70271856de725cef8f4f6a"
+        },
+        {
+          "name": "pa12/lid-corner-fr.stl",
+          "source": "source/out/pa12/lid-corner-fr.stl",
+          "sha256": "e856f260337a0e6e1b654bb78020374f151f96f546b419ce4895e31c6cb9d79f"
+        },
+        {
+          "name": "pa12/lid-middle-back.step",
+          "source": "source/out/pa12/lid-middle-back.step",
+          "sha256": "70a5c9d3a6ceb922f3a2f4e400681b01098ed602bfc700cf676f8a7d861a01ef"
+        },
+        {
+          "name": "pa12/lid-middle-back.stl",
+          "source": "source/out/pa12/lid-middle-back.stl",
+          "sha256": "7816d229fdf4041040a4ff59041516dcbef4dff1b5965e123f1bcf956183fa0f"
+        },
+        {
+          "name": "pa12/lid-middle-front.step",
+          "source": "source/out/pa12/lid-middle-front.step",
+          "sha256": "4596acb3eb16196ab6895123d623111625e1d3013a09c44002417bad10ae80f7"
+        },
+        {
+          "name": "pa12/lid-middle-front.stl",
+          "source": "source/out/pa12/lid-middle-front.stl",
+          "sha256": "9f9b051dcc88927da1259bb24fc5d0af2d02d71b970a985e2fdaaa9f9fe509a5"
+        },
+        {
+          "name": "pa12/lid-middle-left.step",
+          "source": "source/out/pa12/lid-middle-left.step",
+          "sha256": "e329839b51a49affda0b65230b08369e3815470eb76e1337bbec27a52c54f32f"
+        },
+        {
+          "name": "pa12/lid-middle-left.stl",
+          "source": "source/out/pa12/lid-middle-left.stl",
+          "sha256": "06fcb48aaef5acceac8e61ba3263ccc3bd793245db6bdfcefc7c246e2c920a22"
+        },
+        {
+          "name": "pa12/lid-middle-right.step",
+          "source": "source/out/pa12/lid-middle-right.step",
+          "sha256": "2aeb62f1f9a18e1dd639aa355ce670f070554904dc01eb402f32b0dec451a24d"
+        },
+        {
+          "name": "pa12/lid-middle-right.stl",
+          "source": "source/out/pa12/lid-middle-right.stl",
+          "sha256": "a3eef0ce408ee4c3f3bc003b0d7a46ff9a7ff57205aedd4bd38ed07fe9c9c489"
+        }
+      ]
+    },
+    {
+      "role": "aluminum",
+      "path": "packages/R11-BUILD-FEEDBACK-04-aluminum.zip",
+      "public_path": "public/downloads/candidate/R11-BUILD-FEEDBACK-04-aluminum.zip",
+      "url": "/downloads/candidate/R11-BUILD-FEEDBACK-04-aluminum.zip",
+      "bytes": 457261,
+      "sha256": "0f5116beeff103aad06642cbf245543782abe3918e5951e188253b35a2a1a2d3",
+      "members": [
+        {
+          "name": "START-HERE.md",
+          "source": "package.py (generated text)",
+          "sha256": "87f839ce14cd6198fa91c9753680e4fcd08ae1d309c0229d05183a3d8713d68c"
+        },
+        {
+          "name": "aluminum/lid-plate.dxf",
+          "source": "source/out/aluminum/lid-plate.dxf",
+          "sha256": "b3fde11a10f212042dfa69b8d01fb9594c2134ea3598f86230ef01f760d1c050"
+        },
+        {
+          "name": "aluminum/lid-plate.step",
+          "source": "source/out/aluminum/lid-plate.step",
+          "sha256": "3efcff6478552b1a8f90330532e5e0263043a9786fdb738c0d167f9ea8c254d2"
+        },
+        {
+          "name": "aluminum/lid-plate.stl",
+          "source": "source/out/aluminum/lid-plate.stl",
+          "sha256": "fde29e12dd499743a15a0a995e353cfe157c564ac7dcaff6db2b61adea2e2e37"
+        },
+        {
+          "name": "aluminum/panel-back.dxf",
+          "source": "source/out/aluminum/panel-back.dxf",
+          "sha256": "464f4d0a4a93b8dfeec1dbe79808c3461957747fb2d96e2ca02ed1f257c0c75d"
+        },
+        {
+          "name": "aluminum/panel-back.step",
+          "source": "source/out/aluminum/panel-back.step",
+          "sha256": "b57b6b76469d39f86293980e22fceb8b6d8814b520429f8cb451007ce001361c"
+        },
+        {
+          "name": "aluminum/panel-back.stl",
+          "source": "source/out/aluminum/panel-back.stl",
+          "sha256": "f7b21f6e3d87da5ccd09b5fda8f62d289fc6e35b2028632fe726ac47efefec6c"
+        },
+        {
+          "name": "aluminum/panel-floor.dxf",
+          "source": "source/out/aluminum/panel-floor.dxf",
+          "sha256": "535a561383f09c168f967d228e5597ee47caf15beb98dc5e90f6b934242887f3"
+        },
+        {
+          "name": "aluminum/panel-floor.step",
+          "source": "source/out/aluminum/panel-floor.step",
+          "sha256": "bb898321b6aa0382db4c60d06c3c641924af0becb7de68c7eab001f1e8242867"
+        },
+        {
+          "name": "aluminum/panel-floor.stl",
+          "source": "source/out/aluminum/panel-floor.stl",
+          "sha256": "de6ca1290921f6c9c30dabefa95e492d4ab66652dbdf35d36446e51fd5e8ff15"
+        },
+        {
+          "name": "aluminum/panel-front.dxf",
+          "source": "source/out/aluminum/panel-front.dxf",
+          "sha256": "464f4d0a4a93b8dfeec1dbe79808c3461957747fb2d96e2ca02ed1f257c0c75d"
+        },
+        {
+          "name": "aluminum/panel-front.step",
+          "source": "source/out/aluminum/panel-front.step",
+          "sha256": "b57b6b76469d39f86293980e22fceb8b6d8814b520429f8cb451007ce001361c"
+        },
+        {
+          "name": "aluminum/panel-front.stl",
+          "source": "source/out/aluminum/panel-front.stl",
+          "sha256": "f7b21f6e3d87da5ccd09b5fda8f62d289fc6e35b2028632fe726ac47efefec6c"
+        },
+        {
+          "name": "aluminum/panel-left.dxf",
+          "source": "source/out/aluminum/panel-left.dxf",
+          "sha256": "8168251612b75c9c7d49fdd6c65ddff0df8df6dd96b3d2d34264cf2ea9db51b2"
+        },
+        {
+          "name": "aluminum/panel-left.step",
+          "source": "source/out/aluminum/panel-left.step",
+          "sha256": "04021964b12ac1e8a40c1ef95e7ba5643ad3bb7894e0809fd552f6fe55260018"
+        },
+        {
+          "name": "aluminum/panel-left.stl",
+          "source": "source/out/aluminum/panel-left.stl",
+          "sha256": "1ce6b507bacc2b85803a0c6c32a116dcf6f0912f0c365402b3a77b08ef45701a"
+        },
+        {
+          "name": "aluminum/panel-right.dxf",
+          "source": "source/out/aluminum/panel-right.dxf",
+          "sha256": "5fa5a8edeac7c2749031a9716052bb1e8c4230664f76048a84078426b48f7e97"
+        },
+        {
+          "name": "aluminum/panel-right.step",
+          "source": "source/out/aluminum/panel-right.step",
+          "sha256": "d96f38a979ff756914ad21db0e3732a55c65bd3656a5dcba10b02949948f93ff"
+        },
+        {
+          "name": "aluminum/panel-right.stl",
+          "source": "source/out/aluminum/panel-right.stl",
+          "sha256": "ff8b6b4bc9ba368ad9310df728cf3a43e7f3ddce1c27799f86c7a48c2d97737d"
+        },
+        {
+          "name": "panel-hole-map.csv",
+          "source": "source/out/panel-hole-map.csv",
+          "sha256": "899377b6880dd8b586826a4c0b14f8f52d280412c15b219911d9f70af202992d"
+        }
+      ]
+    },
+    {
+      "role": "home-print",
+      "path": "packages/R11-BUILD-FEEDBACK-04-home-print.zip",
+      "public_path": "public/downloads/candidate/R11-BUILD-FEEDBACK-04-home-print.zip",
+      "url": "/downloads/candidate/R11-BUILD-FEEDBACK-04-home-print.zip",
+      "bytes": 12402,
+      "sha256": "cd38fd352056bcb502a4068c2bbe3ede490475a534544e9433cb374bd5770e19",
+      "members": [
+        {
+          "name": "START-HERE.md",
+          "source": "package.py (generated text)",
+          "sha256": "089201e76d5852bdabb4906ce9f4ab716a01d34bdc85e43325ce1c27f19d3ab3"
+        },
+        {
+          "name": "home-print/round-washer.step",
+          "source": "source/out/home-print/round-washer.step",
+          "sha256": "be011f1b40836789d1e182909c74975a883127a29ebd9dae5ed6522ea071a5fb"
+        },
+        {
+          "name": "home-print/round-washer.stl",
+          "source": "source/out/home-print/round-washer.stl",
+          "sha256": "d7d6506f6ffc2aca8c320c098893124734498070584923b5d55a10d5509d1084"
+        }
+      ]
+    }
+  ]
+}
