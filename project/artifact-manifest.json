@@ -4199,12 +4199,6 @@
       "status": "candidate-not-approved"
     },
     {
-      "path": "public/downloads/candidate/fit-test-order-pack-DRAFT.zip",
-      "bytes": 159266,
-      "sha256": "6d9b4e21cc915d75525734cfbafb84cfea9bf37a921c4b0d35757d2519e5591f",
-      "status": "quote-only-not-approved"
-    },
-    {
       "path": "engineering/r11-build-feedback-04/source/README.md",
       "bytes": 15528,
       "sha256": "ac190dc86eb3ba94b53cb9e35a9fd64c63d0e90bf352fe0a061d81c496a998b3",
@@ -5715,6 +5709,12 @@
       "bytes": 53517,
       "sha256": "5f902194dc04d1dbb2a723abd93ac6e78f2bcf8c41fac2258f83ca102bf37c5b",
       "status": "candidate-not-approved"
+    },
+    {
+      "path": "public/downloads/candidate/fit-test-order-pack-DRAFT.zip",
+      "bytes": 159266,
+      "sha256": "6d9b4e21cc915d75525734cfbafb84cfea9bf37a921c4b0d35757d2519e5591f",
+      "status": "quote-only-not-approved"
     }
   ]
 }
