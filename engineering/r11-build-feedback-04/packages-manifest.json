@@ -4,7 +4,7 @@
   "production_approved": false,
   "generator": {
     "path": "package.py",
-    "sha256": "b7cdab53969229e072e9b74a5e1e4ccdbb9138b0e1b4bb5f8eb78c4b09a9bf32"
+    "sha256": "ea12c02d27eaa72ac1c5438bdd0b4847a5bcc21cc1fe14ca67b80685c361bbef"
   },
   "input_root": "source/out/",
   "deterministic": {
@@ -20,9 +20,15 @@
       "path": null,
       "public_path": "public/downloads/candidate/R11-BUILD-FEEDBACK-04-source.zip",
       "url": "/downloads/candidate/R11-BUILD-FEEDBACK-04-source.zip",
-      "bytes": 16928225,
-      "sha256": "4c74dd94e84ecebee8ac8d714cb5ba60f0ff479667c8c7f4ed4c75790463fcad",
-      "verbatim_received_archive": true,
+      "bytes": 16927839,
+      "sha256": "a5f140144554fe4e814dee0df2547194f81db1cc0835bd9acc31c5b2985d8976",
+      "verbatim_received_archive": false,
+      "generalized_members": [
+        "README.md",
+        "research/hanging-hole-audit.json",
+        "research/hanging-hole-audit.md"
+      ],
+      "received_archive_sha256": "4c74dd94e84ecebee8ac8d714cb5ba60f0ff479667c8c7f4ed4c75790463fcad",
       "received_filename": "zudo-case-r11-04-design-files.zip",
       "members_record": "SOURCE-RECEIPT.json"
     },

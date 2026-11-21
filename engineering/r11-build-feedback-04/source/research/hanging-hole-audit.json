@@ -5,7 +5,7 @@
   "decision": {
     "action": "Remove all six from the R11-02 review design per the user's preference unless specifically required by JLC",
     "supplier_approval_for_slot_only_panels": false,
-    "basis": "The explicit add-one-hole-per-item requirement located in Gmail concerns 13 test coupons. The later engineer-checked answer allows existing usable hanging holes instead of an extra hole. No supplier instruction requiring these six full-size holes was found.",
+    "basis": "The explicit add-one-hole-per-item requirement located in the mailbox concerns 13 test coupons. The later engineer-checked answer allows existing usable hanging holes instead of an extra hole. No supplier instruction requiring these six full-size holes was found.",
     "limit": "Floor, front and back are slot-only after removal. JLC's October 6 refusal to use slots was not expressly withdrawn; revised full-size hanging methods remain unconfirmed.",
     "causal_carryover": {
       "status": "inference",
@@ -14,98 +14,81 @@
   },
   "orders": {
     "coupons": {
-      "order_id": "W2026100405546498",
-      "customer_reference": "7543760A",
+      "order_id": "withheld (test-coupon order)",
       "part_count": 13,
       "scope": "Aluminum test coupons; one added diameter-4 mm hole per replacement item"
     },
     "full_size_panels": {
-      "order_id": "W2026102604136731",
+      "order_id": "withheld (full-size panel order)",
       "part_count": 6,
-      "part_ids": ["SMS2610263000226", "SMS2610263000220", "SMS2610263000229", "SMS2610263000227", "SMS2610263000232", "SMS2610263000219"],
+      "part_ids": "withheld (six full-size panel line items)",
       "located_correspondence_scope": "Individual identification/labels; no dedicated-hole requirement or approval of their removal"
     }
   },
-  "gmail_evidence": [
+  "mailbox_evidence": [
     {
-      "message_id": "1a10fe2ece5a35ef",
-      "thread_id": "1a10fe2ece5a35ef",
       "date_utc": "2026-10-06T06:24:51Z",
       "date_jst": "2026-10-06T15:24:51+09:00",
       "sender_role": "JLC supplier",
-      "url": "https://mail.google.com/mail/u/0/#all/1a10fe2ece5a35ef",
+      "reference": "mailbox message; reference withheld in the published copy",
       "scope": "Initially six named items in the 13-coupon order",
       "finding": "Requires an added through hole of diameter 3.5–5.0 mm before surface treatment"
     },
     {
-      "message_id": "1a110889571d4c5f",
-      "thread_id": "1a110889571d4c5f",
       "date_utc": "2026-10-06T09:25:46Z",
       "date_jst": "2026-10-06T18:25:46+09:00",
       "sender_role": "JLC supplier",
-      "url": "https://mail.google.com/mail/u/0/#all/1a110889571d4c5f",
+      "reference": "mailbox message; reference withheld in the published copy",
       "scope": "All 13 items in the coupon batch",
       "finding": "One new non-functional diameter-3.5–5 mm hole per part; slots refused",
       "exact_slots_excerpt": "For the slots, we only want to hang the part using non functional holes, so we will not used the slots."
     },
     {
-      "message_id": "1a114a745dcebe58",
-      "thread_id": "1a110889571d4c5f",
       "date_utc": "2026-10-07T04:37:49Z",
       "date_jst": "2026-10-07T13:37:49+09:00",
       "sender_role": "User",
-      "url": "https://mail.google.com/mail/u/0/#all/1a114a745dcebe58",
+      "reference": "mailbox message; reference withheld in the published copy",
       "scope": "Separate design question for final full-size enclosure panels, not the current test pieces",
       "finding": "Requests avoiding extra holes; asks whether existing round diameter-3.4/5.5 mounting holes or another method could be used; acknowledges JLC will not use slots"
     },
     {
-      "message_id": "1a114c3912309331",
-      "thread_id": "1a110889571d4c5f",
       "date_utc": "2026-10-07T05:08:42Z",
       "date_jst": "2026-10-07T14:08:42+09:00",
       "sender_role": "User",
-      "url": "https://mail.google.com/mail/u/0/#all/1a114c3912309331",
+      "reference": "mailbox message; reference withheld in the published copy",
       "scope": "Coupon replacement files",
       "finding": "Confirms one diameter-4 mm hole in each of all 13 coupons; explicitly says final-panel question must not delay the coupon order"
     },
     {
-      "message_id": "1a1151263214b686",
-      "thread_id": "1a1151263214b686",
       "date_utc": "2026-10-07T06:34:47Z",
       "date_jst": "2026-10-07T15:34:47+09:00",
       "sender_role": "JLC supplier",
-      "url": "https://mail.google.com/mail/u/0/#all/1a1151263214b686",
+      "reference": "mailbox message; reference withheld in the published copy",
       "scope": "Engineer-checked clarification following the user's final-panel question",
       "exact_excerpt": "as long as the parts have holes that can be hang for surface treatment, you do not need to design an extra holes.",
       "interpretation": "Conditional permission to avoid an additional hole when a usable hanging hole already exists; no express approval of slots or particular final drawings"
     },
     {
-      "message_id": "1a1778ffe01515df",
-      "thread_id": "1a1778ffe01515df",
       "date_utc": "2026-10-26T09:34:46Z",
       "date_jst": "2026-10-26T18:34:46+09:00",
       "sender_role": "JLC supplier",
-      "url": "https://mail.google.com/mail/u/0/#all/1a1778ffe01515df",
-      "scope": "Six full-size panels in order W2026102604136731",
+      "reference": "mailbox message; reference withheld in the published copy",
+      "scope": "Six full-size panels in the full-size panel order",
       "finding": "Asks whether parts need individual identification labels, not hanging-hole changes"
     },
     {
-      "message_id": "1a1779a2d887591e",
-      "thread_id": "1a1778ffe01515df",
       "date_utc": "2026-10-26T09:45:54Z",
       "date_jst": "2026-10-26T18:45:54+09:00",
       "sender_role": "User",
-      "url": "https://mail.google.com/mail/u/0/#all/1a1779a2d887591e",
+      "reference": "mailbox message; reference withheld in the published copy",
       "scope": "Response to the full-size order's label question",
       "finding": "Labels unnecessary because panel shapes identify them; no replacement files needed for that labeling question"
     },
     {
-      "message_id": "1a177b79426c075f",
-      "thread_id": "1a177b79426c075f",
       "date_utc": "2026-10-26T10:18:01Z",
       "date_jst": "2026-10-26T19:18:01+09:00",
       "sender_role": "JLC supplier",
-      "url": "https://mail.google.com/mail/u/0/#all/1a177b79426c075f",
+      "reference": "mailbox message; reference withheld in the published copy",
       "scope": "Acknowledgment of the full-size order's label decision",
       "finding": "Acknowledges normal handling without labels; no approval of a changed hanging method"
     }
@@ -167,7 +150,7 @@
     ]
   },
   "search_scope": {
-    "gmail": ["JLC hanging/anodizing/holes correspondence", "W2026100405546498 coupon order", "Later supplier order-issue messages", "W2026102604136731 full-size order"],
+    "mailbox": ["JLC hanging/anodizing/holes correspondence", "Test-coupon order", "Later supplier order-issue messages", "Full-size panel order"],
     "repository": ["Relevant local code and documentation", "Read-only GitHub issue and PR metadata and file patches because the checkout is shallow"],
     "no_later_contrary_instruction_found": true,
     "exhaustive_correspondence_claim": false,

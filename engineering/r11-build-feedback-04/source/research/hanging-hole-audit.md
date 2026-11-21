@@ -10,24 +10,24 @@ This is **not approval of slot-only anodizing suspension**. After removal, the f
 
 ## Supplier chronology
 
-Times below are JST (UTC+09:00); machine-readable UTC timestamps are in the accompanying JSON. Gmail links use the account-0 route and include the actual message ID. The first five rows concern order **W2026100405546498 / customer reference 7543760A**; that is the coupon order, even when the user asks a separate question about future full-size panels.
+Times below are JST (UTC+09:00); machine-readable UTC timestamps are in the accompanying JSON. Mailbox message references are withheld in this published copy. The first five rows concern the **test-coupon order**; that is the coupon order, even when the user asks a separate question about future full-size panels.
 
 | Date/time (JST) | Sender and scope | Evidence |
 |---|---|---|
-| 2026-10-06 15:24:51 | JLC; six named items in the coupon order | Requests a through hole of 3.5–5.0 mm before surface treatment. [Message `1a10fe2ece5a35ef`](https://mail.google.com/mail/u/0/#all/1a10fe2ece5a35ef). |
-| 2026-10-06 18:25:46 | JLC; expands replacement-file request to all 13 coupons | Says one hole is sufficient; 3.5–5 mm applies to the added processing hole; explicitly rejects slots. [Message `1a110889571d4c5f`](https://mail.google.com/mail/u/0/#all/1a110889571d4c5f). |
-| 2026-10-07 13:37:49 | User; explicitly separates final full-size panels from current test pieces | Asks whether existing Ø3.4/Ø5.5 mounting holes or another method can avoid extra holes, acknowledging that JLC will not use slots. [Message `1a114a745dcebe58`](https://mail.google.com/mail/u/0/#all/1a114a745dcebe58). |
-| 2026-10-07 14:08:42 | User; approves replacement coupon files | Confirms one Ø4 hole added to each of the 13 test pieces; says the earlier final-panel question must not hold up this test order. [Message `1a114c3912309331`](https://mail.google.com/mail/u/0/#all/1a114c3912309331). |
-| 2026-10-07 15:34:47 | JLC; engineer-checked clarification | Says an extra hole is unnecessary if the part already has holes usable for hanging. This is conditional, without approval of particular final drawings or an express exception for slots. [Message `1a1151263214b686`](https://mail.google.com/mail/u/0/#all/1a1151263214b686). |
-| 2026-10-26 18:34:46–19:18:01 | JLC and user; different order **W2026102604136731**, six full-size panels | The located exchange asks about individual part identification/labels; the user says labels are unnecessary and JLC acknowledges. It neither requires dedicated hanging holes nor approves removal of them. [Initial `1a1778ffe01515df`](https://mail.google.com/mail/u/0/#all/1a1778ffe01515df), [user reply `1a1779a2d887591e`](https://mail.google.com/mail/u/0/#all/1a1779a2d887591e), [acknowledgment `1a177b79426c075f`](https://mail.google.com/mail/u/0/#all/1a177b79426c075f). |
+| 2026-10-06 15:24:51 | JLC; six named items in the coupon order | Requests a through hole of 3.5–5.0 mm before surface treatment. Supplier/user message (mailbox reference withheld). |
+| 2026-10-06 18:25:46 | JLC; expands replacement-file request to all 13 coupons | Says one hole is sufficient; 3.5–5 mm applies to the added processing hole; explicitly rejects slots. Supplier/user message (mailbox reference withheld). |
+| 2026-10-07 13:37:49 | User; explicitly separates final full-size panels from current test pieces | Asks whether existing Ø3.4/Ø5.5 mounting holes or another method can avoid extra holes, acknowledging that JLC will not use slots. Supplier/user message (mailbox reference withheld). |
+| 2026-10-07 14:08:42 | User; approves replacement coupon files | Confirms one Ø4 hole added to each of the 13 test pieces; says the earlier final-panel question must not hold up this test order. Supplier/user message (mailbox reference withheld). |
+| 2026-10-07 15:34:47 | JLC; engineer-checked clarification | Says an extra hole is unnecessary if the part already has holes usable for hanging. This is conditional, without approval of particular final drawings or an express exception for slots. Supplier/user message (mailbox reference withheld). |
+| 2026-10-26 18:34:46–19:18:01 | JLC and user; different order (the **full-size panel order**), six full-size panels | The located exchange asks about individual part identification/labels; the user says labels are unnecessary and JLC acknowledges. It neither requires dedicated hanging holes nor approves removal of them. Initial message, user reply message, acknowledgment message. |
 
 ### Exact relevant supplier wording
 
-October 6, message `1a110889571d4c5f`:
+October 6, supplier message:
 
 > For the slots, we only want to hang the part using non functional holes, so we will not used the slots.
 
-October 7, message `1a1151263214b686` (excerpt):
+October 7, supplier message (excerpt):
 
 > as long as the parts have holes that can be hang for surface treatment, you do not need to design an extra holes.
 

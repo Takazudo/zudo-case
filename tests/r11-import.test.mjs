@@ -5,7 +5,7 @@ import {tmpdir} from 'node:os';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {checkR11Contract, readZip, sha256} from '../scripts/lib/r11-contract.mjs';
-import {runSync, verifyReceipt, verifyPackages, POINTER_FILES, POINTER_KEY} from '../scripts/sync-r11.mjs';
+import {runSync, verifyReceipt, verifyPackages, POINTER_FILES, POINTER_KEY, PRIVATE_DETAIL} from '../scripts/sync-r11.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const R11 = 'engineering/r11-build-feedback-04';
@@ -33,16 +33,36 @@ test('package roles and member counts', async () => {
   assert.deepEqual(home, ['START-HERE.md', 'home-print/round-washer.step', 'home-print/round-washer.stl']);
 });
 
-test('source zip is the verbatim received archive', () => {
+test('source zip repackages source/ with private details generalized; the received archive stays identified by hash', async () => {
   const receipt = json(R11 + '/SOURCE-RECEIPT.json');
-  const blob = read('public/downloads/candidate/R11-BUILD-FEEDBACK-04-source.zip');
-  assert.equal(sha256(blob), RECEIVED_SHA256);
-  assert.equal(receipt.received_archive.sha256, RECEIVED_SHA256);
-  assert.equal(blob.length, receipt.received_archive.bytes);
-  assert.equal(receipt.members.length, 238);
   const m = json(R11 + '/packages-manifest.json').packages.find(p => p.role === 'source');
-  assert.equal(m.sha256, RECEIVED_SHA256);
-  assert.equal(m.verbatim_received_archive, true);
+  const blob = read('public/downloads/candidate/R11-BUILD-FEEDBACK-04-source.zip');
+  assert.equal(receipt.received_archive.sha256, RECEIVED_SHA256);
+  assert.equal(receipt.received_archive.published, false);
+  assert.equal(m.received_archive_sha256, RECEIVED_SHA256);
+  assert.equal(m.verbatim_received_archive, false);
+  assert.notEqual(sha256(blob), RECEIVED_SHA256);
+  assert.equal(sha256(blob), m.sha256);
+  assert.equal(blob.length, m.bytes);
+  assert.equal(receipt.members.length, 238);
+  const generalized = receipt.members.filter(x => x.generalized);
+  assert.deepEqual(generalized.map(x => x.path).sort(), ['README.md', 'research/hanging-hole-audit.json', 'research/hanging-hole-audit.md']);
+  for (const g of generalized) assert.ok(/^[0-9a-f]{64}$/.test(g.received_sha256) && g.received_sha256 !== g.sha256, g.path);
+  const entries = await readZip(blob);
+  assert.equal(entries.length, 238);
+  for (const e of entries) {
+    const member = receipt.members.find(x => receipt.received_archive.root + x.path === e.name);
+    assert.ok(member, e.name);
+    assert.equal(sha256(e.data), member.sha256, e.name);
+    assert.doesNotMatch(e.data.toString('latin1'), PRIVATE_DETAIL, e.name);
+  }
+  assert.doesNotMatch(JSON.stringify(receipt), /codex-artifacts|Dropbox/);
+});
+
+test('a private mailbox link in the published source copy is reported', async () => {
+  assert.ok(PRIVATE_DETAIL.test('https://mail.google.com/mail/u/0/#all/0123456789abcdef'));
+  assert.ok(PRIVATE_DETAIL.test('/codex-artifacts/zudo-case/x/'));
+  assert.ok(!PRIVATE_DETAIL.test('mailbox message; reference withheld in the published copy'));
 });
 
 test('sync is idempotent and only writes the active 7U40 selection', async () => {
