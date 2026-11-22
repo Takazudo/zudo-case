@@ -8,7 +8,7 @@
 |---|---|---|
 | 金属ケース | 3U60・7U40・7U60。7U40はR11-BUILD-FEEDBACK-04（CADレビュー候補、現物未検証・価格未見積・未発注）、3U60・7U60はR6本体＋R8載せ蓋の基準 | [metal-case](src/content/docs/metal-case/index.mdx) |
 | 7U40家庭印刷 | 5mm板の現行P5-PRINTED-5MM-TAB-JOINTS-J3。旧P4/P3はアーカイブ | [printed-5mm](src/content/docs/printed-5mm/index.mdx) |
-| 10BOX-v2 | 二段3U60HPの独立系列。現行R5のファイル、印刷・組立と検証限界 | [tenbox-v2](src/content/docs/tenbox-v2/index.mdx) |
+| 10BOX-v2 | 二段3U60HPの独立系列。採用済みR5を保持し、[R8の下側長穴への固定位置修正](engineering/tenbox-v2/r8/README.md)は設計確認中 | [tenbox-v2](src/content/docs/tenbox-v2/index.mdx) |
 | 2WAY | TW-01が作業版（A/B/Cはどれも現行の比較対象）、F5はその入力の不変の原資料。製造用CADではない | [two-way](src/content/docs/two-way/index.mdx) |
 | 共通部品・元データ | 家庭印刷8mmスペーサーHOME-PRINT-SPACER-01（外径・穴径は仮寸法）、元レール・PCBと出典 | [shared](src/content/docs/shared/index.mdx) |
 | アーカイブ | 置き換わった旧版の記録（金属7U40のR10以前、家庭印刷P4/P3など）。現行の作業には使わない | [archive](src/content/docs/archive/index.mdx) |

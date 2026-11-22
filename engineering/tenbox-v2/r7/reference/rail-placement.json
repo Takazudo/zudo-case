@@ -1,0 +1,467 @@
+{
+  "schema": "tenbox-v2-r6-rail-reference/1",
+  "repository": "https://github.com/zudolab/zzmod",
+  "commit": "31af80cc8be3d2c57e8d2c998d8d0aa77e6dfa86",
+  "files": [
+    {
+      "path": "nuts-double-v2-60hp.stl",
+      "source_path": "static/zudo-viewers/case/assets/nuts-double-v2-60hp.stl",
+      "bytes": 83684,
+      "sha256": "7a3c80939d1f347449ec8392fd186582b6f306f2e024d09b70dbac9607a1513f",
+      "git_blob_sha1": "a55304afdba46b15d8a4005596e4da09930adf93",
+      "triangles": 1672,
+      "bounds_min": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        25.338760375976562,
+        20.132003784179688,
+        305.0
+      ]
+    },
+    {
+      "path": "nuts-single-v3-60hp.stl",
+      "source_path": "static/zudo-viewers/case/assets/nuts-single-v3-60hp.stl",
+      "bytes": 16284,
+      "sha256": "ec4ab963eace2fbc61ef72f35ba678cc8c908c1a94b06cb85a33ebf745ae04c3",
+      "git_blob_sha1": "28d93c2d976c04819adc65650d241833b2c4d350",
+      "triangles": 324,
+      "bounds_min": [
+        0.0,
+        0.0,
+        -3.1999969482421875
+      ],
+      "bounds_max": [
+        20.131988525390625,
+        14.886871337890625,
+        308.20001220703125
+      ]
+    },
+    {
+      "path": "nylon-double-v2-60hp.stl",
+      "source_path": "static/zudo-viewers/case/assets/nylon-double-v2-60hp.stl",
+      "bytes": 17084,
+      "sha256": "89011bf6c566f7541e232e07368ad4bbbdf69d3f07f2cd9a90e5507ca947ee09",
+      "git_blob_sha1": "57d665920c6db1659b89aaec674ac6ce0502ce52",
+      "triangles": 340,
+      "bounds_min": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        22.223892211914062,
+        20.131999969482422,
+        305.0
+      ]
+    },
+    {
+      "path": "zzmod-rail-assembly.ts",
+      "source_path": "static/zudo-viewers/case/sources/rail-assembly.ts",
+      "bytes": 8500,
+      "sha256": "89bd2e2fde84fe10ca64723dc31e5d1a59065ebb2fcaa05e6584ed2b310f9cbb",
+      "git_blob_sha1": "3592c5e8562f0a48194ca65b16d4fd198db43272"
+    }
+  ],
+  "assembly_source": "zzmod-rail-assembly.ts",
+  "product_source": "src/mdx/products/zudo-rail-v2-nuts.mdx",
+  "native_frame_input": "engineering/tenbox-v2/r5/source/research/zzmod/rail-3u60-geometry.json",
+  "native_frame_input_sha256": "3790d8aa762f040af6c9d0d93d49495dd7425b0bf4fdbc1633fef500a5971e79",
+  "coordinates": "X width; Y front-to-back; Z up; matrices row-major",
+  "source_coordinates": "X width; Y panel height; Z front",
+  "row_centers_mm": [
+    -67.26593,
+    67.26593
+  ],
+  "previous_row_centers_mm": [
+    -70,
+    70
+  ],
+  "row_translation_mm": [
+    2.73407,
+    -2.73407
+  ],
+  "panel_plane_z_mm": 72,
+  "parts": [
+    {
+      "id": "front-single-1",
+      "asset": "nuts-single-v3-60hp.stl",
+      "panel": null,
+      "category": "body",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          -152.5
+        ],
+        [
+          0,
+          -1,
+          0,
+          -121.78025018457032
+        ],
+        [
+          -1,
+          0,
+          0,
+          71.9002473803711
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "front-frame3u--1-0",
+      "asset": null,
+      "panel": "frame3u",
+      "category": "panel",
+      "matrix": [
+        [
+          0,
+          0,
+          -1,
+          -154.1
+        ],
+        [
+          -1,
+          0,
+          0,
+          0.0
+        ],
+        [
+          0,
+          -1,
+          0,
+          72
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "front-pad3u--1-1",
+      "asset": null,
+      "panel": "pad3u",
+      "category": "panel",
+      "matrix": [
+        [
+          0,
+          0,
+          -1,
+          -152.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          0.0
+        ],
+        [
+          0,
+          -1,
+          0,
+          72
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "front-frame3u-1-0",
+      "asset": null,
+      "panel": "frame3u",
+      "category": "panel",
+      "matrix": [
+        [
+          0,
+          0,
+          -1,
+          155.7
+        ],
+        [
+          -1,
+          0,
+          0,
+          0.0
+        ],
+        [
+          0,
+          -1,
+          0,
+          72
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "front-pad3u-1-1",
+      "asset": null,
+      "panel": "pad3u",
+      "category": "panel",
+      "matrix": [
+        [
+          0,
+          0,
+          -1,
+          154.1
+        ],
+        [
+          -1,
+          0,
+          0,
+          0.0
+        ],
+        [
+          0,
+          -1,
+          0,
+          72
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "rear-single-0",
+      "asset": "nuts-single-v3-60hp.stl",
+      "panel": null,
+      "category": "body",
+      "matrix": [
+        [
+          0,
+          0,
+          -1,
+          152.5
+        ],
+        [
+          0,
+          1,
+          0,
+          121.78027618457031
+        ],
+        [
+          -1,
+          0,
+          0,
+          71.9002473803711
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "rear-frame3u--1-0",
+      "asset": null,
+      "panel": "frame3u",
+      "category": "panel",
+      "matrix": [
+        [
+          0,
+          0,
+          -1,
+          -154.1
+        ],
+        [
+          -1,
+          0,
+          0,
+          134.53186
+        ],
+        [
+          0,
+          -1,
+          0,
+          72
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "rear-pad3u--1-1",
+      "asset": null,
+      "panel": "pad3u",
+      "category": "panel",
+      "matrix": [
+        [
+          0,
+          0,
+          -1,
+          -152.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          134.53186
+        ],
+        [
+          0,
+          -1,
+          0,
+          72
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "rear-frame3u-1-0",
+      "asset": null,
+      "panel": "frame3u",
+      "category": "panel",
+      "matrix": [
+        [
+          0,
+          0,
+          -1,
+          155.7
+        ],
+        [
+          -1,
+          0,
+          0,
+          134.53186
+        ],
+        [
+          0,
+          -1,
+          0,
+          72
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "rear-pad3u-1-1",
+      "asset": null,
+      "panel": "pad3u",
+      "category": "panel",
+      "matrix": [
+        [
+          0,
+          0,
+          -1,
+          154.1
+        ],
+        [
+          -1,
+          0,
+          0,
+          134.53186
+        ],
+        [
+          0,
+          -1,
+          0,
+          72
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "center-double",
+      "asset": "nuts-double-v2-60hp.stl",
+      "category": "body",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          -152.5
+        ],
+        [
+          -1,
+          0,
+          0,
+          12.669431499999991
+        ],
+        [
+          0,
+          1,
+          0,
+          51.7682535
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "attachment": {
+    "frame_inner_axes_y_mm": [
+      -5.997998000000003,
+      5.998023999999987
+    ],
+    "frame_pitch_mm": 11.99602199999999,
+    "nuts_double_pitch_mm": 11.833404999999999,
+    "nuts_double_residual_each_mm": 0.08130849999999512,
+    "double_recess_source_xy_mm": [
+      [
+        6.752716,
+        5.201429
+      ],
+      [
+        18.586121,
+        5.201429
+      ]
+    ]
+  },
+  "notes": [
+    "Use two outer nuts-single-v3-60hp bodies and one center nuts-double-v2-60hp. No nylon bars are used in this NU assembly.",
+    "Retain all four 3U aluminium frame shapes and four padder shapes; only translate the two rows inward.",
+    "Case-mount holes/spacers follow the translated frame mounting axes.",
+    "All source-to-case matrices include coordinate handedness reversal; reverse triangle winding when generating meshes. No scale/stretch is applied.",
+    "The source nut-rail assembly uses display-only nut geometry. Nuts are not source manufacturing parts.",
+    "The 0.0813 mm per-hole double-recess residual is inherited from the standard source double-rail pitch versus source frame holes; physical fit is unverified."
+  ]
+}

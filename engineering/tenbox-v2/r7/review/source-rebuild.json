@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-23",
+  "source_package_sha256": "c2e3fd85c6dd6efb5019caecc4919102a8204510215b7e2f5cdfc330a8da4e19",
+  "model_sha256": "0b85066eec2096c88e607d48c7cb806a2ee01d7cfe731914888dacf2fe192d12",
+  "byte_identical_outputs": [
+    "cad/model_data.json",
+    "cad/parameters.json",
+    "cad/geometry-checks.json",
+    "cad/fastener-schedule.json",
+    "cad/fastener-schedule.csv",
+    "tenbox-v2-r7.html"
+  ],
+  "identical_3mf_member_contents": [
+    "body-back.3mf",
+    "body-bottom-common.3mf",
+    "body-front.3mf",
+    "body-left.3mf",
+    "body-right.3mf",
+    "lid-back.3mf",
+    "lid-front.3mf",
+    "lid-left.3mf",
+    "lid-right.3mf",
+    "lid-top-single.3mf",
+    "spacers-8.3mf",
+    "stand-connector-back.3mf",
+    "stand-connector-front.3mf",
+    "stand-left.3mf",
+    "stand-right.3mf"
+  ],
+  "project_count": 15,
+  "container_zip_timestamps_ignored": true,
+  "rebuild_exit_code": 0
+}
