@@ -37,6 +37,7 @@ jobs:
       - run: pnpm check:doc-routes
       - run: pnpm test:doc-structure
       - run: pnpm check:tenbox-v2
+      - run: pnpm check:tenbox-v2-r6
       - run: pnpm test:tenbox-v2
       - run: pnpm check:printed-5mm
       - run: pnpm test:printed-5mm
@@ -248,6 +249,8 @@ jobs:
         run: uv sync --locked --project engineering/tenbox-v2/r5
       - name: Clean CAD and extracted source-package rebuilds
         run: uv run --locked --project engineering/tenbox-v2/r5 python engineering/tenbox-v2/r5/regenerate.py
+      - name: Build R6 review geometry, bracket clearances and preserved H2D projects
+        run: uv run --locked --project engineering/tenbox-v2/r5 python engineering/tenbox-v2/r6/build.py --out "$RUNNER_TEMP/tenbox-v2-r6" --no-packages
       - name: Importer dispatch and corrupt ZIP failure fixtures
         run: python3 engineering/tenbox-v2/r5/test_contract.py
       - uses: pnpm/action-setup@f40ffcd9367d9f12939873eb1018b921a783ffaa

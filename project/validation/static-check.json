@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T18:09:35.978Z",
+  "checkedAt": "2026-11-22T16:29:34.546Z",
   "tool": "dependency-free static/document consistency check",
   "officialZudoDocBuild": "not-run-in-this-check",
   "mdxCompiler": "not-run-in-this-check",
@@ -7,7 +7,7 @@
   "listedPages": 92,
   "compatibilityPages": 66,
   "categories": 34,
-  "localLinksChecked": 832,
+  "localLinksChecked": 833,
   "errors": [],
   "warnings": [],
   "note": "リンク先の存在・frontmatter・数量/寸法の算術を確認。MDXコンパイル、機構の強度・干渉、発注適合の検証ではありません。"

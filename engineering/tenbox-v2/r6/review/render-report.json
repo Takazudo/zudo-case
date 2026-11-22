@@ -1,0 +1,80 @@
+{
+  "renderer": "canvas",
+  "validation": "Actual inline app under a minimal Node DOM shim; not a browser-layout or WebGL test.",
+  "source": ".cache/tenbox-v2-r6-final/tenbox-v2-r6.html",
+  "views": [
+    {
+      "view": "assembly",
+      "file": "engineering/tenbox-v2/r6/review/assembly.png",
+      "visible_parts": 149,
+      "frames": 2,
+      "camera": {
+        "target": [
+          0,
+          0,
+          31.75
+        ],
+        "yaw": 0.69,
+        "pitch": 0.72,
+        "span": 472.5272606581576,
+        "up": "z"
+      }
+    },
+    {
+      "view": "rail-junction",
+      "file": "engineering/tenbox-v2/r6/review/rail-junction.png",
+      "visible_parts": 43,
+      "frames": 3,
+      "camera": {
+        "target": [
+          150,
+          0,
+          61
+        ],
+        "yaw": 0.72,
+        "pitch": 0.64,
+        "span": 83,
+        "up": "z"
+      }
+    },
+    {
+      "view": "side-fixing",
+      "file": "engineering/tenbox-v2/r6/review/side-fixing.png",
+      "visible_parts": 12,
+      "frames": 4,
+      "camera": {
+        "target": [
+          152.85,
+          -75,
+          48
+        ],
+        "yaw": -0.72,
+        "pitch": 0.55,
+        "span": 103.5677117947869,
+        "up": "z"
+      }
+    }
+  ],
+  "errors": [],
+  "controls": {
+    "initial": 149,
+    "noRails": 106,
+    "noBrackets": 6,
+    "noEndwalls": 4,
+    "withLid": 9,
+    "lidLift": 50
+  },
+  "source_model_sha256": "2dbb6f319c8fcf5f1d19eff8bab231533e563dfe303df5c482be4369362c9902",
+  "published_preview": "public/previews/tenbox-v2-r6.html",
+  "preview_sha256": "8a887ddda7313ab2eb34385e6a039aeb480b2b68b46bf476ef8acfc9b09a3d33",
+  "inline_bytes": 897290,
+  "inline_part_count": 182,
+  "mesh_identity": {
+    "parts_compared": 221,
+    "triangle_indices_preserved": true,
+    "maximum_display_vertex_error_mm": 0.0005000000000165983,
+    "display_precision_mm": 0.001,
+    "source_geometry_rescaled": false
+  },
+  "visual_review": "Assembly, double-rail connection, and side-fixing closeup inspected from final rendered mesh views."
+}

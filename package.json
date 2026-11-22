@@ -59,6 +59,8 @@
     "test:printed-5mm": "node --test tests/printed-5mm.test.mjs tests/printed-p4.test.mjs",
     "build:printed-p3": "uv run --locked --project engineering/printed-5mm/p3 python engineering/printed-5mm/p3/build.py --out .cache/printed-5mm-build",
     "build:tenbox-v2": "uv run --locked --project engineering/tenbox-v2/r5 python engineering/tenbox-v2/r5/build.py --out .cache/tenbox-v2-build",
+    "build:tenbox-v2-r6": "uv run --locked --project engineering/tenbox-v2/r5 python engineering/tenbox-v2/r6/build.py --out .cache/tenbox-v2-r6-build",
+    "check:tenbox-v2-r6": "python3 engineering/tenbox-v2/r6/check_review.py",
     "check:tenbox-v2": "node scripts/check-tenbox-v2.mjs",
     "test:tenbox-v2": "python3 engineering/tenbox-v2/r5/test_contract.py",
     "test:case-navigation:browser": "python3 scripts/verify-case-navigation.py",
