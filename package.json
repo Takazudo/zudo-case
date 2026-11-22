@@ -66,7 +66,9 @@
     "check:tenbox-v2": "node scripts/check-tenbox-v2.mjs",
     "test:tenbox-v2": "python3 engineering/tenbox-v2/r5/test_contract.py",
     "test:case-navigation:browser": "python3 scripts/verify-case-navigation.py",
-    "test:tenbox-v2:browser": "python3 scripts/verify-tenbox-site.py"
+    "test:tenbox-v2:browser": "python3 scripts/verify-tenbox-site.py",
+    "build:tenbox-v2-r8": "uv run --locked --project engineering/tenbox-v2/r5 python engineering/tenbox-v2/r8/build.py --out .cache/tenbox-v2-r8-build",
+    "check:tenbox-v2-r8": "python3 engineering/tenbox-v2/r8/check_review.py"
   },
   "dependencies": {
     "@takazudo/zfb": "6.0.1",

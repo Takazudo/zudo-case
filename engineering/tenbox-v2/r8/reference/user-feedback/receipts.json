@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-23",
+  "source": "User supplied old 10BOX side-view reference, continuing interrupted R8 request.",
+  "previous_feedback": "The seven R6/R7 annotated images and original receipts remain immutable in engineering/tenbox-v2/r7/reference/user-feedback/. They are not required build inputs.",
+  "files": [
+    {
+      "file": "08-lower-slot-alignment.png",
+      "original_filename": "image(6).png",
+      "sha256": "30b5594dfc91071b0978a390aaf9a1a581c7faa1aea42d69a01c46fb2bcc45bc",
+      "bytes": 305865,
+      "user_request": "Align the lower elongated aluminium-frame slots with the enclosure side mounting screw axes; avoid the frame/connection hardware conflict."
+    }
+  ]
+}

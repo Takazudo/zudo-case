@@ -1,0 +1,11 @@
+{
+  "source_commit": "d5f74b664a875f4e0445c4c5c56a1af7818dcbb8",
+  "source_archive": "public/downloads/candidate/tenbox-v2-r7-review.zip",
+  "archive_sha256": "333de0929dc58a42acf04efa84a30da6f5dd550d5cd4b9fe1e03b06e3d4e6d36",
+  "source_member": "model_data.json",
+  "uncompressed_sha256": "0b85066eec2096c88e607d48c7cb806a2ee01d7cfe731914888dacf2fe192d12",
+  "uncompressed_bytes": 13281621,
+  "file": "r7-model-data.json.gz",
+  "sha256": "2e6bd61b5bf25d16b67214b7df2718c97e03423d6bf3a276703a703869bcf4c6",
+  "bytes": 2439186
+}

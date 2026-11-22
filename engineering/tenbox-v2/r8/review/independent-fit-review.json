@@ -1,0 +1,5999 @@
+{
+  "revision": "10BOX-V2-R8",
+  "reviewed_model_sha256": "fa603523574832cd62ad6b242328f5b6daeb3f3f4721f00b74762b2e584a091a",
+  "input": "/workspace/scratch/aee853a98f95/zudo-case/.cache/r8-geometry-verified",
+  "source_review_sha256": "333de0929dc58a42acf04efa84a30da6f5dd550d5cd4b9fe1e03b06e3d4e6d36",
+  "source_print_sha256": "db851ff28b8391771d3d227be386c47703615d8c8028c8ce572ee744d65f6718",
+  "native_contour_source_sha256": "3790d8aa762f040af6c9d0d93d49495dd7425b0bf4fdbc1633fef500a5971e79",
+  "verifier_sha256": "2cd7b880f3c7e0e966bb244ca505a4db1ca96cd71702ca182c1da127a66a16b3",
+  "scope": "Independent saved-mesh comparison, exported STEP equality, exact native lower-slot containment, fixed mounting stacks, full body/lid hardware clearance including conservative rotating-nut and native-rail envelopes, and geometric lid capacity. No R8 generator imports or generated pass/fail receipts were used.",
+  "checks": [
+    {
+      "check": "frozen R7 review archive hash",
+      "passed": true
+    },
+    {
+      "check": "frozen R7 print archive hash",
+      "passed": true
+    },
+    {
+      "check": "23 unique physical printed parts retained",
+      "passed": true
+    },
+    {
+      "check": "native source lower-slot selection and measured spacing",
+      "passed": true,
+      "source_slot_centers_mm": [
+        8.6794705,
+        21.3105735
+      ],
+      "slot_center_spacing_mm": 12.631103
+    },
+    {
+      "check": "same assembly inventory with only native rail IDs revised",
+      "passed": true,
+      "previous_part_count": 284,
+      "current_part_count": 284,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "check": "eleven movable rail frame and padder parts",
+      "passed": true,
+      "counts": {
+        "rails": 3,
+        "railPCB": 4,
+        "railPads": 4
+      }
+    },
+    {
+      "check": "unchanged assembly mesh body-left",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh body-right",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh body-front",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh body-back",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh body-bottom-front",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh body-bottom-back",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh lid-left",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh lid-right",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh lid-front",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh lid-back",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh lid-top-single",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh stand-left",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh stand-right",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh stand-connector-front",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh stand-connector-back",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh spacer-left-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh spacer-left-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh spacer-left-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh spacer-left-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh spacer-right-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh spacer-right-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh spacer-right-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh spacer-right-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "rigid vertical native translation r8-rail-front-single-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 1.4210854715202004e-14,
+      "translation_mm": [
+        0,
+        0,
+        12.631103
+      ]
+    },
+    {
+      "check": "rigid vertical native translation r8-rail-front-frame3u--1-0",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 1.4210854715202004e-14,
+      "translation_mm": [
+        0,
+        0,
+        12.631103
+      ]
+    },
+    {
+      "check": "rigid vertical native translation r8-rail-front-pad3u--1-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 1.4210854715202004e-14,
+      "translation_mm": [
+        0,
+        0,
+        12.631103
+      ]
+    },
+    {
+      "check": "rigid vertical native translation r8-rail-front-frame3u-1-0",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 1.4210854715202004e-14,
+      "translation_mm": [
+        0,
+        0,
+        12.631103
+      ]
+    },
+    {
+      "check": "rigid vertical native translation r8-rail-front-pad3u-1-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 1.4210854715202004e-14,
+      "translation_mm": [
+        0,
+        0,
+        12.631103
+      ]
+    },
+    {
+      "check": "rigid vertical native translation r8-rail-rear-single-0",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 1.4210854715202004e-14,
+      "translation_mm": [
+        0,
+        0,
+        12.631103
+      ]
+    },
+    {
+      "check": "rigid vertical native translation r8-rail-rear-frame3u--1-0",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 1.4210854715202004e-14,
+      "translation_mm": [
+        0,
+        0,
+        12.631103
+      ]
+    },
+    {
+      "check": "rigid vertical native translation r8-rail-rear-pad3u--1-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 1.4210854715202004e-14,
+      "translation_mm": [
+        0,
+        0,
+        12.631103
+      ]
+    },
+    {
+      "check": "rigid vertical native translation r8-rail-rear-frame3u-1-0",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 1.4210854715202004e-14,
+      "translation_mm": [
+        0,
+        0,
+        12.631103
+      ]
+    },
+    {
+      "check": "rigid vertical native translation r8-rail-rear-pad3u-1-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 1.4210854715202004e-14,
+      "translation_mm": [
+        0,
+        0,
+        12.631103
+      ]
+    },
+    {
+      "check": "rigid vertical native translation r8-rail-center-double",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 9.999999974752427e-07,
+      "translation_mm": [
+        0,
+        0,
+        12.631103
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-bolt-left-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-washer-left-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-nut-left-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-bolt-left-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-washer-left-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-nut-left-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-bolt-left-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-washer-left-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-nut-left-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-bolt-left-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-washer-left-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-nut-left-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-bolt-right-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-washer-right-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-nut-right-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-bolt-right-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-washer-right-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-nut-right-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-bolt-right-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-washer-right-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-nut-right-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-bolt-right-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-washer-right-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh rail-nut-right-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-front-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-front-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-front-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-front-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-front-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-front-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-front-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-front-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-front-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-front-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-front-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-front-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-front-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-front-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-front-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-front-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-front-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-front-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-floor-bracket-front-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-front-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-front-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-front-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-front-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-front-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-front-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-front-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-front-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-floor-bracket-front-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-front-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-front-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-front-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-front-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-front-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-front-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-front-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-front-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-floor-bracket-front-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-front-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-front-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-front-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-front-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-front-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-front-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-front-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-front-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-floor-bracket-front-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-front-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-front-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-front-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-front-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-front-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-front-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-front-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-front-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-floor-bracket-front-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-front-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-front-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-front-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-front-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-front-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-front-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-front-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-front-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-front-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-front-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-front-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-front-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-front-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-front-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-front-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-front-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-front-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-front-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-front-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-front-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-front-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-front-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-back-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-back-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-back-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-back-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-back-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-back-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-back-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-back-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-back-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-back-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-back-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-back-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-back-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-back-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-back-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-back-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-back-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-back-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-floor-bracket-back-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-back-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-back-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-back-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-back-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-back-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-back-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-back-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-back-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-floor-bracket-back-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-back-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-back-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-back-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-back-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-back-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-back-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-back-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-back-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-floor-bracket-back-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-back-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-back-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-back-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-back-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-back-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-back-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-back-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-back-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-floor-bracket-back-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-back-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-back-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-back-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-back-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-back-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-back-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-back-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-back-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-floor-bracket-back-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-back-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-back-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-back-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-back-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-back-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-back-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-back-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-back-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-back-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-back-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-back-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-back-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-back-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-back-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-back-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-back-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-bolt-bracket-back-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-outside-washer-bracket-back-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh floor-inside-nut-bracket-back-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-back-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-back-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-back-9",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-lid-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-lid-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-roof-bracket-lid-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-bolt-bracket-lid-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-outside-washer-bracket-lid-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-inside-nut-bracket-lid-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-lid-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-lid-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-lid-1",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-lid-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-lid-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-roof-bracket-lid-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-bolt-bracket-lid-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-outside-washer-bracket-lid-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-inside-nut-bracket-lid-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-lid-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-lid-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-lid-2",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-lid-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-lid-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-roof-bracket-lid-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-bolt-bracket-lid-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-outside-washer-bracket-lid-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-inside-nut-bracket-lid-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-lid-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-lid-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-lid-3",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-lid-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-lid-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-roof-bracket-lid-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-bolt-bracket-lid-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-outside-washer-bracket-lid-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-inside-nut-bracket-lid-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-lid-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-lid-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-lid-4",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-lid-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-lid-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-roof-bracket-lid-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-bolt-bracket-lid-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-outside-washer-bracket-lid-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-inside-nut-bracket-lid-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-lid-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-lid-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-lid-5",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-lid-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-lid-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-roof-bracket-lid-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-bolt-bracket-lid-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-outside-washer-bracket-lid-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-inside-nut-bracket-lid-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-lid-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-lid-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-lid-6",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-lid-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-lid-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-roof-bracket-lid-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-bolt-bracket-lid-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-outside-washer-bracket-lid-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-inside-nut-bracket-lid-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-lid-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-lid-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-lid-7",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh bracket-lid-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-wall-bracket-lid-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh pad-roof-bracket-lid-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-bolt-bracket-lid-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-outside-washer-bracket-lid-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh roof-inside-nut-bracket-lid-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-bolt-bracket-lid-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-outside-washer-bracket-lid-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "unchanged assembly mesh wall-inside-nut-bracket-lid-8",
+      "passed": true,
+      "maximum_vertex_deviation_mm": 0.0,
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "check": "printed STEP shape unchanged body-bottom-back",
+      "passed": true,
+      "comparison_method": "exact BRep symmetric difference of independently imported STEP",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged body-bottom-front",
+      "passed": true,
+      "comparison_method": "exact BRep symmetric difference of independently imported STEP",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged lid-top-single",
+      "passed": true,
+      "comparison_method": "identical exported STEP bytes",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged lid-left",
+      "passed": true,
+      "comparison_method": "identical exported STEP bytes",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged lid-right",
+      "passed": true,
+      "comparison_method": "identical exported STEP bytes",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged body-left",
+      "passed": true,
+      "comparison_method": "exact BRep symmetric difference of independently imported STEP",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged body-right",
+      "passed": true,
+      "comparison_method": "exact BRep symmetric difference of independently imported STEP",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged body-front",
+      "passed": true,
+      "comparison_method": "identical exported STEP bytes",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged body-back",
+      "passed": true,
+      "comparison_method": "identical exported STEP bytes",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged lid-front",
+      "passed": true,
+      "comparison_method": "identical exported STEP bytes",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged lid-back",
+      "passed": true,
+      "comparison_method": "identical exported STEP bytes",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed source-mesh stand unchanged stand-left",
+      "passed": true,
+      "comparison_method": "identical full indexed world mesh; source is STL, no STEP export",
+      "maximum_vertex_deviation_mm": 0.0
+    },
+    {
+      "check": "printed source-mesh stand unchanged stand-right",
+      "passed": true,
+      "comparison_method": "identical full indexed world mesh; source is STL, no STEP export",
+      "maximum_vertex_deviation_mm": 0.0
+    },
+    {
+      "check": "printed source-mesh stand unchanged stand-connector-front",
+      "passed": true,
+      "comparison_method": "identical full indexed world mesh; source is STL, no STEP export",
+      "maximum_vertex_deviation_mm": 0.0
+    },
+    {
+      "check": "printed source-mesh stand unchanged stand-connector-back",
+      "passed": true,
+      "comparison_method": "identical full indexed world mesh; source is STL, no STEP export",
+      "maximum_vertex_deviation_mm": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged spacer-left-1",
+      "passed": true,
+      "comparison_method": "exact BRep symmetric difference of independently imported STEP",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged spacer-left-2",
+      "passed": true,
+      "comparison_method": "exact BRep symmetric difference of independently imported STEP",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged spacer-left-3",
+      "passed": true,
+      "comparison_method": "exact BRep symmetric difference of independently imported STEP",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged spacer-left-4",
+      "passed": true,
+      "comparison_method": "exact BRep symmetric difference of independently imported STEP",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged spacer-right-1",
+      "passed": true,
+      "comparison_method": "exact BRep symmetric difference of independently imported STEP",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged spacer-right-2",
+      "passed": true,
+      "comparison_method": "exact BRep symmetric difference of independently imported STEP",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged spacer-right-3",
+      "passed": true,
+      "comparison_method": "exact BRep symmetric difference of independently imported STEP",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "printed STEP shape unchanged spacer-right-4",
+      "passed": true,
+      "comparison_method": "exact BRep symmetric difference of independently imported STEP",
+      "symmetric_difference_mm3": 0.0
+    },
+    {
+      "check": "four source frame planes agree",
+      "passed": true
+    },
+    {
+      "check": "actual mesh matches independently transformed native contour r8-rail-front-frame3u--1-0",
+      "passed": true,
+      "source_polygon_sha256": "00174d7975b0565e0732544de5fdf3ada8b8d3a4a95d720819f104e384f5d2a7",
+      "extrusion_thickness_mm": 1.6
+    },
+    {
+      "check": "actual mesh matches independently transformed native contour r8-rail-front-pad3u--1-1",
+      "passed": true,
+      "source_polygon_sha256": "e7ea7daa33d98180f9f118e42b38d74d56d9a7ea685756a70123c9ffbf300b66",
+      "extrusion_thickness_mm": 1.6
+    },
+    {
+      "check": "actual mesh matches independently transformed native contour r8-rail-front-frame3u-1-0",
+      "passed": true,
+      "source_polygon_sha256": "00174d7975b0565e0732544de5fdf3ada8b8d3a4a95d720819f104e384f5d2a7",
+      "extrusion_thickness_mm": 1.6
+    },
+    {
+      "check": "actual mesh matches independently transformed native contour r8-rail-front-pad3u-1-1",
+      "passed": true,
+      "source_polygon_sha256": "e7ea7daa33d98180f9f118e42b38d74d56d9a7ea685756a70123c9ffbf300b66",
+      "extrusion_thickness_mm": 1.6
+    },
+    {
+      "check": "actual mesh matches independently transformed native contour r8-rail-rear-frame3u--1-0",
+      "passed": true,
+      "source_polygon_sha256": "00174d7975b0565e0732544de5fdf3ada8b8d3a4a95d720819f104e384f5d2a7",
+      "extrusion_thickness_mm": 1.6
+    },
+    {
+      "check": "actual mesh matches independently transformed native contour r8-rail-rear-pad3u--1-1",
+      "passed": true,
+      "source_polygon_sha256": "e7ea7daa33d98180f9f118e42b38d74d56d9a7ea685756a70123c9ffbf300b66",
+      "extrusion_thickness_mm": 1.6
+    },
+    {
+      "check": "actual mesh matches independently transformed native contour r8-rail-rear-frame3u-1-0",
+      "passed": true,
+      "source_polygon_sha256": "00174d7975b0565e0732544de5fdf3ada8b8d3a4a95d720819f104e384f5d2a7",
+      "extrusion_thickness_mm": 1.6
+    },
+    {
+      "check": "actual mesh matches independently transformed native contour r8-rail-rear-pad3u-1-1",
+      "passed": true,
+      "source_polygon_sha256": "e7ea7daa33d98180f9f118e42b38d74d56d9a7ea685756a70123c9ffbf300b66",
+      "extrusion_thickness_mm": 1.6
+    },
+    {
+      "check": "actual fixed M5 axis inside lower frame slot rail-bolt-left-1",
+      "passed": true,
+      "bolt": "rail-bolt-left-1",
+      "frame": "r8-rail-front-frame3u--1-0",
+      "axis_y_z_mm": [
+        -111.32827747755083,
+        66.8205294832848
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 5.743839377458926e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.388559157244345e-07
+    },
+    {
+      "check": "actual fixed M5 axis inside lower frame slot rail-bolt-left-2",
+      "passed": true,
+      "bolt": "rail-bolt-left-2",
+      "frame": "r8-rail-front-frame3u--1-0",
+      "axis_y_z_mm": [
+        -20.18774392769932,
+        66.8205294900765
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 6.283286548836031e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.432701979974809e-07
+    },
+    {
+      "check": "actual fixed M5 axis inside lower frame slot rail-bolt-left-3",
+      "passed": true,
+      "bolt": "rail-bolt-left-3",
+      "frame": "r8-rail-rear-frame3u--1-0",
+      "axis_y_z_mm": [
+        20.18426492769938,
+        66.82052949007655
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 6.28327899043768e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.517307724607235e-07
+    },
+    {
+      "check": "actual fixed M5 axis inside lower frame slot rail-bolt-left-4",
+      "passed": true,
+      "bolt": "rail-bolt-left-4",
+      "frame": "r8-rail-rear-frame3u--1-0",
+      "axis_y_z_mm": [
+        111.3247984775506,
+        66.8205294832847
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 5.74384823259777e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.511137540243794e-07
+    },
+    {
+      "check": "actual fixed M5 axis inside lower frame slot rail-bolt-right-1",
+      "passed": true,
+      "bolt": "rail-bolt-right-1",
+      "frame": "r8-rail-front-frame3u-1-0",
+      "axis_y_z_mm": [
+        -111.32827748579857,
+        66.82052949290629
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 5.62367707068745e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.388559157244345e-07
+    },
+    {
+      "check": "actual fixed M5 axis inside lower frame slot rail-bolt-right-2",
+      "passed": true,
+      "bolt": "rail-bolt-right-2",
+      "frame": "r8-rail-front-frame3u-1-0",
+      "axis_y_z_mm": [
+        -20.187743935947225,
+        66.82052948611475
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 6.494663873368722e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.432701979974809e-07
+    },
+    {
+      "check": "actual fixed M5 axis inside lower frame slot rail-bolt-right-3",
+      "passed": true,
+      "bolt": "rail-bolt-right-3",
+      "frame": "r8-rail-rear-frame3u-1-0",
+      "axis_y_z_mm": [
+        20.184264919451437,
+        66.8205294861148
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 6.341108758078917e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.517307724607235e-07
+    },
+    {
+      "check": "actual fixed M5 axis inside lower frame slot rail-bolt-right-4",
+      "passed": true,
+      "bolt": "rail-bolt-right-4",
+      "frame": "r8-rail-rear-frame3u-1-0",
+      "axis_y_z_mm": [
+        111.32479846930275,
+        66.82052949290623
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 5.54335590763344e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.511137540243794e-07
+    },
+    {
+      "check": "model identifies the verified lower slot",
+      "passed": true
+    },
+    {
+      "check": "all 52 complete bracket fasteners retained",
+      "passed": true
+    },
+    {
+      "check": "all 26 bracket bodies retained",
+      "passed": true
+    },
+    {
+      "check": "eight complete sidewall joints retained",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-front-1",
+      "passed": true,
+      "thread_projection_mm": 0.7999999999999972,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-front-1",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-front-1",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-front-1",
+      "passed": true,
+      "thread_projection_mm": 0.30000000000001137,
+      "nut_height_mm": 2.6999999999999886
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-front-1",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999886
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-front-1",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-front-2",
+      "passed": true,
+      "thread_projection_mm": 0.7999999999999972,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-front-2",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-front-2",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-front-2",
+      "passed": true,
+      "thread_projection_mm": 0.30000000000001137,
+      "nut_height_mm": 2.6999999999999886
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-front-2",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999886
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-front-2",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-front-3",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-front-3",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-front-3",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-front-3",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-front-3",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-front-3",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-front-4",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-front-4",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-front-4",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-front-4",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-front-4",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-front-4",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-front-5",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-front-5",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-front-5",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-front-5",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-front-5",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-front-5",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-front-6",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-front-6",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-front-6",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-front-6",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-front-6",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-front-6",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-front-7",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-front-7",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-front-7",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-front-7",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-front-7",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-front-7",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-front-8",
+      "passed": true,
+      "thread_projection_mm": 0.7999999999999972,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-front-8",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-front-8",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-front-8",
+      "passed": true,
+      "thread_projection_mm": 0.30000000000001137,
+      "nut_height_mm": 2.6999999999999886
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-front-8",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999886
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-front-8",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-front-9",
+      "passed": true,
+      "thread_projection_mm": 0.7999999999999972,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-front-9",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-front-9",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-front-9",
+      "passed": true,
+      "thread_projection_mm": 0.30000000000001137,
+      "nut_height_mm": 2.6999999999999886
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-front-9",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999886
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-front-9",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-back-1",
+      "passed": true,
+      "thread_projection_mm": 0.8000000000000007,
+      "nut_height_mm": 2.6999999999999993
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-back-1",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999993
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-back-1",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-back-1",
+      "passed": true,
+      "thread_projection_mm": 0.30000000000001137,
+      "nut_height_mm": 2.6999999999999886
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-back-1",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999886
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-back-1",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-back-2",
+      "passed": true,
+      "thread_projection_mm": 0.8000000000000007,
+      "nut_height_mm": 2.6999999999999993
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-back-2",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999993
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-back-2",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-back-2",
+      "passed": true,
+      "thread_projection_mm": 0.30000000000001137,
+      "nut_height_mm": 2.6999999999999886
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-back-2",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999886
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-back-2",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-back-3",
+      "passed": true,
+      "thread_projection_mm": 0.3000000000000007,
+      "nut_height_mm": 2.6999999999999993
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-back-3",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999993
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-back-3",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-back-3",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-back-3",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-back-3",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-back-4",
+      "passed": true,
+      "thread_projection_mm": 0.3000000000000007,
+      "nut_height_mm": 2.6999999999999993
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-back-4",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999993
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-back-4",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-back-4",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-back-4",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-back-4",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-back-5",
+      "passed": true,
+      "thread_projection_mm": 0.3000000000000007,
+      "nut_height_mm": 2.6999999999999993
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-back-5",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999993
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-back-5",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-back-5",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-back-5",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-back-5",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-back-6",
+      "passed": true,
+      "thread_projection_mm": 0.3000000000000007,
+      "nut_height_mm": 2.6999999999999993
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-back-6",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999993
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-back-6",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-back-6",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-back-6",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-back-6",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-back-7",
+      "passed": true,
+      "thread_projection_mm": 0.3000000000000007,
+      "nut_height_mm": 2.6999999999999993
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-back-7",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999993
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-back-7",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-back-7",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-back-7",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-back-7",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-back-8",
+      "passed": true,
+      "thread_projection_mm": 0.8000000000000007,
+      "nut_height_mm": 2.6999999999999993
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-back-8",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999993
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-back-8",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-back-8",
+      "passed": true,
+      "thread_projection_mm": 0.30000000000001137,
+      "nut_height_mm": 2.6999999999999886
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-back-8",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999886
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-back-8",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head floor-bracket-back-9",
+      "passed": true,
+      "thread_projection_mm": 0.8000000000000007,
+      "nut_height_mm": 2.6999999999999993
+    },
+    {
+      "check": "full nut engagement from actual meshes floor-bracket-back-9",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999993
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 floor-bracket-back-9",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-back-9",
+      "passed": true,
+      "thread_projection_mm": 0.30000000000001137,
+      "nut_height_mm": 2.6999999999999886
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-back-9",
+      "passed": true,
+      "engaged_length_mm": 2.6999999999999886
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-back-9",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head roof-bracket-lid-1",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes roof-bracket-lid-1",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 roof-bracket-lid-1",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-lid-1",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-lid-1",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-lid-1",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head roof-bracket-lid-2",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes roof-bracket-lid-2",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 roof-bracket-lid-2",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-lid-2",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-lid-2",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-lid-2",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head roof-bracket-lid-3",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes roof-bracket-lid-3",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 roof-bracket-lid-3",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-lid-3",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-lid-3",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-lid-3",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head roof-bracket-lid-4",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes roof-bracket-lid-4",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 roof-bracket-lid-4",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-lid-4",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-lid-4",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-lid-4",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head roof-bracket-lid-5",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes roof-bracket-lid-5",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 roof-bracket-lid-5",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-lid-5",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-lid-5",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-lid-5",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head roof-bracket-lid-6",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes roof-bracket-lid-6",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 roof-bracket-lid-6",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-lid-6",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-lid-6",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-lid-6",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head roof-bracket-lid-7",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes roof-bracket-lid-7",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 roof-bracket-lid-7",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-lid-7",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-lid-7",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-lid-7",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head roof-bracket-lid-8",
+      "passed": true,
+      "thread_projection_mm": 0.29999999999999716,
+      "nut_height_mm": 2.700000000000003
+    },
+    {
+      "check": "full nut engagement from actual meshes roof-bracket-lid-8",
+      "passed": true,
+      "engaged_length_mm": 2.700000000000003
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 roof-bracket-lid-8",
+      "passed": true
+    },
+    {
+      "check": "mesh proves inside bracket nut and outside head wall-bracket-lid-8",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "nut_height_mm": 4.0
+    },
+    {
+      "check": "full nut engagement from actual meshes wall-bracket-lid-8",
+      "passed": true,
+      "engaged_length_mm": 4.0
+    },
+    {
+      "check": "L bracket washer retains OD15 ID5 wall-bracket-lid-8",
+      "passed": true
+    },
+    {
+      "check": "34 thin and 18 regular bracket nuts retained",
+      "passed": true
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-back-1",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331556019
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-back-2",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331556019
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-back-3",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829949
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-back-4",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829949
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-back-5",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829949
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-back-6",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829949
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-back-7",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829949
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-back-8",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331556019
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-back-9",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331556019
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-front-1",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331555969
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-front-2",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331555969
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-front-3",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-front-4",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-front-5",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-front-6",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-front-7",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-front-8",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331555969
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-front-9",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331555969
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-lid-1",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-lid-2",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-lid-3",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-lid-4",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-lid-5",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-lid-6",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-lid-7",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "orthogonal nuts clear at every rotation bracket-lid-8",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "eight independent rail nuts stay outside",
+      "passed": true
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid rail-bolt-left-1",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-bolt-left-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-washer-left-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-nut-left-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid rail-bolt-left-2",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-bolt-left-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-washer-left-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-nut-left-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid rail-bolt-left-3",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-bolt-left-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-washer-left-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-nut-left-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid rail-bolt-left-4",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-bolt-left-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-washer-left-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-nut-left-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid rail-bolt-right-1",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-bolt-right-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-washer-right-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-nut-right-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid rail-bolt-right-2",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-bolt-right-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-washer-right-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-nut-right-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid rail-bolt-right-3",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-bolt-right-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-washer-right-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-nut-right-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid rail-bolt-right-4",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-bolt-right-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-washer-right-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders rail-nut-right-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid bracket-front-1",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-front-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-front-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-front-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-front-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-front-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-front-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-front-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-front-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid bracket-front-2",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-front-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-front-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-front-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-front-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-front-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-front-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-front-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-front-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-front-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-front-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-floor-bracket-front-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-front-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-front-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-front-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-front-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-front-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-front-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-front-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-front-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-floor-bracket-front-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-front-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-front-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-front-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-front-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-front-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-front-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-front-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-front-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-floor-bracket-front-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-front-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-front-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-front-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-front-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-front-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-front-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-front-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-front-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-floor-bracket-front-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-front-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-front-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-front-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-front-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-front-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-front-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-front-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-front-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-floor-bracket-front-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-front-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-front-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-front-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-front-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-front-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-front-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid bracket-front-8",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-front-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-front-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-front-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-front-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-front-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-front-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-front-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-front-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid bracket-front-9",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-front-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-front-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-front-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-front-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-front-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-front-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-front-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-front-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-back-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-back-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-back-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-back-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-back-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-back-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-back-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-back-1",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-back-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-back-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-back-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-back-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-back-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-back-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-back-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-back-2",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-back-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-back-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-floor-bracket-back-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-back-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-back-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-back-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-back-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-back-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-back-3",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-back-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-back-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-floor-bracket-back-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-back-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-back-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-back-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-back-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-back-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-back-4",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-back-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-back-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-floor-bracket-back-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-back-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-back-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-back-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-back-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-back-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-back-5",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-back-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-back-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-floor-bracket-back-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-back-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-back-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-back-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-back-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-back-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-back-6",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-back-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-back-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-floor-bracket-back-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-back-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-back-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-back-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-back-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-back-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-back-7",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-back-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-back-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-back-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-back-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-back-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-back-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-back-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-back-8",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-back-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-back-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-bolt-bracket-back-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-outside-washer-bracket-back-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders floor-inside-nut-bracket-back-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-back-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-back-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-back-9",
+      "passed": true,
+      "includes_lid_hardware": false,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid bracket-lid-1",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-lid-1",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-lid-1",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-roof-bracket-lid-1",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-bolt-bracket-lid-1",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-outside-washer-bracket-lid-1",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-inside-nut-bracket-lid-1",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-lid-1",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-lid-1",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-lid-1",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid bracket-lid-2",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-lid-2",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-lid-2",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-roof-bracket-lid-2",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-bolt-bracket-lid-2",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-outside-washer-bracket-lid-2",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-inside-nut-bracket-lid-2",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-lid-2",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-lid-2",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-lid-2",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid bracket-lid-3",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-lid-3",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-lid-3",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-roof-bracket-lid-3",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-bolt-bracket-lid-3",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-outside-washer-bracket-lid-3",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-inside-nut-bracket-lid-3",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-lid-3",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-lid-3",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-lid-3",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid bracket-lid-4",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-lid-4",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-lid-4",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-roof-bracket-lid-4",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-bolt-bracket-lid-4",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-outside-washer-bracket-lid-4",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-inside-nut-bracket-lid-4",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-lid-4",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-lid-4",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-lid-4",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid bracket-lid-5",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-lid-5",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-lid-5",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-roof-bracket-lid-5",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-bolt-bracket-lid-5",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-outside-washer-bracket-lid-5",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-inside-nut-bracket-lid-5",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-lid-5",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-lid-5",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-lid-5",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid bracket-lid-6",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-lid-6",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-lid-6",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-roof-bracket-lid-6",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-bolt-bracket-lid-6",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-outside-washer-bracket-lid-6",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-inside-nut-bracket-lid-6",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-lid-6",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-lid-6",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-lid-6",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid bracket-lid-7",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-lid-7",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-lid-7",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-roof-bracket-lid-7",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-bolt-bracket-lid-7",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-outside-washer-bracket-lid-7",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-inside-nut-bracket-lid-7",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-lid-7",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-lid-7",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-lid-7",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "independently reconstructed displayed hardware solid bracket-lid-8",
+      "passed": true
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders bracket-lid-8",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-wall-bracket-lid-8",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders pad-roof-bracket-lid-8",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-bolt-bracket-lid-8",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-outside-washer-bracket-lid-8",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders roof-inside-nut-bracket-lid-8",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-bolt-bracket-lid-8",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-outside-washer-bracket-lid-8",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "complete hardware clears raised rails frames and padders wall-inside-nut-bracket-lid-8",
+      "passed": true,
+      "includes_lid_hardware": true,
+      "collisions": []
+    },
+    {
+      "check": "raised native assembly clears retained body and lid r8-rail-front-frame3u--1-0",
+      "passed": true,
+      "collisions": []
+    },
+    {
+      "check": "raised native assembly clears retained body and lid r8-rail-front-pad3u--1-1",
+      "passed": true,
+      "collisions": []
+    },
+    {
+      "check": "raised native assembly clears retained body and lid r8-rail-front-frame3u-1-0",
+      "passed": true,
+      "collisions": []
+    },
+    {
+      "check": "raised native assembly clears retained body and lid r8-rail-front-pad3u-1-1",
+      "passed": true,
+      "collisions": []
+    },
+    {
+      "check": "raised native assembly clears retained body and lid r8-rail-rear-frame3u--1-0",
+      "passed": true,
+      "collisions": []
+    },
+    {
+      "check": "raised native assembly clears retained body and lid r8-rail-rear-pad3u--1-1",
+      "passed": true,
+      "collisions": []
+    },
+    {
+      "check": "raised native assembly clears retained body and lid r8-rail-rear-frame3u-1-0",
+      "passed": true,
+      "collisions": []
+    },
+    {
+      "check": "raised native assembly clears retained body and lid r8-rail-rear-pad3u-1-1",
+      "passed": true,
+      "collisions": []
+    },
+    {
+      "check": "raised native assembly clears retained body and lid r8-rail-front-single-1",
+      "passed": true,
+      "collisions": []
+    },
+    {
+      "check": "raised native assembly clears retained body and lid r8-rail-rear-single-0",
+      "passed": true,
+      "collisions": []
+    },
+    {
+      "check": "raised native assembly clears retained body and lid r8-rail-center-double",
+      "passed": true,
+      "collisions": []
+    },
+    {
+      "check": "retained roof capacity and 27mm envelope shortfall measured",
+      "passed": true,
+      "rail_plane_z_mm": 88.131103,
+      "roof_underside_z_mm": 108.0,
+      "capacity_above_module_plane_mm": 19.868897000000004,
+      "assumed_panel_plus_knob_mm": 27,
+      "assumed_envelope_clearance_mm": -7.131102999999996,
+      "assumed_envelope_fits": false
+    },
+    {
+      "check": "two supported ledges retained body-left",
+      "passed": true
+    },
+    {
+      "check": "bracket to supported ledge gap retained bracket-front-1",
+      "passed": true,
+      "gap_mm": 2.9999999999900027
+    },
+    {
+      "check": "bracket to supported ledge gap retained bracket-front-2",
+      "passed": true,
+      "gap_mm": 3.000000000100002
+    },
+    {
+      "check": "bracket to supported ledge gap retained bracket-back-1",
+      "passed": true,
+      "gap_mm": 3.0000000000100044
+    },
+    {
+      "check": "bracket to supported ledge gap retained bracket-back-2",
+      "passed": true,
+      "gap_mm": 3.0000000000019895
+    },
+    {
+      "check": "two supported ledges retained body-right",
+      "passed": true
+    },
+    {
+      "check": "bracket to supported ledge gap retained bracket-front-8",
+      "passed": true,
+      "gap_mm": 2.9999999999900027
+    },
+    {
+      "check": "bracket to supported ledge gap retained bracket-front-9",
+      "passed": true,
+      "gap_mm": 3.000000000100002
+    },
+    {
+      "check": "bracket to supported ledge gap retained bracket-back-8",
+      "passed": true,
+      "gap_mm": 3.0000000000100044
+    },
+    {
+      "check": "bracket to supported ledge gap retained bracket-back-9",
+      "passed": true,
+      "gap_mm": 3.000000000001002
+    }
+  ],
+  "check_count": 810,
+  "all_passed": true,
+  "mounting_axes": [
+    {
+      "bolt": "rail-bolt-left-1",
+      "frame": "r8-rail-front-frame3u--1-0",
+      "axis_y_z_mm": [
+        -111.32827747755083,
+        66.8205294832848
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 5.743839377458926e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.388559157244345e-07
+    },
+    {
+      "bolt": "rail-bolt-left-2",
+      "frame": "r8-rail-front-frame3u--1-0",
+      "axis_y_z_mm": [
+        -20.18774392769932,
+        66.8205294900765
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 6.283286548836031e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.432701979974809e-07
+    },
+    {
+      "bolt": "rail-bolt-left-3",
+      "frame": "r8-rail-rear-frame3u--1-0",
+      "axis_y_z_mm": [
+        20.18426492769938,
+        66.82052949007655
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 6.28327899043768e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.517307724607235e-07
+    },
+    {
+      "bolt": "rail-bolt-left-4",
+      "frame": "r8-rail-rear-frame3u--1-0",
+      "axis_y_z_mm": [
+        111.3247984775506,
+        66.8205294832847
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 5.74384823259777e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.511137540243794e-07
+    },
+    {
+      "bolt": "rail-bolt-right-1",
+      "frame": "r8-rail-front-frame3u-1-0",
+      "axis_y_z_mm": [
+        -111.32827748579857,
+        66.82052949290629
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 5.62367707068745e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.388559157244345e-07
+    },
+    {
+      "bolt": "rail-bolt-right-2",
+      "frame": "r8-rail-front-frame3u-1-0",
+      "axis_y_z_mm": [
+        -20.187743935947225,
+        66.82052948611475
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 6.494663873368722e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.432701979974809e-07
+    },
+    {
+      "bolt": "rail-bolt-right-3",
+      "frame": "r8-rail-rear-frame3u-1-0",
+      "axis_y_z_mm": [
+        20.184264919451437,
+        66.8205294861148
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 6.341108758078917e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.517307724607235e-07
+    },
+    {
+      "bolt": "rail-bolt-right-4",
+      "frame": "r8-rail-rear-frame3u-1-0",
+      "axis_y_z_mm": [
+        111.32479846930275,
+        66.82052949290623
+      ],
+      "lower_slot_index": 1,
+      "lower_slot_center_z_mm": 66.82052949999999,
+      "shaft_volume_outside_lower_void_mm3": 0.0,
+      "frame_overlap_mm3": 0.0,
+      "padder_overlap_mm3": 0.0,
+      "case_wall_overlap_mm3": 0.0,
+      "bolt_axis_circle_fit_residual_mm": 5.54335590763344e-07,
+      "spacer_axis_circle_fit_residual_mm": 6.511137540243794e-07
+    }
+  ],
+  "native_hardware_candidate_pairs": 40,
+  "lid_hardware_candidate_pairs": 16,
+  "hardware_collisions": [],
+  "body_lid_collisions": [],
+  "lid": {
+    "rail_plane_z_mm": 88.131103,
+    "roof_underside_z_mm": 108.0,
+    "capacity_above_module_plane_mm": 19.868897000000004,
+    "assumed_panel_plus_knob_mm": 27,
+    "assumed_envelope_clearance_mm": -7.131102999999996,
+    "assumed_envelope_fits": false
+  },
+  "native_studio_load": "not_performed",
+  "native_studio_slice": "not_performed",
+  "physical_print_fit_load": "not_performed",
+  "production_approved": false
+}

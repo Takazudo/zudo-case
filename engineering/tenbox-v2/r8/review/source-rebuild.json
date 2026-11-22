@@ -1,0 +1,511 @@
+{
+  "revision": "10BOX-V2-R8",
+  "status": "standalone source ZIP rebuild verified",
+  "all_passed": true,
+  "original_output": ".cache/tenbox-v2-r8-final",
+  "rebuilt_output": ".cache/r8-source-rebuild-output",
+  "extracted_source": ".cache/r8-source-rebuild",
+  "build_completion_evidence": "{\"out\": \"/workspace/scratch/aee853a98f95/zudo-case/.cache/r8-source-rebuild-output\", \"revision\": \"R8\", \"production_approved\": false, \"files\": 74}",
+  "source_package": {
+    "path": "public/downloads/candidate/tenbox-v2-r8-source.zip",
+    "bytes": 9686220,
+    "sha256": "0906b80a1efc6a034463c271eda2316e0bf14a881075f93568f55c81aecbd8bf",
+    "published_candidate_matches_verified_source": true,
+    "archive_member_count": 211,
+    "extracted_input_files_all_match_archive": true,
+    "input_mismatches": [],
+    "new_feedback_reference": "engineering/tenbox-v2/r8/reference/user-feedback/08-lower-slot-alignment.png",
+    "new_feedback_sha256": "30b5594dfc91071b0978a390aaf9a1a581c7faa1aea42d69a01c46fb2bcc45bc",
+    "new_feedback_matches_user_attachment": true
+  },
+  "core_files": [
+    {
+      "path": "cad/model_data.json",
+      "bytes": 22187882,
+      "original_sha256": "fa603523574832cd62ad6b242328f5b6daeb3f3f4721f00b74762b2e584a091a",
+      "rebuilt_sha256": "fa603523574832cd62ad6b242328f5b6daeb3f3f4721f00b74762b2e584a091a",
+      "byte_identical": true
+    },
+    {
+      "path": "cad/parameters.json",
+      "bytes": 95369,
+      "original_sha256": "fa99e51db16bcb18cd6097166da9d6988b9d0ff120de947e8107c6502c9277ce",
+      "rebuilt_sha256": "fa99e51db16bcb18cd6097166da9d6988b9d0ff120de947e8107c6502c9277ce",
+      "byte_identical": true
+    },
+    {
+      "path": "cad/geometry-checks.json",
+      "bytes": 180803,
+      "original_sha256": "65f84f2881e29c77300e6cf9b67078073621b3d46648343270e8faf89fd97873",
+      "rebuilt_sha256": "65f84f2881e29c77300e6cf9b67078073621b3d46648343270e8faf89fd97873",
+      "byte_identical": true
+    },
+    {
+      "path": "cad/source-receipts.json",
+      "bytes": 6431,
+      "original_sha256": "aea746c756d234f3da789893251c9c8592d37d124ab026df3b68943198bfd28d",
+      "rebuilt_sha256": "aea746c756d234f3da789893251c9c8592d37d124ab026df3b68943198bfd28d",
+      "byte_identical": true
+    },
+    {
+      "path": "cad/fastener-schedule.csv",
+      "bytes": 334,
+      "original_sha256": "4cc76c67a6fc1054340ee2fc1b3b3c47bdf9cf23df830cd34333a1e4ed3e0d11",
+      "rebuilt_sha256": "4cc76c67a6fc1054340ee2fc1b3b3c47bdf9cf23df830cd34333a1e4ed3e0d11",
+      "byte_identical": true
+    },
+    {
+      "path": "cad/fastener-schedule.json",
+      "bytes": 1763,
+      "original_sha256": "743321dd411dd8527bd8241ade578fd256f335cb38545e72a0eae6d8917c0e5d",
+      "rebuilt_sha256": "743321dd411dd8527bd8241ade578fd256f335cb38545e72a0eae6d8917c0e5d",
+      "byte_identical": true
+    },
+    {
+      "path": "tenbox-v2-r8.html",
+      "bytes": 894784,
+      "original_sha256": "37d758e30394db129e324ca4e6640a5ee7a551f12d9463d1da3367c784f6cfe6",
+      "rebuilt_sha256": "37d758e30394db129e324ca4e6640a5ee7a551f12d9463d1da3367c784f6cfe6",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/h2d-project-report.json",
+      "bytes": 72636,
+      "original_sha256": "8996645df8339d8a745b24b151d11289bf8114c51ccb0222479f89ffdcfb02e4",
+      "rebuilt_sha256": "8996645df8339d8a745b24b151d11289bf8114c51ccb0222479f89ffdcfb02e4",
+      "byte_identical": true
+    }
+  ],
+  "project_count": 15,
+  "all_15_projects_byte_identical": true,
+  "projects": [
+    {
+      "path": "h2d/projects/body-back.3mf",
+      "bytes": 121397,
+      "original_sha256": "bd484ec986c17a749fdb2e076b5a78a85a986b9fafd980f8850f81f52dff4c29",
+      "rebuilt_sha256": "bd484ec986c17a749fdb2e076b5a78a85a986b9fafd980f8850f81f52dff4c29",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/body-bottom-common.3mf",
+      "bytes": 28325,
+      "original_sha256": "60224e5e5f8ac3c1aa93e2b567cb372fbea16332429583b8747d716c782abe27",
+      "rebuilt_sha256": "60224e5e5f8ac3c1aa93e2b567cb372fbea16332429583b8747d716c782abe27",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/body-front.3mf",
+      "bytes": 22673,
+      "original_sha256": "23e2722ed537d5359ed8cdc750889f7bfa3b4a41295d972eca44f1fe51d53617",
+      "rebuilt_sha256": "23e2722ed537d5359ed8cdc750889f7bfa3b4a41295d972eca44f1fe51d53617",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/body-left.3mf",
+      "bytes": 98477,
+      "original_sha256": "e60915e339af266370d2ce27f5ac83645b34f3a9ecb46a7e63d1bf710cabf2ea",
+      "rebuilt_sha256": "e60915e339af266370d2ce27f5ac83645b34f3a9ecb46a7e63d1bf710cabf2ea",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/body-right.3mf",
+      "bytes": 97861,
+      "original_sha256": "a7a07b9664ece0790d2d4f473232ea3d3b534fca167ce14095d16b0a326ab169",
+      "rebuilt_sha256": "a7a07b9664ece0790d2d4f473232ea3d3b534fca167ce14095d16b0a326ab169",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/lid-back.3mf",
+      "bytes": 19019,
+      "original_sha256": "00a7a8cd8f63898691807a5c64d7b76fe592a4b456b63104af5b2bdc7cba8113",
+      "rebuilt_sha256": "00a7a8cd8f63898691807a5c64d7b76fe592a4b456b63104af5b2bdc7cba8113",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/lid-front.3mf",
+      "bytes": 19003,
+      "original_sha256": "f8f14c879a6f04843fc1fd8a4c9dbac578dd3518ce52991751f6067775e0e10a",
+      "rebuilt_sha256": "f8f14c879a6f04843fc1fd8a4c9dbac578dd3518ce52991751f6067775e0e10a",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/lid-left.3mf",
+      "bytes": 17591,
+      "original_sha256": "fae911ce26da493a5d43ab74289b6e80a9c9608c5fd8554c1f7989371d9238f7",
+      "rebuilt_sha256": "fae911ce26da493a5d43ab74289b6e80a9c9608c5fd8554c1f7989371d9238f7",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/lid-right.3mf",
+      "bytes": 17581,
+      "original_sha256": "ba5b722134de4282f4261ff64f7241b033c1cb454fbd33142583b7b12df0706c",
+      "rebuilt_sha256": "ba5b722134de4282f4261ff64f7241b033c1cb454fbd33142583b7b12df0706c",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/lid-top-single.3mf",
+      "bytes": 23444,
+      "original_sha256": "cdd513b719a3c976b152a524fba3f3381db8a162889f47c586e2dfbc04730311",
+      "rebuilt_sha256": "cdd513b719a3c976b152a524fba3f3381db8a162889f47c586e2dfbc04730311",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/spacers-8.3mf",
+      "bytes": 59721,
+      "original_sha256": "613fa304c685196d7ef7722eeee62c101caf25f0bb8288368e18711cf28fc1af",
+      "rebuilt_sha256": "613fa304c685196d7ef7722eeee62c101caf25f0bb8288368e18711cf28fc1af",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/stand-connector-back.3mf",
+      "bytes": 15570,
+      "original_sha256": "0d0f00996319da8d976d4557fe8f34c4c7bb90a34fd145e64323aca9de02af48",
+      "rebuilt_sha256": "0d0f00996319da8d976d4557fe8f34c4c7bb90a34fd145e64323aca9de02af48",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/stand-connector-front.3mf",
+      "bytes": 15571,
+      "original_sha256": "5cebbb7dcb711d10606a0f9deb265b619f83796bd1af8ebaaf32f930ad362c9a",
+      "rebuilt_sha256": "5cebbb7dcb711d10606a0f9deb265b619f83796bd1af8ebaaf32f930ad362c9a",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/stand-left.3mf",
+      "bytes": 15762,
+      "original_sha256": "5de4da1d6eabb8d3932daf4c31963e6501150882a942ab744ff409a59c2b1edc",
+      "rebuilt_sha256": "5de4da1d6eabb8d3932daf4c31963e6501150882a942ab744ff409a59c2b1edc",
+      "byte_identical": true
+    },
+    {
+      "path": "h2d/projects/stand-right.3mf",
+      "bytes": 15766,
+      "original_sha256": "bda56ad4eec3aa91fea9efcfc5d3ee826069d595251a1f1c693f2b7c3d9daf78",
+      "rebuilt_sha256": "bda56ad4eec3aa91fea9efcfc5d3ee826069d595251a1f1c693f2b7c3d9daf78",
+      "byte_identical": true
+    }
+  ],
+  "stl_export_count": 21,
+  "all_stl_exports_byte_identical": true,
+  "step_export_count": 21,
+  "step_byte_identical_count": 8,
+  "step_geometry_data_sections_all_byte_identical": true,
+  "step_exports": [
+    {
+      "path": "cad/step/body-back.step",
+      "byte_identical": true,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "e82f69a295f9132ec040c08bfa9b90e506261505bc6932f6592a31eb71b38d01",
+      "rebuilt_sha256": "e82f69a295f9132ec040c08bfa9b90e506261505bc6932f6592a31eb71b38d01",
+      "changed_header_lines": []
+    },
+    {
+      "path": "cad/step/body-bottom-back.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "76a005343d304cca067ac567d52d63d80587f0ea5a503aca748388256d08aa26",
+      "rebuilt_sha256": "348a05a7714de663ef8525cdd100fec37faf5d4db075167eb56ae13c49de1ede",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:01',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:30',('Author'),("
+        }
+      ]
+    },
+    {
+      "path": "cad/step/body-bottom-common.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "8cf2465aee61a458690c3a662ac6771402300f7814e73930f86227635b069937",
+      "rebuilt_sha256": "d21e1d586a457b24219f634b38914c0fccf2445f9a16c04716198fbd984d5589",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:02',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:31',('Author'),("
+        }
+      ]
+    },
+    {
+      "path": "cad/step/body-bottom-front.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "3ed2da92103a921a16c860e7dc0f4ac54be1884235cf25c180a262e33718dc50",
+      "rebuilt_sha256": "3872747e87116f079ba4d20bd7c49967874f22221cfc2a18e1e03cb2435591f7",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:02',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:31',('Author'),("
+        }
+      ]
+    },
+    {
+      "path": "cad/step/body-front.step",
+      "byte_identical": true,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "7bd8506e92967a54ab1fb4a8127ed81d5cbb122197642737da0670a11229e13b",
+      "rebuilt_sha256": "7bd8506e92967a54ab1fb4a8127ed81d5cbb122197642737da0670a11229e13b",
+      "changed_header_lines": []
+    },
+    {
+      "path": "cad/step/body-left.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "6b192b9b82e6ad0f64d4afc92777c5ab15a77759fecd7553b765780b484aceec",
+      "rebuilt_sha256": "0da60fa5001c010eb7b007580a8a9d028920387eea550f90d13119aed87e9463",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:02',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:32',('Author'),("
+        }
+      ]
+    },
+    {
+      "path": "cad/step/body-right.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "ce3eee270d13f4ad0c7e8f6fcfe26ba265aa9a60f5832ca1b1939c3600269a37",
+      "rebuilt_sha256": "5173104469f84f5b55baf129719b0ccba343d365affd552a4c69c11b4df7d029",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:03',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:32',('Author'),("
+        }
+      ]
+    },
+    {
+      "path": "cad/step/lid-back.step",
+      "byte_identical": true,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "b61b964859904e5e37c80bd7f5d39018ef68e3d588814d630cf2266a6958a525",
+      "rebuilt_sha256": "b61b964859904e5e37c80bd7f5d39018ef68e3d588814d630cf2266a6958a525",
+      "changed_header_lines": []
+    },
+    {
+      "path": "cad/step/lid-front.step",
+      "byte_identical": true,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "adfda3648ef01fdaca03e0d65611e6fcae0ee2ac090ebe99befcc35713f9fd08",
+      "rebuilt_sha256": "adfda3648ef01fdaca03e0d65611e6fcae0ee2ac090ebe99befcc35713f9fd08",
+      "changed_header_lines": []
+    },
+    {
+      "path": "cad/step/lid-left.step",
+      "byte_identical": true,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "5e26b3b1223ed7b3f590ba2556986dc48d79641a88438155cb7bed85ab1b75f1",
+      "rebuilt_sha256": "5e26b3b1223ed7b3f590ba2556986dc48d79641a88438155cb7bed85ab1b75f1",
+      "changed_header_lines": []
+    },
+    {
+      "path": "cad/step/lid-right.step",
+      "byte_identical": true,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "a2d12cce6ce4e06289f28fc6e34646551711595d414f0288ef8e7c2e67935151",
+      "rebuilt_sha256": "a2d12cce6ce4e06289f28fc6e34646551711595d414f0288ef8e7c2e67935151",
+      "changed_header_lines": []
+    },
+    {
+      "path": "cad/step/lid-top-single.step",
+      "byte_identical": true,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "33b7ec7b5406a83d71e9d7daffb1e473006a17b0ddebfc1da64c8a205ce8f9f4",
+      "rebuilt_sha256": "33b7ec7b5406a83d71e9d7daffb1e473006a17b0ddebfc1da64c8a205ce8f9f4",
+      "changed_header_lines": []
+    },
+    {
+      "path": "cad/step/spacer-8mm-reference.step",
+      "byte_identical": true,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "9d174f857cb865e489a151ec34da0f4422f3d33fbe7797ce79139f1c5edaea29",
+      "rebuilt_sha256": "9d174f857cb865e489a151ec34da0f4422f3d33fbe7797ce79139f1c5edaea29",
+      "changed_header_lines": []
+    },
+    {
+      "path": "cad/step/spacer-left-1.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "e63853b72bdb634a5b25d51193e66f905e7dc9d7b2d68c9c8e4580f9a6d09a78",
+      "rebuilt_sha256": "34624d0c5be5ece065d7f2978be7ca36741a4422536f43afb45e54ee7bce6adc",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:04',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:33',('Author'),("
+        }
+      ]
+    },
+    {
+      "path": "cad/step/spacer-left-2.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "8c89a368b00d0d5d173a7552711d138a89e1591dc0a817e3575aa0fac74c5abc",
+      "rebuilt_sha256": "ea9ea840ea2fd11615f77730a0fb4e25031f4b28021a1cfd822bb9f5c5b730cf",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:04',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:33',('Author'),("
+        }
+      ]
+    },
+    {
+      "path": "cad/step/spacer-left-3.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "43fcf764d36e0e4941af6085c1d571e4803510528ee822f8ed2da4df1be94fba",
+      "rebuilt_sha256": "d7bc6efb3248ea105d4d395082b48d99384a7226c2946d7530551be338149c64",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:04',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:33',('Author'),("
+        }
+      ]
+    },
+    {
+      "path": "cad/step/spacer-left-4.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "bcbe3648aca04f18fa5a3e76f19af23c76f9325280a6226c9225809da3d193fe",
+      "rebuilt_sha256": "5b008137e061fc475418e1e21e44ee49607fd6c42c02ab50772a4f2dc62303d6",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:04',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:33',('Author'),("
+        }
+      ]
+    },
+    {
+      "path": "cad/step/spacer-right-1.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "95939990f17598099de15f78f391a3dedda100720dd8ebfd1937d4e511185677",
+      "rebuilt_sha256": "de6ff64450e104e5abb29aa236ac26ffb0accad4e68ebe9b5c60635a0c8358ad",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:04',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:33',('Author'),("
+        }
+      ]
+    },
+    {
+      "path": "cad/step/spacer-right-2.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "7f1efbf1c1d4a1c3e0be5736ea70f26b98576945da864dd1b4ee975f136ec6ba",
+      "rebuilt_sha256": "0ed3acb6c23b044f4e9522b003a89517f718d9060882b58912013251640879eb",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:04',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:33',('Author'),("
+        }
+      ]
+    },
+    {
+      "path": "cad/step/spacer-right-3.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "e6097c6bcf4bec08fabaa33e12443d46dca12cd490cdb3225d19a17d28a66bfc",
+      "rebuilt_sha256": "7a96e1a3322804bf8f760f0203eef19f9161af1bc5a4c0abdadfb9271bd4d022",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:04',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:33',('Author'),("
+        }
+      ]
+    },
+    {
+      "path": "cad/step/spacer-right-4.step",
+      "byte_identical": false,
+      "geometry_data_section_byte_identical": true,
+      "original_sha256": "2e90ee98a42acffe94f36d1abbc5b0b2b07a60af27f9ad86f868b1a262a4638a",
+      "rebuilt_sha256": "d3a0e24b149f3b6c68c8264a10db71e0fb12f236bf3770a1ce96159957363681",
+      "changed_header_lines": [
+        {
+          "original": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:37:04',('Author'),(",
+          "rebuilt": "FILE_NAME('Open CASCADE Shape Model','2026-11-23T05:38:33',('Author'),("
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "path": "packages/tenbox-v2-r8-print.zip",
+      "original_bytes": 858052,
+      "rebuilt_bytes": 858052,
+      "original_sha256": "aececd32a471c54962eed34889919bc69864d1d6e7b8546a7efa5eb5dd68723a",
+      "rebuilt_sha256": "aececd32a471c54962eed34889919bc69864d1d6e7b8546a7efa5eb5dd68723a",
+      "byte_identical": true,
+      "member_inventory_identical": true,
+      "member_count": 27,
+      "changed_members": []
+    },
+    {
+      "path": "packages/tenbox-v2-r8-review.zip",
+      "original_bytes": 6751392,
+      "rebuilt_bytes": 6751388,
+      "original_sha256": "9964bc09e8a2a8064a6c2498cc841596968187a231f92e25b6227144a1b2550c",
+      "rebuilt_sha256": "1d7ca925a5edb75459ae05ec5ea8ae1c5f11c65bffaf9af223899f5ab54e4ed5",
+      "byte_identical": false,
+      "member_inventory_identical": true,
+      "member_count": 51,
+      "changed_members": [
+        "MANIFEST.sha256",
+        "step/body-bottom-back.step",
+        "step/body-bottom-common.step",
+        "step/body-bottom-front.step",
+        "step/body-left.step",
+        "step/body-right.step",
+        "step/spacer-left-1.step",
+        "step/spacer-left-2.step",
+        "step/spacer-left-3.step",
+        "step/spacer-left-4.step",
+        "step/spacer-right-1.step",
+        "step/spacer-right-2.step",
+        "step/spacer-right-3.step",
+        "step/spacer-right-4.step"
+      ]
+    },
+    {
+      "path": "packages/tenbox-v2-r8-source.zip",
+      "original_bytes": 9686220,
+      "rebuilt_bytes": 9686220,
+      "original_sha256": "0906b80a1efc6a034463c271eda2316e0bf14a881075f93568f55c81aecbd8bf",
+      "rebuilt_sha256": "0906b80a1efc6a034463c271eda2316e0bf14a881075f93568f55c81aecbd8bf",
+      "byte_identical": true,
+      "member_inventory_identical": true,
+      "member_count": 211,
+      "changed_members": []
+    }
+  ],
+  "manifest_comparison": {
+    "byte_identical": false,
+    "changed_file_receipts": [
+      "cad/step/body-bottom-back.step",
+      "cad/step/body-bottom-common.step",
+      "cad/step/body-bottom-front.step",
+      "cad/step/body-left.step",
+      "cad/step/body-right.step",
+      "cad/step/spacer-left-1.step",
+      "cad/step/spacer-left-2.step",
+      "cad/step/spacer-left-3.step",
+      "cad/step/spacer-left-4.step",
+      "cad/step/spacer-right-1.step",
+      "cad/step/spacer-right-2.step",
+      "cad/step/spacer-right-3.step",
+      "cad/step/spacer-right-4.step"
+    ],
+    "explanation": "Changed STEP FILE_NAME timestamp headers change their raw hashes, the build manifest and review ZIP. All STEP DATA sections, model geometry, source/print ZIPs and preview are byte-identical."
+  },
+  "cad_check_count": 1025,
+  "cad_all_passed": true,
+  "exported_step_readback_check_count": 13,
+  "exported_step_readback_all_passed": true,
+  "independent_review": {
+    "path": "engineering/tenbox-v2/r8/review/independent-fit-review.json",
+    "sha256": "343bf207e92c10df078677fa0232b283bd87c36e9f7a7e6f1ad4738c55f3b41d",
+    "check_count": 810,
+    "all_passed": true,
+    "reviewed_model_sha256": "fa603523574832cd62ad6b242328f5b6daeb3f3f4721f00b74762b2e584a091a",
+    "rebuilt_model_sha256": "fa603523574832cd62ad6b242328f5b6daeb3f3f4721f00b74762b2e584a091a",
+    "same_exact_model_review_applies": true
+  },
+  "scope": "Compared the existing completed standalone rebuild; no extra rebuild was run. Exact model/parameters/checks/receipts/preview, all15 H2D project bytes, source and print packages reproduce. STEP raw-byte timestamp differences are distinguished from identical STEP DATA geometry. No Studio slicing or physical validation is claimed."
+}

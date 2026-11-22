@@ -1,0 +1,131 @@
+{
+  "renderer": "canvas",
+  "validation": "Actual inline app under a minimal Node DOM shim; not a browser-layout or WebGL test.",
+  "source": ".cache/r8-preview-verified/tenbox-v2-r8.html",
+  "source_model_sha256": "fa603523574832cd62ad6b242328f5b6daeb3f3f4721f00b74762b2e584a091a",
+  "current_parts": 284,
+  "views": [
+    {
+      "view": "assembly",
+      "file": ".cache/r8-preview-verified/render/assembly.png",
+      "visible_parts": 203,
+      "brackets": 18,
+      "nuts": 44,
+      "wall_bolts": 18,
+      "frames": 2,
+      "camera": {
+        "target": [
+          0,
+          0,
+          42.3155515
+        ],
+        "yaw": 0.69,
+        "pitch": 0.72,
+        "span": 479.38960189398966,
+        "up": "z"
+      }
+    },
+    {
+      "view": "lower-slot",
+      "file": ".cache/r8-preview-verified/render/lower-slot.png",
+      "visible_parts": 16,
+      "brackets": 1,
+      "nuts": 3,
+      "wall_bolts": 1,
+      "frames": 3,
+      "camera": {
+        "target": [
+          157,
+          -111.32827741210937,
+          66.82052949999999
+        ],
+        "yaw": 1.5707963267948966,
+        "pitch": 0.12,
+        "span": 85,
+        "up": "z"
+      }
+    },
+    {
+      "view": "lower-slot-r7",
+      "file": ".cache/r8-preview-verified/render/lower-slot-r7.png",
+      "visible_parts": 16,
+      "brackets": 1,
+      "nuts": 3,
+      "wall_bolts": 1,
+      "frames": 4,
+      "camera": {
+        "target": [
+          157,
+          -111.32827741210937,
+          66.82052949999999
+        ],
+        "yaw": 1.5707963267948966,
+        "pitch": 0.12,
+        "span": 85,
+        "up": "z"
+      }
+    },
+    {
+      "view": "lid-fit",
+      "file": ".cache/r8-preview-verified/render/lid-fit.png",
+      "visible_parts": 280,
+      "brackets": 26,
+      "nuts": 60,
+      "wall_bolts": 26,
+      "frames": 5,
+      "camera": {
+        "target": [
+          0,
+          0,
+          55.95
+        ],
+        "yaw": 1.5707963267948966,
+        "pitch": 0.03,
+        "span": 287.4666666666667,
+        "up": "z"
+      }
+    },
+    {
+      "view": "side-fixing",
+      "file": ".cache/r8-preview-verified/render/side-fixing.png",
+      "visible_parts": 18,
+      "brackets": 2,
+      "nuts": 4,
+      "wall_bolts": 2,
+      "frames": 6,
+      "camera": {
+        "target": [
+          154.05,
+          -75,
+          50.25
+        ],
+        "yaw": -0.72,
+        "pitch": 0.55,
+        "span": 104.08086688182863,
+        "up": "z"
+      }
+    }
+  ],
+  "errors": [],
+  "hardware_visibility": {
+    "right_wall_attachment_parts": 36,
+    "right_wall_missing": [],
+    "bracket_nuts": 52,
+    "all_bracket_nuts_inside": true,
+    "inside_body_nuts_missing": []
+  },
+  "controls": {
+    "initial": 203,
+    "noRails": 160,
+    "noBrackets": 6,
+    "noEndwalls": 4,
+    "withLid": 9,
+    "lidLift": 50
+  },
+  "comparison": {
+    "same_camera": true,
+    "moving_parts": 11,
+    "fixed_parts": 273,
+    "maximum_display_bound_error_mm": 3.552713678800501e-15
+  }
+}

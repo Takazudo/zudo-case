@@ -39,6 +39,7 @@ jobs:
       - run: pnpm check:tenbox-v2
       - run: pnpm check:tenbox-v2-r6
       - run: pnpm check:tenbox-v2-r7
+      - run: pnpm check:tenbox-v2-r8
       - run: pnpm test:tenbox-v2
       - run: pnpm check:printed-5mm
       - run: pnpm test:printed-5mm
@@ -254,6 +255,8 @@ jobs:
         run: uv run --locked --project engineering/tenbox-v2/r5 python engineering/tenbox-v2/r6/build.py --out "$RUNNER_TEMP/tenbox-v2-r6" --no-packages
       - name: Build R7 inside-nut hardware and bracket-spacing feedback
         run: uv run --locked --project engineering/tenbox-v2/r5 python engineering/tenbox-v2/r7/build.py --out "$RUNNER_TEMP/tenbox-v2-r7" --no-packages
+      - name: Build R8 lower-slot placement and unchanged R7 print projects
+        run: uv run --locked --project engineering/tenbox-v2/r5 python engineering/tenbox-v2/r8/build.py --out "$RUNNER_TEMP/tenbox-v2-r8" --no-packages
       - name: Importer dispatch and corrupt ZIP failure fixtures
         run: python3 engineering/tenbox-v2/r5/test_contract.py
       - uses: pnpm/action-setup@f40ffcd9367d9f12939873eb1018b921a783ffaa
@@ -269,6 +272,8 @@ jobs:
           uv venv --python 3.12.14 "$RUNNER_TEMP/browser-env"
           uv pip install --python "$RUNNER_TEMP/browser-env/bin/python" playwright==1.62.0
           "$RUNNER_TEMP/browser-env/bin/python" -m playwright install --with-deps chromium
+      - name: Verify actual R8 and R7 comparison in Canvas and WebGL
+        run: '"$RUNNER_TEMP/browser-env/bin/python" engineering/tenbox-v2/r8/preview/verify_browser.py --preview "$RUNNER_TEMP/tenbox-v2-r8/tenbox-v2-r8.html" --out "$RUNNER_TEMP/tenbox-v2-r8-browser"'
       - name: Canvas/WebGL, integrated iframe, navigation and full HTTP download verification
         run: |
           pnpm dev --port 4391 > "$RUNNER_TEMP/tenbox-site.log" 2>&1 &
