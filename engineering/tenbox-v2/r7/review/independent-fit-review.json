@@ -1,0 +1,1255 @@
+{
+  "reviewed_model_sha256": "0b85066eec2096c88e607d48c7cb806a2ee01d7cfe731914888dacf2fe192d12",
+  "input": ".cache/tenbox-v2-r7-final/cad",
+  "scope": "Independent exported-mesh orientation/count checks, exact STEP ledge measurements, preserved rail mesh comparison, angle-independent BRep nut-pair distances, positive rail-washer/lid separation, and quantified side-washer bearing. No physical or slicer validation.",
+  "checks": [
+    {
+      "check": "52 complete bracket fasteners",
+      "passed": true,
+      "count": 52
+    },
+    {
+      "check": "8 newly added sidewall fasteners",
+      "passed": true
+    },
+    {
+      "check": "26 bracket bodies",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-front-1",
+      "passed": true,
+      "thread_projection_mm": 0.8,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-front-1",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-front-1",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-front-1",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-front-2",
+      "passed": true,
+      "thread_projection_mm": 0.8,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-front-2",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-front-2",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-front-2",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-front-3",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-front-3",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-front-3",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-front-3",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-front-4",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-front-4",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-front-4",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-front-4",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-front-5",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-front-5",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-front-5",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-front-5",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-front-6",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-front-6",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-front-6",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-front-6",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-front-7",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-front-7",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-front-7",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-front-7",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-front-8",
+      "passed": true,
+      "thread_projection_mm": 0.8,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-front-8",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-front-8",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-front-8",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-front-9",
+      "passed": true,
+      "thread_projection_mm": 0.8,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-front-9",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-front-9",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-front-9",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-back-1",
+      "passed": true,
+      "thread_projection_mm": 0.8,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-back-1",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-back-1",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-back-1",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-back-2",
+      "passed": true,
+      "thread_projection_mm": 0.8,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-back-2",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-back-2",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-back-2",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-back-3",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-back-3",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-back-3",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-back-3",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-back-4",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-back-4",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-back-4",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-back-4",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-back-5",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-back-5",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-back-5",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-back-5",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-back-6",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-back-6",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-back-6",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-back-6",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-back-7",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-back-7",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-back-7",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-back-7",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-back-8",
+      "passed": true,
+      "thread_projection_mm": 0.8,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-back-8",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-back-8",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-back-8",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation floor-bracket-back-9",
+      "passed": true,
+      "thread_projection_mm": 0.8,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement floor-bracket-back-9",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-back-9",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-back-9",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation roof-bracket-lid-1",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement roof-bracket-lid-1",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-lid-1",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-lid-1",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation roof-bracket-lid-2",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement roof-bracket-lid-2",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-lid-2",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-lid-2",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation roof-bracket-lid-3",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement roof-bracket-lid-3",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-lid-3",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-lid-3",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation roof-bracket-lid-4",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement roof-bracket-lid-4",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-lid-4",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-lid-4",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation roof-bracket-lid-5",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement roof-bracket-lid-5",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-lid-5",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-lid-5",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation roof-bracket-lid-6",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement roof-bracket-lid-6",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-lid-6",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-lid-6",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation roof-bracket-lid-7",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement roof-bracket-lid-7",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-lid-7",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-lid-7",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation roof-bracket-lid-8",
+      "passed": true,
+      "thread_projection_mm": 0.3,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement roof-bracket-lid-8",
+      "passed": true
+    },
+    {
+      "check": "actual mesh fastener orientation wall-bracket-lid-8",
+      "passed": true,
+      "thread_projection_mm": 1.0,
+      "full_nut_engagement": true
+    },
+    {
+      "check": "actual mesh complete nut engagement wall-bracket-lid-8",
+      "passed": true
+    },
+    {
+      "check": "front reference nominal3mm eachside",
+      "passed": true,
+      "measured_clearances_mm": [
+        3.0069150000039997,
+        3.0068749999960005
+      ]
+    },
+    {
+      "check": "two supported ledges body-left",
+      "passed": true,
+      "ledge_bounds_mm": [
+        [
+          -163.6999,
+          46.94869500000199,
+          5.02,
+          -160.7,
+          103.40792499999,
+          10.02
+        ],
+        [
+          -163.6999,
+          -103.4079249999,
+          41.02,
+          -160.7,
+          -46.94869499999,
+          46.02
+        ]
+      ]
+    },
+    {
+      "check": "actual ledge side gap bracket-front-1",
+      "passed": true,
+      "gap_mm": 2.999999999990955
+    },
+    {
+      "check": "actual ledge side gap bracket-front-2",
+      "passed": true,
+      "gap_mm": 3.000000000062741
+    },
+    {
+      "check": "actual ledge side gap bracket-back-1",
+      "passed": true,
+      "gap_mm": 3.000000000006736
+    },
+    {
+      "check": "actual ledge side gap bracket-back-2",
+      "passed": true,
+      "gap_mm": 3.0
+    },
+    {
+      "check": "two supported ledges body-right",
+      "passed": true,
+      "ledge_bounds_mm": [
+        [
+          160.7,
+          46.948695000001,
+          5.02,
+          163.6999,
+          103.40792499999,
+          10.02
+        ],
+        [
+          160.7,
+          -103.4079249999,
+          41.02,
+          163.6999,
+          -46.94869499999,
+          46.02
+        ]
+      ]
+    },
+    {
+      "check": "actual ledge side gap bracket-front-8",
+      "passed": true,
+      "gap_mm": 2.9999999999939035
+    },
+    {
+      "check": "actual ledge side gap bracket-front-9",
+      "passed": true,
+      "gap_mm": 3.000000000075076
+    },
+    {
+      "check": "actual ledge side gap bracket-back-8",
+      "passed": true,
+      "gap_mm": 3.0000000000088676
+    },
+    {
+      "check": "actual ledge side gap bracket-back-9",
+      "passed": true,
+      "gap_mm": 2.9999999999995524
+    },
+    {
+      "check": "exact R6 rail/frame mesh translated r7-rail-front-single-1",
+      "passed": true
+    },
+    {
+      "check": "exact R6 rail/frame mesh translated r7-rail-front-frame3u--1-0",
+      "passed": true
+    },
+    {
+      "check": "exact R6 rail/frame mesh translated r7-rail-front-pad3u--1-1",
+      "passed": true
+    },
+    {
+      "check": "exact R6 rail/frame mesh translated r7-rail-front-frame3u-1-0",
+      "passed": true
+    },
+    {
+      "check": "exact R6 rail/frame mesh translated r7-rail-front-pad3u-1-1",
+      "passed": true
+    },
+    {
+      "check": "exact R6 rail/frame mesh translated r7-rail-rear-single-0",
+      "passed": true
+    },
+    {
+      "check": "exact R6 rail/frame mesh translated r7-rail-rear-frame3u--1-0",
+      "passed": true
+    },
+    {
+      "check": "exact R6 rail/frame mesh translated r7-rail-rear-pad3u--1-1",
+      "passed": true
+    },
+    {
+      "check": "exact R6 rail/frame mesh translated r7-rail-rear-frame3u-1-0",
+      "passed": true
+    },
+    {
+      "check": "exact R6 rail/frame mesh translated r7-rail-rear-pad3u-1-1",
+      "passed": true
+    },
+    {
+      "check": "exact R6 rail/frame mesh translated r7-rail-center-double",
+      "passed": true
+    },
+    {
+      "check": "independent rotating nut separation bracket-back-1",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331556019
+    },
+    {
+      "check": "independent rotating nut separation bracket-back-2",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331556019
+    },
+    {
+      "check": "independent rotating nut separation bracket-back-3",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829949
+    },
+    {
+      "check": "independent rotating nut separation bracket-back-4",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829949
+    },
+    {
+      "check": "independent rotating nut separation bracket-back-5",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829949
+    },
+    {
+      "check": "independent rotating nut separation bracket-back-6",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829949
+    },
+    {
+      "check": "independent rotating nut separation bracket-back-7",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829949
+    },
+    {
+      "check": "independent rotating nut separation bracket-back-8",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331556019
+    },
+    {
+      "check": "independent rotating nut separation bracket-back-9",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331556019
+    },
+    {
+      "check": "independent rotating nut separation bracket-front-1",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331555969
+    },
+    {
+      "check": "independent rotating nut separation bracket-front-2",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331555969
+    },
+    {
+      "check": "independent rotating nut separation bracket-front-3",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "independent rotating nut separation bracket-front-4",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "independent rotating nut separation bracket-front-5",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "independent rotating nut separation bracket-front-6",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "independent rotating nut separation bracket-front-7",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "independent rotating nut separation bracket-front-8",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331555969
+    },
+    {
+      "check": "independent rotating nut separation bracket-front-9",
+      "passed": true,
+      "minimum_distance_mm": 0.9633592331555969
+    },
+    {
+      "check": "independent rotating nut separation bracket-lid-1",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "independent rotating nut separation bracket-lid-2",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "independent rotating nut separation bracket-lid-3",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "independent rotating nut separation bracket-lid-4",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "independent rotating nut separation bracket-lid-5",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "independent rotating nut separation bracket-lid-6",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "independent rotating nut separation bracket-lid-7",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "independent rotating nut separation bracket-lid-8",
+      "passed": true,
+      "minimum_distance_mm": 0.6811978464829878
+    },
+    {
+      "check": "8 rail-mount nuts remain outside",
+      "passed": true
+    },
+    {
+      "check": "8 rail-specific OD10 washers",
+      "passed": true
+    },
+    {
+      "check": "actual rail washer OD10 ID5 t1 rail-washer-left-1",
+      "passed": true
+    },
+    {
+      "check": "rail washer positive lid and lift-sweep clearance rail-washer-left-1",
+      "passed": true,
+      "closed_lid_distance_mm": 0.17966050000001133,
+      "vertical_lift_sweep_lower_bound_mm": 0.17966050000001133,
+      "projection_domain_xy_mm": [
+        -169.7001,
+        -116.32827741210937,
+        -168.69989999999999,
+        -106.32827741210937
+      ]
+    },
+    {
+      "check": "actual rail washer OD10 ID5 t1 rail-washer-left-2",
+      "passed": true
+    },
+    {
+      "check": "rail washer positive lid and lift-sweep clearance rail-washer-left-2",
+      "passed": true,
+      "closed_lid_distance_mm": 0.17966050000001133,
+      "vertical_lift_sweep_lower_bound_mm": 0.17966050000001133,
+      "projection_domain_xy_mm": [
+        -169.7001,
+        -25.18774396484375,
+        -168.69989999999999,
+        -15.18774396484375
+      ]
+    },
+    {
+      "check": "actual rail washer OD10 ID5 t1 rail-washer-left-3",
+      "passed": true
+    },
+    {
+      "check": "rail washer positive lid and lift-sweep clearance rail-washer-left-3",
+      "passed": true,
+      "closed_lid_distance_mm": 0.17966050000001133,
+      "vertical_lift_sweep_lower_bound_mm": 0.17966050000001133,
+      "projection_domain_xy_mm": [
+        -169.7001,
+        15.1842649609375,
+        -168.69989999999999,
+        25.1842649609375
+      ]
+    },
+    {
+      "check": "actual rail washer OD10 ID5 t1 rail-washer-left-4",
+      "passed": true
+    },
+    {
+      "check": "rail washer positive lid and lift-sweep clearance rail-washer-left-4",
+      "passed": true,
+      "closed_lid_distance_mm": 0.17966050000001133,
+      "vertical_lift_sweep_lower_bound_mm": 0.17966050000001133,
+      "projection_domain_xy_mm": [
+        -169.7001,
+        106.32479840820312,
+        -168.69989999999999,
+        116.32479840820312
+      ]
+    },
+    {
+      "check": "actual rail washer OD10 ID5 t1 rail-washer-right-1",
+      "passed": true
+    },
+    {
+      "check": "rail washer positive lid and lift-sweep clearance rail-washer-right-1",
+      "passed": true,
+      "closed_lid_distance_mm": 0.17966050000001133,
+      "vertical_lift_sweep_lower_bound_mm": 0.17966050000001133,
+      "projection_domain_xy_mm": [
+        168.69989999999999,
+        -116.32827741210937,
+        169.7001,
+        -106.32827741210937
+      ]
+    },
+    {
+      "check": "actual rail washer OD10 ID5 t1 rail-washer-right-2",
+      "passed": true
+    },
+    {
+      "check": "rail washer positive lid and lift-sweep clearance rail-washer-right-2",
+      "passed": true,
+      "closed_lid_distance_mm": 0.17966050000001133,
+      "vertical_lift_sweep_lower_bound_mm": 0.17966050000001133,
+      "projection_domain_xy_mm": [
+        168.69989999999999,
+        -25.18774396484375,
+        169.7001,
+        -15.18774396484375
+      ]
+    },
+    {
+      "check": "actual rail washer OD10 ID5 t1 rail-washer-right-3",
+      "passed": true
+    },
+    {
+      "check": "rail washer positive lid and lift-sweep clearance rail-washer-right-3",
+      "passed": true,
+      "closed_lid_distance_mm": 0.17966050000001133,
+      "vertical_lift_sweep_lower_bound_mm": 0.17966050000001133,
+      "projection_domain_xy_mm": [
+        168.69989999999999,
+        15.1842649609375,
+        169.7001,
+        25.1842649609375
+      ]
+    },
+    {
+      "check": "actual rail washer OD10 ID5 t1 rail-washer-right-4",
+      "passed": true
+    },
+    {
+      "check": "rail washer positive lid and lift-sweep clearance rail-washer-right-4",
+      "passed": true,
+      "closed_lid_distance_mm": 0.17966050000001133,
+      "vertical_lift_sweep_lower_bound_mm": 0.17966050000001133,
+      "projection_domain_xy_mm": [
+        168.69989999999999,
+        106.32479840820312,
+        169.7001,
+        116.32479840820312
+      ]
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-front-1",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-front-1",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-front-2",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-front-2",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-front-3",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-front-3",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-front-4",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-front-4",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-front-5",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-front-5",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-front-6",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-front-6",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-front-7",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-front-7",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-front-8",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-front-8",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-front-9",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-front-9",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-back-1",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-back-1",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-back-2",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-back-2",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-back-3",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-back-3",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-back-4",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-back-4",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-back-5",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-back-5",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-back-6",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-back-6",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-back-7",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-back-7",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-back-8",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-back-8",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained floor-bracket-back-9",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-back-9",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained roof-bracket-lid-1",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-lid-1",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained roof-bracket-lid-2",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-lid-2",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained roof-bracket-lid-3",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-lid-3",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained roof-bracket-lid-4",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-lid-4",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained roof-bracket-lid-5",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-lid-5",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained roof-bracket-lid-6",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-lid-6",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained roof-bracket-lid-7",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-lid-7",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained roof-bracket-lid-8",
+      "passed": true
+    },
+    {
+      "check": "L-bracket OD15 washer retained wall-bracket-lid-8",
+      "passed": true
+    }
+  ],
+  "check_count": 225,
+  "all_passed": true,
+  "washer_bearing_observations": [
+    {
+      "joint": "wall-bracket-front-1",
+      "wall": "body-left",
+      "axis_xyz_mm": [
+        -168.7,
+        -35.94869499999905,
+        49.5
+      ],
+      "supported_area_mm2": 121.15139437242767,
+      "slot_only_supported_area_mm2": 125.45629232165305,
+      "supported_fraction_relative_to_slot_only": 0.965686073854405,
+      "washer_vent_edge_overlap_mm": 0.9486949999990486,
+      "screw_head_to_vent_edge_gap_mm": 0.5513050000009514
+    },
+    {
+      "joint": "wall-bracket-front-2",
+      "wall": "body-left",
+      "axis_xyz_mm": [
+        -168.7,
+        -114.40792499996275,
+        49.5
+      ],
+      "supported_area_mm2": 125.45629232164757,
+      "slot_only_supported_area_mm2": 125.45629232165305,
+      "supported_fraction_relative_to_slot_only": 0.9999999999999563
+    },
+    {
+      "joint": "wall-bracket-front-8",
+      "wall": "body-right",
+      "axis_xyz_mm": [
+        168.7,
+        -35.9486949999961,
+        49.5
+      ],
+      "supported_area_mm2": 121.15139437244564,
+      "slot_only_supported_area_mm2": 125.45629232165305,
+      "supported_fraction_relative_to_slot_only": 0.9656860738545482,
+      "washer_vent_edge_overlap_mm": 0.9486949999960999,
+      "screw_head_to_vent_edge_gap_mm": 0.5513050000039001
+    },
+    {
+      "joint": "wall-bracket-front-9",
+      "wall": "body-right",
+      "axis_xyz_mm": [
+        168.7,
+        -114.40792499997508,
+        49.5
+      ],
+      "supported_area_mm2": 125.45629232164758,
+      "slot_only_supported_area_mm2": 125.45629232165305,
+      "supported_fraction_relative_to_slot_only": 0.9999999999999564
+    },
+    {
+      "joint": "wall-bracket-back-1",
+      "wall": "body-left",
+      "axis_xyz_mm": [
+        -168.7,
+        114.40792499999674,
+        13.5
+      ],
+      "supported_area_mm2": 125.45629232164757,
+      "slot_only_supported_area_mm2": 125.45629232165305,
+      "supported_fraction_relative_to_slot_only": 0.9999999999999563
+    },
+    {
+      "joint": "wall-bracket-back-2",
+      "wall": "body-left",
+      "axis_xyz_mm": [
+        -168.7,
+        35.94869500000199,
+        13.5
+      ],
+      "supported_area_mm2": 125.45629232164757,
+      "slot_only_supported_area_mm2": 125.45629232165305,
+      "supported_fraction_relative_to_slot_only": 0.9999999999999563
+    },
+    {
+      "joint": "wall-bracket-back-8",
+      "wall": "body-right",
+      "axis_xyz_mm": [
+        168.7,
+        114.40792499999887,
+        13.5
+      ],
+      "supported_area_mm2": 125.45629232164758,
+      "slot_only_supported_area_mm2": 125.45629232165305,
+      "supported_fraction_relative_to_slot_only": 0.9999999999999564
+    },
+    {
+      "joint": "wall-bracket-back-9",
+      "wall": "body-right",
+      "axis_xyz_mm": [
+        168.7,
+        35.94869500000145,
+        13.5
+      ],
+      "supported_area_mm2": 125.45629232164758,
+      "slot_only_supported_area_mm2": 125.45629232165305,
+      "supported_fraction_relative_to_slot_only": 0.9999999999999564
+    }
+  ],
+  "bearing_interpretation": "Two shallow inner side washers span a small vent-edge void while their screw heads clear the vent. Partial bearing is not a shaft/material collision. No strength/load approval is inferred."
+}

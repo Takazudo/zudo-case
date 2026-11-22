@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-23",
+  "source": "Initial request and R6 review feedback; follow-up corrections supersede the R6 outside-floor-nut arrangement.",
+  "files": [
+    {
+      "file": "01-double-rail.png",
+      "original_filename": "ss-2026-11-23-005511.png",
+      "sha256": "7f61d02aff0c5c53f8fbdd8095ccedd61ac94591e01642f21537eee32040b824",
+      "bytes": 1751534,
+      "user_request": "Replace the central pair with one nuts double rail; retain aluminium side-frame geometry."
+    },
+    {
+      "file": "02-remove-corner-fixers.png",
+      "original_filename": "ss-2026-11-23-004852.png",
+      "sha256": "a70c6669bc2b281980203effc01dd66ac854603ee57675218c5e97afba87a25b",
+      "bytes": 191348,
+      "user_request": "Remove the unsupported side fixers over chamfered floor gaps."
+    },
+    {
+      "file": "03-straight-edge-fixers.png",
+      "original_filename": "ss-2026-11-23-004811.png",
+      "sha256": "abb055cb2b0cac4475452c19da7ad0f536f23218670a1db6f4bce735e45a63f6",
+      "bytes": 194237,
+      "user_request": "Place supported straight-edge fixers with clearance for 7U-style L brackets."
+    },
+    {
+      "file": "04-side-screw-holes.png",
+      "original_filename": "ss-2026-11-23-004919.png",
+      "sha256": "681f5f3fef1178bce8f92e86c7b335f8327d8a1f7d40b1938d4b649826a43a40",
+      "bytes": 192971,
+      "user_request": "Add the missing side screw slots for the L brackets."
+    },
+    {
+      "file": "05-bracket-side-clearance.png",
+      "original_filename": "ss-2026-11-23-031104.png",
+      "sha256": "28c3ea51cd7d907ec2f8933ad89c550d4b36dc0712c5a0127b2fb12888716cd5",
+      "bytes": 360007,
+      "user_request": "Match the side bracket-to-ledge clearance to the existing front/bottom bracket clearance."
+    },
+    {
+      "file": "06-inside-bracket-nuts.png",
+      "original_filename": "ss-2026-11-23-031025.png",
+      "sha256": "2dcda48a93a0f5e7c8249e92730acff0e8f113e8f9ac9857ae60be7f0d1d31ea",
+      "bytes": 1058758,
+      "user_request": "Put all L-bracket nuts inside; rail-frame-to-enclosure side fasteners alone retain outside nuts."
+    },
+    {
+      "file": "07-complete-side-fasteners.png",
+      "original_filename": "ss-2026-11-23-030843.png",
+      "sha256": "ad498474bd9dd05974e8aeefbcc3cb023314fa0c2bd2f704abf4961e4858554b",
+      "bytes": 344926,
+      "user_request": "Add the missing screws, washers and nuts at the side-wall L-bracket connections."
+    }
+  ]
+}

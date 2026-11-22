@@ -1,0 +1,206 @@
+{
+  "renderer": "canvas",
+  "validation": "Actual inline app under a minimal Node DOM shim; not a browser-layout or WebGL test.",
+  "source": "/workspace/tenbox-v2-r7-preview.html",
+  "source_model_sha256": "0b85066eec2096c88e607d48c7cb806a2ee01d7cfe731914888dacf2fe192d12",
+  "current_parts": 284,
+  "views": [
+    {
+      "view": "assembly",
+      "file": "engineering/tenbox-v2/r7/review/assembly.png",
+      "visible_parts": 203,
+      "brackets": 18,
+      "nuts": 44,
+      "wall_bolts": 18,
+      "frames": 2,
+      "camera": {
+        "target": [
+          0,
+          0,
+          36
+        ],
+        "yaw": 0.69,
+        "pitch": 0.72,
+        "span": 467.23454832500573,
+        "up": "z"
+      }
+    },
+    {
+      "view": "side-fixing",
+      "file": "engineering/tenbox-v2/r7/review/side-fixing.png",
+      "visible_parts": 18,
+      "brackets": 2,
+      "nuts": 4,
+      "wall_bolts": 2,
+      "frames": 3,
+      "camera": {
+        "target": [
+          154.05,
+          -75,
+          50.25
+        ],
+        "yaw": -0.72,
+        "pitch": 0.55,
+        "span": 104.08086688182863,
+        "up": "z"
+      }
+    },
+    {
+      "view": "inside-nuts",
+      "file": "engineering/tenbox-v2/r7/review/inside-nuts.png",
+      "visible_parts": 158,
+      "brackets": 18,
+      "nuts": 36,
+      "wall_bolts": 18,
+      "frames": 4,
+      "camera": {
+        "target": [
+          0,
+          0,
+          34.25113
+        ],
+        "yaw": 0.69,
+        "pitch": 1.12,
+        "span": 566.7467060560333,
+        "up": "z"
+      }
+    },
+    {
+      "view": "side",
+      "file": "engineering/tenbox-v2/r7/review/side.png",
+      "visible_parts": 45,
+      "brackets": 4,
+      "nuts": 12,
+      "wall_bolts": 4,
+      "frames": 5,
+      "camera": {
+        "target": [
+          160.1,
+          0,
+          34.660264749999996
+        ],
+        "yaw": 1.5707963267948966,
+        "pitch": 0.08,
+        "span": 287.4666666666667,
+        "up": "z"
+      }
+    },
+    {
+      "view": "underside",
+      "file": "engineering/tenbox-v2/r7/review/underside.png",
+      "visible_parts": 160,
+      "brackets": 18,
+      "nuts": 36,
+      "wall_bolts": 18,
+      "frames": 6,
+      "camera": {
+        "target": [
+          0,
+          0,
+          34.25113
+        ],
+        "yaw": 0.69,
+        "pitch": -0.8,
+        "span": 485.45673739035846,
+        "up": "z"
+      }
+    },
+    {
+      "view": "lid-fit",
+      "file": "engineering/tenbox-v2/r7/review/lid-fit.png",
+      "visible_parts": 280,
+      "brackets": 26,
+      "nuts": 60,
+      "wall_bolts": 26,
+      "frames": 7,
+      "camera": {
+        "target": [
+          0,
+          0,
+          55.95
+        ],
+        "yaw": 0.69,
+        "pitch": 0.55,
+        "span": 439.8569737891228,
+        "up": "z"
+      }
+    },
+    {
+      "view": "rail-junction",
+      "file": "engineering/tenbox-v2/r7/review/rail-junction.png",
+      "visible_parts": 43,
+      "brackets": 0,
+      "nuts": 8,
+      "wall_bolts": 0,
+      "frames": 8,
+      "camera": {
+        "target": [
+          150,
+          0,
+          61
+        ],
+        "yaw": 0.72,
+        "pitch": 0.64,
+        "span": 83,
+        "up": "z"
+      }
+    }
+  ],
+  "errors": [],
+  "hardware_visibility": {
+    "right_wall_attachment_parts": 36,
+    "right_wall_missing": [],
+    "bracket_nuts": 52,
+    "all_bracket_nuts_inside": true,
+    "inside_body_nuts_missing": [],
+    "outside_rail_nuts": 8
+  },
+  "controls": {
+    "initial": 203,
+    "noRails": 160,
+    "noBrackets": 6,
+    "noEndwalls": 4,
+    "withLid": 9,
+    "lidLift": 50
+  },
+  "preview_artifacts": {
+    "inline": {
+      "path": "/workspace/tenbox-v2-r7-preview.html",
+      "bytes": 829155,
+      "sha256": "0a60054e461c98554d1deb5b9d5aaaba5b321d509d1cd70b3503ad0e6713652e"
+    },
+    "standalone": {
+      "path": "public/previews/tenbox-v2-r7.html",
+      "bytes": 1028920,
+      "sha256": "d70fc7cd546b9e332237f990d1967c3b28f7df7bb95ef29113cd0063d1221904"
+    }
+  },
+  "mesh_identity": {
+    "partsCompared": 341,
+    "triangleIndicesPreserved": true,
+    "maximumWorldVertexErrorMm": 0.0005000000000197069,
+    "sourceGeometryRescaled": false
+  },
+  "visual_review": {
+    "status": "passed",
+    "files_inspected": [
+      "assembly.png",
+      "side-fixing.png",
+      "inside-nuts.png",
+      "side.png",
+      "underside.png",
+      "lid-fit.png",
+      "rail-junction.png"
+    ],
+    "observations": [
+      "Side fixing close-up shows air gaps beside both brackets, with floor and wall nuts inside.",
+      "Inside-nuts overview includes all 36 body bracket nuts.",
+      "Side view includes four lower L-bracket screw heads and four upper rail-frame nuts.",
+      "Underside shows exterior screw heads at the floor joints; floor nuts are inside.",
+      "Closed lid and assembled body display without visible overlay or clipping defects.",
+      "Rail close-up retains the combined centre rail and the outside rail-frame nut exception.",
+      "The slight front inner side fixing washer overlap with its adjacent vent remains visible; the CAD bearing check records 96.57 percent support."
+    ],
+    "limits": "Inspection covers the actual software 3D renderer and app control logic. Native browser layout and WebGL were not tested in this environment; physical fit remains pending."
+  }
+}
