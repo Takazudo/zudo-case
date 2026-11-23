@@ -173,12 +173,15 @@ test("preview host landing page lists only each project's current preview from t
   const { loadSelection, renderPreviewIndex } = await import("../scripts/prepare-worker-assets.mjs");
   const selection = await loadSelection();
   const html = renderPreviewIndex(selection);
-  for (const current of ["/previews/r11-build-feedback-04.html", "/previews/r8-simple-lid.html", "/previews/printed-5mm-p5-tab-joints.html", "/previews/tenbox-v2-r5.html", "/previews/two-way/tw-01.html"])
+  for (const current of ["/previews/r11-build-feedback-04.html", "/previews/r8-simple-lid.html", "/previews/printed-5mm-p5-tab-joints.html", "/previews/tenbox-v2-r8.html", "/previews/two-way/tw-01.html"])
     assert.ok(html.includes(`href="${current}"`), current);
-  for (const old of ["r10-fullset-01", "r9-prototype-01", "r9-fitfix-01", "r9-lid-m5-01", "printed-5mm-p4", "printed-5mm-p3", "r6-body"])
+  for (const old of ["r10-fullset-01", "r9-prototype-01", "r9-fitfix-01", "r9-lid-m5-01", "printed-5mm-p4", "printed-5mm-p3", "r6-body", "tenbox-v2-r5", "tenbox-v2-r6", "tenbox-v2-r7"])
     assert.ok(!html.includes(old), old);
   assert.ok(html.includes("https://zudo-case.zudolab.dev/docs/archive/"));
   const metal7u40 = selection.selections.find((s) => s.project === "metal-case" && s.model === "7u40");
   assert.equal(metal7u40.revision, "R11-BUILD-FEEDBACK-04");
+  const tenbox = selection.selections.find((s) => s.project === "tenbox-v2");
+  assert.equal(tenbox.revision, "R8");
+  assert.deepEqual(tenbox.registry, {file: "project/tenbox-v2/current.json", key: "current_revision"});
   assert.equal(new Set(html.match(/href="\/previews\/[^"]+"/g)).size, html.match(/href="\/previews\/[^"]+"/g).length);
 });

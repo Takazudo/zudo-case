@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "family": "tenbox-v2",
+  "current_revision": "R8",
+  "status": "current",
+  "development_stage": "ongoing_prototype",
+  "selected_on": "2026-11-23",
+  "selection_basis": "explicit_user_instruction",
+  "issue": "https://github.com/Takazudo/zudo-case/issues/147",
+  "production_approved": false,
+  "source": "engineering/tenbox-v2/r8/",
+  "docs": "src/content/docs/tenbox-v2/",
+  "artifact_registry": "project/tenbox-v2/r8-review.json",
+  "preserved_baseline_registry": "project/tenbox-v2/manifest.json",
+  "preview": "/previews/tenbox-v2-r8.html",
+  "downloads": {
+    "print": "/downloads/candidate/tenbox-v2-r8-print.zip",
+    "review": "/downloads/candidate/tenbox-v2-r8-review.zip",
+    "source": "/downloads/candidate/tenbox-v2-r8-source.zip"
+  },
+  "notes": [
+    "R8 is the latest working revision. Ongoing prototyping describes the 10BOX-v2 project as a whole; R8 does not await a separate revision-selection confirmation.",
+    "r8-review.json and versioned source/ZIP READMEs are preserved generation records. Their review-candidate/pending labels describe the generation-time state and do not override this selection.",
+    "manifest.json keeps its original R5 current_revision and input/output hashes because subsequent builders consume it as a frozen baseline.",
+    "Current selection does not change saved geometry, print settings, native Studio or physical validation results. Artifact hashes and quantities remain in artifact_registry."
+  ]
+}
