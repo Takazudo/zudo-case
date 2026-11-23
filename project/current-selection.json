@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "snapshot": "2026-11-23",
+  "snapshot": "2026-11-24",
   "note": "文書のライフサイクルと現行版の選択。系列・機種・用途ごとに現行版を指定する。数値・形状・数量は各系列の台帳（registry）が持ち、この表は複製しない。現行の指定は製造承認ではない（production_approved はすべて false）。最大の版番号や新しい日付で自動選択しない。",
   "lifecycle": {
     "current_owners": ["overview", "metal-case", "printed-5mm", "tenbox-v2", "two-way", "shared", "development"],
@@ -65,15 +65,15 @@
       "project": "tenbox-v2",
       "model": "2x3u60hp",
       "purpose": "home-print",
-      "revision": "R8",
+      "revision": "R8-LID-LEDGE-01",
       "label": "10BOX-v2",
       "registry": { "file": "project/tenbox-v2/current.json", "key": "current_revision" },
       "current_doc": "tenbox-v2/index.mdx",
-      "preview": { "path": "/previews/tenbox-v2-r8.html", "label": "10BOX-v2 R8（最新版）" },
+      "preview": { "path": "/previews/tenbox-v2-r8-lid-ledge-01.html", "label": "10BOX-v2 R8-LID-LEDGE-01（蓋の中央棚を連結）" },
       "archive_doc": "archive/tenbox-v2/index.mdx",
-      "superseded": ["R5", "R6", "R7"],
-      "active_dependencies": ["preserved R5 sources and fixed R4 inputs", "R7 model and print projects consumed by R8 (engineering/tenbox-v2/)"],
-      "legacy_ledger_note": "manifest.json is the preserved R5 input/hash contract; r8-review.json and versioned source/ZIP READMEs record their generation-time state. Their review/pending labels do not override the current R8 selection.",
+      "superseded": ["R5", "R6", "R7", "R8"],
+      "active_dependencies": ["preserved R5 sources and fixed R4 inputs", "R7 dependencies retained by R8", "R8 model, print and source archives consumed by R8-LID-LEDGE-01"],
+      "legacy_ledger_note": "manifest.json is the preserved R5 input/hash contract; R5-R8 receipts and source/ZIP READMEs retain their generation-time state. The current selection is R8-LID-LEDGE-01 and its connected lid ledges.",
       "production_approved": false
     },
     {

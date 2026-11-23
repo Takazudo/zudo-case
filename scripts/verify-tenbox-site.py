@@ -14,11 +14,16 @@ def check(label, value):
     checks.append(label)
 
 def scene_checks(page, label):
-    page.wait_for_selector('#tenbox-v2-r8[data-ready="true"]')
+    page.wait_for_selector('#tenbox-v2-r8-lid-ledge-01[data-ready="true"]')
     check(label+' renderer', page.evaluate('tenboxStudy.renderer') == label.split('/')[0])
-    check(label+' current revision', page.evaluate('tenboxStudy.state.revision') == CURRENT['current_revision'] == 'R8')
+    check(label+' current revision', page.evaluate('tenboxStudy.state.revision') == CURRENT['current_revision'] == 'R8-LID-LEDGE-01')
+    lid_meshes = page.evaluate('''() => ['lid-front','lid-back'].map(id => {
+        const part = tenboxStudy.DATA.parts.find(p => p.id === id);
+        return part && tenboxStudy.DATA.meshes[part.mesh].i.length / 3;
+    })''')
+    check(label+' connected lid meshes', lid_meshes == [360, 360])
     images = set()
-    scenes = ['assembly', 'lower-slot', 'rail-junction', 'side-fixings', 'side-fixing', 'inside-nuts', 'side', 'underside', 'lid-fit']
+    scenes = ['assembly', 'lower-slot', 'rail-junction', 'side-fixings', 'side-fixing', 'inside-nuts', 'side', 'underside', 'lid-ledge', 'lid-fit']
     for scene in scenes:
         page.locator(f'[data-view="{scene}"]').click()
         page.wait_for_function('(scene) => tenboxStudy.state.view === scene && tenboxStudy.visibleParts().length > 0', arg=scene)
@@ -27,7 +32,7 @@ def scene_checks(page, label):
         shot = canvas.screenshot()
         images.add(hashlib.sha256(shot).hexdigest())
         check(label+'/'+scene+' canvas', len(shot) > 5000)
-        if scene in ['assembly', 'lower-slot', 'inside-nuts', 'underside', 'lid-fit']:
+        if scene in ['assembly', 'lower-slot', 'inside-nuts', 'underside', 'lid-ledge', 'lid-fit']:
             canvas.screenshot(path=str(OUT/f'{label.replace("/","-")}-{scene}.png'))
     check(label+' distinct rendered views', len(images) == len(scenes))
     detail = page.locator('[data-id="stageDetail"]').inner_text()
@@ -39,7 +44,7 @@ def scene_checks(page, label):
     check(label+' R7 comparison', page.evaluate('tenboxStudy.state.revision') == 'R7')
     check(label+' R7 upper-slot label', 'Upper slots' in page.locator('[data-id="stageDetail"]').inner_text())
     check(label+' comparison camera retained', page.evaluate('tenboxStudy.camera') == camera)
-    page.locator('[data-revision="R8"]').click()
+    page.locator(f'[data-revision="{CURRENT["current_revision"]}"]').click()
     check(label+' current lower-slot label', 'Lower slots' in page.locator('[data-id="stageDetail"]').inner_text())
     check(label+' current camera retained', page.evaluate('tenboxStudy.camera') == camera)
 
@@ -64,12 +69,12 @@ with sync_playwright() as pw:
         iframe = page.locator('iframe').first
         check(str(width)+' default local origin', iframe.get_attribute('src') in [CURRENT['preview'], BASE+CURRENT['preview']])
         frame = iframe.content_frame
-        frame.locator('#tenbox-v2-r8[data-ready="true"]').wait_for()
+        frame.locator('#tenbox-v2-r8-lid-ledge-01[data-ready="true"]').wait_for()
         frame.locator('[data-view="underside"]').click()
         frame.locator('[data-view="lower-slot"]').click()
         check(str(width)+' embedded lower slot', 'Lower slots' in frame.locator('[data-id="stageDetail"]').inner_text())
         frame.locator('[data-view="lid-fit"]').click()
-        check(str(width)+' embedded current revision', frame.locator('[data-id="stageTitle"]').inner_text().startswith('R8 · '))
+        check(str(width)+' embedded current revision', frame.locator('[data-id="stageTitle"]').inner_text().startswith(CURRENT['current_revision']+' · '))
         detail = frame.locator('[data-id="stageDetail"]').inner_text()
         check(str(width)+' embedded lid capacity and shortfall', '19.869' in detail and '7.131' in detail)
         page.screenshot(path=str(OUT/f'integrated-{width}.png'), full_page=True)
@@ -91,6 +96,13 @@ with sync_playwright() as pw:
                 projects = [name for name in archive.namelist() if name.startswith('projects/') and name.endswith('.3mf')]
                 check('current print bundle projects', len(projects) == 15)
                 check('current print bundle common floor', 'meshes/body-bottom-common-print.stl' in archive.namelist())
+    check('direct lid download inventory', set(CURRENT['lid_downloads']) == {'stl', 'project'})
+    for path in CURRENT['lid_downloads'].values():
+        file = ROOT/'public'/path.lstrip('/')
+        response = page.request.get(BUILT+path)
+        body = response.body()
+        check('full GET '+path, response.status == 200 and body == file.read_bytes())
+        check('SHA256 '+path, hashlib.sha256(body).hexdigest() == hashlib.sha256(file.read_bytes()).hexdigest())
     check('no browser errors', not errors)
     result = {'passed': True, 'revision': CURRENT['current_revision'], 'browser': browser.version, 'checks': checks, 'site_url': BASE, 'built_url': BUILT, 'physical_or_studio_tests': False}
     (OUT/'checks.json').write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n')

@@ -1,18 +1,29 @@
 ---
 title: "10BOX-v2・印刷ファイルと数量"
-description: "最新版R8の15個のH2Dプロジェクト、23部品、印刷姿勢STL、編集用ソースと組立座標STEP/STL。"
+description: "最新版R8-LID-LEDGE-01の15個のH2Dプロジェクト、23部品、印刷姿勢STL、編集用ソースと組立座標STEP/STL。"
 sidebar_position: 20
 ---
 
-印刷には**現行R8の印刷セット**を使用します。10BOX-v2は全体として試作中で、その現在の作業版がR8です。
+印刷には**現行R8-LID-LEDGE-01の印刷セット**を使用します。10BOX-v2は全体として試作中で、現在の作業版は蓋の前後棚を連結したR8-LID-LEDGE-01です。
 
 <PreviewSource />
 
 | ファイル | 用途 |
 |---|---|
-| <PreviewLink path="/downloads/candidate/tenbox-v2-r8-print.zip">R8・印刷セット</PreviewLink> | H2D 0.6mm/PLAの設定済み3MF 15個、共通底板・左右側板の印刷姿勢STL、数量表と保存姿勢 |
-| <PreviewLink path="/downloads/candidate/tenbox-v2-r8-source.zip">R8・編集用ソース</PreviewLink> | CAD・H2D・プレビュー生成コード、固定環境と再生成に必要な入力 |
-| <PreviewLink path="/downloads/candidate/tenbox-v2-r8-review.zip">R8・形状確認セット</PreviewLink> | 組立座標STEP/STL、寸法・金具表・CAD検査、オフライン単体プレビュー |
+| <PreviewLink path="/downloads/candidate/tenbox-v2-r8-lid-ledge-01-print.zip">現行の印刷セット</PreviewLink> | H2D 0.6mm/PLAの設定済み3MF 15個。蓋の前後縁は中央棚を連結した形状。印刷姿勢STL、数量表と保存姿勢 |
+| <PreviewLink path="/downloads/candidate/tenbox-v2-r8-lid-ledge-01-source.zip">現行の編集用ソース</PreviewLink> | CAD・H2D・プレビュー生成コード、固定環境と再生成に必要な入力 |
+| <PreviewLink path="/downloads/candidate/tenbox-v2-r8-lid-ledge-01-review.zip">現行の形状確認セット</PreviewLink> | 組立座標STEP/STL、寸法・金具表・CAD検査、オフライン単体プレビュー |
+
+## 蓋の前後縁だけを印刷する
+
+前と後ろは同一形状で、組立時に180°回して使います。**共通ファイルを2個印刷**すれば前後がそろいます。
+
+| ファイル | 使い方 |
+|---|---|
+| <PreviewLink path="/downloads/candidate/10box-v2-lid-frontback-connected-r01.stl">蓋の前後縁・共通STL</PreviewLink> | mm単位、Z=0の平置き・対角45°の保存姿勢。2個印刷 |
+| <PreviewLink path="/downloads/candidate/10box-v2-lid-frontback-connected-r01.3mf">蓋の前後縁・H2D共通プロジェクト</PreviewLink> | H2D 0.6mm/PLA、1プレートに1個。同じプレートを2回印刷 |
+
+中央2か所の不要な隙間をつないだ棚を持ちます。端のL字金具用開口、取付穴、下側の位置決め舌、外形寸法は維持しています。一式ZIPの`lid-front.3mf`と`lid-back.3mf`を各1回印刷する方法でも同じ前後2部品になります。共通ファイルを追加で2個印刷する必要はありません。
 
 ## ZIPを展開して開くファイル
 
@@ -23,7 +34,7 @@ sidebar_position: 20
 | `projects/body-bottom-common.3mf` | 共通底板1枚。同じプロジェクトを2回印刷 |
 | `projects/lid-top-single.3mf` | 天板1枚 |
 | `projects/body-left.3mf`・`projects/body-right.3mf`・`projects/body-front.3mf`・`projects/body-back.3mf` | 本体の壁4枚、各1回 |
-| `projects/lid-left.3mf`・`projects/lid-right.3mf`・`projects/lid-front.3mf`・`projects/lid-back.3mf` | 蓋の縁4枚、各1回 |
+| `projects/lid-left.3mf`・`projects/lid-right.3mf`・`projects/lid-front.3mf`・`projects/lid-back.3mf` | 蓋の縁4枚、各1回。前後は中央棚を連結した現行形状 |
 | `projects/stand-left.3mf`・`projects/stand-right.3mf`・`projects/stand-connector-front.3mf`・`projects/stand-connector-back.3mf` | スタンド4部品、各1回 |
 | `projects/spacers-8.3mf` | スペーサー8個を1回で印刷 |
 
@@ -43,6 +54,6 @@ sidebar_position: 20
 
 形状確認セットの通常STEP/STLは**組立座標**です。前底板のZ36..41mmは正常です。印刷は保存姿勢を持つ3MFを優先し、STLを使う場合は印刷セット内の`meshes/body-bottom-common-print.stl`・`meshes/body-left-print.stl`・`meshes/body-right-print.stl`が印刷姿勢です。
 
-保存済みZIP内のREADMEや生成記録には、現行指定を切り替える前の記述が残っています。配布物の内容と検証記録を保持しており、**現在使う版はR8**です。現行指定は`project/tenbox-v2/current.json`、配布物のhashと検証記録は`project/tenbox-v2/r8-review.json`を参照します。編集用ソース内の旧版入力も、R8の再生成に必要な保存データです。
+**現在使う版はR8-LID-LEDGE-01**です。現行指定は`project/tenbox-v2/current.json`、配布物のhashと検証記録は`project/tenbox-v2/r8-lid-ledge-01.json`を参照します。蓋の前後縁の2プロジェクトだけ形状を置き換え、その他13プロジェクトはR8保存物とバイト単位で一致します。旧R5〜R8のソース・ZIP・検証記録は再生成の根拠として保全しています。
 
 [印刷設定](./printing.mdx)と[組立](./assembly.mdx)を確認してください。3MFは未スライスで、保存された記録では実印刷・現物評価は未実施です。

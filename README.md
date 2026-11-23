@@ -8,7 +8,7 @@
 |---|---|---|
 | 金属ケース | 3U60・7U40・7U60。7U40はR11-BUILD-FEEDBACK-04（CADレビュー候補、現物未検証・価格未見積・未発注）、3U60・7U60はR6本体＋R8載せ蓋の基準 | [metal-case](src/content/docs/metal-case/index.mdx) |
 | 7U40家庭印刷 | 5mm板の現行P5-PRINTED-5MM-TAB-JOINTS-J3。旧P4/P3はアーカイブ | [printed-5mm](src/content/docs/printed-5mm/index.mdx) |
-| 10BOX-v2 | 二段3U60HPの独立系列。**最新版はR8**（アルミフレームの下側長穴を使用）。10BOX-v2全体として試作・改良を継続中 | [tenbox-v2](src/content/docs/tenbox-v2/index.mdx)・[印刷ファイル](src/content/docs/tenbox-v2/print-files.mdx) |
+| 10BOX-v2 | 二段3U60HPの独立系列。**最新版はR8-LID-LEDGE-01**（下側長穴の配置を維持し、蓋の前後棚を連結）。10BOX-v2全体として試作・改良を継続中 | [tenbox-v2](src/content/docs/tenbox-v2/index.mdx)・[印刷ファイル](src/content/docs/tenbox-v2/print-files.mdx) |
 | 2WAY | TW-01が作業版（A/B/Cはどれも現行の比較対象）、F5はその入力の不変の原資料。製造用CADではない | [two-way](src/content/docs/two-way/index.mdx) |
 | 共通部品・元データ | 家庭印刷8mmスペーサーHOME-PRINT-SPACER-01（外径・穴径は仮寸法）、元レール・PCBと出典 | [shared](src/content/docs/shared/index.mdx) |
 | アーカイブ | 置き換わった旧版の記録（金属7U40のR10以前、家庭印刷P4/P3など）。現行の作業には使わない | [archive](src/content/docs/archive/index.mdx) |
@@ -34,6 +34,6 @@ pnpm dev
 
 ページ追加、役割変更、カテゴリ変更の前に、共通編集方針[src/content/docs/development/maintenance.mdx](src/content/docs/development/maintenance.mdx)を読んでください。読者の作業、既存ページの重複、カテゴリ所有と境界、意味の変化を確認します。旧URLと生成ページは[文書所有表](src/content/docs/development/doc-structure.mdx)で管理します。
 
-エージェントは[AGENTS.md](AGENTS.md)、CAD変更は対象系列の`engineering/*/AGENTS.md`と版付きREADMEに従います。金属の見積・製作台帳は[金属台帳保守](src/content/docs/metal-case/maintaining-data.mdx)、10BOX-v2の現行指定は[project/tenbox-v2/current.json](project/tenbox-v2/current.json)、R8の出力・数量・検証記録は`project/tenbox-v2/r8-review.json`を参照します。既存ソース・受領ZIP・保存マニフェストは不変の根拠として保持します。ライセンスは元資料の表示に従い、文書整理で再ライセンスしません。
+エージェントは[AGENTS.md](AGENTS.md)、CAD変更は対象系列の`engineering/*/AGENTS.md`と版付きREADMEに従います。金属の見積・製作台帳は[金属台帳保守](src/content/docs/metal-case/maintaining-data.mdx)、10BOX-v2の現行指定は[project/tenbox-v2/current.json](project/tenbox-v2/current.json)、現行版の出力・数量・検証記録は`project/tenbox-v2/r8-lid-ledge-01.json`を参照します。既存ソース・受領ZIP・保存マニフェストは不変の根拠として保持します。ライセンスは元資料の表示に従い、文書整理で再ライセンスしません。
 
 検査コマンドと確認範囲は[共通編集方針](src/content/docs/development/maintenance.mdx#リンク・資産を確認する)、各系列の再生成・検証は[engineering](engineering/README.md)にあります。配信設定は２ホストですが、リポジトリの更新だけで本番サイト更新済みとは扱いません。

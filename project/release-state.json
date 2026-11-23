@@ -2633,10 +2633,10 @@
   },
   "current_tenbox_v2_candidate": {
     "family": "tenbox-v2",
-    "revision": "R8",
+    "revision": "R8-LID-LEDGE-01",
     "production_approved": false,
     "status": "CURRENT_WORKING_REVISION_NOT_PHYSICALLY_VERIFIED",
-    "source": "engineering/tenbox-v2/r8/",
+    "source": "engineering/tenbox-v2/r8-lid-ledge-01/",
     "registry": "project/tenbox-v2/current.json"
   }
 }

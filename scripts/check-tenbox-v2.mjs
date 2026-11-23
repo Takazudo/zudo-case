@@ -28,13 +28,13 @@ const currentPath = 'project/tenbox-v2/current.json';
 const current = JSON.parse(fs.readFileSync(path.join(root, currentPath)));
 assert.equal(current.schema_version, 1);
 assert.equal(current.family, 'tenbox-v2');
-assert.equal(current.current_revision, 'R8');
+assert.equal(current.current_revision, 'R8-LID-LEDGE-01');
 assert.equal(current.status, 'current');
 assert.equal(current.development_stage, 'ongoing_prototype');
 assert.equal(current.selection_basis, 'explicit_user_instruction');
 assert.equal(current.production_approved, false);
 assert.equal(current.preserved_baseline_registry, 'project/tenbox-v2/manifest.json');
-assert.equal(current.source, 'engineering/tenbox-v2/r8/');
+assert.equal(current.source, 'engineering/tenbox-v2/r8-lid-ledge-01/');
 assert.equal(current.docs, 'src/content/docs/tenbox-v2/');
 for (const directory of [current.source, current.docs]) {
   assert.ok(fs.statSync(path.join(root, directory)).isDirectory(), directory);
@@ -58,22 +58,26 @@ assert.equal(release.registry, currentPath);
 assert.equal(release.source, current.source);
 assert.equal(release.production_approved, false);
 
-// Generation-time review labels stay in the R8 receipt; current.json owns selection.
-assert.equal(current.artifact_registry, 'project/tenbox-v2/r8-review.json');
+// Historical R5-R8 receipts are immutable; the selected correction owns current artifacts.
+assert.equal(current.artifact_registry, 'project/tenbox-v2/r8-lid-ledge-01.json');
 const artifacts = JSON.parse(fs.readFileSync(path.join(root, current.artifact_registry)));
 assert.equal(artifacts.family, current.family);
 assert.equal(artifacts.revision, current.current_revision);
 assert.equal(artifacts.production_approved, false);
 assert.equal(artifacts.preview, current.preview);
-assert.equal(current.preview, '/previews/tenbox-v2-r8.html');
+assert.equal(current.preview, '/previews/tenbox-v2-r8-lid-ledge-01.html');
 assert.deepEqual(Object.keys(current.downloads).sort(), ['print', 'review', 'source']);
 for (const [kind, download] of Object.entries(current.downloads)) {
-  assert.equal(download, `/downloads/candidate/tenbox-v2-r8-${kind}.zip`);
+  assert.equal(download, `/downloads/candidate/tenbox-v2-r8-lid-ledge-01-${kind}.zip`);
 }
-for (const url of [current.preview, ...Object.values(current.downloads)]) {
+assert.deepEqual(current.lid_downloads, {
+  stl: '/downloads/candidate/10box-v2-lid-frontback-connected-r01.stl',
+  project: '/downloads/candidate/10box-v2-lid-frontback-connected-r01.3mf',
+});
+for (const url of [current.preview, ...Object.values(current.downloads), ...Object.values(current.lid_downloads)]) {
   const file = `public${url}`;
   const record = artifacts.files.find((entry) => entry.path === file);
-  assert.ok(record, `R8 artifact receipt: ${file}`);
+  assert.ok(record, `Current artifact receipt: ${file}`);
   const bytes = fs.readFileSync(path.join(root, file));
   assert.equal(bytes.length, record.bytes, file);
   assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), record.sha256, file);
@@ -81,4 +85,15 @@ for (const url of [current.preview, ...Object.values(current.downloads)]) {
 for (const verification of ['native_studio_load', 'native_studio_slice', 'physical_print_fit_load']) {
   assert.equal(artifacts.verification[verification], 'not_performed');
 }
-console.log(`10BOX-v2 current R8: selection, preview and 3 download receipts verified; preserved R5: ${manifest.source_files.length} source receipts, ${manifest.public_files.length} public receipts; 15 projects / 23 parts / 16 plate runs`);
+const h2d = artifacts.verification.h2d;
+assert.equal(h2d.project_count, 15);
+assert.equal(h2d.stored_object_count, 22);
+assert.equal(h2d.required_physical_part_count, 23);
+assert.equal(h2d.plate_runs_for_assembly, 16);
+assert.equal(h2d.changed_project_count, 2);
+assert.equal(h2d.byte_identical_project_count, 13);
+assert.equal(h2d.global_settings_bytes_unchanged, true);
+const approvedLid = fs.readFileSync(path.join(root, 'public', current.lid_downloads.stl));
+assert.equal(crypto.createHash('sha256').update(approvedLid).digest('hex'),
+  '3426afa3086cdee245bb4dfa63387a8576b7d8551d895a982aa2a4b81f03859a', 'User-approved common lid STL');
+console.log(`10BOX-v2 current ${current.current_revision}: selection, preview, 3 full-set downloads and 2 direct lid receipts verified; 2 lid projects changed / 13 unchanged; preserved R5: ${manifest.source_files.length} source receipts, ${manifest.public_files.length} public receipts; 15 projects / 23 parts / 16 plate runs`);
