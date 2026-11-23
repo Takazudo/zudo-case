@@ -201,8 +201,8 @@
   },
   {
     "path": "archive/tenbox-v2/index.mdx",
-    "title": "10BOX-v2のアーカイブ（R5）",
-    "description": "R8への現行指定切替前に使っていたR5の印刷・組立・検証案内。",
+    "title": "10BOX-v2のアーカイブ",
+    "description": "置き換わったR8のファイルと、R5の印刷・組立・検証案内。",
     "sidebar_position": 30
   },
   {
@@ -969,37 +969,37 @@
   {
     "path": "tenbox-v2/assembly.mdx",
     "title": "10BOX-v2・組立と向き",
-    "description": "現行R8の本体と蓋、下側長穴によるフレーム固定、内側の金具ナット、スペーサーと公称金物表。",
+    "description": "現行R8-LID-LEDGE-01の本体と蓋、下側長穴によるフレーム固定、内側の金具ナット、スペーサーと公称金物表。",
     "sidebar_position": 40
   },
   {
     "path": "tenbox-v2/design-and-validation.mdx",
     "title": "10BOX-v2・設計と検証",
-    "description": "最新版R8の寸法、下側長穴と金具の配置、蓋内の高さ、保存した生成物と検証範囲。",
+    "description": "最新版R8-LID-LEDGE-01の寸法、下側長穴と金具の配置、蓋内の高さ、保存した生成物と検証範囲。",
     "sidebar_position": 50
   },
   {
     "path": "tenbox-v2/index.mdx",
     "title": "10BOX-v2・2組の3U60HPケース",
-    "description": "最新版R8の印刷ファイル、組立、プレビューの入口。10BOX-v2全体として試作を進めている独立系列。",
+    "description": "最新版R8-LID-LEDGE-01の印刷ファイル、組立、プレビューの入口。10BOX-v2全体として試作を進めている独立系列。",
     "sidebar_position": 35
   },
   {
     "path": "tenbox-v2/preview.mdx",
     "title": "10BOX-v2・3Dプレビュー",
-    "description": "最新版R8の下側長穴によるフレーム固定、中央ダブルレール、内側ナットと蓋の高さを実形状で確認。",
+    "description": "最新版R8-LID-LEDGE-01の下側長穴によるフレーム固定、中央ダブルレール、内側ナットと蓋の高さを実形状で確認。",
     "sidebar_position": 10
   },
   {
     "path": "tenbox-v2/print-files.mdx",
     "title": "10BOX-v2・印刷ファイルと数量",
-    "description": "最新版R8の15個のH2Dプロジェクト、23部品、印刷姿勢STL、編集用ソースと組立座標STEP/STL。",
+    "description": "最新版R8-LID-LEDGE-01の15個のH2Dプロジェクト、23部品、印刷姿勢STL、編集用ソースと組立座標STEP/STL。",
     "sidebar_position": 20
   },
   {
     "path": "tenbox-v2/printing.mdx",
     "title": "10BOX-v2・印刷配置と設定",
-    "description": "現行R8のH2D設定、底板と天板のLEFTノズル平置き、実投影輪郭による除外域検査。",
+    "description": "現行R8-LID-LEDGE-01のH2D設定、底板と天板のLEFTノズル平置き、実投影輪郭による除外域検査。",
     "sidebar_position": 30
   },
   {

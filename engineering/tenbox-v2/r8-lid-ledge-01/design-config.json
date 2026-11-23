@@ -1,0 +1,29 @@
+{
+  "revision": "R8-LID-LEDGE-01",
+  "source_commit": "50f9abe64b66d656d1cfbe3264dc1c7b0fc77b38",
+  "units": "mm",
+  "common_part_quantity": 2,
+  "bridge_bottom_z": 103.0,
+  "bridge_top_z": 108.0,
+  "bridge_inner_y": -142.0,
+  "wall_inner_y": -145.0,
+  "fusion_overlap_mm": 0.05,
+  "gap_x_intervals": [
+    [
+      -29.02294,
+      -7.01165
+    ],
+    [
+      6.9571,
+      29.76692
+    ]
+  ],
+  "input_sha256": {
+    "lid-front.step": "adfda3648ef01fdaca03e0d65611e6fcae0ee2ac090ebe99befcc35713f9fd08",
+    "lid-back.step": "b61b964859904e5e37c80bd7f5d39018ef68e3d588814d630cf2266a6958a525",
+    "lid-top-single.step": "33b7ec7b5406a83d71e9d7daffb1e473006a17b0ddebfc1da64c8a205ce8f9f4",
+    "lid-front.3mf": "f8f14c879a6f04843fc1fd8a4c9dbac578dd3518ce52991751f6067775e0e10a",
+    "lid-back.3mf": "00a7a8cd8f63898691807a5c64d7b76fe592a4b456b63104af5b2bdc7cba8113"
+  },
+  "approved_stl_sha256": "3426afa3086cdee245bb4dfa63387a8576b7d8551d895a982aa2a4b81f03859a"
+}

@@ -1,0 +1,61 @@
+{
+  "revision": "R8-LID-LEDGE-01",
+  "verified_on": "2026-11-24",
+  "base_commit": "50f9abe64b66d656d1cfbe3264dc1c7b0fc77b38",
+  "issue": "https://github.com/Takazudo/zudo-case/issues/149",
+  "scope": "Recovered interrupted integration of the user-approved connected front/back lid ledges.",
+  "approved_stl_sha256": "3426afa3086cdee245bb4dfa63387a8576b7d8551d895a982aa2a4b81f03859a",
+  "independent_review": {
+    "geometry_and_print_settings": "passed",
+    "source_preview_and_documentation_integration": "no blocking findings",
+    "mesh_vertices": 178,
+    "mesh_triangles": 360,
+    "mesh_edges": 540,
+    "each_edge_has_two_faces": true,
+    "connected_components": 1,
+    "new_valid_solids_per_panel": 1,
+    "added_volume_mm3_per_panel": 672.377322,
+    "removed_volume_mm3": 0,
+    "unchanged_other_assembly_parts": 282,
+    "changed_h2d_projects": 2,
+    "byte_identical_h2d_projects": 13,
+    "printer_and_object_settings_preserved": true
+  },
+  "reproducibility": {
+    "environment": "Python 3.12.14 / CadQuery 2.7.0 / NumPy 2.3.5 / SciPy 1.17.0",
+    "full_repository_build": "passed",
+    "clean_source_zip_build": "passed",
+    "output_files_compared": 101,
+    "all_output_files_byte_identical": true,
+    "print_zip_sha256": "94dfadd645857c55fc9ed671efeaa5cc618313b16720f168178132b51c05f291",
+    "review_zip_sha256": "6db7381ce902eb2c099b52b06550060e48614ac084912875ffcd4ea759edd1e6",
+    "source_zip_sha256": "f52c8374e6752fd5efa4d817d708d82d5eca775898ff55a95e2fa5fe32353cad",
+    "preview_sha256": "b3b0ee4f92130a59fdb2142e9019ec315d2602fb7a183fe18d422603585199f8"
+  },
+  "software_preview": {
+    "actual_application_renderer": "passed",
+    "filled_gap_mesh_samples": 36,
+    "empty_outer_window_samples": 4,
+    "retained_original_ledge_samples": 6,
+    "visibility_lid_lift_and_comparison_controls": "passed",
+    "assembly_and_lid_ledge_images_visually_inspected": true
+  },
+  "documentation": {
+    "static_docs_and_route_ownership": "passed",
+    "preserved_asset_hashes": 952,
+    "document_route_asset_and_preview_unit_tests": "29 passed",
+    "r5_importer_contract_tests": "5 passed",
+    "typescript_and_collection_check": "passed",
+    "built_pages": 185,
+    "resolved_internal_links_and_fragments": 14066,
+    "production_preview_urls_checked": 83,
+    "broken_image_references": 0
+  },
+  "platform_limits": {
+    "local_native_chromium": "Launch blocked: process_singleton_posix.cc socket() failed: Operation not permitted (1). Native Canvas/WebGL and integrated site checks are required in CI.",
+    "ci_and_deployment": "Reported separately on the pull request for its exact commit.",
+    "native_studio_load_and_slice": "not_performed",
+    "physical_print_fit_load": "not_performed"
+  },
+  "production_approved": false
+}

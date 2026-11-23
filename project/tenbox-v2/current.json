@@ -1,27 +1,32 @@
 {
   "schema_version": 1,
   "family": "tenbox-v2",
-  "current_revision": "R8",
+  "current_revision": "R8-LID-LEDGE-01",
   "status": "current",
   "development_stage": "ongoing_prototype",
-  "selected_on": "2026-11-23",
+  "selected_on": "2026-11-24",
   "selection_basis": "explicit_user_instruction",
-  "issue": "https://github.com/Takazudo/zudo-case/issues/147",
+  "issue": "https://github.com/Takazudo/zudo-case/issues/149",
   "production_approved": false,
-  "source": "engineering/tenbox-v2/r8/",
+  "source": "engineering/tenbox-v2/r8-lid-ledge-01/",
   "docs": "src/content/docs/tenbox-v2/",
-  "artifact_registry": "project/tenbox-v2/r8-review.json",
+  "artifact_registry": "project/tenbox-v2/r8-lid-ledge-01.json",
   "preserved_baseline_registry": "project/tenbox-v2/manifest.json",
-  "preview": "/previews/tenbox-v2-r8.html",
+  "preview": "/previews/tenbox-v2-r8-lid-ledge-01.html",
   "downloads": {
-    "print": "/downloads/candidate/tenbox-v2-r8-print.zip",
-    "review": "/downloads/candidate/tenbox-v2-r8-review.zip",
-    "source": "/downloads/candidate/tenbox-v2-r8-source.zip"
+    "print": "/downloads/candidate/tenbox-v2-r8-lid-ledge-01-print.zip",
+    "review": "/downloads/candidate/tenbox-v2-r8-lid-ledge-01-review.zip",
+    "source": "/downloads/candidate/tenbox-v2-r8-lid-ledge-01-source.zip"
   },
   "notes": [
-    "R8 is the latest working revision. Ongoing prototyping describes the 10BOX-v2 project as a whole; R8 does not await a separate revision-selection confirmation.",
-    "r8-review.json and versioned source/ZIP READMEs are preserved generation records. Their review-candidate/pending labels describe the generation-time state and do not override this selection.",
-    "manifest.json keeps its original R5 current_revision and input/output hashes because subsequent builders consume it as a frozen baseline.",
-    "Current selection does not change saved geometry, print settings, native Studio or physical validation results. Artifact hashes and quantities remain in artifact_registry."
-  ]
+    "R8-LID-LEDGE-01 is the current working revision, explicitly selected after the user approved the connected front/back lid retaining ledges. Ongoing prototyping describes the whole 10BOX-v2 project.",
+    "Only the two central ledge gaps in each front/back lid panel change from R8. The two outer bracket windows, mounting holes, locating tongue, bounds and all other case parts are retained. The common front/back part is printed twice.",
+    "The complete print set contains 15 projects, 22 stored objects, 23 physical parts and 16 plate runs. Two lid projects receive the approved geometry; the other 13 are byte-identical to R8. Saved H2D settings and placements are preserved.",
+    "R5-R8 sources, archives and generation receipts remain immutable dependencies and historical evidence. manifest.json retains its original R5 input/hash contract; generation-time pending labels do not override the current selection.",
+    "Current selection is not physical validation or production approval. Native Studio load/slice and physical print/fit/load remain unperformed. Artifact hashes and verification are recorded in artifact_registry."
+  ],
+  "lid_downloads": {
+    "stl": "/downloads/candidate/10box-v2-lid-frontback-connected-r01.stl",
+    "project": "/downloads/candidate/10box-v2-lid-frontback-connected-r01.3mf"
+  }
 }

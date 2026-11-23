@@ -1,0 +1,689 @@
+{
+  "family": "tenbox-v2",
+  "revision": "R8-LID-LEDGE-01",
+  "based_on": "R8",
+  "status": "current",
+  "date": "2026-11-24",
+  "production_approved": false,
+  "user_confirmation": "accepted",
+  "issue": "https://github.com/Takazudo/zudo-case/issues/149",
+  "preview": "/previews/tenbox-v2-r8-lid-ledge-01.html",
+  "model_sha256": "e909dbdddc616bba8aa97f52da6e5da4f63eb851ec0c082504177d7d4212106a",
+  "source_commit": "50f9abe64b66d656d1cfbe3264dc1c7b0fc77b38",
+  "changes": {
+    "based_on": "R8",
+    "changed_printed_parts": [
+      "lid-front",
+      "lid-back"
+    ],
+    "common_part_quantity": 2,
+    "gap_x_intervals_front_mm": [
+      [
+        -29.02294,
+        -7.01165
+      ],
+      [
+        6.9571,
+        29.76692
+      ]
+    ],
+    "bridge_z_mm": [
+      103,
+      108
+    ],
+    "bridge_inward_projection_mm": 3,
+    "outer_bracket_windows_retained": true,
+    "roof_geometry_unchanged": true,
+    "approved_stl_sha256": "3426afa3086cdee245bb4dfa63387a8576b7d8551d895a982aa2a4b81f03859a",
+    "assembly_placements_changed": [],
+    "all_other_parts_unchanged": true,
+    "unchanged_current_part_count": 282
+  },
+  "files": [
+    {
+      "path": "engineering/tenbox-v2/r8-lid-ledge-01/README.md",
+      "bytes": 5624,
+      "sha256": "099ed8f53ab59a36651cbd83e364e48cffd07429329ebd99c623892ac6b92f7b"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8-lid-ledge-01/build.py",
+      "bytes": 16446,
+      "sha256": "6c0a45152e1fa2505fc80138180204e6452f46f0d1d6405ddc5c96b5d0695052"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8-lid-ledge-01/build_current.py",
+      "bytes": 16519,
+      "sha256": "1081b35938f5204b58dfb3579040bcceaecea5eaf14058565dc2c37dc3727ad8"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8-lid-ledge-01/check_current.py",
+      "bytes": 16034,
+      "sha256": "074d948ea5abd4ca393c2466a052b177f0eec15c9b3ede7f6f4be05f2b1894a3"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8-lid-ledge-01/design-config.json",
+      "bytes": 963,
+      "sha256": "19c3561c3f569925ec69cccc4ef893618e69ad153fe692919a5b9c53aa938948"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8-lid-ledge-01/preview/build_preview.py",
+      "bytes": 8884,
+      "sha256": "f00500c0e245ebdf721254a8df6dccc8dbd47e4c27b7e3ca44d5ceb1aec456c9"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8-lid-ledge-01/preview/render_review.mjs",
+      "bytes": 9992,
+      "sha256": "4b51f9476e0bdc1573e34a71bf7ca58257d77860e33499377417a3342644ccee"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8-lid-ledge-01/preview/tenbox-v2-template.html",
+      "bytes": 16955,
+      "sha256": "0bb447d2f5dcefd710ff84ce9b6b957a5d8db55c9f4d3d8e582703af1eba5279"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8-lid-ledge-01/preview/verify_browser.py",
+      "bytes": 17143,
+      "sha256": "5a13c35dfee515f4037755f1fc6790b9121f36ea3eb2cb6c2b62849a15581544"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8-lid-ledge-01/preview/viewer-app.js",
+      "bytes": 21168,
+      "sha256": "5107d1edbca9320ccd3d42a4a04290173113cf4a4536cecba77dbdb33a747645"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8-lid-ledge-01/render_preview.py",
+      "bytes": 4908,
+      "sha256": "535667594d88f3b81bbc4940a62a7ba6660da866c61baddd12d783e4ccfe0590"
+    },
+    {
+      "path": "public/downloads/candidate/10box-v2-lid-frontback-connected-r01.3mf",
+      "bytes": 19381,
+      "sha256": "46656e139219d9cc73263ecbdb274b54b847bdcf20d33c6bd6c994cdf456957b"
+    },
+    {
+      "path": "public/downloads/candidate/10box-v2-lid-frontback-connected-r01.stl",
+      "bytes": 18084,
+      "sha256": "3426afa3086cdee245bb4dfa63387a8576b7d8551d895a982aa2a4b81f03859a"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r8-lid-ledge-01-print.zip",
+      "bytes": 866960,
+      "sha256": "94dfadd645857c55fc9ed671efeaa5cc618313b16720f168178132b51c05f291"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r8-lid-ledge-01-review.zip",
+      "bytes": 7895764,
+      "sha256": "6db7381ce902eb2c099b52b06550060e48614ac084912875ffcd4ea759edd1e6"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r8-lid-ledge-01-source.zip",
+      "bytes": 7614525,
+      "sha256": "f52c8374e6752fd5efa4d817d708d82d5eca775898ff55a95e2fa5fe32353cad"
+    },
+    {
+      "path": "public/previews/tenbox-v2-r8-lid-ledge-01.html",
+      "bytes": 900842,
+      "sha256": "b3b0ee4f92130a59fdb2142e9019ec315d2602fb7a183fe18d422603585199f8"
+    }
+  ],
+  "preserved_previous_review": [
+    {
+      "path": "engineering/tenbox-v2/r8/README.md",
+      "bytes": 5790,
+      "sha256": "9a9781bceca19961f7ddbeb282526f3e074276489b4527757aa19c84db5f4382"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/build.py",
+      "bytes": 8831,
+      "sha256": "5aaa7752676686094ef4c286075baa7aa02340a539746eeb0d2b8ecbed2cad94"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/build_geometry.py",
+      "bytes": 60173,
+      "sha256": "1e2eebedc4591ce05fad609cd80e47af23046708178096b3955eba936ddbbd06"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/build_print_projects.py",
+      "bytes": 7724,
+      "sha256": "042f5054808904201d3c5f3224a817f72ea0167714e376e74679bd642cf2e826"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/check_review.py",
+      "bytes": 6924,
+      "sha256": "d8fb136b6371e6c579226eee6c3fc5eca27949e6d3b8e66f44d1a0f3e4ebc8c1"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/design-config.json",
+      "bytes": 2321,
+      "sha256": "3ca8f29ce4eb8103ceec245646e4781c7f5fdbb61cf22c00be9533db142b6319"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/preview/build_preview.py",
+      "bytes": 8719,
+      "sha256": "12205dfd998941d8953070d1fb64a10897d9d41e85a8975f455285414067c8b7"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/preview/render_review.mjs",
+      "bytes": 9043,
+      "sha256": "92e60759e3d9dfc5d515716b70417f731ab0309d6a75336f25f62fc38675a20d"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/preview/tenbox-v2-template.html",
+      "bytes": 15607,
+      "sha256": "812ff01803f7c9c11f9dc860a6124711bd3243e05d097220e6719df602da7f48"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/preview/verify_browser.py",
+      "bytes": 10543,
+      "sha256": "c1d19e1fd7ce06a0053c6ae2d433c95c33bba2d08134d3e8d32b38e42b36d5e0"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/preview/viewer-app.js",
+      "bytes": 20249,
+      "sha256": "fd83f2332036a7a06645ca86985765c98edb4897efa2973e6d44a72974481b61"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/reference/nuts-double-v2-60hp.stl",
+      "bytes": 83684,
+      "sha256": "7a3c80939d1f347449ec8392fd186582b6f306f2e024d09b70dbac9607a1513f"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/reference/nuts-single-v3-60hp.stl",
+      "bytes": 16284,
+      "sha256": "ec4ab963eace2fbc61ef72f35ba678cc8c908c1a94b06cb85a33ebf745ae04c3"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/reference/nylon-double-v2-60hp.stl",
+      "bytes": 17084,
+      "sha256": "89011bf6c566f7541e232e07368ad4bbbdf69d3f07f2cd9a90e5507ca947ee09"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/reference/r7-model-data.json.gz",
+      "bytes": 2439186,
+      "sha256": "2e6bd61b5bf25d16b67214b7df2718c97e03423d6bf3a276703a703869bcf4c6"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/reference/r7-model-receipt.json",
+      "bytes": 528,
+      "sha256": "6ecfdfa565195509cb8fde86aa40d0f3d30d9ee124ca53dbc6a4986a0a00d369"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/reference/rail-placement.json",
+      "bytes": 8783,
+      "sha256": "12f591e3e2e7f4f65498444b60fc83edaaae7bb85e0101a6ba7544062280c723"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/reference/user-feedback/08-lower-slot-alignment.png",
+      "bytes": 305865,
+      "sha256": "30b5594dfc91071b0978a390aaf9a1a581c7faa1aea42d69a01c46fb2bcc45bc"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/reference/user-feedback/receipts.json",
+      "bytes": 698,
+      "sha256": "61db99a00c3bc96418def475639b67ca82db3010fbc0d7b1676e1999c12be488"
+    },
+    {
+      "path": "engineering/tenbox-v2/r8/reference/zzmod-rail-assembly.ts",
+      "bytes": 8500,
+      "sha256": "89bd2e2fde84fe10ca64723dc31e5d1a59065ebb2fcaa05e6584ed2b310f9cbb"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r8-print.zip",
+      "bytes": 858052,
+      "sha256": "aececd32a471c54962eed34889919bc69864d1d6e7b8546a7efa5eb5dd68723a"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r8-review.zip",
+      "bytes": 6751392,
+      "sha256": "9964bc09e8a2a8064a6c2498cc841596968187a231f92e25b6227144a1b2550c"
+    },
+    {
+      "path": "public/downloads/candidate/tenbox-v2-r8-source.zip",
+      "bytes": 9686220,
+      "sha256": "0906b80a1efc6a034463c271eda2316e0bf14a881075f93568f55c81aecbd8bf"
+    },
+    {
+      "path": "public/previews/tenbox-v2-r8.html",
+      "bytes": 894784,
+      "sha256": "37d758e30394db129e324ca4e6640a5ee7a551f12d9463d1da3367c784f6cfe6"
+    },
+    {
+      "path": "project/tenbox-v2/r8-review.json",
+      "bytes": 141115,
+      "sha256": "f486f938bb4335821d322d93799a6c235104af285a945e57f51927178c0c15cd"
+    }
+  ],
+  "verification": {
+    "cad_check_count": 5,
+    "cad_all_passed": true,
+    "h2d": {
+      "revision": "R8-LID-LEDGE-01",
+      "based_on": "R8",
+      "project_count": 15,
+      "stored_object_count": 22,
+      "required_physical_part_count": 23,
+      "plate_runs_for_assembly": 16,
+      "changed_project_count": 2,
+      "byte_identical_project_count": 13,
+      "global_settings_bytes_unchanged": true,
+      "object_plate_settings_bytes_unchanged": true,
+      "sliced": false,
+      "studio_application_loaded": false,
+      "production_approved": false,
+      "common_lid_stl": "meshes/10box-v2-lid-frontback-connected-r01.stl",
+      "common_lid_quantity": 2,
+      "parts": [
+        {
+          "part_id": "body-bottom-common",
+          "project_file": "projects/body-bottom-common.3mf",
+          "assembly_ids": [
+            "body-bottom-back",
+            "body-bottom-front"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 2,
+          "plate_runs_for_assembly": 2,
+          "source_revision": "R8",
+          "source_project_sha256": "60224e5e5f8ac3c1aa93e2b567cb372fbea16332429583b8747d716c782abe27",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "60224e5e5f8ac3c1aa93e2b567cb372fbea16332429583b8747d716c782abe27"
+        },
+        {
+          "part_id": "lid-top-single",
+          "project_file": "projects/lid-top-single.3mf",
+          "assembly_ids": [
+            "lid-top-single"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "cdd513b719a3c976b152a524fba3f3381db8a162889f47c586e2dfbc04730311",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "cdd513b719a3c976b152a524fba3f3381db8a162889f47c586e2dfbc04730311"
+        },
+        {
+          "part_id": "lid-left",
+          "project_file": "projects/lid-left.3mf",
+          "assembly_ids": [
+            "lid-left"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "fae911ce26da493a5d43ab74289b6e80a9c9608c5fd8554c1f7989371d9238f7",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "fae911ce26da493a5d43ab74289b6e80a9c9608c5fd8554c1f7989371d9238f7"
+        },
+        {
+          "part_id": "lid-right",
+          "project_file": "projects/lid-right.3mf",
+          "assembly_ids": [
+            "lid-right"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "ba5b722134de4282f4261ff64f7241b033c1cb454fbd33142583b7b12df0706c",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "ba5b722134de4282f4261ff64f7241b033c1cb454fbd33142583b7b12df0706c"
+        },
+        {
+          "part_id": "body-left",
+          "project_file": "projects/body-left.3mf",
+          "assembly_ids": [
+            "body-left"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "e60915e339af266370d2ce27f5ac83645b34f3a9ecb46a7e63d1bf710cabf2ea",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "e60915e339af266370d2ce27f5ac83645b34f3a9ecb46a7e63d1bf710cabf2ea"
+        },
+        {
+          "part_id": "body-right",
+          "project_file": "projects/body-right.3mf",
+          "assembly_ids": [
+            "body-right"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "a7a07b9664ece0790d2d4f473232ea3d3b534fca167ce14095d16b0a326ab169",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "a7a07b9664ece0790d2d4f473232ea3d3b534fca167ce14095d16b0a326ab169"
+        },
+        {
+          "part_id": "body-front",
+          "project_file": "projects/body-front.3mf",
+          "assembly_ids": [
+            "body-front"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "23e2722ed537d5359ed8cdc750889f7bfa3b4a41295d972eca44f1fe51d53617",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "23e2722ed537d5359ed8cdc750889f7bfa3b4a41295d972eca44f1fe51d53617"
+        },
+        {
+          "part_id": "body-back",
+          "project_file": "projects/body-back.3mf",
+          "assembly_ids": [
+            "body-back"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "bd484ec986c17a749fdb2e076b5a78a85a986b9fafd980f8850f81f52dff4c29",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "bd484ec986c17a749fdb2e076b5a78a85a986b9fafd980f8850f81f52dff4c29"
+        },
+        {
+          "part_id": "lid-front",
+          "project_file": "projects/lid-front.3mf",
+          "assembly_ids": [
+            "lid-front"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "f8f14c879a6f04843fc1fd8a4c9dbac578dd3518ce52991751f6067775e0e10a",
+          "changed_geometry": true,
+          "archive_bytes_unchanged": false,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [
+            "3D/3dmodel.model"
+          ],
+          "structural_validation": {
+            "status": "structural_checks_passed",
+            "build_items": [
+              {
+                "object_id": "2",
+                "instance_id": 0,
+                "bounds_mm": [
+                  [
+                    42.09932290239999,
+                    22.09932290239999,
+                    0.0
+                  ],
+                  [
+                    307.9006770974,
+                    287.9006770974,
+                    10.0
+                  ]
+                ]
+              }
+            ],
+            "meshes": [
+              {
+                "model": "3D/3dmodel.model",
+                "object_id": "1",
+                "vertices": 178,
+                "triangles": 360,
+                "signed_volume_mm3": 91185.677732
+              }
+            ],
+            "layout_checked": true,
+            "studio_root_relationship_dispatch_pass": true,
+            "studio_application_loaded": false,
+            "contains_toolpaths": false,
+            "not_checked": [
+              "Bambu Studio load/slicing",
+              "self-intersections",
+              "wall thickness and fit",
+              "support/brim/prime tower clearance",
+              "sequential-print toolhead clearance"
+            ],
+            "settings_changes": {},
+            "settings_bytes_unchanged": true
+          },
+          "pose": [
+            [
+              0.7071067811865476,
+              0.0,
+              0.7071067811865475
+            ],
+            [
+              0.7071067811865475,
+              0.0,
+              -0.7071067811865476
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "pose_recovery_error_mm": 6.310603294496194e-10,
+          "brim_and_exclusion_check_passed": true,
+          "project_sha256": "46656e139219d9cc73263ecbdb274b54b847bdcf20d33c6bd6c994cdf456957b"
+        },
+        {
+          "part_id": "lid-back",
+          "project_file": "projects/lid-back.3mf",
+          "assembly_ids": [
+            "lid-back"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "00a7a8cd8f63898691807a5c64d7b76fe592a4b456b63104af5b2bdc7cba8113",
+          "changed_geometry": true,
+          "archive_bytes_unchanged": false,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [
+            "3D/3dmodel.model"
+          ],
+          "structural_validation": {
+            "status": "structural_checks_passed",
+            "build_items": [
+              {
+                "object_id": "2",
+                "instance_id": 0,
+                "bounds_mm": [
+                  [
+                    42.09932290239999,
+                    22.099322902400004,
+                    0.0
+                  ],
+                  [
+                    307.9006770974,
+                    287.9006770974,
+                    10.0
+                  ]
+                ]
+              }
+            ],
+            "meshes": [
+              {
+                "model": "3D/3dmodel.model",
+                "object_id": "1",
+                "vertices": 178,
+                "triangles": 360,
+                "signed_volume_mm3": 91185.677732
+              }
+            ],
+            "layout_checked": true,
+            "studio_root_relationship_dispatch_pass": true,
+            "studio_application_loaded": false,
+            "contains_toolpaths": false,
+            "not_checked": [
+              "Bambu Studio load/slicing",
+              "self-intersections",
+              "wall thickness and fit",
+              "support/brim/prime tower clearance",
+              "sequential-print toolhead clearance"
+            ],
+            "settings_changes": {},
+            "settings_bytes_unchanged": true
+          },
+          "pose": [
+            [
+              0.7071067811865476,
+              0.0,
+              -0.7071067811865475
+            ],
+            [
+              0.7071067811865475,
+              0.0,
+              0.7071067811865476
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          ],
+          "pose_recovery_error_mm": 6.486939492714929e-10,
+          "brim_and_exclusion_check_passed": true,
+          "project_sha256": "ba920214c5e7c660fedd384d2050e1081dbef1bcbc0333f0b2241e379d724ba3"
+        },
+        {
+          "part_id": "stand-left",
+          "project_file": "projects/stand-left.3mf",
+          "assembly_ids": [
+            "stand-left"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "5de4da1d6eabb8d3932daf4c31963e6501150882a942ab744ff409a59c2b1edc",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "5de4da1d6eabb8d3932daf4c31963e6501150882a942ab744ff409a59c2b1edc"
+        },
+        {
+          "part_id": "stand-right",
+          "project_file": "projects/stand-right.3mf",
+          "assembly_ids": [
+            "stand-right"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "bda56ad4eec3aa91fea9efcfc5d3ee826069d595251a1f1c693f2b7c3d9daf78",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "bda56ad4eec3aa91fea9efcfc5d3ee826069d595251a1f1c693f2b7c3d9daf78"
+        },
+        {
+          "part_id": "stand-connector-front",
+          "project_file": "projects/stand-connector-front.3mf",
+          "assembly_ids": [
+            "stand-connector-front"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "5cebbb7dcb711d10606a0f9deb265b619f83796bd1af8ebaaf32f930ad362c9a",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "5cebbb7dcb711d10606a0f9deb265b619f83796bd1af8ebaaf32f930ad362c9a"
+        },
+        {
+          "part_id": "stand-connector-back",
+          "project_file": "projects/stand-connector-back.3mf",
+          "assembly_ids": [
+            "stand-connector-back"
+          ],
+          "stored_object_count": 1,
+          "required_physical_quantity": 1,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "0d0f00996319da8d976d4557fe8f34c4c7bb90a34fd145e64323aca9de02af48",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "0d0f00996319da8d976d4557fe8f34c4c7bb90a34fd145e64323aca9de02af48"
+        },
+        {
+          "part_id": "spacers-8",
+          "project_file": "projects/spacers-8.3mf",
+          "assembly_ids": [
+            "spacer-left-1",
+            "spacer-left-2",
+            "spacer-left-3",
+            "spacer-left-4",
+            "spacer-right-1",
+            "spacer-right-2",
+            "spacer-right-3",
+            "spacer-right-4"
+          ],
+          "stored_object_count": 8,
+          "required_physical_quantity": 8,
+          "plate_runs_for_assembly": 1,
+          "source_revision": "R8",
+          "source_project_sha256": "613fa304c685196d7ef7722eeee62c101caf25f0bb8288368e18711cf28fc1af",
+          "changed_geometry": false,
+          "archive_bytes_unchanged": true,
+          "global_settings_bytes_unchanged": true,
+          "object_plate_settings_bytes_unchanged": true,
+          "changed_archive_members": [],
+          "project_sha256": "613fa304c685196d7ef7722eeee62c101caf25f0bb8288368e18711cf28fc1af"
+        }
+      ]
+    },
+    "approved_stl_sha256": "3426afa3086cdee245bb4dfa63387a8576b7d8551d895a982aa2a4b81f03859a",
+    "native_studio_load": "not_performed",
+    "native_studio_slice": "not_performed",
+    "physical_print_fit_load": "not_performed"
+  }
+}
