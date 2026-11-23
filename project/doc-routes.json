@@ -1093,6 +1093,62 @@
    "treatment": "new",
    "anchors": [],
    "note": "旧printed-5mm/ventilation.mdxのP4説明"
+  },
+  {
+   "source": null,
+   "canonical": "archive/tenbox-v2/index.mdx",
+   "owner": "archive",
+   "treatment": "new",
+   "anchors": [],
+   "note": "10BOX-v2の旧版の入口"
+  },
+  {
+   "source": null,
+   "canonical": "archive/tenbox-v2/r5/assembly.mdx",
+   "owner": "archive",
+   "treatment": "new",
+   "anchors": [],
+   "note": "R8への現行指定更新時に保存したR5の読者向け案内"
+  },
+  {
+   "source": null,
+   "canonical": "archive/tenbox-v2/r5/design-and-validation.mdx",
+   "owner": "archive",
+   "treatment": "new",
+   "anchors": [],
+   "note": "R8への現行指定更新時に保存したR5の読者向け案内"
+  },
+  {
+   "source": null,
+   "canonical": "archive/tenbox-v2/r5/index.mdx",
+   "owner": "archive",
+   "treatment": "new",
+   "anchors": [],
+   "note": "R8への現行指定更新時に保存したR5の読者向け案内"
+  },
+  {
+   "source": null,
+   "canonical": "archive/tenbox-v2/r5/preview.mdx",
+   "owner": "archive",
+   "treatment": "new",
+   "anchors": [],
+   "note": "R8への現行指定更新時に保存したR5の読者向け案内"
+  },
+  {
+   "source": null,
+   "canonical": "archive/tenbox-v2/r5/print-files.mdx",
+   "owner": "archive",
+   "treatment": "new",
+   "anchors": [],
+   "note": "R8への現行指定更新時に保存したR5の読者向け案内"
+  },
+  {
+   "source": null,
+   "canonical": "archive/tenbox-v2/r5/printing.mdx",
+   "owner": "archive",
+   "treatment": "new",
+   "anchors": [],
+   "note": "R8への現行指定更新時に保存したR5の読者向け案内"
   }
  ]
 }

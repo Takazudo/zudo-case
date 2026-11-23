@@ -200,6 +200,54 @@
     "search_exclude": true
   },
   {
+    "path": "archive/tenbox-v2/index.mdx",
+    "title": "10BOX-v2のアーカイブ（R5）",
+    "description": "R8への現行指定切替前に使っていたR5の印刷・組立・検証案内。",
+    "sidebar_position": 30
+  },
+  {
+    "path": "archive/tenbox-v2/r5/assembly.mdx",
+    "title": "旧版R5・組立と向き",
+    "description": "R8への現行指定切替前に使っていた10BOX-v2 R5の案内を保存した履歴。",
+    "sidebar_position": 40,
+    "search_exclude": true
+  },
+  {
+    "path": "archive/tenbox-v2/r5/design-and-validation.mdx",
+    "title": "旧版R5・設計と検証",
+    "description": "R8への現行指定切替前に使っていた10BOX-v2 R5の案内を保存した履歴。",
+    "sidebar_position": 50,
+    "search_exclude": true
+  },
+  {
+    "path": "archive/tenbox-v2/r5/index.mdx",
+    "title": "旧版R5・2組の3U60HPケース",
+    "description": "R8への現行指定切替前に使っていた10BOX-v2 R5の案内を保存した履歴。",
+    "sidebar_position": 10,
+    "search_exclude": true
+  },
+  {
+    "path": "archive/tenbox-v2/r5/preview.mdx",
+    "title": "旧版R5・3Dプレビュー",
+    "description": "R8への現行指定切替前に使っていた10BOX-v2 R5の案内を保存した履歴。",
+    "sidebar_position": 10,
+    "search_exclude": true
+  },
+  {
+    "path": "archive/tenbox-v2/r5/print-files.mdx",
+    "title": "旧版R5・印刷ファイルと数量",
+    "description": "R8への現行指定切替前に使っていた10BOX-v2 R5の案内を保存した履歴。",
+    "sidebar_position": 20,
+    "search_exclude": true
+  },
+  {
+    "path": "archive/tenbox-v2/r5/printing.mdx",
+    "title": "旧版R5・印刷配置と設定",
+    "description": "R8への現行指定切替前に使っていた10BOX-v2 R5の案内を保存した履歴。",
+    "sidebar_position": 30,
+    "search_exclude": true
+  },
+  {
     "path": "decisions/decisions.mdx",
     "title": "採用・不採用の判断（移動済み）",
     "description": "旧URLの互換ページ。正式なページは/docs/archive/metal-case/history/decisions/。",
@@ -921,37 +969,37 @@
   {
     "path": "tenbox-v2/assembly.mdx",
     "title": "10BOX-v2・組立と向き",
-    "description": "本体6枚と蓋5枚の接合、フレーム固定、8個のスペーサー、同一部品の回転と金物未確定事項。",
+    "description": "現行R8の本体と蓋、下側長穴によるフレーム固定、内側の金具ナット、スペーサーと公称金物表。",
     "sidebar_position": 40
   },
   {
     "path": "tenbox-v2/design-and-validation.mdx",
     "title": "10BOX-v2・設計と検証",
-    "description": "採用寸法とR5の隅カット、増分ソースの出典、ファイル形式修正とソフトウェア検証の限界。",
+    "description": "最新版R8の寸法、下側長穴と金具の配置、蓋内の高さ、保存した生成物と検証範囲。",
     "sidebar_position": 50
   },
   {
     "path": "tenbox-v2/index.mdx",
     "title": "10BOX-v2・2組の3U60HPケース",
-    "description": "受け入れたR5の現行ファイル、印刷と組立の入口。7U40家庭印刷とは独立した系列。",
+    "description": "最新版R8の印刷ファイル、組立、プレビューの入口。10BOX-v2全体として試作を進めている独立系列。",
     "sidebar_position": 35
   },
   {
     "path": "tenbox-v2/preview.mdx",
     "title": "10BOX-v2・3Dプレビュー",
-    "description": "R8の下側長穴によるフレーム固定、R7との比較と蓋の高さ、採用済みR5の組立・印刷姿勢を実形状で確認。",
+    "description": "最新版R8の下側長穴によるフレーム固定、中央ダブルレール、内側ナットと蓋の高さを実形状で確認。",
     "sidebar_position": 10
   },
   {
     "path": "tenbox-v2/print-files.mdx",
     "title": "10BOX-v2・印刷ファイルと数量",
-    "description": "現行R5の15個のH2Dプロジェクト、23部品、編集用ソースと組立座標STEP/STL。",
+    "description": "最新版R8の15個のH2Dプロジェクト、23部品、印刷姿勢STL、編集用ソースと組立座標STEP/STL。",
     "sidebar_position": 20
   },
   {
     "path": "tenbox-v2/printing.mdx",
     "title": "10BOX-v2・印刷配置と設定",
-    "description": "底板と天板のLEFTノズル平置き、実投影輪郭による除外域検査と維持したH2D設定。",
+    "description": "現行R8のH2D設定、底板と天板のLEFTノズル平置き、実投影輪郭による除外域検査。",
     "sidebar_position": 30
   },
   {

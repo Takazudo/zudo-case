@@ -264,9 +264,19 @@
     },
     {
       "path": "engineering/README.md",
-      "bytes": 2916,
-      "sha256": "ffccc85e99d10a15e480b85098e4146626af511c75df653b71e64bb2348464c7",
-      "status": "supporting-not-released"
+      "bytes": 3063,
+      "sha256": "e0326aff6a915d594a6b685b21a14d391bd444f3744f6752e7c1795249032e9a",
+      "status": "supporting-not-released",
+      "documentation_update": {
+        "date": "2026-11-23",
+        "issue": "https://github.com/Takazudo/zudo-case/issues/147",
+        "reason": "Select 10BOX-v2 R8 in the maintained engineering index. No geometry or artifact payload changed.",
+        "previous": {
+          "commit": "531a4ee040a37855e9e770650413fb422a8e426e",
+          "bytes": 2916,
+          "sha256": "ffccc85e99d10a15e480b85098e4146626af511c75df653b71e64bb2348464c7"
+        }
+      }
     },
     {
       "path": "engineering/r6-body/README.md",

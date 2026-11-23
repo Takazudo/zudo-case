@@ -28,7 +28,7 @@ sidebar_position: 20
 | `overview/` | ケースを選ぶ人の入口、系列をまたぐ短い状態要約、共通の用語 | 版別の印刷手順・数量・詳しい設計根拠は各系列へ。全体案内からリンクする |
 | `metal-case/` | 金属ケースを準備する人の３機種の現行版（7U40はR11-BUILD-FEEDBACK-04、3U60・7U60はR6本体＋R8載せ蓋の基準）、見積、発注前確認、金属台帳保守 | R10・R9以前の7U40候補と旧手順は`archive/metal-case/`。家庭印刷や10BOX-v2の仕様は含めない。「10BOX式の載せ蓋」という方式名だけで10BOX-v2へ分類しない |
 | `printed-5mm/` | 7U40・5mm家庭印刷の現行P5の設計・プレビュー・ファイル・通気孔 | 旧P4/P3は`archive/printed-5mm/`。独立した二段3U60HPの10BOX-v2、金属の数量・発注記録は含めない |
-| `tenbox-v2/` | 二段3U60HPの独立10BOX-v2。現行R5の印刷、組立、ファイル、設計根拠と検証限界 | 7U40のP5改訂ではない。旧R1〜R4を現行作業の必読手順にしない |
+| `tenbox-v2/` | 二段3U60HPの独立10BOX-v2。最新版R8の印刷、組立、ファイル、設計根拠と検証限界 | 10BOX-v2全体が試作・改良中。旧R5の読み物は`archive/tenbox-v2/`。7U40のP5改訂ではない |
 | `two-way/` | 2トレーの検討を読む人のTW-01作業版（A/B/Cはどれも現行の比較対象）と、その入力であるF5原資料の参照 | 製造用CADや単トレーの蓋仕様を置き換えない。F5は競合する現行版ではない |
 | `shared/` | 複数系列が参照する部品・元レール・PCB・出典 | 一系列だけの部品数量や採用値は系列側。部品が似ているだけで共通仕様にしない |
 | `development/` | サイトを起動・保守する人の環境、文書編集方針、生成所有と旧URL、配信の仕組み | 金属だけの見積・承認台帳は[金属台帳保守](../metal-case/maintaining-data.mdx)へ。CAD作業は系列のengineeringへ。現在の作業に使わない監査・移行の経緯はアーカイブへ |
@@ -74,7 +74,7 @@ sidebar_position: 20
 
 ## 数字の更新
 
-金属の表と製作・見積台帳の更新手順は[金属ケースの台帳・製作データを保守する](../metal-case/maintaining-data.mdx#数字の更新)へ移しました。金属用`project/current-spec.json`を他系列の仕様に流用しません。10BOX-v2は`project/tenbox-v2/manifest.json`、7U40家庭印刷と2WAYは各系列の台帳を参照します。
+金属の表と製作・見積台帳の更新手順は[金属ケースの台帳・製作データを保守する](../metal-case/maintaining-data.mdx#数字の更新)へ移しました。金属用`project/current-spec.json`を他系列の仕様に流用しません。10BOX-v2の現行指定は`project/tenbox-v2/current.json`、R8の数値・数量・出力と検証は`project/tenbox-v2/r8-review.json`を参照します。R5の`manifest.json`と版別README・ZIP内の状態表示は生成当時の記録として保全し、現行指定の根拠には使いません。7U40家庭印刷と2WAYは各系列の台帳を参照します。
 
 ## 生成物の所有
 

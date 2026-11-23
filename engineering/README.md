@@ -18,7 +18,7 @@
 
 ## 10BOX-v2（2 × 3U60HP）
 
-- `tenbox-v2/r5/`：採用済みR5の独立した家庭印刷候補。7U40 P5とは別系列。原入力・固定R4依存・設定・検証は`tenbox-v2/AGENTS.md`と`../project/tenbox-v2/manifest.json`を参照。製造承認なし。
+- `tenbox-v2/r8/`：独立した家庭印刷ケースの最新版R8。10BOX-v2全体として試作・改良を継続中。入口は[tenbox-v2/README.md](tenbox-v2/README.md)、現行指定は`../project/tenbox-v2/current.json`、出力と検証記録は`../project/tenbox-v2/r8-review.json`。R5〜R7と固定R4入力は再生成の根拠として保持。7U40 P5とは別系列。
 
 ## 2WAY 実験設計
 

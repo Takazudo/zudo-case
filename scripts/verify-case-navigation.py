@@ -14,6 +14,7 @@ BASE = os.environ.get("SITE_URL", "http://localhost:4391").rstrip("/")
 OUT = Path(os.environ.get("CASE_NAV_EVIDENCE", ROOT / ".cache/case-navigation-browser"))
 OUT.mkdir(parents=True, exist_ok=True)
 ROUTES = json.loads((ROOT / "project/doc-routes.json").read_text())
+TENBOX_CURRENT = json.loads((ROOT / "project/tenbox-v2/current.json").read_text())
 ARCHIVE_LANDING = re.compile(r"^archive/(?:[^/]+/)?index\.mdx$")
 checks: list[str] = []
 errors: list[str] = []
@@ -140,7 +141,7 @@ def exercise_sections(page, width):
 
 def exercise_origin(page, width):
     visit(page, "/docs/tenbox-v2/preview/")
-    iframe = page.locator('iframe[src*="tenbox-v2-r5.html"]')
+    iframe = page.locator(f'iframe[src$="{TENBOX_CURRENT["preview"]}"]')
     expect(iframe).to_have_count(1)
     src = urljoin(BASE + "/", iframe.get_attribute("src"))
     expected = os.environ.get("EXPECTED_PREVIEW_ORIGIN", BASE).rstrip("/")
