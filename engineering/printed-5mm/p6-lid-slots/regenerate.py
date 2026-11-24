@@ -20,4 +20,11 @@ with tempfile.TemporaryDirectory(prefix='zudo-case-p6-') as temp:
     for rel in expected:
         assert (ROOT/'out'/rel).read_bytes() == (out/rel).read_bytes(), str(rel)
         print('PASS',rel,hashlib.sha256((out/rel).read_bytes()).hexdigest())
+    import cadquery as cq
+    first = cq.importers.importStep(str(out/'step/lid-top-1.step')).val()
+    second = cq.importers.importStep(str(out/'step/lid-top-2.step')).val()
+    rotated = first.rotate((0,0,0), (0,0,1), 180)
+    differences = [rotated.cut(second).Volume(), second.cut(rotated).Volume()]
+    assert all(abs(volume) < 1e-6 for volume in differences), ('The lid halves no longer share one printable shape', differences)
+    print('PASS same STL x2: 180-degree assembly rotation; STEP difference volumes mm3', differences)
 print('P6 source regeneration: all 7 outputs byte-identical')

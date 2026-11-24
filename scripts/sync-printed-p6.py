@@ -16,6 +16,20 @@ REPLACED = ["lid-top-1", "lid-top-2"]
 OPTIONAL = {"pad-horizontal": 48, "pad-vertical": 48, "washer-round": 28}
 IDS = sorted(["floor-1", "floor-2", "wall-front", "wall-back", "wall-left", "wall-right",
               "lid-edge-front", "lid-edge-back", "lid-edge-left", "lid-edge-right", *REPLACED, *OPTIONAL])
+LID_PRINTING = {
+    "source_part_id": "lid-top-1", "assembly_part_ids": REPLACED, "quantity": 2,
+    "stl_download_path": "public/downloads/candidate/printed-5mm-p6-lid-top.stl",
+    "stl_member": "stl/lid-top-1.stl", "project_member": "projects/p6-lid-top-1-h2d-pla06.3mf",
+    "assembly_rotation_z_degrees": 180, "mirror_required": False,
+    "equivalence": {
+        "method": "STEP Boolean differences after rotating lid-top-1 180 degrees about assembly Z",
+        "difference_volumes_mm3": [0.0, 0.0],
+        "input_step_sha256": {
+            "lid-top-1": "cd248a776a57774967f2f178de2b0390988b1225d84933d3be603374ed505a3d",
+            "lid-top-2": "b851119b2e04b72078dfe23efe2b79de551b1262d587c7b2d71677428094f074",
+        },
+    },
+}
 
 
 def sha(data):
@@ -55,15 +69,27 @@ def build_packages():
             row["files"].append({"format": extension, "path": str(source.relative_to(ROOT)),
                                  "member": member, "bytes": len(data), "sha256": sha(data)})
         parts.append(row)
+    for part, expected in LID_PRINTING["equivalence"]["input_step_sha256"].items():
+        assert sha((SOURCE / "out/step" / f"{part}.step").read_bytes()) == expected, \
+            "Changed roof geometry needs a new same-shape verification: " + part
     manifest = {"revision": REVISION, "units": "mm", "production_approved": False,
                 "unsliced": True, "print_parts": {"structural": 12, "optional_types": 3},
+                "part_id_semantics": "Assembly-position file IDs; the inventory includes identical shapes",
+                "lid_printing": LID_PRINTING,
                 "optional_quantities": OPTIONAL, "replaced_parts": REPLACED,
                 "reused_parts": [p for p in IDS if p not in REPLACED], "parts": parts}
     guide = """# P6 / 7U40・5mm家庭印刷
 
-P6-PRINTED-5MM-LID-SLOTS。一式は15型です。構造12型は各1個、任意の横パッド48個・縦パッド48個・丸座金28個。
-P6天板 lid-top-1 と lid-top-2 は各1枚。各4か所の10.5 × 5.5 mm長穴、内外方向の公称調整量±2.5 mmです。
-他13型は保存済みP5出力と同じバイト列です。3MFの継承部品は由来を示すp5ファイル名のままです。
+P6-PRINTED-5MM-LID-SLOTS。一式は15部品ID（組立位置別のファイル名）を収録し、同形の部品を含みます。
+構造12個を配置し、任意の横パッド48個・縦パッド48個・丸座金28個を用意します。
+
+フタ天板は同じSTL「stl/lid-top-1.stl」を2枚印刷します。
+H2Dでは「projects/p6-lid-top-1-h2d-pla06.3mf」の同じモデルを2枚印刷します。1プレートに天板1枚です。
+組み立てるときに片方を板の面内で180度回して配置します。裏返し・鏡像化は不要です。
+lid-top-1 と lid-top-2 は組立位置を区別するIDで、180度回転すると形状が一致します。
+各板4か所の10.5 × 5.5 mm長穴、内外方向の公称調整量±2.5 mmです。
+
+他13部品IDは保存済みP5出力と同じバイト列です。3MFの継承部品は由来を示すp5ファイル名のままです。
 P5を印刷済みなら天板2枚だけを交換します。この全ケースパッケージに旧丸穴の天板は含みません。
 
 STLはmmの印刷姿勢、STEPは組立座標。長側板は45度平置き済みなので追加回転は不要です。
@@ -72,7 +98,7 @@ H2D・PLA・0.6 mm、ブリム0 mm、未スライス。長側板はRightノズ�
 サポート・実スライス・現物嵌合・締結強度・反り・クリープ・運搬は未確認で、製造未承認です。
 
 PRINT-MAPPING.json に数量、各ファイルの由来、元パス、SHA-256を記録します。
-天板ソースは printed-5mm-p6-lid-slots-source.zip。他13型の保守ソースは保存済みP5を引き継ぎます。
+天板ソースは printed-5mm-p6-lid-slots-source.zip。他13部品IDの保守ソースは保存済みP5を引き継ぎます。
 """.encode()
     common = {"PRINT-START-HERE.md": guide, "PRINT-MAPPING.json": encoded(manifest),
               "P6-ROOF-VERIFICATION.json": (SOURCE / "out/verification.json").read_bytes()}
@@ -89,15 +115,40 @@ def main():
     manifest, packages = build_packages()
     replacement = {str(p.relative_to(SOURCE / 'out')): p.read_bytes()
                    for p in (SOURCE / 'out').rglob('*') if p.is_file()}
-    replacement.update({name: (SOURCE / name).read_bytes() for name in ('README.md', 'parameters.json')})
+    replacement['parameters.json'] = (SOURCE / 'parameters.json').read_bytes()
+    replacement['README.md'] = """# P6 フタ天板交換セット
+
+フタ天板は同じSTLを2枚印刷します。
+
+| 用途 | このZIP内のファイル | 印刷数量 |
+|---|---|---|
+| STLから印刷 | stl/lid-top-1.stl | 同じファイルから2枚 |
+| 保存済みH2D設定で印刷 | projects/p6-lid-top-1-h2d-pla06.3mf | 同じモデルを2枚、1プレートに1枚 |
+
+組み立てるときに片方を板の面内で180度回して配置します。裏返し・鏡像化は不要です。
+lid-top-1 と lid-top-2 は組立位置を区別するIDで、180度回転すると一致する形状です。
+既存の2ファイルは組立位置との対応を保つために収録しています。
+
+各225.8 × 165.05 × 5 mm、長穴4か所／枚、長穴10.5 × 5.5 mm、公称調整量±2.5 mm。
+STLはmmの印刷姿勢、倍率100%で使用します。step/内のSTEPは組立座標です。
+P5本体とフタ縁はそのまま使い、大きい天板2枚だけを交換します。
+
+3MFはH2D・PLA・0.6 mm、ブリム0 mmの保存済み設定を保持しています。
+未スライスでG-codeなし。実スライス・現物嵌合・締結強度・反り・運搬は未確認です。
+ケースの設計材料のASA想定と、保存済み3MFのPLA設定を区別します。
+
+verification.json は形状と3MF設定の検証記録、parameters.json は寸法と組立位置の記録です。
+編集・再生成には別配布の printed-5mm-p6-lid-slots-source.zip を展開し、そのREADMEに従ってください。
+""".encode()
     packages[DEST / 'printed-5mm-p6-lid-slots.zip'] = zip_bytes(replacement)
     source_files = [p for p in SOURCE.rglob('*') if p.is_file()
                     and not any(part in ('.venv', '__pycache__', '.cache') for part in p.relative_to(SOURCE).parts)
                     and p.suffix != '.pyc']
     packages[DEST / 'printed-5mm-p6-lid-slots-source.zip'] = zip_bytes({str(p.relative_to(SOURCE)): p.read_bytes() for p in source_files})
+    packages[ROOT / LID_PRINTING['stl_download_path']] = (SOURCE / 'out/stl/lid-top-1.stl').read_bytes()
     for path, data in packages.items():
         if args.check:
-            assert path.read_bytes() == data, f"Stale P6 full package: {path.relative_to(ROOT)}"
+            assert path.read_bytes() == data, f"Stale P6 output: {path.relative_to(ROOT)}"
         else:
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(data)
@@ -115,7 +166,7 @@ def main():
     else:
         REGISTRY.parent.mkdir(parents=True, exist_ok=True)
         REGISTRY.write_bytes(data)
-    print(f"P6: 15 STL + 15 STEP, 15 H2D projects; exactly 2 replaced and 13 inherited types; {len(registry['files'])} registered files")
+    print(f"P6: 15 assembly IDs, 2 roof IDs + 13 inherited IDs; same lid STL x2; {len(registry['files'])} registered files")
 
 
 if __name__ == "__main__":

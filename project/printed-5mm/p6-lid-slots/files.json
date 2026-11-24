@@ -7,6 +7,31 @@
     "structural": 12,
     "optional_types": 3
   },
+  "part_id_semantics": "Assembly-position file IDs; the inventory includes identical shapes",
+  "lid_printing": {
+    "source_part_id": "lid-top-1",
+    "assembly_part_ids": [
+      "lid-top-1",
+      "lid-top-2"
+    ],
+    "quantity": 2,
+    "stl_download_path": "public/downloads/candidate/printed-5mm-p6-lid-top.stl",
+    "stl_member": "stl/lid-top-1.stl",
+    "project_member": "projects/p6-lid-top-1-h2d-pla06.3mf",
+    "assembly_rotation_z_degrees": 180,
+    "mirror_required": false,
+    "equivalence": {
+      "method": "STEP Boolean differences after rotating lid-top-1 180 degrees about assembly Z",
+      "difference_volumes_mm3": [
+        0.0,
+        0.0
+      ],
+      "input_step_sha256": {
+        "lid-top-1": "cd248a776a57774967f2f178de2b0390988b1225d84933d3be603374ed505a3d",
+        "lid-top-2": "b851119b2e04b72078dfe23efe2b79de551b1262d587c7b2d71677428094f074"
+      }
+    }
+  },
   "optional_quantities": {
     "pad-horizontal": 48,
     "pad-vertical": 48,
@@ -493,8 +518,8 @@
     },
     {
       "path": "engineering/printed-5mm/p6-lid-slots/README.md",
-      "sha256": "b7aa3c67c40e7af30bfd7d2463d3417c09152440d29ea47879e00bb32bf12ecb",
-      "bytes": 2628
+      "sha256": "403b7ce012a799d50cd0d37b2898c2cbfc3f1833178ca3876d8bf69e09f6c02c",
+      "bytes": 3419
     },
     {
       "path": "engineering/printed-5mm/p6-lid-slots/build.py",
@@ -588,8 +613,8 @@
     },
     {
       "path": "engineering/printed-5mm/p6-lid-slots/regenerate.py",
-      "sha256": "f7caea26c15cec3df1d0a92dfe74ba940eaedde64900607e17dcf0cb1c64c678",
-      "bytes": 1037
+      "sha256": "a693fa58712a27827df3c626ebc56d5e6db9f2e260e385f568557049625c6b3f",
+      "bytes": 1573
     },
     {
       "path": "engineering/printed-5mm/p6-lid-slots/tools/bambu_3mf.py",
@@ -603,23 +628,28 @@
     },
     {
       "path": "public/downloads/candidate/printed-5mm-p6-lid-slots-h2d-3mf.zip",
-      "sha256": "3ec5ab551476822a53e83b06e94105336b2843370afdc940de1a85ea62720ea0",
-      "bytes": 928830
+      "sha256": "55cefb4a6107fb9d646d9f9da826a286364dae11e8e6d94a072e96dbf1cfddaa",
+      "bytes": 929398
     },
     {
       "path": "public/downloads/candidate/printed-5mm-p6-lid-slots-source.zip",
-      "sha256": "0874805e7b3f2968e6c0509135d68863d94959d85be8e933a00058d77ac0a43b",
-      "bytes": 265640
+      "sha256": "439e51ce8f003b6689cf506872bfd216a8196fc176eb4c8e2ef8b77d057c2788",
+      "bytes": 266200
     },
     {
       "path": "public/downloads/candidate/printed-5mm-p6-lid-slots-stl.zip",
-      "sha256": "0cc3c66d19852c1d021a9e2273f1544dda81df29941ef3a9561d5625ea4d50f0",
-      "bytes": 1488856
+      "sha256": "13b9dc87163a5650e91a95c512afe2a9f1befe7356d953bbaae50406fa93384f",
+      "bytes": 1489424
     },
     {
       "path": "public/downloads/candidate/printed-5mm-p6-lid-slots.zip",
-      "sha256": "3dab59ccf3b293b0e87476d536e262eaf82b1bfef9e402e18146f098e49a8675",
-      "bytes": 125461
+      "sha256": "7c58c38f9bd81a1007eb95bdfbfb7d0f1f7c898fea547a1316f2425ffd2b40fc",
+      "bytes": 124852
+    },
+    {
+      "path": "public/downloads/candidate/printed-5mm-p6-lid-top.stl",
+      "sha256": "d2fa82159ee07ec829d49eb74547cef3ee7c2182c178d70dceed3a973157ec95",
+      "bytes": 78684
     },
     {
       "path": "public/previews/printed-5mm-p6-lid-slots.html",

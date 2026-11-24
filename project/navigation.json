@@ -913,7 +913,7 @@
   {
     "path": "printed-5mm/p6-design.mdx",
     "title": "P6・フタ天板の長穴と構造",
-    "description": "フタ天板2枚の8長穴で縁パーツの位置ずれを吸収。J3本体と他13型はそのまま継承。",
+    "description": "同じ天板を2枚印刷し、8長穴で縁パーツの位置ずれを吸収。J3本体と縁部品を継承。",
     "sidebar_position": 10
   },
   {
@@ -925,7 +925,7 @@
   {
     "path": "printed-5mm/p6-print-files.mdx",
     "title": "P6・STL/STEPとH2D 3MF",
-    "description": "現行P6の全ケース一式、天板2枚だけの交換セット、編集可能な長穴ソース。",
+    "description": "フタ天板は同じSTLを2枚印刷。単独STL、H2D 3MF、全ケース一式と長穴ソース。",
     "sidebar_position": 12
   },
   {

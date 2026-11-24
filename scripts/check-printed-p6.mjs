@@ -17,6 +17,24 @@ export function verifyP6(root) {
   assert.equal(registry.parts.length, 15);
   assert.equal(new Set(registry.parts.map(p => p.id)).size, 15);
   assert.equal(registry.reused_parts.length, 13);
+  const lid = registry.lid_printing;
+  assert.equal(lid.source_part_id, 'lid-top-1');
+  assert.deepEqual(lid.assembly_part_ids, ['lid-top-1', 'lid-top-2']);
+  assert.equal(lid.quantity, 2);
+  assert.equal(lid.assembly_rotation_z_degrees, 180);
+  assert.equal(lid.mirror_required, false);
+  assert.equal(lid.stl_download_path, 'public/downloads/candidate/printed-5mm-p6-lid-top.stl');
+  assert.equal(lid.stl_member, 'stl/lid-top-1.stl');
+  assert.equal(lid.project_member, 'projects/p6-lid-top-1-h2d-pla06.3mf');
+  assert.deepEqual(lid.equivalence.difference_volumes_mm3, [0, 0]);
+  const roof = registry.parts.find(p => p.id === lid.source_part_id);
+  const roofStl = roof.files.find(f => f.format === 'stl');
+  assert.deepEqual(readFileSync(resolve(root, lid.stl_download_path)), readFileSync(resolve(root, roofStl.path)), 'Direct lid STL must preserve the source mesh bytes');
+  assert.equal(registry.files.find(f => f.path === lid.stl_download_path)?.sha256, roofStl.sha256);
+  for (const id of lid.assembly_part_ids) {
+    const step = registry.parts.find(p => p.id === id).files.find(f => f.format === 'step');
+    assert.equal(step.sha256, lid.equivalence.input_step_sha256[id], 'Same-shape evidence must match the current STEP: ' + id);
+  }
   const release = read('project/release-state.json').current_printed_5mm_candidate;
   const selection = read('project/current-selection.json').selections.find(s => s.project === 'printed-5mm');
   assert.equal(release.revision, revision);
@@ -71,5 +89,5 @@ export function verifyP6(root) {
       assert.ok(hole.m5_travel_checks.every(c => c.m5_shaft_collision_mm3 < 1e-8));
     }
   }
-  console.log('P6 registry and full/replacement packages: 2 new roofs, 13 unchanged part types');
+  console.log('P6 registry and packages: one roof STL x2, 2 assembly IDs, 13 unchanged part IDs');
 }
