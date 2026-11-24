@@ -54,7 +54,7 @@
     "sync:r11": "node scripts/sync-r11.mjs",
     "check:r11": "node scripts/sync-r11.mjs --check",
     "test:r11": "node --test tests/r11-import.test.mjs",
-    "build:printed-5mm": "uv run --locked --project engineering/printed-5mm/p5-tab-joints python engineering/printed-5mm/p5-tab-joints/build.py --out .cache/printed-p5-build",
+    "build:printed-5mm": "uv run --locked --project engineering/printed-5mm/p6-lid-slots python engineering/printed-5mm/p6-lid-slots/build.py --out .cache/printed-p6-build",
     "check:printed-5mm": "node scripts/check-printed-5mm.mjs",
     "test:printed-5mm": "node --test tests/printed-5mm.test.mjs tests/printed-p4.test.mjs",
     "build:printed-p3": "uv run --locked --project engineering/printed-5mm/p3 python engineering/printed-5mm/p3/build.py --out .cache/printed-5mm-build",
@@ -69,7 +69,9 @@
     "test:tenbox-v2:browser": "python3 scripts/verify-tenbox-site.py",
     "build:tenbox-v2-r8": "uv run --locked --project engineering/tenbox-v2/r5 python engineering/tenbox-v2/r8/build.py --out .cache/tenbox-v2-r8-build",
     "check:tenbox-v2-r8": "python3 engineering/tenbox-v2/r8/check_review.py",
-    "check:tenbox-v2-lid-ledge": "python3 engineering/tenbox-v2/r8-lid-ledge-01/check_current.py"
+    "check:tenbox-v2-lid-ledge": "python3 engineering/tenbox-v2/r8-lid-ledge-01/check_current.py",
+    "sync:printed-p6": "python3 scripts/sync-printed-p6.py",
+    "check:printed-p6": "python3 scripts/sync-printed-p6.py --check"
   },
   "dependencies": {
     "@takazudo/zfb": "6.0.1",

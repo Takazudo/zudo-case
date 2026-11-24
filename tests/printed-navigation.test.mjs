@@ -54,21 +54,21 @@ test('resolved sidebar preserves editorial children, restores its linked root an
   assert.deepEqual(nodes.map(node => node.slug), [PRINTED_SECTION]);
   assert.equal(broaderSidebarScope(navigation, nodes, null), null);
   assert.deepEqual(sidebarScopeNodes(navigation, nodes, null), nodes);
-  const p5 = flatten(nodes).find(node => node.slug === 'printed-5mm/p5-design');
-  const focused = sidebarScopeNodes(navigation, nodes, p5.occurrenceId);
-  assert.deepEqual(focused.map(node => node.slug), [p5.slug]);
-  const broad = broaderSidebarScope(navigation, nodes, p5.occurrenceId);
+  const p6 = flatten(nodes).find(node => node.slug === 'printed-5mm/p6-design');
+  const focused = sidebarScopeNodes(navigation, nodes, p6.occurrenceId);
+  assert.deepEqual(focused.map(node => node.slug), [p6.slug]);
+  const broad = broaderSidebarScope(navigation, nodes, p6.occurrenceId);
   assert.equal(broad, nodes[0].occurrenceId);
   assert.equal(broaderSidebarScope(navigation, nodes, broad), null);
   assert.ok(flatten(navigation.roots).every(node => node.slug.startsWith(PRINTED_SECTION)));
 });
 
-test('printed navigation is current-only: P5 tasks, no P4/P3 or history rows', () => {
+test('printed navigation is current-only: P6 tasks, no P5/P4/P3 or history rows', () => {
   const { nodes } = resolve(PRINTED_SECTION, printed);
   const slugs = flatten(nodes).map(node => node.slug);
-  assert.deepEqual(slugs, ['printed-5mm', 'printed-5mm/p5-design', 'printed-5mm/p5-preview', 'printed-5mm/p5-print-files', 'printed-5mm/ventilation']);
+  assert.deepEqual(slugs, ['printed-5mm', 'printed-5mm/p6-design', 'printed-5mm/p6-preview', 'printed-5mm/p6-print-files', 'printed-5mm/ventilation']);
   for (const node of flatten(nodes)) assert.notEqual(node.collapsed, true, node.slug);
-  assert.equal(sidebarBaselineOpen(flatten(nodes).find(node => node.slug === 'printed-5mm/p5-design'), undefined, PRINTED_SECTION), true);
+  assert.equal(sidebarBaselineOpen(flatten(nodes).find(node => node.slug === 'printed-5mm/p6-design'), undefined, PRINTED_SECTION), true);
   // The archive is its own section; its printed pages never enter the current tree.
   const archive = native.find(node => node.slug === 'archive');
   assert.ok(flatten([archive]).some(node => node.slug === 'archive/printed-5mm/p4'));
@@ -79,7 +79,7 @@ test('native prev/next order of the current printed section never walks into arc
   const section = native.find(node => node.slug === PRINTED_SECTION);
   const order = flatten([section]).filter(node => node.hasPage).map(node => node.slug);
   assert.ok(order.every(slug => slug.startsWith('printed-5mm')), order.join(','));
-  assert.ok(!order.some(slug => /p4|p3|history|\/design$|\/preview$|\/print-files$/.test(slug.replace(/p5-[a-z-]+$/, ''))), order.join(','));
+  assert.ok(!order.some(slug => /p5|p4|p3|history|\/design$|\/preview$|\/print-files$/.test(slug.replace(/p6-[a-z-]+$/, ''))), order.join(','));
 });
 
 test('native section sidebars retain linked roots and all descendants, bounded at their own section', () => {

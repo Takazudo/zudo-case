@@ -237,6 +237,60 @@ jobs:
           done
           uv run --locked --project engineering/printed-5mm/p5-tab-joints python scripts/verify-printed-p5-site.py
 
+  printed-p6-lid-slots:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: astral-sh/setup-uv@557e51de59eb14aaaba2ed9621916900a91d50c6 # v6.6.1
+        with:
+          version: 0.10.2
+      - name: Install locked P6 CAD and browser environment
+        run: uv sync --locked --project engineering/printed-5mm/p6-lid-slots
+      - name: Rebuild both lid plates and preserve saved H2D settings
+        run: uv run --locked --project engineering/printed-5mm/p6-lid-slots python engineering/printed-5mm/p6-lid-slots/regenerate.py
+      - name: Verify source ZIP bytes and rebuild from its isolated extraction
+        env:
+          P6_SOURCE_ROOT: ${{ runner.temp }}/printed-p6-source
+        run: |
+          python3 - <<'PY'
+          import os
+          import zipfile
+          from pathlib import Path
+          root = Path('engineering/printed-5mm/p6-lid-slots')
+          expected = sorted(p.relative_to(root).as_posix() for p in root.rglob('*')
+                            if p.is_file() and '.venv' not in p.parts and '__pycache__' not in p.parts)
+          target = Path(os.environ['P6_SOURCE_ROOT'])
+          assert not target.exists(), 'Preserve an existing extraction'
+          with zipfile.ZipFile('public/downloads/candidate/printed-5mm-p6-lid-slots-source.zip') as archive:
+              assert sorted(archive.namelist()) == expected, 'Source ZIP inventory differs'
+              for name in expected:
+                  assert archive.read(name) == (root / name).read_bytes(), 'Source ZIP bytes differ: ' + name
+              archive.extractall(target)
+          print('P6 source ZIP:', len(expected), 'files match maintained source')
+          PY
+          uv run --locked --project "$P6_SOURCE_ROOT" python "$P6_SOURCE_ROOT/regenerate.py"
+      - name: Install the locked Chromium browser
+        run: uv run --locked --project engineering/printed-5mm/p6-lid-slots python -m playwright install --with-deps chromium
+      - name: Verify actual P6 mesh preview and desktop/mobile controls in Chromium
+        run: |
+          python3 -m http.server 8126 --bind 127.0.0.1 --directory public > "$RUNNER_TEMP/printed-p6-http.log" 2>&1 &
+          p6_server_pid=$!
+          trap 'kill "$p6_server_pid" 2>/dev/null || true' EXIT
+          p6_ready=0
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8126/previews/printed-5mm-p6-lid-slots.html -o /dev/null; then p6_ready=1; break; fi
+            sleep 1
+          done
+          test "$p6_ready" = 1
+          uv run --locked --project engineering/printed-5mm/p6-lid-slots python engineering/printed-5mm/p6-lid-slots/preview/verify_browser.py --base-url http://127.0.0.1:8126 --output "$RUNNER_TEMP/printed-p6-browser"
+      - name: Record browser verification evidence
+        if: always()
+        run: |
+          if test -f "$RUNNER_TEMP/printed-p6-browser/verification.json"; then
+            cat "$RUNNER_TEMP/printed-p6-browser/verification.json"
+          fi
+
   tenbox-v2-cad-and-browser:
     runs-on: ubuntu-24.04
     timeout-minutes: 30

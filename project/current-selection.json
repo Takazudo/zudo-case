@@ -52,14 +52,27 @@
       "project": "printed-5mm",
       "model": "7u40",
       "purpose": "home-print-candidate",
-      "revision": "P5-PRINTED-5MM-TAB-JOINTS-J3",
+      "revision": "P6-PRINTED-5MM-LID-SLOTS",
       "label": "7U40家庭印刷 5mm",
-      "registry": { "file": "project/release-state.json", "key": "current_printed_5mm_candidate" },
-      "current_doc": "printed-5mm/p5-design.mdx",
-      "preview": { "path": "/previews/printed-5mm-p5-tab-joints.html", "label": "P5 J3差し込み接合（現行候補）" },
+      "registry": {
+        "file": "project/release-state.json",
+        "key": "current_printed_5mm_candidate"
+      },
+      "current_doc": "printed-5mm/p6-design.mdx",
+      "preview": {
+        "path": "/previews/printed-5mm-p6-lid-slots.html",
+        "label": "P6 フタ天板の長穴（現行候補）"
+      },
       "archive_doc": "archive/printed-5mm/index.mdx",
-      "superseded": ["P4-PRINTED-5MM-UNIFORM-VENTS", "P3-PRINTED-5MM-7U-RAILS"],
-      "production_approved": false
+      "superseded": [
+        "P5-PRINTED-5MM-TAB-JOINTS-J3",
+        "P4-PRINTED-5MM-UNIFORM-VENTS",
+        "P3-PRINTED-5MM-7U-RAILS"
+      ],
+      "production_approved": false,
+      "active_dependencies": [
+        "P5 body, lid edges, optional parts and original rail/PCB inputs; all 13 unrevised part types retain their source/output bytes"
+      ]
     },
     {
       "project": "tenbox-v2",

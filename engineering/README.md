@@ -14,7 +14,7 @@
 
 ## 家庭印刷ケース（7U40・5mm）
 
-- `printed-5mm/`：P3（通気孔なし）、P4（Uniform四壁通気孔）、P5（J3差し込み接合、現行）と各H2D 3MF。作業ルールは`printed-5mm/AGENTS.md`。
+- `printed-5mm/`：P3（通気孔なし）、P4（Uniform四壁通気孔）、P5（J3差し込み接合）、現行P6（フタ天板の長穴）と各H2D 3MF。作業ルールは`printed-5mm/AGENTS.md`。
 
 ## 10BOX-v2（2 × 3U60HP）
 

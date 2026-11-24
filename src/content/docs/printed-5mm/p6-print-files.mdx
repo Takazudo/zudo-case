@@ -1,0 +1,41 @@
+---
+title: "P6・STL/STEPとH2D 3MF"
+description: "現行P6の全ケース一式、天板2枚だけの交換セット、編集可能な長穴ソース。"
+sidebar_position: 12
+---
+
+## ダウンロード
+
+| 用途 | 内容 | ファイル |
+|---|---|---|
+| 新しく一式を印刷する | 現行15型のSTLとSTEP | <PreviewLink path="/downloads/candidate/printed-5mm-p6-lid-slots-stl.zip">P6全ケースSTL/STEP ZIP</PreviewLink> |
+| H2Dで一式を準備する | PLA・0.6mm、未スライス15種類 | <PreviewLink path="/downloads/candidate/printed-5mm-p6-lid-slots-h2d-3mf.zip">P6 H2D 3MF一式</PreviewLink> |
+| 印刷済みケースのフタを交換する | 天板2枚だけのSTL・STEP・3MF | <PreviewLink path="/downloads/candidate/printed-5mm-p6-lid-slots.zip">P6天板2枚交換ZIP</PreviewLink> |
+| 長穴の寸法を編集・再生成する | 2枚の固定入力・パラメーター・ソース・lock | <PreviewLink path="/downloads/candidate/printed-5mm-p6-lid-slots-source.zip">P6ソースZIP</PreviewLink> |
+
+**交換用は`lid-top-1`と`lid-top-2`を各1枚、計2枚です。** どちらも長穴が4か所あります。P5を印刷済みなら、本体や細長いフタ縁を交換する必要はありません。
+
+全ケースZIPはP6天板2型と、P5から形状・ファイルを変えずに引き継ぐ13型を組み合わせています。旧天板は含みません。編集用P6ソースは天板2枚の差分生成を持ち、本体・縁・任意品の保守ソースは保存済みP5を入力として使います。
+
+## 数量
+
+| 部品 | 型数 | 印刷数量 |
+|---|---:|---|
+| 底2枚・壁4枚 | 6 | 各1個 |
+| フタ縁4枚 | 4 | 各1個 |
+| P6フタ天板2枚 | 2 | 各1個 |
+| 横パッド | 1 | 任意・48個 |
+| 縦パッド | 1 | 任意・48個 |
+| 丸座金 | 1 | 任意・28個 |
+
+3MFは1種類につき1部品・1プレートです。任意品の複製数量は同梱一覧を参照してください。元のレール・PCB・金属L金具・ねじは印刷セットに含めません。
+
+## 姿勢と設定
+
+STLはmm単位の印刷姿勢、STEPは組立座標です。倍率は100%で使います。長側板は45度平置き済みで、さらに45度回転しません。長側板はRightノズル領域X25..350／Y0..320mm、ブリム0mmです。
+
+3MFは保存済みH2D・PLA・0.6mm設定を継承しています。P6天板はモデルだけを更新し、元のプロジェクト設定を保持します。他13種類はP5の3MFと同一です。設計材料のASA想定とPLA工程設定は別です。
+
+未スライスでG-codeはありません。蓋の段差サポート、実スライス、反り、現物嵌合、締結強度、クリープ、運搬は未確認です。各ファイルの由来・数量・ハッシュはZIP内の一覧と検証記録を参照してください。
+
+[設計・組立と再生成](./p6-design.mdx)・[フタのプレビュー](./p6-preview.mdx)・[通気孔](./ventilation.mdx)。

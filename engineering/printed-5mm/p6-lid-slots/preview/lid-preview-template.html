@@ -1,0 +1,95 @@
+<div id="p6-lid-preview">
+  <div class="viz-controls" role="group" aria-label="表示する部分">
+    <button type="button" class="btn" data-view="lid" aria-pressed="true">フタ全体</button>
+    <button type="button" class="btn" data-view="plates" aria-pressed="false">天板2枚</button>
+    <button type="button" class="btn" data-view="slot" aria-pressed="false">長穴を拡大</button>
+  </div>
+  <div class="p6-stage">
+    <canvas aria-label="P6の実際のCADメッシュ。フタの天板2枚に、合計8か所の長穴があります。ドラッグで回転、ホイールで拡大できます。" role="img"></canvas>
+    <span class="p6-scale text-small" aria-hidden="true"></span>
+  </div>
+  <div class="p6-footer">
+    <span class="text-small tabular-nums" data-detail aria-live="polite">長穴 8か所 · 10.5 × 5.5 mm · 調整 ±2.5 mm</span>
+    <div class="viz-row" role="group" aria-label="視点操作">
+      <button type="button" class="btn btn-ghost" data-action="left" aria-label="左に回転"><i data-lucide="rotate-ccw" aria-hidden="true"></i></button>
+      <button type="button" class="btn btn-ghost" data-action="up" aria-label="上から見る"><i data-lucide="arrow-up" aria-hidden="true"></i></button>
+      <button type="button" class="btn btn-ghost" data-action="in" aria-label="拡大"><i data-lucide="plus" aria-hidden="true"></i></button>
+      <button type="button" class="btn btn-ghost" data-action="out" aria-label="縮小"><i data-lucide="minus" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <span class="sr-only" data-description>天板2枚が今回の変更部品です。外周のL字パーツは既存の形状です。</span>
+</div>
+<style>
+#p6-lid-preview{display:grid;gap:calc(var(--font-size-base)*.5);color:var(--foreground)}
+#p6-lid-preview .p6-stage{position:relative;width:100%;height:430px;min-width:0}
+#p6-lid-preview canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}
+#p6-lid-preview canvas:active{cursor:grabbing}
+#p6-lid-preview .p6-scale{position:absolute;left:0;bottom:0;border-bottom:1px solid var(--foreground);text-align:center;color:var(--foreground);pointer-events:none}
+#p6-lid-preview .p6-footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:calc(var(--font-size-base)*.5)}
+@media(max-width:500px){#p6-lid-preview .p6-stage{height:370px}}
+</style>
+<script type="application/json" id="p6-lid-meshes">__LID_DATA__</script>
+<script>
+(()=>{
+'use strict';
+const root=document.getElementById('p6-lid-preview');
+const DATA=JSON.parse(document.getElementById('p6-lid-meshes').textContent);
+const canvas=root.querySelector('canvas'),ctx=canvas.getContext('2d',{alpha:true});
+const detail=root.querySelector('[data-detail]'),scaleEl=root.querySelector('.p6-scale');
+const soft=document.createElement('canvas'),sc=soft.getContext('2d',{alpha:true});
+const paletteCanvas=document.createElement('canvas');paletteCanvas.width=paletteCanvas.height=1;
+const pc=paletteCanvas.getContext('2d',{willReadFrequently:true});
+const colorProbe=document.createElement('span');colorProbe.hidden=true;root.append(colorProbe);
+const V={add:(a,b)=>a.map((x,i)=>x+b[i]),sub:(a,b)=>a.map((x,i)=>x-b[i]),mul:(a,k)=>a.map(x=>x*k),dot:(a,b)=>a.reduce((s,x,i)=>s+x*b[i],0),cross:(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]],norm:a=>{const n=Math.hypot(...a)||1;return a.map(x=>x/n)}};
+let view='lid',camera={target:[0,0,116],yaw:.48,pitch:1.05,span:380},palette={},frame=0,scheduled=false;
+let lastWidth=0,lastHeight=0,drag=null;
+const presets={lid:{target:[0,0,116],yaw:.48,pitch:1.05,span:380},plates:{target:[0,0,135],yaw:0,pitch:1.42,span:370},slot:{target:[102.2,-85.25,135],yaw:.12,pitch:1.04,span:34}};
+const parts=DATA.parts.map(p=>{
+ const tris=[];
+ for(let j=0;j<p.i.length;j+=3){const a=p.p.slice(p.i[j]*3,p.i[j]*3+3),b=p.p.slice(p.i[j+1]*3,p.i[j+1]*3+3),c=p.p.slice(p.i[j+2]*3,p.i[j+2]*3+3);tris.push({a,b,c,n:V.norm(V.cross(V.sub(b,a),V.sub(c,a)))});}
+ return {...p,tris};
+});
+function color(token){colorProbe.style.color='var('+token+')';pc.clearRect(0,0,1,1);pc.fillStyle=getComputedStyle(colorProbe).color;pc.fillRect(0,0,1,1);return Array.from(pc.getImageData(0,0,1,1).data).slice(0,3)}
+function refreshPalette(){palette={plate:color('--viz-series-1'),edge:color('--muted-foreground'),bracket:color('--foreground'),line:color('--foreground')};requestRender()}
+function activeParts(){return parts.filter(p=>view==='lid'||p.kind==='plate')}
+function requestRender(){if(scheduled)return;scheduled=true;requestAnimationFrame(()=>{scheduled=false;render()})}
+function render(){
+ const cssW=canvas.clientWidth,cssH=canvas.clientHeight;if(!cssW||!cssH)return;
+ const ratio=Math.min(window.devicePixelRatio||1,1.35,1050/cssW),w=Math.round(cssW*ratio),h=Math.round(cssH*ratio);
+ if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;soft.width=w;soft.height=h}
+ const image=sc.createImageData(w,h),rgba=image.data,zbuffer=new Float32Array(w*h);zbuffer.fill(Infinity);
+ const cp=Math.cos(camera.pitch),direction=[cp*Math.sin(camera.yaw),-cp*Math.cos(camera.yaw),Math.sin(camera.pitch)];
+ const forward=V.mul(direction,-1),right=V.norm(V.cross(forward,[0,0,1])),up=V.cross(right,forward),px=h/camera.span;
+ const light=V.norm([-.5,-.55,1]),fill=V.norm([.6,.7,.5]);
+ function project(p){const q=V.sub(p,camera.target);return [w/2+V.dot(q,right)*px,h/2-V.dot(q,up)*px,V.dot(q,forward)]}
+ function raster(a,b,c,col){
+  const area=(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);if(Math.abs(area)<1e-8)return;
+  const x0=Math.max(0,Math.floor(Math.min(a[0],b[0],c[0]))),x1=Math.min(w-1,Math.ceil(Math.max(a[0],b[0],c[0]))),y0=Math.max(0,Math.floor(Math.min(a[1],b[1],c[1]))),y1=Math.min(h-1,Math.ceil(Math.max(a[1],b[1],c[1])));
+  if(x0>x1||y0>y1)return;const inv=1/area,e0x=(b[1]-c[1])*inv,e0y=(c[0]-b[0])*inv,e1x=(c[1]-a[1])*inv,e1y=(a[0]-c[0])*inv;
+  for(let y=y0;y<=y1;y++){
+   let u=((b[0]-x0-.5)*(c[1]-y-.5)-(b[1]-y-.5)*(c[0]-x0-.5))*inv,v=((c[0]-x0-.5)*(a[1]-y-.5)-(c[1]-y-.5)*(a[0]-x0-.5))*inv;
+   for(let x=x0;x<=x1;x++,u+=e0x,v+=e1x){const q=1-u-v;if(u<-.000001||v<-.000001||q<-.000001)continue;const z=u*a[2]+v*b[2]+q*c[2],at=y*w+x;if(z>zbuffer[at]+1e-6)continue;zbuffer[at]=z;const k=at*4;rgba[k]=col[0];rgba[k+1]=col[1];rgba[k+2]=col[2];rgba[k+3]=255;}
+  }
+ }
+ const selected=activeParts();
+ for(const p of selected){const base=palette[p.kind];for(const t of p.tris){let n=t.n;if(V.dot(n,direction)<0)n=V.mul(n,-1);const shade=.48+.34*Math.max(V.dot(n,light),0)+.18*Math.max(V.dot(n,fill),0);const col=base.map(v=>Math.min(255,Math.round(v*shade)));raster(project(t.a),project(t.b),project(t.c),col)}}
+ for(const p of selected){for(let j=0;j<p.e.length;j+=6){const a=project(p.e.slice(j,j+3)),b=project(p.e.slice(j+3,j+6)),n=Math.ceil(Math.max(Math.abs(b[0]-a[0]),Math.abs(b[1]-a[1])));for(let q=0;q<=n;q++){const t=n?q/n:0,x=Math.round(a[0]+(b[0]-a[0])*t),y=Math.round(a[1]+(b[1]-a[1])*t);if(x<0||x>=w||y<0||y>=h)continue;const z=a[2]+(b[2]-a[2])*t,at=y*w+x;if(z>zbuffer[at]+.08)continue;const k=at*4;for(let c=0;c<3;c++)rgba[k+c]=Math.round(rgba[k+c]*.72+palette.line[c]*.28);rgba[k+3]=255;}}}
+ sc.putImageData(image,0,0);ctx.clearRect(0,0,w,h);ctx.drawImage(soft,0,0);
+ const pxPerMM=cssH/camera.span,steps=[1,2,5,10,20,50,100],mm=steps.reduce((best,n)=>Math.abs(n*pxPerMM-74)<Math.abs(best*pxPerMM-74)?n:best);
+ scaleEl.style.width=(mm*pxPerMM)+'px';scaleEl.textContent=mm+' mm';root.dataset.view=view;root.dataset.rendered='true';frame++;
+}
+function fitView(){const cp=Math.cos(camera.pitch),direction=[cp*Math.sin(camera.yaw),-cp*Math.cos(camera.yaw),Math.sin(camera.pitch)],forward=V.mul(direction,-1),right=V.norm(V.cross(forward,[0,0,1])),up=V.cross(right,forward);let x0=Infinity,x1=-Infinity,y0=Infinity,y1=-Infinity;for(const p of activeParts())for(let k=0;k<p.p.length;k+=3){const v=V.sub(p.p.slice(k,k+3),camera.target),x=V.dot(v,right),y=V.dot(v,up);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y)}camera.target=V.add(camera.target,V.add(V.mul(right,(x0+x1)/2),V.mul(up,(y0+y1)/2)));camera.span=Math.max(y1-y0,(x1-x0)/Math.max(.1,canvas.clientWidth/canvas.clientHeight))*1.18}
+function setView(next){view=next;camera={...presets[view],target:[...presets[view].target]};if(view!=='slot'&&canvas.clientWidth&&canvas.clientHeight)fitView();for(const b of root.querySelectorAll('[data-view]'))b.setAttribute('aria-pressed',String(b.dataset.view===view));detail.textContent=view==='slot'?'長穴 10.5 × 5.5 mm · 調整 ±2.5 mm':view==='plates'?'天板2枚 · 各4か所 · 板厚 5 mm':'長穴 8か所 · 10.5 × 5.5 mm · 調整 ±2.5 mm';requestRender()}
+for(const b of root.querySelectorAll('[data-view]'))b.addEventListener('click',()=>setView(b.dataset.view));
+for(const b of root.querySelectorAll('[data-action]'))b.addEventListener('click',()=>{const a=b.dataset.action;if(a==='left')camera.yaw-=.25;if(a==='up')camera.pitch=Math.min(1.52,camera.pitch+.15);if(a==='in')camera.span=Math.max(8,camera.span*.8);if(a==='out')camera.span=Math.min(1000,camera.span*1.25);requestRender()});
+canvas.addEventListener('pointerdown',e=>{canvas.setPointerCapture(e.pointerId);drag={x:e.clientX,y:e.clientY,pointer:e.pointerId}});
+canvas.addEventListener('pointermove',e=>{if(!drag||drag.pointer!==e.pointerId)return;camera.yaw-=(e.clientX-drag.x)*.008;camera.pitch=Math.max(-1.45,Math.min(1.52,camera.pitch+(e.clientY-drag.y)*.008));drag.x=e.clientX;drag.y=e.clientY;requestRender()});
+canvas.addEventListener('pointerup',()=>{drag=null});canvas.addEventListener('pointercancel',()=>{drag=null});
+canvas.addEventListener('wheel',e=>{e.preventDefault();camera.span=Math.max(8,Math.min(1000,camera.span*Math.exp(e.deltaY*.001)));requestRender()},{passive:false});
+new ResizeObserver(()=>{if(lastWidth!==canvas.clientWidth||lastHeight!==canvas.clientHeight){lastWidth=canvas.clientWidth;lastHeight=canvas.clientHeight;setView(view)}else requestRender()}).observe(root.querySelector('.p6-stage'));
+const mo=new MutationObserver(refreshPalette);mo.observe(document.documentElement,{attributes:true,attributeFilter:['class','style','data-theme']});
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',refreshPalette);
+root.p6Study={get view(){return view},get camera(){return camera},get frames(){return frame},get meshes(){return DATA.parts.map(p=>({id:p.id,vertices:p.p.length/3,triangles:p.i.length/3,sha256:p.sha256}))},setView,render};
+refreshPalette();setView('lid');
+})();
+</script>
