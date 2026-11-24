@@ -558,8 +558,8 @@
     },
     {
       "path": "engineering/printed-5mm/p6-lid-slots/preview/verify_browser.py",
-      "sha256": "b0ad86a6150b793e0070f36b3325f98e78ad2010835aca22e99d113525bd7063",
-      "bytes": 4162
+      "sha256": "cff07c816f7f2fc37d6c60854431718e31ee60854afcd3059b36acaf74e0f0e8",
+      "bytes": 4186
     },
     {
       "path": "engineering/printed-5mm/p6-lid-slots/pyproject.toml",
@@ -608,8 +608,8 @@
     },
     {
       "path": "public/downloads/candidate/printed-5mm-p6-lid-slots-source.zip",
-      "sha256": "30ff4b723b51ebd46f097ec9184c5c7312d7102326448c12648fe7eb34797f73",
-      "bytes": 265637
+      "sha256": "0874805e7b3f2968e6c0509135d68863d94959d85be8e933a00058d77ac0a43b",
+      "bytes": 265640
     },
     {
       "path": "public/downloads/candidate/printed-5mm-p6-lid-slots-stl.zip",
