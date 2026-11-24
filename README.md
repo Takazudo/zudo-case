@@ -7,7 +7,7 @@
 | 系列 | 現行の位置づけ | 入口 |
 |---|---|---|
 | 金属ケース | 3U60・7U40・7U60。7U40はR11-BUILD-FEEDBACK-04（CADレビュー候補、現物未検証・価格未見積・未発注）、3U60・7U60はR6本体＋R8載せ蓋の基準 | [metal-case](src/content/docs/metal-case/index.mdx) |
-| 7U40家庭印刷 | 5mm板の現行P5-PRINTED-5MM-TAB-JOINTS-J3。旧P4/P3はアーカイブ | [printed-5mm](src/content/docs/printed-5mm/index.mdx) |
+| 7U40家庭印刷 | 5mm板の現行P6-PRINTED-5MM-LID-SLOTS。長穴付きの同じフタ天板を2枚印刷し、他13部品IDを継承。旧P5/P4/P3はアーカイブ | [printed-5mm](src/content/docs/printed-5mm/index.mdx) |
 | 10BOX-v2 | 二段3U60HPの独立系列。**最新版はR8-LID-LEDGE-01**（下側長穴の配置を維持し、蓋の前後棚を連結）。10BOX-v2全体として試作・改良を継続中 | [tenbox-v2](src/content/docs/tenbox-v2/index.mdx)・[印刷ファイル](src/content/docs/tenbox-v2/print-files.mdx) |
 | 2WAY | TW-01が作業版（A/B/Cはどれも現行の比較対象）、F5はその入力の不変の原資料。製造用CADではない | [two-way](src/content/docs/two-way/index.mdx) |
 | 共通部品・元データ | 家庭印刷8mmスペーサーHOME-PRINT-SPACER-01（外径・穴径は仮寸法）、元レール・PCBと出典 | [shared](src/content/docs/shared/index.mdx) |

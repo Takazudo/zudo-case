@@ -1,0 +1,46 @@
+---
+title: "P6・STL/STEPとH2D 3MF"
+description: "フタ天板は同じSTLを2枚印刷。単独STL、H2D 3MF、全ケース一式と長穴ソース。"
+sidebar_position: 12
+---
+
+## ダウンロード
+
+**フタ天板は同じSTLを2枚印刷します。** 組み立てるときに片方を板の面内で180度回して配置します。裏返しや鏡像化は不要です。
+
+| 用途 | 内容 | ファイル |
+|---|---|---|
+| フタ天板を印刷する | このSTLを2枚印刷 | <PreviewLink path="/downloads/candidate/printed-5mm-p6-lid-top.stl">フタ天板STL（同じものを2枚）</PreviewLink> |
+| フタ用のH2D設定・STEPも使う | 天板のSTL・STEP・3MFと印刷案内 | <PreviewLink path="/downloads/candidate/printed-5mm-p6-lid-slots.zip">P6天板交換ZIP</PreviewLink> |
+| 新しく一式を印刷する | 組立位置別の15部品IDのSTLとSTEP | <PreviewLink path="/downloads/candidate/printed-5mm-p6-lid-slots-stl.zip">P6全ケースSTL/STEP ZIP</PreviewLink> |
+| H2Dで一式を準備する | 15部品IDの未スライスプロジェクト、PLA・0.6mm | <PreviewLink path="/downloads/candidate/printed-5mm-p6-lid-slots-h2d-3mf.zip">P6 H2D 3MF一式</PreviewLink> |
+| 長穴の寸法を編集・再生成する | 固定入力・パラメーター・ソース・lock | <PreviewLink path="/downloads/candidate/printed-5mm-p6-lid-slots-source.zip">P6ソースZIP</PreviewLink> |
+
+単独STLは`lid-top-1.stl`と同じデータです。H2Dでは交換ZIP内の`p6-lid-top-1-h2d-pla06.3mf`を使い、同じモデルを2枚印刷します。1プレートに天板1枚です。P5を印刷済みなら、本体や細長いフタ縁を交換する必要はありません。
+
+`lid-top-1`と`lid-top-2`は組立位置ごとのIDで、180度回転すると一致する形状です。既存の2ファイルは組立位置とソースの対応を保つために収録しています。全ケースZIPの「15部品ID」も組立位置別のファイル数を示し、同形の部品を含みます。
+
+全ケースZIPはP6天板の2部品IDと、P5のデータをそのまま引き継ぐ13部品IDを組み合わせています。旧丸穴の天板は含みません。編集用P6ソースは天板の長穴加工を持ち、本体・縁・任意品の保守ソースは保存済みP5を入力として使います。
+
+## 数量
+
+| 部品 | 同梱する組立ID数 | 印刷数量 |
+|---|---:|---|
+| 底2枚・壁4枚 | 6 | 各1個 |
+| フタ縁4枚 | 4 | 各1個 |
+| P6フタ天板 | 2（同形） | 同じSTL／3MFから計2枚 |
+| 横パッド | 1 | 任意・48個 |
+| 縦パッド | 1 | 任意・48個 |
+| 丸座金 | 1 | 任意・28個 |
+
+3MFは1ファイルにつき1部品・1プレートです。任意品の複製数量は同梱一覧を参照してください。元のレール・PCB・金属L金具・ねじは印刷セットに含めません。
+
+## 姿勢と設定
+
+STLはmm単位の印刷姿勢、STEPは組立座標です。倍率は100%で使います。長側板は45度平置き済みで、さらに45度回転しません。長側板はRightノズル領域X25..350／Y0..320mm、ブリム0mmです。
+
+3MFは保存済みH2D・PLA・0.6mm設定を継承しています。P6天板はモデルだけを更新し、元のプロジェクト設定を保持します。他13部品IDの3MFはP5と同一です。設計材料のASA想定とPLA工程設定は別です。
+
+未スライスでG-codeはありません。蓋の段差サポート、実スライス、反り、現物嵌合、締結強度、クリープ、運搬は未確認です。各ファイルの由来・数量・ハッシュはZIP内の一覧と検証記録を参照してください。
+
+[設計・組立と再生成](./p6-design.mdx)・[フタのプレビュー](./p6-preview.mdx)・[通気孔](./ventilation.mdx)。

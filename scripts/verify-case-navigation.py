@@ -65,10 +65,10 @@ def branch_row(scope, slug):
 
 
 def exercise_printed(page, width):
-    # Printed shows only the current P5 tree; P4/P3 live under the top-level Archive.
+    # Printed shows only the current P6 tree; P4/P3 live under the top-level Archive.
     visit(page, "/docs/printed-5mm/")
     nav = sidebar(page, width)
-    expected_top = ["printed-5mm/p5-design"]
+    expected_top = ["printed-5mm/p6-design"]
     for slug in expected_top:
         expect(doc_link(nav, slug)).to_have_count(1)
     check(f"{width} printed linked root", doc_link(nav, "printed-5mm").count() == 1)
@@ -81,11 +81,11 @@ def exercise_printed(page, width):
     check(f"{width} printed sidebar has no archive link", not any(href.startswith("/docs/archive") for href in actual))
     page.screenshot(path=str(OUT / f"printed-current-{width}.png"), full_page=True)
 
-    focus = branch_row(nav, "printed-5mm/p5-design").locator("[data-sidebar-focus]")
+    focus = branch_row(nav, "printed-5mm/p6-design").locator("[data-sidebar-focus]")
     focus.focus()
     page.keyboard.press("Enter")
     expect(nav.locator("[data-sidebar-broaden]")).to_be_visible()
-    checks.append(f"{width} keyboard focus narrows to P5")
+    checks.append(f"{width} keyboard focus narrows to P6")
     nav.locator("[data-sidebar-broaden]").click()
     expect(nav.locator("[data-sidebar-broaden]")).to_have_count(0)
     check(f"{width} Broaden returns to printed root and stops", doc_link(nav, "printed-5mm").count() == 1)

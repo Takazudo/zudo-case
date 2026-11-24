@@ -264,28 +264,40 @@
     },
     {
       "path": "engineering/README.md",
-      "bytes": 3162,
-      "sha256": "738837a1ae553fe1dcfe80503dde2b6f923c254cfb6a95c5ea8cbf72a956541c",
+      "bytes": 3191,
+      "sha256": "f983394ddeb7e088639089b335ed2cf38026d0bc3e6359d49fc62229b86f2ee7",
       "status": "supporting-not-released",
       "documentation_update": {
         "date": "2026-11-24",
-        "issue": "https://github.com/Takazudo/zudo-case/issues/149",
-        "reason": "Select R8-LID-LEDGE-01 and its connected lid retaining ledges in the maintained engineering index. Historical geometry and archive receipts remain unchanged.",
+        "issue": "https://github.com/Takazudo/zudo-case/issues/146",
+        "reason": "Select P6 slotted lid roof plates in the maintained printed-5mm engineering index. P5 and other historical CAD, meshes and archive payloads retain their existing hashes.",
         "previous": {
-          "commit": "50f9abe64b66d656d1cfbe3264dc1c7b0fc77b38",
-          "bytes": 3063,
-          "sha256": "e0326aff6a915d594a6b685b21a14d391bd444f3744f6752e7c1795249032e9a"
+          "commit": "5e27da5144bb3b8349a38f151901c113a76a2e9e",
+          "bytes": 3162,
+          "sha256": "738837a1ae553fe1dcfe80503dde2b6f923c254cfb6a95c5ea8cbf72a956541c"
         },
         "previous_documentation_updates": [
           {
-            "date": "2026-11-23",
-            "issue": "https://github.com/Takazudo/zudo-case/issues/147",
-            "reason": "Select 10BOX-v2 R8 in the maintained engineering index. No geometry or artifact payload changed.",
+            "date": "2026-11-24",
+            "issue": "https://github.com/Takazudo/zudo-case/issues/149",
+            "reason": "Select R8-LID-LEDGE-01 and its connected lid retaining ledges in the maintained engineering index. Historical geometry and archive receipts remain unchanged.",
             "previous": {
-              "commit": "531a4ee040a37855e9e770650413fb422a8e426e",
-              "bytes": 2916,
-              "sha256": "ffccc85e99d10a15e480b85098e4146626af511c75df653b71e64bb2348464c7"
-            }
+              "commit": "50f9abe64b66d656d1cfbe3264dc1c7b0fc77b38",
+              "bytes": 3063,
+              "sha256": "e0326aff6a915d594a6b685b21a14d391bd444f3744f6752e7c1795249032e9a"
+            },
+            "previous_documentation_updates": [
+              {
+                "date": "2026-11-23",
+                "issue": "https://github.com/Takazudo/zudo-case/issues/147",
+                "reason": "Select 10BOX-v2 R8 in the maintained engineering index. No geometry or artifact payload changed.",
+                "previous": {
+                  "commit": "531a4ee040a37855e9e770650413fb422a8e426e",
+                  "bytes": 2916,
+                  "sha256": "ffccc85e99d10a15e480b85098e4146626af511c75df653b71e64bb2348464c7"
+                }
+              }
+            ]
           }
         ]
       }

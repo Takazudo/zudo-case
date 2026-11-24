@@ -146,8 +146,8 @@
   },
   {
     "path": "archive/printed-5mm/index.mdx",
-    "title": "7U40家庭印刷のアーカイブ（P4・P3）",
-    "description": "家庭印刷ケースの旧版。P4はUniform通気孔の版、P3は通気孔のない最初の基準。",
+    "title": "7U40家庭印刷のアーカイブ（P5・P4・P3）",
+    "description": "家庭印刷ケースの旧版。P5はJ3差し込み接合、P4はUniform通気孔、P3は通気孔のない基準。",
     "sidebar_position": 20
   },
   {
@@ -197,6 +197,27 @@
     "title": "P4 Uniform通気孔と独立した締結穴",
     "description": "四壁82開口の幾何仕様、ねじ穴との分離と未検証事項。",
     "sidebar_position": 30,
+    "search_exclude": true
+  },
+  {
+    "path": "archive/printed-5mm/p5/index.mdx",
+    "title": "P5・J3差し込み接合",
+    "description": "本体6枚の一体タブと閉じた受け穴、保持するフタと元レール。",
+    "sidebar_position": 5,
+    "search_exclude": true
+  },
+  {
+    "path": "archive/printed-5mm/p5/preview.mdx",
+    "title": "P5・3Dプレビュー",
+    "description": "J3接合・側板輪郭・フタ整列と元レールを同一CADで確認。",
+    "sidebar_position": 11,
+    "search_exclude": true
+  },
+  {
+    "path": "archive/printed-5mm/p5/print-files.mdx",
+    "title": "P5・STL/STEPとH2D 3MF",
+    "description": "本体6枚を同時交換する印刷一式、再生成ソースと未スライスPLA06プロジェクト。",
+    "sidebar_position": 12,
     "search_exclude": true
   },
   {
@@ -836,7 +857,7 @@
   },
   {
     "path": "printed-5mm/history.mdx",
-    "title": "7U40家庭印刷のアーカイブ（P4・P3）（移動済み）",
+    "title": "7U40家庭印刷のアーカイブ（P5・P4・P3）（移動済み）",
     "description": "旧URLの互換ページ。正式なページは/docs/archive/printed-5mm/。",
     "sidebar_position": 999,
     "unlisted": true
@@ -844,7 +865,7 @@
   {
     "path": "printed-5mm/index.mdx",
     "title": "7U40・5mm家庭印刷ケース",
-    "description": "黒ASAの5mm板で本体と載せ蓋を家庭印刷する系列。現行はP5-PRINTED-5MM-TAB-JOINTS-J3。",
+    "description": "黒ASAの5mm板で本体と載せ蓋を家庭印刷する系列。現行P6はフタ天板の長穴に対応。",
     "sidebar_position": 30
   },
   {
@@ -870,20 +891,41 @@
   },
   {
     "path": "printed-5mm/p5-design.mdx",
-    "title": "P5・J3差し込み接合",
-    "description": "本体6枚の一体タブと閉じた受け穴、保持するフタと元レール。",
-    "sidebar_position": 10
+    "title": "P5・J3差し込み接合（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/archive/printed-5mm/p5/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "printed-5mm/p5-preview.mdx",
-    "title": "P5・3Dプレビュー",
-    "description": "J3接合・側板輪郭・フタ整列と元レールを同一CADで確認。",
-    "sidebar_position": 11
+    "title": "P5・3Dプレビュー（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/archive/printed-5mm/p5/preview/。",
+    "sidebar_position": 999,
+    "unlisted": true
   },
   {
     "path": "printed-5mm/p5-print-files.mdx",
-    "title": "P5・STL/STEPとH2D 3MF",
-    "description": "本体6枚を同時交換する印刷一式、再生成ソースと未スライスPLA06プロジェクト。",
+    "title": "P5・STL/STEPとH2D 3MF（移動済み）",
+    "description": "旧URLの互換ページ。正式なページは/docs/archive/printed-5mm/p5/print-files/。",
+    "sidebar_position": 999,
+    "unlisted": true
+  },
+  {
+    "path": "printed-5mm/p6-design.mdx",
+    "title": "P6・フタ天板の長穴と構造",
+    "description": "同じ天板を2枚印刷し、8長穴で縁パーツの位置ずれを吸収。J3本体と縁部品を継承。",
+    "sidebar_position": 10
+  },
+  {
+    "path": "printed-5mm/p6-preview.mdx",
+    "title": "P6・フタの3Dプレビュー",
+    "description": "修正した天板2枚と縁4枚を表示し、8か所の長穴の向きを確認する。",
+    "sidebar_position": 11
+  },
+  {
+    "path": "printed-5mm/p6-print-files.mdx",
+    "title": "P6・STL/STEPとH2D 3MF",
+    "description": "フタ天板は同じSTLを2枚印刷。単独STL、H2D 3MF、全ケース一式と長穴ソース。",
     "sidebar_position": 12
   },
   {
@@ -903,7 +945,7 @@
   {
     "path": "printed-5mm/ventilation.mdx",
     "title": "通気孔と独立した締結穴",
-    "description": "P5の四壁82開口の幾何仕様、ねじ穴・受け穴との分離と未検証事項。",
+    "description": "P6の四壁82開口の幾何仕様、ねじ穴・受け穴との分離と未検証事項。",
     "sidebar_position": 13
   },
   {

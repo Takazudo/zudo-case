@@ -1,0 +1,416 @@
+{
+  "revision": "P6-PRINTED-5MM-LID-SLOTS",
+  "units": "mm",
+  "production_approved": false,
+  "python": "3.13.5",
+  "cadquery": "2.8.0",
+  "slot": {
+    "length_mm": 10.5,
+    "width_mm": 5.5,
+    "nominal_adjustment_each_direction_mm": 2.5,
+    "axis_rule": "Normal to corresponding case edge in the roof XY plane"
+  },
+  "parts": [
+    {
+      "id": "lid-top-1",
+      "quantity": 1,
+      "assembly_to_print_translation_mm": [
+        112.9,
+        165.2,
+        -132.5
+      ],
+      "print_dimensions_mm": [
+        225.8000030517578,
+        165.0500030517578,
+        5.0
+      ],
+      "print_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          225.8000030517578,
+          165.0500030517578,
+          5.0
+        ]
+      ],
+      "assembly_bounds_mm": [
+        -112.9,
+        -165.2,
+        132.5,
+        112.9,
+        -0.15,
+        137.5
+      ],
+      "cad_volume_mm3": 185315.51154453275,
+      "removed_volume_mm3": 550.0,
+      "expected_removed_volume_mm3": 550.0,
+      "minimum_edge_margin_mm": 5.45,
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 1572,
+      "holes": [
+        {
+          "face": "front",
+          "center_mm": [
+            -59.5,
+            -154.5
+          ],
+          "angle_deg": 90,
+          "length_mm": 10.5,
+          "width_mm": 5.5,
+          "edge_margin_mm": 5.45,
+          "m5_travel_checks": [
+            {
+              "offset_mm": -2.5,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 0.0,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 2.5,
+              "m5_shaft_collision_mm3": 0.0
+            }
+          ]
+        },
+        {
+          "face": "front",
+          "center_mm": [
+            59.5,
+            -154.5
+          ],
+          "angle_deg": 90,
+          "length_mm": 10.5,
+          "width_mm": 5.5,
+          "edge_margin_mm": 5.45,
+          "m5_travel_checks": [
+            {
+              "offset_mm": -2.5,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 0.0,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 2.5,
+              "m5_shaft_collision_mm3": 0.0
+            }
+          ]
+        },
+        {
+          "face": "right",
+          "center_mm": [
+            102.2,
+            -85.25
+          ],
+          "angle_deg": 0,
+          "length_mm": 10.5,
+          "width_mm": 5.5,
+          "edge_margin_mm": 5.45,
+          "m5_travel_checks": [
+            {
+              "offset_mm": -2.5,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 0.0,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 2.5,
+              "m5_shaft_collision_mm3": 0.0
+            }
+          ]
+        },
+        {
+          "face": "left",
+          "center_mm": [
+            -102.2,
+            -85.25
+          ],
+          "angle_deg": 0,
+          "length_mm": 10.5,
+          "width_mm": 5.5,
+          "edge_margin_mm": 5.45,
+          "m5_travel_checks": [
+            {
+              "offset_mm": -2.5,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 0.0,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 2.5,
+              "m5_shaft_collision_mm3": 0.0
+            }
+          ]
+        }
+      ],
+      "stl_sha256": "d2fa82159ee07ec829d49eb74547cef3ee7c2182c178d70dceed3a973157ec95",
+      "step_sha256": "cd248a776a57774967f2f178de2b0390988b1225d84933d3be603374ed505a3d",
+      "bambu_project": {
+        "file": "projects/p6-lid-top-1-h2d-pla06.3mf",
+        "sha256": "a36a7001b4187ef4fe8a167c288545d7e29a2b61bf0f3fd441bdc243da1132fe",
+        "template_sha256": "50914e0bb10f1d21fb4a86027726a4e25f5b61bba4e6fec15fefadef049fe371",
+        "settings_bytes_unchanged": true,
+        "all_object_ids_uuids_and_transforms_preserved": true,
+        "mesh_identical_to_stl": true,
+        "unsliced": true,
+        "studio_load_or_slice_performed": false,
+        "printer": "Bambu Lab H2D",
+        "nozzle_mm": 0.6,
+        "filament": "PLA",
+        "brim_mm": 0,
+        "validation": {
+          "status": "structural_checks_passed",
+          "build_items": [
+            {
+              "object_id": "2",
+              "instance_id": 0,
+              "bounds_mm": [
+                [
+                  62.0999984741,
+                  72.4749984741,
+                  0.0
+                ],
+                [
+                  287.90000152609997,
+                  237.5250015261,
+                  5.0
+                ]
+              ]
+            }
+          ],
+          "meshes": [
+            {
+              "model": "3D/3dmodel.model",
+              "object_id": "1",
+              "vertices": 780,
+              "triangles": 1572,
+              "signed_volume_mm3": 185315.957797
+            }
+          ],
+          "layout_checked": true,
+          "contains_toolpaths": false,
+          "not_checked": [
+            "Bambu Studio load/slicing",
+            "self-intersections",
+            "wall thickness and fit",
+            "support/brim/prime tower clearance",
+            "sequential-print toolhead clearance"
+          ]
+        }
+      }
+    },
+    {
+      "id": "lid-top-2",
+      "quantity": 1,
+      "assembly_to_print_translation_mm": [
+        112.9,
+        -0.15,
+        -132.5
+      ],
+      "print_dimensions_mm": [
+        225.8000030517578,
+        165.0500030517578,
+        5.0
+      ],
+      "print_bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          225.8000030517578,
+          165.0500030517578,
+          5.0
+        ]
+      ],
+      "assembly_bounds_mm": [
+        -112.9,
+        0.15,
+        132.5,
+        112.9,
+        165.2,
+        137.5
+      ],
+      "cad_volume_mm3": 185315.51154453272,
+      "removed_volume_mm3": 550.0000000000291,
+      "expected_removed_volume_mm3": 550.0,
+      "minimum_edge_margin_mm": 5.45,
+      "watertight": true,
+      "winding_consistent": true,
+      "mesh_components": 1,
+      "triangles": 1572,
+      "holes": [
+        {
+          "face": "back",
+          "center_mm": [
+            59.5,
+            154.5
+          ],
+          "angle_deg": 90,
+          "length_mm": 10.5,
+          "width_mm": 5.5,
+          "edge_margin_mm": 5.45,
+          "m5_travel_checks": [
+            {
+              "offset_mm": -2.5,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 0.0,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 2.5,
+              "m5_shaft_collision_mm3": 0.0
+            }
+          ]
+        },
+        {
+          "face": "back",
+          "center_mm": [
+            -59.5,
+            154.5
+          ],
+          "angle_deg": 90,
+          "length_mm": 10.5,
+          "width_mm": 5.5,
+          "edge_margin_mm": 5.45,
+          "m5_travel_checks": [
+            {
+              "offset_mm": -2.5,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 0.0,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 2.5,
+              "m5_shaft_collision_mm3": 0.0
+            }
+          ]
+        },
+        {
+          "face": "right",
+          "center_mm": [
+            102.2,
+            85.25
+          ],
+          "angle_deg": 0,
+          "length_mm": 10.5,
+          "width_mm": 5.5,
+          "edge_margin_mm": 5.45,
+          "m5_travel_checks": [
+            {
+              "offset_mm": -2.5,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 0.0,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 2.5,
+              "m5_shaft_collision_mm3": 0.0
+            }
+          ]
+        },
+        {
+          "face": "left",
+          "center_mm": [
+            -102.2,
+            85.25
+          ],
+          "angle_deg": 0,
+          "length_mm": 10.5,
+          "width_mm": 5.5,
+          "edge_margin_mm": 5.45,
+          "m5_travel_checks": [
+            {
+              "offset_mm": -2.5,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 0.0,
+              "m5_shaft_collision_mm3": 0.0
+            },
+            {
+              "offset_mm": 2.5,
+              "m5_shaft_collision_mm3": 0.0
+            }
+          ]
+        }
+      ],
+      "stl_sha256": "ddd7ed45fd2a397baf9c2a92219c14ec0ad9113257cc6e1a1cdb23f8cefed088",
+      "step_sha256": "b851119b2e04b72078dfe23efe2b79de551b1262d587c7b2d71677428094f074",
+      "bambu_project": {
+        "file": "projects/p6-lid-top-2-h2d-pla06.3mf",
+        "sha256": "aefa314c4464d957893354934fe9bbc3b4e6631180b25aee22f489da893ff60e",
+        "template_sha256": "841bf139d6df6ebbfddf3d2eeb4034760ae7f882a4cfab08e651dafa0cee2019",
+        "settings_bytes_unchanged": true,
+        "all_object_ids_uuids_and_transforms_preserved": true,
+        "mesh_identical_to_stl": true,
+        "unsliced": true,
+        "studio_load_or_slice_performed": false,
+        "printer": "Bambu Lab H2D",
+        "nozzle_mm": 0.6,
+        "filament": "PLA",
+        "brim_mm": 0,
+        "validation": {
+          "status": "structural_checks_passed",
+          "build_items": [
+            {
+              "object_id": "2",
+              "instance_id": 0,
+              "bounds_mm": [
+                [
+                  62.0999984741,
+                  72.4749984741,
+                  0.0
+                ],
+                [
+                  287.90000152609997,
+                  237.5250015261,
+                  5.0
+                ]
+              ]
+            }
+          ],
+          "meshes": [
+            {
+              "model": "3D/3dmodel.model",
+              "object_id": "1",
+              "vertices": 780,
+              "triangles": 1572,
+              "signed_volume_mm3": 185315.957874
+            }
+          ],
+          "layout_checked": true,
+          "contains_toolpaths": false,
+          "not_checked": [
+            "Bambu Studio load/slicing",
+            "self-intersections",
+            "wall thickness and fit",
+            "support/brim/prime tower clearance",
+            "sequential-print toolhead clearance"
+          ]
+        }
+      }
+    }
+  ],
+  "physical_validation": false,
+  "scope": "Only lid-top-1 and lid-top-2; unchanged P5 body, edges, pads, hardware and rail reference inputs.",
+  "passed": true
+}

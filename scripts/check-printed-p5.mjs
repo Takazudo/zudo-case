@@ -10,7 +10,6 @@ export function verifyP5(root){
  assert.deepEqual(registry.print_parts,{structural:12,optional_types:3});
  assert.deepEqual(registry.optional_quantities,{'pad-horizontal':48,'pad-vertical':48,'washer-round':28});
  const release=read('project/release-state.json');
- assert.equal(release.current_printed_5mm_candidate.revision,registry.revision);
  assert.equal(release.current_printed_5mm_candidate.production_approved,false);
  for(const f of registry.files){
   const bytes=readFileSync(resolve(root,f.path));

@@ -12,11 +12,11 @@ with sync_playwright() as pw:
     page=browser.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
     for width in [1440,390,320]:
         page.set_viewport_size({'width':width,'height':1000})
-        for slug in ['', 'p5-design/','p5-preview/','p5-print-files/','ventilation/']:
-            response=page.goto(base+'/docs/printed-5mm/'+slug,wait_until='networkidle')
+        for slug in ['', 'preview/','print-files/']:
+            response=page.goto(base+'/docs/archive/printed-5mm/p5/'+slug,wait_until='networkidle')
             check(f'{width}/{slug} HTTP',response.status==200)
             check(f'{width}/{slug} responsive',page.evaluate('document.documentElement.scrollWidth<=innerWidth+1'))
-            if slug=='p5-preview/':
+            if slug=='preview/':
                 iframe=page.locator('iframe').first
                 src=iframe.get_attribute('src')
                 check(f'{width} same origin P5',src==base+'/previews/printed-5mm-p5-tab-joints.html' or src=='/previews/printed-5mm-p5-tab-joints.html')
@@ -30,8 +30,8 @@ with sync_playwright() as pw:
             response=page.request.get(base+'/'+f['path'][7:]);check('GET '+f['path'],response.status==200 and hashlib.sha256(response.body()).hexdigest()==f['sha256'])
     # Dev intentionally injects site CSS/live reload into HTML; download ZIPs remain exact bytes.
     response=page.request.get(base+'/previews/printed-5mm-p5-tab-joints.html')
-    check('local preview GET is current P5',response.status==200 and 'P5-PRINTED-5MM-TAB-JOINTS-J3' in response.text())
+    check('archived preview GET preserves P5',response.status==200 and 'P5-PRINTED-5MM-TAB-JOINTS-J3' in response.text())
     check('no page errors',not errors)
     (out/'checks.json').write_text(json.dumps({'passed':True,'checks':checks,'browser':browser.version},indent=2)+'\n')
-    print('P5 local docs:',len(checks),'checks passed')
+    print('P5 archived docs:',len(checks),'checks passed')
     browser.close()

@@ -1,11 +1,11 @@
 export const PRINTED_SECTION = "printed-5mm";
 
-// Current-only editorial tree: the linked family root holds the current P5
+// Current-only editorial tree: the linked family root holds the current P6
 // design, whose tasks (preview, files, ventilation) nest under it. Superseded
-// P4/P3 reader pages live in the separate archive section (archive/printed-5mm/).
+// P5/P4/P3 reader pages live in the separate archive section (archive/printed-5mm/).
 export const printedMembers = new Map([
-  [PRINTED_SECTION, ["printed-5mm/p5-design"]],
-  ["printed-5mm/p5-design", ["printed-5mm/p5-preview", "printed-5mm/p5-print-files", "printed-5mm/ventilation"]],
+  [PRINTED_SECTION, ["printed-5mm/p6-design"]],
+  ["printed-5mm/p6-design", ["printed-5mm/p6-preview", "printed-5mm/p6-print-files", "printed-5mm/ventilation"]],
 ]);
 
 export const printedSidebar = {

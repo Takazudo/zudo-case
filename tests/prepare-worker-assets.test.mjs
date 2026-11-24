@@ -173,9 +173,9 @@ test("preview host landing page lists only each project's current preview from t
   const { loadSelection, renderPreviewIndex } = await import("../scripts/prepare-worker-assets.mjs");
   const selection = await loadSelection();
   const html = renderPreviewIndex(selection);
-  for (const current of ["/previews/r11-build-feedback-04.html", "/previews/r8-simple-lid.html", "/previews/printed-5mm-p5-tab-joints.html", "/previews/tenbox-v2-r8-lid-ledge-01.html", "/previews/two-way/tw-01.html"])
+  for (const current of ["/previews/r11-build-feedback-04.html", "/previews/r8-simple-lid.html", "/previews/printed-5mm-p6-lid-slots.html", "/previews/tenbox-v2-r8-lid-ledge-01.html", "/previews/two-way/tw-01.html"])
     assert.ok(html.includes(`href="${current}"`), current);
-  for (const old of ["r10-fullset-01", "r9-prototype-01", "r9-fitfix-01", "r9-lid-m5-01", "printed-5mm-p4", "printed-5mm-p3", "r6-body", "tenbox-v2-r5", "tenbox-v2-r6", "tenbox-v2-r7"])
+  for (const old of ["r10-fullset-01", "r9-prototype-01", "r9-fitfix-01", "r9-lid-m5-01", "printed-5mm-p5", "printed-5mm-p4", "printed-5mm-p3", "r6-body", "tenbox-v2-r5", "tenbox-v2-r6", "tenbox-v2-r7"])
     assert.ok(!html.includes(old), old);
   assert.ok(!html.includes('href="/previews/tenbox-v2-r8.html"'), "Disconnected-lid R8 is no longer the current preview");
   assert.ok(html.includes("https://zudo-case.zudolab.dev/docs/archive/"));

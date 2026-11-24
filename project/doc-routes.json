@@ -597,7 +597,7 @@
    "owner": "printed-5mm",
    "canonical": "printed-5mm/index.mdx",
    "treatment": "retained",
-   "note": "系列の入口。現行P5とアーカイブへの案内"
+   "note": "系列の入口。現行P6とアーカイブへの案内"
   },
   {
    "source": "printed-5mm/p4-design.mdx",
@@ -628,23 +628,28 @@
   {
    "source": "printed-5mm/p5-design.mdx",
    "route": "/docs/printed-5mm/p5-design/",
-   "owner": "printed-5mm",
-   "canonical": "printed-5mm/p5-design.mdx",
-   "treatment": "retained"
+   "owner": "archive",
+   "canonical": "archive/printed-5mm/p5/index.mdx",
+   "treatment": "archived",
+   "anchors": [
+    "この版を確認する"
+   ]
   },
   {
    "source": "printed-5mm/p5-preview.mdx",
    "route": "/docs/printed-5mm/p5-preview/",
-   "owner": "printed-5mm",
-   "canonical": "printed-5mm/p5-preview.mdx",
-   "treatment": "retained"
+   "owner": "archive",
+   "canonical": "archive/printed-5mm/p5/preview.mdx",
+   "treatment": "archived",
+   "anchors": []
   },
   {
    "source": "printed-5mm/p5-print-files.mdx",
    "route": "/docs/printed-5mm/p5-print-files/",
-   "owner": "printed-5mm",
-   "canonical": "printed-5mm/p5-print-files.mdx",
-   "treatment": "retained"
+   "owner": "archive",
+   "canonical": "archive/printed-5mm/p5/print-files.mdx",
+   "treatment": "archived",
+   "anchors": []
   },
   {
    "source": "printed-5mm/preview.mdx",
@@ -1149,6 +1154,30 @@
    "treatment": "new",
    "anchors": [],
    "note": "R8への現行指定更新時に保存したR5の読者向け案内"
+  },
+  {
+   "source": null,
+   "route": null,
+   "owner": "printed-5mm",
+   "canonical": "printed-5mm/p6-design.mdx",
+   "treatment": "new",
+   "note": "P6 フタ天板の長穴。P5の13型を現行の依存部品として継承"
+  },
+  {
+   "source": null,
+   "route": null,
+   "owner": "printed-5mm",
+   "canonical": "printed-5mm/p6-preview.mdx",
+   "treatment": "new",
+   "note": "P6 フタ天板の長穴。P5の13型を現行の依存部品として継承"
+  },
+  {
+   "source": null,
+   "route": null,
+   "owner": "printed-5mm",
+   "canonical": "printed-5mm/p6-print-files.mdx",
+   "treatment": "new",
+   "note": "P6 フタ天板の長穴。P5の13型を現行の依存部品として継承"
   }
  ]
 }

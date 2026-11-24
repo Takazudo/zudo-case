@@ -118,10 +118,13 @@ test('compatibility pages stay out of category cards', async () => {
   for (const d of nav.filter(d => d.unlisted === true)) assert.doesNotMatch(d.body, /<CategoryNav/, d.path);
 });
 
-test('current printed P5 URLs stay canonical; P3/P4/history URLs resolve directly to the archive', async () => {
-  for (const leaf of ['p5-design', 'p5-preview', 'p5-print-files', 'ventilation'])
-    assert.ok(map.entries.some(e => e.source === `printed-5mm/${leaf}.mdx` && e.canonical === e.source && ['retained', 'split'].includes(e.treatment)), leaf);
+test('current printed P6 URLs are canonical; P3/P4/P5/history URLs resolve directly to the archive', async () => {
+  for (const leaf of ['p6-design', 'p6-preview', 'p6-print-files', 'ventilation'])
+    assert.ok(map.entries.some(e => e.canonical === `printed-5mm/${leaf}.mdx` && (e.source === null || e.canonical === e.source) && ['retained', 'split', 'new'].includes(e.treatment)), leaf);
   const archived = {
+    'printed-5mm/p5-design.mdx': 'archive/printed-5mm/p5/index.mdx',
+    'printed-5mm/p5-preview.mdx': 'archive/printed-5mm/p5/preview.mdx',
+    'printed-5mm/p5-print-files.mdx': 'archive/printed-5mm/p5/print-files.mdx',
     'printed-5mm/p4-design.mdx': 'archive/printed-5mm/p4/index.mdx',
     'printed-5mm/p4-preview.mdx': 'archive/printed-5mm/p4/preview.mdx',
     'printed-5mm/p4-print-files.mdx': 'archive/printed-5mm/p4/print-files.mdx',

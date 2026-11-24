@@ -1,0 +1,126 @@
+{
+  "revision": "P6-PRINTED-5MM-LID-SLOTS",
+  "units": "mm",
+  "production_approved": false,
+  "source_revision": "P5-PRINTED-5MM-TAB-JOINTS-J3",
+  "source_inputs": [
+    {
+      "path": "reference/lid-top-1.step",
+      "source_path": "engineering/printed-5mm/p5-tab-joints/out/step/lid-top-1.step",
+      "sha256": "e425f3590970abe3679f4864b48fe91cd3fb1f9e9838d72323064960cf9ad6bf"
+    },
+    {
+      "path": "reference/lid-top-2.step",
+      "source_path": "engineering/printed-5mm/p5-tab-joints/out/step/lid-top-2.step",
+      "sha256": "d451b11bbd91b6e9fcbdd27271fb69663d965fd5573a1684fc4ffbd2892880d4"
+    },
+    {
+      "path": "reference/p5-lid-top-1-h2d-pla06.3mf",
+      "source_path": "engineering/printed-5mm/p5-h2d-3mf/out/projects/p5-lid-top-1-h2d-pla06.3mf",
+      "sha256": "50914e0bb10f1d21fb4a86027726a4e25f5b61bba4e6fec15fefadef049fe371"
+    },
+    {
+      "path": "reference/p5-lid-top-2-h2d-pla06.3mf",
+      "source_path": "engineering/printed-5mm/p5-h2d-3mf/out/projects/p5-lid-top-2-h2d-pla06.3mf",
+      "sha256": "841bf139d6df6ebbfddf3d2eeb4034760ae7f882a4cfab08e651dafa0cee2019"
+    }
+  ],
+  "slot": {
+    "length_mm": 10.5,
+    "width_mm": 5.5,
+    "nominal_adjustment_each_direction_mm": 2.5,
+    "axis_rule": "Normal to corresponding case edge in the roof XY plane"
+  },
+  "roof_z_mm": [
+    132.5,
+    137.5
+  ],
+  "parts": [
+    {
+      "id": "lid-top-1",
+      "quantity": 1,
+      "assembly_to_print_translation_mm": [
+        112.9,
+        165.2,
+        -132.5
+      ],
+      "holes": [
+        {
+          "face": "front",
+          "center_mm": [
+            -59.5,
+            -154.5
+          ],
+          "angle_deg": 90
+        },
+        {
+          "face": "front",
+          "center_mm": [
+            59.5,
+            -154.5
+          ],
+          "angle_deg": 90
+        },
+        {
+          "face": "right",
+          "center_mm": [
+            102.2,
+            -85.25
+          ],
+          "angle_deg": 0
+        },
+        {
+          "face": "left",
+          "center_mm": [
+            -102.2,
+            -85.25
+          ],
+          "angle_deg": 0
+        }
+      ]
+    },
+    {
+      "id": "lid-top-2",
+      "quantity": 1,
+      "assembly_to_print_translation_mm": [
+        112.9,
+        -0.15,
+        -132.5
+      ],
+      "holes": [
+        {
+          "face": "back",
+          "center_mm": [
+            59.5,
+            154.5
+          ],
+          "angle_deg": 90
+        },
+        {
+          "face": "back",
+          "center_mm": [
+            -59.5,
+            154.5
+          ],
+          "angle_deg": 90
+        },
+        {
+          "face": "right",
+          "center_mm": [
+            102.2,
+            85.25
+          ],
+          "angle_deg": 0
+        },
+        {
+          "face": "left",
+          "center_mm": [
+            -102.2,
+            85.25
+          ],
+          "angle_deg": 0
+        }
+      ]
+    }
+  ]
+}
